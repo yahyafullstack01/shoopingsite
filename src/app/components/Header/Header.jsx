@@ -9,7 +9,7 @@ export default function Header({ isDarkMode, setIsDarkMode }) {
       }`}
     >
       {/* Logo */}
-      <div className="flex items-center">
+      <div className="flex items-center ml-10">
         <Image
           src="/Logo.avif" // Replace with your logo path
           alt="Latore Atelier Logo"
@@ -41,7 +41,7 @@ export default function Header({ isDarkMode, setIsDarkMode }) {
       {/* Theme Toggle */}
       <button
         onClick={() => setIsDarkMode(!isDarkMode)}
-        className="p-2 rounded-full border border-gray-300 hover:bg-gray-200"
+        className="p-2 mr-10 rounded-full border border-gray-300 hover:bg-gray-200"
       >
         {isDarkMode ? <FaSun /> : <FaMoon />}
       </button>
