@@ -9,7 +9,7 @@ export default function About() {
         <div className="">
           <div className="relative mb-8">
             <Image
-              src="/path-to-your-image1.jpg" // Замініть на шлях до великого зображення
+              src="" // Замініть на шлях до великого зображення
               alt="Main Image"
               width={300}
               height={400}
