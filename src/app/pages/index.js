@@ -9,10 +9,10 @@ export default function Home() {
     <div className="container mx-auto p-4">
       <Header />
       <Hero />
-      {/* <Products />
+      {/* <Products />*/}
       <About />
       <FollowUs />
-      <Footer /> */}
+      <Footer /> 
    
     </div>
   );

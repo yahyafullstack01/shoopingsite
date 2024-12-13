@@ -1,13 +1,47 @@
+import Image from "next/image";
+
 export default function About() {
-    return (
-      <section id="about" className="bg-yellow-300 py-16 text-center">
-        <h2 className="text-3xl font-bold mb-4">About</h2>
-        <p className="max-w-3xl mx-auto text-lg">
-          Latore Atelier is your go-to online destination for premium fashion. We offer a curated selection
-          of high-quality clothing and accessories designed to elevate your wardrobe.
-        </p>
-        <button className="mt-6 px-6 py-2 bg-black text-white rounded">Learn More</button>
-      </section>
-    );
-  }
-  
+  return (
+    <section className="bg-yellow-200 py-16 px-8">
+             <h2 className="text-4xl font-bold mb-10 text-left md:text-left">About</h2>
+      <div className="container mx-auto relative grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+       
+        <div className="">
+          <div className="relative mb-8">
+            <Image
+              src="/path-to-your-image1.jpg" // Замініть на шлях до великого зображення
+              alt="Main Image"
+              width={300}
+              height={400}
+              className="rounded-lg object-cover shadow-lg"
+            />
+          </div>
+
+          <div className="relative mt-4 flex flex-col items-center ">
+            <Image
+              src="/path-to-your-image2.jpg" // Замініть на шлях до маленького зображення
+              alt="Secondary Image"
+              width={150}
+              height={200}
+              className="rounded-lg object-cover shadow-md"
+            />
+          </div>
+        </div>
+        <div className=" text-center md:text-left mt-[-150px]">
+   
+          <p className="text-lg mb-6">
+            <strong>Our Story</strong> <br />
+            Latore Atelier is your go-to online destination for premium fashion.
+            We offer a curated selection of high-quality clothing and
+            accessories, designed to elevate your wardrobe. Our mission is to
+            provide customers with sophisticated and stylish pieces that
+            reflect their unique personality and taste.
+          </p>
+          <button className="bg-black text-white py-2 px-6 rounded-full hover:bg-gray-800 transition">
+  Learn More
+</button>
+        </div>
+      </div>
+    </section>
+  );
+}
