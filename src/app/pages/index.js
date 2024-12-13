@@ -1,19 +1,20 @@
-import Header from "../components/Header/Header.jsx";
-import Hero from "../components/Hero/Hero.jsx";
-import Footer from "../components/Footer/Footer.jsx";
-import Products from "../components/products/Products.jsx";
-import FollowUs from "../components/Follow/Follow.jsx";
-import About from "../components/About/About.jsx";
+import Header from "../components/Header/Header"; // Import the Header component
+import Hero from "../components/Hero/Hero";
+import Footer from "../components/Footer/Footer";
+import Products from "../components/products/Products";
+import FollowUs from "../components/Follow/Follow";
+import About from "../components/About/About";
+
 export default function Home() {
   return (
-    <div className="container mx-auto p-4">
-      <Header />
+    <div
+      className="transition-colors"
+    >
       <Hero />
-      {/* <Products />*/}
+      {/* <Products /> */}
       <About />
       <FollowUs />
-      <Footer /> 
-   
+      <Footer />
     </div>
   );
 }
