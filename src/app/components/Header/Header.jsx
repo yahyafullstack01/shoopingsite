@@ -1,10 +1,20 @@
 import Image from "next/image";
 import { FaMoon, FaSun } from "react-icons/fa";
+import { useLanguage } from "../../Functions/useLanguage"; // Import the custom hook
 
 export default function Header({ isDarkMode, setIsDarkMode }) {
+  const { language, setLanguage, translateList } = useLanguage(); // Use the hook
+
+  // Get translated menu items for the header
+  const menuItems = translateList("home", "header");
+
+  const toggleLanguage = () => {
+    setLanguage(language === "EN" ? "FR" : "EN");
+  };
+
   return (
     <header
-      className={` flex items-center justify-between px-4 py-4 shadow-md ${
+      className={`flex items-center justify-between px-4 py-4 shadow-md ${
         isDarkMode ? "bg-black text-white" : "bg-white text-black"
       }`}
     >
@@ -22,30 +32,29 @@ export default function Header({ isDarkMode, setIsDarkMode }) {
 
       {/* Navigation */}
       <nav className="flex items-center space-x-6">
-        <a href="#" className="hover:opacity-80">
-          Home
-        </a>
-        <a href="#" className="hover:opacity-80">
-          Catalogues
-        </a>
-        <a href="#" className="hover:opacity-80">
-          About
-        </a>
-        <a href="#" className="hover:opacity-80">
-          Contact
-        </a>
-        <a href="#" className="hover:opacity-80">
-          Conditions
-        </a>
+        {menuItems.map((item, index) => (
+          <a key={index} href="#" className="hover:opacity-80">
+            {item}
+          </a>
+        ))}
       </nav>
 
-      {/* Theme Toggle */}
+      {/* Theme & Language Toggle */}
+      <div className="flex items-center space-x-4">
       <button
-        onClick={() => setIsDarkMode(!isDarkMode)}
-        className="p-2 mr-10 rounded-full border border-gray-300 hover:bg-gray-200"
-      >
-        {isDarkMode ? <FaSun /> : <FaMoon />}
-      </button>
+          onClick={toggleLanguage}
+          className="p-2 rounded-full border border-gray-300 hover:bg-gray-200"
+        >
+          {language === "EN" ? "🇬🇧 EN" : "🇫🇷 FR"}
+        </button>
+        <button
+          onClick={() => setIsDarkMode(!isDarkMode)}
+          className="p-2 rounded-full border border-gray-300 hover:bg-gray-200"
+        >
+          {isDarkMode ? <FaSun /> : <FaMoon />}
+        </button>
+
+      </div>
     </header>
   );
 }

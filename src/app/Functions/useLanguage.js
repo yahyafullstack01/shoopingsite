@@ -1,12 +1,14 @@
-// Functions/useLanguage.js
-import { useState } from "react";
+import { useState } from "react"; // Import useState
+import translations from "../locales/translations.json"; // Import your translations file
 
 export function useLanguage() {
-  const [language, setLanguage] = useState("EN");
+    const [language, setLanguage] = useState("EN");
+  
+    const translateList = (page, component) => {
+      return translations[language]?.[page]?.[component] || [];
+    };
+  
+    return { language, setLanguage, translateList };
+  }
 
-  const toggleLanguage = () => {
-    setLanguage((prevLanguage) => (prevLanguage === "EN" ? "FR" : "EN"));
-  };
-
-  return { language, toggleLanguage };
-}
+  
