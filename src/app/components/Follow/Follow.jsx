@@ -1,4 +1,4 @@
-"use client";
+"use client"; 
 import Image from "next/image";
 import useImageFollow from "@/app/hooks/useImageFollow";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
@@ -20,14 +20,14 @@ export default function FollowUs() {
     images.length,
     5 
   );
- 
+
   return (
-    <section id="follow-us" className="bg-black text-white py-16 px-8">
+    <section id="follow-us" className="bg-black text-white py-12 px-8">
       <div className="space-y-4">
-        <h2 className="text-3xl font-bold mb-10">Follow Us</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 border-t border-gray-300 "> </div>
+        <h2 className="text-4xl font-bold mb-10">Follow Us</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 border-t border-gray-300 "></div>
       </div>
-     
+
       <div className="space-y-{value} flex items-center">
         <div
           onClick={handlePrev}
@@ -35,36 +35,32 @@ export default function FollowUs() {
         >
           <FaChevronLeft />
         </div>
-        
-        {/* Фото */}
-        <div className="flex space-x-4 overflow-hidden gap-8 mt-8">
-  {displayedImages.map((imageIndex) => (
-    <a
-      key={imageIndex}
-      href={images[imageIndex].link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex-shrink-0"
-    >
-      <Image
-        src={images[imageIndex].src}
-        alt={`Image ${imageIndex + 1}`}
-        width={200}
-        height={200}
-        className="rounded-lg object-cover"
-      />
-    </a>
-  ))}
-</div>
+        <div className="flex space-x-4  overflow-hidden gap-8 mt-8">
+          {displayedImages.map((imageIndex) => (
+            <a
+              key={imageIndex}
+              href={images[imageIndex].link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-shrink-0 group"
+            >
+              <Image
+                src={images[imageIndex].src}
+                alt={`Image ${imageIndex + 1}`}
+                width={200}
+                height={200}
+                className="rounded-lg object-cover transform transition duration-300 ease-in-out group-hover:scale-125"
+              />
+            </a>
+          ))}
+        </div>
         <div
           onClick={handleNext}
           className="text-white text-3xl cursor-pointer mx-4 hover:text-gray-500"
         >
           <FaChevronRight />
         </div>
-      
       </div>
-      
     </section>
   );
-}  
+}

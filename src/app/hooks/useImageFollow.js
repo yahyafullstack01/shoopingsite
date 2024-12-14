@@ -1,7 +1,7 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-export default function useImageFollow(imagesLength, visibleCount = 5) {
+export default function useImageFollow(imagesLength, visibleCount = 5, autoScrollDelay = 3000) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {
@@ -14,12 +14,17 @@ export default function useImageFollow(imagesLength, visibleCount = 5) {
     );
   };
 
-  const displayedImages = Array(visibleCount)
-    .fill(null)
-    .map(
-      (_, i) =>
-        (currentIndex + i) % imagesLength 
-    );
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNext(); 
+    }, autoScrollDelay);
+
+    return () => clearInterval(interval); 
+  }, [autoScrollDelay]);
+
+  const displayedImages = Array.from({ length: visibleCount }).map(
+    (_, i) => (currentIndex + i) % imagesLength
+  );
 
   return { currentIndex, displayedImages, handleNext, handlePrev };
 }

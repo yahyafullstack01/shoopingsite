@@ -2,8 +2,8 @@ import { FaFacebook, FaInstagram, FaTwitter, FaTelegramPlane } from "react-icons
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-10">
-      <div className="container mx-auto px-4">
+    <footer className="bg-black text-white py-12 px-8">
+      <div className=" space-y-4">
         <h3 className="text-2xl font-bold mb-8">Latore Atelier</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 border-t border-gray-300">
   
@@ -27,16 +27,16 @@ export default function Footer() {
           </div>
           <div className="flex items-center space-x-4 px-6 py-6">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-              <FaFacebook className="w-6 h-6 text-white hover:text-gray-300" />
+              <FaFacebook className="w-6 h-6 text-white hover:text-gray-700" />
             </a>
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="w-6 h-6 text-white hover:text-gray-300" />
+              <FaInstagram className="w-6 h-6 text-white hover:text-gray-700" />
             </a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <FaTwitter className="w-6 h-6 text-white hover:text-gray-300" />
+              <FaTwitter className="w-6 h-6 text-white hover:text-gray-700" />
             </a>
             <a href="https://telegram.me/yourusername" target="_blank" rel="noopener noreferrer">
-              <FaTelegramPlane className="w-6 h-6 text-white hover:text-gray-300" />
+              <FaTelegramPlane className="w-6 h-6 text-white hover:text-gray-700" />
             </a>
           </div>
         </div>

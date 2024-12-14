@@ -10,8 +10,9 @@ export default function Header({ isDarkMode, setIsDarkMode }) {
     >
       {/* Logo */}
       <div className="flex items-center ml-10">
+     
         <Image
-          src="/Logo.avif" // Replace with your logo path
+          src="/light-logo.avif" // Replace with your logo path
           alt="Latore Atelier Logo"
           width={130}
           height={120}
