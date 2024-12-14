@@ -9,7 +9,7 @@ export default function SpecialOffers() {
       <div className="container mx-auto relative">
         <div className="relative flex justify-end">
           <Image
-            src="/path-to-your-image.jpg" // Замініть на шлях до зображення
+            src="/8.jpg" // Замініть на шлях до зображення
             alt="Special Offers Image"
             width={800}
             height={600}

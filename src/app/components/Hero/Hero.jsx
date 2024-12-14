@@ -2,6 +2,7 @@
 import Image from "next/image";
 
 export default function Hero() {
+  
   return (
     <section className="relative  px-8 py-16 ml-12">
       <div className="grid grid-cols-3 gap-4 items-center">

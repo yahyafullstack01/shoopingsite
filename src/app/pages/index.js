@@ -12,7 +12,6 @@ export default function Home() {
       className="transition-colors"
     >
       <Hero />
-      <Header/>
        {/* <Products /> */}
 <SpecialOffers/>
       <About />
