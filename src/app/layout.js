@@ -1,3 +1,4 @@
+
 "use client"; // Ensure this is a client-side component
 
 import { useDarkMode } from "./Functions/useDarkMode"; // Import the custom hook
