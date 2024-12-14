@@ -5,16 +5,16 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 export default function FollowUs() {
   const images = [
-    { src: "/image1.jpg", link: "https://instagram.com/yourprofile1" },
-    { src: "/image2.jpg", link: "https://instagram.com/yourprofile2" },
-    { src: "/image3.jpg", link: "https://instagram.com/yourprofile3" },
-    { src: "/image4.jpg", link: "https://instagram.com/yourprofile4" },
-    { src: "/image5.jpg", link: "https://instagram.com/yourprofile5" },
-    { src: "/image6.jpg", link: "https://instagram.com/yourprofile6" },
-    { src: "/image7.jpg", link: "https://instagram.com/yourprofile7" },
-    { src: "/image8.jpg", link: "https://instagram.com/yourprofile8" },
-    { src: "/image9.jpg", link: "https://instagram.com/yourprofile9" },
-    { src: "/image10.jpg", link: "https://instagram.com/yourprofile10" },
+    { src: "/1.jpg", link: "https://instagram.com/yourprofile1" },
+    { src: "/2.jpg", link: "https://instagram.com/yourprofile2" },
+    { src: "/3.jpg", link: "https://instagram.com/yourprofile3" },
+    { src: "/4.jpg", link: "https://instagram.com/yourprofile4" },
+    { src: "/5.jpg", link: "https://instagram.com/yourprofile5" },
+    { src: "/6.jpg", link: "https://instagram.com/yourprofile6" },
+    { src: "/7.jpg", link: "https://instagram.com/yourprofile7" },
+    { src: "/8.jpg", link: "https://instagram.com/yourprofile8" },
+    { src: "/9.jpg", link: "https://instagram.com/yourprofile9" },
+    { src: "/10.jpg", link: "https://instagram.com/yourprofile10" },
   ];
   const { displayedImages, handleNext, handlePrev } = useImageFollow(
     images.length,

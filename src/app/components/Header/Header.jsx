@@ -1,28 +1,49 @@
-// components/Header.js
 import Image from "next/image";
+import { FaMoon, FaSun } from "react-icons/fa";
 
-export default function Header() {
+export default function Header({ isDarkMode, setIsDarkMode }) {
   return (
-    <header className="flex items-center justify-between px-0 py-4">
+    <header
+      className={` flex items-center justify-between px-4 py-4 shadow-md ${
+        isDarkMode ? "bg-black text-white" : "bg-white text-black"
+      }`}
+    >
       {/* Logo */}
-      <div className="flex items-center">
+      <div className="flex items-center ml-10">
         <Image
-          src="/logo.svg" // Replace with your logo path
+          src="/Logo.avif" // Replace with your logo path
           alt="Latore Atelier Logo"
-          width={30}
-          height={30}
+          width={130}
+          height={120}
+          className={isDarkMode ? "filter invert" : ""} // Invert logo for dark mode
         />
-        <span className="ml-2 text-lg font-semibold">Latore Atelier</span>
       </div>
 
-      {/* Cart Icon */}
-      <button className="p-2 rounded-full border border-gray-300 hover:bg-gray-200">
-        <Image
-          src="/cart-icon.svg" // Replace with your cart icon path
-          alt="Cart Icon"
-          width={20}
-          height={20}
-        />
+      {/* Navigation */}
+      <nav className="flex items-center space-x-6">
+        <a href="#" className="hover:opacity-80">
+          Home
+        </a>
+        <a href="#" className="hover:opacity-80">
+          Catalogues
+        </a>
+        <a href="#" className="hover:opacity-80">
+          About
+        </a>
+        <a href="#" className="hover:opacity-80">
+          Contact
+        </a>
+        <a href="#" className="hover:opacity-80">
+          Conditions
+        </a>
+      </nav>
+
+      {/* Theme Toggle */}
+      <button
+        onClick={() => setIsDarkMode(!isDarkMode)}
+        className="p-2 mr-10 rounded-full border border-gray-300 hover:bg-gray-200"
+      >
+        {isDarkMode ? <FaSun /> : <FaMoon />}
       </button>
     </header>
   );

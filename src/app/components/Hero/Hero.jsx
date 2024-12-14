@@ -3,12 +3,12 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative bg-white px-8 py-16">
+    <section className="relative  px-8 py-16 ml-12">
       <div className="grid grid-cols-3 gap-4 items-center">
         {/* Top Left Image */}
         <div className="relative col-span-1">
           <Image
-            src="/hero-top-left.jpg" // Replace with your image path
+            src="/1.jpg" // Replace with your image path
             alt="Top Left"
             layout="responsive"
             width={300}
@@ -25,7 +25,7 @@ export default function Hero() {
         {/* Top Right Image */}
         <div className="relative col-span-1">
           <Image
-            src="/hero-top-right.jpg" // Replace with your image path
+            src="/5.jpg" // Replace with your image path
             alt="Top Right"
             layout="responsive"
             width={300}
@@ -40,7 +40,7 @@ export default function Hero() {
         {/* Bottom Left Image */}
         <div className="relative">
           <Image
-            src="/hero-bottom-left.jpg" // Replace with your image path
+            src="/9.jpg" // Replace with your image path
             alt="Bottom Left"
             layout="responsive"
             width={400}

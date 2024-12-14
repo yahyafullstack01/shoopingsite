@@ -9,7 +9,7 @@ export default function About() {
         <div className="">
           <div className="relative mb-8">
             <Image
-              src="/path-to-your-image1.jpg" // Замініть на шлях до великого зображення
+              src="/2.jpg"// Замініть на шлях до великого зображення
               alt="Main Image"
               width={300}
               height={400}
@@ -19,7 +19,7 @@ export default function About() {
 
           <div className="relative mt-4 flex flex-col items-center ">
             <Image
-              src="/path-to-your-image2.jpg" // Замініть на шлях до маленького зображення
+              src="/8.jpg" // Замініть на шлях до маленького зображення
               alt="Secondary Image"
               width={150}
               height={200}
