@@ -22,7 +22,7 @@ export default function FollowUs() {
   );
 
   return (
-    <section id="follow-us" className="bg-black text-white py-12 px-8">
+    <section id="follow-us" className="bg-black text-white section-container">
       <div className="space-y-4">
         <h2 className="text-4xl font-bold mb-10">Follow Us</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 border-t border-gray-300 "></div>
@@ -35,7 +35,7 @@ export default function FollowUs() {
         >
           <FaChevronLeft />
         </div>
-        <div className="flex space-x-4  overflow-hidden gap-8 mt-8">
+        <div className="flex space-x-4 overflow-hidden gap-8 mt-8">
           {displayedImages.map((imageIndex) => (
             <a
               key={imageIndex}
@@ -49,7 +49,7 @@ export default function FollowUs() {
                 alt={`Image ${imageIndex + 1}`}
                 width={200}
                 height={200}
-                className="rounded-lg object-cover transform transition duration-300 ease-in-out group-hover:scale-125"
+                className="rounded-lg object-cover opacity-100 translate-y-5 transform transition duration-700 ease-in-out group-hover:scale-125 group-hover:opacity-100 group-hover:translate-y-0"
               />
             </a>
           ))}
