@@ -1,6 +1,14 @@
 import Image from "next/image";
+import { useLanguage } from "../../Functions/useLanguage"; // Import the custom hook
+
 
 export default function Hero() {
+  const {  translateList } = useLanguage(); // Use the hook
+
+  // Get translated menu items for the header
+  const menuItems = translateList("home", "hero");
+
+
   return (
     <section className="section-container relative -top-8">
       <div className="grid grid-cols-3 gap-4 relative">
@@ -49,11 +57,14 @@ export default function Hero() {
         </div>
         {/* Description */}
         <div className="flex flex-col justify-center text-center space-y-4">
+          {/* <p className="text-2xl text-gray-700 dark:text-gray-300"> */}
+            {/* Discover your style with us.  */}
+            {menuItems[1]}
+
+          {/* </p> */}
           <p className="text-2xl text-gray-700 dark:text-gray-300">
-            Discover your style with us.
-          </p>
-          <p className="text-2xl text-gray-700 dark:text-gray-300">
-            Explore the latest trends in fashion.
+            {/* Explore the latest trends in fashion. */}
+            {menuItems[2]}
           </p>
         </div>
       </div>

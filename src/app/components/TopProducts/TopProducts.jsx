@@ -3,6 +3,8 @@ import Image from "next/image";
 import useImageFollow from "@/app/hooks/useImageFollow";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Link from "next/link";
+import { useLanguage } from "../../Functions/useLanguage"; // Import the custom hook
+
 
 export default function TopProducts() {
   const images = [
@@ -22,6 +24,9 @@ export default function TopProducts() {
     images.length,
     5
   );
+    const {  translateList } = useLanguage(); // Use the hook
+    const List = translateList("home", "hero");
+
 
   return (
     <section
@@ -29,7 +34,10 @@ export default function TopProducts() {
       className="bg-[#fcf8f3] dark:bg-[#2e1f14] text-black dark:text-gray-100 section-container py-12"
     >
       <div className="space-y-4">
-        <h2 className="text-4xl font-bold mb-10 text-center">Top Products</h2>
+        <h2 className="text-4xl font-bold mb-10 text-center">Top Products
+          {/* for example */}
+          {List[0]}
+        </h2>
         <div className="border-t border-gray-300 dark:border-gray-700"></div>
       </div>
       <div className="flex items-center justify-center space-x-4 mt-8">
