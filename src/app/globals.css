@@ -21,10 +21,19 @@ body {
 }
 @layer base {
   .section-container {
-    @apply px-4 md:px-8 lg:px-12 py-12 md:py-16;
+    @apply flex flex-col relative mx-auto w-full max-w-screen-xl overflow-hidden 
+           pt-8 pb-8 sm:pt-12 sm:pb-12;
   }
+  
 
   .content-wrapper {
     @apply max-w-7xl mx-auto;
+  }
+}
+@layer utilities {
+  @media (max-width: 320px) {
+    .mobile-320 {
+      @apply  text-xs leading-tight p-1;
+    }
   }
 }

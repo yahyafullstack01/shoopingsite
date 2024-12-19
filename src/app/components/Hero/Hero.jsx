@@ -2,57 +2,54 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="section-container relative -top-8">
-      <div className="grid grid-cols-3 gap-4 relative">
-        {/* Left Image */}
-        <div className="relative flex flex-col items-center mt-8 ml-16 group">
+    <section className="section-container relative -top-4">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 relative">
+        <div className="w-48 sm:w-[200px] md:w-[300px] lg:w-[400px] relative flex flex-row ml-4 mt-8 items-center sm:mt-8 sm:ml-16 lg:mt-16 lg:ml-16 mobile-320">
           <Image
             src="/1.jpg"
             alt="Left Image"
-            width={400}
-            height={400}
-            className="rounded-none object-cover shadow-2xl shadow-gray-800 dark:shadow-gray-400 transition-transform duration-300 ease-in-out group-hover:scale-110"
+            width={120}
+            height={120}
+            className="rounded-none object-cover shadow-2xl shadow-gray-800 dark:shadow-gray-400 transition-transform duration-300 ease-in-out group-hover:scale-110 cursor-pointer w-32 sm:w-[200px] md:w-[300px] lg:w-[400px]"
           />
         </div>
 
-        {/* Center Title */}
-        <div className="relative col-span-3 flex justify-center items-center z-10 h-[200px]">
-          <h1 className="text-6xl font-bold tracking-wide whitespace-nowrap text-center inline-block relative 
-                         text-gray-900 dark:text-gray-100 
-                         after:block after:content-[''] after:absolute after:bottom-[-10px] after:left-0 after:w-full after:h-1 after:bg-gray-800 dark:after:bg-gray-200">
+        <div className="relative col-span-1 sm:col-span-3 flex justify-center items-center z-10 h-[150px] sm:h-[300px] mobile-320">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl xl:text-7xl font-bold tracking-wide whitespace-nowrap text-center inline-block relative 
+             text-gray-900 dark:text-gray-100 
+             transform -translate-x-6 sm:-translate-x-[150px] md:translate-x-[-90px] xl:translate-x-[-100px]">
             LATORE ATE
             <span className="relative z-10">LIER</span>
-            <span className="absolute top-[-250px] right-[-280px] z-0 group">
+            <span className="absolute top-[-60px] right-[-90px] sm:top-[-220px] sm:right-[-260px] md:top-[-240px] md:right-[-220px] xl:top-[-340px] xl:right-[-340px] mobile-320">
               <Image
                 src="/10.jpg"
                 alt="Right Image"
-                width={350}
-                height={350}
-                className="rounded-none object-cover aspect-square shadow-2xl shadow-gray-800 dark:shadow-gray-400 transition-transform duration-300 ease-in-out group-hover:scale-110"
+                width={120}
+                height={120}
+                className="w-32 h-32 sm:w-[300px] sm:h-[300px] md:w-[320px] md:h-[320px] lg:w-[400px] lg:h-[400px] xl:w-[450px] xl:h-[450px] object-cover aspect-square shadow-2xl shadow-gray-800 dark:shadow-gray-400 transition-transform duration-300 ease-in-out group-hover:scale-110"
               />
             </span>
           </h1>
         </div>
       </div>
+      <div className="grid grid-cols-2 gap-4 mt-4 mobile-320">
 
-      {/* Bottom Section */}
-      <div className="grid grid-cols-2 gap-4 mt-8">
-        {/* Bottom Left Image */}
-        <div className="relative mt-4 flex flex-col items-center group">
-          <Image
-            src="/5.jpg"
-            alt="Bottom Left Image"
-            width={400}
-            height={400}
-            className="rounded-none object-cover shadow-2xl shadow-gray-800 dark:shadow-gray-400 transition-transform duration-300 ease-in-out group-hover:scale-110"
-          />
-        </div>
-        {/* Description */}
-        <div className="flex flex-col justify-center text-center space-y-4">
-          <p className="text-2xl text-gray-700 dark:text-gray-300">
+        <div className="relative flex justify-center items-center mt-4 sm:mt-8 lg:mt-16">
+  <Image
+    src="/5.jpg"
+    alt="Bottom Left Image"
+    width={400} 
+    height={600} 
+    className="rounded-none object-cover shadow-2xl shadow-gray-800 dark:shadow-gray-400 transition-transform duration-300 ease-in-out group-hover:scale-110
+    w-32 sm:w-[200px] md:w-[300px] lg:w-[400px] 
+    h-auto" 
+  />
+</div>
+        <div className="flex flex-col justify-center text-center space-y-2">
+          <p className="text-xs sm:text-2xl md:text-4xl text-gray-700 dark:text-gray-300 mobile-320">
             Discover your style with us.
           </p>
-          <p className="text-2xl text-gray-700 dark:text-gray-300">
+          <p className="text-xs sm:text-2xl md:text-4xl text-gray-700 dark:text-gray-300 mobile-320">
             Explore the latest trends in fashion.
           </p>
         </div>
@@ -60,3 +57,4 @@ export default function Hero() {
     </section>
   );
 }
+
