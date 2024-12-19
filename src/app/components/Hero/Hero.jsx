@@ -1,6 +1,11 @@
 import Image from "next/image";
+import { useLanguage } from "../../Functions/useLanguage"; 
 
 export default function Hero() {
+  const {  translateList } = useLanguage(); 
+
+  const menuItems = translateList("home", "hero");
+
   return (
     <section className="section-container relative -top-4">
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 relative">

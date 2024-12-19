@@ -1,23 +1,34 @@
-// src/app/Functions/LanguageContext.js
-import { useState, useContext, createContext } from "react";
-import translations from "../locales/translations.json";
+import { useState, useContext, createContext, useEffect } from "react";
 
 const LanguageContext = createContext();
 
 export function LanguageProvider({ children }) {
-  const [language, setLanguage] = useState("EN");
+    const [language, setLanguage] = useState("EN");
+    const [translations, setTranslations] = useState({});
 
-  const translateList = (page, component) => {
-    return translations[language]?.[page]?.[component] || [];
-  };
+    useEffect(() => {
+        // Dynamically fetch translations.json from the public folder
+        const fetchTranslations = async () => {
+            try {
+                const res = await fetch("/locales/translations.json");
+                const data = await res.json();
+                setTranslations(data);
+            } catch (error) {
+                console.error("Error loading translations:", error);
+            }
+        };
+        fetchTranslations();
+    }, []);
 
-  return (
-    <LanguageContext.Provider value={{ language, setLanguage, translateList }}>
-      {children}
-    </LanguageContext.Provider>
-  );
+    const translate = (page, component) => {
+        return translations[language]?.[page]?.[component] || "Missing translation";
+    };
+
+    return (
+        <LanguageContext.Provider value={{ language, setLanguage, translate }}>
+            {children}
+        </LanguageContext.Provider>
+    );
 }
 
-export function useLanguage() {
-  return useContext(LanguageContext);
-}
+export const useLanguage = () => useContext(LanguageContext);

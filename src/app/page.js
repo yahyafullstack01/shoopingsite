@@ -1,14 +1,15 @@
 "use client"; // Ensure this is a client-side component
 
 import { useDarkMode } from "./Functions/useDarkMode"; // Import the custom hook
-import { LanguageProvider } from "./Functions/LanguageContext"; // Import the LanguageContext
+import { LanguageProvider } from "./Functions/useLanguage"; // Import LanguageProvider
 import Header from "./components/Header/Header"; // Import the Header component
-import Home from "./pages/index"; // Import the Home component
+import Home from "./home"; // Import the Home component
 
 export default function Page() {
   const [isDarkMode, setIsDarkMode] = useDarkMode(); // Use the dark mode state
 
   return (
+    <LanguageProvider>
       <div
         className={`${
           isDarkMode ? "dark bg-black text-white" : "light bg-white text-black"
@@ -22,5 +23,6 @@ export default function Page() {
           {/* Other page content */}
         </main>
       </div>
+    </LanguageProvider>
   );
 }
