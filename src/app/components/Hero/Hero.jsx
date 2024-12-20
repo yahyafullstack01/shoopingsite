@@ -52,10 +52,10 @@ export default function Hero() {
 </div>
         <div className="flex flex-col justify-center text-center space-y-2">
           <p className="text-xs sm:text-2xl md:text-4xl text-gray-700 dark:text-gray-300 mobile-320">
-            Discover your style with us.
+            {menuItems[0]}
           </p>
           <p className="text-xs sm:text-2xl md:text-4xl text-gray-700 dark:text-gray-300 mobile-320">
-            Explore the latest trends in fashion.
+             {menuItems[1]}
           </p>
         </div>
       </div>
