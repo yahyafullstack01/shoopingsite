@@ -13,8 +13,8 @@ export default function Hero() {
           <Image
             src="/1.jpg"
             alt="Left Image"
-            width={120}
-            height={120}
+            width={400}
+            height={600}
             className="rounded-none object-cover shadow-2xl shadow-gray-800 dark:shadow-gray-400 transition-transform duration-300 ease-in-out group-hover:scale-110 cursor-pointer w-32 sm:w-[200px] md:w-[300px] lg:w-[400px]"
           />
         </div>
@@ -29,8 +29,8 @@ export default function Hero() {
               <Image
                 src="/10.jpg"
                 alt="Right Image"
-                width={120}
-                height={120}
+                width={400}
+                height={400}
                 className="w-32 h-32 sm:w-[300px] sm:h-[300px] md:w-[320px] md:h-[320px] lg:w-[400px] lg:h-[400px] xl:w-[450px] xl:h-[450px] object-cover aspect-square shadow-2xl shadow-gray-800 dark:shadow-gray-400 transition-transform duration-300 ease-in-out group-hover:scale-110"
               />
             </span>
