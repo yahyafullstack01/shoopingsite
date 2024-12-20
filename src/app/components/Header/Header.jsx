@@ -140,5 +140,6 @@ const Header = React.memo(({ isDarkMode, setIsDarkMode }) => {
     </>
   );
 });
+Header.displayName = "Header";
 
 export default Header;

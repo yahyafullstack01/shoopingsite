@@ -26,8 +26,8 @@ export default function SpecialOffers() {
               Limited Time
             </p>
             <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl mb-6 sm:mb-7 md:mb-8 lg:mb-10 text-gray-600 dark:text-gray-400 leading-relaxed">
-              Don’t miss out on our exclusive deals. Grab them while they last
-              and enjoy discounts that won't be around forever!
+              Don&t miss out on our exclusive deals. Grab them while they last
+              and enjoy discounts that won&t be around forever!
             </p>
             <button className="bg-gray-900 dark:bg-[#f5e8d6] text-white dark:text-[#2e1f14] py-1 px-3 sm:py-2 sm:px-4 md:py-3 md:px-6 lg:py-4 lg:px-8 xl:py-5 xl:px-10 2xl:py-6 2xl:px-12 text-xs sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl rounded-full hover:bg-gray-700 dark:hover:bg-[#d1b79e] transition-all duration-300">
               Shop Now
