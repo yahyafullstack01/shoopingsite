@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { FaMoon, FaSun, FaBars, FaTimes } from "react-icons/fa";
-import { useHeaderState } from "../../hooks/useHeader"; // Імпортуємо хук
+import { useHeaderState } from "../../hooks/useHeader"; 
 
 const Header = React.memo(({ isDarkMode, setIsDarkMode }) => {
   const {
@@ -17,20 +17,20 @@ const Header = React.memo(({ isDarkMode, setIsDarkMode }) => {
   return (
     <>
       <header
-        className={`flex items-center justify-between px-4 py-3 shadow-md ${
+        className={`flex items-center justify-between px-4 py-1 shadow-md ${
           isDarkMode ? "bg-black text-white" : "bg-white text-black"
         }`}
       >
-        <div className="flex-shrink-0">
+        <div className="flex-shrink-0 ml-0 sm:ml-8">
           <Image
             src="/light-logo.avif"
             alt="Latore Atelier Logo"
-            width={100}
-            height={80}
+            width={220}
+            height={200}
             quality={100}
             className={`${
               isDarkMode ? "filter invert" : ""
-            } sm:w-[120px] sm:h-[90px] md:w-[140px] md:h-[100px] lg:w-[160px] lg:h-[120px]`}
+            } w-[80px] h-[60px] sm:w-[80px] sm:h-[60px] md:w-[80px] md:h-[60px] lg:w-[120px] lg:h-[100px]`}
           />
         </div>
         <nav className="flex items-center space-x-4 lg:space-x-6">
@@ -56,21 +56,13 @@ const Header = React.memo(({ isDarkMode, setIsDarkMode }) => {
         <div className="hidden lg:flex items-center space-x-2">
           <button
             onClick={toggleLanguage}
-            className="p-1 sm:p-2 md:p-3 lg:p-4 rounded-full border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-600 transition duration-300 text-xs sm:text-sm md:text-base lg:text-lg flex items-center justify-center"
+            className="p-1 sm:p-2  rounded-full border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-600 transition duration-300 text-xs sm:text-sm md:text-base lg:text-lg flex items-center justify-center"
           >
-            {language === "EN" ? (
-              <span>
-                <strong>EN</strong> | FR
-              </span>
-            ) : (
-              <span>
-                EN | <strong>FR</strong>
-              </span>
-            )}
-          </button>
+            {language === "EN" ? "🇬🇧 EN" : "🇫🇷 FR"}
+            </button>
           <button
             onClick={() => setIsDarkMode(!isDarkMode)}
-            className="p-1 sm:p-2 md:p-3 lg:p-4 rounded-full border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-600 transition duration-300 text-xs sm:text-sm md:text-base lg:text-lg"
+            className="p-1 sm:p-2  rounded-full border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-600 transition duration-300 text-xs sm:text-sm md:text-base lg:text-lg"
           >
             {isDarkMode ? (
               <FaSun className="text-xs sm:text-sm md:text-base lg:text-lg" />
@@ -102,16 +94,8 @@ const Header = React.memo(({ isDarkMode, setIsDarkMode }) => {
             onClick={toggleLanguage}
             className="p-1 sm:p-2 rounded-full border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-600 transition duration-300 text-xs sm:text-sm md:text-base lg:text-lg flex items-center justify-center"
           >
-            {language === "EN" ? (
-              <span>
-                <strong>EN</strong> | FR
-              </span>
-            ) : (
-              <span>
-                EN | <strong>FR</strong>
-              </span>
-            )}
-          </button>
+            {language === "EN" ? "🇬🇧 EN" : "🇫🇷 FR"}
+           </button>
           <button
             onClick={() => setIsDarkMode(!isDarkMode)}
             className="p-1 sm:p-2 rounded-full border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-600 transition duration-300 text-xs sm:text-sm md:text-base lg:text-lg"

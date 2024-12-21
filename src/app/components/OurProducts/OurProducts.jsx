@@ -34,7 +34,7 @@ export default function OurProducts() {
         </h2>
         <div className="border-t border-gray-300 dark:border-gray-700"></div>
       </div>
-      <div className="flex items-center justify-center space-x-4 mt-8">
+      <div className="flex items-center justify-center space-x-4  ml-4 mt-8">
         <div
           onClick={handlePrev}
           className="text-black dark:text-gray-300 text-2xl sm:text-3xl cursor-pointer mx-2 sm:mx-4 hover:text-gray-500 dark:hover:text-gray-400 transition-all duration-300"
@@ -42,7 +42,7 @@ export default function OurProducts() {
           <FaChevronLeft />
         </div>
         {/* Images */}
-        <div className="flex overflow-hidden gap-4 sm:gap-6 md:gap-8">
+        <div className="flex overflow-x-auto gap-4 sm:gap-6 md:gap-8">
   {displayedImages.map((imageIndex) => (
     <Link
       key={imageIndex}
@@ -58,7 +58,8 @@ export default function OurProducts() {
         height={150}
         quality={100} 
         className="rounded-lg object-cover shadow-lg transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:opacity-90
-          sm:w-[150px] sm:h-[150px]
+          w-[calc(39vw-16px)]
+        sm:w-[150px] sm:h-[150px]
           md:w-[200px] md:h-[300px]
           lg:w-[250px] lg:h-[350px]
           xl:w-[300px] xl:h-[350px]"

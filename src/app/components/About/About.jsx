@@ -3,12 +3,12 @@ import Image from "next/image";
 export default function About() {
   return (
     <section className="bg-[#e6d1c1] dark:bg-[#2e1f14] section-container py-8 sm:py-12 relative">
-      <h2 className="p-8 text-2xl sm:text-3xl md:text-4xl text-[#4A3222] dark:text-[#f5e8d6] font-bold mb-6 sm:mb-10 text-left">
+      <h2 className="pl-8 text-2xl sm:text-4xl text-[#4A3222] dark:text-[#f5e8d6] font-bold mb-6 sm:mb-10 text-left">
         About
       </h2>
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 items-center relative">
         <div className="space-y-4">
-          <div className="relative mb-6 sm:mb-8 group px-4 lg:px-8">
+          <div className="relative mb-6 sm:mb-8 group px-8 lg:px-8  ml-4 mt-4">
             <Image
               src="/2.jpg"
               alt="Main Image"
@@ -22,9 +22,9 @@ export default function About() {
             <Image
               src="/3.jpg"
               alt="Secondary Image"
-              width={120}
-              height={160}
-              className="rounded-lg object-cover shadow-2xl shadow-gray-800 dark:shadow-gray-400 transition-transform duration-300 ease-in-out group-hover:scale-105 w-full max-w-[100px] sm:max-w-[120px] md:max-w-[150px] lg:max-w-[180px]"
+              width={150}
+              height={200}
+              className="rounded-lg object-cover shadow-2xl shadow-gray-800 dark:shadow-gray-400 transition-transform duration-300 ease-in-out group-hover:scale-105 w-full max-w-[100px] sm:max-w-[180px] md:max-w-[200px]"
             />
           </div>
         </div>

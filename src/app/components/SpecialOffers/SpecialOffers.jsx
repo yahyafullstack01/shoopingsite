@@ -5,8 +5,8 @@ export default function SpecialOffers() {
   return (
     <section className="bg-[#f5e7da] dark:bg-[#2e1f14] section-container">
       <div className="space-y-4">
-        <div className="relative ml-auto max-w-4xl pr-0 md:pr-6 lg:pr-8 flex justify-center md:justify-end">
-          <div className="max-w-[800px] w-[80%] h-[300px] sm:h-[500px] md:h-[550px] lg:h-[600px] xl:h-[800px] relative rounded-lg shadow-xl shadow-gray-800 dark:shadow-gray-600">
+        <div className="relative  ml-auto max-w-4xl pr-0 md:pr-[12px] flex justify-center md:justify-end">
+          <div className="max-w-[800px] w-[80%] h-[300px] sm:h-[500px] md:h-[550px] lg:h-[900px] relative rounded-lg shadow-xl shadow-gray-800 dark:shadow-gray-600">
             <Image
               src="/8.jpg"
               alt="Special Offers Image"
