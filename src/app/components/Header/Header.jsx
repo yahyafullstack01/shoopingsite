@@ -3,11 +3,15 @@ import React from "react";
 import Image from "next/image";
 import { FaMoon, FaSun, FaBars, FaTimes } from "react-icons/fa";
 import { useHeaderState } from "../../hooks/useHeader"; 
+import { useLanguage } from "../../Functions/useLanguage"; 
+
 
 const Header = React.memo(({ isDarkMode, setIsDarkMode }) => {
+  const {  translateList } = useLanguage(); 
+  const menuItems = translateList("home", "header");
+
   const {
     language,
-    menuItems,
     isMenuOpen,
     toggleLanguage,
     toggleMenu,
@@ -41,16 +45,38 @@ const Header = React.memo(({ isDarkMode, setIsDarkMode }) => {
             <FaBars className="text-sm sm:text-base md:text-2xl lg:text-3xl" />
           </button>
           <ul className="hidden lg:flex space-x-4 text-xs sm:text-sm md:text-base lg:text-lg">
-            {menuItems.map((item, index) => (
-              <li key={index} className="min-w-[80px] text-center">
-                <a
-                  href={item.path || `#${item.id}`}
-                  className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap"
-                >
-                  {item.label || item}
-                </a>
-              </li>
-            ))}
+          <li className="min-w-[80px] text-center">
+      <a
+        href="/"
+        className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap"
+      >
+        {menuItems[0]}
+      </a>
+    </li>
+    <li className="min-w-[80px] text-center">
+      <a
+        href="/about"
+        className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap"
+      >
+        {menuItems[1]}
+      </a>
+    </li>
+    <li className="min-w-[80px] text-center">
+      <a
+        href="/services"
+        className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap"
+      >
+       {menuItems[2]}
+      </a>
+    </li>
+    <li className="min-w-[80px] text-center">
+      <a
+        href="/contact"
+        className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap"
+      >
+        {menuItems[3]}
+      </a>
+    </li>
           </ul>
         </nav>
         <div className="hidden lg:flex items-center space-x-2">
@@ -108,17 +134,38 @@ const Header = React.memo(({ isDarkMode, setIsDarkMode }) => {
           </button>
         </div>
         <ul className="flex flex-col items-start space-y-3 p-6 text-xs sm:text-sm md:text-base lg:text-lg">
-          {menuItems.map((item, index) => (
-            <li key={index} className="py-2">
-              <a
-                href={item.path || `#${item.id}`}
-                className="block text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300"
-                onClick={closeMenu}
-              >
-                {item.label || item}
-              </a>
-            </li>
-          ))}
+        <li className="min-w-[80px] text-center">
+      <a
+        href="/"
+        className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap"
+      >
+        {menuItems[0]}
+      </a>
+    </li>
+    <li className="min-w-[80px] text-center">
+      <a
+        href="/about"
+        className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap"
+      >
+        {menuItems[1]}
+      </a>
+    </li>
+    <li className="min-w-[80px] text-center">
+      <a
+        href="/services"
+        className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap"
+      >
+       {menuItems[2]}
+      </a>
+    </li>
+    <li className="min-w-[80px] text-center">
+      <a
+        href="/contact"
+        className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap"
+      >
+        {menuItems[3]}
+      </a>
+    </li>
         </ul>
       </nav>
     </>
