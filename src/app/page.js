@@ -5,7 +5,8 @@ import { LanguageProvider } from "./Functions/useLanguage"; // Import LanguagePr
 import Header from "./components/Header/Header"; // Import the Header component
 import Home from "./home"; // Import the Home component
 import Footer from "./components/Footer/Footer";
-
+import TopProducts from "./components/TopProducts/TopProducts";
+import Contact from "@/app/contact";
 export default function Page() {
   const [isDarkMode, setIsDarkMode] = useDarkMode(); // Use the dark mode state
 
@@ -20,7 +21,7 @@ export default function Page() {
 
         <main>
           {/* Your page content */}
-          <Home />
+          <Contact/>
           {/* Other page content */}
         </main>
         <Footer />
