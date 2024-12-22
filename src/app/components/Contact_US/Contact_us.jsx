@@ -1,86 +1,151 @@
 import React from 'react';
-
+import Image from 'next/image';
 const ContactUs = () => {
   return (
     <div className="font-sans">
       {/* Contact Section */}
-      <section className="bg-black text-white text-center py-16 px-4">
-        <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
-        <p className="text-lg max-w-2xl mx-auto mb-8">
+      <section className="bg-black text-white text-center py-16">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-8">Contact Us</h1>
+        <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl  max-w-2xl mx-auto mb-16">
           This is your Contact section paragraph. Encourage your reader to reach out with any questions, comments, or to take a different action specific to your site.
         </p>
-        <div className="flex flex-wrap justify-center items-start gap-8">
+        <div className="flex flex-wrap items-start gap-28 bg-gray-800">
           {/* Contact Image */}
-          <div className="w-full md:w-1/2 lg:w-1/3">
-            <img
-              src="/sand-pattern.jpg"
-              alt="Sand pattern"
-              className="w-full rounded-lg shadow-md"
+          <div className="pr-8 w-[56%] h-[300px] sm:h-[500px] md:h-[700px] ">
+
+            <Image
+              src="/4.jpg"
+              alt="Description"
+              width={400} 
+              height={600}
+              className="w-full h-auto aspect-square object-cover relative rounded-lg shadow-gray-800 dark:shadow-gray-600 shadow-xl"
             />
           </div>
           {/* Contact Details */}
-          <div className="w-full md:w-1/2 lg:w-1/3 space-y-4">
-            <address className="not-italic text-lg">
+          <div className="w-full md:w-1/2 lg:w-1/3 space-y-6 mt-16">
+            <address className="not-italic text-lg sm:text-sm md:text-base lg:text-lg ">
               500 Terry Francine Street, San Francisco, CA 94158
             </address>
+            <div className="flex items-center justify-center gap-4">
             <a
               href="mailto:info@mysite.com"
               className="block text-blue-400 hover:underline"
             >
               info@mysite.com
             </a>
+            <span className="text-white">|</span>
             <p className="text-lg">123-456-7890</p>
+            </div>
             {/* Contact Form */}
             <form className="space-y-4">
-              <div className="flex gap-4">
-                <input
-                  type="text"
-                  name="firstName"
-                  placeholder="First Name"
-                  className="w-1/2 p-2 border border-gray-300 rounded-lg"
-                  required
-                />
-                <input
-                  type="text"
-                  name="lastName"
-                  placeholder="Last Name"
-                  className="w-1/2 p-2 border border-gray-300 rounded-lg"
-                  required
-                />
-              </div>
-              <input
-                type="email"
-                name="email"
-                placeholder="Email *"
-                className="w-full p-2 border border-gray-300 rounded-lg"
-                required
-              />
-              <textarea
-                name="message"
-                placeholder="Message"
-                rows="4"
-                className="w-full p-2 border border-gray-300 rounded-lg"
-              ></textarea>
-              <button
-                type="submit"
-                className="bg-lime-500 text-black font-semibold py-2 px-4 rounded-lg hover:bg-lime-600"
-              >
-                Send
-              </button>
-            </form>
+  <div className="flex gap-4">
+    <input
+      type="text"
+      name="firstName"
+      placeholder="First Name"
+      className="w-1/2 p-4 pl-0 bg-transparent border-b border-white text-white placeholder-gray-400 focus:outline-none focus:border-lime-500"
+      required
+    />
+    <input
+      type="text"
+      name="lastName"
+      placeholder="Last Name"
+      className="w-1/2 p-4 pl-0 bg-transparent border-b border-white text-white placeholder-gray-400 focus:outline-none focus:border-lime-500"
+      required
+    />
+  </div>
+  <input
+    type="email"
+    name="email"
+    placeholder="Email *"
+    className="w-full p-6 pl-0 bg-transparent border-b border-white text-white placeholder-gray-400 focus:outline-none focus:border-lime-500"
+    required
+  />
+  <textarea
+    name="message"
+    placeholder="Message"
+    rows="4"
+    className="w-full p-6 pl-0 bg-transparent border-b border-white text-white placeholder-gray-400 focus:outline-none focus:border-lime-500 resize-none"
+  ></textarea>
+  
+  
+    {/* Кнопка */}
+    <div className="flex items-center gap-4">
+  {/* Ліва частина: кнопка */}
+  <button
+    type="submit"
+    className="bg-lime-500 text-black font-semibold py-2 px-8 rounded-lg hover:bg-lime-600"
+  >
+    Send
+  </button>
+
+  {/* Права частина: текст */}
+  <p className="text-gray-400 text-sm sm:text-base ml-36">Thanks for submitting!</p>
+</div>
+
+{/* Соцмережі під кнопкою */}
+<div className="flex gap-12 pt-8">
+  <a
+    href="https://www.facebook.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-400 hover:text-blue-600 focus:text-blue-600 underline"
+  >
+    Facebook
+  </a>
+  <a
+    href="https://www.twitter.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-400 hover:text-blue-600 focus:text-blue-600 underline"
+  >
+    Twitter
+  </a>
+  <a
+    href="https://www.instagram.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-400 hover:text-blue-600 focus:text-blue-600 underline"
+  >
+    Instagram
+  </a>
+  <a
+    href="https://www.linkedin.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-400 hover:text-blue-600 focus:text-blue-600 underline"
+  >
+    LinkedIn
+  </a>
+</div>
+
+</form>
+
+<div className="flex items-center justify-between"></div>
           </div>
         </div>
       </section>
 
       {/* Opening Hours Section */}
-      <section className="bg-gray-800 text-white text-center py-8">
-        <h2 className="text-2xl font-bold mb-4">Opening Hours</h2>
-        <ul className="space-y-2 text-lg">
-          <li>Mon - Fri: 8:00 am – 8:00 pm</li>
-          <li>Saturday: 9:00 am – 7:00 pm</li>
-          <li>Sunday: 9:00 am – 9:00 pm</li>
-        </ul>
-      </section>
+      <section className="bg-gray-900 text-white py-12 px-6">
+  <div className="max-w-6xl mx-auto">
+    <h2 className="text-4xl font-bold mb-8 text-left">Opening Hours</h2>
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-8 text-lg">
+      <div>
+        <p className="font-semibold">Mon - Fri</p>
+        <p className="text-gray-400">8:00 am – 8:00 pm</p>
+      </div>
+      <div>
+        <p className="font-semibold">Saturday</p>
+        <p className="text-gray-400">9:00 am – 7:00 pm</p>
+      </div>
+      <div>
+        <p className="font-semibold">Sunday</p>
+        <p className="text-gray-400">9:00 am – 9:00 pm</p>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Map Section */}
       <section className="bg-black text-white py-8 px-4">
@@ -90,19 +155,6 @@ const ContactUs = () => {
           allowFullScreen=""
           loading="lazy"
         ></iframe>
-        <footer className="text-center mt-8 space-y-2">
-          <h3 className="text-2xl font-bold">Latore Atelier</h3>
-          <p>123-456-7890</p>
-          <a
-            href="mailto:info@mysite.com"
-            className="text-blue-400 hover:underline"
-          >
-            info@mysite.com
-          </a>
-          <address className="not-italic">
-            500 Terry Francine Street, 6th Floor, San Francisco, CA 94158
-          </address>
-        </footer>
       </section>
     </div>
   );

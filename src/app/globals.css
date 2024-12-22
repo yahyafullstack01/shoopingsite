@@ -19,6 +19,13 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+input, textarea {
+  background: transparent;
+  border: none; 
+  border-bottom: 1px solid var(--foreground);
+  color: var(--foreground); 
+  outline: none; 
+}
 @layer base {
   @layer base {
     .section-container {

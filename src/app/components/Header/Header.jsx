@@ -1,6 +1,7 @@
 "use client"; 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { FaMoon, FaSun, FaBars, FaTimes } from "react-icons/fa";
 import { useHeaderState } from "../../hooks/useHeader"; 
 import { useLanguage } from "../../Functions/useLanguage"; 
@@ -23,35 +24,35 @@ const Header = React.memo(({ isDarkMode, setIsDarkMode }) => {
       <header
         className={`flex items-center justify-between px-4 py-1 shadow-md ${
           isDarkMode ? "bg-black text-white" : "bg-white text-black"
-        }`}
+        } `}
       >
         <div className="flex-shrink-0 ml-0 sm:ml-8">
           <Image
             src="/light-logo.avif"
             alt="Latore Atelier Logo"
-            width={220}
-            height={200}
+            width={180}
+            height={160}
             quality={100}
             className={`${
               isDarkMode ? "filter invert" : ""
-            } w-[80px] h-[60px] sm:w-[80px] sm:h-[60px] md:w-[80px] md:h-[60px] lg:w-[120px] lg:h-[100px]`}
+            } w-[80px] h-[60px] sm:w-[80px] sm:h-[60px] md:w-[80px] md:h-[60px] lg:w-[120px] lg:h-[80px]`}
           />
         </div>
         <nav className="flex items-center space-x-4 lg:space-x-6">
           <button
             onClick={toggleMenu}
-            className="lg:hidden p-1 sm:p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700"
+            className="lg:hidden p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700"
           >
-            <FaBars className="text-sm sm:text-base md:text-2xl lg:text-3xl" />
+            <FaBars className="sm:xl md:text-2xl lg:text-3xl" />
           </button>
           <ul className="hidden lg:flex space-x-4 text-xs sm:text-sm md:text-base lg:text-lg">
           <li className="min-w-[80px] text-center">
-      <a
+      <Link
         href="/"
         className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap"
       >
         {menuItems[0]}
-      </a>
+      </Link>
     </li>
     <li className="min-w-[80px] text-center">
       <a
@@ -135,12 +136,12 @@ const Header = React.memo(({ isDarkMode, setIsDarkMode }) => {
         </div>
         <ul className="flex flex-col items-start space-y-3 p-6 text-xs sm:text-sm md:text-base lg:text-lg">
         <li className="min-w-[80px] text-center">
-      <a
+      <Link
         href="/"
         className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap"
       >
         {menuItems[0]}
-      </a>
+      </Link>
     </li>
     <li className="min-w-[80px] text-center">
       <a
