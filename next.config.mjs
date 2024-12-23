@@ -1,4 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    reactStrictMode: true, // Enforces React best practices
+    swcMinify: true,       // Enables faster builds
+    experimental: {
+        appDir: true,        // Ensures the app directory routing is enabled
+    },
+};
 
 export default nextConfig;
