@@ -8,7 +8,7 @@ export default function Page() {
       {/* Your page-specific content */}
       <Home />
     </Layout>
-      
-    
+
+
   );
 }
