@@ -71,12 +71,12 @@ const Header = React.memo(({ isDarkMode, setIsDarkMode }) => {
       </a>
     </li>
     <li className="min-w-[80px] text-center">
-      <a
+      <Link
         href="/contact"
         className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap"
       >
         {menuItems[3]}
-      </a>
+      </Link>
     </li>
           </ul>
         </nav>
@@ -160,12 +160,28 @@ const Header = React.memo(({ isDarkMode, setIsDarkMode }) => {
       </a>
     </li>
     <li className="min-w-[80px] text-center">
-      <a
+      <Link
         href="/contact"
         className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap"
       >
         {menuItems[3]}
-      </a>
+      </Link>
+    </li>
+    <li className="min-w-[80px] text-center">
+      <Link
+        href="/products_all"
+        className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap"
+      >
+       {menuItems[2]}
+      </Link>
+    </li>
+    <li className="min-w-[80px] text-center">
+      <Link
+        href="/top-products-info"
+        className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap"
+      >
+       {menuItems[2]}
+      </Link>
     </li>
         </ul>
       </nav>

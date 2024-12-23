@@ -1,10 +1,10 @@
 
-"use client"; // Ensure this is a client-side component
+"use client"; 
 
 import { useDarkMode } from "./Functions/useDarkMode"; // Import the custom hook
 import "./globals.css";
 export default function RootLayout({ children }) {
-  const [isDarkMode] = useDarkMode(); // Use the dark mode state
+  const [isDarkMode] = useDarkMode(); 
 
   return (
     <html lang="en">

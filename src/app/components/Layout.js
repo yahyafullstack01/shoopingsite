@@ -1,10 +1,10 @@
-import { useDarkMode } from "../Functions/useDarkMode"; // Import the custom hook
-import { LanguageProvider } from "../Functions/useLanguage"; // Import LanguageProvider
-import Header from "./Header/Header"; // Import the Header component
-import Footer from "./Footer/Footer"; // Import the Footer component
+import { useDarkMode } from "../Functions/useDarkMode"; 
+import { LanguageProvider } from "../Functions/useLanguage"; 
+import Header from "./Header/Header"; 
+import Footer from "./Footer/Footer"; 
 
 const Layout = ({ children }) => {
-  const [isDarkMode, setIsDarkMode] = useDarkMode(); // Use the dark mode state
+  const [isDarkMode, setIsDarkMode] = useDarkMode(); 
 
   return (
     <LanguageProvider>
