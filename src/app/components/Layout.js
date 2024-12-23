@@ -1,10 +1,12 @@
-import { useDarkMode } from "../Functions/useDarkMode"; 
-import { LanguageProvider } from "../Functions/useLanguage"; 
-import Header from "./Header/Header"; 
-import Footer from "./Footer/Footer"; 
+"use client";
 
-const Layout = ({ children }) => {
-  const [isDarkMode, setIsDarkMode] = useDarkMode(); 
+import { useDarkMode } from "../Functions/useDarkMode";
+import { LanguageProvider } from "../Functions/useLanguage";
+import Header from "./Header/Header";
+import Footer from "./Footer/Footer";
+
+export default function Layout({ children }) {
+  const [isDarkMode, setIsDarkMode] = useDarkMode();
 
   return (
     <LanguageProvider>
@@ -18,7 +20,6 @@ const Layout = ({ children }) => {
         <Footer />
       </div>
     </LanguageProvider>
+   
   );
-};
-
-export default Layout;
+}

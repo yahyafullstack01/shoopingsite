@@ -17,15 +17,16 @@ export default function SpecialOffers() {
           </div>
           <div className="absolute bottom-[5%] sm:bottom-[10%] md:bottom-[15%] lg:bottom-[10%] xl:bottom-[15%] 
             left-[40%] lg:left-[20%] xl-left-1/2 transform -translate-x-1/2 
-            bg-white dark:bg-[#3a2a20] p-4 sm:p-6 md:p-10 lg:p-16 xl:p-20 rounded-lg shadow-lg 
+            bg-white/45 dark:bg-[#3a2a20] p-4 sm:p-6 md:p-10 lg:p-16 xl:p-20 rounded-lg shadow-lg 
             w-[80%] sm:w-[75%] md:w-[75%] lg:w-[75%] xl:w-[90%] max-w-4xl text-center md:text-left">
-            <h2 className="text-base sm:text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold mb-4 text-gray-900 dark:text-[#f5e8d6]">
+            <h2 className="text-base sm:text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold mb-4 text-black dark:text-[#f5e8d6]">
               Special Offers
             </h2>
-            <p className="text-xs sm:text-base md:text-lg lg:text-xl 2xl:text-2xl font-medium mb-4 text-gray-700 dark:text-gray-300">
+            <p className="text-xs sm:text-base md:text-lg lg:text-xl 2xl:text-2xl font-medium mb-4 text-black dark:text-gray-300">
+
               Limited Time
             </p>
-            <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl mb-6 sm:mb-7 md:mb-8 lg:mb-10 text-gray-600 dark:text-gray-400 leading-relaxed">
+            <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl mb-6 sm:mb-7 md:mb-8 lg:mb-10  text-black dark:text-gray-400 leading-relaxed">
               Don&t miss out on our exclusive deals. Grab them while they last
               and enjoy discounts that won&t be around forever!
             </p>

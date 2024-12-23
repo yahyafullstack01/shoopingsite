@@ -8,7 +8,7 @@ export default function Hero() {
 
   return (
     <section className="section-container relative ">
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 relative">
+      <div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-4 relative">
         <div className="w-48 sm:w-[200px] md:w-[300px] lg:w-[400px] relative flex flex-row items-center  mt-2 ml-8 sm:mt-8 sm:ml-24  mobile-320">
           <Image
             src="/1.jpg"
@@ -39,8 +39,7 @@ export default function Hero() {
           </h1>
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-4 mt-4 mobile-320">
-
+      <div className="grid grid-cols-2 gap-4 -mt-4 sm:mt-4 mobile-320">
         <div className="relative flex justify-center items-center">
   <Image
     src="/5.jpg"

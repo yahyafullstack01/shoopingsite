@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import Image from 'next/image';
 import FilterSidebar from '../FilterSidebar';
@@ -10,6 +11,7 @@ export default function AllProducts() {
   const [selectedColor, setSelectedColor] = useState('');
   const [sortOrder, setSortOrder] = useState('recommended');
   const [isSortMenuOpen, setIsSortMenuOpen] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState(null); // Стан для вибраного продукту
 
   const products = [
     { id: 1, name: 'Product 1', price: 85, color: 'red', size: 'M', image: '/2.jpg' },
@@ -24,6 +26,7 @@ export default function AllProducts() {
     { id: 10, name: 'Product 5', price: 50, color: 'blue', size: 'XL', image: '/3.jpg' },
     { id: 11, name: 'Product 4', price: 25, color: 'red', size: 'M', image: '/8.jpg' },
     { id: 12, name: 'Product 5', price: 50, color: 'blue', size: 'XL', image: '/9.jpg' },
+ 
   ];
 
   const filteredProducts = filterProducts(products, {
@@ -35,6 +38,10 @@ export default function AllProducts() {
     if (sortOrder === 'priceDesc') return b.price - a.price;
     return 0;
   });
+
+  const handleProductClick = (product) => {
+    setSelectedProduct(product); // Зберігаємо вибраний продукт у стані
+  };
 
   return (
     <div className="bg-gray-900 text-white min-h-screen">
@@ -51,16 +58,25 @@ export default function AllProducts() {
           />
 
           <div className="w-full md:w-3/4 flex flex-col">
-          <div className="relative w-full h-96 bg-black overflow-hidden rounded-lg mb-8">
-  <Image
-    src="/4.jpg"
-    alt="Category Banner"
-    layout="fill"
-    objectFit="cover"
-    className="object-cover shadow-[0_0_30px_10px_rgba(255,255,255,0.5)] dark:shadow-[0_0_30px_10px_rgba(255,255,255,0.8)] transition-transform duration-300 ease-in-out hover:scale-110"
-  />
-</div>
-
+            {/* Банер */}
+            <div className="relative w-full h-96 bg-black overflow-hidden rounded-lg mb-8">
+              <Image
+                src={selectedProduct?.image || '/4.jpg'} // Відображення зображення вибраного продукту або стандартного банера
+                alt={selectedProduct ? selectedProduct.name : 'Category Banner'}
+                layout="fill"
+                objectFit="cover"
+                className="object-cover shadow-[0_0_30px_10px_rgba(255,255,255,0.5)] dark:shadow-[0_0_30px_10px_rgba(255,255,255,0.8)] transition-transform duration-300 ease-in-out"
+              />
+              {/* Опис вибраного продукту */}
+              {selectedProduct && (
+                <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white p-4">
+                  <h2 className="text-2xl font-bold">{selectedProduct.name}</h2>
+                  <p className="text-lg">Price: {selectedProduct.price}₴</p>
+                  <p className="text-sm">Color: {selectedProduct.color}</p>
+                  <p className="text-sm">Size: {selectedProduct.size}</p>
+                </div>
+              )}
+            </div>
 
             <h1 className="text-4xl font-bold mb-8">All Products</h1>
             <p className="text-gray-400 mb-4">
@@ -81,7 +97,11 @@ export default function AllProducts() {
             <main className="w-full">
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
                 {filteredProducts.map((product) => (
-                  <div key={product.id} className="bg-gray-800 p-4 rounded group">
+                  <div
+                    key={product.id}
+                    className="bg-gray-800 p-4 rounded group cursor-pointer"
+                    onClick={() => handleProductClick(product)} // Обробка кліку на продукт
+                  >
                     <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded relative">
                       <img
                         src={product.image || `https://via.placeholder.com/150?text=${product.name}`}
@@ -92,8 +112,7 @@ export default function AllProducts() {
                     </div>
                     <div className="mt-4">
                       <h3 className="text-lg font-medium">{product.name}</h3>
-                      <p className="text-sm text-gray-400">{product.price}₴</p>
-                      {/*<p className="text-sm text-gray-400">Color: {product.color}</p>*/}
+                      <p className="text-sm text-gray-400">Price: {product.price}₴</p>
                       <p className="text-sm text-gray-400">Size: {product.size}</p>
                     </div>
                   </div>

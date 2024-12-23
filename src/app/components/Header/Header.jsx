@@ -108,7 +108,7 @@ const Header = React.memo(({ isDarkMode, setIsDarkMode }) => {
       <nav
         className={`${
           isMenuOpen ? "translate-x-0" : "-translate-x-full"
-        } fixed top-0 left-0 h-full w-3/4 bg-white dark:bg-black shadow-lg z-50 transition-transform duration-300 ease-in-out lg:hidden`}
+        } fixed top-0 left-0 h-full w-1/2 sm:w-1/3 bg-white dark:bg-black shadow-lg z-50 transition-transform duration-300 ease-in-out lg:hidden justify-start space-y-4`}
       >
         <button
           onClick={closeMenu}
@@ -134,53 +134,53 @@ const Header = React.memo(({ isDarkMode, setIsDarkMode }) => {
             )}
           </button>
         </div>
-        <ul className="flex flex-col items-start space-y-3 p-6 text-xs sm:text-sm md:text-base lg:text-lg">
-        <li className="min-w-[80px] text-center">
+        <ul className="flex flex-col items-start space-y-4 p-6 text-xs sm:text-sm md:text-base lg:text-lg">
+        <li className=" text-center">
       <Link
         href="/"
-        className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap"
+        className="font-bold text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap"
       >
         {menuItems[0]}
       </Link>
     </li>
-    <li className="min-w-[80px] text-center">
+    <li className=" text-center">
       <a
         href="/about"
-        className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap"
+        className="font-bold text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap"
       >
         {menuItems[1]}
       </a>
     </li>
-    <li className="min-w-[80px] text-center">
+    <li className="text-center">
       <a
         href="/services"
-        className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap"
+        className="font-bold text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap"
       >
        {menuItems[2]}
       </a>
     </li>
-    <li className="min-w-[80px] text-center">
+    <li className="text-center">
       <Link
         href="/contact"
-        className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap"
+        className=" font-bold text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap"
       >
         {menuItems[3]}
       </Link>
     </li>
-    <li className="min-w-[80px] text-center">
+    <li className="text-center">
       <Link
         href="/products_all"
-        className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap"
+        className="font-bold text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap"
       >
-       {menuItems[2]}
+       {menuItems[4]}
       </Link>
     </li>
-    <li className="min-w-[80px] text-center">
+    <li className="text-center">
       <Link
         href="/top-products-info"
-        className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap"
+        className="font-bold text-base sm:text-lg md:text-xl lg:text-lg text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap"
       >
-       {menuItems[2]}
+       {menuItems[5]}
       </Link>
     </li>
         </ul>

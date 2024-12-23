@@ -1,5 +1,4 @@
-
-"use client"; 
+"use client";  
 
 import { useDarkMode } from "./Functions/useDarkMode"; // Import the custom hook
 import "./globals.css";
@@ -16,5 +15,6 @@ export default function RootLayout({ children }) {
         {children}
       </body>
     </html>
+   
   );
 }
