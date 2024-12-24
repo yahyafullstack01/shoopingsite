@@ -6,16 +6,16 @@ import Link from "next/link";
 
 export default function OurProducts() {
   const images = [
-    { src: "/1.jpg", link: "/product_all" },
-    { src: "/2.jpg", link: "/product_all" },
-    { src: "/3.jpg", link: "/product_all" },
-    { src: "/4.jpg", link: "/product_all" },
-    { src: "/5.jpg", link: "/product_all" },
-    { src: "/6.jpg", link: "/product_all" },
-    { src: "/7.jpg", link: "/product_all" },
-    { src: "/8.jpg", link: "/product_all" },
-    { src: "/9.jpg", link: "/product_all" },
-    { src: "/10.jpg", link: "/product_all" },
+    { src: "/1.jpg", link: "/All_products" },
+    { src: "/2.jpg", link: "/All_products" },
+    { src: "/3.jpg", link: "/All_products" },
+    { src: "/4.jpg", link: "/All_products" },
+    { src: "/5.jpg", link: "/All_products" },
+    { src: "/6.jpg", link: "/All_products" },
+    { src: "/7.jpg", link: "/All_products" },
+    { src: "/8.jpg", link: "/All_products" },
+    { src: "/9.jpg", link: "/All_products" },
+    { src: "/10.jpg", link: "/All_products" },
   ];
 
   const { displayedImages, handleNext, handlePrev } = useImageFollow(
