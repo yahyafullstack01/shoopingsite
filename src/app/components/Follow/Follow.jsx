@@ -1,11 +1,15 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-
+import { useLanguage } from "../../Functions/useLanguage";
 import useImageFollow from "../../hooks/useImageFollow";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 export default function FollowUs() {
+  const {  translateList } = useLanguage(); 
+  
+  const menuItems = translateList("home", "follow_us");
+
   const images = [
     { src: "/1.jpg", link: "https://instagram.com/yourprofile1" },
     { src: "/2.jpg", link: "https://instagram.com/yourprofile2" },
@@ -28,7 +32,7 @@ export default function FollowUs() {
     <section id="follow-us" className="bg-black text-white section-container py-12">
       <div className="space-y-4">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-center">
-          Follow Us
+          {menuItems[0]}
         </h2>
         <div className="border-t border-gray-700"></div>
       </div>

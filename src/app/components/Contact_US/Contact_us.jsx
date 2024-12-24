@@ -1,6 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
+import { useLanguage } from "../../Functions/useLanguage";
 const ContactUs = () => {
+  // const {  translateList } = useLanguage(); 
+  // const menuItems = translateList("home", "about");
   return (
     <div className="font-sans">
       {/* Contact Section */}

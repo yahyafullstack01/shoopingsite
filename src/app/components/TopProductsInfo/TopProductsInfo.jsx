@@ -1,8 +1,11 @@
 "use client";
 import products from '../../data/products'
 import { useState } from "react";
-
+import { useLanguage } from "../../Functions/useLanguage";
 export default function TopProductsInfo() {
+  const {  translateList } = useLanguage(); 
+  
+  const menuItems = translateList("home", "about");
   const [selectedProduct, setSelectedProduct] = useState(products[0]); 
 
   const handleProductClick = (product) => {

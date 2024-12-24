@@ -1,7 +1,11 @@
 
 import { FaFacebook, FaInstagram, FaTwitter, FaTelegramPlane } from "react-icons/fa";
+import { useLanguage } from "../../Functions/useLanguage"; 
 
 export default function Footer() {
+  const {  translateList } = useLanguage(); 
+  
+  const menuItems = translateList("home", "about");
   return (
     <footer className="bg-black text-white section-container">
       <div className="space-y-4">
