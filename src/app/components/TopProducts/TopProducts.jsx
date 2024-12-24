@@ -15,7 +15,7 @@ export default function TopProducts() {
     { src: "/5.jpg", link: "/top-products-info" },
     { src: "/6.jpg", link: "/top-products-info" },
     { src: "/7.jpg", link: "/top-products-info" },
-    { src: "/8.jpg", link: "/top-products-info" },
+    { src: "/8.jpg", link: "/Top-products" },
     { src: "/9.jpg", link: "/top-products-info" },
     { src: "/10.jpg", link: "/top-products-info" },
   ];

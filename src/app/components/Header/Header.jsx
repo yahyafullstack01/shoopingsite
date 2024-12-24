@@ -85,6 +85,7 @@ const Header = React.memo(({ isDarkMode, setIsDarkMode }) => {
             onClick={toggleLanguage}
             className="p-1 sm:p-2  rounded-full border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-600 transition duration-300 text-xs sm:text-sm md:text-base lg:text-lg flex items-center justify-center"
           >
+           
             {language === "EN" ? "🇬🇧 EN" : "🇫🇷 FR"}
             </button>
           <button
