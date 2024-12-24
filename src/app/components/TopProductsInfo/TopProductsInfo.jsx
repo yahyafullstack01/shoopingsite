@@ -1,11 +1,14 @@
 "use client";
-import products from "../../data/products";
+import products from '../../data/products'
 import { useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 import InfoForm from "./InfoForm";
-
+import { useLanguage } from "../../Functions/useLanguage";
 export default function TopProductsInfo() {
-  const [selectedProduct, setSelectedProduct] = useState(products[0]);
+  const {  translateList } = useLanguage(); 
+  
+  const menuItems = translateList("home", "about");
+  const [selectedProduct, setSelectedProduct] = useState(products[0]); 
   const router = useRouter();
   const descriptionRef = useRef(null);
 

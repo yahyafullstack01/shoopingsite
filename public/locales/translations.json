@@ -4,8 +4,25 @@
       "header": ["Home", "Catalogues", "About", "Contact", "Conditions"],
       "hero": ["Welcome to our site!", "Explore the latest trends in fashion.", "Discover your style with us.", "Shop now"],
       "about": ["About", "Latore Atelier is your go-to online destination for premium fashion. \nWe offer a curated selection of high-quality clothing and accessories, \ndesigned to elevate your wardrobe. Our mission is to provide customers \nwith sophisticated and stylish pieces that reflect their unique \npersonality and taste.", "Learn More", "Latore Atelier is your go-to online destination for premium fashion. We offer a curated selection of high-quality clothing and accessories, designed to elevate your wardrobe.", "Learn More" ],
-      "top_products": ["Top Products"]
+      "top_products": ["Top Products"],
+      "Our_Products": ["Our Products"],
+      "special_offers": ["Special Offers", "Limited Time", "Don't miss out on our exclusive deals. Grab them while they last \nand enjoy discounts that won&t be around forever!", "Shop Now"],
+      "follow_us": ["Follow Us"]
+    },
+    "products": {
+      "header": ["Catalogues", "About", "Contact", "Conditions"]
+
+    },
+    "contact": {
+      "header": ["Contact", "Catalogues", "About", "Conditions"]
+    },
+    "toppro": {
+
+    },
+    "condition": {
+      
     }
+
   },
   "FR": {
     "home": {
@@ -18,7 +35,16 @@
         "Latore Atelier est votre destination en ligne incontournable pour la mode haut de gamme. Nous proposons une sélection soignée de vêtements et d'accessoires de haute qualité, destinés à sublimer votre garde-robe.",
         "En savoir plus"
       ],
-      "top_products": ["produits phares"]
+      "top_products": ["produits phares"],
+      "Our_Products": ["Nos Produits"],
+      "special_offers": ["Offres Spéciales",
+                         "Offre Limitée",
+                        "Ne manquez pas nos offres exclusives. Profitez-en tant qu'elles sont disponibles \net bénéficiez de réductions qui ne dureront pas éternellement !",
+                        "Achetez Maintenant"
+                      ],
+                        
+      "follow_us": ["Suivez-nous"]
+      
       
     }
   }

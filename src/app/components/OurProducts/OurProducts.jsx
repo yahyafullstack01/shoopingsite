@@ -3,8 +3,11 @@ import Image from "next/image";
 import useImageFollow from "../../hooks/useImageFollow";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Link from "next/link";
-
+import { useLanguage } from "../../Functions/useLanguage"; 
 export default function OurProducts() {
+  const {  translateList } = useLanguage(); 
+  
+  const menuItems = translateList("home", "Our_Products");
   const images = [
     { src: "/1.jpg", link: "/All_products" },
     { src: "/2.jpg", link: "/All_products" },
@@ -30,7 +33,7 @@ export default function OurProducts() {
     >
       <div className="space-y-4">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-center">
-          Our Products
+          {menuItems[0]}
         </h2>
         <div className="border-t border-gray-300 dark:border-gray-700"></div>
       </div>

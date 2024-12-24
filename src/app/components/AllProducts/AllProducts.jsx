@@ -6,7 +6,12 @@ import FilterSidebar from '../FilterSidebar';
 import SortMenu from '../SortMenu';
 import { filterProducts } from '../../utils/filterProducts';
 import InfoForm from '../TopProductsInfo/InfoForm';
+import { useLanguage } from "../../Functions/useLanguage"; 
+
 export default function AllProducts() {
+  const {  translateList } = useLanguage();
+  const menuItems = translateList("home", "about");
+
   const [maxPrice, setMaxPrice] = useState(130);
   const [selectedSize, setSelectedSize] = useState('');
   const [selectedColor, setSelectedColor] = useState('');

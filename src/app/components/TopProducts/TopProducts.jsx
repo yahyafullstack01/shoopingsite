@@ -5,8 +5,8 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Link from "next/link";
 import { useLanguage } from "../../Functions/useLanguage"; // Import the custom hook
 
-
 export default function TopProducts() {
+  
   const images = [
     { src: "/1.jpg", link: "/Top_products" },
     { src: "/2.jpg", link: "/Top_products" },
@@ -27,7 +27,7 @@ export default function TopProducts() {
   );
     const {  translateList } = useLanguage(); // Use the hook
     const menuItems = translateList("home", "top_products");
-
+    
 
   return (
     <section
