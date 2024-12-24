@@ -2,13 +2,24 @@
   "EN": {
     "home": {
       "header": ["Home", "Catalogues", "About", "Contact", "Conditions"],
-      "hero": ["Welcome to our site!", "Explore the latest trends in fashion.", "Discover your style with us.", "Shop now"]
+      "hero": ["Welcome to our site!", "Explore the latest trends in fashion.", "Discover your style with us.", "Shop now"],
+      "about": ["About", "Latore Atelier is your go-to online destination for premium fashion. \nWe offer a curated selection of high-quality clothing and accessories, \ndesigned to elevate your wardrobe. Our mission is to provide customers \nwith sophisticated and stylish pieces that reflect their unique \npersonality and taste.", "Learn More", "Latore Atelier is your go-to online destination for premium fashion. We offer a curated selection of high-quality clothing and accessories, designed to elevate your wardrobe.", "Learn More" ],
+      "top_products": ["Top Products"]
     }
   },
   "FR": {
     "home": {
       "header": ["Accueil", "Catalogues", "À propos", "Contact", "Conditions"],
-      "hero": ["Bienvenue sur notre site!", "Explorez les dernières tendances de la mode.", "Découvrez votre style avec nous.", "Achetez maintenant"]
+      "hero": ["Bienvenue sur notre site!", "Explorez les dernières tendances de la mode.", "Découvrez votre style avec nous.", "Achetez maintenant"],
+      "about": [
+        "À propos",
+        "Latore Atelier est votre destination en ligne incontournable pour la mode haut de gamme. \nNous proposons une sélection soignée de vêtements et d'accessoires de haute qualité, \ndestinés à sublimer votre garde-robe. Notre mission est de fournir à nos clients \ndes pièces sophistiquées et élégantes qui reflètent leur personnalité \net leur goût uniques.",
+        "En savoir plus",
+        "Latore Atelier est votre destination en ligne incontournable pour la mode haut de gamme. Nous proposons une sélection soignée de vêtements et d'accessoires de haute qualité, destinés à sublimer votre garde-robe.",
+        "En savoir plus"
+      ],
+      "top_products": ["produits phares"]
+      
     }
   }
 }

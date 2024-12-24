@@ -25,7 +25,7 @@ export default function TopProducts() {
     5 
   );
     const {  translateList } = useLanguage(); // Use the hook
-    const List = translateList("home", "hero");
+    const menuItems = translateList("home", "top_products");
 
 
   return (
@@ -35,7 +35,8 @@ export default function TopProducts() {
     >
       <div className="space-y-4">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-center">
-        Top Products</h2>
+          {menuItems[0]}
+        </h2>
        
         <div className="border-t border-gray-300 dark:border-gray-700"></div>
         </div>
