@@ -8,16 +8,16 @@ import { useLanguage } from "../../Functions/useLanguage"; // Import the custom 
 
 export default function TopProducts() {
   const images = [
-    { src: "/1.jpg", link: "/top-products-info" },
-    { src: "/2.jpg", link: "/top-products-info" },
-    { src: "/3.jpg", link: "/top-products-info" },
-    { src: "/4.jpg", link: "/top-products-info" },
-    { src: "/5.jpg", link: "/top-products-info" },
-    { src: "/6.jpg", link: "/top-products-info" },
-    { src: "/7.jpg", link: "/top-products-info" },
-    { src: "/8.jpg", link: "/top-products-info" },
-    { src: "/9.jpg", link: "/top-products-info" },
-    { src: "/10.jpg", link: "/top-products-info" },
+    { src: "/1.jpg", link: "/Top_products" },
+    { src: "/2.jpg", link: "/Top_products" },
+    { src: "/3.jpg", link: "Top_products" },
+    { src: "/4.jpg", link: "Top_products" },
+    { src: "/5.jpg", link: "/Top_products" },
+    { src: "/6.jpg", link: "/Top_products" },
+    { src: "/7.jpg", link: "/Top_products" },
+    { src: "/8.jpg", link: "/Top_products" },
+    { src: "/9.jpg", link: "/Top_products" },
+    { src: "/10.jpg", link: "/Top_products" },
   ];
 
   const { displayedImages, handleNext, handlePrev } = useImageFollow(
