@@ -1,12 +1,11 @@
-
-import ContactUs from "../components/Contact_US/Contact_us";
+import AllProducts from "../components/AllProducts/AllProducts";
 import Layout from "../components/Layout";
 
-export default function ContactPage() {
+export default function Products() {
     return (
         <div className="transition-colors">
             <Layout>
-                <ContactUs />
+                <AllProducts />
             </Layout>
         </div>
     );

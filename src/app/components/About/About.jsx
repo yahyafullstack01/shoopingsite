@@ -3,11 +3,11 @@ import { useLanguage } from "../../Functions/useLanguage";
 
 export default function About() {
   const {  translateList } = useLanguage(); 
-
+  
   const menuItems = translateList("home", "about");
 
   return (
-    <section className="bg-[#e6d1c1] dark:bg-[#2e1f14] section-container py-8 sm:py-12 relative">
+    <section className="bg-[#e6d1c1] dark:bg-[#2e1f14] section-container py-8 sm:py-12 relative" id="about">
       <h2 className="pl-8 text-2xl sm:text-4xl text-[#4A3222] dark:text-[#f5e8d6] font-bold mb-6 sm:mb-10 text-left">
         {menuItems[0]}
       </h2>

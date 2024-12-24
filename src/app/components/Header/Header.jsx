@@ -56,7 +56,7 @@ const Header = React.memo(({ isDarkMode, setIsDarkMode }) => {
     </li>
     <li className="min-w-[80px] text-center">
       <a
-        href="/about"
+        href="/All_products"
         className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap"
       >
         {menuItems[1]}
@@ -64,7 +64,7 @@ const Header = React.memo(({ isDarkMode, setIsDarkMode }) => {
     </li>
     <li className="min-w-[80px] text-center">
       <a
-        href="/services"
+        href="/#about"
         className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap"
       >
        {menuItems[2]}
