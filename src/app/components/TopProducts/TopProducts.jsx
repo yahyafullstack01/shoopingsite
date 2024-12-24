@@ -18,6 +18,7 @@ export default function TopProducts() {
     { src: "/8.jpg", link: "/Top_products" },
     { src: "/9.jpg", link: "/Top_products" },
     { src: "/10.jpg", link: "/Top_products" },
+
   ];
 
   const { displayedImages, handleNext, handlePrev } = useImageFollow(
