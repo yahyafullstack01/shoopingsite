@@ -6,7 +6,7 @@ const products = [
       price: "85,00₴",
       sku: "SKU12345",
       description: "Description of Product 1.",
-      images: ["/1.jpg", "/1-2.jpg", "/1-3.jpg"],
+      images: ["/1.jpg", "2.jpg", "3.jpg"],
     },
     {
       id: 2,
@@ -15,7 +15,7 @@ const products = [
       price: "20,00₴",
       sku: "SKU67890",
       description: "Description of Product 2.",
-      images: ["/2.jpg", "/2-2.jpg"],
+      images: ["/2.jpg", "2.jpg"],
     },
     {
       id: 3,
@@ -33,7 +33,7 @@ const products = [
       price: "25,00₴",
       sku: "SKU22222",
       description: "Description of Product 4.",
-      images: ["/4.jpg", "/4-2.jpg", "/4-3.jpg", "/4-4.jpg"],
+      images: ["/4.jpg", "2.jpg", "3.jpg", "4.jpg"],
     },
     {id: 5,
       img: "/1.jpg",
@@ -41,7 +41,7 @@ const products = [
       price: "85,00₴",
       sku: "SKU12345",
       description: "Description of Product 1.",
-      images: ["/1.jpg", "/1-2.jpg", "/1-3.jpg"],
+      images: ["/1.jpg", "2.jpg", "3.jpg"],
     },
     {
       id: 6,
@@ -50,7 +50,7 @@ const products = [
       price: "20,00₴",
       sku: "SKU67890",
       description: "Description of Product 0.",
-      images: ["/2.jpg", "/2-2.jpg"],
+      images: ["/2.jpg", "2.jpg"],
     },
     {
       id: 7,
@@ -68,7 +68,7 @@ const products = [
       price: "25,00₴",
       sku: "SKU22222",
       description: "Description of Product 4.",
-      images: ["/4.jpg", "/4-2.jpg", "/4-3.jpg", "/4-4.jpg"],
+      images: ["/4.jpg", "2.jpg", "3.jpg", "4.jpg"],
     },
   ];
   export default products;

@@ -127,21 +127,32 @@ const ContactUs = () => {
       </section>
 
       {/* Opening Hours Section */}
-      <section className="bg-gray-900 text-white py-12 px-6">
-  <div className="max-w-6xl mx-auto">
-    <h2 className="text-4xl font-bold mb-8 text-left">Opening Hours</h2>
-    <div className="grid grid-cols-2 md:grid-cols-3 gap-8 text-lg">
-      <div>
-        <p className="font-semibold">Mon - Fri</p>
-        <p className="text-gray-400">8:00 am – 8:00 pm</p>
+      
+      <section className="bg-black text-white py-12 px-6">
+  <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between">
+    {/* Heading */}
+    <h2 className="text-4xl md:text-6xl font-bold mb-8 pb-24 ml-24 md:mb-0 text-center md:text-left">
+      Opening Hours
+    </h2>
+
+    {/* Hours List */}
+    <div className="flex flex-col space-y-4 md:space-y-2 text-lg text-right md:text-right  md:pr-32">
+      {/* Monday to Friday */}
+      <div className="flex justify-between">
+        <p className="font-semibold text-xl">Mon - Fri</p>
+        <p className="text-gray-400 pl-32">8:00 am – 8:00 pm</p>
       </div>
-      <div>
-        <p className="font-semibold">Saturday</p>
-        <p className="text-gray-400">9:00 am – 7:00 pm</p>
+
+      {/* Saturday */}
+      <div className="flex justify-between">
+        <p className="font-semibold text-xl">Saturday</p>
+        <p className="text-gray-400 pl-4">9:00 am – 7:00 pm</p>
       </div>
-      <div>
-        <p className="font-semibold">Sunday</p>
-        <p className="text-gray-400">9:00 am – 9:00 pm</p>
+
+      {/* Sunday */}
+      <div className="flex justify-between">
+        <p className="font-semibold text-xl">Sunday</p>
+        <p className="text-gray-400 pl-4">9:00 am – 9:00 pm</p>
       </div>
     </div>
   </div>
