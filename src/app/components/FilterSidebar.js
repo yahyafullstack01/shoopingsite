@@ -75,7 +75,7 @@ export default function FilterSidebar({
                 <label className="block text-sm font-medium">Color</label>
                 <span className={`text-gray-400 text-lg ${isColorOpen ? "-" : "+"}`}></span>
               </div>
-              {isColorOpen && (
+            {/*  {isColorOpen && (
                 <div className="mt-2 bg-gray-700 rounded p-2">
                   {colors.map((color) => (
                     <div
@@ -90,7 +90,7 @@ export default function FilterSidebar({
               )}
               {selectedColor && (
                 <div className="text-sm mt-1 text-gray-300">Selected: {selectedColor}</div>
-              )}
+              )}  */}
             </div>
           )}
 

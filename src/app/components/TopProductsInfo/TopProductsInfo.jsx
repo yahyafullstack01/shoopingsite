@@ -1,31 +1,36 @@
 "use client";
-import products from '../../data/products'
+
+import products from "../../data/products";
 import { useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 import InfoForm from "./InfoForm";
 import { useLanguage } from "../../Functions/useLanguage";
+
 export default function TopProductsInfo() {
-  const {  translateList } = useLanguage(); 
-  
+  const { translateList } = useLanguage();
+
   const menuItems = translateList("home", "about");
-  const [selectedProduct, setSelectedProduct] = useState(products[0]); 
+  const [selectedProduct, setSelectedProduct] = useState(products[0]); // Вибраний продукт
   const router = useRouter();
-  const descriptionRef = useRef(null);
+  const descriptionRef = useRef(null); // Референс для опису
 
+  // Обробник кліку на продукт
   const handleProductClick = (product) => {
-    setSelectedProduct(product);
-    scrollToDescription();
+    setSelectedProduct(product); // Встановлюємо вибраний продукт
+    scrollToDescription(); // Скролимо до опису
   };
 
+  // Обробник кнопки "Contact Us"
   const handleContactButtonClick = () => {
-    router.push("/contact"); // Redirect to the "Contact" page
+    router.push(
+      `/contact?productName=${selectedProduct.title}&productPrice=${selectedProduct.price}&productDescription=${selectedProduct.description}&productImage=${selectedProduct.img}&productColor=${selectedProduct.color}&productSize=${selectedProduct.size}&productQuantity=${selectedProduct.quantity}&productSKU=${selectedProduct.sku}`
+    );
   };
 
+  // Плавне прокручування до опису
   const scrollToDescription = () => {
     if (descriptionRef.current) {
-      descriptionRef.current.scrollIntoView({ behavior: "smooth" });
-    } else {
-      console.log("descriptionRef is null");
+      descriptionRef.current.scrollIntoView({ behavior: "smooth" }); // Плавний скрол
     }
   };
 
@@ -40,13 +45,15 @@ export default function TopProductsInfo() {
           users get to know you.
         </p>
       </div>
+
+      {/* Список продуктів */}
       <div className="max-h-[300px] md:max-h-[400px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 mb-8">
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-6">
           {products.map((product) => (
             <div
               key={product.id}
               className="bg-white text-black rounded shadow-lg hover:scale-105 transition-transform cursor-pointer"
-              onClick={() => handleProductClick(product)}
+              onClick={() => handleProductClick(product)} // Викликаємо функцію прокрутки
             >
               <img
                 src={product.img}
@@ -66,7 +73,8 @@ export default function TopProductsInfo() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 pt-8">
+      {/* Опис вибраного продукту */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 pt-8" ref={descriptionRef}>
         <div className="flex flex-col items-center">
           <img
             src={selectedProduct.img}
@@ -92,6 +100,7 @@ export default function TopProductsInfo() {
           </div>
         </div>
 
+        {/* Передача даних у форму InfoForm */}
         <InfoForm
           product={selectedProduct}
           descriptionRef={descriptionRef}

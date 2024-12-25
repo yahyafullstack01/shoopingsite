@@ -1,29 +1,32 @@
+"use client";
 
-"use client"; 
-import React, { useState, useRef  } from 'react';
-import Image from 'next/image';
-import FilterSidebar from '../FilterSidebar';
-import SortMenu from '../SortMenu';
-import { filterProducts } from '../../utils/filterProducts';
-import InfoForm from '../TopProductsInfo/InfoForm';
-import { useLanguage } from "../../Functions/useLanguage"; 
+import React, { useState, useRef } from "react";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import FilterSidebar from "../FilterSidebar";
+import SortMenu from "../SortMenu";
+import { filterProducts } from "../../utils/filterProducts";
+import InfoForm from "../TopProductsInfo/InfoForm";
+import { useLanguage } from "../../Functions/useLanguage";
 
 export default function AllProducts() {
-  const {  translateList } = useLanguage();
+  const { translateList } = useLanguage();
   const menuItems = translateList("home", "about");
+  const router = useRouter();
 
   const [maxPrice, setMaxPrice] = useState(130);
-  const [selectedSize, setSelectedSize] = useState('');
-  const [selectedColor, setSelectedColor] = useState('');
-  const [sortOrder, setSortOrder] = useState('recommended');
+  const [selectedSize, setSelectedSize] = useState("");
+  const [selectedColor, setSelectedColor] = useState("");
+  const [sortOrder, setSortOrder] = useState("recommended");
   const [isSortMenuOpen, setIsSortMenuOpen] = useState(false);
-  const [selectedProduct, setSelectedProduct] = useState(null); // Стан для вибраного продукту
+  const [selectedProduct, setSelectedProduct] = useState(null);
   const descriptionRef = useRef(null);
+
   const products = [
-    { id: 1, name: 'Product 1', price: 85, color: 'red', size: 'M', image: '/2.jpg', title: "I'm a product 1"},
-    { id: 2, name: 'Product 2', price: 20, color: 'blue', size: 'L', image: '/7.jpg', title: "I'm a product 2" },
-    { id: 3, name: 'Product 3', price: 10, color: 'green', size: 'S', image: '/1.jpg', title: "I'm a product 3" },
-    { id: 4, name: 'Product 4', price: 25, color: 'red', size: 'M', image: '/10.jpg', title: "I'm a product 4" },
+    { id: 1, name: "Product 1", price: 85, color: "red", size: "M", image: "/2.jpg", title: "I'm a product 1" },
+    { id: 2, name: "Product 2", price: 20, color: "blue", size: "L", image: "/7.jpg", title: "I'm a product 2" },
+    { id: 3, name: "Product 3", price: 10, color: "green", size: "S", image: "/1.jpg", title: "I'm a product 3" },
+    { id: 4, name: "Product 4", price: 25, color: "red", size: "M", image: "/10.jpg", title: "I'm a product 4" },
     { id: 5, name: 'Product 5', price: 50, color: 'blue', size: 'XL', image: '/9.jpg', title: "I'm a product 5" },
     { id: 6, name: 'Product 1', price: 85, color: 'red', size: 'M', image: '/8.jpg', title: "I'm a product 6" },
     { id: 7, name: 'Product 2', price: 20, color: 'blue', size: 'L', image: '/6.jpg', title: "I'm a product 7" },
@@ -33,6 +36,7 @@ export default function AllProducts() {
     { id: 11, name: 'Product 4', price: 25, color: 'red', size: 'M', image: '/8.jpg', title: "I'm a product 11" },
     { id: 12, name: 'Product 5', price: 50, color: 'blue', size: 'XL', image: '/9.jpg', title: "I'm a product 12" },
  
+    // Додайте інші продукти...
   ];
 
   const filteredProducts = filterProducts(products, {
@@ -40,8 +44,8 @@ export default function AllProducts() {
     selectedSize,
     selectedColor,
   }).sort((a, b) => {
-    if (sortOrder === 'priceAsc') return a.price - b.price;
-    if (sortOrder === 'priceDesc') return b.price - a.price;
+    if (sortOrder === "priceAsc") return a.price - b.price;
+    if (sortOrder === "priceDesc") return b.price - a.price;
     return 0;
   });
 
@@ -49,13 +53,19 @@ export default function AllProducts() {
     setSelectedProduct(product); // Зберігаємо вибраний продукт у стані
     scrollToDescription();
   };
+
+  const handleContactButtonClick = (product) => {
+    router.push(
+      `/contact?productName=${product.title}&productPrice=${product.price}&productDescription=${product.name}&productImage=${product.image}&productColor=${product.color}&productSize=${product.size}`
+    );
+  };
+
   const scrollToDescription = () => {
     if (descriptionRef.current) {
-      descriptionRef.current.scrollIntoView({ behavior: "smooth" }); 
-    } else {
-      console.log("descriptionRef is null"); 
+      descriptionRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
+
   return (
     <div className="bg-gray-900 text-white min-h-screen">
       <div className="w-full mx-auto px-4 sm:px-6 md:px-8 py-4">
@@ -104,11 +114,10 @@ export default function AllProducts() {
                       className="object-cover rounded-lg"
                     />
                   </div>
-                  <div className="w-full  bg-black bg-opacity-75 p-6 text-white rounded-lg">
+                  <div className="w-full bg-black bg-opacity-75 p-6 text-white rounded-lg">
                     <InfoForm
                       product={selectedProduct}
-                      onContactClick={() => alert("Redirect to Contact Page")}
-                      descriptionRef={null}
+                      onContactClick={handleContactButtonClick}
                     />
                   </div>
                 </div>
@@ -116,9 +125,7 @@ export default function AllProducts() {
             </div>
 
             <h1 className="text-3xl sm:text-4xl font-bold mb-6">All Products</h1>
-            <p className="text-gray-400 mb-4">
-              Explore our diverse range of products tailored to your needs.
-            </p>
+            <p className="text-gray-400 mb-4">Explore our diverse range of products tailored to your needs.</p>
             <p className="text-gray-400 mt-4 pb-4">{filteredProducts.length} products</p>
 
             <main className="w-full max-h-[800px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 mb-8">
@@ -141,6 +148,7 @@ export default function AllProducts() {
                       <h3 className="text-sm sm:text-lg font-medium">{product.name}</h3>
                       <p className="text-xs sm:text-sm text-gray-400">Price: {product.price}₴</p>
                       <p className="text-xs sm:text-sm text-gray-400">Size: {product.size}</p>
+                      {/*<p className="text-xs sm:text-sm text-gray-400">Color: {product.color}</p>*/}
                     </div>
                   </div>
                 ))}
@@ -152,5 +160,3 @@ export default function AllProducts() {
     </div>
   );
 }
-
-

@@ -1,9 +1,12 @@
-
 "use client";
 
-export default function InfoForm({ product, descriptionRef, onContactClick }) {
+export default function InfoForm({ product, onContactClick }) {
+  if (!product) {
+    return <p className="text-gray-500">No product selected.</p>;
+  }
+
   return (
-    <div className="flex flex-col px-4 md:px-0" ref={descriptionRef}>
+    <div className="flex flex-col px-4 md:px-0">
       {/* Product Title */}
       <h1 className="text-2xl md:text-3xl font-semibold text-white mb-2 text-center md:text-left">
         {product.title}
@@ -12,7 +15,7 @@ export default function InfoForm({ product, descriptionRef, onContactClick }) {
         SKU: {product.sku}
       </p>
       <p className="text-xl md:text-2xl font-bold text-white mb-4 text-center md:text-left">
-        {product.price}
+        {product.price}₴
       </p>
 
       {/* Size Selector */}
@@ -25,7 +28,7 @@ export default function InfoForm({ product, descriptionRef, onContactClick }) {
         </label>
         <select
           id="size"
-          className="w-full md:w-1/2  p-2 border border-gray-700 rounded bg-gray-800 text-gray-300"
+          className="w-full md:w-1/2 p-2 border border-gray-700 rounded bg-gray-800 text-gray-300"
         >
           <option value="">Select</option>
           <option value="small">S</option>
@@ -52,9 +55,9 @@ export default function InfoForm({ product, descriptionRef, onContactClick }) {
         />
       </div>
 
-      {/* Add to Cart Button */}
+      {/* Contact Button */}
       <button
-        onClick={onContactClick}
+        onClick={() => onContactClick(product)}
         className="w-full md:w-1/2 bg-lime-500 hover:bg-lime-600 text-black font-semibold py-2 rounded transition duration-300"
       >
         Contact Us

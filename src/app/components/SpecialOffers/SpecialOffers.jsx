@@ -21,7 +21,7 @@ export default function SpecialOffers() {
           </div>
           <div className="absolute bottom-[5%] sm:bottom-[10%] md:bottom-[15%] lg:bottom-[10%] xl:bottom-[15%] 
             left-[40%] lg:left-[20%] xl-left-1/2 transform -translate-x-1/2 
-            bg-white/45 dark:bg-[#3a2a20] p-4 sm:p-6 md:p-10 lg:p-16 xl:p-20 rounded-lg shadow-lg 
+            bg-white/45 dark:bg-[rgba(58,42,32,0.8)] p-4 sm:p-6 md:p-10 lg:p-16 xl:p-20 rounded-lg shadow-lg 
             w-[80%] sm:w-[75%] md:w-[75%] lg:w-[75%] xl:w-[90%] max-w-4xl text-center md:text-left">
             <h2 className="text-base sm:text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold mb-4 text-black dark:text-[#f5e8d6]">
               {menuItems[0]}
