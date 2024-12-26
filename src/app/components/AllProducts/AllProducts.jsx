@@ -3,46 +3,54 @@
 import React, { useState, useRef } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import FilterSidebar from "../FilterSidebar";
-import SortMenu from "../SortMenu";
+import FilterSidebar from "../../Functions/FilterSidebar";
+import SortMenu from "../../Functions/SortMenu";
 import { filterProducts } from "../../utils/filterProducts";
-import InfoForm from "../TopProductsInfo/InfoForm";
+import InfoForm from "../../Functions/InfoForm";
 import { useLanguage } from "../../Functions/useLanguage";
 
 export default function AllProducts() {
   const { translateList } = useLanguage();
   const menuItems = translateList("home", "about");
   const router = useRouter();
+  const products = [
+    { id: 1, name: "Product 1", price: 85, color: "red", size: "M", category: "T-shirt", image: "/2.jpg", title: "I'm a product 1" },
+    { id: 2, name: "Product 2", price: 20, color: "blue", size: "L", category: "Shorts", image: "/7.jpg", title: "I'm a product 2" },
+    { id: 3, name: "Product 3", price: 10, color: "green", size: "S", category: "Shorts", image: "/1.jpg", title: "I'm a product 3" },
+    { id: 4, name: "Product 4", price: 25, color: "red", size: "M", category: "Shorts", image: "/10.jpg", title: "I'm a product 4" },
+    { id: 5, name: "Product 5", price: 50, color: "blue", size: "XL", category: "T-shirt", image: "/9.jpg", title: "I'm a product 5" },
+    { id: 6, name: "Product 6", price: 85, color: "red", size: "M", category: "Dress", image: "/8.jpg", title: "I'm a product 6" },
+    { id: 7, name: "Product 7", price: 20, color: "blue", size: "L", category: "Jeans", image: "/6.jpg", title: "I'm a product 7" },
+    { id: 8, name: "Product 8", price: 10, color: "green", size: "S", category: "Jacket", image: "/5.jpg", title: "I'm a product 8" },
+    { id: 9, name: "Product 9", price: 25, color: "red", size: "M", category: "Jeans", image: "/4.jpg", title: "I'm a product 9" },
+    { id: 10, name: "Product 10", price: 50, color: "blue", size: "XL", category: "T-shirt", image: "/3.jpg", title: "I'm a product 10" },
+    { id: 11, name: "Product 11", price: 25, color: "red", size: "M", category: "Shorts", image: "/8.jpg", title: "I'm a product 11" },
+    { id: 12, name: "Product 12", price: 50, color: "blue", size: "XL", category: "Dress", image: "/9.jpg", title: "I'm a product 12" },
+  ];
 
   const [maxPrice, setMaxPrice] = useState(130);
   const [selectedSize, setSelectedSize] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("");
   const [selectedColor, setSelectedColor] = useState("");
   const [sortOrder, setSortOrder] = useState("recommended");
   const [isSortMenuOpen, setIsSortMenuOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const descriptionRef = useRef(null);
 
-  const products = [
-    { id: 1, name: "Product 1", price: 85, color: "red", size: "M", image: "/2.jpg", title: "I'm a product 1" },
-    { id: 2, name: "Product 2", price: 20, color: "blue", size: "L", image: "/7.jpg", title: "I'm a product 2" },
-    { id: 3, name: "Product 3", price: 10, color: "green", size: "S", image: "/1.jpg", title: "I'm a product 3" },
-    { id: 4, name: "Product 4", price: 25, color: "red", size: "M", image: "/10.jpg", title: "I'm a product 4" },
-    { id: 5, name: 'Product 5', price: 50, color: 'blue', size: 'XL', image: '/9.jpg', title: "I'm a product 5" },
-    { id: 6, name: 'Product 1', price: 85, color: 'red', size: 'M', image: '/8.jpg', title: "I'm a product 6" },
-    { id: 7, name: 'Product 2', price: 20, color: 'blue', size: 'L', image: '/6.jpg', title: "I'm a product 7" },
-    { id: 8, name: 'Product 3', price: 10, color: 'green', size: 'S', image: '/5.jpg', title: "I'm a product 8" },
-    { id: 9, name: 'Product 4', price: 25, color: 'red', size: 'M', image: '/4.jpg', title: "I'm a product 9" },
-    { id: 10, name: 'Product 5', price: 50, color: 'blue', size: 'XL', image: '/3.jpg', title: "I'm a product 10" },
-    { id: 11, name: 'Product 4', price: 25, color: 'red', size: 'M', image: '/8.jpg', title: "I'm a product 11" },
-    { id: 12, name: 'Product 5', price: 50, color: 'blue', size: 'XL', image: '/9.jpg', title: "I'm a product 12" },
- 
-    // Додайте інші продукти...
-  ];
+
+  const handleSizeSelect = (size) => {
+    setSelectedSize(size === "All" ? "" : size);
+  };
+
+  const handleCategorySelect = (category) => {
+    setSelectedCategory(category === "All" ? "" : category);
+  };
 
   const filteredProducts = filterProducts(products, {
     maxPrice,
     selectedSize,
     selectedColor,
+    selectedCategory,
   }).sort((a, b) => {
     if (sortOrder === "priceAsc") return a.price - b.price;
     if (sortOrder === "priceDesc") return b.price - a.price;
@@ -50,7 +58,7 @@ export default function AllProducts() {
   });
 
   const handleProductClick = (product) => {
-    setSelectedProduct(product); // Зберігаємо вибраний продукт у стані
+    setSelectedProduct(product);
     scrollToDescription();
   };
 
@@ -73,10 +81,10 @@ export default function AllProducts() {
           <FilterSidebar
             maxPrice={maxPrice}
             setMaxPrice={setMaxPrice}
-            selectedColor={selectedColor}
-            setSelectedColor={setSelectedColor}
             selectedSize={selectedSize}
-            setSelectedSize={setSelectedSize}
+            handleSizeSelect={handleSizeSelect}
+            selectedCategory={selectedCategory}
+            handleCategorySelect={handleCategorySelect}
           >
             <SortMenu
               sortOrder={sortOrder}
@@ -148,7 +156,7 @@ export default function AllProducts() {
                       <h3 className="text-sm sm:text-lg font-medium">{product.name}</h3>
                       <p className="text-xs sm:text-sm text-gray-400">Price: {product.price}₴</p>
                       <p className="text-xs sm:text-sm text-gray-400">Size: {product.size}</p>
-                      {/*<p className="text-xs sm:text-sm text-gray-400">Color: {product.color}</p>*/}
+                      <p className="text-sm text-gray-400">Category: {product.category}</p>
                     </div>
                   </div>
                 ))}

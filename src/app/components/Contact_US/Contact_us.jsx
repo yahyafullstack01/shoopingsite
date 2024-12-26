@@ -81,7 +81,7 @@ const ContactUs = () => {
           Thank you! Your form has been successfully submitted!
         </div>
       )}
-<section className="bg-black text-white text-center py-8 sm:py-10 md:py-16">
+<section className="dark:bg-[#2e1f14] bg-black text-white text-center py-8 sm:py-10 md:py-16">
   <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 md:mb-8">
     Contact Us
   </h1>

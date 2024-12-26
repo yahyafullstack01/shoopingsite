@@ -1,29 +1,31 @@
 import React, { useState } from "react";
 
 export default function FilterSidebar({
-  showColorFilter = true,
+ // showColorFilter = true,
   showSizeFilter = true,
   maxPrice,
   setMaxPrice,
-  selectedColor,
-  setSelectedColor,
+ // selectedColor,
+ // setSelectedColor,
   selectedSize,
-  setSelectedSize,
+  handleSizeSelect,
+  selectedCategory,
+  handleCategorySelect,
   children,
 }) {
-  const [isColorOpen, setIsColorOpen] = useState(false);
+  //const [isColorOpen, setIsColorOpen] = useState(false);
   const [isSizeOpen, setIsSizeOpen] = useState(false);
-
-  const colors = ["Red", "Blue", "Green"];
-  const sizes = ["S", "M", "L", "XL"];
-
+  const [isCategoryOpen, setIsCategoryOpen] = useState(false);
+  //const colors = ["Red", "Blue", "Green"];
+  const sizes = ["All", "S", "M", "L", "XL"];
+  const categories = ["Dress", "Shorts", "T-shirt", "Jeans", "Jacket"];
   const handlePriceChange = (e) => {
     setMaxPrice(parseFloat(e.target.value));
   };
 
-  const toggleColorMenu = () => setIsColorOpen(!isColorOpen);
+ // const toggleColorMenu = () => setIsColorOpen(!isColorOpen);
   const toggleSizeMenu = () => setIsSizeOpen(!isSizeOpen);
-
+  const toggleCategoryMenu = () => setIsCategoryOpen(!isCategoryOpen);
   return (
     <aside className="w-full md:w-1/4 bg-gray-800 p-4 sm:p-6 rounded shadow-lg">
       <div className="mb-6">
@@ -66,7 +68,7 @@ export default function FilterSidebar({
           </div>
 
           {/* Color Filter */}
-          {showColorFilter && (
+         {/*  {showColorFilter && (
             <div className="relative">
               <div
                 className="flex justify-between items-center cursor-pointer border-b border-gray-700 pb-2"
@@ -75,7 +77,7 @@ export default function FilterSidebar({
                 <label className="block text-sm font-medium">Color</label>
                 <span className={`text-gray-400 text-lg ${isColorOpen ? "-" : "+"}`}></span>
               </div>
-            {/*  {isColorOpen && (
+             {isColorOpen && (
                 <div className="mt-2 bg-gray-700 rounded p-2">
                   {colors.map((color) => (
                     <div
@@ -90,40 +92,75 @@ export default function FilterSidebar({
               )}
               {selectedColor && (
                 <div className="text-sm mt-1 text-gray-300">Selected: {selectedColor}</div>
-              )}  */}
+              )} 
             </div>
           )}
+ */}
+ {/* Size Filter */}
+{showSizeFilter && (
+  <div className="relative">
+    <div
+      className="flex justify-between items-center cursor-pointer border-b border-gray-700 pb-2"
+      onClick={toggleSizeMenu}
+    >
+      <label className="block text-sm font-medium">Size</label>
+      <span className={`text-gray-400 text-lg ${isSizeOpen ? "-" : "+"}`}></span>
+    </div>
+    {isSizeOpen && (
+      <div className="mt-2 bg-gray-700 rounded p-2">
+        {sizes.map((size) => (
+          <div
+            key={size}
+            onClick={() => handleSizeSelect(size)} // Викликаємо handleSizeSelect
+            className={`cursor-pointer p-1 rounded ${
+              selectedSize === size || (size === "All" && selectedSize === "")
+                ? "bg-blue-500 text-white"
+                : "hover:bg-gray-600 text-gray-300"
+            }`}
+          >
+            {size}
+          </div>
+        ))}
+      </div>
+    )}
+    <div className="text-sm mt-1 text-gray-300">
+      Selected: {selectedSize || "All"}
+    </div>
+  </div>
+)}
 
-          {/* Size Filter */}
-          {showSizeFilter && (
-            <div className="relative">
-              <div
-                className="flex justify-between items-center cursor-pointer border-b border-gray-700 pb-2"
-                onClick={toggleSizeMenu}
-              >
-                <label className="block text-sm font-medium">Size</label>
-                <span className={`text-gray-400 text-lg ${isSizeOpen ? "-" : "+"}`}></span>
-              </div>
-              {isSizeOpen && (
-                <div className="mt-2 bg-gray-700 rounded p-2">
-                  {sizes.map((size) => (
-                    <div
-                      key={size}
-                      onClick={() => setSelectedSize(size)}
-                      className="cursor-pointer p-1 hover:bg-gray-600 rounded"
-                    >
-                      {size}
-                    </div>
-                  ))}
-                </div>
-              )}
-              {selectedSize && (
-                <div className="text-sm mt-1 text-gray-300">Selected: {selectedSize}</div>
-              )}
-            </div>
-          )}
-
-          {/* Sort Menu */}
+{/* Category Filter */}
+{/* Category Filter */}
+<div className="relative">
+  <div
+    className="flex justify-between items-center cursor-pointer border-b border-gray-700 pb-2"
+    onClick={toggleCategoryMenu}
+  >
+    <label className="block text-sm font-medium">Category</label>
+    <span className={`text-gray-400 text-lg ${isCategoryOpen ? "-" : "+"}`}></span>
+  </div>
+  {isCategoryOpen && (
+    <div className="mt-2 bg-gray-700 rounded p-2">
+      {["All", "Dress", "Shorts", "T-shirt", "Jeans", "Jacket"].map((category) => (
+        <div
+          key={category}
+          onClick={() => handleCategorySelect(category)}
+          className={`cursor-pointer p-1 rounded ${
+            selectedCategory === category || (category === "All" && selectedCategory === "")
+              ? "bg-blue-500 text-white"
+              : "hover:bg-gray-600 text-gray-300"
+          }`}
+        >
+          {category}
+        </div>
+      ))}
+    </div>
+  )}
+  <div className="text-sm mt-1 text-gray-300">
+    Selected: {selectedCategory || "All"}
+  </div>
+</div>
+   {/* Sort Menu */}
           <div className="mt-4">{children}</div>
         </div>
       </div>

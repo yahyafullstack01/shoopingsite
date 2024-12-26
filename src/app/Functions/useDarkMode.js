@@ -1,13 +1,10 @@
-"use client";
-
 import { useState, useEffect } from "react";
 
-// Custom hook for managing dark mode
 export function useDarkMode() {
   const [isDarkMode, setIsDarkMode] = useState(false);
-
-  useEffect(() => {
-    const root = document.documentElement;
+ 
+ useEffect(() => {
+ const root = document.documentElement;
 
     if (isDarkMode) {
       root.classList.add("dark");
@@ -17,6 +14,5 @@ export function useDarkMode() {
       root.classList.remove("dark");
     }
   }, [isDarkMode]);
-
   return [isDarkMode, setIsDarkMode];
 }

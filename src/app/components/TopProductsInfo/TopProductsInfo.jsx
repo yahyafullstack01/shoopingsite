@@ -3,7 +3,7 @@
 import products from "../../data/products";
 import { useState, useRef } from "react";
 import { useRouter } from "next/navigation";
-import InfoForm from "./InfoForm";
+import InfoForm from "../../Functions/InfoForm";
 import { useLanguage } from "../../Functions/useLanguage";
 
 export default function TopProductsInfo() {
@@ -35,7 +35,7 @@ export default function TopProductsInfo() {
   };
 
   return (
-    <div className="bg-black text-white min-h-screen px-4 py-8">
+    <div className=" bg-black text-white min-h-screen px-4 py-8">
       <div className="text-center">
         <h1 className="text-3xl md:text-4xl font-bold mb-4">
           Explore the Collection
@@ -47,7 +47,7 @@ export default function TopProductsInfo() {
       </div>
 
       {/* Список продуктів */}
-      <div className="max-h-[300px] md:max-h-[400px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 mb-8">
+      <div className="ml-8 max-h-[300px] md:max-h-[400px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 mb-8">
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-6">
           {products.map((product) => (
             <div

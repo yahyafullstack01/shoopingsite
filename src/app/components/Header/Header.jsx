@@ -41,7 +41,7 @@ const Header = React.memo(({ isDarkMode, setIsDarkMode }) => {
         <nav className="flex items-center space-x-4 lg:space-x-6">
           <button
             onClick={toggleMenu}
-            className="lg:hidden p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700"
+            className={`lg:hidden p-2 rounded-full  hover:bg-gray-200 dark:hover:bg-gray-700`}
           >
             <FaBars className="sm:xl md:text-2xl lg:text-3xl" />
           </button>

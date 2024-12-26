@@ -8,12 +8,12 @@ export default function About() {
 
   return (
     <section className="bg-[#e6d1c1] dark:bg-[#2e1f14] section-container py-8 sm:py-12 relative" id="about">
-      <h2 className="pl-8 text-2xl sm:text-4xl text-[#4A3222] dark:text-[#f5e8d6] font-bold mb-6 sm:mb-10 text-left">
+      <h2 className="pl-24 text-2xl sm:text-5xl text-[#4A3222] dark:text-[#f5e8d6] font-bold mb-6 sm:mb-10 text-left">
         {menuItems[0]}
       </h2>
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 items-center relative">
         <div className="space-y-4">
-          <div className="relative mb-6 sm:mb-8 group px-8 lg:px-8  ml-4 mt-4">
+          <div className="relative mb-6 sm:mb-8 group px-8 lg:px-8  xl:ml-16 mt-4">
             <Image
               src="/2.jpg"
               alt="Main Image"
@@ -33,23 +33,26 @@ export default function About() {
             />
           </div>
         </div>
-        <div className="text-center md:text-left -mt-16 sm:-mt-24 md:mt-0  flex-col items-center md:items-start hidden lg:flex">
-          <p className="text-base sm:text-lg md:text-xl text-[#4A3222] dark:text-[#f5e8d6] mb-6 sm:mb-8 leading-relaxed">
-            <strong className="text-lg sm:text-xl md:text-2xl font-extrabold">Our Story</strong> <br />
+        <div className="text-center md:text-left -mt-16 sm:-mt-24 md:mt-[-50%]  flex-col items-center md:items-start hidden lg:flex ">
+          <p className="text-base sm:text-lg md:text-2xl text-[#4A3222] dark:text-[#f5e8d6] mb-6 sm:mb-8 leading-relaxed">
+            <strong className="text-lg sm:text-xl md:text-2xl xl:text-4xl font-extrabold">Our Story</strong> <br />
             {menuItems[1]}
           </p>
-          <button className="bg-[#4A3222] text-white py-2 px-4 sm:px-6 rounded-full hover:bg-[#6E4C2E] dark:bg-[#f5e8d6] dark:text-[#4A3222] dark:hover:bg-[#d1b79e] transition-all duration-300 ease-in-out">
+          {/*
+        <button className="bg-[#4A3222] text-white py-2 px-4 sm:px-6 rounded-full hover:bg-[#6E4C2E] dark:bg-[#f5e8d6] dark:text-[#4A3222] dark:hover:bg-[#d1b79e] transition-all duration-300 ease-in-out">
           {menuItems[2]}
           </button>
+          */}
         </div>
       </div>
       <div className="absolute inset-x-0 top-1/2 transform -translate-y-1/2 bg-[#00000080] flex flex-col items-center justify-center p-4 sm:p-8 md:flex lg:hidden w-full max-w-none">
-        <p className="text-white text-lg sm:text-xl px-4 text-center mb-4">
+        <p className="text-white text-lg sm:text-2xl px-4 text-center mb-4">
         {menuItems[3]}
         </p>
-        <button className="bg-[#4A3222] text-white py-2 px-4 rounded-full hover:bg-[#6E4C2E] dark:bg-[#f5e8d6] dark:text-[#4A3222] dark:hover:bg-[#d1b79e] transition-all duration-300 ease-in-out">
+     {/*  <button className="bg-[#4A3222] text-white py-2 px-4 rounded-full hover:bg-[#6E4C2E] dark:bg-[#f5e8d6] dark:text-[#4A3222] dark:hover:bg-[#d1b79e] transition-all duration-300 ease-in-out">
         {menuItems[2]}
         </button>
+        */} 
       </div>
     </section>
   );
