@@ -12,6 +12,7 @@ import Map from "../Map/Map"
 import ContactForm from "../ContactForm/ContactForm"
 import SuccessMessage from "../../Functions/SuccessMessage"
 const ContactUs = () => {
+
   const searchParams = useSearchParams();
   const initialProductData = getInitialProductData(searchParams);
 
@@ -35,7 +36,7 @@ const ContactUs = () => {
   const onInputChange = (e) => handleInputChange(e, setFormValues);
  
   return (
-    
+  
     <div className="font-sans relative">
      <SuccessMessage/>
 <section className="dark:bg-[#2e1f14] bg-black text-white text-center py-8 sm:py-10 md:py-16">
@@ -86,6 +87,7 @@ const ContactUs = () => {
 <OpeningHours/>
 <Map/>
   </div>
+  
   );
 };
 

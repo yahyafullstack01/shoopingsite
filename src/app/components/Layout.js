@@ -1,9 +1,12 @@
+
 "use client";
 
 import { useDarkMode } from "../Functions/useDarkMode";
 import { LanguageProvider } from "../Functions/useLanguage";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
+
+
 
 export default function Layout({ children }) {
   const [isDarkMode, setIsDarkMode] = useDarkMode();
