@@ -1,5 +1,6 @@
-import React, { useState } from "react";
 
+import React, { useState } from "react";
+// Компонент боковой панели фильтров
 export default function FilterSidebar({
  // showColorFilter = true,
   showSizeFilter = true,
@@ -17,8 +18,10 @@ export default function FilterSidebar({
   const [isSizeOpen, setIsSizeOpen] = useState(false);
   const [isCategoryOpen, setIsCategoryOpen] = useState(false);
   //const colors = ["Red", "Blue", "Green"];
+   // Предопределённые значения для размеров и категорий
   const sizes = ["All", "S", "M", "L", "XL"];
   const categories = ["Dress", "Shorts", "T-shirt", "Jeans", "Jacket"];
+   // Обработчики изменения цены, размера, категории
   const handlePriceChange = (e) => {
     setMaxPrice(parseFloat(e.target.value));
   };

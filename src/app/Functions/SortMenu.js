@@ -1,10 +1,11 @@
 import React from 'react';
-
+// Компонент для отображения меню сортировки
 export default function SortMenu({
-  sortOrder,
-  setSortOrder,
-  isSortMenuOpen,
-  toggleSortMenu,
+  sortOrder, // Текущий порядок сортировки
+  setSortOrder, // Функция для установки порядка сортировки
+  isSortMenuOpen, // Состояние открытия/закрытия меню сортировки
+  toggleSortMenu, // Функция для переключения состояния меню
+ 
 }) {
   return (
     <div className="relative inline-block text-left ml-auto">

@@ -1,32 +1,25 @@
 "use client";
 
 import React, { useState, useRef } from "react";
-import Image from "next/image";
 import { useRouter } from "next/navigation";
 import FilterSidebar from "../../Functions/FilterSidebar";
 import SortMenu from "../../Functions/SortMenu";
-import { filterProducts } from "../../utils/filterProducts";
-import InfoForm from "../../Functions/InfoForm";
+import ProductBanner from "../../components/products/ProductBanner";
+import ProductCard from "../../components/products/ProductCard";
+import {
+  handleSizeSelect,
+  handleCategorySelect,
+  filterAndSortProducts,
+  redirectToContact,
+  handleProductClick,
+} from "../../utils/products";
+import products from "../../data/productsAll";
 import { useLanguage } from "../../Functions/useLanguage";
 
 export default function AllProducts() {
   const { translateList } = useLanguage();
   const menuItems = translateList("home", "about");
   const router = useRouter();
-  const products = [
-    { id: 1, name: "Product 1", price: 85, color: "red", size: "M", category: "T-shirt", image: "/2.jpg", title: "I'm a product 1" },
-    { id: 2, name: "Product 2", price: 20, color: "blue", size: "L", category: "Shorts", image: "/7.jpg", title: "I'm a product 2" },
-    { id: 3, name: "Product 3", price: 10, color: "green", size: "S", category: "Shorts", image: "/1.jpg", title: "I'm a product 3" },
-    { id: 4, name: "Product 4", price: 25, color: "red", size: "M", category: "Shorts", image: "/10.jpg", title: "I'm a product 4" },
-    { id: 5, name: "Product 5", price: 50, color: "blue", size: "XL", category: "T-shirt", image: "/9.jpg", title: "I'm a product 5" },
-    { id: 6, name: "Product 6", price: 85, color: "red", size: "M", category: "Dress", image: "/8.jpg", title: "I'm a product 6" },
-    { id: 7, name: "Product 7", price: 20, color: "blue", size: "L", category: "Jeans", image: "/6.jpg", title: "I'm a product 7" },
-    { id: 8, name: "Product 8", price: 10, color: "green", size: "S", category: "Jacket", image: "/5.jpg", title: "I'm a product 8" },
-    { id: 9, name: "Product 9", price: 25, color: "red", size: "M", category: "Jeans", image: "/4.jpg", title: "I'm a product 9" },
-    { id: 10, name: "Product 10", price: 50, color: "blue", size: "XL", category: "T-shirt", image: "/3.jpg", title: "I'm a product 10" },
-    { id: 11, name: "Product 11", price: 25, color: "red", size: "M", category: "Shorts", image: "/8.jpg", title: "I'm a product 11" },
-    { id: 12, name: "Product 12", price: 50, color: "blue", size: "XL", category: "Dress", image: "/9.jpg", title: "I'm a product 12" },
-  ];
 
   const [maxPrice, setMaxPrice] = useState(130);
   const [selectedSize, setSelectedSize] = useState("");
@@ -37,41 +30,17 @@ export default function AllProducts() {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const descriptionRef = useRef(null);
 
+  const filteredProducts = filterAndSortProducts(
+    products,
+    { maxPrice, selectedSize, selectedColor, selectedCategory },
+    sortOrder
+  );
 
-  const handleSizeSelect = (size) => {
-    setSelectedSize(size === "All" ? "" : size);
-  };
+  const onProductClick = (product) =>
+    handleProductClick(product, setSelectedProduct, descriptionRef);
 
-  const handleCategorySelect = (category) => {
-    setSelectedCategory(category === "All" ? "" : category);
-  };
-
-  const filteredProducts = filterProducts(products, {
-    maxPrice,
-    selectedSize,
-    selectedColor,
-    selectedCategory,
-  }).sort((a, b) => {
-    if (sortOrder === "priceAsc") return a.price - b.price;
-    if (sortOrder === "priceDesc") return b.price - a.price;
-    return 0;
-  });
-
-  const handleProductClick = (product) => {
-    setSelectedProduct(product);
-    scrollToDescription();
-  };
-
-  const handleContactButtonClick = (product) => {
-    router.push(
-      `/contact?productName=${product.title}&productPrice=${product.price}&productDescription=${product.name}&productImage=${product.image}&productColor=${product.color}&productSize=${product.size}`
-    );
-  };
-
-  const scrollToDescription = () => {
-    if (descriptionRef.current) {
-      descriptionRef.current.scrollIntoView({ behavior: "smooth" });
-    }
+  const onContactClick = () => {
+    redirectToContact(router, selectedProduct);
   };
 
   return (
@@ -82,9 +51,13 @@ export default function AllProducts() {
             maxPrice={maxPrice}
             setMaxPrice={setMaxPrice}
             selectedSize={selectedSize}
-            handleSizeSelect={handleSizeSelect}
+            handleSizeSelect={(size) =>
+              handleSizeSelect(size, setSelectedSize)
+            }
             selectedCategory={selectedCategory}
-            handleCategorySelect={handleCategorySelect}
+            handleCategorySelect={(category) =>
+              handleCategorySelect(category, setSelectedCategory)
+            }
           >
             <SortMenu
               sortOrder={sortOrder}
@@ -95,70 +68,28 @@ export default function AllProducts() {
           </FilterSidebar>
 
           <div className="w-full md:w-3/4 flex flex-col">
-            <div
-              ref={descriptionRef}
-              className={`relative w-full bg-black overflow-hidden rounded-lg mb-8 transition-all duration-300 ease-in-out ${
-                selectedProduct ? "p-4" : "h-72 sm:h-96"
-              }`}
-            >
-              {!selectedProduct && (
-                <Image
-                  src="/4.jpg"
-                  alt="Category Banner"
-                  layout="fill"
-                  objectFit="cover"
-                  className="object-cover shadow-lg transition-transform duration-300 ease-in-out"
-                />
-              )}
-              {selectedProduct && (
-                <div className="relative flex flex-col sm:flex-row items-start">
-                  <div className="w-full relative h-42 sm:h-74">
-                    <Image
-                      src={selectedProduct.image}
-                      alt={selectedProduct.name}
-                      layout="responsive"
-                      width={800}
-                      height={600}
-                      className="object-cover rounded-lg"
-                    />
-                  </div>
-                  <div className="w-full bg-black bg-opacity-75 p-6 text-white rounded-lg">
-                    <InfoForm
-                      product={selectedProduct}
-                      onContactClick={handleContactButtonClick}
-                    />
-                  </div>
-                </div>
-              )}
-            </div>
+            <ProductBanner
+              selectedProduct={selectedProduct}
+              descriptionRef={descriptionRef}
+              handleContactButtonClick={onContactClick}
+            />
 
             <h1 className="text-3xl sm:text-4xl font-bold mb-6">All Products</h1>
-            <p className="text-gray-400 mb-4">Explore our diverse range of products tailored to your needs.</p>
-            <p className="text-gray-400 mt-4 pb-4">{filteredProducts.length} products</p>
+            <p className="text-gray-400 mb-4">
+              Explore our diverse range of products tailored to your needs.
+            </p>
+            <p className="text-gray-400 mt-4 pb-4">
+              {filteredProducts.length} products
+            </p>
 
             <main className="w-full max-h-[800px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 mb-8">
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
                 {filteredProducts.map((product) => (
-                  <div
+                  <ProductCard
                     key={product.id}
-                    className="bg-gray-800 p-3 sm:p-4 rounded group cursor-pointer"
-                    onClick={() => handleProductClick(product)}
-                  >
-                    <div className="aspect-w-1 aspect-h-1 overflow-hidden rounded relative">
-                      <img
-                        src={product.image || `https://via.placeholder.com/150?text=${product.name}`}
-                        alt={product.name}
-                        className="object-cover w-full h-full rounded transform transition-transform duration-300 ease-in-out group-hover:scale-110"
-                      />
-                      <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-opacity duration-300 rounded"></div>
-                    </div>
-                    <div className="mt-2 sm:mt-4">
-                      <h3 className="text-sm sm:text-lg font-medium">{product.name}</h3>
-                      <p className="text-xs sm:text-sm text-gray-400">Price: {product.price}₴</p>
-                      <p className="text-xs sm:text-sm text-gray-400">Size: {product.size}</p>
-                      <p className="text-sm text-gray-400">Category: {product.category}</p>
-                    </div>
-                  </div>
+                    product={product}
+                    onClick={() => onProductClick(product)}
+                  />
                 ))}
               </div>
             </main>

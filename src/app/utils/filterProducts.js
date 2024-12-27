@@ -9,16 +9,5 @@ export function filterProducts(products, { maxPrice, selectedSize, selectedColor
     return matchesPrice && matchesSize && matchesColor && matchesCategory;
   });
 }
-{/*export const filterProducts = (products, filters) => {
-    const { maxPrice, selectedSize, selectedColor } = filters;
-    return products.filter(
-      (product) =>
-        product.price <= maxPrice &&
-        (selectedSize === '' || product.size === selectedSize) &&
-        (selectedColor === '' || product.color === selectedColor) &&
-        (selectedCategory === '' || product.category === selectedCategory)
 
-    );
-  };
-  */}
   

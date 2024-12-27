@@ -1,5 +1,7 @@
 "use client";
-
+// Компонент формы информации о продукте
+// Принимает `product` для отображения информации о выбранном продукте 
+// и `onContactClick` для обработки нажатия кнопки "Contact Us"
 export default function InfoForm({ product, onContactClick }) {
   if (!product) {
     return <p className="text-gray-500">No product selected.</p>;
