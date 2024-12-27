@@ -8,13 +8,16 @@ import { useLanguage } from "../../Functions/useLanguage";
 
 
 const Header = React.memo(({ isDarkMode, setIsDarkMode }) => {
-  const {  translateList } = useLanguage(); 
+  const { translateList, language, setLanguage } = useLanguage(); // Access the language context
   const menuItems = translateList("home", "header");
+  const toggleLanguage = () => {
+    setLanguage((prevLanguage) =>
+      prevLanguage === "EN" ? "FR" : prevLanguage === "FR" ? "UA" : "EN"
+    );
+  };
 
   const {
-    language,
     isMenuOpen,
-    toggleLanguage,
     toggleMenu,
     closeMenu,
   } = useHeaderState();
@@ -86,7 +89,7 @@ const Header = React.memo(({ isDarkMode, setIsDarkMode }) => {
             className="p-1 sm:p-2  rounded-full border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-600 transition duration-300 text-xs sm:text-sm md:text-base lg:text-lg flex items-center justify-center"
           >
            
-            {language === "EN" ? "🇬🇧 EN" : "🇫🇷 FR"}
+           {language === "EN" ? "🇬🇧 EN" : language === "FR" ? "🇫🇷 FR" : "🇺🇦 UA"}
             </button>
           <button
             onClick={() => setIsDarkMode(!isDarkMode)}
@@ -122,7 +125,7 @@ const Header = React.memo(({ isDarkMode, setIsDarkMode }) => {
             onClick={toggleLanguage}
             className="p-1 sm:p-2 rounded-full border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-600 transition duration-300 text-xs sm:text-sm md:text-base lg:text-lg flex items-center justify-center"
           >
-            {language === "EN" ? "🇬🇧 EN" : "🇫🇷 FR"}
+            {language === "EN" ? "🇬🇧 EN" : language === "FR" ? "🇫🇷 FR" : "🇺🇦 UA"}
            </button>
           <button
             onClick={() => setIsDarkMode(!isDarkMode)}
