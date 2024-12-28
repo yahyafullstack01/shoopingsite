@@ -15,12 +15,15 @@ export function LanguageProvider({ children }) {
     };
     fetchTranslations();
   }, []);
-
+  
   useEffect(() => {
     // Detect user's location and set default language
     const setDefaultLanguage = async () => {
       try {
         const res = await fetch("https://ipapi.co/json/"); // Free IP geolocation API
+        // const res = await fetch("https://ipwhois.app/json/");
+        // const res = await fetch("http://ip-api.com/json/");
+
         const data = await res.json();
 
         if (data.country === "UA") {
