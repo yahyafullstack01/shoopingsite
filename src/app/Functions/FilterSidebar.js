@@ -30,7 +30,7 @@ export default function FilterSidebar({
   const toggleSizeMenu = () => setIsSizeOpen(!isSizeOpen);
   const toggleCategoryMenu = () => setIsCategoryOpen(!isCategoryOpen);
   return (
-    <aside className="w-full md:w-1/4 bg-gray-800 p-4 sm:p-6 rounded shadow-lg">
+    <aside className="w-full md:w-1/4 bg-gray-800 p-4 sm:p-6 rounded shadow-lg dark:bg-[#0f172a]">
       <div className="mb-6">
         <h2 className="text-lg sm:text-xl font-semibold mb-4 border-b border-gray-700 pb-2">
           Browse by

@@ -1,10 +1,9 @@
-"use client";
-
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 export function useDarkMode() {
-  const [isDarkMode, setIsDarkMode] = useState(false); // Статичне значення на сервері
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
+  // Завантаження стану з localStorage під час першого рендера
   useEffect(() => {
     if (typeof window !== "undefined") {
       const savedMode = localStorage.getItem("darkMode");
@@ -12,50 +11,36 @@ export function useDarkMode() {
     }
   }, []);
 
+  // Оновлення className для темного режиму та збереження у localStorage
   useEffect(() => {
     if (typeof window !== "undefined") {
       const root = document.documentElement;
 
-      if (isDarkMode) {
-        root.classList.add("dark");
-        root.classList.remove("light");
-      } else {
-        root.classList.add("light");
-        root.classList.remove("dark");
-      }
+      // Зміна className
+      root.className = isDarkMode ? "dark" : "light";
 
+      // Збереження стану у localStorage
       localStorage.setItem("darkMode", isDarkMode);
     }
   }, [isDarkMode]);
 
-  return [isDarkMode, setIsDarkMode];
-}
+  // Мемоізована функція для перемикання темного режиму
+  const toggleDarkMode = useCallback(() => {
+    setIsDarkMode((prev) => !prev);
+  }, []);
 
+  // Лог для перевірки
+  useEffect(() => {
+    console.log("Dark mode updated:", isDarkMode);
+  }, [isDarkMode]);
+
+  return [isDarkMode, toggleDarkMode];
+}
 {/*
 import { useState, useEffect } from "react";
 
 export function useDarkMode() {
   const [isDarkMode, setIsDarkMode] = useState(false);
- 
- useEffect(() => {
- const root = document.documentElement;
-
-    if (isDarkMode) {
-      root.classList.add("dark");
-      root.classList.remove("light");
-    } else {
-      root.classList.add("light");
-      root.classList.remove("dark");
-    }
-  }, [isDarkMode]);
-  return [isDarkMode, setIsDarkMode];
-}
-  */}
-  {/*
-import { useState, useEffect } from "react";
-
-export function useDarkMode() {
-  const [isDarkMode, setIsDarkMode] = useState(false); // Початкове значення
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -68,14 +53,10 @@ export function useDarkMode() {
     if (typeof window !== "undefined") {
       const root = document.documentElement;
 
-      if (isDarkMode) {
-        root.classList.add("dark");
-        root.classList.remove("light");
-      } else {
-        root.classList.add("light");
-        root.classList.remove("dark");
-      }
+      // Змінюємо весь className
+      root.className = isDarkMode ? "dark" : "light";
 
+      // Зберігаємо стан у localStorage
       localStorage.setItem("darkMode", isDarkMode);
     }
   }, [isDarkMode]);

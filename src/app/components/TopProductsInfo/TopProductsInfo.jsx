@@ -35,7 +35,7 @@ export default function TopProductsInfo() {
   };
 
   return (
-    <div className=" bg-black text-white min-h-screen px-4 py-8">
+    <div className="dark:bg-[#2e1f14] bg-black text-white min-h-screen px-4 py-8">
       <div className="text-center">
         <h1 className="text-3xl md:text-4xl font-bold mb-4">
           Explore the Collection
@@ -47,7 +47,7 @@ export default function TopProductsInfo() {
       </div>
 
       {/* Список продуктів */}
-      <div className="ml-8 max-h-[300px] md:max-h-[400px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 mb-8">
+      <div className="ml-8  max-h-[300px] md:max-h-[400px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 mb-8">
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-6">
           {products.map((product) => (
             <div
@@ -60,11 +60,11 @@ export default function TopProductsInfo() {
                 alt={product.title}
                 className="w-full h-36 sm:h-48 object-cover rounded-t"
               />
-              <div className="p-2 sm:p-4">
+              <div className="p-2 sm:p-4  dark:bg-[#d2b48c]">
                 <h3 className="font-semibold text-sm sm:text-lg">
                   {product.title}
                 </h3>
-                <p className="text-gray-600 text-xs sm:text-base">
+                <p className="text-gray-600  text-xs sm:text-base">
                   {product.price}
                 </p>
               </div>

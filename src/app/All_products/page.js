@@ -3,7 +3,8 @@ import Layout from "../components/Layout";
 
 export default function Products() {
     return (
-        <div className="transition-colors">
+      <div className="transition-colors">
+       
             <Layout>
                 <AllProducts />
             </Layout>

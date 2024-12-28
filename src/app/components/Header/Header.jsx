@@ -1,5 +1,5 @@
 "use client"; 
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaMoon, FaSun, FaBars, FaTimes } from "react-icons/fa";
@@ -7,7 +7,7 @@ import { useHeaderState } from "../../hooks/useHeader";
 import { useLanguage } from "../../Functions/useLanguage"; 
 
 
-const Header = React.memo(({ isDarkMode, setIsDarkMode }) => {
+const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
   const { translateList, language, setLanguage } = useLanguage(); // Access the language context
   const menuItems = translateList("home", "header");
   const toggleLanguage = () => {
@@ -21,7 +21,13 @@ const Header = React.memo(({ isDarkMode, setIsDarkMode }) => {
     toggleMenu,
     closeMenu,
   } = useHeaderState();
-
+   {/*useEffect(() => {
+    const darkMode = localStorage.getItem("darkMode");
+    console.log("Dark mode in localStorage:", darkMode);
+    console.log("HTML class on load:", document.documentElement.className);
+  }, []);
+  
+ */}
   return (
     <>
       <header
@@ -92,7 +98,7 @@ const Header = React.memo(({ isDarkMode, setIsDarkMode }) => {
            {language === "EN" ? "🇬🇧 EN" : language === "FR" ? "🇫🇷 FR" : "🇺🇦 UA"}
             </button>
           <button
-            onClick={() => setIsDarkMode(!isDarkMode)}
+            onClick={() => toggleDarkMode(!isDarkMode)}
             className="p-1 sm:p-2  rounded-full border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-600 transition duration-300 text-xs sm:text-sm md:text-base lg:text-lg"
           >
             {isDarkMode ? (
@@ -128,7 +134,7 @@ const Header = React.memo(({ isDarkMode, setIsDarkMode }) => {
             {language === "EN" ? "🇬🇧 EN" : language === "FR" ? "🇫🇷 FR" : "🇺🇦 UA"}
            </button>
           <button
-            onClick={() => setIsDarkMode(!isDarkMode)}
+            onClick={() => toggleDarkMode(!isDarkMode)}
             className="p-1 sm:p-2 rounded-full border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-600 transition duration-300 text-xs sm:text-sm md:text-base lg:text-lg"
           >
             {isDarkMode ? (
