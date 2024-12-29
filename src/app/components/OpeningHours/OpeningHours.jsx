@@ -8,7 +8,7 @@ const OpeningHours = () => (
         <div className="flex flex-col space-y-6 sm:space-y-4 md:space-y-2 text-lg text-left sm:text-right sm:pl-0 pl-4 md:pr-32">
           <div className="flex flex-col sm:flex-row justify-between sm:space-x-4">
             <p className="font-semibold text-lg sm:text-xl">Mon - Fri</p>
-            <p className="text-gray-400 sm:pl-32">8:00 am – 8:00 pm</p>
+            <p className="text-gray-400 sm:pl-32">9:00 am – 7:00 pm</p>
           </div>
           <div className="flex flex-col sm:flex-row justify-between sm:space-x-4">
             <p className="font-semibold text-lg sm:text-xl">Saturday</p>
@@ -16,7 +16,7 @@ const OpeningHours = () => (
           </div>
           <div className="flex flex-col sm:flex-row justify-between sm:space-x-4">
             <p className="font-semibold text-lg sm:text-xl">Sunday</p>
-            <p className="text-gray-400 sm:pl-4">9:00 am – 9:00 pm</p>
+            <p className="text-gray-400 sm:pl-4">9:00 am – 7:00 pm</p>
           </div>
         </div>
       </div>

@@ -26,8 +26,12 @@
     "contact": {
       "header": ["Contact", "Catalogues", "About", "Conditions"]
     },
-    "toppro": {},
-    "condition": {}
+    "toppro": {
+      "header": ["Contact", "Catalogues", "About", "Conditions"]
+    },
+    "condition": {
+      "header": ["Contact", "Catalogues", "About", "Conditions"]
+    }
   },
   "FR": {
     "home": {
