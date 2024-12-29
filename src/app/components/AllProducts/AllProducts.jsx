@@ -21,8 +21,8 @@ export default function AllProducts() {
   const { translateList } = useLanguage();
   const menuItems = translateList("home", "about");
   const router = useRouter();
-
-  const [maxPrice, setMaxPrice] = useState(130);
+  
+  const [maxPrice, setMaxPrice] = useState(5000);
   const [selectedSize, setSelectedSize] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
   const [selectedColor, setSelectedColor] = useState("");

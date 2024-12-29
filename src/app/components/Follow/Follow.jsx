@@ -9,18 +9,18 @@ export default function FollowUs() {
   const {  translateList } = useLanguage(); 
   
   const menuItems = translateList("home", "follow_us");
-
+  const Insta = "https://www.instagram.com/latore.atelier?igsh=Y3RvbWZhZW12Zmxj"
   const images = [
-    { src: "/1.jpg", link: "https://instagram.com/yourprofile1" },
-    { src: "/2.jpg", link: "https://instagram.com/yourprofile2" },
-    { src: "/3.jpg", link: "https://instagram.com/yourprofile3" },
-    { src: "/4.jpg", link: "https://instagram.com/yourprofile4" },
-    { src: "/5.jpg", link: "https://instagram.com/yourprofile5" },
-    { src: "/6.jpg", link: "https://instagram.com/yourprofile6" },
-    { src: "/7.jpg", link: "https://instagram.com/yourprofile7" },
-    { src: "/8.jpg", link: "https://instagram.com/yourprofile8" },
-    { src: "/9.jpg", link: "https://instagram.com/yourprofile9" },
-    { src: "/10.jpg", link: "https://instagram.com/yourprofile10" },
+    { src: "/1.jpg", link: Insta },
+    { src: "/2.jpg", link: Insta },
+    { src: "/3.jpg", link: Insta },
+    { src: "/4.jpg", link: Insta },
+    { src: "/5.jpg", link: Insta },
+    { src: "/6.jpg", link: Insta },
+    { src: "/7.jpg", link: Insta },
+    { src: "/8.jpg", link: Insta },
+    { src: "/9.jpg", link: Insta },
+    { src: "/10.jpg", link: Insta },
   ];
 
   const { displayedImages, handleNext, handlePrev } = useImageFollow(

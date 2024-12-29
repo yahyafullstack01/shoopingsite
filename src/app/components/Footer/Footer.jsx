@@ -30,10 +30,10 @@ export default function Footer() {
             </p>
           </div>
           <div className="flex justify-start sm:justify-end md:justify-center items-center space-x-4 px-4 sm:px-6 py-6">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/share/18h6VtZV6k/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
               <FaFacebook className="w-6 h-6 text-white hover:text-gray-400" />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/latore.atelier?igsh=Y3RvbWZhZW12Zmxj" target="_blank" rel="noopener noreferrer">
               <FaInstagram className="w-6 h-6 text-white hover:text-gray-400" />
             </a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">

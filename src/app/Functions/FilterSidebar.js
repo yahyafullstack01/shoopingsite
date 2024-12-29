@@ -20,12 +20,12 @@ export default function FilterSidebar({
   //const colors = ["Red", "Blue", "Green"];
    // Предопределённые значения для размеров и категорий
   const sizes = ["All", "S", "M", "L", "XL"];
-  const categories = ["Dress", "Shorts", "T-shirt", "Jeans", "Jacket"];
+  const categories = ["All", "Costumes", "Suits", "Dress", "Shorts", "T-shirt", "Jeans", "Jacket"];
    // Обработчики изменения цены, размера, категории
   const handlePriceChange = (e) => {
     setMaxPrice(parseFloat(e.target.value));
   };
-
+  
  // const toggleColorMenu = () => setIsColorOpen(!isColorOpen);
   const toggleSizeMenu = () => setIsSizeOpen(!isSizeOpen);
   const toggleCategoryMenu = () => setIsCategoryOpen(!isCategoryOpen);
@@ -43,7 +43,7 @@ export default function FilterSidebar({
           </li>
         </ul>
       </div>
-
+      
       <div>
         <h2 className="text-lg sm:text-xl font-semibold mb-4 border-b border-gray-700 pb-2">
           Filter by
@@ -56,20 +56,20 @@ export default function FilterSidebar({
               Price
             </label>
             <div className="flex items-center justify-between text-sm sm:text-base mb-2">
-              <span>7.5₴</span>
+              <span>100₴</span>
               <span>{maxPrice}₴</span>
             </div>
             <input
               type="range"
-              min="7.5"
-              max="130"
-              step="0.5"
+              min="100"
+              max="5000"
+              step="10"
               value={maxPrice}
               onChange={handlePriceChange}
               className="w-full h-1 bg-gray-700 rounded-lg appearance-none focus:outline-none"
             />
           </div>
-
+          
           {/* Color Filter */}
          {/*  {showColorFilter && (
             <div className="relative">
@@ -144,7 +144,7 @@ export default function FilterSidebar({
   </div>
   {isCategoryOpen && (
     <div className="mt-2 bg-gray-700 rounded p-2">
-      {["All", "Dress", "Shorts", "T-shirt", "Jeans", "Jacket"].map((category) => (
+      {categories.map((category) => (
         <div
           key={category}
           onClick={() => handleCategorySelect(category)}
