@@ -4,6 +4,7 @@
       size: "M", 
       category: "Costumes", 
       image: "/Costumes/Woolen suit with skirt/1.avif", 
+      images: ["/1.jpg", "/2.jpg", "/3.jpg"],
       title: "Woolen suit with skirt", 
       description: "Sweater + pencil skirt\nComposition: 75% natural wool, soft, does not prick the body\nSweater + pencil skirt\nComposition: 75% natural wool, soft, does not prick the body." 
     },
@@ -12,6 +13,7 @@
      size: "L", 
      category: "Costumes", 
      image: "/Costumes/Wool suit with trousers/8.avif", 
+     images: ["/1.jpg", "/2.jpg", "/3.jpg"],
      title: "Woolen suit with skirt", 
      description:"Jumper + palazzo pants\nComposition: 75% natural wool, soft, does not prick the body\nJumper + palazzo pants\nComposition: 75% natural wool, soft, does not prick the body."
     },
@@ -20,6 +22,7 @@
       size: "S", 
       category: "Costums", 
       image: "/Costumes/Wool suit with vest/1.avif",
+      images: ["/1.jpg", "/2.jpg", "/3.jpg"],
       title: "Wool suit with vest",
       description:"Vest + palazzo pants\nComposition: 75% natural wool, soft, does not sting the body\nVest + palazzo pants\nComposition: 75% natural wool, soft, does not sting the body."
     },
@@ -28,6 +31,7 @@
       size: "M", 
       category: "Dress", 
       image: "/Dress/Woolen trapeze dress/1.avif", 
+      images: ["/1.jpg", "/2.jpg", "/3.jpg"],
       title: "Woolen trapeze dress",
       description: "Trapeze dress with a pronounced belt\nComposition: 75% natural wool, soft, does not stick to the body\nTrapeze dress with a pronounced belt\nComposition: 75% natural wool, soft, does not stick to the body."
       
@@ -37,6 +41,7 @@
       size: "XL", 
       category: "Dress", 
       image: "/Dress/Wool A-line dress/2.avif", 
+      images: ["/1.jpg", "/2.jpg", "/3.jpg"],
       title: "Wool A-line dress",
       description: "A-line dress with pronounced seams and a front zipper\nComposition: 75% natural wool, soft, does not prick the body\nA-line dress with pronounced seams and a front zipper Composition: 75% natural wool, soft, does not prick the body."
      },
@@ -45,6 +50,7 @@
      size: "M", 
      category: "Dress", 
      image: "/8.jpg", 
+     images: ["/1.jpg", "/2.jpg", "/3.jpg"],
      title: "I'm a product 6",
      description: ""
      
@@ -53,7 +59,8 @@
       color: "blue", 
       size: "L", 
       category: "Jeans", 
-      image: "/6.jpg", 
+      image: "/6.jpg",
+      images: ["/1.jpg", "/2.jpg", "/3.jpg"],
       title: "I'm a product 7",
       description: ""
     },
@@ -62,6 +69,7 @@
      size: "S", 
      category: "Jacket", 
      image: "/5.jpg", 
+     images: ["/1.jpg", "/2.jpg", "/3.jpg"],
      title: "I'm a product 8",
      description: ""
     
@@ -71,6 +79,7 @@
       size: "M", 
       category: "Jeans", 
       image: "/4.jpg", 
+      images: ["/1.jpg", "/2.jpg", "/3.jpg"],
       title: "I'm a product 9",
       description: ""
     },
