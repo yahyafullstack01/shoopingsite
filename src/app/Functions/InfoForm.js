@@ -1,8 +1,18 @@
 "use client";
+
 // Компонент формы информации о продукте
 // Принимает `product` для отображения информации о выбранном продукте 
 // и `onContactClick` для обработки нажатия кнопки "Contact Us"
+import { useLanguage } from './useLanguage'; // Adjust the import path as necessary
+
 export default function InfoForm({ product, onContactClick }) {
+  const { language } = useLanguage(); // Get the current language
+
+  // Get the translated name based on the current language
+  const translatedName = product.translations?.[language]?.name || product.name;
+  // Get the translated description based on the current language
+  const translatedDescription = product.translations?.[language]?.description || product.description;
+
   if (!product) {
     return <p className="text-gray-500">No product selected.</p>;
   }
@@ -11,7 +21,7 @@ export default function InfoForm({ product, onContactClick }) {
     <div className="flex flex-col px-4 md:px-0">
       {/* Product Title */}
       <h1 className="text-2xl md:text-3xl font-semibold text-white mb-2 text-center md:text-left">
-        {product.title}
+        {translatedName}
       </h1>
       <p className="text-gray-500 text-xs md:text-sm mb-4 text-center md:text-left">
         SKU: {product.sku}
@@ -19,7 +29,7 @@ export default function InfoForm({ product, onContactClick }) {
       <p className="text-xl md:text-2xl font-bold text-white mb-4 text-center md:text-left">
         {product.price}₴
       </p>
-
+      
       {/* Size Selector */}
       <div className="mb-6 md:mb-8">
         <label
@@ -71,7 +81,7 @@ export default function InfoForm({ product, onContactClick }) {
           PRODUCT INFO
         </h2>
         <p className="text-gray-400 text-sm md:text-base text-center md:text-left">
-          {product.description}
+          {translatedDescription}
         </p>
       </div>
     </div>
