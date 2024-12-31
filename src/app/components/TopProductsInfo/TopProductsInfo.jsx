@@ -1,3 +1,4 @@
+
 "use client";
 
 import products from "../../data/products";
@@ -5,6 +6,7 @@ import { useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 import InfoForm from "../../Functions/InfoForm";
 import { useLanguage } from "../../Functions/useLanguage";
+import { handleContactButtonClick } from "../../utils/products"; // Імпорт функції
 
 export default function TopProductsInfo() {
   const { translateList } = useLanguage();
@@ -21,10 +23,8 @@ export default function TopProductsInfo() {
   };
 
   // Обробник кнопки "Contact Us"
-  const handleContactButtonClick = () => {
-    router.push(
-      `/contact?productName=${selectedProduct.title}&productPrice=${selectedProduct.price}&productDescription=${selectedProduct.description}&productImage=${selectedProduct.img}&productColor=${selectedProduct.color}&productSize=${selectedProduct.size}&productQuantity=${selectedProduct.quantity}&productSKU=${selectedProduct.sku}`
-    );
+  const onContactClick = (selectedColor, selectedSize, quantity) => {
+    handleContactButtonClick(router, selectedProduct, selectedColor, selectedSize, quantity);
   };
 
   // Плавне прокручування до опису
@@ -104,7 +104,7 @@ export default function TopProductsInfo() {
         <InfoForm
           product={selectedProduct}
           descriptionRef={descriptionRef}
-          onContactClick={handleContactButtonClick}
+          onContactClick={onContactClick}
         />
       </div>
     </div>

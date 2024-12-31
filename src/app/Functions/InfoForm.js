@@ -2,7 +2,20 @@
 // Компонент формы информации о продукте
 // Принимает `product` для отображения информации о выбранном продукте 
 // и `onContactClick` для обработки нажатия кнопки "Contact Us"
-export default function InfoForm({ product, onContactClick }) {
+import { useRouter } from "next/navigation";
+import React, { useState } from "react";
+import { handleContactButtonClick } from "../utils/products"; // Імпорт функції
+
+export default function InfoForm({ product }) {
+  const router = useRouter();
+  const [selectedColor, setSelectedColor] = useState("");
+  const [selectedSize, setSelectedSize] = useState("");
+  const [quantity, setQuantity] = useState(1);
+
+  const handleContactClick = () => {
+    handleContactButtonClick(router, product, selectedColor, selectedSize, quantity);
+  };
+
   if (!product) {
     return <p className="text-gray-500">No product selected.</p>;
   }
@@ -30,36 +43,77 @@ export default function InfoForm({ product, onContactClick }) {
         </label>
         <select
           id="size"
+          value={selectedSize}
+          onChange={(e) => setSelectedSize(e.target.value)}
           className="w-full md:w-1/2 p-2 border border-gray-700 rounded bg-gray-800 text-gray-300"
         >
           <option value="">Select</option>
-          <option value="small">S</option>
-          <option value="medium">M</option>
-          <option value="large">L</option>
-          <option value="xlarge">XL</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
         </select>
       </div>
 
-      {/* Quantity Selector */}
+      {/* Color Selector */}
       <div className="mb-6 md:mb-8">
+        <label
+          htmlFor="color"
+          className="block text-sm font-medium mb-2 text-center md:text-left"
+        >
+          Color
+        </label>
+        <select
+          id="color"
+          value={selectedColor}
+          onChange={(e) => setSelectedColor(e.target.value)}
+          className="w-full md:w-1/2 p-2 border border-gray-700 rounded bg-gray-800 text-gray-300"
+        >
+          <option value="">Select</option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+          <option value="black">Black</option>
+          <option value="white">White</option>
+        </select>
+      </div>
+{/* Quantity Selector */}
+<div className="mb-6 md:mb-8">
         <label
           htmlFor="quantity"
           className="block text-sm font-medium mb-2 text-center md:text-left"
         >
           Quantity
         </label>
-        <input
-          id="quantity"
-          type="number"
-          defaultValue="1"
-          min="1"
-          className="w-full md:w-1/4 p-2 border border-gray-700 rounded bg-gray-800 text-gray-300"
-        />
+        <div className="flex items-center w-full md:w-1/4">
+          <button
+            type="button"
+            onClick={() => setQuantity((prev) => Math.max(1, prev - 1))}
+            className="p-2 bg-gray-700 text-white rounded-l hover:bg-gray-600"
+          >
+            -
+          </button>
+          <input
+            id="quantity"
+            type="number"
+            value={quantity}
+            onChange={(e) => setQuantity(Math.max(1, Number(e.target.value)))}
+            min="1"
+            className="w-full p-2 border-t border-b border-gray-700 bg-gray-800 text-center text-gray-300"
+          />
+          <button
+            type="button"
+            onClick={() => setQuantity((prev) => prev + 1)}
+            className="p-2 bg-gray-700 text-white rounded-r hover:bg-gray-600"
+          >
+            +
+          </button>
+        </div>
       </div>
 
       {/* Contact Button */}
       <button
-        onClick={() => onContactClick(product)}
+        onClick={handleContactClick}
         className="w-full md:w-1/2 bg-lime-500 hover:bg-lime-600 text-black font-semibold py-2 rounded transition duration-300"
       >
         Contact Us

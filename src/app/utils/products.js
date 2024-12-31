@@ -60,12 +60,21 @@ export const handleProductClick = (product, setSelectedProduct, scrollToRef) => 
 
 // Обработчик кнопки "Contact Us"
 // Эта функция перенаправляет пользователя на страницу контакта с информацией о продукте.
-export const handleContactButtonClick = (router, product) => {
+export const handleContactButtonClick = (router, product, selectedColor, selectedSize, quantity) => {
+  const updatedProduct = {
+    ...product,
+    color: selectedColor || product.color, // Використовуємо вибраний колір або дефолтний
+    size: selectedSize || product.size,   // Використовуємо вибраний розмір або дефолтний
+    quantity: quantity || 1,             // Використовуємо кількість або значення за замовчуванням
+    image: product.image || product.img?.startsWith('/') || product.img?.startsWith('http') 
+      ? product.image || product.img 
+      : '/default-image.png', // Встановлюємо стандартне зображення, якщо URL неправильний
+  };
+
   router.push(
-    `/contact?productName=${product.title}&productPrice=${product.price}&productDescription=${product.name}&productImage=${product.image}&productColor=${product.color}&productSize=${product.size}`
+    `/contact?productName=${encodeURIComponent(updatedProduct.title)}&productPrice=${encodeURIComponent(updatedProduct.price)}&productDescription=${encodeURIComponent(updatedProduct.name)}&productImage=${encodeURIComponent(updatedProduct.image)}&productColor=${encodeURIComponent(updatedProduct.color)}&productSize=${encodeURIComponent(updatedProduct.size)}&productQuantity=${encodeURIComponent(updatedProduct.quantity)}`
   );
 };
-
 // Обработчик для плавной прокрутки
 // Функция прокручивает страницу до секции описания продукта.
 export const scrollToDescription = (descriptionRef) => {
