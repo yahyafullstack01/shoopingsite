@@ -24,7 +24,8 @@
       "header": ["Catalogues", "About", "Contact", "Conditions"]
     },
     "contact": {
-      "header": ["Contact", "Catalogues", "About", "Conditions"]
+      "header": ["Contact", "Catalogues", "About", "Conditions"],
+      "hero": ["Contact Us", "We’d love to hear from you! Whether you have questions, comments, or simply want to learn more about what we offer, feel free to get in touch. Our team is here to assist you with any inquiries and help bring your vision to life. Don’t hesitate to reach out—we’re just a message away!"]
     },
     "toppro": {
       "header": ["Contact", "Catalogues", "About", "Conditions"]

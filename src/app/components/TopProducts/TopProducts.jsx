@@ -8,11 +8,11 @@ import { useLanguage } from "../../Functions/useLanguage"; // Import the custom 
 export default function TopProducts() {
   
   const images = [
-    { src: "/1.jpg", link: "/Top_products" },
-    { src: "/2.jpg", link: "/Top_products" },
-    { src: "/3.jpg", link: "Top_products" },
-    { src: "/4.jpg", link: "Top_products" },
-    { src: "/5.jpg", link: "/Top_products" },
+    { src: "/Costumes/Woolen suit with skirt/1.avif", link: "/Top_products" },
+    { src: "/Costumes/Wool suit with trousers/8.avif", link: "/Top_products" },
+    { src: "/Costumes/Wool suit with vest/1.avif", link: "Top_products" },
+    { src: "/Dress/Woolen trapeze dress/1.avif", link: "Top_products" },
+    { src: "/Dress/Wool A-line dress/2.avif", link: "/Top_products" },
     { src: "/6.jpg", link: "/Top_products" },
     { src: "/7.jpg", link: "/Top_products" },
     { src: "/8.jpg", link: "/Top_products" },
