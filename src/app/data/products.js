@@ -9,6 +9,8 @@ const products = [
     size: "M",
     quantity: 10,
     images: ["/Costumes/Woolen suit with skirt/2.avif", "/Costumes/Woolen suit with skirt/3.avif", "/Costumes/Woolen suit with skirt/1.avif","/Costumes/Woolen suit with skirt/5.avif", "/Costumes/Woolen suit with skirt/7.avif", "/Costumes/Woolen suit with skirt/5.avif"],
+    colors: ["red", "blue"], // Додано масив кольорів
+    sizes: ["S", "M"],
     translations: {
       EN: {
         name: "Woolen suit with skirt",

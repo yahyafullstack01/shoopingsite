@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 // Компонент боковой панели фильтров
 export default function FilterSidebar({
@@ -132,7 +131,6 @@ export default function FilterSidebar({
   </div>
 )}
 
-{/* Category Filter */}
 {/* Category Filter */}
 <div className="relative">
   <div

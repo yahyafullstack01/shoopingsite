@@ -10,18 +10,16 @@ import {
   handleSizeSelect,
   handleCategorySelect,
   filterAndSortProducts,
-  redirectToContact,
+  handleContactButtonClick,
   handleProductClick,
 } from "../../utils/products";
 import products from "../../data/productsAll";
 import { useLanguage } from "../../Functions/useLanguage";
 
 export default function AllProducts() {
-
-  const { translateList } = useLanguage();
-  const menuItems = translateList("home", "about");
+  const { translateList, language } = useLanguage();
   const router = useRouter();
-  
+
   const [maxPrice, setMaxPrice] = useState(5000);
   const [selectedSize, setSelectedSize] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
@@ -36,25 +34,31 @@ export default function AllProducts() {
     { maxPrice, selectedSize, selectedColor, selectedCategory },
     sortOrder
   );
-
-  const onProductClick = (product) =>
+  const onProductClick = (product) => {
+    console.log("Clicked Product:", product); // Перевірте, чи продукт має `name`
     handleProductClick(product, setSelectedProduct, descriptionRef);
+  };
 
-  const onContactClick = () => {
-    redirectToContact(router, selectedProduct);
+  const onContactClick = (selectedColor, selectedSize, quantity) => {
+    handleContactButtonClick(
+      router,
+      selectedProduct,
+      selectedColor,
+      selectedSize,
+      quantity,
+      language
+    );
   };
 
   return (
     <div className="bg-gray-900 text-white min-h-screen dark:bg-[#0c111d]">
-      <div className="w-full mx-auto px-4 sm:px-6 md:px-8 py-4  ">
+      <div className="w-full mx-auto px-4 sm:px-6 md:px-8 py-4">
         <div className="flex flex-col md:flex-row md:space-x-8">
           <FilterSidebar
             maxPrice={maxPrice}
             setMaxPrice={setMaxPrice}
             selectedSize={selectedSize}
-            handleSizeSelect={(size) =>
-              handleSizeSelect(size, setSelectedSize)
-            }
+            handleSizeSelect={(size) => handleSizeSelect(size, setSelectedSize)}
             selectedCategory={selectedCategory}
             handleCategorySelect={(category) =>
               handleCategorySelect(category, setSelectedCategory)
@@ -84,7 +88,7 @@ export default function AllProducts() {
             </p>
 
             <main className="w-full max-h-[800px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 mb-8">
-              <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
                 {filteredProducts.map((product) => (
                   <ProductCard
                     key={product.id}

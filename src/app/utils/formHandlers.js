@@ -1,17 +1,17 @@
-// Функция для обработки отправки формы
+// Function to handle form submission
 export const handleFormSubmit = ({
-  e, // Событие отправки формы
-  setFormSubmitted, // Функция для установки состояния отправки формы
-  setSuccessMessageVisible, // Функция для отображения сообщения об успешной отправке
-  setProductData, // Функция для сброса данных продукта
-  setFormValues, // Функция для сброса значений формы
+  e, // Form submission event
+  setFormSubmitted, // Function to set the form submission state
+  setSuccessMessageVisible, // Function to display the success message
+  setProductData, // Function to reset product data
+  setFormValues, // Function to reset form values
 }) => {
-  e.preventDefault(); // Предотвращаем стандартное поведение формы
+  e.preventDefault(); // Prevent default form behavior
 
-  setFormSubmitted(true); // Устанавливаем состояние отправки формы
-  setSuccessMessageVisible(true); // Показываем сообщение об успешной отправке
+  setFormSubmitted(true); // Set the form submission state
+  setSuccessMessageVisible(true); // Display the success message
 
-  // Сбрасываем данные продукта
+  // Reset product data
   setProductData({
     name: null,
     price: null,
@@ -23,25 +23,25 @@ export const handleFormSubmit = ({
     sku: null,
   });
 
-  // Сбрасываем значения формы
+  // Reset form values
   setFormValues({
     firstName: "", 
     lastName: "", 
-    phone: "",
+    phone: "", 
     email: "", 
     message: "", 
   });
 
-  // Таймер для скрытия сообщения об успешной отправке
+  // Timer to hide the success message
   setTimeout(() => {
-    setFormSubmitted(false); 
-    setSuccessMessageVisible(false); 
-  }, 8000); 
+    setFormSubmitted(false); // Reset form submission state
+    setSuccessMessageVisible(false); // Hide success message
+  }, 8000); // Duration: 8 seconds
 };
 
-// Функция для обработки изменения значений в форме
+// Function to handle changes in form values
 export const handleInputChange = (e, setFormValues) => {
-  const { name, value } = e.target; // Получаем имя и значение изменённого поля
+  const { name, value } = e.target; // Get the name and value of the changed field
   setFormValues((prevValues) => ({
     ...prevValues, 
     [name]: value, 

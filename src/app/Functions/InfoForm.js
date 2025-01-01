@@ -1,3 +1,4 @@
+
 "use client";
 // Компонент формы информации о продукте
 // Принимает `product` для отображения информации о выбранном продукте 
@@ -13,14 +14,14 @@ export default function InfoForm({ product }) {
   const [selectedSize, setSelectedSize] = useState("");
   const [quantity, setQuantity] = useState(1);
   const { language } = useLanguage(); // Get the current language
-  const handleContactClick = () => {
-    handleContactButtonClick(router, product, selectedColor, selectedSize, quantity);
-  };
-
+ 
   // Get the translated name based on the current language
   const translatedName = product.translations?.[language]?.name || product.name;
   // Get the translated description based on the current language
   const translatedDescription = product.translations?.[language]?.description || product.description;
+  const handleContactClick = () => {
+    handleContactButtonClick(router, product, selectedColor, selectedSize, quantity, language);
+  };
 
 
   if (!product) {
@@ -39,51 +40,52 @@ export default function InfoForm({ product }) {
       <p className="text-xl md:text-2xl font-bold text-white mb-4 text-center md:text-left">
         {product.price}₴
       </p>
-      
       {/* Size Selector */}
-      <div className="mb-6 md:mb-8">
-        <label
-          htmlFor="size"
-          className="block text-sm font-medium mb-2 text-center md:text-left"
-        >
-          Size
-        </label>
-        <select
-          id="size"
-          value={selectedSize}
-          onChange={(e) => setSelectedSize(e.target.value)}
-          className="w-full md:w-1/2 p-2 border border-gray-700 rounded bg-gray-800 text-gray-300"
-        >
-          <option value="">Select</option>
-          <option value="S">S</option>
-          <option value="M">M</option>
-          <option value="L">L</option>
-          <option value="XL">XL</option>
-        </select>
-      </div>
+<div className="mb-6 md:mb-8">
+  <label
+    htmlFor="size"
+    className="block text-sm font-medium mb-2 text-center md:text-left"
+  >
+    Size
+  </label>
+  <select
+    id="size"
+    value={selectedSize}
+    onChange={(e) => setSelectedSize(e.target.value)}
+    className="w-full md:w-1/2 p-2 border border-gray-700 rounded bg-gray-800 text-gray-300"
+  >
+    <option value="">Select</option>
+    {product.sizes?.map((size) => (
+      <option key={size} value={size}>
+        {size}
+      </option>
+    ))}
+  </select>
+</div>
 
-      {/* Color Selector */}
-      <div className="mb-6 md:mb-8">
-        <label
-          htmlFor="color"
-          className="block text-sm font-medium mb-2 text-center md:text-left"
-        >
-          Color
-        </label>
-        <select
-          id="color"
-          value={selectedColor}
-          onChange={(e) => setSelectedColor(e.target.value)}
-          className="w-full md:w-1/2 p-2 border border-gray-700 rounded bg-gray-800 text-gray-300"
-        >
-          <option value="">Select</option>
-          <option value="red">Red</option>
-          <option value="blue">Blue</option>
-          <option value="green">Green</option>
-          <option value="black">Black</option>
-          <option value="white">White</option>
-        </select>
-      </div>
+{/* Color Selector */}
+<div className="mb-6 md:mb-8">
+  <label
+    htmlFor="color"
+    className="block text-sm font-medium mb-2 text-center md:text-left"
+  >
+    Color
+  </label>
+  <select
+    id="color"
+    value={selectedColor}
+    onChange={(e) => setSelectedColor(e.target.value)}
+    className="w-full md:w-1/2 p-2 border border-gray-700 rounded bg-gray-800 text-gray-300"
+  >
+    <option value="">Select</option>
+    {product.colors?.map((color) => (
+      <option key={color} value={color}>
+        {color}
+      </option>
+    ))}
+  </select>
+</div>
+
 {/* Quantity Selector */}
 <div className="mb-6 md:mb-8">
         <label

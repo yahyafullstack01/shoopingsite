@@ -1,11 +1,14 @@
  const products = [
     { id: 1,
       price: 3170,
+      sku: "12345",
       color: "red",
       size: "M",
       category: "Costumes",
       image: "/Costumes/Woolen suit with skirt/1.avif",
       images: ["/1.jpg", "/2.jpg", "/3.jpg"],
+      colors: ["red", "blue"], 
+      sizes: ["S", "M"],
       translations: {
         EN: {
           name: "Woolen suit with skirt",
@@ -24,11 +27,14 @@
     {
       id: 2,
       price: 3710,
+      sku: "12345",
       color: "blue",
       size: "L",
       category: "Costumes",
       image: "/Costumes/Wool suit with trousers/8.avif",
       images: ["/1.jpg", "/2.jpg", "/3.jpg"],
+      colors: ["red", "blue"], 
+      sizes: ["S", "M"],
       translations: {
         EN: {
           name: "Woolen suit with trousers",
@@ -47,11 +53,14 @@
     {
       id: 3,
       price: 4160,
+      sku: "12345",
       color: "green",
       size: "S",
       category: "Costumes",
       image: "/Costumes/Wool suit with vest/1.avif",
       images: ["/1.jpg", "/2.jpg", "/3.jpg"],
+      colors: ["red", "blue"], 
+      sizes: ["S", "M"],
       translations: {
         EN: {
           name: "Wool suit with vest",
@@ -70,11 +79,14 @@
     {
       id: 4,
       price: 3100,
+      sku: "12345",
       color: "red",
       size: "M",
       category: "Dress",
       image: "/Dress/Woolen trapeze dress/1.avif",
       images: ["/1.jpg", "/2.jpg", "/3.jpg"],
+      colors: ["red", "blue"], 
+      sizes: ["S", "M"],
       translations: {
         EN: {
           name: "Woolen trapeze dress",
@@ -93,11 +105,14 @@
     {
       id: 5,
       price: 3100,
+      sku: "12345",
       color: "blue",
       size: "XL",
       category: "Dress",
       image: "/Dress/Wool A-line dress/2.avif",
       images: ["/1.jpg", "/2.jpg", "/3.jpg"],
+      colors: ["red", "blue"], 
+      sizes: ["S", "M"],
       translations: {
         EN: {
           name: "Wool A-line dress",
@@ -113,67 +128,84 @@
         }
       }
     },
-    { id: 6, name: "Product 6", price: 85,
+    { id: 6, name: "Product 6", price: 85, sku: "12345",
      color: "red", 
      size: "M", 
      category: "Dress", 
      image: "/8.jpg", 
      images: ["/1.jpg", "/2.jpg", "/3.jpg"],
+     colors: ["red", "blue"], 
+      sizes: ["S", "M"],
      title: "I'm a product 6",
      description: ""
      
     },
-    { id: 7, name: "Product 7", price: 20, 
+    { id: 7, name: "Product 7", price: 20, sku: "12345",
       color: "blue", 
       size: "L", 
       category: "Jeans", 
       image: "/6.jpg",
       images: ["/1.jpg", "/2.jpg", "/3.jpg"],
+      colors: ["red", "blue"], 
+      sizes: ["S", "M"],
       title: "I'm a product 7",
       description: ""
     },
-    { id: 8, name: "Product 8", price: 10,
+    { id: 8, name: "Product 8", price: 10, sku: "12345",
      color: "green", 
      size: "S", 
      category: "Jacket", 
      image: "/5.jpg", 
      images: ["/1.jpg", "/2.jpg", "/3.jpg"],
+     colors: ["red", "blue"], 
+      sizes: ["S", "M"],
      title: "I'm a product 8",
      description: ""
     
     },
-    { id: 9, name: "Product 9", price: 25, 
+    { id: 9, name: "Product 9", price: 25, sku: "12345",
       color: "red", 
       size: "M", 
       category: "Jeans", 
       image: "/4.jpg", 
       images: ["/1.jpg", "/2.jpg", "/3.jpg"],
+      colors: ["red", "blue"], 
+      sizes: ["S", "M"],
       title: "I'm a product 9",
       description: ""
     },
-    { id: 10, name: "Product 10", price: 50, 
+    { id: 10, name: "Product 10", price: 50, sku: "12345",
       color: "blue", 
       size: "XL", 
       category: "T-shirt", 
       image: "/3.jpg", 
+      images: ["/1.jpg", "/2.jpg", "/3.jpg"],
+      colors: ["red", "blue"], 
+      sizes: ["S", "M"],
       title: "I'm a product 10",
       description: ""
      
     },
-    { id: 11, name: "Product 11", price: 25,
+    { id: 11, name: "Product 11", price: 25, sku: "12345",
      color: "red", 
      size: "M", 
      category: "Shorts", 
      image: "/8.jpg", 
+     images: ["/1.jpg", "/2.jpg", "/3.jpg"],
+      colors: ["red", "blue"], 
+      sizes: ["S", "M"],
      title: "I'm a product 11",
      description:""
 
     },
-    { id: 12, name: "Product 12", price: 50,
+    { id: 12, name: "Product 12", price: 50, sku: "12345",
      color: "blue", 
      size: "XL", 
      category: "Dress", 
      image: "/9.jpg", 
+     images: ["/1.jpg", "/2.jpg", "/3.jpg"],
+      colors: ["red", "blue"], 
+      sizes: ["S", "M"],
      title: "I'm a product 12",
      description: ""
     

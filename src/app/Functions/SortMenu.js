@@ -1,20 +1,22 @@
 import React from 'react';
-// Компонент для отображения меню сортировки
+
+// Component to display a sorting menu
 export default function SortMenu({
-  sortOrder, // Текущий порядок сортировки
-  setSortOrder, // Функция для установки порядка сортировки
-  isSortMenuOpen, // Состояние открытия/закрытия меню сортировки
-  toggleSortMenu, // Функция для переключения состояния меню
- 
+  sortOrder, // Current sorting order
+  setSortOrder, // Function to set the sorting order
+  isSortMenuOpen, // State for the open/close status of the sorting menu
+  toggleSortMenu, // Function to toggle the menu's state
 }) {
   return (
     <div className="relative inline-block text-left ml-auto">
+      {/* Button to toggle the sorting menu */}
       <button
         type="button"
         className="inline-flex justify-center w-full rounded-md border border-gray-700 shadow-sm px-4 py-2 bg-gray-800 text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-gray-600"
         onClick={toggleSortMenu}
       >
         Sort by:{' '}
+        {/* Display the current sorting order */}
         {sortOrder === 'recommended'
           ? 'Recommended'
           : sortOrder === 'priceAsc'
@@ -35,6 +37,7 @@ export default function SortMenu({
         </svg>
       </button>
 
+      {/* Dropdown menu for sorting options */}
       {isSortMenuOpen && (
         <div
           className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-gray-800 ring-1 ring-black ring-opacity-5 focus:outline-none"
@@ -43,6 +46,7 @@ export default function SortMenu({
           tabIndex="-1"
         >
           <div className="py-1" role="none">
+            {/* Button for "Recommended" sorting */}
             <button
               className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-700"
               role="menuitem"
@@ -51,6 +55,7 @@ export default function SortMenu({
             >
               Recommended
             </button>
+            {/* Button for "Price: Low to High" sorting */}
             <button
               className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-700"
               role="menuitem"
@@ -59,6 +64,7 @@ export default function SortMenu({
             >
               Price: Low to High
             </button>
+            {/* Button for "Price: High to Low" sorting */}
             <button
               className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-700"
               role="menuitem"

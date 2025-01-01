@@ -118,10 +118,13 @@ export default function TopProductsInfo() {
 
         {/* Passing data to InfoForm */}
         <InfoForm
-          product={selectedProduct}
-          descriptionRef={descriptionRef}
-          onContactClick={onContactClick}
-        />
+  product={selectedProduct}
+  colors={selectedProduct.colors}
+  sizes={selectedProduct.sizes}
+  descriptionRef={descriptionRef}
+  onContactClick={onContactClick}
+/>
+
       </div>
     </div>
   );

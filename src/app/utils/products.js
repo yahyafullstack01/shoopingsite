@@ -1,18 +1,18 @@
-// Выбор размера
-// Эта функция обновляет выбранный размер, устанавливая значение или очищая его, если выбран "All".
+// Size selection
+// This function updates the selected size, setting a value or clearing it if "All" is selected.
 export const handleSizeSelect = (size, setSelectedSize) => {
   setSelectedSize(size === "All" ? "" : size);
 };
 
-// Выбор категории
-// Эта функция обновляет выбранную категорию, устанавливая значение или очищая его, если выбрана "All".
+// Category selection
+// This function updates the selected category, setting a value or clearing it if "All" is selected.
 export const handleCategorySelect = (category, setSelectedCategory) => {
   setSelectedCategory(category === "All" ? "" : category);
 };
 
-// Фильтрация и сортировка продуктов
-// Функция фильтрует продукты по заданным параметрам (цена, размер, цвет, категория) 
-// и сортирует их в порядке возрастания или убывания цены.
+// Filtering and sorting products
+// This function filters products based on the given parameters (price, size, color, category)
+// and sorts them in ascending or descending order of price.
 export const filterAndSortProducts = (products, filters, sortOrder) => {
   const { maxPrice, selectedSize, selectedColor, selectedCategory } = filters;
 
@@ -33,24 +33,8 @@ export const filterAndSortProducts = (products, filters, sortOrder) => {
     });
 };
 
-// Плавная прокрутка к элементу
-// Функция прокручивает страницу до указанного элемента плавно.
-export const scrollToElement = (ref) => {
-  if (ref.current) {
-    ref.current.scrollIntoView({ behavior: "smooth" });
-  }
-};
-
-// Переход на страницу контакта
-// Эта функция перенаправляет пользователя на страницу контакта с переданными данными продукта.
-export const redirectToContact = (router, product) => {
-  router.push(
-    `/contact?productName=${product.title}&productPrice=${product.price}&productDescription=${product.name}&productImage=${product.image}&productColor=${product.color}&productSize=${product.size}`
-  );
-};
-
-// Обработчик клика на продукт
-// Функция устанавливает выбранный продукт и прокручивает страницу до указанного элемента.
+// Product click handler
+// This function sets the selected product and scrolls the page to a specified element.
 export const handleProductClick = (product, setSelectedProduct, scrollToRef) => {
   setSelectedProduct(product);
   if (scrollToRef?.current) {
@@ -58,30 +42,33 @@ export const handleProductClick = (product, setSelectedProduct, scrollToRef) => 
   }
 };
 
-// Обработчик кнопки "Contact Us"
-// Эта функция перенаправляет пользователя на страницу контакта с информацией о продукте.
+// "Contact Us" button handler
+// This function redirects the user to the contact page with product details.
 export const handleContactButtonClick = (
   router,
   product,
   selectedColor,
   selectedSize,
   quantity,
-  language // Додаємо параметр для мови
+  language 
 ) => {
   const translatedName =
-    product.translations?.[language]?.name || product.title; // Перекладене ім'я
+    product.translations?.[language]?.name || product.title; // Translated name
   const translatedDescription =
-    product.translations?.[language]?.description || product.description; // Перекладений опис
+    product.translations?.[language]?.description || product.description; // Translated description
 
   const updatedProduct = {
     ...product,
-    color: selectedColor || product.color, // Використовуємо вибраний колір або дефолтний
-    size: selectedSize || product.size, // Використовуємо вибраний розмір або дефолтний
-    quantity: quantity || 1, // Використовуємо кількість або значення за замовчуванням
+    translatedName,
+    sku: product.sku || "Unknown SKU",
+    color: selectedColor || product.color, // Use the selected color or default
+    size: selectedSize || product.size, // Use the selected size or default
+    quantity: quantity || 1, // Use the quantity or default value
     image:
       product.image || product.img?.startsWith('/') || product.img?.startsWith('http')
         ? product.image || product.img
-        : '/default-image.png', // Встановлюємо стандартне зображення, якщо URL неправильний
+        : '/default-image.png', // Set a default image if the URL is invalid
+    translatedDescription,
   };
 
   router.push(
@@ -97,28 +84,4 @@ export const handleContactButtonClick = (
       updatedProduct.sku
     )}`
   );
-};
-
-{/*export const handleContactButtonClick = (router, product, selectedColor, selectedSize, quantity) => {
-  const updatedProduct = {
-    ...product,
-    color: selectedColor || product.color, // Використовуємо вибраний колір або дефолтний
-    size: selectedSize || product.size,   // Використовуємо вибраний розмір або дефолтний
-    quantity: quantity || 1,             // Використовуємо кількість або значення за замовчуванням
-    image: product.image || product.img?.startsWith('/') || product.img?.startsWith('http') 
-      ? product.image || product.img 
-      : '/default-image.png', // Встановлюємо стандартне зображення, якщо URL неправильний
-  };
-
-  router.push(
-    `/contact?productName=${encodeURIComponent(updatedProduct.title)}&productPrice=${encodeURIComponent(updatedProduct.price)}&productDescription=${encodeURIComponent(updatedProduct.name)}&productImage=${encodeURIComponent(updatedProduct.image)}&productColor=${encodeURIComponent(updatedProduct.color)}&productSize=${encodeURIComponent(updatedProduct.size)}&productQuantity=${encodeURIComponent(updatedProduct.quantity)}`
-  );
-};
-*/}
-// Обработчик для плавной прокрутки
-// Функция прокручивает страницу до секции описания продукта.
-export const scrollToDescription = (descriptionRef) => {
-  if (descriptionRef.current) {
-    descriptionRef.current.scrollIntoView({ behavior: "smooth" });
-  }
 };
