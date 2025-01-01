@@ -60,7 +60,46 @@ export const handleProductClick = (product, setSelectedProduct, scrollToRef) => 
 
 // Обработчик кнопки "Contact Us"
 // Эта функция перенаправляет пользователя на страницу контакта с информацией о продукте.
-export const handleContactButtonClick = (router, product, selectedColor, selectedSize, quantity) => {
+export const handleContactButtonClick = (
+  router,
+  product,
+  selectedColor,
+  selectedSize,
+  quantity,
+  language // Додаємо параметр для мови
+) => {
+  const translatedName =
+    product.translations?.[language]?.name || product.title; // Перекладене ім'я
+  const translatedDescription =
+    product.translations?.[language]?.description || product.description; // Перекладений опис
+
+  const updatedProduct = {
+    ...product,
+    color: selectedColor || product.color, // Використовуємо вибраний колір або дефолтний
+    size: selectedSize || product.size, // Використовуємо вибраний розмір або дефолтний
+    quantity: quantity || 1, // Використовуємо кількість або значення за замовчуванням
+    image:
+      product.image || product.img?.startsWith('/') || product.img?.startsWith('http')
+        ? product.image || product.img
+        : '/default-image.png', // Встановлюємо стандартне зображення, якщо URL неправильний
+  };
+
+  router.push(
+    `/contact?productName=${encodeURIComponent(translatedName)}&productPrice=${encodeURIComponent(
+      updatedProduct.price
+    )}&productDescription=${encodeURIComponent(
+      translatedDescription
+    )}&productImage=${encodeURIComponent(
+      updatedProduct.image
+    )}&productColor=${encodeURIComponent(updatedProduct.color)}&productSize=${encodeURIComponent(
+      updatedProduct.size
+    )}&productQuantity=${encodeURIComponent(updatedProduct.quantity)}&productSKU=${encodeURIComponent(
+      updatedProduct.sku
+    )}`
+  );
+};
+
+{/*export const handleContactButtonClick = (router, product, selectedColor, selectedSize, quantity) => {
   const updatedProduct = {
     ...product,
     color: selectedColor || product.color, // Використовуємо вибраний колір або дефолтний
@@ -75,6 +114,7 @@ export const handleContactButtonClick = (router, product, selectedColor, selecte
     `/contact?productName=${encodeURIComponent(updatedProduct.title)}&productPrice=${encodeURIComponent(updatedProduct.price)}&productDescription=${encodeURIComponent(updatedProduct.name)}&productImage=${encodeURIComponent(updatedProduct.image)}&productColor=${encodeURIComponent(updatedProduct.color)}&productSize=${encodeURIComponent(updatedProduct.size)}&productQuantity=${encodeURIComponent(updatedProduct.quantity)}`
   );
 };
+*/}
 // Обработчик для плавной прокрутки
 // Функция прокручивает страницу до секции описания продукта.
 export const scrollToDescription = (descriptionRef) => {
