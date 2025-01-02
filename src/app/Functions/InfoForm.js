@@ -31,13 +31,13 @@ export default function InfoForm({ product }) {
   return (
     <div className="flex flex-col px-4 md:px-0">
       {/* Product Title */}
-      <h1 className="text-2xl md:text-3xl font-semibold text-white mb-2 text-center md:text-left">
+      <h1 className="text-2xl md:text-3xl font-semibold text:bg-black dark:text-white mb-2 text-center md:text-left">
         {translatedName}
       </h1>
-      <p className="text-gray-500 text-xs md:text-sm mb-4 text-center md:text-left">
+      <p className="text-gray-800 dark:text-gray-500 text-xs md:text-sm mb-4 text-center md:text-left">
         SKU: {product.sku}
       </p>
-      <p className="text-xl md:text-2xl font-bold text-white mb-4 text-center md:text-left">
+      <p className="text-xl md:text-2xl font-bold text:bg-black dark:text-white mb-4 text-center md:text-left">
         {product.price}₴
       </p>
       {/* Size Selector */}
@@ -52,7 +52,7 @@ export default function InfoForm({ product }) {
     id="size"
     value={selectedSize}
     onChange={(e) => setSelectedSize(e.target.value)}
-    className="w-full md:w-1/2 p-2 border border-gray-700 rounded bg-gray-800 text-gray-300"
+    className="w-full md:w-1/2 p-2 border bg-[#f5e7da] dark:border-gray-700 rounded dark:bg-gray-800 dark:text-gray-300"
   >
     <option value="">Select</option>
     {product.sizes?.map((size) => (
@@ -64,7 +64,7 @@ export default function InfoForm({ product }) {
 </div>
 
 {/* Color Selector */}
-<div className="mb-6 md:mb-8">
+<div className="mb-6 md:mb-8 ">
   <label
     htmlFor="color"
     className="block text-sm font-medium mb-2 text-center md:text-left"
@@ -75,7 +75,7 @@ export default function InfoForm({ product }) {
     id="color"
     value={selectedColor}
     onChange={(e) => setSelectedColor(e.target.value)}
-    className="w-full md:w-1/2 p-2 border border-gray-700 rounded bg-gray-800 text-gray-300"
+    className="w-full md:w-1/2 p-2 border bg-[#f5e7da] dark:border-gray-700 rounded dark:bg-gray-800 dark:text-gray-300"
   >
     <option value="">Select</option>
     {product.colors?.map((color) => (
@@ -94,11 +94,11 @@ export default function InfoForm({ product }) {
         >
           Quantity
         </label>
-        <div className="flex items-center w-full md:w-1/4">
+        <div className="flex items-center w-full md:w-1/4  bg-[#f5e7da] dark:bg-gray-700 dark:text-white rounded-l dark:hover:bg-gray-600  ">
           <button
             type="button"
             onClick={() => setQuantity((prev) => Math.max(1, prev - 1))}
-            className="p-2 bg-gray-700 text-white rounded-l hover:bg-gray-600"
+            className="p-2 bg-[#f5e7da] dark:bg-gray-700 dark:text-white rounded-l dark:hover:bg-gray-600"
           >
             -
           </button>
@@ -113,7 +113,7 @@ export default function InfoForm({ product }) {
           <button
             type="button"
             onClick={() => setQuantity((prev) => prev + 1)}
-            className="p-2 bg-gray-700 text-white rounded-r hover:bg-gray-600"
+            className="p-2 bg-[#f5e7da] dark:bg-gray-700 dark:text-white rounded-l dark:hover:bg-gray-600"
           >
             +
           </button>
@@ -123,17 +123,17 @@ export default function InfoForm({ product }) {
       {/* Contact Button */}
       <button
         onClick={handleContactClick}
-        className="w-full md:w-1/2 bg-lime-500 hover:bg-lime-600 text-black font-semibold py-2 rounded transition duration-300"
+        className="w-full md:w-1/2 bg-[#4a3825] hover:bg-[#2e1f14] text-white dark:bg-lime-500 dark:hover:bg-lime-600 dark:text-black font-semibold py-2 rounded transition duration-300"
       >
         Contact Us
       </button>
 
       {/* Product Info */}
       <div className="mt-10">
-        <h2 className="text-lg md:text-xl font-semibold text-white mb-4 text-center md:text-left">
+        <h2 className="text-lg md:text-xl font-semibold text-black dark:text-white mb-4 text-center md:text-left">
           PRODUCT INFO
         </h2>
-        <p className="text-gray-400 text-sm md:text-base text-center md:text-left">
+        <p className="text:gray-500 dark:text-gray-400 text-sm md:text-base text-center md:text-left">
           {translatedDescription}
         </p>
       </div>

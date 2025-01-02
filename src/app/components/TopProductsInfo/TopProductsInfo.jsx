@@ -34,7 +34,7 @@ export default function TopProductsInfo() {
   };
 
   return (
-    <div className="dark:bg-[#2e1f14] bg-[#f5e7da] text:bg-black dark:text-white min-h-screen px-4 py-8">
+    <div className="dark:bg-[#2e1f14] bg-[#fcf8f3]  text:bg-black dark:text-white min-h-screen px-4 py-8">
       <div className="text-center">
         <h1 className="text-3xl md:text-4xl font-bold mb-4">
           Explore the Collection
@@ -46,7 +46,7 @@ export default function TopProductsInfo() {
       </div>
 
       {/* Product List */}
-      <div className="ml-8 max-h-[450px] md:max-h-[600px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 mb-8">
+      <div className="bg-[#f5e7da] dark:bg-[rgba(58,42,32,0.8)] ml-8 max-h-[450px] md:max-h-[600px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 mb-8">
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 md:gap-6 p-4">
           {products.map((product) => {
             const translatedName = product.translations?.[language]?.name || product.title;
@@ -54,7 +54,7 @@ export default function TopProductsInfo() {
             return (
               <div
                 key={product.id}
-                className="text-black dark:bg-white dark:text-black rounded shadow-lg hover:scale-105 transition-transform cursor-pointer"
+                className="text-black bg-[#fcf8f3] dark:bg-white dark:text-black rounded shadow-lg hover:scale-105 transition-transform cursor-pointer"
                 
                 onClick={() => handleProductClick(product)} // Call the scroll function
               >
@@ -63,7 +63,7 @@ export default function TopProductsInfo() {
                   alt={translatedName}
                   className="object-cover w-full h-43 sm:h-63 rounded transform transition-transform duration-300 ease-in-out group-hover:scale-110"
                 /> {/*w-full h-36 sm:h-48 object-cover rounded-t*/}
-                <div className="p-2 sm:p-4  dark:bg-[#d2b48c]">
+                <div className="p-2 sm:p-4  dark:bg-[#f5e8d6]">
                   <h3 className="font-semibold text-sm sm:text-lg">
                     {translatedName}
                   </h3>
@@ -79,13 +79,13 @@ export default function TopProductsInfo() {
 
       {/* Selected Product Description */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 pt-8" ref={descriptionRef}>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center ">
           <img
             src={selectedProduct.img}
             alt={selectedProduct.translations?.[language]?.name || selectedProduct.title}
             className="w-full max-w-xs md:max-w-md object-cover rounded-lg shadow-lg"
           />
-          <div className="flex mt-4 sm:mt-8 gap-2">
+          <div className="flex mt-4 sm:mt-8 gap-2 ">
             {selectedProduct.images.map((image, index) => (
               <img
                 key={index}
