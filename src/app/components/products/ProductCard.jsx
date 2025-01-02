@@ -15,7 +15,7 @@ const ProductCard = ({ product, onClick }) => {
 
   return (
     <div
-      className="bg-gray-800 dark:bg-[#0f172a] p-3 sm:p-4 rounded group cursor-pointer"
+      className="bg-[#fcfaf3c6]  dark:bg-[#0f172a] p-3 sm:p-4 rounded group cursor-pointer"
       onClick={onClick} // Handle the click event for the card.
     >
       {/* Container for the product image */}
@@ -33,9 +33,9 @@ const ProductCard = ({ product, onClick }) => {
       {/* Container for product details */}
       <div className="mt-2 sm:mt-4">
         <h3 className="text-sm sm:text-lg font-medium">{translatedName}</h3>
-        <p className="text-xs sm:text-sm text-gray-400">Price: {product.price}₴</p>
-        <p className="text-xs sm:text-sm text-gray-400">Size: {product.size}</p>
-        <p className="text-sm text-gray-400">Category: {product.category}</p>
+        <p className="text-xs sm:text-sm text-gray-700 dark:text-gray-400">Price: {product.price}₴</p>
+        <p className="text-xs sm:text-sm text-gray-700 dark:text-gray-400">Size: {product.size}</p>
+        <p className="text-sm text-gray-700 dark:text-gray-400">Category: {product.category}</p>
       </div>
     </div>
   );

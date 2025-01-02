@@ -12,7 +12,8 @@ export default function SortMenu({
       {/* Button to toggle the sorting menu */}
       <button
         type="button"
-        className="inline-flex justify-center w-full rounded-md border border-gray-700 shadow-sm px-4 py-2 bg-gray-800 text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900 focus:ring-gray-600"
+        className="inline-flex justify-center w-full rounded-md border dark:border-gray-700 shadow-sm px-4 py-2 bg-[#2e1f14] dark:bg-gray-800 text-sm font-medium text-white hover:bg-[#4a3825] dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-[#2e1f14] dark:focus:ring-offset-gray-900 focus:ring-[#4a3825] dark:focus:ring-gray-600"
+        
         onClick={toggleSortMenu}
       >
         Sort by:{' '}
@@ -40,7 +41,7 @@ export default function SortMenu({
       {/* Dropdown menu for sorting options */}
       {isSortMenuOpen && (
         <div
-          className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-gray-800 ring-1 ring-black ring-opacity-5 focus:outline-none"
+          className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-[#4a3825]  dark:bg-gray-800 ring-1 ring-black ring-opacity-5 focus:outline-none"
           role="menu"
           aria-orientation="vertical"
           tabIndex="-1"
@@ -48,7 +49,7 @@ export default function SortMenu({
           <div className="py-1" role="none">
             {/* Button for "Recommended" sorting */}
             <button
-              className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-700"
+              className="block px-4 py-2 text-sm text-gray-200 hover:bg-[#3a2719] dark:hover:bg-gray-700"
               role="menuitem"
               tabIndex="-1"
               onClick={() => setSortOrder('recommended')}
@@ -57,7 +58,7 @@ export default function SortMenu({
             </button>
             {/* Button for "Price: Low to High" sorting */}
             <button
-              className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-700"
+              className="block px-4 py-2 text-sm text-gray-200 hover:bg-[#3a2719] dark:hover:bg-gray-700"
               role="menuitem"
               tabIndex="-1"
               onClick={() => setSortOrder('priceAsc')}
@@ -66,7 +67,7 @@ export default function SortMenu({
             </button>
             {/* Button for "Price: High to Low" sorting */}
             <button
-              className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-700"
+              className="block px-4 py-2 text-sm text-gray-200 hover:bg-[#3a2719] dark:hover:bg-gray-700"
               role="menuitem"
               tabIndex="-1"
               onClick={() => setSortOrder('priceDesc')}
