@@ -1,6 +1,4 @@
-
 "use client";
-
 import products from "../../data/products";
 import { useState, useRef } from "react";
 import { useRouter } from "next/navigation";
@@ -27,18 +25,7 @@ export default function TopProductsInfo() {
   // Обробник кнопки "Contact Us"
   const onContactClick = (selectedColor, selectedSize, quantity, currentLanguage) => {
     handleContactButtonClick(router, selectedProduct, selectedColor, selectedSize, quantity, currentLanguage);}
-{/*
-  // Handler for "Contact Us" button
-  const handleContactButtonClick = () => {
-    const translatedName = selectedProduct.translations?.[language]?.name || selectedProduct.title;
-    const translatedDescription = selectedProduct.translations?.[language]?.description || selectedProduct.description;
 
-    router.push(
-      `/contact?productName=${translatedName}&productPrice=${selectedProduct.price}&productDescription=${translatedDescription}&productImage=${selectedProduct.img}&productColor=${selectedProduct.color}&productSize=${selectedProduct.size}&productQuantity=${selectedProduct.quantity}&productSKU=${selectedProduct.sku}`
-    );
-
-  };
-*/}
   // Smooth scroll to description
   const scrollToDescription = () => {
     if (descriptionRef.current) {
@@ -47,39 +34,40 @@ export default function TopProductsInfo() {
   };
 
   return (
-    <div className="dark:bg-[#2e1f14] bg-black text-white min-h-screen px-4 py-8">
+    <div className="dark:bg-[#2e1f14] bg-[#f5e7da] text:bg-black dark:text-white min-h-screen px-4 py-8">
       <div className="text-center">
         <h1 className="text-3xl md:text-4xl font-bold mb-4">
           Explore the Collection
         </h1>
-        <p className="text-gray-400 text-sm md:text-base mb-8">
+        <p className="dark:text-gray-400 text:bg-black text-sm md:text-base mb-8">
           I`m a paragraph. Click here to add your own text and edit me. Let your
           users get to know you.
         </p>
       </div>
 
       {/* Product List */}
-      <div className="ml-8 max-h-[300px] md:max-h-[400px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 mb-8">
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-6">
+      <div className="ml-8 max-h-[450px] md:max-h-[600px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 mb-8">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 md:gap-6 p-4">
           {products.map((product) => {
             const translatedName = product.translations?.[language]?.name || product.title;
 
             return (
               <div
                 key={product.id}
-                className="bg-white text-black rounded shadow-lg hover:scale-105 transition-transform cursor-pointer"
+                className="text-black dark:bg-white dark:text-black rounded shadow-lg hover:scale-105 transition-transform cursor-pointer"
+                
                 onClick={() => handleProductClick(product)} // Call the scroll function
               >
                 <img
                   src={product.img}
                   alt={translatedName}
-                  className="w-full h-36 sm:h-48 object-cover rounded-t"
-                />
-                <div className="p-2 sm:p-4 dark:bg-[#d2b48c]">
+                  className="object-cover w-full h-43 sm:h-63 rounded transform transition-transform duration-300 ease-in-out group-hover:scale-110"
+                /> {/*w-full h-36 sm:h-48 object-cover rounded-t*/}
+                <div className="p-2 sm:p-4  dark:bg-[#d2b48c]">
                   <h3 className="font-semibold text-sm sm:text-lg">
                     {translatedName}
                   </h3>
-                  <p className="text-gray-600 text-xs sm:text-base">
+                  <p className="text:black dark:text-gray-600 text-xs sm:text-base">
                     {product.price}
                   </p>
                 </div>

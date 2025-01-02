@@ -19,8 +19,10 @@ const ContactUs = () => {
   const menuItems = translateList("contact", "hero");
 
   const searchParams = useSearchParams();
-  const initialProductData = getInitialProductData(searchParams);
+  console.log("Product Image URL:", searchParams.get("productImage"));
 
+  const initialProductData = getInitialProductData(searchParams);
+  console.log("Initial Product Data:", initialProductData);
   const [productData, setProductData] = useState(initialProductData);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [successMessageVisible, setSuccessMessageVisible] = useState(false);
@@ -29,8 +31,7 @@ const ContactUs = () => {
     console.log("Dark mode in localStorage:", darkMode);
     console.log("HTML class on load:", document.documentElement.className);
   }, []);
-  
- */}
+  */}
   const [formValues, setFormValues] = useState({
     firstName: "",
     lastName: "",
@@ -58,7 +59,9 @@ const ContactUs = () => {
   <p className="text-sm sm:text-base md:text-lg lg:text-xl max-w-lg sm:max-w-xl md:max-w-2xl mx-auto mb-8 sm:mb-12 md:mb-16">
     {menuItems[1]}  
   </p>
+  
   <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 sm:gap-12 md:gap-16 lg:gap-28 bg-gray-800 dark:bg-[#111827] p-4 sm:p-6 md:p-8">
+  
     <div className="w-full sm:w-1/2 lg:w-[56%] h-[400px] sm:h-[600px] lg:h-[700px]">
       <Image
         src={productData.image}
@@ -66,6 +69,9 @@ const ContactUs = () => {
         width={400}
         height={600}
         className="w-full h-full object-cover rounded-lg shadow-lg"
+        onError={(e) => {
+          e.target.src = "/4.jpg";
+        }}
       />
     </div>
 
@@ -83,8 +89,11 @@ const ContactUs = () => {
         <span className="hidden sm:block text-white">|</span>
         <p className="text-sm sm:text-base">123-456-7890</p>
       </div>
+      {searchParams.get("productName") ? (
 
-       <ProductDetails productData={productData} formSubmitted={formSubmitted} />
+  <ProductDetails productData={productData} formSubmitted={formSubmitted} />
+) : null }
+
        <ContactForm
   formValues={formValues}
   onInputChange={onInputChange}
@@ -92,7 +101,9 @@ const ContactUs = () => {
   formSubmitted={formSubmitted}
   successMessageVisible={successMessageVisible}
 />
+
 <SocialLinks />
+
 </div>
 </div>
 </section>

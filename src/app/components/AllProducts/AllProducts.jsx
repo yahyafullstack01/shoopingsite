@@ -47,6 +47,7 @@ export default function AllProducts() {
       selectedSize,
       quantity,
       language
+      
     );
   };
 
