@@ -14,7 +14,7 @@ export default function Footer() {
           <div className="border-b sm:border-b-0 md:border-r border-gray-300 px-4 sm:px-6 py-6">
             <p className="text-sm mb-2">
               <a href="tel:1234567890" className="hover:underline">
-                123-456-7890
+                123-456-78999
               </a>
             </p>
             <p className="text-sm">
