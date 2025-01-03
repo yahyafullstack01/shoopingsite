@@ -52,7 +52,7 @@ export default function AllProducts() {
   };
 
   return (
-    <div className="bg-[#fcf8f3] text-black dark:text-white min-h-screen dark:bg-[#0c111d]">
+    <div className="bg-[#fcf8f3] text-black dark:text-white min-h-screen dark:bg-black ">
       <div className="w-full mx-auto px-4 sm:px-6 md:px-8 py-4">
         <div className="flex flex-col md:flex-row md:space-x-8">
           <FilterSidebar
@@ -88,7 +88,7 @@ export default function AllProducts() {
               {filteredProducts.length} products
             </p>
 
-            <main className="w-full bg-[#f5e7da] dark:bg-[#0c111d]  max-h-[800px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 mb-8">
+            <main className="w-full bg-[#f5e7da] dark:bg-black  max-h-[800px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 mb-8">
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
                 {filteredProducts.map((product) => (
                   <ProductCard

@@ -16,7 +16,7 @@ const ContactForm = ({
           placeholder="First Name"
           value={formValues.firstName}
           onChange={onInputChange}
-          className="w-full sm:w-1/2 p-3 bg-transparent border-b border-white text-white placeholder-gray-400 focus:outline-none focus:border-lime-500"
+          className="w-full sm:w-1/2 p-3 bg-transparent border-b border-black dark:border-white bg-black text-black dark:text-white placeholder-gray-550 dark:placeholder-gray-400 focus:outline-none focus:border-lime-500"
           required
         />
         <input
@@ -25,7 +25,7 @@ const ContactForm = ({
           placeholder="Last Name"
           value={formValues.lastName}
           onChange={onInputChange}
-          className="w-full sm:w-1/2 p-3 bg-transparent border-b border-white text-white placeholder-gray-400 focus:outline-none focus:border-lime-500"
+          className="w-full sm:w-1/2 p-3 bg-transparent border-b border-black dark:border-white bg-black text-black dark:text-white placeholder-gray-550 dark:placeholder-gray-400 focus:outline-none focus:border-lime-500"
           required
         />
       </div>
@@ -35,7 +35,7 @@ const ContactForm = ({
         placeholder="Phone Number *"
         value={formValues.phone}
         onChange={onInputChange}
-        className="w-full p-3 bg-transparent border-b border-white text-white placeholder-gray-400 focus:outline-none focus:border-lime-500"
+        className="w-full p-3 bg-transparent border-b border-black dark:border-white bg-black text-black dark:text-white placeholder-gray-550 dark:placeholder-gray-400 focus:outline-none focus:border-lime-500"
         required
       />
       <input
@@ -44,7 +44,7 @@ const ContactForm = ({
         placeholder="Email *"
         value={formValues.email}
         onChange={onInputChange}
-        className="w-full p-3 bg-transparent border-b border-white text-white placeholder-gray-400 focus:outline-none focus:border-lime-500"
+        className="w-full p-3 bg-transparent border-b border-black dark:border-white bg-black text-black dark:text-white placeholder-gray-550 dark:placeholder-gray-400 focus:outline-none focus:border-lime-500"
         required
       />
       <textarea
@@ -53,18 +53,18 @@ const ContactForm = ({
         rows="4"
         value={formValues.message}
         onChange={onInputChange}
-        className="w-full p-3 bg-transparent border-b border-white text-white placeholder-gray-400 focus:outline-none focus:border-lime-500"
+        className="w-full p-3 bg-transparent border-b border-black dark:border-white bg-black text-black dark:text-white placeholder-gray-550 dark:placeholder-gray-400 focus:outline-none focus:border-lime-500"
       ></textarea>
 
       <div className="flex items-center gap-4">
         <button
           type="submit"
-          className="bg-lime-500 text-black font-semibold py-2 px-8 rounded-lg hover:bg-lime-600"
+          className="dark:bg-lime-500 text-white  bg-[#3a2719] hover:bg-[#3a271970] font-semibold py-2 px-8 rounded-lg dark:hover:bg-lime-600"
         >
           Send
         </button>
         {!formSubmitted && (
-          <p className="text-gray-400 text-sm ml-16 sm:ml-36">
+          <p className="placeholder-gray-550 dark:text-gray-400 text-sm ml-16 sm:ml-36">
             Thanks for submitting!
           </p>
         )}

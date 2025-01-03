@@ -21,7 +21,7 @@ const ProductDetails = ({ productData, formSubmitted }) => {
   if (formSubmitted || !productData) return null;
 
   return (
-    <div className="bg-gray-900 text-white p-4 sm:p-6 rounded-lg shadow-lg">
+    <div className="  bg-[#e4d0b8] dark:bg-gray-900 text-gray-950 dark:text-white p-4 sm:p-6 rounded-lg shadow-lg">
       {/* Display the product name */}
       <h2 className="text-xl sm:text-2xl font-bold mb-2">
         Product: {translatedName}

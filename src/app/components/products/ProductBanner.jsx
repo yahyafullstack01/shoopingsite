@@ -48,7 +48,7 @@ const ProductBanner = ({
   return (
     <div
       ref={descriptionRef}
-      className={`relative w-full bg-black overflow-hidden rounded-lg mb-8 transition-all duration-300 ease-in-out ${
+      className={`relative w-full bg-[#fcf8f3] dark:bg-black overflow-hidden rounded-lg mb-8 transition-all duration-300 ease-in-out ${
         selectedProduct ? "p-4" : "h-72 sm:h-96"
       }`}
     >
@@ -95,7 +95,7 @@ const ProductBanner = ({
             )}
           </div>
           {/* Product information section */}
-          <div className="w-full bg-black bg-opacity-75 p-6 text-white rounded-lg">
+          <div className="w-full dark:bg-black bg-opacity-75 p-6 text:bg-black dark:text-white rounded-lg">
             <InfoForm
               product={{
                 ...selectedProduct,

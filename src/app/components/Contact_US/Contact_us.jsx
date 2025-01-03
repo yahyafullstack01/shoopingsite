@@ -52,7 +52,7 @@ const ContactUs = () => {
   
     <div className="font-sans relative">
      <SuccessMessage/>
-<section className=" bg-black text-white text-center py-8 sm:py-10 md:py-16">
+<section className="bg-[#fcf8f3] text:bg-black dark:bg-black dark:text-white text-center py-8 sm:py-10 md:py-16">
   <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold  mb-4 sm:mb-6 md:mb-8">
     {menuItems[0]}
   </h1>
@@ -60,7 +60,7 @@ const ContactUs = () => {
     {menuItems[1]}  
   </p>
   
-  <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 sm:gap-12 md:gap-16 lg:gap-28 bg-gray-800 dark:bg-[#111827] p-4 sm:p-6 md:p-8">
+  <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 sm:gap-12 md:gap-16 lg:gap-28 bg-[#f5e7da]   dark:bg-[#111827] p-4 sm:p-6 md:p-8">
   
     <div className="w-full sm:w-1/2 lg:w-[56%] h-[400px] sm:h-[600px] lg:h-[700px]">
       <Image
@@ -86,7 +86,7 @@ const ContactUs = () => {
         >
           info@mysite.com
         </a>
-        <span className="hidden sm:block text-white">|</span>
+        <span className="hidden sm:block bg-black dark:text-white">|</span>
         <p className="text-sm sm:text-base">123-456-7890</p>
       </div>
       {searchParams.get("productName") ? (
