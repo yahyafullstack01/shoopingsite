@@ -34,9 +34,21 @@ export default function About() {
           </div>
         </div>
         <div className="text-center md:text-left -mt-16 sm:-mt-24 md:mt-[-50%]  flex-col items-center md:items-start hidden lg:flex ">
-          <p className="text-base sm:text-lg md:text-2xl text-[#4A3222] dark:text-[#f5e8d6] mb-6 sm:mb-8 leading-relaxed">
-            <strong className="text-lg sm:text-xl md:text-2xl xl:text-4xl font-extrabold">Our Story</strong> <br />
-            {menuItems[1]}
+          <p className="text-base sm:text-lg md:text-2xl text-[#4A3222] dark:text-[#f5e8d6] mb-6 sm:mb-8 leading-relaxed ">
+            <strong className="text-lg sm:text-xl md:text-2xl xl:text-4xl font-extrabold">{menuItems[1]}</strong>
+          </p>
+          <p className="text-base sm:text-lg md:text-2xl text-[#4A3222] dark:text-[#f5e8d6] mb-6 sm:mb-8 leading-relaxed ">
+            {menuItems[2]}
+          </p>
+          <p className="text-base sm:text-lg md:text-2xl text-[#4A3222] dark:text-[#f5e8d6] mb-6 sm:mb-8 leading-relaxed ">
+            
+            {menuItems[3]}
+          </p>
+          <p className="text-base sm:text-lg md:text-2xl text-[#4A3222] dark:text-[#f5e8d6] mb-6 sm:mb-8 leading-relaxed ">
+            {menuItems[4]}
+          </p>
+          <p className="text-base sm:text-lg md:text-2xl text-[#4A3222] dark:text-[#f5e8d6] mb-6 sm:mb-8 leading-relaxed ">
+            {menuItems[5]}
           </p>
           {/*
         <button className="bg-[#4A3222] text-white py-2 px-4 sm:px-6 rounded-full hover:bg-[#6E4C2E] dark:bg-[#f5e8d6] dark:text-[#4A3222] dark:hover:bg-[#d1b79e] transition-all duration-300 ease-in-out">
@@ -47,7 +59,7 @@ export default function About() {
       </div>
       <div className="absolute inset-x-0 top-1/2 transform -translate-y-1/2 bg-[#00000080] flex flex-col items-center justify-center p-4 sm:p-8 md:flex lg:hidden w-full max-w-none">
         <p className="text-white text-lg sm:text-2xl px-4 text-center mb-4">
-        {menuItems[3]}
+        {menuItems[2]}
         </p>
      {/*  <button className="bg-[#4A3222] text-white py-2 px-4 rounded-full hover:bg-[#6E4C2E] dark:bg-[#f5e8d6] dark:text-[#4A3222] dark:hover:bg-[#d1b79e] transition-all duration-300 ease-in-out">
         {menuItems[2]}

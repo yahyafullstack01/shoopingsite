@@ -5,10 +5,12 @@
       "hero": ["Welcome to our site!", "Explore the latest trends in fashion.", "Discover your style with us.", "Shop now"],
       "about": [
         "About",
-        "Latore Atelier is your go-to online destination for premium fashion. \nWe offer a curated selection of high-quality clothing and accessories, \ndesigned to elevate your wardrobe. Our mission is to provide customers \nwith sophisticated and stylish pieces that reflect their unique \npersonality and taste.",
-        "Learn More",
-        "Latore Atelier is your go-to online destination for premium fashion. We offer a curated selection of high-quality clothing and accessories, designed to elevate your wardrobe.",
-        "Learn More"
+        "Our Story",
+        "LATORE - Ukrainian brand of women's clothing with its own production, with over 10 years of experience, with two showrooms in Ivano-Frankivsk and Kharkiv.",
+        "We are the embodiment of basic models and an original, designer approach to all products.",
+        "Our clothes are a combination of classics and comfort, femininity and harmony. Thanks to our own production, we guarantee the high quality of each product.",
+        "A professional team of craftsmen knows what Ukrainian women need and creates things that are easily combined with each other.",
+        "We especially emphasize your attention to individual tailoring for each of our clients - we sew according to the parameters, which allows any clothes to fit perfectly on the figure."
       ],
       "top_products": ["Top Products"],
       "Our_Products": ["Our Products"],
@@ -54,6 +56,13 @@
         "Achetez Maintenant"
       ],
       "follow_us": ["Suivez-nous"]
+    },
+    
+    "contact":{
+      "hero": [
+        "Contactez-nous",
+        "Nous serions ravis de vous entendre ! Que vous ayez des questions, des commentaires ou que vous souhaitiez simplement en savoir plus sur ce que nous proposons, n'hésitez pas à nous contacter. Notre équipe est là pour répondre à vos demandes et vous aider à concrétiser vos idées. N'hésitez pas à nous écrire – nous sommes à un message de vous !"
+      ]
     }
   },
   "UA": {
@@ -62,10 +71,12 @@
       "hero": ["Ласкаво просимо на наш сайт!", "Досліджуйте останні тренди моди.", "Відкрийте свій стиль разом з нами.", "Купуйте зараз"],
       "about": [
         "Про нас",
-        "Latore Atelier — це ваш інтернет-магазин преміум-моди. \nМи пропонуємо ретельно підібраний асортимент одягу та аксесуарів \nвисокої якості, створений для того, щоб підкреслити ваш гардероб. Наша місія — надавати клієнтам \nвишукані та стильні речі, які відображають їхню унікальну \nособистість та смак.",
-        "Дізнатися більше",
-        "Latore Atelier — це ваш інтернет-магазин преміум-моди. Ми пропонуємо ретельно підібраний асортимент одягу та аксесуарів високої якості, створений для того, щоб підкреслити ваш гардероб.",
-        "Дізнатися більше"
+        "Наша історія",
+        "LATORE - український бренд жіночого одягу з власним виробництвом, з досвідом понад 10 років, з двома шоурумами в Івано-Франківську та Харкові.",
+        "Ми - втілення базових моделей та авторського, дизайнерського підходу до всіх виробів.",
+        "Наш одяг - це поєднання класики та комфорту, жіночності та гармонії. Завдяки власному виробництву ми гарантуємо високу якість кожного виробу.",
+        "Професійна команда майстринь знає, що необхідно українським жінкам та створює речі, які легко поєднуються між собою.",
+        "Особливо акцентуємо Вашу увагу стосовно індивідуального пошиву для кожного нашого клієнта - відшиваємо за параметрами, що дозволяє будь-якому одягу ідеально сидіти по фігурі."
       ],
       "top_products": ["Популярні продукти"],
       "Our_Products": ["Наші продукти"],
@@ -76,6 +87,12 @@
         "Купуйте зараз"
       ],
       "follow_us": ["Слідкуйте за нами"]
+    },
+    "contact": {
+      "hero": [
+        "Зв’яжіться з нами",
+        "Ми раді вас чути! Якщо у вас є запитання, коментарі або ви просто хочете дізнатися більше про те, що ми пропонуємо, не соромтеся зв'язатися з нами. Наша команда готова допомогти вам із будь-якими запитами та допомогти втілити вашу ідею в життя. Не вагайтеся – ми завжди поруч, щоб відповісти на ваші повідомлення!"
+      ]
     }
   }
 }
