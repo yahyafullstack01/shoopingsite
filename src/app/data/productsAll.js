@@ -3,12 +3,12 @@
       price: 3170,
       sku: "12345",
       color: "red",
-      size: "M",
+      size: "XS S M L XL",
       category: "Costumes",
       image: "/Costumes/Woolen suit with skirt/1.avif",
-      images: ["/1.jpg", "/2.jpg", "/3.jpg"],
-      colors: ["blue"], 
-      sizes: ["S", "M"],
+      images: ["/Costumes/Woolen suit with skirt/2.avif", "/Costumes/Woolen suit with skirt/3.avif", "/Costumes/Woolen suit with skirt/4.avif", "/Costumes/Woolen suit with skirt/5.avif", "/Costumes/Woolen suit with skirt/6.avif", "/Costumes/Woolen suit with skirt/7.avif", "/Costumes/Woolen suit with skirt/8.avif", "/Costumes/Woolen suit with skirt/9.avif", "/Costumes/Woolen suit with skirt/10.avif", "/Costumes/Woolen suit with skirt/11.avif", "/Costumes/Woolen suit with skirt/12.avif", "/Costumes/Woolen suit with skirt/13.avif", "/Costumes/Woolen suit with skirt/14.avif", ],
+      colors: ["camel", "graphite", "gray"], 
+      sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "Woolen suit with skirt",
@@ -24,18 +24,19 @@
         }
       }
     },
-
+    
     {
       id: 2,
       price: 3710,
       sku: "12345",
       color: "blue",
-      size: "L",
+      size: "XS S M L XL",
       category: "Costumes",
       image: "/Costumes/Wool suit with trousers/8.avif",
-      images: ["/1.jpg", "/2.jpg", "/3.jpg"],
-      colors: ["red", "blue"], 
-      sizes: ["S", "M"],
+      images: ["/Costumes/Wool suit with trousers/1.avif", "/Costumes/Wool suit with trousers/2.avif", "/Costumes/Wool suit with trousers/3.avif",
+                "/Costumes/Wool suit with trousers/4.avif","/Costumes/Wool suit with trousers/5.avif", "/Costumes/Wool suit with trousers/6.avif", "/Costumes/Wool suit with trousers/7.avif", "/Costumes/Wool suit with trousers/8.avif", "/Costumes/Wool suit with trousers/9.avif", "/Costumes/Wool suit with trousers/10.avif", "/Costumes/Wool suit with trousers/11.avif", "/Costumes/Wool suit with trousers/12.avif"],
+      colors: ["graphite", "grey"], 
+      sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "Woolen suit with trousers",
@@ -51,18 +52,71 @@
         }
       }
     },
-
+    
+    {
+      id: 17,
+      price: 5350,
+      sku: "12345",
+      color: "olive",
+      size: "XS S M L XL",
+      category: "Costumes",
+      image: "/Costumes/Liana/1.avif",
+      images: ["/Costumes/Liana/2.avif", "/Costumes/Liana/3.avif", "/Costumes/Liana/4.avif", "/Costumes/Lianat/5.avif", "/Costumes/Liana/6.avif"],
+      colors: ["olive"], 
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          name: "Liana",
+          description: "Double-breasted oversize jacket + belt + straight high-rise trousers n\Suit fabric (75% viscose, 25% polyester)"
+        },
+        FR: {
+          name: "Liana",
+          description: "Veste oversize croisée + ceinture + pantalon droit taille haute Tissu de costume (75% viscose, 25% polyester)"
+        },
+        UA: {
+          name: "Liana",
+          description: "Двобортний oversize жакет + пояс + брюки прямі на високій посадці n\Костюмна тканина ( 75% віскоза, 25% поліестер )"
+        }
+      }
+    },
+    
+    {
+      id: 16,
+      price: 5350,
+      sku: "12345",
+      color: "black",
+      size: "XS S M L XL",
+      category: "Costumes",
+      image: "/Costumes/Lucy/1.avif",
+      images: ["/Costumes/Lucy/2.avif", "/Costumes/Lucy/3.avif", "/Costumes/Lucy/4.avif", "/Costumes/Lucy/5.avif", "/Costumes/Lucy/6.avif"],
+      colors: ["black"], 
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          name: "Lucy",
+          description: "Double-breasted oversize jacket + cropped high-rise banana pants\nSuit fabric (75% viscose, 25% polyester)"
+        },
+        FR: {
+          name: "Lucy",
+          description: "Veste oversize à double boutonnage + pantacourt taille haute façon banane\nTissu de costume (75% viscose, 25% polyester)"
+        },
+        UA: {
+          name: "Lucy",
+          description: "Двобортний oversize жакет + вкорочені брюки фасону бананів на високій посадці \nКостюмна тканина ( 75% віскоза, 25% поліестер )"
+        }
+      }
+    },
     {
       id: 3,
       price: 4160,
       sku: "12345",
-      color: "green",
-      size: "S",
+      color: "camel",
+      size: "XS S M L XL",
       category: "Costumes",
       image: "/Costumes/Wool suit with vest/1.avif",
-      images: ["/1.jpg", "/2.jpg", "/3.jpg"],
-      colors: ["red", "blue"], 
-      sizes: ["S", "M"],
+      images: ["/Costumes/Wool suit with vest/2.avif", "/Costumes/Wool suit with vest/3.avif", "/Costumes/Wool suit with vest/4.avif", "/Costumes/Wool suit with vest/5.avif", "/Costumes/Wool suit with vest/6.avif"],
+      colors: ["camel"], 
+      sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "Wool suit with vest",
@@ -78,18 +132,19 @@
         }
       }
     },
-
+    
     {
       id: 4,
       price: 3100,
       sku: "12345",
       color: "red",
-      size: "M",
+      size: "XS S M L XL",
       category: "Dress",
       image: "/Dress/Woolen trapeze dress/1.avif",
-      images: ["/1.jpg", "/2.jpg", "/3.jpg"],
-      colors: ["red", "blue"], 
-      sizes: ["S", "M"],
+      images: ["/Dress/Woolen trapeze dress/2.avif", "/Dress/Woolen trapeze dress/3.avif", "/Dress/Woolen trapeze dress/4.avif", "/Dress/Woolen trapeze dress/5.avif", "/Dress/Woolen trapeze dress/6.avif", "/Dress/Woolen trapeze dress/7.avif", "/Dress/Woolen trapeze dress/7.avif",
+              "/Dress/Woolen trapeze dress/8.avif", "/Dress/Woolen trapeze dress/9.avif", "/Dress/Woolen trapeze dress/10.avif", "/Dress/Woolen trapeze dress/11.avif", "/Dress/Woolen trapeze dress/12.avif"],
+      colors: ["gray", "jeans"], 
+      sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "Woolen trapeze dress",
@@ -105,18 +160,18 @@
         }
       }
     },
-
+    
     {
       id: 5,
       price: 3100,
       sku: "12345",
       color: "blue",
-      size: "S M",
+      size: "XS S M L XL",
       category: "Dress",
       image: "/Dress/Wool A-line dress/2.avif",
-      images: ["/1.jpg", "/2.jpg", "/3.jpg"],
-      colors: ["red", "blue"], 
-      sizes: ["S", "M"],
+      images: ["/Dress/Wool A-line dress/1.avif", "/Dress/Wool A-line dress/3.avif", "/Dress/Wool A-line dress/4.avif", "/Dress/Wool A-line dress/5.avif", "/Dress/Wool A-line dress/6.avif", "/Dress/Wool A-line dress/7.avif", "/Dress/Wool A-line dress/8.avif", "/Dress/Wool A-line dress/9.avif", "/Dress/Wool A-line dress/10.avif"],
+      colors: ["gray", "camel"], 
+      sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "Wool A-line dress",
@@ -138,7 +193,7 @@
       price: 3100,
       sku: "12345",
       color: "gray",
-      size: "XL",
+      size: "XS S M L XL",
       category: "Dress",
       image: "/Dress/Dress Grace/1.avif",
       images: ["/Dress/Dress Grace/2.avif", "/Dress/Dress Grace/3.avif", "/Dress/Dress Grace/4.avif", "/Dress/Dress Grace/5.avif", "/Dress/Dress Grace/6.avif"],
@@ -171,7 +226,7 @@
       price: 1850,
       sku: "12345",
       color: "blue",
-      size: "XL",
+      size: "XS S M L XL",
       category: "Dress",
       image: "/Dress/Mini sundress/1.avif",
       images: ["/Dress/Mini sundress/2.avif", "/Dress/Mini sundress/3.avif", "/Dress/Mini sundress/4.avif", "/Dress/Mini sundress/5.avif", "/Dress/Mini sundress/6.avif"],
@@ -203,7 +258,7 @@
       price: 2000,
       sku: "12345",
       color: "blue",
-      size: "XL",
+      size: "XS S M L XL",
       category: "Dress",
       image: "/Dress/Shkiriana suknya (Leather dress)/1.avif",
       images: ["/Dress/Shkiriana suknya (Leather dress)/2.avif", "/Dress/Shkiriana suknya (Leather dress)/3.avif", "/Dress/Shkiriana suknya (Leather dress)/4.avif", "/Dress/Shkiriana suknya (Leather dress)/5.avif", "/Dress/Shkiriana suknya (Leather dress)/6.avif"],
@@ -234,7 +289,7 @@
       price: 2100,
       sku: "12345",
       color: "gray",
-      size: "XL",
+      size: "XS S M L XL",
       category: "Dress",
       image: "/Dress/Asymmetrical_dress/3.avif",
       images: ["/Dress/Asymmetrical_dress/2.avif", "/Dress/Asymmetrical_dress/3.avif", "/Dress/Asymmetrical_dress/4.avif", "/Dress/Asymmetrical_dress/5.avif"],
@@ -262,135 +317,164 @@
     
     {
       id: 10,
-      price: 3100,
+      price: 1350 ,
       sku: "12345",
       color: "blue",
-      size: "XL",
-      category: "Dress",
-      image: "/Dress/Wool A-line dress/2.avif",
-      images: ["/1.jpg", "/2.jpg", "/3.jpg"],
-      colors: ["red", "blue"], 
-      sizes: ["S", "M"],
+      size: "XS S M L XL",
+      category: "tops",
+      image: "/tops/Гольф із відкритими плечима/2.avif",
+      images: ["/tops/Гольф із відкритими плечима/1.avif", "/tops/Гольф із відкритими плечима/3.avif", "/tops/Гольф із відкритими плечима/4.avif", "/tops/Гольф із відкритими плечима/5.avif", "/tops/Гольф із відкритими плечима/6.avif"],
+      colors: ["milky", "black"], 
+      sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
-          name: "",
-          description: ""
+          name: "Open-shoulder golf",
+          description: "off-shoulder turtleneck made of soft fabric: 50% cashmere, 28% polyester, 28% nylon"
         },
         FR: {
-          name: "",
-          description: ""
+          name: "Golfer avec les épaules ouvertes",
+          description: "col roulé à épaules dénudées en tissu doux : 50 % cachemire, 28 % polyester, 28 % nylon"
         },
         UA: {
-          name: "",
-          description: ""
+          name: "Гольф із відкритими плечима",
+          description: "гольф із відкритими плечима із мʼякої тканини: 50% кашемір, 28% поліестер, 28% нейлон"
         }
       }
     },
-
+    
     {
-      id: 5,
-      price: 3100,
+      id: 11,
+      price: 5225,
       sku: "12345",
-      color: "blue",
-      size: "XL",
-      category: "Dress",
-      image: "/Dress/Wool A-line dress/2.avif",
-      images: ["/1.jpg", "/2.jpg", "/3.jpg"],
-      colors: ["red", "blue"], 
-      sizes: ["S", "M"],
+      color: "beige",
+      size: "XS S M L XL",
+      category: "Outerwear",
+      image: "/Outerwear/Шкіряний тренч/2.avif",
+      images: ["/Outerwear/Шкіряний тренч/1.avif", "/Outerwear/Шкіряний тренч/3.avif", "/Outerwear/Шкіряний тренч/4.avif", 
+              "/Outerwear/Шкіряний тренч/5.avif", "/Outerwear/Шкіряний тренч/6.avif"],
+      colors: ["beige"], 
+      sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
-          name: "",
-          description: ""
+          name: "Leather trench coat",
+          description: "Double-breasted leather trench coat in an oversize style with an included belt and two pockets. \nFabric: high-quality eco-leather on a suede base. (stretchy, does not crack)"
         },
         FR: {
-          name: "",
-          description: ""
+          name: "Trench-coat en cuir",
+          description: "Trench-coat oversize en cuir à double boutonnage avec ceinture incluse et deux poches. \nTissu : éco-cuir de haute qualité sur base en daim. (extensible, incassable)"
         },
         UA: {
-          name: "",
-          description: ""
+          name: "Шкіряний тренч",
+          description: "Двобортний шкіряний тренч oversize фасону із поясом у комплекті та двома кишенями. \nТканина: якісна екошкіра на замшевій основі.(стречева, не тріскається)"
         }
       }
     },
-
+    
     {
-      id: 5,
-      price: 3100,
+      id: 12,
+      price: 4920,
       sku: "12345",
-      color: "blue",
-      size: "XL",
-      category: "Dress",
-      image: "/Dress/Wool A-line dress/2.avif",
-      images: ["/1.jpg", "/2.jpg", "/3.jpg"],
-      colors: ["red", "blue"], 
-      sizes: ["S", "M"],
+      color: "camel",
+      size: "XS S M L XL",
+      category: "Outerwear",
+      image: "/Outerwear/Camel пальто/2.avif",
+      images: ["/Outerwear/Camel пальто/1.avif", "/Outerwear/Camel пальто/3.avif", "/Outerwear/Camel пальто/4.avif", "/Outerwear/Camel пальто/5.avif"],
+      colors: ["camel"], 
+      sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
-          name: "",
-          description: ""
+          name: "Camel Coat",
+          description: "A thick, lined midi-length coat with two pockets and a belt included. The sleeves can be adjusted to your liking\nFabric: Italy. 85% wool, 15% polyester"
         },
         FR: {
-          name: "",
-          description: ""
+          name: "Manteau Camel",
+          description: "Manteau épais, de longueur midi, doublé, doté de deux poches et muni d'une ceinture. Les manches peuvent être ajustées à votre guise.\nTissu : Italie. 85% laine, 15% polyester"
         },
         UA: {
-          name: "",
-          description: ""
+          name: "Camel пальто",
+          description: "Щільне пальто міді довжини на підкладці, має дві кишені, а пояс іде у комплекті. Рукава можна регулювати, як вам зручно\nТканина:Італія. 85 % вовни, 15% поліестер"
         }
       }
     },
-
+    
     {
-      id: 5,
-      price: 3100,
+      id: 13,
+      price: 3700,
       sku: "12345",
-      color: "blue",
-      size: "XL",
-      category: "Dress",
-      image: "/Dress/Wool A-line dress/2.avif",
-      images: ["/1.jpg", "/2.jpg", "/3.jpg"],
-      colors: ["red", "blue"], 
-      sizes: ["S", "M"],
+      color: "beige",
+      size: "XS S M L XL",
+      category: "Outerwear",
+      image: "/Outerwear/Твідовий бомбер/1.avif",
+      images: ["/Outerwear/Твідовий бомбер/2.avif", "/Outerwear/Твідовий бомбер/3.avif", "/Outerwear/Твідовий бомбер/4.avif",
+               "/Outerwear/Твідовий бомбер/5.avif", "/Outerwear/Твідовий бомбер/6.avif", "/Outerwear/Твідовий бомбер/7.avif", "/Outerwear/Твідовий бомбер/8.avif"],
+      colors: ["graphite", "beige"], 
+      sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
-          name: "",
-          description: ""
+          name: "Tweed bomber jacket",
+          description: "Quilted bomber jacket with high-quality lining and two pockets"
         },
         FR: {
-          name: "",
-          description: ""
+          name: "Blouson aviateur en tweed",
+          description: "Bomber matelassé avec doublure de qualité et deux poches"
         },
         UA: {
-          name: "",
-          description: ""
+          name: "Твідовий бомбер",
+          description: "Стьоганий бомбер із якісною підкладкою та двома кишенями"
         }
       }
     },
-
+    
     {
-      id: 5,
+      id: 14,
       price: 3100,
       sku: "12345",
       color: "blue",
-      size: "XL",
-      category: "Dress",
-      image: "/Dress/Wool A-line dress/2.avif",
-      images: ["/1.jpg", "/2.jpg", "/3.jpg"],
-      colors: ["red", "blue"], 
-      sizes: ["S", "M"],
+      size: "XS S M L XL",
+      category: "Shirts",
+      image: "/Shirts/Класична_сорочка/2.avif",
+      images: ["/Shirts/Класична_сорочка/1.avif", "/Shirts/Класична_сорочка/3.avif", "/Shirts/Класична_сорочка/4.avif", "/Shirts/Класична_сорочка/5.avif", "/Shirts/Класична_сорочка/1.avif"],
+      colors: ["white"], 
+      sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
-          name: "",
-          description: ""
+          name: "Classic shirt",
+          description: "Loose-fitting cotton shirt. Fabric: 100% cotton"
         },
         FR: {
-          name: "",
-          description: ""
+          name: "Chemise classique",
+          description: "Chemise en coton à coupe libre. Tissu : 100 % coton"
         },
         UA: {
-          name: "",
-          description: ""
+          name: "Класична сорочка",
+          description: "Сорочка бавовняна вільного крою. Тканина: 100% бавовна"
+        }
+      }
+    },
+    
+    {
+      id: 15,
+      price: 1650,
+      sku: "12345",
+      color: "caramel",
+      size: "XS S M L XL",
+      category: "Skirts",
+      image: "/Skirts/Alice/2.avif",
+      images: ["/Skirts/Alice/2.avif", "/Skirts/Alice/2.avif", "/Skirts/Alice/2.avif", "//Skirts/Alice/2.avif", "/Skirts/Alice/2.avif"],
+      colors: ["caramel"], 
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          name: "Alice",
+          description: "A-line skirt with ribbons along the entire length. Fabric: high-quality eco-leather on a suede base. (stretchy, does not crack)"
+        },
+        FR: {
+          name: "Alice",
+          description: "Une jupe ample en forme de trapèze avec des rubans sur toute la longueur. Tissu : cuir écologique de haute qualité sur base en daim. (extensible, ne craque pas"
+        },
+        UA: {
+          name: "Alice",
+          description: "Спідниця вільного крою у формі трапеції зі стрічками по всій довжині. Тканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається"
         }
       }
     },

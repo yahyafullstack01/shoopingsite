@@ -19,7 +19,7 @@ export default function FilterSidebar({
   //const colors = ["Red", "Blue", "Green"];
    // Предопределённые значения для размеров и категорий
   const sizes = ["All", "S", "M", "L", "XL"];
-  const categories = ["All", "Costumes", "Suits", "Dress", "Shorts", "T-shirt", "Jeans", "Jacket"];
+  const categories = ["All", "Costumes", "Suits", "Dress", "Shirts", "Skirts", "T-shirt", "Jeans", "Jacket", "Tops", "Outerwear"];
    // Обработчики изменения цены, размера, категории
   const handlePriceChange = (e) => {
     setMaxPrice(parseFloat(e.target.value));
