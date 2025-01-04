@@ -269,8 +269,8 @@
       color: "blue",
       size: "XS S M L XL",
       category: "tops",
-      image: "/tops/Гольф із відкритими плечима/2.avif",
-      images: ["/tops/Гольф із відкритими плечима/1.avif", "/tops/Гольф із відкритими плечима/3.avif", "/tops/Гольф із відкритими плечима/4.avif", "/tops/Гольф із відкритими плечима/5.avif", "/tops/Гольф із відкритими плечима/6.avif"],
+      image: "/tops/Open-shouldergolf/2.avif",
+      images: ["/tops/Open-shoulder golf/1.avif", "/tops/Open-shoulder golf/3.avif", "/tops/Open-shouldergolf/4.avif", "/tops/Open-shouldergolf/5.avif", "/tops/Open-shouldergolf/6.avif"],
       colors: ["milky", "black"], 
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
@@ -289,33 +289,34 @@
       }
     },
     
-    // {
-    //   id: 11,
-    //   price: 5225,
-    //   sku: "12345",
-    //   color: "beige",
-    //   size: "XS S M L XL",
-    //   category: "Outerwear",
-    //   image: "/Outerwear/Шкіряний тренч/2.avif",
-    //   images: ["/Outerwear/Шкіряний тренч/1.avif", "/Outerwear/Шкіряний тренч/3.avif", "/Outerwear/Шкіряний тренч/4.avif", 
-    //           "/Outerwear/Шкіряний тренч/5.avif", "/Outerwear/Шкіряний тренч/6.avif"],
-    //   colors: ["beige"], 
-    //   sizes: ["XS", "S", "M", "L", "XL"],
-    //   translations: {
-    //     EN: {
-    //       name: "Leather trench coat",
-    //       description: "Double-breasted leather trench coat in an oversize style with an included belt and two pockets. \nFabric: high-quality eco-leather on a suede base. (stretchy, does not crack)"
-    //     },
-    //     FR: {
-    //       name: "Trench-coat en cuir",
-    //       description: "Trench-coat oversize en cuir à double boutonnage avec ceinture incluse et deux poches. \nTissu : éco-cuir de haute qualité sur base en daim. (extensible, incassable)"
-    //     },
-    //     UA: {
-    //       name: "Шкіряний тренч",
-    //       description: "Двобортний шкіряний тренч oversize фасону із поясом у комплекті та двома кишенями. \nТканина: якісна екошкіра на замшевій основі.(стречева, не тріскається)"
-    //     }
-    //   }
-    // },
+    
+     {
+      id: 11,
+      price: 5225,
+      sku: "12345",
+      color: "beige",
+      size: "XS S M L XL",
+      category: "Outerwear",
+      image: "/Outerwear/Leather trench coat/2.avif",
+      images: ["/Outerwear/Leather trench coat/1.avif", "/Outerwear/Leather trench coat/3.avif", "/Outerwear/Leather trench coat/4.avif", 
+              "/Outerwear/Leather trench coat/5.avif", "/Outerwear/Leather trench coat/6.avif"],
+      colors: ["beige"], 
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          name: "Leather trench coat",
+          description: "Double-breasted leather trench coat in an oversize style with an included belt and two pockets. \nFabric: high-quality eco-leather on a suede base. (stretchy, does not crack)"
+        },
+        FR: {
+          name: "Trench-coat en cuir",
+          description: "Trench-coat oversize en cuir à double boutonnage avec ceinture incluse et deux poches. \nTissu : éco-cuir de haute qualité sur base en daim. (extensible, incassable)"
+        },
+        UA: {
+          name: "Шкіряний тренч",
+          description: "Двобортний шкіряний тренч oversize фасону із поясом у комплекті та двома кишенями. \nТканина: якісна екошкіра на замшевій основі.(стречева, не тріскається)"
+        }
+      }
+    },
     
     {
       id: 12,
