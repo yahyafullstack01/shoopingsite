@@ -54,59 +54,6 @@
     },
     
     {
-      id: 17,
-      price: 5350,
-      sku: "12345",
-      color: "olive",
-      size: "XS S M L XL",
-      category: "Costumes",
-      image: "/Costumes/Liana/1.avif",
-      images: ["/Costumes/Liana/2.avif", "/Costumes/Liana/3.avif", "/Costumes/Liana/4.avif", "/Costumes/Lianat/5.avif", "/Costumes/Liana/6.avif"],
-      colors: ["olive"], 
-      sizes: ["XS", "S", "M", "L", "XL"],
-      translations: {
-        EN: {
-          name: "Liana",
-          description: "Double-breasted oversize jacket + belt + straight high-rise trousers n\Suit fabric (75% viscose, 25% polyester)"
-        },
-        FR: {
-          name: "Liana",
-          description: "Veste oversize croisée + ceinture + pantalon droit taille haute Tissu de costume (75% viscose, 25% polyester)"
-        },
-        UA: {
-          name: "Liana",
-          description: "Двобортний oversize жакет + пояс + брюки прямі на високій посадці n\Костюмна тканина ( 75% віскоза, 25% поліестер )"
-        }
-      }
-    },
-    
-    {
-      id: 16,
-      price: 5350,
-      sku: "12345",
-      color: "black",
-      size: "XS S M L XL",
-      category: "Costumes",
-      image: "/Costumes/Lucy/1.avif",
-      images: ["/Costumes/Lucy/2.avif", "/Costumes/Lucy/3.avif", "/Costumes/Lucy/4.avif", "/Costumes/Lucy/5.avif", "/Costumes/Lucy/6.avif"],
-      colors: ["black"], 
-      sizes: ["XS", "S", "M", "L", "XL"],
-      translations: {
-        EN: {
-          name: "Lucy",
-          description: "Double-breasted oversize jacket + cropped high-rise banana pants\nSuit fabric (75% viscose, 25% polyester)"
-        },
-        FR: {
-          name: "Lucy",
-          description: "Veste oversize à double boutonnage + pantacourt taille haute façon banane\nTissu de costume (75% viscose, 25% polyester)"
-        },
-        UA: {
-          name: "Lucy",
-          description: "Двобортний oversize жакет + вкорочені брюки фасону бананів на високій посадці \nКостюмна тканина ( 75% віскоза, 25% поліестер )"
-        }
-      }
-    },
-    {
       id: 3,
       price: 4160,
       sku: "12345",
@@ -342,33 +289,33 @@
       }
     },
     
-    {
-      id: 11,
-      price: 5225,
-      sku: "12345",
-      color: "beige",
-      size: "XS S M L XL",
-      category: "Outerwear",
-      image: "/Outerwear/Шкіряний тренч/2.avif",
-      images: ["/Outerwear/Шкіряний тренч/1.avif", "/Outerwear/Шкіряний тренч/3.avif", "/Outerwear/Шкіряний тренч/4.avif", 
-              "/Outerwear/Шкіряний тренч/5.avif", "/Outerwear/Шкіряний тренч/6.avif"],
-      colors: ["beige"], 
-      sizes: ["XS", "S", "M", "L", "XL"],
-      translations: {
-        EN: {
-          name: "Leather trench coat",
-          description: "Double-breasted leather trench coat in an oversize style with an included belt and two pockets. \nFabric: high-quality eco-leather on a suede base. (stretchy, does not crack)"
-        },
-        FR: {
-          name: "Trench-coat en cuir",
-          description: "Trench-coat oversize en cuir à double boutonnage avec ceinture incluse et deux poches. \nTissu : éco-cuir de haute qualité sur base en daim. (extensible, incassable)"
-        },
-        UA: {
-          name: "Шкіряний тренч",
-          description: "Двобортний шкіряний тренч oversize фасону із поясом у комплекті та двома кишенями. \nТканина: якісна екошкіра на замшевій основі.(стречева, не тріскається)"
-        }
-      }
-    },
+    // {
+    //   id: 11,
+    //   price: 5225,
+    //   sku: "12345",
+    //   color: "beige",
+    //   size: "XS S M L XL",
+    //   category: "Outerwear",
+    //   image: "/Outerwear/Шкіряний тренч/2.avif",
+    //   images: ["/Outerwear/Шкіряний тренч/1.avif", "/Outerwear/Шкіряний тренч/3.avif", "/Outerwear/Шкіряний тренч/4.avif", 
+    //           "/Outerwear/Шкіряний тренч/5.avif", "/Outerwear/Шкіряний тренч/6.avif"],
+    //   colors: ["beige"], 
+    //   sizes: ["XS", "S", "M", "L", "XL"],
+    //   translations: {
+    //     EN: {
+    //       name: "Leather trench coat",
+    //       description: "Double-breasted leather trench coat in an oversize style with an included belt and two pockets. \nFabric: high-quality eco-leather on a suede base. (stretchy, does not crack)"
+    //     },
+    //     FR: {
+    //       name: "Trench-coat en cuir",
+    //       description: "Trench-coat oversize en cuir à double boutonnage avec ceinture incluse et deux poches. \nTissu : éco-cuir de haute qualité sur base en daim. (extensible, incassable)"
+    //     },
+    //     UA: {
+    //       name: "Шкіряний тренч",
+    //       description: "Двобортний шкіряний тренч oversize фасону із поясом у комплекті та двома кишенями. \nТканина: якісна екошкіра на замшевій основі.(стречева, не тріскається)"
+    //     }
+    //   }
+    // },
     
     {
       id: 12,
@@ -432,8 +379,8 @@
       color: "blue",
       size: "XS S M L XL",
       category: "Shirts",
-      image: "/Shirts/Класична_сорочка/2.avif",
-      images: ["/Shirts/Класична_сорочка/1.avif", "/Shirts/Класична_сорочка/3.avif", "/Shirts/Класична_сорочка/4.avif", "/Shirts/Класична_сорочка/5.avif", "/Shirts/Класична_сорочка/1.avif"],
+      image: "/Shirts/Classicshirt/2.avif",
+      images: ["/Shirts/Classicshirt/1.avif", "/Shirts/Classicshirtа/3.avif", "/Shirts/Classicshirt/4.avif", "/Shirts/Classicshirt/5.avif", "/Shirts/Classicshirt/1.avif"],
       colors: ["white"], 
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
@@ -452,32 +399,86 @@
       }
     },
     
-    {
-      id: 15,
-      price: 1650,
-      sku: "12345",
-      color: "caramel",
-      size: "XS S M L XL",
-      category: "Skirts",
-      image: "/Skirts/Alice/2.avif",
-      images: ["/Skirts/Alice/2.avif", "/Skirts/Alice/2.avif", "/Skirts/Alice/2.avif", "//Skirts/Alice/2.avif", "/Skirts/Alice/2.avif"],
-      colors: ["caramel"], 
-      sizes: ["XS", "S", "M", "L", "XL"],
-      translations: {
-        EN: {
-          name: "Alice",
-          description: "A-line skirt with ribbons along the entire length. Fabric: high-quality eco-leather on a suede base. (stretchy, does not crack)"
-        },
-        FR: {
-          name: "Alice",
-          description: "Une jupe ample en forme de trapèze avec des rubans sur toute la longueur. Tissu : cuir écologique de haute qualité sur base en daim. (extensible, ne craque pas"
-        },
-        UA: {
-          name: "Alice",
-          description: "Спідниця вільного крою у формі трапеції зі стрічками по всій довжині. Тканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається"
-        }
-      }
-    },
+    // {
+    //   id: 15,
+    //   price: 1650,
+    //   sku: "12345",
+    //   color: "caramel",
+    //   size: "XS S M L XL",
+    //   category: "Skirts",
+    //   image: "/Skirts/Alice/2.avif",
+    //   images: ["/Skirts/Alice/2.avif", "/Skirts/Alice/2.avif", "/Skirts/Alice/2.avif", "//Skirts/Alice/2.avif", "/Skirts/Alice/2.avif"],
+    //   colors: ["caramel"], 
+    //   sizes: ["XS", "S", "M", "L", "XL"],
+    //   translations: {
+    //     EN: {
+    //       name: "Alice",
+    //       description: "A-line skirt with ribbons along the entire length. Fabric: high-quality eco-leather on a suede base. (stretchy, does not crack)"
+    //     },
+    //     FR: {
+    //       name: "Alice",
+    //       description: "Une jupe ample en forme de trapèze avec des rubans sur toute la longueur. Tissu : cuir écologique de haute qualité sur base en daim. (extensible, ne craque pas"
+    //     },
+    //     UA: {
+    //       name: "Alice",
+    //       description: "Спідниця вільного крою у формі трапеції зі стрічками по всій довжині. Тканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається"
+    //     }
+    //   }
+    // },
+
+    // {
+    //   id: 1,
+    //   price: 5350,
+    //   sku: "12345",
+    //   color: "olive",
+    //   size: "XS S M L XL",
+    //   category: "Costumes",
+    //   image: "/Costumes/Liana/1.avif",
+    //   images: ["/Costumes/Liana/2.avif", "/Costumes/Liana/3.avif", "/Costumes/Liana/4.avif", "/Costumes/Lianat/5.avif", "/Costumes/Liana/6.avif"],
+    //   colors: ["olive"], 
+    //   sizes: ["XS", "S", "M", "L", "XL"],
+    //   translations: {
+    //     EN: {
+    //       name: "Liana",
+    //       description: "Double-breasted oversize jacket + belt + straight high-rise trousers n\Suit fabric (75% viscose, 25% polyester)"
+    //     },
+    //     FR: {
+    //       name: "Liana",
+    //       description: "Veste oversize croisée + ceinture + pantalon droit taille haute Tissu de costume (75% viscose, 25% polyester)"
+    //     },
+    //     UA: {
+    //       name: "Ліана",
+    //       description: "Двобортний oversize жакет + пояс + брюки прямі на високій посадці n\Костюмна тканина ( 75% віскоза, 25% поліестер )"
+    //     }
+    //   }
+    // },
+    
+    // {
+    //   id: 16,
+    //   price: 5350,
+    //   sku: "12345",
+    //   color: "black",
+    //   size: "XS S M L XL",
+    //   category: "Costumes",
+    //   image: "/Costumes/Lucy/1.avif",
+    //   images: ["/Costumes/Lucy/2.avif", "/Costumes/Lucy/3.avif", "/Costumes/Lucy/4.avif", "/Costumes/Lucy/5.avif", "/Costumes/Lucy/6.avif"],
+    //   colors: ["black"], 
+    //   sizes: ["XS", "S", "M", "L", "XL"],
+    //   translations: {
+    //     EN: {
+    //       name: "Lucy",
+    //       description: "Double-breasted oversize jacket + cropped high-rise banana pants\nSuit fabric (75% viscose, 25% polyester)"
+    //     },
+    //     FR: {
+    //       name: "Lucy",
+    //       description: "Veste oversize à double boutonnage + pantacourt taille haute façon banane\nTissu de costume (75% viscose, 25% polyester)"
+    //     },
+    //     UA: {
+    //       name: "Lucy",
+    //       description: "Двобортний oversize жакет + вкорочені брюки фасону бананів на високій посадці \nКостюмна тканина ( 75% віскоза, 25% поліестер )"
+    //     }
+    //   }
+    // },
     
   ];
   export default products;
