@@ -1,11 +1,11 @@
 "use client";
-import products from "../../data/productsAll";
+import products from "../../data/products";
 import { useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 import InfoForm from "../../Functions/InfoForm";
 import { useLanguage } from "../../Functions/useLanguage";
 import { handleContactButtonClick } from "../../utils/products"; // Імпорт функції
-
+import ThumbnailCarousel from "../ThumbnailCarousel/ThumbnailCarousel"
 export default function TopProductsInfo() {
   const { translateList } = useLanguage();
   const { language } = useLanguage(); // Get the current language
@@ -81,28 +81,19 @@ export default function TopProductsInfo() {
       {/* Selected Product Description */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 pt-8" ref={descriptionRef}>
         <div className="flex flex-col items-center ">
-          <img
+        <img
             src={selectedProduct.image}
-            alt={selectedProduct.translations?.[language]?.name || selectedProduct.title}
+            alt={selectedProduct.title}
             className="w-full max-w-xs md:max-w-md object-cover rounded-lg shadow-lg"
           />
+          {/* Вставляємо ThumbnailCarousel */}
           <div className="flex mt-4 sm:mt-8 gap-2 overflow-x-auto scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-200 ">
-            {selectedProduct.images.map((image, index) => (
-              <img
-                key={index}
-                src={image}
-                alt={`${selectedProduct.translations?.[language]?.name || selectedProduct.title} thumbnail ${index + 1}`}
-                className={`w-12 h-12 sm:w-16 sm:h-16 object-cover border ${
-                  image === selectedProduct .img
-                    ? "border-lime-500"
-                    : "border-gray-500"
-                } rounded cursor-pointer`}
-                onClick={() =>
-                  setSelectedProduct({ ...selectedProduct, img: image })
-                }
-              />
-            ))}
-          </div>
+          <ThumbnailCarousel
+            images={selectedProduct.images}
+            onImageSelect={(image) => setSelectedProduct({ ...selectedProduct, img: image })}
+            visibleThumbnails={5}
+          />
+           </div>
         </div>
 
         {/* Passing data to InfoForm */}

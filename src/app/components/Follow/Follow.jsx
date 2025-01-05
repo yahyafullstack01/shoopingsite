@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useLanguage } from "../../Functions/useLanguage";
 import useImageFollow from "../../hooks/useImageFollow";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-
+import useKeyboardNavigation from "../../hooks/useKeyboardNavigation";
 export default function FollowUs() {
   const {  translateList } = useLanguage(); 
   
@@ -27,7 +27,7 @@ export default function FollowUs() {
     images.length,
     5
   );
-
+  useKeyboardNavigation(handlePrev, handleNext);
   return (
     <section id="follow-us" className="bg-black text-white section-container py-12">
       <div className="space-y-4">

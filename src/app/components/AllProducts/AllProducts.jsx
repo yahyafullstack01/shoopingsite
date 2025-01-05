@@ -13,7 +13,7 @@ import {
   handleContactButtonClick,
   handleProductClick,
 } from "../../utils/products";
-import products from "../../data/productsAll";
+import products from "../../data/products";
 import { useLanguage } from "../../Functions/useLanguage";
 
 export default function AllProducts() {
