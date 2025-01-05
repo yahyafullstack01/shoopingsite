@@ -1,6 +1,7 @@
  const products = [
     { id: 1,
       price: 3170,
+      isTop: true, // Топ продукт
       sku: "12345",
       color: "red",
       size: "XS S M L XL",
@@ -8,7 +9,7 @@
       image: "/Costumes/Woolen suit with skirt/1.avif",
       images: ["/Costumes/Woolen suit with skirt/2.avif", "/Costumes/Woolen suit with skirt/3.avif", "/Costumes/Woolen suit with skirt/4.avif", "/Costumes/Woolen suit with skirt/5.avif", "/Costumes/Woolen suit with skirt/6.avif", "/Costumes/Woolen suit with skirt/7.avif", "/Costumes/Woolen suit with skirt/8.avif", "/Costumes/Woolen suit with skirt/9.avif", "/Costumes/Woolen suit with skirt/10.avif", "/Costumes/Woolen suit with skirt/11.avif", "/Costumes/Woolen suit with skirt/12.avif", "/Costumes/Woolen suit with skirt/13.avif", "/Costumes/Woolen suit with skirt/14.avif", ],
       colors: ["camel", "graphite", "gray"], 
-      sizes: ["XS", "S", "M", "L", "XL"],
+      sizes: ["XS", "S", "M", ],
       translations: {
         EN: {
           name: "Woolen suit with skirt",
@@ -28,6 +29,7 @@
     {
       id: 2,
       price: 3710,
+      isTop: true, // Топ продукт
       sku: "12345",
       color: "blue",
       size: "XS S M L XL",
@@ -36,7 +38,7 @@
       images: ["/Costumes/Wool suit with trousers/1.avif", "/Costumes/Wool suit with trousers/2.avif", "/Costumes/Wool suit with trousers/3.avif",
                 "/Costumes/Wool suit with trousers/4.avif","/Costumes/Wool suit with trousers/5.avif", "/Costumes/Wool suit with trousers/6.avif", "/Costumes/Wool suit with trousers/7.avif", "/Costumes/Wool suit with trousers/8.avif", "/Costumes/Wool suit with trousers/9.avif", "/Costumes/Wool suit with trousers/10.avif", "/Costumes/Wool suit with trousers/11.avif", "/Costumes/Wool suit with trousers/12.avif"],
       colors: ["graphite", "grey"], 
-      sizes: ["XS", "S", "M", "L", "XL"],
+      sizes: ["XS", "S", "M", ],
       translations: {
         EN: {
           name: "Woolen suit with trousers",
@@ -56,6 +58,7 @@
     {
       id: 3,
       price: 4160,
+      isTop: true, // Топ продукт
       sku: "12345",
       color: "camel",
       size: "XS S M L XL",
@@ -83,6 +86,7 @@
     {
       id: 4,
       price: 3100,
+      isTop: true, // Топ продукт
       sku: "12345",
       color: "red",
       size: "XS S M L XL",
@@ -111,6 +115,7 @@
     {
       id: 5,
       price: 3100,
+      isTop: true, // Топ продукт
       sku: "12345",
       color: "blue",
       size: "XS S M L XL",
@@ -138,6 +143,7 @@
     {
       id: 6,
       price: 3100,
+      isTop: true, // Топ продукт
       sku: "12345",
       color: "gray",
       size: "XS S M L XL",
@@ -171,6 +177,8 @@
     {
       id: 7,
       price: 1850,
+      isTop: true, // Топ продукт
+   
       sku: "12345",
       color: "blue",
       size: "XS S M L XL",
@@ -400,86 +408,86 @@
       }
     },
     
-    // {
-    //   id: 15,
-    //   price: 1650,
-    //   sku: "12345",
-    //   color: "caramel",
-    //   size: "XS S M L XL",
-    //   category: "Skirts",
-    //   image: "/Skirts/Alice/2.avif",
-    //   images: ["/Skirts/Alice/2.avif", "/Skirts/Alice/2.avif", "/Skirts/Alice/2.avif", "//Skirts/Alice/2.avif", "/Skirts/Alice/2.avif"],
-    //   colors: ["caramel"], 
-    //   sizes: ["XS", "S", "M", "L", "XL"],
-    //   translations: {
-    //     EN: {
-    //       name: "Alice",
-    //       description: "A-line skirt with ribbons along the entire length. Fabric: high-quality eco-leather on a suede base. (stretchy, does not crack)"
-    //     },
-    //     FR: {
-    //       name: "Alice",
-    //       description: "Une jupe ample en forme de trapèze avec des rubans sur toute la longueur. Tissu : cuir écologique de haute qualité sur base en daim. (extensible, ne craque pas"
-    //     },
-    //     UA: {
-    //       name: "Alice",
-    //       description: "Спідниця вільного крою у формі трапеції зі стрічками по всій довжині. Тканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається"
-    //     }
-    //   }
-    // },
+    {
+     id: 15,
+     price: 1650,
+     sku: "12345",
+     color: "caramel",
+     size: "XS S M L XL",
+     category: "Skirts",
+     image: "/Skirts/Alice/2.avif",
+     images: ["/Skirts/Alice/2.avif", "/Skirts/Alice/2.avif", "/Skirts/Alice/2.avif", "//Skirts/Alice/2.avif", "/Skirts/Alice/2.avif"],
+    colors: ["caramel"], 
+     sizes: ["XS", "S", "M", "L", "XL"],
+     translations: {
+       EN: {
+        name: "Alice",
+        description: "A-line skirt with ribbons along the entire length. Fabric: high-quality eco-leather on a suede base. (stretchy, does not crack)"
+      },
+      FR: {
+        name: "Alice",
+        description: "Une jupe ample en forme de trapèze avec des rubans sur toute la longueur. Tissu : cuir écologique de haute qualité sur base en daim. (extensible, ne craque pas"
+      },
+      UA: {
+         name: "Alice",
+         description: "Спідниця вільного крою у формі трапеції зі стрічками по всій довжині. Тканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається"
+       }
+     }
+     },
 
-    // {
-    //   id: 1,
-    //   price: 5350,
-    //   sku: "12345",
-    //   color: "olive",
-    //   size: "XS S M L XL",
-    //   category: "Costumes",
-    //   image: "/Costumes/Liana/1.avif",
-    //   images: ["/Costumes/Liana/2.avif", "/Costumes/Liana/3.avif", "/Costumes/Liana/4.avif", "/Costumes/Lianat/5.avif", "/Costumes/Liana/6.avif"],
-    //   colors: ["olive"], 
-    //   sizes: ["XS", "S", "M", "L", "XL"],
-    //   translations: {
-    //     EN: {
-    //       name: "Liana",
-    //       description: "Double-breasted oversize jacket + belt + straight high-rise trousers n\Suit fabric (75% viscose, 25% polyester)"
-    //     },
-    //     FR: {
-    //       name: "Liana",
-    //       description: "Veste oversize croisée + ceinture + pantalon droit taille haute Tissu de costume (75% viscose, 25% polyester)"
-    //     },
-    //     UA: {
-    //       name: "Ліана",
-    //       description: "Двобортний oversize жакет + пояс + брюки прямі на високій посадці n\Костюмна тканина ( 75% віскоза, 25% поліестер )"
-    //     }
-    //   }
-    // },
+     {
+      id: 16,
+      price: 5350,
+      sku: "12345",
+      color: "olive",
+      size: "XS S M L XL",
+      category: "Costumes",
+      image: "/Costumes/Liana/1.avif",
+      images: ["/Costumes/Liana/2.avif", "/Costumes/Liana/3.avif", "/Costumes/Liana/4.avif", "/Costumes/Lianat/5.avif", "/Costumes/Liana/6.avif"],
+      colors: ["olive"], 
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          name: "Liana",
+          description: "Double-breasted oversize jacket + belt + straight high-rise trousers n\Suit fabric (75% viscose, 25% polyester)"
+        },
+        FR: {
+          name: "Liana",
+          description: "Veste oversize croisée + ceinture + pantalon droit taille haute Tissu de costume (75% viscose, 25% polyester)"
+        },
+        UA: {
+          name: "Ліана",
+          description: "Двобортний oversize жакет + пояс + брюки прямі на високій посадці n\Костюмна тканина ( 75% віскоза, 25% поліестер )"
+        }
+      }
+    },
     
-    // {
-    //   id: 16,
-    //   price: 5350,
-    //   sku: "12345",
-    //   color: "black",
-    //   size: "XS S M L XL",
-    //   category: "Costumes",
-    //   image: "/Costumes/Lucy/1.avif",
-    //   images: ["/Costumes/Lucy/2.avif", "/Costumes/Lucy/3.avif", "/Costumes/Lucy/4.avif", "/Costumes/Lucy/5.avif", "/Costumes/Lucy/6.avif"],
-    //   colors: ["black"], 
-    //   sizes: ["XS", "S", "M", "L", "XL"],
-    //   translations: {
-    //     EN: {
-    //       name: "Lucy",
-    //       description: "Double-breasted oversize jacket + cropped high-rise banana pants\nSuit fabric (75% viscose, 25% polyester)"
-    //     },
-    //     FR: {
-    //       name: "Lucy",
-    //       description: "Veste oversize à double boutonnage + pantacourt taille haute façon banane\nTissu de costume (75% viscose, 25% polyester)"
-    //     },
-    //     UA: {
-    //       name: "Lucy",
-    //       description: "Двобортний oversize жакет + вкорочені брюки фасону бананів на високій посадці \nКостюмна тканина ( 75% віскоза, 25% поліестер )"
-    //     }
-    //   }
-    // },
+     {
+       id: 17,
+       price: 5350,
+       sku: "12345",
+       color: "black",
+       size: "XS S M L XL",
+       category: "Costumes",
+       image: "/Costumes/Lucy/1.avif",
+       images: ["/Costumes/Lucy/2.avif", "/Costumes/Lucy/3.avif", "/Costumes/Lucy/4.avif", "/Costumes/Lucy/5.avif", "/Costumes/Lucy/6.avif"],
+       colors: ["black"], 
+       sizes: ["XS", "S", "M", "L", "XL"],
+       translations: {
+         EN: {
+           name: "Lucy",
+           description: "Double-breasted oversize jacket + cropped high-rise banana pants\nSuit fabric (75% viscose, 25% polyester)"
+         },
+         FR: {
+           name: "Lucy",
+           description: "Veste oversize à double boutonnage + pantacourt taille haute façon banane\nTissu de costume (75% viscose, 25% polyester)"
+         },
+         UA: {
+           name: "Lucy",
+           description: "Двобортний oversize жакет + вкорочені брюки фасону бананів на високій посадці \nКостюмна тканина ( 75% віскоза, 25% поліестер )"
+         }
+       }
+     },
     
   ];
   export default products;

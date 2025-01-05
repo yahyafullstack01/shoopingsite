@@ -77,7 +77,7 @@ const ProductBanner = ({
             />
             {/* Display thumbnail images if more than one image is available */}
             {selectedProduct.images && selectedProduct.images.length > 1 && (
-              <div className="flex mt-4 gap-2 justify-center">
+              <div className="flex mt-4 gap-2 justify-center  overflow-x-auto scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-200">
                 {selectedProduct.images.map((image, index) => (
                   <img
                     key={index}

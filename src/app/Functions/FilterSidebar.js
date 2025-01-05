@@ -11,14 +11,17 @@ export default function FilterSidebar({
   handleSizeSelect,
   selectedCategory,
   handleCategorySelect,
+ 
   children,
 }) {
   //const [isColorOpen, setIsColorOpen] = useState(false);
   const [isSizeOpen, setIsSizeOpen] = useState(false);
   const [isCategoryOpen, setIsCategoryOpen] = useState(false);
+  
   //const colors = ["Red", "Blue", "Green"];
    // Предопределённые значения для размеров и категорий
-  const sizes = ["All", "S", "M", "L", "XL"];
+const sizes = ["All", "S", "M", "L", "XL"];
+  
   const categories = ["All", "Costumes", "Suits", "Dress", "Shirts", "Skirts", "T-shirt", "Jeans", "Jacket", "Tops", "Outerwear"];
    // Обработчики изменения цены, размера, категории
   const handlePriceChange = (e) => {
@@ -61,7 +64,7 @@ export default function FilterSidebar({
             <input
               type="range"
               min="100"
-              max="5000"
+              max="5500"
               step="10"
               value={maxPrice}
               onChange={handlePriceChange}
@@ -98,6 +101,7 @@ export default function FilterSidebar({
             </div>
           )}
  */}
+
  {/* Size Filter */}
 {showSizeFilter && (
   <div className="relative">
@@ -113,11 +117,14 @@ export default function FilterSidebar({
         {sizes.map((size) => (
           <div
             key={size}
-            onClick={() => handleSizeSelect(size)} // Викликаємо handleSizeSelect
+            onClick={() => {
+              handleSizeSelect(size);
+              toggleSizeMenu();
+            }} 
             className={`cursor-pointer p-1 rounded ${
               selectedSize === size || (size === "All" && selectedSize === "")
                 ? "dark:bg-blue-500 text-gray dark:text-white"
-                : "hover:bg-gray-600 text-gray bg-[#e2d0c2]  dark:text-gray-300"
+                : "hover:bg-gray-600 text-gray bg-[#e2d0c2] dark:bg-[#64748b48] dark:text-gray-300"
             }`}
           >
             {size}
@@ -145,11 +152,14 @@ export default function FilterSidebar({
       {categories.map((category) => (
         <div
           key={category}
-          onClick={() => handleCategorySelect(category)}
+          onClick={() => {
+            handleCategorySelect(category);
+            toggleCategoryMenu();
+          }}
           className={`cursor-pointer p-1 rounded ${
             selectedCategory === category || (category === "All" && selectedCategory === "")
                        ? "dark:bg-blue-500 text-gray dark:text-white"
-                : "hover:bg-gray-600 text-gray bg-[#e2d0c2]  dark:text-gray-300"
+                : "hover:bg-gray-600 text-gray bg-[#e2d0c2] dark:bg-[#64748b48]  dark:text-gray-300"
            
           }`}
         >

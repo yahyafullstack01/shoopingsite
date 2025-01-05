@@ -20,7 +20,7 @@ export default function AllProducts() {
   const { translateList, language } = useLanguage();
   const router = useRouter();
 
-  const [maxPrice, setMaxPrice] = useState(5000);
+  const [maxPrice, setMaxPrice] = useState(5500);
   const [selectedSize, setSelectedSize] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
   const [selectedColor, setSelectedColor] = useState("");
@@ -28,7 +28,7 @@ export default function AllProducts() {
   const [isSortMenuOpen, setIsSortMenuOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const descriptionRef = useRef(null);
-
+  //const [filteredProducts, setFilteredProducts] = useState(products)
   const filteredProducts = filterAndSortProducts(
     products,
     { maxPrice, selectedSize, selectedColor, selectedCategory },
@@ -88,7 +88,7 @@ export default function AllProducts() {
               {filteredProducts.length} products
             </p>
 
-            <main className="w-full bg-[#f5e7da] dark:bg-black  max-h-[800px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 mb-8">
+            <main className="w-full bg-[#f5e7da] dark:bg-black max-h-[800px]  overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 mb-8">
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
                 {filteredProducts.map((product) => (
                   <ProductCard
@@ -105,3 +105,4 @@ export default function AllProducts() {
     </div>
   );
 }
+

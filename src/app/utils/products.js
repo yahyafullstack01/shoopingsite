@@ -1,7 +1,12 @@
 // Size selection
 // This function updates the selected size, setting a value or clearing it if "All" is selected.
+
 export const handleSizeSelect = (size, setSelectedSize) => {
-  setSelectedSize(size === "All" ? "" : size);
+  if (size === "All") {
+    setSelectedSize(""); // Скидає фільтр розмірів
+  } else {
+    setSelectedSize(size); // Встановлює вибраний розмір
+  }
 };
 
 // Category selection
@@ -19,12 +24,12 @@ export const filterAndSortProducts = (products, filters, sortOrder) => {
   return products
     .filter((product) => {
       const matchesPrice = product.price <= maxPrice;
-      const matchesSize = !selectedSize || product.size === selectedSize;
-      const matchesColor = !selectedColor || product.color === selectedColor;
-      const matchesCategory =
-        !selectedCategory || product.category === selectedCategory;
-
-      return matchesPrice && matchesSize && matchesColor && matchesCategory;
+      const matchesSize = !selectedSize || product.sizes.includes(selectedSize); // Масив `sizes[]`
+      const matchesColor = !selectedColor || product.colors.includes(selectedColor); // Масив `colors[]`
+      const matchesCategory = !selectedCategory || product.category === selectedCategory;
+       
+     return matchesPrice && matchesSize && matchesColor && matchesCategory;
+    
     })
     .sort((a, b) => {
       if (sortOrder === "priceAsc") return a.price - b.price;

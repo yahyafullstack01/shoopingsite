@@ -1,18 +1,18 @@
 "use client";  
-
-import { useDarkMode } from "./Functions/useDarkMode"; // Import the custom hook
+import { ThemeProvider } from "./contexts/ThemeContext";
+//import { useDarkMode } from "./Functions/useDarkMode"; // Import the custom hook
 import "./globals.css";
 export default function RootLayout({ children }) {
-  const [isDarkMode] = useDarkMode(); 
+ // const [isDarkMode] = useDarkMode(); 
 
   return (
-    <html lang="en" className={isDarkMode ? "dark" : "light"}>
+    <html lang="en">
       <body 
-            className={`${ 
-        isDarkMode ? "dark bg-black text-white" : "light bg-white text-black"
-      } transition-colors min-h-screen `}
+            className="transition-colors min-h-screen"
       >
+        <ThemeProvider>
         {children}
+        </ThemeProvider>
       </body>
     </html>
    
