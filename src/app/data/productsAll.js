@@ -276,9 +276,9 @@
       sku: "12345",
       color: "blue",
       size: "XS S M L XL",
-      category: "tops",
-      image: "/tops/Open-shouldergolf/2.avif",
-      images: ["/tops/Open-shoulder golf/1.avif", "/tops/Open-shoulder golf/3.avif", "/tops/Open-shouldergolf/4.avif", "/tops/Open-shouldergolf/5.avif", "/tops/Open-shouldergolf/6.avif"],
+      category: "Tops",
+      image: "/Top/Openshouldergolf/2.avif",
+      images: ["/Top/Openshouldergolf/1.avif", "/Top/Openshouldergolf/3.avif", "/Top/Openshouldergolf/4.avif", "/Top/Openshouldergolf/5.avif", "/Top/Openshouldergolf/6.avif"],
       colors: ["milky", "black"], 
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
@@ -389,7 +389,7 @@
       size: "XS S M L XL",
       category: "Shirts",
       image: "/Shirts/Classicshirt/2.avif",
-      images: ["/Shirts/Classicshirt/1.avif", "/Shirts/Classicshirtа/3.avif", "/Shirts/Classicshirt/4.avif", "/Shirts/Classicshirt/5.avif", "/Shirts/Classicshirt/1.avif"],
+      images: ["/Shirts/Classicshirt/1.avif", "/Shirts/Classicshirt/3.avif", "/Shirts/Classicshirt/4.avif", "/Shirts/Classicshirt/5.avif", "/Shirts/Classicshirt/1.avif"],
       colors: ["white"], 
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {

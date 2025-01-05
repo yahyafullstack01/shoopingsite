@@ -11,7 +11,7 @@ export default function FilterSidebar({
   handleSizeSelect,
   selectedCategory,
   handleCategorySelect,
- 
+  
   children,
 }) {
   //const [isColorOpen, setIsColorOpen] = useState(false);
