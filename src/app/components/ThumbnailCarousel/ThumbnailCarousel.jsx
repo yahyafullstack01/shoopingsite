@@ -4,7 +4,7 @@ import useKeyboardNavigation from "../../hooks/useKeyboardNavigation";
 
 const ThumbnailCarousel = ({ images = [], onImageSelect, visibleThumbnails = 5 }) => {
   const [thumbnailIndex, setThumbnailIndex] = useState(0);
-
+{/*
   // Таймер для автоматичної зміни зображення
   useEffect(() => {
     const interval = setInterval(() => {
@@ -20,7 +20,7 @@ const ThumbnailCarousel = ({ images = [], onImageSelect, visibleThumbnails = 5 }
   const handleScrollLeft = () => {
     setThumbnailIndex((prev) => (prev - 1 < 0 ? images.length - 1 : prev - 1));
   };
-
+*/}
   const handleScrollRight = () => {
     setThumbnailIndex((prev) => (prev + 1 >= images.length ? 0 : prev + 1));
   };
