@@ -1,3 +1,4 @@
+"use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import InfoForm from "../../Functions/InfoForm";
@@ -10,24 +11,21 @@ const ProductBanner = ({
   handleContactButtonClick,
 }) => {
   const { language } = useLanguage();
-
-  const [currentImage, setCurrentImage] = useState(
-    selectedProduct?.image || "/4.jpg"
-  );
+  const [currentImage, setCurrentImage] = useState(selectedProduct?.image || "/4.jpg");
   const [isScrollable, setIsScrollable] = useState(false);
-  // Translate the product name and description based on the current language.
+  // Переклад назви та опису продукту
   const translatedName =
     selectedProduct?.translations?.[language]?.name || selectedProduct?.name;
   const translatedDescription =
-    selectedProduct?.translations?.[language]?.description ||
-    selectedProduct?.description;
+    selectedProduct?.translations?.[language]?.description || selectedProduct?.description;
 
   useEffect(() => {
     setCurrentImage(selectedProduct?.image || "/4.jpg");
   }, [selectedProduct]);
   const handleImageClick = () => {
-    setIsScrollable(!isScrollable); 
+    setIsScrollable(!isScrollable); // Перемикання стану для скролу
   };
+
   return (
     <div
     ref={descriptionRef}
