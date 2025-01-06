@@ -1,36 +1,45 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import useKeyboardNavigation from "../../hooks/useKeyboardNavigation";
 
 const ThumbnailCarousel = ({ images = [], onImageSelect, visibleThumbnails = 5 }) => {
   const [thumbnailIndex, setThumbnailIndex] = useState(0);
 
+  // Таймер для автоматичної зміни зображення
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setThumbnailIndex((prev) =>
+        prev + 1 >= images.length ? 0 : prev + 1 // Переходить на перший елемент, якщо досягнуто кінця
+      );
+      onImageSelect(images[thumbnailIndex]); // Змінює велике зображення
+    }, 3000); // Інтервал у 3 секунди
+
+    return () => clearInterval(interval); // Очищення інтервалу при виході
+  }, [images, thumbnailIndex, onImageSelect]);
+
   const handleScrollLeft = () => {
-    setThumbnailIndex((prev) => Math.max(prev - 1, 0));
+    setThumbnailIndex((prev) => (prev - 1 < 0 ? images.length - 1 : prev - 1));
   };
 
   const handleScrollRight = () => {
-    if (thumbnailIndex + visibleThumbnails < images.length) {
-      setThumbnailIndex((prev) => prev + 1);
-    }
+    setThumbnailIndex((prev) => (prev + 1 >= images.length ? 0 : prev + 1));
   };
-//{Хук для клавіатури}}
+
+  // Хук для клавіатурної навігації
   useKeyboardNavigation(handleScrollLeft, handleScrollRight);
 
   return (
-    <div className="relative w-full max-w-lg flex justify-center items-center mt-4">
+    <div className="relative w-full max-w-lg flex justify-center items-center mt-4 overflow-visible">
       {/* Ліва стрілка */}
       <button
-        className={`absolute left-0 p-1 bg-white dark:bg-black rounded-full shadow-lg hover:bg-gray-200 dark:hover:bg-gray-700 ${
-          thumbnailIndex === 0 ? "opacity-50 cursor-not-allowed" : ""
-        }`}
+        className="absolute left-2 p-2 bg-[#2e1f14] dark:bg-black rounded-full shadow-lg  hover:bg-gray-400 dark:hover:bg-gray-700"
+        style={{ color: "white" }}
         onClick={handleScrollLeft}
-        disabled={thumbnailIndex === 0}
       >
         {"‹"}
       </button>
 
       {/* Мініатюри */}
-      <div className="flex gap-2 overflow-hidden">
+      <div className="flex gap-2 overflow-hidden px-8">
         <div
           className="flex gap-2 transition-transform duration-300"
           style={{
@@ -42,10 +51,13 @@ const ThumbnailCarousel = ({ images = [], onImageSelect, visibleThumbnails = 5 }
               key={index}
               src={image}
               alt={`Thumbnail ${index + 1}`}
-              className={`w-20 h-20 object-cover border rounded cursor-pointer hover:scale-105 ${
-                index === thumbnailIndex ? "border-lime-500" : "border-gray-500"
+              className={`w-24 h-24 object-cover border rounded cursor-pointer hover:brightness-150 hover:scale-105 ${
+                index === thumbnailIndex ? "border-white" : "border-gray-500"
               }`}
-              onClick={() => onImageSelect(image)}
+              onClick={() => {
+                setThumbnailIndex(index); 
+                onImageSelect(image); 
+              }}
             />
           ))}
         </div>
@@ -53,13 +65,9 @@ const ThumbnailCarousel = ({ images = [], onImageSelect, visibleThumbnails = 5 }
 
       {/* Права стрілка */}
       <button
-        className={`absolute right-0 p-1 bg-white dark:bg-black rounded-full shadow-lg hover:bg-gray-200 dark:hover:bg-gray-700 ${
-          thumbnailIndex + visibleThumbnails >= images.length
-            ? "opacity-50 cursor-not-allowed"
-            : ""
-        }`}
+        className="absolute right-2 p-2 bg-[#2e1f14] dark:bg-black rounded-full shadow-lg hover:bg-gray-400 dark:hover:bg-gray-700"
+        style={{ color: "white" }}
         onClick={handleScrollRight}
-        disabled={thumbnailIndex + visibleThumbnails >= images.length}
       >
         {"›"}
       </button>

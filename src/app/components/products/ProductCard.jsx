@@ -19,12 +19,12 @@ const ProductCard = ({ product, onClick }) => {
       onClick={onClick} // Handle the click event for the card.
     >
       {/* Container for the product image */}
-      <div className="w-44 h-64 overflow-hidden rounded relative">
+      <div className="w-full h-[220px] overflow-hidden rounded relative">
       
         <img
           src={product.image || `https://via.placeholder.com/150?text=${translatedName}`}
           alt={translatedName} // Use the translated product name for the alt attribute.
-          className="object-cover w-36 h-full rounded transform transition-transform duration-300 ease-in-out group-hover:scale-110"
+          className="object-cover w-full h-full rounded transform transition-transform duration-300 ease-in-out group-hover:scale-110"
         />
         {/* Overlay effect that appears on hover */}
         <div className="absolute inset-0 bg-black dark:bg-[#0f172a] opacity-0 group-hover:opacity-40 transition-opacity duration-300 rounded"></div>

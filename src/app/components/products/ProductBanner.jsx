@@ -38,24 +38,26 @@ const ProductBanner = ({
  
       {!selectedProduct && (
         <div
-        className={`relative w-full h-72 sm:h-96 ${
+        className={`relative w-full  h-72 sm:h-96 ${
           isScrollable ? "overflow-scroll cursor-grab" : ""
         }`}
+        style={{ position: "relative" }}
         onClick={handleImageClick}
       >
         <Image
           src="/4.jpg"
           alt="Category Banner"
-          layout="intrinsic"
-          width={1200} // Збільшений розмір
-          height={800}
-         
-          className="rounded-lg object-contain"
+          layout="fill"
+        
+         objectFit="cover" 
+            objectPosition="center 50%"
+          className="rounded-lg "
         />
       </div>
       )}
 
       {selectedProduct && (
+
         <div className="relative flex flex-col sm:flex-row items-start">
            <div className="w-full relative h-42 sm:h-74">
        

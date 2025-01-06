@@ -17,7 +17,7 @@ export default function FilterSidebar({
   //const [isColorOpen, setIsColorOpen] = useState(false);
   const [isSizeOpen, setIsSizeOpen] = useState(false);
   const [isCategoryOpen, setIsCategoryOpen] = useState(false);
-  
+ 
   //const colors = ["Red", "Blue", "Green"];
    // Предопределённые значения для размеров и категорий
 const sizes = ["All", "S", "M", "L", "XL"];
@@ -31,6 +31,7 @@ const sizes = ["All", "S", "M", "L", "XL"];
  // const toggleColorMenu = () => setIsColorOpen(!isColorOpen);
   const toggleSizeMenu = () => setIsSizeOpen(!isSizeOpen);
   const toggleCategoryMenu = () => setIsCategoryOpen(!isCategoryOpen);
+ 
   return (
     <aside className="w-full md:w-1/4 bg-[#f5e7da]  p-4 sm:p-6 rounded shadow-lg dark:bg-[#0f172a]">
       <div className="mb-6">
@@ -171,7 +172,7 @@ const sizes = ["All", "S", "M", "L", "XL"];
   <div className="text-sm mt-1 text:gray dark:text-gray-300">
     Selected: {selectedCategory || "All"}
   </div>
-</div>
+</div >
    {/* Sort Menu */}
           <div className="mt-4">{children}</div>
         </div>
