@@ -1,9 +1,10 @@
+"use client";
 import React, { useState, useEffect } from "react";
 import useKeyboardNavigation from "../../hooks/useKeyboardNavigation";
 
 const ThumbnailCarousel = ({ images = [], onImageSelect, visibleThumbnails = 5 }) => {
   const [thumbnailIndex, setThumbnailIndex] = useState(0);
-
+{/*
   // Таймер для автоматичної зміни зображення
   useEffect(() => {
     const interval = setInterval(() => {
@@ -15,7 +16,7 @@ const ThumbnailCarousel = ({ images = [], onImageSelect, visibleThumbnails = 5 }
 
     return () => clearInterval(interval); // Очищення інтервалу при виході
   }, [images, thumbnailIndex, onImageSelect]);
-
+*/}
   const handleScrollLeft = () => {
     setThumbnailIndex((prev) => (prev - 1 < 0 ? images.length - 1 : prev - 1));
   };
@@ -31,8 +32,7 @@ const ThumbnailCarousel = ({ images = [], onImageSelect, visibleThumbnails = 5 }
     <div className="relative w-full max-w-lg flex justify-center items-center mt-4 overflow-visible">
       {/* Ліва стрілка */}
       <button
-        className="absolute left-2 p-2 bg-[#2e1f14] dark:bg-black rounded-full shadow-lg  hover:bg-gray-400 dark:hover:bg-gray-700"
-        style={{ color: "white" }}
+        className="text-black dark:text-gray-300 text-2xl sm:text-3xl cursor-pointer mx-2 sm:mx-4 hover:text-gray-500 dark:hover:text-gray-400 transition-all duration-300"
         onClick={handleScrollLeft}
       >
         {"‹"}
@@ -55,8 +55,8 @@ const ThumbnailCarousel = ({ images = [], onImageSelect, visibleThumbnails = 5 }
                 index === thumbnailIndex ? "border-white" : "border-gray-500"
               }`}
               onClick={() => {
-                setThumbnailIndex(index); 
-                onImageSelect(image); 
+                setThumbnailIndex(index);
+                onImageSelect(image);
               }}
             />
           ))}
@@ -65,8 +65,7 @@ const ThumbnailCarousel = ({ images = [], onImageSelect, visibleThumbnails = 5 }
 
       {/* Права стрілка */}
       <button
-        className="absolute right-2 p-2 bg-[#2e1f14] dark:bg-black rounded-full shadow-lg hover:bg-gray-400 dark:hover:bg-gray-700"
-        style={{ color: "white" }}
+        className="text-black dark:text-gray-300 text-2xl sm:text-3xl cursor-pointer mx-2 sm:mx-4 hover:text-gray-500 dark:hover:text-gray-400 transition-all duration-300"
         onClick={handleScrollRight}
       >
         {"›"}
