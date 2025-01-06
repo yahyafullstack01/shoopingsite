@@ -47,35 +47,36 @@ export default function TopProductsInfo() {
       </div>
 
       {/* Product List */}
-      <div className="bg-[#f5e7da] dark:bg-[rgba(58,42,32,0.8)] ml-8 max-h-[450px] md:max-h-[600px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 mb-8">
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 md:gap-6 p-4">
-          {topProducts.map((product) => {
-            const translatedName = product.translations?.[language]?.name || product.title;
 
-            return (
-              <div
-                key={product.id}
-                className="text-black bg-[#fcf8f3] dark:bg-white dark:text-black rounded shadow-lg hover:scale-105 transition-transform cursor-pointer"
-                
-                onClick={() => handleProductClick(product)} // Call the scroll function
-              >
-                <img
-                  src={product.image}
-                  alt={translatedName}
-                  className="object-cover w-full h-43 sm:h-63 rounded transform transition-transform duration-300 ease-in-out group-hover:scale-110"
-                /> {/*w-full h-36 sm:h-48 object-cover rounded-t*/}
-                <div className="p-2 sm:p-4  dark:bg-[#f5e8d6]">
-                  <h3 className="font-semibold text-sm sm:text-lg">
-                    {translatedName}
-                  </h3>
-                  <p className="text:black dark:text-gray-600 text-xs sm:text-base">
-                    {product.price}
-                  </p>
-                </div>
-              </div>
-            );
-          })}
+      <div className="bg-[#f5e7da] dark:bg-[rgba(58,42,32,0.8)] ml-8 max-h-[450px] md:max-h-[600px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 mb-8">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 md:gap-6 p-4">
+  {topProducts.map((product) => {
+    const translatedName = product.translations?.[language]?.name || product.title;
+
+    return (
+      <div
+        key={product.id}
+        className="text-black bg-[#fcf8f3] dark:bg-white dark:text-black rounded shadow-lg hover:scale-105 transition-transform cursor-pointer"
+        onClick={() => handleProductClick(product)}
+      >
+        <div className="w-full h-[300px] sm:h-[350px] overflow-hidden rounded-t">
+          <img
+            src={product.image}
+            alt={translatedName}
+            className="w-full h-full object-cover"
+          />
         </div>
+        <div className="p-2 sm:p-4 dark:bg-[#f5e8d6]">
+          <h3 className="font-semibold text-sm sm:text-lg">{translatedName}</h3>
+          <p className="text:black dark:text-gray-600 text-xs sm:text-base">
+            {product.price}
+          </p>
+        </div>
+      </div>
+    );
+  })}
+</div>
+
       </div>
 
       {/* Selected Product Description */}
