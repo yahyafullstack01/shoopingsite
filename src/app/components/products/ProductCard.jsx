@@ -1,12 +1,6 @@
 import React from "react";
 import { useLanguage } from '../../Functions/useLanguage'; // Adjust the import path if necessary
 
-/**
- * Component to display a product card with an image, translated details, and basic information.
- * @param {Object} props - Properties passed to the component.
- * @param {Object} props.product - The product object containing details like name, image, price, size, and category.
- * @param {Function} props.onClick - Callback function triggered when the product card is clicked.
- */
 const ProductCard = ({ product, onClick }) => {
   const { language } = useLanguage(); // Retrieve the current language using a custom hook.
 

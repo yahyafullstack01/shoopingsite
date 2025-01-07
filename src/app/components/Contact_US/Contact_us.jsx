@@ -26,12 +26,7 @@ const ContactUs = () => {
   const [productData, setProductData] = useState(initialProductData);
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [successMessageVisible, setSuccessMessageVisible] = useState(false);
-  {/*useEffect(() => {
-    const darkMode = localStorage.getItem("darkMode");
-    console.log("Dark mode in localStorage:", darkMode);
-    console.log("HTML class on load:", document.documentElement.className);
-  }, []);
-  */}
+
   const [formValues, setFormValues] = useState({
     firstName: "",
     lastName: "",
