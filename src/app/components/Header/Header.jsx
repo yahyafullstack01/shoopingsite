@@ -15,7 +15,7 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
       prevLanguage === "EN" ? "FR" : prevLanguage === "FR" ? "UA" : "EN"
     );
   };
-
+  
   const {
     isMenuOpen,
     toggleMenu,
@@ -36,9 +36,11 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
         } `}
       >
         <div className="flex-shrink-0 ml-0 sm:ml-8">
-          <Image
+          <Link href="/">
+            <Image
             src="/light-logo.avif"
             alt="Latore Atelier Logo"
+            href="/"
             width={180}
             height={160}
             quality={100}
@@ -46,6 +48,8 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
               isDarkMode ? "filter invert" : ""
             } w-[80px] h-[60px] sm:w-[80px] sm:h-[60px] md:w-[80px] md:h-[60px] lg:w-[120px] lg:h-[80px]`}
           />
+          </Link>
+          
         </div>
         <nav className="flex items-center space-x-4 lg:space-x-6">
           <button
@@ -85,6 +89,15 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
         className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap"
       >
         {menuItems[3]}
+      </Link>
+    </li>
+    
+    <li className="min-w-[80px] text-center">
+      <Link
+        href="/Conditions"
+        className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-700 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 whitespace-nowrap"
+      >
+        {menuItems[4]}
       </Link>
     </li>
           </ul>

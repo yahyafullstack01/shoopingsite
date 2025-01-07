@@ -50,7 +50,7 @@ export default function AllProducts() {
       
     );
   };
-
+  
   return (
     <div className="bg-[#fcf8f3] text-black dark:text-white min-h-screen dark:bg-black ">
       <div className="w-full mx-auto px-4 sm:px-6 md:px-8 py-4">
