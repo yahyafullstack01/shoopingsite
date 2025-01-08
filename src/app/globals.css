@@ -52,3 +52,19 @@ input, textarea {
     }
   }
 }
+/* Для Chrome, Safari, Edge */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Для Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Забороняємо появу стрілок у всіх випадках */
+input[type="number"]:focus {
+  outline: none;
+}
