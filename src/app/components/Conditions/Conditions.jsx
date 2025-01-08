@@ -5,7 +5,7 @@ const Conditions = () => {
     const { translateList, language, setLanguage } = useLanguage(); // Access the language context
     const menuItems = translateList("Conditions", "hero");
   return (
-    <div className="bg-gray-50 text-gray-800 p-8 md:p-16">
+    <div className="p-8 md:p-16">
       <h1 className="text-2xl md:text-4xl font-bold text-center mb-8">
         {menuItems[0]}
       </h1>

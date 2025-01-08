@@ -21,13 +21,7 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
     toggleMenu,
     closeMenu,
   } = useHeaderState();
-   {/*useEffect(() => {
-    const darkMode = localStorage.getItem("darkMode");
-    console.log("Dark mode in localStorage:", darkMode);
-    console.log("HTML class on load:", document.documentElement.className);
-  }, []);
-  
- */}
+
   return (
     <>
       <header
