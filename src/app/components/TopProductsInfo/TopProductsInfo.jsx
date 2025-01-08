@@ -91,7 +91,7 @@ export default function TopProductsInfo() {
           <div className="flex mt-4 sm:mt-8 gap-2 overflow-x-auto scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-200 ">
           <ThumbnailCarousel
             images={selectedProduct.images}
-            onImageSelect={(image) => setSelectedProduct({ ...selectedProduct, img: image })}
+            onImageSelect={(image) => setSelectedProduct({ ...selectedProduct, image })}
             visibleThumbnails={5}
           />
            </div>
