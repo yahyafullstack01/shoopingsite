@@ -33,7 +33,19 @@ const ContactUs = () => {
     phone: "",
     email: "",
     message: "",
+    productImage: null, 
   });
+  const [photoPreview, setPhotoPreview] = useState(null);
+  const handlePhotoChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      setFormValues((prevValues) => ({
+        ...prevValues,
+        productImage: file,
+      }));
+      setPhotoPreview(URL.createObjectURL(file)); // Попередній перегляд
+    }
+  };
   const onFormSubmit = (e) => handleFormSubmit({
     e,
     setFormSubmitted,
@@ -41,6 +53,7 @@ const ContactUs = () => {
    // setProductData,
     setFormValues,
     productData, 
+    setPhotoPreview,
   });
   const onInputChange = (e) => handleInputChange(e, setFormValues);
  

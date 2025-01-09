@@ -42,7 +42,9 @@ export const handleFormSubmit = async ({
         phone: "",
         email: "",
         message: "",
+      
       });
+       
       setTimeout(() => setSuccessMessageVisible(false), 5000);
     } else {
       alert("Failed to send email");
