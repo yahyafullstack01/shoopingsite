@@ -28,14 +28,15 @@ export default function AllProducts() {
   const [isSortMenuOpen, setIsSortMenuOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const descriptionRef = useRef(null);
-  //const [filteredProducts, setFilteredProducts] = useState(products)
+
   const filteredProducts = filterAndSortProducts(
     products,
     { maxPrice, selectedSize, selectedColor, selectedCategory },
     sortOrder
   );
+
   const onProductClick = (product) => {
-    console.log("Clicked Product:", product); // Перевірте, чи продукт має `name`
+    console.log("Clicked Product:", product);
     handleProductClick(product, setSelectedProduct, descriptionRef);
   };
 
@@ -47,48 +48,52 @@ export default function AllProducts() {
       selectedSize,
       quantity,
       language
-      
     );
   };
-  
+
   return (
-    <div className="bg-[#fcf8f3] text-black dark:text-white min-h-screen dark:bg-black ">
+    <section className="bg-[#fcf8f3] text-black dark:text-white min-h-screen dark:bg-black">
       <div className="w-full mx-auto px-4 sm:px-6 md:px-8 py-4">
         <div className="flex flex-col md:flex-row md:space-x-8">
-          <FilterSidebar
-            maxPrice={maxPrice}
-            setMaxPrice={setMaxPrice}
-            selectedSize={selectedSize}
-            handleSizeSelect={(size) => handleSizeSelect(size, setSelectedSize)}
-            selectedCategory={selectedCategory}
-            handleCategorySelect={(category) =>
-              handleCategorySelect(category, setSelectedCategory)
-            }
-          >
-            <SortMenu
-              sortOrder={sortOrder}
-              setSortOrder={setSortOrder}
-              isSortMenuOpen={isSortMenuOpen}
-              toggleSortMenu={() => setIsSortMenuOpen(!isSortMenuOpen)}
-            />
-          </FilterSidebar>
+            <FilterSidebar
+              maxPrice={maxPrice}
+              setMaxPrice={setMaxPrice}
+              selectedSize={selectedSize}
+              handleSizeSelect={(size) => handleSizeSelect(size, setSelectedSize)}
+              selectedCategory={selectedCategory}
+              handleCategorySelect={(category) =>
+                handleCategorySelect(category, setSelectedCategory)
+              }
+            >
+              <SortMenu
+                sortOrder={sortOrder}
+                setSortOrder={setSortOrder}
+                isSortMenuOpen={isSortMenuOpen}
+                toggleSortMenu={() => setIsSortMenuOpen(!isSortMenuOpen)}
+              />
+            </FilterSidebar>
 
-          <div className="w-full md:w-3/4 flex flex-col">
-            <ProductBanner
-              selectedProduct={selectedProduct}
-              descriptionRef={descriptionRef}
-              handleContactButtonClick={onContactClick}
-            />
+          <main className="w-full md:w-3/4 flex flex-col">
+            <section aria-labelledby="banner-section">
+              <ProductBanner
+                selectedProduct={selectedProduct}
+                descriptionRef={descriptionRef}
+                handleContactButtonClick={onContactClick}
+              />
+            </section>
 
-            <h1 className="text-3xl sm:text-4xl font-bold mb-6">All Products</h1>
-            <p className="text-gray-700 dark:text-gray-400 mb-4">
-              Explore our diverse range of products tailored to your needs.
-            </p>
-            <p className="text-gray-700 dark:text-gray-400 mt-4 pb-4">
-              {filteredProducts.length} products
-            </p>
+            <section aria-labelledby="product-header" className="w-full mx-auto px-4 sm:px-6 md:px-8 py-4">
+              <h1 id="product-header" className="text-3xl sm:text-4xl font-bold mb-6">All Products</h1>
+              <p className="text-gray-700 dark:text-gray-400 mb-4">
+                Explore our diverse range of products tailored to your needs.
+              </p>
+              <p className="text-gray-700 dark:text-gray-400 mt-4 pb-4">
+                {filteredProducts.length} products
+              </p>
+            </section>
 
-            <main className="w-full bg-[#f5e7da] dark:bg-black max-h-[800px]  overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 mb-8">
+            <section aria-labelledby="product-list" className="w-full bg-[#f5e7da] dark:bg-black max-h-[800px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 mb-8">
+              <h2 id="product-list" className="sr-only">Product List</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
                 {filteredProducts.map((product) => (
                   <ProductCard
@@ -98,11 +103,10 @@ export default function AllProducts() {
                   />
                 ))}
               </div>
-            </main>
-          </div>
+            </section>
+          </main>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
-

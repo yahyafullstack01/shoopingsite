@@ -14,15 +14,16 @@ export default function SpecialOffers() {
     >
       <div className="space-y-4">
         <div className="relative ml-auto max-w-4xl pr-0 md:pr-[12px] flex justify-center md:justify-end">
-          <div className="max-w-[800px] w-[80%] h-[300px] sm:h-[500px] md:h-[550px] lg:h-[900px] relative rounded-lg shadow-xl shadow-gray-800 dark:shadow-gray-600">
-            <Image
-              src="/8.jpg"
-              alt="Special Offers Image"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-lg"
-            />
-          </div>
+        <div className="max-w-[800px] w-[80%] h-[300px] sm:h-[500px] md:h-[550px] lg:h-[900px] relative rounded-lg shadow-xl shadow-gray-800 dark:shadow-gray-600">
+  <Image
+    src="/8.jpg"
+    alt="Special Offers Image"
+    fill
+    style={{ objectFit: "cover" }} 
+    className="rounded-lg"
+  />
+</div>
+
           <div
             className={`absolute bottom-[5%] sm:bottom-[10%] md:bottom-[15%] lg:bottom-[10%] xl:bottom-[15%]
             left-[40%] lg:left-[20%] xl-left-1/2 transform -translate-x-1/2 

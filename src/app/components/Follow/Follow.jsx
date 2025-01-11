@@ -6,7 +6,7 @@ import useImageFollow from "../../hooks/useImageFollow";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import useKeyboardNavigation from "../../hooks/useKeyboardNavigation";
 export default function FollowUs() {
-  const {  translateList } = useLanguage(); 
+  const {  translateList } = useLanguage();  
   
   const menuItems = translateList("home", "follow_us");
   const Insta = "https://www.instagram.com/latore.atelier?igsh=Y3RvbWZhZW12Zmxj"

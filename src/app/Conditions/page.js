@@ -6,7 +6,7 @@ export default function ConditionPage() {
     return (
         <div className="transition-colors">
             <Layout>
-                <Conditions/>
+                <Conditions />
             </Layout>
         </div>
     );

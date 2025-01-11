@@ -13,7 +13,7 @@ const ProductBanner = ({
   const { language } = useLanguage();
   const [currentImage, setCurrentImage] = useState(selectedProduct?.image || "/4.jpg");
   const [isScrollable, setIsScrollable] = useState(false);
-  // Переклад назви та опису продукту
+
   const translatedName =
     selectedProduct?.translations?.[language]?.name || selectedProduct?.name;
   const translatedDescription =
@@ -23,13 +23,13 @@ const ProductBanner = ({
     setCurrentImage(selectedProduct?.image || "/4.jpg");
   }, [selectedProduct]);
   const handleImageClick = () => {
-    setIsScrollable(!isScrollable); // Перемикання стану для скролу
+    setIsScrollable(!isScrollable); 
   };
 
   return (
     <div
     ref={descriptionRef}
-    className={`relative w-full bg-[#fcf8f3] dark:bg-black overflow-hidden rounded-lg mb-8 transition-all duration-300 ease-in-out ${
+    className={`relative w-full bg-[#fcf8f3] dark:bg-black  overflow-hidden rounded-lg mb-8 transition-all duration-300 ease-in-out ${
       selectedProduct ? "p-4" : "h-72 sm:h-96"
     }`}
   >
@@ -42,13 +42,16 @@ const ProductBanner = ({
         style={{ position: "relative" }}
         onClick={handleImageClick}
       >
-        <Image
+      
+      <Image
           src="/4.jpg"
           alt="Category Banner"
-          layout="fill"
-        
-         objectFit="cover" 
-            objectPosition="center 50%"
+          fill
+          style={{
+            objectFit: "cover", 
+            objectPosition: "center 50%", 
+          }}
+          
           className="rounded-lg "
         />
       </div>
@@ -58,17 +61,15 @@ const ProductBanner = ({
 
         <div className="relative flex flex-col sm:flex-row items-start">
            <div className="w-full relative h-42 sm:h-74">
-       
-            <Image
-              src={currentImage}
-              alt={translatedName}
-              layout="responsive"
-              width={800}
-              height={600}
-              className="object-cover rounded-lg"
-            />
-
-            <ThumbnailCarousel
+           <Image
+  src={currentImage}
+  alt={translatedName}
+  width={800}
+  height={600}
+  style={{ objectFit: "cover" }} 
+  className="rounded-lg"
+/>
+<ThumbnailCarousel
               images={selectedProduct.images}
               onImageSelect={(image) => setCurrentImage(image)}
               visibleThumbnails={5}
