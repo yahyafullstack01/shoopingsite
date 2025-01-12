@@ -51,7 +51,6 @@ const ProductBanner = ({
             objectFit: "cover", 
             objectPosition: "center 50%", 
           }}
-          
           className="rounded-lg "
         />
       </div>

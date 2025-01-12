@@ -16,6 +16,7 @@ export default function Hero() {
             alt="Left Image"
             width={400}
             height={600}
+            priority
             className="rounded-none object-cover shadow-2xl shadow-gray-800
              dark:shadow-gray-400 transition-transform duration-300 ease-in-out focus:scale-110 hover:scale-110 group-hover:scale-110
               cursor-pointer w-32 sm:w-[200px] md:w-[300px] lg:w-[400px]"
