@@ -55,6 +55,7 @@ export default function AllProducts() {
     <section className="bg-[#fcf8f3] text-black dark:text-white min-h-screen dark:bg-black">
       <div className="w-full mx-auto px-4 sm:px-6 md:px-8 py-4">
         <div className="flex flex-col md:flex-row md:space-x-8">
+          
             <FilterSidebar
               maxPrice={maxPrice}
               setMaxPrice={setMaxPrice}
@@ -72,7 +73,7 @@ export default function AllProducts() {
                 toggleSortMenu={() => setIsSortMenuOpen(!isSortMenuOpen)}
               />
             </FilterSidebar>
-
+       
           <main className="w-full md:w-3/4 flex flex-col">
             <section aria-labelledby="banner-section">
               <ProductBanner
@@ -83,7 +84,9 @@ export default function AllProducts() {
             </section>
 
             <section aria-labelledby="product-header" className="w-full mx-auto px-4 sm:px-6 md:px-8 py-4">
-              <h1 id="product-header" className="text-3xl sm:text-4xl font-bold mb-6">All Products</h1>
+              <h1 id="product-header" className="text-3xl sm:text-4xl font-bold mb-6">
+                All Products
+              </h1>
               <p className="text-gray-700 dark:text-gray-400 mb-4">
                 Explore our diverse range of products tailored to your needs.
               </p>
@@ -92,15 +95,19 @@ export default function AllProducts() {
               </p>
             </section>
 
-            <section aria-labelledby="product-list" className="w-full bg-[#f5e7da] dark:bg-black max-h-[800px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 mb-8">
-              <h2 id="product-list" className="sr-only">Product List</h2>
+            <section
+              aria-labelledby="product-list"
+              aria-live="polite"
+              className="w-full bg-[#f5e7da] dark:bg-black max-h-[800px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 mb-8"
+            >
+              <h2 id="product-list" className="sr-only">
+                Product List
+              </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
                 {filteredProducts.map((product) => (
-                  <ProductCard
-                    key={product.id}
-                    product={product}
-                    onClick={() => onProductClick(product)}
-                  />
+                  <article key={product.id}>
+                    <ProductCard product={product} onClick={() => onProductClick(product)} />
+                  </article>
                 ))}
               </div>
             </section>

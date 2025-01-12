@@ -8,7 +8,7 @@ export default function SpecialOffers() {
   const menuItems = translateList("home", "special_offers");
 
   return (
-    <section className="dark:bg-[#2e1f14] bg-[#f5e7da] section-container">
+    <section className="dark:bg-[#2e1f14] bg-[#f5e7da] section-container" aria-labelledby="special-offers-heading">
       <div className="space-y-4">
         <div className="relative ml-auto max-w-4xl pr-0 md:pr-[12px] flex justify-center md:justify-end">
           <div className="max-w-[800px] w-[80%] h-[300px] sm:h-[500px] md:h-[550px] lg:h-[900px] relative rounded-lg shadow-xl shadow-gray-800 dark:shadow-gray-600">
@@ -19,7 +19,7 @@ export default function SpecialOffers() {
               style={{ objectFit: "cover" }}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 50vw" // Додаємо оптимальні розміри для різних екранів
               className="rounded-lg"
-              priority // Пріоритет для швидшого завантаження зображення
+              priority 
             />
           </div>
 
@@ -54,6 +54,7 @@ export default function SpecialOffers() {
               text-xs sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl transition-all duration-300 
                 dark:bg-[#f5e8d6] dark:text-[#2e1f14] dark:hover:bg-[#d1b79e]
                   bg-gray-900 text-white hover:bg-gray-700`}
+                  aria-label="View more special offers"
             >
               {menuItems[3] || "View More"}
             </button>

@@ -1,5 +1,4 @@
 // Function to handle form submission
-// Function to handle form submission
 export const handleFormSubmit = async ({
   e,
   setFormSubmitted,

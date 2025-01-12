@@ -22,9 +22,10 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
     <header className={`flex items-center justify-between px-4 py-1 shadow-md ${isDarkMode ? "bg-black text-white" : "bg-white text-black"}`} role="banner">
       <div className="flex-shrink-0 ml-0 sm:ml-8">
         <Link href="/" aria-label="Home">
+        <h1 className="sr-only">Latore Atelier</h1>
           <Image
             src="/light-logo.avif"
-            alt="Latore Atelier Logo"
+            alt="Latore Atelier Logo – High-Quality Clothing"
             width={180}
             height={160}
             quality={100}
@@ -131,32 +132,32 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
           </button>
         </div>
         <ul className="flex flex-col items-start space-y-4 p-6 text-xs sm:text-sm md:text-base lg:text-lg" role="menubar">
-          <li className="text-center" role="none">
+          <li className="text-center">
             <Link href="/">
               {menuItems[0]}
             </Link>
           </li>
-          <li className="text-center" role="none">
+          <li className="text-center">
             <Link href="/All_products">
               {menuItems[1]}
             </Link>
           </li>
-          <li className="text-center" role="none">
+          <li className="text-center">
             <Link href="/#about">
               {menuItems[2]}
             </Link>
           </li>
-          <li className="text-center" role="none">
+          <li className="text-center">
             <Link href="/contact">
               {menuItems[3]}
             </Link>
           </li>
-          <li className="text-center" role="none">
+          <li className="text-center">
             <Link href="/Conditions">
               {menuItems[4]}
             </Link>
           </li>
-          <li className="text-center" role="none">
+          <li className="text-center">
             <Link href="/">
               {menuItems[5]}
             </Link>

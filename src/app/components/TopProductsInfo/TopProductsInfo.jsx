@@ -5,108 +5,108 @@ import { useRouter } from "next/navigation";
 import InfoForm from "../../Functions/InfoForm";
 import { useLanguage } from "../../Functions/useLanguage";
 import { handleContactButtonClick } from "../../utils/products"; // Імпорт функції
-import ThumbnailCarousel from "../ThumbnailCarousel/ThumbnailCarousel"
-export default function TopProductsInfo() {
-  const { translateList } = useLanguage();
-  const { language } = useLanguage(); // Get the current language
+import ThumbnailCarousel from "../ThumbnailCarousel/ThumbnailCarousel";
+import Image from "next/image";
 
+export default function TopProductsInfo() {
+  const { translateList, language } = useLanguage();
   const menuItems = translateList("home", "about");
   const router = useRouter();
-  const descriptionRef = useRef(null); // Reference for description
-  const topProducts = products.filter((product) => product.isTop === true); // `isTop: true`
+  const descriptionRef = useRef(null);
+  const topProducts = products.filter((product) => product.isTop === true);
 
-  const [selectedProduct, setSelectedProduct] = useState(topProducts[0]); // Selected product
-  
-  // Handler for product click
+  const [selectedProduct, setSelectedProduct] = useState(topProducts[0]);
+
   const handleProductClick = (product) => {
-    setSelectedProduct(product); // Set the selected product
-    scrollToDescription(); // Scroll to the description
+    setSelectedProduct(product);
+    scrollToDescription();
   };
- 
-  // Обробник кнопки "Contact Us"
-  const onContactClick = (selectedColor, selectedSize, quantity, currentLanguage) => {
-    handleContactButtonClick(router, selectedProduct, selectedColor, selectedSize, quantity, currentLanguage);}
 
-  // Smooth scroll to description
+  const onContactClick = (selectedColor, selectedSize, quantity, currentLanguage) => {
+    handleContactButtonClick(router, selectedProduct, selectedColor, selectedSize, quantity, currentLanguage);
+  };
+
   const scrollToDescription = () => {
     if (descriptionRef.current) {
-      descriptionRef.current.scrollIntoView({ behavior: "smooth" }); // Smooth scroll
+      descriptionRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
-    <div className="dark:bg-[#2e1f14] bg-[#fcf8f3]  text:bg-black dark:text-white min-h-screen px-4 py-8">
+    <div className="dark:bg-[#2e1f14] bg-[#fcf8f3] text-black dark:text-white min-h-screen px-4 py-8">
       <div className="text-center">
-        <h1 className="text-3xl md:text-4xl font-bold mb-4">
-          Explore the Collection
-        </h1>
+        <h1 className="text-3xl md:text-4xl font-bold mb-4">Explore the Collection</h1>
         <p className="dark:text-gray-400 text:bg-black text-sm md:text-base mb-8">
-          I`m a paragraph. Click here to add your own text and edit me. Let your
-          users get to know you.
+        I`m a paragraph. Click here to add your own text and edit me. Let your
+        users get to know you.
         </p>
       </div>
 
-      {/* Product List */}
+      <section aria-labelledby="top-products">
+        <h2 id="top-products" className="sr-only">Top Products</h2>
+        <div className="bg-[#f5e7da] dark:bg-[rgba(58,42,32,0.8)] ml-8 max-h-[450px] md:max-h-[600px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 mb-8">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 md:gap-6 p-4">
+            {topProducts.map((product) => {
+              const translatedName = product.translations?.[language]?.name || product.title;
 
-      <div className="bg-[#f5e7da] dark:bg-[rgba(58,42,32,0.8)] ml-8 max-h-[450px] md:max-h-[600px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 mb-8">
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 md:gap-6 p-4">
-  {topProducts.map((product) => {
-    const translatedName = product.translations?.[language]?.name || product.title;
+              return (
+                <article
+                  key={product.id}
+                  className="text-black bg-[#fcf8f3] dark:bg-white dark:text-black rounded shadow-lg hover:scale-105 transition-transform cursor-pointer"
+                  onClick={() => handleProductClick(product)}
+                >
+                  <div className="w-full h-[300px] sm:h-[350px] overflow-hidden rounded-t">
+                    <Image
+                      src={product.image}
+                      alt={`Preview of ${translatedName}`}
+                      width={300}
+                      height={350}
+                      className="w-full h-full object-cover"
+                      priority
+                    />
+                  </div>
+                  <div className="p-2 sm:p-4 dark:bg-[#f5e8d6]">
+                    <h3 className="font-semibold text-sm sm:text-lg">{translatedName}</h3>
+                    <p className="text-black dark:text-gray-600 text-xs sm:text-base">{product.price} UAH</p>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        </div>
+      </section>
 
-    return (
-      <div
-        key={product.id}
-        className="text-black bg-[#fcf8f3] dark:bg-white dark:text-black rounded shadow-lg hover:scale-105 transition-transform cursor-pointer"
-        onClick={() => handleProductClick(product)}
+      <article
+        aria-live="polite"
+        className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 pt-8"
+        ref={descriptionRef}
       >
-        <div className="w-full h-[300px] sm:h-[350px] overflow-hidden rounded-t">
-          <img
-            src={product.image}
-            alt={translatedName}
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <div className="p-2 sm:p-4 dark:bg-[#f5e8d6]">
-          <h3 className="font-semibold text-sm sm:text-lg">{translatedName}</h3>
-          <p className="text:black dark:text-gray-600 text-xs sm:text-base">
-            {product.price}
-          </p>
-        </div>
-      </div>
-    );
-  })}
-</div>
-
-      </div>
-
-      {/* Selected Product Description */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 pt-8" ref={descriptionRef}>
-        <div className="flex flex-col items-center ">
-        <img
+        <div className="flex flex-col items-center">
+          <Image
             src={selectedProduct.image}
-            alt={selectedProduct.title}
+            alt={`Full image of ${selectedProduct.title}`}
+            width={400}
+            height={400}
             className="w-full max-w-xs md:max-w-md object-cover rounded-lg shadow-lg"
+            priority
           />
-          {/* Вставляємо ThumbnailCarousel */}
-          <div className="flex mt-4 sm:mt-8 gap-2 overflow-x-auto scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-200 ">
-          <ThumbnailCarousel
-            images={selectedProduct.images}
-            onImageSelect={(image) => setSelectedProduct({ ...selectedProduct, image })}
-            visibleThumbnails={5}
-          />
-           </div>
+          <div className="flex mt-4 sm:mt-8 gap-2 overflow-x-auto scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-200">
+            <ThumbnailCarousel
+              images={selectedProduct.images}
+              onImageSelect={(image) => setSelectedProduct({ ...selectedProduct, image })}
+              visibleThumbnails={5}
+            />
+          </div>
         </div>
 
-        {/* Passing data to InfoForm */}
         <InfoForm
-  product={selectedProduct}
-  colors={selectedProduct.colors}
-  sizes={selectedProduct.sizes}
-  descriptionRef={descriptionRef}
-  onContactClick={onContactClick}
-/>
-
-      </div>
+          product={selectedProduct}
+          colors={selectedProduct.colors}
+          sizes={selectedProduct.sizes}
+          descriptionRef={descriptionRef}
+          onContactClick={onContactClick}
+        />
+      </article>
     </div>
   );
 }
