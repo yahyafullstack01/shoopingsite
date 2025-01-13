@@ -4,7 +4,7 @@ import FollowUs from "./components/Follow/Follow.jsx";
 import About from "./components/About/About.jsx";
 import SpecialOffers from "./components/SpecialOffers/SpecialOffers.jsx";
 import OurProducts from "./components/OurProducts/OurProducts.jsx";
-// import Contact from "../../pages/contact.js";
+
 export default function Home() {
   return (
     <div className="transition-colors">

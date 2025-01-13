@@ -2,11 +2,14 @@
 
 import Image from "next/image";
 import { useLanguage } from "../../Functions/useLanguage";
-
+import { useRouter } from "next/navigation";
 export default function SpecialOffers() {
   const { translateList } = useLanguage();
   const menuItems = translateList("home", "special_offers");
-
+  const router = useRouter();
+  const handleClick = () => {
+    router.push("/offers"); 
+  };
   return (
     <section className="dark:bg-[#2e1f14] bg-[#f5e7da] section-container" aria-labelledby="special-offers-heading">
       <div className="space-y-4">
@@ -50,6 +53,7 @@ export default function SpecialOffers() {
               {menuItems[2] || "Don't miss out on these exclusive deals."}
             </p>
             <button
+            onClick={handleClick}
               className={`py-1 px-3 sm:py-2 sm:px-4 md:py-3 md:px-6 lg:py-4 lg:px-8 xl:py-5 xl:px-10 2xl:py-6 2xl:px-12 rounded-full 
               text-xs sm:text-lg md:text-xl lg:text-2xl 2xl:text-3xl transition-all duration-300 
                 dark:bg-[#f5e8d6] dark:text-[#2e1f14] dark:hover:bg-[#d1b79e]

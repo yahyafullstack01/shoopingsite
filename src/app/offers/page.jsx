@@ -1,11 +1,11 @@
-import TopProductsInfo from "../components/TopProductsInfo/TopProductsInfo";
+import OffersInfo from "../components/OffersInfo/OffersInfo";
 import Layout from "../components/Layout";
 
-export default function TopProductspage() {
+export default function Offerspage() {
     return (
         <div className="transition-colors">
             <Layout>
-                <TopProductsInfo />
+                <OffersInfo />
             </Layout>
         </div>
     );

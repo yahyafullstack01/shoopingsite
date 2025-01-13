@@ -4,13 +4,11 @@ import React, { useState } from "react";
 import { handleContactButtonClick } from "../utils/products";
 import { useLanguage } from "./useLanguage";
 
-export default function InfoForm({ product }) {
+export default function InfoForm({ product, showDiscount = false }) {
   const router = useRouter();
   const [selectedColor, setSelectedColor] = useState("");
   const [selectedSize, setSelectedSize] = useState("");
   const [quantity, setQuantity] = useState(1);
-
-  // Стани помилок
   const [colorError, setColorError] = useState("");
   const [sizeError, setSizeError] = useState("");
   const [quantityError, setQuantityError] = useState("");
@@ -23,14 +21,17 @@ export default function InfoForm({ product }) {
     e.preventDefault();
     let hasError = false;
 
+    // Перевірка обраного кольору
     if (!selectedColor) {
       setColorError("Please select a color.");
       hasError = true;
     }
+    // Перевірка обраного розміру
     if (!selectedSize) {
       setSizeError("Please select a size.");
       hasError = true;
     }
+    // Перевірка кількості товару
     if (quantity <= 0) {
       setQuantityError("Please select a valid quantity.");
       hasError = true;
@@ -44,38 +45,45 @@ export default function InfoForm({ product }) {
     }
   };
 
-  // Очищення повідомлень про помилку при заповненні полів
   const handleColorChange = (value) => {
     setSelectedColor(value);
-    if (value) setColorError(""); // Якщо значення обране, помилка очищується
+    if (value) setColorError("");
   };
 
   const handleSizeChange = (value) => {
     setSelectedSize(value);
-    if (value) setSizeError(""); // Якщо значення обране, помилка очищується
+    if (value) setSizeError("");
   };
 
   const handleQuantityChange = (value) => {
     const validQuantity = Math.max(1, Number(value));
     setQuantity(validQuantity);
-    if (validQuantity > 0) setQuantityError(""); // Якщо кількість більша 0, помилка очищується
+    if (validQuantity > 0) setQuantityError("");
   };
 
   return (
     <div className="flex flex-col px-4 md:px-0">
-      <h1 className="text-2xl md:text-3xl font-semibold text:bg-black dark:text-white mb-2 text-center md:text-left">
+      <h1 className="text-2xl md:text-3xl font-semibold mb-2 text-center md:text-left">
         {translatedName}
       </h1>
-       <p className="text-gray-700 dark:text-gray-400 text-sm md:text-base mb-2 text-center md:text-left">
+      <p className="text-gray-700 dark:text-gray-400 text-sm md:text-base mb-2 text-center md:text-left">
         Category: <span className="font-semibold">{product.category || "Unknown Category"}</span>
       </p>
-
       <p className="text-gray-800 dark:text-gray-500 text-xs md:text-sm mb-4 text-center md:text-left">
         SKU: {product.sku}
       </p>
-      <p className="text-xl md:text-2xl font-bold text:bg-black dark:text-white mb-4 text-center md:text-left">
-        {product.price}₴
-      </p>
+
+      {/* Ціна продукту */}
+      <div className="text-xl md:text-2xl font-bold mb-4 text-center md:text-left">
+        {showDiscount && product.discountPrice ? (
+          <>
+            <span className="text-red-600">{product.discountPrice}₴</span>
+            <span className="line-through text-gray-500 ml-4">{product.price}₴</span>
+          </>
+        ) : (
+          <span>{product.price}₴</span>
+        )}
+      </div>
 
       {/* Color Selector */}
       <div className="mb-6 md:mb-8">
@@ -86,9 +94,7 @@ export default function InfoForm({ product }) {
           id="color"
           value={selectedColor}
           onChange={(e) => handleColorChange(e.target.value)}
-          className={`w-full md:w-1/2 p-2 border ${
-            colorError ? "border-red-500" : "border-gray-300"
-          } bg-[#f5e7da] dark:border-gray-700 rounded dark:bg-gray-800 dark:text-gray-300`}
+          className={`w-full md:w-1/2 p-2 border ${colorError ? "border-red-500" : "border-gray-300"} bg-[#f5e7da] rounded dark:bg-gray-800 dark:text-gray-300`}
         >
           <option value="">Select</option>
           {product.colors?.map((color) => (
@@ -109,9 +115,7 @@ export default function InfoForm({ product }) {
           id="size"
           value={selectedSize}
           onChange={(e) => handleSizeChange(e.target.value)}
-          className={`w-full md:w-1/2 p-2 border ${
-            sizeError ? "border-red-500" : "border-gray-300"
-          } bg-[#f5e7da] dark:border-gray-700 rounded dark:bg-gray-800 dark:text-gray-300`}
+          className={`w-full md:w-1/2 p-2 border ${sizeError ? "border-red-500" : "border-gray-300"} bg-[#f5e7da] rounded dark:bg-gray-800 dark:text-gray-300`}
         >
           <option value="">Select</option>
           {product.sizes?.map((size) => (
@@ -125,13 +129,10 @@ export default function InfoForm({ product }) {
 
       {/* Quantity Selector */}
       <div className="mb-6 md:mb-8">
-        <label
-          htmlFor="quantity"
-          className="block text-sm font-medium mb-2 text-center md:text-left"
-        >
+        <label htmlFor="quantity" className="block text-sm font-medium mb-2 text-center md:text-left">
           Quantity
         </label>
-        <div className="flex items-center w-full md:w-1/4 bg-[#f5e7da] dark:bg-gray-700 dark:text-white rounded">
+        <div className="flex items-center w-full md:w-1/4 bg-[#f5e7da] dark:bg-gray-700 rounded">
           <button
             type="button"
             onClick={() => handleQuantityChange(quantity - 1)}
@@ -140,17 +141,13 @@ export default function InfoForm({ product }) {
             -
           </button>
           <input
-  id="quantity"
-  type="number"
-  step="any"
-  value={quantity}
-  onChange={(e) => handleQuantityChange(e.target.value)}
-  min="1"
-  className={`w-full p-2 border-t border-b ${
-    quantityError ? "border-red-500" : "border-gray-300"
-  } bg-gray-800 text-center text-gray-300 appearance-none no-arrows`}
-/>
-         
+            id="quantity"
+            type="number"
+            value={quantity}
+            onChange={(e) => handleQuantityChange(e.target.value)}
+            min="1"
+            className={`w-full p-2 text-center ${quantityError ? "border-red-500" : ""}`}
+          />
           <button
             type="button"
             onClick={() => handleQuantityChange(quantity + 1)}
@@ -165,8 +162,7 @@ export default function InfoForm({ product }) {
       {/* Contact Button */}
       <button
         onClick={handleContactClick}
-        className="w-full md:w-1/2 bg-[#4a3825] hover:bg-[#2e1f14] text-white dark:bg-lime-500 dark:hover:bg-lime-600 dark:text-black
-         font-semibold py-2 rounded transition duration-300"
+        className="w-full md:w-1/2 bg-[#4a3825] hover:bg-[#2e1f14] text-white dark:bg-lime-500 dark:hover:bg-lime-600 dark:text-black font-semibold py-2 rounded transition duration-300"
       >
         Contact Us
       </button>

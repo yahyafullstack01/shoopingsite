@@ -29,7 +29,9 @@
     {
       id: 2,
       price: 3710,
+      discountPrice: 2800,
       isTop: true, // Топ продукт
+      isSpecialOffer: true,
       sku: "12345",
       color: "blue",
       size: "XS S M L XL",
@@ -115,7 +117,9 @@
     {
       id: 5,
       price: 3100,
+      discountPrice: 2800,
       isTop: true, // Топ продукт
+      isSpecialOffer: true,
       sku: "12345",
       color: "blue",
       size: "XS S M L XL",
@@ -143,7 +147,9 @@
     {
       id: 6,
       price: 3100,
+      discountPrice: 2800,
       isTop: true, // Топ продукт
+      isSpecialOffer: true,
       sku: "12345",
       color: "gray",
       size: "XS S M L XL",

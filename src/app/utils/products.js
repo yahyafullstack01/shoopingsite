@@ -55,7 +55,7 @@ export const handleContactButtonClick = (
   selectedColor,
   selectedSize,
   quantity,
-  language 
+  language
 ) => {
   const translatedName =
     product.translations?.[language]?.name || product.title; // Translated name
@@ -65,6 +65,7 @@ export const handleContactButtonClick = (
   const updatedProduct = {
     ...product,
     translatedName,
+    finalPrice: product.discountPrice || product.price, // Використовуємо ціну зі знижкою, якщо є
     sku: product.sku || "Unknown SKU",
     color: selectedColor || product.color, // Use the selected color or default
     size: selectedSize || product.size, // Use the selected size or default
@@ -78,7 +79,7 @@ export const handleContactButtonClick = (
 
   router.push(
     `/contact?productName=${encodeURIComponent(translatedName)}&productPrice=${encodeURIComponent(
-      updatedProduct.price
+      updatedProduct.finalPrice // Передаємо знижену ціну
     )}&productDescription=${encodeURIComponent(
       translatedDescription
     )}&productImage=${encodeURIComponent(
