@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import FilterSidebar from "../../Functions/FilterSidebar";
 import SortMenu from "../../Functions/SortMenu";
 import ProductBanner from "../../components/products/ProductBanner";
-import ProductCard from "../../components/products/ProductCard";
+import PaginatedProducts from "../../components/PaginatedProducts/PaginatedProducts"; // Імпортуємо компонент пагінації
 import {
   handleSizeSelect,
   handleCategorySelect,
@@ -55,25 +55,24 @@ export default function AllProducts() {
     <section className="bg-[#fcf8f3] text-black dark:text-white min-h-screen dark:bg-black">
       <div className="w-full mx-auto px-4 sm:px-6 md:px-8 py-4">
         <div className="flex flex-col md:flex-row md:space-x-8">
-          
-            <FilterSidebar
-              maxPrice={maxPrice}
-              setMaxPrice={setMaxPrice}
-              selectedSize={selectedSize}
-              handleSizeSelect={(size) => handleSizeSelect(size, setSelectedSize)}
-              selectedCategory={selectedCategory}
-              handleCategorySelect={(category) =>
-                handleCategorySelect(category, setSelectedCategory)
-              }
-            >
-              <SortMenu
-                sortOrder={sortOrder}
-                setSortOrder={setSortOrder}
-                isSortMenuOpen={isSortMenuOpen}
-                toggleSortMenu={() => setIsSortMenuOpen(!isSortMenuOpen)}
-              />
-            </FilterSidebar>
-       
+          <FilterSidebar
+            maxPrice={maxPrice}
+            setMaxPrice={setMaxPrice}
+            selectedSize={selectedSize}
+            handleSizeSelect={(size) => handleSizeSelect(size, setSelectedSize)}
+            selectedCategory={selectedCategory}
+            handleCategorySelect={(category) =>
+              handleCategorySelect(category, setSelectedCategory)
+            }
+          >
+            <SortMenu
+              sortOrder={sortOrder}
+              setSortOrder={setSortOrder}
+              isSortMenuOpen={isSortMenuOpen}
+              toggleSortMenu={() => setIsSortMenuOpen(!isSortMenuOpen)}
+            />
+          </FilterSidebar>
+
           <main className="w-full md:w-3/4 flex flex-col">
             <section aria-labelledby="banner-section">
               <ProductBanner
@@ -94,23 +93,15 @@ export default function AllProducts() {
                 {filteredProducts.length} products
               </p>
             </section>
+            <section aria-labelledby="product-list" aria-live="polite" className="w-full">
+  <h2 id="product-list" className="sr-only">Product List</h2>
+  <PaginatedProducts
+    products={filteredProducts}
+    productsPerPage={12}
+    onProductClick={onProductClick} 
+  />
+</section>
 
-            <section
-              aria-labelledby="product-list"
-              aria-live="polite"
-              className="w-full bg-[#f5e7da] dark:bg-black max-h-[800px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 mb-8"
-            >
-              <h2 id="product-list" className="sr-only">
-                Product List
-              </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
-                {filteredProducts.map((product) => (
-                  <article key={product.id}>
-                    <ProductCard product={product} onClick={() => onProductClick(product)} />
-                  </article>
-                ))}
-              </div>
-            </section>
           </main>
         </div>
       </div>

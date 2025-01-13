@@ -1,48 +1,45 @@
 import React from "react";
 import Image from "next/image";
-import { useLanguage } from '../../Functions/useLanguage'; // Adjust the import path if necessary
+import { useLanguage } from "../../Functions/useLanguage";
 
 const ProductCard = ({ product, onClick }) => {
-  const { language } = useLanguage(); // Retrieve the current language using a custom hook.
-
-  // Translate the product name based on the current language.
+  const { language } = useLanguage();
   const translatedName = product.translations?.[language]?.name || product.name;
 
   return (
     <article
-      className="bg-[#fcfaf3c6] dark:bg-[#0f172a] p-3 sm:p-4 rounded group cursor-pointer"
-      onClick={onClick}
-      onKeyDown={(e) => e.key === 'Enter' && onClick()}
+      className="bg-[#f5e7da] dark:bg-[#0f172a] p-3 sm:p-4 rounded-lg group cursor-pointer shadow-md hover:shadow-lg transition-shadow duration-300"
+      onClick={onClick} 
+      onKeyDown={(e) => e.key === "Enter" && onClick()} 
       role="button"
       tabIndex={0}
       aria-label={`View details for ${translatedName}`}
     >
-      {/* Container for the product image */}
-      <figure className="w-full overflow-hidden rounded relative">
+      {/* Зображення продукту */}
+      <figure className="w-full overflow-hidden rounded relative aspect-[3/4]">
         <Image
           src={product.image || `https://via.placeholder.com/300x220?text=${translatedName}`}
           alt={translatedName || "Product Image"}
-          width={300} // Встановлюємо базову ширину зображення
-          height={220} // Встановлюємо базову висоту зображення
-          style={{ width: "100%", height: "auto" }} // Застосовуємо авто-висоту для збереження пропорцій
-          className="object-cover rounded transform transition-transform duration-300 ease-in-out group-hover:scale-110"
+          width={300}
+          height={400} 
+          className="w-full h-full object-cover rounded transform transition-transform duration-300 ease-in-out group-hover:scale-110"
         />
-        {/* Overlay effect that appears on hover */}
-        <figcaption className="absolute inset-0 bg-black dark:bg-[#0f172a] opacity-0 group-hover:opacity-40 transition-opacity duration-300 rounded" aria-hidden="true"></figcaption>
+        <figcaption
+          className="absolute inset-0 bg-black dark:bg-[#0f172a] opacity-0 group-hover:opacity-40 transition-opacity duration-300 rounded"
+          aria-hidden="true"
+        ></figcaption>
       </figure>
 
-      {/* Container for product details */}
+      {/* Інформація про продукт */}
       <section className="mt-2 sm:mt-4">
-        <h3 className="text-sm sm:text-lg font-medium" id="product-name">
-          {translatedName || "Unnamed Product"}
-        </h3>
-        <p className="text-xs sm:text-sm text-gray-700 dark:text-gray-400" id="product-price">
+        <h3 className="text-sm sm:text-lg font-semibold text-center sm:text-left">{translatedName || "Unnamed Product"}</h3>
+        <p className="text-xs sm:text-sm text-gray-700 dark:text-gray-400 mt-2 text-center sm:text-left">
           <span className="font-semibold">Price:</span> {product.price ? `${product.price}₴` : "N/A"}
         </p>
-        <p className="text-xs sm:text-sm text-gray-700 dark:text-gray-400" id="product-size">
+        <p className="text-xs sm:text-sm text-gray-700 dark:text-gray-400 text-center sm:text-left">
           <span className="font-semibold">Size:</span> {product.size || "Unknown"}
         </p>
-        <p className="text-sm text-gray-700 dark:text-gray-400" id="product-category">
+        <p className="text-xs sm:text-sm text-gray-700 dark:text-gray-400 text-center sm:text-left">
           <span className="font-semibold">Category:</span> {product.category || "Uncategorized"}
         </p>
       </section>
