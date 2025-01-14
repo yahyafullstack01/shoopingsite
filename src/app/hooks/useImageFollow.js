@@ -1,5 +1,5 @@
-"use client";
-import { useState, useEffect } from "react";
+"use client"; // Вказуємо, що це клієнтський компонент
+import { useState, useEffect, useCallback } from "react";
 
 /**
  * Custom hook to manage a carousel or slider for images with auto-scroll functionality.
@@ -15,19 +15,19 @@ export default function useImageFollow(imagesLength, visibleCount = 5, autoScrol
    * Handler to move to the next image in the carousel.
    * Cycles back to the first image after the last image.
    */
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % imagesLength);
-  };
+  }, [imagesLength]); // Додаємо залежність `imagesLength`, щоб уникнути помилок ESLint.
 
   /**
    * Handler to move to the previous image in the carousel.
    * Cycles to the last image if the current index is the first image.
    */
-  const handlePrev = () => {
+  const handlePrev = useCallback(() => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? imagesLength - 1 : prevIndex - 1
     );
-  };
+  }, [imagesLength]);
 
   /**
    * Effect to enable auto-scrolling of the images at a specified delay interval.
@@ -39,7 +39,7 @@ export default function useImageFollow(imagesLength, visibleCount = 5, autoScrol
     }, autoScrollDelay);
 
     return () => clearInterval(interval); // Clear the interval on unmount or when dependencies change.
-  }, [autoScrollDelay]);
+  }, [autoScrollDelay, handleNext]); // Додаємо `handleNext` до залежностей
 
   /**
    * Calculate an array of indices for the images to display.

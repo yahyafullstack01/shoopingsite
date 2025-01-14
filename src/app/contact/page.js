@@ -1,13 +1,20 @@
+"use client";
+import React, { Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 
-import ContactUs from "../components/Contact_US/Contact_us";
-import Layout from "../components/Layout";
+function ContactPageContent() {
+  const searchParams = useSearchParams();
+  const user = searchParams.get("user") || "Guest";
+
+  return <div>Welcome, {user}!</div>;
+}
+
+export const dynamic = "force-dynamic"; // Забезпечує динамічне рендеринг без SSR
 
 export default function ContactPage() {
-    return (
-        <div className="transition-colors">
-            <Layout>
-                <ContactUs />
-            </Layout>
-        </div>
-    );
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ContactPageContent />
+    </Suspense>
+  );
 }

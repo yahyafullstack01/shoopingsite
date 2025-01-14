@@ -24,10 +24,11 @@ export default function Footer() {
             </p>
           </div>
           <div className="border-b sm:border-b-0 md:border-r border-gray-300 px-4 sm:px-6 py-6">
-            <p className="text-sm">
-            Poltavskyi Shliakh St, 144 А<br />
-            Torhovyy Tsentr "Kyyivsʹkyy"
-            </p>
+          <p className="text-sm">
+  Poltavskyi Shliakh St, 144 А<br />
+  Torhovyy Tsentr &quot;Kyyivsʹkyy&quot;
+</p>
+
           </div>
           <div className="flex justify-start sm:justify-end md:justify-center items-center space-x-4 px-4 sm:px-6 py-6">
             <a href="https://www.facebook.com/share/18h6VtZV6k/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
