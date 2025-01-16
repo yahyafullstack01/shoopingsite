@@ -494,6 +494,368 @@
          }
        }
      },
+
+     {
+      id: 18,
+      price: 4950,
+      isTop: false, // Not marked as a top product
+      sku: "56789",
+      color: "chocolate",
+      size: "XS S M L XL",
+      category: "Costumes",
+      image: "/Costumes/Suit with bermuda shorts/1.avif",
+      images: [
+        "/Costumes/Suit with bermuda shorts/2.avif",
+        "/Costumes/Suit with bermuda shorts/3.avif",
+        "/Costumes/Suit with bermuda shorts/4.avif"
+      ],
+      colors: ["chocolate"],
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          name: "Suit with bermuda shorts",
+          description: "Double-breasted oversized jacket + high-waisted bermuda shorts with pockets.\nFabric: suit fabric (75% viscose, 25% polyester)"
+        },
+        FR: {
+          name: "Costume avec bermuda",
+          description: "Veste oversize double boutonnage + bermuda taille haute avec poches.\nTissu: tissu de costume (75% viscose, 25% polyester)"
+        },
+        UA: {
+          name: "Костюм із бермудами",
+          description: "Двобортний oversize жакет + шорти-бермуди на високій посадці із кишенями.\nТканина: костюмна тканина (75% віскоза, 25% поліестер)"
+        },
+        RU: {
+          name: "Костюм с бермудами",
+          description: "Двухбортный oversize жакет + шорты-бермуды на высокой посадке с карманами.\nТкань: костюмная ткань (75% вискоза, 25% полиэстер)"
+        }
+      }
+    },
+
+    {
+      id: 19,
+      price: 5350,
+      isTop: false, // Not marked as a top product
+      sku: "98765",
+      color: "chocolate",
+      size: "XS S M L XL",
+      category: "Costumes",
+      image: "/Costumes/Emily Suit/1.avif",
+      images: [
+        "/Costumes/Emily Suit/2.avif",
+        "/Costumes/Emily Suit/3.avif",
+        "/Costumes/Emily Suit/4.avif"
+      ],
+      colors: ["chocolate"],
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          name: "Emily Suit",
+          description: "Double-breasted oversized jacket + palazzo trousers with high waist, pockets, and a belt.\nFabric: suit fabric (75% viscose, 25% polyester)"
+        },
+        FR: {
+          name: "Costume « Emily »",
+          description: "Veste oversize double boutonnage + pantalon palazzo taille haute avec poches et ceinture.\nTissu: tissu de costume (75% viscose, 25% polyester)"
+        },
+        UA: {
+          name: "Костюм «Emily»",
+          description: "Двобортний oversize жакет + брюки палаццо на високій посадці із кишенями та поясом.\nТканина: костюмна тканина (75% віскоза, 25% поліестер)"
+        },
+        RU: {
+          name: "Костюм «Emily»",
+          description: "Двухбортный oversize жакет + брюки палаццо на высокой посадке с карманами и поясом.\nТкань: костюмная ткань (75% вискоза, 25% полиэстер)"
+        }
+      }
+    },
+    
+    {
+      id: 20,
+      price: 3100,
+      isTop: false, // Not marked as a top product
+      sku: "67890",
+      color: "gray, camel",
+      size: "XS S M L XL",
+      category: "Dress",
+      image: "/Dress/Emily Dress/1.avif",
+      images: [
+        "/Dress/Emily Dress/2.avif",
+        "/Dress/Emily Dress/3.avif",
+        "/Dress/Emily Dress/4.avif",
+        "/Dress/Emily Dress/5.avif",
+        "/Dress/Emily Dress/6.avif",
+        "/Dress/Emily Dress/7.avif",
+        "/Dress/Emily Dress/8.avif",
+        "/Dress/Emily Dress/9.avif",
+        "/Dress/Emily Dress/10.avif",
+      ],
+      colors: ["gray", "camel"],
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          name: "Emily Dress",
+          description: "Wool midi dress with a V-neck, shortened sleeves, and pockets.\nFabric: 80% wool, 20% polyester"
+        },
+        FR: {
+          name: "Robe « Emily »",
+          description: "Robe midi en laine avec col en V, manches raccourcies et poches.\nTissu: 80% laine, 20% polyester"
+        },
+        UA: {
+          name: "Сукня «Emily»",
+          description: "Вовняна сукня міді довжини із V-вирізом, вкороченими рукавами та кишенями.\nТканина: 80% вовна, 20% поліестер"
+        },
+        RU: {
+          name: "Платье «Emily»",
+          description: "Шерстяное платье миди длины с V-вырезом, укороченными рукавами и карманами.\nТкань: 80% шерсть, 20% полиэстер"
+        }
+      }
+    },
+    
+    {
+      id: 21,
+      price: 3025,
+      isTop: false, // Not marked as a top product
+      sku: "67891",
+      color: "beige",
+      size: "XS S M L XL",
+      category: "Dress",
+      image: "/Dress/Marie Dress/1.avif",
+      images: [
+        "/Dress/Marie Dress/2.avif",
+        "/Dress/Marie Dress/3.avif",
+        "/Dress/Marie Dress/4.avif",
+        "/Dress/Marie Dress/5.avif"
+      ],
+      colors: ["beige"],
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          name: "Marie Dress",
+          description: "Midi-length dress with a collar and pockets. Button closure.\nFabric: suit fabric (75% viscose, 25% polyester)"
+        },
+        FR: {
+          name: "Robe « Marie »",
+          description: "Robe midi avec col et poches. Fermeture à boutons.\nTissu: tissu de costume (75% viscose, 25% polyester)"
+        },
+        UA: {
+          name: "Сукня «Marie»",
+          description: "Сукня міді довжини із коміром та кишенями. Застібається на ґудзики.\nТканина: костюмна тканина (75% віскоза, 25% поліестер)"
+        },
+        RU: {
+          name: "Платье «Marie»",
+          description: "Платье миди длиной с воротником и карманами. Застёгивается на пуговицы.\nТкань: костюмная ткань (75% вискоза, 25% полиэстер)"
+        }
+      }
+    },
+    {
+      id: 22,
+      price: 1650,
+      isTop: false, // Not marked as a top product
+      sku: "67892",
+      color: "black",
+      size: "XS S M L XL",
+      category: "Dress",
+      image: "/Dress/Leather Sundress/1.avif",
+      images: [
+        "/Dress/Leather Sundress/2.avif",
+        "/Dress/Leather Sundress/3.avif",
+        "/Dress/Leather Sundress/4.avif",
+      ],
+      colors: ["black"],
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          name: "Leather Sundress",
+          description: "Oversized sundress with a square neckline and two pockets.\nFabric: high-quality eco-leather on a suede base (stretchable, does not crack)"
+        },
+        FR: {
+          name: "Robe « en cuir »",
+          description: "Robe oversize avec décolleté carré et deux poches.\nTissu: cuir écologique de haute qualité sur une base en daim (extensible, ne se fissure pas)"
+        },
+        UA: {
+          name: "Шкіряний сарафан",
+          description: "Oversize сарафан із квадратним вирізом та двома кишенями.\nТканина: якісна екошкіра на замшевій основі (стречева, не тріскається)"
+        },
+        RU: {
+          name: "Кожаный сарафан",
+          description: "Oversize сарафан с квадратным вырезом и двумя карманами.\nТкань: качественная экокожа на замшевой основе (стречевая, не трескающаяся)"
+        }
+      }
+    },
+
+    {
+      id: 23,
+      price: 4050,
+      isTop: false,
+      sku: "67893",
+      color: "denim",
+      size: "XS S M L XL",
+      category: "Costumes",
+      image: "/Costumes/Two-Piece Suit/1.avif",
+      images: [
+        "/Costumes/Two-Piece Suit/2.avif",
+        "/Costumes/Two-Piece Suit/3.avif",
+        "/Costumes/Two-Piece Suit/4.avif"
+      ],
+      colors: ["denim"],
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          name: "Two-Piece Suit",
+          description: "Vest with lining + palazzo pants with a high waist. Each item can be purchased separately.\nFabric: suit fabric (75% viscose, 25% polyester)"
+        },
+        FR: {
+          name: "Costume 2 pièces",
+          description: "Gilet doublé + pantalon palazzo taille haute. Chaque article peut être acheté séparément.\nTissu: tissu de costume (75% viscose, 25% polyester)"
+        },
+        UA: {
+          name: "Костюм 2-ка",
+          description: "Жилет із підкладкою + брюки палаццо із високою посадкою. Кожен елемент можна придбати окремо.\nТканина: костюмна тканина (75% віскоза, 25% поліестер)"
+        },
+        RU: {
+          name: "Костюм 2-ка",
+          description: "Жилет с подкладкой + брюки палаццо с высокой посадкой. Каждый элемент можно приобрести отдельно.\nТкань: костюмная ткань (75% вискоза, 25% полиэстер)"
+        }
+      }
+    },
+    {
+      id: 24,
+      price: 3100,
+      isTop: false,
+      sku: "67894",
+      color: "camel",
+      size: "XS S M L XL",
+      category: "Dress",
+      image: "/Dress/Camel Dress/1.avif",
+      images: [
+        "/Dress/Camel Dress/2.avif",
+        "/Dress/Camel Dress/3.avif",
+        "/Dress/Camel Dress/4.avif"
+      ],
+      colors: ["camel"],
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          name: "Camel Dress",
+          description: "Wool midi dress with prominent seams, cropped sleeves, and a round neckline.\nFabric: 80% wool, 20% polyester"
+        },
+        FR: {
+          name: "Robe « Camel »",
+          description: "Robe en laine mi-longue avec coutures prononcées, manches raccourcies et col rond.\nTissu: 80% laine, 20% polyester"
+        },
+        UA: {
+          name: "Сукня “Camel”",
+          description: "Вовняна сукня міді довжини із вираженими швами, вкороченими рукавами та округлим вирізом.\nТканина: 80% вовна, 20% поліестер"
+        },
+        RU: {
+          name: "Платье “Camel”",
+          description: "Шерстяное платье миди длины с выраженными швами, укороченными рукавами и округлым вырезом.\nТкань: 80% шерсть, 20% полиэстер"
+        }
+      }
+    },
+    {
+      id: 25,
+      price: 3100,
+      isTop: false,
+      sku: "67895",
+      color: "gray",
+      size: "XS S M L XL",
+      category: "Dress",
+      image: "/Dress/Wool Dress/1.avif",
+      images: [
+        "/Dress/Wool Dress/2.avif",
+        "/Dress/Wool Dress/3.avif",
+        "/Dress/Wool Dress/4.avif"
+      ],
+      colors: ["gray"],
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          name: "Wool Dress",
+          description: "Wool dress with wide sleeves and a high round neckline.\nFabric: 80% wool, 20% polyester"
+        },
+        FR: {
+          name: "Robe en laine",
+          description: "Robe en laine avec manches larges et encolure ronde haute.\nTissu: 80% laine, 20% polyester"
+        },
+        UA: {
+          name: "Вовняна сукня",
+          description: "Вовняна сукня із широкими рукавами та високим округлим вирізом на горловині.\nТканина: 80% вовна, 20% поліестер"
+        },
+        RU: {
+          name: "Шерстяное платье",
+          description: "Шерстяное платье с широкими рукавами и высоким округлым вырезом на горловине.\nТкань: 80% шерсть, 20% полиэстер"
+        }
+      }
+    },
+    {
+      id: 26,
+      price: 2800,
+      isTop: false,
+      sku: "67896",
+      color: "black-white",
+      size: "XS S M L XL",
+      category: "Dress",
+      image: "/Dress/Jersey Two-Piece Dress/1.avif",
+      images: [
+        "/Dress/Jersey Two-Piece Dress/2.avif",
+        "/Dress/Jersey Two-Piece Dress/3.avif",
+        "/Dress/Jersey Two-Piece Dress/4.avif"
+      ],
+      colors: ["black-white"],
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          name: "Jersey Two-Piece Dress",
+          description: "Dense everyday dress. Precise lines, form, design, and style. Wash each part of the dress separately.\nFabric: dense jersey knit"
+        },
+        FR: {
+          name: "Robe en jersey deux pièces",
+          description: "Robe quotidienne dense. Lignes précises, forme, design et style. Laver chaque partie de la robe séparément.\nTissu: jersey dense"
+        },
+        UA: {
+          name: "Сукня 2-ка джерсі",
+          description: "Щільна сукня на кожен день. Чіткі лінії, форма, дизайн та стиль. Кожну частину сукні прати окремо.\nТканина: щільний трикотаж Джерсі"
+        },
+        RU: {
+          name: "Платье 2-ка джерси",
+          description: "Плотное платье на каждый день. Четкие линии, форма, дизайн и стиль. Каждую часть платья стирать отдельно.\nТкань: плотный трикотаж Джерси"
+        }
+      }
+    },
+    {
+      id: 27,
+      price: 1760,
+      isTop: false,
+      sku: "67897",
+      color: "black, cappuccino",
+      size: "XS S M L XL",
+      category: "Pants",
+      image: "/Pants/Jersey Pants/1.avif",
+      images: [
+        "/Pants/Jersey Pants/2.avif",
+        "/Pants/Jersey Pants/3.avif",
+        "/Pants/Jersey Pants/4.avif"
+      ],
+      colors: ["black", "cappuccino"],
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          name: "Jersey Pants",
+          description: "Cropped pants with an elastic waistband. Feature pronounced seams throughout the length.\nFabric: dense jersey knit"
+        },
+        FR: {
+          name: "Pantalon en jersey",
+          description: "Pantalon court avec taille élastique. Doté de coutures prononcées sur toute la longueur.\nTissu: jersey dense"
+        },
+        UA: {
+          name: "Брюки джерсі",
+          description: "Вкорочені брюки на резинці. Мають шви по всій довжині.\nТканина: щільний трикотаж Джерсі"
+        },
+        RU: {
+          name: "Брюки джерси",
+          description: "Укороченные брюки на резинке. Имеют выраженные швы по всей длине.\nТкань: плотный трикотаж Джерси"
+        }
+      }
+    },
     
   ];
   export default products;
