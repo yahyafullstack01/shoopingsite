@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
     try {
-        const response = await fetch(`https://ipinfo.io/json?token=${process.env.YOUR_API_TOKEN}`);
+        const response = await fetch(`https://ipinfo.io/json?token=ff259f48889575`);
         if (!response.ok) {
             throw new Error("Failed to fetch geolocation data");
         }
