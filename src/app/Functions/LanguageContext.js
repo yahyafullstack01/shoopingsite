@@ -1,4 +1,4 @@
-"use client"; 
+{/*"use client"; 
 
 import { useState, useContext, createContext, useEffect } from "react";
 
@@ -33,4 +33,4 @@ export function LanguageProvider({ children }) {
     );
 }
 
-export const useLanguage = () => useContext(LanguageContext);
+export const useLanguage = () => useContext(LanguageContext);*/}
