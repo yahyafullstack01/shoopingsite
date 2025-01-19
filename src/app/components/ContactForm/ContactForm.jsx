@@ -94,9 +94,6 @@ const ContactForm = ({
             onChange={onInputChange}
             className="w-full p-3 bg-transparent border-b border-black dark:border-white text-black dark:text-white placeholder-gray-550 dark:placeholder-gray-400 focus:outline-none focus:border-lime-500"
           ></textarea>
-          {errors.message && (
-            <p className="text-red-500 text-sm mt-1">{errors.message}</p>
-          )}
         </div>
 
         <div className="flex items-center gap-4">

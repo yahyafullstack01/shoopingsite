@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { handleContactButtonClick } from "../utils/products";
 import { useLanguage } from "./useLanguage";
-
+import SizeChart from "../components/SizeChart/SizeChart"
 export default function InfoForm({ product, showDiscount = false }) {
   const router = useRouter();
   const [selectedColor, setSelectedColor] = useState("");
@@ -12,6 +12,7 @@ export default function InfoForm({ product, showDiscount = false }) {
   const [colorError, setColorError] = useState("");
   const [sizeError, setSizeError] = useState("");
   const [quantityError, setQuantityError] = useState("");
+  const [showSizeChart, setShowSizeChart] = useState(false);
 
   const { language } = useLanguage();
   const translatedName = product.translations?.[language]?.name || product.name;
@@ -166,7 +167,19 @@ export default function InfoForm({ product, showDiscount = false }) {
       >
         Contact Us
       </button>
+ 
+ <div className="mb-6 md:mb-2 mt-4">
+      {/* Розмірна сітка */}
+      <button
+        onClick={() => setShowSizeChart(true)}
+        className="text-xl text-black dark:text-white underline transition-colors duration-300 hover:text-blue-500 focus-visible:text-blue-900 dark:hover:text-blue-500 dark:focus-visible:text-blue-500 focus-visible:outline-none"
 
+      >
+        Розмірна сітка одягу
+      </button>
+
+      {showSizeChart && <SizeChart onClose={() => setShowSizeChart(false)} />}
+    </div>
       {/* Product Info */}
       <div className="mt-10">
         <h2 className="text-lg md:text-xl font-semibold text-black dark:text-white mb-4 text-center md:text-left">
