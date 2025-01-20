@@ -34,8 +34,7 @@ export default function RootLayout({ children }) {
                 <meta property="og:image:height" content="630" />
                 <meta property="og:url" content="https://shoopingsite-my9e.vercel.app" />
                 <meta property="og:type" content="website" />
-                <link rel="icon" href="/favicon-latore.ico" type="image/x-icon" />
-                <link rel="icon" href="/favicon-latore.png" type="image/png" />
+                <link rel="icon" href="/favicon-latore.avif" type="image/x-icon" />
                 <link rel="canonical" href="https://shoopingsite-my9e.vercel.app" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
        {/* Google Analytics  */}
@@ -70,11 +69,11 @@ export default function RootLayout({ children }) {
                 />
             </head>
             <body className="transition-colors min-h-screen">
-                <ThemeProvider>
+              <ThemeProvider>
                 <ErrorBoundary>
-                    {children}
-                    </ErrorBoundary>
-                    </ThemeProvider>
+                  {children}
+                </ErrorBoundary>
+              </ThemeProvider>
             </body>
         </html>
     );
