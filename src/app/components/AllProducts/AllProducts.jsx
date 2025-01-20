@@ -16,10 +16,11 @@ import {
 import products from "../../data/products";
 import { useLanguage } from "../../Functions/useLanguage";
 
+
 export default function AllProducts() {
   const { translateList, language } = useLanguage();
   const router = useRouter();
-
+  const menuItems = translateList("Catalogues", "header");
   const [maxPrice, setMaxPrice] = useState(5500);
   const [selectedSize, setSelectedSize] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
@@ -81,20 +82,20 @@ export default function AllProducts() {
                 handleContactButtonClick={onContactClick}
               />
             </section>
-
+            
             <section aria-labelledby="product-header" className="w-full mx-auto px-4 sm:px-6 md:px-8 py-4">
               <h1 id="product-header" className="text-3xl sm:text-4xl font-bold mb-6">
-                All Products
+                {menuItems[0]}
               </h1>
               <p className="text-gray-700 dark:text-gray-400 mb-4">
-                Explore our diverse range of products tailored to your needs.
+                {menuItems[1]}
               </p>
               <p className="text-gray-700 dark:text-gray-400 mt-4 pb-4">
-                {filteredProducts.length} products
+                {filteredProducts.length} {menuItems[2]}
               </p>
             </section>
             <section aria-labelledby="product-list" aria-live="polite" className="w-full">
-  <h2 id="product-list" className="sr-only">Product List</h2>
+  <h2 id="product-list" className="sr-only">{menuItems[3]}</h2>
   <PaginatedProducts
     products={filteredProducts}
     productsPerPage={12}

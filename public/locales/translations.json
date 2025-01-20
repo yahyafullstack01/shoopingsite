@@ -63,9 +63,9 @@
     },
 
     "Catalogues": {
-
+      "header" :["All Products", "Explore our diverse range of products tailored to your needs.", " products", "Product List"]
     },
-
+    
     "SizeTable": {
       "header": ["Size Chart", "Size (UA)", "Size (EU)", "Chest (cm)", "Waist (cm)", "Hips (cm)", "Close"]
     }
@@ -132,8 +132,9 @@
     },
 
     "Catalogues": {
-
+      "header": ["Tous les produits", "Découvrez notre gamme variée de produits adaptés à vos besoins.", " produits", "Liste des produits"]
     },
+
     "SizeTable": {
       "header": ["Tableau des tailles", "Taille (UA)", "Taille (EU)", "Poitrine (cm)", "Taille (cm)", "Hanches (cm)", "Fermer"]
     }
@@ -199,8 +200,9 @@
       ]
     },
     "Catalogues": {
-
+      "header": ["Всі товари", "Ознайомтеся з нашим різноманітним асортиментом товарів, створеним для ваших потреб.", " товарів", "Список товарів"]
     },
+    
     "SizeTable": {
       "header": ["Розмірна сітка", "Розмір (UA", "Розмір (EU)", "Груди (см)", "Талія (см)", "Стегна (см)","Закрити"]
     }
