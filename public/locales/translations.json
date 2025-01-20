@@ -60,7 +60,18 @@
         "We will be able to process the return once we receive your package at our warehouse. This reshipment may take up to 5-7 business days, excluding weekends and holidays.",
         "For exchange or return, call technical support (24/7):"
       ]
+    },
+
+    "Catalogues": {
+
+    },
+
+    "SizeTable": {
+      "header": ["Size Chart", "Size (UA)", "Size (EU)", "Chest (cm)", "Waist (cm)", "Hips (cm)", "Close"]
     }
+
+
+    
   },
   "FR": {
     "home": {
@@ -118,7 +129,15 @@
         "Nous pourrons traiter le retour une fois que nous aurons reçu votre colis dans notre entrepôt. Ce réexpédition peut prendre jusqu'à 5 à 7 jours ouvrables, hors week-ends et jours fériés.",
         "Pour un échange ou un retour, contactez le support technique (24/7) :"
       ]
+    },
+
+    "Catalogues": {
+
+    },
+    "SizeTable": {
+      "header": ["Tableau des tailles", "Taille (UA)", "Taille (EU)", "Poitrine (cm)", "Taille (cm)", "Hanches (cm)", "Fermer"]
     }
+    
   },
 
   "UA": {
@@ -178,6 +197,12 @@
         "Ми зможемо оформити повернення тоді, коли отримаємо Вашу посилку на нашому складі. Це пересилання може зайняти \nдо 5-7 робочих днів без урахування вихідних та святкових днів.",
         " Для обміну або повернення телефонуйте у технічну підтримку (24/7):"
       ]
+    },
+    "Catalogues": {
+
+    },
+    "SizeTable": {
+      "header": ["Розмірна сітка", "Розмір (UA", "Розмір (EU)", "Груди (см)", "Талія (см)", "Стегна (см)","Закрити"]
     }
   }
 }
