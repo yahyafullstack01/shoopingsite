@@ -1,13 +1,18 @@
+import TopProductsInfo from "../components/TopProductsInfo/TopProductsInfo";
 import Layout from "../components/Layout";
-import Conditions from "../components/Conditions/Conditions";
 import Head from "next/head";
-import generateConditionsJsonLd from "../seo/conditions-jsonld";
-import seoConfig from "../../../next-seo.config";
 import Script from "next/script";
+import topProductsJsonLd from "../seo/top-products-jsonld";
+import products from "../data/products"; // Загальний масив продуктів
+import seoConfig from "../../../next-seo.config";
 
-export default function ConditionPage() {
-  const jsonLd = generateConditionsJsonLd(); // Генерація JSON-LD
-  const seo = seoConfig.conditions; // SEO-конфігурація
+export default function TopProductspage() {
+  // Фільтруємо продукти, позначені як `isTop`
+  const topProducts = products.filter((product) => product.isTop);
+
+  const jsonLd = topProductsJsonLd(topProducts); // Генеруємо JSON-LD для топ продуктів
+
+  const seo = seoConfig.topProducts; // SEO-конфігурація
 
   return (
     <div className="transition-colors">
@@ -23,12 +28,12 @@ export default function ConditionPage() {
         <meta name="robots" content={seo.robots} />
       </Head>
       <Script
-        id="condition-jsonld"
+        id="top-products-jsonld"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Layout>
-        <Conditions />
+        <TopProductsInfo />
       </Layout>
     </div>
   );

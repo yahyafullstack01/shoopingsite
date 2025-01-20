@@ -6,21 +6,19 @@ import Link from "next/link";
 import { useLanguage } from "../../Functions/useLanguage"; // Import the custom hook
 import useKeyboardNavigation from "../../hooks/useKeyboardNavigation";
 export default function TopProducts() {
-  
   const images = [
-    { src: "/Costumes/Woolen suit with skirt/1.avif", link: "/Top_products" },
-    { src: "/Costumes/Wool suit with trousers/8.avif", link: "/Top_products" },
-    { src: "/Costumes/Wool suit with vest/1.avif", link: "Top_products" },
-    { src: "/Dress/Woolen trapeze dress/1.avif", link: "Top_products" },
-    { src: "/Dress/Wool A-line dress/2.avif", link: "/Top_products" },
-    { src: "/6.jpg", link: "/Top_products" },
-    { src: "/7.jpg", link: "/Top_products" },
-    { src: "/8.jpg", link: "/Top_products" },
-    { src: "/9.jpg", link: "/Top_products" },
-    { src: "/10.jpg", link: "/Top_products" },
+    { src: "/Costumes/Woolen suit with skirt/1.avif", link: "/Top-products" },
+    { src: "/Costumes/Wool suit with trousers/8.avif", link: "/Top-products" },
+    { src: "/Costumes/Wool suit with vest/1.avif", link: "Top-products" },
+    { src: "/Dress/Woolen trapeze dress/1.avif", link: "Top-products" },
+    { src: "/Dress/Wool A-line dress/2.avif", link: "/Top-products" },
+    { src: "/6.jpg", link: "/Top-products" },
+    { src: "/7.jpg", link: "/Top-products" },
+    { src: "/8.jpg", link: "/Top-products" },
+    { src: "/9.jpg", link: "/Top-products" },
+    { src: "/10.jpg", link: "/Top-products" },
 
   ];
-
   const { displayedImages, handleNext, handlePrev } = useImageFollow(
     images.length,
     5 

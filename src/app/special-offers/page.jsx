@@ -1,13 +1,16 @@
+import OffersInfo from "../components/OffersInfo/OffersInfo";
 import Layout from "../components/Layout";
-import Conditions from "../components/Conditions/Conditions";
 import Head from "next/head";
-import generateConditionsJsonLd from "../seo/conditions-jsonld";
-import seoConfig from "../../../next-seo.config";
 import Script from "next/script";
+import offersJsonLd from "../seo/offers-jsonld";
+import products from "../data/products"; // Загальний масив продуктів
+import seoConfig from "../../../next-seo.config";
 
-export default function ConditionPage() {
-  const jsonLd = generateConditionsJsonLd(); // Генерація JSON-LD
-  const seo = seoConfig.conditions; // SEO-конфігурація
+export default function Offerspage() {
+  const offers = products; // Використовуємо загальний масив продуктів
+  const jsonLd = offersJsonLd(offers); // Генеруємо JSON-LD тільки для спеціальних пропозицій
+
+  const seo = seoConfig.offers; // SEO-конфігурація
 
   return (
     <div className="transition-colors">
@@ -23,12 +26,12 @@ export default function ConditionPage() {
         <meta name="robots" content={seo.robots} />
       </Head>
       <Script
-        id="condition-jsonld"
+        id="offers-jsonld"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Layout>
-        <Conditions />
+        <OffersInfo />
       </Layout>
     </div>
   );
