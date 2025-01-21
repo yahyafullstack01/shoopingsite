@@ -55,19 +55,19 @@ export default function TopProducts() {
       rel="noopener noreferrer"
       className="flex-shrink-0 group"
     >
-      <Image
-        src={images[imageIndex].src}
-        alt={`Image ${imageIndex + 1}`}
-        width={150} 
-        height={150}
-        quality={100} 
-        className="rounded-lg object-cover shadow-lg transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:opacity-90
-          w-[calc(39vw-16px)]
-        sm:w-[150px] sm:h-[150px]
-          md:w-[200px] md:h-[300px]
-          lg:w-[250px] lg:h-[350px]
-          xl:w-[300px] xl:h-[350px]"
-      />
+        <Image
+            src={images[imageIndex].src}
+            alt={`Image ${imageIndex + 1}`}
+            width={150} 
+            height={150}
+            quality={100} 
+            className="rounded-lg object-cover shadow-lg transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:opacity-90
+              w-[calc(39vw-16px)]
+            sm:w-[150px] sm:h-[150px]
+              md:w-[200px] md:h-[300px]
+              lg:w-[250px] lg:h-[350px]
+              xl:w-[300px] xl:h-[350px]"
+          />
     </Link>
   ))}
 </div>

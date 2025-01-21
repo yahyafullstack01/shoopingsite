@@ -44,7 +44,7 @@ export default function TopProductsInfo() {
 
       <section aria-labelledby="top-products">
         <h2 id="top-products" className="sr-only">Top Products</h2>
-        <div className="bg-[#f5e7da] dark:bg-[rgba(58,42,32,0.8)] ml-8 max-h-[450px] md:max-h-[600px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 mb-8">
+        <div className="bg-[#f5e7da] dark:bg-[rgba(58,42,32,0.8)] ml-0 max-h-[450px] md:max-h-[600px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 mb-8">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 md:gap-6 p-4">
             {topProducts.map((product) => {
               const translatedName = product.translations?.[language]?.name || product.title;
@@ -55,7 +55,8 @@ export default function TopProductsInfo() {
                   className="text-black bg-[#fcf8f3] dark:bg-white dark:text-black rounded shadow-lg hover:scale-105 transition-transform cursor-pointer"
                   onClick={() => handleProductClick(product)}
                 >
-                  <div className="w-full h-[300px] sm:h-[350px] overflow-hidden rounded-t">
+                  
+                  <div className="w-full h-[200px] sm:h-[350px] overflow-hidden rounded-t">
                     <Image
                       src={product.image}
                       alt={`Preview of ${translatedName}`}

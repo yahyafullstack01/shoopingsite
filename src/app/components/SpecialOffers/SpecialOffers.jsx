@@ -31,7 +31,6 @@ export default function SpecialOffers() {
               priority
             />
           </div>
-
           {/* Текст */}
           <div
             className={`
