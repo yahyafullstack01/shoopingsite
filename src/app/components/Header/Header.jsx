@@ -33,43 +33,44 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
           />
         </Link>
       </div>
-
       <nav aria-label="Main Navigation" className="flex items-center space-x-4 lg:space-x-6">
-        <button
-          onClick={toggleMenu}
-          aria-label="Open Menu"
-          className="lg:hidden p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700"
-        >
-          <FaBars className="sm:xl md:text-2xl lg:text-3xl" />
-        </button>
-        <ul className="hidden lg:flex space-x-4 text-xs sm:text-sm md:text-base lg:text-lg" role="menubar">
-          <li className="min-w-[80px] text-center" role="none">
-            <Link href="/">
-              {menuItems[0]}
-            </Link>
-          </li>
-          <li className="min-w-[80px] text-center" role="none">
-            <Link href="/All-products">
-              {menuItems[1]}
-            </Link>
-          </li>
-          <li className="min-w-[80px] text-center" role="none">
-            <Link href="/#about">
-              {menuItems[2]}
-            </Link>
-          </li>
-          <li className="min-w-[80px] text-center" role="none">
-            <Link href="/contact">
-              {menuItems[3]}
-            </Link>
-          </li>
-          <li className="min-w-[80px] text-center" role="none">
-            <Link href="/Conditions">
-              {menuItems[4]}
-            </Link>
-          </li>
-        </ul>
-      </nav>
+  <button
+    onClick={toggleMenu}
+    aria-label="Open Menu"
+    aria-expanded={isMenuOpen ? "true" : "false"}
+    className="lg:hidden p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700"
+  >
+    <FaBars className="sm:xl md:text-2xl lg:text-3xl" />
+  </button>
+
+  <ul className="hidden lg:flex space-x-4 text-xs sm:text-sm md:text-base lg:text-lg" role="menubar">
+    <li className="min-w-[80px] text-center" role="menuitem">
+      <Link href="/" aria-label={`Go to ${menuItems[0]} page`}>
+        {menuItems[0]}
+      </Link>
+    </li>
+    <li className="min-w-[80px] text-center" role="menuitem">
+      <Link href="/All-products" aria-label={`Go to ${menuItems[1]} page`}>
+        {menuItems[1]}
+      </Link>
+    </li>
+    <li className="min-w-[80px] text-center" role="menuitem">
+      <Link href="/#about" aria-label={`Learn more ${menuItems[2]}`}>
+        {menuItems[2]}
+      </Link>
+    </li>
+    <li className="min-w-[80px] text-center" role="menuitem">
+      <Link href="/contact" aria-label={`Go to ${menuItems[3]} page`}>
+        {menuItems[3]}
+      </Link>
+    </li>
+    <li className="min-w-[80px] text-center" role="menuitem">
+      <Link href="/Conditions" aria-label={`View ${menuItems[4]}`}>
+        {menuItems[4]}
+      </Link>
+    </li>
+  </ul>
+</nav>
 
       <div className="hidden lg:flex items-center space-x-2">
         <button
@@ -114,7 +115,8 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
         <div className="flex items-center justify-start space-x-4 px-6 py-4 border-b border-gray-300 dark:border-gray-600">
           <button
             onClick={toggleLanguage}
-            aria-label="Toggle Language"
+           // aria-label="Toggle Language"
+            aria-label={`Switch language, current language is ${language}`}
             className="p-1 sm:p-2 rounded-full border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-600 transition duration-300 text-xs sm:text-sm md:text-base lg:text-lg flex items-center justify-center"
           >
             {language === "EN" ? "🇬🇧 EN" : language === "FR" ? "🇫🇷 FR" : "🇺🇦 UA"}
@@ -132,32 +134,32 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
           </button>
         </div>
         <ul className="flex flex-col items-start space-y-4 p-6 text-xs sm:text-sm md:text-base lg:text-lg" role="menubar">
-          <li className="text-center">
+          <li className="text-center" role="menuitem">
             <Link href="/">
               {menuItems[0]}
             </Link>
           </li>
-          <li className="text-center">
+          <li className="text-center" role="menuitem">
             <Link href="/All-products">
               {menuItems[1]}
             </Link>
           </li>
-          <li className="text-center">
+          <li className="text-center" role="menuitem">
             <Link href="/#about">
               {menuItems[2]}
             </Link>
           </li>
-          <li className="text-center">
+          <li className="text-center" role="menuitem">
             <Link href="/contact">
               {menuItems[3]}
             </Link>
           </li>
-          <li className="text-center">
+          <li className="text-center" role="menuitem">
             <Link href="/Conditions">
               {menuItems[4]}
             </Link>
           </li>
-          <li className="text-center">
+          <li className="text-center" role="menuitem">
             <Link href="/">
               {menuItems[5]}
             </Link>

@@ -8,7 +8,7 @@ const topProductsJsonLd = (products) => ({
     image: product.image
       ? {
           "@type": "ImageObject",
-          url: `https://shoopingsite-my9e.vercel.app${product.image}`,
+          url: `https://shoopingsite-my9e.vercel.app?productId=${product.image}`,
           width: 1200,
           height: 628,
           caption: product.translations?.EN?.name || "Unnamed Product",

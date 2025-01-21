@@ -7,7 +7,7 @@ const generateConditionsJsonLd = () => {
     url: "https://shoopingsite-my9e.vercel.app/conditions", // Коректний URL
     image: {
       "@type": "ImageObject",
-      url: "https://shoopingsite-my9e.vercel.app/conditions-image.jpg", // Зображення для сторінки
+      url: "https://shoopingsite-my9e.vercel.app/logo-social.jpg", // Зображення для сторінки
       width: 1200,
       height: 628,
       caption: "Conditions Page Image", // Альтернативний текст

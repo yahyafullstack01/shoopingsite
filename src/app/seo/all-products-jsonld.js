@@ -6,11 +6,11 @@ const generateProductsJsonLd = (products) => {
     itemListElement: products.map((product, index) => ({
       "@type": "ListItem",
       position: index + 1,
-      url: `https://shoopingsite-my9e.vercel.app/All-products/${product.id}`, // Коректний URL для продукту
+      url: `https://shoopingsite-my9e.vercel.app/All-products?productId=${product.id}`, // Коректний URL для продукту
       name: product.translations?.EN?.name || "Unnamed Product", // Назва продукту
       image: {
         "@type": "ImageObject",
-        url: product.image || "https://shoopingsite-my9e.vercel.app/default-image.jpg", // Зображення продукту
+        url: product.image || "https://shoopingsite-my9e.vercel.app/logo-social.jpg", // Зображення продукту
         width: 1200, // Рекомендована ширина
         height: 628, // Рекомендована висота
         caption: product.translations?.EN?.name || "Unnamed Product", // Альтернативний текст

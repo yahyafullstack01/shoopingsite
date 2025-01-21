@@ -20,8 +20,8 @@ export const organizationJsonLd = {
     url: "https://shoopingsite-my9e.vercel.app",
     logo: "https://shoopingsite-my9e.vercel.app/favicon-latore.ico?v=1",
     sameAs: [
-        "https://www.facebook.com/latoreatelier",
-        "https://www.instagram.com/latoreatelier",
+        "https://www.facebook.com/share/18h6VtZV6k/?mibextid=wwXIfr",
+        "https://www.instagram.com/latore.atelier?igsh=Y3RvbWZhZW12Zmxj",
         "https://telegram.me/yourusername",
     ],
 };
