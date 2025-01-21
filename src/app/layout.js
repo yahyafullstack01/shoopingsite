@@ -37,6 +37,8 @@ export default function RootLayout({ children }) {
                 <link rel="icon" href="/favicon-latore.avif" type="image/x-icon" />
                 <link rel="canonical" href="https://shoopingsite-my9e.vercel.app" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta name="google-site-verification" content="cYBcnqSIlXlPJZSokMAgKhJCS8MM2XfwV6-nd4o-Jag" />
+
        {/* Google Analytics  */}
                 <Script
                 src="https://www.googletagmanager.com/gtag/js?id=G-KGLK5J3JEE"
