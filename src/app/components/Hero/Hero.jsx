@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useLanguage } from "../../Functions/useLanguage";
-import Head from "next/head";
+
 
 export default function Hero() {
   const { translateList } = useLanguage();
@@ -8,12 +8,7 @@ export default function Hero() {
 
   return (
     <>
-      <Head>
-        {/* Preload важливих зображень */}
-        <link rel="preload" href="/1.jpg" as="image" />
-        <link rel="preload" href="/10.jpg" as="image" />
-        <link rel="preload" href="/5.jpg" as="image" />
-      </Head>
+      
       <section className="section-container relative" aria-labelledby="hero-heading">
         <h2 id="hero-heading" className="sr-only">Our Atelier Highlights</h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-4 relative">
