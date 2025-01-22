@@ -12,15 +12,16 @@ export default function Hero() {
       <section className="section-container relative" aria-labelledby="hero-heading">
         <h2 id="hero-heading" className="sr-only">Our Atelier Highlights</h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-4 relative">
-          <div className="w-48 sm:w-[200px] -mb-4 md:w-[300px] lg:w-[400px] relative flex flex-row items-center ml-8 sm:ml-24 mg:ml-36 mobile-320">
+          
+        <div className="w-48 sm:w-[200px] -mb-4 md:w-[300px] lg:w-[400px] relative flex flex-row items-center ml-8 sm:ml-24 mg:ml-36 mobile-320">
             <Image
               src="/1.jpg"
               alt="Left showcase of Atelier fashion"
-              width={300} // Adjusted width
-              height={450} // Adjusted height
+              width={200} // Adjusted width
+              height={250} // Adjusted height
               priority
-              sizes="(max-width: 768px) 90vw, (max-width: 1200px) 45vw, 300px"
-              className="rounded-none object-cover shadow-2xl shadow-gray-800 dark:shadow-gray-400 transition-transform duration-300 ease-in-out focus:scale-110 hover:scale-110 group-hover:scale-110 cursor-pointer w-32 sm:w-[200px] md:w-[300px] lg:w-[300px]"
+              sizes="(max-width: 640px) 100vw, (max-width: 768px) 90vw, (max-width: 1200px) 50vw, 400px"
+             className="rounded-none object-cover shadow-2xl shadow-gray-800 dark:shadow-gray-400 transition-transform duration-300 ease-in-out focus:scale-110 hover:scale-110 group-hover:scale-110 cursor-pointer w-32 sm:w-[200px] md:w-[300px] lg:w-[300px]"
             />
           </div>
 

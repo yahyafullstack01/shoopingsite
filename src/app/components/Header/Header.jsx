@@ -28,15 +28,15 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
 </Head>
 <Link href="/" aria-label="Home">
   <h1 className="sr-only">Latore Atelier</h1>
-<Image
+  <Image
     src="/light-logo.avif"
     alt="Latore Atelier Logo – High-Quality Clothing"
-    width={128} 
-    height={69} 
-    quality={90} 
-    sizes="(max-width: 480px) 100px, (max-width: 768px) 100px, (max-width: 1200px) 120px, 128px"
-   
-    className={`${isDarkMode ? "filter invert" : ""}`}
+    layout="responsive"
+    width={128} // Зберігає співвідношення ширини
+    height={69} // Зберігає співвідношення висоти
+    quality={90}
+    sizes="(max-width: 480px) 50px, (max-width: 768px) 80px, (max-width: 1200px) 100px, 128px"
+    className="w-16 h-auto sm:w-24 md:w-32 lg:w-40"
     priority
   />
 </Link>
