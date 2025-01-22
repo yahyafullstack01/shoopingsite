@@ -24,17 +24,17 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
       <div className="flex-shrink-0 ml-0 sm:ml-8">
       <Head>
   {/* Попереднє завантаження зображення */}
-  <link rel="preload" as="image" href="/light-logo.avif" type="image/avif" />
+  <link rel="preload" as="image" href="/light-logo.avif" type="image/avif" media="(max-width: 480px)"/>
 </Head>
 <Link href="/" aria-label="Home">
   <h1 className="sr-only">Latore Atelier</h1>
-  <Image
+<Image
     src="/light-logo.avif"
     alt="Latore Atelier Logo – High-Quality Clothing"
     width={128} 
     height={69} 
     quality={90} 
-    sizes="(max-width: 480px) 80px, (max-width: 768px) 100px, (max-width: 1200px) 120px, 128px"
+    sizes="(max-width: 480px) 100px, (max-width: 768px) 100px, (max-width: 1200px) 120px, 128px"
    
     className={`${isDarkMode ? "filter invert" : ""}`}
     priority
