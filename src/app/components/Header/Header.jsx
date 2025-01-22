@@ -141,37 +141,32 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
           </button>
         </div>
         <ul className="flex flex-col items-start space-y-4 p-6 text-xs sm:text-sm md:text-base lg:text-lg" role="menubar">
-          <li className="text-center" role="menuitem">
-            <Link href="/">
-              {menuItems[0]}
-            </Link>
-          </li>
-          <li className="text-center" role="menuitem">
-            <Link href="/All-products">
-              {menuItems[1]}
-            </Link>
-          </li>
-          <li className="text-center" role="menuitem">
-            <Link href="/#about">
-              {menuItems[2]}
-            </Link>
-          </li>
-          <li className="text-center" role="menuitem">
-            <Link href="/contact">
-              {menuItems[3]}
-            </Link>
-          </li>
-          <li className="text-center" role="menuitem">
-            <Link href="/Conditions">
-              {menuItems[4]}
-            </Link>
-          </li>
-          <li className="text-center" role="menuitem">
-            <Link href="/">
-              {menuItems[5]}
-            </Link>
-          </li>
-        </ul>
+  <li className="text-center" role="menuitem">
+    <Link href="/" aria-label={`Navigate to ${menuItems[0]} page`}>
+      {menuItems[0]}
+    </Link>
+  </li>
+  <li className="text-center" role="menuitem">
+    <Link href="/All-products" aria-label={`Navigate to ${menuItems[1]} page`}>
+      {menuItems[1]}
+    </Link>
+  </li>
+  <li className="text-center" role="menuitem">
+    <Link href="/#about" aria-label={`Learn more about ${menuItems[2]}`}>
+      {menuItems[2]}
+    </Link>
+  </li>
+  <li className="text-center" role="menuitem">
+    <Link href="/contact" aria-label={`Navigate to ${menuItems[3]} page`}>
+      {menuItems[3]}
+    </Link>
+  </li>
+  <li className="text-center" role="menuitem">
+    <Link href="/Conditions" aria-label={`View terms and conditions on the ${menuItems[4]} page`}>
+      {menuItems[4]}
+    </Link>
+  </li>
+</ul>
       </nav>
     </header>
   );
