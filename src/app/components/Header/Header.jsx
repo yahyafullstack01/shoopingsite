@@ -30,8 +30,8 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
         <Image
   src="/light-logo.avif"
   alt="Latore Atelier Logo – High-Quality Clothing"
-  width={120} 
-  height={80} 
+  width={128} 
+  height={69} 
   quality={100}
   sizes="(max-width: 768px) 80px, (max-width: 1200px) 120px"
   className={`${isDarkMode ? "filter invert" : ""} w-[80px] h-[60px] sm:w-[80px] sm:h-[60px] md:w-[80px] md:h-[60px] lg:w-[120px] lg:h-[80px]`}
