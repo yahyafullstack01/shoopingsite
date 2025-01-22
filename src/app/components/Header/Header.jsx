@@ -23,22 +23,22 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
     <header className={`flex items-center justify-between px-4 py-1 shadow-md ${isDarkMode ? "bg-black text-white" : "bg-white text-black"}`} role="banner">
       <div className="flex-shrink-0 ml-0 sm:ml-8">
       <Head>
-  <link rel="preload" as="image" href="/light-logo.avif" />
+  {/* Попереднє завантаження зображення */}
+  <link rel="preload" as="image" href="/light-logo.avif" type="image/avif" />
 </Head>
-        <Link href="/" aria-label="Home">
-        <h1 className="sr-only">Latore Atelier</h1>
-        <Image
-  src="/light-logo.avif"
-  alt="Latore Atelier Logo – High-Quality Clothing"
-  width={128} 
-  height={69} 
-  quality={100}
-  sizes="(max-width: 768px) 80px, (max-width: 1200px) 120px"
-  className={`${isDarkMode ? "filter invert" : ""} w-[80px] h-[60px] sm:w-[80px] sm:h-[60px] md:w-[80px] md:h-[60px] lg:w-[120px] lg:h-[80px]`}
-  priority 
-/>
-
-        </Link>
+<Link href="/" aria-label="Home">
+  <h1 className="sr-only">Latore Atelier</h1>
+  <Image
+    src="/light-logo.avif"
+    alt="Latore Atelier Logo – High-Quality Clothing"
+    width={128} 
+    height={69} 
+    quality={90} 
+    sizes="(max-width: 768px) 80px, (max-width: 1200px) 120px, 128px"
+    className={`${isDarkMode ? "filter invert" : ""} w-[80px] h-[60px] sm:w-[80px] sm:h-[60px] md:w-[80px] md:h-[60px] lg:w-[120px] lg:h-[80px]`}
+    priority
+  />
+</Link>
       </div>
       <nav aria-label="Main Navigation" className="flex items-center space-x-4 lg:space-x-6">
   <button
