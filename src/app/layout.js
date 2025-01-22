@@ -40,25 +40,7 @@ export default function RootLayout({ children }) {
                 {/* <meta name="google-site-verification" content="cYBcnqSIlXlPJZSokMAgKhJCS8MM2XfwV6-nd4o-Jag" /> */}
                 <meta name="google-site-verification" content="Lx8iDUB67zjk42dkkJQsEpoqSlKiSlc1peMe9-jmIqY" />
 
-       {/* Google Analytics */}
-       {
-  process.env.NODE_ENV === "production" && (
-    <>
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-KGLK5J3JEE"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-KGLK5J3JEE');
-        `}
-      </Script>
-    </>
-  )
-}
+     
                 {/* JSON-LD через next/script */}
                 <Script
                     id="organization-jsonld"
