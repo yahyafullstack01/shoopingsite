@@ -1,4 +1,5 @@
 "use client"; 
+import Head from "next/head";
 import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -21,6 +22,9 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
   return (
     <header className={`flex items-center justify-between px-4 py-1 shadow-md ${isDarkMode ? "bg-black text-white" : "bg-white text-black"}`} role="banner">
       <div className="flex-shrink-0 ml-0 sm:ml-8">
+      <Head>
+  <link rel="preload" as="image" href="/light-logo.avif" />
+</Head>
         <Link href="/" aria-label="Home">
         <h1 className="sr-only">Latore Atelier</h1>
         <Image
