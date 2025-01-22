@@ -1,9 +1,17 @@
-import Layout from "../components/Layout";
-import Conditions from "../components/Conditions/Conditions";
+"use client"; // Оголошуємо Client Component
+
+import dynamic from "next/dynamic";
 import Head from "next/head";
+import Script from "next/script";
 import generateConditionsJsonLd from "../seo/conditions-jsonld";
 import seoConfig from "../../../next-seo.config";
-import Script from "next/script";
+
+// Динамічний імпорт компонентів
+const Layout = dynamic(() => import("../components/Layout"), { ssr: false });
+const Conditions = dynamic(() => import("../components/Conditions/Conditions"), {
+  ssr: false,
+  loading: () => <div>Loading conditions...</div>,
+});
 
 export default function ConditionPage() {
   const jsonLd = generateConditionsJsonLd(); // Генерація JSON-LD
@@ -11,6 +19,7 @@ export default function ConditionPage() {
 
   return (
     <div className="transition-colors">
+      {/* SEO-метатеги */}
       <Head>
         <title>{seo.title}</title>
         <meta name="description" content={seo.description} />
@@ -22,11 +31,15 @@ export default function ConditionPage() {
         <link rel="canonical" href={seo.canonical} />
         <meta name="robots" content={seo.robots} />
       </Head>
+
+      {/* JSON-LD для SEO */}
       <Script
         id="condition-jsonld"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+
+      {/* Динамічний рендеринг компонентів */}
       <Layout>
         <Conditions />
       </Layout>

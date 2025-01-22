@@ -1,10 +1,13 @@
+"use client";
+import dynamic from "next/dynamic"; // Для динамічного імпорту
 import Script from "next/script";
-import AllProducts from "../components/AllProducts/AllProducts";
-import Layout from "../components/Layout";
 import Head from "next/head";
 import generateProductsJsonLd from "../seo/all-products-jsonld";
 import seoConfig from "../../../next-seo.config";
 import products from "../data/products";
+
+const Layout = dynamic(() => import("../components/Layout"), { ssr: false }); // Динамічний імпорт Layout
+const AllProducts = dynamic(() => import("../components/AllProducts/AllProducts"), { ssr: false }); // Динамічний імпорт AllProducts
 
 export default function Products() {
     const jsonLd = generateProductsJsonLd(products); // Передаємо масив продуктів
@@ -12,6 +15,7 @@ export default function Products() {
 
     return (
         <div className="transition-colors">
+            {/* SEO-метатеги */}
             <Head>
                 <title>{seo.title}</title>
                 <meta name="description" content={seo.description} />
@@ -23,11 +27,15 @@ export default function Products() {
                 <link rel="canonical" href={seo.canonical} />
                 <meta name="robots" content={seo.robots} />
             </Head>
+
+            {/* JSON-LD для SEO */}
             <Script
                 id="all-products-jsonld"
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
+
+            {/* Динамічний рендеринг компонентів */}
             <Layout>
                 <AllProducts />
             </Layout>
