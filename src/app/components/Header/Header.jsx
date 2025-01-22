@@ -34,7 +34,7 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
     width={128} 
     height={69} 
     quality={90} 
-    sizes="(max-width: 320px) 80px, (max-width: 768px) 100px, (max-width: 1200px) 120px, 128px"
+    sizes="(max-width: 480px) 80px, (max-width: 768px) 100px, (max-width: 1200px) 120px, 128px"
    
     className={`${isDarkMode ? "filter invert" : ""}`}
     priority
