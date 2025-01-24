@@ -19,6 +19,7 @@ export default function Hero() {
             width={400}
             height={600}
             priority
+            quality={75}
             sizes="(max-width: 640px) 100vw, (max-width: 768px) 90vw, (max-width: 1200px) 50vw, 400px"
             className="rounded-none object-cover shadow-2xl shadow-gray-800 dark:shadow-gray-400 transition-transform duration-300 ease-in-out focus:scale-110 hover:scale-110 group-hover:scale-110 cursor-pointer w-32 sm:w-[250px] md:w-[300px] lg:w-[400px]"
           />
