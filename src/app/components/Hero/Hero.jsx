@@ -11,7 +11,8 @@ export default function Hero() {
 
       <div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-4 relative">
         {/* Ліве зображення */}
-        <div className="w-48 sm:w-[200px] -mb-4 md:w-[300px] lg:w-[400px] relative flex flex-row items-center mt-8 sm:mt-16 ml-8 sm:ml-24 ">
+       
+        <div className="w-48 sm:w-[200px] -mb-4 md:w-[300px] lg:w-[400px] relative flex flex-row items-center mt-8 sm:mt-16 ml-8 sm:ml-24 mobile-320">
           <Image
             src="/1.jpg"
             alt="Left showcase of Atelier fashion"
