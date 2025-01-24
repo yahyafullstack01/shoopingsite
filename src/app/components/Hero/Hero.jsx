@@ -52,7 +52,7 @@ export default function Hero() {
             width={400}
             height={600}
             priority
-            sizes="(max-width: 768px) 90vw, (max-width: 1200px) 45vw, 400px"
+            sizes="(max-width: 640px) 100vw, (max-width: 768px) 90vw, (max-width: 1200px) 45vw, 400px"
             className="rounded-none object-cover shadow-2xl shadow-gray-800 dark:shadow-gray-400 transition-transform duration-300 ease-in-out focus:scale-110 hover:scale-110 group-hover:scale-110 w-32 sm:w-[250px] md:w-[300px] lg:w-[400px] ml-8 sm:ml-36 h-auto"
           />
         </div>

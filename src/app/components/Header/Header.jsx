@@ -47,7 +47,7 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
     layout="intrinsic"
     width={128} // Зберігає співвідношення ширини
     height={69} // Зберігає співвідношення висоти
-    quality={100}
+    quality={90}
     sizes="(max-width: 480px) 50px, (max-width: 768px) 80px, (max-width: 1200px) 100px, 128px"
     className={`w-16 h-auto sm:w-24 md:w-32 lg:w-40 ${
     isDarkMode ? "filter invert" : ""
