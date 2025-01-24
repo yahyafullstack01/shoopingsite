@@ -1,6 +1,6 @@
 "use client"; 
 import Head from "next/head";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaMoon, FaSun, FaBars, FaTimes } from "react-icons/fa";
@@ -18,22 +18,10 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
   };
 
   const { isMenuOpen, toggleMenu, closeMenu } = useHeaderState();
- // Додавання класу для фіксації хедера при скролі
- const [isScrolled, setIsScrolled] = useState(false);
-
- useEffect(() => {
-   const handleScroll = () => {
-     setIsScrolled(window.scrollY > 0);
-   };
-   window.addEventListener("scroll", handleScroll);
-   return () => window.removeEventListener("scroll", handleScroll);
- }, []);
-
  
   return (
-    <header className={`fixed top-0 left-0 w-full z-50 flex items-center justify-between px-4 py-1 transition duration-300  ${
-    isScrolled ? "shadow-lg" : "shadow-md"
-  } ${isDarkMode ? "bg-black text-white shadow-gray-800" : "bg-white text-black shadow-gray-300"}`} role="banner">
+    <header className={`flex items-center justify-between px-4 py-1 shadow-md
+   ${isDarkMode ? "bg-black text-white shadow-gray-800" : "bg-white text-black shadow-gray-300"}`} role="banner">
       <div className="flex-shrink-0 ml-0 sm:ml-8">
       <Head>
   {/* Попереднє завантаження зображення */}
