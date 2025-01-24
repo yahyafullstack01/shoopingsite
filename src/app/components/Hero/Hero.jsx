@@ -16,8 +16,8 @@ export default function Hero() {
           <Image
             src="/1.jpg"
             alt="Left showcase of Atelier fashion"
-            width={300}
-            height={450}
+            width={400}
+            height={600}
             priority
             quality={75}
             sizes="(max-width: 640px) 100vw, (max-width: 768px) 90vw, (max-width: 1200px) 50vw, 400px"
@@ -38,7 +38,7 @@ export default function Hero() {
                 height={400}
                 priority
                 sizes="(max-width: 768px) 90vw, (max-width: 1200px) 45vw, 400px"
-                className="w-32 h-32 sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] xl:w-[500px] xl:h-[500px] object-cover shadow-2xl shadow-gray-800 dark:shadow-gray-400 transition-transform duration-300 ease-in-out focus:scale-110 hover:scale-110 group-hover:scale-110"
+                className="w-36 h-36 sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] xl:w-[500px] xl:h-[500px] object-cover shadow-2xl shadow-gray-800 dark:shadow-gray-400 transition-transform duration-300 ease-in-out focus:scale-110 hover:scale-110 group-hover:scale-110"
               />
             </span>
           </h1>
@@ -51,8 +51,8 @@ export default function Hero() {
           <Image
             src="/5.jpg"
             alt="Showcase collection – Bottom left image"
-            width={300}
-            height={450}
+            width={400}
+            height={600}
             priority
             sizes="(max-width: 640px) 100vw, (max-width: 768px) 90vw, (max-width: 1200px) 45vw, 400px"
             className="rounded-none object-cover shadow-2xl shadow-gray-800 dark:shadow-gray-400 transition-transform duration-300 ease-in-out focus:scale-110 hover:scale-110 group-hover:scale-110 w-32 sm:w-[250px] md:w-[300px] lg:w-[400px] ml-8 sm:ml-36 h-auto"
