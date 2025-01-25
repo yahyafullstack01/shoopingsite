@@ -15,12 +15,11 @@ export default function Hero() {
           
         <div className="w-48 sm:w-[200px] -mb-4 md:w-[300px] lg:w-[400px] relative flex flex-row items-center ml-8 sm:ml-24 mg:ml-36 mobile-320">
             <Image
-              src="/Costumes/Emily Suit/1.avif"
+              src="/1.jpg"
               alt="Left showcase of Atelier fashion"
               width={200} // Adjusted width
               height={250} // Adjusted height
               priority
-              quality={80}
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 90vw, (max-width: 1200px) 50vw, 400px"
              className="rounded-none object-cover shadow-2xl shadow-gray-800 dark:shadow-gray-400 transition-transform duration-300 ease-in-out focus:scale-110 hover:scale-110 group-hover:scale-110 cursor-pointer w-32 sm:w-[200px] md:w-[300px] lg:w-[300px]"
             />
@@ -32,12 +31,11 @@ export default function Hero() {
               <span className="relative z-10">TELIER</span>
               <span className="absolute top-[-60px] right-[-90px] sm:top-[-220px] sm:right-[-260px] md:top-[-240px] md:right-[-260px] xl:top-[-340px] xl:right-[-340px] z-0 mobile-320">
                 <Image
-                  src="/Costumes/Emily Suit/2.avif"
+                  src="/10.jpg"
                   alt="Showcase of Atelier design – Right"
                   width={300} // Adjusted width
                   height={300} // Adjusted height
                   priority
-                  quality={80}
                   sizes="(max-width: 768px) 90vw, (max-width: 1200px) 45vw, 300px"
                   className="w-32 h-32 sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] xl:w-[500px] xl:h-[500px] object-cover shadow-2xl shadow-gray-800 dark:shadow-gray-400 transition-transform duration-300 ease-in-out focus:scale-110 hover:scale-110 group-hover:scale-110"
                 />
@@ -49,7 +47,7 @@ export default function Hero() {
         <div className="grid grid-cols-2 gap-4 sm:mt-4 mobile-320">
           <div className="relative flex justify-center items-center">
             <Image
-              src="/Costumes/Emily Suit/2.avif"
+              src="/5.jpg"
               alt="Showcase collection – Bottom left image"
               width={300} // Adjusted width
               height={450} // Adjusted height
