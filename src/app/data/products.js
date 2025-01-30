@@ -861,6 +861,150 @@
       }
     },
     
+    { id: 28,
+      price: 1820,
+      isTop: false, // Топ продукт
+      sku: "12345",
+      color: "red",
+      size: "XS S M L XL",
+      category: "Pants",
+      image: "/Pants/Banana Pants/1.avif",
+      images: ["/Pants/Banana Pants/2.avif", "/Pants/Banana Pants/3.avif", "/Pants/Banana Pants/4.avif", "/Pants/Banana Pants/5.avif",
+        "/Pants/Banana Pants/6.avif", "/Pants/Banana Pants/7.avif", "/Pants/Banana Pants/8.avif", "/Pants/Banana Pants/9.avif", "/Pants/Banana Pants/10.avif",
+        "/Pants/Banana Pants/11.avif", "/Pants/Banana Pants/12.avif", "/Pants/Banana Pants/13.avif", "/Pants/Banana Pants/14.avif", "/Pants/Banana Pants/15.avif",
+      ],
+      colors: ["Black", "Beige", "Caramel"], 
+      sizes: ["XS", "S", "M", "L", "XL" ],
+      translations: {
+        EN: {
+          name: "Banana Pants",
+          description: "High-waisted banana-style pants with two pockets.Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)"
+        },
+        FR: {
+          name: "Pantalons en Cuir Banane",
+          description: "Pantalons taille haute style banane avec deux poches.Tissu : Cuir éco-responsable de haute qualité avec une base en suède. (Extensible, ne se fissure pas.)"
+        },
+        UA: {
+          name: "Шкіряні брюки банани",
+          description: "Описание: Брюки фасону бананів на високій посадці із двома кишенями Тканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається )"
+        },
+        RU: {
+          name: "Брюки бананы",
+          description: "( Брюки фасона бананов на высокой посадке с двумя карманамиТкань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)"
+        }
+      }
+    },
+    
+    { id: 29,
+      price:  1820,
+      isTop: false, // Топ продукт
+      sku: "12345",
+      color: "red",
+      size: "XS S M L XL",
+      category: "Pants",
+      image: "/Pants/Leather Flared Pants/1.avif",
+      images: ["//Pants/Leather Flared Pants/2.avif", "/Pants/Leather Flared Pants/3.avif", "/Pants/Leather Flared Pants/4.avif", "/Pants/Leather Flared Pants/5.avif", "/Pants/Leather Flared Pants/6.avif", 
+        "/Pants/Leather Flared Pants/7.avif", "/Pants/Leather Flared Pants/8.avif", "/Pants/Leather Flared Pants/9.avif",],
+      colors: ["Black", "Powder"], 
+      sizes: ["XS", "S", "M", "L", "XL" ],
+      translations: {
+        EN: {
+          name: "Leather Flared Pants",
+          description: "High-waisted flared pants with pleats running along the entire length.Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)"
+        },
+        FR: {
+          name: "Pantalons en Cuir Pattes d’Éph",
+          description: "Pantalons taille haute évasés avec des plis sur toute la longueur.Tissu : Cuir éco-responsable de haute qualité avec une base en suède. (Extensible, ne se fissure pas.)"
+        },
+        UA: {
+          name: "Шкіряні брюки кльош ",
+          description: "Брюки фасону кльош на високій посадці із стрілками по всій довжиніТканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається )"
+        },
+        RU: {
+          name: "Брюки кльош",
+          description: "Брюки фасона клеш на высокой посадке со стрелками по всей длине Ткань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)"
+        }
+      }
+    },
+    
+    { 
+      id: 30,
+      price: 1820,
+      isTop: false, // Топ продукт
+      sku: "12346",
+      color: "beige, caramel, black",
+      size: "XS S M L XL",
+      category: "Pants",
+      image: "/Pants/Leather Pants1/1.avif",
+      images: [
+        "/Pants/Leather Pants1/2.avif", 
+        "/Pants/Leather Pants1/3.avif", 
+        "/Pants/Leather Pants1/4.avif", 
+        "/Pants/Leather Pants1/5.avif",
+        "/Pants/Leather Pants1/6.avif",
+        "/Pants/Leather Pants1/7.avif",
+        "/Pants/Leather Pants1/8.avif",
+        "/Pants/Leather Pants1/9.avif",
+        "/Pants/Leather Pants1/10.avif",
+        "/Pants/Leather Pants1/11.avif",
+        "/Pants/Leather Pants1/12.avif",
+        "/Pants/Leather Pants1/13.avif",
+        "/Pants/Leather Pants1/14.avif",
+        
+      ],
+      colors: ["beige", "caramel", "black"], 
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          name: "Leather Tube Pants",
+          description: "Slim-fit pants with a high waist and zippers at the ankles. Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)"
+        },
+        FR: {
+          name: "Pantalon en cuir tube",
+          description: "Pantalon ajusté à taille haute avec fermetures éclair aux chevilles. Tissu : cuir écologique de haute qualité sur une base en daim (stretch, ne se fissure pas)."
+        },
+        UA: {
+          name: "Шкіряні брюки труби",
+          description: "Брюки завуженого фасону на високій посадці та замочками на ніжці. Тканина: якісна екошкіра на замшевій основі. (стречева, не тріскається)"
+        },
+        RU: {
+          name: "Кожаные брюки трубы",
+          description: "Брюки зауженного фасона на высокой посадке и замочками на ножке. Ткань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)"
+        }
+      }
+    },
+    
+    
+    { id: 31,
+      price: 1820,
+      isTop: false, // Топ продукт
+      sku: "12345",
+      color: "red",
+      size: "XS S M L XL",
+      category: "Pants",
+      image: "/Pants/Leather Pants/1.avif",
+      images: ["/Pants/Leather Pants/2.avif", "/Pants/Leather Pants/3.avif", "/Pants/Leather Pants/4.avif", "/Pants/Leather Pants/5.avif",],
+      colors: ["gray"], 
+      sizes: ["XS", "S", "M", "L", "XL" ],
+      translations: {
+        EN: {
+          name: "Leather Pants",
+          description: "Straight-cut pants with a high waist and two pockets.Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)"
+        },
+        FR: {
+          name: "Pantalon en cuir",
+          description: "Pantalon coupe droite à taille haute avec deux poches. Tissu : cuir écologique de haute qualité sur une base en daim (stretch, ne se fissure pas)."
+        },
+        UA: {
+          name: "Шкіряні брюки",
+          description: "Брюки прямого фасону на високій посадці із двома кишенямиТканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається )"
+        },
+        RU: {
+          name: "Кожаные брюки",
+          description: "Брюки прямого фасона на высокой посадке с двумя карманами Ткань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)"
+        }
+      }
+    },
   ];
   export default products;
   
