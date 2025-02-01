@@ -26,7 +26,7 @@ export default function FollowUs() {
 
   const { displayedImages, handleNext, handlePrev } = useImageFollow(
     images.length,
-    5
+    10
   );
   useKeyboardNavigation(handlePrev, handleNext);
 
