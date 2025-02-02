@@ -61,11 +61,11 @@ export default function FollowUs() {
               <Image
                 src={images[imageIndex].src}
                 alt={`Зображення ${imageIndex + 1}`}
-                width={200} // Ширина для мобільних пристроїв
-                height={250} // Пропорційна висота
-                sizes="(max-width: 768px) 45vw, (max-width: 1024px) 20vw, 300px" // Аналогічно TopProducts
+                width={200} 
+                height={250} 
+                sizes="(max-width: 768px) 45vw, (max-width: 1024px) 20vw, 300px" 
                 style={{ width: "auto", height: "auto" }}
-                quality={100} // Висока якість
+                quality={100} 
                 className="rounded-lg object-cover shadow-lg transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:opacity-90
                   w-[calc(39vw-16px)]
                   sm:w-[150px] sm:h-[150px]
