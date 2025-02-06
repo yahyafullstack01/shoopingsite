@@ -21,13 +21,14 @@ export default function FilterSidebar({
     "Dress",
     "Shirts",
     "Skirts",
+    "Sweaters",
     "T-shirt",
     "Jeans",
     "Jacket",
     "Tops",
     "Outerwear",
   ];
-
+  
   const handlePriceChange = (e) => {
     setMaxPrice(parseFloat(e.target.value));
   };

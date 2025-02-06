@@ -1005,6 +1005,432 @@
         }
       }
     },
+
+    {
+      id: 32,
+      price: 1650,
+      isTop: false,
+      sku: "67890",
+      color: "black",
+      size: "XS S M L XL",
+      category: "Skirts",
+      image: "/Skirts/Leather Pencil Skirt/1.avif",
+      images: [
+        "/Skirts/Leather Pencil Skirt/2.avif",
+        "/Skirts/Leather Pencil Skirt/3.avif",
+        "/Skirts/Leather Pencil Skirt/4.avif",
+        "/Skirts/Leather Pencil Skirt/5.avif"
+      ],
+      colors: ["beige", "caramel", "black", "white", "mocha", "olive"],
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          name: "Leather Pencil Skirt",
+          description: "Mid-length pencil skirt with a high waist and a slit on the legs. Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)"
+        },
+        FR: {
+          name: "Jupe crayon en cuir",
+          description: "Jupe crayon mi-longueur à taille haute avec une fente sur les jambes. Tissu : cuir écologique de haute qualité sur une base en daim (stretch, ne se fissure pas)."
+        },
+        UA: {
+          name: "Шкіряна спідниця-олівець",
+          description: "Спідниця міді довжини фасону олівець на високій посадці із розрізом на ніжках. Тканина: якісна екошкіра на замшевій основі. (стречева, не тріскається)"
+        },
+        RU: {
+          name: "Кожаная юбка-карандаш",
+          description: "Юбка миди длины фасона карандаш на высокой посадке с разрезом на ножках. Ткань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)"
+        }
+      }
+    },
+
+    {
+      id: 33,
+      price: 1650,
+      isTop: false,
+      sku: "12347",
+      color: "olive",
+      size: "XS S M L XL",
+      category: "Skirts",
+      image: "/Skirts/Leather Skirt Knot/1.avif",
+      images: [
+        "/Skirts/Leather Skirt Knot/2.avif", 
+        "/Skirts/Leather Skirt Knot/3.avif", 
+        "/Skirts/Leather Skirt Knot/4.avif", 
+        "/Skirts/Leather Skirt Knot/5.avif"
+      ],
+      colors: ["olive"],
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          name: "Leather Skirt with Knot",
+          description: "Midi-length pencil skirt with a high waist, a slit on the leg, and a decorative knot. Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)"
+        },
+        FR: {
+          name: "Jupe en cuir avec nœud",
+          description: "Jupe crayon longueur midi avec une taille haute, une fente sur la jambe et un nœud décoratif. Tissu : cuir écologique de haute qualité sur une base en daim. (Stretch, ne se fissure pas.)"
+        },
+        UA: {
+          name: "Шкіряна спідниця з вузлом",
+          description: "Спідниця міді довжини фасону олівець на високій посадці із розрізом на ніжці та декоративним вузлом. Тканина: якісна екошкіра на замшевій основі. (стречева, не тріскається)"
+        },
+        RU: {
+          name: "Кожаная юбка с узлом",
+          description: "Юбка миди длины фасона карандаш на высокой посадке с разрезом на ножке и декоративным узлом. Ткань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)"
+        }
+      }
+    },
+
+    {
+      id: 34,
+      price: 5360,
+      isTop: false,
+      sku: "12348",
+      color: "burgundy",
+      size: "XS S M L XL",
+      category: "Suits",
+      image: "/Suits/Wool Suit Burgundy/1.avif",
+      images: [
+        "/Suits/Wool Suit Burgundy/2.avif", 
+        "/Suits/Wool Suit Burgundy/3.avif", 
+        "/Suits/Wool Suit Burgundy/4.avif", 
+        "/Suits/Wool Suit Burgundy/5.avif"
+      ],
+      colors: ["burgundy"],
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          name: "Wool Suit Burgundy",
+          description: "Wrap jacket with a neckline + palazzo pants. Composition: 75% natural wool, soft, does not itch against the skin."
+        },
+        FR: {
+          name: "Costume en laine bordeaux",
+          description: "Veste portefeuille avec encolure + pantalon palazzo. Composition : 75% laine naturelle, douce, ne gratte pas la peau."
+        },
+        UA: {
+          name: "Вовняний костюм бургунді",
+          description: "Жакет на запах із вирізом + брюки палаццо. Склад: натуральна вовна 75%, мʼяка, не колеться до тіла."
+        },
+        RU: {
+          name: "Шерстяной костюм бургунди",
+          description: "Жакет на запах с вырезом + брюки палаццо. Состав: натуральная шерсть 75%, мягкая, не колется телу."
+        }
+      }
+    },
+
+    {
+      id: 35,
+      price: 1800,
+      isTop: false,
+      sku: "12349",
+      color: "mocha",
+      size: "XS S M L XL",
+      category: "Sweaters",
+      image: "/Sweaters/Mohair Sweater/1.avif",
+      images: [
+        "/Sweaters/Mohair Sweater/2.avif", 
+        "/Sweaters/Mohair Sweater/3.avif", 
+        "/Sweaters/Mohair Sweater/4.avif", 
+        "/Sweaters/Mohair Sweater/5.avif"
+      ],
+      colors: ["mocha"],
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          name: "Mohair Sweater",
+          description: "Loose-fit sweater with a wide neckline, can be worn off one shoulder. Composition: 100% mohair."
+        },
+        FR: {
+          name: "Pull en mohair",
+          description: "Pull ample avec une large encolure, peut être porté sur une épaule. Composition : 100% mohair."
+        },
+        UA: {
+          name: "Светр із мохеру",
+          description: "Светр вільного крою з широкой горловиною, можна спустити на одне плече. Склад: 100% мохер."
+        },
+        RU: {
+          name: "Свитер из мохера",
+          description: "Свитер свободного кроя с широкой горловиной, можно спустить на одно плечо. Состав: 100% мохер."
+        }
+      }
+    },
+
+    {
+      id: 36,
+      price: 1375,
+      isTop: false,
+      sku: "12350",
+      color: "beige",
+      size: "XS S M L XL",
+      category: "Sweaters",
+      image: "/Sweaters/Flare Sweater/1.avif",
+      images: [
+        "/Sweaters/Flare Sweater/2.avif", 
+        "/Sweaters/Flare Sweater/3.avif", 
+        "/Sweaters/Flare Sweater/4.avif", 
+        "/Sweaters/Flare Sweater/5.avif"
+      ],
+      colors: ["beige", "black", "white"],
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          name: "Flare Sweater",
+          description: "Cropped sweater with a turtleneck and flared sleeves. Fabric: Knit (60% wool, 20% acrylic, 10% viscose, 10% elastane)."
+        },
+        FR: {
+          name: "Pull évasé",
+          description: "Pull court avec col roulé et manches évasées. Tissu : maille (60% laine, 20% acrylique, 10% viscose, 10% élasthanne)."
+        },
+        UA: {
+          name: "Светр кльош",
+          description: "Вкорочений светр із горлом та кльош рукавами. Тканина: трикотаж (60% вовна, 20% акрил, 10% віскоза, 10% еластан)."
+        },
+        RU: {
+          name: "Свитер клеш",
+          description: "Укороченный свитер с горлом и клеш рукавами. Ткань: трикотаж (60% шерсть, 20% акрил, 10% вискоза, 10% эластан)."
+        }
+      }
+    },
+
+    {
+      id: 37,
+      price: 1375,
+      isTop: false,
+      sku: "12351",
+      color: "black",
+      size: "XS S M L XL",
+      category: "Sweaters",
+      image: "/Sweaters/Drawstring Sweater/1.avif",
+      images: [
+        "/Sweaters/Drawstring Sweater/2.avif", 
+        "/Sweaters/Drawstring Sweater/3.avif", 
+        "/Sweaters/Drawstring Sweater/4.avif", 
+        "/Sweaters/Drawstring Sweater/5.avif"
+      ],
+      colors: ["black", "white"],
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          name: "Drawstring Sweater",
+          description: "Wool sweater with a drawstring that adjusts the length. Fabric: Knit (60% wool, 20% acrylic, 10% viscose, 10% elastane)."
+        },
+        FR: {
+          name: "Pull avec cordon",
+          description: "Pull en laine avec un cordon ajustant la longueur. Tissu : maille (60% laine, 20% acrylique, 10% viscose, 10% élasthanne)."
+        },
+        UA: {
+          name: "Светр зі шнурком",
+          description: "Вовняний светр із шнурком, який регулює довжину. Тканина: трикотаж (60% вовна, 20% акрил, 10% віскоза, 10% еластан)."
+        },
+        RU: {
+          name: "Свитер со шнурком",
+          description: "Шерстяной свитер со шнурком, регулирующий длину. Ткань: трикотаж (60% шерсть, 20% акрил, 10% вискоза, 10% эластан)."
+        }
+      }
+    },
+
+    {
+      id: 38,
+      price: 1375,
+      isTop: false,
+      sku: "12352",
+      color: "black",
+      size: "XS S M L XL",
+      category: "Sweaters",
+      image: "/Sweaters/Sweater Vest/1.avif",
+      images: [
+        "/Sweaters/Sweater Vest/2.avif", 
+        "/Sweaters/Sweater Vest/3.avif", 
+        "/Sweaters/Sweater Vest/4.avif", 
+        "/Sweaters/Sweater Vest/5.avif"
+      ],
+      colors: ["black"],
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          name: "Sweater Vest",
+          description: "Oversized sweater with cropped sleeves. Fabric: Knit (60% wool, 20% acrylic, 10% viscose, 10% elastane)."
+        },
+        FR: {
+          name: "Pull sans manches",
+          description: "Pull oversize avec manches courtes. Tissu : maille (60% laine, 20% acrylique, 10% viscose, 10% élasthanne)."
+        },
+        UA: {
+          name: "Светр-жилет",
+          description: "Oversize светр із вкороченим рукавом. Тканина: трикотаж (60% вовна, 20% акрил, 10% віскоза, 10% еластан)."
+        },
+        RU: {
+          name: "Свитер-жилет",
+          description: "Oversize свитер с укороченным рукавом. Ткань: трикотаж (60% шерсть, 20% акрил, 10% вискоза, 10% эластан)."
+        }
+      }
+    },
+
+    {
+      id: 39,
+      price: 2250,
+      isTop: false,
+      sku: "12353",
+      color: "caramel",
+      size: "XS S M L XL",
+      category: "Skirts",
+      image: "/Skirts/A-line Leather Skirt/1.avif",
+      images: [
+        "/Skirts/A-line Leather Skirt/2.avif", 
+        "/Skirts/A-line Leather Skirt/3.avif", 
+        "/Skirts/A-line Leather Skirt/4.avif", 
+        "/Skirts/A-line Leather Skirt/5.avif"
+      ],
+      colors: ["caramel"],
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          name: "A-line Leather Skirt",
+          description: "Maxi-length A-line skirt with a high waist and a belt. Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)"
+        },
+        FR: {
+          name: "Jupe en cuir A-line",
+          description: "Jupe longue A-line à taille haute avec ceinture. Tissu : cuir écologique de haute qualité sur une base en daim (stretch, ne se fissure pas)."
+        },
+        UA: {
+          name: "Шкіряна спідниця А-силуету",
+          description: "Спідниця максі довжини А-силуету на високій посадці із поясом. Тканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається )"
+        },
+        RU: {
+          name: "Кожаная юбка А-силуэта",
+          description: "Юбка макси длины А-силуэта на высокой посадке с поясом. Ткань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)"
+        }
+      }
+    },
+
+    {
+      id: 40,
+      price: 1250,
+      isTop: false,
+      sku: "54321",
+      color: "beige",
+      size: "XS S M L XL",
+      category: "Sweaters",
+      image: "/Sweaters/Ribbed Golf/1.avif",
+      images: [
+        "/Sweaters/Ribbed Golf/2.avif",
+        "/Sweaters/Ribbed Golf/3.avif",
+        "/Sweaters/Ribbed Golf/4.avif",
+        "/Sweaters/Ribbed Golf/5.avif",
+        "/Sweaters/Ribbed Golf/6.avif",
+        "/Sweaters/Ribbed Golf/7.avif",
+        "/Sweaters/Ribbed Golf/8.avif",
+        "/Sweaters/Ribbed Golf/9.avif",
+        "/Sweaters/Ribbed Golf/10.avif",
+      ],
+      colors: ["beige", "olive"],
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          name: "Ribbed Golf",
+          description: "Basic ribbed golf for everyday wear and any outfit. Fabric: ribbed knit."
+        },
+        FR: {
+          name: "Golf côtelé",
+          description: "Golf côtelé basique pour un usage quotidien et pour n'importe quelle tenue. Tissu : tricot côtelé."
+        },
+        UA: {
+          name: "Гольф у рубчик",
+          description: "Базовий гольф у рубчик на кожен день і під будь-який аутфіт. Тканина: трикотаж у рубчик."
+        },
+        RU: {
+          name: "Гольф в рубчик",
+          description: "Базовый гольф в рубчик на каждый день и под любой аутфит. Ткань: трикотаж в рубчик."
+        }
+      }
+    },
+    
+    {
+      id: 41,
+      price: 1500,
+      isTop: false,
+      sku: "65432",
+      color: "молоко",
+      size: "XS S M L XL",
+      category: "Sweaters",
+      image: "/Sweaters/Draped Golf/1.avif",
+      images: [
+        "/Sweaters/Draped Golf/2.avif",
+        "/Sweaters/Draped Golf/3.avif",
+        "/Sweaters/Draped Golf/4.avif",
+        "/Sweaters/Draped Golf/5.avif",
+        "/Sweaters/Draped Golf/6.avif",
+        "/Sweaters/Draped Golf/7.avif",
+        "/Sweaters/Draped Golf/8.avif",
+        "/Sweaters/Draped Golf/9.avif",
+      ],
+      colors: ["молоко", "сірий"],
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          name: "Draped Golf",
+          description: "Soft draped golf with sleeve slits. Fabric: 50% cashmere, 28% polyester, 28% nylon."
+        },
+        FR: {
+          name: "Golf drapé",
+          description: "Golf drapé doux avec fentes sur les manches. Tissu : 50% cachemire, 28% polyester, 28% nylon."
+        },
+        UA: {
+          name: "Гольф у драпіровку",
+          description: "Мʼякий гольф у драпіровку із розрізами на рукавчиках. Тканина: 50% кашемір, 28% поліестер, 28% нейлон."
+        },
+        RU: {
+          name: "Гольф в драпировку",
+          description: "Мягкий гольф в драпировку с разрезами на рукавах. Ткань: 50% кашемир, 28% полиэстер, 28% нейлон."
+        }
+      }
+    },
+    
+    {
+      id: 42,
+      price: 1500,
+      isTop: false,
+      sku: "76543",
+      color: "чорний",
+      size: "XS S M L XL",
+      category: "Sweaters",
+      image: "/Sweaters/V-Neck Golf/1.avif",
+      images: [
+        "/Sweaters/V-Neck Golf/2.avif",
+        "/Sweaters/V-Neck Golf/3.avif",
+        "/Sweaters/V-Neck Golf/4.avif",
+        "/Sweaters/V-Neck Golf/5.avif",
+        "/Sweaters/V-Neck Golf/6.avif",
+        "/Sweaters/V-Neck Golf/7.avif",
+      ],
+      colors: ["чорний", "сірий"],
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          name: "V-Neck Golf",
+          description: "Soft V-neck golf with sleeve slits. Fabric: 50% cashmere, 28% polyester, 28% nylon."
+        },
+        FR: {
+          name: "Golf à col en V",
+          description: "Golf doux à col en V avec fentes sur les manches. Tissu : 50% cachemire, 28% polyester, 28% nylon."
+        },
+        UA: {
+          name: "Гольф із V-горлом",
+          description: "Мʼякий гольф із V-горлом і розрізами на рукавах. Тканина: 50% кашемір, 28% поліестер, 28% нейлон."
+        },
+        RU: {
+          name: "Гольф с V-горлом",
+          description: "Мягкий гольф с V-горлом и разрезами на рукавах. Ткань: 50% кашемир, 28% полиэстер, 28% нейлон."
+        }
+      }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
   ];
   export default products;
   
