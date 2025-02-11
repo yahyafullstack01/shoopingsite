@@ -1005,7 +1005,7 @@
         }
       }
     },
-
+    
     {
       id: 32,
       price: 1650,
@@ -1019,7 +1019,25 @@
         "/Skirts/Leather Pencil Skirt/2.avif",
         "/Skirts/Leather Pencil Skirt/3.avif",
         "/Skirts/Leather Pencil Skirt/4.avif",
-        "/Skirts/Leather Pencil Skirt/5.avif"
+        "/Skirts/Leather Pencil Skirt/5.avif",
+        "/Skirts/Leather Pencil Skirt/6.avif",
+        "/Skirts/Leather Pencil Skirt/7.avif",
+        "/Skirts/Leather Pencil Skirt/8.avif",
+        "/Skirts/Leather Pencil Skirt/9.avif",
+        "/Skirts/Leather Pencil Skirt/10.avif",
+        "/Skirts/Leather Pencil Skirt/11.avif",
+        "/Skirts/Leather Pencil Skirt/12.avif",
+        "/Skirts/Leather Pencil Skirt/13.avif",
+        "/Skirts/Leather Pencil Skirt/14.avif",
+        "/Skirts/Leather Pencil Skirt/15.avif",
+        "/Skirts/Leather Pencil Skirt/16.avif",
+        "/Skirts/Leather Pencil Skirt/17.avif",
+        "/Skirts/Leather Pencil Skirt/18.avif",
+        "/Skirts/Leather Pencil Skirt/19.avif",
+        "/Skirts/Leather Pencil Skirt/20.avif",
+        "/Skirts/Leather Pencil Skirt/21.avif",
+        "/Skirts/Leather Pencil Skirt/22.avif",
+        "/Skirts/Leather Pencil Skirt/23.avif",
       ],
       colors: ["beige", "caramel", "black", "white", "mocha", "olive"],
       sizes: ["XS", "S", "M", "L", "XL"],
