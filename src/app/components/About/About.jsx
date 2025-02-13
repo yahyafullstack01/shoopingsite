@@ -6,62 +6,40 @@ export default function About() {
   const menuItems = translateList("home", "about");
 
   return (
-    <section className="bg-[#e6d1c1] dark:bg-[#2e1f14] section-container py-8 sm:py-12 relative" id="about">
-      <h1 className="pl-24 text-2xl sm:text-5xl text-[#4A3222] dark:text-[#f5e8d6] font-bold mb-6 sm:mb-10 text-left">
-        {menuItems[0]}
-      </h1>
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 items-center relative">
-        <div className="space-y-4">
-          {/* Головне зображення */}
-          <figure className="relative mb-6 sm:mb-8 group px-8 lg:px-8 xl:ml-16 mt-4">
+    <section className="bg-white dark:bg-gray-900 py-12 px-6 sm:px-12" id="about">
+      <div className="max-w-7xl mx-auto border border-gray-300 p-6 sm:p-12 relative">
+        {/* Чорна рамка */}
+        <div className="absolute inset-0 border-4 border-black"></div>
+        
+        <div className="relative grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+          {/* Зображення */}
+          <div className="flex justify-center relative">
             <Image
-              src="/2.jpg"
-              alt="Main Image"
-              width={350} // Максимальна ширина для великих екранів
-              height={500} // Висота з урахуванням пропорцій
-              sizes="(max-width: 768px) 80vw, (max-width: 1200px) 50vw, 350px" // Оптимальні розміри
-              className="rounded-lg object-cover shadow-2xl shadow-gray-800 dark:shadow-gray-400 transition-transform duration-300 ease-in-out group-hover:scale-105 w-full max-w-[200px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[350px]"
-              priority
+              src="/hoom/about2.JPEG"
+              alt="About Image"
+              width={500}
+              height={600}
+              className="rounded-lg shadow-lg object-cover"
             />
-          </figure>
-          {/* Додаткове зображення */}
-          <figure className="relative mt-4 flex justify-center lg:justify-end group">
-            <Image
-              src="/3.jpg"
-              alt="Secondary Image"
-              width={200} // Максимальна ширина для великих екранів
-              height={300} // Висота з урахуванням пропорцій
-              sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 200px" // Оптимальні розміри
-              className="rounded-lg object-cover shadow-2xl shadow-gray-800 dark:shadow-gray-400 transition-transform duration-300 ease-in-out group-hover:scale-105 w-full max-w-[100px] sm:max-w-[180px] md:max-w-[200px]"
-            />
-          </figure>
+            {/* Текстовий блок, що виходить на край фото */}
+            <div className="absolute bottom-0 left-64 w-[150%]  bg-white p-6  shadow-lg">
+              <p className="text-gray-800 dark:text-gray-300 text-base lg:text-2xl font-medium">
+                Ми - втілення базових моделей та авторського, дизайнерського підходу до всіх виробів.
+              </p>
+              <p className="text-gray-800 dark:text-gray-300 text-base lg:text-2xl font-medium mt-2">
+                Наш одяг - це поєднання класики та комфорту, жіночності та гармонії. Завдяки власному виробництву ми гарантуємо високу якість кожного виробу.
+              </p>
+            </div>
+          </div>
+
+          {/* Текстовий блок справа */}
+          <div className="text-left p-6 bg-white mb-48 w-full">
+            <h2 className="text-2xl sm:text-4xl font-bold text-gray-800 dark:text-white mb-4">ПРО НАС:</h2>
+            <p className="text-gray-600 dark:text-gray-300 text-lg lg:text-2xl font-medium">
+              LATORE - український бренд жіночого одягу з власним виробництвом, з досвідом понад 10 років, з двома шоурумами в Івано-Франківську та Харкові.
+            </p>
+          </div>
         </div>
-
-        {/* Текст */}
-        <article className="text-center md:text-left -mt-16 sm:-mt-24 flex-col items-center md:items-start hidden lg:flex">
-          <h2 className="text-lg sm:text-xl md:text-2xl xl:text-4xl font-extrabold mb-4">{menuItems[1]}</h2>
-          <p className="text-base sm:text-lg md:text-2xl text-[#4A3222] dark:text-[#f5e8d6] leading-relaxed mb-6">{menuItems[2]}</p>
-          <p className="text-base sm:text-lg md:text-2xl text-[#4A3222] dark:text-[#f5e8d6] leading-relaxed mb-6">{menuItems[3]}</p>
-          <p className="text-base sm:text-lg md:text-2xl text-[#4A3222] dark:text-[#f5e8d6] leading-relaxed mb-6">{menuItems[4]}</p>
-          <p className="text-base sm:text-lg md:text-2xl text-[#4A3222] dark:text-[#f5e8d6] leading-relaxed mb-6">{menuItems[5]}</p>
-             {/*
-          <button className="bg-[#4A3222] text-white py-2 px-4 sm:px-6 rounded-full hover:bg-[#6E4C2E] dark:bg-[#f5e8d6] dark:text-[#4A3222] dark:hover:bg-[#d1b79e] transition-all duration-300 ease-in-out">
-            {menuItems[2]}
-          </button>
-          */}
-        </article>
-      </div>
-
-      {/* Текстова секція для мобільних */}
-      <div className="absolute inset-x-0 top-1/2 transform -translate-y-1/2 bg-[#00000080] flex flex-col items-center justify-center p-4 sm:p-8 md:flex lg:hidden w-full max-w-none">
-        <p className="text-white text-lg sm:text-2xl px-4 text-center mb-4">
-          {menuItems[2]}
-        </p>
-            {/*
-        <button className="bg-[#4A3222] text-white py-2 px-4 rounded-full hover:bg-[#6E4C2E] dark:bg-[#f5e8d6] dark:text-[#4A3222] dark:hover:bg-[#d1b79e] transition-all duration-300 ease-in-out">
-          {menuItems[2]}
-        </button>
-        */} 
       </div>
     </section>
   );

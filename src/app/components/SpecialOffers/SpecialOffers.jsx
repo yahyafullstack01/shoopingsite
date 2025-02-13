@@ -15,7 +15,7 @@ export default function SpecialOffers() {
 
   return (
     <section
-      className="dark:bg-[#2e1f14] bg-[#f5e7da] section-container"
+      className="bg-gray-100 dark:bg-gray-800  section-container"
       aria-labelledby="special-offers-heading"
     >
       <div className="space-y-4">
@@ -26,7 +26,7 @@ export default function SpecialOffers() {
             style={{ minHeight: "300px" }} 
           >
             <Image
-              src="/8.jpg"
+              src="/hoom/offer.JPG"
               alt="Special Offers Image"
               fill
               style={{ objectFit: "cover" }}
@@ -40,7 +40,7 @@ export default function SpecialOffers() {
             className={`
               absolute bottom-[5%] sm:bottom-[10%] md:bottom-[15%] lg:bottom-[10%] xl:bottom-[15%]
               left-1/2 lg:left-[20%] transform -translate-x-1/2 
-              dark:bg-[rgba(58,42,32,0.8)] bg-white/45
+              dark:bg-gray-700 bg-white/75
               p-4 sm:p-6 md:p-10 lg:p-16 xl:p-20 rounded-lg shadow-lg 
               w-full max-w-none sm:w-[75%] md:w-[75%] lg:w-[75%] xl:w-[90%] text-center md:text-left
               transition-all duration-500
