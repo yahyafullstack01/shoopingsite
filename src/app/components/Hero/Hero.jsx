@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import { useLanguage } from "../../Functions/useLanguage";
 import Head from "next/head";
@@ -9,140 +10,51 @@ const Hero = () => {
   return (
     <>
       <Head>
-      <meta
-          name="description"
-          content="Discover Latore Atelier's exclusive signature collections and elegant designs tailored for every occasion."
-        />
-        <meta
-          name="keywords"
-          content="Latore Atelier, exclusive fashion, signature collections, elegant design"
-        />
-        <meta property="og:title" content="Latore Atelier – Signature Fashion" />
-        <meta
-          property="og:description"
-          content="Explore exclusive signature collections and elegant designs by Latore Atelier."
-        />
-        <meta property="og:image" content="/Dress/Dress Grace/1.avif" />
+        <meta name="description" content="Latore - Український бренд жіночого одягу" />
+        <meta name="keywords" content="Latore, жіночий одяг, українська мода, стильний одяг" />
+        <meta property="og:title" content="Latore - Український бренд жіночого одягу" />
+        <meta property="og:description" content="Ласкаво просимо на наш сайт! Досліджуйте останні тренди моди." />
+        <meta property="og:image" content="/hoom/hero2.JPG" />
         <meta property="og:url" content="https://example.com" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <link rel="preload" as="image" href="/Dress/Dress Grace/1.avif" type="image/avif" />
-        <link rel="preload" as="image" href="/Dress/Dress Grace/2.avif" type="image/avif" />
-        <link rel="preload" as="image" href="/Dress/Dress Grace/4.avif" type="image/avif" />
       </Head>
 
       <section
-        className="relative flex flex-col justify-center items-center section-container"
+        className="flex flex-row justify-center items-center gap-2 sm:gap-16 section-container overflow-hidden"
         aria-labelledby="hero-heading"
         role="banner"
       >
-        <h1 id="hero-heading" className="sr-only">
-          Explore Latore Atelier – Signature Fashion and Design
-        </h1>
-
-        {/* Мобільна версія */}
-        <div className="flex flex-col items-center gap-4 md:hidden">
-          <div className="relative w-[250px] h-[250px] rounded-full overflow-hidden">
-            <Image
-              src="/Dress/Dress Grace/1.avif"
-              alt="Elegant design by Latore Atelier – Centerpiece"
-              width={250}
-              height={250}
-              sizes="100vw"
-              className="rounded-full object-cover shadow-lg block"
-              priority
-            />
-          </div>
-          <h2 className="text-center text-3xl font-bold text-white bg-black bg-opacity-50 py-2 px-6 rounded-lg mt-[-10px]">
-            LATORE ATELIER
-          </h2>
+        {/* Велике зображення */}
+        <div className="relative w-[50vw] sm:w-[400px] lg:w-[500px] max-w-[600px] h-auto flex-shrink-0 overflow-hidden">
+          <Image
+            src="/hoom/hero2.JPG"
+            alt="Latore Collection"
+            width={600}
+            height={700}
+            className="object-cover shadow-lg w-full h-auto"
+            priority
+          />
         </div>
 
-        {/* Планшетна версія */}
-        <div className="hidden md:flex md:flex-col gap-6 items-center lg:hidden">
-          <div className="relative w-[250px] h-[250px] rounded-full overflow-hidden">
+        {/* Текстовий блок + менше зображення */}
+        <div className="flex flex-col items-center md:items-start gap-2  text-center md:text-left w-[40vw] sm:w-auto">
+          <div className="relative w-[35vw] sm:w-[300px] lg:w-[350px] max-w-[600px] h-auto overflow-hidden">
             <Image
-              src="/Dress/Dress Grace/1.avif"
-              alt="Elegant design by Latore Atelier – Centerpiece"
-              width={250}
-              height={250}
-              className="rounded-full object-cover shadow-lg block"
+              src="/hoom/hero.JPG"
+              alt="Latore Collection Style"
+              width={600}
+              height={500}
+              className="object-cover shadow-lg w-full h-auto"
               priority
             />
           </div>
-          <h2 className="text-center text-3xl font-bold text-white bg-black bg-opacity-50 py-2 px-6 rounded-lg mt-[-10px]">
-            LATORE ATELIER
-          </h2>
-          <div className="flex gap-4 justify-between w-full px-4">
-            <div className="w-[200px] h-[300px]">
-              <Image
-                src="/Dress/Dress Grace/2.avif"
-                alt="Latore Atelier Left Design Showcase"
-                width={200}
-                height={300}
-                className="rounded-lg object-cover shadow-lg block"
-                loading="lazy"
-              />
-            </div>
-            <div className="w-[200px] h-[300px]">
-              <Image
-                src="/Dress/Dress Grace/4.avif"
-                alt="Latore Atelier Signature Collection"
-                width={200}
-                height={300}
-                className="rounded-lg object-cover shadow-lg block"
-                loading="lazy"
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* Десктопна версія */}
-        <div className="hidden lg:flex justify-between items-center gap-4">
-          <div className="relative w-[300px] h-[400px]">
-            <Image
-              src="/Dress/Dress Grace/1.avif"
-              alt="Left showcase of Latore Atelier's exclusive fashion design"
-              width={300}
-              height={400}
-              className="rounded-lg object-cover shadow-2xl shadow-gray-800 dark:shadow-gray-400"
-              priority
-            />
-          </div>
-          <div className="relative w-[300px] h-[300px] rounded-full overflow-hidden">
-            <Image
-              src="/Dress/Dress Grace/2.avif"
-              alt="Center showcase of Latore Atelier's elegant design"
-              width={300}
-              height={300}
-              className="object-cover"
-              priority
-            />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-4xl font-bold text-white bg-black bg-opacity-50">
-              <span className="block self-start ml-8">LATORE</span>
-              <span className="block text-4xl font-bold self-end mr-8 mt-2">ATELIER</span>
-            </div>
-          </div>
-          <div className="relative w-[300px] h-[400px]">
-            <Image
-              src="/Dress/Dress Grace/4.avif"
-              alt="Right showcase of Latore Atelier's signature collection"
-              width={300}
-              height={400}
-              className="rounded-lg object-cover shadow-2xl shadow-gray-800 dark:shadow-gray-400"
-              priority
-            />
-          </div>
-        </div>
-
-        {/* Текстовий блок */}
-        <header className="flex flex-col mt-12 justify-center text-center space-y-2">
-          <p className="text-xl sm:text-2xl md:text-4xl text-gray-700 dark:text-gray-300" style={{ minHeight: "1.5em" }}>
-            {menuItems[0] || "Experience the Difference"}
+          <h2 className="text-xl sm:text-5xl lg:text-7xl font-bold text-gray-700 dark:text-white ml-2 sm:ml-12 sm:mt-8">LATORE</h2>
+          <p className="text-xs sm:text-xl lg:text-3xl text-gray-600 dark:text-white ml-2 sm:ml-16 sm:mt-4">
+            Український бренд 
+            </p>
+          <p className="text-xs sm:text-xl lg:text-3xl text-gray-600 dark:text-white ml-2 sm:ml-24 ">
+          жіночого одягу
           </p>
-          <p className="text-xl sm:text-2xl md:text-4xl text-gray-700 dark:text-gray-300" style={{ minHeight: "1.5em" }}>
-            {menuItems[1] || "Explore Our Signature Collections"}
-          </p>
-        </header>
+        </div>
       </section>
     </>
   );
