@@ -95,7 +95,7 @@ export default function InfoForm({ product, showDiscount = false }) {
           id="color"
           value={selectedColor}
           onChange={(e) => handleColorChange(e.target.value)}
-          className={`w-full md:w-1/2 p-2 border ${colorError ? "border-red-500" : "border-gray-300"} bg-[#f5e7da] rounded dark:bg-gray-800 dark:text-gray-300`}
+          className={`w-full md:w-1/2 p-2 border ${colorError ? "border-red-500" : "border-gray-300"} bg-gray-200 rounded dark:bg-gray-800 dark:text-gray-300`}
         >
           <option value="">Select</option>
           {product.colors?.map((color) => (
@@ -116,7 +116,7 @@ export default function InfoForm({ product, showDiscount = false }) {
           id="size"
           value={selectedSize}
           onChange={(e) => handleSizeChange(e.target.value)}
-          className={`w-full md:w-1/2 p-2 border ${sizeError ? "border-red-500" : "border-gray-300"} bg-[#f5e7da] rounded dark:bg-gray-800 dark:text-gray-300`}
+          className={`w-full md:w-1/2 p-2 border ${sizeError ? "border-red-500" : "border-gray-300"} bg-gray-200 rounded dark:bg-gray-800 dark:text-gray-300`}
         >
           <option value="">Select</option>
           {product.sizes?.map((size) => (
@@ -133,11 +133,11 @@ export default function InfoForm({ product, showDiscount = false }) {
         <label htmlFor="quantity" className="block text-sm font-medium mb-2 text-center md:text-left">
           Quantity
         </label>
-        <div className="flex items-center w-full md:w-1/4 bg-[#f5e7da] dark:bg-gray-700 rounded">
+        <div className="flex items-center w-full md:w-1/4 bg-gray-200 dark:bg-gray-700 rounded">
           <button
             type="button"
             onClick={() => handleQuantityChange(quantity - 1)}
-            className="p-2 bg-[#f5e7da] dark:bg-gray-700 dark:text-white rounded-l dark:hover:bg-gray-600"
+            className="p-2 bg-gray-200 dark:bg-gray-700 dark:text-white rounded-l dark:hover:bg-gray-600"
           >
             -
           </button>
@@ -152,7 +152,7 @@ export default function InfoForm({ product, showDiscount = false }) {
           <button
             type="button"
             onClick={() => handleQuantityChange(quantity + 1)}
-            className="p-2 bg-[#f5e7da] dark:bg-gray-700 dark:text-white rounded-r dark:hover:bg-gray-600"
+            className="p-2 bg-gray-200 dark:bg-gray-700 dark:text-white rounded-r dark:hover:bg-gray-600"
           >
             +
           </button>
@@ -163,7 +163,7 @@ export default function InfoForm({ product, showDiscount = false }) {
       {/* Contact Button */}
       <button
         onClick={handleContactClick}
-        className="w-full md:w-1/2 bg-[#4a3825] hover:bg-[#2e1f14] text-white dark:bg-lime-500 dark:hover:bg-lime-600 dark:text-black font-semibold py-2 rounded transition duration-300"
+        className="w-full md:w-1/2 bg-gray-700 hover:bg-gray-500 text-white dark:bg-lime-500 dark:hover:bg-lime-600 dark:text-black font-semibold py-2 rounded transition duration-300"
       >
         Contact Us
       </button>

@@ -1,6 +1,6 @@
 
 const OpeningHours = () => (
-    <section className="bg-[#fcf8f3] dark:bg-black text-black dark:text-white py-12 px-6">
+    <section className="bg-gray-200 dark:bg-black text-black dark:text-white py-12 px-6">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between">
         <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-8 sm:pb-12 pb-8 sm:ml-0 ml-4 md:mb-0 text-center md:text-left">
           Opening Hours

@@ -5,7 +5,7 @@ import Head from "next/head";
 
 const Hero = () => {
   const { translateList } = useLanguage();
-  const menuItems = translateList("home", "hero");
+  //const menuItems = translateList("home", "hero");
 
   return (
     <>

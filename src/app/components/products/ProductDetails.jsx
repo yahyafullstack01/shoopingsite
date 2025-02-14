@@ -22,7 +22,7 @@ const ProductDetails = ({ productData, formSubmitted }) => {
   if (formSubmitted || !productData) return null;
 
   return (
-    <section className="bg-[#e4d0b8] dark:bg-gray-900 text-gray-950 dark:text-white p-6 sm:p-8 rounded-lg shadow-lg" aria-labelledby="product-details-heading">
+    <section className="bg-gray-100 dark:bg-gray-900 text-gray-950 dark:text-white p-6 sm:p-8 rounded-lg shadow-lg" aria-labelledby="product-details-heading">
       <h2 id="product-details-heading" className="text-2xl sm:text-3xl font-bold mb-6 text-center">
         Product Details
       </h2>

@@ -33,7 +33,7 @@ export default function OffersInfo() {
   };
 
   return (
-    <main className="dark:bg-[#2e1f14] bg-[#fcf8f3] text-black dark:text-white min-h-screen px-4 py-8">
+    <main className="dark:bg-gray-800 bg-[#fcf8f3] text-black dark:text-white min-h-screen px-4 py-8">
       <header className="text-center">
         <h1 className="text-3xl md:text-4xl font-bold mb-4">Special Offers Collection</h1>
         <p className="dark:text-gray-400 text:bg-black text-sm md:text-base mb-8">
@@ -46,7 +46,7 @@ export default function OffersInfo() {
           Special Offers
         </h2>
         <div
-          className="bg-[#f5e7da] dark:bg-[rgba(58,42,32,0.8)] ml-8 max-h-[450px] md:max-h-[600px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 mb-8"
+          className="bg-gray-100 dark:bg-gray-800 ml-8 max-h-[450px] md:max-h-[600px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 mb-8"
           aria-label="Special offers list"
           role="list"
         >
@@ -57,7 +57,7 @@ export default function OffersInfo() {
               return (
                 <article
                   key={product.id}
-                  className="text-black bg-[#fcf8f3] dark:bg-white dark:text-black rounded shadow-lg hover:scale-105 transition-transform cursor-pointer"
+                  className="text-black bg-gray-100 dark:bg-white dark:text-black rounded shadow-lg hover:scale-105 transition-transform cursor-pointer"
                   onClick={() => handleProductClick(product)}
                   aria-labelledby={`product-title-${product.id}`}
                   role="listitem"
@@ -72,7 +72,7 @@ export default function OffersInfo() {
                       priority
                     />
                   </div>
-                  <div className="p-2 sm:p-4 dark:bg-[#f5e8d6]">
+                  <div className="p-2 sm:p-4 dark:bg-gray-200">
                     <h3 id={`product-title-${product.id}`} className="font-semibold text-sm sm:text-lg">
                       {translatedName}
                     </h3>

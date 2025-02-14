@@ -7,12 +7,12 @@ const Conditions = () => {
   const menuItems = translateList("Conditions", "hero");
 
   return (
-    <main className="p-8 md:p-16 bg-[#f5e7da]  dark:bg-neutral-900 dark:text-white rounded-lg shadow-2xl">
+    <main className="p-8 md:p-16 bg-gray-100 dark:bg-neutral-900 dark:text-white rounded-lg shadow-2xl">
       <h1 className="text-2xl md:text-4xl font-bold text-center mb-8 uppercase tracking-wider">
         {menuItems[0]}
       </h1>
 
-      <article className="mb-8 bg-[#fcf8f3] dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+      <article className="mb-8 bg-gray-200 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
         <h2 className="text-xl md:text-2xl font-semibold mb-4 uppercase">
           {menuItems[1]}
         </h2>
@@ -24,7 +24,7 @@ const Conditions = () => {
         </ul>
       </article>
 
-      <article className="mb-8 bg-[#fcf8f3] dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+      <article className="mb-8 bg-gray-200 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
         <h2 className="text-xl md:text-2xl font-semibold mb-4 uppercase">
           {menuItems[5]}
         </h2>
@@ -34,7 +34,7 @@ const Conditions = () => {
         </ul>
       </article>
 
-      <article className="mb-8 bg-[#fcf8f3] dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+      <article className="mb-8 bg-gray-200 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
         <h2 className="text-xl md:text-2xl font-semibold mb-4 uppercase">
           {menuItems[8]}
         </h2>
@@ -47,7 +47,7 @@ const Conditions = () => {
         </p>
       </article>
 
-      <article className="mb-8 bg-[#fcf8f3] dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+      <article className="mb-8 bg-gray-200 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
         <h2 className="text-xl md:text-2xl font-semibold mb-4 uppercase">
           {menuItems[12]}
         </h2>
@@ -67,7 +67,7 @@ const Conditions = () => {
         </ul>
       </article>
 
-      <article className="bg-[#fcf8f3] dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+      <article className="bg-gray-200 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
         <h2 className="text-xl md:text-2xl font-semibold mb-4 uppercase">
           Д{menuItems[21]}
         </h2>

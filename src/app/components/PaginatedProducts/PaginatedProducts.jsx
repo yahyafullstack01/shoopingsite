@@ -39,9 +39,10 @@ const PaginatedProducts = ({ products, productsPerPage = 12, onProductClick }) =
                 onClick={() => handlePageChange(page)}
                 className={`px-4 py-2 rounded border font-semibold transition ${
                   currentPage === page
-                    ? "bg-[#4a3825] text-white border-[#4a3825] dark:bg-blue-500 dark:border-blue-500 dark:text-white" // Активна кнопка
-                    : "bg-[#f5e7da] text-black border-[#d4b59e] hover:bg-[#e6d4c2] dark:bg-[#1e293b] dark:text-[#60a5fa] dark:border-[#334155] dark:hover:bg-[#2563eb]" // Неактивна кнопка
-                }`}
+                  ? "bg-gray-300 text-gray-500 border-gray-300 cursor-not-allowed dark:bg-[#1f2937] dark:text-[#475569] dark:border-[#334155]" // Вимкнена кнопка
+                  : "bg-gray-100 text-black border-gray-300 hover:bg-gray-200 dark:bg-[#1f2937] dark:text-[#60a5fa] dark:border-[#334155] dark:hover:bg-[#2563eb]" // Активна кнопка
+               
+                  }`}
               >
                 {page}
               </button>
@@ -57,9 +58,10 @@ const PaginatedProducts = ({ products, productsPerPage = 12, onProductClick }) =
           disabled={currentPage === 1}
           className={`px-4 py-2 rounded border font-semibold transition ${
             currentPage === 1
-              ? "bg-gray-300 text-gray-500 border-gray-300 cursor-not-allowed dark:bg-[#1e293b] dark:text-[#475569] dark:border-[#334155]" // Вимкнена кнопка
-              : "bg-[#f5e7da] text-black border-[#d4b59e] hover:bg-[#e6d4c2] dark:bg-[#1e293b] dark:text-[#60a5fa] dark:border-[#334155] dark:hover:bg-[#2563eb]" // Активна кнопка
-          }`}
+            ? "bg-gray-300 text-gray-500 border-gray-300 cursor-not-allowed dark:bg-[#1f2937] dark:text-[#475569] dark:border-[#334155]" // Вимкнена кнопка
+            : "bg-gray-100 text-black border-gray-300 hover:bg-gray-200 dark:bg-[#1f2937] dark:text-[#60a5fa] dark:border-[#334155] dark:hover:bg-[#2563eb]" // Активна кнопка
+           
+            }`}
         >
           Prev
         </button>
@@ -69,9 +71,10 @@ const PaginatedProducts = ({ products, productsPerPage = 12, onProductClick }) =
           disabled={currentPage === totalPages}
           className={`px-4 py-2 rounded border font-semibold transition ${
             currentPage === totalPages
-              ? "bg-gray-300 text-gray-500 border-gray-300 cursor-not-allowed dark:bg-[#1e293b] dark:text-[#475569] dark:border-[#334155]" // Вимкнена кнопка
-              : "bg-[#f5e7da] text-black border-[#d4b59e] hover:bg-[#e6d4c2] dark:bg-[#1e293b] dark:text-[#60a5fa] dark:border-[#334155] dark:hover:bg-[#2563eb]" // Активна кнопка
-          }`}
+            ? "bg-gray-300 text-gray-500 border-gray-300 cursor-not-allowed dark:bg-[#1f2937] dark:text-[#475569] dark:border-[#334155]" // Вимкнена кнопка
+            : "bg-gray-100 text-black border-gray-300 hover:bg-gray-200 dark:bg-[#1f2937] dark:text-[#60a5fa] dark:border-[#334155] dark:hover:bg-[#2563eb]" // Активна кнопка
+          
+            }`}
         >
           Next
         </button>

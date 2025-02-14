@@ -29,7 +29,7 @@ const ProductBanner = ({
   return (
     <div
     ref={descriptionRef}
-    className={`relative w-full bg-[#fcf8f3] dark:bg-black  overflow-hidden rounded-lg mb-8 transition-all duration-300 ease-in-out ${
+    className={`relative w-full bg-gray-300 dark:bg-black  overflow-hidden rounded-lg mb-8 transition-all duration-300 ease-in-out ${
       selectedProduct ? "p-4" : "h-72 sm:h-96"
     }`}
   >

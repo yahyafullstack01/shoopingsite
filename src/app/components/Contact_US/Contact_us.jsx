@@ -57,14 +57,14 @@ const ContactUs = () => {
   return (
     <main className="font-sans relative">
       <SuccessMessage />
-      <section className="bg-[#fcf8f3] text-black dark:bg-black dark:text-white text-center py-8 sm:py-10 md:py-16">
+      <section className="bg-gray-100  text-black dark:bg-black dark:text-white text-center py-8 sm:py-10 md:py-16">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 md:mb-8">
           {menuItems[0]}
         </h1>
         <p className="text-sm sm:text-base md:text-lg lg:text-xl max-w-lg sm:max-w-xl md:max-w-2xl mx-auto mb-8 sm:mb-12 md:mb-16">
           {menuItems[1]}  
         </p>
-        <section className="flex flex-col sm:flex-row items-center sm:items-start gap-6 sm:gap-12 md:gap-16 lg:gap-28 bg-[#f5e7da] dark:bg-[#111827] p-4 sm:p-6 md:p-8 rounded-lg shadow-lg">
+        <section className="flex flex-col sm:flex-row items-center sm:items-start gap-6 sm:gap-12 md:gap-16 lg:gap-28 bg-gray-200 dark:bg-[#111827] p-4 sm:p-6 md:p-8 rounded-lg shadow-lg">
           <div className="w-full sm:w-1/2 lg:w-[56%] h-[400px] sm:h-[900px] lg:h-[900px] dark:shadow-[0_0_20px_10px_rgba(59,130,246,0.4)]">
             <Image
               src={productData.image}
@@ -73,7 +73,7 @@ const ContactUs = () => {
               height={600}
               className="w-full h-full object-cover rounded-lg shadow-lg"
               onError={(e) => {
-                e.target.src = "/4.jpg";
+                e.target.src = "/hoom/contact.JPEG";
               }}
             />
           </div>

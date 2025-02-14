@@ -8,7 +8,7 @@ const ProductCard = ({ product, onClick }) => {
 
   return (
     <article
-      className="bg-[#f5e7da] dark:bg-[#0f172a] p-3 sm:p-4 rounded-lg group cursor-pointer shadow-md hover:shadow-lg transition-shadow duration-300"
+      className="bg-gray-100 dark:bg-[#0f172a] p-3 sm:p-4 rounded-lg group cursor-pointer shadow-md hover:shadow-lg transition-shadow duration-300"
       onClick={onClick} 
       onKeyDown={(e) => e.key === "Enter" && onClick()} 
       role="button"

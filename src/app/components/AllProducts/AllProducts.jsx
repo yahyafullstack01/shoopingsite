@@ -53,7 +53,7 @@ export default function AllProducts() {
   };
 
   return (
-    <section className="bg-[#fcf8f3] text-black dark:text-white min-h-screen dark:bg-black">
+    <section className="bg-gray-100 text-black dark:text-white min-h-screen dark:bg-black">
       <div className="w-full mx-auto px-4 sm:px-6 md:px-8 py-4">
         <div className="flex flex-col md:flex-row md:space-x-8">
           <FilterSidebar
