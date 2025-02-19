@@ -45,7 +45,7 @@ export default function About() {
 
           {/* Текстовий блок справа */}
   
-<div className="mt-16  xl:left-[20%] xl:text-left xl:translate-x-[-20%]  bg-white dark:bg-black mb-48 w-full">
+<div className="mt-16   bg-white dark:bg-black mb-48 w-full">
             <h2 className=" text-2xl sm:text-4xl font-bold text-gray-800 dark:text-white mb-4">ПРО НАС:</h2>
             <p className="mt-8 text-gray-600 dark:text-gray-300 text-lg lg:text-2xl font-medium">
               LATORE - український бренд жіночого одягу з власним виробництвом, з досвідом понад 10 років, 
