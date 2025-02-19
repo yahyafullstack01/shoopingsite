@@ -7,12 +7,13 @@ export default function About() {
 
   return (
     <section className="bg-white dark:bg-gray-900 py-12 px-6 sm:px-12" id="about">
-      <div className="max-w-9xl mx-auto p-6 sm:p-12 relative">
+      <div className="max-w-8xl mx-auto relative">
        
         {/* Макет для планшетів та десктопів */}
-        <div className="relative hidden sm:grid grid-cols-1 md:grid-cols-2 items-center gap-2">
+   
+<div className="relative hidden sm:grid grid-cols-1 md:grid-cols-2 items-center md:gap-8 xl:gap-2">
           {/* Зображення */}
-          <div className="flex justify-start relative group overflow-hidden">
+          <div className="flex justify-start relative group xl:ml-36 overflow-hidden">
   <Image
     src="/hoom/about2.JPEG"
     alt="About Image"
@@ -44,7 +45,7 @@ export default function About() {
 
           {/* Текстовий блок справа */}
   
-<div className="mt-16 text-left  bg-white dark:bg-black mb-48 w-full">
+<div className="mt-16  xl:left-[20%] xl:text-left xl:translate-x-[-20%]  bg-white dark:bg-black mb-48 w-full">
             <h2 className=" text-2xl sm:text-4xl font-bold text-gray-800 dark:text-white mb-4">ПРО НАС:</h2>
             <p className="mt-8 text-gray-600 dark:text-gray-300 text-lg lg:text-2xl font-medium">
               LATORE - український бренд жіночого одягу з власним виробництвом, з досвідом понад 10 років, 
@@ -78,7 +79,7 @@ export default function About() {
             {/* Текстовий блок на всю ширину */}
             <div
               className={`absolute bottom-[5%] left-0 w-full 
-                bg-white/90 dark:bg-gray-800 p-6 shadow-lg text-center transition-all duration-500`}
+                bg-white/90 dark:bg-gray-800 p-6 text-center transition-all duration-500`}
             >
               <h2 className="text-xl font-bold text-gray-800 dark:text-white mb-2">ПРО НАС:</h2>
               <p className="text-gray-600 dark:text-gray-300 text-xs sm:text-base lg:text-xl font-medium">

@@ -19,10 +19,10 @@ export default function SpecialOffers() {
       aria-labelledby="special-offers-heading"
     >
       <div className="space-y-4">
-        <div className="relative ml-auto  xl:left-[-10%] max-w-5xl pr-0 md:pr-[12px] flex justify-center md:justify-end">
+        <div className="relative ml-auto 2xl:mr-24  xl:left-[-10%] max-w-6xl 2xl:max-w-7xl pr-0 md:pr-[12px] flex justify-center md:justify-end">
           {/* Image Container */}
           <div
-            className="max-w-[800px] w-[60%] lg:w-[80%] h-[500px] sm:h-[750px] md:h-[950px] lg:h-[1000px] relative rounded-lg "
+            className="max-w-[800px] w-[60%] lg:w-[60%]  h-[500px] sm:h-[750px] md:h-[950px] lg:h-[900px] relative rounded-lg "
             style={{ minHeight: "500px" }} 
           >
             <Image
@@ -39,27 +39,27 @@ export default function SpecialOffers() {
           <div
             className={`
               absolute bottom-[15%] sm:bottom-[20%] md:bottom-[15%] lg:bottom-[25%] xl:bottom-[25%]
-              left-1/2  lg:left-[20%] xl:left-[10%] transform -translate-x-1/2 
+              left-1/2  lg:left-[30%] 2xl:left-[10%] transform -translate-x-1/2 
               dark:bg-gray-700 bg-white/75
-              p-4 sm:p-6 md:p-10 lg:p-16 xl:p-20 rounded-lg shadow-lg 
-              w-full max-w-none sm:w-[75%] md:w-[75%] lg:w-[55%] xl:w-[90%] text-center md:text-left
+              p-4 sm:p-6 md:p-10 lg:p-16 xl:p-20 rounded-lg  
+              w-full max-w-none sm:w-[75%] md:w-[75%] lg:w-[55%] 2xl:w-[90%] text-center md:text-left
               transition-all duration-500
             `}
           >
             <h2
-              className={`text-base sm:text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold mb-4
+              className={`text-base sm:text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold mb-8 md:mb-16
                 dark:text-[#f5e8d6] text-black`}
             >
               {menuItems[0] || "Special Offers"}
             </h2>
             <p
-              className={`text-xs sm:text-base md:text-lg lg:text-xl 2xl:text-2xl font-medium mb-4 
+              className={`text-xs sm:text-base md:text-lg lg:text-xl 2xl:text-2xl font-medium mb-4 md:mb-8
               dark:text-gray-300 text-black`}
             >
               {menuItems[1] || "Check out our latest offers!"}
             </p>
             <p
-              className={`text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl mb-6 sm:mb-7 md:mb-8 lg:mb-10 leading-relaxed 
+              className={`text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl mb-4 sm:mb-8 md:mb-8 lg:mb-10 leading-relaxed 
               dark:text-gray-400 text-black`}
             >
               {menuItems[2] || "Don't miss out on these exclusive deals."}

@@ -1,5 +1,5 @@
 
-import { FaFacebook, FaInstagram, FaTwitter, FaTelegramPlane } from "react-icons/fa";
+import { FaFacebook, FaInstagram,  FaTelegramPlane } from "react-icons/fa";
 import { useLanguage } from "../../Functions/useLanguage"; 
 
 export default function Footer() {
@@ -37,9 +37,7 @@ export default function Footer() {
             <a href="https://www.instagram.com/latore.atelier?igsh=Y3RvbWZhZW12Zmxj" target="_blank" rel="noopener noreferrer" aria-label="Visit us on Instagram">
               <FaInstagram className="w-6 h-6 text-white hover:text-gray-400" />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter">
-              <FaTwitter className="w-6 h-6 text-white hover:text-gray-400" />
-            </a>
+          
             <a href="https://telegram.me/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Join us on Telegram">
               <FaTelegramPlane className="w-6 h-6 text-white hover:text-gray-400" />
             </a>
