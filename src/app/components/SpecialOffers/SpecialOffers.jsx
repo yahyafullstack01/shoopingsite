@@ -19,22 +19,21 @@ export default function SpecialOffers() {
       aria-labelledby="special-offers-heading"
     >
       <div className="space-y-4">
-        <div className="relative ml-auto 2xl:mr-24  xl:left-[-10%] max-w-6xl 2xl:max-w-7xl pr-0 md:pr-[12px] flex justify-center md:justify-end">
+        <div className="relative ml-auto 2xl:mr-24  xl:left-[-10%] max-w-6xl 2xl:max-w-5xl pr-0 md:pr-[12px] flex justify-center md:justify-end">
           {/* Image Container */}
-          <div
-            className="max-w-[800px] w-[60%] lg:w-[60%]  h-[500px] sm:h-[750px] md:h-[950px] lg:h-[900px] relative rounded-lg "
-            style={{ minHeight: "500px" }} 
-          >
-            <Image
-              src="/hoom/offer.JPG"
-              alt="Special Offers Image"
-              fill
-              style={{ objectFit: "cover" }}
-              sizes="(max-width: 768px) 100vw, (max-width: 1000px) 75vw, 50vw"
-              className="rounded-lg"
-              priority
-            />
-          </div>
+          <div className="w-full lg:w-[70%] relative rounded-lg overflow-hidden">
+    <Image
+      src="/hoom/offer.JPG"
+      alt="Special Offers Image"
+      layout="responsive"
+      width={800}    // Базова ширина для збереження пропорцій
+      height={1000}  // Базова висота для збереження пропорцій (4:5)
+      style={{ objectFit: "cover" }}
+      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 50vw"
+      className="rounded-lg"
+      priority
+    />
+  </div>
           {/* Text Container */}
           <div
             className={`

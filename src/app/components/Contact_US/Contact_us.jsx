@@ -65,7 +65,7 @@ const ContactUs = () => {
           {menuItems[1]}  
         </p>
         <section className="flex flex-col sm:flex-row items-center sm:items-start gap-6 sm:gap-12 md:gap-16 lg:gap-28 bg-gray-200 dark:bg-[#111827] p-4 sm:p-6 md:p-8 rounded-lg shadow-lg">
-          <div className="w-full sm:w-1/2 lg:w-[56%] h-[500px] sm:h-[900px] lg:h-[900px] dark:shadow-[0_0_20px_10px_rgba(59,130,246,0.4)]">
+          <div className="w-full sm:w-1/2 lg:w-[56%] h-[400px] sm:h-[600px]  lg:h-[600px] xl:h-[900px] dark:shadow-[0_0_20px_10px_rgba(59,130,246,0.4)]">
             <Image
               src={productData.image}
               alt={productData.name || "Default Image"}
