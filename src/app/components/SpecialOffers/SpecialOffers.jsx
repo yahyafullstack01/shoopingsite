@@ -15,13 +15,16 @@ export default function SpecialOffers() {
 
   return (
     <section
-      className="bg-gray-100 dark:bg-gray-800  section-container"
+      className="bg-gray-100 dark:bg-gray-800 section-container"
       aria-labelledby="special-offers-heading"
     >
       <div className="space-y-4">
         <div className="relative ml-auto 2xl:mr-24  xl:left-[-10%] max-w-6xl 2xl:max-w-5xl pr-0 md:pr-[12px] flex justify-center md:justify-end">
           {/* Image Container */}
-          <div className="w-full lg:w-[70%] relative rounded-lg overflow-hidden">
+          <div className="w-[50%] relative rounded-lg overflow-hidden">
+
+        
+         
     <Image
       src="/hoom/offer.JPG"
       alt="Special Offers Image"
@@ -37,16 +40,16 @@ export default function SpecialOffers() {
           {/* Text Container */}
           <div
             className={`
-              absolute bottom-[15%] sm:bottom-[20%] md:bottom-[15%] lg:bottom-[25%] xl:bottom-[25%]
+              absolute bottom-[15%] sm:bottom-[20%] md:bottom-[15%] lg:bottom-[20%] 
               left-1/2  lg:left-[30%] 2xl:left-[10%] transform -translate-x-1/2 
               dark:bg-gray-700 bg-white/75
               p-4 sm:p-6 md:p-10 lg:p-16 xl:p-20 rounded-lg  
-              w-full max-w-none sm:w-[75%] md:w-[75%] lg:w-[55%] 2xl:w-[90%] text-center md:text-left
+              w-full max-w-none sm:w-[65%] lg:w-[55%] 2xl:w-[90%] text-center md:text-left
               transition-all duration-500
             `}
           >
             <h2
-              className={`text-base sm:text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold mb-8 md:mb-16
+              className={`text-base sm:text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold mb-8 md:mb-8
                 dark:text-[#f5e8d6] text-black`}
             >
               {menuItems[0] || "Special Offers"}
