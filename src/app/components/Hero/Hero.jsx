@@ -1,11 +1,9 @@
-
 import Image from "next/image";
 import { useLanguage } from "../../Functions/useLanguage";
 import Head from "next/head";
 
 const Hero = () => {
   const { translateList } = useLanguage();
-  //const menuItems = translateList("home", "hero");
 
   return (
     <>
@@ -18,8 +16,31 @@ const Hero = () => {
         <meta property="og:url" content="https://example.com" />
       </Head>
 
+      {/* Для екранів ширше 1100px - фонове зображення + текст */}
+      
+      <section className="hidden lg:flex relative w-[1280px] xl:w-[1800px] 2xl:w-[2400px] h-[400px] xl:h-[550px] 2xl:h-[650px] mx-auto justify-center items-center">
+  {/* Фонове зображення */}
+  <div className="absolute inset-0 w-full h-full">
+    <Image
+      src="/hoom/hero3.PNG"
+      alt="Latore Collection"
+      width={2400} 
+      height={650} 
+      objectFit="cover" 
+      className="absolute inset-0"
+      quality={100}
+    />
+  </div>
+
+  {/* Текст поверх */}
+  <div className="absolute mt-64 lg:mt-48 xl:top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-white z-10 px-6">
+    <p className="text-lg sm:text-3xl lg:text-3xl xl:text-6xl">Український бренд жіночого одягу</p>
+  </div>
+</section>
+
+      {/* Для екранів менше 1100px - дві колонки (зображення + текст) */}
       <section
-        className="flex flex-row justify-center items-center gap-2 sm:gap-16 section-container overflow-hidden"
+        className="flex flex-row justify-center items-center gap-2 sm:gap-16 section-container overflow-hidden lg:hidden"
         aria-labelledby="hero-heading"
         role="banner"
       >
@@ -36,7 +57,7 @@ const Hero = () => {
         </div>
 
         {/* Текстовий блок + менше зображення */}
-        <div className="flex flex-col items-center md:items-start gap-2  text-center md:text-left w-[40vw] sm:w-auto">
+        <div className="flex flex-col items-center md:items-start gap-2 text-center md:text-left w-[40vw] sm:w-auto">
           <div className="relative w-[35vw] sm:w-[300px] lg:w-[350px] max-w-[600px] h-auto overflow-hidden">
             <Image
               src="/hoom/hero.JPG"
@@ -47,12 +68,14 @@ const Hero = () => {
               priority
             />
           </div>
-          <h2 className="text-xl sm:text-5xl lg:text-7xl font-bold text-gray-700 dark:text-white ml-2 sm:ml-12 sm:mt-8">LATORE</h2>
+          <h2 className="text-xl sm:text-5xl lg:text-7xl font-bold text-gray-700 dark:text-white ml-2 sm:ml-12 sm:mt-8">
+            LATORE
+          </h2>
           <p className="text-xs sm:text-xl lg:text-3xl text-gray-600 dark:text-white ml-2 sm:ml-16 sm:mt-4">
             Український бренд 
-            </p>
-          <p className="text-xs sm:text-xl lg:text-3xl text-gray-600 dark:text-white ml-2 sm:ml-24 ">
-          жіночого одягу
+          </p>
+          <p className="text-xs sm:text-xl lg:text-3xl text-gray-600 dark:text-white ml-2 sm:ml-24">
+            жіночого одягу
           </p>
         </div>
       </section>
