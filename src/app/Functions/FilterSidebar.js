@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { useLanguage } from "./useLanguage";
 export default function FilterSidebar({
   showSizeFilter = true,
   maxPrice,
@@ -10,9 +10,11 @@ export default function FilterSidebar({
   handleCategorySelect,
   children,
 }) {
+  const { translateList, language } = useLanguage();
+  const menuItems = translateList("Filtersidebar", "header");
   const [isSizeOpen, setIsSizeOpen] = useState(false);
   const [isCategoryOpen, setIsCategoryOpen] = useState(false);
-
+  
   const sizes = ["All", "S", "M", "L", "XL"];
   const categories = [
     "All",
@@ -40,12 +42,12 @@ export default function FilterSidebar({
     <aside className="w-full md:w-1/4 bg-gray-300 p-4 sm:p-6 rounded-lg shadow-2xl dark:bg-[#0f172a] dark:shadow-[0_0_20px_10px_rgba(59,130,246,0.4)]" aria-label="Filter Sidebar">
       <div className="mb-6">
         <h2 className="text-lg sm:text-xl font-semibold mb-4 border-b border-gray-900 dark:border-gray-700 pb-2">
-          Browse by
+        {menuItems[0]}
         </h2>
         <ul className="text-gray-950 dark:text-gray-300 space-y-2">
           <li>
             <a href="#" className="hover:text-grey dark:hover:text-white underline">
-              All Products
+            {menuItems[1]}
             </a>
           </li>
         </ul>
@@ -53,13 +55,13 @@ export default function FilterSidebar({
 
       <div>
         <h2 className="text-lg sm:text-xl font-semibold mb-4 border-b border-gray-950 dark:border-gray-700 pb-2">
-          Filter by
+        {menuItems[2]}
         </h2>
 
         <div className="text-gray dark:text-gray-300 space-y-6">
           {/* Price Filter */}
           <div>
-            <label className="block text-sm font-medium mb-2">Price</label>
+            <label className="block text-sm font-medium mb-2">{menuItems[3]}</label>
             <div className="flex items-center justify-between text-sm sm:text-base mb-2">
               <span>100₴</span>
               <span>{maxPrice}₴</span>
@@ -82,7 +84,7 @@ export default function FilterSidebar({
                 className="flex justify-between items-center cursor-pointer border-b border-gray-800 dark:border-gray-700 pb-2"
                 onClick={toggleSizeMenu}
               >
-                <label className="block text-sm font-medium">Size</label>
+                <label className="block text-sm font-medium">{menuItems[4]}</label>
                 <span className={`text-gray-400 text-lg ${isSizeOpen ? "-" : "+"}`}></span>
               </div>
               {isSizeOpen && (
@@ -95,7 +97,7 @@ export default function FilterSidebar({
                         toggleSizeMenu();
                       }}
                       className={`cursor-pointer p-1 rounded ${
-                        selectedSize === size || (size === "All" && selectedSize === "")
+                        selectedSize === size || (size === menuItems[6] && selectedSize === "")
                           ? "dark:bg-blue-500 text-gray dark:text-white"
                           : "hover:bg-gray-600 text-gray bg-gray-300 dark:bg-[#64748b48] dark:text-gray-300"
                       }`}
@@ -105,17 +107,17 @@ export default function FilterSidebar({
                   ))}
                 </div>
               )}
-              <div className="text-sm mt-1 dark:text-gray-300">Selected: {selectedSize || "All"}</div>
+              <div className="text-sm mt-1 dark:text-gray-300">{menuItems[5]}: {selectedSize || menuItems[6]}</div>
             </div>
           )}
-
+          
           {/* Category Filter */}
           <div className="relative">
             <div
               className="flex justify-between items-center cursor-pointer border-b border-gray-700 pb-2"
               onClick={toggleCategoryMenu}
             >
-              <label className="block text-sm font-medium">Category</label>
+              <label className="block text-sm font-medium">{menuItems[7]}</label>
               <span className={`text-gray-600 dark:text-gray-400 text-lg ${isCategoryOpen ? "-" : "+"}`}></span>
             </div>
             {isCategoryOpen && (
@@ -128,7 +130,7 @@ export default function FilterSidebar({
                       toggleCategoryMenu();
                     }}
                     className={`cursor-pointer p-1 rounded ${
-                      selectedCategory === category || (category === "All" && selectedCategory === "")
+                      selectedCategory === category || (category === menuItems[6] && selectedCategory === "")
                         ? "dark:bg-blue-500 text-gray dark:text-white"
                         : "hover:bg-gray-600 text-gray bg-gray-300 dark:bg-[#64748b48] dark:text-gray-300"
                     }`}
@@ -138,7 +140,7 @@ export default function FilterSidebar({
                 ))}
               </div>
             )}
-            <div className="text-sm mt-1 text-gray dark:text-gray-300">Selected: {selectedCategory || "All"}</div>
+            <div className="text-sm mt-1 text-gray dark:text-gray-300">{menuItems[5]}: {selectedCategory || menuItems[6]}</div>
           </div>
 
           {/* Sort Menu */}

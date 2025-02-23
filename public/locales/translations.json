@@ -61,15 +61,23 @@
         "For exchange or return, call technical support (24/7):"
       ]
     },
-
+    
     "Catalogues": {
       "header" :["All Products", "Explore our diverse range of products tailored to your needs.", " products", "Product List"]
     },
     
     "SizeTable": {
       "header": ["Size Chart", "Size (UA)", "Size (EU)", "Chest (cm)", "Waist (cm)", "Hips (cm)", "Close"]
-    }
+    },
 
+
+    "Filtersidebar": {
+      "header": ["Browse by", "All Products", " Filter by", "Price", "Size", "Selected", "All", "Category"]
+    },
+    
+    "SortMenu": {
+      "header": ["Sort by", "recommended", "Price (high to low)", "Price (low to high)"]
+    }
 
     
   },
@@ -137,7 +145,16 @@
 
     "SizeTable": {
       "header": ["Tableau des tailles", "Taille (UA)", "Taille (EU)", "Poitrine (cm)", "Taille (cm)", "Hanches (cm)", "Fermer"]
+    },
+
+    "Filtersidebar": {
+      "header": ["Parcourir par", "Tous les produits", "Filtrer par", "Prix", "Taille", "Sélectionné", "Tous", "Catégorie"]
+    },
+
+    "SortMenu": {
+      "header": ["Trier par", "Recommandé", "Prix (du plus élevé au plus bas)", "Prix (du plus bas au plus élevé)"]
     }
+
     
   },
   
@@ -205,6 +222,15 @@
     
     "SizeTable": {
       "header": ["Розмірна сітка", "Розмір (UA", "Розмір (EU)", "Груди (см)", "Талія (см)", "Стегна (см)","Закрити"]
+    },
+    
+    "Filtersidebar": {
+      "header": ["Перегляд за", "Усі продукти", "Фільтрувати за", "Ціна", "Розмір", "Вибрано", "Усі", "Категорія"]
+    },
+
+    "SortMenu": {
+      "header": ["Сортувати за", "Рекомендовані", "Ціна (від високої до низької)", "Ціна (від низької до високої)"]
     }
+
   }
 }

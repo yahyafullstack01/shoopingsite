@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { useLanguage } from "./useLanguage";
 // Component to display a sorting menu
 export default function SortMenu({
   sortOrder, // Current sorting order
@@ -7,6 +7,8 @@ export default function SortMenu({
   isSortMenuOpen, // State for the open/close status of the sorting menu
   toggleSortMenu, // Function to toggle the menu's state
 }) {
+  const { translateList, language } = useLanguage();
+  const menuItems = translateList("SortMenu", "header"); 
   return (
     <div className="relative inline-block text-left ml-auto">
       {/* Button to toggle the sorting menu */}
@@ -16,13 +18,13 @@ export default function SortMenu({
         
         onClick={toggleSortMenu}
       >
-        Sort by:{' '}
+        {menuItems[0]}:{' '}
         {/* Display the current sorting order */}
-        {sortOrder === 'recommended'
-          ? 'Recommended'
+        {sortOrder === menuItems[1]
+          ? menuItems[1]
           : sortOrder === 'priceAsc'
-          ? 'Price: Low to High'
-          : 'Price: High to Low'}
+          ? menuItems[1]
+          : menuItems[1]}
         <svg
           className="-mr-1 ml-2 h-5 w-5"
           xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +61,7 @@ export default function SortMenu({
               }}
               
             >
-              Recommended
+              {menuItems[1]}
             </button>
             {/* Button for "Price: Low to High" sorting */}
             <button
@@ -70,9 +72,9 @@ export default function SortMenu({
                 setSortOrder('priceAsc');
                 toggleSortMenu(); 
               }}
-            
+              
             >
-              Price: Low to High
+              {menuItems[2]}
             </button>
             {/* Button for "Price: High to Low" sorting */}
             <button
@@ -85,7 +87,7 @@ export default function SortMenu({
               }}
              
             >
-              Price: High to Low
+              {menuItems[3]}
             </button>
           </div>
         </div>
