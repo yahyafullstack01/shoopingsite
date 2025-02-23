@@ -36,17 +36,9 @@ export default function RootLayout({ children }) {
                 <meta property="og:type" content="website" />
                 <link rel="icon" href="/favicon-latore.avif" type="image/x-icon" />
                 <link rel="canonical" href="https://shoopingsite-my9e.vercel.app" />
-                <link rel="preload" href="/fonts/Raleway-Thin.woff2" as="font" type="font/woff2" crossOrigin="anonymous"/>
-                <link rel="preload" href="/fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+                <link rel="preload" href="/fonts/Montserrat-Thin.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+<link rel="preload" href="/fonts/Montserrat-ThinItalic.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
 
-         <style>{`
-          body {
-            font-family: "Raleway", Arial, sans-serif;
-            font-weight: 400;
-            background-color: white;
-            color: black;
-          }
-        `}</style>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 {/* <meta name="google-site-verification" content="cYBcnqSIlXlPJZSokMAgKhJCS8MM2XfwV6-nd4o-Jag" /> */}
                 <meta name="google-site-verification" content="Lx8iDUB67zjk42dkkJQsEpoqSlKiSlc1peMe9-jmIqY" />

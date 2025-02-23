@@ -82,7 +82,7 @@ export default function SortMenu({
               role="menuitem"
               tabIndex="-1"
               onClick={() => {
-                setSortOrder('priceAsc');
+                setSortOrder('priceDesc');
                 toggleSortMenu();
               }}
              

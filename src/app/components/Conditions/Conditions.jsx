@@ -1,84 +1,55 @@
-"use client"; 
+
+"use client";  
 import React from "react";
 import { useLanguage } from "../../Functions/useLanguage";
 
 const Conditions = () => {
-  const { translateList } = useLanguage(); // Access the language context
+  const { translateList } = useLanguage(); // Отримання перекладів
   const menuItems = translateList("Conditions", "hero");
 
   return (
-    <main className="p-8 md:p-16 bg-gray-100 dark:bg-neutral-900 dark:text-white rounded-lg shadow-2xl">
-      <h1 className="text-2xl md:text-4xl font-bold text-center mb-8 uppercase tracking-wider">
+    <main style={{ maxWidth: "800px", margin: "0 auto", padding: "40px 20px", fontSize: "18px", lineHeight: "1.6", color: "#333", textAlign: "left" }}>
+      {/* Головний заголовок */}
+      <h1 style={{ fontWeight: "bold", fontSize: "32px", marginBottom: "24px" }}>
         {menuItems[0]}
       </h1>
 
-      <article className="mb-8 bg-gray-200 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-        <h2 className="text-xl md:text-2xl font-semibold mb-4 uppercase">
-          {menuItems[1]}
-        </h2>
-        <ul className="list-disc list-outside pl-5 space-y-2">
-          <li>{menuItems[2]}</li>
-          <li>{menuItems[3]}</li>
-          <li>{menuItems[3]}</li>
-          <li>{menuItems[4]}</li>
-        </ul>
-      </article>
+      {/* Розділ 1 */}
+      <h2 style={{ fontWeight: "bold", fontSize: "20px", marginBottom: "12px" }}>
+        {menuItems[1]}
+      </h2>
+      <ul style={{ paddingLeft: "20px", listStyleType: "disc" }}>
+        <li>{menuItems[2]}</li>
+        <li>{menuItems[3]}</li>
+        <li>{menuItems[4]}</li>
+        <li>{menuItems[5]}</li>
+      </ul>
 
-      <article className="mb-8 bg-gray-200 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-        <h2 className="text-xl md:text-2xl font-semibold mb-4 uppercase">
-          {menuItems[5]}
-        </h2>
-        <ul className="list-disc list-outside pl-5 space-y-2">
-          <li>{menuItems[6]}</li>
-          <li>{menuItems[7]}</li>
-        </ul>
-      </article>
+      {/* Розділ 2 */}
+      <h2 style={{ fontWeight: "bold", fontSize: "20px", marginTop: "24px", marginBottom: "12px" }}>
+        {menuItems[6]}
+      </h2>
+      <ul style={{ paddingLeft: "20px", listStyleType: "disc" }}>
+        <li>{menuItems[7]}</li>
+        <li>{menuItems[8]}</li>
+      </ul>
 
-      <article className="mb-8 bg-gray-200 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-        <h2 className="text-xl md:text-2xl font-semibold mb-4 uppercase">
-          {menuItems[8]}
-        </h2>
-        <ul className="list-disc list-outside pl-5 space-y-2">
-          <li>{menuItems[9]}</li>
-          <li>{menuItems[10]}</li>
-        </ul>
-        <p className="mt-4 leading-relaxed text-sm md:text-base">
-          {menuItems[11]}
-        </p>
-      </article>
+      {/* Розділ 3 */}
+      <h2 style={{ fontWeight: "bold", fontSize: "20px", marginTop: "24px", marginBottom: "12px" }}>
+        {menuItems[9]}
+      </h2>
+      <ul style={{ paddingLeft: "20px", listStyleType: "disc" }}>
+        <li>{menuItems[10]}</li>
+        <li>{menuItems[11]}</li>
+      </ul>
+      <p>{menuItems[12]}</p>
 
-      <article className="mb-8 bg-gray-200 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-        <h2 className="text-xl md:text-2xl font-semibold mb-4 uppercase">
-          {menuItems[12]}
-        </h2>
-        <ul className="list-disc list-outside pl-5 space-y-2">
-          <li>
-            <span className="font-semibold">{menuItems[13]}</span> {menuItems[14]}
-          </li>
-          <li>
-            <span className="font-semibold">{menuItems[15]}</span> {menuItems[16]}
-          </li>
-          <li>
-            <span className="font-semibold">{menuItems[17]}</span> {menuItems[18]}
-          </li>
-          <li>
-            <span className="font-semibold">{menuItems[19]}</span> {menuItems[20]}
-          </li>
-        </ul>
-      </article>
-
-      <article className="bg-gray-200 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-        <h2 className="text-xl md:text-2xl font-semibold mb-4 uppercase">
-          Д{menuItems[21]}
-        </h2>
-        <p className="mb-4 leading-relaxed text-sm md:text-base">
-          {menuItems[22]}
-        </p>
-        <p className="leading-relaxed text-sm md:text-base">
-          {menuItems[23]}{" "}
-          <span className="font-bold text-blue-500">+38-067-579-5497</span>
-        </p>
-      </article>
+      {/* Розділ 4 */}
+      <h2 style={{ fontWeight: "bold", fontSize: "20px", marginTop: "24px", marginBottom: "12px" }}>
+      {menuItems[13]}
+      </h2>
+      <p>{menuItems[14]}</p>
+      <p>{menuItems[15]} <a href="tel:+380675795497" style={{ fontWeight: "bold", color: "#000", textDecoration: "underline" }}>+38-067-579-5497</a></p>
     </main>
   );
 };
