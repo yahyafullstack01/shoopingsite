@@ -54,12 +54,12 @@ export default function SpecialOffers() {
             >
               {menuItems[0] || "Special Offers"}
             </h2>
-            <p
+            {/* <p
               className={`text-xs sm:text-base md:text-lg lg:text-xl 2xl:text-2xl font-medium mb-4 md:mb-8
               dark:text-gray-300 text-black`}
             >
               {menuItems[1] || "Check out our latest offers!"}
-            </p>
+            </p> */}
             <p
               className={`text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl mb-4 sm:mb-8 md:mb-8 lg:mb-10 leading-relaxed 
               dark:text-gray-400 text-black`}
