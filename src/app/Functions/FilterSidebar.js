@@ -14,6 +14,7 @@ export default function FilterSidebar({
   const menuItems = translateList("Filtersidebar", "header");
   const [isSizeOpen, setIsSizeOpen] = useState(false);
   const [isCategoryOpen, setIsCategoryOpen] = useState(false);
+  const menuBar = translateList("SortMenu", "SizCatalogues");
   
   const sizes = ["All", "S", "M", "L", "XL"];
   const categories = [

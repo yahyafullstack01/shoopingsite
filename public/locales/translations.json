@@ -153,6 +153,7 @@
 
     "SortMenu": {
       "header": ["Trier par", "Recommandé", "Prix (du plus élevé au plus bas)", "Prix (du plus bas au plus élevé)"]
+      
     }
 
     
@@ -230,7 +231,8 @@
 
     "SortMenu": {
       "header": ["Сортувати за", "Рекомендовані", "Ціна (від високої до низької)", "Ціна (від низької до високої)"]
-    }
 
+    }
+    
   }
 }
