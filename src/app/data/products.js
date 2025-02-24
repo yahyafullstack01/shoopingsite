@@ -1446,9 +1446,7 @@
     
     
     
-    
-    
-    
+
   ];
   export default products;
   
