@@ -16,11 +16,13 @@ export default function TopProducts() {
     { src: "/Costumes/Wool suit with vest/1.avif", link: "/Top-products" },
     { src: "/Dress/Woolen trapeze dress/1.avif", link: "/Top-products" },
     { src: "/Dress/Wool A-line dress/2.avif", link: "/Top-products" },
-    { src: "/6.jpg", link: "/Top-products" },
-    { src: "/7.jpg", link: "/Top-products" },
-    { src: "/8.jpg", link: "/Top-products" },
-    { src: "/9.jpg", link: "/Top-products" },
-    { src: "/10.jpg", link: "/Top-products" },
+    { src: "/1.avif", link: "/Top-products" },
+    { src: "/2.avif", link: "/Top-products" },
+    { src: "/3.avif", link: "/Top-products" },
+    { src: "/4.avif", link: "/Top-products" },
+    { src: "/5.avif", link: "/Top-products" },
+    { src: "/6.avif", link: "/Top-products" },
+    { src: "/7.avif", link: "/Top-products" },
   ];
 
   const { displayedImages, handleNext, handlePrev } = useImageFollow(

@@ -12,16 +12,13 @@ export default function OurProducts() {
   const menuItems = translateList("home", "Our_Products");
 
   const images = [
-    { src: "/1.jpg", link: "/All-products" },
-    { src: "/2.jpg", link: "/All-products" },
-    { src: "/3.jpg", link: "/All-products" },
-    { src: "/4.jpg", link: "/All-products" },
-    { src: "/5.jpg", link: "/All-products" },
-    { src: "/6.jpg", link: "/All-products" },
-    { src: "/7.jpg", link: "/All-products" },
     { src: "/8.jpg", link: "/All-products" },
     { src: "/9.jpg", link: "/All-products" },
     { src: "/10.jpg", link: "/All-products" },
+    { src: "/11.jpg", link: "/All-products" },
+    { src: "/12.jpg", link: "/All-products" },
+    { src: "/13.jpg", link: "/All-products" },
+    { src: "/14.jpg", link: "/All-products" },
   ];
 
   const { displayedImages, handleNext, handlePrev } = useImageFollow(

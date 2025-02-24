@@ -1442,11 +1442,6 @@
       }
     }
     
-    
-    
-    
-    
-
-  ];
+ ];
   export default products;
   
