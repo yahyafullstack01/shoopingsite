@@ -2,15 +2,13 @@
   "EN": {
     "home": {
       "header": ["Home", "Catalogues", "About", "Contact", "Conditions"],
-      "hero": ["Welcome to our site!", "Explore the latest trends in fashion.", "Discover your style with us.", "Shop now"],
+      "hero": ["Ukrainian women's clothing brand","Ukrainian women's","clothing brand"],
       "about": [
-        "About",
-        "Our Story",
+        "ABOUT US:",
         "LATORE - Ukrainian brand of women's clothing with its own production, with over 10 years of experience, with two showrooms in Ivano-Frankivsk and Kharkiv.",
         "We are the embodiment of basic models and an original, designer approach to all products.",
-        "Our clothes are a combination of classics and comfort, femininity and harmony. Thanks to our own production, we guarantee the high quality of each product.",
-        "A professional team of craftsmen knows what Ukrainian women need and creates things that are easily combined with each other.",
-        "We especially emphasize your attention to individual tailoring for each of our clients - we sew according to the parameters, which allows any clothes to fit perfectly on the figure."
+        "Our clothes are a combination of classics and comfort, femininity and harmony. Thanks to our own production, we guarantee the high quality of each product."
+      
       ],
       "top_products": ["Top Products"],
       "Our_Products": ["Our Products"],
@@ -84,13 +82,12 @@
   "FR": {
     "home": {
       "header": ["Accueil", "Catalogues", "À propos", "Contact", "Conditions"],
-      "hero": ["Bienvenue sur notre site!", "Explorez les dernières tendances de la mode.", "Découvrez votre style avec nous.", "Achetez maintenant"],
+      "hero": ["Marque ukrainienne de vêtements pour femmes.", "Marque ukrainienne", "De vêtements pour femmes"],
       "about": [
         "À propos",
-        "Latore Atelier est votre destination en ligne incontournable pour la mode haut de gamme. \nNous proposons une sélection soignée de vêtements et d'accessoires de haute qualité, \ndestinés à sublimer votre garde-robe. Notre mission est de fournir à nos clients \ndes pièces sophistiquées et élégantes qui reflètent leur personnalité \net leur goût uniques.",
-        "En savoir plus",
-        "Latore Atelier est votre destination en ligne incontournable pour la mode haut de gamme. Nous proposons une sélection soignée de vêtements et d'accessoires de haute qualité, destinés à sublimer votre garde-robe.",
-        "En savoir plus"
+        "LATORE – une marque ukrainienne de vêtements pour femmes avec sa propre production, plus de 10 ans d'expérience, et deux showrooms à Ivano-Frankivsk et Kharkiv.",
+        "Nous sommes l'incarnation des modèles basiques et d'une approche créative et design pour chaque pièce.",
+        "Nous sommes l'incarnation des modèles basiques et d'une approche créative et design pour chaque pièce."
       ],
       "top_products": ["Produits phares"],
       "Our_Products": ["Nos Produits"],
@@ -162,15 +159,12 @@
   "UA": {
     "home": {
       "header": ["Головна", "Каталог", "Про нас", "Контакти", "Умови"],
-      "hero": ["Ласкаво просимо на наш сайт!", "Досліджуйте останні тренди моди.", "Відкрийте свій стиль разом з нами.", "Купуйте зараз"],
+      "hero": ["Український бренд жіночого одягу.","Український бренд", "жіночого одягу"],
       "about": [
-        "Про нас",
-        "Наша історія",
+        "ПPO НАС",
         "LATORE - український бренд жіночого одягу з власним виробництвом, з досвідом понад 10 років, з двома шоурумами в Івано-Франківську та Харкові.",
         "Ми - втілення базових моделей та авторського, дизайнерського підходу до всіх виробів.",
-        "Наш одяг - це поєднання класики та комфорту, жіночності та гармонії. Завдяки власному виробництву ми гарантуємо високу якість кожного виробу.",
-        "Професійна команда майстринь знає, що необхідно українським жінкам та створює речі, які легко поєднуються між собою.",
-        "Особливо акцентуємо Вашу увагу стосовно індивідуального пошиву для кожного нашого клієнта - відшиваємо за параметрами, що дозволяє будь-якому одягу ідеально сидіти по фігурі."
+        "Наш одяг - це поєднання класики та комфорту, жіночності та гармонії. Завдяки власному виробництву ми гарантуємо високу якість кожного виробу."
       ],
       "top_products": ["Популярні продукти"],
       "Our_Products": ["Наші продукти"],

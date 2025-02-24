@@ -46,16 +46,16 @@ export default function About() {
           {/* Текстовий блок справа */}
   
 <div className="mt-16   bg-white dark:bg-black mb-48 w-full">
-            <h2 className=" text-2xl sm:text-4xl font-bold text-gray-800 dark:text-white mb-4">ПРО НАС:</h2>
-            <p className="mt-8 text-gray-600 dark:text-gray-300 text-lg lg:text-2xl font-medium">
-              LATORE - український бренд жіночого одягу з власним виробництвом, з досвідом понад 10 років, 
-              з двома шоурумами в Івано-Франківську та Харкові.
+            <h2 className=" text-2xl sm:text-4xl font-bold text-gray-800 dark:text-white mb-4">{menuItems[0]}</h2>
+            <p className="mt-8 text-gray-800 dark:text-gray-300 text-lg lg:text-2xl font-medium">
+            {menuItems[1]}
+             
             </p>
             <p className="mt-4 text-gray-800 dark:text-gray-300 text-base lg:text-2xl font-medium">
-                Ми - втілення базових моделей та авторського, дизайнерського підходу до всіх виробів.
+            {menuItems[2]}
               </p>
               <p className="mt-4 text-gray-800 dark:text-gray-300 text-base lg:text-2xl font-medium">
-                Наш одяг - це поєднання класики та комфорту, жіночності та гармонії. Завдяки власному виробництву ми гарантуємо високу якість кожного виробу.
+              {menuItems[3]}
               </p>
           </div>
         </div>

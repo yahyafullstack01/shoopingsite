@@ -4,7 +4,7 @@ import Head from "next/head";
 
 const Hero = () => {
   const { translateList } = useLanguage();
-
+  const menuItems = translateList("home", "hero");
   return (
     <>
       <Head>
@@ -33,8 +33,8 @@ const Hero = () => {
   </div>
 
   {/* Текст поверх */}
-  <div className="absolute mt-64 lg:mt-48 xl:top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-white z-10 px-6">
-    <p className="text-lg sm:text-3xl lg:text-3xl xl:text-6xl">Український бренд жіночого одягу</p>
+  <div className="absolute mt-64 lg:mt-64 xl:top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-white z-10 px-6">
+    <p className="text-lg sm:text-3xl lg:text-3xl xl:text-6xl">{menuItems[0]}</p>
   </div>
 </section>
 
@@ -68,14 +68,14 @@ const Hero = () => {
               priority
             />
           </div>
-          <h2 className="text-xl sm:text-5xl lg:text-7xl font-bold text-gray-700 dark:text-white ml-2 sm:ml-12 sm:mt-8">
+          <h2 className="text-xl sm:text-5xl lg:text-7xl font-bold text-gray-700 dark:text-white ml-2 sm:ml-12 sm:mt-2">
             LATORE
           </h2>
-          <p className="text-xs sm:text-xl lg:text-3xl text-gray-600 dark:text-white ml-2 sm:ml-16 sm:mt-4">
-            Український бренд 
+          <p className="text-xs sm:text-xl lg:text-3xl text-gray-600 dark:text-white ml-2 sm:ml-12 sm:mt-4">
+          {menuItems[1]}
           </p>
-          <p className="text-xs sm:text-xl lg:text-3xl text-gray-600 dark:text-white ml-2 sm:ml-24">
-            жіночого одягу
+          <p className="text-xs sm:text-xl lg:text-3xl text-gray-600 dark:text-white ml-2 sm:ml-16">
+          {menuItems[2]}
           </p>
         </div>
       </section>
