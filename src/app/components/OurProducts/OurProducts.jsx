@@ -12,18 +12,19 @@ export default function OurProducts() {
   const menuItems = translateList("home", "Our_Products");
 
   const images = [
-    { src: "/8.jpg", link: "/All-products" },
-    { src: "/9.jpg", link: "/All-products" },
-    { src: "/10.jpg", link: "/All-products" },
-    { src: "/11.jpg", link: "/All-products" },
-    { src: "/12.jpg", link: "/All-products" },
-    { src: "/13.jpg", link: "/All-products" },
-    { src: "/14.jpg", link: "/All-products" },
+    { src: "/8.avif", link: "/All-products" },
+    { src: "/9.avif", link: "/All-products" },
+    { src: "/10.avif", link: "/All-products" },
+    { src: "/11.avif", link: "/All-products" },
+    { src: "/12.avif", link: "/All-products" },
+    { src: "/13.avif", link: "/All-products" },
+    { src: "/14.avif", link: "/All-products" },
+    
   ];
 
   const { displayedImages, handleNext, handlePrev } = useImageFollow(
     images.length,
-    10
+    7
   );
 
   useKeyboardNavigation(handlePrev, handleNext);
@@ -31,7 +32,7 @@ export default function OurProducts() {
   return (
     <section
       id="our-products"
-      className="bg-gray-100 dark:bg-gray-800  text-black dark:text-gray-100 section-container py-8"
+      className="bg-[#fcf8f3] dark:bg-[#2e1f14] text-black dark:text-gray-100 section-container py-8"
     >
       <div className="space-y-4">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-center">
@@ -48,33 +49,38 @@ export default function OurProducts() {
           <FaChevronLeft />
         </div>
         {/* Карусель зображень */}
-        <div className="flex overflow-x-auto gap-4 w-full px-4 sm:gap-6 md:gap-8">
-          {displayedImages.map((imageIndex) => (
-            <Link
-              key={imageIndex}
-              href={images[imageIndex].link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-shrink-0 group"
-            >
-              <Image
-                src={images[imageIndex].src}
-                alt={`Зображення ${imageIndex + 1}`}
-                width={200} 
-                height={250} 
-                sizes="(max-width: 768px) 45vw, (max-width: 1024px) 20vw, 300px" 
-                style={{ width: "auto", height: "auto" }}
-                quality={100} 
-                className="rounded-lg object-cover shadow-lg transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:opacity-90
-                  w-[calc(39vw-16px)]
-                  sm:w-[150px] sm:h-[150px]
-                  md:w-[200px] md:h-[300px]
-                  lg:w-[250px] lg:h-[350px]
-                  xl:w-[300px] xl:h-[350px]"
-              />
-            </Link>
-          ))}
-        </div>
+        <div
+            className="flex overflow-x-auto gap-4 w-full px-4 sm:gap-6 md:gap-8"
+            style={{
+              height: "400px",
+            }}
+          >
+            {displayedImages.map((imageIndex) => (
+              <Link
+                key={imageIndex}
+                href={images[imageIndex].link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-shrink-0 group"
+              >
+                <Image
+                  src={images[imageIndex].src}
+                  alt={`Топ продукт ${imageIndex + 1}`}
+                  width={250}
+                  height={300}
+                  priority={imageIndex === 0} // Пріоритетне завантаження для першого зображення
+                  style={{
+                    objectFit: "cover",
+                    width: "200px", 
+                    height: "300px",
+                  }}
+                  sizes="(max-width: 768px) 45vw, (max-width: 1024px) 20vw, 300px"
+                  quality={85}
+                  className="rounded-lg object-cover shadow-lg transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:opacity-90"
+                />
+              </Link>
+            ))}
+          </div>
         {/* Права кнопка */}
         <div
           onClick={handleNext}
