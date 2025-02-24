@@ -1105,7 +1105,7 @@
       sku: "12348",
       color: "burgundy",
       size: "XS S M L XL",
-      category: "Suits",
+      category: "Costumes",
       image: "/Costumes/Wool Suit Burgundy/1.avif",
       images: [
         "/Costumes/Wool Suit Burgundy/2.avif", 
