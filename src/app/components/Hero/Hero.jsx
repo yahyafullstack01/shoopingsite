@@ -12,7 +12,7 @@ const Hero = () => {
         <meta name="keywords" content="Latore, жіночий одяг, українська мода, стильний одяг" />
         <meta property="og:title" content="Latore - Український бренд жіночого одягу" />
         <meta property="og:description" content="Ласкаво просимо на наш сайт! Досліджуйте останні тренди моди." />
-        <meta property="og:image" content="/hoom/hero2.JPG" />
+        <meta property="og:image" content="/hoom/hero2.avif" />
         <meta property="og:url" content="https://example.com" />
       </Head>
 
@@ -22,7 +22,7 @@ const Hero = () => {
   {/* Фонове зображення */}
   <div className="absolute inset-0 w-full h-full">
     <Image
-      src="/hoom/hero3.PNG"
+      src="/hoom/hero3.avif"
       alt="Latore Collection"
       width={2400} 
       height={650} 
@@ -47,7 +47,7 @@ const Hero = () => {
         {/* Велике зображення */}
         <div className="relative w-[50vw] sm:w-[400px] lg:w-[500px] max-w-[600px] h-auto flex-shrink-0 overflow-hidden">
           <Image
-            src="/hoom/hero2.JPG"
+            src="/hoom/hero2.avif"
             alt="Latore Collection"
             width={600}
             height={700}
@@ -60,7 +60,7 @@ const Hero = () => {
         <div className="flex flex-col items-center md:items-start gap-2 text-center md:text-left w-[40vw] sm:w-auto">
           <div className="relative w-[35vw] sm:w-[300px] lg:w-[350px] max-w-[600px] h-auto overflow-hidden">
             <Image
-              src="/hoom/hero.JPG"
+              src="/hoom/hero.avif"
               alt="Latore Collection Style"
               width={600}
               height={500}

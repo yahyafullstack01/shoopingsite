@@ -15,7 +15,7 @@ export default function About() {
           {/* Зображення */}
           <div className="flex justify-start relative group xl:ml-36 overflow-hidden">
   <Image
-    src="/hoom/about2.JPEG"
+    src="/hoom/about.avif"
     alt="About Image"
     width={500}
     height={600}
@@ -47,14 +47,14 @@ export default function About() {
   
 <div className="mt-16   bg-white dark:bg-black mb-48 w-full">
             <h2 className=" text-2xl sm:text-4xl font-bold text-gray-800 dark:text-white mb-4">{menuItems[0]}</h2>
-            <p className="mt-8 text-gray-800 dark:text-gray-300 text-lg lg:text-2xl font-medium">
+            <p className="mt-8 text-gray dark:text-gray-300 text-lg lg:text-2xl font-medium">
             {menuItems[1]}
              
             </p>
-            <p className="mt-4 text-gray-800 dark:text-gray-300 text-base lg:text-2xl font-medium">
+            <p className="mt-4 text-gray dark:text-gray-300 text-base lg:text-2xl font-medium">
             {menuItems[2]}
               </p>
-              <p className="mt-4 text-gray-800 dark:text-gray-300 text-base lg:text-2xl font-medium">
+              <p className="mt-4 text-gray dark:text-gray-300 text-base lg:text-2xl font-medium">
               {menuItems[3]}
               </p>
           </div>

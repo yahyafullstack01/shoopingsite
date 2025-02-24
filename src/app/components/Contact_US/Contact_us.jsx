@@ -73,7 +73,7 @@ const ContactUs = () => {
               height={600}
               className="w-full h-full object-cover rounded-lg shadow-lg"
               onError={(e) => {
-                e.target.src = "/hoom/contact.JPEG";
+                e.target.src = "/hoom/contact.avif";
               }}
             />
           </div>

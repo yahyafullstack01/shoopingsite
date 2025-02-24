@@ -26,7 +26,7 @@ export default function SpecialOffers() {
         
          
     <Image
-      src="/hoom/offer.JPG"
+      src="/hoom/offer.avif"
       alt="Special Offers Image"
       layout="responsive"
       width={800}    // Базова ширина для збереження пропорцій
