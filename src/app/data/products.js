@@ -862,8 +862,10 @@
     },
     
     { id: 28,
-      price: 1820,
+      price: 2000,
       isTop: false, // Топ продукт
+      isSpecialOffer: true,
+      discountPrice: 1820,
       sku: "12345",
       color: "red",
       size: "XS S M L XL",
@@ -1285,8 +1287,10 @@
 
     {
       id: 39,
-      price: 2250,
+      price: 2800,
       isTop: false,
+      isSpecialOffer: true,
+      discountPrice: 2250,
       sku: "12353",
       color: "caramel",
       size: "XS S M L XL",
