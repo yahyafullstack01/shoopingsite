@@ -1097,7 +1097,7 @@
         }
       }
     },
-
+    
     {
       id: 34,
       price: 5360,
@@ -1106,12 +1106,12 @@
       color: "burgundy",
       size: "XS S M L XL",
       category: "Suits",
-      image: "/Suits/Wool Suit Burgundy/1.avif",
+      image: "/Costumes/Wool Suit Burgundy/1.avif",
       images: [
-        "/Suits/Wool Suit Burgundy/2.avif", 
-        "/Suits/Wool Suit Burgundy/3.avif", 
-        "/Suits/Wool Suit Burgundy/4.avif", 
-        "/Suits/Wool Suit Burgundy/5.avif"
+        "/Costumes/Wool Suit Burgundy/2.avif", 
+        "/Costumes/Wool Suit Burgundy/3.avif", 
+        "/Costumes/Wool Suit Burgundy/4.avif", 
+        "/Costumes/Wool Suit Burgundy/5.avif"
       ],
       colors: ["burgundy"],
       sizes: ["XS", "S", "M", "L", "XL"],

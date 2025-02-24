@@ -20,7 +20,6 @@ export default function FilterSidebar({
   const categories = [
     "All",
     "Costumes",
-    "Suits",
     "Dress",
     "Shirts",
     "Skirts",

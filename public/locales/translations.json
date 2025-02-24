@@ -212,7 +212,19 @@
     },
     
     "Filtersidebar": {
-      "header": ["Перегляд за", "Усі продукти", "Фільтрувати за", "Ціна", "Розмір", "Вибрано", "Усі", "Категорія"]
+      "header": ["Перегляд за", "Усі продукти", "Фільтрувати за", "Ціна", "Розмір", "Вибрано", "Усі", "Категорія"],
+      "SizeCatalogue": [ "All",
+      "Costumes",
+      "Suits",
+      "Dress",
+      "Shirts",
+      "Skirts",
+      "Sweaters",
+      "T-shirt",
+      "Jeans",
+      "Jacket",
+      "Tops",
+      "Outerwear"]
     },
 
     "SortMenu": {
