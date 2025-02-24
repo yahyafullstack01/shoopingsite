@@ -68,16 +68,26 @@
       "header": ["Size Chart", "Size (UA)", "Size (EU)", "Chest (cm)", "Waist (cm)", "Hips (cm)", "Close"]
     },
 
-
-    "Filtersidebar": {
-      "header": ["Browse by", "All Products", " Filter by", "Price", "Size", "Selected", "All", "Category"]
-    },
-    
     "SortMenu": {
       "header": ["Sort by", "recommended", "Price (high to low)", "Price (low to high)"]
-    }
-
-    
+    },
+    "Filtersidebar": {
+      "header": [
+        "Sort by", 
+        "All products", 
+        "Filter by", 
+        "Price", 
+        "Size", 
+        "Selected", 
+        "All", 
+        "Category"
+      ],
+      "SizeCatalogue": [ "All", "S", "M", "L", "XL" ],
+      "Categories": [
+        "All", "Costumes", "Dresses", "Shirts", "Skirts", 
+        "Sweaters", "T-shirts", "Jeans", "Jackets", "Tops", "Outerwear"
+      ]
+    }   
   },
   "FR": {
     "home": {
@@ -144,14 +154,28 @@
       "header": ["Tableau des tailles", "Taille (UA)", "Taille (EU)", "Poitrine (cm)", "Taille (cm)", "Hanches (cm)", "Fermer"]
     },
 
-    "Filtersidebar": {
-      "header": ["Parcourir par", "Tous les produits", "Filtrer par", "Prix", "Taille", "Sélectionné", "Tous", "Catégorie"]
-    },
-
     "SortMenu": {
       "header": ["Trier par", "Recommandé", "Prix (du plus élevé au plus bas)", "Prix (du plus bas au plus élevé)"]
       
-    }
+    },
+    "Filtersidebar": {
+  "header": [
+    "Trier par", 
+    "Tous les produits", 
+    "Filtrer par", 
+    "Prix", 
+    "Taille", 
+    "Sélectionné", 
+    "Tous", 
+    "Catégorie"
+  ],
+  "SizeCatalogue": [ "Tous", "S", "M", "L", "XL" ],
+  "Categories": [
+    "Tous", "Costumes", "Robes", "Chemises", "Jupes", 
+    "Pulls", "T-shirts", "Jeans", "Vestes", "Tops", "Vêtements d'extérieur"
+  ]
+}
+
 
     
   },
@@ -210,27 +234,28 @@
     "SizeTable": {
       "header": ["Розмірна сітка", "Розмір (UA", "Розмір (EU)", "Груди (см)", "Талія (см)", "Стегна (см)","Закрити"]
     },
-    
-    "Filtersidebar": {
-      "header": ["Перегляд за", "Усі продукти", "Фільтрувати за", "Ціна", "Розмір", "Вибрано", "Усі", "Категорія"],
-      "SizeCatalogue": [ "All",
-      "Costumes",
-      "Suits",
-      "Dress",
-      "Shirts",
-      "Skirts",
-      "Sweaters",
-      "T-shirt",
-      "Jeans",
-      "Jacket",
-      "Tops",
-      "Outerwear"]
-    },
-
     "SortMenu": {
-      "header": ["Сортувати за", "Рекомендовані", "Ціна (від високої до низької)", "Ціна (від низької до високої)"]
-
-    }
+  "header": ["Сортувати за", "Рекомендовані","Ціна (від низької до високої)", "Ціна (від високої до низької)"
     
+  ]
+},
+
+    "Filtersidebar": {
+      "header": [
+        "Перегляд за", 
+        "Усі продукти", 
+        "Фільтрувати за", 
+        "Ціна", 
+        "Розмір", 
+        "Вибрано", 
+        "Усі", 
+        "Категорія"
+      ],
+      "SizeCatalogue": [ "Усі", "S", "M", "L", "XL" ],
+      "Categories": [
+        "Усі", "Костюми", "Сукні", "Сорочки", "Спідниці", 
+        "Светри", "Футболки", "Джинси", "Куртки", "Топи", "Верхній одяг"
+      ]
+    }
   }
 }
