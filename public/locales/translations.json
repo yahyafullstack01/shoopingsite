@@ -26,8 +26,11 @@
     },
     "contact": {
       "header": ["Contact", "Catalogues", "About", "Conditions"],
-      "hero": ["Contact Us", "We’d love to hear from you! Whether you have questions, comments, or simply want to learn more about what we offer, feel free to get in touch. Our team is here to assist you with any inquiries and help bring your vision to life. Don’t hesitate to reach out—we’re just a message away!"],
-      "input": ["First Name", "Last Name", "Phone Number", "Email", "Message", "Send", "Thanks for submitting!", " Your form has been successfully submitted!"]
+      "hero": ["Contact Us", "We’d love to hear from you! Whether you have questions, comments, or simply want to learn more about what we offer, feel free to get in touch. Our team is here to assist you with any inquiries and help bring your vision to life. Don’t hesitate to reach out—we’re just a message away!",
+      "Poltavskyi Shliakh St, 144 А\n| | Torhovyy Tsentr Kyyivsʹkyy"
+],
+      "input": ["First Name", "Last Name", "Phone Number", "Email", "Message", "Send", "Thanks for submitting!", " Your form has been successfully submitted!"],
+      "openninghours": ["Opening Hours", "Mon - Fri", "Saturday", "Sunday"]
 
     },
     "toppro": {
@@ -116,7 +119,8 @@
     "contact":{
       "hero": [
         "Contactez-nous",
-        "Nous serions ravis de vous entendre ! Que vous ayez des questions, des commentaires ou que vous souhaitiez simplement en savoir plus sur ce que nous proposons, n'hésitez pas à nous contacter. Notre équipe est là pour répondre à vos demandes et vous aider à concrétiser vos idées. N'hésitez pas à nous écrire – nous sommes à un message de vous !"
+        "Nous serions ravis de vous entendre ! Que vous ayez des questions, des commentaires ou que vous souhaitiez simplement en savoir plus sur ce que nous proposons, n'hésitez pas à nous contacter. Notre équipe est là pour répondre à vos demandes et vous aider à concrétiser vos idées. N'hésitez pas à nous écrire – nous sommes à un message de vous !",
+        "Poltavskyi Shliakh St, 144 А\n| | Torhovyy Tsentr Kyyivsʹkyy"
       ],
       "input": [
         "Prénom",
@@ -127,6 +131,12 @@
         "Envoyer",
         "Merci pour votre soumission !",
         "Votre formulaire a été soumis avec succès !"
+      ],
+      "openninghours": [
+        "Heures d'ouverture",
+        "Lun - Ven",
+        "Samedi",
+        "Dimanche"
       ]
     },
     "Conditions": {
@@ -219,7 +229,8 @@
     "contact": {
       "hero": [
         "Зворотній зв’язок",
-        "Ви можете заповнити форму нижче, і ми зв’яжемося з вами найближчим часом"
+        "Ви можете заповнити форму нижче, і ми зв’яжемося з вами найближчим часом",
+        "Вул.Полтавський шлях 144А\n| | Торговий центр «Київський»"
       ],
       "input": [
         "Ім'я",
@@ -230,6 +241,12 @@
         "Відправити",
         "Дякуємо за відправку!",
         "Ваша форма була успішно надіслана!"
+      ],
+      "openninghours": [
+        "Години роботи",
+        "Пон - П’ят",
+        "Субота",
+        "Неділя"
       ]
     },
     "Conditions" : {

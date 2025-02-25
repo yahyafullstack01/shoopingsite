@@ -77,20 +77,20 @@ const ContactUs = () => {
               }}
             />
           </div>
-
+          
           <article className="w-full sm:w-1/2 lg:w-1/3 space-y-4 sm:space-y-6">
             <address className="text-base sm:text-lg md:text-xl not-italic">
-              500 Terry Francine Street, San Francisco, CA 94158
+              {menuItems[2]}
             </address>
             <div className="flex flex-col sm:flex-row xl:justify-center items-center gap-2 sm:gap-4">
               <a
-                href="mailto:info@mysite.com"
+                href="latoreatelier01@gmail.com"
                 className="text-blue-400 hover:underline"
               >
-                info@mysite.com
+                latoreatelier01@gmail.com
               </a>
               <span className="hidden sm:block  dark:text-white">|</span>
-              <p className="text-sm sm:text-base">123-456-7890</p>
+              <p className="text-sm sm:text-base">+380 97 367 82 57</p>
             </div>
             {searchParams.get("productName") ? (
               <ProductDetails productData={productData} formSubmitted={formSubmitted} />
