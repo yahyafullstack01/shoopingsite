@@ -18,7 +18,8 @@
         "Don't miss out on our exclusive deals. Grab them while they last \nand enjoy discounts that won&t be around forever!",
         "Shop Now"
       ],
-      "follow_us": ["Follow Us"]
+      "follow_us": ["Follow Us"],
+      "Footer": ["Poltavskyi Shliakh St, 144 А", "Torhovyy Tsentr", "Kyyivsʹkyy"]
     },
     "products": {
       "header": ["Catalogues", "About", "Contact", "Conditions"]

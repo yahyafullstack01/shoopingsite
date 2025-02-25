@@ -13,13 +13,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 border-t border-gray-300">
           <div className="border-b sm:border-b-0 md:border-r border-gray-300 px-4 sm:px-6 py-6">
             <p className="text-sm mb-2">
-              <a href="tel:1234567890" className="hover:underline">
-                123-456-78999
+              <a href="tel:+380973678257" className="hover:underline">
+              +380 97 367 82 57
               </a>
             </p>
             <p className="text-sm">
-              <a href="mailto:info@mysite.com" className="hover:underline">
-                info@mysite.com
+              <a href="latoreatelier01@gmail.com" className="hover:underline">
+              latoreatelier01@gmail.com
               </a>
             </p>
           </div>
