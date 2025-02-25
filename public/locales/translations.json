@@ -93,6 +93,14 @@
         "All", "Costumes", "Dresses", "Shirts", "Skirts", 
         "Sweaters", "T-shirts", "Jeans", "Jackets", "Tops", "Outerwear"
       ]
+    },
+    
+    "SpecialOffers": {
+      "header": ["Special Offers Collection", "Discover our exclusive deals and discounts.", "Special Offers", "Selected Product Details"]
+    },
+    
+    "Infoform":{
+      "header": ["Category", " Color", "Select", "Size", "Quantity", "Contact Us", "Clothing Size Chart", "PRODUCT INFO"]
     }
   },
   "FR": {
@@ -197,7 +205,30 @@
     "Tous", "Costumes", "Robes", "Chemises", "Jupes", 
     "Pulls", "T-shirts", "Jeans", "Vestes", "Tops", "Vêtements d'extérieur"
   ]
-}
+},
+
+  "SpecialOffers": {
+    "header": [
+      "Collection d'offres spéciales",
+      "Découvrez nos offres et réductions exclusives.",
+      "offres spéciales",
+      "Détails du produit sélectionné"
+    ]
+  },
+
+  "Infoform": {
+    "header": [
+      "Catégorie",
+      "Couleur",
+      "Sélectionner",
+      "Taille",
+      "Quantité",
+      "Contactez-nous",
+      "Tableau des tailles",
+      "INFORMATIONS SUR LE PRODUIT"
+    ]
+  }
+
 
 
 
@@ -299,6 +330,28 @@
         "Усі", "Костюми", "Сукні", "Сорочки", "Спідниці", 
         "Светри", "Футболки", "Джинси", "Куртки", "Топи", "Верхній одяг"
       ]
-    }
+    },
+    
+    "SpecialOffers": {
+    "header": [
+      "Колекція спеціальних пропозицій",
+      "Відкрийте для себе наші ексклюзивні пропозиції та знижки.",
+      "спеціальних пропозицій",
+      "Деталі вибраного продукту"
+    ]
+  },
+
+  "Infoform": {
+    "header": [
+      "Категорія",
+      "Колір",
+      "Вибрати",
+      "Розмір",
+      "Кількість",
+      "Зв'язатися з нами",
+      "Розмірна сітка одягу",
+      "ІНФОРМАЦІЯ ПРО ПРОДУКТ"
+    ]
+  }
 }
 }

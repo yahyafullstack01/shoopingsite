@@ -11,6 +11,7 @@ import Image from "next/image";
 
 export default function OffersInfo() {
   const { translateList, language } = useLanguage();
+  const menuItems = translateList("SpecialOffers", "header");
   const router = useRouter();
   const descriptionRef = useRef(null);
 
@@ -31,19 +32,19 @@ export default function OffersInfo() {
       descriptionRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
-
+  
   return (
     <main className="dark:bg-gray-800 bg-[#fcf8f3] text-black dark:text-white min-h-screen px-4 py-8">
       <header className="text-center">
-        <h1 className="text-3xl md:text-4xl font-bold mb-4">Special Offers Collection</h1>
+        <h1 className="text-3xl md:text-4xl font-bold mb-4">{menuItems[0]}</h1>
         <p className="dark:text-gray-400 text:bg-black text-sm md:text-base mb-8">
-          Explore our exclusive special offers!
+        {menuItems[1]}
         </p>
       </header>
 
       <section aria-labelledby="special-offers">
         <h2 id="special-offers" className="sr-only">
-          Special Offers
+        {menuItems[2]}
         </h2>
         <div
           className="bg-gray-100 dark:bg-gray-800 ml-8 max-h-[450px] md:max-h-[600px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 mb-8"
@@ -98,7 +99,7 @@ export default function OffersInfo() {
           </div>
         </div>
       </section>
-
+      
       <article
         aria-live="polite"
         aria-labelledby="product-details"

@@ -3,7 +3,8 @@ import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { handleContactButtonClick } from "../utils/products";
 import { useLanguage } from "./useLanguage";
-import SizeChart from "../components/SizeChart/SizeChart"
+import SizeChart from "../components/SizeChart/SizeChart";
+
 export default function InfoForm({ product, showDiscount = false }) {
   const router = useRouter();
   const [selectedColor, setSelectedColor] = useState("");
@@ -14,7 +15,8 @@ export default function InfoForm({ product, showDiscount = false }) {
   const [quantityError, setQuantityError] = useState("");
   const [showSizeChart, setShowSizeChart] = useState(false);
 
-  const { language } = useLanguage();
+  const { language, translateList } = useLanguage();
+  const menuItems = translateList("Infoform", "header");
   const translatedName = product.translations?.[language]?.name || product.name;
   const translatedDescription = product.translations?.[language]?.description || product.description;
 
@@ -22,19 +24,21 @@ export default function InfoForm({ product, showDiscount = false }) {
     e.preventDefault();
     let hasError = false;
 
-    // Перевірка обраного кольору
+    // Validate selected color
     if (!selectedColor) {
-      setColorError("Please select a color.");
+      setColorError(menuItems[1] || "Please select a color.");
       hasError = true;
     }
-    // Перевірка обраного розміру
+
+    // Validate selected size
     if (!selectedSize) {
-      setSizeError("Please select a size.");
+      setSizeError(menuItems[3] || "Please select a size.");
       hasError = true;
     }
-    // Перевірка кількості товару
+
+    // Validate quantity
     if (quantity <= 0) {
-      setQuantityError("Please select a valid quantity.");
+      setQuantityError(menuItems[4] || "Please select a valid quantity.");
       hasError = true;
     }
 
@@ -64,17 +68,18 @@ export default function InfoForm({ product, showDiscount = false }) {
 
   return (
     <div className="flex flex-col px-4 md:px-0">
+      {/* Product Title */}
       <h1 className="text-2xl md:text-3xl font-semibold mb-2 text-center md:text-left">
         {translatedName}
       </h1>
       <p className="text-gray-700 dark:text-gray-400 text-sm md:text-base mb-2 text-center md:text-left">
-        Category: <span className="font-semibold">{product.category || "Unknown Category"}</span>
+        {menuItems[0]}: <span className="font-semibold">{product.category || "Unknown Category"}</span>
       </p>
       <p className="text-gray-800 dark:text-gray-500 text-xs md:text-sm mb-4 text-center md:text-left">
         SKU: {product.sku}
       </p>
 
-      {/* Ціна продукту */}
+      {/* Product Price */}
       <div className="text-xl md:text-2xl font-bold mb-4 text-center md:text-left">
         {showDiscount && product.discountPrice ? (
           <>
@@ -89,7 +94,7 @@ export default function InfoForm({ product, showDiscount = false }) {
       {/* Color Selector */}
       <div className="mb-6 md:mb-8">
         <label htmlFor="color" className="block text-sm font-medium mb-2 text-center md:text-left">
-          Color
+          {menuItems[1] || "Color"}
         </label>
         <select
           id="color"
@@ -97,7 +102,7 @@ export default function InfoForm({ product, showDiscount = false }) {
           onChange={(e) => handleColorChange(e.target.value)}
           className={`w-full md:w-1/2 p-2 border ${colorError ? "border-red-500" : "border-gray-300"} bg-gray-200 rounded dark:bg-gray-800 dark:text-gray-300`}
         >
-          <option value="">Select</option>
+          <option value="">{menuItems[2] || "Select"}</option>
           {product.colors?.map((color) => (
             <option key={color} value={color}>
               {color}
@@ -110,7 +115,7 @@ export default function InfoForm({ product, showDiscount = false }) {
       {/* Size Selector */}
       <div className="mb-6 md:mb-8">
         <label htmlFor="size" className="block text-sm font-medium mb-2 text-center md:text-left">
-          Size
+          {menuItems[3] || "Size"}
         </label>
         <select
           id="size"
@@ -118,7 +123,7 @@ export default function InfoForm({ product, showDiscount = false }) {
           onChange={(e) => handleSizeChange(e.target.value)}
           className={`w-full md:w-1/2 p-2 border ${sizeError ? "border-red-500" : "border-gray-300"} bg-gray-200 rounded dark:bg-gray-800 dark:text-gray-300`}
         >
-          <option value="">Select</option>
+          <option value="">{menuItems[2] || "Select"}</option>
           {product.sizes?.map((size) => (
             <option key={size} value={size}>
               {size}
@@ -131,7 +136,7 @@ export default function InfoForm({ product, showDiscount = false }) {
       {/* Quantity Selector */}
       <div className="mb-6 md:mb-8">
         <label htmlFor="quantity" className="block text-sm font-medium mb-2 text-center md:text-left">
-          Quantity
+          {menuItems[4] || "Quantity"}
         </label>
         <div className="flex items-center w-full md:w-1/4 bg-gray-200 dark:bg-gray-700 rounded">
           <button
@@ -165,25 +170,24 @@ export default function InfoForm({ product, showDiscount = false }) {
         onClick={handleContactClick}
         className="w-full md:w-1/2 bg-gray-700 hover:bg-gray-500 text-white dark:bg-lime-500 dark:hover:bg-lime-600 dark:text-black font-semibold py-2 rounded transition duration-300"
       >
-        Contact Us
-      </button>
- 
- <div className="mb-6 md:mb-2 mt-4">
-      {/* Розмірна сітка */}
-      <button
-        onClick={() => setShowSizeChart(true)}
-        className="text-xl text-black dark:text-white underline transition-colors duration-300 hover:text-blue-500 focus-visible:text-blue-900 dark:hover:text-blue-500 dark:focus-visible:text-blue-500 focus-visible:outline-none"
-
-      >
-        Розмірна сітка одягу
+        {menuItems[5] || "Contact Us"}
       </button>
 
-      {showSizeChart && <SizeChart onClose={() => setShowSizeChart(false)} />}
-    </div>
+      {/* Size Chart */}
+      <div className="mb-6 md:mb-2 mt-4">
+        <button
+          onClick={() => setShowSizeChart(true)}
+          className="text-xl text-black dark:text-white underline transition-colors duration-300 hover:text-blue-500 focus-visible:text-blue-900 dark:hover:text-blue-500 dark:focus-visible:text-blue-500 focus-visible:outline-none"
+        >
+          {menuItems[6] || "Clothing Size Chart"}
+        </button>
+        {showSizeChart && <SizeChart onClose={() => setShowSizeChart(false)} />}
+      </div>
+
       {/* Product Info */}
       <div className="mt-10">
         <h2 className="text-lg md:text-xl font-semibold text-black dark:text-white mb-4 text-center md:text-left">
-          PRODUCT INFO
+          {menuItems[7] || "PRODUCT INFO"}
         </h2>
         <p className="text-gray-500 dark:text-gray-400 text-sm md:text-base text-center md:text-left">
           {translatedDescription}
