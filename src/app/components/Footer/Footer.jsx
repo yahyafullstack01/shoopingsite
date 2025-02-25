@@ -5,7 +5,7 @@ import { useLanguage } from "../../Functions/useLanguage";
 export default function Footer() {
   const {  translateList } = useLanguage(); 
   
-  const menuItems = translateList("home", "about");
+  const menuItems = translateList("home", "Footer");
   return (
     <footer className="bg-black text-white section-container">
       <div className="space-y-4">
@@ -25,8 +25,8 @@ export default function Footer() {
           </div>
           <div className="border-b sm:border-b-0 md:border-r border-gray-300 px-4 sm:px-6 py-6">
           <p className="text-sm">
-  Poltavskyi Shliakh St, 144 А<br />
-  Torhovyy Tsentr &quot;Kyyivsʹkyy&quot;
+  {menuItems[0]}<br />
+  {menuItems[1]} &quot;{menuItems[2]}&quot;
 </p>
 
           </div>

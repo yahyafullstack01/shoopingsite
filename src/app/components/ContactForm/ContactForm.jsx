@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { validateForm } from "../../utils/validationContactForm"; // Import the validation function
+import { useLanguage } from "../../Functions/useLanguage";
 
 const ContactForm = ({
   formValues,
@@ -19,6 +20,9 @@ const ContactForm = ({
       onFormSubmit(e); // Call the original submit handler if valid
     }
   };
+  const { translateList } = useLanguage();
+  const menuItems = translateList("ContactForm", "Inputs");
+  
 
   return (
     <div>
@@ -28,7 +32,7 @@ const ContactForm = ({
             <input
               type="text"
               name="firstName"
-              placeholder="First Name"
+              placeholder={menuItems[0]}
               value={formValues.firstName}
               onChange={onInputChange}
               className="w-full p-3 bg-transparent border-b border-black dark:border-white text-black dark:text-white placeholder-gray-550 dark:placeholder-gray-400 focus:outline-none focus:border-lime-500"
@@ -38,12 +42,12 @@ const ContactForm = ({
               <p className="text-red-500 text-sm mt-1">{errors.firstName}</p>
             )}
           </div>
-
+          
           <div className="w-full sm:w-1/2">
             <input
               type="text"
               name="lastName"
-              placeholder="Last Name"
+              placeholder={menuItems[1]}
               value={formValues.lastName}
               onChange={onInputChange}
               className="w-full p-3 bg-transparent border-b border-black dark:border-white text-black dark:text-white placeholder-gray-550 dark:placeholder-gray-400 focus:outline-none focus:border-lime-500"
@@ -59,7 +63,7 @@ const ContactForm = ({
           <input
             type="tel"
             name="phone"
-            placeholder="Phone Number *"
+            placeholder= {menuItems[2]}
             value={formValues.phone}
             onChange={onInputChange}
             className="w-full p-3 bg-transparent border-b border-black dark:border-white text-black dark:text-white placeholder-gray-550 dark:placeholder-gray-400 focus:outline-none focus:border-lime-500"
@@ -74,7 +78,7 @@ const ContactForm = ({
           <input
             type="email"
             name="email"
-            placeholder="Email *"
+            placeholder= {menuItems[3]}
             value={formValues.email}
             onChange={onInputChange}
             className="w-full p-3 bg-transparent border-b border-black dark:border-white text-black dark:text-white placeholder-gray-550 dark:placeholder-gray-400 focus:outline-none focus:border-lime-500"
@@ -88,7 +92,7 @@ const ContactForm = ({
         <div>
           <textarea
             name="message"
-            placeholder="Message"
+            placeholder={menuItems[4]}
             rows="4"
             value={formValues.message}
             onChange={onInputChange}
@@ -101,11 +105,11 @@ const ContactForm = ({
             type="submit"
             className="dark:bg-lime-500 text-white  bg-gray-800 hover:bg-[#3a271970] font-semibold py-2 px-8 rounded-lg dark:hover:bg-lime-600"
           >
-            Send
+            {menuItems[5]}
           </button>
           {!formSubmitted && (
             <p className="placeholder-gray-550 dark:text-gray-400 text-sm ml-16 sm:ml-36">
-              Thanks for submitting!
+              {menuItems[6]}
             </p>
           )}
         </div>
@@ -114,7 +118,7 @@ const ContactForm = ({
       {/* Success Message */}
       {successMessageVisible && (
         <p className="mt-4 text-green-500 font-bold">
-          Your form has been successfully submitted!
+          {menuItems[7]}
         </p>
       )}
     </div>

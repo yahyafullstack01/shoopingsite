@@ -88,7 +88,11 @@
         "All", "Costumes", "Dresses", "Shirts", "Skirts", 
         "Sweaters", "T-shirts", "Jeans", "Jackets", "Tops", "Outerwear"
       ]
-    }   
+    },
+
+    "ContactForm": {
+      "Input": ["First Name", "Last Name", "Phone Number", "Email", "Message", "Send", "Thanks for submitting!", " Your form has been successfully submitted!"]
+    }
   },
   "FR": {
     "home": {
@@ -175,11 +179,25 @@
     "Tous", "Costumes", "Robes", "Chemises", "Jupes", 
     "Pulls", "T-shirts", "Jeans", "Vestes", "Tops", "Vêtements d'extérieur"
   ]
+},
+
+"ContactForm": {
+  "Input": [
+    "Prénom",
+    "Nom",
+    "Numéro de téléphone",
+    "Email",
+    "Message",
+    "Envoyer",
+    "Merci pour votre soumission !",
+    "Votre formulaire a été soumis avec succès !"
+  ]
 }
 
 
+
     
-  },
+},
   
   "UA": {
     "home": {
@@ -259,6 +277,19 @@
         "Усі", "Костюми", "Сукні", "Сорочки", "Спідниці", 
         "Светри", "Футболки", "Джинси", "Куртки", "Топи", "Верхній одяг"
       ]
-    }
+    },
+
+    "ContactForm": {
+  "Input": [
+    "Ім'я",
+    "Прізвище",
+    "Номер телефону",
+    "Електронна пошта",
+    "Повідомлення",
+    "Відправити",
+    "Дякуємо за відправку!",
+    "Ваша форма була успішно надіслана!"
+  ]
   }
+}
 }
