@@ -12,16 +12,16 @@ export default function FollowUs() {
   const menuItems = translateList("home", "follow_us");
   const Insta = "https://www.instagram.com/latore.atelier?igsh=Y3RvbWZhZW12Zmxj";
   const images = [
-    { src: "/1.jpg", link: Insta },
-    { src: "/2.jpg", link: Insta },
-    { src: "/3.jpg", link: Insta },
-    { src: "/4.jpg", link: Insta },
-    { src: "/5.jpg", link: Insta },
-    { src: "/6.jpg", link: Insta },
-    { src: "/7.jpg", link: Insta },
-    { src: "/8.jpg", link: Insta },
-    { src: "/9.jpg", link: Insta },
-    { src: "/10.jpg", link: Insta },
+    { src: "/15.avif", link: Insta },
+    { src: "/16.avif", link: Insta },
+    { src: "/17.avif", link: Insta },
+    { src: "/18.avif", link: Insta },
+    { src: "/19.avif", link: Insta },
+    { src: "/20.avif", link: Insta },
+    { src: "/21.avif", link: Insta },
+    { src: "/22.avif", link: Insta },
+    { src: "/23.avif", link: Insta },
+    { src: "/24.avif", link: Insta },
   ];
 
   const { displayedImages, handleNext, handlePrev } = useImageFollow(
@@ -49,34 +49,38 @@ export default function FollowUs() {
         </div>
 
         {/* Карусель зображень */}
-        <div className="flex overflow-x-auto gap-4 w-full px-4 sm:gap-6 md:gap-8">
-          {displayedImages.map((imageIndex) => (
-            <Link
-              key={imageIndex}
-              href={images[imageIndex].link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex-shrink-0 group"
-            >
-              <Image
-                src={images[imageIndex].src}
-                alt={`Зображення ${imageIndex + 1}`}
-                width={200} 
-                height={250} 
-                sizes="(max-width: 768px) 45vw, (max-width: 1024px) 20vw, 300px" 
-                style={{ width: "auto", height: "auto" }}
-                quality={100} 
-                className="rounded-lg object-cover shadow-lg transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:opacity-90
-                  w-[calc(39vw-16px)]
-                  sm:w-[150px] sm:h-[150px]
-                  md:w-[200px] md:h-[300px]
-                  lg:w-[250px] lg:h-[350px]
-                  xl:w-[300px] xl:h-[350px]"
-              />
-            </Link>
-          ))}
-        </div>
-
+        <div
+            className="flex overflow-x-auto gap-4 w-full px-4 sm:gap-6 md:gap-8"
+            style={{
+              height: "400px",
+            }}
+          >
+            {displayedImages.map((imageIndex) => (
+              <Link
+                key={imageIndex}
+                href={images[imageIndex].link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-shrink-0 group"
+              >
+                <Image
+                  src={images[imageIndex].src}
+                  alt={`Зображення ${imageIndex + 1}`}
+                  width={250}
+                  height={300}
+                  priority={imageIndex === 0} // Пріоритетне завантаження для першого зображення
+                  style={{
+                    objectFit: "cover",
+                    width: "200px", 
+                    height: "300px",
+                  }}
+                  sizes="(max-width: 768px) 45vw, (max-width: 1024px) 20vw, 300px"
+                  quality={85}
+                  className="rounded-lg object-cover shadow-lg transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:opacity-90"
+                />
+              </Link>
+            ))}
+          </div>
         {/* Права кнопка */}
         <div
           onClick={handleNext}
