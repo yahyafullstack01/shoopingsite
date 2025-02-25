@@ -21,9 +21,7 @@ export const validateForm = (formValues) => {
       errors.email = "Enter a valid email address.";
     }
   
-    if (formValues.message.trim().length < 10) {
-      errors.message = "Message must be at least 10 characters long.";
-    }
+    
   
     return errors; // Return an object with errors (if any)
   };
