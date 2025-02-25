@@ -8,7 +8,7 @@
         "LATORE - Ukrainian brand of women's clothing with its own production, with over 10 years of experience, with two showrooms in Ivano-Frankivsk and Kharkiv.",
         "We are the embodiment of basic models and an original, designer approach to all products.",
         "Our clothes are a combination of classics and comfort, femininity and harmony. Thanks to our own production, we guarantee the high quality of each product."
-      
+        
       ],
       "top_products": ["Top Products"],
       "Our_Products": ["Our Products"],
@@ -26,7 +26,9 @@
     },
     "contact": {
       "header": ["Contact", "Catalogues", "About", "Conditions"],
-      "hero": ["Contact Us", "We’d love to hear from you! Whether you have questions, comments, or simply want to learn more about what we offer, feel free to get in touch. Our team is here to assist you with any inquiries and help bring your vision to life. Don’t hesitate to reach out—we’re just a message away!"]
+      "hero": ["Contact Us", "We’d love to hear from you! Whether you have questions, comments, or simply want to learn more about what we offer, feel free to get in touch. Our team is here to assist you with any inquiries and help bring your vision to life. Don’t hesitate to reach out—we’re just a message away!"],
+      "input": ["First Name", "Last Name", "Phone Number", "Email", "Message", "Send", "Thanks for submitting!", " Your form has been successfully submitted!"]
+
     },
     "toppro": {
       "header": ["Contact", "Catalogues", "About", "Conditions"]
@@ -88,10 +90,6 @@
         "All", "Costumes", "Dresses", "Shirts", "Skirts", 
         "Sweaters", "T-shirts", "Jeans", "Jackets", "Tops", "Outerwear"
       ]
-    },
-
-    "ContactForm": {
-      "Input": ["First Name", "Last Name", "Phone Number", "Email", "Message", "Send", "Thanks for submitting!", " Your form has been successfully submitted!"]
     }
   },
   "FR": {
@@ -119,6 +117,16 @@
       "hero": [
         "Contactez-nous",
         "Nous serions ravis de vous entendre ! Que vous ayez des questions, des commentaires ou que vous souhaitiez simplement en savoir plus sur ce que nous proposons, n'hésitez pas à nous contacter. Notre équipe est là pour répondre à vos demandes et vous aider à concrétiser vos idées. N'hésitez pas à nous écrire – nous sommes à un message de vous !"
+      ],
+      "input": [
+        "Prénom",
+        "Nom",
+        "Numéro de téléphone",
+        "Email",
+        "Message",
+        "Envoyer",
+        "Merci pour votre soumission !",
+        "Votre formulaire a été soumis avec succès !"
       ]
     },
     "Conditions": {
@@ -179,19 +187,6 @@
     "Tous", "Costumes", "Robes", "Chemises", "Jupes", 
     "Pulls", "T-shirts", "Jeans", "Vestes", "Tops", "Vêtements d'extérieur"
   ]
-},
-
-"ContactForm": {
-  "Input": [
-    "Prénom",
-    "Nom",
-    "Numéro de téléphone",
-    "Email",
-    "Message",
-    "Envoyer",
-    "Merci pour votre soumission !",
-    "Votre formulaire a été soumis avec succès !"
-  ]
 }
 
 
@@ -219,12 +214,22 @@
       ],
       "follow_us": ["Слідкуйте за нами"],
       "Footer": ["Вул.Полтавський шлях 144А", "Торговий центр", "«Київський»"]
-
+      
     },
     "contact": {
       "hero": [
         "Зворотній зв’язок",
         "Ви можете заповнити форму нижче, і ми зв’яжемося з вами найближчим часом"
+      ],
+      "input": [
+        "Ім'я",
+        "Прізвище",
+        "Номер телефону",
+        "Електронна пошта",
+        "Повідомлення",
+        "Відправити",
+        "Дякуємо за відправку!",
+        "Ваша форма була успішно надіслана!"
       ]
     },
     "Conditions" : {
@@ -277,19 +282,6 @@
         "Усі", "Костюми", "Сукні", "Сорочки", "Спідниці", 
         "Светри", "Футболки", "Джинси", "Куртки", "Топи", "Верхній одяг"
       ]
-    },
-
-    "ContactForm": {
-  "Input": [
-    "Ім'я",
-    "Прізвище",
-    "Номер телефону",
-    "Електронна пошта",
-    "Повідомлення",
-    "Відправити",
-    "Дякуємо за відправку!",
-    "Ваша форма була успішно надіслана!"
-  ]
-  }
+    }
 }
 }

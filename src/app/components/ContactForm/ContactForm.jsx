@@ -21,7 +21,7 @@ const ContactForm = ({
     }
   };
   const { translateList } = useLanguage();
-  const menuItems = translateList("ContactForm", "Inputs");
+  const menuItems = translateList("contact", "input");
   
 
   return (
