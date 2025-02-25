@@ -12,7 +12,6 @@ export default function FollowUs() {
   const menuItems = translateList("home", "follow_us");
   const Insta = "https://www.instagram.com/latore.atelier?igsh=Y3RvbWZhZW12Zmxj";
   const images = [
-    { src: "/15.avif", link: Insta },
     { src: "/16.avif", link: Insta },
     { src: "/17.avif", link: Insta },
     { src: "/18.avif", link: Insta },
@@ -22,6 +21,19 @@ export default function FollowUs() {
     { src: "/22.avif", link: Insta },
     { src: "/23.avif", link: Insta },
     { src: "/24.avif", link: Insta },
+    { src: "/25.avif", link: Insta },
+    { src: "/26.avif", link: Insta },
+    { src: "/27.avif", link: Insta },
+    { src: "/28.avif", link: Insta },
+    { src: "/29.avif", link: Insta },
+    { src: "/30.avif", link: Insta },
+    { src: "/31.avif", link: Insta },
+    { src: "/32.avif", link: Insta },
+    { src: "/33.avif", link: Insta },
+    { src: "/34.avif", link: Insta },
+    { src: "/35.avif", link: Insta },
+    { src: "/36.avif", link: Insta },
+
   ];
 
   const { displayedImages, handleNext, handlePrev } = useImageFollow(
