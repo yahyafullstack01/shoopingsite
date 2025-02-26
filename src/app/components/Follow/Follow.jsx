@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useLanguage } from "../../Functions/useLanguage";
@@ -11,6 +12,7 @@ export default function FollowUs() {
   const { translateList } = useLanguage();
   const menuItems = translateList("home", "follow_us");
   const Insta = "https://www.instagram.com/latore.atelier?igsh=Y3RvbWZhZW12Zmxj";
+
   const images = [
     { src: "/16.avif", link: Insta },
     { src: "/17.avif", link: Insta },
@@ -33,13 +35,30 @@ export default function FollowUs() {
     { src: "/34.avif", link: Insta },
     { src: "/35.avif", link: Insta },
     { src: "/36.avif", link: Insta },
-
   ];
+
+  // Контролюємо кількість відображуваних зображень
+  const [visibleImagesCount, setVisibleImagesCount] = useState(10);
+
+  useEffect(() => {
+    const updateVisibleImages = () => {
+      if (window.innerWidth <= 425) {
+        setVisibleImagesCount(1); // Мобільний → 1 зображення
+      } else {
+        setVisibleImagesCount(10); // Планшет/десктоп → як було
+      }
+    };
+
+    updateVisibleImages();
+    window.addEventListener("resize", updateVisibleImages);
+    return () => window.removeEventListener("resize", updateVisibleImages);
+  }, []);
 
   const { displayedImages, handleNext, handlePrev } = useImageFollow(
     images.length,
-    10
+    visibleImagesCount
   );
+
   useKeyboardNavigation(handlePrev, handleNext);
 
   return (
@@ -60,39 +79,44 @@ export default function FollowUs() {
           <FaChevronLeft />
         </div>
 
-        {/* Карусель зображень */}
+        {/* Карусель */}
         <div
-            className="flex overflow-x-auto gap-4 w-full px-4 sm:gap-6 md:gap-8"
-            style={{
-              height: "400px",
-            }}
-          >
-            {displayedImages.map((imageIndex) => (
-              <Link
-                key={imageIndex}
-                href={images[imageIndex].link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-shrink-0 group"
-              >
-                <Image
-                  src={images[imageIndex].src}
-                  alt={`Зображення ${imageIndex + 1}`}
-                  width={250}
-                  height={300}
-                  priority={imageIndex === 0} // Пріоритетне завантаження для першого зображення
-                  style={{
-                    objectFit: "cover",
-                    width: "200px", 
-                    height: "300px",
-                  }}
-                  sizes="(max-width: 768px) 45vw, (max-width: 1024px) 20vw, 300px"
-                  quality={85}
-                  className="rounded-lg object-cover shadow-lg transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:opacity-90"
-                />
-              </Link>
-            ))}
-          </div>
+          className="flex overflow-x-auto w-full px-4 sm:gap-6 md:gap-8"
+          style={{
+            height: "300px",
+            maxWidth: "100%",
+            display: "flex",
+            justifyContent: visibleImagesCount === 1 ? "center" : "flex-start", // Центруємо тільки на мобільних
+            alignItems: "center",
+          }}
+        >
+          {displayedImages.map((imageIndex) => (
+            <Link
+              key={imageIndex}
+              href={images[imageIndex].link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-shrink-0 group"
+            >
+              <Image
+                src={images[imageIndex].src}
+                alt={`Зображення ${imageIndex + 1}`}
+                width={200} // Фіксований розмір для мобільних
+                height={300}
+                priority={imageIndex === 0}
+                style={{
+                  objectFit: "cover",
+                  display: "block",
+                  margin: visibleImagesCount === 1 ? "0 auto" : "0", // Центруємо тільки на мобільних
+                }}
+                sizes="(max-width: 425px) 200px, (max-width: 768px) 45vw, (max-width: 1024px) 20vw, 300px"
+                quality={85}
+                className="rounded-lg object-cover shadow-lg transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:opacity-90"
+              />
+            </Link>
+          ))}
+        </div>
+
         {/* Права кнопка */}
         <div
           onClick={handleNext}

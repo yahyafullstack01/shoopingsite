@@ -33,8 +33,8 @@ const Hero = () => {
   </div>
 
   {/* Текст поверх */}
-  <div className="absolute mt-64 lg:mt-64 xl:top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-white z-10 px-6">
-    <p className="text-lg sm:text-3xl lg:text-3xl xl:text-6xl">{menuItems[0]}</p>
+  <div className="absolute mt-64 lg:mt-64 xl:mt-[420px] left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-white z-10 px-6">
+    <p className="text-lg sm:text-3xl lg:text-3xl xl:text-5xl">{menuItems[0]}</p>
   </div>
 </section>
 

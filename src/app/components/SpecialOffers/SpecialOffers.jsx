@@ -21,7 +21,7 @@ export default function SpecialOffers() {
       <div className="space-y-4">
         <div className="relative ml-auto 2xl:mr-24  xl:left-[-10%] max-w-6xl 2xl:max-w-5xl pr-0 md:pr-[12px] flex justify-center md:justify-end">
           {/* Image Container */}
-          <div className="w-full h-[450px] sm:w-[80%] md:w-[60%] lg:w-[50%] relative rounded-lg overflow-hidden">
+          <div className="w-full h-[450px] sm:h-[500px] md:h-[600px] lg:h-[1000px] sm:w-[80%] md:w-[60%] lg:w-[70%] relative rounded-lg overflow-hidden">
     <Image
       src="/hoom/offer.avif"
       alt="Special Offers Image"

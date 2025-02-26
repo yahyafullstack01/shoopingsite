@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import useImageFollow from "../../hooks/useImageFollow";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
@@ -24,9 +25,26 @@ export default function TopProducts() {
     { src: "/7.avif", link: "/Top-products" },
   ];
 
+  // Контролюємо, скільки зображень відображати
+  const [visibleImagesCount, setVisibleImagesCount] = useState(10);
+
+  useEffect(() => {
+    const updateVisibleImages = () => {
+      if (window.innerWidth <= 425) {
+        setVisibleImagesCount(1);
+      } else {
+        setVisibleImagesCount(10);
+      }
+    };
+
+    updateVisibleImages();
+    window.addEventListener("resize", updateVisibleImages);
+    return () => window.removeEventListener("resize", updateVisibleImages);
+  }, []);
+
   const { displayedImages, handleNext, handlePrev } = useImageFollow(
     images.length,
-    10
+    visibleImagesCount
   );
   const { translateList } = useLanguage();
   const menuItems = translateList("home", "top_products");
@@ -36,7 +54,6 @@ export default function TopProducts() {
   return (
     <>
       <Head>
-        {/* Preload основного зображення */}
         <link
           rel="preload"
           as="image"
@@ -46,38 +63,36 @@ export default function TopProducts() {
       </Head>
       <section
         id="top-products"
-        className="bg-[#fcf8f3] dark:bg-[#2e1f14] text-black dark:text-gray-100 section-container py-12"
+        className="bg-[#fcf8f3] dark:bg-gray-800 text-black dark:text-gray-100 section-container py-12"
       >
-        {/* Заголовок секції */}
         <div className="space-y-4">
-        <h2
-  className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-center flex items-center justify-center"
-  style={{ minHeight: "3em", lineHeight: "1.5", margin: 0 }}
->
-{menuItems[0]}
-</h2>
-
-        
+          <h2
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-center flex items-center justify-center"
+            style={{ minHeight: "3em", lineHeight: "1.5", margin: 0 }}
+          >
+            {menuItems[0]}
+          </h2>
           <div className="border-t border-gray-300 dark:border-gray-700"></div>
         </div>
 
-        {/* Карусель */}
         <div className="flex items-center justify-center space-x-4 mt-8">
-          {/* Ліва кнопка */}
           <div
             onClick={handlePrev}
             className="text-black dark:text-gray-300 text-2xl sm:text-3xl cursor-pointer mx-2 sm:mx-4 hover:text-gray-500 dark:hover:text-gray-400 transition-all duration-300"
           >
             <FaChevronLeft />
           </div>
-
-          {/* Слайдер */}
           <div
-            className="flex overflow-x-auto gap-4 w-full px-4 sm:gap-6 md:gap-8"
-            style={{
-              height: "400px",
-            }}
-          >
+  className="flex overflow-x-auto gap-4 w-full px-4 sm:gap-6 md:gap-8 justify-center"
+  style={{
+    height: "300px",
+    maxWidth: "100%", 
+    display: "flex",
+    justifyContent: "center", // Центруємо
+    alignItems: "center", // Вирівнюємо по вертикалі
+  }}
+>
+
             {displayedImages.map((imageIndex) => (
               <Link
                 key={imageIndex}
@@ -91,20 +106,20 @@ export default function TopProducts() {
                   alt={`Топ продукт ${imageIndex + 1}`}
                   width={250}
                   height={300}
-                  priority={imageIndex === 0} // Пріоритетне завантаження для першого зображення
+                  priority={imageIndex === 0}
                   style={{
                     objectFit: "cover",
-                    width: "200px", 
+                    width: "200px",
                     height: "300px",
                   }}
-                  sizes="(max-width: 768px) 45vw, (max-width: 1024px) 20vw, 300px"
+                  sizes="(max-width: 425px) 100vw, (max-width: 768px) 45vw, (max-width: 1024px) 20vw, 300px"
                   quality={85}
                   className="rounded-lg object-cover shadow-lg transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:opacity-90"
                 />
               </Link>
             ))}
           </div>
-{/* Права кнопка */}
+
           <div
             onClick={handleNext}
             className="text-black dark:text-gray-300 text-2xl sm:text-3xl cursor-pointer mx-2 sm:mx-4 hover:text-gray-500 dark:hover:text-gray-400 transition-all duration-300"
