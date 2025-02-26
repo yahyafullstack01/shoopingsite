@@ -19,7 +19,7 @@
         "Shop Now"
       ],
       "follow_us": ["Follow Us"],
-      "Footer": ["Poltavskyi Shliakh St, 144 А", "Torhovyy Tsentr", "Kyyivsʹkyy"]
+      "Footer": ["Poltavskyi Shliakh St, 144 А Kharkiv", "Torhovyy Tsentr", "Kyyivsʹkyy Ivano Frankivsk"]
     },
     "products": {
       "header": ["Catalogues", "About", "Contact", "Conditions"]
@@ -27,7 +27,7 @@
     "contact": {
       "header": ["Contact", "Catalogues", "About", "Conditions"],
       "hero": ["Contact Us", "We’d love to hear from you! Whether you have questions, comments, or simply want to learn more about what we offer, feel free to get in touch. Our team is here to assist you with any inquiries and help bring your vision to life. Don’t hesitate to reach out—we’re just a message away!",
-      "Poltavskyi Shliakh St, 144 А\n| | Torhovyy Tsentr Kyyivsʹkyy"
+      "Poltavskyi Shliakh St, 144 А Kharkiv\n| | Torhovyy Tsentr Kyyivsʹkyy Ivano frankivsk"
 ],
       "input": ["First Name", "Last Name", "Phone Number", "Email", "Message", "Send", "Thanks for submitting!", " Your form has been successfully submitted!"],
       "openninghours": ["Opening Hours", "Mon - Fri", "Saturday", "Sunday"]
@@ -257,14 +257,14 @@
         "Купуйте зараз"
       ],
       "follow_us": ["Слідкуйте за нами"],
-      "Footer": ["Вул.Полтавський шлях 144А", "Торговий центр", "«Київський»"]
+      "Footer": ["Вул.Полтавський шлях 144А Харків", "Торговий центр", "Київський Івано-Франківськ"]
       
     },
     "contact": {
       "hero": [
         "Зворотній зв’язок",
         "Ви можете заповнити форму нижче, і ми зв’яжемося з вами найближчим часом",
-        "Вул.Полтавський шлях 144А\n| | Торговий центр «Київський»"
+        "Вул.Полтавський шлях 144А  Харків \n| | Торговий центр Київський Івано-Франківськ"
       ],
       "input": [
         "Ім'я",
@@ -344,7 +344,7 @@
       "Деталі вибраного продукту"
     ]
   },
-
+  
   "Infoform": {
     "header": [
       "Категорія",
