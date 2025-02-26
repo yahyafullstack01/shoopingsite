@@ -1106,11 +1106,11 @@
       color: "burgundy",
       size: "XS S M L XL",
       category: "Costumes",
-      image: "/Costumes/Wool Suit Burgundy/1.avif",
+      image: "/Costumes/Wool Suit Burgundy/4.avif",
       images: [
         "/Costumes/Wool Suit Burgundy/2.avif", 
         "/Costumes/Wool Suit Burgundy/3.avif", 
-        "/Costumes/Wool Suit Burgundy/4.avif", 
+        "/Costumes/Wool Suit Burgundy/1.avif", 
         "/Costumes/Wool Suit Burgundy/5.avif"
       ],
       colors: ["burgundy"],
@@ -1185,7 +1185,17 @@
         "/Sweaters/Flare Sweater/2.avif", 
         "/Sweaters/Flare Sweater/3.avif", 
         "/Sweaters/Flare Sweater/4.avif", 
-        "/Sweaters/Flare Sweater/5.avif"
+        "/Sweaters/Flare Sweater/5.avif",
+        "/Sweaters/Flare Sweater/6.avif",
+        "/Sweaters/Flare Sweater/7.avif",
+        "/Sweaters/Flare Sweater/8.avif",
+        "/Sweaters/Flare Sweater/9.avif",
+        "/Sweaters/Flare Sweater/10.avif",
+        "/Sweaters/Flare Sweater/11.avif",
+        "/Sweaters/Flare Sweater/12.avif",
+        "/Sweaters/Flare Sweater/13.avif",
+        "/Sweaters/Flare Sweater/14.avif",
+        "/Sweaters/Flare Sweater/15.avif",
       ],
       colors: ["beige", "black", "white"],
       sizes: ["XS", "S", "M", "L", "XL"],
@@ -1208,7 +1218,7 @@
         }
       }
     },
-
+    
     {
       id: 37,
       price: 1375,
@@ -1222,7 +1232,12 @@
         "/Sweaters/Drawstring Sweater/2.avif", 
         "/Sweaters/Drawstring Sweater/3.avif", 
         "/Sweaters/Drawstring Sweater/4.avif", 
-        "/Sweaters/Drawstring Sweater/5.avif"
+        "/Sweaters/Drawstring Sweater/5.avif",
+        "/Sweaters/Drawstring Sweater/6.avif",
+        "/Sweaters/Drawstring Sweater/7.avif",
+        "/Sweaters/Drawstring Sweater/8.avif",
+        "/Sweaters/Drawstring Sweater/9.avif",
+        "/Sweaters/Drawstring Sweater/10.avif"
       ],
       colors: ["black", "white"],
       sizes: ["XS", "S", "M", "L", "XL"],
