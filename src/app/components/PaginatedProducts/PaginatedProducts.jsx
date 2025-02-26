@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import ProductCard from "../products/ProductCard";
+import { useLanguage } from "../../Functions/useLanguage";
 
 const PaginatedProducts = ({ products, productsPerPage = 12, onProductClick }) => {
   const [currentPage, setCurrentPage] = useState(1);
-
+  const { translateList } = useLanguage();
+  const menuItems = translateList("Filtersidebar", "PaginatedProducts");
+  
   // Загальна кількість сторінок
   const totalPages = Math.ceil(products.length / productsPerPage);
 
@@ -63,7 +66,7 @@ const PaginatedProducts = ({ products, productsPerPage = 12, onProductClick }) =
            
             }`}
         >
-          Prev
+          {menuItems[0]}
         </button>
 
         <button
@@ -76,7 +79,7 @@ const PaginatedProducts = ({ products, productsPerPage = 12, onProductClick }) =
           
             }`}
         >
-          Next
+          {menuItems[1]}
         </button>
       </div>
     </div>
