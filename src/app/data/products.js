@@ -1260,7 +1260,7 @@
         }
       }
     },
-
+    
     {
       id: 38,
       price: 1375,
@@ -1274,7 +1274,6 @@
         "/Sweaters/Sweater Vest/2.avif", 
         "/Sweaters/Sweater Vest/3.avif", 
         "/Sweaters/Sweater Vest/4.avif", 
-        "/Sweaters/Sweater Vest/5.avif"
       ],
       colors: ["black"],
       sizes: ["XS", "S", "M", "L", "XL"],
@@ -1308,11 +1307,11 @@
       color: "caramel",
       size: "XS S M L XL",
       category: "Skirts",
-      image: "/Skirts/A-line Leather Skirt/1.avif",
+      image: "/Skirts/A-line Leather Skirt/4.avif",
       images: [
         "/Skirts/A-line Leather Skirt/2.avif", 
         "/Skirts/A-line Leather Skirt/3.avif", 
-        "/Skirts/A-line Leather Skirt/4.avif", 
+        "/Skirts/A-line Leather Skirt/1.avif", 
         "/Skirts/A-line Leather Skirt/5.avif"
       ],
       colors: ["caramel"],
@@ -1345,9 +1344,9 @@
       color: "beige",
       size: "XS S M L XL",
       category: "Sweaters",
-      image: "/Sweaters/Ribbed Golf/1.avif",
+      image: "/Sweaters/Ribbed Golf/2.avif",
       images: [
-        "/Sweaters/Ribbed Golf/2.avif",
+        "/Sweaters/Ribbed Golf/1.avif",
         "/Sweaters/Ribbed Golf/3.avif",
         "/Sweaters/Ribbed Golf/4.avif",
         "/Sweaters/Ribbed Golf/5.avif",
@@ -1387,7 +1386,7 @@
       color: "молоко",
       size: "XS S M L XL",
       category: "Sweaters",
-      image: "/Sweaters/Draped Golf/1.avif",
+      image: "/Sweaters/Draped Golf/9.avif",
       images: [
         "/Sweaters/Draped Golf/2.avif",
         "/Sweaters/Draped Golf/3.avif",
@@ -1396,7 +1395,7 @@
         "/Sweaters/Draped Golf/6.avif",
         "/Sweaters/Draped Golf/7.avif",
         "/Sweaters/Draped Golf/8.avif",
-        "/Sweaters/Draped Golf/9.avif",
+        "/Sweaters/Draped Golf/1.avif",
       ],
       colors: ["молоко", "сірий"],
       sizes: ["XS", "S", "M", "L", "XL"],
@@ -1428,11 +1427,11 @@
       color: "чорний",
       size: "XS S M L XL",
       category: "Sweaters",
-      image: "/Sweaters/V-Neck Golf/1.avif",
+      image: "/Sweaters/V-Neck Golf/4.avif",
       images: [
         "/Sweaters/V-Neck Golf/2.avif",
         "/Sweaters/V-Neck Golf/3.avif",
-        "/Sweaters/V-Neck Golf/4.avif",
+        "/Sweaters/V-Neck Golf/1.avif",
         "/Sweaters/V-Neck Golf/5.avif",
         "/Sweaters/V-Neck Golf/6.avif",
         "/Sweaters/V-Neck Golf/7.avif",
