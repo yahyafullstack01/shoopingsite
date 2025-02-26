@@ -66,7 +66,7 @@ export default function About() {
             {/* Зображення */}
             <div className="relative group w-full h-[450px] sm:h-[600px] rounded-lg overflow-hidden">
               <Image
-                src="/hoom/about2.JPEG"
+                src="/hoom/about.avif"
                 alt="About Image"
                 fill
                 style={{ objectFit: "cover" }}
