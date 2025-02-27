@@ -44,7 +44,7 @@ const ProductBanner = ({
       >
       
       <Image
-          src="/hoom/baner-catalog.avif"
+          src="/27.avif"
           alt="Category Banner"
           fill
           style={{
