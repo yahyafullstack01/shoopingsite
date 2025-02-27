@@ -30,7 +30,7 @@ export default function TopProducts() {
 
   useEffect(() => {
     const updateVisibleImages = () => {
-      if (window.innerWidth <= 425) {
+      if (window.innerWidth <= 460) {
         setVisibleImagesCount(1);
       } else {
         setVisibleImagesCount(10);

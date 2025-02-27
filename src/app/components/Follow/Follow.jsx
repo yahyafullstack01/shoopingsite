@@ -42,7 +42,7 @@ export default function FollowUs() {
 
   useEffect(() => {
     const updateVisibleImages = () => {
-      if (window.innerWidth <= 425) {
+      if (window.innerWidth <= 460) {
         setVisibleImagesCount(1); // Мобільний → 1 зображення
       } else {
         setVisibleImagesCount(10); // Планшет/десктоп → як було

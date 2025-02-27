@@ -27,7 +27,7 @@ export default function OurProducts() {
 
   useEffect(() => {
     const updateVisibleImages = () => {
-      if (window.innerWidth <= 425) {
+      if (window.innerWidth <= 460) {
         setVisibleImagesCount(1); // Мобільний → 1 зображення
       } else {
         setVisibleImagesCount(7); // Планшет/десктоп → як було
