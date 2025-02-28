@@ -34,13 +34,13 @@ export default function TopProductsInfo() {
 
   return (
     <div className="dark:bg-gray-800 bg-gray-100 text-black dark:text-white min-h-screen px-4 py-8">
-      {/* <div className="text-center">
-        <h1 className="text-3xl md:text-4xl font-bold mb-4">Explore the Collection</h1>
+      <div className="text-center">
+        {/* <h1 className="text-3xl md:text-4xl font-bold mb-4">Explore the Collection</h1>
         <p className="dark:text-gray-400 text:bg-black text-sm md:text-base mb-8">
         I`m a paragraph. Click here to add your own text and edit me. Let your
         users get to know you.
-        </p>
-      </div> */}
+        </p> */}
+      </div>
 
       <section aria-labelledby="top-products">
         <h2 id="top-products" className="sr-only">Top Products</h2>
