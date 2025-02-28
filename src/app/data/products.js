@@ -17,11 +17,15 @@
         },
         FR: {
           name: "Costume en laine avec jupe",
-          description: "Pull + jupe crayon\nComposition: 75% laine naturelle, douce, ne pique pas la peau."
+          description: "Pull + jupe crayon\nComposition: 75% laine naturelle, douce, ne pique pas la peau.",
+       color: "rouge",
+       colors: ["camel", "graphite", "gris"]
         },
         UA: {
           name: "Вовняний костюм зі спідницею",
-          description: "Светр + олівець спідниця\nСклад: 75% натуральної вовни, м'яка, не колеться."
+          description: "Светр + олівець спідниця\nСклад: 75% натуральної вовни, м'яка, не колеться.",
+        color: "червоний",
+        colors: ["камел", "графітовий", "сірий"]
         }
       }
     },

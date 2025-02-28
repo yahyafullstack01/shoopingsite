@@ -83,8 +83,9 @@ const ProductBanner = ({
                 description: translatedDescription,
                 image: currentImage,
               }}
-              colors={selectedProduct.colors}
-              sizes={selectedProduct.sizes}
+              color={selectedProduct.translations?.[language]?.color || selectedProduct.color}
+              colors={selectedProduct.translations?.[language]?.colors || selectedProduct.colors}
+               sizes={selectedProduct.sizes}
               descriptionRef={descriptionRef}
               onContactClick={handleContactButtonClick}
             />

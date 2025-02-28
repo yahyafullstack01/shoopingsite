@@ -103,10 +103,11 @@ export default function InfoForm({ product, showDiscount = false }) {
           className={`w-full md:w-1/2 p-2 border ${colorError ? "border-red-500" : "border-gray-300"} bg-gray-200 rounded dark:bg-gray-800 dark:text-gray-300`}
         >
           <option value="">{menuItems[2] || "Select"}</option>
-          {product.colors?.map((color) => (
-            <option key={color} value={color}>
-              {color}
-            </option>
+          {(product.translations?.[language]?.colors || product.colors)?.map((color) => (
+  <option key={color} value={color}>
+    {color}
+  </option>
+
           ))}
         </select>
         {colorError && <p className="text-red-500 text-sm mt-2">{colorError}</p>}
