@@ -190,7 +190,7 @@
     },
 
     "SortMenu": {
-      "header": ["Trier par", "Recommandé", "Prix (du plus élevé au plus bas)", "Prix (du plus bas au plus élevé)"]
+      "header": ["Trier par", "Recommandé", "Prix (du plus bas au plus élevé)", "Prix (du plus élevé au plus bas)"]
       
     },
     "Filtersidebar": {
