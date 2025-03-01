@@ -1,4 +1,4 @@
-"use client";
+{/*"use client";
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
@@ -59,7 +59,7 @@ export default function OurProducts() {
       </div>
 
       <div className="flex items-center justify-center space-x-4 mt-8">
-        {/* Ліва кнопка */}
+    
         <div
           onClick={handlePrev}
           className="text-black dark:text-gray-300 text-2xl sm:text-3xl cursor-pointer mx-2 sm:mx-4 hover:text-gray-500 dark:hover:text-gray-400 transition-all duration-300"
@@ -67,7 +67,7 @@ export default function OurProducts() {
           <FaChevronLeft />
         </div>
 
-        {/* Карусель */}
+  
         <div
           className="flex overflow-x-auto w-full px-4 sm:gap-6 md:gap-8"
           style={{
@@ -105,7 +105,7 @@ export default function OurProducts() {
           ))}
         </div>
 
-        {/* Права кнопка */}
+    
         <div
           onClick={handleNext}
           className="text-black dark:text-gray-300 text-2xl sm:text-3xl cursor-pointer mx-2 sm:mx-4 hover:text-gray-500 dark:hover:text-gray-400 transition-all duration-300"
@@ -115,4 +115,4 @@ export default function OurProducts() {
       </div>
     </section>
   );
-}
+}*/}
