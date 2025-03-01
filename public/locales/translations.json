@@ -73,9 +73,9 @@
     "SizeTable": {
       "header": ["Size Chart", "Size (UA)", "Size (EU)", "Chest (cm)", "Waist (cm)", "Hips (cm)", "Close"]
     },
-
+    
     "SortMenu": {
-      "header": ["Sort by", "recommended", "Price (high to low)", "Price (low to high)"]
+      "header": ["Sort by", "recommended", "Price (low to high)", "Price (high to low)"]
     },
     "Filtersidebar": {
       "header": [
