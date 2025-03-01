@@ -55,7 +55,7 @@ export default function FilterSidebar({
   </button>
   {isFilterOpen && (
   <button
-    className="fixed md:hidden top-4 right-4 text-black dark:text-white text-lg 
+    className="fixed md:hidden top-1 right-1 text-black dark:text-white text-lg 
                bg-white dark:bg-gray-900 p-2  z-[100]"
     onClick={() => setIsFilterOpen(false)}
   >
@@ -78,7 +78,7 @@ export default function FilterSidebar({
   {/* Фільтр за категоріями */}
   <div className="relative">
   <div
-    className="flex justify-between items-center cursor-pointer border-b border-gray-700 pb-2"
+    className="flex justify-between items-center cursor-pointer border-b border-gray-700 pb-8"
     onClick={() => setIsCategoryOpen(!isCategoryOpen)}
   >
     <label className="block text-sm font-medium">
@@ -108,7 +108,7 @@ export default function FilterSidebar({
           {/* Фільтр за розміром */}
           <div className="relative">
   <div
-    className="flex justify-between items-center cursor-pointer border-b border-gray-800 dark:border-gray-700 pb-2"
+    className="flex justify-between items-center cursor-pointer border-b border-gray-800 dark:border-gray-700 pb-8"
     onClick={() => setIsSizeOpen(!isSizeOpen)}
   >
     <label className="block text-sm font-medium">
@@ -135,10 +135,10 @@ export default function FilterSidebar({
   )}
 </div>
 
-        <div className="text-gray dark:text-gray-300 space-y-6">
+        <div className="text-gray dark:text-gray-300 space-y-6 ">
           {/* Фільтр за ціною */}
           <div>
-            <label className="block text-sm font-medium mb-2">{menuItems[3] || "Price range"}</label>
+            <label className="block text-sm font-medium mb-8">{menuItems[3] || "Price range"}</label>
             <div className="flex items-center justify-between text-sm sm:text-base mb-2">
               <span>100₴</span>
               <span>{maxPrice}₴</span>
