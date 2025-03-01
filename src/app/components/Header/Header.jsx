@@ -1,12 +1,14 @@
+
 "use client"; 
 import Head from "next/head";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { FaMoon, FaSun, FaBars, FaTimes } from "react-icons/fa";
+import { FaMoon, FaSun, FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
 import { useHeaderState } from "../../hooks/useHeader"; 
 import { useLanguage } from "../../Functions/useLanguage"; 
-
+import { useRouter } from "next/navigation"
+import path from "path";
 const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
   const { translateList, language, setLanguage } = useLanguage();
   const menuItems = translateList("home", "header");
@@ -16,9 +18,37 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
       prevLanguage === "EN" ? "FR" : prevLanguage === "FR" ? "UA" : "EN"
     );
   };
-
+  const [isCategoriesOpen, setIsCategoriesOpen] = useState(false);
+  const toggleCategories = (e) => {
+    e.stopPropagation(); // Запобігає переходу при натисканні на іконку
+    setIsCategoriesOpen((prev) => !prev);
+  };
+  
+  const goToCatalog = () => {
+    router.push("/All-products");
+  };
   const { isMenuOpen, toggleMenu, closeMenu } = useHeaderState();
- 
+  const router = useRouter();
+
+  const categories = [
+    {name: "All", path: ""},
+    { name: "Costumes", path: "costumes" },
+    { name: "Dresses", path: "dresses" },
+    { name: "Shirts", path: "shirts" },
+    { name: "Skirts", path: "skirts" },
+    { name: "Sweaters", path: "sweaters" },
+    { name: "T-shirts", path: "t-shirts" },
+    { name: "Jeans", path: "jeans" },
+    { name: "Jackets", path: "jackets" },
+    { name: "Tops", path: "tops" },
+    { name: "Outerwear", path: "outerwear" },
+  ];
+  const handleCategoryClick = (categoryPath) => {
+    router.push(`/All-products?category=${categoryPath}`);
+    setIsCategoriesOpen(false);
+    closeMenu();
+  };
+
   return (
     <header className={`flex items-center justify-between px-4 py-1 shadow-md
    ${isDarkMode ? "bg-black text-white shadow-gray-800" : "bg-white text-black shadow-gray-300"}`} role="banner">
@@ -60,11 +90,51 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
         {menuItems[0]}
       </Link>
     </li>
-    <li className="min-w-[80px] text-center" role="menuitem">
-      <Link href="/All-products" aria-label={`Go to ${menuItems[1]} page`}>
-        {menuItems[1]}
-      </Link>
-    </li>
+   
+<li className="relative flex items-center">
+    {/* Кнопка переходу на каталог */}
+    <button
+      onClick={goToCatalog}
+      className="flex-grow text-left"
+      aria-label="Go to Catalogues"
+    >
+      {menuItems[1]}
+    </button>
+
+    {/* Іконка для відкриття списку категорій */}
+    <button
+      onClick={toggleCategories}
+      className="ml-2 p-1"
+      aria-label="Toggle categories"
+    >
+      <FaChevronDown
+        className={`transition-transform ${isCategoriesOpen ? "rotate-180" : ""}`}
+      />
+    </button>
+
+    {/* Випадаючий список категорій */}
+    {isCategoriesOpen && (
+      <ul
+      className="absolute left-0 top-full mt-2 bg-white dark:bg-gray-800 rounded-md shadow-md p-2 w-48 z-50
+      "
+    >
+      
+        {categories.map((category) => (
+          <li key={category.path}>
+            <button
+              onClick={() => {
+                handleCategoryClick(category.path);
+                setIsCategoriesOpen(false);
+              }}
+              className="block w-full text-left px-4 py-2 text-sm hover:bg-gray-300 dark:hover:bg-gray-700 rounded-md"
+            >
+              {category.name}
+            </button>
+          </li>
+        ))}
+      </ul>
+    )}
+  </li>
     <li className="min-w-[80px] text-center" role="menuitem">
       <Link href="/#about" aria-label={`Learn more ${menuItems[2]}`}>
         {menuItems[2]}
@@ -150,11 +220,33 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
       {menuItems[0]}
     </Link>
   </li>
-  <li className="text-center" role="menuitem">
-    <Link href="/All-products" aria-label={`Navigate to ${menuItems[1]} page`}>
-      {menuItems[1]}
-    </Link>
-  </li>
+  {/* КНОПКА КАТАЛОГУ */}
+  <li>
+                <button
+                  onClick={() => setIsCategoriesOpen(!isCategoriesOpen)}
+                  className="flex items-center justify-between w-full text-left"
+                >
+                  {menuItems[1]}
+                  <FaChevronDown className={`ml-2 transition-transform ${isCategoriesOpen ? "rotate-180" : ""}`} />
+                </button>
+
+                {/* ВИПАДАЮЧИЙ СПИСОК КАТЕГОРІЙ */}
+                {isCategoriesOpen && (
+                  <ul className="mt-2 bg-gray-100 dark:bg-gray-800 rounded-md shadow-md p-2">
+                    {categories.map((category) => (
+                      <li key={category.path}>
+                        <button
+                          onClick={() => handleCategoryClick(category.path)}
+                          className="block w-full text-left px-4 py-2 text-sm hover:bg-gray-300 dark:hover:bg-gray-700 rounded-md"
+                        >
+                          {category.name}
+                        </button>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+
   <li className="text-center" role="menuitem">
     <Link href="/#about" aria-label={`Learn more about ${menuItems[2]}`}>
       {menuItems[2]}

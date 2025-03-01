@@ -1,12 +1,11 @@
-
 "use client";
 
-import React, { useState, useRef } from "react";
-import { useRouter } from "next/navigation";
+import React, { useState, useRef, useEffect } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import FilterSidebar from "../../Functions/FilterSidebar";
 import SortMenu from "../../Functions/SortMenu";
 import ProductBanner from "../../components/products/ProductBanner";
-import PaginatedProducts from "../../components/PaginatedProducts/PaginatedProducts"; // Імпортуємо компонент пагінації
+import PaginatedProducts from "../../components/PaginatedProducts/PaginatedProducts"; 
 import {
   handleSizeSelect,
   handleCategorySelect,
@@ -17,23 +16,35 @@ import {
 import products from "../../data/products";
 import { useLanguage } from "../../Functions/useLanguage";
 
-
 export default function AllProducts() {
   const { translateList, language } = useLanguage();
-  const router = useRouter();
   const menuItems = translateList("Catalogues", "header");
+
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const categoryFromURL = searchParams.get("category") || ""; // Отримуємо категорію з URL
+
   const [maxPrice, setMaxPrice] = useState(5500);
   const [selectedSize, setSelectedSize] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState(categoryFromURL);
   const [selectedColor, setSelectedColor] = useState("");
   const [sortOrder, setSortOrder] = useState("recommended");
   const [isSortMenuOpen, setIsSortMenuOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const descriptionRef = useRef(null);
 
+  // Оновлюємо категорію, якщо змінюється URL
+  useEffect(() => {
+    setSelectedCategory(categoryFromURL);
+  }, [categoryFromURL]);
+
+  // Фільтруємо продукти за категорією
   const filteredProducts = filterAndSortProducts(
-    products,
-    { maxPrice, selectedSize, selectedColor, selectedCategory },
+    products.filter(
+      (product) =>
+        !selectedCategory || product.category.toLowerCase() === selectedCategory.toLowerCase()
+    ),
+    { maxPrice, selectedSize, selectedColor },
     sortOrder
   );
 
@@ -52,9 +63,11 @@ export default function AllProducts() {
       language
     );
   };
+
   const handleCloseBanner = () => {
     setSelectedProduct(null);
   };
+
   return (
     <section className="bg-gray-100 text-black dark:text-white min-h-screen dark:bg-black">
       <div className="w-full mx-auto px-4 sm:px-6 md:px-8 py-4">
@@ -65,9 +78,10 @@ export default function AllProducts() {
             selectedSize={selectedSize}
             handleSizeSelect={(size) => handleSizeSelect(size, setSelectedSize)}
             selectedCategory={selectedCategory}
-            handleCategorySelect={(category) =>
-              handleCategorySelect(category, setSelectedCategory)
-            }
+            handleCategorySelect={(category) => {
+              handleCategorySelect(category, setSelectedCategory);
+              router.push(`/All-products?category=${category.toLowerCase()}`);
+            }}
           >
             <SortMenu
               sortOrder={sortOrder}
@@ -78,37 +92,33 @@ export default function AllProducts() {
           </FilterSidebar>
 
           <main className="w-full md:w-3/4 flex flex-col">
-            
             {selectedProduct && (
               <ProductBanner
                 selectedProduct={selectedProduct}
                 descriptionRef={descriptionRef}
                 handleContactButtonClick={onContactClick}
-                onClose={handleCloseBanner} 
+                onClose={handleCloseBanner}
               />
             )}
-            
-            
+
             <section aria-labelledby="product-header" className="w-full mx-auto px-4 sm:px-6 md:px-8 py-4">
               <h1 id="product-header" className="text-3xl sm:text-4xl font-bold mb-6">
                 {menuItems[0]}
               </h1>
-              <p className="text-gray-700 dark:text-gray-400 mb-4">
-                {menuItems[1]}
-              </p>
+              <p className="text-gray-700 dark:text-gray-400 mb-4">{menuItems[1]}</p>
               <p className="text-gray-700 dark:text-gray-400 mt-4 pb-4">
                 {filteredProducts.length} {menuItems[2]}
               </p>
             </section>
-            <section aria-labelledby="product-list" aria-live="polite" className="w-full">
-  <h2 id="product-list" className="sr-only">{menuItems[3]}</h2>
-  <PaginatedProducts
-    products={filteredProducts}
-    productsPerPage={12}
-    onProductClick={onProductClick} 
-  />
-</section>
 
+            <section aria-labelledby="product-list" aria-live="polite" className="w-full">
+              <h2 id="product-list" className="sr-only">{menuItems[3]}</h2>
+              <PaginatedProducts
+                products={filteredProducts}
+                productsPerPage={12}
+                onProductClick={onProductClick}
+              />
+            </section>
           </main>
         </div>
       </div>
