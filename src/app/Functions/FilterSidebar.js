@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { useLanguage } from "./useLanguage";
 import { FiFilter } from "react-icons/fi";
@@ -21,7 +22,7 @@ export default function FilterSidebar({
 
   const translatedCategories = Array.isArray(translateList("Filtersidebar", "Categories"))
     ? translateList("Filtersidebar", "Categories")
-    : ["All", "Costumes", "Dress", "Shirts", "Skirts", "Sweaters", "T-shirt", "Jeans", "Jacket", "Tops", "Outerwear"];
+    : ["All", "Costumes", "Dress", "Shirts", "Skirts", "Sweaters", "T-shirt", "Jeans", "Jacket", "Tops", "Outerwear","Filter"];
 
   // Оригінальні значення для бекенду
   const originalSizes = ["All", "S", "M", "L", "XL"];
@@ -42,63 +43,67 @@ export default function FilterSidebar({
     <>
     {/* Кнопка відкриття фільтра (на мобільних) */}
     <button
-      className="md:hidden fixed bottom-6 right-6 bg-blue-500 text-white p-3 rounded-full shadow-lg z-50"
-      onClick={() => setIsFilterOpen(true)}
-      aria-label="Open Filters"
-    >
-      <FiFilter size={24} />
-    </button>
+  className="md:hidden fixed bottom-6 right-6 bg-blue-500 text-white w-16 h-16 rounded-full shadow-lg flex flex-col items-center justify-center gap-1 z-50"
+  onClick={() => setIsFilterOpen(true)}
+  aria-label="Open Filters"
+>
+  {/* Іконка */}
+  <FiFilter size={24} />
+  {/* Напис "Фільтр" */}
+  <span className="text-xs font-medium">{menuItems[8]}</span>
+
+  </button>
+  {isFilterOpen && (
+  <button
+    className="fixed md:hidden top-4 right-4 text-black dark:text-white text-lg 
+               bg-white dark:bg-gray-900 p-2  z-[100]"
+    onClick={() => setIsFilterOpen(false)}
+  >
+    ✖
+  </button>
+)}
+
     <aside
   className={`w-full md:w-1/3 lg:w-1/4 bg-gray-300 p-4 sm:p-6 rounded-lg shadow-2xl dark:bg-[#0f172a] dark:shadow-[0_0_20px_10px_rgba(59,130,246,0.4)]
   md:block md:relative md:translate-x-0 overflow-y-auto 
   ${isFilterOpen ? "fixed inset-0 bg-white dark:bg-[#0f172a] z-50 translate-x-0" : "hidden"} md:translate-x-0`}
   aria-label="Filter Sidebar"
 >
-        {/* Кнопка закриття (тільки на мобільних) */}
-        <button
-          className="md:hidden absolute top-4 right-4 text-black dark:text-white  text-lg"
-          onClick={() => setIsFilterOpen(false)}
-        >
-          ✖
-        </button>
-
-        {/* Заголовок */}
-        <div className="mb-6">
-          <h2 className="text-lg sm:text-xl font-semibold mb-4 border-b border-gray-900 dark:border-gray-700 pb-2">
-            {menuItems[0] || "Filters"}
-          </h2>
-          <ul className="text-gray-950 dark:text-gray-300 space-y-2">
-            <li>
-              <a href="#" className="hover:text-grey dark:hover:text-white underline">
-                {menuItems[1] || "All products"}
-              </a>
-            </li>
-          </ul>
-        </div>
+     
       {/* Фільтри */}
       <div>
         <h2 className="text-lg sm:text-xl font-semibold mb-4 border-b border-gray-950 dark:border-gray-700 pb-2">
           {menuItems[2] || "Categories"}
         </h2>
-
-        <div className="text-gray dark:text-gray-300 space-y-6">
-          {/* Фільтр за ціною */}
-          <div>
-            <label className="block text-sm font-medium mb-2">{menuItems[3] || "Price range"}</label>
-            <div className="flex items-center justify-between text-sm sm:text-base mb-2">
-              <span>100₴</span>
-              <span>{maxPrice}₴</span>
-            </div>
-            <input
-              type="range"
-              min="100"
-              max="5500"
-              step="10"
-              value={maxPrice}
-              onChange={handlePriceChange}
-              className="w-full h-1 bg-gray-800 dark:bg-gray-700 rounded-lg appearance-none focus:outline-none"
-            />
-          </div>
+  {/* Фільтр за категоріями */}
+  <div className="relative">
+  <div
+    className="flex justify-between items-center cursor-pointer border-b border-gray-700 pb-2"
+    onClick={() => setIsCategoryOpen(!isCategoryOpen)}
+  >
+    <label className="block text-sm font-medium">
+      {menuItems[7] || "Category"}: {selectedCategory || "Select"}
+    </label>
+    <span className="text-gray-600 dark:text-gray-400 text-lg">{isCategoryOpen ? "−" : "+"}</span>
+  </div>
+  {isCategoryOpen && (
+    <div className="mt-2 bg-gray-400 dark:bg-gray-700 rounded p-2">
+      {translatedCategories.map((category) => (
+        <div
+          key={category}
+          onClick={() => {
+            handleCategorySelect(categoryMap[category]);
+            setIsCategoryOpen(false);
+          }}
+          className={`cursor-pointer p-2 rounded-md text-gray-900 dark:text-gray-300 
+            ${selectedCategory === categoryMap[category] ? "bg-blue-500 text-white dark:bg-blue-400" : "hover:bg-gray-200 dark:hover:bg-gray-600"}`}
+        >
+          {category}
+        </div>
+      ))}
+    </div>
+  )}
+</div> 
 
           {/* Фільтр за розміром */}
           <div className="relative">
@@ -130,37 +135,43 @@ export default function FilterSidebar({
   )}
 </div>
 
-          {/* Фільтр за категоріями */}
-          <div className="relative">
-  <div
-    className="flex justify-between items-center cursor-pointer border-b border-gray-700 pb-2"
-    onClick={() => setIsCategoryOpen(!isCategoryOpen)}
-  >
-    <label className="block text-sm font-medium">
-      {menuItems[7] || "Category"}: {selectedCategory || "Select"}
-    </label>
-    <span className="text-gray-600 dark:text-gray-400 text-lg">{isCategoryOpen ? "−" : "+"}</span>
-  </div>
-  {isCategoryOpen && (
-    <div className="mt-2 bg-gray-400 dark:bg-gray-700 rounded p-2">
-      {translatedCategories.map((category) => (
-        <div
-          key={category}
-          onClick={() => {
-            handleCategorySelect(categoryMap[category]);
-            setIsCategoryOpen(false);
-          }}
-          className={`cursor-pointer p-2 rounded-md text-gray-900 dark:text-gray-300 
-            ${selectedCategory === categoryMap[category] ? "bg-blue-500 text-white dark:bg-blue-400" : "hover:bg-gray-200 dark:hover:bg-gray-600"}`}
-        >
-          {category}
-        </div>
-      ))}
-    </div>
-  )}
-</div>
+        <div className="text-gray dark:text-gray-300 space-y-6">
+          {/* Фільтр за ціною */}
+          <div>
+            <label className="block text-sm font-medium mb-2">{menuItems[3] || "Price range"}</label>
+            <div className="flex items-center justify-between text-sm sm:text-base mb-2">
+              <span>100₴</span>
+              <span>{maxPrice}₴</span>
+            </div>
+            <input
+              type="range"
+              min="100"
+              max="5500"
+              step="10"
+              value={maxPrice}
+              onChange={handlePriceChange}
+              className="w-full h-1 bg-gray-800 dark:bg-gray-700 rounded-lg appearance-none focus:outline-none"
+            />
+          </div>
+
+        
+   {/* Заголовок */}
+   <div className="mb-6">
+          <h2 className="text-lg sm:text-xl font-semibold mb-4 border-b border-gray-900 dark:border-gray-700 pb-2">
+            {menuItems[0] || "Filters"}
+          </h2>
           {/* Додатковий контент */}
           <div className="mt-4">{children}</div>
+        </div>
+        <div className="w-full dark:bg-gray-900 p-4 shadow-lg md:hidden">
+  <button
+    className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg"
+    onClick={() => setIsFilterOpen(false)}
+  >
+    {menuItems[9]}
+  </button>
+</div>
+
         </div>
       </div>
     </aside>

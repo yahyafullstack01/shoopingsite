@@ -86,7 +86,9 @@
         "Size", 
         "Selected", 
         "All", 
-        "Category"
+        "Category",
+        "Filter",
+        "Confirm"
       ],
       "SizeCatalogue": [ "All", "S", "M", "L", "XL" ],
       "Categories": [
@@ -200,7 +202,9 @@
     "Taille", 
     "Sélectionné", 
     "Tous", 
-    "Catégorie"
+    "Catégorie",
+    "Filtre",
+    "Confirmer"
   ],
   "SizeCatalogue": [ "Tous", "S", "M", "L", "XL" ],
   "Categories": [
@@ -326,7 +330,9 @@
         "Розмір", 
         "Вибрано", 
         "Усі", 
-        "Категорія"
+        "Категорія",
+        "Фільтр",
+        "Підтвердити"
       ],
       "SizeCatalogue": [ "Усі", "S", "M", "L", "XL" ],
       "Categories": [

@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useRef } from "react";
@@ -51,7 +52,9 @@ export default function AllProducts() {
       language
     );
   };
-
+  const handleCloseBanner = () => {
+    setSelectedProduct(null);
+  };
   return (
     <section className="bg-gray-100 text-black dark:text-white min-h-screen dark:bg-black">
       <div className="w-full mx-auto px-4 sm:px-6 md:px-8 py-4">
@@ -75,13 +78,16 @@ export default function AllProducts() {
           </FilterSidebar>
 
           <main className="w-full md:w-3/4 flex flex-col">
-            <section aria-labelledby="banner-section">
+            
+            {selectedProduct && (
               <ProductBanner
                 selectedProduct={selectedProduct}
                 descriptionRef={descriptionRef}
                 handleContactButtonClick={onContactClick}
+                onClose={handleCloseBanner} 
               />
-            </section>
+            )}
+            
             
             <section aria-labelledby="product-header" className="w-full mx-auto px-4 sm:px-6 md:px-8 py-4">
               <h1 id="product-header" className="text-3xl sm:text-4xl font-bold mb-6">

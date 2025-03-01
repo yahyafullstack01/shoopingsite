@@ -1,3 +1,4 @@
+
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
@@ -9,6 +10,7 @@ const ProductBanner = ({
   selectedProduct,
   descriptionRef,
   handleContactButtonClick,
+  onClose, // Додано onClose для закриття
 }) => {
   const { language } = useLanguage();
   const [currentImage, setCurrentImage] = useState(selectedProduct?.image || "/4.jpg");
@@ -19,63 +21,54 @@ const ProductBanner = ({
   const translatedDescription =
     selectedProduct?.translations?.[language]?.description || selectedProduct?.description;
 
-  useEffect(() => {
-    setCurrentImage(selectedProduct?.image || "/4.jpg");
-  }, [selectedProduct]);
+    useEffect(() => {
+      setCurrentImage(selectedProduct?.image || "/4.jpg");
+      document.body.style.overflow = "hidden"; // Блокуємо скрол сторінки при відкритті
+      return () => {
+        document.body.style.overflow = "auto"; // Відновлюємо скрол після закриття
+      };
+    }, [selectedProduct]);
+  
   const handleImageClick = () => {
-    setIsScrollable(!isScrollable); 
+    setIsScrollable(!isScrollable);
   };
 
+  if (!selectedProduct) return null; // Не рендеримо, якщо немає вибраного продукту
+
   return (
-    <div
-    ref={descriptionRef}
-    className={`relative w-full bg-gray-300 dark:bg-black  overflow-hidden rounded-lg mb-8 transition-all duration-300 ease-in-out ${
-      selectedProduct ? "p-4" : "h-72 sm:h-96"
-    }`}
-  >
- 
-      {!selectedProduct && (
-        <div
-        className={`relative w-full  h-72 sm:h-96 ${
-          isScrollable ? "overflow-scroll cursor-grab" : ""
-        }`}
-        style={{ position: "relative" }}
-        onClick={handleImageClick}
-      >
-      
-      <Image
-          src="/27.avif"
-          alt="Category Banner"
-          fill
-          style={{
-            objectFit: "cover", 
-            objectPosition: "center 50%", 
-          }}
-          className="rounded-lg "
-        />
-      </div>
-      )}
-
-      {selectedProduct && (
-
-        <div className="relative flex flex-col sm:flex-row items-start">
-           <div className="w-full relative h-42 sm:h-74">
-           <Image
-  src={currentImage}
-  alt={translatedName}
-  width={800}
-  height={600}
-  style={{ objectFit: "cover" }} 
-  className="rounded-lg"
-/>
-<ThumbnailCarousel
+    <div className="fixed inset-0 bg-black bg-opacity-90 flex justify-center items-center z-50">
+      <div className="relative w-full h-full max-w-5xl bg-gray-300 dark:bg-black rounded-lg shadow-lg overflow-y-auto">
+        
+        {/* Хрестик для закриття */}
+        <button
+          className="fixed top-4 right-4 text-5xl text-black dark:text-white hover:text-red-500 transition z-[100]"
+          onClick={onClose}
+        >
+          &times;
+        </button>
+       
+        {/* Контейнер, що адаптується під мобільні */}
+        <div className="relative flex flex-col sm:flex-row items-start overflow-y-auto p-4">
+          
+          {/* Ліва частина - Фото */}
+          <div className="w-full sm:w-1/2 relative">
+            <Image
+              src={currentImage}
+              alt={translatedName}
+              width={800}
+              height={600}
+              style={{ objectFit: "cover" }}
+              className="rounded-lg w-full"
+            />
+            <ThumbnailCarousel
               images={selectedProduct.images}
               onImageSelect={(image) => setCurrentImage(image)}
               visibleThumbnails={5}
             />
           </div>
 
-          <div className="w-full dark:bg-black bg-opacity-75 p-6 text-bg-black dark:text-white rounded-lg">
+          {/* Права частина - Опис */}
+          <div className="w-full sm:w-1/2 dark:bg-black bg-opacity-75 p-6 text-black dark:text-white rounded-lg">
             <InfoForm
               product={{
                 ...selectedProduct,
@@ -85,13 +78,13 @@ const ProductBanner = ({
               }}
               color={selectedProduct.translations?.[language]?.color || selectedProduct.color}
               colors={selectedProduct.translations?.[language]?.colors || selectedProduct.colors}
-               sizes={selectedProduct.sizes}
+              sizes={selectedProduct.sizes}
               descriptionRef={descriptionRef}
               onContactClick={handleContactButtonClick}
             />
           </div>
         </div>
-      )}
+      </div>
     </div>
   );
 };
