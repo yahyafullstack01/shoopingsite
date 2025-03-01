@@ -12,6 +12,7 @@ import path from "path";
 const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
   const { translateList, language, setLanguage } = useLanguage();
   const menuItems = translateList("home", "header");
+ 
 
   const toggleLanguage = () => {
     setLanguage((prevLanguage) =>
@@ -31,18 +32,19 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
   const router = useRouter();
 
   const categories = [
-    {name: "All", path: ""},
-    { name: "Costumes", path: "costumes" },
-    { name: "Dresses", path: "dresses" },
-    { name: "Shirts", path: "shirts" },
-    { name: "Skirts", path: "skirts" },
-    { name: "Sweaters", path: "sweaters" },
-    { name: "T-shirts", path: "t-shirts" },
-    { name: "Jeans", path: "jeans" },
-    { name: "Jackets", path: "jackets" },
-    { name: "Tops", path: "tops" },
-    { name: "Outerwear", path: "outerwear" },
-  ];
+    { name: menuItems[5], path: "" }, 
+    { name: menuItems[6], path: "costumes" },
+    { name: menuItems[7], path: "dresses" },
+    { name: menuItems[8], path: "shirts" },
+    { name: menuItems[9], path: "skirts" },
+    { name: menuItems[10], path: "sweaters" },
+    { name: menuItems[11], path: "t-shirts" },
+    { name: menuItems[12], path: "jeans" },
+    { name: menuItems[13], path: "jackets" },
+    { name: menuItems[14], path: "tops" },
+    { name: menuItems[15], path: "outerwear" }
+];
+
   const handleCategoryClick = (categoryPath) => {
     router.push(`/All-products?category=${categoryPath}`);
     setIsCategoriesOpen(false);

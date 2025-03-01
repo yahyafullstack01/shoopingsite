@@ -1,7 +1,18 @@
 {
   "EN": {
     "home": {
-      "header": ["Home", "Catalogues", "About", "Contact", "Conditions"],
+      "header": ["Home", "Catalogues", "About", "Contact", "Conditions", "All",
+      "Costumes",
+      "Dresses",
+      "Shirts",
+      "Skirts",
+      "Sweaters",
+      "T-shirts",
+      "Jeans",
+      "Jackets",
+      "Tops",
+      "Outerwear"],
+    
       "hero": ["Ukrainian women's clothing brand","Ukrainian women's","clothing brand"],
       "about": [
         "ABOUT US:",
@@ -109,7 +120,18 @@
   },
   "FR": {
     "home": {
-      "header": ["Accueil", "Catalogues", "À propos", "Contact", "Conditions"],
+      "header": ["Accueil", "Catalogues", "À propos", "Contact", "Conditions",    "Tout",
+      "Costumes",
+      "Robes",
+      "Chemises",
+      "Jupes",
+      "Pulls",
+      "T-shirts",
+      "Jeans",
+      "Vestes",
+      "Tops",
+      "Manteaux"],
+      
       "hero": ["Marque ukrainienne de vêtements pour femmes.", "Marque ukrainienne", "De vêtements pour femmes"],
       "about": [
         "À propos",
@@ -244,7 +266,18 @@
   
   "UA": {
     "home": {
-      "header": ["Головна", "Каталог", "Про нас", "Контакти", "Умови"],
+      "header": ["Головна", "Каталог", "Про нас", "Контакти", "Умови",  "Усі",
+      "Костюми",
+      "Сукні",
+      "Сорочки",
+      "Спідниці",
+      "Светри",
+      "Футболки",
+      "Джинси",
+      "Куртки",
+      "Топи",
+      "Верхній одяг"],
+      
       "hero": ["Український бренд жіночого одягу.","Український бренд", "жіночого одягу"],
       "about": [
         "ПPO НАС",
