@@ -1,4 +1,57 @@
-"use client"; // Оголошуємо файл як Client Component
+"use client";
+import { useEffect, useRef, useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
+import dynamic from "next/dynamic";
+import Head from "next/head";
+import Script from "next/script";
+import topProductsJsonLd from "../seo/top-products-jsonld";
+import products from "../data/products";
+import seoConfig from "../../../next-seo.config";
+
+// Динамічне завантаження компонентів
+const Layout = dynamic(() => import("../components/Layout"), { ssr: false });
+const TopProductsInfo = dynamic(() => import("../components/TopProductsInfo/TopProductsInfo"), {
+  ssr: false,
+  loading: () => <div>Loading top products...</div>,
+});
+
+export default function TopProductspage() {
+  const searchParams = useSearchParams();
+  const selectedProductId = searchParams.get("product"); // Отримуємо ID продукту з URL
+  const descriptionRef = useRef(null);
+  const topProducts = products.filter((product) => product.isTop);
+  const [selectedProduct, setSelectedProduct] = useState(null);
+
+  useEffect(() => {
+    if (selectedProductId) {
+      const foundProduct = topProducts.find((p) => p.id === Number(selectedProductId));
+      if (foundProduct) {
+        setSelectedProduct(foundProduct);
+        setTimeout(() => {
+          descriptionRef.current?.scrollIntoView({ behavior: "smooth" });
+        }, 300);
+      }
+    }
+  }, [selectedProductId, topProducts]);
+
+  const jsonLd = topProductsJsonLd(topProducts);
+  const seo = seoConfig.topProducts;
+
+  return (
+    <div className="transition-colors">
+      <Head>
+        <title>{seo.title}</title>
+        <meta name="description" content={seo.description} />
+      </Head>
+      <Script id="top-products-jsonld" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+
+      <Layout>
+        <TopProductsInfo selectedProduct={selectedProduct} descriptionRef={descriptionRef} />
+      </Layout>
+    </div>
+  );
+}
+{/*"use client"; // Оголошуємо файл як Client Component
 
 import dynamic from "next/dynamic";
 import Head from "next/head";
@@ -26,7 +79,7 @@ export default function TopProductspage() {
 
   return (
     <div className="transition-colors">
-      {/* SEO-метатеги */}
+      {/* SEO-метатеги 
       <Head>
         <title>{seo.title}</title>
         <meta name="description" content={seo.description} />
@@ -39,17 +92,18 @@ export default function TopProductspage() {
         <meta name="robots" content={seo.robots} />
       </Head>
 
-      {/* JSON-LD для SEO */}
+      {/* JSON-LD для SEO 
       <Script
         id="top-products-jsonld"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* Динамічний рендеринг компонентів */}
+      {/* Динамічний рендеринг компонентів 
       <Layout>
         <TopProductsInfo />
       </Layout>
     </div>
   );
 }
+*/}

@@ -92,51 +92,62 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
         {menuItems[0]}
       </Link>
     </li>
-   
-<li className="relative flex items-center">
-    {/* Кнопка переходу на каталог */}
-    <button
-      onClick={goToCatalog}
-      className="flex-grow text-left"
-      aria-label="Go to Catalogues"
-    >
-      {menuItems[1]}
-    </button>
+    <li 
+  className="relative flex items-center group"
+  onMouseEnter={() => setIsCategoriesOpen(true)}
+  onMouseLeave={(e) => {
+    if (!e.relatedTarget || !e.currentTarget.contains(e.relatedTarget)) {
+      setIsCategoriesOpen(false);
+    }
+  }}
+>
+  {/* Кнопка переходу на каталог */}
+  <button
+    onClick={goToCatalog}
+    className="flex-grow text-left"
+    aria-label="Go to Catalogues"
+  >
+    {menuItems[1]}
+  </button>
 
-    {/* Іконка для відкриття списку категорій */}
-    <button
-      onClick={toggleCategories}
-      className="ml-2 p-1"
-      aria-label="Toggle categories"
-    >
-      <FaChevronDown
-        className={`transition-transform ${isCategoriesOpen ? "rotate-180" : ""}`}
-      />
-    </button>
+  {/* Іконка для відкриття списку категорій */}
+  <button
+    onClick={(e) => {
+      e.stopPropagation(); // Запобігає закриттю при кліку
+      setIsCategoriesOpen((prev) => !prev);
+    }}
+    className="ml-2 p-1"
+    aria-label="Toggle categories"
+  >
+    <FaChevronDown
+      className={`transition-transform ${isCategoriesOpen ? "rotate-180" : ""}`}
+    />
+  </button>
 
-    {/* Випадаючий список категорій */}
-    {isCategoriesOpen && (
-      <ul
-      className="absolute left-0 top-full mt-2 bg-white dark:bg-gray-800 rounded-md shadow-md p-2 w-48 z-50
-      "
+  {/* Випадаючий список категорій */}
+  {isCategoriesOpen && (
+    <ul
+      className="absolute left-0 top-full mt-2 bg-white dark:bg-gray-800 rounded-md shadow-md p-2 w-48 z-50"
+      onMouseEnter={() => setIsCategoriesOpen(true)}
+      onMouseLeave={() => setIsCategoriesOpen(false)}
     >
-      
-        {categories.map((category) => (
-          <li key={category.path}>
-            <button
-              onClick={() => {
-                handleCategoryClick(category.path);
-                setIsCategoriesOpen(false);
-              }}
-              className="block w-full text-left px-4 py-2 text-sm hover:bg-gray-300 dark:hover:bg-gray-700 rounded-md"
-            >
-              {category.name}
-            </button>
-          </li>
-        ))}
-      </ul>
-    )}
-  </li>
+      {categories.map((category) => (
+        <li key={category.path}>
+          <button
+            onClick={() => {
+              handleCategoryClick(category.path);
+              setIsCategoriesOpen(false);
+            }}
+            className="block w-full text-left px-4 py-2 text-sm hover:bg-gray-300 dark:hover:bg-gray-700 rounded-md"
+          >
+            {category.name}
+          </button>
+        </li>
+      ))}
+    </ul>
+  )}
+</li>
+
     <li className="min-w-[80px] text-center" role="menuitem">
       <Link href="/#about" aria-label={`Learn more ${menuItems[2]}`}>
         {menuItems[2]}

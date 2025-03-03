@@ -1,236 +1,252 @@
- const products = [
-    { id: 1,
-      price: 3170,
-      isTop: true, // Топ продукт
-      sku: "12345",
-      color: "red",
-      size: "XS S M L XL",
-      category: "Costumes",
-      image: "/Costumes/Woolen suit with skirt/1.avif",
-      images: ["/Costumes/Woolen suit with skirt/2.avif", "/Costumes/Woolen suit with skirt/3.avif", "/Costumes/Woolen suit with skirt/4.avif", "/Costumes/Woolen suit with skirt/5.avif", "/Costumes/Woolen suit with skirt/6.avif", "/Costumes/Woolen suit with skirt/7.avif", "/Costumes/Woolen suit with skirt/8.avif", "/Costumes/Woolen suit with skirt/9.avif", "/Costumes/Woolen suit with skirt/10.avif", "/Costumes/Woolen suit with skirt/11.avif", "/Costumes/Woolen suit with skirt/12.avif", "/Costumes/Woolen suit with skirt/13.avif", "/Costumes/Woolen suit with skirt/14.avif", ],
-      colors: ["camel", "graphite", "gray"], 
-      sizes: ["XS", "S", "M", ],
-      translations: {
-        EN: {
-          name: "Woolen suit with skirt",
-          description: "Sweater + pencil skirt\nComposition: 75% natural wool, soft, does not prick the body."
-        },
-        FR: {
-          name: "Costume en laine avec jupe",
-          description: "Pull + jupe crayon\nComposition: 75% laine naturelle, douce, ne pique pas la peau.",
-       color: "rouge",
-       colors: ["camel", "graphite", "gris"]
-        },
-        UA: {
-          name: "Вовняний костюм зі спідницею",
-          description: "Светр + олівець спідниця\nСклад: 75% натуральної вовни, м'яка, не колеться.",
+const products = [
+  { id: 1,
+    price: 3170,
+    isTop: true,
+    sku: "12345",
+    size: "XS S M L XL",
+    category: "Costumes",
+    image: "/Costumes/Woolen suit with skirt/1.avif",
+    images: ["/Costumes/Woolen suit with skirt/2.avif", "/Costumes/Woolen suit with skirt/3.avif"],
+    sizes: ["XS", "S", "M"],
+    translations: {
+      EN: {
+        name: "Woolen suit with skirt",
+        description: "Sweater + pencil skirt. Composition: 75% natural wool, soft, does not prick the body.",
+        color: "red",
+        colors: ["camel", "graphite", "gray"]
+      },
+      FR: {
+        name: "Costume en laine avec jupe",
+        description: "Pull + jupe crayon. Composition: 75% laine naturelle, douce, ne pique pas la peau.",
+        color: "rouge",
+        colors: ["camel", "graphite", "gris"]
+      },
+      UA: {
+        name: "Вовняний костюм зі спідницею",
+        description: "Светр + олівець спідниця. Склад: 75% натуральної вовни, м'яка, не колеться.",
         color: "червоний",
         colors: ["камел", "графітовий", "сірий"]
-        }
       }
-    },
-    
-    {
-      id: 2,
-      price: 3710,
-      isTop: true, // Топ продукт
-      
-      sku: "12345",
-      color: "blue",
-      size: "XS S M L XL",
-      category: "Costumes",
-      image: "/Costumes/Wool suit with trousers/8.avif",
-      images: ["/Costumes/Wool suit with trousers/1.avif", "/Costumes/Wool suit with trousers/2.avif", "/Costumes/Wool suit with trousers/3.avif",
-                "/Costumes/Wool suit with trousers/4.avif","/Costumes/Wool suit with trousers/5.avif", "/Costumes/Wool suit with trousers/6.avif", "/Costumes/Wool suit with trousers/7.avif", "/Costumes/Wool suit with trousers/8.avif", "/Costumes/Wool suit with trousers/9.avif", "/Costumes/Wool suit with trousers/10.avif", "/Costumes/Wool suit with trousers/11.avif", "/Costumes/Wool suit with trousers/12.avif"],
-      colors: ["graphite", "grey"], 
-      sizes: ["XS", "S", "M", ],
-      translations: {
-        EN: {
-          name: "Woolen suit with trousers",
-          description: "Jumper + palazzo pants\nComposition: 75% natural wool, soft, does not prick the body."
-        },
-        FR: {
-          name: "Costume en laine avec pantalon",
-          description: "Pull + pantalon palazzo\nComposition: 75% laine naturelle, douce, ne pique pas la peau."
-        },
-        UA: {
-          name: "Вовняний костюм із брюками",
-          description: "Джемпер + палаццо штани\nСклад: 75% натуральної вовни, м'яка, не колеться."
-        }
+    }
+  },
+  {
+    id: 2,
+    price: 3710,
+    isTop: true,
+    sku: "12345",
+    size: "XS S M L XL",
+    category: "Costumes",
+    image: "/Costumes/Wool suit with trousers/8.avif",
+    images: ["/Costumes/Wool suit with trousers/1.avif", "/Costumes/Wool suit with trousers/2.avif"],
+    sizes: ["XS", "S", "M"],
+    translations: {
+      EN: {
+        name: "Woolen suit with trousers",
+        description: "Jumper + palazzo pants\nComposition: 75% natural wool, soft, does not prick the body.",
+        color: "blue",
+        colors: ["graphite", "grey"]
+      },
+      FR: {
+        name: "Costume en laine avec pantalon",
+        description: "Pull + pantalon palazzo\nComposition: 75% laine naturelle, douce, ne pique pas la peau.",
+        color: "bleu",
+        colors: ["graphite", "gris"]
+      },
+      UA: {
+        name: "Вовняний костюм із брюками",
+        description: "Джемпер + палаццо штани\nСклад: 75% натуральної вовни, м'яка, не колеться.",
+        color: "синій",
+        colors: ["графітовий", "сірий"]
       }
-    },
-    
-    {
-      id: 3,
-      price: 4160,
-      isTop: true, // Топ продукт
-      sku: "12345",
-      color: "camel",
-      size: "XS S M L XL",
-      category: "Costumes",
-      image: "/Costumes/Wool suit with vest/1.avif",
-      images: ["/Costumes/Wool suit with vest/2.avif", "/Costumes/Wool suit with vest/3.avif", "/Costumes/Wool suit with vest/4.avif", "/Costumes/Wool suit with vest/5.avif", "/Costumes/Wool suit with vest/6.avif"],
-      colors: ["camel"], 
-      sizes: ["XS", "S", "M", "L", "XL"],
-      translations: {
-        EN: {
-          name: "Wool suit with vest",
-          description: "Vest + palazzo pants\nComposition: 75% natural wool, soft, does not sting the body."
-        },
-        FR: {
-          name: "Costume en laine avec gilet",
-          description: "Gilet + pantalon palazzo\nComposition: 75% laine naturelle, douce, ne pique pas la peau."
-        },
-        UA: {
-          name: "Вовняний костюм із жилетом",
-          description: "Жилет + палаццо штани\nСклад: 75% натуральної вовни, м'яка, не колеться."
-        }
+    }
+  },
+  {
+    id: 3,
+    price: 4160,
+    isTop: true,
+    sku: "12345",
+    size: "XS S M L XL",
+    category: "Costumes",
+    image: "/Costumes/Wool suit with vest/1.avif",
+    images: ["/Costumes/Wool suit with vest/2.avif", "/Costumes/Wool suit with vest/3.avif"],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        name: "Wool suit with vest",
+        description: "Vest + palazzo pants\nComposition: 75% natural wool, soft, does not sting the body.",
+        color: "camel",
+        colors: ["camel"]
+      },
+      FR: {
+        name: "Costume en laine avec gilet",
+        description: "Gilet + pantalon palazzo\nComposition: 75% laine naturelle, douce, ne pique pas la peau.",
+        color: "camel",
+        colors: ["camel"]
+      },
+      UA: {
+        name: "Вовняний костюм із жилетом",
+        description: "Жилет + палаццо штани\nСклад: 75% натуральної вовни, м'яка, не колеться.",
+        color: "камел",
+        colors: ["камел"]
       }
-    },
-    
-    {
-      id: 4,
-      price: 3100,
-      isTop: true, // Топ продукт
-      sku: "12345",
-      color: "red",
-      size: "XS S M L XL",
-      category: "Dresses",
-      image: "/Dress/Woolen trapeze dress/1.avif",
-      images: ["/Dress/Woolen trapeze dress/2.avif", "/Dress/Woolen trapeze dress/3.avif", "/Dress/Woolen trapeze dress/4.avif", "/Dress/Woolen trapeze dress/5.avif", "/Dress/Woolen trapeze dress/6.avif", "/Dress/Woolen trapeze dress/7.avif", "/Dress/Woolen trapeze dress/7.avif",
-              "/Dress/Woolen trapeze dress/8.avif", "/Dress/Woolen trapeze dress/9.avif", "/Dress/Woolen trapeze dress/10.avif", "/Dress/Woolen trapeze dress/11.avif", "/Dress/Woolen trapeze dress/12.avif"],
-      colors: ["gray", "jeans"], 
-      sizes: ["XS", "S", "M", "L", "XL"],
-      translations: {
-        EN: {
-          name: "Woolen trapeze dress",
-          description: "Trapeze dress with a pronounced belt\nComposition: 75% natural wool, soft, does not stick to the body."
-        },
-        FR: {
-          name: "Robe trapèze en laine",
-          description: "Robe trapèze avec ceinture marquée\nComposition: 75% laine naturelle, douce, ne colle pas à la peau."
-        },
-        UA: {
-          name: "Вовняна трапецеїдна сукня",
-          description: "Трапецеїдна сукня з виразним поясом\nСклад: 75% натуральної вовни, м'яка, не прилипає до тіла."
-        }
+    }
+  },
+  {
+    id: 4,
+    price: 3100,
+    isTop: true,
+    sku: "12345",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Woolen trapeze dress/1.avif",
+    images: ["/Dress/Woolen trapeze dress/2.avif", "/Dress/Woolen trapeze dress/3.avif"],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        name: "Woolen trapeze dress",
+        description: "Trapeze dress with a pronounced belt\nComposition: 75% natural wool, soft, does not stick to the body.",
+        color: "red",
+        colors: ["gray", "jeans"]
+      },
+      FR: {
+        name: "Robe trapèze en laine",
+        description: "Robe trapèze avec ceinture marquée\nComposition: 75% laine naturelle, douce, ne colle pas à la peau.",
+        color: "rouge",
+        colors: ["gris", "jeans"]
+      },
+      UA: {
+        name: "Вовняна трапецеїдна сукня",
+        description: "Трапецеїдна сукня з виразним поясом\nСклад: 75% натуральної вовни, м'яка, не прилипає до тіла.",
+        color: "червоний",
+        colors: ["сірий", "джинсовий"]
       }
-    },
-    
-    {
-      id: 5,
-      price: 3100,
-    
-      isTop: true, // Топ продукт
-      
-      sku: "12345",
-      color: "blue",
-      size: "XS S M L XL",
-      category: "Dresses",
-      image: "/Dress/Wool A-line dress/2.avif",
-      images: ["/Dress/Wool A-line dress/1.avif", "/Dress/Wool A-line dress/3.avif", "/Dress/Wool A-line dress/4.avif", "/Dress/Wool A-line dress/5.avif", "/Dress/Wool A-line dress/6.avif", "/Dress/Wool A-line dress/7.avif", "/Dress/Wool A-line dress/8.avif", "/Dress/Wool A-line dress/9.avif", "/Dress/Wool A-line dress/10.avif"],
-      colors: ["gray", "camel"], 
-      sizes: ["XS", "S", "M", "L", "XL"],
-      translations: {
-        EN: {
-          name: "Wool A-line dress",
-          description: "A-line dress with pronounced seams and a front zipper\nComposition: 75% natural wool, soft, does not prick the body."
-        },
-        FR: {
-          name: "Robe évasée en laine",
-          description: "Robe évasée avec coutures marquées et fermeture éclair avant\nComposition: 75% laine naturelle, douce, ne pique pas la peau."
-        },
-        UA: {
-          name: "Вовняна сукня-силует",
-          description: "Сукня-силует із виразними швами та передньою блискавкою\nСклад: 75% натуральної вовни, м'яка, не колеться."
-        }
+    }
+  },
+  {
+    id: 5,
+    price: 3100,
+    isTop: true, // Топ продукт
+    sku: "12345",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Wool A-line dress/2.avif",
+    images: [
+      "/Dress/Wool A-line dress/1.avif", "/Dress/Wool A-line dress/3.avif", "/Dress/Wool A-line dress/4.avif", "/Dress/Wool A-line dress/5.avif", "/Dress/Wool A-line dress/6.avif", "/Dress/Wool A-line dress/7.avif", "/Dress/Wool A-line dress/8.avif", "/Dress/Wool A-line dress/9.avif", "/Dress/Wool A-line dress/10.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        name: "Wool A-line dress",
+        description: "A-line dress with pronounced seams and a front zipper\nComposition: 75% natural wool, soft, does not prick the body.",
+        color: "blue",
+        colors: ["gray", "camel"],
+      },
+      FR: {
+        name: "Robe évasée en laine",
+        description: "Robe évasée avec coutures marquées et fermeture éclair avant\nComposition: 75% laine naturelle, douce, ne pique pas la peau.",
+        color: "bleu",
+        colors: ["gris", "camel"]
+      },
+      UA: {
+        name: "Вовняна сукня-силует",
+        description: "Сукня-силует із виразними швами та передньою блискавкою\nСклад: 75% натуральної вовни, м'яка, не колеться.",
+        color: "синій",
+        colors: ["сірий", "верблюжий"]
       }
-    },
-
-    {
-      id: 6,
-      price: 3100,
-      isTop: true, // Топ продукт
-      
-      sku: "12345",
-      color: "gray",
-      size: "XS S M L XL",
-      category: "Dresses",
-      image: "/Dress/Dress Grace/1.avif",
-      images: ["/Dress/Dress Grace/2.avif", "/Dress/Dress Grace/3.avif", "/Dress/Dress Grace/4.avif", "/Dress/Dress Grace/5.avif", "/Dress/Dress Grace/6.avif"],
-      colors: ["gray"], 
-      sizes: ["XS", "S", "M", "L", "XL"],
-      translations: {
-        EN: {
-          name: "Dress Grace",
-          description: "A-line dress with wide sleeves of midi length. Has pronounced ribbons near the neck. There is a cutout on the back\nFabric: high-quality costume wool\n Платье A-line dress with wide sleeves of midi has pronounced seams at the neck.\n Fabric: high-quality costume wool"
-        },
-        FR: {
-          name: "Robe Grace",
-          description: ""
-        },
-        UA: {
-          name: " Сукня «Grace»",
-          description: "Сукня А-силуету із широкими рукавами міді довжини. Має виражені стрічки біля горловини. На спинці є виріз\nТканина: якісна костюмна вовна"
-        },
-
-        RU: {
-          name: "Платье Грейс",
-          description: "Платье А-силуэта с широкими рукавами меди имеет выраженные швы у горловины.\n Ткань: качественная костюмная шерсть"
-
-        }
+    }
+  },
+  {
+    id: 6,
+    price: 3100,
+    isTop: true,
+    sku: "12345",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Dress Grace/1.avif",
+    images: ["/Dress/Dress Grace/2.avif", "/Dress/Dress Grace/3.avif", "/Dress/Dress Grace/4.avif", "/Dress/Dress Grace/5.avif", "/Dress/Dress Grace/6.avif"],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        name: "Dress Grace",
+        description: "A-line dress with wide sleeves of midi length. Has pronounced ribbons near the neck. There is a cutout on the back\nFabric: high-quality costume wool",
+        color: "gray",
+        colors: ["gray"],
+      },
+      FR: {
+        name: "Robe Grace",
+        description: "",
+        color: "gris",
+        colors: ["gris"]
+      },
+      UA: {
+        name: "Сукня «Grace»",
+        description: "Сукня А-силуету із широкими рукавами міді довжини. Має виражені стрічки біля горловини. На спинці є виріз\nТканина: якісна костюмна вовна",
+        color: "сірий",
+        colors: ["сірий"]
+      },
+      RU: {
+        name: "Платье Грейс",
+        description: "Платье А-силуэта с широкими рукавами меди имеет выраженные швы у горловины.\n Ткань: качественная костюмная шерсть",
+        color: "серый",
+        colors: ["серый"]
       }
-    },
-    
-    {
-      id: 7,
-      price: 1850,
-      isTop: true, // Топ продукт
-   
-      sku: "12345",
-      color: "blue",
-      size: "XS S M L XL",
-      category: "Dresses",
-      image: "/Dress/Mini sundress/1.avif",
-      images: ["/Dress/Mini sundress/2.avif", "/Dress/Mini sundress/3.avif", "/Dress/Mini sundress/4.avif", "/Dress/Mini sundress/5.avif", "/Dress/Mini sundress/6.avif"],
-      colors: ["black"], 
-      sizes: ["XS", "S", "M", "L", "XL"],
-      translations: {
-        EN: {
-          name: "Mini sundress",
-          description: "Mini sundress with a deep neckline, side slits that can be fastened and two pockets. Can be worn as a vest. \nFabric: high-quality eco-leather on a suede base. (stretch, does not crack)\n( Mini sundress with a deep neckline, side slits that can be fastened and two pockets. Can be worn as a vest. \nFabric: high-quality eco-leather on a suede base. (stretch, does not crack)"
-        },
-        FR: {
-          name: "Robe d'été mini",
-          description: "Mini robe d'été avec décolleté plongeant, fentes latérales à fermeture et deux poches. Peut être porté comme un gilet. \nTissu : éco-cuir de haute qualité sur base en daim. (extensible, ne craque pas)\n( Mini robe d'été avec un décolleté profond, des fentes latérales avec fermeture et deux poches. Peut être portée comme un gilet. \nTissu : éco-cuir de haute qualité à base de daim. (extensible, ne craque pas)"
-        },
-        UA: {
-          name: "Сарафан mini",
-          description: "Mini сарафан із глибоким декольте, розрізами збоку, які застібаються та двома кишенями. Можна носити як жилет. \nТканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається )"
-        },
-
-        RU: {
-          name: "Мини-сарафан",
-          description: "Mini сарафан с глубоким декольте, застегивающимися разрезами сбоку и двумя карманами. Можно носить как жилет. \nТкань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)"
-        }
+    }
+  },
+  {
+    id: 7,
+    price: 1850,
+    isTop: true,
+    sku: "12345",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Mini sundress/1.avif",
+    images: ["/Dress/Mini sundress/2.avif", "/Dress/Mini sundress/3.avif", "/Dress/Mini sundress/4.avif", "/Dress/Mini sundress/5.avif", "/Dress/Mini sundress/6.avif"],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        name: "Mini sundress",
+        description: "Mini sundress with a deep neckline, side slits that can be fastened and two pockets. Can be worn as a vest. \nFabric: high-quality eco-leather on a suede base. (stretch, does not crack)",
+        color: "blue",
+        colors: ["black"],
+      },
+      FR: {
+        name: "Robe d'été mini",
+        description: "Mini robe d'été avec décolleté plongeant, fentes latérales à fermeture et deux poches. Peut être porté comme un gilet. \nTissu : éco-cuir de haute qualité sur base en daim. (extensible, ne craque pas)",
+        color: "bleu",
+        colors: ["noir"]
+      },
+      UA: {
+        name: "Сарафан mini",
+        description: "Mini сарафан із глибоким декольте, розрізами збоку, які застібаються та двома кишенями. Можна носити як жилет. \nТканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається )",
+        color: "синій",
+        colors: ["чорний"]
+      },
+      RU: {
+        name: "Мини-сарафан",
+        description: "Mini сарафан с глубоким декольте, застегивающимися разрезами сбоку и двумя карманами. Можно носить как жилет. \nТкань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)",
+        color: "синий",
+        colors: ["чёрный"]
       }
-    },
-    
+    }
+  },
+     
     {
       id: 8,
       price: 2000,
       sku: "12345",
-      color: "blue",
+      
       size: "XS S M L XL",
       category: "Dresses",
       image: "/Dress/Shkiriana suknya (Leather dress)/1.avif",
       images: ["/Dress/Shkiriana suknya (Leather dress)/2.avif", "/Dress/Shkiriana suknya (Leather dress)/3.avif", "/Dress/Shkiriana suknya (Leather dress)/4.avif", "/Dress/Shkiriana suknya (Leather dress)/5.avif", "/Dress/Shkiriana suknya (Leather dress)/6.avif"],
-      colors: ["mocha", "white"], 
+       
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "Shkiriana suknya (Leather dress)",
-          description: "Oversize dress with a small round neckline and pockets\nFabric: high-quality eco-leather on a suede base. (stretchy, does not crack)"
+          description: "Oversize dress with a small round neckline and pockets\nFabric: high-quality eco-leather on a suede base. (stretchy, does not crack)",
+          color: "blue",
+          colors: ["mocha", "white"],
         },
         FR: {
           name: "Tissu Shkiryana (robe en cuir)",
@@ -251,17 +267,19 @@
       id: 9,
       price: 2100,
       sku: "12345",
-      color: "gray",
+      
       size: "XS S M L XL",
       category: "Dresses",
       image: "/Dress/Asymmetrical_dress/3.avif",
       images: ["/Dress/Asymmetrical_dress/2.avif", "/Dress/Asymmetrical_dress/3.avif", "/Dress/Asymmetrical_dress/4.avif", "/Dress/Asymmetrical_dress/5.avif"],
-      colors: ["gray"], 
+       
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "Asymmetrical dress",
-          description: "Oversize asymmetrical dress with a turn-down collar and a chest pocket\n Fabric: high-quality eco-leather on a suede base. (stretchy, does not crack)"
+          description: "Oversize asymmetrical dress with a turn-down collar and a chest pocket\n Fabric: high-quality eco-leather on a suede base. (stretchy, does not crack)",
+          color: "gray",
+          colors: ["gray"],
         },
         FR: {
           name: "Robe asymétrique",
@@ -282,17 +300,19 @@
       id: 10,
       price: 1350 ,
       sku: "12345",
-      color: "blue",
+      
       size: "XS S M L XL",
       category: "Tops",
       image: "/Top/Openshouldergolf/2.avif",
       images: ["/Top/Openshouldergolf/1.avif", "/Top/Openshouldergolf/3.avif", "/Top/Openshouldergolf/4.avif", "/Top/Openshouldergolf/5.avif", "/Top/Openshouldergolf/6.avif"],
-      colors: ["milky", "black"], 
+       
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "Open-shoulder golf",
-          description: "off-shoulder turtleneck made of soft fabric: 50% cashmere, 28% polyester, 28% nylon"
+          description: "off-shoulder turtleneck made of soft fabric: 50% cashmere, 28% polyester, 28% nylon",
+          color: "blue",
+          colors: ["milky", "black"],
         },
         FR: {
           name: "Golfer avec les épaules ouvertes",
@@ -502,7 +522,7 @@
       price: 4950,
       isTop: false, // Not marked as a top product
       sku: "56789",
-      color: "chocolate",
+      
       size: "XS S M L XL",
       category: "Costumes",
       image: "/Costumes/Suit with bermuda shorts/1.avif",
@@ -511,12 +531,14 @@
         "/Costumes/Suit with bermuda shorts/3.avif",
         "/Costumes/Suit with bermuda shorts/4.avif"
       ],
-      colors: ["chocolate"],
+      
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "Suit with bermuda shorts",
-          description: "Double-breasted oversized jacket + high-waisted bermuda shorts with pockets.\nFabric: suit fabric (75% viscose, 25% polyester)"
+          description: "Double-breasted oversized jacket + high-waisted bermuda shorts with pockets.\nFabric: suit fabric (75% viscose, 25% polyester)",
+          color: "chocolate",
+          colors: ["chocolate"],
         },
         FR: {
           name: "Costume avec bermuda",
@@ -538,7 +560,7 @@
       price: 5350,
       isTop: false, // Not marked as a top product
       sku: "98765",
-      color: "chocolate",
+      
       size: "XS S M L XL",
       category: "Costumes",
       image: "/Costumes/Emily Suit/1.avif",
@@ -547,12 +569,14 @@
         "/Costumes/Emily Suit/3.avif",
         "/Costumes/Emily Suit/4.avif"
       ],
-      colors: ["chocolate"],
+     
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "Emily Suit",
-          description: "Double-breasted oversized jacket + palazzo trousers with high waist, pockets, and a belt.\nFabric: suit fabric (75% viscose, 25% polyester)"
+          description: "Double-breasted oversized jacket + palazzo trousers with high waist, pockets, and a belt.\nFabric: suit fabric (75% viscose, 25% polyester)",
+          color: "chocolate",
+          colors: ["chocolate"],
         },
         FR: {
           name: "Costume « Emily »",
@@ -574,7 +598,7 @@
       price: 3100,
       isTop: false, // Not marked as a top product
       sku: "67890",
-      color: "gray, camel",
+      
       size: "XS S M L XL",
       category: "Dresses",
       image: "/Dress/Emily Dress/1.avif",
@@ -589,12 +613,14 @@
         "/Dress/Emily Dress/9.avif",
         "/Dress/Emily Dress/10.avif",
       ],
-      colors: ["gray", "camel"],
+      
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "Emily Dress",
-          description: "Wool midi dress with a V-neck, shortened sleeves, and pockets.\nFabric: 80% wool, 20% polyester"
+          description: "Wool midi dress with a V-neck, shortened sleeves, and pockets.\nFabric: 80% wool, 20% polyester",
+          color: "gray, camel",
+          colors: ["gray", "camel"],
         },
         FR: {
           name: "Robe « Emily »",
@@ -616,7 +642,7 @@
       price: 3025,
       isTop: false, // Not marked as a top product
       sku: "67891",
-      color: "beige",
+      
       size: "XS S M L XL",
       category: "Dresses",
       image: "/Dress/Marie Dress/1.avif",
@@ -626,12 +652,14 @@
         "/Dress/Marie Dress/4.avif",
         "/Dress/Marie Dress/5.avif"
       ],
-      colors: ["beige"],
+
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "Marie Dress",
-          description: "Midi-length dress with a collar and pockets. Button closure.\nFabric: suit fabric (75% viscose, 25% polyester)"
+          description: "Midi-length dress with a collar and pockets. Button closure.\nFabric: suit fabric (75% viscose, 25% polyester)",
+          color: "beige",
+          colors: ["beige"],
         },
         FR: {
           name: "Robe « Marie »",
@@ -653,7 +681,7 @@
       price: 1650,
       isTop: false, // Not marked as a top product
       sku: "67892",
-      color: "black",
+      
       size: "XS S M L XL",
       category: "Dresses",
       image: "/Dress/Leather Sundress/1.avif",
@@ -662,12 +690,14 @@
         "/Dress/Leather Sundress/3.avif",
         "/Dress/Leather Sundress/4.avif",
       ],
-      colors: ["black"],
+
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "Leather Sundress",
-          description: "Oversized sundress with a square neckline and two pockets.\nFabric: high-quality eco-leather on a suede base (stretchable, does not crack)"
+          description: "Oversized sundress with a square neckline and two pockets.\nFabric: high-quality eco-leather on a suede base (stretchable, does not crack)",
+          color: "black",
+          colors: ["black"],
         },
         FR: {
           name: "Robe « en cuir »",
@@ -689,7 +719,7 @@
       price: 4050,
       isTop: false,
       sku: "67893",
-      color: "denim",
+      
       size: "XS S M L XL",
       category: "Costumes",
       image: "/Costumes/Two-Piece Suit/1.avif",
@@ -698,12 +728,14 @@
         "/Costumes/Two-Piece Suit/3.avif",
         "/Costumes/Two-Piece Suit/4.avif"
       ],
-      colors: ["denim"],
+      
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "Two-Piece Suit",
-          description: "Vest with lining + palazzo pants with a high waist. Each item can be purchased separately.\nFabric: suit fabric (75% viscose, 25% polyester)"
+          description: "Vest with lining + palazzo pants with a high waist. Each item can be purchased separately.\nFabric: suit fabric (75% viscose, 25% polyester)",
+          color: "denim",
+          colors: ["denim"],
         },
         FR: {
           name: "Costume 2 pièces",
@@ -796,7 +828,7 @@
       price: 2800,
       isTop: false,
       sku: "67896",
-      color: "black-white",
+      
       size: "XS S M L XL",
       category: "Dresses",
       image: "/Dress/Jersey Two-Piece Dress/1.avif",
@@ -805,12 +837,14 @@
         "/Dress/Jersey Two-Piece Dress/3.avif",
         "/Dress/Jersey Two-Piece Dress/4.avif"
       ],
-      colors: ["black-white"],
+      
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "Jersey Two-Piece Dress",
-          description: "Dense everyday dress. Precise lines, form, design, and style. Wash each part of the dress separately.\nFabric: dense jersey knit"
+          description: "Dense everyday dress. Precise lines, form, design, and style. Wash each part of the dress separately.\nFabric: dense jersey knit",
+          color: "black-white",
+          colors: ["black-white"],
         },
         FR: {
           name: "Robe en jersey deux pièces",
@@ -832,7 +866,7 @@
       price: 1760,
       isTop: false,
       sku: "67897",
-      color: "black, cappuccino",
+      
       size: "XS S M L XL",
       category: "Pants",
       image: "/Pants/Jersey Pants/1.avif",
@@ -841,12 +875,14 @@
         "/Pants/Jersey Pants/3.avif",
         "/Pants/Jersey Pants/4.avif"
       ],
-      colors: ["black", "cappuccino"],
+     
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "Jersey Pants",
-          description: "Cropped pants with an elastic waistband. Feature pronounced seams throughout the length.\nFabric: dense jersey knit"
+          description: "Cropped pants with an elastic waistband. Feature pronounced seams throughout the length.\nFabric: dense jersey knit",
+          color: "black, cappuccino",
+          colors: ["black", "cappuccino"],
         },
         FR: {
           name: "Pantalon en jersey",
@@ -869,7 +905,7 @@
       isSpecialOffer: true,
       discountPrice: 1820,
       sku: "12345",
-      color: "red",
+      
       size: "XS S M L XL",
       category: "Pants",
       image: "/Pants/Banana Pants/1.avif",
@@ -877,12 +913,14 @@
         "/Pants/Banana Pants/6.avif", "/Pants/Banana Pants/7.avif", "/Pants/Banana Pants/8.avif", "/Pants/Banana Pants/9.avif", "/Pants/Banana Pants/10.avif",
         "/Pants/Banana Pants/11.avif", "/Pants/Banana Pants/12.avif", "/Pants/Banana Pants/13.avif", "/Pants/Banana Pants/14.avif", "/Pants/Banana Pants/15.avif",
       ],
-      colors: ["Black", "Beige", "Caramel"], 
+ 
       sizes: ["XS", "S", "M", "L", "XL" ],
       translations: {
         EN: {
           name: "Banana Pants",
-          description: "High-waisted banana-style pants with two pockets.Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)"
+          description: "High-waisted banana-style pants with two pockets.Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)",
+          color: "red",
+          colors: ["Black", "Beige", "Caramel"],
         },
         FR: {
           name: "Pantalons en Cuir Banane",
@@ -903,18 +941,20 @@
       price:  1820,
       isTop: false, // Топ продукт
       sku: "12345",
-      color: "red",
+      
       size: "XS S M L XL",
       category: "Pants",
       image: "/Pants/Leather Flared Pants/1.avif",
       images: ["//Pants/Leather Flared Pants/2.avif", "/Pants/Leather Flared Pants/3.avif", "/Pants/Leather Flared Pants/4.avif", "/Pants/Leather Flared Pants/5.avif", "/Pants/Leather Flared Pants/6.avif", 
         "/Pants/Leather Flared Pants/7.avif", "/Pants/Leather Flared Pants/8.avif", "/Pants/Leather Flared Pants/9.avif",],
-      colors: ["Black", "Powder"], 
+       
       sizes: ["XS", "S", "M", "L", "XL" ],
       translations: {
         EN: {
           name: "Leather Flared Pants",
-          description: "High-waisted flared pants with pleats running along the entire length.Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)"
+          description: "High-waisted flared pants with pleats running along the entire length.Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)",
+          color: "red",
+          colors: ["Black", "Powder"],
         },
         FR: {
           name: "Pantalons en Cuir Pattes d’Éph",
@@ -936,7 +976,7 @@
       price: 1820,
       isTop: false, // Топ продукт
       sku: "12346",
-      color: "beige, caramel, black",
+      
       size: "XS S M L XL",
       category: "Pants",
       image: "/Pants/Leather Pants1/1.avif",
@@ -956,12 +996,14 @@
         "/Pants/Leather Pants1/14.avif",
         
       ],
-      colors: ["beige", "caramel", "black"], 
+   
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "Leather Tube Pants",
-          description: "Slim-fit pants with a high waist and zippers at the ankles. Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)"
+          description: "Slim-fit pants with a high waist and zippers at the ankles. Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)",
+          color: "beige, caramel, black",
+          colors: ["beige", "caramel", "black"],
         },
         FR: {
           name: "Pantalon en cuir tube",
@@ -983,17 +1025,19 @@
       price: 1820,
       isTop: false, // Топ продукт
       sku: "12345",
-      color: "red",
+      
       size: "XS S M L XL",
       category: "Pants",
       image: "/Pants/Leather Pants/1.avif",
       images: ["/Pants/Leather Pants/2.avif", "/Pants/Leather Pants/3.avif", "/Pants/Leather Pants/4.avif", "/Pants/Leather Pants/5.avif",],
-      colors: ["gray"], 
+      
       sizes: ["XS", "S", "M", "L", "XL" ],
       translations: {
         EN: {
           name: "Leather Pants",
-          description: "Straight-cut pants with a high waist and two pockets.Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)"
+          description: "Straight-cut pants with a high waist and two pockets.Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)",
+          color: "red",
+          colors: ["gray"], 
         },
         FR: {
           name: "Pantalon en cuir",
@@ -1015,7 +1059,7 @@
       price: 1650,
       isTop: false,
       sku: "67890",
-      color: "black",
+     
       size: "XS S M L XL",
       category: "Skirts",
       image: "/Skirts/Leather Pencil Skirt/1.avif",
@@ -1043,12 +1087,14 @@
         "/Skirts/Leather Pencil Skirt/22.avif",
         "/Skirts/Leather Pencil Skirt/23.avif",
       ],
-      colors: ["beige", "caramel", "black", "white", "mocha", "olive"],
+
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "Leather Pencil Skirt",
-          description: "Mid-length pencil skirt with a high waist and a slit on the legs. Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)"
+          description: "Mid-length pencil skirt with a high waist and a slit on the legs. Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)",
+          color: "black",
+          colors: ["beige", "caramel", "black", "white", "mocha", "olive"],
         },
         FR: {
           name: "Jupe crayon en cuir",
@@ -1070,7 +1116,7 @@
       price: 1650,
       isTop: false,
       sku: "12347",
-      color: "olive",
+    
       size: "XS S M L XL",
       category: "Skirts",
       image: "/Skirts/Leather Skirt Knot/1.avif",
@@ -1080,12 +1126,14 @@
         "/Skirts/Leather Skirt Knot/4.avif", 
         "/Skirts/Leather Skirt Knot/5.avif"
       ],
-      colors: ["olive"],
+
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "Leather Skirt with Knot",
-          description: "Midi-length pencil skirt with a high waist, a slit on the leg, and a decorative knot. Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)"
+          description: "Midi-length pencil skirt with a high waist, a slit on the leg, and a decorative knot. Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)",
+          color: "olive",
+          colors: ["olive"],
         },
         FR: {
           name: "Jupe en cuir avec nœud",
