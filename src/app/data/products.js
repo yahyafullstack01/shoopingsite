@@ -309,8 +309,8 @@ const products = [
       
       size: "XS S M L XL",
       category: "Tops",
-      image: "/Top/Openshouldergolf/2.avif",
-      images: ["/Top/Openshouldergolf/1.avif", "/Top/Openshouldergolf/3.avif", "/Top/Openshouldergolf/4.avif", "/Top/Openshouldergolf/5.avif", "/Top/Openshouldergolf/6.avif"],
+      image: "/Top/Openshouldergolf/5.avif",
+      images: ["/Top/Openshouldergolf/2.avif", "/Top/Openshouldergolf/3.avif", "/Top/Openshouldergolf/4.avif", "/Top/Openshouldergolf/1.avif", "/Top/Openshouldergolf/6.avif"],
        
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
@@ -427,7 +427,7 @@ const products = [
     
     {
       id: 14,
-      price: 3100,
+      price: 1800,
       sku: "12345",
       color: "blue",
       size: "XS S M L XL",
@@ -462,8 +462,8 @@ const products = [
      color: "caramel",
      size: "XS S M L XL",
      category: "Skirts",
-     image: "/Skirts/Alice/2.avif",
-     images: ["/Skirts/Alice/2.avif", "/Skirts/Alice/2.avif", "/Skirts/Alice/2.avif", "//Skirts/Alice/2.avif", "/Skirts/Alice/2.avif"],
+     image: "/Skirts/Alice/1.avif",
+     images: ["/Skirts/Alice/2.avif", "/Skirts/Alice/3.avif", "/Skirts/Alice/4.avif", "//Skirts/Alice/5.avif"],
     
      sizes: ["XS", "S", "M", "L", "XL"],
      translations: {
