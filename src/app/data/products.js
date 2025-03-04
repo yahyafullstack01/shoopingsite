@@ -7,7 +7,7 @@ const products = [
     category: "Costumes",
     image: "/Costumes/Woolen suit with skirt/1.avif",
     images: ["/Costumes/Woolen suit with skirt/2.avif", "/Costumes/Woolen suit with skirt/3.avif"],
-    sizes: ["XS", "S", "M"],
+    sizes: ["XS", "S" , "M" , "L" , "XL"],
     translations: {
       EN: {
         name: "Woolen suit with skirt",
@@ -38,7 +38,7 @@ const products = [
     category: "Costumes",
     image: "/Costumes/Wool suit with trousers/8.avif",
     images: ["/Costumes/Wool suit with trousers/1.avif", "/Costumes/Wool suit with trousers/2.avif"],
-    sizes: ["XS", "S", "M"],
+    sizes: ["XS", "S" , "M" , "L" , "XL"],
     translations: {
       EN: {
         name: "Woolen suit with trousers",
@@ -69,7 +69,7 @@ const products = [
     category: "Costumes",
     image: "/Costumes/Wool suit with vest/1.avif",
     images: ["/Costumes/Wool suit with vest/2.avif", "/Costumes/Wool suit with vest/3.avif"],
-    sizes: ["XS", "S", "M", "L", "XL"],
+    sizes: ["XS", "S" , "M" , "L" , "XL"],
     translations: {
       EN: {
         name: "Wool suit with vest",
@@ -250,15 +250,18 @@ const products = [
         },
         FR: {
           name: "Tissu Shkiryana (robe en cuir)",
-          description: "Robe oversize avec petit décolleté arrondi et poches. Tissu : éco-cuir de haute qualité sur base en daim (extensible, ne craque pas)."
+          description: "Robe oversize avec petit décolleté arrondi et poches. Tissu : éco-cuir de haute qualité sur base en daim (extensible, ne craque pas).",
+          colors : ["mocha", "blanc"],
         },
         UA: {
           name: "Шкіряна сукня",
-          description: "Oversize сукня із невеликим округлим вирізом та кишенями\nТканина: якісна екошкіра на замшевій основі.(стречева, не тріскається)"
+          description: "Oversize сукня із невеликим округлим вирізом та кишенями\nТканина: якісна екошкіра на замшевій основі.(стречева, не тріскається)",
+          colors: ["мокко", "білий"],
         },
         RU: {
           name: "Кожаное платье",
-          description: "Oversize платье с небольшим круглым вырезом и карманами\nТкань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)"
+          description: "Oversize платье с небольшим круглым вырезом и карманами\nТкань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)",
+          colors : ["мокко", "белый"],
           }
       }
     },
@@ -283,15 +286,18 @@ const products = [
         },
         FR: {
           name: "Robe asymétrique",
-          description : "Robe oversize de coupe asymétrique avec col plaqué et poche poitrine\n Tissu : éco-cuir de haute qualité sur base en daim. (extensible, ne craque pas)"
+          description : "Robe oversize de coupe asymétrique avec col plaqué et poche poitrine\n Tissu : éco-cuir de haute qualité sur base en daim. (extensible, ne craque pas)",
+          colors : ["gris"],
         },
         UA: {
           name: "Асиметрична сукня",
-          description: "Oversize сукня асиметричного крою із накладним коміром та кишенею на грудях\n Тканина: якісна екошкіра на замшевій основі.(стречева, не тріскається)"
+          description: "Oversize сукня асиметричного крою із накладним коміром та кишенею на грудях\n Тканина: якісна екошкіра на замшевій основі.(стречева, не тріскається)",
+          colors: ["сірий"],
         },
         RU: {
           name: "Асимметричное платье",
-          description: " Oversize платье асимметричного кроя с накладным воротником и карманом на груди\nТкань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся) "
+          description: " Oversize платье асимметричного кроя с накладным воротником и карманом на груди\nТкань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся) ",
+          colors: ["серый"],
         }
       }
     },
@@ -316,11 +322,13 @@ const products = [
         },
         FR: {
           name: "Golfer avec les épaules ouvertes",
-          description: "col roulé à épaules dénudées en tissu doux : 50 % cachemire, 28 % polyester, 28 % nylon"
+          description: "col roulé à épaules dénudées en tissu doux : 50 % cachemire, 28 % polyester, 28 % nylon",
+          colors:["lait", "noir"],
         },
         UA: {
           name: "Гольф із відкритими плечима",
-          description: "гольф із відкритими плечима із мʼякої тканини: 50% кашемір, 28% поліестер, 28% нейлон"
+          description: "гольф із відкритими плечима із мʼякої тканини: 50% кашемір, 28% поліестер, 28% нейлон",
+          colors: ["молочний", "чорний"],
         }
       }
     },
@@ -336,20 +344,22 @@ const products = [
       image: "/Outerwear/Leather trench coat/2.avif",
       images: ["/Outerwear/Leather trench coat/1.avif", "/Outerwear/Leather trench coat/3.avif", "/Outerwear/Leather trench coat/4.avif", 
               "/Outerwear/Leather trench coat/5.avif", "/Outerwear/Leather trench coat/6.avif"],
-      colors: ["beige"], 
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "Leather trench coat",
-          description: "Double-breasted leather trench coat in an oversize style with an included belt and two pockets. \nFabric: high-quality eco-leather on a suede base. (stretchy, does not crack)"
+          description: "Double-breasted leather trench coat in an oversize style with an included belt and two pockets. \nFabric: high-quality eco-leather on a suede base. (stretchy, does not crack)",
+          colors: ["beige"], 
         },
         FR: {
           name: "Trench-coat en cuir",
-          description: "Trench-coat oversize en cuir à double boutonnage avec ceinture incluse et deux poches. \nTissu : éco-cuir de haute qualité sur base en daim. (extensible, incassable)"
+          description: "Trench-coat oversize en cuir à double boutonnage avec ceinture incluse et deux poches. \nTissu : éco-cuir de haute qualité sur base en daim. (extensible, incassable)",
+          colors: ["beige"],
         },
         UA: {
           name: "Шкіряний тренч",
-          description: "Двобортний шкіряний тренч oversize фасону із поясом у комплекті та двома кишенями. \nТканина: якісна екошкіра на замшевій основі.(стречева, не тріскається)"
+          description: "Двобортний шкіряний тренч oversize фасону із поясом у комплекті та двома кишенями. \nТканина: якісна екошкіра на замшевій основі.(стречева, не тріскається)",
+          colors: ["бежевий"],
         }
       }
     },
@@ -363,20 +373,23 @@ const products = [
       category: "Outerwear",
       image: "/Outerwear/Camel пальто/2.avif",
       images: ["/Outerwear/Camel пальто/1.avif", "/Outerwear/Camel пальто/3.avif", "/Outerwear/Camel пальто/4.avif", "/Outerwear/Camel пальто/5.avif"],
-      colors: ["camel"], 
+      
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "Camel Coat",
-          description: "A thick, lined midi-length coat with two pockets and a belt included. The sleeves can be adjusted to your liking\nFabric: Italy. 85% wool, 15% polyester"
+          description: "A thick, lined midi-length coat with two pockets and a belt included. The sleeves can be adjusted to your liking\nFabric: Italy. 85% wool, 15% polyester",
+          colors: ["camel"],
         },
         FR: {
           name: "Manteau Camel",
-          description: "Manteau épais, de longueur midi, doublé, doté de deux poches et muni d'une ceinture. Les manches peuvent être ajustées à votre guise.\nTissu : Italie. 85% laine, 15% polyester"
+          description: "Manteau épais, de longueur midi, doublé, doté de deux poches et muni d'une ceinture. Les manches peuvent être ajustées à votre guise.\nTissu : Italie. 85% laine, 15% polyester",
+          colors: ["camel"],
         },
         UA: {
           name: "Camel пальто",
-          description: "Щільне пальто міді довжини на підкладці, має дві кишені, а пояс іде у комплекті. Рукава можна регулювати, як вам зручно\nТканина:Італія. 85 % вовни, 15% поліестер"
+          description: "Щільне пальто міді довжини на підкладці, має дві кишені, а пояс іде у комплекті. Рукава можна регулювати, як вам зручно\nТканина:Італія. 85 % вовни, 15% поліестер",
+          colors: ["камель"],
         }
       }
     },
@@ -391,20 +404,23 @@ const products = [
       image: "/Outerwear/Твідовий бомбер/1.avif",
       images: ["/Outerwear/Твідовий бомбер/2.avif", "/Outerwear/Твідовий бомбер/3.avif", "/Outerwear/Твідовий бомбер/4.avif",
                "/Outerwear/Твідовий бомбер/5.avif", "/Outerwear/Твідовий бомбер/6.avif", "/Outerwear/Твідовий бомбер/7.avif", "/Outerwear/Твідовий бомбер/8.avif"],
-      colors: ["graphite", "beige"], 
+      
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "Tweed bomber jacket",
-          description: "Quilted bomber jacket with high-quality lining and two pockets"
+          description: "Quilted bomber jacket with high-quality lining and two pockets",
+          colors: ["graphite", "beige"], 
         },
         FR: {
           name: "Blouson aviateur en tweed",
-          description: "Bomber matelassé avec doublure de qualité et deux poches"
+          description: "Bomber matelassé avec doublure de qualité et deux poches",
+          colors: ["graphite", "beige"],
         },
         UA: {
           name: "Твідовий бомбер",
-          description: "Стьоганий бомбер із якісною підкладкою та двома кишенями"
+          description: "Стьоганий бомбер із якісною підкладкою та двома кишенями",
+          colors: ["графітовий", "беж"],
         }
       }
     },
@@ -418,20 +434,23 @@ const products = [
       category: "Shirts",
       image: "/Shirts/Classicshirt/2.avif",
       images: ["/Shirts/Classicshirt/1.avif", "/Shirts/Classicshirt/3.avif", "/Shirts/Classicshirt/4.avif", "/Shirts/Classicshirt/5.avif", "/Shirts/Classicshirt/1.avif"],
-      colors: ["white"], 
+       
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "Classic shirt",
-          description: "Loose-fitting cotton shirt. Fabric: 100% cotton"
+          description: "Loose-fitting cotton shirt. Fabric: 100% cotton",
+          colors: ["white"],
         },
         FR: {
           name: "Chemise classique",
-          description: "Chemise en coton à coupe libre. Tissu : 100 % coton"
+          description: "Chemise en coton à coupe libre. Tissu : 100 % coton",
+          colors: ["blanc"],
         },
         UA: {
           name: "Класична сорочка",
-          description: "Сорочка бавовняна вільного крою. Тканина: 100% бавовна"
+          description: "Сорочка бавовняна вільного крою. Тканина: 100% бавовна",
+          colors: ["білий"],
         }
       }
     },
@@ -445,20 +464,23 @@ const products = [
      category: "Skirts",
      image: "/Skirts/Alice/2.avif",
      images: ["/Skirts/Alice/2.avif", "/Skirts/Alice/2.avif", "/Skirts/Alice/2.avif", "//Skirts/Alice/2.avif", "/Skirts/Alice/2.avif"],
-    colors: ["caramel"], 
+    
      sizes: ["XS", "S", "M", "L", "XL"],
      translations: {
        EN: {
         name: "Alice",
-        description: "A-line skirt with ribbons along the entire length. Fabric: high-quality eco-leather on a suede base. (stretchy, does not crack)"
+        description: "A-line skirt with ribbons along the entire length. Fabric: high-quality eco-leather on a suede base. (stretchy, does not crack)",
+        colors: ["caramel"],
       },
       FR: {
         name: "Alice",
-        description: "Une jupe ample en forme de trapèze avec des rubans sur toute la longueur. Tissu : cuir écologique de haute qualité sur base en daim. (extensible, ne craque pas"
+        description: "Une jupe ample en forme de trapèze avec des rubans sur toute la longueur. Tissu : cuir écologique de haute qualité sur base en daim. (extensible, ne craque pas",
+        colors: ["caramel"],
       },
       UA: {
          name: "Alice",
-         description: "Спідниця вільного крою у формі трапеції зі стрічками по всій довжині. Тканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається"
+         description: "Спідниця вільного крою у формі трапеції зі стрічками по всій довжині. Тканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається",
+         colors: ["карамель"],
        }
      }
      },
@@ -472,20 +494,23 @@ const products = [
       category: "Costumes",
       image: "/Costumes/Liana/1.avif",
       images: ["/Costumes/Liana/2.avif", "/Costumes/Liana/3.avif", "/Costumes/Liana/4.avif", "/Costumes/Lianat/5.avif", "/Costumes/Liana/6.avif"],
-      colors: ["olive"], 
+      
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "Liana",
-          description: "Double-breasted oversize jacket + belt + straight high-rise trousers n\Suit fabric (75% viscose, 25% polyester)"
+          description: "Double-breasted oversize jacket + belt + straight high-rise trousers n\Suit fabric (75% viscose, 25% polyester)",
+          colors: ["olive"],
         },
         FR: {
           name: "Liana",
-          description: "Veste oversize croisée + ceinture + pantalon droit taille haute Tissu de costume (75% viscose, 25% polyester)"
+          description: "Veste oversize croisée + ceinture + pantalon droit taille haute Tissu de costume (75% viscose, 25% polyester)",
+          colors: ["olive"],
         },
         UA: {
           name: "Ліана",
-          description: "Двобортний oversize жакет + пояс + брюки прямі на високій посадці n\Костюмна тканина ( 75% віскоза, 25% поліестер )"
+          description: "Двобортний oversize жакет + пояс + брюки прямі на високій посадці n\Костюмна тканина ( 75% віскоза, 25% поліестер )",
+          colors: ["оливкова"],
         }
       }
     },
@@ -499,20 +524,23 @@ const products = [
        category: "Costumes",
        image: "/Costumes/Lucy/1.avif",
        images: ["/Costumes/Lucy/2.avif", "/Costumes/Lucy/3.avif", "/Costumes/Lucy/4.avif", "/Costumes/Lucy/5.avif", "/Costumes/Lucy/6.avif"],
-       colors: ["black"], 
+        
        sizes: ["XS", "S", "M", "L", "XL"],
        translations: {
          EN: {
            name: "Lucy",
-           description: "Double-breasted oversize jacket + cropped high-rise banana pants\nSuit fabric (75% viscose, 25% polyester)"
+           description: "Double-breasted oversize jacket + cropped high-rise banana pants\nSuit fabric (75% viscose, 25% polyester)",
+           colors: ["black"],
          },
          FR: {
            name: "Lucy",
-           description: "Veste oversize à double boutonnage + pantacourt taille haute façon banane\nTissu de costume (75% viscose, 25% polyester)"
+           description: "Veste oversize à double boutonnage + pantacourt taille haute façon banane\nTissu de costume (75% viscose, 25% polyester)",
+           colors: ["noir"],
          },
          UA: {
            name: "Lucy",
-           description: "Двобортний oversize жакет + вкорочені брюки фасону бананів на високій посадці \nКостюмна тканина ( 75% віскоза, 25% поліестер )"
+           description: "Двобортний oversize жакет + вкорочені брюки фасону бананів на високій посадці \nКостюмна тканина ( 75% віскоза, 25% поліестер )",
+           colors: ["чорний"],
          }
        }
      },
@@ -542,15 +570,21 @@ const products = [
         },
         FR: {
           name: "Costume avec bermuda",
-          description: "Veste oversize double boutonnage + bermuda taille haute avec poches.\nTissu: tissu de costume (75% viscose, 25% polyester)"
+          description: "Veste oversize double boutonnage + bermuda taille haute avec poches.\nTissu: tissu de costume (75% viscose, 25% polyester)",
+          color: "chocolat",
+          colors: ["chocolat"],
         },
         UA: {
           name: "Костюм із бермудами",
-          description: "Двобортний oversize жакет + шорти-бермуди на високій посадці із кишенями.\nТканина: костюмна тканина (75% віскоза, 25% поліестер)"
+          description: "Двобортний oversize жакет + шорти-бермуди на високій посадці із кишенями.\nТканина: костюмна тканина (75% віскоза, 25% поліестер)",
+          color: "шоколадний",
+          colors: ["шоколадний"],
         },
         RU: {
           name: "Костюм с бермудами",
-          description: "Двухбортный oversize жакет + шорты-бермуды на высокой посадке с карманами.\nТкань: костюмная ткань (75% вискоза, 25% полиэстер)"
+          description: "Двухбортный oversize жакет + шорты-бермуды на высокой посадке с карманами.\nТкань: костюмная ткань (75% вискоза, 25% полиэстер)",
+          color: "шоколадный",
+          colors: ["шоколадный"],
         }
       }
     },
@@ -580,15 +614,21 @@ const products = [
         },
         FR: {
           name: "Costume « Emily »",
-          description: "Veste oversize double boutonnage + pantalon palazzo taille haute avec poches et ceinture.\nTissu: tissu de costume (75% viscose, 25% polyester)"
+          description: "Veste oversize double boutonnage + pantalon palazzo taille haute avec poches et ceinture.\nTissu: tissu de costume (75% viscose, 25% polyester)",
+          color: "chocolat",
+          colors: ["chocolat"],
         },
         UA: {
           name: "Костюм «Emily»",
-          description: "Двобортний oversize жакет + брюки палаццо на високій посадці із кишенями та поясом.\nТканина: костюмна тканина (75% віскоза, 25% поліестер)"
+          description: "Двобортний oversize жакет + брюки палаццо на високій посадці із кишенями та поясом.\nТканина: костюмна тканина (75% віскоза, 25% поліестер)",
+          color: "шоколадний",
+          colors: ["шоколадний"],
         },
         RU: {
           name: "Костюм «Emily»",
-          description: "Двухбортный oversize жакет + брюки палаццо на высокой посадке с карманами и поясом.\nТкань: костюмная ткань (75% вискоза, 25% полиэстер)"
+          description: "Двухбортный oversize жакет + брюки палаццо на высокой посадке с карманами и поясом.\nТкань: костюмная ткань (75% вискоза, 25% полиэстер)",
+          color: "шоколадный",
+          colors: ["шоколадный"],
         }
       }
     },
@@ -624,15 +664,21 @@ const products = [
         },
         FR: {
           name: "Robe « Emily »",
-          description: "Robe midi en laine avec col en V, manches raccourcies et poches.\nTissu: 80% laine, 20% polyester"
+          description: "Robe midi en laine avec col en V, manches raccourcies et poches.\nTissu: 80% laine, 20% polyester",
+          color: "gris, camel",
+          colors: ["gris", "camel"],
         },
         UA: {
           name: "Сукня «Emily»",
-          description: "Вовняна сукня міді довжини із V-вирізом, вкороченими рукавами та кишенями.\nТканина: 80% вовна, 20% поліестер"
+          description: "Вовняна сукня міді довжини із V-вирізом, вкороченими рукавами та кишенями.\nТканина: 80% вовна, 20% поліестер",
+          color: "сірий, краватний",
+          colors: ["сірий", "краватний"],
         },
         RU: {
           name: "Платье «Emily»",
-          description: "Шерстяное платье миди длины с V-вырезом, укороченными рукавами и карманами.\nТкань: 80% шерсть, 20% полиэстер"
+          description: "Шерстяное платье миди длины с V-вырезом, укороченными рукавами и карманами.\nТкань: 80% шерсть, 20% полиэстер",
+          color: "серый, краватный",
+          colors: ["серый", "краватный"],
         }
       }
     },
@@ -663,15 +709,21 @@ const products = [
         },
         FR: {
           name: "Robe « Marie »",
-          description: "Robe midi avec col et poches. Fermeture à boutons.\nTissu: tissu de costume (75% viscose, 25% polyester)"
+          description: "Robe midi avec col et poches. Fermeture à boutons.\nTissu: tissu de costume (75% viscose, 25% polyester)",
+          color: "beige",
+          colors: ["beige"],
         },
         UA: {
           name: "Сукня «Marie»",
-          description: "Сукня міді довжини із коміром та кишенями. Застібається на ґудзики.\nТканина: костюмна тканина (75% віскоза, 25% поліестер)"
+          description: "Сукня міді довжини із коміром та кишенями. Застібається на ґудзики.\nТканина: костюмна тканина (75% віскоза, 25% поліестер)",
+          color: "бежевий",
+          colors: ["бежевий"],
         },
         RU: {
           name: "Платье «Marie»",
-          description: "Платье миди длиной с воротником и карманами. Застёгивается на пуговицы.\nТкань: костюмная ткань (75% вискоза, 25% полиэстер)"
+          description: "Платье миди длиной с воротником и карманами. Застёгивается на пуговицы.\nТкань: костюмная ткань (75% вискоза, 25% полиэстер)",
+          color: "бежевый",
+          colors: ["бежевый"],
         }
       }
     },
@@ -701,15 +753,21 @@ const products = [
         },
         FR: {
           name: "Robe « en cuir »",
-          description: "Robe oversize avec décolleté carré et deux poches.\nTissu: cuir écologique de haute qualité sur une base en daim (extensible, ne se fissure pas)"
+          description: "Robe oversize avec décolleté carré et deux poches.\nTissu: cuir écologique de haute qualité sur une base en daim (extensible, ne se fissure pas)",
+          color: "noir",
+          colors: ["noir"],
         },
         UA: {
           name: "Шкіряний сарафан",
-          description: "Oversize сарафан із квадратним вирізом та двома кишенями.\nТканина: якісна екошкіра на замшевій основі (стречева, не тріскається)"
+          description: "Oversize сарафан із квадратним вирізом та двома кишенями.\nТканина: якісна екошкіра на замшевій основі (стречева, не тріскається)",
+          color: "чорний",
+          colors: ["чорний"],
         },
         RU: {
           name: "Кожаный сарафан",
-          description: "Oversize сарафан с квадратным вырезом и двумя карманами.\nТкань: качественная экокожа на замшевой основе (стречевая, не трескающаяся)"
+          description: "Oversize сарафан с квадратным вырезом и двумя карманами.\nТкань: качественная экокожа на замшевой основе (стречевая, не трескающаяся)",
+          color: "черный",
+          colors: ["черный"],
         }
       }
     },
@@ -739,15 +797,18 @@ const products = [
         },
         FR: {
           name: "Costume 2 pièces",
-          description: "Gilet doublé + pantalon palazzo taille haute. Chaque article peut être acheté séparément.\nTissu: tissu de costume (75% viscose, 25% polyester)"
+          description: "Gilet doublé + pantalon palazzo taille haute. Chaque article peut être acheté séparément.\nTissu: tissu de costume (75% viscose, 25% polyester)",
+          color: "bleu de denim",
         },
         UA: {
           name: "Костюм 2-ка",
-          description: "Жилет із підкладкою + брюки палаццо із високою посадкою. Кожен елемент можна придбати окремо.\nТканина: костюмна тканина (75% віскоза, 25% поліестер)"
+          description: "Жилет із підкладкою + брюки палаццо із високою посадкою. Кожен елемент можна придбати окремо.\nТканина: костюмна тканина (75% віскоза, 25% поліестер)",
+          color: "синій джинсовий",
         },
         RU: {
           name: "Костюм 2-ка",
-          description: "Жилет с подкладкой + брюки палаццо с высокой посадкой. Каждый элемент можно приобрести отдельно.\nТкань: костюмная ткань (75% вискоза, 25% полиэстер)"
+          description: "Жилет с подкладкой + брюки палаццо с высокой посадкой. Каждый элемент можно приобрести отдельно.\nТкань: костюмная ткань (75% вискоза, 25% полиэстер)",
+          color: "синий джинсовый",
         }
       }
     },
@@ -766,24 +827,28 @@ const products = [
         "/Dress/Camel Dress/3.avif",
         "/Dress/Camel Dress/4.avif"
       ],
-      colors: ["camel"],
+      
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "Camel Dress",
-          description: "Wool midi dress with prominent seams, cropped sleeves, and a round neckline.\nFabric: 80% wool, 20% polyester"
+          description: "Wool midi dress with prominent seams, cropped sleeves, and a round neckline.\nFabric: 80% wool, 20% polyester",
+          colors: ["camel"],
         },
         FR: {
           name: "Robe « Camel »",
-          description: "Robe en laine mi-longue avec coutures prononcées, manches raccourcies et col rond.\nTissu: 80% laine, 20% polyester"
+          description: "Robe en laine mi-longue avec coutures prononcées, manches raccourcies et col rond.\nTissu: 80% laine, 20% polyester",
+          colors: ["camel"],
         },
         UA: {
           name: "Сукня “Camel”",
-          description: "Вовняна сукня міді довжини із вираженими швами, вкороченими рукавами та округлим вирізом.\nТканина: 80% вовна, 20% поліестер"
+          description: "Вовняна сукня міді довжини із вираженими швами, вкороченими рукавами та округлим вирізом.\nТканина: 80% вовна, 20% поліестер",
+          colors: ["камель"],
         },
         RU: {
           name: "Платье “Camel”",
-          description: "Шерстяное платье миди длины с выраженными швами, укороченными рукавами и округлым вырезом.\nТкань: 80% шерсть, 20% полиэстер"
+          description: "Шерстяное платье миди длины с выраженными швами, укороченными рукавами и округлым вырезом.\nТкань: 80% шерсть, 20% полиэстер",
+          colors: ["камель"],
         }
       }
     },
@@ -802,24 +867,28 @@ const products = [
         "/Dress/Wool Dress/3.avif",
         "/Dress/Wool Dress/4.avif"
       ],
-      colors: ["gray"],
+      
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "Wool Dress",
-          description: "Wool dress with wide sleeves and a high round neckline.\nFabric: 80% wool, 20% polyester"
+          description: "Wool dress with wide sleeves and a high round neckline.\nFabric: 80% wool, 20% polyester",
+          colors: ["gray"],
         },
         FR: {
           name: "Robe en laine",
-          description: "Robe en laine avec manches larges et encolure ronde haute.\nTissu: 80% laine, 20% polyester"
+          description: "Robe en laine avec manches larges et encolure ronde haute.\nTissu: 80% laine, 20% polyester",
+          colors: ["gris"],
         },
         UA: {
           name: "Вовняна сукня",
-          description: "Вовняна сукня із широкими рукавами та високим округлим вирізом на горловині.\nТканина: 80% вовна, 20% поліестер"
+          description: "Вовняна сукня із широкими рукавами та високим округлим вирізом на горловині.\nТканина: 80% вовна, 20% поліестер",
+          colors: ["сірий"],
         },
         RU: {
           name: "Шерстяное платье",
-          description: "Шерстяное платье с широкими рукавами и высоким округлым вырезом на горловине.\nТкань: 80% шерсть, 20% полиэстер"
+          description: "Шерстяное платье с широкими рукавами и высоким округлым вырезом на горловине.\nТкань: 80% шерсть, 20% полиэстер",
+          colors: ["серый"],
         }
       }
     },
@@ -848,15 +917,19 @@ const products = [
         },
         FR: {
           name: "Robe en jersey deux pièces",
-          description: "Robe quotidienne dense. Lignes précises, forme, design et style. Laver chaque partie de la robe séparément.\nTissu: jersey dense"
+          description: "Robe quotidienne dense. Lignes précises, forme, design et style. Laver chaque partie de la robe séparément.\nTissu: jersey dense",
+          color: "noir-blanc",
+          colors: ["noir-blanc"],
         },
         UA: {
           name: "Сукня 2-ка джерсі",
-          description: "Щільна сукня на кожен день. Чіткі лінії, форма, дизайн та стиль. Кожну частину сукні прати окремо.\nТканина: щільний трикотаж Джерсі"
+          description: "Щільна сукня на кожен день. Чіткі лінії, форма, дизайн та стиль. Кожну частину сукні прати окремо.\nТканина: щільний трикотаж Джерсі",
+          colors: ["чорно-білий"],
         },
         RU: {
           name: "Платье 2-ка джерси",
-          description: "Плотное платье на каждый день. Четкие линии, форма, дизайн и стиль. Каждую часть платья стирать отдельно.\nТкань: плотный трикотаж Джерси"
+          description: "Плотное платье на каждый день. Четкие линии, форма, дизайн и стиль. Каждую часть платья стирать отдельно.\nТкань: плотный трикотаж Джерси",
+          colors: ["черно-белый"],
         }
       }
     },
@@ -886,15 +959,19 @@ const products = [
         },
         FR: {
           name: "Pantalon en jersey",
-          description: "Pantalon court avec taille élastique. Doté de coutures prononcées sur toute la longueur.\nTissu: jersey dense"
+          description: "Pantalon court avec taille élastique. Doté de coutures prononcées sur toute la longueur.\nTissu: jersey dense",
+          color: "noir, cappuccino",
+          colors: ["noir", "cappuccino"],
         },
         UA: {
           name: "Брюки джерсі",
-          description: "Вкорочені брюки на резинці. Мають шви по всій довжині.\nТканина: щільний трикотаж Джерсі"
+          description: "Вкорочені брюки на резинці. Мають шви по всій довжині.\nТканина: щільний трикотаж Джерсі",
+          colors: ["чорний", "капучино"],
         },
         RU: {
           name: "Брюки джерси",
-          description: "Укороченные брюки на резинке. Имеют выраженные швы по всей длине.\nТкань: плотный трикотаж Джерси"
+          description: "Укороченные брюки на резинке. Имеют выраженные швы по всей длине.\nТкань: плотный трикотаж Джерси",
+          colors: ["черный", "капучино"],
         }
       }
     },
@@ -905,7 +982,7 @@ const products = [
       isSpecialOffer: true,
       discountPrice: 1820,
       sku: "12345",
-      
+      color: "red",
       size: "XS S M L XL",
       category: "Pants",
       image: "/Pants/Banana Pants/1.avif",
@@ -919,20 +996,23 @@ const products = [
         EN: {
           name: "Banana Pants",
           description: "High-waisted banana-style pants with two pockets.Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)",
-          color: "red",
           colors: ["Black", "Beige", "Caramel"],
         },
         FR: {
           name: "Pantalons en Cuir Banane",
-          description: "Pantalons taille haute style banane avec deux poches.Tissu : Cuir éco-responsable de haute qualité avec une base en suède. (Extensible, ne se fissure pas.)"
+          description: "Pantalons taille haute style banane avec deux poches.Tissu : Cuir éco-responsable de haute qualité avec une base en suède. (Extensible, ne se fissure pas.)",
+          colors: ["Noir", "Beige", "Caramel"],
+
         },
         UA: {
           name: "Шкіряні брюки банани",
-          description: "Описание: Брюки фасону бананів на високій посадці із двома кишенями Тканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається )"
+          description: "Описание: Брюки фасону бананів на високій посадці із двома кишенями Тканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається )",
+          colors: ["Чорний", "Бежевий", "Карамельний"],
         },
         RU: {
           name: "Брюки бананы",
-          description: "( Брюки фасона бананов на высокой посадке с двумя карманамиТкань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)"
+          description: "( Брюки фасона бананов на высокой посадке с двумя карманамиТкань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)",
+          colors: ["Черный", "Бежевый", "Карамельный"],
         }
       }
     },
@@ -941,7 +1021,8 @@ const products = [
       price:  1820,
       isTop: false, // Топ продукт
       sku: "12345",
-      
+      color: "red",
+
       size: "XS S M L XL",
       category: "Pants",
       image: "/Pants/Leather Flared Pants/1.avif",
@@ -953,20 +1034,22 @@ const products = [
         EN: {
           name: "Leather Flared Pants",
           description: "High-waisted flared pants with pleats running along the entire length.Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)",
-          color: "red",
           colors: ["Black", "Powder"],
         },
         FR: {
           name: "Pantalons en Cuir Pattes d’Éph",
-          description: "Pantalons taille haute évasés avec des plis sur toute la longueur.Tissu : Cuir éco-responsable de haute qualité avec une base en suède. (Extensible, ne se fissure pas.)"
+          description: "Pantalons taille haute évasés avec des plis sur toute la longueur.Tissu : Cuir éco-responsable de haute qualité avec une base en suède. (Extensible, ne se fissure pas.)",
+          colors: ["Noir", "Poudre"],
         },
         UA: {
           name: "Шкіряні брюки кльош ",
-          description: "Брюки фасону кльош на високій посадці із стрілками по всій довжиніТканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається )"
+          description: "Брюки фасону кльош на високій посадці із стрілками по всій довжиніТканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається )",
+          colors: ["Чорний", "Пил"],
         },
         RU: {
           name: "Брюки кльош",
-          description: "Брюки фасона клеш на высокой посадке со стрелками по всей длине Ткань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)"
+          description: "Брюки фасона клеш на высокой посадке со стрелками по всей длине Ткань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)",
+          colors: ["Черный", "Пудра"],
         }
       }
     },
@@ -1007,15 +1090,19 @@ const products = [
         },
         FR: {
           name: "Pantalon en cuir tube",
-          description: "Pantalon ajusté à taille haute avec fermetures éclair aux chevilles. Tissu : cuir écologique de haute qualité sur une base en daim (stretch, ne se fissure pas)."
+          description: "Pantalon ajusté à taille haute avec fermetures éclair aux chevilles. Tissu : cuir écologique de haute qualité sur une base en daim (stretch, ne se fissure pas).",
+          color: "beige, caramel, noir",
+          colors: ["beige", "caramel", "noir"],
         },
         UA: {
           name: "Шкіряні брюки труби",
-          description: "Брюки завуженого фасону на високій посадці та замочками на ніжці. Тканина: якісна екошкіра на замшевій основі. (стречева, не тріскається)"
+          description: "Брюки завуженого фасону на високій посадці та замочками на ніжці. Тканина: якісна екошкіра на замшевій основі. (стречева, не тріскається)",
+          colors: ["Бежевий", "Карамельний", "Чорний"],
         },
         RU: {
           name: "Кожаные брюки трубы",
-          description: "Брюки зауженного фасона на высокой посадке и замочками на ножке. Ткань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)"
+          description: "Брюки зауженного фасона на высокой посадке и замочками на ножке. Ткань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)",
+          colors: ["Бежевый", "Карамельный", "Черный"],
         }
       }
     },
@@ -1041,15 +1128,19 @@ const products = [
         },
         FR: {
           name: "Pantalon en cuir",
-          description: "Pantalon coupe droite à taille haute avec deux poches. Tissu : cuir écologique de haute qualité sur une base en daim (stretch, ne se fissure pas)."
+          description: "Pantalon coupe droite à taille haute avec deux poches. Tissu : cuir écologique de haute qualité sur une base en daim (stretch, ne se fissure pas).",
+          color: "rouge",
+          colors: ["gris"],
         },
         UA: {
           name: "Шкіряні брюки",
-          description: "Брюки прямого фасону на високій посадці із двома кишенямиТканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається )"
+          description: "Брюки прямого фасону на високій посадці із двома кишенямиТканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається )",
+          colors: ["сірий"],
         },
         RU: {
           name: "Кожаные брюки",
-          description: "Брюки прямого фасона на высокой посадке с двумя карманами Ткань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)"
+          description: "Брюки прямого фасона на высокой посадке с двумя карманами Ткань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)",
+          colors: ["серый"],
         }
       }
     },
@@ -1098,15 +1189,21 @@ const products = [
         },
         FR: {
           name: "Jupe crayon en cuir",
-          description: "Jupe crayon mi-longueur à taille haute avec une fente sur les jambes. Tissu : cuir écologique de haute qualité sur une base en daim (stretch, ne se fissure pas)."
+          description: "Jupe crayon mi-longueur à taille haute avec une fente sur les jambes. Tissu : cuir écologique de haute qualité sur une base en daim (stretch, ne se fissure pas).",
+          color: "noir",
+          colors: ["beige", "caramel", "noir", "blanc", "mocha", "olive"],
         },
         UA: {
           name: "Шкіряна спідниця-олівець",
-          description: "Спідниця міді довжини фасону олівець на високій посадці із розрізом на ніжках. Тканина: якісна екошкіра на замшевій основі. (стречева, не тріскається)"
+          description: "Спідниця міді довжини фасону олівець на високій посадці із розрізом на ніжках. Тканина: якісна екошкіра на замшевій основі. (стречева, не тріскається)",
+          color: "чорний",
+          colors: ["бежевий", "карамельний", "чорний", "білий", "мокко", "оливковий"],
         },
         RU: {
           name: "Кожаная юбка-карандаш",
-          description: "Юбка миди длины фасона карандаш на высокой посадке с разрезом на ножках. Ткань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)"
+          description: "Юбка миди длины фасона карандаш на высокой посадке с разрезом на ножках. Ткань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)",
+          color: "черный",
+          colors: ["бежевый", "карамельный", "чёрный", "белый", "мокко", "оливковый"],
         }
       }
     },
@@ -1137,15 +1234,21 @@ const products = [
         },
         FR: {
           name: "Jupe en cuir avec nœud",
-          description: "Jupe crayon longueur midi avec une taille haute, une fente sur la jambe et un nœud décoratif. Tissu : cuir écologique de haute qualité sur une base en daim. (Stretch, ne se fissure pas.)"
+          description: "Jupe crayon longueur midi avec une taille haute, une fente sur la jambe et un nœud décoratif. Tissu : cuir écologique de haute qualité sur une base en daim. (Stretch, ne se fissure pas.)",
+          color: "olive",
+          colors: ["olive"],
         },
         UA: {
           name: "Шкіряна спідниця з вузлом",
-          description: "Спідниця міді довжини фасону олівець на високій посадці із розрізом на ніжці та декоративним вузлом. Тканина: якісна екошкіра на замшевій основі. (стречева, не тріскається)"
+          description: "Спідниця міді довжини фасону олівець на високій посадці із розрізом на ніжці та декоративним вузлом. Тканина: якісна екошкіра на замшевій основі. (стречева, не тріскається)",
+          color: "оливковий",
+          colors: ["оливковий"],
         },
         RU: {
           name: "Кожаная юбка с узлом",
-          description: "Юбка миди длины фасона карандаш на высокой посадке с разрезом на ножке и декоративным узлом. Ткань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)"
+          description: "Юбка миди длины фасона карандаш на высокой посадке с разрезом на ножке и декоративным узлом. Ткань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)",
+          color: "оливковый",
+          colors: ["оливковый"],
         }
       }
     },
@@ -1165,24 +1268,32 @@ const products = [
         "/Costumes/Wool Suit Burgundy/1.avif", 
         "/Costumes/Wool Suit Burgundy/5.avif"
       ],
-      colors: ["burgundy"],
+      
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "Wool Suit Burgundy",
-          description: "Wrap jacket with a neckline + palazzo pants. Composition: 75% natural wool, soft, does not itch against the skin."
+          description: "Wrap jacket with a neckline + palazzo pants. Composition: 75% natural wool, soft, does not itch against the skin.",
+          color: "burgundy",
+          colors: ["burgundy"],
         },
         FR: {
           name: "Costume en laine bordeaux",
-          description: "Veste portefeuille avec encolure + pantalon palazzo. Composition : 75% laine naturelle, douce, ne gratte pas la peau."
+          description: "Veste portefeuille avec encolure + pantalon palazzo. Composition : 75% laine naturelle, douce, ne gratte pas la peau.",
+          color: "bordeaux",
+          colors: ["bordeaux"],
         },
         UA: {
           name: "Вовняний костюм бургунді",
-          description: "Жакет на запах із вирізом + брюки палаццо. Склад: натуральна вовна 75%, мʼяка, не колеться до тіла."
+          description: "Жакет на запах із вирізом + брюки палаццо. Склад: натуральна вовна 75%, мʼяка, не колеться до тіла.",
+          color: "бургундський",
+          colors: ["бургундський"],
         },
         RU: {
           name: "Шерстяной костюм бургунди",
-          description: "Жакет на запах с вырезом + брюки палаццо. Состав: натуральная шерсть 75%, мягкая, не колется телу."
+          description: "Жакет на запах с вырезом + брюки палаццо. Состав: натуральная шерсть 75%, мягкая, не колется телу.",
+          color: "бургундский",
+          colors: ["бургундский"],
         }
       }
     },
@@ -1202,24 +1313,28 @@ const products = [
         "/Sweaters/Mohair Sweater/4.avif", 
         "/Sweaters/Mohair Sweater/5.avif"
       ],
-      colors: ["mocha"],
+      
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "Mohair Sweater",
-          description: "Loose-fit sweater with a wide neckline, can be worn off one shoulder. Composition: 100% mohair."
+          description: "Loose-fit sweater with a wide neckline, can be worn off one shoulder. Composition: 100% mohair.",
+          colors: ["mocha"],
         },
         FR: {
           name: "Pull en mohair",
-          description: "Pull ample avec une large encolure, peut être porté sur une épaule. Composition : 100% mohair."
+          description: "Pull ample avec une large encolure, peut être porté sur une épaule. Composition : 100% mohair.",
+          colors: ["moka"],
         },
         UA: {
           name: "Светр із мохеру",
-          description: "Светр вільного крою з широкой горловиною, можна спустити на одне плече. Склад: 100% мохер."
+          description: "Светр вільного крою з широкой горловиною, можна спустити на одне плече. Склад: 100% мохер.",
+          colors: ["мокка"],
         },
         RU: {
           name: "Свитер из мохера",
-          description: "Свитер свободного кроя с широкой горловиной, можно спустить на одно плечо. Состав: 100% мохер."
+          description: "Свитер свободного кроя с широкой горловиной, можно спустить на одно плечо. Состав: 100% мохер.",
+          colors: ["мокка"],
         }
       }
     },
@@ -1249,24 +1364,28 @@ const products = [
         "/Sweaters/Flare Sweater/14.avif",
         "/Sweaters/Flare Sweater/15.avif",
       ],
-      colors: ["beige", "black", "white"],
+      
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "Flare Sweater",
-          description: "Cropped sweater with a turtleneck and flared sleeves. Fabric: Knit (60% wool, 20% acrylic, 10% viscose, 10% elastane)."
+          description: "Cropped sweater with a turtleneck and flared sleeves. Fabric: Knit (60% wool, 20% acrylic, 10% viscose, 10% elastane).",
+          colors: ["beige", "black", "white"],
         },
         FR: {
           name: "Pull évasé",
-          description: "Pull court avec col roulé et manches évasées. Tissu : maille (60% laine, 20% acrylique, 10% viscose, 10% élasthanne)."
+          description: "Pull court avec col roulé et manches évasées. Tissu : maille (60% laine, 20% acrylique, 10% viscose, 10% élasthanne).",
+          colors: ["beige", "noir", "blanc"],
         },
         UA: {
           name: "Светр кльош",
-          description: "Вкорочений светр із горлом та кльош рукавами. Тканина: трикотаж (60% вовна, 20% акрил, 10% віскоза, 10% еластан)."
+          description: "Вкорочений светр із горлом та кльош рукавами. Тканина: трикотаж (60% вовна, 20% акрил, 10% віскоза, 10% еластан).",
+          colors: ["бежевий", "чорний", "білий"],
         },
         RU: {
           name: "Свитер клеш",
-          description: "Укороченный свитер с горлом и клеш рукавами. Ткань: трикотаж (60% шерсть, 20% акрил, 10% вискоза, 10% эластан)."
+          description: "Укороченный свитер с горлом и клеш рукавами. Ткань: трикотаж (60% шерсть, 20% акрил, 10% вискоза, 10% эластан).",
+          colors: ["бежевый", "черный", "белый"],
         }
       }
     },
@@ -1291,24 +1410,28 @@ const products = [
         "/Sweaters/Drawstring Sweater/9.avif",
         "/Sweaters/Drawstring Sweater/10.avif"
       ],
-      colors: ["black", "white"],
+      
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "Drawstring Sweater",
-          description: "Wool sweater with a drawstring that adjusts the length. Fabric: Knit (60% wool, 20% acrylic, 10% viscose, 10% elastane)."
+          description: "Wool sweater with a drawstring that adjusts the length. Fabric: Knit (60% wool, 20% acrylic, 10% viscose, 10% elastane).",
+          colors: ["black", "white"],
         },
         FR: {
           name: "Pull avec cordon",
-          description: "Pull en laine avec un cordon ajustant la longueur. Tissu : maille (60% laine, 20% acrylique, 10% viscose, 10% élasthanne)."
+          description: "Pull en laine avec un cordon ajustant la longueur. Tissu : maille (60% laine, 20% acrylique, 10% viscose, 10% élasthanne).",
+          colors: ["noir", "blanc"],
         },
         UA: {
           name: "Светр зі шнурком",
-          description: "Вовняний светр із шнурком, який регулює довжину. Тканина: трикотаж (60% вовна, 20% акрил, 10% віскоза, 10% еластан)."
+          description: "Вовняний светр із шнурком, який регулює довжину. Тканина: трикотаж (60% вовна, 20% акрил, 10% віскоза, 10% еластан).",
+          colors: ["чорний", "білий"],
         },
         RU: {
           name: "Свитер со шнурком",
-          description: "Шерстяной свитер со шнурком, регулирующий длину. Ткань: трикотаж (60% шерсть, 20% акрил, 10% вискоза, 10% эластан)."
+          description: "Шерстяной свитер со шнурком, регулирующий длину. Ткань: трикотаж (60% шерсть, 20% акрил, 10% вискоза, 10% эластан).",
+          colors: ["черный", "белый"],
         }
       }
     },
@@ -1327,24 +1450,28 @@ const products = [
         "/Sweaters/Sweater Vest/3.avif", 
         "/Sweaters/Sweater Vest/4.avif", 
       ],
-      colors: ["black"],
+      
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "Sweater Vest",
-          description: "Oversized sweater with cropped sleeves. Fabric: Knit (60% wool, 20% acrylic, 10% viscose, 10% elastane)."
+          description: "Oversized sweater with cropped sleeves. Fabric: Knit (60% wool, 20% acrylic, 10% viscose, 10% elastane).",
+          colors: ["black"],
         },
         FR: {
           name: "Pull sans manches",
-          description: "Pull oversize avec manches courtes. Tissu : maille (60% laine, 20% acrylique, 10% viscose, 10% élasthanne)."
+          description: "Pull oversize avec manches courtes. Tissu : maille (60% laine, 20% acrylique, 10% viscose, 10% élasthanne).",
+          colors: ["noir"],
         },
         UA: {
           name: "Светр-жилет",
-          description: "Oversize светр із вкороченим рукавом. Тканина: трикотаж (60% вовна, 20% акрил, 10% віскоза, 10% еластан)."
+          description: "Oversize светр із вкороченим рукавом. Тканина: трикотаж (60% вовна, 20% акрил, 10% віскоза, 10% еластан).",
+          colors: ["чорний"],
         },
         RU: {
           name: "Свитер-жилет",
-          description: "Oversize свитер с укороченным рукавом. Ткань: трикотаж (60% шерсть, 20% акрил, 10% вискоза, 10% эластан)."
+          description: "Oversize свитер с укороченным рукавом. Ткань: трикотаж (60% шерсть, 20% акрил, 10% вискоза, 10% эластан).",
+          colors: ["черный"],
         }
       }
     },
@@ -1366,24 +1493,28 @@ const products = [
         "/Skirts/A-line Leather Skirt/1.avif", 
         "/Skirts/A-line Leather Skirt/5.avif"
       ],
-      colors: ["caramel"],
+      
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "A-line Leather Skirt",
-          description: "Maxi-length A-line skirt with a high waist and a belt. Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)"
+          description: "Maxi-length A-line skirt with a high waist and a belt. Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)",
+          colors: ["caramel"],
         },
         FR: {
           name: "Jupe en cuir A-line",
-          description: "Jupe longue A-line à taille haute avec ceinture. Tissu : cuir écologique de haute qualité sur une base en daim (stretch, ne se fissure pas)."
+          description: "Jupe longue A-line à taille haute avec ceinture. Tissu : cuir écologique de haute qualité sur une base en daim (stretch, ne se fissure pas).",
+          colors: ["caramel"],
         },
         UA: {
           name: "Шкіряна спідниця А-силуету",
-          description: "Спідниця максі довжини А-силуету на високій посадці із поясом. Тканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається )"
+          description: "Спідниця максі довжини А-силуету на високій посадці із поясом. Тканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається )",
+          colors: ["карамель"],
         },
         RU: {
           name: "Кожаная юбка А-силуэта",
-          description: "Юбка макси длины А-силуэта на высокой посадке с поясом. Ткань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)"
+          description: "Юбка макси длины А-силуэта на высокой посадке с поясом. Ткань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)",
+          colors: ["карамель"],
         }
       }
     },
@@ -1408,24 +1539,30 @@ const products = [
         "/Sweaters/Ribbed Golf/9.avif",
         "/Sweaters/Ribbed Golf/10.avif",
       ],
-      colors: ["beige", "olive"],
+      
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "Ribbed Golf",
-          description: "Basic ribbed golf for everyday wear and any outfit. Fabric: ribbed knit."
+          description: "Basic ribbed golf for everyday wear and any outfit. Fabric: ribbed knit.",
+          colors: ["beige", "olive"],
         },
         FR: {
           name: "Golf côtelé",
-          description: "Golf côtelé basique pour un usage quotidien et pour n'importe quelle tenue. Tissu : tricot côtelé."
+          description: "Golf côtelé basique pour un usage quotidien et pour n'importe quelle tenue. Tissu : tricot côtelé.",
+          colors: ["beige", "olive"],
         },
         UA: {
           name: "Гольф у рубчик",
-          description: "Базовий гольф у рубчик на кожен день і під будь-який аутфіт. Тканина: трикотаж у рубчик."
+          description: "Базовий гольф у рубчик на кожен день і під будь-який аутфіт. Тканина: трикотаж у рубчик.",
+          colors: ["бежевий", "оливковий"],
+
         },
         RU: {
           name: "Гольф в рубчик",
-          description: "Базовый гольф в рубчик на каждый день и под любой аутфит. Ткань: трикотаж в рубчик."
+          description: "Базовый гольф в рубчик на каждый день и под любой аутфит. Ткань: трикотаж в рубчик.",
+          colors : ["бежевый", "оливковый"],
+
         }
       }
     },
@@ -1449,24 +1586,28 @@ const products = [
         "/Sweaters/Draped Golf/8.avif",
         "/Sweaters/Draped Golf/1.avif",
       ],
-      colors: ["молоко", "сірий"],
+      
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "Draped Golf",
-          description: "Soft draped golf with sleeve slits. Fabric: 50% cashmere, 28% polyester, 28% nylon."
+          description: "Soft draped golf with sleeve slits. Fabric: 50% cashmere, 28% polyester, 28% nylon.",
+          colors: ["молоко", "сірий"],
         },
         FR: {
           name: "Golf drapé",
-          description: "Golf drapé doux avec fentes sur les manches. Tissu : 50% cachemire, 28% polyester, 28% nylon."
+          description: "Golf drapé doux avec fentes sur les manches. Tissu : 50% cachemire, 28% polyester, 28% nylon.",
+          colors: ["laite", "gris"],
         },
         UA: {
           name: "Гольф у драпіровку",
-          description: "Мʼякий гольф у драпіровку із розрізами на рукавчиках. Тканина: 50% кашемір, 28% поліестер, 28% нейлон."
+          description: "Мʼякий гольф у драпіровку із розрізами на рукавчиках. Тканина: 50% кашемір, 28% поліестер, 28% нейлон.",
+          colors: ["молоко", "сірий"],
         },
         RU: {
           name: "Гольф в драпировку",
-          description: "Мягкий гольф в драпировку с разрезами на рукавах. Ткань: 50% кашемир, 28% полиэстер, 28% нейлон."
+          description: "Мягкий гольф в драпировку с разрезами на рукавах. Ткань: 50% кашемир, 28% полиэстер, 28% нейлон.",
+          colors: ["молоко", "сірий"],
         }
       }
     },
@@ -1488,24 +1629,28 @@ const products = [
         "/Sweaters/V-Neck Golf/6.avif",
         "/Sweaters/V-Neck Golf/7.avif",
       ],
-      colors: ["чорний", "сірий"],
+      
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
         EN: {
           name: "V-Neck Golf",
-          description: "Soft V-neck golf with sleeve slits. Fabric: 50% cashmere, 28% polyester, 28% nylon."
+          description: "Soft V-neck golf with sleeve slits. Fabric: 50% cashmere, 28% polyester, 28% nylon.",
+          colors: ["чорний", "сірий"],
         },
         FR: {
           name: "Golf à col en V",
-          description: "Golf doux à col en V avec fentes sur les manches. Tissu : 50% cachemire, 28% polyester, 28% nylon."
+          description: "Golf doux à col en V avec fentes sur les manches. Tissu : 50% cachemire, 28% polyester, 28% nylon.",
+          colors: ["noir", "gris"],
         },
         UA: {
           name: "Гольф із V-горлом",
-          description: "Мʼякий гольф із V-горлом і розрізами на рукавах. Тканина: 50% кашемір, 28% поліестер, 28% нейлон."
+          description: "Мʼякий гольф із V-горлом і розрізами на рукавах. Тканина: 50% кашемір, 28% поліестер, 28% нейлон.",
+          colors: ["чорний", "сірий"],
         },
         RU: {
           name: "Гольф с V-горлом",
-          description: "Мягкий гольф с V-горлом и разрезами на рукавах. Ткань: 50% кашемир, 28% полиэстер, 28% нейлон."
+          description: "Мягкий гольф с V-горлом и разрезами на рукавах. Ткань: 50% кашемир, 28% полиэстер, 28% нейлон.",
+          colors: ["чёрный", "синий"],
         }
       }
     }
