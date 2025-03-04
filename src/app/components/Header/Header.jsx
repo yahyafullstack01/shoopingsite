@@ -35,10 +35,10 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
     { name: menuItems[5], path: "" }, 
     { name: menuItems[6], path: "costumes" },
     { name: menuItems[7], path: "dresses" },
-    { name: menuItems[8], path: "shirts" },
+    {name: menuItems[8], path: "Shirts"},
     { name: menuItems[9], path: "skirts" },
     { name: menuItems[10], path: "sweaters" },
-    { name: menuItems[11], path: "t-shirts" },
+   
     { name: menuItems[12], path: "jeans" },
     { name: menuItems[13], path: "jackets" },
     { name: menuItems[14], path: "tops" },
@@ -96,8 +96,11 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
   className="relative flex items-center group"
   onMouseEnter={() => setIsCategoriesOpen(true)}
   onMouseLeave={(e) => {
-    if (!e.relatedTarget || !e.currentTarget.contains(e.relatedTarget)) {
-      setIsCategoriesOpen(false);
+    const relatedTarget = e.relatedTarget;
+    if (!relatedTarget || !(relatedTarget instanceof Node) || !e.currentTarget.contains(relatedTarget)) {
+      setTimeout(() => { // Даємо трохи часу для кліку
+        setIsCategoriesOpen(false);
+      }, 500);
     }
   }}
 >

@@ -38,14 +38,14 @@ export default function FollowUs() {
   ];
 
   // Контролюємо кількість відображуваних зображень
-  const [visibleImagesCount, setVisibleImagesCount] = useState(10);
+  const [visibleImagesCount, setVisibleImagesCount] = useState(7);
 
   useEffect(() => {
     const updateVisibleImages = () => {
       if (window.innerWidth <= 460) {
         setVisibleImagesCount(1); // Мобільний → 1 зображення
       } else {
-        setVisibleImagesCount(10); // Планшет/десктоп → як було
+        setVisibleImagesCount(7); // Планшет/десктоп → як було
       }
     };
 

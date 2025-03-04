@@ -104,7 +104,7 @@
       "SizeCatalogue": [ "All", "S", "M", "L", "XL" ],
       "Categories": [
         "All", "Costumes", "Dresses", "Shirts", "Skirts", 
-        "Sweaters", "T-shirts", "Jeans", "Jackets", "Tops", "Outerwear"
+        "Sweaters",  "Jeans", "Jackets", "Tops", "Outerwear"
       ],
       "PaginatedProducts": ["Prev", "Next"]
     },
@@ -231,7 +231,7 @@
   "SizeCatalogue": [ "Tous", "S", "M", "L", "XL" ],
   "Categories": [
     "Tous", "Costumes", "Robes", "Chemises", "Jupes", 
-    "Pulls", "T-shirts", "Jeans", "Vestes", "Tops", "Vêtements d'extérieur"
+    "Pulls","Jeans", "Vestes", "Tops", "Vêtements d'extérieur"
   ],
   "PaginatedProducts": ["Précédent", "Suivant"]
 },
@@ -370,7 +370,7 @@
       "SizeCatalogue": [ "Усі", "S", "M", "L", "XL" ],
       "Categories": [
         "Усі", "Костюми", "Сукні", "Сорочки", "Спідниці", 
-        "Светри", "Футболки", "Джинси", "Куртки", "Топи", "Верхній одяг"
+        "Светри", "Джинси", "Куртки", "Топи", "Верхній одяг"
       ],
       "PaginatedProducts": ["Попередня", "Наступна"]
     },
