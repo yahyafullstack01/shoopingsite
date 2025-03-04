@@ -22,11 +22,11 @@ export default function FilterSidebar({
 
   const translatedCategories = Array.isArray(translateList("Filtersidebar", "Categories"))
     ? translateList("Filtersidebar", "Categories")
-    : ["All", "Costumes", "Dress","Shirts", "Skirts", "Sweaters", "Jeans", "Jacket", "Tops", "Outerwear","Filter"];
+    : ["All", "Costumes", "Dress","Shirts", "Skirts", "Sweaters", "Trousers", "Jackets", "Tops", "Outerwear","Filter", "Shorts"];
 
   // Оригінальні значення для бекенду
   const originalSizes = ["All", "S", "M", "L", "XL"];
-  const originalCategories = ["All", "Costumes", "Dresses","Shirts", "Skirts", "Sweaters",  "Jeans", "Jackets", "Tops", "Outerwear"];
+  const originalCategories = ["All", "Costumes", "Dresses","Shirts", "Skirts", "Sweaters",  "Trousers", "Jackets", "Tops", "Outerwear", "Shorts"];
 
   // Мапінг перекладу на оригінальні значення (гарантуємо відповідність)
   const sizeMap = Object.fromEntries(translatedSizes.map((label, index) => [label, originalSizes[index] || label]));

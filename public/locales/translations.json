@@ -2,16 +2,9 @@
   "EN": {
     "home": {
       "header": ["Home", "Catalogues", "About", "Contact", "Conditions", "All",
-      "Costumes",
-      "Dresses",
-      "Shirts",
-      "Skirts",
-      "Sweaters",
-      "T-shirts",
-      "Jeans",
-      "Jackets",
-      "Tops",
-      "Outerwear"],
+        "Costumes", "Dresses", "Shirts", "Skirts", 
+        "Sweaters",  "Trousers", "Jackets", "Tops", "Outerwear", "Shorts "
+      ],
     
       "hero": ["Ukrainian women's clothing brand","Ukrainian women's","clothing brand"],
       "about": [
@@ -104,7 +97,7 @@
       "SizeCatalogue": [ "All", "S", "M", "L", "XL" ],
       "Categories": [
         "All", "Costumes", "Dresses", "Shirts", "Skirts", 
-        "Sweaters",  "Jeans", "Jackets", "Tops", "Outerwear"
+        "Sweaters",  "Trousers", "Jackets", "Tops", "Outerwear", "Shorts "
       ],
       "PaginatedProducts": ["Prev", "Next"]
     },
@@ -121,16 +114,9 @@
   "FR": {
     "home": {
       "header": ["Accueil", "Catalogues", "À propos", "Contact", "Conditions",    "Tout",
-      "Costumes",
-      "Robes",
-      "Chemises",
-      "Jupes",
-      "Pulls",
-      "T-shirts",
-      "Jeans",
-      "Vestes",
-      "Tops",
-      "Manteaux"],
+      "Costumes", "Robes", "Chemises", "Jupes", 
+    "Pulls","Pantalons", "Vestes", "Tops", "Vêtements d'extérieur","Shorts"
+  ],
       
       "hero": ["Marque ukrainienne de vêtements pour femmes.", "Marque ukrainienne", "De vêtements pour femmes"],
       "about": [
@@ -231,7 +217,7 @@
   "SizeCatalogue": [ "Tous", "S", "M", "L", "XL" ],
   "Categories": [
     "Tous", "Costumes", "Robes", "Chemises", "Jupes", 
-    "Pulls","Jeans", "Vestes", "Tops", "Vêtements d'extérieur"
+    "Pulls","Pantalons", "Vestes", "Tops", "Vêtements d'extérieur","Shorts "
   ],
   "PaginatedProducts": ["Précédent", "Suivant"]
 },
@@ -267,16 +253,9 @@
   "UA": {
     "home": {
       "header": ["Головна", "Каталог", "Про нас", "Контакти", "Умови",  "Усі",
-      "Костюми",
-      "Сукні",
-      "Сорочки",
-      "Спідниці",
-      "Светри",
-      "Футболки",
-      "Джинси",
-      "Куртки",
-      "Топи",
-      "Верхній одяг"],
+      "Костюми", "Сукні", "Сорочки", "Спідниці", 
+        "Светри", "Брюки", "Жакети", "Топи", "Верхній одяг", "Шорти"
+      ],
       
       "hero": ["Український бренд жіночого одягу.","Український бренд", "жіночого одягу"],
       "about": [
@@ -370,7 +349,7 @@
       "SizeCatalogue": [ "Усі", "S", "M", "L", "XL" ],
       "Categories": [
         "Усі", "Костюми", "Сукні", "Сорочки", "Спідниці", 
-        "Светри", "Джинси", "Куртки", "Топи", "Верхній одяг"
+        "Светри", "Брюки", "Жакети", "Топи", "Верхній одяг", "Шорти"
       ],
       "PaginatedProducts": ["Попередня", "Наступна"]
     },

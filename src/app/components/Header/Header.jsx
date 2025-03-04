@@ -38,11 +38,11 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
     {name: menuItems[8], path: "Shirts"},
     { name: menuItems[9], path: "skirts" },
     { name: menuItems[10], path: "sweaters" },
-   
-    { name: menuItems[12], path: "jeans" },
-    { name: menuItems[13], path: "jackets" },
-    { name: menuItems[14], path: "tops" },
-    { name: menuItems[15], path: "outerwear" }
+    { name: menuItems[11], path: "trousers" },
+    { name: menuItems[12], path: "jackets" },
+    { name: menuItems[13], path: "tops" },
+    { name: menuItems[14], path: "outerwear" },
+    {name: menuItems[15], path: "shorts"}
 ];
 
   const handleCategoryClick = (categoryPath) => {
