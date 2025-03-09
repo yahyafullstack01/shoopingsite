@@ -3,7 +3,7 @@
     "home": {
       "header": ["Home", "Catalogues", "About", "Contact", "Conditions", "All",
         "Costumes", "Dresses", "Shirts", "Skirts", 
-        "Sweaters",  "Trousers", "Jackets", "Tops", "Outerwear", "Shorts "
+        "Sweaters",  "Pants", "Jackets", "Tops", "Outerwear", "Shorts"
       ],
     
       "hero": ["Ukrainian women's clothing brand","Ukrainian women's","clothing brand"],
@@ -97,7 +97,7 @@
       "SizeCatalogue": [ "All", "S", "M", "L", "XL" ],
       "Categories": [
         "All", "Costumes", "Dresses", "Shirts", "Skirts", 
-        "Sweaters",  "Trousers", "Jackets", "Tops", "Outerwear", "Shorts "
+        "Sweaters",  "Pants", "Jackets", "Tops", "Outerwear", "Shorts "
       ],
       "PaginatedProducts": ["Prev", "Next"]
     },
@@ -108,7 +108,7 @@
     },
     
     "Infoform":{
-      "header": ["Category", " Color", "Select", "Size", "Quantity", "Contact Us", "Clothing Size Chart", "PRODUCT INFO"]
+      "header": ["Category", " Color", "Select", "Size", "Quantity", "Contact Us", "Clothing Size Chart", "PRODUCT INFO", "Price" ]
     }
   },
   "FR": {
@@ -240,7 +240,8 @@
       "Quantité",
       "Contactez-nous",
       "Tableau des tailles",
-      "INFORMATIONS SUR LE PRODUIT"
+      "INFORMATIONS SUR LE PRODUIT",
+      "Prix"
     ]
   }
 
@@ -372,7 +373,8 @@
       "Кількість",
       "Зв'язатися з нами",
       "Розмірна сітка одягу",
-      "ІНФОРМАЦІЯ ПРО ПРОДУКТ"
+      "ІНФОРМАЦІЯ ПРО ПРОДУКТ",
+      "Ціна"
     ]
   }
 }

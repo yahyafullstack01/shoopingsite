@@ -3,14 +3,18 @@ import Image from "next/image";
 import { useLanguage } from "../../Functions/useLanguage";
 
 const ProductCard = ({ product, onClick }) => {
-  const { language } = useLanguage();
+  const { language, translateList } = useLanguage();
   const translatedName = product.translations?.[language]?.name || product.name;
 
+  const infoLabels = translateList("Infoform", "header"); // очікуємо: ["Category", "Color", "Select", "Size", "Quantity", ...]
+  const categoryLabel = infoLabels[0] || "Category";
+  const sizeLabel = infoLabels[3] || "Size";
+  const priceLabel = infoLabels[8] || "Price";
   return (
     <article
       className="bg-gray-100 dark:bg-[#0f172a] p-3 sm:p-4 rounded-lg group cursor-pointer shadow-md hover:shadow-lg transition-shadow duration-300"
-      onClick={onClick} 
-      onKeyDown={(e) => e.key === "Enter" && onClick()} 
+      onClick={onClick}
+      onKeyDown={(e) => e.key === "Enter" && onClick()}
       role="button"
       tabIndex={0}
       aria-label={`View details for ${translatedName}`}
@@ -21,7 +25,7 @@ const ProductCard = ({ product, onClick }) => {
           src={product.image || `https://via.placeholder.com/300x220?text=${translatedName}`}
           alt={translatedName || "Product Image"}
           width={300}
-          height={400} 
+          height={400}
           className="w-full h-full object-cover rounded transform transition-transform duration-300 ease-in-out group-hover:scale-110"
         />
         <figcaption
@@ -32,15 +36,17 @@ const ProductCard = ({ product, onClick }) => {
 
       {/* Інформація про продукт */}
       <section className="mt-2 sm:mt-4">
-        <h3 className="text-sm sm:text-lg font-semibold text-center sm:text-left">{translatedName || "Unnamed Product"}</h3>
+        <h3 className="text-sm sm:text-lg font-semibold text-center sm:text-left">
+          {translatedName || "Unnamed Product"}
+        </h3>
         <p className="text-xs sm:text-sm text-gray-700 dark:text-gray-400 mt-2 text-center sm:text-left">
-          <span className="font-semibold">Price:</span> {product.price ? `${product.price}₴` : "N/A"}
+          <span className="font-semibold">{priceLabel}:</span> {product.price ? `${product.price}₴` : "N/A"}
         </p>
         <p className="text-xs sm:text-sm text-gray-700 dark:text-gray-400 text-center sm:text-left">
-          <span className="font-semibold">Size:</span> {product.size || "Unknown"}
+          <span className="font-semibold">{sizeLabel}:</span> {product.size || "Unknown"}
         </p>
         <p className="text-xs sm:text-sm text-gray-700 dark:text-gray-400 text-center sm:text-left">
-          <span className="font-semibold">Category:</span> {product.category || "Uncategorized"}
+          <span className="font-semibold">{categoryLabel}:</span> {product.category || "Uncategorized"}
         </p>
       </section>
     </article>

@@ -38,7 +38,7 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
     {name: menuItems[8], path: "Shirts"},
     { name: menuItems[9], path: "skirts" },
     { name: menuItems[10], path: "sweaters" },
-    { name: menuItems[11], path: "trousers" },
+    { name: menuItems[11], path: "pants" },
     { name: menuItems[12], path: "jackets" },
     { name: menuItems[13], path: "tops" },
     { name: menuItems[14], path: "outerwear" },
