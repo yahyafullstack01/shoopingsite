@@ -14,18 +14,21 @@ const products = [
     sizes: ["XS", "S" , "M" , "L" , "XL"],
     translations: {
       EN: {
+        category: "Costumes",
         name: "Woolen suit with skirt",
         description: "Sweater + pencil skirt. Composition: 75% natural wool, soft, does not prick the body.",
         color: "red",
         colors: ["graphite"]
       },
       FR: {
+        category: "Costumes",
         name: "Costume en laine avec jupe",
         description: "Pull + jupe crayon. Composition: 75% laine naturelle, douce, ne pique pas la peau.",
         color: "rouge",
         colors: ["camel", "graphite", "gris"]
       },
       UA: {
+        category: "Костюми",
         name: "Вовняний костюм зі спідницею",
         description: "Светр + олівець спідниця. Склад: 75% натуральної вовни, м'яка, не колеться.",
         color: "червоний",
@@ -49,18 +52,21 @@ const products = [
     sizes: ["XS", "S" , "M" , "L" , "XL"],
     translations: {
       EN: {
+        category: "Costumes",
         name: "Woolen suit with trousers",
         description: "Jumper + palazzo pants\nComposition: 75% natural wool, soft, does not prick the body.",
         color: "blue",
         colors: ["graphite"]
       },
       FR: {
+        category: "Costumes",
         name: "Costume en laine avec pantalon",
         description: "Pull + pantalon palazzo\nComposition: 75% laine naturelle, douce, ne pique pas la peau.",
         color: "bleu",
         colors: ["graphite"]
       },
       UA: {
+        category: "Костюми",
         name: "Вовняний костюм із брюками",
         description: "Джемпер + палаццо штани\nСклад: 75% натуральної вовни, м'яка, не колеться.",
         color: "синій",
@@ -92,6 +98,7 @@ const products = [
   //       colors: ["camel"]
   //     },
   //     UA: {
+    //category: "Костюми",
   //       name: "Вовняний костюм із жилетом",
   //       description: "Жилет + палаццо штани\nСклад: 75% натуральної вовни, м'яка, не колеться.",
   //       color: "камел",
@@ -121,12 +128,14 @@ const products = [
         colors: ["jeans"]
       },
       FR: {
+        category: "Robes",
         name: "Robe trapèze en laine",
         description: "Robe trapèze avec ceinture marquée\nComposition: 75% laine naturelle, douce, ne colle pas à la peau.",
         color: "rouge",
         colors: ["jeans"]
       },
       UA: {
+        category: "Сукні",
         name: "Вовняна сукня трапеція",
         description: "Трапецеїдна сукня з виразним поясом\nСклад: 75% натуральної вовни, м'яка, не прилипає до тіла.",
         color: "червоний",
@@ -154,12 +163,14 @@ const products = [
   //       colors: ["gray", "camel"],
   //     },
   //     FR: {
+   // category: "Robes",
   //       name: "Robe évasée en laine",
   //       description: "Robe évasée avec coutures marquées et fermeture éclair avant\nComposition: 75% laine naturelle, douce, ne pique pas la peau.",
   //       color: "bleu",
   //       colors: ["gris", "camel"]
   //     },
   //     UA: {
+   // category: "Сукні",
   //       name: "Вовняна сукня А-силуета",
   //       description: "Сукня-силует із виразними швами та передньою блискавкою\nСклад: 75% натуральної вовни, м'яка, не колеться.",
   //       color: "синій",
@@ -185,18 +196,21 @@ const products = [
         colors: ["gray"],
       },
       FR: {
+        category: "Robes",
         name: "Robe Grace",
         description: "",
         color: "gris",
         colors: ["gris"]
       },
       UA: {
+        category: "Сукні",
         name: "Сукня «Grace»",
         description: "Сукня А-силуету із широкими рукавами міді довжини. Має виражені стрічки біля горловини. На спинці є виріз\nТканина: якісна костюмна вовна",
         color: "сірий",
         colors: ["сірий"]
       },
       RU: {
+        category: "Платья",
         name: "Платье Грейс",
         description: "Платье А-силуэта с широкими рукавами меди имеет выраженные швы у горловины.\n Ткань: качественная костюмная шерсть",
         color: "серый",
@@ -222,12 +236,14 @@ const products = [
         colors: ["black"],
       },
       FR: {
+        category: "Robes",
         name: "Robe d'été mini",
         description: "Mini robe d'été avec décolleté plongeant, fentes latérales à fermeture et deux poches. Peut être porté comme un gilet. \nTissu : éco-cuir de haute qualité sur base en daim. (extensible, ne craque pas)",
         color: "bleu",
         colors: ["noir"]
       },
       UA: {
+        category: "Сукні",
         name: "Сарафан mini",
         description: "Mini сарафан із глибоким декольте, розрізами збоку, які застібаються та двома кишенями. Можна носити як жилет. \nТканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається )",
         color: "синій",
@@ -261,11 +277,13 @@ const products = [
           colors: ["mocha", "white"],
         },
         FR: {
+          category: "Robes",
           name: "Tissu Shkiryana (robe en cuir)",
           description: "Robe oversize avec petit décolleté arrondi et poches. Tissu : éco-cuir de haute qualité sur base en daim (extensible, ne craque pas).",
           colors : ["mocha", "blanc"],
         },
         UA: {
+          category: "Сукні",
           name: "Шкіряна сукня",
           description: "Oversize сукня із невеликим округлим вирізом та кишенями\nТканина: якісна екошкіра на замшевій основі.(стречева, не тріскається)",
           colors: ["мокко", "білий"],
@@ -297,11 +315,13 @@ const products = [
           colors: ["gray"],
         },
         FR: {
+          category: "Robes",
           name: "Robe asymétrique",
           description : "Robe oversize de coupe asymétrique avec col plaqué et poche poitrine\n Tissu : éco-cuir de haute qualité sur base en daim. (extensible, ne craque pas)",
           colors : ["gris"],
         },
         UA: {
+          category: "Сукні",
           name: "Асиметрична сукня",
           description: "Oversize сукня асиметричного крою із накладним коміром та кишенею на грудях\n Тканина: якісна екошкіра на замшевій основі.(стречева, не тріскається)",
           colors: ["сірий"],
@@ -333,11 +353,13 @@ const products = [
           colors: ["milky", "black"],
         },
         FR: {
+          category: "Tops",
           name: "Golfer avec les épaules ouvertes",
           description: "col roulé à épaules dénudées en tissu doux : 50 % cachemire, 28 % polyester, 28 % nylon",
           colors:["lait", "noir"],
         },
         UA: {
+          category: "Топи",
           name: "Гольф із відкритими плечима",
           description: "гольф із відкритими плечима із мʼякої тканини: 50% кашемір, 28% поліестер, 28% нейлон",
           colors: ["молочний", "чорний"],
@@ -364,11 +386,14 @@ const products = [
           colors: ["beige"], 
         },
         FR: {
+          category: "Vêtements d'extérieur",
+          
           name: "Trench-coat en cuir",
           description: "Trench-coat oversize en cuir à double boutonnage avec ceinture incluse et deux poches. \nTissu : éco-cuir de haute qualité sur base en daim. (extensible, incassable)",
           colors: ["beige"],
         },
         UA: {
+          category: "Верхній одяг",
           name: "Шкіряний тренч",
           description: "Двобортний шкіряний тренч oversize фасону із поясом у комплекті та двома кишенями. \nТканина: якісна екошкіра на замшевій основі.(стречева, не тріскається)",
           colors: ["бежевий"],

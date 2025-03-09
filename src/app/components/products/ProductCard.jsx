@@ -5,6 +5,7 @@ import { useLanguage } from "../../Functions/useLanguage";
 const ProductCard = ({ product, onClick }) => {
   const { language, translateList } = useLanguage();
   const translatedName = product.translations?.[language]?.name || product.name;
+  const translatedCategory = product.translations?.[language]?.category || product.category;
 
   const infoLabels = translateList("Infoform", "header"); // очікуємо: ["Category", "Color", "Select", "Size", "Quantity", ...]
   const categoryLabel = infoLabels[0] || "Category";
@@ -46,8 +47,10 @@ const ProductCard = ({ product, onClick }) => {
           <span className="font-semibold">{sizeLabel}:</span> {product.size || "Unknown"}
         </p>
         <p className="text-xs sm:text-sm text-gray-700 dark:text-gray-400 text-center sm:text-left">
-          <span className="font-semibold">{categoryLabel}:</span> {product.category || "Uncategorized"}
-        </p>
+  <span className="font-semibold">{categoryLabel}:</span> {translatedCategory || "Uncategorized"}
+</p>
+
+
       </section>
     </article>
   );
