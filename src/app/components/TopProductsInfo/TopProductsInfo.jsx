@@ -1,10 +1,10 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
 import products from "../../data/products";
+import { useState, useRef, useEffect } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import InfoForm from "../../Functions/InfoForm";
 import { useLanguage } from "../../Functions/useLanguage";
-import { handleContactButtonClick } from "../../utils/products"; // Імпорт функції
+import { handleContactButtonClick } from "../../utils/products";
 import ThumbnailCarousel from "../ThumbnailCarousel/ThumbnailCarousel";
 import Image from "next/image";
 
@@ -14,16 +14,12 @@ export default function TopProductsInfo() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const descriptionRef = useRef(null);
-  
-  // Отримуємо productId з URL
-  const selectedProductId = searchParams.get("product");
-  
-  // Отримуємо лише топ-продукти
-  const topProducts = products.filter((product) => product.isTop);
 
-  // Знаходимо вибраний продукт за ID
+  const topProducts = products.filter((product) => product.isTop === true);
+
+  const selectedProductId = searchParams.get("product");
   const initialProduct = selectedProductId
-    ? topProducts.find((product) => product.id === Number(selectedProductId))
+    ? topProducts.find((p) => p.id === Number(selectedProductId))
     : topProducts[0];
 
   const [selectedProduct, setSelectedProduct] = useState(initialProduct);
@@ -38,11 +34,11 @@ export default function TopProductsInfo() {
         }, 300);
       }
     }
-  }, [selectedProductId, topProducts]);
+  }, [selectedProductId]);
 
   const handleProductClick = (product) => {
     setSelectedProduct(product);
-    router.push(`/Top-products?product=${product.id}`, undefined, { shallow: true });
+    router.push(`?product=${product.id}`, undefined, { shallow: true });
     scrollToDescription();
   };
 
@@ -58,8 +54,8 @@ export default function TopProductsInfo() {
 
   return (
     <div className="dark:bg-gray-800 bg-gray-100 text-black dark:text-white min-h-screen px-4 py-8">
-      <div className="text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">{menuItems[0]}</h2>
+  <div className="text-center">
+        <h1 className="text-3xl md:text-4xl font-bold mb-4">{menuItems[0]}</h1>
       </div>
 
       <section aria-labelledby="top-products">
@@ -73,19 +69,20 @@ export default function TopProductsInfo() {
                 <article
                   key={product.id}
                   className="text-black bg-gray-100 dark:bg-white dark:text-black rounded shadow-lg hover:scale-105 transition-transform cursor-pointer"
-                  onClick={() => handleProductClick(product)}
+               onClick={() => handleProductClick(product)}
                 >
                   <div className="w-full h-[200px] sm:h-[350px] overflow-hidden rounded-t">
                     <Image
                       src={product.image}
                       alt={`Preview of ${translatedName}`}
                       width={300}
-                      height={350}
+                       height={350}
                       className="w-full h-full object-cover"
                       priority
                     />
                   </div>
                   <div className="p-2 sm:p-4 dark:bg-gray-200">
+      
                     <h3 className="font-semibold text-sm sm:text-lg">{translatedName}</h3>
                     <p className="text-black dark:text-gray-600 text-xs sm:text-base">{product.price} UAH</p>
                   </div>
@@ -104,10 +101,10 @@ export default function TopProductsInfo() {
         <div className="flex flex-col items-center">
           <Image
             src={selectedProduct.image}
-            alt={`Full image of ${selectedProduct.translations?.[language]?.name || selectedProduct.title}`}
- width={400}
+            alt={`Full image of ${selectedProduct.title}`}
+            width={400}
             height={400}
-            className="w-full max-w-xs md:max-w-md object-cover rounded-lg shadow-lg"
+            className="w-full max-w-xs md:max-w-md object-cover rounded-lg shadow-lg aspect-[3/4]"
             priority
           />
           <div className="flex mt-4 sm:mt-8 gap-2 overflow-x-auto scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-200">
@@ -130,6 +127,7 @@ export default function TopProductsInfo() {
     </div>
   );
 }
+
 {/*"use client";
 import products from "../../data/products";
 import { useState, useRef } from "react";
