@@ -64,6 +64,7 @@ const products = [
       "/Dresses/Wrap Dress/2.avif",
       "/Dresses/Wrap Dress/3.avif",
       "/Dresses/Wrap Dress/4.avif",
+      "/Dresses/Wrap Dress/5.avif",
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
     translations: {
