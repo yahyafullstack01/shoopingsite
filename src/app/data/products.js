@@ -1,4 +1,340 @@
 const products = [
+
+  
+
+  // {
+  //   id: 49,
+  //   price: 3170,
+  //   isTop: false,
+  //   sku: "98770",
+  //   size: "XS S M L XL",
+  //   category: "Dresses",
+  //   image: "/Dresses/Ruffle Dress/1.avif",
+  //   images: [
+  //     "/Dresses/Ruffle Dress/2.avif",
+  //     "/Dresses/Ruffle Dress/3.avif",
+  //     "/Dresses/Ruffle Dress/4.avif",
+  //     "/Dresses/Ruffle Dress/5.avif",
+  //     "/Dresses/Ruffle Dress/6.avif",
+  //     "/Dresses/Ruffle Dress/7.avif"
+  //   ],
+  //   sizes: ["XS", "S", "M", "L", "XL"],
+  //   translations: {
+  //     EN: {
+  //       category: "Dresses",
+  //       name: "Ruffle Dress",
+  //       description: "Midi-length dress with delicate ruffles and a slit on the leg. Fabric: long-fiber muslin, 100% cotton. Light and soft to the touch.",
+  //       color: "powder",
+  //       colors: ["powder", "milk", "black", "water color"]
+  //     },
+  //     FR: {
+  //       category: "Robes",
+  //       name: "Robe à volants",
+  //       description: "Robe midi avec de délicats volants et une fente sur la jambe. Tissu : mousseline à longues fibres, 100% coton. Tissu léger et doux au toucher.",
+  //       color: "poudre",
+  //       colors: ["poudre", "lait", "noir", "couleur de l'eau"]
+  //     },
+  //     UA: {
+  //       category: "Сукні",
+  //       name: "Сукня з воланами",
+  //       description: "Сукня міді довжини із ніжними воланчиками та розрізом на ніжці. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+  //       color: "пудра",
+  //       colors: ["пудра", "молоко", "чорний", "колір води"]
+  //     },
+  //     RU: {
+  //       category: "Платья",
+  //       name: "Платье с воланами",
+  //       description: "Платье миди с нежными воланами и разрезом на ноге. Ткань: длинноволокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь.",
+  //       color: "пудра",
+  //       colors: ["пудра", "молоко", "черный", "цвет воды"]
+  //     }
+  //   }
+  // },
+  
+
+  // {
+  //   id: 48,
+  //   price: 3415,
+  //   isTop: false,
+  //   sku: "98769",
+  //   size: "XS S M L XL",
+  //   category: "Dresses",
+  //   image: "/Dresses/Wrap Dress/1.avif",
+  //   images: [
+  //     "/Dresses/Wrap Dress/2.avif",
+  //     "/Dresses/Wrap Dress/3.avif",
+  //     "/Dresses/Wrap Dress/4.avif",
+  //     "/Dresses/Wrap Dress/5.avif",
+  //     "/Dresses/Wrap Dress/6.avif",
+  //     "/Dresses/Wrap Dress/7.avif"
+  //   ],
+  //   sizes: ["XS", "S", "M", "L", "XL"],
+  //   translations: {
+  //     EN: {
+  //       category: "Dresses",
+  //       name: "Wrap Dress",
+  //       description: "Midi dress with lantern sleeves in a wrap style. Fabric: long-fiber muslin, 100% cotton. Light and soft to the touch.",
+  //       color: "water color",
+  //       colors: ["water color"]
+  //     },
+  //     FR: {
+  //       category: "Robes",
+  //       name: "Robe portefeuille",
+  //       description: "Robe midi avec manches lanterne dans un style portefeuille. Tissu : mousseline à longues fibres, 100% coton. Tissu léger et doux au toucher.",
+  //       color: "couleur de l'eau",
+  //       colors: ["couleur de l'eau"]
+  //     },
+  //     UA: {
+  //       category: "Сукні",
+  //       name: "Сукня на затин",
+  //       description: "Сукня міді із рукавами ліхтариками фасону на затин. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+  //       color: "колір води",
+  //       colors: ["колір води"]
+  //     },
+  //     RU: {
+  //       category: "Платья",
+  //       name: "Платье на запах",
+  //       description: "Платье миди с рукавами-фонариками в стиле на запах. Ткань: длинноволокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь.",
+  //       color: "цвет воды",
+  //       colors: ["цвет воды"]
+  //     }
+  //   }
+  // },
+  
+
+  {
+    id: 47,
+    price: 2855,
+    isTop: false,
+    sku: "98768",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dresses/Muslin/1.avif",
+    images: [
+      "/Dresses/Muslin/2.avif",
+      "/Dresses/Muslin/3.avif",
+      "/Dresses/Muslin/4.avif",
+      "/Dresses/Muslin/5.avif",
+      "/Dresses/Muslin/6.avif",
+      "/Dresses/Muslin/7.avif",
+      "/Dresses/Muslin/8.avif",
+      "/Dresses/Muslin/9.avif",
+      "/Dresses/Muslin/10.avif",
+      "/Dresses/Muslin/11.avif",
+      "/Dresses/Muslin/12.avif",
+      "/Dresses/Muslin/13.avif",
+      "/Dresses/Muslin/14.avif",
+      "/Dresses/Muslin/15.avif",
+      "/Dresses/Muslin/16.avif",
+      "/Dresses/Muslin/17.avif",
+      "/Dresses/Muslin/18.avif",
+      "/Dresses/Muslin/19.avif",
+      "/Dresses/Muslin/20.avif",
+      "/Dresses/Muslin/21.avif",
+      "/Dresses/Muslin/22.avif",
+      "/Dresses/Muslin/23.avif",
+      "/Dresses/Muslin/24.avif",
+      "/Dresses/Muslin/25.avif",
+      "/Dresses/Muslin/26.avif",
+      "/Dresses/Muslin/27.avif",
+      "/Dresses/Muslin/28.avif",
+      "/Dresses/Muslin/29.avif",
+
+
+
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Muslin Dress",
+        description: "Midi dress with short sleeves. Features buttons along the entire length, allowing for adjustable slit. Fabric: long-fiber muslin, 100% cotton. Light and soft to the touch.",
+        color: "eucalyptus",
+        colors: ["eucalyptus", "milk", "powder", "water color", "mint"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe en mousseline",
+        description: "Robe midi avec manches courtes. Dotée de boutons sur toute la longueur, permettant d'ajuster la fente. Tissu : mousseline à longues fibres, 100% coton. Tissu léger et doux au toucher.",
+        color: "eucalyptus",
+        colors: ["eucalyptus", "lait", "poudre", "couleur de l'eau", "menthe"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Муслінова сукня",
+        description: "Сукня міді із короткими рукавами. Має ґудзики по всій довжині, якими можна регулювати розріз. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        color: "евкаліпт",
+        colors: ["евкаліпт", "молоко", "пудра", "колір води", "мʼята"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Муслиновое платье",
+        description: "Платье миди с короткими рукавами. Имеет пуговицы по всей длине, позволяя регулировать разрез. Ткань: длинноволокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь.",
+        color: "эвкалипт",
+        colors: ["эвкалипт", "молоко", "пудра", "цвет воды", "мята"]
+      }
+    }
+  },
+  
+  
+  {
+    id: 46,
+    price: 3335,
+    isTop: false,
+    sku: "98767",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dresses/Lantern/1.avif",
+    images: [
+      "/Dresses/Lantern/2.avif",
+      "/Dresses/Lantern/3.avif",
+      "/Dresses/Lantern/4.avif",
+      "/Dresses/Lantern/5.avif",
+      "/Dresses/Lantern/6.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Lantern Dress",
+        description: "Delicate midi dress with lantern sleeves and handmade lace inserts. Fabric: long-fiber muslin, 100% cotton. Light and soft to the touch.",
+        color: "milk",
+        colors: ["milk"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe Lanterne",
+        description: "Robe midi délicate avec des manches lanterne et des inserts en dentelle faite à la main. Tissu : mousseline à longues fibres, 100% coton. Tissu léger et doux au toucher.",
+        color: "lait",
+        colors: ["lait"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Сукня ліхтарик",
+        description: "Ніжна сукня міді довжини. Має рукава ліхтарики та вставки із мережива ручної роботи. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        color: "молоко",
+        colors: ["молоко"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Платье Лантерн",
+        description: "Нежное платье миди длины. Имеет рукава фонарики и вставки из кружева ручной работы. Ткань: длинноволокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь.",
+        color: "молоко",
+        colors: ["молоко"]
+      }
+    }
+  },
+  
+
+  {
+    id: 45,
+    price: 3335,
+    isTop: false,
+    sku: "98766",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dresses/Oversize/1.avif",
+    images: [
+      "/Dresses/Oversize/2.avif",
+      "/Dresses/Oversize/3.avif",
+      "/Dresses/Oversize/4.avif",
+      "/Dresses/Oversize/5.avif",
+      "/Dresses/Oversize/6.avif",
+      "/Dresses/Oversize/7.avif",
+      "/Dresses/Oversize/8.avif",
+      "/Dresses/Oversize/9.avif",
+      "/Dresses/Oversize/10.avif",
+      "/Dresses/Oversize/11.avif",
+      "/Dresses/Oversize/12.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Oversize Dress",
+        description: "Light, minimalist oversized dress in an ethnic style with special weaving and lace detailing. Fabric: long-fiber muslin, 100% cotton. Light and soft to the touch.",
+        color: "water color",
+        colors: ["water color", "milk"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe Oversize",
+        description: "Robe oversize légère et minimaliste dans un style ethnique avec un tissage spécial et des détails en dentelle. Tissu : mousseline à longues fibres, 100% coton. Tissu léger et doux au toucher.",
+        color: "couleur de l'eau",
+        colors: ["couleur de l'eau", "lait"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Oversize сукня",
+        description: "Легка, мінімалістична оверсайз сукня в етнічному стилі з особливим плетінням і обробкою у вигляді мережива. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        color: "колір води",
+        colors: ["колір води", "молоко"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Оверсайз платье",
+        description: "Легкое, минималистичное оверсайз платье в этническом стиле с особым плетением и кружевной отделкой. Ткань: длинноволокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь.",
+        color: "цвет воды",
+        colors: ["цвет воды", "молоко"]
+      }
+    }
+  },
+  
+
+  {
+    id: 44,
+    price: 3920,
+    isTop: false,
+    sku: "98765",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dresses/Ethnic/1.avif",
+    images: [
+      "/Dresses/Ethnic/2.avif",
+      "/Dresses/Ethnic/3.avif",
+      "/Dresses/Ethnic/4.avif",
+      "/Dresses/Ethnic/5.avif",
+      "/Dresses/Ethnic/6.avif",
+      "/Dresses/Ethnic/7.avif",
+      "/Dresses/Ethnic/8.avif",
+      "/Dresses/Ethnic/9.avif",
+      "/Dresses/Ethnic/10.avif",
+      "/Dresses/Ethnic/11.avif",
+      "/Dresses/Ethnic/12.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Ethnic Dress",
+        description: "Maxi dress with lace throughout, oversized sleeves, and ties. Fabric: long-fiber muslin, 100% cotton. Light and soft to the touch.",
+        color: "milk",
+        colors: ["milk", "black"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe Ethnique",
+        description: "Robe maxi avec dentelle sur toute la longueur, manches oversize et liens. Tissu : mousseline à longues fibres, 100% coton. Tissu léger et doux au toucher.",
+        color: "lait",
+        colors: ["lait", "noir"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Сукня «Ethnic»",
+        description: "Сукня максі із мереживом по всій довжині, оверсайз рукавами та завʼязками. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        color: "молоко",
+        colors: ["молоко", "чорний"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Платье «Ethnic»",
+        description: "Макси-платье с кружевом по всей длине, оверсайз рукавами и завязками. Ткань: длинноволокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь.",
+        color: "молоко",
+        colors: ["молоко", "чёрный"]
+      }
+    }
+  },
+
   { id: 1,
     price: 3170,
     isTop: true,
