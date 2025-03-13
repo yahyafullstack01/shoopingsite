@@ -2,104 +2,101 @@ const products = [
 
   
 
-  // {
-  //   id: 49,
-  //   price: 3170,
-  //   isTop: false,
-  //   sku: "98770",
-  //   size: "XS S M L XL",
-  //   category: "Dresses",
-  //   image: "/Dresses/Ruffle Dress/1.avif",
-  //   images: [
-  //     "/Dresses/Ruffle Dress/2.avif",
-  //     "/Dresses/Ruffle Dress/3.avif",
-  //     "/Dresses/Ruffle Dress/4.avif",
-  //     "/Dresses/Ruffle Dress/5.avif",
-  //     "/Dresses/Ruffle Dress/6.avif",
-  //     "/Dresses/Ruffle Dress/7.avif"
-  //   ],
-  //   sizes: ["XS", "S", "M", "L", "XL"],
-  //   translations: {
-  //     EN: {
-  //       category: "Dresses",
-  //       name: "Ruffle Dress",
-  //       description: "Midi-length dress with delicate ruffles and a slit on the leg. Fabric: long-fiber muslin, 100% cotton. Light and soft to the touch.",
-  //       color: "powder",
-  //       colors: ["powder", "milk", "black", "water color"]
-  //     },
-  //     FR: {
-  //       category: "Robes",
-  //       name: "Robe à volants",
-  //       description: "Robe midi avec de délicats volants et une fente sur la jambe. Tissu : mousseline à longues fibres, 100% coton. Tissu léger et doux au toucher.",
-  //       color: "poudre",
-  //       colors: ["poudre", "lait", "noir", "couleur de l'eau"]
-  //     },
-  //     UA: {
-  //       category: "Сукні",
-  //       name: "Сукня з воланами",
-  //       description: "Сукня міді довжини із ніжними воланчиками та розрізом на ніжці. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
-  //       color: "пудра",
-  //       colors: ["пудра", "молоко", "чорний", "колір води"]
-  //     },
-  //     RU: {
-  //       category: "Платья",
-  //       name: "Платье с воланами",
-  //       description: "Платье миди с нежными воланами и разрезом на ноге. Ткань: длинноволокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь.",
-  //       color: "пудра",
-  //       colors: ["пудра", "молоко", "черный", "цвет воды"]
-  //     }
-  //   }
-  // },
+  {
+    id: 49,
+    price: 3170,
+    isTop: false,
+    sku: "98770",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dresses/Ruffle Dress/1.avif",
+    images: [
+      "/Dresses/Ruffle Dress/2.avif",
+      "/Dresses/Ruffle Dress/3.avif",
+      "/Dresses/Ruffle Dress/4.avif",
+      "/Dresses/Ruffle Dress/5.avif",
+      "/Dresses/Ruffle Dress/6.avif",
+      // "/Dresses/Ruffle Dress/7.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Ruffle Dress",
+        description: "Midi-length dress with delicate ruffles and a slit on the leg. Fabric: long-fiber muslin, 100% cotton. Light and soft to the touch.",
+        color: "powder",
+        colors: ["powder", "milk", "black", "water color"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe à volants",
+        description: "Robe midi avec de délicats volants et une fente sur la jambe. Tissu : mousseline à longues fibres, 100% coton. Tissu léger et doux au toucher.",
+        color: "poudre",
+        colors: ["poudre", "lait", "noir", "couleur de l'eau"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Сукня з воланами",
+        description: "Сукня міді довжини із ніжними воланчиками та розрізом на ніжці. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        color: "пудра",
+        colors: ["пудра", "молоко", "чорний", "колір води"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Платье с воланами",
+        description: "Платье миди с нежными воланами и разрезом на ноге. Ткань: длинноволокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь.",
+        color: "пудра",
+        colors: ["пудра", "молоко", "черный", "цвет воды"]
+      }
+    }
+  },
   
 
-  // {
-  //   id: 48,
-  //   price: 3415,
-  //   isTop: false,
-  //   sku: "98769",
-  //   size: "XS S M L XL",
-  //   category: "Dresses",
-  //   image: "/Dresses/Wrap Dress/1.avif",
-  //   images: [
-  //     "/Dresses/Wrap Dress/2.avif",
-  //     "/Dresses/Wrap Dress/3.avif",
-  //     "/Dresses/Wrap Dress/4.avif",
-  //     "/Dresses/Wrap Dress/5.avif",
-  //     "/Dresses/Wrap Dress/6.avif",
-  //     "/Dresses/Wrap Dress/7.avif"
-  //   ],
-  //   sizes: ["XS", "S", "M", "L", "XL"],
-  //   translations: {
-  //     EN: {
-  //       category: "Dresses",
-  //       name: "Wrap Dress",
-  //       description: "Midi dress with lantern sleeves in a wrap style. Fabric: long-fiber muslin, 100% cotton. Light and soft to the touch.",
-  //       color: "water color",
-  //       colors: ["water color"]
-  //     },
-  //     FR: {
-  //       category: "Robes",
-  //       name: "Robe portefeuille",
-  //       description: "Robe midi avec manches lanterne dans un style portefeuille. Tissu : mousseline à longues fibres, 100% coton. Tissu léger et doux au toucher.",
-  //       color: "couleur de l'eau",
-  //       colors: ["couleur de l'eau"]
-  //     },
-  //     UA: {
-  //       category: "Сукні",
-  //       name: "Сукня на затин",
-  //       description: "Сукня міді із рукавами ліхтариками фасону на затин. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
-  //       color: "колір води",
-  //       colors: ["колір води"]
-  //     },
-  //     RU: {
-  //       category: "Платья",
-  //       name: "Платье на запах",
-  //       description: "Платье миди с рукавами-фонариками в стиле на запах. Ткань: длинноволокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь.",
-  //       color: "цвет воды",
-  //       colors: ["цвет воды"]
-  //     }
-  //   }
-  // },
+  {
+    id: 48,
+    price: 3415,
+    isTop: false,
+    sku: "98769",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dresses/Wrap Dress/1.avif",
+    images: [
+      "/Dresses/Wrap Dress/2.avif",
+      "/Dresses/Wrap Dress/3.avif",
+      "/Dresses/Wrap Dress/4.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Wrap Dress",
+        description: "Midi dress with lantern sleeves in a wrap style. Fabric: long-fiber muslin, 100% cotton. Light and soft to the touch.",
+        color: "water color",
+        colors: ["water color"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe portefeuille",
+        description: "Robe midi avec manches lanterne dans un style portefeuille. Tissu : mousseline à longues fibres, 100% coton. Tissu léger et doux au toucher.",
+        color: "couleur de l'eau",
+        colors: ["couleur de l'eau"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Сукня на затин",
+        description: "Сукня міді із рукавами ліхтариками фасону на затин. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        color: "колір води",
+        colors: ["колір води"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Платье на запах",
+        description: "Платье миди с рукавами-фонариками в стиле на запах. Ткань: длинноволокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь.",
+        color: "цвет воды",
+        colors: ["цвет воды"]
+      }
+    }
+  },
   
 
   {
