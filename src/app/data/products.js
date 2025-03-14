@@ -1,6 +1,381 @@
 const products = [
+  
+  {
+    id: 57,
+    price: 3565,
+    isTop: false,
+    sku: "98778",
+    size: "XS S M L XL",
+    category: "Сукні",
+    image: "/Dress/Valencia Dress/1.avif",
+    images: [
+      "/Dress/Valencia Dress/2.avif",
+      "/Dress/Valencia Dress/3.avif",
+      "/Dress/Valencia Dress/4.avif",
+      "/Dress/Valencia Dress/5.avif",
+      "/Dress/Valencia Dress/6.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Valencia Dress",
+        description: "Layered maxi dress with tie straps and a knot detail at the chest. Fabric: long-fiber muslin, 100% cotton. Light and soft to the touch.",
+        color: "powder",
+        colors: ["powder"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe Valencia",
+        description: "Robe maxi à plusieurs couches avec des bretelles à nouer et un détail de nœud sur la poitrine. Tissu : mousseline à longues fibres, 100% coton. Léger et doux au toucher.",
+        color: "poudre",
+        colors: ["poudre"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Сукня \"Valencia\"",
+        description: "Багатошарова сукня максі довжини із завʼязками на бретелях. Деталі у вигляді вузла на грудях. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        color: "пудра",
+        colors: ["пудра"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Платье \"Valencia\"",
+        description: "Многослойное макси-платье с завязками на бретелях и узлом на груди. Ткань: длинноволокнистый муслин, 100% хлопок. Легкое и мягкое на ощупь.",
+        color: "пудра",
+        colors: ["пудра"]
+      }
+    }
+},
+
+  {
+    id: 56,
+    price: 3565,
+    isTop: false,
+    sku: "98777",
+    size: "XS S M L XL",
+    category: "Сукні",
+    image: "/Dress/Ella Dress/1.avif",
+    images: [
+      "/Dress/Ella Dress/2.avif",
+      "/Dress/Ella Dress/3.avif",
+      "/Dress/Ella Dress/4.avif",
+      "/Dress/Ella Dress/5.avif",
+      "/Dress/Ella Dress/6.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Ella Dress",
+        description: "Asymmetrical dress with short sleeves and delicate lace inserts. Fabric: long-fiber muslin, 100% cotton. Light and soft to the touch.",
+        color: "marengo",
+        colors: ["marengo"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe Ella",
+        description: "Robe asymétrique avec manches courtes et inserts en dentelle délicate. Tissu : mousseline à longues fibres, 100% coton. Léger et doux au toucher.",
+        color: "marengo",
+        colors: ["marengo"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Сукня \"Ella\"",
+        description: "Сукня асиметричної довжина із вкороченим рукавчиком та вставками із ніжного мережива. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        color: "маренго",
+        colors: ["маренго"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Платье \"Ella\"",
+        description: "Асимметричное платье с укороченными рукавами и вставками из нежного кружева. Ткань: длинноволокнистый муслин, 100% хлопок. Легкое и мягкое на ощупь.",
+        color: "маренго",
+        colors: ["маренго"]
+      }
+    }
+},
+
+  {
+    id: 55,
+    price: 3220,
+    isTop: false,
+    sku: "98776",
+    size: "XS S M L XL",
+    category: "Сукні",
+    image: "/Dress/Provence Dress/1.avif",
+    images: [
+      "/Dress/Provence Dress/2.avif",
+      "/Dress/Provence Dress/3.avif",
+      "/Dress/Provence Dress/4.avif",
+      "/Dress/Provence Dress/5.avif",
+      "/Dress/Provence Dress/6.avif",
+      "/Dress/Provence Dress/7.avif",
+      "/Dress/Provence Dress/8.avif",
+      "/Dress/Provence Dress/9.avif",
+      "/Dress/Provence Dress/10.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      UA: {
+        category: "Сукні",
+        name: "Сукня \"Provence\"",
+        description: "Сукня міні довжини із довгим рукавом та оброками на вирізі. На спідниці є ніжний волан. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        color: "молоко",
+        colors: ["молоко", "пудра"]
+      }
+    }
+},
 
   
+  {
+    id: 54,
+    price: 3220,
+    isTop: false,
+    sku: "98775",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Breeze Dress/1.avif",
+    images: [
+      "/Dress/Breeze Dress/2.avif",
+      "/Dress/Breeze Dress/3.avif",
+      "/Dress/Breeze Dress/4.avif",
+      "/Dress/Breeze Dress/5.avif",
+      "/Dress/Breeze Dress/6.avif",
+      "/Dress/Breeze Dress/7.avif",
+      "/Dress/Breeze Dress/8.avif",
+      "/Dress/Breeze Dress/9.avif",
+      "/Dress/Breeze Dress/10.avif",
+      "/Dress/Breeze Dress/11.avif",
+      "/Dress/Breeze Dress/12.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Breeze Dress",
+        description: "Oversized asymmetrical dress with long sleeves and a V-neck. Features ruffle details along the sleeves and dress. Fabric: long-fiber muslin, 100% cotton. Light and soft to the touch.",
+        color: "fuchsia",
+        colors: ["fuchsia", "milk"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe Breeze",
+        description: "Robe oversize asymétrique avec manches longues et col en V. Détails de volants le long des manches et de la robe. Tissu : mousseline à longues fibres, 100% coton. Tissu léger et doux au toucher.",
+        color: "fuchsia",
+        colors: ["fuchsia", "lait"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Сукня «Breeze»",
+        description: "Оверсайз сукня асиметричної довжини із довгим рукавом та V-вирізом. На рукавчиках та вздовж сукні деталі у вигляді рюш. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        color: "фуксія",
+        colors: ["фуксія", "молоко"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Платье \"Breeze\"",
+        description: "Оверсайз платье асимметричной длины с длинными рукавами и V-образным вырезом. Детали в виде рюшек на рукавах и вдоль платья. Ткань: длинноволокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь.",
+        color: "фуксия",
+        colors: ["фуксия", "молоко"]
+      }
+    }
+},
+
+
+  {
+    id: 53,
+    price: 3920,
+    isTop: false,
+    sku: "98774",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Teresa Dress/1.avif",
+    images: [
+      "/Dress/Teresa Dress/2.avif",
+      "/Dress/Teresa Dress/3.avif",
+      "/Dress/Teresa Dress/4.avif",
+      "/Dress/Teresa Dress/5.avif",
+      "/Dress/Teresa Dress/6.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Teresa Dress",
+        description: "Maxi dress that accentuates the waist with a belt. Features handmade lace, a V-neck, and buttons along the entire length. Fabric: long-fiber muslin, 100% cotton. Light and soft to the touch.",
+        color: "milk",
+        colors: ["milk"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe Teresa",
+        description: "Robe maxi qui souligne la taille avec une ceinture. Dispose de dentelle faite main, d'un col en V et de boutons sur toute la longueur. Tissu : mousseline à longues fibres, 100% coton. Tissu léger et doux au toucher.",
+        color: "lait",
+        colors: ["lait"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Сукня \"Teresa\"",
+        description: "Сукня максі, яка підкреслює талію завдяки поясу. Має мереживо ручної роботи, V-виріз та ґудзики по всій довжині. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        color: "молоко",
+        colors: ["молоко"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Платье \"Teresa\"",
+        description: "Макси-платье, подчеркивающее талию поясом. Имеет ручное кружево, V-образный вырез и пуговицы по всей длине. Ткань: длинноволокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь.",
+        color: "молоко",
+        colors: ["молоко"]
+      }
+    }
+},
+
+
+  {
+    id: 52,
+    price: 3920,
+    isTop: false,
+    sku: "98773",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Maria Dress/1.avif",
+    images: [
+      "/Dress/Maria Dress/2.avif",
+      "/Dress/Maria Dress/3.avif",
+      "/Dress/Maria Dress/4.avif",
+      "/Dress/Maria Dress/5.avif",
+      "/Dress/Maria Dress/6.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Maria Dress",
+        description: "Maxi dress with handmade lace, lantern sleeves, and a slit on the leg. Fabric: long-fiber muslin, 100% cotton. Light and soft to the touch.",
+        color: "milk",
+        colors: ["milk"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe Maria",
+        description: "Robe maxi avec dentelle faite main, manches lanternes et fente sur la jambe. Tissu : mousseline à longues fibres, 100% coton. Tissu léger et doux au toucher.",
+        color: "lait",
+        colors: ["lait"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Сукня \"Maria\"",
+        description: "Сукня максі із мереживом ручної роботи, рукавами ліхтариками та розрізом на ніжці. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        color: "молоко",
+        colors: ["молоко"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Платье \"Maria\"",
+        description: "Макси-платье с ручным кружевом, рукавами-фонариками и разрезом на ноге. Ткань: длинноволокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь.",
+        color: "молоко",
+        colors: ["молоко"]
+      }
+    }
+},
+
+  {
+    id: 51,
+    price: 3920,
+    isTop: false,
+    sku: "98772",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Flower Dress/1.avif",
+    images: [
+      "/Dress/Flower Dress/2.avif",
+      "/Dress/Flower Dress/3.avif",
+      "/Dress/Flower Dress/4.avif",
+      "/Dress/Flower Dress/5.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Flower Dress",
+        description: "Maxi dress with lantern sleeves. Stunning details in the form of decorative flowers and ethnic ruffles throughout. Fabric: long-fiber muslin, 100% cotton. Light and soft to the touch.",
+        color: "milk",
+        colors: ["milk"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe à fleurs",
+        description: "Robe maxi avec manches lanternes. Détails époustouflants sous forme de fleurs décoratives et de volants ethniques sur toute la longueur. Tissu : mousseline à longues fibres, 100% coton. Tissu léger et doux au toucher.",
+        color: "lait",
+        colors: ["lait"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Сукня з квітами",
+        description: "Сукня максі із рукавами ліхтариками. Неймовірні деталі у вигляді декоративних квітів та етнічних рюш по всій довжині. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        color: "молоко",
+        colors: ["молоко"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Платье с цветами",
+        description: "Макси-платье с рукавами-фонариками. Невероятные детали в виде декоративных цветов и этнических рюш по всей длине. Ткань: длинноволокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь.",
+        color: "молоко",
+        colors: ["молоко"]
+      }
+    }
+},
+
+
+  {
+    id: 50,
+    price: 3040,
+    isTop: false,
+    sku: "98771",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Pinky Dress/1.avif",
+    images: [
+      "/Dress/Pinky Dress/2.avif",
+      "/Dress/Pinky Dress/3.avif",
+      "/Dress/Pinky Dress/4.avif",
+      "/Dress/Pinky Dress/5.avif",
+      "/Dress/Pinky Dress/6.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Pinky Dress",
+        description: "Oversized straight-cut dress with a high waist and wide sleeves. Fabric: long-fiber muslin, 100% cotton. Light and soft to the touch.",
+        color: "powder",
+        colors: ["powder"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe Pinky",
+        description: "Robe oversize à coupe droite avec taille haute et manches larges. Tissu : mousseline à longues fibres, 100% coton. Tissu léger et doux au toucher.",
+        color: "poudre",
+        colors: ["poudre"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Сукня «Pinky»",
+        description: "Оверсайз сукня прямого крою із високою талією та широкими рукавами. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        color: "пудра",
+        colors: ["пудра"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Платье «Pinky»",
+        description: "Оверсайз платье прямого кроя с высокой талией и широкими рукавами. Ткань: длинноволокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь.",
+        color: "пудра",
+        colors: ["пудра"]
+      }
+    }
+  },
+
 
   {
     id: 49,
@@ -16,7 +391,14 @@ const products = [
       "/Dress/Ruffle Dress/4.avif",
       "/Dress/Ruffle Dress/5.avif",
       "/Dress/Ruffle Dress/6.avif",
-      // "/Dresses/Ruffle Dress/7.avif"
+      "/Dresses/Ruffle Dress/7.avif",
+      "/Dresses/Ruffle Dress/8.avif",
+      "/Dresses/Ruffle Dress/9.avif",
+      "/Dresses/Ruffle Dress/10.avif",
+      "/Dresses/Ruffle Dress/11.avif",
+      "/Dresses/Ruffle Dress/12.avif",
+      "/Dresses/Ruffle Dress/13.avif",
+      "/Dresses/Ruffle Dress/14.avif",
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
     translations: {
@@ -65,6 +447,7 @@ const products = [
       "/Dress/Wrap Dress/3.avif",
       "/Dress/Wrap Dress/4.avif",
       "/Dress/Wrap Dress/5.avif",
+      
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
     translations: {
