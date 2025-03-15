@@ -1,4 +1,202 @@
 const products = [
+
+  {
+    id: 61,
+    price: 3300,
+    isTop: false,
+    sku: "98782",
+    size: "XS S M L XL",
+    category: "Сукні",
+    image: "/Dress/Veronica Dress/1.avif",
+    images: [
+      "/Dress/Veronica Dress/2.avif",
+      "/Dress/Veronica Dress/3.avif",
+      "/Dress/Veronica Dress/4.avif",
+      "/Dress/Veronica Dress/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Veronica Dress",
+        description: "Fabric: Composition: 95% cotton, 5% elastane. Broderie - a light, mostly solid-colored cotton fabric with characteristic lace embroidery. The fabric is natural and breathable, making the dress very comfortable.",
+        color: "milk",
+        colors: ["milk"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe Veronica",
+        description: "Tissu : Composition : 95% coton, 5% élasthanne. La broderie - un tissu en coton léger, principalement uni, avec une broderie en dentelle caractéristique. Le tissu est naturel et respirant, rendant la robe très confortable.",
+        color: "lait",
+        colors: ["lait"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Сукня \"Veronica\"",
+        description: "Тканина: Склад: 95% бавовна, 5% еластан. Прошва - легка, переважно однотонна, бавовняна тканина з характерною мереживною вишивкою. Тканина відноситься до натуральних і дихаючих матеріалів, за рахунок чого сукня буде дуже комфортною.",
+        color: "молоко",
+        colors: ["молоко"]
+      }
+    }
+},
+
+
+  {
+    id: 60,
+    price: 3220,
+    isTop: false,
+    sku: "98781",
+    size: "XS S M L XL",
+    category: "Сукні",
+    image: "/Dress/Muslin Sundress/1.avif",
+    images: [
+      "/Dress/Muslin Sundress/2.avif",
+      "/Dress/Muslin Sundress/3.avif",
+      "/Dress/Muslin Sundress/4.avif",
+      "/Dress/Muslin Sundress/5.avif",
+      "/Dress/Muslin Sundress/6.avif",
+      "/Dress/Muslin Sundress/7.avif",
+      "/Dress/Muslin Sundress/8.avif",
+      "/Dress/Muslin Sundress/9.avif",
+      "/Dress/Muslin Sundress/10.avif",
+      "/Dress/Muslin Sundress/11.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Muslin Sundress",
+        description: "Light wrap midi sundress with a patch pocket and belt. Fabric: long-fiber muslin, 100% cotton. Light and soft to the touch.",
+        color: "marengo",
+        colors: ["marengo", "burgundy"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe Muslin",
+        description: "Robe midi portefeuille légère avec une poche plaquée et une ceinture. Tissu : mousseline à longues fibres, 100% coton. Léger et doux au toucher.",
+        color: "marengo",
+        colors: ["marengo", "bordeaux"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Мусліновий сарафан",
+        description: "Легкий сарафан на запах міді довжини із накладною кишенею та поясом. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        color: "маренго",
+        colors: ["маренго", "бордо"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Муслиновый сарафан",
+        description: "Лёгкий миди-сарафан на запах с накладным карманом и поясом. Ткань: длинноволокнистый муслин, 100% хлопок. Лёгкий и мягкий на ощупь.",
+        color: "маренго",
+        colors: ["маренго", "бордо"]
+      }
+    }
+},
+
+
+  {
+    id: 59,
+    price: 3565,
+    isTop: false,
+    sku: "98780",
+    size: "XS S M L XL",
+    category: "Сукні",
+    image: "/Dress/Nature Dress/1.avif",
+    images: [
+      "/Dress/Nature Dress/2.avif",
+      "/Dress/Nature Dress/3.avif",
+      "/Dress/Nature Dress/4.avif",
+      "/Dress/Nature Dress/5.avif",
+      "/Dress/Nature Dress/6.avif",
+      "/Dress/Nature Dress/7.avif",
+      "/Dress/Nature Dress/8.avif",
+      "/Dress/Nature Dress/9.avif",
+      "/Dress/Nature Dress/10.avif",
+      "/Dress/Nature Dress/11.avif",
+      "/Dress/Nature Dress/12.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Nature Dress",
+        description: "Oversized maxi dress with long sleeves and a round neckline. Features decorative buttons and two pockets. Fabric: long-fiber muslin, 100% cotton. Light and soft to the touch.",
+        color: "burgundy",
+        colors: ["burgundy", "milk"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe Nature",
+        description: "Robe maxi oversize avec manches longues et encolure ronde. Boutons décoratifs et deux poches. Tissu : mousseline à longues fibres, 100% coton. Léger et doux au toucher.",
+        color: "bordeaux",
+        colors: ["bordeaux", "lait"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Сукня \"Nature\"",
+        description: "Оверсайз сукня максі довжини із довгим рукавом та округлим вирізом. Має декоративні ґудзики та дві кишені. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        color: "бордо",
+        colors: ["бордо", "молоко"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Платье \"Nature\"",
+        description: "Оверсайз макси-платье с длинными рукавами и круглым вырезом. Декоративные пуговицы и два кармана. Ткань: длинноволокнистый муслин, 100% хлопок. Легкое и мягкое на ощупь.",
+        color: "бордо",
+        colors: ["бордо", "молоко"]
+      }
+    }
+},
+
+  {
+    id: 58,
+    price: 3565,
+    isTop: false,
+    sku: "98779",
+    size: "XS S M L XL",
+    category: "Сукні",
+    image: "/Dress/Freedom Dress/1.avif",
+    images: [
+      "/Dress/Freedom Dress/2.avif",
+      "/Dress/Freedom Dress/3.avif",
+      "/Dress/Freedom Dress/4.avif",
+      "/Dress/Freedom Dress/5.avif",
+      "/Dress/Freedom Dress/6.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Freedom Dress",
+        description: "Layered loose-fitting maxi dress with long sleeves. Features ruffle details along the entire dress. Fabric: long-fiber muslin, 100% cotton. Light and soft to the touch.",
+        color: "burgundy",
+        colors: ["burgundy", "milk"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe Freedom",
+        description: "Robe maxi ample à plusieurs couches avec des manches longues. Détails de volants le long de toute la robe. Tissu : mousseline à longues fibres, 100% coton. Léger et doux au toucher.",
+        color: "bordeaux",
+        colors: ["bordeaux", "lait"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Сукня \"Freedom\"",
+        description: "Багатошарова сукня вільного крою, має максі довжину із довгим рукавом. Деталі у вигляді рюш вздовж всієї сукні. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        color: "бордо",
+        colors: ["бордо", "молоко"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Платье \"Freedom\"",
+        description: "Многослойное свободное макси-платье с длинными рукавами. Детали в виде рюшек по всей длине платья. Ткань: длинноволокнистый муслин, 100% хлопок. Легкое и мягкое на ощупь.",
+        color: "бордо",
+        colors: ["бордо", "молоко"]
+      }
+    }
+},
+
   
   {
     id: 57,
