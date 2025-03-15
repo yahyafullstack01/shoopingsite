@@ -40,14 +40,23 @@ export default function AllProducts() {
 
   // 🆕 відкриття продукту з URL
   useEffect(() => {
-    if (productId && !selectedProduct) {
-      const matchedProduct = products.find((p) => String(p.id) === productId);
-      if (matchedProduct) {
-        setSelectedProduct(matchedProduct);
-      }
-    }
-  }, [productId, selectedProduct]);
+  if (productId) {
+    const matchedProduct = products.find((p) => String(p.id) === productId);
 
+    if (matchedProduct && matchedProduct.id !== selectedProduct?.id) {
+      setSelectedProduct(matchedProduct);
+    }
+
+    // Якщо не знайдено — очистити
+    if (!matchedProduct && selectedProduct) {
+      setSelectedProduct(null);
+    }
+  } else {
+    // Якщо параметр product відсутній — також прибрати вибраний товар
+    setSelectedProduct(null);
+  }
+}, [productId]);
+ 
   // 🔍 фільтрація продуктів
   const filteredProducts = filterAndSortProducts(
     products.filter(
@@ -77,12 +86,16 @@ export default function AllProducts() {
 
   // ❌ Закриття банера — прибираємо параметр product
   const handleCloseBanner = () => {
-    setSelectedProduct(null);
     const newParams = new URLSearchParams(searchParams.toString());
     newParams.delete("product");
+  
+    // ⛔️ Спочатку змінюємо URL
     router.push(`/All-products?${newParams.toString()}`, { scroll: false });
+  
+    // ✅ Потім закриваємо банер
+    setSelectedProduct(null);
   };
-
+  
   return (
     <section className="bg-gray-100 text-black dark:text-white min-h-screen dark:bg-black">
       <div className="w-full mx-auto px-4 sm:px-6 md:px-8 py-4">
