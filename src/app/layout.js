@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
                 <meta property="og:image:height" content="630" />
                 <meta property="og:url" content="https://shoopingsite-my9e.vercel.app" />
                 <meta property="og:type" content="website" />
-                <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+                <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon" />
                 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 
