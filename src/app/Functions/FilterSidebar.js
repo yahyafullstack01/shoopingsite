@@ -14,6 +14,9 @@ export default function FilterSidebar({
 }) {
   const { translateList } = useLanguage();
   const [isFilterOpen, setIsFilterOpen] = useState(false);
+  const selectLabel = translateList("Infoform", "header")[2] || "Select";
+
+
   // Отримуємо переклади (гарантуємо, що це масиви)
   const menuItems = translateList("Filtersidebar", "header") || [];
   const translatedSizes = Array.isArray(translateList("Filtersidebar", "SizeCatalogue"))
@@ -82,7 +85,7 @@ export default function FilterSidebar({
     onClick={() => setIsCategoryOpen(!isCategoryOpen)}
   >
     <label className="block text-sm font-medium">
-      {menuItems[7] || "Category"}: {selectedCategory || "Select"}
+      {menuItems[7] || "Category"}: {selectedCategory || selectLabel}
     </label>
     <span className="text-gray-600 dark:text-gray-400 text-lg">{isCategoryOpen ? "−" : "+"}</span>
   </div>
@@ -112,7 +115,7 @@ export default function FilterSidebar({
     onClick={() => setIsSizeOpen(!isSizeOpen)}
   >
     <label className="block text-sm font-medium">
-      {menuItems[4] || "Size"}: {selectedSize || "Select"}
+      {menuItems[4] || "Size"}: {selectedSize || selectLabel}
     </label>
     <span className="text-gray-400 text-lg">{isSizeOpen ? "−" : "+"}</span>
   </div>
