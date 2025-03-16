@@ -8,12 +8,12 @@ import ProductBanner from "../../components/products/ProductBanner";
 import PaginatedProducts from "../../components/PaginatedProducts/PaginatedProducts"; 
 import {
   handleSizeSelect,
-  handleCategorySelect,
   filterAndSortProducts,
   handleContactButtonClick
 } from "../../utils/products";
 import products from "../../data/products";
 import { useLanguage } from "../../Functions/useLanguage";
+import { translateCategory } from "../../utils/categoryTranslation";
 
 export default function AllProducts() {
   const { translateList, language } = useLanguage();
@@ -21,56 +21,45 @@ export default function AllProducts() {
 
   const router = useRouter();
   const searchParams = useSearchParams();
+  const productId = searchParams.get("product");
   const categoryFromURL = searchParams.get("category") || "";
-  const productId = searchParams.get("product"); // 🆕 отримаємо id товару з URL
 
   const [maxPrice, setMaxPrice] = useState(5500);
   const [selectedSize, setSelectedSize] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState(categoryFromURL);
   const [selectedColor, setSelectedColor] = useState("");
   const [sortOrder, setSortOrder] = useState("recommended");
   const [isSortMenuOpen, setIsSortMenuOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const descriptionRef = useRef(null);
 
-  // 🧠 оновлення категорії, якщо змінюється URL
   useEffect(() => {
-    setSelectedCategory(categoryFromURL);
-  }, [categoryFromURL]);
-
-  // 🆕 відкриття продукту з URL
-  useEffect(() => {
-  if (productId) {
-    const matchedProduct = products.find((p) => String(p.id) === productId);
-
-    if (matchedProduct && matchedProduct.id !== selectedProduct?.id) {
-      setSelectedProduct(matchedProduct);
-    }
-
-    // Якщо не знайдено — очистити
-    if (!matchedProduct && selectedProduct) {
+    if (productId) {
+      const matchedProduct = products.find((p) => String(p.id) === productId);
+      if (matchedProduct && matchedProduct.id !== selectedProduct?.id) {
+        setSelectedProduct(matchedProduct);
+      }
+      if (!matchedProduct && selectedProduct) {
+        setSelectedProduct(null);
+      }
+    } else {
       setSelectedProduct(null);
     }
-  } else {
-    // Якщо параметр product відсутній — також прибрати вибраний товар
-    setSelectedProduct(null);
-  }
-}, [productId]);
- 
-  // 🔍 фільтрація продуктів
+  }, [productId]);
+
   const filteredProducts = filterAndSortProducts(
     products.filter(
       (product) =>
-        !selectedCategory || product.category.toLowerCase() === selectedCategory.toLowerCase()
+        !categoryFromURL ||
+        categoryFromURL.toLowerCase() === "all" ||
+        product.category.toLowerCase() === categoryFromURL.toLowerCase()
     ),
     { maxPrice, selectedSize, selectedColor },
     sortOrder
   );
 
-  // ✅ клік по продукту — додаємо id в URL
   const onProductClick = (product) => {
     setSelectedProduct(product);
-    router.push(`/All-products?category=${selectedCategory}&product=${product.id}`, { scroll: false });
+    router.push(`/All-products?category=${categoryFromURL}&product=${product.id}`, { scroll: false });
   };
 
   const onContactClick = (selectedColor, selectedSize, quantity) => {
@@ -84,18 +73,13 @@ export default function AllProducts() {
     );
   };
 
-  // ❌ Закриття банера — прибираємо параметр product
   const handleCloseBanner = () => {
     const newParams = new URLSearchParams(searchParams.toString());
     newParams.delete("product");
-  
-    // ⛔️ Спочатку змінюємо URL
     router.push(`/All-products?${newParams.toString()}`, { scroll: false });
-  
-    // ✅ Потім закриваємо банер
     setSelectedProduct(null);
   };
-  
+
   return (
     <section className="bg-gray-100 text-black dark:text-white min-h-screen dark:bg-black">
       <div className="w-full mx-auto px-4 sm:px-6 md:px-8 py-4">
@@ -105,9 +89,8 @@ export default function AllProducts() {
             setMaxPrice={setMaxPrice}
             selectedSize={selectedSize}
             handleSizeSelect={(size) => handleSizeSelect(size, setSelectedSize)}
-            selectedCategory={selectedCategory}
+            selectedCategory={categoryFromURL} // ✅
             handleCategorySelect={(category) => {
-              handleCategorySelect(category, setSelectedCategory);
               router.push(`/All-products?category=${category.toLowerCase()}`);
             }}
           >
@@ -130,10 +113,17 @@ export default function AllProducts() {
             )}
 
             <section aria-labelledby="product-header" className="w-full mx-auto px-4 sm:px-6 md:px-8 py-4">
-              <h1 id="product-header" className="text-3xl sm:text-4xl font-bold mb-6">
+              <h1 id="product-header" className="text-3xl sm:text-4xl font-bold mb-2">
                 {menuItems[0]}
               </h1>
               <p className="text-gray-700 dark:text-gray-400 mb-4">{menuItems[1]}</p>
+
+              {categoryFromURL && categoryFromURL.toLowerCase() !== "all" && (
+                <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                  {translateCategory(categoryFromURL, translateList)}
+                </h2>
+              )}
+
               <p className="text-gray-700 dark:text-gray-400 mt-4 pb-4">
                 {filteredProducts.length} {menuItems[2]}
               </p>
@@ -153,6 +143,48 @@ export default function AllProducts() {
     </section>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {/*"use client";
 
 import React, { useState, useRef, useEffect } from "react";
