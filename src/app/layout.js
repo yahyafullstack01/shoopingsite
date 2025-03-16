@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
                 <meta property="og:image:height" content="630" />
                 <meta property="og:url" content="https://shoopingsite-my9e.vercel.app" />
                 <meta property="og:type" content="website" />
-                <link rel="icon" href="/favicon-latore.ico" type="image/x-icon" />
+                <link rel="icon" href="/favicon.ico" type="image/x-icon" />
                 <link rel="canonical" href="https://shoopingsite-my9e.vercel.app" />
                 <link rel="preload" href="/fonts/Montserrat-Thin.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
 <link rel="preload" href="/fonts/Montserrat-ThinItalic.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
