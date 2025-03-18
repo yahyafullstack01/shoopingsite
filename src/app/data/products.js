@@ -1,6 +1,370 @@
 const products = [
 
 
+  {
+    id: 73,
+    price: 2024,
+    isTop: false,
+    sku: "98793",
+    size: "XS S M L XL",
+    category: "Сорочки",
+    image: "/Shirt/Muslin Cardigan/1.avif",
+    images: [
+      "/Shirt/Muslin Cardigan/2.avif",
+      "/Shirt/Muslin Cardigan/3.avif",
+      "/Shirt/Muslin Cardigan/4.avif",
+      "/Shirt/Muslin Cardigan/5.avif",
+      "/Shirt/Muslin Cardigan/6.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Shirts",
+        name: "Muslin Cardigan",
+        description: "Long-fiber muslin made from 100% cotton. Light and soft to the touch.",
+        colors: ["black", "milk"]
+      },
+      FR: {
+        category: "Chemises",
+        name: "Cardigan en Mousseline",
+        description: "Mousseline à longues fibres 100% coton. Léger et doux au toucher.",
+        colors: ["noir", "lait"]
+      },
+      UA: {
+        category: "Сорочки",
+        name: "Мусліновий кардиган",
+        description: "Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        colors: ["чорний", "молоко"]
+      },
+      RU: {
+        category: "Рубашки",
+        name: "Муслиновый кардиган",
+        description: "Ткань: длинноволокнистый муслин из 100% хлопка. Легкий и мягкий на ощупь.",
+        colors: ["черный", "молоко"]
+      }
+    }
+},
+
+
+  {
+    id: 72,
+    price: 1380,
+    isTop: false,
+    sku: "98792",
+    size: "XS S M L XL",
+    category: "Топи",
+    image: "/Top/Muslin Top/1.avif",
+    images: [
+      "/Top/Muslin Top/2.avif",
+      "/Top/Muslin Top/3.avif",
+      "/Top/Muslin Top/4.avif",
+      "/Top/Muslin Top/5.avif",
+      "/Top/Muslin Top/6.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Tops",
+        name: "Muslin Top",
+        description: "Long-fiber muslin made from 100% cotton. Light and soft to the touch.",
+        colors: ["milk", "black"]
+      },
+      FR: {
+        category: "Tops",
+        name: "Top en Mousseline",
+        description: "Mousseline à longues fibres 100% coton. Léger et doux au toucher.",
+        colors: ["lait", "noir"]
+      },
+      UA: {
+        category: "Топи",
+        name: "Мусліновий топ",
+        description: "Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        colors: ["молоко", "чорний"]
+      },
+      RU: {
+        category: "Топы",
+        name: "Муслиновый топ",
+        description: "Ткань: длинноволокнистый муслин из 100% хлопка. Легкий и мягкий на ощупь.",
+        colors: ["молоко", "черный"]
+      }
+    }
+},
+
+  {
+    id: 71,
+    price: 5300,
+    isTop: false,
+    sku: "98791",
+    size: "XS S M L XL",
+    category: "Костюми",
+    image: "/Costume/Muslin 3-Piece/1.avif",
+    images: [
+      "/Costume/Muslin 3-Piece/2.avif",
+      "/Costume/Muslin 3-Piece/3.avif",
+      "/Costume/Muslin 3-Piece/4.avif",
+      "/Costume/Muslin 3-Piece/5.avif",
+      "/Costume/Muslin 3-Piece/6.avif",
+      "/Costume/Muslin 3-Piece/7.avif",
+      "/Costume/Muslin 3-Piece/8.avif",
+      "/Costume/Muslin 3-Piece/9.avif",
+      "/Costume/Muslin 3-Piece/10.avif",
+      "/Costume/Muslin 3-Piece/11.avif",
+      "/Costume/Muslin 3-Piece/12.avif",
+      "/Costume/Muslin 3-Piece/13.avif",
+      "/Costume/Muslin 3-Piece/14.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Costumes",
+        name: "Muslin 3-Piece Costume",
+        description: "Long-fiber muslin made from 100% cotton. Light and soft to the touch.",
+        colors: ["milk", "black", "black-white"]
+      },
+      FR: {
+        category: "Costumes",
+        name: "Costume 3 pièces en Mousseline",
+        description: "Mousseline à longues fibres 100% coton. Léger et doux au toucher.",
+        colors: ["lait", "noir", "noir-blanc"]
+      },
+      UA: {
+        category: "Костюми",
+        name: "Мусліновий костюм 3-ка",
+        description: "Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        colors: ["молоко", "чорний", "чорно-білий"]
+      },
+      RU: {
+        category: "Костюмы",
+        name: "Муслиновый костюм 3-ка",
+        description: "Ткань: длинноволокнистый муслин из 100% хлопка. Легкий и мягкий на ощупь.",
+        colors: ["молоко", "черный", "черно-белый"]
+      }
+    }
+},
+
+  {
+    id: 70,
+    price: 3920,
+    isTop: false,
+    sku: "98790",
+    size: "XS S M L XL",
+    category: "Сукні",
+    image: "/Dress/Maribella Dress/1.avif",
+    images: [
+      "/Dress/Maribella Dress/2.avif",
+      "/Dress/Maribella Dress/3.avif",
+      "/Dress/Maribella Dress/4.avif",
+      "/Dress/Maribella Dress/5.avif",
+      "/Dress/Maribella Dress/6.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Maribella Dress",
+        description: "Imitation of washed linen from cotton, sourced from a French fashion house in a very limited quantity. Fabric: 50% linen, 50% cotton.",
+        colors: ["blue"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe Maribella en Lin",
+        description: "Imitation de lin lavé en coton, provenant d'une maison de mode française en quantité très limitée. Tissu : 50% lin, 50% coton.",
+        colors: ["bleu"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Сукня \"Maribella\"",
+        description: "Імітація вареного льону з бавовни з французького будинку моди в дуже обмеженій кількості. Тканина: 50% льон, 50% бавовна.",
+        colors: ["синій"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Платье \"Maribella\"",
+        description: "Имитация вареного льна из хлопка из французского дома моды в очень ограниченном количестве. Ткань: 50% лён, 50% хлопок.",
+        colors: ["синий"]
+      }
+    }
+},
+
+
+  {
+    id: 69,
+    price: 2270,
+    isTop: false,
+    sku: "98789",
+    size: "XS S M L XL",
+    category: "Сукні",
+    image: "/Dress/Linen Sundress/1.avif",
+    images: [
+      "/Dress/Linen Sundress/2.avif",
+      "/Dress/Linen Sundress/3.avif",
+      "/Dress/Linen Sundress/4.avif",
+      "/Dress/Linen Sundress/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Linen Sundress",
+        description: "Imitation of washed linen from cotton, sourced from a French fashion house in a very limited quantity. Fabric: 50% linen, 50% cotton.",
+        colors: ["blue"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe Sundress en Lin",
+        description: "Imitation de lin lavé en coton, provenant d'une maison de mode française en quantité très limitée. Tissu : 50% lin, 50% coton.",
+        colors: ["bleu"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Сарафан лляний",
+        description: "Імітація вареного льону з бавовни з французького будинку моди в дуже обмеженій кількості. Тканина: 50% льон, 50% бавовна.",
+        colors: ["синій"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Льняной сарафан",
+        description: "Имитация вареного льна из хлопка из французского дома моды в очень ограниченном количестве. Ткань: 50% лён, 50% хлопок.",
+        colors: ["синий"]
+      }
+    }
+},
+
+
+  {
+    id: 68,
+    price: 3920,
+    isTop: false,
+    sku: "98788",
+    size: "XS S M L XL",
+    category: "Сукні",
+    image: "/Dress/Linen Maxi Dress/1.avif",
+    images: [
+      "/Dress/Linen Maxi Dress/2.avif",
+      "/Dress/Linen Maxi Dress/3.avif",
+      "/Dress/Linen Maxi Dress/4.avif",
+      "/Dress/Linen Maxi Dress/5.avif",
+      "/Dress/Linen Maxi Dress/6.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Linen Maxi Dress",
+        description: "Imitation of washed linen from cotton, sourced from a French fashion house in a very limited quantity. Fabric: 50% linen, 50% cotton.",
+        colors: ["blue"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe Maxi en Lin",
+        description: "Imitation de lin lavé en coton, provenant d'une maison de mode française en quantité très limitée. Tissu : 50% lin, 50% coton.",
+        colors: ["bleu"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Сукня лляна максі",
+        description: "Імітація вареного льону з бавовни з французького будинку моди в дуже обмеженій кількості. Тканина: 50% льон, 50% бавовна.",
+        colors: ["синій"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Льняное макси платье",
+        description: "Имитация вареного льна из хлопка из французского дома моды в очень ограниченном количестве. Ткань: 50% лён, 50% хлопок.",
+        colors: ["синий"]
+      }
+    }
+},
+
+
+  {
+    id: 67,
+    price: 2100,
+    isTop: false,
+    sku: "98787",
+    size: "XS S M L XL",
+    category: "Брюки",
+    image: "/Pants/Cotton Pants/1.avif",
+    images: [
+      "/Pants/Cotton Pants/2.avif",
+      "/Pants/Cotton Pants/3.avif",
+      "/Pants/Cotton Pants/4.avif",
+      "/Pants/Cotton Pants/5.avif",
+      "/Pants/Cotton Pants/6.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Pants",
+        name: "Cotton Pants",
+        description: "Imitation of washed linen from cotton, sourced from a French fashion house in a very limited quantity. Fabric: 50% linen, 50% cotton.",
+        colors: ["blue", "milk"]
+      },
+      FR: {
+        category: "Pantalons",
+        name: "Pantalon en Coton",
+        description: "Imitation de lin lavé en coton, provenant d'une maison de mode française en quantité très limitée. Tissu : 50% lin, 50% coton.",
+        colors: ["bleu", "lait"]
+      },
+      UA: {
+        category: "Брюки",
+        name: "Брюки бавовняні",
+        description: "Імітація вареного льону з бавовни з французького будинку моди в дуже обмеженій кількості. Тканина: 50% льон, 50% бавовна.",
+        colors: ["синій", "молоко"]
+      },
+      RU: {
+        category: "Брюки",
+        name: "Хлопковые брюки",
+        description: "Имитация вареного льна из хлопка из французского дома моды в очень ограниченном количестве. Ткань: 50% лён, 50% хлопок.",
+        colors: ["синий", "молоко"]
+      }
+    }
+},
+
+
+  {
+    id: 66,
+    price: 2320,
+    isTop: false,
+    sku: "98786",
+    size: "XS S M L XL",
+    category: "Сорочки",
+    image: "/Shirt/Cotton Shirt/1.avif",
+    images: [
+      "/Shirt/Cotton Shirt/2.avif",
+      "/Shirt/Cotton Shirt/3.avif",
+      "/Shirt/Cotton Shirt/4.avif",
+      "/Shirt/Cotton Shirt/5.avif",
+      "/Shirt/Cotton Shirt/6.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Shirts",
+        name: "Cotton Shirt",
+        description: "Imitation of washed linen from cotton, sourced from a French fashion house in a very limited quantity. Fabric: 50% linen, 50% cotton.",
+        colors: ["milk", "blue"]
+      },
+      FR: {
+        category: "Chemises",
+        name: "Chemise en Coton",
+        description: "Imitation de lin lavé en coton, provenant d'une maison de mode française en quantité très limitée. Tissu : 50% lin, 50% coton.",
+        colors: ["lait", "bleu"]
+      },
+      UA: {
+        category: "Сорочки",
+        name: "Сорочка бавовняна",
+        description: "Імітація вареного льону з бавовни з французького будинку моди в дуже обмеженій кількості. Тканина: 50% льон, 50% бавовна.",
+        colors: ["молоко", "синій"]
+      },
+      RU: {
+        category: "Рубашки",
+        name: "Хлопковая рубашка",
+        description: "Имитация вареного льна из хлопка из французского дома моды в очень ограниченном количестве. Ткань: 50% лён, 50% хлопок.",
+        colors: ["молоко", "синий"]
+      }
+    }
+},
+
 
   {
     id: 65,
