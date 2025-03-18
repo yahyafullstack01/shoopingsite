@@ -1,5 +1,200 @@
 const products = [
 
+
+
+  {
+    id: 65,
+    price: 4420,
+    isTop: false,
+    sku: "98785",
+    size: "XS S M L XL",
+    category: "Костюми",
+    image: "/Costumes/Cotton Suit/1.avif",
+    images: [
+      "/Costumes/Cotton Costume/2.avif",
+      "/Costumes/Cotton Costume/3.avif",
+      "/Costumes/Cotton Costume/4.avif",
+      "/Costumes/Cotton Costume/5.avif",
+      "/Costumes/Cotton Costume/6.avif",
+      "/Costumes/Cotton Costume/7.avif",
+      "/Costumes/Cotton Costume/8.avif",
+      "/Costumes/Cotton Costume/9.avif",
+      "/Costumes/Cotton Costume/10.avif",
+      "/Costumes/Cotton Costume/11.avif",
+
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Costumes",
+        name: "Cotton Costume",
+        description: "Imitation of washed linen from cotton, sourced from a French fashion house in a very limited quantity. Fabric: 50% linen, 50% cotton.",
+        colors: ["blue", "milk"]
+      },
+      FR: {
+        category: "Costumes",
+        name: "Costume en Coton",
+        description: "Imitation de lin lavé en coton, provenant d'une maison de mode française en quantité très limitée. Tissu : 50% lin, 50% coton.",
+        colors: ["bleu", "lait"]
+      },
+      UA: {
+        category: "Костюми",
+        name: "Костюм бавовняний",
+        description: "Імітація вареного льону з бавовни з французького будинку моди в дуже обмеженій кількості. Тканина: 50% льон, 50% бавовна.",
+        colors: ["синій", "молоко"]
+      },
+      RU: {
+        category: "Костюмы",
+        name: "Хлопковый костюм",
+        description: "Имитация вареного льна из хлопка из французского дома моды в очень ограниченном количестве. Ткань: 50% лён, 50% хлопок.",
+        colors: ["синий", "молоко"]
+      }
+    }
+},
+
+
+  {
+    id: 64,
+    price: 3160,
+    isTop: false,
+    sku: "98784",
+    size: "XS S M L XL",
+    category: "Сукні",
+    image: "/Dress/Linen Mini Dress/1.avif",
+    images: [
+      "/Dress/Linen Mini Dress/2.avif",
+      "/Dress/Linen Mini Dress/3.avif",
+      "/Dress/Linen Mini Dress/4.avif",
+      "/Dress/Linen Mini Dress/5.avif",
+      "/Dress/Linen Mini Dress/6.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Linen Mini Dress",
+        description: "Imitation of washed linen from cotton, sourced from a French fashion house in a very limited quantity. Fabric: 50% linen, 50% cotton.",
+        color: "blue",
+        colors: ["blue"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe Mini en Lin",
+        description: "Imitation de lin lavé en coton, provenant d'une maison de mode française en quantité très limitée. Tissu : 50% lin, 50% coton.",
+        color: "bleu",
+        colors: ["bleu"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Сукня лляна міні",
+        description: "Імітація вареного льону з бавовни з французького будинку моди в дуже обмеженій кількості. Тканина: 50% льон, 50% бавовна.",
+        color: "синій",
+        colors: ["синій"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Льняное мини-платье",
+        description: "Имитация вареного льна из хлопка из французского дома моды в очень ограниченном количестве. Ткань: 50% лён, 50% хлопок.",
+        color: "синий",
+        colors: ["синий"]
+      }
+    }
+},
+
+  {
+    id: 63,
+    price: 2024,
+    isTop: false,
+    sku: "98784",
+    size: "XS S M L XL",
+    category: "Сорочки",
+    image: "/Shirt/Muslin Shirt/1.avif",
+    images: [
+      "/Shirt/Muslin Shirt/2.avif",
+      "/Shirt/Muslin Shirt/3.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Shirts",
+        name: "Muslin Shirt",
+        description: "Muslin shirt with adjustable drawstring sleeves. Fabric: long-fiber muslin, 100% cotton. Light and soft to the touch.",
+        color: "milk",
+        colors: ["milk"]
+      },
+      FR: {
+        category: "Chemises",
+        name: "Chemise en Mousseline",
+        description: "Chemise en mousseline avec manches à cordon de serrage réglable. Tissu : mousseline à longues fibres, 100% coton. Léger et doux au toucher.",
+        color: "lait",
+        colors: ["lait"]
+      },
+      UA: {
+        category: "Сорочки",
+        name: "Муслінова сорочка",
+        description: "Муслінова сорочка із шнурком на рукавах, який регулюється. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        color: "молоко",
+        colors: ["молоко"]
+      },
+      RU: {
+        category: "Рубашки",
+        name: "Муслиновая рубашка",
+        description: "Муслиновая рубашка с регулируемым шнурком на рукавах. Ткань: длинноволокнистый муслин, 100% хлопок. Легкий и мягкий на ощупь.",
+        color: "молоко",
+        colors: ["молоко"]
+      }
+    }
+},
+
+
+  {
+    id: 62,
+    price: 3924,
+    isTop: false,
+    sku: "98783",
+    size: "XS S M L XL",
+    category: "Костюми",
+    image: "/Costumes/Muslin Costume/1.avif",
+    images: [
+      "/Costumes/Muslin Costume/2.avif",
+     "/Costumes/Muslin Costume/3.avif",
+     "/Costumes/Muslin Costume/4.avif",
+     "/Costumes/Muslin Costume/5.avif",
+     "/Costumes/Muslin Costume/6.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Costumes",
+        name: "Muslin Costume",
+        description: "Muslin suit: shirt with adjustable drawstring sleeves + elastic waist pants. Fabric: long-fiber muslin, 100% cotton. Light and soft to the touch.",
+        color: "milk",
+        colors: ["milk"]
+      },
+      FR: {
+        category: "Costumes",
+        name: "Costume en Mousseline",
+        description: "Costume en mousseline : chemise avec manches à cordon de serrage réglable + pantalon à taille élastique. Tissu : mousseline à longues fibres, 100% coton. Léger et doux au toucher.",
+        color: "lait",
+        colors: ["lait"]
+      },
+      UA: {
+        category: "Костюми",
+        name: "Мусліновий костюм",
+        description: "Мусліновий костюм: сорочка із шнурком на рукавах, який регулюється + штани на резинці. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        color: "молоко",
+        colors: ["молоко"]
+      },
+      RU: {
+        category: "Костюмы",
+        name: "Муслиновый костюм",
+        description: "Муслиновый костюм: рубашка с регулируемым шнурком на рукавах + брюки на резинке. Ткань: длинноволокнистый муслин, 100% хлопок. Легкий и мягкий на ощупь.",
+        color: "молоко",
+        colors: ["молоко"]
+      }
+    }
+},
+
   {
     id: 61,
     price: 3300,
