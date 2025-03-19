@@ -267,10 +267,10 @@ const products = [
     sku: "98798",
     size: "XS S M L XL",
     category: "Tops",
-    image: "/Tops/Hemp Top/1.avif",
+    image: "/Top/Hemp Top/1.avif",
     images: [
-      "/Tops/Hemp Top/2.avif",
-      "/Tops/Hemp Top/3.avif",
+      "/Top/Hemp Top/2.avif",
+      "/Top/Hemp Top/3.avif",
       // "/Tops/Hemp Top/4.avif",
       // "/Tops/Hemp Top/5.avif"
     ],
