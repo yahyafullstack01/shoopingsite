@@ -1,5 +1,487 @@
 const products = [
 
+  {
+    id: 84,
+    price: 1450,
+    isTop: false,
+    sku: "98804",
+    size: "XS S M L XL",
+    category: "Pants",
+    image: "/Pants/Linen Pants/1.avif",
+    images: [
+      "/Pants/Linen Pants/2.avif",
+      "/Pants/Linen Pants/3.avif",
+      // "/Pants/Linen Pants/4.avif",
+      // "/Pants/Linen Pants/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Pants",
+        name: "Linen Pants",
+        description: "100% natural linen pants, providing unrestricted airflow to the body.",
+        colors: ["beige"]
+      },
+      FR: {
+        category: "Pants",
+        name: "Pantalon en Lin",
+        description: "Pantalon en lin 100% naturel, permettant une circulation d'air illimitée vers le corps.",
+        colors: ["beige"]
+      },
+      UA: {
+        category: "Брюки",
+        name: "Лляні брюки",
+        description: "Брюки із 100% натурального льону, вони забезпечують безмежний доступ повітря до тіла.",
+        colors: ["бежевий"]
+      },
+      RU: {
+        category: "Брюки",
+        name: "Льняные брюки",
+        description: "Брюки из 100% натурального льна, обеспечивающие неограниченный доступ воздуха к телу.",
+        colors: ["бежевый"]
+      }
+    }
+  },
+  
+  {
+    id: 83,
+    price: 1700,
+    isTop: false,
+    sku: "98803",
+    size: "XS S M L XL",
+    category: "Tops",
+    image: "/Tops/Linen Vest/1.avif",
+    images: [
+      "/Tops/Linen Vest/2.avif",
+      "/Tops/Linen Vest/3.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Tops",
+        name: "Linen Vest",
+        description: "100% natural linen vest, providing unrestricted airflow to the body.",
+        colors: ["beige"]
+      },
+      FR: {
+        category: "Tops",
+        name: "Gilet en Lin",
+        description: "Gilet en lin 100% naturel, permettant une circulation d'air illimitée vers le corps.",
+        colors: ["beige"]
+      },
+      UA: {
+        category: "Топи",
+        name: "Лляний жилет",
+        description: "Жилет із 100% натурального льону, він забезпечує безмежний доступ повітря до тіла.",
+        colors: ["бежевий"]
+      },
+      RU: {
+        category: "Топы",
+        name: "Льняной жилет",
+        description: "Жилет из 100% натурального льна, обеспечивающий неограниченный доступ воздуха к телу.",
+        colors: ["бежевый"]
+      }
+    }
+  },
+  
+  {
+    id: 82,
+    price: 3150,
+    isTop: false,
+    sku: "98802",
+    size: "XS S M L XL",
+    category: "Costumes",
+    image: "/Costumes/Linen Set/1.avif",
+    images: [
+      "/Costumes/Linen Set/2.avif",
+      "/Costumes/Linen Set/3.avif",
+      "/Costumes/Linen Set/4.avif",
+      "/Costumes/Linen Set/5.avif",
+      "/Costumes/Linen Set/6.avif"
+
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Costumes",
+        name: "Linen Set",
+        description: "100% natural linen costume, providing unrestricted airflow to the body.",
+        colors: ["beige"]
+      },
+      FR: {
+        category: "Costumes",
+        name: "Ensemble en Lin",
+        description: "Costume en lin 100% naturel, permettant une circulation d'air illimitée vers le corps.",
+        colors: ["beige"]
+      },
+      UA: {
+        category: "Костюми",
+        name: "Лляний комплект",
+        description: "Костюм із 100% натурального льону, він забезпечує безмежний доступ повітря до тіла.",
+        colors: ["бежевий"]
+      },
+      RU: {
+        category: "Костюмы",
+        name: "Льняной комплект",
+        description: "Костюм из 100% натурального льна, обеспечивающий неограниченный доступ воздуха к телу.",
+        colors: ["бежевый"]
+      }
+    }
+  },
+  
+
+  {
+    id: 81,
+    price: 1920,
+    isTop: false,
+    sku: "98801",
+    size: "XS S M L XL",
+    category: "Pants",
+    image: "/Pants/Hemp Banana Pants/1.avif",
+    images: [
+      "/Pants/Hemp Banana Pants/2.avif",
+      "/Pants/Hemp Banana Pants/3.avif",
+      // "/Pants/Hemp Banana Pants/4.avif",
+      // "/Pants/Hemp Banana Pants/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Pants",
+        name: "Hemp Banana Pants",
+        description: "Double-layer muslin, 30% hemp, 70% cotton. One of the most eco-friendly fabrics as it is grown without pesticides.",
+        colors: ["hemp"]
+      },
+      FR: {
+        category: "Pants",
+        name: "Pantalon Banane en Chanvre",
+        description: "Mousseline double couche, 30% chanvre, 70% coton. L'un des tissus les plus écologiques car il est cultivé sans pesticides.",
+        colors: ["chanvre"]
+      },
+      UA: {
+        category: "Брюки",
+        name: "Конопляні брюки банани",
+        description: "Тканина: двошаровий муслін, 30% коноплі, 70% бавовни. Це одна з найекологічніших тканин, бо виращується без пестицидів.",
+        colors: ["конопляний"]
+      },
+      RU: {
+        category: "Брюки",
+        name: "Конопляные брюки бананы",
+        description: "Ткань: двухслойный муслин, 30% конопли, 70% хлопка. Одна из самых экологичных тканей, так как выращивается без пестицидов.",
+        colors: ["конопляный"]
+      }
+    }
+  },
+  
+
+  {
+    id: 80,
+    price: 1920,
+    isTop: false,
+    sku: "98800",
+    size: "XS S M L XL",
+    category: "Pants",
+    image: "/Pants/Hemp Palazzo Pants/1.avif",
+    images: [
+      "/Pants/Hemp Palazzo Pants/2.avif",
+      "/Pants/Hemp Palazzo Pants/3.avif",
+      // "/Pants/Hemp Palazzo Pants/4.avif",
+      // "/Pants/Hemp Palazzo Pants/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Pants",
+        name: "Hemp Palazzo Pants",
+        description: "Double-layer muslin, 30% hemp, 70% cotton. One of the most eco-friendly fabrics as it is grown without pesticides.",
+        colors: ["hemp"]
+      },
+      FR: {
+        category: "Pants",
+        name: "Pantalon Palazzo en Chanvre",
+        description: "Mousseline double couche, 30% chanvre, 70% coton. L'un des tissus les plus écologiques car il est cultivé sans pesticides.",
+        colors: ["chanvre"]
+      },
+      UA: {
+        category: "Брюки",
+        name: "Конопляні брюки палаццо",
+        description: "Тканина: двошаровий муслін, 30% коноплі, 70% бавовни. Це одна з найекологічніших тканин, бо виращується без пестицидів.",
+        colors: ["конопляний"]
+      },
+      RU: {
+        category: "Брюки",
+        name: "Конопляные брюки палаццо",
+        description: "Ткань: двухслойный муслин, 30% конопли, 70% хлопка. Одна из самых экологичных тканей, так как выращивается без пестицидов.",
+        colors: ["конопляный"]
+      }
+    }
+  },
+  
+  {
+    id: 79,
+    price: 2116,
+    isTop: false,
+    sku: "98799",
+    size: "XS S M L XL",
+    category: "Shirts",
+    image: "/Shirts/Hemp Shirt/1.avif",
+    images: [
+      "/Shirts/Hemp Shirt/2.avif",
+      "/Shirts/Hemp Shirt/3.avif",
+      // "/Shirts/Hemp Shirt/4.avif",
+      // "/Shirts/Hemp Shirt/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Shirts",
+        name: "Hemp Shirt",
+        description: "Double-layer muslin, 30% hemp, 70% cotton. One of the most eco-friendly fabrics as it is grown without pesticides.",
+        colors: ["hemp"]
+      },
+      FR: {
+        category: "Shirts",
+        name: "Chemise en Chanvre",
+        description: "Mousseline double couche, 30% chanvre, 70% coton. L'un des tissus les plus écologiques car il est cultivé sans pesticides.",
+        colors: ["chanvre"]
+      },
+      UA: {
+        category: "Сорочки",
+        name: "Конопляна сорочка",
+        description: "Тканина: двошаровий муслін, 30% коноплі, 70% бавовни. Це одна з найекологічніших тканин, бо виращується без пестицидів.",
+        colors: ["конопляний"]
+      },
+      RU: {
+        category: "Рубашки",
+        name: "Конопляная рубашка",
+        description: "Ткань: двухслойный муслин, 30% конопли, 70% хлопка. Одна из самых экологичных тканей, так как выращивается без пестицидов.",
+        colors: ["конопляный"]
+      }
+    }
+  },
+  
+  {
+    id: 78,
+    price: 1380,
+    isTop: false,
+    sku: "98798",
+    size: "XS S M L XL",
+    category: "Tops",
+    image: "/Tops/Hemp Top/1.avif",
+    images: [
+      "/Tops/Hemp Top/2.avif",
+      "/Tops/Hemp Top/3.avif",
+      // "/Tops/Hemp Top/4.avif",
+      // "/Tops/Hemp Top/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Tops",
+        name: "Hemp Top",
+        description: "Double-layer muslin, 30% hemp, 70% cotton. One of the most eco-friendly fabrics as it is grown without pesticides.",
+        colors: ["hemp"]
+      },
+      FR: {
+        category: "Tops",
+        name: "Top en Chanvre",
+        description: "Mousseline double couche, 30% chanvre, 70% coton. L'un des tissus les plus écologiques car il est cultivé sans pesticides.",
+        colors: ["chanvre"]
+      },
+      UA: {
+        category: "Топи",
+        name: "Конопляний топ",
+        description: "Тканина: двошаровий муслін, 30% коноплі, 70% бавовни. Це одна з найекологічніших тканин, бо виращується без пестицидів.",
+        colors: ["конопляний"]
+      },
+      RU: {
+        category: "Топы",
+        name: "Конопляный топ",
+        description: "Ткань: двухслойный муслин, 30% конопли, 70% хлопка. Одна из самых экологичных тканей, так как выращивается без пестицидов.",
+        colors: ["конопляный"]
+      }
+    }
+  },
+  
+
+
+  {
+    id: 77,
+    price: 3300,
+    isTop: false,
+    sku: "98797",
+    size: "XS S M L XL",
+    category: "Costumes",
+    image: "/Costumes/Hemp Set/1.avif",
+    images: [
+      "/Costumes/Hemp Set/2.avif",
+      "/Costumes/Hemp Set/3.avif",
+      "/Costumes/Hemp Set/4.avif",
+      "/Costumes/Hemp Set/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Costumes",
+        name: "Hemp Set",
+        description: "Double-layer muslin, 30% hemp, 70% cotton. One of the most eco-friendly fabrics as it is grown without pesticides.",
+        colors: ["hemp"]
+      },
+      FR: {
+        category: "Costumes",
+        name: "Ensemble en Chanvre",
+        description: "Mousseline double couche, 30% chanvre, 70% coton. L'un des tissus les plus écologiques car il est cultivé sans pesticides.",
+        colors: ["chanvre"]
+      },
+      UA: {
+        category: "Костюми",
+        name: "Конопляний комплект",
+        description: "Тканина: двошаровий муслін, 30% коноплі, 70% бавовни. Це одна з найекологічніших тканин, бо виращується без пестицидів.",
+        colors: ["конопляний"]
+      },
+      RU: {
+        category: "Костюмы",
+        name: "Конопляный комплект",
+        description: "Ткань: двухслойный муслин, 30% конопли, 70% хлопка. Одна из самых экологичных тканей, так как выращивается без пестицидов.",
+        colors: ["конопляный"]
+      }
+    }
+  },
+  
+  {
+    id: 76,
+    price: 4030,
+    isTop: false,
+    sku: "98796",
+    size: "XS S M L XL",
+    category: "Costumes",
+    image: "/Costumes/Hemp Costume/1.avif",
+    images: [
+      "/Costumes/Hemp Costume/2.avif",
+      "/Costumes/Hemp Costume/3.avif",
+      "/Costumes/Hemp Costume/4.avif",
+      "/Costumes/Hemp Costume/5.avif",
+      "/Costumes/Hemp Costume/6.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Costumes",
+        name: "Hemp Costume",
+        description: "Double-layer muslin, 30% hemp, 70% cotton. One of the most eco-friendly fabrics as it is grown without pesticides.",
+        colors: ["hemp"]
+      },
+      FR: {
+        category: "Costumes",
+        name: "Costume en Chanvre",
+        description: "Mousseline double couche, 30% chanvre, 70% coton. L'un des tissus les plus écologiques car il est cultivé sans pesticides.",
+        colors: ["chanvre"]
+      },
+      UA: {
+        category: "Костюми",
+        name: "Конопляний костюм",
+        description: "Тканина: двошаровий муслін, 30% коноплі, 70% бавовни. Це одна з найекологічніших тканин, бо виращується без пестицидів.",
+        colors: ["конопляний"]
+      },
+      RU: {
+        category: "Костюмы",
+        name: "Конопляный костюм",
+        description: "Ткань: двухслойный муслин, 30% конопли, 70% хлопка. Одна из самых экологичных тканей, так как выращивается без пестицидов.",
+        colors: ["конопляный"]
+      }
+    }
+  },
+  
+
+  {
+    id: 75,
+    price: 2760,
+    isTop: false,
+    sku: "98795",
+    size: "XS S M L XL",
+    category: "Costumes",
+    image: "/Costumes/Hemp Jumpsuit/1.avif",
+    images: [
+      "/Costumes/Hemp Jumpsuit/2.avif",
+      "/Costumes/Hemp Jumpsuit/3.avif",
+      "/Costumes/Hemp Jumpsuit/4.avif",
+      "/Costumes/Hemp Jumpsuit/5.avif",
+      "/Costumes/Hemp Jumpsuit/6.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Costumes",
+        name: "Hemp Jumpsuit",
+        description: "Double-layer muslin, 30% hemp, 70% cotton. One of the most eco-friendly fabrics as it is grown without pesticides.",
+        colors: ["hemp"]
+      },
+      FR: {
+        category: "Costumes",
+        name: "Combinaison en Chanvre",
+        description: "Mousseline double couche, 30% chanvre, 70% coton. L'un des tissus les plus écologiques car il est cultivé sans pesticides.",
+        colors: ["chanvre"]
+      },
+      UA: {
+        category: "Костюми",
+        name: "Конопляний комбінезон",
+        description: "Тканина: двошаровий муслін, 30% коноплі, 70% бавовни. Це одна з найекологічніших тканин, бо виращується без пестицидів.",
+        colors: ["конопляний"]
+      },
+      RU: {
+        category: "Костюмы",
+        name: "Конопляный комбинезон",
+        description: "Ткань: двухслойный муслин, 30% конопли, 70% хлопка. Одна из самых экологичных тканей, так как выращивается без пестицидов.",
+        colors: ["конопляный"]
+      }
+    }
+},
+
+  {
+    id: 74,
+    price: 1900,
+    isTop: false,
+    sku: "98794",
+    size: "XS S M L XL",
+    category: "Брюки",
+    image: "/Pants/Muslin Palazzo Pants/1.avif",
+    images: [
+      "/Pants/Muslin Palazzo Pants/2.avif",
+      "/Pants/Muslin Palazzo Pants/3.avif",
+      "/Pants/Muslin Palazzo Pants/4.avif",
+      "/Pants/Muslin Palazzo Pants/5.avif",
+      "/Pants/Muslin Palazzo Pants/6.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Pants",
+        name: "Muslin Palazzo Pants",
+        description: "Long-fiber muslin made from 100% cotton. Light and soft to the touch.",
+        colors: ["black", "milk"]
+      },
+      FR: {
+        category: "Pantalons",
+        name: "Pantalon Palazzo en Mousseline",
+        description: "Mousseline à longues fibres 100% coton. Léger et doux au toucher.",
+        colors: ["noir", "lait"]
+      },
+      UA: {
+        category: "Брюки",
+        name: "Муслінові брюки палаццо",
+        description: "Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        colors: ["чорний", "молоко"]
+      },
+      RU: {
+        category: "Брюки",
+        name: "Муслиновые брюки палаццо",
+        description: "Ткань: длинноволокнистый муслин из 100% хлопка. Легкий и мягкий на ощупь.",
+        colors: ["черный", "молоко"]
+      }
+    }
+},
+
+  
 
   {
     id: 73,
