@@ -50,10 +50,10 @@ const products = [
     sku: "98803",
     size: "XS S M L XL",
     category: "Tops",
-    image: "/Tops/Linen Vest/1.avif",
+    image: "/Top/Linen Vest/1.avif",
     images: [
-      "/Tops/Linen Vest/2.avif",
-      "/Tops/Linen Vest/3.avif",
+      "/Top/Linen Vest/2.avif",
+      "/Top/Linen Vest/3.avif",
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
     translations: {
