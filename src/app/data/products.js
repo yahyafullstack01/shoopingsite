@@ -716,7 +716,7 @@ const products = [
   {
     id: 68,
     price: 3920,
-    isTop: false,
+    isTop: true,
     sku: "98788",
     size: "XS S M L XL",
     category: "Сукні",
@@ -851,7 +851,7 @@ const products = [
   {
     id: 65,
     price: 4420,
-    isTop: false,
+    isTop: true,
     sku: "98785",
     size: "XS S M L XL",
     category: "Костюми",
@@ -1619,7 +1619,7 @@ const products = [
   {
     id: 49,
     price: 3170,
-    isTop: false,
+    isTop: true,
     sku: "98770",
     size: "XS S M L XL",
     category: "Dresses",
@@ -1725,7 +1725,7 @@ const products = [
   {
     id: 47,
     price: 2855,
-    isTop: false,
+    isTop: true,
     sku: "98768",
     size: "XS S M L XL",
     category: "Dresses",
@@ -1904,7 +1904,7 @@ const products = [
   {
     id: 44,
     price: 3920,
-    isTop: false,
+    isTop: true,
     sku: "98765",
     size: "XS S M L XL",
     category: "Dresses",
