@@ -1147,6 +1147,11 @@ const products = [
     images: [
       "/Dress/Nature Dress/2.avif",
       "/Dress/Nature Dress/3.avif",
+      {
+        type: "video",
+        src: "/Dress/Nature Dress/IMG_6723.MOV",
+        poster: "/Dress/Nature Dress/1.avif"
+      },
       "/Dress/Nature Dress/4.avif",
       "/Dress/Nature Dress/5.avif",
       "/Dress/Nature Dress/6.avif",
@@ -1156,6 +1161,7 @@ const products = [
       "/Dress/Nature Dress/10.avif",
       "/Dress/Nature Dress/11.avif",
       "/Dress/Nature Dress/12.avif",
+     
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
     translations: {
@@ -2070,10 +2076,18 @@ const products = [
     size: "XS S M L XL",
     category: "Dresses",
     image: "/Dress/Woolen trapeze dress/1.avif",
-    images: ["/Dress/Woolen trapeze dress/2.avif", "/Dress/Woolen trapeze dress/3.avif",
+    images: [
+    
+      "/Dress/Woolen trapeze dress/2.avif", "/Dress/Woolen trapeze dress/3.avif",
+      {
+        type: "video",
+        src: "/Dress/Woolen trapeze dress/IMG_6176.MOV",
+        poster: "/Dress/Woolen trapeze dress/1.avif"
+      },
       "/Dress/Woolen trapeze dress/4.avif",
       "/Dress/Woolen trapeze dress/5.avif",
       "/Dress/Woolen trapeze dress/6.avif",
+    
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
     translations: {

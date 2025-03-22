@@ -7,7 +7,11 @@ export const getInitialProductData = (searchParams) => {
   name: searchParams.get("productName") || "Unknown Product", // Default: "Unknown Product"
   price: searchParams.get("productPrice") || "0", // Default: "0"
   description: searchParams.get("productDescription") || "No description available.", // Default: No description
-  image: productImage && productImage.trim() !== "" ? productImage : "/hoom/IMG_1129.avif", // Default image
+  image: productImage && !productImage.endsWith(".MOV")
+  ? productImage
+  : "/hoom/IMG_1129.avif",
+  video: searchParams.get("productVideo") || null,
+
   color: searchParams.get("productColor") || "Not specified", // Default: Not specified
   size: searchParams.get("productSize") || "Not specified", // Default: Not specified
   quantity: searchParams.get("productQuantity") || 1, // Default value: 1
