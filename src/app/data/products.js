@@ -2081,7 +2081,7 @@ const products = [
       "/Dress/Woolen trapeze dress/2.avif", "/Dress/Woolen trapeze dress/3.avif",
       {
         type: "video",
-        src: "/Dress/Woolen trapeze dress/IMG_6176.MOV",
+        src: "/Dress/Woolen trapeze dress/IMG_6176.mp4",
         poster: "/Dress/Woolen trapeze dress/1.avif"
       },
       "/Dress/Woolen trapeze dress/4.avif",
