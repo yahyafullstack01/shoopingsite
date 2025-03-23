@@ -38,9 +38,9 @@ export default function Footer() {
               <FaInstagram className="w-6 h-6 text-white hover:text-gray-400" />
             </a>
           
-            <a href="https://telegram.me/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Join us on Telegram">
+           {/*<a href="https://telegram.me/yourusername" target="_blank" rel="noopener noreferrer" aria-label="Join us on Telegram">
               <FaTelegramPlane className="w-6 h-6 text-white hover:text-gray-400" />
-            </a>
+            </a>*/}
           </div>
         </div>
       </div>
