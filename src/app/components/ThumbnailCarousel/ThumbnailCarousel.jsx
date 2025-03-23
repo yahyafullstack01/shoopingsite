@@ -73,10 +73,8 @@ const ThumbnailCarousel = ({ images = [], onImageSelect }) => {
                       onImageSelect(item);
                     }}
                   >
-                    <source
-                      src={src}
-                      type={src.endsWith(".mov") ? "video/quicktime" : "video/mp4"}
-                    />
+                    <source src={src} type="video/mp4" />
+
                     Your browser does not support the video tag.
                   </video>
                 ) : (

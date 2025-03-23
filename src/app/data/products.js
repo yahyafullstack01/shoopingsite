@@ -1149,7 +1149,7 @@ const products = [
       "/Dress/Nature Dress/3.avif",
       {
         type: "video",
-        src: "/Dress/Nature Dress/IMG_6723.MOV",
+        src: "/Dress/Nature Dress/IMG_6723.mp4",
         poster: "/Dress/Nature Dress/1.avif"
       },
       "/Dress/Nature Dress/4.avif",
