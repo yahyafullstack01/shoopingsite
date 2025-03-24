@@ -63,11 +63,11 @@ export default function TopProducts() {
           >
             <FaChevronLeft />
           </div>
-
           <div
-            className="flex overflow-x-auto gap-4 px-4 justify-center"
-            style={{ height: "300px" }}
-          >
+  className="flex overflow-hidden gap-4 px-4 justify-center"
+  style={{ height: "300px" }}
+>
+
             {displayedImages.map((imageIndex, idx) => {
   const product = topProducts[imageIndex];
 

@@ -81,7 +81,8 @@ export default function FollowUs() {
 
         {/* Карусель */}
         <div
-          className="flex overflow-x-auto w-full px-4 sm:gap-6 md:gap-8"
+        className="flex overflow-hidden w-full px-4 sm:gap-6 md:gap-8"
+        
           style={{
             height: "300px",
             maxWidth: "100%",
