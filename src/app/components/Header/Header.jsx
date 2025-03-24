@@ -135,7 +135,7 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
       onMouseLeave={() => setIsCategoriesOpen(false)}
     >
       {categories.map((category) => (
-        <li key={category.path}>
+        <li key={category.path} role="menuitem">
           <button
             onClick={() => {
               handleCategoryClick(category.path);
@@ -237,7 +237,7 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
     </Link>
   </li>
   {/* КНОПКА КАТАЛОГУ */}
-  <li>
+  <li role="menuitem">
                 <button
                   onClick={() => setIsCategoriesOpen(!isCategoriesOpen)}
                   className="flex items-center justify-between w-full text-left"
@@ -250,7 +250,7 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
                 {isCategoriesOpen && (
                   <ul className="mt-2 bg-gray-100 dark:bg-gray-800 rounded-md shadow-md p-2">
                     {categories.map((category) => (
-                      <li key={category.path}>
+                      <li key={category.path} role="menuitem">
                         <button
                           onClick={() => handleCategoryClick(category.path)}
                           className="block w-full text-left px-4 py-2 text-sm hover:bg-gray-300 dark:hover:bg-gray-700 rounded-md"
