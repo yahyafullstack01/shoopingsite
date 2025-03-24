@@ -93,7 +93,7 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
       </Link>
     </li>
     <li 
-  className="relative flex items-center group"
+  className="relative flex items-center group"  role="none"
   onMouseEnter={() => setIsCategoriesOpen(true)}
   onMouseLeave={(e) => {
     const relatedTarget = e.relatedTarget;
