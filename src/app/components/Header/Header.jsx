@@ -93,7 +93,7 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
       </Link>
     </li>
     <li 
-  className="relative flex items-center group"  role="none"
+  className="relative flex items-center group" role="menuitem"
   onMouseEnter={() => setIsCategoriesOpen(true)}
   onMouseLeave={(e) => {
     const relatedTarget = e.relatedTarget;
@@ -109,6 +109,8 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
     onClick={goToCatalog}
     className="flex-grow text-left"
     aria-label="Go to Catalogues"
+    role="menuitem"
+
   >
     {menuItems[1]}
   </button>
@@ -120,7 +122,11 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
       setIsCategoriesOpen((prev) => !prev);
     }}
     className="ml-2 p-1"
+    role="menuitem"
     aria-label="Toggle categories"
+aria-haspopup="true"
+aria-expanded={isCategoriesOpen}
+
   >
     <FaChevronDown
       className={`transition-transform ${isCategoriesOpen ? "rotate-180" : ""}`}
@@ -133,6 +139,8 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
       className="absolute left-0 top-full mt-2 bg-white dark:bg-gray-800 rounded-md shadow-md p-2 w-48 z-50"
       onMouseEnter={() => setIsCategoriesOpen(true)}
       onMouseLeave={() => setIsCategoriesOpen(false)}
+      role="menu"
+
     >
       {categories.map((category) => (
         <li key={category.path} role="menuitem">
@@ -241,6 +249,9 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
                 <button
                   onClick={() => setIsCategoriesOpen(!isCategoriesOpen)}
                   className="flex items-center justify-between w-full text-left"
+                  aria-haspopup="true"
+  aria-expanded={isCategoriesOpen}
+  aria-label="Toggle categories"
                 >
                   {menuItems[1]}
                   <FaChevronDown className={`ml-2 transition-transform ${isCategoriesOpen ? "rotate-180" : ""}`} />
@@ -248,7 +259,7 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
 
                 {/* ВИПАДАЮЧИЙ СПИСОК КАТЕГОРІЙ */}
                 {isCategoriesOpen && (
-                  <ul className="mt-2 bg-gray-100 dark:bg-gray-800 rounded-md shadow-md p-2">
+                  <ul role="menu" className="mt-2 bg-gray-100 dark:bg-gray-800 rounded-md shadow-md p-2">
                     {categories.map((category) => (
                       <li key={category.path} role="menuitem">
                         <button
