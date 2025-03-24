@@ -10,7 +10,7 @@ const offersJsonLd = (offers) => ({
       image: offer.image
         ? {
             "@type": "ImageObject",
-            url: `https://shoopingsite-my9e.vercel.app?isSpecialOfferId=${offer.image}`,
+            url: `https://www.latore.shop?isSpecialOfferId=${offer.image}`,
             width: 1200,
             height: 628,
             caption: offer.translations?.EN?.name || "Unnamed Product",

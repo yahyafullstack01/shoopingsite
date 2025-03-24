@@ -4,10 +4,10 @@ const generateConditionsJsonLd = () => {
     "@type": "WebPage",
     name: "Умови користування", // Назва сторінки
     description: "Перегляньте наші умови користування та політику конфіденційності.", // Опис сторінки
-    url: "https://shoopingsite-my9e.vercel.app/conditions", // Коректний URL
+    url: "https://www.latore.shop/conditions", // Коректний URL
     image: {
       "@type": "ImageObject",
-      url: "https://shoopingsite-my9e.vercel.app/logo-social.jpg", // Зображення для сторінки
+      url: "https://www.latore.shop/logo-social.jpg", // Зображення для сторінки
       width: 1200,
       height: 628,
       caption: "Conditions Page Image", // Альтернативний текст
