@@ -1,5 +1,379 @@
 const products = [
-
+  {
+    id: 92,
+    price: 1950,
+    isTop: false,
+    sku: "98812",
+    size: "XS S M L XL",
+    category: "Pants",
+    image: "/Pants/Classic Pants/1.avif",
+    images: [
+      "/Pants/Classic Pants/2.avif",
+      "/Pants/Classic Pants/3.avif",
+      "/Pants/Classic Pants/4.avif",
+      "/Pants/Classic Pants/5.avif",
+      "/Pants/Classic Pants/6.avif",
+      "/Pants/Classic Pants/7.avif",
+      "/Pants/Classic Pants/8.avif",
+      "/Pants/Classic Pants/9.avif",
+      "/Pants/Classic Pants/10.avif",
+      "/Pants/Classic Pants/11.avif",
+      "/Pants/Classic Pants/12.avif",
+      "/Pants/Classic Pants/13.avif",
+      "/Pants/Classic Pants/14.avif",
+      "/Pants/Classic Pants/15.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Pants",
+        name: "Classic Pants",
+        description: "Classic cut pants with a high waist and two pockets.\nFabric: suit fabric (75% viscose, 25% polyester).",
+        colors: ["white", "beige", "black"]
+      },
+      FR: {
+        category: "Pantalons",
+        name: "Pantalon Classique",
+        description: "Pantalon coupe classique avec taille haute et deux poches.\nTissu : tissu de costume (75% viscose, 25% polyester).",
+        colors: ["blanc", "beige", "noir"]
+      },
+      UA: {
+        category: "Брюки",
+        name: "Класичні брюки",
+        description: "Класичний фасон брюк із високою посадкою та двома кишенями.\nТканина: костюмна тканина (75% віскоза, 25% поліестер).",
+        colors: ["білий", "бежевий", "чорний"]
+      },
+      RU: {
+        category: "Брюки",
+        name: "Классические брюки",
+        description: "Классический фасон брюк с высокой посадкой и двумя карманами.\nТкань: костюмная ткань (75% вискоза, 25% полиэстер).",
+        colors: ["белый", "бежевый", "чёрный"]
+      }
+    }
+  },  
+  {
+    id: 91,
+    price: 1950,
+    isTop: false,
+    sku: "98811",
+    size: "XS S M L XL",
+    category: "Pants",
+    image: "/Pants/Wrap Palazzo Pants/1.avif",
+    images: [
+      "/Pants/Wrap Palazzo Pants/2.avif",
+      "/Pants/Wrap Palazzo Pants/3.avif",
+      "/Pants/Wrap Palazzo Pants/4.avif",
+      "/Pants/Wrap Palazzo Pants/5.avif",
+      "/Pants/Wrap Palazzo Pants/6.avif",
+      "/Pants/Wrap Palazzo Pants/7.avif",
+      "/Pants/Wrap Palazzo Pants/8.avif",
+      "/Pants/Wrap Palazzo Pants/9.avif",
+      "/Pants/Wrap Palazzo Pants/10.avif",
+      "/Pants/Wrap Palazzo Pants/11.avif",
+      "/Pants/Wrap Palazzo Pants/12.avif",
+      "/Pants/Wrap Palazzo Pants/13.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Pants",
+        name: "Wrap Palazzo Pants",
+        description: "Wrap-style high-waisted palazzo pants with two pockets.\nFabric: suit fabric (75% viscose, 25% polyester).",
+        colors: ["denim", "caramel", "olive"]
+      },
+      FR: {
+        category: "Pantalons",
+        name: "Pantalon Palazzo Croisé",
+        description: "Pantalon palazzo taille haute croisé avec deux poches.\nTissu : tissu de costume (75% viscose, 25% polyester).",
+        colors: ["denim", "caramel", "olive"]
+      },
+      UA: {
+        category: "Брюки",
+        name: "Брюки на запах",
+        description: "Брюки палаццо на запах із високою посадкою та двома кишенями.\nТканина: костюмна тканина (75% віскоза, 25% поліестер).",
+        colors: ["джинс", "карамель", "оливка"]
+      },
+      RU: {
+        category: "Брюки",
+        name: "Брюки на запах",
+        description: "Брюки палаццо на запах с высокой посадкой и двумя карманами.\nТкань: костюмная ткань (75% вискоза, 25% полиэстер).",
+        colors: ["джинс", "карамель", "оливка"]
+      }
+    }
+  },  
+  {
+    id: 90,
+    price: 1950,
+    isTop: false,
+    sku: "98810",
+    size: "XS S M L XL",
+    category: "Pants",
+    image: "/Pants/Palazzo Pants/1.avif",
+    images: [
+      "/Pants/Palazzo Pants/2.avif",
+      "/Pants/Palazzo Pants/3.avif",
+      "/Pants/Palazzo Pants/4.avif",
+      "/Pants/Palazzo Pants/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Pants",
+        name: "Palazzo Pants",
+        description: "High-waisted palazzo pants with two pockets.\nFabric: suit fabric (75% viscose, 25% polyester).",
+        colors: ["black"]
+      },
+      FR: {
+        category: "Pantalons",
+        name: "Pantalon Palazzo",
+        description: "Pantalon palazzo taille haute avec deux poches.\nTissu : tissu de costume (75% viscose, 25% polyester).",
+        colors: ["noir"]
+      },
+      UA: {
+        category: "Брюки",
+        name: "Брюки палаццо",
+        description: "Брюки палаццо із високою посадкою та двома кишенями.\nТканина: костюмна тканина (75% віскоза, 25% поліестер).",
+        colors: ["чорний"]
+      },
+      RU: {
+        category: "Брюки",
+        name: "Брюки палаццо",
+        description: "Брюки палаццо с высокой посадкой и двумя карманами.\nТкань: костюмная ткань (75% вискоза, 25% полиэстер).",
+        colors: ["чёрный"]
+      }
+    }
+  },  
+  {
+    id: 89,
+    price: 1375,
+    isTop: false,
+    sku: "98809",
+    size: "XS S M L XL",
+    category: "Sweaters",
+    image: "/Sweaters/Knit Vest/1.avif",
+    images: [
+      "/Sweaters/Knit Vest/2.avif",
+      "/Sweaters/Knit Vest/3.avif",
+      "/Sweaters/Knit Vest/4.avif",
+      "/Sweaters/Knit Vest/5.avif",
+      "/Sweaters/Knit Vest/6.avif",
+      "/Sweaters/Knit Vest/7.avif",
+      "/Sweaters/Knit Vest/8.avif",
+      "/Sweaters/Knit Vest/9.avif",
+      "/Sweaters/Knit Vest/10.avif",
+      "/Sweaters/Knit Vest/11.avif",
+      "/Sweaters/Knit Vest/12.avif",
+      "/Sweaters/Knit Vest/13.avif",
+      "/Sweaters/Knit Vest/14.avif",
+      "/Sweaters/Knit Vest/15.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Sweaters",
+        name: "Knit Vest",
+        description: "Oversized wool vest with a V-neck.\nFabric: knitwear (60% wool, 20% acrylic, 10% viscose, 10% elastane).",
+        colors: ["beige", "white", "black"]
+      },
+      FR: {
+        category: "Pulls",
+        name: "Gilet Tricoté",
+        description: "Gilet en laine oversize avec col en V.\nTissu : tricot (60% laine, 20% acrylique, 10% viscose, 10% élasthanne).",
+        colors: ["beige", "blanc", "noir"]
+      },
+      UA: {
+        category: "Светри",
+        name: "Трикотажний жилет",
+        description: "Oversize вовняний жилет із V-вирізом.\nТканина: трикотаж (60% вовна, 20% акрил, 10% віскоза, 10% еластан).",
+        colors: ["бежевий", "білий", "чорний"]
+      },
+      RU: {
+        category: "Свитера",
+        name: "Трикотажный жилет",
+        description: "Oversize шерстяной жилет с V-вырезом.\nТкань: трикотаж (60% шерсть, 20% акрил, 10% вискоза, 10% эластан).",
+        colors: ["бежевый", "белый", "чёрный"]
+      }
+    }
+  },  
+  {
+    id: 88,
+    price: 1500,
+    isTop: false,
+    sku: "98808",
+    size: "XS S M L XL",
+    category: "Sweaters",
+    image: "/Sweaters/Off-Shoulder Top/1.avif",
+    images: [
+      "/Sweaters/Off-Shoulder Top/2.avif",
+      "/Sweaters/Off-Shoulder Top/3.avif",
+      "/Sweaters/Off-Shoulder Top/4.avif",
+      "/Sweaters/Off-Shoulder Top/5.avif",
+      "/Sweaters/Off-Shoulder Top/6.avif",
+      "/Sweaters/Off-Shoulder Top/7.avif",
+      "/Sweaters/Off-Shoulder Top/8.avif",
+      "/Sweaters/Off-Shoulder Top/9.avif",
+      "/Sweaters/Off-Shoulder Top/10.avif",
+      "/Sweaters/Off-Shoulder Top/11.avif",
+      "/Sweaters/Off-Shoulder Top/12.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Sweaters",
+        name: "Off-Shoulder Top",
+        description: "Off-shoulder top with sleeve slits.\nFabric: 50% cashmere, 28% polyester, 28% nylon.",
+        colors: ["black", "gray", "milk"]
+      },
+      FR: {
+        category: "Pulls",
+        name: "Top Épaules Dénudées",
+        description: "Top à épaules dénudées avec fentes sur les manches.\nTissu : 50% cachemire, 28% polyester, 28% nylon.",
+        colors: ["noir", "gris", "lait"]
+      },
+      UA: {
+        category: "Светри",
+        name: "Топ із відкритими плечима",
+        description: "Топ із відкритими плечима та розрізами на рукавах.\nТканина: 50% кашемір, 28% поліестер, 28% нейлон.",
+        colors: ["чорний", "сірий", "молоко"]
+      },
+      RU: {
+        category: "Свитера",
+        name: "Топ с открытыми плечами",
+        description: "Топ с открытыми плечами и разрезами на рукавах.\nТкань: 50% кашемир, 28% полиэстер, 28% нейлон.",
+        colors: ["чёрный", "серый", "молоко"]
+      }
+    }
+  },  
+  {
+    id: 87,
+    price: 1800,
+    isTop: false,
+    sku: "98807",
+    size: "XS S M L XL",
+    category: "Sweaters",
+    image: "/Sweaters/Off-Shoulder Sweater/1.avif",
+    images: [
+      "/Sweaters/Off-Shoulder Sweater/2.avif",
+      //"/Sweaters/Off-Shoulder Sweater/3.avif",
+      // "/Sweaters/Off-Shoulder Sweater/4.avif",
+      // "/Sweaters/Off-Shoulder Sweater/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Sweaters",
+        name: "Off-Shoulder Sweater",
+        description: "Off-shoulder sweater with asymmetry.\nFabric: 50% cashmere, 28% polyester, 28% nylon.",
+        colors: ["milk"]
+      },
+      FR: {
+        category: "Pulls",
+        name: "Pull Épaules Dénudées",
+        description: "Pull à épaules dénudées avec asymétrie.\nTissu : 50% cachemire, 28% polyester, 28% nylon.",
+        colors: ["lait"]
+      },
+      UA: {
+        category: "Светри",
+        name: "Джемпер із відкритими плечима",
+        description: "Джемпер із відкритими плечима та асиметрією.\nТканина: 50% кашемір, 28% поліестер, 28% нейлон.",
+        colors: ["молоко"]
+      },
+      RU: {
+        category: "Свитера",
+        name: "Джемпер с открытыми плечами",
+        description: "Джемпер с открытыми плечами и асимметрией.\nТкань: 50% кашемир, 28% полиэстер, 28% нейлон.",
+        colors: ["молоко"]
+      }
+    }
+  },  
+  {
+    id: 86,
+    price: 1825,
+    isTop: false,
+    sku: "98806",
+    size: "XS S M L XL",
+    category: "Tops",
+    image: "/Top/Piped Top/1.avif",
+    images: [
+      "/Top/Piped Top/2.avif",
+      "/Top/Piped Top/3.avif",
+       "/Tops/Piped Top/4.avif",
+       "/Tops/Piped Top/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Tops",
+        name: "Piped Top",
+        description: "Long-staple 100% cotton muslin. A lightweight and soft-touch fabric.",
+        colors: ["milk"]
+      },
+      FR: {
+        category: "Tops",
+        name: "Top à Passepoil",
+        description: "Mousseline de coton 100% à longues fibres. Un tissu léger et doux au toucher.",
+        colors: ["lait"]
+      },
+      UA: {
+        category: "Топи",
+        name: "Топ з кантом",
+        description: "Довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        colors: ["молоко"]
+      },
+      RU: {
+        category: "Топы",
+        name: "Топ с кантом",
+        description: "Долговолокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь ткань.",
+        colors: ["молоко"]
+      }
+    }
+  },  
+  {
+    id: 85,
+    price: 2280,
+    isTop: false,
+    sku: "98805",
+    size: "XS S M L XL",
+    category: "Shirts",
+    image: "/Shirts/Jasmine Shirt/1.avif",
+    images: [
+      "/Shirts/Jasmine Shirt/2.avif",
+      "/Shirts/Jasmine Shirt/3.avif",
+      "/Shirts/Jasmine Shirt/4.avif",
+       "/Shirts/Jasmine Shirt/5.avif",
+       "/Shirts/Jasmine Shirt/6.avif",
+       "/Shirts/Jasmine Shirt/7.avif",
+       "/Shirts/Jasmine Shirt/8.avif",
+       "/Shirts/Jasmine Shirt/9.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Shirts",
+        name: "Jasmine Shirt",
+        description: "Long-staple 100% cotton muslin. A lightweight and soft-touch fabric.",
+        colors: ["milk", "mint"]
+      },
+      FR: {
+        category: "Chemises",
+        name: "Chemise Jasmine",
+        description: "Mousseline de coton 100% à longues fibres. Un tissu léger et doux au toucher.",
+        colors: ["lait", "menthe"]
+      },
+      UA: {
+        category: "Сорочки",
+        name: "Сорочка «Jasmine»",
+        description: "Довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        colors: ["молоко", "м’ята"]
+      },
+      RU: {
+        category: "Сорочки",
+        name: "Рубашка «Jasmine»",
+        description: "Долговолокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь ткань.",
+        colors: ["молоко", "мята"]
+      }
+    }
+  },  
   {
     id: 84,
     price: 1450,

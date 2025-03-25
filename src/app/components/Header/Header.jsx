@@ -8,7 +8,7 @@ import { FaMoon, FaSun, FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
 import { useHeaderState } from "../../hooks/useHeader"; 
 import { useLanguage } from "../../Functions/useLanguage"; 
 import { useRouter } from "next/navigation"
-import path from "path";
+//import path from "path";
 const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
   const { translateList, language, setLanguage } = useLanguage();
   const menuItems = translateList("home", "header");
