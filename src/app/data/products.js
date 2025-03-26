@@ -541,13 +541,13 @@ const products = [
     isTop: false,
     sku: "98807",
     size: "XS S M L XL",
-    category: "Sweaters",
-    image: "/Sweaters/Off-Shoulder Sweater/1.avif",
+    category: "Tops",
+    image: "/Sweaters/Off-Shoulder Top/1.avif",
     images: [
-      "/Sweaters/Off-Shoulder Sweater/2.avif",
-      "/Sweaters/Off-Shoulder Sweater/3.avif",
-      "/Sweaters/Off-Shoulder Sweater/4.avif",
-     "/Sweaters/Off-Shoulder Sweater/5.avif"
+      "/Sweaters/Off-Shoulder Top/2.avif",
+      "/Sweaters/Off-Shoulder Top/3.avif",
+      "/Sweaters/Off-Shoulder Top/4.avif",
+     "/Sweaters/Off-Shoulder Top/5.avif"
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
     translations: {
