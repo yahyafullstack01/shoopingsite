@@ -1,5 +1,52 @@
 const products = [
   {
+    id: 97,
+    price: 2550,
+    isTop: false,
+    sku: "98817",
+    size: "XS S M L XL",
+    category: "Skirts",
+    image: "/Skirts/Denim Skirt/1.avif",
+    images: [
+      "/Skirts/Denim Skirt/2.avif",
+      "/Skirts/Denim Skirt/3.avif",
+       "/Skirts/Denim Skirt/4.avif",
+      "/Skirts/Denim Skirt/5.avif",
+      "/Skirts/Denim Skirt/6.avif",
+      "/Skirts/Denim Skirt/7.avif",
+      "/Skirts/Denim Skirt/8.avif",
+      "/Skirts/Denim Skirt/9.avif",
+      "/Skirts/Denim Skirt/10.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Skirts",
+        name: "Denim Skirt",
+        description: "Denim skirt with asymmetry and pleating.\nFabric: denim cotton.",
+        colors: ["light blue", "navy"]
+      },
+      FR: {
+        category: "Jupes",
+        name: "Jupe en Jean",
+        description: "Jupe en jean avec asymétrie et plis.\nTissu : jean coton.",
+        colors: ["bleu clair", "bleu marine"]
+      },
+      UA: {
+        category: "Спідниці",
+        name: "Джинс спідниця",
+        description: "Джинсова спідниця з асиметрією та плісеруванням.\nТканина: джинс-котон.",
+        colors: ["блакитний", "синій"]
+      },
+      RU: {
+        category: "Юбки",
+        name: "Джинс юбка",
+        description: "Джинсовая юбка с асимметрией и плиссировкой.\nТкань: джинс-коттон.",
+        colors: ["голубой", "синий"]
+      }
+    }
+  },  
+  {
     id: 96,
     price: 1670,
     isTop: false,
