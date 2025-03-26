@@ -2274,7 +2274,7 @@ const products = [
     images: [
       "/Dress/Ruffle Dress/2.avif",
       "/Dress/Ruffle Dress/3.avif",
-      "/Dress/Ruffle Dress/4.avif",
+      // "/Dress/Ruffle Dress/4.avif",
       "/Dress/Ruffle Dress/5.avif",
       "/Dress/Ruffle Dress/6.avif",
       "/Dress/Ruffle Dress/7.avif",
