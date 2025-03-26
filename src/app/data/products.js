@@ -1,5 +1,152 @@
 const products = [
   {
+    id: 101,
+    price: 1850,
+    isTop: false,
+    sku: "98821",
+    size: "XS S M L XL",
+    category: "Skirts",
+    image: "/Skirts/Short Leather Skirt/1.avif",
+    images: [
+      "/Skirts/Short Leather Skirt/2.avif",
+      "/Skirts/Short Leather Skirt/3.avif",
+      "/Skirts/Short Leather Skirt/4.avif",
+      "/Skirts/Short Leather Skirt/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Skirts",
+        name: "Short Leather Skirt",
+        description: "Shortened midi-length skirt with a high waist.\nFabric: high-quality eco-leather with suede base (stretchy, doesn’t crack).",
+        colors: ["caramel"]
+      },
+      FR: {
+        category: "Jupes",
+        name: "Jupe Courte en Cuir",
+        description: "Jupe courte longueur midi avec taille haute.\nTissu : simili cuir de haute qualité avec base en daim (extensible, ne se fissure pas).",
+        colors: ["caramel"]
+      },
+      UA: {
+        category: "Спідниці",
+        name: "Шкіряна спідниця вкорочена",
+        description: "Спідниця вкорочена міді довжини на високій посадці.\nТканина: якісна екошкіра на замшевій основі (стрейчева, не тріскається).",
+        colors: ["карамель"]
+      },
+      RU: {
+        category: "Юбки",
+        name: "Кожаная юбка укороченная",
+        description: "Юбка укороченная миди длины на высокой посадке.\nТкань: качественная экокожа на замшевой основе (стрейчевая, не трескающаяся).",
+        colors: ["карамель"]
+      }
+    }
+  },  
+  {
+    id: 100,
+    price: 2000,
+    isTop: false,
+    sku: "98820",
+    size: "XS S M L XL",
+    category: "Shirts",
+    image: "/Shirts/Batiste Shirt/1.avif",
+    images: [
+      "/Shirts/Batiste Shirt/2.avif",
+      {
+        type: "video",
+        src: "/Shirts/Batiste Shirt/IMG_7575.mp4",
+        poster: "/Shirts/Batiste Shirt/1.avif"
+      },
+      "/Shirts/Batiste Shirt/3.avif",
+      "/Shirts/Batiste Shirt/4.avif",
+      "/Shirts/Batiste Shirt/5.avif",
+      "/Shirts/Batiste Shirt/6.avif",
+      "/Shirts/Batiste Shirt/7.avif",
+      "/Shirts/Batiste Shirt/8.avif",
+      "/Shirts/Batiste Shirt/9.avif",
+      "/Shirts/Batiste Shirt/10.avif",
+      "/Shirts/Batiste Shirt/11.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Shirts",
+        name: "Batiste Shirt",
+        description: "Shirt made of natural fabric, decorated with lace. Features puff sleeves.\nFabric: natural batiste.",
+        colors: ["white", "light blue"]
+      },
+      FR: {
+        category: "Chemises",
+        name: "Chemise en Batiste",
+        description: "Chemise en tissu naturel ornée de dentelle. Manches bouffantes.\nTissu : batiste naturel.",
+        colors: ["blanc", "bleu clair"]
+      },
+      UA: {
+        category: "Сорочки",
+        name: "Батистова сорочка",
+        description: "Сорочка із натуральної тканини, яка оздоблена мереживом. Має рукава ліхтарики.\nТканина: натуральна тканина батист.",
+        colors: ["білий", "блакитний"]
+      },
+      RU: {
+        category: "Рубашки",
+        name: "Батистовая рубашка",
+        description: "Рубашка из натуральной ткани, украшенная кружевом. Имеет рукава-фонарики.\nТкань: натуральная ткань батист.",
+        colors: ["белый", "голубой"]
+      }
+    }
+  },  
+ {
+    id: 99,
+    price: 2000,
+    isTop: false,
+    sku: "98819",
+    size: "XS S M L XL",
+    category: "Shirts",
+    image: "/Shirts/Batiste Shirt 2/1.avif",
+    images: [
+      "/Shirts/Batiste Shirt 2/2.avif",
+      {
+        type: "video",
+        src: "/Shirts/Batiste Shirt 2/IMG_9010.mp4",
+        poster: "/Shirts/Batiste Shirt 2/1.avif"
+      },
+      "/Shirts/Batiste Shirt 2/3.avif",
+       "/Shirts/Batiste Shirt 2/4.avif",
+      "/Shirts/Batiste Shirt 2/5.avif",
+      "/Shirts/Batiste Shirt 2/6.avif",
+      "/Shirts/Batiste Shirt 2/7.avif",
+      "/Shirts/Batiste Shirt 2/8.avif",
+      "/Shirts/Batiste Shirt 2/9.avif",
+      "/Shirts/Batiste Shirt 2/10.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Shirts",
+        name: "Batiste Shirt 2",
+        description: "Shirt made of natural fabric, decorated with lace. Features puff sleeves.\nFabric: natural batiste.",
+        colors: ["white", "light blue"]
+      },
+      FR: {
+        category: "Chemises",
+        name: "Chemise en Batiste 2",
+        description: "Chemise en tissu naturel ornée de dentelle. Manches bouffantes.\nTissu : batiste naturel.",
+        colors: ["blanc", "bleu clair"]
+      },
+      UA: {
+        category: "Сорочки",
+        name: "Батистова сорочка 2",
+        description: "Сорочка із натуральної тканини, яка оздоблена мереживом. Має рукава ліхтарики.\nТканина: натуральна тканина батист.",
+        colors: ["білий", "блакитний"]
+      },
+      RU: {
+        category: "Рубашки",
+        name: "Батистовая рубашка 2",
+        description: "Рубашка из натуральной ткани, украшенная кружевом. Имеет рукава-фонарики.\nТкань: натуральная ткань батист.",
+        colors: ["белый", "голубой"]
+      }
+    }
+  },  
+  {
     id: 98,
     price: 2280,
     isTop: false,
@@ -55,6 +202,11 @@ const products = [
     image: "/Skirts/Denim Skirt/1.avif",
     images: [
       "/Skirts/Denim Skirt/2.avif",
+      {
+        type: "video",
+        src: "/Skirts/Denim Skirt/IMG_8135.mp4",
+        poster: "/Skirts/Denim Skirt/1.avif"
+      },
       "/Skirts/Denim Skirt/3.avif",
        "/Skirts/Denim Skirt/4.avif",
       "/Skirts/Denim Skirt/5.avif",
@@ -251,6 +403,8 @@ const products = [
     images: [
       "/Shirts/Silk Lace Blouse/2.avif",
       "/Shirts/Silk Lace Blouse/3.avif",
+      "/Shirts/Silk Lace Blouse/14.avif",
+      "/Shirts/Silk Lace Blouse/15.avif",
       "/Shirts/Silk Lace Blouse/4.avif",
       "/Shirts/Silk Lace Blouse/5.avif",
       "/Shirts/Silk Lace Blouse/6.avif",
@@ -1299,6 +1453,11 @@ const products = [
     image: "/Dress/Maribella Dress/1.avif",
     images: [
       "/Dress/Maribella Dress/2.avif",
+      {
+        type: "video",
+        src: "/Dress/Maribella Dress/IMG_2330.mp4",
+        poster: "/Dress/Maribella Dress/1.avif"
+      },
       "/Dress/Maribella Dress/3.avif",
       "/Dress/Maribella Dress/4.avif",
       "/Dress/Maribella Dress/5.avif",
@@ -1523,6 +1682,11 @@ const products = [
     image: "/Costumes/Cotton Costume/1.avif",
     images: [
       "/Costumes/Cotton Costume/2.avif",
+      {
+        type: "video",
+        src: "/Costumes/Cotton Costume/IMG_7202.mp4",
+        poster: "/Costumes/Cotton Costume/1.avif"
+      },
       "/Costumes/Cotton Costume/3.avif",
       "/Costumes/Cotton Costume/4.avif",
       "/Costumes/Cotton Costume/5.avif",
@@ -1716,6 +1880,11 @@ const products = [
     image: "/Dress/Veronica Dress/1.avif",
     images: [
       "/Dress/Veronica Dress/2.avif",
+      {
+        type: "video",
+        src: "/Dress/Veronica Dress/IMG_8347.mp4",
+        poster: "/Dress/Veronica Dress/1.avif"
+      },
       "/Dress/Veronica Dress/3.avif",
       "/Dress/Veronica Dress/4.avif",
       "/Dress/Veronica Dress/5.avif"
@@ -1871,6 +2040,11 @@ const products = [
     image: "/Dress/Freedom Dress/1.avif",
     images: [
       "/Dress/Freedom Dress/2.avif",
+      {
+        type: "video",
+        src: "/Dress/Freedom Dress/IMG_6714.mp4",
+        poster: "/Dress/Freedom Dress/1.avif"
+      },
       "/Dress/Freedom Dress/3.avif",
       "/Dress/Freedom Dress/4.avif",
       "/Dress/Freedom Dress/5.avif",
@@ -1968,6 +2142,11 @@ const products = [
     image: "/Dress/Ella Dress/1.avif",
     images: [
       "/Dress/Ella Dress/2.avif",
+      {
+        type: "video",
+        src: "/Dress/Ella Dress/IMG_6709.mp4",
+        poster: "/Dress/Ella Dress/1.avif"
+      },
       "/Dress/Ella Dress/3.avif",
       "/Dress/Ella Dress/4.avif",
       "/Dress/Ella Dress/5.avif",
@@ -2016,6 +2195,11 @@ const products = [
     image: "/Dress/Provence Dress/1.avif",
     images: [
       "/Dress/Provence Dress/2.avif",
+      {
+        type: "video",
+        src: "/Dress/Provence Dress/IMG_928.mp4",
+        poster: "/Dress/Provence Dress/1.avif"
+      },
       "/Dress/Provence Dress/3.avif",
       "/Dress/Provence Dress/4.avif",
       "/Dress/Provence Dress/5.avif",
@@ -2070,6 +2254,11 @@ const products = [
     image: "/Dress/Breeze Dress/1.avif",
     images: [
       "/Dress/Breeze Dress/2.avif",
+      {
+        type: "video",
+        src: "/Dress/Breeze Dress/IMG_732.mp4",
+        poster: "/Dress/Breeze Dress/1.avif"
+      },
       "/Dress/Breeze Dress/3.avif",
       "/Dress/Breeze Dress/4.avif",
       "/Dress/Breeze Dress/5.avif",
@@ -2125,6 +2314,11 @@ const products = [
     image: "/Dress/Teresa Dress/1.avif",
     images: [
       "/Dress/Teresa Dress/2.avif",
+      {
+        type: "video",
+        src: "/Dress/Teresa Dress/IMG_6729.mp4",
+        poster: "/Dress/Teresa Dress/1.avif"
+      },
       "/Dress/Teresa Dress/3.avif",
       "/Dress/Teresa Dress/4.avif",
       "/Dress/Teresa Dress/5.avif",
@@ -2174,6 +2368,11 @@ const products = [
     image: "/Dress/Maria Dress/1.avif",
     images: [
       "/Dress/Maria Dress/2.avif",
+      {
+        type: "video",
+        src: "/Dress/Maria Dress/IMG_2328.mp4",
+        poster: "/Dress/Maria Dress/1.avif"
+      },
       "/Dress/Maria Dress/3.avif",
       "/Dress/Maria Dress/4.avif",
       "/Dress/Maria Dress/5.avif",
@@ -2222,6 +2421,11 @@ const products = [
     image: "/Dress/Flower Dress/1.avif",
     images: [
       "/Dress/Flower Dress/2.avif",
+      {
+        type: "video",
+        src: "/Dress/Flower Dress/IMG_3889.mp4",
+        poster: "/Dress/Flower Dress/1.avif"
+      },
       "/Dress/Flower Dress/3.avif",
       "/Dress/Flower Dress/4.avif",
       "/Dress/Flower Dress/5.avif",
@@ -2319,6 +2523,11 @@ const products = [
     image: "/Dress/Ruffle Dress/1.avif",
     images: [
       "/Dress/Ruffle Dress/2.avif",
+      {
+        type: "video",
+        src: "/Dress/Ruffle Dress/IMG_059.mp4",
+        poster: "/Dress/Ruffle Dress/1.avif"
+      },
       "/Dress/Ruffle Dress/3.avif",
       // "/Dress/Ruffle Dress/4.avif",
       "/Dress/Ruffle Dress/5.avif",
@@ -2425,6 +2634,11 @@ const products = [
     image: "/Dress/Muslin/1.avif",
     images: [
       "/Dress/Muslin/2.avif",
+      {
+        type: "video",
+        src: "/Dress/Muslin/IMG_4392.mp4",
+        poster: "/Dress/Muslin/1.avif"
+      },
       "/Dress/Muslin/3.avif",
       "/Dress/Muslin/4.avif",
       "/Dress/Muslin/5.avif",
@@ -2500,6 +2714,11 @@ const products = [
     image: "/Dress/Lantern/1.avif",
     images: [
       "/Dress/Lantern/2.avif",
+      {
+        type: "video",
+        src: "/Dress/Lantern/IMG_061.mp4",
+        poster: "/Dress/Lantern/1.avif"
+      },
       "/Dress/Lantern/3.avif",
       "/Dress/Lantern/4.avif",
       "/Dress/Lantern/5.avif",
@@ -2549,6 +2768,11 @@ const products = [
     image: "/Dress/Oversize/1.avif",
     images: [
       "/Dress/Oversize/2.avif",
+      {
+        type: "video",
+        src: "/Dress/Oversize/IMG_060.mp4",
+        poster: "/Dress/Oversize/1.avif"
+      },
       "/Dress/Oversize/3.avif",
       "/Dress/Oversize/4.avif",
       "/Dress/Oversize/5.avif",
@@ -2604,6 +2828,11 @@ const products = [
     image: "/Dress/Ethnic/1.avif",
     images: [
       "/Dress/Ethnic/2.avif",
+      {
+        type: "video",
+        src: "/Dress/Ethnic/IMG_7595.mp4",
+        poster: "/Dress/Ethnic/1.avif"
+      },
       "/Dress/Ethnic/3.avif",
       "/Dress/Ethnic/4.avif",
       "/Dress/Ethnic/5.avif",
@@ -2655,7 +2884,13 @@ const products = [
     size: "XS S M L XL",
     category: "Costumes",
     image: "/Costumes/Woolen suit with skirt/9.avif",
-    images: ["/Costumes/Woolen suit with skirt/10.avif", "/Costumes/Woolen suit with skirt/11.avif",
+    images: ["/Costumes/Woolen suit with skirt/10.avif", 
+      {
+        type: "video",
+        src: "/Costumes/Woolen suit with skirt/IMG_4440.mp4",
+        poster: "/Costumes/Woolen suit with skirt/1.avif"
+      },
+      "/Costumes/Woolen suit with skirt/11.avif",
       "/Costumes/Woolen suit with skirt/12.avif",
       "/Costumes/Woolen suit with skirt/13.avif",
       "/Costumes/Woolen suit with skirt/14.avif",
