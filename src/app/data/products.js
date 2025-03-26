@@ -499,9 +499,9 @@ const products = [
     image: "/Sweaters/Off-Shoulder Sweater/1.avif",
     images: [
       "/Sweaters/Off-Shoulder Sweater/2.avif",
-      //"/Sweaters/Off-Shoulder Sweater/3.avif",
-      // "/Sweaters/Off-Shoulder Sweater/4.avif",
-      // "/Sweaters/Off-Shoulder Sweater/5.avif"
+      "/Sweaters/Off-Shoulder Sweater/3.avif",
+      "/Sweaters/Off-Shoulder Sweater/4.avif",
+     "/Sweaters/Off-Shoulder Sweater/5.avif"
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
     translations: {
