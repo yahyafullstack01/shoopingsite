@@ -1,5 +1,203 @@
 const products = [
   {
+    id: 96,
+    price: 1670,
+    isTop: false,
+    sku: "98816",
+    size: "XS S M L XL",
+    category: "Skirts",
+    image: "/Skirts/Wrap Skirt/1.avif",
+    images: [
+      "/Skirts/Wrap Skirt/2.avif",
+      "/Skirts/Wrap Skirt/3.avif",
+      "/Skirts/Wrap Skirt/4.avif",
+      "/Skirts/Wrap Skirt/5.avif",
+      "/Skirts/Wrap Skirt/6.avif",
+      "/Skirts/Wrap Skirt/7.avif",
+      "/Skirts/Wrap Skirt/8.avif",
+      "/Skirts/Wrap Skirt/9.avif",
+      "/Skirts/Wrap Skirt/10.avif",
+      "/Skirts/Wrap Skirt/11.avif",
+      "/Skirts/Wrap Skirt/12.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Skirts",
+        name: "Wrap Skirt",
+        description: "Midi wrap skirt with a slit on the leg.\nFabric: suit fabric (75% viscose, 25% polyester).",
+        colors: ["caramel", "olive", "denim"]
+      },
+      FR: {
+        category: "Jupes",
+        name: "Jupe Portefeuille",
+        description: "Jupe portefeuille midi avec une fente sur la jambe.\nTissu : tissu de costume (75% viscose, 25% polyester).",
+        colors: ["caramel", "olive", "denim"]
+      },
+      UA: {
+        category: "Спідниці",
+        name: "Спідниця на запах",
+        description: "Спідниця міді на запах із розрізом на ніжці.\nТканина: костюмна тканина (75% віскоза, 25% поліестер).",
+        colors: ["карамель", "оливка", "джинс"]
+      },
+      RU: {
+        category: "Юбки",
+        name: "Юбка на запах",
+        description: "Юбка миди на запах с разрезом на ножке.\nТкань: костюмная ткань (75% вискоза, 25% полиэстер).",
+        colors: ["карамель", "оливка", "джинс"]
+      }
+    }
+  },  
+  {
+    id: 95,
+    price: 2250,
+    isTop: false,
+    sku: "98815",
+    size: "XS S M L XL",
+    category: "Skirts",
+    image: "/Skirts/Pleated Leather Skirt/1.avif",
+    images: [
+      "/Skirts/Pleated Leather Skirt/2.avif",
+      "/Skirts/Pleated Leather Skirt/3.avif",
+       "/Skirts/Pleated Leather Skirt/4.avif",
+      "/Skirts/Pleated Leather Skirt/5.avif",
+      "/Skirts/Pleated Leather Skirt/6.avif",
+      "/Skirts/Pleated Leather Skirt/7.avif",
+      "/Skirts/Pleated Leather Skirt/8.avif",
+      "/Skirts/Pleated Leather Skirt/9.avif",
+      "/Skirts/Pleated Leather Skirt/10.avif",
+      "/Skirts/Pleated Leather Skirt/11.avif",
+      "/Skirts/Pleated Leather Skirt/12.avif",
+      "/Skirts/Pleated Leather Skirt/13.avif",
+      "/Skirts/Pleated Leather Skirt/14.avif",
+      "/Skirts/Pleated Leather Skirt/15.avif",
+      "/Skirts/Pleated Leather Skirt/16.avif",
+      "/Skirts/Pleated Leather Skirt/17.avif",
+      "/Skirts/Pleated Leather Skirt/18.avif",
+      "/Skirts/Pleated Leather Skirt/19.avif",
+      "/Skirts/Pleated Leather Skirt/20.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Skirts",
+        name: "Pleated Leather Skirt",
+        description: "Maxi-length pleated skirt with a high waist.\nFabric: high-quality eco-leather with suede base (stretchy, doesn’t crack).",
+        colors: ["black", "olive", "beige", "caramel", "mocha"]
+      },
+      FR: {
+        category: "Jupes",
+        name: "Jupe Plissée en Cuir",
+        description: "Jupe plissée longue avec taille haute.\nTissu : simili cuir de haute qualité avec base en daim (extensible, ne se fissure pas).",
+        colors: ["noir", "olive", "beige", "caramel", "moka"]
+      },
+      UA: {
+        category: "Спідниці",
+        name: "Шкіряна спідниця плісе",
+        description: "Спідниця максі довжини з плісеруванням на високій посадці.\nТканина: якісна екошкіра на замшевій основі (стрейчева, не тріскається).",
+        colors: ["чорний", "оливка", "бежевий", "карамель", "мокко"]
+      },
+      RU: {
+        category: "Юбки",
+        name: "Кожаная юбка плиссе",
+        description: "Юбка макси длины с плиссировкой на высокой посадке.\nТкань: качественная экокожа на замшевой основе (стрейчевая, не трескающаяся).",
+        colors: ["чёрный", "оливка", "бежевый", "карамель", "мокко"]
+      }
+    }
+  },  
+  {
+    id: 94,
+    price: 1850,
+    isTop: false,
+    sku: "98814",
+    size: "XS S M L XL",
+    category: "Skirts",
+    image: "/Skirts/Marie Leather Skirt/1.avif",
+    images: [
+      "/Skirts/Marie Leather Skirt/2.avif",
+      "/Skirts/Marie Leather Skirt/3.avif",
+      "/Skirts/Marie Leather Skirt/4.avif",
+      "/Skirts/Marie Leather Skirt/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Skirts",
+        name: "Marie Leather Skirt",
+        description: "Wrap midi skirt with asymmetry, high waist, and buttons.\nFabric: high-quality eco-leather with suede base (stretchy, doesn’t crack).",
+        colors: ["black"]
+      },
+      FR: {
+        category: "Jupes",
+        name: "Jupe en Cuir Marie",
+        description: "Jupe portefeuille midi avec asymétrie, taille haute et boutons.\nTissu : simili cuir de haute qualité avec base en daim (extensible, ne se fissure pas).",
+        colors: ["noir"]
+      },
+      UA: {
+        category: "Спідниці",
+        name: "Шкіряна спідниця Marie",
+        description: "Спідниця на запах міді довжини з асиметрією на високій посадці з ґудзиками.\nТканина: якісна екошкіра на замшевій основі (стрейчева, не тріскається).",
+        colors: ["чорний"]
+      },
+      RU: {
+        category: "Юбки",
+        name: "Кожаная юбка Marie",
+        description: "Юбка на запах миди длины с асимметрией на высокой посадке с пуговицами.\nТкань: качественная экокожа на замшевой основе (стрейчевая, не трескающаяся).",
+        colors: ["чёрный"]
+      }
+    }
+  },  
+  {
+    id: 93,
+    price: 2150,
+    isTop: false,
+    sku: "98813",
+    size: "XS S M L XL",
+    category: "Shirts",
+    image: "/Shirts/Silk Lace Blouse/1.avif",
+    images: [
+      "/Shirts/Silk Lace Blouse/2.avif",
+      "/Shirts/Silk Lace Blouse/3.avif",
+      "/Shirts/Silk Lace Blouse/4.avif",
+      "/Shirts/Silk Lace Blouse/5.avif",
+      "/Shirts/Silk Lace Blouse/6.avif",
+      "/Shirts/Silk Lace Blouse/7.avif",
+      "/Shirts/Silk Lace Blouse/8.avif",
+      "/Shirts/Silk Lace Blouse/9.avif",
+      "/Shirts/Silk Lace Blouse/10.avif",
+      "/Shirts/Silk Lace Blouse/11.avif",
+      "/Shirts/Silk Lace Blouse/12.avif",
+      "/Shirts/Silk Lace Blouse/13.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Shirts",
+        name: "Silk Blouse with Lace",
+        description: "Delicate blouse with ruffles, lace, and a decorative button.\nFabric: Armani silk.",
+        colors: ["white", "black", "beige"]
+      },
+      FR: {
+        category: "Chemises",
+        name: "Blouse en Soie avec Dentelle",
+        description: "Blouse délicate avec volants, dentelle et bouton décoratif.\nTissu : soie Armani.",
+        colors: ["blanc", "noir", "beige"]
+      },
+      UA: {
+        category: "Сорочки",
+        name: "Шовкова блуза з мереживом",
+        description: "Ніжна блуза із воланами, мереживом та декоративним ґудзиком.\nТканина: шовк «Армані».",
+        colors: ["білий", "чорний", "бежевий"]
+      },
+      RU: {
+        category: "Рубашки",
+        name: "Шелковая блуза с кружевом",
+        description: "Нежная блуза с воланами, кружевом и декоративной пуговицей.\nТкань: шёлк «Армани».",
+        colors: ["белый", "чёрный", "бежевый"]
+      }
+    }
+  },  
+  {
     id: 92,
     price: 1950,
     isTop: false,
