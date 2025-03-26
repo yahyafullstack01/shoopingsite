@@ -1,5 +1,51 @@
 const products = [
   {
+    id: 98,
+    price: 2280,
+    isTop: false,
+    sku: "98818",
+    size: "XS S M L XL",
+    category: "Shirts",
+    image: "/Shirts/Freedom Shirt/1.avif",
+    images: [
+      "/Shirts/Freedom Shirt/2.avif",
+      "/Shirts/Freedom Shirt/3.avif",
+     "/Shirts/Freedom Shirt/4.avif",
+      "/Shirts/Freedom Shirt/5.avif",
+      "/Shirts/Freedom Shirt/6.avif",
+      "/Shirts/Freedom Shirt/7.avif",
+      "/Shirts/Freedom Shirt/8.avif",
+      "/Shirts/Freedom Shirt/9.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Shirts",
+        name: "Freedom Shirt",
+        description: "Long-staple 100% cotton muslin. A lightweight and soft-touch fabric.",
+        colors: ["mint", "milk"]
+      },
+      FR: {
+        category: "Chemises",
+        name: "Chemise «Freedom»",
+        description: "Mousseline de coton 100% à longues fibres. Un tissu léger et doux au toucher.",
+        colors: ["menthe", "lait"]
+      },
+      UA: {
+        category: "Сорочки",
+        name: "Сорочка «Freedom»",
+        description: "Довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        colors: ["м’ята", "молоко"]
+      },
+      RU: {
+        category: "Рубашки",
+        name: "Рубашка «Freedom»",
+        description: "Долговолокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь ткань.",
+        colors: ["мята", "молоко"]
+      }
+    }
+  },  
+  {
     id: 97,
     price: 2550,
     isTop: false,
