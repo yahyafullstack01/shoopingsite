@@ -1,4 +1,5 @@
-"use client";
+'use client';
+
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import InfoForm from "../../Functions/InfoForm";
@@ -13,14 +14,15 @@ const ProductBanner = ({
 }) => {
   const { language } = useLanguage();
   const [currentImage, setCurrentImage] = useState(selectedProduct?.image || "/4.jpg");
-  const [isScrollable, setIsScrollable] = useState(false);
+ // const [selectedColor, setSelectedColor] = useState('');
+  //const [selectedSize, setSelectedSize] = useState('');
+ // const [quantity, setQuantity] = useState(1);
 
   const translatedName =
     selectedProduct?.translations?.[language]?.name || selectedProduct?.name;
   const translatedDescription =
     selectedProduct?.translations?.[language]?.description || selectedProduct?.description;
 
-  // Визначаємо чи поточне зображення — це відео
   const isVideo = (media) => typeof media === "object" && media?.type === "video";
   const getSrc = (media) => (typeof media === "string" ? media : media.src);
   const getPoster = (media) =>
@@ -33,17 +35,39 @@ const ProductBanner = ({
       document.body.style.overflow = "auto";
     };
   }, [selectedProduct]);
+{/*
+  const handleAddToCart = async ({ product, selectedColor, selectedSize, quantity }) => {
+    const sessionId = localStorage.getItem("sessionId");
+    if (!sessionId) {
+      alert("Не знайдено sessionId");
+      return;
+    }
 
-  const handleImageClick = () => {
-    setIsScrollable(!isScrollable);
+    try {
+      const res = await fetch("/api/cart", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          sessionId,
+          productId: product.id,
+          color: selectedColor,
+          size: selectedSize,
+          quantity,
+        }),
+      });
+
+      const data = await res.json();
+      alert(data.message);
+    } catch (err) {
+      alert("Помилка при додаванні в корзину");
+    }
   };
-
+*/}
   if (!selectedProduct) return null;
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-90 flex justify-center items-center z-50">
       <div className="relative w-full h-full max-w-5xl bg-gray-300 dark:bg-black rounded-lg shadow-lg overflow-y-auto">
-        {/* Хрестик для закриття */}
         <button
           className="absolute top-4 right-4 text-5xl text-black dark:text-white hover:text-red-500 transition z-[200]"
           onClick={onClose}
@@ -51,9 +75,7 @@ const ProductBanner = ({
           &times;
         </button>
 
-        {/* Контейнер */}
         <div className="relative flex flex-col sm:flex-row items-start overflow-y-auto p-4">
-          {/* Ліва частина - Фото/відео */}
           <div className="w-full sm:w-1/2 relative">
             {isVideo(currentImage) ? (
               <video
@@ -81,7 +103,6 @@ const ProductBanner = ({
             />
           </div>
 
-          {/* Права частина - Опис */}
           <div className="w-full sm:w-1/2 dark:bg-black bg-opacity-75 p-6 text-black dark:text-white rounded-lg">
             <InfoForm
               product={{
@@ -99,6 +120,13 @@ const ProductBanner = ({
               sizes={selectedProduct.sizes}
               descriptionRef={descriptionRef}
               onContactClick={handleContactButtonClick}
+             // selectedColor={selectedColor}
+             // setSelectedColor={setSelectedColor}
+             // selectedSize={selectedSize}
+             // setSelectedSize={setSelectedSize}
+             // quantity={quantity}
+             // setQuantity={setQuantity}
+             // onAddToCartClick={handleAddToCart} 
             />
           </div>
         </div>

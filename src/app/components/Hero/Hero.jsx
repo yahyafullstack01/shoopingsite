@@ -28,7 +28,7 @@ const Hero = () => {
       <section className="hidden lg:flex relative w-[1280px] xl:w-[1800px] 2xl:w-[2400px] h-[400px] xl:h-[550px] 2xl:h-[650px] mx-auto justify-center items-center">
         <div className="absolute inset-0 w-full h-full">
           <Image
-            src="/hoom/hero3.avif"
+            src="/hoom/baner-desk.avif"
             alt="Latore Collection"
             width={2400}
             height={650}
@@ -67,7 +67,7 @@ const Hero = () => {
         <div className="flex flex-col items-center md:items-start gap-2 text-center md:text-left w-[40vw] sm:w-auto">
           <div className="relative w-[35vw] sm:w-[300px] lg:w-[350px] max-w-[600px] h-auto overflow-hidden">
             <Image
-              src="/hoom/hero.avif"
+              src="/hoom/baner-mal.avif"
               alt="Latore Collection Style"
               width={600}
               height={500}

@@ -7,9 +7,9 @@ export const getInitialProductData = (searchParams) => {
   name: searchParams.get("productName") || "Unknown Product", // Default: "Unknown Product"
   price: searchParams.get("productPrice") || "0", // Default: "0"
   description: searchParams.get("productDescription") || "No description available.", // Default: No description
-  image: productImage && !productImage.endsWith(".MOV")
+  image: productImage && !productImage.endsWith(".mp4")
   ? productImage
-  : "/hoom/IMG_1129.avif",
+  : "/hoom/contact.avif",
   video: searchParams.get("productVideo") || null,
 
   color: searchParams.get("productColor") || "Not specified", // Default: Not specified
