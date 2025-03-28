@@ -71,7 +71,7 @@ const Hero = () => {
               alt="Latore Collection Style"
               width={600}
               height={500}
-              className="object-cover shadow-lg w-full h-auto"
+              className="object-cover shadow-lg w-full h-auto rounded-lg"
               priority
             />
           </div>
