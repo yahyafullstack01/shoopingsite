@@ -44,7 +44,7 @@ const products = [
   {
     id: 100,
     price: 2000,
-    isTop: false,
+    isTop: true,
     sku: "98820",
     size: "XS S M L XL",
     category: "Shirts",
@@ -195,7 +195,7 @@ const products = [
   {
     id: 97,
     price: 2550,
-    isTop: false,
+    isTop: true,
     sku: "98817",
     size: "XS S M L XL",
     category: "Skirts",
@@ -951,7 +951,7 @@ const products = [
 
   {
     id: 81,
-    price: 1920,
+    price: 2200,
     isTop: false,
     sku: "98801",
     size: "XS S M L XL",
@@ -995,7 +995,7 @@ const products = [
 
   {
     id: 80,
-    price: 1920,
+    price: 2200,
     isTop: false,
     sku: "98800",
     size: "XS S M L XL",
@@ -1038,7 +1038,7 @@ const products = [
   
   {
     id: 79,
-    price: 2116,
+    price: 2430,
     isTop: false,
     sku: "98799",
     size: "XS S M L XL",
@@ -1081,7 +1081,7 @@ const products = [
   
   {
     id: 78,
-    price: 1380,
+    price: 1580,
     isTop: false,
     sku: "98798",
     size: "XS S M L XL",
@@ -1126,7 +1126,7 @@ const products = [
 
   {
     id: 77,
-    price: 3300,
+    price: 3780,
     isTop: false,
     sku: "98797",
     size: "XS S M L XL",
@@ -1169,7 +1169,7 @@ const products = [
   
   {
     id: 76,
-    price: 4030,
+    price: 4630,
     isTop: false,
     sku: "98796",
     size: "XS S M L XL",
@@ -1214,7 +1214,7 @@ const products = [
 
   {
     id: 75,
-    price: 2760,
+    price: 3170,
     isTop: false,
     sku: "98795",
     size: "XS S M L XL",
@@ -2879,7 +2879,7 @@ const products = [
 
   { id: 1,
     price: 3170,
-    isTop: true,
+    isTop: false,
     sku: "12345",
     size: "XS S M L XL",
     category: "Costumes",
@@ -2923,7 +2923,7 @@ const products = [
   {
     id: 2,
     price: 3710,
-    isTop: true,
+    isTop: false,
     sku: "12345",
     size: "XS S M L XL",
     category: "Costumes",
@@ -2993,7 +2993,7 @@ const products = [
   {
     id: 4,
     price: 3100,
-    isTop: true,
+    isTop: false,
     sku: "12345",
     size: "XS S M L XL",
     category: "Dresses",
@@ -3074,7 +3074,7 @@ const products = [
   {
     id: 6,
     price: 3100,
-    isTop: true,
+    isTop: false,
     sku: "12345",
     size: "XS S M L XL",
     category: "Dresses",
@@ -3115,7 +3115,7 @@ const products = [
   {
     id: 7,
     price: 1850,
-    isTop: true,
+    isTop: false,
     sku: "12345",
     size: "XS S M L XL",
     category: "Dresses",
