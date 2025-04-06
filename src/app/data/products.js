@@ -1,4 +1,397 @@
 const products = [
+
+  {
+    id: 110,
+    price: 1450,
+    isTop: true,
+    sku: "78843",
+    size: "XS S M L XL",
+    category: "Shorts",
+    image: "/Shorts/Linen Shorts/1.avif",
+    images: [
+      "/Shorts/Linen Shorts/2.avif",
+      "/Shorts/Linen Shorts/3.avif",
+      "/Shorts/Linen Shorts/4.avif",
+      "/Shorts/Linen Shorts/5.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Shorts",
+        name: "Linen Shorts",
+        description: "Shorts made from 100% natural linen, providing unlimited breathability for the body.",
+        colors: ["white"]
+      },
+      FR: {
+        category: "Shorts",
+        name: "Short en lin",
+        description: "Short en lin 100 % naturel, offrant une respirabilité illimitée pour le corps.",
+        colors: ["blanc"]
+      },
+      UA: {
+        category: "Шорти",
+        name: "Лляні шорти",
+        description: "Шорти із 100% натурального льону, він забезпечує безмежний доступ повітря до тіла.",
+        colors: ["білий"]
+      },
+      RU: {
+        category: "Шорты",
+        name: "Льняные шорты",
+        description: "Шорты из 100% натурального льна, обеспечивающего неограниченный доступ воздуха к телу.",
+        colors: ["белый"]
+      }
+    }
+  },
+
+  {
+    id: 109,
+    price: 1550,
+    isTop: true,
+    sku: "78842",
+    size: "XS S M L XL",
+    category: "Shorts",
+    image: "/Shorts/Denim Shorts/1.avif",
+    images: [
+      "/Shorts/Denim Shorts/2.avif",
+      "/Shorts/Denim Shorts/3.avif",
+      "/Shorts/Denim Shorts/4.avif",
+      "/Shorts/Denim Shorts/5.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Shorts",
+        name: "Denim Shorts",
+        description: "Bermuda-style denim shorts with a high waist and raw hem.\nFabric: cotton denim.",
+        colors: ["white"]
+      },
+      FR: {
+        category: "Shorts",
+        name: "Short en jean",
+        description: "Short en jean style bermuda avec une taille haute et un ourlet brut.\nTissu : denim coton.",
+        colors: ["blanc"]
+      },
+      UA: {
+        category: "Шорти",
+        name: "Джинс шорти",
+        description: "Джинсові шорти бермуди із високою посадкою та необробленим кроєм.\nТканина: джинс-котон.",
+        colors: ["білий"]
+      },
+      RU: {
+        category: "Шорты",
+        name: "Джинсовые шорты",
+        description: "Джинсовые шорты-бермуды с высокой посадкой и необработанным краем.\nТкань: джинс-хлопок.",
+        colors: ["белый"]
+      }
+    }
+  },
+
+  {
+    id: 108,
+    price: 1650,
+    isTop: true,
+    sku: "78841",
+    size: "XS S M L XL",
+    category: "Shorts",
+    image: "/Shorts/Tailored Shorts/1.avif",
+    images: [
+      "/Shorts/Tailored Shorts/2.avif",
+      "/Shorts/Tailored Shorts/3.avif",
+      "/Shorts/Tailored Shorts/4.avif",
+      "/Shorts/Tailored Shorts/5.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Shorts",
+        name: "Tailored Shorts",
+        description: "Bermuda-style shorts with a high waist, made from suit fabric.\nFabric: 75% viscose, 25% polyester.",
+        colors: ["caramel"]
+      },
+      FR: {
+        category: "Shorts",
+        name: "Short tailleur",
+        description: "Short style bermuda à taille haute, en tissu de costume.\nTissu : 75 % viscose, 25 % polyester.",
+        colors: ["caramel"]
+      },
+      UA: {
+        category: "Шорти",
+        name: "Костюмні шорти",
+        description: "Шорти бермуди із костюмної тканини на високій посадці.\nТканина: 75% віскоза, 25% ПЕ.",
+        colors: ["карамель"]
+      },
+      RU: {
+        category: "Шорты",
+        name: "Костюмные шорты",
+        description: "Шорты-бермуды из костюмной ткани с высокой посадкой.\nТкань: 75% вискоза, 25% ПЭ.",
+        colors: ["карамель"]
+      }
+    }
+  },
+
+  {
+    id: 107,
+    price: 3900,
+    isTop: true,
+    sku: "91250",
+    size: "XS S M L XL",
+    category: "Jackets",
+    image: "/Jackets/Leather Jacket/1.avif",
+    images: [
+      "/Jackets/Leather Jacket/2.avif",
+      "/Jackets/Leather Jacket/3.avif",
+      "/Jackets/Leather Jacket/4.avif",
+      "/Jackets/Leather Jacket/5.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Jackets",
+        name: "Leather Jacket",
+        description: "A stylish jacket made from high-quality eco-leather.\nFabric: stretch eco-leather on a suede base (durable, crack-resistant).",
+        colors: ["beige"]
+      },
+      FR: {
+        category: "Vestes",
+        name: "Veste en cuir",
+        description: "Une veste élégante en éco-cuir de haute qualité.\nTissu : éco-cuir extensible sur une base en daim (résistant, ne se fissure pas).",
+        colors: ["beige"]
+      },
+      UA: {
+        category: "Жакети",
+        name: "Шкіряний жакет",
+        description: "Стильний жакет з якісної екошкіри.\nТканина: якісна екошкіра на замшевій основі (стречева, не тріскається).",
+        colors: ["бежевий"]
+      },
+      RU: {
+        category: "Жакеты",
+        name: "Кожаный жакет",
+        description: "Стильный жакет из качественной эко-кожи.\nТкань: качественная эко-кожа на замшевой основе (эластичная, не трескается).",
+        colors: ["бежевый"]
+      }
+    }
+  },
+
+  {
+    id: 106,
+    price: 1650,
+    isTop: true,
+    sku: "78840",
+    size: "XS S M L XL",
+    category: "Shorts",
+    image: "/Shorts/Leather Shorts/1.avif",
+    images: [
+      "/Shorts/Leather Shorts/2.avif",
+      "/Shorts/Leather Shorts/3.avif",
+      "/Shorts/Leather Shorts/4.avif",
+      "/Shorts/Leather Shorts/5.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Shorts",
+        name: "Leather Shorts",
+        description: "Stylish shorts made from high-quality eco-leather.\nFabric: stretch eco-leather on a suede base (durable, crack-resistant).",
+        colors: ["beige"]
+      },
+      FR: {
+        category: "Shorts",
+        name: "Short en cuir",
+        description: "Short élégant en éco-cuir de haute qualité.\nTissu : éco-cuir extensible sur une base en daim (résistant, ne se fissure pas).",
+        colors: ["beige"]
+      },
+      UA: {
+        category: "Шорти",
+        name: "Шкіряні шорти",
+        description: "Стильні шорти з якісної екошкіри.\nТканина: якісна екошкіра на замшевій основі (стречева, не тріскається).",
+        colors: ["бежевий"]
+      },
+      RU: {
+        category: "Шорты",
+        name: "Кожаные шорты",
+        description: "Стильные шорты из качественной эко-кожи.\nТкань: качественная эко-кожа на замшевой основе (эластичная, не трескается).",
+        colors: ["бежевый"]
+      }
+    }
+  },
+  
+  {
+    id: 105,
+    price: 2280,
+    isTop: true,
+    sku: "45531",
+    size: "XS S M L XL",
+    category: "Skirts",
+    image: "/Skirts/Muslin Skirt/1.avif",
+    images: [
+      "/Skirts/Muslin Skirt/2.avif",
+      "/Skirts/Muslin Skirt/3.avif",
+      "/Skirts/Muslin Skirt/4.avif",
+      "/Skirts/Muslin Skirt/5.avif",
+      "/Skirts/Muslin Skirt/6.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Skirts",
+        name: "Muslin Skirt",
+        description: "A lightweight skirt made from natural fabric.\nFabric: long-fiber muslin made of 100% cotton. Light and soft to the touch.",
+        colors: ["powder"]
+      },
+      FR: {
+        category: "Jupes",
+        name: "Jupe en mousseline",
+        description: "Une jupe légère en tissu naturel.\nTissu : mousseline à longues fibres en 100 % coton. Légère et douce au toucher.",
+        colors: ["poudre"]
+      },
+      UA: {
+        category: "Спідниці",
+        name: "Муслінова спідниця",
+        description: "Легка спідниця з натуральної тканини.\nТканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        colors: ["пудра"]
+      },
+      RU: {
+        category: "Юбки",
+        name: "Муслиновая юбка",
+        description: "Легкая юбка из натуральной ткани.\nТкань: длинноволокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь.",
+        colors: ["пудра"]
+      }
+    }
+  },
+
+  {
+    id: 104,
+    price: 2850,
+    isTop: true,
+    sku: "67211",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Open Back Sundress/1.avif",
+    images: [
+      "/Dress/Open Back Sundress/2.avif",
+      "/Dress/Open Back Sundress/3.avif",
+      "/Dress/Open Back Sundress/4.avif",
+      "/Dress/Open Back Sundress/5.avif",
+      "/Dress/Open Back Sundress/6.avif",
+      "/Dress/Open Back Sundress/7.avif",
+      "/Dress/Open Back Sundress/8.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Open Back Sundress",
+        description: "A sundress featuring an open back design.\nFabric: long-fiber muslin made of 100% cotton. Light and soft to the touch.",
+        colors: ["water", "powder"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe d'été à dos ouvert",
+        description: "Une robe d'été avec un design à dos ouvert.\nTissu : mousseline à longues fibres en 100 % coton. Légère et douce au toucher.",
+        colors: ["eau", "poudre"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Сарафан із відкритою спинкою",
+        description: "Сарафан із дизайном відкритої спинки.\nТканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        colors: ["колір води", "пудра"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Сарафан с открытой спиной",
+        description: "Сарафан с дизайном открытой спины.\nТкань: длинноволокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь.",
+        colors: ["цвет воды", "пудра"]
+      }
+    }
+  },
+
+  {
+    id: 103,
+    price: 2850,
+    isTop: true,
+    sku: "67210",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Lace Sundress/1.avif",
+    images: [
+      "/Dress/Lace Sundress/2.avif",
+      "/Dress/Lace Sundress/3.avif",
+      "/Dress/Lace Sundress/4.avif",
+      "/Dress/Lace Sundress/5.avif",
+      "/Dress/Lace Sundress/6.avif",
+      "/Dress/Lace Sundress/7.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Lace Sundress",
+        description: "A sundress adorned with lace detailing.\nFabric: long-fiber muslin made of 100% cotton. Light and soft to the touch.",
+        colors: ["milk", "powder"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe d'été en dentelle",
+        description: "Une robe d'été ornée de détails en dentelle.\nTissu : mousseline à longues fibres en 100 % coton. Légère et douce au toucher.",
+        colors: ["lait", "poudre"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Сарафан із мереживом",
+        description: "Сарафан із оздобленням мереживом.\nТканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        colors: ["молоко", "пудра"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Сарафан с кружевом",
+        description: "Сарафан с отделкой кружевом.\nТкань: длинноволокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь.",
+        colors: ["молоко", "пудра"]
+      }
+    }
+  },
+
+  {
+    id: 102,
+    price: 1650,
+    isTop: true,
+    sku: "45530",
+    size: "XS S M L XL",
+    category: "Skirts",
+    image: "/Skirts/Leather Midi Skirt/1.avif",
+    images: [
+      "/Skirts/Leather Midi Skirt/2.avif",
+      "/Skirts/Leather Midi Skirt/3.avif",
+      "/Skirts/Leather Midi Skirt/4.avif",
+      "/Skirts/Leather Midi Skirt/5.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Skirts",
+        name: "Leather Midi Skirt",
+        description: "A midi-length pencil skirt with a high waist and a side slit.\nFabric: high-quality stretch eco-leather on a suede base (durable, crack-resistant).",
+        colors: ["black"]
+      },
+      FR: {
+        category: "Jupes",
+        name: "Jupe Midi en Cuir",
+        description: "Jupe crayon de longueur midi avec une taille haute et une fente latérale.\nTissu : éco-cuir extensible de haute qualité sur une base en daim (résistant, ne se fissure pas).",
+        colors: ["noir"]
+      },
+      UA: {
+        category: "Спідниці",
+        name: "Шкіряна спідниця",
+        description: "Спідниця міді довжини фасону олівець на високій посадці із розрізом збоку.\nТканина: якісна екошкіра на замшевій основі (стречева, не тріскається).",
+        colors: ["чорний"]
+      },
+      RU: {
+        category: "Юбки",
+        name: "Кожаная юбка",
+        description: "Юбка средней длины фасона карандаш с высокой посадкой и разрезом сбоку.\nТкань: качественная эко-кожа на замшевой основе (эластичная, не трескается).",
+        colors: ["черный"]
+      }
+    }
+  },
   // {
   //   id: 101,
   //   price: 1850,
