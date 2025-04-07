@@ -1,50 +1,443 @@
 const products = [
+
   {
-    id: 101,
-    price: 1850,
-    isTop: false,
-    sku: "98821",
+    id: 110,
+    price: 1450,
+    isTop: true,
+    sku: "78843",
+    size: "XS S M L XL",
+    category: "Shorts",
+    image: "/Shorts/Linen Shorts/1.avif",
+    images: [
+      "/Shorts/Linen Shorts/2.avif",
+      "/Shorts/Linen Shorts/3.avif",
+      "/Shorts/Linen Shorts/4.avif",
+      "/Shorts/Linen Shorts/5.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Shorts",
+        name: "Linen Shorts",
+        description: "Shorts made from 100% natural linen, providing unlimited breathability for the body.",
+        colors: ["white"]
+      },
+      FR: {
+        category: "Shorts",
+        name: "Short en lin",
+        description: "Short en lin 100 % naturel, offrant une respirabilité illimitée pour le corps.",
+        colors: ["blanc"]
+      },
+      UA: {
+        category: "Шорти",
+        name: "Лляні шорти",
+        description: "Шорти із 100% натурального льону, він забезпечує безмежний доступ повітря до тіла.",
+        colors: ["білий"]
+      },
+      RU: {
+        category: "Шорты",
+        name: "Льняные шорты",
+        description: "Шорты из 100% натурального льна, обеспечивающего неограниченный доступ воздуха к телу.",
+        colors: ["белый"]
+      }
+    }
+  },
+
+  {
+    id: 109,
+    price: 1550,
+    isTop: true,
+    sku: "78842",
+    size: "XS S M L XL",
+    category: "Shorts",
+    image: "/Shorts/Denim Shorts/1.avif",
+    images: [
+      "/Shorts/Denim Shorts/2.avif",
+      "/Shorts/Denim Shorts/3.avif",
+      "/Shorts/Denim Shorts/4.avif",
+      "/Shorts/Denim Shorts/5.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Shorts",
+        name: "Denim Shorts",
+        description: "Bermuda-style denim shorts with a high waist and raw hem.\nFabric: cotton denim.",
+        colors: ["white"]
+      },
+      FR: {
+        category: "Shorts",
+        name: "Short en jean",
+        description: "Short en jean style bermuda avec une taille haute et un ourlet brut.\nTissu : denim coton.",
+        colors: ["blanc"]
+      },
+      UA: {
+        category: "Шорти",
+        name: "Джинс шорти",
+        description: "Джинсові шорти бермуди із високою посадкою та необробленим кроєм.\nТканина: джинс-котон.",
+        colors: ["білий"]
+      },
+      RU: {
+        category: "Шорты",
+        name: "Джинсовые шорты",
+        description: "Джинсовые шорты-бермуды с высокой посадкой и необработанным краем.\nТкань: джинс-хлопок.",
+        colors: ["белый"]
+      }
+    }
+  },
+
+  {
+    id: 108,
+    price: 1650,
+    isTop: true,
+    sku: "78841",
+    size: "XS S M L XL",
+    category: "Shorts",
+    image: "/Shorts/Tailored Shorts/1.avif",
+    images: [
+      "/Shorts/Tailored Shorts/2.avif",
+      "/Shorts/Tailored Shorts/3.avif",
+      "/Shorts/Tailored Shorts/4.avif",
+      "/Shorts/Tailored Shorts/5.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Shorts",
+        name: "Tailored Shorts",
+        description: "Bermuda-style shorts with a high waist, made from suit fabric.\nFabric: 75% viscose, 25% polyester.",
+        colors: ["caramel"]
+      },
+      FR: {
+        category: "Shorts",
+        name: "Short tailleur",
+        description: "Short style bermuda à taille haute, en tissu de costume.\nTissu : 75 % viscose, 25 % polyester.",
+        colors: ["caramel"]
+      },
+      UA: {
+        category: "Шорти",
+        name: "Костюмні шорти",
+        description: "Шорти бермуди із костюмної тканини на високій посадці.\nТканина: 75% віскоза, 25% ПЕ.",
+        colors: ["карамель"]
+      },
+      RU: {
+        category: "Шорты",
+        name: "Костюмные шорты",
+        description: "Шорты-бермуды из костюмной ткани с высокой посадкой.\nТкань: 75% вискоза, 25% ПЭ.",
+        colors: ["карамель"]
+      }
+    }
+  },
+
+  {
+    id: 107,
+    price: 3900,
+    isTop: true,
+    sku: "91250",
+    size: "XS S M L XL",
+    category: "Jackets",
+    image: "/Jackets/Leather Jacket/1.avif",
+    images: [
+      "/Jackets/Leather Jacket/2.avif",
+      "/Jackets/Leather Jacket/3.avif",
+      "/Jackets/Leather Jacket/4.avif",
+      "/Jackets/Leather Jacket/5.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Jackets",
+        name: "Leather Jacket",
+        description: "A stylish jacket made from high-quality eco-leather.\nFabric: stretch eco-leather on a suede base (durable, crack-resistant).",
+        colors: ["beige"]
+      },
+      FR: {
+        category: "Vestes",
+        name: "Veste en cuir",
+        description: "Une veste élégante en éco-cuir de haute qualité.\nTissu : éco-cuir extensible sur une base en daim (résistant, ne se fissure pas).",
+        colors: ["beige"]
+      },
+      UA: {
+        category: "Жакети",
+        name: "Шкіряний жакет",
+        description: "Стильний жакет з якісної екошкіри.\nТканина: якісна екошкіра на замшевій основі (стречева, не тріскається).",
+        colors: ["бежевий"]
+      },
+      RU: {
+        category: "Жакеты",
+        name: "Кожаный жакет",
+        description: "Стильный жакет из качественной эко-кожи.\nТкань: качественная эко-кожа на замшевой основе (эластичная, не трескается).",
+        colors: ["бежевый"]
+      }
+    }
+  },
+
+  {
+    id: 106,
+    price: 1650,
+    isTop: true,
+    sku: "78840",
+    size: "XS S M L XL",
+    category: "Shorts",
+    image: "/Shorts/Leather Shorts/1.avif",
+    images: [
+      "/Shorts/Leather Shorts/2.avif",
+      "/Shorts/Leather Shorts/3.avif",
+      "/Shorts/Leather Shorts/4.avif",
+      "/Shorts/Leather Shorts/5.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Shorts",
+        name: "Leather Shorts",
+        description: "Stylish shorts made from high-quality eco-leather.\nFabric: stretch eco-leather on a suede base (durable, crack-resistant).",
+        colors: ["beige"]
+      },
+      FR: {
+        category: "Shorts",
+        name: "Short en cuir",
+        description: "Short élégant en éco-cuir de haute qualité.\nTissu : éco-cuir extensible sur une base en daim (résistant, ne se fissure pas).",
+        colors: ["beige"]
+      },
+      UA: {
+        category: "Шорти",
+        name: "Шкіряні шорти",
+        description: "Стильні шорти з якісної екошкіри.\nТканина: якісна екошкіра на замшевій основі (стречева, не тріскається).",
+        colors: ["бежевий"]
+      },
+      RU: {
+        category: "Шорты",
+        name: "Кожаные шорты",
+        description: "Стильные шорты из качественной эко-кожи.\nТкань: качественная эко-кожа на замшевой основе (эластичная, не трескается).",
+        colors: ["бежевый"]
+      }
+    }
+  },
+  
+  {
+    id: 105,
+    price: 2280,
+    isTop: true,
+    sku: "45531",
     size: "XS S M L XL",
     category: "Skirts",
-    image: "/Skirts/Short Leather Skirt/1.avif",
+    image: "/Skirts/Muslin Skirt/1.avif",
     images: [
-      "/Skirts/Short Leather Skirt/2.avif",
-      "/Skirts/Short Leather Skirt/3.avif",
-      "/Skirts/Short Leather Skirt/4.avif",
-      "/Skirts/Short Leather Skirt/5.avif"
+      "/Skirts/Muslin Skirt/2.avif",
+      "/Skirts/Muslin Skirt/3.avif",
+      "/Skirts/Muslin Skirt/4.avif",
+      "/Skirts/Muslin Skirt/5.avif",
+      "/Skirts/Muslin Skirt/6.avif",
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
     translations: {
       EN: {
         category: "Skirts",
-        name: "Short Leather Skirt",
-        description: "Shortened midi-length skirt with a high waist.\nFabric: high-quality eco-leather with suede base (stretchy, doesn’t crack).",
-        colors: ["caramel"]
+        name: "Muslin Skirt",
+        description: "A lightweight skirt made from natural fabric.\nFabric: long-fiber muslin made of 100% cotton. Light and soft to the touch.",
+        colors: ["powder"]
       },
       FR: {
         category: "Jupes",
-        name: "Jupe Courte en Cuir",
-        description: "Jupe courte longueur midi avec taille haute.\nTissu : simili cuir de haute qualité avec base en daim (extensible, ne se fissure pas).",
-        colors: ["caramel"]
+        name: "Jupe en mousseline",
+        description: "Une jupe légère en tissu naturel.\nTissu : mousseline à longues fibres en 100 % coton. Légère et douce au toucher.",
+        colors: ["poudre"]
       },
       UA: {
         category: "Спідниці",
-        name: "Шкіряна спідниця вкорочена",
-        description: "Спідниця вкорочена міді довжини на високій посадці.\nТканина: якісна екошкіра на замшевій основі (стрейчева, не тріскається).",
-        colors: ["карамель"]
+        name: "Муслінова спідниця",
+        description: "Легка спідниця з натуральної тканини.\nТканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        colors: ["пудра"]
       },
       RU: {
         category: "Юбки",
-        name: "Кожаная юбка укороченная",
-        description: "Юбка укороченная миди длины на высокой посадке.\nТкань: качественная экокожа на замшевой основе (стрейчевая, не трескающаяся).",
-        colors: ["карамель"]
+        name: "Муслиновая юбка",
+        description: "Легкая юбка из натуральной ткани.\nТкань: длинноволокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь.",
+        colors: ["пудра"]
       }
     }
-  },  
+  },
+
+  {
+    id: 104,
+    price: 2850,
+    isTop: true,
+    sku: "67211",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Open Back Sundress/1.avif",
+    images: [
+      "/Dress/Open Back Sundress/2.avif",
+      "/Dress/Open Back Sundress/3.avif",
+      "/Dress/Open Back Sundress/4.avif",
+      "/Dress/Open Back Sundress/5.avif",
+      "/Dress/Open Back Sundress/6.avif",
+      "/Dress/Open Back Sundress/7.avif",
+      "/Dress/Open Back Sundress/8.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Open Back Sundress",
+        description: "A sundress featuring an open back design.\nFabric: long-fiber muslin made of 100% cotton. Light and soft to the touch.",
+        colors: ["water", "powder"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe d'été à dos ouvert",
+        description: "Une robe d'été avec un design à dos ouvert.\nTissu : mousseline à longues fibres en 100 % coton. Légère et douce au toucher.",
+        colors: ["eau", "poudre"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Сарафан із відкритою спинкою",
+        description: "Сарафан із дизайном відкритої спинки.\nТканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        colors: ["колір води", "пудра"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Сарафан с открытой спиной",
+        description: "Сарафан с дизайном открытой спины.\nТкань: длинноволокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь.",
+        colors: ["цвет воды", "пудра"]
+      }
+    }
+  },
+
+  {
+    id: 103,
+    price: 2850,
+    isTop: true,
+    sku: "67210",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Lace Sundress/1.avif",
+    images: [
+      "/Dress/Lace Sundress/2.avif",
+      "/Dress/Lace Sundress/3.avif",
+      "/Dress/Lace Sundress/4.avif",
+      "/Dress/Lace Sundress/5.avif",
+      "/Dress/Lace Sundress/6.avif",
+      "/Dress/Lace Sundress/7.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Lace Sundress",
+        description: "A sundress adorned with lace detailing.\nFabric: long-fiber muslin made of 100% cotton. Light and soft to the touch.",
+        colors: ["milk", "powder"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe d'été en dentelle",
+        description: "Une robe d'été ornée de détails en dentelle.\nTissu : mousseline à longues fibres en 100 % coton. Légère et douce au toucher.",
+        colors: ["lait", "poudre"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Сарафан із мереживом",
+        description: "Сарафан із оздобленням мереживом.\nТканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        colors: ["молоко", "пудра"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Сарафан с кружевом",
+        description: "Сарафан с отделкой кружевом.\nТкань: длинноволокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь.",
+        colors: ["молоко", "пудра"]
+      }
+    }
+  },
+
+  {
+    id: 102,
+    price: 1650,
+    isTop: true,
+    sku: "45530",
+    size: "XS S M L XL",
+    category: "Skirts",
+    image: "/Skirts/Leather Midi Skirt/1.avif",
+    images: [
+      "/Skirts/Leather Midi Skirt/2.avif",
+      "/Skirts/Leather Midi Skirt/3.avif",
+      "/Skirts/Leather Midi Skirt/4.avif",
+      "/Skirts/Leather Midi Skirt/5.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Skirts",
+        name: "Leather Midi Skirt",
+        description: "A midi-length pencil skirt with a high waist and a side slit.\nFabric: high-quality stretch eco-leather on a suede base (durable, crack-resistant).",
+        colors: ["black"]
+      },
+      FR: {
+        category: "Jupes",
+        name: "Jupe Midi en Cuir",
+        description: "Jupe crayon de longueur midi avec une taille haute et une fente latérale.\nTissu : éco-cuir extensible de haute qualité sur une base en daim (résistant, ne se fissure pas).",
+        colors: ["noir"]
+      },
+      UA: {
+        category: "Спідниці",
+        name: "Шкіряна спідниця",
+        description: "Спідниця міді довжини фасону олівець на високій посадці із розрізом збоку.\nТканина: якісна екошкіра на замшевій основі (стречева, не тріскається).",
+        colors: ["чорний"]
+      },
+      RU: {
+        category: "Юбки",
+        name: "Кожаная юбка",
+        description: "Юбка средней длины фасона карандаш с высокой посадкой и разрезом сбоку.\nТкань: качественная эко-кожа на замшевой основе (эластичная, не трескается).",
+        colors: ["черный"]
+      }
+    }
+  },
+  // {
+  //   id: 101,
+  //   price: 1850,
+  //   isTop: false,
+  //   sku: "98821",
+  //   size: "XS S M L XL",
+  //   category: "Skirts",
+  //   image: "/Skirts/Short Leather Skirt/1.avif",
+  //   images: [
+  //     "/Skirts/Short Leather Skirt/2.avif",
+  //     "/Skirts/Short Leather Skirt/3.avif",
+  //     "/Skirts/Short Leather Skirt/4.avif",
+  //     "/Skirts/Short Leather Skirt/5.avif"
+  //   ],
+  //   sizes: ["XS", "S", "M", "L", "XL"],
+  //   translations: {
+  //     EN: {
+  //       category: "Skirts",
+  //       name: "Short Leather Skirt",
+  //       description: "Shortened midi-length skirt with a high waist.\nFabric: high-quality eco-leather with suede base (stretchy, doesn’t crack).",
+  //       colors: ["caramel"]
+  //     },
+  //     FR: {
+  //       category: "Jupes",
+  //       name: "Jupe Courte en Cuir",
+  //       description: "Jupe courte longueur midi avec taille haute.\nTissu : simili cuir de haute qualité avec base en daim (extensible, ne se fissure pas).",
+  //       colors: ["caramel"]
+  //     },
+  //     UA: {
+  //       category: "Спідниці",
+  //       name: "Шкіряна спідниця вкорочена",
+  //       description: "Спідниця вкорочена міді довжини на високій посадці.\nТканина: якісна екошкіра на замшевій основі (стрейчева, не тріскається).",
+  //       colors: ["карамель"]
+  //     },
+  //     RU: {
+  //       category: "Юбки",
+  //       name: "Кожаная юбка укороченная",
+  //       description: "Юбка укороченная миди длины на высокой посадке.\nТкань: качественная экокожа на замшевой основе (стрейчевая, не трескающаяся).",
+  //       colors: ["карамель"]
+  //     }
+  //   }
+  // },  
   {
     id: 100,
     price: 2000,
-    isTop: false,
+    isTop: true,
     sku: "98820",
     size: "XS S M L XL",
     category: "Shirts",
@@ -195,7 +588,7 @@ const products = [
   {
     id: 97,
     price: 2550,
-    isTop: false,
+    isTop: true,
     sku: "98817",
     size: "XS S M L XL",
     category: "Skirts",
@@ -304,20 +697,8 @@ const products = [
     images: [
       "/Skirts/Pleated Leather Skirt/2.avif",
       "/Skirts/Pleated Leather Skirt/3.avif",
-       "/Skirts/Pleated Leather Skirt/4.avif",
       "/Skirts/Pleated Leather Skirt/5.avif",
-      "/Skirts/Pleated Leather Skirt/6.avif",
-      "/Skirts/Pleated Leather Skirt/7.avif",
-      "/Skirts/Pleated Leather Skirt/8.avif",
-      "/Skirts/Pleated Leather Skirt/9.avif",
       "/Skirts/Pleated Leather Skirt/10.avif",
-      "/Skirts/Pleated Leather Skirt/11.avif",
-      "/Skirts/Pleated Leather Skirt/12.avif",
-      "/Skirts/Pleated Leather Skirt/13.avif",
-      "/Skirts/Pleated Leather Skirt/14.avif",
-      "/Skirts/Pleated Leather Skirt/15.avif",
-      "/Skirts/Pleated Leather Skirt/16.avif",
-      "/Skirts/Pleated Leather Skirt/17.avif",
       "/Skirts/Pleated Leather Skirt/18.avif",
       "/Skirts/Pleated Leather Skirt/19.avif",
       "/Skirts/Pleated Leather Skirt/20.avif"
@@ -328,25 +709,25 @@ const products = [
         category: "Skirts",
         name: "Pleated Leather Skirt",
         description: "Maxi-length pleated skirt with a high waist.\nFabric: high-quality eco-leather with suede base (stretchy, doesn’t crack).",
-        colors: ["black", "olive", "beige", "caramel", "mocha"]
+        colors: ["black", "beige"]
       },
       FR: {
         category: "Jupes",
         name: "Jupe Plissée en Cuir",
         description: "Jupe plissée longue avec taille haute.\nTissu : simili cuir de haute qualité avec base en daim (extensible, ne se fissure pas).",
-        colors: ["noir", "olive", "beige", "caramel", "moka"]
+        colors: ["noir", "beige"]
       },
       UA: {
         category: "Спідниці",
         name: "Шкіряна спідниця плісе",
         description: "Спідниця максі довжини з плісеруванням на високій посадці.\nТканина: якісна екошкіра на замшевій основі (стрейчева, не тріскається).",
-        colors: ["чорний", "оливка", "бежевий", "карамель", "мокко"]
+        colors: ["чорний", "бежевий"]
       },
       RU: {
         category: "Юбки",
         name: "Кожаная юбка плиссе",
         description: "Юбка макси длины с плиссировкой на высокой посадке.\nТкань: качественная экокожа на замшевой основе (стрейчевая, не трескающаяся).",
-        colors: ["чёрный", "оливка", "бежевый", "карамель", "мокко"]
+        colors: ["чёрный", "бежевый"]
       }
     }
   },  
@@ -951,7 +1332,7 @@ const products = [
 
   {
     id: 81,
-    price: 1920,
+    price: 2200,
     isTop: false,
     sku: "98801",
     size: "XS S M L XL",
@@ -995,7 +1376,7 @@ const products = [
 
   {
     id: 80,
-    price: 1920,
+    price: 2200,
     isTop: false,
     sku: "98800",
     size: "XS S M L XL",
@@ -1038,7 +1419,7 @@ const products = [
   
   {
     id: 79,
-    price: 2116,
+    price: 2430,
     isTop: false,
     sku: "98799",
     size: "XS S M L XL",
@@ -1081,7 +1462,7 @@ const products = [
   
   {
     id: 78,
-    price: 1380,
+    price: 1580,
     isTop: false,
     sku: "98798",
     size: "XS S M L XL",
@@ -1126,7 +1507,7 @@ const products = [
 
   {
     id: 77,
-    price: 3300,
+    price: 3780,
     isTop: false,
     sku: "98797",
     size: "XS S M L XL",
@@ -1169,7 +1550,7 @@ const products = [
   
   {
     id: 76,
-    price: 4030,
+    price: 4630,
     isTop: false,
     sku: "98796",
     size: "XS S M L XL",
@@ -1214,7 +1595,7 @@ const products = [
 
   {
     id: 75,
-    price: 2760,
+    price: 3170,
     isTop: false,
     sku: "98795",
     size: "XS S M L XL",
@@ -2879,7 +3260,7 @@ const products = [
 
   { id: 1,
     price: 3170,
-    isTop: true,
+    isTop: false,
     sku: "12345",
     size: "XS S M L XL",
     category: "Costumes",
@@ -2923,7 +3304,7 @@ const products = [
   {
     id: 2,
     price: 3710,
-    isTop: true,
+    isTop: false,
     sku: "12345",
     size: "XS S M L XL",
     category: "Costumes",
@@ -2993,7 +3374,7 @@ const products = [
   {
     id: 4,
     price: 3100,
-    isTop: true,
+    isTop: false,
     sku: "12345",
     size: "XS S M L XL",
     category: "Dresses",
@@ -3074,7 +3455,7 @@ const products = [
   {
     id: 6,
     price: 3100,
-    isTop: true,
+    isTop: false,
     sku: "12345",
     size: "XS S M L XL",
     category: "Dresses",
@@ -3115,7 +3496,7 @@ const products = [
   {
     id: 7,
     price: 1850,
-    isTop: true,
+    isTop: false,
     sku: "12345",
     size: "XS S M L XL",
     category: "Dresses",
@@ -3153,44 +3534,44 @@ const products = [
     }
   },
      
-    {
-      id: 8,
-      price: 2000,
-      sku: "12345",
+    // {
+    //   id: 8,
+    //   price: 2000,
+    //   sku: "12345",
       
-      size: "XS S M L XL",
-      category: "Dresses",
-      image: "/Dress/Shkiriana suknya (Leather dress)/1.avif",
-      images: ["/Dress/Shkiriana suknya (Leather dress)/2.avif", "/Dress/Shkiriana suknya (Leather dress)/3.avif", "/Dress/Shkiriana suknya (Leather dress)/4.avif", "/Dress/Shkiriana suknya (Leather dress)/5.avif", "/Dress/Shkiriana suknya (Leather dress)/6.avif"],
+    //   size: "XS S M L XL",
+    //   category: "Dresses",
+    //   image: "/Dress/Shkiriana suknya (Leather dress)/4.avif",
+    //   images: ["/Dress/Shkiriana suknya (Leather dress)/5.avif", "/Dress/Shkiriana suknya (Leather dress)/6.avif"],
        
-      sizes: ["XS", "S", "M", "L", "XL"],
-      translations: {
-        EN: {
-          category: "Dresses",
-          name: "Shkiriana suknya (Leather dress)",
-          description: "Oversize dress with a small round neckline and pockets\nFabric: high-quality eco-leather on a suede base. (stretchy, does not crack)",
-          color: "blue",
-          colors: ["mocha", "white"],
-        },
-        FR: {
-          category: "Robes",
-          name: "Tissu Shkiryana (robe en cuir)",
-          description: "Robe oversize avec petit décolleté arrondi et poches. Tissu : éco-cuir de haute qualité sur base en daim (extensible, ne craque pas).",
-          colors : ["mocha", "blanc"],
-        },
-        UA: {
-          category: "Сукні",
-          name: "Шкіряна сукня",
-          description: "Oversize сукня із невеликим округлим вирізом та кишенями\nТканина: якісна екошкіра на замшевій основі.(стречева, не тріскається)",
-          colors: ["мокко", "білий"],
-        },
-        RU: {
-          name: "Кожаное платье",
-          description: "Oversize платье с небольшим круглым вырезом и карманами\nТкань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)",
-          colors : ["мокко", "белый"],
-          }
-      }
-    },
+    //   sizes: ["XS", "S", "M", "L", "XL"],
+    //   translations: {
+    //     EN: {
+    //       category: "Dresses",
+    //       name: "Shkiriana suknya (Leather dress)",
+    //       description: "Oversize dress with a small round neckline and pockets\nFabric: high-quality eco-leather on a suede base. (stretchy, does not crack)",
+    //       color: "blue",
+    //       colors: ["mocha"],
+    //     },
+    //     FR: {
+    //       category: "Robes",
+    //       name: "Tissu Shkiryana (robe en cuir)",
+    //       description: "Robe oversize avec petit décolleté arrondi et poches. Tissu : éco-cuir de haute qualité sur base en daim (extensible, ne craque pas).",
+    //       colors : ["mocha"],
+    //     },
+    //     UA: {
+    //       category: "Сукні",
+    //       name: "Шкіряна сукня",
+    //       description: "Oversize сукня із невеликим округлим вирізом та кишенями\nТканина: якісна екошкіра на замшевій основі.(стречева, не тріскається)",
+    //       colors: ["мокко"],
+    //     },
+    //     RU: {
+    //       name: "Кожаное платье",
+    //       description: "Oversize платье с небольшим круглым вырезом и карманами\nТкань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)",
+    //       colors : ["мокко"],
+    //       }
+    //   }
+    // },
     
     {
       id: 9,
@@ -3342,7 +3723,7 @@ const products = [
       category: "Outerwear",
       image: "/Outerwear/Твідовий бомбер/1.avif",
       images: ["/Outerwear/Твідовий бомбер/2.avif", "/Outerwear/Твідовий бомбер/3.avif", "/Outerwear/Твідовий бомбер/4.avif",
-               "/Outerwear/Твідовий бомбер/8.avif", "/Outerwear/Твідовий бомбер/5.avif", "/Outerwear/Твідовий бомбер/6.avif", "/Outerwear/Твідовий бомбер/7.avif"],
+              ],
       
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
@@ -3350,19 +3731,19 @@ const products = [
           category: "Outerwear",
           name: "Tweed bomber jacket",
           description: "Quilted bomber jacket with high-quality lining and two pockets",
-          colors: ["graphite", "beige"], 
+          colors: ["graphite"], 
         },
         FR: {
           category: "Vêtements d'extérieur",
           name: "Blouson aviateur en tweed",
           description: "Bomber matelassé avec doublure de qualité et deux poches",
-          colors: ["graphite", "beige"],
+          colors: ["graphite"],
         },
         UA: {
           category: "Верхній одяг",
           name: "Твідовий бомбер",
           description: "Стьоганий бомбер із якісною підкладкою та двома кишенями",
-          colors: ["графіт", "бежевий"],
+          colors: ["графіт"],
         }
       }
     },
@@ -3400,38 +3781,38 @@ const products = [
       }
     },
     
-    {
-     id: 15,
-     price: 1650,
-     sku: "12345",
-     color: "caramel",
-     size: "XS S M L XL",
-     category: "Skirts",
-     image: "/Skirts/Alice/1.avif",
-     images: ["/Skirts/Alice/2.avif", "/Skirts/Alice/3.avif", "/Skirts/Alice/4.avif", "//Skirts/Alice/5.avif"],
+    // {
+    //  id: 15,
+    //  price: 1650,
+    //  sku: "12345",
+    //  color: "caramel",
+    //  size: "XS S M L XL",
+    //  category: "Skirts",
+    //  image: "/Skirts/Alice/1.avif",
+    //  images: ["/Skirts/Alice/2.avif", "/Skirts/Alice/3.avif", "/Skirts/Alice/4.avif", "//Skirts/Alice/5.avif"],
     
-     sizes: ["XS", "S", "M", "L", "XL"],
-     translations: {
-       EN: {
-        category: "Skirts",
-        name: "Skirt «Alice»",
-        description: "A-line skirt with ribbons along the entire length. Fabric: high-quality eco-leather on a suede base. (stretchy, does not crack)",
-        colors: ["caramel"],
-      },
-      FR: {
-        category: "Jupes",
-        name: "Skirt «Alice»",
-        description: "Une jupe ample en forme de trapèze avec des rubans sur toute la longueur. Tissu : cuir écologique de haute qualité sur base en daim. (extensible, ne craque pas",
-        colors: ["caramel"],
-      },
-      UA: {
-        category: "Спідницi",
-         name: "Спідниця «Alice»",
-         description: "Спідниця вільного крою у формі трапеції зі стрічками по всій довжині. Тканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається",
-         colors: ["карамель"],
-       }
-     }
-     },
+    //  sizes: ["XS", "S", "M", "L", "XL"],
+    //  translations: {
+    //    EN: {
+    //     category: "Skirts",
+    //     name: "Skirt «Alice»",
+    //     description: "A-line skirt with ribbons along the entire length. Fabric: high-quality eco-leather on a suede base. (stretchy, does not crack)",
+    //     colors: ["caramel"],
+    //   },
+    //   FR: {
+    //     category: "Jupes",
+    //     name: "Skirt «Alice»",
+    //     description: "Une jupe ample en forme de trapèze avec des rubans sur toute la longueur. Tissu : cuir écologique de haute qualité sur base en daim. (extensible, ne craque pas",
+    //     colors: ["caramel"],
+    //   },
+    //   UA: {
+    //     category: "Спідницi",
+    //      name: "Спідниця «Alice»",
+    //      description: "Спідниця вільного крою у формі трапеції зі стрічками по всій довжині. Тканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається",
+    //      colors: ["карамель"],
+    //    }
+    //  }
+    //  },
 
      {
       id: 16,
@@ -3978,7 +4359,6 @@ const products = [
       image: "/Pants/Banana Pants/1.avif",
       images: ["/Pants/Banana Pants/2.avif", "/Pants/Banana Pants/3.avif", "/Pants/Banana Pants/4.avif", "/Pants/Banana Pants/5.avif",
         "/Pants/Banana Pants/6.avif", "/Pants/Banana Pants/7.avif", "/Pants/Banana Pants/8.avif", "/Pants/Banana Pants/9.avif", "/Pants/Banana Pants/10.avif",
-        "/Pants/Banana Pants/11.avif", "/Pants/Banana Pants/12.avif", "/Pants/Banana Pants/13.avif", "/Pants/Banana Pants/14.avif", "/Pants/Banana Pants/15.avif",
       ],
  
       sizes: ["XS", "S", "M", "L", "XL" ],
@@ -3987,26 +4367,26 @@ const products = [
           category: "Pants",
           name: "Banana Pants",
           description: "High-waisted banana-style pants with two pockets.Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)",
-          colors: ["Black", "Beige", "Caramel"],
+          colors: ["Black", "Beige"],
         },
         FR: {
           category: "Pantalons",
           name: "Pantalons en Cuir Banane",
           description: "Pantalons taille haute style banane avec deux poches.Tissu : Cuir éco-responsable de haute qualité avec une base en suède. (Extensible, ne se fissure pas.)",
-          colors: ["Noir", "Beige", "Caramel"],
+          colors: ["Noir", "Beige"],
 
         },
         UA: {
           category: "Брюки",
           name: "Шкіряні брюки банани",
           description: "Описание: Брюки фасону бананів на високій посадці із двома кишенями Тканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається )",
-          colors: ["Чорний", "Бежевий", "карамель"],
+          colors: ["Чорний", "Бежевий"],
         },
         RU: {
           category: "Брюки",
           name: "Брюки бананы",
           description: "( Брюки фасона бананов на высокой посадке с двумя карманамиТкань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)",
-          colors: ["Черный", "Бежевый", "карамель"],
+          colors: ["Черный", "Бежевый"],
         }
       }
     },
@@ -4066,11 +4446,6 @@ const products = [
         "/Pants/Leather Pants1/3.avif", 
         "/Pants/Leather Pants1/1.avif", 
         "/Pants/Leather Pants1/5.avif",
-        "/Pants/Leather Pants1/6.avif",
-        "/Pants/Leather Pants1/7.avif",
-        "/Pants/Leather Pants1/8.avif",
-        "/Pants/Leather Pants1/9.avif",
-        "/Pants/Leather Pants1/10.avif",
         "/Pants/Leather Pants1/11.avif",
         "/Pants/Leather Pants1/12.avif",
         "/Pants/Leather Pants1/13.avif",
@@ -4085,26 +4460,26 @@ const products = [
           name: "Leather Tube Pants",
           description: "Slim-fit pants with a high waist and zippers at the ankles. Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)",
           color: "beige, caramel, black",
-          colors: ["beige", "caramel", "black"],
+          colors: ["beige", "black"],
         },
         FR: {
           category: "Pantalon",
           name: "Pantalon en cuir tube",
           description: "Pantalon ajusté à taille haute avec fermetures éclair aux chevilles. Tissu : cuir écologique de haute qualité sur une base en daim (stretch, ne se fissure pas).",
           color: "beige, caramel, noir",
-          colors: ["beige", "caramel", "noir"],
+          colors: ["beige",  "noir"],
         },
         UA: {
           category: "Брюки",
           name: "Шкіряні брюки труби",
           description: "Брюки завуженого фасону на високій посадці та замочками на ніжці. Тканина: якісна екошкіра на замшевій основі. (стречева, не тріскається)",
-          colors: ["бежевий", "карамель", "Чорний"],
+          colors: ["бежевий", "Чорний"],
         },
         RU: {
           category: "Брюки",
           name: "Кожаные брюки трубы",
           description: "Брюки зауженного фасона на высокой посадке и замочками на ножке. Ткань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)",
-          colors: ["Бежевый", "карамель", "Черный"],
+          colors: ["Бежевый", "Черный"],
         }
       }
     },
@@ -4165,24 +4540,6 @@ const products = [
         "/Skirts/Leather Pencil Skirt/3.avif",
         "/Skirts/Leather Pencil Skirt/4.avif",
         "/Skirts/Leather Pencil Skirt/5.avif",
-        "/Skirts/Leather Pencil Skirt/6.avif",
-        "/Skirts/Leather Pencil Skirt/7.avif",
-        "/Skirts/Leather Pencil Skirt/8.avif",
-        "/Skirts/Leather Pencil Skirt/9.avif",
-        "/Skirts/Leather Pencil Skirt/10.avif",
-        "/Skirts/Leather Pencil Skirt/11.avif",
-        "/Skirts/Leather Pencil Skirt/12.avif",
-        "/Skirts/Leather Pencil Skirt/13.avif",
-        "/Skirts/Leather Pencil Skirt/14.avif",
-        "/Skirts/Leather Pencil Skirt/15.avif",
-        "/Skirts/Leather Pencil Skirt/16.avif",
-        "/Skirts/Leather Pencil Skirt/17.avif",
-        "/Skirts/Leather Pencil Skirt/18.avif",
-        "/Skirts/Leather Pencil Skirt/19.avif",
-        "/Skirts/Leather Pencil Skirt/20.avif",
-        "/Skirts/Leather Pencil Skirt/21.avif",
-        "/Skirts/Leather Pencil Skirt/22.avif",
-        "/Skirts/Leather Pencil Skirt/23.avif",
       ],
 
       sizes: ["XS", "S", "M", "L", "XL"],
@@ -4192,80 +4549,80 @@ const products = [
           name: "Leather Pencil Skirt",
           description: "Mid-length pencil skirt with a high waist and a slit on the legs. Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)",
           color: "black",
-          colors: ["beige", "caramel", "black", "white", "mocha", "olive"],
+          colors: ["beige"],
         },
         FR: {
           category: "Jupes",
           name: "Jupe crayon en cuir",
           description: "Jupe crayon mi-longueur à taille haute avec une fente sur les jambes. Tissu : cuir écologique de haute qualité sur une base en daim (stretch, ne se fissure pas).",
           color: "noir",
-          colors: ["beige", "caramel", "noir", "blanc", "mocha", "olive"],
+          colors: ["beige"],
         },
         UA: {
           category: "Спідниці",
           name: "Шкіряна спідниця-олівець",
-          description: "Спідниця міді довжини фасону олівець на високій посадці із розрізом на ніжках. Тканина: якісна екошкіра на замшевій основі. (стречева, не тріскається)",
+          description: "Спідниця міді довжини фасону олівець на високій посадці із розрізом спереду Тканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається )",
           color: "чорний",
-          colors: ["бежевий", "карамель", "чорний", "білий", "мокко", "оливка"],
+          colors: ["бежевий"],
         },
         RU: {
           category: "Юбки",
           name: "Кожаная юбка-карандаш",
           description: "Юбка миди длины фасона карандаш на высокой посадке с разрезом на ножках. Ткань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)",
           color: "черный",
-          colors: ["бежевый", "карамель", "чёрный", "белый", "мокко", "оливка"],
+          colors: ["бежевый"],
         }
       }
     },
 
-    {
-      id: 33,
-      price: 1650,
-      isTop: false,
-      sku: "12347",
+    // {
+    //   id: 33,
+    //   price: 1650,
+    //   isTop: false,
+    //   sku: "12347",
     
-      size: "XS S M L XL",
-      category: "Skirts",
-      image: "/Skirts/Leather Skirt Knot/1.avif",
-      images: [
-        "/Skirts/Leather Skirt Knot/2.avif", 
-        "/Skirts/Leather Skirt Knot/3.avif", 
-        "/Skirts/Leather Skirt Knot/4.avif", 
-        "/Skirts/Leather Skirt Knot/5.avif"
-      ],
+    //   size: "XS S M L XL",
+    //   category: "Skirts",
+    //   image: "/Skirts/Leather Skirt Knot/1.avif",
+    //   images: [
+    //     "/Skirts/Leather Skirt Knot/2.avif", 
+    //     "/Skirts/Leather Skirt Knot/3.avif", 
+    //     "/Skirts/Leather Skirt Knot/4.avif", 
+    //     "/Skirts/Leather Skirt Knot/5.avif"
+    //   ],
 
-      sizes: ["XS", "S", "M", "L", "XL"],
-      translations: {
-        EN: {
-          category: "Skirts",
-          name: "Leather Skirt with Knot",
-          description: "Midi-length pencil skirt with a high waist, a slit on the leg, and a decorative knot. Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)",
-          color: "olive",
-          colors: ["olive"],
-        },
-        FR: {
-          category: "Jupes",
-          name: "Jupe en cuir avec nœud",
-          description: "Jupe crayon longueur midi avec une taille haute, une fente sur la jambe et un nœud décoratif. Tissu : cuir écologique de haute qualité sur une base en daim. (Stretch, ne se fissure pas.)",
-          color: "olive",
-          colors: ["olive"],
-        },
-        UA: {
-          category: "Спідниці",
-          name: "Шкіряна спідниця з вузлом",
-          description: "Спідниця міді довжини фасону олівець на високій посадці із розрізом на ніжці та декоративним вузлом. Тканина: якісна екошкіра на замшевій основі. (стречева, не тріскається)",
-          color: "оливковий",
-          colors: ["оливка"],
-        },
-        RU: {
-          category: "Юбки",
-          name: "Кожаная юбка с узлом",
-          description: "Юбка миди длины фасона карандаш на высокой посадке с разрезом на ножке и декоративным узлом. Ткань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)",
-          color: "оливковый",
-          colors: ["оливка"],
-        }
-      }
-    },
+    //   sizes: ["XS", "S", "M", "L", "XL"],
+    //   translations: {
+    //     EN: {
+    //       category: "Skirts",
+    //       name: "Leather Skirt with Knot",
+    //       description: "Midi-length pencil skirt with a high waist, a slit on the leg, and a decorative knot. Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)",
+    //       color: "olive",
+    //       colors: ["olive"],
+    //     },
+    //     FR: {
+    //       category: "Jupes",
+    //       name: "Jupe en cuir avec nœud",
+    //       description: "Jupe crayon longueur midi avec une taille haute, une fente sur la jambe et un nœud décoratif. Tissu : cuir écologique de haute qualité sur une base en daim. (Stretch, ne se fissure pas.)",
+    //       color: "olive",
+    //       colors: ["olive"],
+    //     },
+    //     UA: {
+    //       category: "Спідниці",
+    //       name: "Шкіряна спідниця з вузлом",
+    //       description: "Спідниця міді довжини фасону олівець на високій посадці із розрізом на ніжці та декоративним вузлом. Тканина: якісна екошкіра на замшевій основі. (стречева, не тріскається)",
+    //       color: "оливковий",
+    //       colors: ["оливка"],
+    //     },
+    //     RU: {
+    //       category: "Юбки",
+    //       name: "Кожаная юбка с узлом",
+    //       description: "Юбка миди длины фасона карандаш на высокой посадке с разрезом на ножке и декоративным узлом. Ткань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)",
+    //       color: "оливковый",
+    //       colors: ["оливка"],
+    //     }
+    //   }
+    // },
     
     {
       id: 34,
@@ -4510,52 +4867,52 @@ const products = [
       }
     },
 
-    {
-      id: 39,
-      price: 2800,
-      isTop: false,
-      isSpecialOffer: true,
-      discountPrice: 2250,
-      sku: "12353",
-      color: "caramel",
-      size: "XS S M L XL",
-      category: "Skirts",
-      image: "/Skirts/A-line Leather Skirt/4.avif",
-      images: [
-        "/Skirts/A-line Leather Skirt/2.avif", 
-        "/Skirts/A-line Leather Skirt/3.avif", 
-        "/Skirts/A-line Leather Skirt/1.avif", 
-        "/Skirts/A-line Leather Skirt/5.avif"
-      ],
+    // {
+    //   id: 39,
+    //   price: 2800,
+    //   isTop: false,
+    //   isSpecialOffer: true,
+    //   discountPrice: 2250,
+    //   sku: "12353",
+    //   color: "caramel",
+    //   size: "XS S M L XL",
+    //   category: "Skirts",
+    //   image: "/Skirts/A-line Leather Skirt/4.avif",
+    //   images: [
+    //     "/Skirts/A-line Leather Skirt/2.avif", 
+    //     "/Skirts/A-line Leather Skirt/3.avif", 
+    //     "/Skirts/A-line Leather Skirt/1.avif", 
+    //     "/Skirts/A-line Leather Skirt/5.avif"
+    //   ],
       
-      sizes: ["XS", "S", "M", "L", "XL"],
-      translations: {
-        EN: {
-          category: "Skirts",
-          name: "A-line Leather Skirt",
-          description: "Maxi-length A-line skirt with a high waist and a belt. Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)",
-          colors: ["caramel"],
-        },
-        FR: {
-          category: "Jupes",
-          name: "Jupe en cuir A-line",
-          description: "Jupe longue A-line à taille haute avec ceinture. Tissu : cuir écologique de haute qualité sur une base en daim (stretch, ne se fissure pas).",
-          colors: ["caramel"],
-        },
-        UA: {
-          category: "Спідниці",
-          name: "Шкіряна спідниця А-силуету",
-          description: "Спідниця максі довжини А-силуету на високій посадці із поясом. Тканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається )",
-          colors: ["карамель"],
-        },
-        RU: {
-          category: "Юбки",
-          name: "Кожаная юбка А-силуэта",
-          description: "Юбка макси длины А-силуэта на высокой посадке с поясом. Ткань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)",
-          colors: ["карамель"],
-        }
-      }
-    },
+    //   sizes: ["XS", "S", "M", "L", "XL"],
+    //   translations: {
+    //     EN: {
+    //       category: "Skirts",
+    //       name: "A-line Leather Skirt",
+    //       description: "Maxi-length A-line skirt with a high waist and a belt. Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)",
+    //       colors: ["caramel"],
+    //     },
+    //     FR: {
+    //       category: "Jupes",
+    //       name: "Jupe en cuir A-line",
+    //       description: "Jupe longue A-line à taille haute avec ceinture. Tissu : cuir écologique de haute qualité sur une base en daim (stretch, ne se fissure pas).",
+    //       colors: ["caramel"],
+    //     },
+    //     UA: {
+    //       category: "Спідниці",
+    //       name: "Шкіряна спідниця А-силуету",
+    //       description: "Спідниця максі довжини А-силуету на високій посадці із поясом. Тканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається )",
+    //       colors: ["карамель"],
+    //     },
+    //     RU: {
+    //       category: "Юбки",
+    //       name: "Кожаная юбка А-силуэта",
+    //       description: "Юбка макси длины А-силуэта на высокой посадке с поясом. Ткань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)",
+    //       colors: ["карамель"],
+    //     }
+    //   }
+    // },
 
     {
       id: 40,

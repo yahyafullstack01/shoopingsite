@@ -15,14 +15,14 @@ const OpeningHours = () => {
             <p className="font-semibold text-lg sm:text-xl">{menuItems[1]}</p>
             <p className="text-gray-700  dark:text-gray-400 sm:pl-32">9:00 am – 5:00 pm</p>
           </div>
-          <div className="flex flex-col sm:flex-row justify-between sm:space-x-4">
+          {/* <div className="flex flex-col sm:flex-row justify-between sm:space-x-4">
             <p className="font-semibold text-lg sm:text-xl">{menuItems[2]}</p>
             <p className="text-gray-700 dark:text-gray-400 sm:pl-4">9:00 am – 5:00 pm</p>
           </div>
           <div className="flex flex-col sm:flex-row justify-between sm:space-x-4">
             <p className="font-semibold text-lg sm:text-xl">{menuItems[3]}</p>
             <p className="text-gray-700 dark:text-gray-400 sm:pl-4">9:00 am – 5:00 pm</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
