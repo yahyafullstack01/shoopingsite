@@ -57,7 +57,6 @@ const Hero = () => {
               muted
               playsInline
               preload="metadata"
-              poster="/hoom/hero2.avif"
               className="w-full h-auto max-h-[400px] object-cover rounded-lg"
             />
           </div>
