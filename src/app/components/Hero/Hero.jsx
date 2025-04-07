@@ -52,7 +52,6 @@ const Hero = () => {
           <div className="relative w-[200px] max-w-[300px] h-auto flex-shrink-0 overflow-hidden">
             <video
               src="/hoom/baner.mp4"
-              controls
               autoPlay
               loop
               muted
