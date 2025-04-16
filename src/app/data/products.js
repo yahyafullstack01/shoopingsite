@@ -1,6 +1,308 @@
 const products = [
 
   {
+    id: 117,
+    price: 3100,
+    isTop: true,
+    sku: "67216",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Elodie Dress/1.avif",
+    images: [
+      "/Dress/Elodie Dress/2.avif",
+      "/Dress/Elodie Dress/3.avif",
+      "/Dress/Elodie Dress/4.avif",
+      "/Dress/Elodie Dress/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Elodie Dress",
+        description: "A dress crafted from long-fiber muslin.\nFabric: 100% cotton muslin, light and soft to the touch.",
+        colors: ["powder"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe Elodie",
+        description: "Une robe confectionnée en mousseline à longues fibres.\nTissu : mousseline 100 % coton, légère et douce au toucher.",
+        colors: ["poudre"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Сукня 'Elodie'",
+        description: "Сукня з довговолокняного мусліну.\nТканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        colors: ["пудра"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Платье 'Элоди'",
+        description: "Платье из длинноволокнистого муслина.\nТкань: муслин из 100% хлопка, легкая и мягкая на ощупь.",
+        colors: ["пудра"]
+      }
+    }
+  },
+
+  {
+    id: 116,
+    price: 2000,
+    isTop: true,
+    sku: "33450",
+    size: "XS S M L XL",
+    category: "Shirts",
+    image: "/Shirts/Fitted Batiste Shirt/1.avif",
+    images: [
+      "/Shirts/Fitted Batiste Shirt/2.avif",
+      "/Shirts/Fitted Batiste Shirt/3.avif",
+      "/Shirts/Fitted Batiste Shirt/4.avif",
+      "/Shirts/Fitted Batiste Shirt/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Shirts",
+        name: "Fitted Batiste Shirt",
+        description: "A fitted shirt adorned with lace and embroidered inserts.\nFabric: natural batiste.",
+        colors: ["white"]
+      },
+      FR: {
+        category: "Chemises",
+        name: "Chemise en batiste ajustée",
+        description: "Une chemise ajustée ornée de dentelle et d'inserts brodés.\nTissu : batiste naturel.",
+        colors: ["blanc"]
+      },
+      UA: {
+        category: "Сорочки",
+        name: "Батистова сорочка приталена",
+        description: "Сорочка із натуральної тканини, яка оздоблена мереживом та вставками із прошви. Класичного приталеного крою.\nТканина: натуральний батист.",
+        colors: ["біла"]
+      },
+      RU: {
+        category: "Рубашки",
+        name: "Батистовая рубашка приталенная",
+        description: "Рубашка из натуральной ткани, украшенная кружевом и вставками с вышивкой. Классический приталенный крой.\nТкань: натуральный батист.",
+        colors: ["белая"]
+      }
+    }
+  },
+
+  {
+    id: 115,
+    price: 2950,
+    isTop: true,
+    sku: "67215",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Francesca Dress/1.avif",
+    images: [
+      "/Dress/Francesca Dress/2.avif",
+      "/Dress/Francesca Dress/3.avif",
+      "/Dress/Francesca Dress/4.avif",
+      "/Dress/Francesca Dress/5.avif",
+      "/Dress/Francesca Dress/6.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Francesca Dress",
+        description: "A dress featuring delicate embroidery.\nFabric: 95% cotton, 5% elastane. Embroidered cotton fabric with characteristic lace-like stitching.",
+        colors: ["emerald", "beige"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe Francesca",
+        description: "Une robe ornée de broderies délicates.\nTissu : 95 % coton, 5 % élasthanne. Tissu de coton brodé avec des coutures semblables à de la dentelle.",
+        colors: ["émeraude", "beige"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Сукня «Francesca»",
+        description: "Сукня з делікатною вишивкою.\nТканина: 95% бавовна, 5% еластан. Прошва - легка, переважно однотонна, бавовняна тканина з характерною мереживною вишивкою.",
+        colors: ["смарагдова", "бежева"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Платье «Франческа»",
+        description: "Платье с изящной вышивкой.\nТкань: 95% хлопок, 5% эластан. Прошивка - легкая, преимущественно однотонная хлопковая ткань с характерной кружевной вышивкой.",
+        colors: ["изумрудная", "бежевая"]
+      }
+    }
+  },
+
+  {
+    id: 114,
+    price: 3500,
+    isTop: true,
+    sku: "92110",
+    size: "XS S M L XL",
+    category: "Costumes",
+    image: "/Costumes/Embroidered Cotton Costume/1.avif",
+    images: [
+      "/Costumes/Embroidered Cotton Costume/2.avif",
+      "/Costumes/Embroidered Cotton Costume/3.avif",
+      "/Costumes/Embroidered Cotton Costume/4.avif",
+      "/Costumes/Embroidered Cotton Costume/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Costumes",
+        name: "Embroidered Cotton Costume",
+        description: "A cropped top and maxi skirt with lining, featuring delicate embroidery.\nFabric: 95% cotton, 5% elastane. Embroidered cotton fabric with characteristic lace-like stitching.",
+        colors: ["white"]
+      },
+      FR: {
+        category: "Costumes",
+        name: "Costume en coton brodé",
+        description: "Un haut court et une jupe maxi avec doublure, ornés de broderies délicates.\nTissu : 95 % coton, 5 % élasthanne. Tissu de coton brodé avec des coutures semblables à de la dentelle.",
+        colors: ["blanc"]
+      },
+      UA: {
+        category: "Костюми",
+        name: "Костюм з прошви",
+        description: "Вкорочений топ + спідниця максі із підкладкою.\nТканина: 95% бавовна, 5% еластан. Прошва - легка, переважно однотонна, бавовняна тканина з характерною мереживною вишивкою.",
+        colors: ["білий"]
+      },
+      RU: {
+        category: "Костюмы",
+        name: "Костюм с вышивкой",
+        description: "Укороченный топ + макси-юбка с подкладкой.\nТкань: 95% хлопок, 5% эластан. Прошивка - легкая, преимущественно однотонная хлопковая ткань с характерной кружевной вышивкой.",
+        colors: ["белый"]
+      }
+    }
+  },
+
+  {
+    id: 113,
+    price: 3650,
+    isTop: true,
+    sku: "67214",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Oversize Linen Dress/1.avif",
+    images: [
+      "/Dress/Oversize Linen Dress/2.avif",
+      "/Dress/Oversize Linen Dress/3.avif",
+      "/Dress/Oversize Linen Dress/4.avif",
+      "/Dress/Oversize Linen Dress/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Oversize Linen Dress",
+        description: "An oversize dress crafted from a cotton-linen blend, mimicking boiled linen, sourced from a French fashion house in very limited quantities.\nFabric: 50% linen, 50% cotton.",
+        colors: ["blue"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe oversize en lin",
+        description: "Une robe oversize confectionnée dans un mélange de coton et lin, imitant le lin bouilli, provenant d'une maison de mode française en quantités très limitées.\nTissu : 50 % lin, 50 % coton.",
+        colors: ["bleu"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Сукня лляна oversize",
+        description: "Сукня оверсайз із імітації вареного льону з бавовни, виготовлена з тканини французького будинку моди в дуже обмеженій кількості.\nТканина: 50% льон, 50% бавовна.",
+        colors: ["синій"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Платье льняное оверсайз",
+        description: "Платье оверсайз из имитации вареного льна с хлопком, изготовленное из ткани французского дома моды в очень ограниченном количестве.\nТкань: 50% лен, 50% хлопок.",
+        colors: ["синий"]
+      }
+    }
+  },
+
+  {
+    id: 112,
+    price: 3650,
+    isTop: true,
+    sku: "67213",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Aria Dress/1.avif",
+    images: [
+      "/Dress/Aria Dress/2.avif",
+      "/Dress/Aria Dress/3.avif",
+      "/Dress/Aria Dress/4.avif",
+      "/Dress/Aria Dress/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Aria Dress",
+        description: "A dress made from long-fiber muslin.\nFabric: 100% cotton muslin, light and soft to the touch.",
+        colors: ["water"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe Aria",
+        description: "Une robe confectionnée en mousseline à longues fibres.\nTissu : mousseline 100 % coton, légère et douce au toucher.",
+        colors: ["eau"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Сукня 'Aria'",
+        description: "Сукня з довговолокняного мусліну.\nТканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        colors: ["колір води"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Платье 'Ария'",
+        description: "Платье из длинноволокнистого муслина.\nТкань: муслин из 100% хлопка, легкая и мягкая на ощупь.",
+        colors: ["цвет воды"]
+      }
+    }
+  },
+
+  {
+    id: 111,
+    price: 3650,
+    isTop: true,
+    sku: "67212",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Marianna Dress/1.avif",
+    images: [
+      "/Dress/Marianna Dress/2.avif",
+      "/Dress/Marianna Dress/3.avif",
+      "/Dress/Marianna Dress/4.avif",
+      "/Dress/Marianna Dress/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Marianna Dress",
+        description: "A dress made from long-fiber muslin.\nFabric: 100% cotton muslin, light and soft to the touch.",
+        colors: ["milk"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe Marianna",
+        description: "Une robe confectionnée en mousseline à longues fibres.\nTissu : mousseline 100 % coton, légère et douce au toucher.",
+        colors: ["lait"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Сукня 'Marianna'",
+        description: "Сукня з довговолокняного мусліну.\nТканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+        colors: ["молоко"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Платье 'Марианна'",
+        description: "Платье из длинноволокнистого муслина.\nТкань: муслин из 100% хлопка, легкая и мягкая на ощупь.",
+        colors: ["молоко"]
+      }
+    }
+  },
+
+  {
     id: 110,
     price: 1450,
     isTop: true,
@@ -463,25 +765,25 @@ const products = [
     translations: {
       EN: {
         category: "Shirts",
-        name: "Batiste Shirt",
+        name: "Batiste Shirt With lace",
         description: "Shirt made of natural fabric, decorated with lace. Features puff sleeves.\nFabric: natural batiste.",
         colors: ["white", "light blue"]
       },
       FR: {
         category: "Chemises",
-        name: "Chemise en Batiste",
+        name: "Chemisier en batiste orné de dentelle",
         description: "Chemise en tissu naturel ornée de dentelle. Manches bouffantes.\nTissu : batiste naturel.",
         colors: ["blanc", "bleu clair"]
       },
       UA: {
         category: "Сорочки",
-        name: "Батистова сорочка",
+        name: "Батистова сорочка з мереживом",
         description: "Сорочка із натуральної тканини, яка оздоблена мереживом. Має рукава ліхтарики.\nТканина: натуральна тканина батист.",
         colors: ["білий", "блакитний"]
       },
       RU: {
         category: "Рубашки",
-        name: "Батистовая рубашка",
+        name: "Батистовая блузка с кружевом",
         description: "Рубашка из натуральной ткани, украшенная кружевом. Имеет рукава-фонарики.\nТкань: натуральная ткань батист.",
         colors: ["белый", "голубой"]
       }
@@ -515,25 +817,25 @@ const products = [
     translations: {
       EN: {
         category: "Shirts",
-        name: "Batiste Shirt 2",
+        name: "Batiste Shirt",
         description: "Shirt made of natural fabric, decorated with lace. Features puff sleeves.\nFabric: natural batiste.",
         colors: ["white", "light blue"]
       },
       FR: {
         category: "Chemises",
-        name: "Chemise en Batiste 2",
+        name: "Chemise en Batiste",
         description: "Chemise en tissu naturel ornée de dentelle. Manches bouffantes.\nTissu : batiste naturel.",
         colors: ["blanc", "bleu clair"]
       },
       UA: {
         category: "Сорочки",
-        name: "Батистова сорочка 2",
+        name: "Батистова сорочка",
         description: "Сорочка із натуральної тканини, яка оздоблена мереживом. Має рукава ліхтарики.\nТканина: натуральна тканина батист.",
         colors: ["білий", "блакитний"]
       },
       RU: {
         category: "Рубашки",
-        name: "Батистовая рубашка 2",
+        name: "Батистовая рубашка",
         description: "Рубашка из натуральной ткани, украшенная кружевом. Имеет рукава-фонарики.\nТкань: натуральная ткань батист.",
         colors: ["белый", "голубой"]
       }
@@ -2085,25 +2387,25 @@ const products = [
         category: "Costumes",
         name: "Cotton Costume",
         description: "Imitation of washed linen from cotton, sourced from a French fashion house in a very limited quantity. Fabric: 50% linen, 50% cotton.",
-        colors: ["blue", "milk"]
+        colors: ["blue", "milk", "olive"]
       },
       FR: {
         category: "Costumes",
         name: "Costume en Coton",
         description: "Imitation de lin lavé en coton, provenant d'une maison de mode française en quantité très limitée. Tissu : 50% lin, 50% coton.",
-        colors: ["bleu", "lait"]
+        colors: ["bleu", "lait", "olive"]
       },
       UA: {
         category: "Костюми",
         name: "Костюм бавовняний",
         description: "Імітація вареного льону з бавовни з французького будинку моди в дуже обмеженій кількості. Тканина: 50% льон, 50% бавовна.",
-        colors: ["синій", "молоко"]
+        colors: ["синій", "молоко", "оливка"]
       },
       RU: {
         category: "Костюмы",
         name: "Хлопковый костюм",
         description: "Имитация вареного льна из хлопка из французского дома моды в очень ограниченном количестве. Ткань: 50% лён, 50% хлопок.",
-        colors: ["синий", "молоко"]
+        colors: ["синий", "молоко", "оливка"]
       }
     }
 },
@@ -2758,6 +3060,10 @@ const products = [
       "/Dress/Maria Dress/4.avif",
       "/Dress/Maria Dress/5.avif",
       "/Dress/Maria Dress/6.avif",
+      "/Dress/Maria Dress/7.avif",
+      "/Dress/Maria Dress/8.avif",
+      "/Dress/Maria Dress/9.avif",
+      "/Dress/Maria Dress/10.avif"
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
     translations: {
@@ -2766,28 +3072,28 @@ const products = [
         name: "Maria Dress",
         description: "Maxi dress with handmade lace, lantern sleeves, and a slit on the leg. Fabric: long-fiber muslin, 100% cotton. Light and soft to the touch.",
         color: "milk",
-        colors: ["milk"]
+        colors: ["milk", "Water"]
       },
       FR: {
         category: "Robes",
         name: "Robe Maria",
         description: "Robe maxi avec dentelle faite main, manches lanternes et fente sur la jambe. Tissu : mousseline à longues fibres, 100% coton. Tissu léger et doux au toucher.",
         color: "lait",
-        colors: ["lait"]
+        colors: ["lait", "L'eau"]
       },
       UA: {
         category: "Сукні",
         name: "Сукня \"Maria\"",
         description: "Сукня максі із мереживом ручної роботи, рукавами ліхтариками та розрізом на ніжці. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
         color: "молоко",
-        colors: ["молоко"]
+        colors: ["молоко", "колір води"]
       },
       RU: {
         category: "Платья",
         name: "Платье \"Maria\"",
         description: "Макси-платье с ручным кружевом, рукавами-фонариками и разрезом на ноге. Ткань: длинноволокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь.",
         color: "молоко",
-        colors: ["молоко"]
+        colors: ["молоко", "цвет воды"]
       }
     }
 },
