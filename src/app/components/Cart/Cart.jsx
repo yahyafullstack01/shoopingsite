@@ -1,6 +1,7 @@
-{/*'use client';
+'use client';
 
 import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 
 
 // Отримати або створити sessionId
@@ -18,6 +19,7 @@ export default function Cart() {
   const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(false);
   const [sessionId, setSessionId] = useState('');
+  const router = useRouter();
 
   // 1. Ініціалізація sessionId
   useEffect(() => {
@@ -31,7 +33,7 @@ export default function Cart() {
     const fetchCart = async () => {
       setLoading(true);
       try {
-        const res = await fetch(`/api/cart?sessionId=${sessionId}`);
+        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/cart?sessionId=${sessionId}`)
         const data = await res.json();
         setCartItems(data.cart);
       } catch (error) {
@@ -49,7 +51,7 @@ export default function Cart() {
     if (quantity < 1) return;
     setLoading(true);
     try {
-      const res = await fetch('/api/cart', {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/cart`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ cartId, quantity, sessionId }),
@@ -70,7 +72,7 @@ export default function Cart() {
   const removeItem = async (cartId) => {
     setLoading(true);
     try {
-      const res = await fetch('/api/cart', {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/cart`, {
         method: 'DELETE',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ cartId, sessionId }),
@@ -145,81 +147,22 @@ export default function Cart() {
           </div>
         </div>
       ))}
+{cartItems.length > 0 && (
+  <div className="mt-6 text-right">
+    
+    <h2 className="text-xl font-bold">Всього: {total} грн</h2>
+    <button
+      onClick={() => 
+      {
+     localStorage.setItem('totalAmount', total); // зберігаємо суму
+     router.push('/Checkout')}}
+      className="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+    >
+      Оформити замовлення
+    </button>
+  </div>
+)}
 
-      {cartItems.length > 0 && (
-        <div className="mt-6 text-right">
-          <h2 className="text-xl font-bold">Всього: {total} грн</h2>
-          <button className="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-            Оформити замовлення
-          </button>
-        </div>
-      )}
     </div>
   );
 }
-*/}
-{/*
-Для підключення бекенду потрібно змінити і додати 
-const BACKEND_URL = "https://shoopingsite-backend.onrender.com"; // ← заміни на свій реальний URL
-
-// 2. Завантажити корзину
-useEffect(() => {
-  if (!sessionId) return;
-
-  const fetchCart = async () => {
-    setLoading(true);
-    try {
-      const res = await fetch(`${BACKEND_URL}/api/cart?sessionId=${sessionId}`);
-      const data = await res.json();
-      setCartItems(data.cart);
-    } catch (error) {
-      setMessage('Помилка при завантаженні корзини');
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  fetchCart();
-}, [sessionId]);
-
-// 3. Оновити кількість
-const updateQuantity = async (cartId, quantity) => {
-  if (quantity < 1) return;
-  setLoading(true);
-  try {
-    const res = await fetch(`${BACKEND_URL}/api/cart`, {
-      method: 'PUT',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ cartId, quantity, sessionId }),
-    });
-    const data = await res.json();
-    setCartItems((prev) =>
-      prev.map((item) => (item.id === cartId ? { ...item, quantity } : item))
-    );
-    setMessage(data.message);
-  } catch {
-    setMessage('Помилка при оновленні товару');
-  } finally {
-    setLoading(false);
-  }
-};
-
-// 4. Видалити товар
-const removeItem = async (cartId) => {
-  setLoading(true);
-  try {
-    const res = await fetch(`${BACKEND_URL}/api/cart`, {
-      method: 'DELETE',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ cartId, sessionId }),
-    });
-    const data = await res.json();
-    setCartItems((prev) => prev.filter((item) => item.id !== cartId));
-    setMessage(data.message);
-  } catch {
-    setMessage('Помилка при видаленні товару');
-  } finally {
-    setLoading(false);
-  }
-};
-*/}

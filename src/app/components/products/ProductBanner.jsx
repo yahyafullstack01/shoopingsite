@@ -14,9 +14,9 @@ const ProductBanner = ({
 }) => {
   const { language } = useLanguage();
   const [currentImage, setCurrentImage] = useState(selectedProduct?.image || "/4.jpg");
- // const [selectedColor, setSelectedColor] = useState('');
-  //const [selectedSize, setSelectedSize] = useState('');
- // const [quantity, setQuantity] = useState(1);
+ const [selectedColor, setSelectedColor] = useState('');
+const [selectedSize, setSelectedSize] = useState('');
+ const [quantity, setQuantity] = useState(1);
 
   const translatedName =
     selectedProduct?.translations?.[language]?.name || selectedProduct?.name;
@@ -35,34 +35,35 @@ const ProductBanner = ({
       document.body.style.overflow = "auto";
     };
   }, [selectedProduct]);
-{/*
-  const handleAddToCart = async ({ product, selectedColor, selectedSize, quantity }) => {
+  const handleAddToCart = async ({ selectedColor, selectedSize, quantity }) => {
     const sessionId = localStorage.getItem("sessionId");
     if (!sessionId) {
       alert("Не знайдено sessionId");
       return;
     }
-
+  
     try {
-      const res = await fetch("/api/cart", {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/cart`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           sessionId,
-          productId: product.id,
+          productId: selectedProduct.id,
           color: selectedColor,
           size: selectedSize,
           quantity,
         }),
       });
-
+  
       const data = await res.json();
       alert(data.message);
     } catch (err) {
+      console.error("❌ Cart POST error:", err);
       alert("Помилка при додаванні в корзину");
     }
   };
-*/}
+  
+
   if (!selectedProduct) return null;
 
   return (
@@ -120,13 +121,13 @@ const ProductBanner = ({
               sizes={selectedProduct.sizes}
               descriptionRef={descriptionRef}
               onContactClick={handleContactButtonClick}
-             // selectedColor={selectedColor}
-             // setSelectedColor={setSelectedColor}
-             // selectedSize={selectedSize}
-             // setSelectedSize={setSelectedSize}
-             // quantity={quantity}
-             // setQuantity={setQuantity}
-             // onAddToCartClick={handleAddToCart} 
+             selectedColor={selectedColor}
+             setSelectedColor={setSelectedColor}
+             selectedSize={selectedSize}
+             setSelectedSize={setSelectedSize}
+             quantity={quantity}
+             setQuantity={setQuantity}
+              onAddToCartClick={handleAddToCart} 
             />
           </div>
         </div>
