@@ -33,7 +33,10 @@ export default function Cart() {
     const fetchCart = async () => {
       setLoading(true);
       try {
-        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/cart?sessionId=${sessionId}`)
+        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/cart?sessionId=${sessionId}`, {
+          credentials: 'include',
+        });
+       
         const data = await res.json();
         setCartItems(data.cart);
       } catch (error) {
