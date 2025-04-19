@@ -1,4 +1,4 @@
-"use client";
+{/*"use client";
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -51,4 +51,4 @@ const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/cart?sessionId=
       </Link>
     </div>
   );
-}
+}*/}

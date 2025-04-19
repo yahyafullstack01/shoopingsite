@@ -4,9 +4,10 @@ import { Suspense } from "react";
 export default function CartPage() {
   return (
     <Layout>
+      {/*
     <Suspense fallback={<div>Корзина</div>}>
     <Cart />
-    </Suspense>
+    </Suspense>*/}
   </Layout>
  
   );
