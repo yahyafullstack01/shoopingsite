@@ -35,7 +35,7 @@ const [selectedSize, setSelectedSize] = useState('');
       document.body.style.overflow = "auto";
     };
   }, [selectedProduct]);
-  {/*
+  
   const handleAddToCart = async ({ selectedColor, selectedSize, quantity }) => {
     const sessionId = localStorage.getItem("sessionId");
     if (!sessionId) {
@@ -63,7 +63,7 @@ const [selectedSize, setSelectedSize] = useState('');
       alert("Помилка при додаванні в корзину");
     }
   };
-  */}
+  
 
   if (!selectedProduct) return null;
 
@@ -128,7 +128,7 @@ const [selectedSize, setSelectedSize] = useState('');
              setSelectedSize={setSelectedSize}
              quantity={quantity}
              setQuantity={setQuantity}
-             // onAddToCartClick={handleAddToCart} 
+             onAddToCartClick={handleAddToCart} 
             />
           </div>
         </div>
