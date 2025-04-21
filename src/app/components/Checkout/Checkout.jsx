@@ -112,7 +112,7 @@ export default function Checkout() {
       setFilteredCities([]);
     }
   };
-
+{/*}
   const handleStripePayment = async () => {
     try {
       const response = await fetch(`${BACKEND_URL}/api/payments/stripe`, {
@@ -131,7 +131,7 @@ export default function Checkout() {
       alert('Не вдалося перейти до Stripe оплати');
     }
   };
-
+*/}
   const handleLiqPayPayment = async (order) => {
     try {
       const response = await fetch(`${BACKEND_URL}/api/payments/liqpay`, {
@@ -422,7 +422,7 @@ export default function Checkout() {
                 />
                 <span>LiqPay (🇺🇦 грн)</span>
               </label>
-              <label className="flex items-center space-x-2">
+              {/*<label className="flex items-center space-x-2">
                 <input
                   type="radio"
                   name="online-method"
@@ -431,7 +431,7 @@ export default function Checkout() {
                   onChange={() => setOnlinePaymentMethod('stripe')}
                 />
                 <span>Stripe (🌍 USD / EUR)</span>
-              </label>
+              </label>*/}
             </div>
           </div>
         )}

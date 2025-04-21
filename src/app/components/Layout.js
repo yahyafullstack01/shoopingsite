@@ -12,10 +12,10 @@ export default function Layout({ children }) {
       <div
         className={`${
           isDarkMode ? "dark bg-black text-white" : "light bg-white text-black"
-        } transition-colors min-h-screen`}
+        } transition-colors min-h-screen flex flex-col`}
       >
         <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-        <main>{children}</main>
+        <main className="flex-grow">{children}</main>
         <Footer />
       </div>
     </LanguageProvider>

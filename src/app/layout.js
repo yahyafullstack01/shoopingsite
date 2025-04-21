@@ -7,7 +7,7 @@ import { siteJsonLd, organizationJsonLd } from "./seo/loyout-jsonld"; // Імп�
 import ErrorBoundary from "../app/components/ErrorBoundary/ErrorBoundary";
 export default function RootLayout({ children }) {
     return (
-        <html lang="uk">
+        <html lang="uk" className="h-full">
             <head>
                 <title>
                     Ексклюзивний жіночий одяг від Latore Atelier | Створено для кожного сезону
@@ -82,7 +82,7 @@ export default function RootLayout({ children }) {
                     }}
                 />
             </head>
-            <body className="transition-colors min-h-screen">
+            <body className="h-full transition-colors min-h-screen">
               <ThemeProvider>
                 <ErrorBoundary>
                   {children}
