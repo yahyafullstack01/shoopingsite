@@ -97,7 +97,7 @@ export default function Cart() {
   );
 
   return (
-    <div className="p-6 max-w-3xl mx-auto">
+    <div className="p-6 max-w-3xl mx-auto  section-container py-12">
       <h1 className="text-2xl font-bold mb-4">Корзина</h1>
 
       {message && <p className="mb-2 text-green-600">{message}</p>}
@@ -105,7 +105,7 @@ export default function Cart() {
       {!loading && cartItems.length === 0 && <p>Корзина порожня.</p>}
 
       {cartItems.map((item) => (
-        <div key={item.id} className="flex justify-between items-center py-3 border-b">
+        <div key={item.id} className="flex justify-between items-center border-b py-3">
           <div className="flex items-center space-x-4">
             <img
               src={item.image}
