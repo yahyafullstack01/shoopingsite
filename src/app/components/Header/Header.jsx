@@ -224,6 +224,7 @@ aria-expanded={isCategoriesOpen}
         >
           <FaTimes />
         </button>
+      
         <div className="flex items-center justify-start space-x-4 px-6 py-4 border-b border-gray-300 dark:border-gray-600">
           <button
             onClick={toggleLanguage}
@@ -244,6 +245,12 @@ aria-expanded={isCategoriesOpen}
               <FaMoon className="text-xs sm:text-sm md:text-base lg:text-lg" />
             )}
           </button>
+          <ul className="flex space-x-2">
+ 
+ <li role="menuitem">
+   <CartIcon />
+ </li>
+</ul>
         </div>
        
         <ul className="flex flex-col items-start space-y-4 p-6 text-xs sm:text-sm md:text-base lg:text-lg" role="menubar">
@@ -252,6 +259,7 @@ aria-expanded={isCategoriesOpen}
       {menuItems[0]}
     </Link>
   </li>
+  
   {/* КНОПКА КАТАЛОГУ */}
   <li role="menuitem">
                 <button
@@ -281,7 +289,7 @@ aria-expanded={isCategoriesOpen}
                   </ul>
                 )}
               </li>
-
+        
   <li className="text-center" role="menuitem">
     <Link href="/#about" aria-label={`Learn more about ${menuItems[2]}`}>
       {menuItems[2]}
