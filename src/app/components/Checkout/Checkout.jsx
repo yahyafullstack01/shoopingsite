@@ -132,6 +132,70 @@ export default function Checkout() {
     }
   };
 */}
+const showLoader = (message = 'Переходимо на оплату...') => {
+  const loaderOverlay = document.createElement('div');
+  loaderOverlay.style.position = 'fixed';
+  loaderOverlay.style.top = 0;
+  loaderOverlay.style.left = 0;
+  loaderOverlay.style.width = '100%';
+  loaderOverlay.style.height = '100%';
+  loaderOverlay.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+  loaderOverlay.style.display = 'flex';
+  loaderOverlay.style.flexDirection = 'column';
+  loaderOverlay.style.alignItems = 'center';
+  loaderOverlay.style.justifyContent = 'center';
+  loaderOverlay.style.zIndex = 9999;
+
+  loaderOverlay.innerHTML = `
+    <div style="color: white; font-size: 20px; margin-bottom: 20px;">${message}</div>
+    <div style="border: 5px solid #f3f3f3; border-top: 5px solid #3498db; border-radius: 50%; width: 50px; height: 50px; animation: spin 1s linear infinite;"></div>
+    <style>
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+  `;
+
+  document.body.appendChild(loaderOverlay);
+};
+const handleFondyPayment = async (order) => {
+  try {
+    const response = await fetch(`${BACKEND_URL}/api/payments/fondy`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        amount: order.total,
+        resultUrl: `${window.location.origin}/success`,
+        serverUrl: `${BACKEND_URL}/api/payments/fondy-callback`
+     }),
+    });
+
+    const html = await response.text();
+    console.log('📥 HTML від Fondy:', html);
+
+    const container = document.createElement('div');
+    container.innerHTML = html;
+    document.body.appendChild(container);
+
+    setTimeout(() => {
+      const form = container.querySelector('form');
+      if (form) {
+        console.log('✅ Знайдено <form>, виконуємо submit');
+
+        showLoader('Переходимо на Fondy...'); // показуємо лоадер!
+        form.submit();
+      } else {
+        console.error('❗ HTML не містить <form>');
+        alert('Не вдалося ініціювати оплату Fondy — форма не згенерована.');
+      }
+    }, 0);
+  } catch (err) {
+    console.error('❌ Fondy помилка:', err);
+    alert('Не вдалося ініціювати оплату Fondy. Спробуйте ще раз.');
+  }
+};
+
   const handleLiqPayPayment = async (order) => {
     try {
       const response = await fetch(`${BACKEND_URL}/api/payments/liqpay`, {
@@ -181,7 +245,7 @@ export default function Checkout() {
     }
   
     setErrors({});
-    
+  
     const order = {
       firstName,
       lastName,
@@ -216,6 +280,9 @@ export default function Checkout() {
         } else if (onlinePaymentMethod === 'liqpay') {
           console.log("➡️ Переходимо до LiqPay...");
           await handleLiqPayPayment(order);
+        } else if (onlinePaymentMethod === 'fondy') {
+          console.log("➡️ Переходимо до Fondy...");
+          await handleFondyPayment(order);
         }
   
       } else {
@@ -422,6 +489,17 @@ export default function Checkout() {
                 />
                 <span>LiqPay (🇺🇦 грн)</span>
               </label>
+              <label className="flex items-center space-x-2">
+  <input
+    type="radio"
+    name="online-method"
+    value="fondy"
+    checked={onlinePaymentMethod === 'fondy'}
+    onChange={() => setOnlinePaymentMethod('fondy')}
+  />
+  <span>Fondy (тест UAH)</span>
+</label>
+
               {/*<label className="flex items-center space-x-2">
                 <input
                   type="radio"
