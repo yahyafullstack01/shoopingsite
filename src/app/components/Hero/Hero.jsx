@@ -7,49 +7,49 @@ import Head from "next/head";
 
 // Lazy-loaded video component
 const LazyVideo = ({ src, poster }) => {
-  const videoRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
+  const wrapperRef = useRef(null);
+  const [shouldRenderVideo, setShouldRenderVideo] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setIsVisible(true);
+          setShouldRenderVideo(true);
           observer.disconnect();
         }
       },
       { threshold: 0.25 }
     );
 
-    if (videoRef.current) {
-      observer.observe(videoRef.current);
+    if (wrapperRef.current) {
+      observer.observe(wrapperRef.current);
     }
 
     return () => {
-      if (videoRef.current) observer.unobserve(videoRef.current);
+      if (wrapperRef.current) observer.unobserve(wrapperRef.current);
     };
   }, []);
 
-  if (!isVisible) {
-    return (
-      <div className="w-full h-auto max-h-[400px] bg-gray-200 rounded-lg" ref={videoRef}>
-        {/* Можна показати тут постер */}
-        <img src={poster} alt="Latore fallback" className="w-full h-auto rounded-lg object-cover" />
-      </div>
-    );
-  }
-
   return (
-    <video
-      ref={videoRef}
-      src={src}
-      poster={poster}
-      muted
-      loop
-      playsInline
-      preload="none"
-      className="w-full h-auto max-h-[400px] object-cover rounded-lg"
-    />
+    <div ref={wrapperRef} className="w-full h-auto max-h-[400px] rounded-lg overflow-hidden">
+      {shouldRenderVideo ? (
+        <video
+          src={src}
+          poster={poster}
+          muted
+          loop
+          playsInline
+          preload="none"
+          className="w-full h-auto object-cover rounded-lg"
+        />
+      ) : (
+        <img
+          src={poster}
+          alt="Latore preview"
+          className="w-full h-auto object-cover rounded-lg"
+        />
+      )}
+    </div>
   );
 };
 
