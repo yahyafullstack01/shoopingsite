@@ -43,7 +43,7 @@ const LazyVideo = ({ src, poster }) => {
           className="w-full h-auto object-cover rounded-lg"
         />
       ) : (
-        <img
+        <Image
           src={poster}
           alt="Latore preview"
           className="w-full h-auto object-cover rounded-lg"
@@ -99,9 +99,9 @@ const Hero = () => {
       >
         {isClient && (
           <div className="relative w-[200px] max-w-[300px] h-auto flex-shrink-0 overflow-hidden">
-            <LazyVideo src="/hoom/baner.mp4" poster="/hoom/baner-fallback.jpg" />
+            <LazyVideo src="/hoom/baner.mp4" poster="/hoom/baner-mal.avif" />
             <noscript>
-              <img src="/hoom/baner-fallback.jpg" alt="Latore video fallback" className="rounded-lg" />
+              <Image src="/hoom/baner-mal.avif" alt="Latore video" className="rounded-lg" />
             </noscript>
           </div>
         )}
