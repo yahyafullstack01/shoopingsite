@@ -61,6 +61,12 @@ export default function RootLayout({ children }) {
           gtag('config', 'G-KGLK5J3JEE');
         `}
       </Script>
+       {/* 🔥 Google Ads Conversion Tag */}
+       <Script id="google-ads" strategy="afterInteractive">
+        {`
+          gtag('config', 'AW-17054383975');
+        `}
+      </Script>
     </>
   )
 } 

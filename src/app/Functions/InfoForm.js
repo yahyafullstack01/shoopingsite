@@ -8,7 +8,7 @@ import SizeChart from "../components/SizeChart/SizeChart";
 export default function InfoForm({
   product,
   showDiscount = false,
-  onAddToCartClick
+  //onAddToCartClick
 }) {
   const router = useRouter();
   const [selectedColor, setSelectedColor] = useState("");
@@ -24,7 +24,7 @@ export default function InfoForm({
 
   const translatedName = product.translations?.[language]?.name || product.name;
   const translatedDescription = product.translations?.[language]?.description || product.description;
-
+{/*
   const handleAddToCartClick = () => {
     let hasError = false;
 
@@ -58,6 +58,7 @@ export default function InfoForm({
       quantity,
     });
   };
+  */}
   const handleContactClick = (e) => {
     e.preventDefault();
     let hasError = false;

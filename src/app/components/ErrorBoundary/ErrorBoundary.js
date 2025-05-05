@@ -21,11 +21,11 @@ class ErrorBoundary extends React.Component {
         <div style={{ textAlign: 'center', padding: '50px' }}>
           <h1>Щось пішло не так.</h1>
           <p>Ми вже працюємо над вирішенням цієї проблеми.</p>
-          <Link href="/">
-            <a style={{ color: 'blue', textDecoration: 'underline' }}>
-              Повернутися на головну
-            </a>
-          </Link>
+          <Link href="/" className="text-blue-600 underline">
+  Повернутися на головну
+</Link>
+
+         
         </div>
       );
     }
