@@ -28,7 +28,7 @@ const Hero = () => {
       <section className="hidden lg:flex relative w-[1280px] xl:w-[1800px] 2xl:w-[2400px] h-[400px] xl:h-[550px] 2xl:h-[650px] mx-auto justify-center items-center">
         <div className="absolute inset-0 w-full h-full">
           <Image
-            src="/hoom/hero3.avif"
+            src="/hoom/baner-desk.avif"
             alt="Latore Collection"
             width={2400}
             height={650}
