@@ -67,7 +67,7 @@ const Hero = () => {
         <div className="flex flex-col items-center md:items-start gap-2 text-center md:text-left w-[40vw] sm:w-auto">
           <div className="relative w-[35vw] sm:w-[300px] lg:w-[350px] max-w-[600px] h-auto overflow-hidden">
             <Image
-              src="/hoom/hero.avif"
+              src="/hoom/baner-mal.avif"
               alt="Latore Collection Style"
               width={600}
               height={500}
