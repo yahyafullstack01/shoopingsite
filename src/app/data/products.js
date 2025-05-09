@@ -258,48 +258,48 @@ const products = [
   //   }
   // },
 
-  // {
-  //   id: 123,
-  //   price: 3900,
-  //   isTop: false,
-  //   sku: "67222",
-  //   size: "XS S M L XL",
-  //   category: "Dresses",
-  //   image: "/Dress/Hemp Maxi Dress/1.avif",
-  //   images: [
-  //       "/Dress/Hemp Maxi Dress/2.avif",
-  //       "/Dress/Hemp Maxi Dress/3.avif",
-  //       "/Dress/Hemp Maxi Dress/4.avif",
-  //       "/Dress/Hemp Maxi Dress/5.avif"
-  //   ],
-  //   sizes: ["XS", "S", "M", "L", "XL"],
-  //   translations: {
-  //       EN: {
-  //           category: "Dresses",
-  //           name: "Hemp Maxi Dress",
-  //           description: "A dress made from double-layer muslin, 30% hemp, 70% cotton.\nOne of the most eco-friendly fabrics, grown without pesticides.",
-  //           colors: ["hemp"]
-  //       },
-  //       FR: {
-  //           category: "Robes",
-  //           name: "Robe Maxi en Chanvre",
-  //           description: "Une robe en mousseline double couche, 30 % chanvre, 70 % coton.\nL'un des tissus les plus écologiques, cultivé sans pesticides.",
-  //           colors: ["chanvre"]
-  //       },
-  //       UA: {
-  //           category: "Сукні",
-  //           name: "Конопляна сукня maxi",
-  //           description: "Сукня з двошарового мусліну, 30% коноплі, 70% бавовни.\nЦе одна з найекологічніших тканин, бо виращується без пестицидів.",
-  //           colors: ["конопляний"]
-  //       },
-  //       RU: {
-  //           category: "Платья",
-  //           name: "Конопляное платье макси",
-  //           description: "Платье из двухслойного муслина, 30% конопли, 70% хлопка.\nОдна из самых экологичных тканей, выращивается без пестицидов.",
-  //           colors: ["конопляный"]
-  //       }
-  //   }
-  // },
+  {
+    id: 123,
+    price: 3900,
+    isTop: false,
+    sku: "67222",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Hemp Maxi Dress/1.avif",
+    images: [
+        "/Dress/Hemp Maxi Dress/2.avif",
+        "/Dress/Hemp Maxi Dress/3.avif",
+        "/Dress/Hemp Maxi Dress/4.avif",
+        "/Dress/Hemp Maxi Dress/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+        EN: {
+            category: "Dresses",
+            name: "Hemp Maxi Dress",
+            description: "A dress made from double-layer muslin, 30% hemp, 70% cotton.\nOne of the most eco-friendly fabrics, grown without pesticides.",
+            colors: ["hemp"]
+        },
+        FR: {
+            category: "Robes",
+            name: "Robe Maxi en Chanvre",
+            description: "Une robe en mousseline double couche, 30 % chanvre, 70 % coton.\nL'un des tissus les plus écologiques, cultivé sans pesticides.",
+            colors: ["chanvre"]
+        },
+        UA: {
+            category: "Сукні",
+            name: "Конопляна сукня maxi",
+            description: "Сукня з двошарового мусліну, 30% коноплі, 70% бавовни.\nЦе одна з найекологічніших тканин, бо виращується без пестицидів.",
+            colors: ["конопляний"]
+        },
+        RU: {
+            category: "Платья",
+            name: "Конопляное платье макси",
+            description: "Платье из двухслойного муслина, 30% конопли, 70% хлопка.\nОдна из самых экологичных тканей, выращивается без пестицидов.",
+            colors: ["конопляный"]
+        }
+    }
+  },
 
   // {
   //   id: 122,
@@ -344,177 +344,190 @@ const products = [
   //   }
   // },
 
-  // {
-  //   id: 121,
-  //   price: 2850,
-  //   isTop: false,
-  //   sku: "67220",
-  //   size: "XS S M L XL",
-  //   category: "Dresses",
-  //   image: "/Dress/Maxi Sundress/1.avif",
-  //   images: [
-  //       "/Dress/Maxi Sundress/2.avif",
-  //       "/Dress/Maxi Sundress/3.avif",
-  //       "/Dress/Maxi Sundress/4.avif",
-  //       "/Dress/Maxi Sundress/5.avif"
-  //   ],
-  //   sizes: ["XS", "S", "M", "L", "XL"],
-  //   translations: {
-  //       EN: {
-  //           category: "Dresses",
-  //           name: "Maxi Sundress",
-  //           description: "A sundress crafted from long-fiber muslin.\nFabric: 100% cotton muslin, light and soft to the touch.",
-  //           colors: ["eucalyptus"]
-  //       },
-  //       FR: {
-  //           category: "Robes",
-  //           name: "Robe d'été Maxi",
-  //           description: "Une robe d'été confectionnée en mousseline à longues fibres.\nTissu : mousseline 100 % coton, légère et douce au toucher.",
-  //           colors: ["eucalyptus"]
-  //       },
-  //       UA: {
-  //           category: "Сукні",
-  //           name: "Сарафан maxi",
-  //           description: "Сарафан з довговолокняного мусліну.\nТканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
-  //           colors: ["евкаліпт"]
-  //       },
-  //       RU: {
-  //           category: "Платья",
-  //           name: "Сарафан макси",
-  //           description: "Сарафан из длинноволокнистого муслина.\nТкань: муслин из 100% хлопка, легкая и мягкая на ощупь.",
-  //           colors: ["эвкалипт"]
-  //       }
-  //   }
-  // },
+  {
+    id: 121,
+    price: 2850,
+    isTop: false,
+    sku: "67220",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Maxi Sundress/1.avif",
+    images: [
+        "/Dress/Maxi Sundress/2.avif",
+        "/Dress/Maxi Sundress/3.avif",
+        "/Dress/Maxi Sundress/4.avif",
+        "/Dress/Maxi Sundress/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+        EN: {
+            category: "Dresses",
+            name: "Maxi Sundress",
+            description: "A sundress crafted from long-fiber muslin.\nFabric: 100% cotton muslin, light and soft to the touch.",
+            colors: ["eucalyptus"]
+        },
+        FR: {
+            category: "Robes",
+            name: "Robe d'été Maxi",
+            description: "Une robe d'été confectionnée en mousseline à longues fibres.\nTissu : mousseline 100 % coton, légère et douce au toucher.",
+            colors: ["eucalyptus"]
+        },
+        UA: {
+            category: "Сукні",
+            name: "Сарафан maxi",
+            description: "Сарафан з довговолокняного мусліну.\nТканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+            colors: ["евкаліпт"]
+        },
+        RU: {
+            category: "Платья",
+            name: "Сарафан макси",
+            description: "Сарафан из длинноволокнистого муслина.\nТкань: муслин из 100% хлопка, легкая и мягкая на ощупь.",
+            colors: ["эвкалипт"]
+        }
+    }
+  },
 
-  // {
-  //   id: 120,
-  //   price: 2500,
-  //   isTop: false,
-  //   sku: "67219",
-  //   size: "XS S M L XL",
-  //   category: "Dresses",
-  //   image: "/Dress/Cotton Dress/1.avif",
-  //   images: [
-  //       "/Dress/Cotton Dress/2.avif",
-  //       "/Dress/Cotton Dress/3.avif",
-  //       "/Dress/Cotton Dress/4.avif",
-  //       "/Dress/Cotton Dress/5.avif"
-  //   ],
-  //   sizes: ["XS", "S", "M", "L", "XL"],
-  //   translations: {
-  //       EN: {
-  //           category: "Dresses",
-  //           name: "Cotton Dress",
-  //           description: "A maxi dress made from natural cotton. Unique cut with lantern sleeves and tie details.\nFabric: 100% cotton.",
-  //           colors: ["lemon", "white", "black"]
-  //       },
-  //       FR: {
-  //           category: "Robes",
-  //           name: "Robe en Coton",
-  //           description: "Une robe maxi en coton naturel. Coupe unique avec des manches lanternes et des détails de liens.\nTissu : 100 % coton.",
-  //           colors: ["citron", "blanc", "noir"]
-  //       },
-  //       UA: {
-  //           category: "Сукні",
-  //           name: "Бавовняна сукня",
-  //           description: "Сукня максі з натуральної бавовни. Незвичного крою із рукавами ліхтариками та зав‘язками.\nТканина: 100% бавовна.",
-  //           colors: ["лимонний", "білий", "чорний"]
-  //       },
-  //       RU: {
-  //           category: "Платья",
-  //           name: "Хлопковое платье",
-  //           description: "Платье макси из натурального хлопка. Необычный крой с рукавами-фонариками и завязками.\nТкань: 100% хлопок.",
-  //           colors: ["лимонный", "белый", "черный"]
-  //       }
-  //   }
-  // },
+  {
+    id: 120,
+    price: 2500,
+    isTop: false,
+    sku: "67219",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Cotton Dress/1.avif",
+    images: [
+        "/Dress/Cotton Dress/2.avif",
+        "/Dress/Cotton Dress/3.avif",
+        "/Dress/Cotton Dress/4.avif",
+        "/Dress/Cotton Dress/5.avif",
+        "/Dress/Cotton Dress/6.avif",
+        "/Dress/Cotton Dress/7.avif",
+        "/Dress/Cotton Dress/8.avif",
+        "/Dress/Cotton Dress/9.avif",
+        "/Dress/Cotton Dress/10.avif",
+        "/Dress/Cotton Dress/11.avif",
+        "/Dress/Cotton Dress/12.avif",
+        "/Dress/Cotton Dress/13.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+        EN: {
+            category: "Dresses",
+            name: "Cotton Dress",
+            description: "A maxi dress made from natural cotton. Unique cut with lantern sleeves and tie details.\nFabric: 100% cotton.",
+            colors: ["lemon", "white", "black"]
+        },
+        FR: {
+            category: "Robes",
+            name: "Robe en Coton",
+            description: "Une robe maxi en coton naturel. Coupe unique avec des manches lanternes et des détails de liens.\nTissu : 100 % coton.",
+            colors: ["citron", "blanc", "noir"]
+        },
+        UA: {
+            category: "Сукні",
+            name: "Бавовняна сукня",
+            description: "Сукня максі з натуральної бавовни. Незвичного крою із рукавами ліхтариками та зав‘язками.\nТканина: 100% бавовна.",
+            colors: ["лимонний", "білий", "чорний"]
+        },
+        RU: {
+            category: "Платья",
+            name: "Хлопковое платье",
+            description: "Платье макси из натурального хлопка. Необычный крой с рукавами-фонариками и завязками.\nТкань: 100% хлопок.",
+            colors: ["лимонный", "белый", "черный"]
+        }
+    }
+  },
 
-  // {
-  //   id: 119,
-  //   price: 3100,
-  //   isTop: false,
-  //   sku: "67218",
-  //   size: "XS S M L XL",
-  //   category: "Dresses",
-  //   image: "/Dress/Lily Dress/1.avif",
-  //   images: [
-  //       "/Dress/Lily Dress/2.avif",
-  //       "/Dress/Lily Dress/3.avif",
-  //       "/Dress/Lily Dress/4.avif",
-  //       "/Dress/Lily Dress/5.avif"
-  //   ],
-  //   sizes: ["XS", "S", "M", "L", "XL"],
-  //   translations: {
-  //       EN: {
-  //           category: "Dresses",
-  //           name: "Lily Dress",
-  //           description: "A dress crafted from lightweight cotton with delicate lace embroidery.\nFabric: 95% cotton, 5% elastane. Proshva - a light, mostly solid-colored cotton fabric with distinctive lace embroidery.",
-  //           colors: ["light blue"]
-  //       },
-  //       FR: {
-  //           category: "Robes",
-  //           name: "Robe Lily",
-  //           description: "Une robe confectionnée en coton léger avec une broderie de dentelle délicate.\nTissu : 95 % coton, 5 % élasthanne. Proshva - un tissu en coton léger, généralement uni, avec une broderie de dentelle caractéristique.",
-  //           colors: ["bleu clair"]
-  //       },
-  //       UA: {
-  //           category: "Сукні",
-  //           name: "Сукня «Lily»",
-  //           description: "Сукня з легкої бавовняної тканини з делікатною мереживною вишивкою.\nТканина: 95% бавовна, 5% еластан. Прошва - легка, переважно однотонна, бавовняна тканина з характерною мереживною вишивкою.",
-  //           colors: ["блакитний"]
-  //       },
-  //       RU: {
-  //           category: "Платья",
-  //           name: "Платье «Лили»",
-  //           description: "Платье из легкой хлопковой ткани с изящной кружевной вышивкой.\nТкань: 95% хлопок, 5% эластан. Прошва - легкая, преимущественно однотонная хлопковая ткань с характерной кружевной вышивкой.",
-  //           colors: ["голубой"]
-  //       }
-  //   }
-  // },
+  {
+    id: 119,
+    price: 3100,
+    isTop: false,
+    sku: "67218",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Lily Dress/1.avif",
+    images: [
+        "/Dress/Lily Dress/2.avif",
+        "/Dress/Lily Dress/3.avif",
+        "/Dress/Lily Dress/4.avif",
+        "/Dress/Lily Dress/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+        EN: {
+            category: "Dresses",
+            name: "Lily Dress",
+            description: "A dress crafted from lightweight cotton with delicate lace embroidery.\nFabric: 95% cotton, 5% elastane. Proshva - a light, mostly solid-colored cotton fabric with distinctive lace embroidery.",
+            colors: ["light blue"]
+        },
+        FR: {
+            category: "Robes",
+            name: "Robe Lily",
+            description: "Une robe confectionnée en coton léger avec une broderie de dentelle délicate.\nTissu : 95 % coton, 5 % élasthanne. Proshva - un tissu en coton léger, généralement uni, avec une broderie de dentelle caractéristique.",
+            colors: ["bleu clair"]
+        },
+        UA: {
+            category: "Сукні",
+            name: "Сукня «Lily»",
+            description: "Сукня з легкої бавовняної тканини з делікатною мереживною вишивкою.\nТканина: 95% бавовна, 5% еластан. Прошва - легка, переважно однотонна, бавовняна тканина з характерною мереживною вишивкою.",
+            colors: ["блакитний"]
+        },
+        RU: {
+            category: "Платья",
+            name: "Платье «Лили»",
+            description: "Платье из легкой хлопковой ткани с изящной кружевной вышивкой.\nТкань: 95% хлопок, 5% эластан. Прошва - легкая, преимущественно однотонная хлопковая ткань с характерной кружевной вышивкой.",
+            colors: ["голубой"]
+        }
+    }
+  },
 
-  // {
-  //   id: 118,
-  //   price: 3700,
-  //   isTop: false,
-  //   sku: "67217",
-  //   size: "XS S M L XL",
-  //   category: "Dresses",
-  //   image: "/Dress/Santorini Dress/1.avif",
-  //   images: [
-  //       "/Dress/Santorini Dress/2.avif",
-  //       "/Dress/Santorini Dress/3.avif",
-  //       "/Dress/Santorini Dress/4.avif",
-  //       "/Dress/Santorini Dress/5.avif"
-  //   ],
-  //   sizes: ["XS", "S", "M", "L", "XL"],
-  //   translations: {
-  //       EN: {
-  //           category: "Dresses",
-  //           name: "Santorini Dress",
-  //           description: "A dress crafted from lightweight cotton with delicate lace embroidery.\nFabric: 95% cotton, 5% elastane. Proshva - a light, mostly solid-colored cotton fabric with distinctive lace embroidery.",
-  //           colors: ["fuchsia", "black"]
-  //       },
-  //       FR: {
-  //           category: "Robes",
-  //           name: "Robe Santorini",
-  //           description: "Une robe confectionnée en coton léger avec une broderie de dentelle délicate.\nTissu : 95 % coton, 5 % élasthanne. Proshva - un tissu en coton léger, généralement uni, avec une broderie de dentelle caractéristique.",
-  //           colors: ["fuchsia", "noir"]
-  //       },
-  //       UA: {
-  //           category: "Сукні",
-  //           name: "Сукня «Santorini»",
-  //           description: "Сукня з легкої бавовняної тканини з делікатною мереживною вишивкою.\nТканина: 95% бавовна, 5% еластан. Прошва - легка, переважно однотонна, бавовняна тканина з характерною мереживною вишивкою.",
-  //           colors: ["фуксія", "чорна"]
-  //       },
-  //       RU: {
-  //           category: "Платья",
-  //           name: "Платье «Санторини»",
-  //           description: "Платье из легкой хлопковой ткани с изящной кружевной вышивкой.\nТкань: 95% хлопок, 5% эластан. Прошва - легкая, преимущественно однотонная хлопковая ткань с характерной кружевной вышивкой.",
-  //           colors: ["фуксия", "черный"]
-  //       }
-  //   }
-  // },
+  {
+    id: 118,
+    price: 3700,
+    isTop: false,
+    sku: "67217",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Santorini Dress/1.avif",
+    images: [
+        "/Dress/Santorini Dress/2.avif",
+        "/Dress/Santorini Dress/3.avif",
+        "/Dress/Santorini Dress/4.avif",
+        "/Dress/Santorini Dress/5.avif",
+        "/Dress/Santorini Dress/6.avif",
+        "/Dress/Santorini Dress/7.avif",
+        "/Dress/Santorini Dress/8.avif",
+        "/Dress/Santorini Dress/9.avif",
+
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+        EN: {
+            category: "Dresses",
+            name: "Santorini Dress",
+            description: "A dress crafted from lightweight cotton with delicate lace embroidery.\nFabric: 95% cotton, 5% elastane. Proshva - a light, mostly solid-colored cotton fabric with distinctive lace embroidery.",
+            colors: ["fuchsia", "black"]
+        },
+        FR: {
+            category: "Robes",
+            name: "Robe Santorini",
+            description: "Une robe confectionnée en coton léger avec une broderie de dentelle délicate.\nTissu : 95 % coton, 5 % élasthanne. Proshva - un tissu en coton léger, généralement uni, avec une broderie de dentelle caractéristique.",
+            colors: ["fuchsia", "noir"]
+        },
+        UA: {
+            category: "Сукні",
+            name: "Сукня «Santorini»",
+            description: "Сукня з легкої бавовняної тканини з делікатною мереживною вишивкою.\nТканина: 95% бавовна, 5% еластан. Прошва - легка, переважно однотонна, бавовняна тканина з характерною мереживною вишивкою.",
+            colors: ["фуксія", "чорна"]
+        },
+        RU: {
+            category: "Платья",
+            name: "Платье «Санторини»",
+            description: "Платье из легкой хлопковой ткани с изящной кружевной вышивкой.\nТкань: 95% хлопок, 5% эластан. Прошва - легкая, преимущественно однотонная хлопковая ткань с характерной кружевной вышивкой.",
+            colors: ["фуксия", "черный"]
+        }
+    }
+  },
 
   {
     id: 117,
