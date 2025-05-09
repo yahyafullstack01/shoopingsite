@@ -8,7 +8,7 @@ import SizeChart from "../components/SizeChart/SizeChart";
 export default function InfoForm({
   product,
   showDiscount = false,
-  //onAddToCartClick
+  onAddToCartClick
 }) {
   const router = useRouter();
   const [selectedColor, setSelectedColor] = useState("");
