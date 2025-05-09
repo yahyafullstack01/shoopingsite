@@ -1,5 +1,521 @@
 const products = [
 
+  // {
+  //   id: 129,
+  //   price: 2000,
+  //   isTop: false,
+  //   sku: "67228",
+  //   size: "XS S M L XL",
+  //   category: "Shirts",
+  //   image: "/Shirt/Collared Cotton Shirt/1.avif",
+  //   images: [
+  //       "/Shirt/Collared Cotton Shirt/2.avif",
+  //       "/Shirt/Collared Cotton Shirt/3.avif",
+  //       "/Shirt/Collared Cotton Shirt/4.avif",
+  //       "/Shirt/Collared Cotton Shirt/5.avif"
+  //   ],
+  //   sizes: ["XS", "S", "M", "L", "XL"],
+  //   translations: {
+  //       EN: {
+  //           category: "Shirts",
+  //           name: "Collared Cotton Shirt",
+  //           description: "A shirt with a collar and pleated sleeves.\nFabric: 100% cotton.",
+  //           colors: ["white"]
+  //       },
+  //       FR: {
+  //           category: "Chemises",
+  //           name: "Chemise en Coton à Col",
+  //           description: "Une chemise avec un col et des manches plissées.\nTissu : 100 % coton.",
+  //           colors: ["blanc"]
+  //       },
+  //       UA: {
+  //           category: "Сорочки",
+  //           name: "Сорочка із коміром",
+  //           description: "Сорочка із коміром та плісерованими рукавами.\nТканина: 100% бавовна.",
+  //           colors: ["біла"]
+  //       },
+  //       RU: {
+  //           category: "Рубашки",
+  //           name: "Хлопковая рубашка с воротником",
+  //           description: "Рубашка с воротником и плиссированными рукавами.\nТкань: 100% хлопок.",
+  //           colors: ["белый"]
+  //       }
+  //   }
+  // },
+
+  // {
+  //   id: 128,
+  //   price: 1800,
+  //   isTop: false,
+  //   sku: "67227",
+  //   size: "XS S M L XL",
+  //   category: "Shirts",
+  //   image: "/Shirt/Off-Shoulder Cotton Shirt/1.avif",
+  //   images: [
+  //       "/Shirt/Off-Shoulder Cotton Shirt/2.avif",
+  //       "/Shirt/Off-Shoulder Cotton Shirt/3.avif",
+  //       "/Shirt/Off-Shoulder Cotton Shirt/4.avif",
+  //       "/Shirt/Off-Shoulder Cotton Shirt/5.avif"
+  //   ],
+  //   sizes: ["XS", "S", "M", "L", "XL"],
+  //   translations: {
+  //       EN: {
+  //           category: "Shirts",
+  //           name: "Off-Shoulder Cotton Shirt",
+  //           description: "A shirt with an asymmetrical off-shoulder design.\nFabric: 100% cotton.",
+  //           colors: ["white"]
+  //       },
+  //       FR: {
+  //           category: "Chemises",
+  //           name: "Chemise en Coton à Épaule Dénudée",
+  //           description: "Une chemise avec un design asymétrique à épaule dénudée.\nTissu : 100 % coton.",
+  //           colors: ["blanc"]
+  //       },
+  //       UA: {
+  //           category: "Сорочки",
+  //           name: "Сорочка із відкритим плечем",
+  //           description: "Сорочка із відкритим асиметричним плечем.\nТканина: 100% бавовна.",
+  //           colors: ["біла"]
+  //       },
+  //       RU: {
+  //           category: "Рубашки",
+  //           name: "Хлопковая рубашка с открытым плечом",
+  //           description: "Рубашка с асимметричным открытым плечом.\nТкань: 100% хлопок.",
+  //           colors: ["белый"]
+  //       }
+  //   }
+  // },
+
+  // {
+  //   id: 127,
+  //   price: 1800,
+  //   isTop: false,
+  //   sku: "67226",
+  //   size: "XS S M L XL",
+  //   category: "Shirts",
+  //   image: "/Shirt/Slit Cotton Shirt/1.avif",
+  //   images: [
+  //       "/Shirt/Slit Cotton Shirt/2.avif",
+  //       "/Shirt/Slit Cotton Shirt/3.avif",
+  //       "/Shirt/Slit Cotton Shirt/4.avif",
+  //       "/Shirt/Slit Cotton Shirt/5.avif"
+  //   ],
+  //   sizes: ["XS", "S", "M", "L", "XL"],
+  //   translations: {
+  //       EN: {
+  //           category: "Shirts",
+  //           name: "Slit Cotton Shirt",
+  //           description: "An oversized shirt featuring slits on the sleeves and both sides of the waist. Adjustable with buttons.\nFabric: 100% cotton.",
+  //           colors: ["white"]
+  //       },
+  //       FR: {
+  //           category: "Chemises",
+  //           name: "Chemise en Coton avec Fentes",
+  //           description: "Une chemise oversize avec des fentes sur les manches et des deux côtés de la taille. Ajustable avec des boutons.\nTissu : 100 % coton.",
+  //           colors: ["blanc"]
+  //       },
+  //       UA: {
+  //           category: "Сорочки",
+  //           name: "Сорочка з розрізами",
+  //           description: "Oversize сорочка, яка має розрізи на рукавах та з обох сторін талії. Регулюється ґудзиками.\nТканина: 100% бавовна.",
+  //           colors: ["біла"]
+  //       },
+  //       RU: {
+  //           category: "Рубашки",
+  //           name: "Хлопковая рубашка с разрезами",
+  //           description: "Оверсайз рубашка с разрезами на рукавах и по бокам талии. Регулируется пуговицами.\nТкань: 100% хлопок.",
+  //           colors: ["белый"]
+  //       }
+  //   }
+  // },
+
+  // {
+  //   id: 126,
+  //   price: 2000,
+  //   isTop: false,
+  //   sku: "67225",
+  //   size: "XS S M L XL",
+  //   category: "Shirts",
+  //   image: "/Shirt/Elastic Neck Cotton Shirt/1.avif",
+  //   images: [
+  //       "/Shirt/Elastic Neck Cotton Shirt/2.avif",
+  //       "/Shirt/Elastic Neck Cotton Shirt/3.avif",
+  //       "/Shirt/Elastic Neck Cotton Shirt/4.avif",
+  //       "/Shirt/Elastic Neck Cotton Shirt/5.avif"
+  //   ],
+  //   sizes: ["XS", "S", "M", "L", "XL"],
+  //   translations: {
+  //       EN: {
+  //           category: "Shirts",
+  //           name: "Elastic Neck Cotton Shirt",
+  //           description: "A loose-fit shirt with an elastic neckline and lantern sleeves. Features elongated ties at the back.\nFabric: 100% cotton.",
+  //           colors: ["white"]
+  //       },
+  //       FR: {
+  //           category: "Chemises",
+  //           name: "Chemise en Coton à Col Élastique",
+  //           description: "Une chemise ample avec un col élastique et des manches lanternes. Comprend des liens allongés à l'arrière.\nTissu : 100 % coton.",
+  //           colors: ["blanc"]
+  //       },
+  //       UA: {
+  //           category: "Сорочки",
+  //           name: "Сорочка на резинці",
+  //           description: "Сорочка вільного крою із резинкою на горловині та рукавами ліхтариками. На спині є подовжені завʼязки.\nТканина: 100% бавовна.",
+  //           colors: ["біла"]
+  //       },
+  //       RU: {
+  //           category: "Рубашки",
+  //           name: "Хлопковая рубашка с резинкой",
+  //           description: "Рубашка свободного кроя с резинкой на горловине и рукавами-фонариками. На спине имеются удлиненные завязки.\nТкань: 100% хлопок.",
+  //           colors: ["белый"]
+  //       }
+  //   }
+  // },
+
+  // {
+  //   id: 125,
+  //   price: 1800,
+  //   isTop: false,
+  //   sku: "67224",
+  //   size: "XS S M L XL",
+  //   category: "Shirts",
+  //   image: "/Shirt/Wrap Cotton Shirt/1.avif",
+  //   images: [
+  //       "/Shirt/Wrap Cotton Shirt/2.avif",
+  //       "/Shirt/Wrap Cotton Shirt/3.avif",
+  //       "/Shirt/Wrap Cotton Shirt/4.avif",
+  //       "/Shirt/Wrap Cotton Shirt/5.avif"
+  //   ],
+  //   sizes: ["XS", "S", "M", "L", "XL"],
+  //   translations: {
+  //       EN: {
+  //           category: "Shirts",
+  //           name: "Wrap Cotton Shirt",
+  //           description: "A cotton wrap shirt. Fastens at the side waist with a button.\nFabric: 100% cotton.",
+  //           colors: ["white"]
+  //       },
+  //       FR: {
+  //           category: "Chemises",
+  //           name: "Chemise en Coton à Envelopper",
+  //           description: "Une chemise en coton à envelopper. Se ferme sur le côté de la taille avec un bouton.\nTissu : 100 % coton.",
+  //           colors: ["blanc"]
+  //       },
+  //       UA: {
+  //           category: "Сорочки",
+  //           name: "Сорочка на запах",
+  //           description: "Сорочка бавовняна на запах. Застібається збоку талії на ґудзик.\nТканина: 100% бавовна.",
+  //           colors: ["біла"]
+  //       },
+  //       RU: {
+  //           category: "Рубашки",
+  //           name: "Хлопковая рубашка на запах",
+  //           description: "Хлопковая рубашка на запах. Застегивается сбоку на талии на пуговицу.\nТкань: 100% хлопок.",
+  //           colors: ["белый"]
+  //       }
+  //   }
+  // },
+
+  // {
+  //   id: 124,
+  //   price: 3500,
+  //   isTop: false,
+  //   sku: "67223",
+  //   size: "XS S M L XL",
+  //   category: "Dresses",
+  //   image: "/Dress/Lemon Dress/1.avif",
+  //   images: [
+  //       "/Dress/Lemon Dress/2.avif",
+  //       "/Dress/Lemon Dress/3.avif",
+  //       "/Dress/Lemon Dress/4.avif",
+  //       "/Dress/Lemon Dress/5.avif"
+  //   ],
+  //   sizes: ["XS", "S", "M", "L", "XL"],
+  //   translations: {
+  //       EN: {
+  //           category: "Dresses",
+  //           name: "Lemon Dress",
+  //           description: "A dress crafted from long-fiber muslin.\nFabric: 100% cotton muslin, light and soft to the touch.",
+  //           colors: ["yellow"]
+  //       },
+  //       FR: {
+  //           category: "Robes",
+  //           name: "Robe Lemon",
+  //           description: "Une robe confectionnée en mousseline à longues fibres.\nTissu : mousseline 100 % coton, légère et douce au toucher.",
+  //           colors: ["jaune"]
+  //       },
+  //       UA: {
+  //           category: "Сукні",
+  //           name: "Сукня «Lemon»",
+  //           description: "Сукня з довговолокняного мусліну.\nТканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+  //           colors: ["жовтий"]
+  //       },
+  //       RU: {
+  //           category: "Платья",
+  //           name: "Платье «Лемон»",
+  //           description: "Платье из длинноволокнистого муслина.\nТкань: муслин из 100% хлопка, легкая и мягкая на ощупь.",
+  //           colors: ["желтый"]
+  //       }
+  //   }
+  // },
+
+  // {
+  //   id: 123,
+  //   price: 3900,
+  //   isTop: false,
+  //   sku: "67222",
+  //   size: "XS S M L XL",
+  //   category: "Dresses",
+  //   image: "/Dress/Hemp Maxi Dress/1.avif",
+  //   images: [
+  //       "/Dress/Hemp Maxi Dress/2.avif",
+  //       "/Dress/Hemp Maxi Dress/3.avif",
+  //       "/Dress/Hemp Maxi Dress/4.avif",
+  //       "/Dress/Hemp Maxi Dress/5.avif"
+  //   ],
+  //   sizes: ["XS", "S", "M", "L", "XL"],
+  //   translations: {
+  //       EN: {
+  //           category: "Dresses",
+  //           name: "Hemp Maxi Dress",
+  //           description: "A dress made from double-layer muslin, 30% hemp, 70% cotton.\nOne of the most eco-friendly fabrics, grown without pesticides.",
+  //           colors: ["hemp"]
+  //       },
+  //       FR: {
+  //           category: "Robes",
+  //           name: "Robe Maxi en Chanvre",
+  //           description: "Une robe en mousseline double couche, 30 % chanvre, 70 % coton.\nL'un des tissus les plus écologiques, cultivé sans pesticides.",
+  //           colors: ["chanvre"]
+  //       },
+  //       UA: {
+  //           category: "Сукні",
+  //           name: "Конопляна сукня maxi",
+  //           description: "Сукня з двошарового мусліну, 30% коноплі, 70% бавовни.\nЦе одна з найекологічніших тканин, бо виращується без пестицидів.",
+  //           colors: ["конопляний"]
+  //       },
+  //       RU: {
+  //           category: "Платья",
+  //           name: "Конопляное платье макси",
+  //           description: "Платье из двухслойного муслина, 30% конопли, 70% хлопка.\nОдна из самых экологичных тканей, выращивается без пестицидов.",
+  //           colors: ["конопляный"]
+  //       }
+  //   }
+  // },
+
+  // {
+  //   id: 122,
+  //   price: 2000,
+  //   isTop: false,
+  //   sku: "67221",
+  //   size: "XS S M L XL",
+  //   category: "Shirts",
+  //   image: "/Shirt/Batiste Pleated Shirt/1.avif",
+  //   images: [
+  //       "/Shirt/Batiste Pleated Shirt/2.avif",
+  //       "/Shirt/Batiste Pleated Shirt/3.avif",
+  //       "/Shirt/Batiste Pleated Shirt/4.avif",
+  //       "/Shirt/Batiste Pleated Shirt/5.avif"
+  //   ],
+  //   sizes: ["XS", "S", "M", "L", "XL"],
+  //   translations: {
+  //       EN: {
+  //           category: "Shirts",
+  //           name: "Batiste Pleated Shirt",
+  //           description: "A shirt made from natural fabric, adorned with lace and proshva inserts.\nFabric: natural batiste.",
+  //           colors: ["white"]
+  //       },
+  //       FR: {
+  //           category: "Chemises",
+  //           name: "Chemise Plissée en Batiste",
+  //           description: "Une chemise en tissu naturel, ornée de dentelle et d'inserts de proshva.\nTissu : batiste naturel.",
+  //           colors: ["blanc"]
+  //       },
+  //       UA: {
+  //           category: "Сорочки",
+  //           name: "Батистова сорочка зі складками",
+  //           description: "Сорочка із натуральної тканини, яка оздоблена мереживом та вставками із прошви.\nТканина: натуральний батист.",
+  //           colors: ["біла"]
+  //       },
+  //       RU: {
+  //           category: "Рубашки",
+  //           name: "Батистовая рубашка с складками",
+  //           description: "Рубашка из натуральной ткани, украшенная кружевом и вставками из прошвы.\nТкань: натуральный батист.",
+  //           colors: ["белый"]
+  //       }
+  //   }
+  // },
+
+  // {
+  //   id: 121,
+  //   price: 2850,
+  //   isTop: false,
+  //   sku: "67220",
+  //   size: "XS S M L XL",
+  //   category: "Dresses",
+  //   image: "/Dress/Maxi Sundress/1.avif",
+  //   images: [
+  //       "/Dress/Maxi Sundress/2.avif",
+  //       "/Dress/Maxi Sundress/3.avif",
+  //       "/Dress/Maxi Sundress/4.avif",
+  //       "/Dress/Maxi Sundress/5.avif"
+  //   ],
+  //   sizes: ["XS", "S", "M", "L", "XL"],
+  //   translations: {
+  //       EN: {
+  //           category: "Dresses",
+  //           name: "Maxi Sundress",
+  //           description: "A sundress crafted from long-fiber muslin.\nFabric: 100% cotton muslin, light and soft to the touch.",
+  //           colors: ["eucalyptus"]
+  //       },
+  //       FR: {
+  //           category: "Robes",
+  //           name: "Robe d'été Maxi",
+  //           description: "Une robe d'été confectionnée en mousseline à longues fibres.\nTissu : mousseline 100 % coton, légère et douce au toucher.",
+  //           colors: ["eucalyptus"]
+  //       },
+  //       UA: {
+  //           category: "Сукні",
+  //           name: "Сарафан maxi",
+  //           description: "Сарафан з довговолокняного мусліну.\nТканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+  //           colors: ["евкаліпт"]
+  //       },
+  //       RU: {
+  //           category: "Платья",
+  //           name: "Сарафан макси",
+  //           description: "Сарафан из длинноволокнистого муслина.\nТкань: муслин из 100% хлопка, легкая и мягкая на ощупь.",
+  //           colors: ["эвкалипт"]
+  //       }
+  //   }
+  // },
+
+  // {
+  //   id: 120,
+  //   price: 2500,
+  //   isTop: false,
+  //   sku: "67219",
+  //   size: "XS S M L XL",
+  //   category: "Dresses",
+  //   image: "/Dress/Cotton Dress/1.avif",
+  //   images: [
+  //       "/Dress/Cotton Dress/2.avif",
+  //       "/Dress/Cotton Dress/3.avif",
+  //       "/Dress/Cotton Dress/4.avif",
+  //       "/Dress/Cotton Dress/5.avif"
+  //   ],
+  //   sizes: ["XS", "S", "M", "L", "XL"],
+  //   translations: {
+  //       EN: {
+  //           category: "Dresses",
+  //           name: "Cotton Dress",
+  //           description: "A maxi dress made from natural cotton. Unique cut with lantern sleeves and tie details.\nFabric: 100% cotton.",
+  //           colors: ["lemon", "white", "black"]
+  //       },
+  //       FR: {
+  //           category: "Robes",
+  //           name: "Robe en Coton",
+  //           description: "Une robe maxi en coton naturel. Coupe unique avec des manches lanternes et des détails de liens.\nTissu : 100 % coton.",
+  //           colors: ["citron", "blanc", "noir"]
+  //       },
+  //       UA: {
+  //           category: "Сукні",
+  //           name: "Бавовняна сукня",
+  //           description: "Сукня максі з натуральної бавовни. Незвичного крою із рукавами ліхтариками та зав‘язками.\nТканина: 100% бавовна.",
+  //           colors: ["лимонний", "білий", "чорний"]
+  //       },
+  //       RU: {
+  //           category: "Платья",
+  //           name: "Хлопковое платье",
+  //           description: "Платье макси из натурального хлопка. Необычный крой с рукавами-фонариками и завязками.\nТкань: 100% хлопок.",
+  //           colors: ["лимонный", "белый", "черный"]
+  //       }
+  //   }
+  // },
+
+  // {
+  //   id: 119,
+  //   price: 3100,
+  //   isTop: false,
+  //   sku: "67218",
+  //   size: "XS S M L XL",
+  //   category: "Dresses",
+  //   image: "/Dress/Lily Dress/1.avif",
+  //   images: [
+  //       "/Dress/Lily Dress/2.avif",
+  //       "/Dress/Lily Dress/3.avif",
+  //       "/Dress/Lily Dress/4.avif",
+  //       "/Dress/Lily Dress/5.avif"
+  //   ],
+  //   sizes: ["XS", "S", "M", "L", "XL"],
+  //   translations: {
+  //       EN: {
+  //           category: "Dresses",
+  //           name: "Lily Dress",
+  //           description: "A dress crafted from lightweight cotton with delicate lace embroidery.\nFabric: 95% cotton, 5% elastane. Proshva - a light, mostly solid-colored cotton fabric with distinctive lace embroidery.",
+  //           colors: ["light blue"]
+  //       },
+  //       FR: {
+  //           category: "Robes",
+  //           name: "Robe Lily",
+  //           description: "Une robe confectionnée en coton léger avec une broderie de dentelle délicate.\nTissu : 95 % coton, 5 % élasthanne. Proshva - un tissu en coton léger, généralement uni, avec une broderie de dentelle caractéristique.",
+  //           colors: ["bleu clair"]
+  //       },
+  //       UA: {
+  //           category: "Сукні",
+  //           name: "Сукня «Lily»",
+  //           description: "Сукня з легкої бавовняної тканини з делікатною мереживною вишивкою.\nТканина: 95% бавовна, 5% еластан. Прошва - легка, переважно однотонна, бавовняна тканина з характерною мереживною вишивкою.",
+  //           colors: ["блакитний"]
+  //       },
+  //       RU: {
+  //           category: "Платья",
+  //           name: "Платье «Лили»",
+  //           description: "Платье из легкой хлопковой ткани с изящной кружевной вышивкой.\nТкань: 95% хлопок, 5% эластан. Прошва - легкая, преимущественно однотонная хлопковая ткань с характерной кружевной вышивкой.",
+  //           colors: ["голубой"]
+  //       }
+  //   }
+  // },
+
+  // {
+  //   id: 118,
+  //   price: 3700,
+  //   isTop: false,
+  //   sku: "67217",
+  //   size: "XS S M L XL",
+  //   category: "Dresses",
+  //   image: "/Dress/Santorini Dress/1.avif",
+  //   images: [
+  //       "/Dress/Santorini Dress/2.avif",
+  //       "/Dress/Santorini Dress/3.avif",
+  //       "/Dress/Santorini Dress/4.avif",
+  //       "/Dress/Santorini Dress/5.avif"
+  //   ],
+  //   sizes: ["XS", "S", "M", "L", "XL"],
+  //   translations: {
+  //       EN: {
+  //           category: "Dresses",
+  //           name: "Santorini Dress",
+  //           description: "A dress crafted from lightweight cotton with delicate lace embroidery.\nFabric: 95% cotton, 5% elastane. Proshva - a light, mostly solid-colored cotton fabric with distinctive lace embroidery.",
+  //           colors: ["fuchsia", "black"]
+  //       },
+  //       FR: {
+  //           category: "Robes",
+  //           name: "Robe Santorini",
+  //           description: "Une robe confectionnée en coton léger avec une broderie de dentelle délicate.\nTissu : 95 % coton, 5 % élasthanne. Proshva - un tissu en coton léger, généralement uni, avec une broderie de dentelle caractéristique.",
+  //           colors: ["fuchsia", "noir"]
+  //       },
+  //       UA: {
+  //           category: "Сукні",
+  //           name: "Сукня «Santorini»",
+  //           description: "Сукня з легкої бавовняної тканини з делікатною мереживною вишивкою.\nТканина: 95% бавовна, 5% еластан. Прошва - легка, переважно однотонна, бавовняна тканина з характерною мереживною вишивкою.",
+  //           colors: ["фуксія", "чорна"]
+  //       },
+  //       RU: {
+  //           category: "Платья",
+  //           name: "Платье «Санторини»",
+  //           description: "Платье из легкой хлопковой ткани с изящной кружевной вышивкой.\nТкань: 95% хлопок, 5% эластан. Прошва - легкая, преимущественно однотонная хлопковая ткань с характерной кружевной вышивкой.",
+  //           colors: ["фуксия", "черный"]
+  //       }
+  //   }
+  // },
+
   {
     id: 117,
     price: 3100,
@@ -185,7 +701,13 @@ const products = [
       "/Dress/Oversize Linen Dress/2.avif",
       "/Dress/Oversize Linen Dress/3.avif",
       "/Dress/Oversize Linen Dress/4.avif",
-      "/Dress/Oversize Linen Dress/5.avif"
+      "/Dress/Oversize Linen Dress/5.avif",
+      "/Dress/Oversize Linen Dress/6.avif",
+      "/Dress/Oversize Linen Dress/7.avif",
+      "/Dress/Oversize Linen Dress/8.avif",
+      "/Dress/Oversize Linen Dress/9.avif",
+      "/Dress/Oversize Linen Dress/10.avif"
+
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
     translations: {
@@ -193,25 +715,25 @@ const products = [
         category: "Dresses",
         name: "Oversize Linen Dress",
         description: "An oversize dress crafted from a cotton-linen blend, mimicking boiled linen, sourced from a French fashion house in very limited quantities.\nFabric: 50% linen, 50% cotton.",
-        colors: ["blue"]
+        colors: ["blue", "white"]
       },
       FR: {
         category: "Robes",
         name: "Robe oversize en lin",
         description: "Une robe oversize confectionnée dans un mélange de coton et lin, imitant le lin bouilli, provenant d'une maison de mode française en quantités très limitées.\nTissu : 50 % lin, 50 % coton.",
-        colors: ["bleu"]
+        colors: ["bleu","blanc"]
       },
       UA: {
         category: "Сукні",
         name: "Сукня лляна oversize",
         description: "Сукня оверсайз із імітації вареного льону з бавовни, виготовлена з тканини французького будинку моди в дуже обмеженій кількості.\nТканина: 50% льон, 50% бавовна.",
-        colors: ["синій"]
+        colors: ["синій","білий"]
       },
       RU: {
         category: "Платья",
         name: "Платье льняное оверсайз",
         description: "Платье оверсайз из имитации вареного льна с хлопком, изготовленное из ткани французского дома моды в очень ограниченном количестве.\nТкань: 50% лен, 50% хлопок.",
-        colors: ["синий"]
+        colors: ["синий","белый"]
       }
     }
   },
