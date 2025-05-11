@@ -1,263 +1,263 @@
 const products = [
 
-  // {
-  //   id: 129,
-  //   price: 2000,
-  //   isTop: false,
-  //   sku: "67228",
-  //   size: "XS S M L XL",
-  //   category: "Shirts",
-  //   image: "/Shirt/Collared Cotton Shirt/1.avif",
-  //   images: [
-  //       "/Shirt/Collared Cotton Shirt/2.avif",
-  //       "/Shirt/Collared Cotton Shirt/3.avif",
-  //       "/Shirt/Collared Cotton Shirt/4.avif",
-  //       "/Shirt/Collared Cotton Shirt/5.avif"
-  //   ],
-  //   sizes: ["XS", "S", "M", "L", "XL"],
-  //   translations: {
-  //       EN: {
-  //           category: "Shirts",
-  //           name: "Collared Cotton Shirt",
-  //           description: "A shirt with a collar and pleated sleeves.\nFabric: 100% cotton.",
-  //           colors: ["white"]
-  //       },
-  //       FR: {
-  //           category: "Chemises",
-  //           name: "Chemise en Coton à Col",
-  //           description: "Une chemise avec un col et des manches plissées.\nTissu : 100 % coton.",
-  //           colors: ["blanc"]
-  //       },
-  //       UA: {
-  //           category: "Сорочки",
-  //           name: "Сорочка із коміром",
-  //           description: "Сорочка із коміром та плісерованими рукавами.\nТканина: 100% бавовна.",
-  //           colors: ["біла"]
-  //       },
-  //       RU: {
-  //           category: "Рубашки",
-  //           name: "Хлопковая рубашка с воротником",
-  //           description: "Рубашка с воротником и плиссированными рукавами.\nТкань: 100% хлопок.",
-  //           colors: ["белый"]
-  //       }
-  //   }
-  // },
+  {
+    id: 129,
+    price: 2000,
+    isTop: false,
+    sku: "67228",
+    size: "XS S M L XL",
+    category: "Shirts",
+    image: "/Shirts/Collared Cotton Shirt/1.avif",
+    images: [
+        "/Shirts/Collared Cotton Shirt/2.avif",
+        "/Shirts/Collared Cotton Shirt/3.avif",
+        "/Shirts/Collared Cotton Shirt/4.avif",
+        "/Shirts/Collared Cotton Shirt/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+        EN: {
+            category: "Shirts",
+            name: "Collared Cotton Shirt",
+            description: "A shirt with a collar and pleated sleeves.\nFabric: 100% cotton.",
+            colors: ["white"]
+        },
+        FR: {
+            category: "Chemises",
+            name: "Chemise en Coton à Col",
+            description: "Une chemise avec un col et des manches plissées.\nTissu : 100 % coton.",
+            colors: ["blanc"]
+        },
+        UA: {
+            category: "Сорочки",
+            name: "Сорочка із коміром",
+            description: "Сорочка із коміром та плісерованими рукавами.\nТканина: 100% бавовна.",
+            colors: ["біла"]
+        },
+        RU: {
+            category: "Рубашки",
+            name: "Хлопковая рубашка с воротником",
+            description: "Рубашка с воротником и плиссированными рукавами.\nТкань: 100% хлопок.",
+            colors: ["белый"]
+        }
+    }
+  },
 
-  // {
-  //   id: 128,
-  //   price: 1800,
-  //   isTop: false,
-  //   sku: "67227",
-  //   size: "XS S M L XL",
-  //   category: "Shirts",
-  //   image: "/Shirt/Off-Shoulder Cotton Shirt/1.avif",
-  //   images: [
-  //       "/Shirt/Off-Shoulder Cotton Shirt/2.avif",
-  //       "/Shirt/Off-Shoulder Cotton Shirt/3.avif",
-  //       "/Shirt/Off-Shoulder Cotton Shirt/4.avif",
-  //       "/Shirt/Off-Shoulder Cotton Shirt/5.avif"
-  //   ],
-  //   sizes: ["XS", "S", "M", "L", "XL"],
-  //   translations: {
-  //       EN: {
-  //           category: "Shirts",
-  //           name: "Off-Shoulder Cotton Shirt",
-  //           description: "A shirt with an asymmetrical off-shoulder design.\nFabric: 100% cotton.",
-  //           colors: ["white"]
-  //       },
-  //       FR: {
-  //           category: "Chemises",
-  //           name: "Chemise en Coton à Épaule Dénudée",
-  //           description: "Une chemise avec un design asymétrique à épaule dénudée.\nTissu : 100 % coton.",
-  //           colors: ["blanc"]
-  //       },
-  //       UA: {
-  //           category: "Сорочки",
-  //           name: "Сорочка із відкритим плечем",
-  //           description: "Сорочка із відкритим асиметричним плечем.\nТканина: 100% бавовна.",
-  //           colors: ["біла"]
-  //       },
-  //       RU: {
-  //           category: "Рубашки",
-  //           name: "Хлопковая рубашка с открытым плечом",
-  //           description: "Рубашка с асимметричным открытым плечом.\nТкань: 100% хлопок.",
-  //           colors: ["белый"]
-  //       }
-  //   }
-  // },
+  {
+    id: 128,
+    price: 1800,
+    isTop: false,
+    sku: "67227",
+    size: "XS S M L XL",
+    category: "Shirts",
+    image: "/Shirts/Off-Shoulder Cotton Shirt/1.avif",
+    images: [
+        "/Shirts/Off-Shoulder Cotton Shirt/2.avif",
+        "/Shirts/Off-Shoulder Cotton Shirt/3.avif",
+        "/Shirts/Off-Shoulder Cotton Shirt/4.avif",
+        "/Shirts/Off-Shoulder Cotton Shirt/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+        EN: {
+            category: "Shirts",
+            name: "Off-Shoulder Cotton Shirt",
+            description: "A shirt with an asymmetrical off-shoulder design.\nFabric: 100% cotton.",
+            colors: ["white"]
+        },
+        FR: {
+            category: "Chemises",
+            name: "Chemise en Coton à Épaule Dénudée",
+            description: "Une chemise avec un design asymétrique à épaule dénudée.\nTissu : 100 % coton.",
+            colors: ["blanc"]
+        },
+        UA: {
+            category: "Сорочки",
+            name: "Сорочка із відкритим плечем",
+            description: "Сорочка із відкритим асиметричним плечем.\nТканина: 100% бавовна.",
+            colors: ["біла"]
+        },
+        RU: {
+            category: "Рубашки",
+            name: "Хлопковая рубашка с открытым плечом",
+            description: "Рубашка с асимметричным открытым плечом.\nТкань: 100% хлопок.",
+            colors: ["белый"]
+        }
+    }
+  },
 
-  // {
-  //   id: 127,
-  //   price: 1800,
-  //   isTop: false,
-  //   sku: "67226",
-  //   size: "XS S M L XL",
-  //   category: "Shirts",
-  //   image: "/Shirt/Slit Cotton Shirt/1.avif",
-  //   images: [
-  //       "/Shirt/Slit Cotton Shirt/2.avif",
-  //       "/Shirt/Slit Cotton Shirt/3.avif",
-  //       "/Shirt/Slit Cotton Shirt/4.avif",
-  //       "/Shirt/Slit Cotton Shirt/5.avif"
-  //   ],
-  //   sizes: ["XS", "S", "M", "L", "XL"],
-  //   translations: {
-  //       EN: {
-  //           category: "Shirts",
-  //           name: "Slit Cotton Shirt",
-  //           description: "An oversized shirt featuring slits on the sleeves and both sides of the waist. Adjustable with buttons.\nFabric: 100% cotton.",
-  //           colors: ["white"]
-  //       },
-  //       FR: {
-  //           category: "Chemises",
-  //           name: "Chemise en Coton avec Fentes",
-  //           description: "Une chemise oversize avec des fentes sur les manches et des deux côtés de la taille. Ajustable avec des boutons.\nTissu : 100 % coton.",
-  //           colors: ["blanc"]
-  //       },
-  //       UA: {
-  //           category: "Сорочки",
-  //           name: "Сорочка з розрізами",
-  //           description: "Oversize сорочка, яка має розрізи на рукавах та з обох сторін талії. Регулюється ґудзиками.\nТканина: 100% бавовна.",
-  //           colors: ["біла"]
-  //       },
-  //       RU: {
-  //           category: "Рубашки",
-  //           name: "Хлопковая рубашка с разрезами",
-  //           description: "Оверсайз рубашка с разрезами на рукавах и по бокам талии. Регулируется пуговицами.\nТкань: 100% хлопок.",
-  //           colors: ["белый"]
-  //       }
-  //   }
-  // },
+  {
+    id: 127,
+    price: 1800,
+    isTop: false,
+    sku: "67226",
+    size: "XS S M L XL",
+    category: "Shirts",
+    image: "/Shirts/Slit Cotton Shirt/1.avif",
+    images: [
+        "/Shirts/Slit Cotton Shirt/2.avif",
+        "/Shirts/Slit Cotton Shirt/3.avif",
+        "/Shirts/Slit Cotton Shirt/4.avif",
+        "/Shirts/Slit Cotton Shirt/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+        EN: {
+            category: "Shirts",
+            name: "Slit Cotton Shirt",
+            description: "An oversized shirt featuring slits on the sleeves and both sides of the waist. Adjustable with buttons.\nFabric: 100% cotton.",
+            colors: ["white"]
+        },
+        FR: {
+            category: "Chemises",
+            name: "Chemise en Coton avec Fentes",
+            description: "Une chemise oversize avec des fentes sur les manches et des deux côtés de la taille. Ajustable avec des boutons.\nTissu : 100 % coton.",
+            colors: ["blanc"]
+        },
+        UA: {
+            category: "Сорочки",
+            name: "Сорочка з розрізами",
+            description: "Oversize сорочка, яка має розрізи на рукавах та з обох сторін талії. Регулюється ґудзиками.\nТканина: 100% бавовна.",
+            colors: ["біла"]
+        },
+        RU: {
+            category: "Рубашки",
+            name: "Хлопковая рубашка с разрезами",
+            description: "Оверсайз рубашка с разрезами на рукавах и по бокам талии. Регулируется пуговицами.\nТкань: 100% хлопок.",
+            colors: ["белый"]
+        }
+    }
+  },
 
-  // {
-  //   id: 126,
-  //   price: 2000,
-  //   isTop: false,
-  //   sku: "67225",
-  //   size: "XS S M L XL",
-  //   category: "Shirts",
-  //   image: "/Shirt/Elastic Neck Cotton Shirt/1.avif",
-  //   images: [
-  //       "/Shirt/Elastic Neck Cotton Shirt/2.avif",
-  //       "/Shirt/Elastic Neck Cotton Shirt/3.avif",
-  //       "/Shirt/Elastic Neck Cotton Shirt/4.avif",
-  //       "/Shirt/Elastic Neck Cotton Shirt/5.avif"
-  //   ],
-  //   sizes: ["XS", "S", "M", "L", "XL"],
-  //   translations: {
-  //       EN: {
-  //           category: "Shirts",
-  //           name: "Elastic Neck Cotton Shirt",
-  //           description: "A loose-fit shirt with an elastic neckline and lantern sleeves. Features elongated ties at the back.\nFabric: 100% cotton.",
-  //           colors: ["white"]
-  //       },
-  //       FR: {
-  //           category: "Chemises",
-  //           name: "Chemise en Coton à Col Élastique",
-  //           description: "Une chemise ample avec un col élastique et des manches lanternes. Comprend des liens allongés à l'arrière.\nTissu : 100 % coton.",
-  //           colors: ["blanc"]
-  //       },
-  //       UA: {
-  //           category: "Сорочки",
-  //           name: "Сорочка на резинці",
-  //           description: "Сорочка вільного крою із резинкою на горловині та рукавами ліхтариками. На спині є подовжені завʼязки.\nТканина: 100% бавовна.",
-  //           colors: ["біла"]
-  //       },
-  //       RU: {
-  //           category: "Рубашки",
-  //           name: "Хлопковая рубашка с резинкой",
-  //           description: "Рубашка свободного кроя с резинкой на горловине и рукавами-фонариками. На спине имеются удлиненные завязки.\nТкань: 100% хлопок.",
-  //           colors: ["белый"]
-  //       }
-  //   }
-  // },
+  {
+    id: 126,
+    price: 2000,
+    isTop: false,
+    sku: "67225",
+    size: "XS S M L XL",
+    category: "Shirts",
+    image: "/Shirts/Elastic Neck Cotton Shirt/1.avif",
+    images: [
+        "/Shirts/Elastic Neck Cotton Shirt/2.avif",
+        "/Shirts/Elastic Neck Cotton Shirt/3.avif",
+        "/Shirts/Elastic Neck Cotton Shirt/4.avif",
+        "/Shirts/Elastic Neck Cotton Shirt/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+        EN: {
+            category: "Shirts",
+            name: "Elastic Neck Cotton Shirt",
+            description: "A loose-fit shirt with an elastic neckline and lantern sleeves. Features elongated ties at the back.\nFabric: 100% cotton.",
+            colors: ["white"]
+        },
+        FR: {
+            category: "Chemises",
+            name: "Chemise en Coton à Col Élastique",
+            description: "Une chemise ample avec un col élastique et des manches lanternes. Comprend des liens allongés à l'arrière.\nTissu : 100 % coton.",
+            colors: ["blanc"]
+        },
+        UA: {
+            category: "Сорочки",
+            name: "Сорочка на резинці",
+            description: "Сорочка вільного крою із резинкою на горловині та рукавами ліхтариками. На спині є подовжені завʼязки.\nТканина: 100% бавовна.",
+            colors: ["біла"]
+        },
+        RU: {
+            category: "Рубашки",
+            name: "Хлопковая рубашка с резинкой",
+            description: "Рубашка свободного кроя с резинкой на горловине и рукавами-фонариками. На спине имеются удлиненные завязки.\nТкань: 100% хлопок.",
+            colors: ["белый"]
+        }
+    }
+  },
 
-  // {
-  //   id: 125,
-  //   price: 1800,
-  //   isTop: false,
-  //   sku: "67224",
-  //   size: "XS S M L XL",
-  //   category: "Shirts",
-  //   image: "/Shirt/Wrap Cotton Shirt/1.avif",
-  //   images: [
-  //       "/Shirt/Wrap Cotton Shirt/2.avif",
-  //       "/Shirt/Wrap Cotton Shirt/3.avif",
-  //       "/Shirt/Wrap Cotton Shirt/4.avif",
-  //       "/Shirt/Wrap Cotton Shirt/5.avif"
-  //   ],
-  //   sizes: ["XS", "S", "M", "L", "XL"],
-  //   translations: {
-  //       EN: {
-  //           category: "Shirts",
-  //           name: "Wrap Cotton Shirt",
-  //           description: "A cotton wrap shirt. Fastens at the side waist with a button.\nFabric: 100% cotton.",
-  //           colors: ["white"]
-  //       },
-  //       FR: {
-  //           category: "Chemises",
-  //           name: "Chemise en Coton à Envelopper",
-  //           description: "Une chemise en coton à envelopper. Se ferme sur le côté de la taille avec un bouton.\nTissu : 100 % coton.",
-  //           colors: ["blanc"]
-  //       },
-  //       UA: {
-  //           category: "Сорочки",
-  //           name: "Сорочка на запах",
-  //           description: "Сорочка бавовняна на запах. Застібається збоку талії на ґудзик.\nТканина: 100% бавовна.",
-  //           colors: ["біла"]
-  //       },
-  //       RU: {
-  //           category: "Рубашки",
-  //           name: "Хлопковая рубашка на запах",
-  //           description: "Хлопковая рубашка на запах. Застегивается сбоку на талии на пуговицу.\nТкань: 100% хлопок.",
-  //           colors: ["белый"]
-  //       }
-  //   }
-  // },
+  {
+    id: 125,
+    price: 1800,
+    isTop: false,
+    sku: "67224",
+    size: "XS S M L XL",
+    category: "Shirts",
+    image: "/Shirts/Wrap Cotton Shirt/1.avif",
+    images: [
+        "/Shirts/Wrap Cotton Shirt/2.avif",
+        "/Shirts/Wrap Cotton Shirt/3.avif",
+        "/Shirts/Wrap Cotton Shirt/4.avif",
+        "/Shirts/Wrap Cotton Shirt/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+        EN: {
+            category: "Shirts",
+            name: "Wrap Cotton Shirt",
+            description: "A cotton wrap shirt. Fastens at the side waist with a button.\nFabric: 100% cotton.",
+            colors: ["white"]
+        },
+        FR: {
+            category: "Chemises",
+            name: "Chemise en Coton à Envelopper",
+            description: "Une chemise en coton à envelopper. Se ferme sur le côté de la taille avec un bouton.\nTissu : 100 % coton.",
+            colors: ["blanc"]
+        },
+        UA: {
+            category: "Сорочки",
+            name: "Сорочка на запах",
+            description: "Сорочка бавовняна на запах. Застібається збоку талії на ґудзик.\nТканина: 100% бавовна.",
+            colors: ["біла"]
+        },
+        RU: {
+            category: "Рубашки",
+            name: "Хлопковая рубашка на запах",
+            description: "Хлопковая рубашка на запах. Застегивается сбоку на талии на пуговицу.\nТкань: 100% хлопок.",
+            colors: ["белый"]
+        }
+    }
+  },
 
-  // {
-  //   id: 124,
-  //   price: 3500,
-  //   isTop: false,
-  //   sku: "67223",
-  //   size: "XS S M L XL",
-  //   category: "Dresses",
-  //   image: "/Dress/Lemon Dress/1.avif",
-  //   images: [
-  //       "/Dress/Lemon Dress/2.avif",
-  //       "/Dress/Lemon Dress/3.avif",
-  //       "/Dress/Lemon Dress/4.avif",
-  //       "/Dress/Lemon Dress/5.avif"
-  //   ],
-  //   sizes: ["XS", "S", "M", "L", "XL"],
-  //   translations: {
-  //       EN: {
-  //           category: "Dresses",
-  //           name: "Lemon Dress",
-  //           description: "A dress crafted from long-fiber muslin.\nFabric: 100% cotton muslin, light and soft to the touch.",
-  //           colors: ["yellow"]
-  //       },
-  //       FR: {
-  //           category: "Robes",
-  //           name: "Robe Lemon",
-  //           description: "Une robe confectionnée en mousseline à longues fibres.\nTissu : mousseline 100 % coton, légère et douce au toucher.",
-  //           colors: ["jaune"]
-  //       },
-  //       UA: {
-  //           category: "Сукні",
-  //           name: "Сукня «Lemon»",
-  //           description: "Сукня з довговолокняного мусліну.\nТканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
-  //           colors: ["жовтий"]
-  //       },
-  //       RU: {
-  //           category: "Платья",
-  //           name: "Платье «Лемон»",
-  //           description: "Платье из длинноволокнистого муслина.\nТкань: муслин из 100% хлопка, легкая и мягкая на ощупь.",
-  //           colors: ["желтый"]
-  //       }
-  //   }
-  // },
-
+  {
+    id: 124,
+    price: 3500,
+    isTop: false,
+    sku: "67223",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Lemon Dress/1.avif",
+    images: [
+        "/Dress/Lemon Dress/2.avif",
+        "/Dress/Lemon Dress/3.avif",
+        "/Dress/Lemon Dress/4.avif",
+        "/Dress/Lemon Dress/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+        EN: {
+            category: "Dresses",
+            name: "Lemon Dress",
+            description: "A dress crafted from long-fiber muslin.\nFabric: 100% cotton muslin, light and soft to the touch.",
+            colors: ["yellow"]
+        },
+        FR: {
+            category: "Robes",
+            name: "Robe Lemon",
+            description: "Une robe confectionnée en mousseline à longues fibres.\nTissu : mousseline 100 % coton, légère et douce au toucher.",
+            colors: ["jaune"]
+        },
+        UA: {
+            category: "Сукні",
+            name: "Сукня «Lemon»",
+            description: "Сукня з довговолокняного мусліну.\nТканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+            colors: ["жовтий"]
+        },
+        RU: {
+ 
+           category: "Платья",
+            name: "Платье «Лемон»",
+            description: "Платье из длинноволокнистого муслина.\nТкань: муслин из 100% хлопка, легкая и мягкая на ощупь.",
+            colors: ["желтый"]
+        }
+    }
+  },
   {
     id: 123,
     price: 3900,
@@ -301,48 +301,48 @@ const products = [
     }
   },
 
-  // {
-  //   id: 122,
-  //   price: 2000,
-  //   isTop: false,
-  //   sku: "67221",
-  //   size: "XS S M L XL",
-  //   category: "Shirts",
-  //   image: "/Shirt/Batiste Pleated Shirt/1.avif",
-  //   images: [
-  //       "/Shirt/Batiste Pleated Shirt/2.avif",
-  //       "/Shirt/Batiste Pleated Shirt/3.avif",
-  //       "/Shirt/Batiste Pleated Shirt/4.avif",
-  //       "/Shirt/Batiste Pleated Shirt/5.avif"
-  //   ],
-  //   sizes: ["XS", "S", "M", "L", "XL"],
-  //   translations: {
-  //       EN: {
-  //           category: "Shirts",
-  //           name: "Batiste Pleated Shirt",
-  //           description: "A shirt made from natural fabric, adorned with lace and proshva inserts.\nFabric: natural batiste.",
-  //           colors: ["white"]
-  //       },
-  //       FR: {
-  //           category: "Chemises",
-  //           name: "Chemise Plissée en Batiste",
-  //           description: "Une chemise en tissu naturel, ornée de dentelle et d'inserts de proshva.\nTissu : batiste naturel.",
-  //           colors: ["blanc"]
-  //       },
-  //       UA: {
-  //           category: "Сорочки",
-  //           name: "Батистова сорочка зі складками",
-  //           description: "Сорочка із натуральної тканини, яка оздоблена мереживом та вставками із прошви.\nТканина: натуральний батист.",
-  //           colors: ["біла"]
-  //       },
-  //       RU: {
-  //           category: "Рубашки",
-  //           name: "Батистовая рубашка с складками",
-  //           description: "Рубашка из натуральной ткани, украшенная кружевом и вставками из прошвы.\nТкань: натуральный батист.",
-  //           colors: ["белый"]
-  //       }
-  //   }
-  // },
+  {
+    id: 122,
+    price: 2000,
+    isTop: false,
+    sku: "67221",
+    size: "XS S M L XL",
+    category: "Shirts",
+    image: "/Shirts/Batiste Pleated Shirt/1.avif",
+    images: [
+        "/Shirts/Batiste Pleated Shirt/2.avif",
+        "/Shirts/Batiste Pleated Shirt/3.avif",
+        "/Shirts/Batiste Pleated Shirt/4.avif",
+        "/Shirts/Batiste Pleated Shirt/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+        EN: {
+            category: "Shirts",
+            name: "Batiste Pleated Shirt",
+            description: "A shirt made from natural fabric, adorned with lace and proshva inserts.\nFabric: natural batiste.",
+            colors: ["white"]
+        },
+        FR: {
+            category: "Chemises",
+            name: "Chemise Plissée en Batiste",
+            description: "Une chemise en tissu naturel, ornée de dentelle et d'inserts de proshva.\nTissu : batiste naturel.",
+            colors: ["blanc"]
+        },
+        UA: {
+            category: "Сорочки",
+            name: "Батистова сорочка зі складками",
+            description: "Сорочка із натуральної тканини, яка оздоблена мереживом та вставками із прошви.\nТканина: натуральний батист.",
+            colors: ["біла"]
+        },
+        RU: {
+            category: "Рубашки",
+            name: "Батистовая рубашка с складками",
+            description: "Рубашка из натуральной ткани, украшенная кружевом и вставками из прошвы.\nТкань: натуральный батист.",
+            colors: ["белый"]
+        }
+    }
+  },
 
   {
     id: 121,
