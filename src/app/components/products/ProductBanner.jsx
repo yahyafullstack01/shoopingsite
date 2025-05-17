@@ -5,6 +5,7 @@ import Image from "next/image";
 import InfoForm from "../../Functions/InfoForm";
 import { useLanguage } from "../../Functions/useLanguage";
 import ThumbnailCarousel from "../../components/ThumbnailCarousel/ThumbnailCarousel";
+import { getSessionId } from '../../utils/session';
 
 const ProductBanner = ({
   selectedProduct,
@@ -37,11 +38,8 @@ const [selectedSize, setSelectedSize] = useState('');
   }, [selectedProduct]);
   
   const handleAddToCart = async ({ selectedColor, selectedSize, quantity }) => {
-    const sessionId = localStorage.getItem("sessionId");
-    if (!sessionId) {
-      alert("Не знайдено sessionId");
-      return;
-    }
+    const sessionId = getSessionId();
+
   
     try {
       const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/cart`, {
