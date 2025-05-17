@@ -3,6 +3,8 @@
 import { useState, useEffect } from 'react';
 //import fetchGeoCities from '../../utils/fetchGeoCities'
 import { validateForm } from '../../utils/validationContactForm';
+import { getSessionId } from '../../utils/session';
+
 
 export default function Checkout() {
   const [deliveryMethod, setDeliveryMethod] = useState('');
@@ -25,12 +27,11 @@ export default function Checkout() {
   const [comment, setComment] = useState('');
 
   const [sessionId, setSessionId] = useState('');
-
   useEffect(() => {
-    const id = localStorage.getItem('sessionId');
-    if (id) setSessionId(id);
+    const id = getSessionId();
+    setSessionId(id);
   }, []);
-
+ 
   useEffect(() => {
     const amount = localStorage.getItem('totalAmount');
     if (amount) setTotal(Number(amount));

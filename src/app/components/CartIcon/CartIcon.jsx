@@ -3,23 +3,18 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { FaShoppingCart } from "react-icons/fa";
-import { useLanguage } from "../../Functions/useLanguage"; // Імпорт мови
+import { useLanguage } from "../../Functions/useLanguage";
+import { getSessionId } from "../../utils/session"; // ✅ додано
 
 export default function CartIcon() {
   const [cartCount, setCartCount] = useState(0);
-  const { language } = useLanguage(); // Отримуємо поточну мову
+  const { language } = useLanguage();
 
   useEffect(() => {
     const fetchCartCount = async () => {
       try {
-        let sessionId = localStorage.getItem("sessionId");
-        if (!sessionId) {
-          sessionId = "_" + Math.random().toString(36).substr(2, 9);
-          localStorage.setItem("sessionId", sessionId);
-        }
-const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/cart?sessionId=${sessionId}`);
-
-       // const res = await fetch(`/api/cart?sessionId=${sessionId}`);
+        const sessionId = getSessionId(); // ✅ використовуємо ту ж саму сесію
+        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/cart?sessionId=${sessionId}`);
         const data = await res.json();
 
         if (res.ok) {
@@ -34,7 +29,7 @@ const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/cart?sessionId=
     };
 
     fetchCartCount();
-  }, [language]); // оновлюється при зміні мови
+  }, [language]);
 
   return (
     <div

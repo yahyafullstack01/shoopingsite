@@ -2,27 +2,9 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import { getSessionId } from '../../utils/session'
 
 
-// Отримати або створити sessionId
-function getSessionId() {
-  let id = sessionStorage.getItem('sessionId');
-  if (!id) {
-    id = '_' + Math.random().toString(36).substr(2, 9);
-    sessionStorage.setItem('sessionId', id);
-  }
-  return id;
-}
-{/*}
-function getSessionId() {
-  let id = localStorage.getItem('sessionId');
-  if (!id) {
-    id = '_' + Math.random().toString(36).substr(2, 9);
-    localStorage.setItem('sessionId', id);
-  }
-  return id;
-}
-*/}
 export default function Cart() {
   const [cartItems, setCartItems] = useState([]);
   const [message, setMessage] = useState('');
@@ -31,9 +13,11 @@ export default function Cart() {
   const router = useRouter();
 
   // 1. Ініціалізація sessionId
-  useEffect(() => {
-    setSessionId(getSessionId());
-  }, []);
+
+useEffect(() => {
+  const id = getSessionId(); // використовуєш з utils/session
+  setSessionId(id);
+}, []);
 
   // 2. Завантажити корзину
   useEffect(() => {
