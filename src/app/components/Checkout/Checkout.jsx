@@ -160,20 +160,36 @@ const showLoader = (message = 'Переходимо на оплату...') => {
 
   document.body.appendChild(loaderOverlay);
 };
+// ✅ Оновлена версія `handleFondyPayment`
+// Додаємо збереження замовлення в БД перед редіректом на Fondy
+
 const handleFondyPayment = async (order) => {
   try {
+    // 1. Зберігаємо замовлення в БД
+    const savedOrderResponse = await fetch(`${BACKEND_URL}/api/orders`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(order),
+    });
+
+    if (!savedOrderResponse.ok) throw new Error('❌ Не вдалося зберегти замовлення');
+
+    const savedOrder = await savedOrderResponse.json();
+    console.log('✅ Order збережено перед Fondy:', savedOrder);
+
+    // 2. Надсилаємо запит до /api/payments/fondy з orderId
     const response = await fetch(`${BACKEND_URL}/api/payments/fondy`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         amount: order.total,
         resultUrl: `${window.location.origin}/success`,
-        serverUrl: `${BACKEND_URL}/api/payments/fondy-callback`
-     }),
+        serverUrl: `${BACKEND_URL}/api/payments/fondy-callback`,
+        orderId: savedOrder._id,
+      }),
     });
 
     const html = await response.text();
-    console.log('📥 HTML від Fondy:', html);
 
     const container = document.createElement('div');
     container.innerHTML = html;
@@ -182,13 +198,10 @@ const handleFondyPayment = async (order) => {
     setTimeout(() => {
       const form = container.querySelector('form');
       if (form) {
-        console.log('✅ Знайдено <form>, виконуємо submit');
-
-        showLoader('Переходимо на Fondy...'); // показуємо лоадер!
+        showLoader('Переходимо на Fondy...');
         form.submit();
       } else {
-        console.error('❗ HTML не містить <form>');
-        alert('Не вдалося ініціювати оплату Fondy — форма не згенерована.');
+        alert('Не вдалося знайти форму для Fondy');
       }
     }, 0);
   } catch (err) {
