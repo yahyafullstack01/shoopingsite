@@ -162,7 +162,6 @@ const showLoader = (message = 'Переходимо на оплату...') => {
 };
 // ✅ Оновлена версія `handleFondyPayment`
 // Додаємо збереження замовлення в БД перед редіректом на Fondy
-
 const handleFondyPayment = async (order) => {
   try {
     // 1. Зберігаємо замовлення в БД
@@ -177,7 +176,7 @@ const handleFondyPayment = async (order) => {
     const savedOrder = await savedOrderResponse.json();
     console.log('✅ Order збережено перед Fondy:', savedOrder);
 
-    // 2. Надсилаємо запит до /api/payments/fondy з orderId
+    // 2. Надсилаємо запит до /api/payments/fondy
     const response = await fetch(`${BACKEND_URL}/api/payments/fondy`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -185,11 +184,12 @@ const handleFondyPayment = async (order) => {
         amount: order.total,
         resultUrl: `${window.location.origin}/success`,
         serverUrl: `${BACKEND_URL}/api/payments/fondy-callback`,
-        orderId: savedOrder._id,
+        order: savedOrder, // 🟡 ПЕРЕДАЄМО повністю order, не orderId!
       }),
     });
 
     const html = await response.text();
+    console.log('📨 Отримано HTML від Fondy:\n', html); // 🧠 ВАЖЛИВО для дебагу
 
     const container = document.createElement('div');
     container.innerHTML = html;
@@ -201,7 +201,8 @@ const handleFondyPayment = async (order) => {
         showLoader('Переходимо на Fondy...');
         form.submit();
       } else {
-        alert('Не вдалося знайти форму для Fondy');
+        console.warn('❌ В HTML не знайдено форму!');
+        alert('Не вдалося знайти форму для Fondy:\n' + html);
       }
     }, 0);
   } catch (err) {
