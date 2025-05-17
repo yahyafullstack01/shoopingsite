@@ -164,6 +164,38 @@ const showLoader = (message = 'Переходимо на оплату...') => {
 // Додаємо збереження замовлення в БД перед редіректом на Fondy
 const handleFondyPayment = async (order) => {
   try {
+    const savedOrder = await fetch(`${BACKEND_URL}/api/orders`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(order),
+    }).then(res => res.json());
+
+    const res = await fetch(`${BACKEND_URL}/api/payments/fondy`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        amount: order.total,
+        resultUrl: `${window.location.origin}/success`,
+        serverUrl: `${BACKEND_URL}/api/payments/fondy-callback`,
+        order,
+      }),
+    });
+
+    const { checkout_url } = await res.json();
+
+    if (checkout_url) {
+      window.location.href = checkout_url;
+    } else {
+      throw new Error('Не отримано checkout_url від Fondy');
+    }
+  } catch (err) {
+    console.error('❌ Fondy оплата:', err);
+    alert('Не вдалося ініціювати оплату через Fondy.');
+  }
+};
+{/*
+const handleFondyPayment = async (order) => {
+  try {
     // 1. Зберігаємо замовлення в БД
     const savedOrderResponse = await fetch(`${BACKEND_URL}/api/orders`, {
       method: 'POST',
@@ -210,7 +242,7 @@ const handleFondyPayment = async (order) => {
     alert('Не вдалося ініціювати оплату Fondy. Спробуйте ще раз.');
   }
 };
-
+*/}
   const handleLiqPayPayment = async (order) => {
     try {
       const response = await fetch(`${BACKEND_URL}/api/payments/liqpay`, {
