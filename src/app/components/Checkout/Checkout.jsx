@@ -184,9 +184,7 @@ const handleFondyPayment = async (order) => {
         amount: order.total,
         resultUrl: `${window.location.origin}/success`,
         serverUrl: `${BACKEND_URL}/api/payments/fondy-callback`,
-        orderId: savedOrder._id,
-  currency: 'UAH', // обов’язково вказати!
-  product: 'Оплата замовлення на Latoré'
+        order
       }),
     });
 
