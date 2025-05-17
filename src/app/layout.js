@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
   process.env.NODE_ENV === "production" && (
     <>
       <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-KGLK5J3JEE"
+        src="https://www.googletagmanager.com/gtag/js?id=G-6ZG9YKXCTQ"
         strategy="afterInteractive"
       />
       <Script id="google-analytics" strategy="afterInteractive">
@@ -58,7 +58,7 @@ export default function RootLayout({ children }) {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-KGLK5J3JEE');
+          gtag('config', 'id=G-6ZG9YKXCTQ');
         `}
       </Script>
        {/* 🔥 Google Ads Conversion Tag */}
