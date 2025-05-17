@@ -58,7 +58,8 @@ export default function RootLayout({ children }) {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'id=G-6ZG9YKXCTQ');
+         'gtag('config', 'G-6ZG9YKXCTQ');
+
         `}
       </Script>
        {/* 🔥 Google Ads Conversion Tag */}
