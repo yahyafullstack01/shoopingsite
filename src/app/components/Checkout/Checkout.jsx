@@ -311,6 +311,66 @@ const handleFondyPayment = async (order) => {
       alert('Не вдалося обробити замовлення. Спробуйте ще раз.');
     }
   };
+  const resetForm = () => {
+    setFirstName('');
+    setLastName('');
+    setPatronymic('');
+    setEmail('');
+    setPhone('');
+    setComment('');
+    setDeliveryMethod('');
+    setCityQuery('');
+    setFilteredCities([]);
+    setSelectedCityRef('');
+    setWarehouses([]);
+    setSelectedWarehouse('');
+    setPaymentType('');
+    setOnlinePaymentMethod('');
+    setErrors({});
+  };
+  
+  const handleOrderWithoutPayment = async () => {
+    const formValues = { firstName, lastName, email, phone };
+    const validationErrors = validateForm(formValues);
+  
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      return;
+    }
+  
+    const order = {
+      firstName,
+      lastName,
+      patronymic,
+      email,
+      phone,
+      deliveryMethod,
+      city: cityQuery,
+      warehouse: selectedWarehouse,
+      comment,
+      total,
+      prepay: false,
+      paymentMethod: 'no-payment',
+      sessionId,
+    };
+  
+    try {
+      // Надсилаємо на бекенд (наприклад, у базу і на email)
+      const res = await fetch(`${BACKEND_URL}/api/orders`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(order),
+      });
+  
+      if (!res.ok) throw new Error('Не вдалося надіслати замовлення без оплати');
+  
+      alert('✅ Ваше замовлення прийнято! Очікуйте дзвінка 📞');
+      resetForm(); // 🧹 Очищення форми
+    } catch (error) {
+      console.error('❌ Помилка при замовленні без оплати:', error);
+      alert('Помилка при оформленні. Спробуйте пізніше.');
+    }
+  };
   
  
   return (
@@ -471,7 +531,7 @@ const handleFondyPayment = async (order) => {
           className="w-full p-2 border rounded"
         />
   
-        {/* Оплата */}
+        {/* Оплата
         <div>
           <label className="block mb-1 font-medium">Оплата</label>
           <div className="space-y-2">
@@ -490,7 +550,7 @@ const handleFondyPayment = async (order) => {
             </label>
           </div>
         </div>
-  
+   
         {paymentType === 'full' && (
           <div className="bg-gray-50 p-4 rounded border">
             <label className="block mb-2 font-medium">Спосіб онлайн-оплати</label>
@@ -516,7 +576,7 @@ const handleFondyPayment = async (order) => {
   <span>Fondy (тест UAH)</span>
 </label>
 
-              {/*<label className="flex items-center space-x-2">
+              <label className="flex items-center space-x-2">
                 <input
                   type="radio"
                   name="online-method"
@@ -525,19 +585,28 @@ const handleFondyPayment = async (order) => {
                   onChange={() => setOnlinePaymentMethod('stripe')}
                 />
                 <span>Stripe (🌍 USD / EUR)</span>
-              </label>*/}
-            </div>
+              </label>
+            </div> 
           </div>
         )}
-  
-        {/* Кнопка */}
+          
+       
+        {/* Кнопка 
         <button
           type="submit"
           className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
           disabled={!paymentType}
         >
           Оплатити замовлення
-        </button>
+        </button>*/}
+        {/* Кнопка замовити без оплати */}
+<button
+  type="button"
+  onClick={handleOrderWithoutPayment}
+  className="mt-2 ml-4 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+>
+  Замовити без оплати
+</button>
       </form>
     </div>
   );
