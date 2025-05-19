@@ -184,7 +184,8 @@ const handleFondyPayment = async (order) => {
       body: JSON.stringify({
         amount: order.total,
         resultUrl: `${window.location.origin}/success`,
-        serverUrl: `${BACKEND_URL}/api/payments/fondy-callback`,
+        serverUrl: `https://shoopingsite-backend-1.onrender.com/api/payments/fondy-callback`,
+
         order
       }),
     });
