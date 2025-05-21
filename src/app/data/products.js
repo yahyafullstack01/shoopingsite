@@ -1,5 +1,572 @@
 const products = [
 
+{
+    id: 142,
+    price: 3100,
+    isTop: false,
+    sku: "67241",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Kylie Dress/1.avif",
+    images: [
+        "/Dress/Kylie Dress/2.avif",
+        "/Dress/Kylie Dress/3.avif",
+        "/Dress/Kylie Dress/4.avif",
+        "/Dress/Kylie Dress/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+        EN: {
+            category: "Dresses",
+            name: "Kylie Dress",
+            description: "A dress made from natural cotton, soft and comfortable. Pleasant to the touch and for the body.\nFabric: 100% cotton.",
+            colors: ["yellow"]
+        },
+        FR: {
+            category: "Robes",
+            name: "Robe Kylie",
+            description: "Une robe en coton naturel, douce et confortable. Agréable au toucher et pour le corps.\nTissu : 100 % coton.",
+            colors: ["jaune"]
+        },
+        UA: {
+            category: "Сукні",
+            name: "Сукня «Kylie»",
+            description: "Сукня з натурального коттону, м'яка і комфортна. Приємна на дотик і для тіла.\nТканина: 100% бавовна.",
+            colors: ["жовтий"]
+        },
+        RU: {
+            category: "Платья",
+            name: "Платье «Кайли»",
+            description: "Платье из натурального хлопка, мягкое и комфортное. Приятное на ощупь и для тела.\nТкань: 100% хлопок.",
+            colors: ["желтый"]
+        }
+    }
+},
+
+{
+    id: 141,
+    price: 2500,
+    isTop: false,
+    sku: "67240",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Skyler Dress/1.avif",
+    images: [
+        "/Dress/Skyler Dress/2.avif",
+        "/Dress/Skyler Dress/3.avif",
+        "/Dress/Skyler Dress/4.avif",
+        "/Dress/Skyler Dress/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+        EN: {
+            category: "Dresses",
+            name: "Skyler Dress",
+            description: "A dress made from natural cotton, soft and comfortable. Pleasant to the touch and for the body.\nFabric: 100% cotton.",
+            colors: ["light blue"]
+        },
+        FR: {
+            category: "Robes",
+            name: "Robe Skyler",
+            description: "Une robe en coton naturel, douce et confortable. Agréable au toucher et pour le corps.\nTissu : 100 % coton.",
+            colors: ["bleu clair"]
+        },
+        UA: {
+            category: "Сукні",
+            name: "Сукня «Skyler»",
+            description: "Сукня з натурального коттону, м'яка і комфортна. Приємна на дотик і для тіла.\nТканина: 100% бавовна.",
+            colors: ["блакитний"]
+        },
+        RU: {
+            category: "Платья",
+            name: "Платье «Скайлер»",
+            description: "Платье из натурального хлопка, мягкое и комфортное. Приятное на ощупь и для тела.\nТкань: 100% хлопок.",
+            colors: ["голубой"]
+        }
+    }
+},
+
+{
+    id: 140,
+    price: 3100,
+    isTop: false,
+    sku: "67239",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Alison Dress/1.avif",
+    images: [
+        "/Dress/Alison Dress/2.avif",
+        "/Dress/Alison Dress/3.avif",
+        "/Dress/Alison Dress/4.avif",
+        "/Dress/Alison Dress/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+        EN: {
+            category: "Dresses",
+            name: "Alison Dress",
+            description: "A dress made from 100% natural linen, ensuring excellent breathability for the body.\nFabric: 100% linen.",
+            colors: ["white"]
+        },
+        FR: {
+            category: "Robes",
+            name: "Robe Alison",
+            description: "Une robe en lin naturel 100 %, offrant une excellente respirabilité pour le corps.\nTissu : 100 % lin.",
+            colors: ["blanc"]
+        },
+        UA: {
+            category: "Сукні",
+            name: "Сукня «Alison»",
+            description: "Сукня з 100% натурального льону, він забезпечує безмежний доступ повітря до тіла.\nТканина: 100% льон.",
+            colors: ["білий"]
+        },
+        RU: {
+            category: "Платья",
+            name: "Платье «Алисон»",
+            description: "Платье из 100% натурального льна, обеспечивающее отличную воздухопроницаемость для тела.\nТкань: 100% лен.",
+            colors: ["белый"]
+        }
+    }
+},
+
+{
+    id: 139,
+    price: 2950,
+    isTop: false,
+    sku: "67238",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Becca Dress/1.avif",
+    images: [
+        "/Dress/Becca Dress/2.avif",
+        "/Dress/Becca Dress/3.avif",
+        "/Dress/Becca Dress/4.avif",
+        "/Dress/Becca Dress/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+        EN: {
+            category: "Dresses",
+            name: "Becca Dress",
+            description: "A dress made from natural cotton, soft and comfortable. Pleasant to the touch and for the body.\nFabric: 100% cotton.",
+            colors: ["beige"]
+        },
+        FR: {
+            category: "Robes",
+            name: "Robe Becca",
+            description: "Une robe en coton naturel, douce et confortable. Agréable au toucher et pour le corps.\nTissu : 100 % coton.",
+            colors: ["beige"]
+        },
+        UA: {
+            category: "Сукні",
+            name: "Сукня «Becca»",
+            description: "Сукня з натурального коттону, м'яка і комфортна. Приємна на дотик і для тіла.\nТканина: 100% бавовна.",
+            colors: ["бежевий"]
+        },
+        RU: {
+            category: "Платья",
+            name: "Платье «Бекка»",
+            description: "Платье из натурального хлопка, мягкое и комфортное. Приятное на ощупь и для тела.\nТкань: 100% хлопок.",
+            colors: ["бежевый"]
+        }
+    }
+},
+
+  {
+    id: 138,
+    price: 3500,
+    isTop: false,
+    sku: "67237",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Tricolor Dress/1.avif",
+    images: [
+        "/Dress/Tricolor Dress/2.avif",
+        "/Dress/Tricolor Dress/3.avif",
+        "/Dress/Tricolor Dress/4.avif",
+        "/Dress/Tricolor Dress/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+        EN: {
+            category: "Dresses",
+            name: "Tricolor Dress",
+            description: "A dress crafted from long-fiber muslin with a tricolor design.\nFabric: 100% cotton muslin, light and soft to the touch.",
+            colors: ["tricolor"]
+        },
+        FR: {
+            category: "Robes",
+            name: "Robe Tricolore",
+            description: "Une robe confectionnée en mousseline à longues fibres avec un design tricolore.\nTissu : mousseline 100 % coton, légère et douce au toucher.",
+            colors: ["tricolore"]
+        },
+        UA: {
+            category: "Сукні",
+            name: "Сукня 3-х кольорова",
+            description: "Сукня з довговолокняного мусліну з триколірним дизайном.\nТканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+            colors: ["триколірний"]
+        },
+        RU: {
+            category: "Платья",
+            name: "Трехцветное платье",
+            description: "Платье из длинноволокнистого муслина с трехцветным дизайном.\nТкань: муслин из 100% хлопка, легкая и мягкая на ощупь.",
+            colors: ["трехцветный"]
+        }
+    }
+},
+
+{
+    id: 137,
+    price: 1350,
+    isTop: false,
+    sku: "67236",
+    size: "XS S M L XL",
+    category: "Shorts",
+    image: "/Shorts/Muslin Mini Shorts/1.avif",
+    images: [
+        "/Shorts/Muslin Mini Shorts/2.avif",
+        "/Shorts/Muslin Mini Shorts/3.avif",
+        "/Shorts/Muslin Mini Shorts/4.avif",
+        "/Shorts/Muslin Mini Shorts/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+        EN: {
+            category: "Shorts",
+            name: "Muslin Mini Shorts",
+            description: "Mini shorts crafted from long-fiber muslin.\nFabric: 100% cotton muslin, light and soft to the touch.",
+            colors: ["milk"]
+        },
+        FR: {
+            category: "Shorts",
+            name: "Short Mini en Mousseline",
+            description: "Un short mini confectionné en mousseline à longues fibres.\nTissu : mousseline 100 % coton, légère et douce au toucher.",
+            colors: ["lait"]
+        },
+        UA: {
+            category: "Шорти",
+            name: "Муслінові шорти mini",
+            description: "Шорти з довговолокняного мусліну.\nТканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+            colors: ["молоко"]
+        },
+        RU: {
+            category: "Шорты",
+            name: "Муслиновые шорты мини",
+            description: "Шорты мини из длинноволокнистого муслина.\nТкань: муслин из 100% хлопка, легкая и мягкая на ощупь.",
+            colors: ["молоко"]
+        }
+    }
+},
+
+{
+    id: 136,
+    price: 1650,
+    isTop: false,
+    sku: "67235",
+    size: "XS S M L XL",
+    category: "Shirts",
+    image: "/Shirts/Muslin Mini Shirt/1.avif",
+    images: [
+        "/Shirts/Muslin Mini Shirt/2.avif",
+        "/Shirts/Muslin Mini Shirt/3.avif",
+        "/Shirts/Muslin Mini Shirt/4.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+        EN: {
+            category: "Shirts",
+            name: "Muslin Mini Shirt",
+            description: "A mini shirt crafted from long-fiber muslin.\nFabric: 100% cotton muslin, light and soft to the touch.",
+            colors: ["milk"]
+        },
+        FR: {
+            category: "Chemises",
+            name: "Chemise Mini en Mousseline",
+            description: "Une chemise mini confectionnée en mousseline à longues fibres.\nTissu : mousseline 100 % coton, légère et douce au toucher.",
+            colors: ["lait"]
+        },
+        UA: {
+            category: "Сорочки",
+            name: "Муслінова сорочка mini",
+            description: "Сорочка з довговолокняного мусліну.\nТканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+            colors: ["молоко"]
+        },
+        RU: {
+            category: "Рубашки",
+            name: "Муслиновая рубашка мини",
+            description: "Рубашка мини из длинноволокнистого муслина.\nТкань: муслин из 100% хлопка, легкая и мягкая на ощупь.",
+            colors: ["молоко"]
+        }
+    }
+},
+
+  {
+    id: 135,
+    price: 3000,
+    isTop: false,
+    sku: "67234",
+    size: "XS S M L XL",
+    category: "Costumes",
+    image: "/Costumes/Muslin Mini Costume/1.avif",
+    images: [
+        "/Costumes/Muslin Mini Costume/2.avif",
+        "/Costumes/Muslin Mini Costume/3.avif",
+        "/Costumes/Muslin Mini Costume/4.avif",
+        "/Costumes/Muslin Mini Costume/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+        EN: {
+            category: "Costumes",
+            name: "Muslin Mini Costume",
+            description: "A mini costume crafted from long-fiber muslin.\nFabric: 100% cotton muslin, light and soft to the touch.",
+            colors: ["milk"]
+        },
+        FR: {
+            category: "Costumes",
+            name: "Costume Mini en Mousseline",
+            description: "Un costume mini confectionné en mousseline à longues fibres.\nTissu : mousseline 100 % coton, légère et douce au toucher.",
+            colors: ["lait"]
+        },
+        UA: {
+            category: "Костюми",
+            name: "Костюм мусліновий mini",
+            description: "Костюм з довговолокняного мусліну.\nТканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+            colors: ["молоко"]
+        },
+        RU: {
+            category: "Костюмы",
+            name: "Муслиновый костюм мини",
+            description: "Костюм мини из длинноволокнистого муслина.\nТкань: муслин из 100% хлопка, легкая и мягкая на ощупь.",
+            colors: ["молоко"]
+        }
+    }
+},
+
+  {
+    id: 134,
+    price: 3500,
+    isTop: false,
+    sku: "67233",
+    size: "XS S M L XL",
+    category: "Costumes",
+    image: "/Costumes/Proshva Pants Costume/1.avif",
+    images: [
+        "/Costumes/Proshva Pants Costume/2.avif",
+        "/Costumes/Proshva Pants Costume/3.avif",
+        "/Costumes/Proshva Pants Costume/4.avif",
+        "/Costumes/Proshva Pants Costume/5.avif",
+        "/Costumes/Proshva Pants Costume/6.avif",
+        "/Costumes/Proshva Pants Costume/7.avif",
+        "/Costumes/Proshva Pants Costume/8.avif",
+        "/Costumes/Proshva Pants Costume/9.avif",
+        "/Costumes/Proshva Pants Costume/10.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+        EN: {
+            category: "Costumes",
+            name: "Proshva Pants Costume",
+            description: "A costume crafted from lightweight cotton with delicate lace embroidery.\nFabric: 95% cotton, 5% elastane. Proshva - a light, mostly solid-colored cotton fabric with distinctive lace embroidery.",
+            colors: ["black", "white"]
+        },
+        FR: {
+            category: "Costumes",
+            name: "Costume avec Pantalon en Proshva",
+            description: "Un costume confectionné en coton léger avec une broderie de dentelle délicate.\nTissu : 95 % coton, 5 % élasthanne. Proshva - un tissu en coton léger, généralement uni, avec une broderie de dentelle caractéristique.",
+            colors: ["noir", "blanc"]
+        },
+        UA: {
+            category: "Костюми",
+            name: "Костюм з прошви зі штанами",
+            description: "Костюм з легкої бавовняної тканини з делікатною мереживною вишивкою.\nТканина: 95% бавовна, 5% еластан. Прошва - легка, переважно однотонна, бавовняна тканина з характерною мереживною вишивкою.",
+            colors: ["чорний", "білий"]
+        },
+        RU: {
+            category: "Костюмы",
+            name: "Костюм с прошвой и брюками",
+            description: "Костюм из легкой хлопковой ткани с изящной кружевной вышивкой.\nТкань: 95% хлопок, 5% эластан. Прошва - легкая, преимущественно однотонная хлопковая ткань с характерной кружевной вышивкой.",
+            colors: ["черный", "белый"]
+        }
+    }
+},
+
+  {
+    id: 133,
+    price: 2800,
+    isTop: false,
+    sku: "67232",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Hemp Mini Dress/1.avif",
+    images: [
+        "/Dress/Hemp Mini Dress/2.avif",
+        "/Dress/Hemp Mini Dress/3.avif",
+        "/Dress/Hemp Mini Dress/4.avif",
+        "/Dress/Hemp Mini Dress/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+        EN: {
+            category: "Dresses",
+            name: "Hemp Mini Dress",
+            description: "A mini dress made from double-layer muslin, 30% hemp, 70% cotton.\nOne of the most eco-friendly fabrics, grown without pesticides.",
+            colors: ["hemp"]
+        },
+        FR: {
+            category: "Robes",
+            name: "Robe Mini en Chanvre",
+            description: "Une robe mini en mousseline double couche, 30 % chanvre, 70 % coton.\nL'un des tissus les plus écologiques, cultivé sans pesticides.",
+            colors: ["chanvre"]
+        },
+        UA: {
+            category: "Сукні",
+            name: "Конопляна сукня mini",
+            description: "Сукня з двошарового мусліну, 30% коноплі, 70% бавовни.\nЦе одна з найекологічніших тканин, бо виращується без пестицидів.",
+            colors: ["конопляний"]
+        },
+        RU: {
+            category: "Платья",
+            name: "Конопляное платье мини",
+            description: "Платье мини из двухслойного муслина, 30% конопли, 70% хлопка.\nОдна из самых экологичных тканей, выращивается без пестицидов.",
+            colors: ["конопляный"]
+        }
+    }
+},
+
+  {
+    id: 132,
+    price: 3450,
+    isTop: false,
+    sku: "67231",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Elodie Maxi Dress/1.avif",
+    images: [
+        "/Dress/Elodie Maxi Dress/2.avif",
+        "/Dress/Elodie Maxi Dress/3.avif",
+        "/Dress/Elodie Maxi Dress/4.avif",
+        "/Dress/Elodie Maxi Dress/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+        EN: {
+            category: "Dresses",
+            name: "Elodie Maxi Dress",
+            description: "A maxi dress crafted from long-fiber muslin.\nFabric: 100% cotton muslin, light and soft to the touch.",
+            colors: ["milk"]
+        },
+        FR: {
+            category: "Robes",
+            name: "Robe Maxi Elodie",
+            description: "Une robe maxi confectionnée en mousseline à longues fibres.\nTissu : mousseline 100 % coton, légère et douce au toucher.",
+            colors: ["lait"]
+        },
+        UA: {
+            category: "Сукні",
+            name: "Сукня «Elodie» maxi",
+            description: "Сукня з довговолокняного мусліну.\nТканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+            colors: ["молоко"]
+        },
+        RU: {
+            category: "Платья",
+            name: "Платье «Элоди» макси",
+            description: "Платье макси из длинноволокнистого муслина.\nТкань: муслин из 100% хлопка, легкая и мягкая на ощупь.",
+            colors: ["молоко"]
+        }
+    }
+},
+
+{
+    id: 131,
+    price: 3900,
+    isTop: false,
+    sku: "67230",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Coton Dress/1.avif",
+    images: [
+        "/Dress/Coton Dress/2.avif",
+        "/Dress/Coton Dress/3.avif",
+        "/Dress/Coton Dress/4.avif",
+        "/Dress/Coton Dress/5.avif",
+        "/Dress/Coton Dress/6.avif",
+        "/Dress/Coton Dress/7.avif",
+        "/Dress/Coton Dress/8.avif",
+        
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+        EN: {
+            category: "Dresses",
+            name: "Coton Dress",
+            description: "A dress made from natural cotton, soft and comfortable. Pleasant to the touch and for the body.\nFabric: 100% cotton.",
+            colors: ["eucalyptus", "white"]
+        },
+        FR: {
+            category: "Robes",
+            name: "Robe Coton",
+            description: "Une robe en coton naturel, douce et confortable. Agréable au toucher et pour le corps.\nTissu : 100 % coton.",
+            colors: ["eucalyptus", "blanc"]
+        },
+        UA: {
+            category: "Сукні",
+            name: "Сукня «Coton»",
+            description: "Сукня з натурального коттону, м'яка і комфортна. Приємна на дотик і для тіла.\nТканина: 100% бавовна.",
+            colors: ["евкаліпт", "білий"]
+        },
+        RU: {
+            category: "Платья",
+            name: "Платье «Котон»",
+            description: "Платье из натурального хлопка, мягкое и комфортное. Приятное на ощупь и для тела.\nТкань: 100% хлопок.",
+            colors: ["эвкалипт", "белый"]
+        }
+    }
+},
+
+  {
+    id: 130,
+    price: 3600,
+    isTop: false,
+    sku: "67229",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Bahroma Dress/1.avif",
+    images: [
+        "/Dress/Bahroma Dress/2.avif",
+        "/Dress/Bahroma Dress/3.avif",
+        "/Dress/Bahroma Dress/4.avif",
+        "/Dress/Bahroma Dress/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+        EN: {
+            category: "Dresses",
+            name: "Bahroma Dress",
+            description: "A dress crafted from long-fiber muslin.\nFabric: 100% cotton muslin, light and soft to the touch.",
+            colors: ["turquoise"]
+        },
+        FR: {
+            category: "Robes",
+            name: "Robe Bahroma",
+            description: "Une robe confectionnée en mousseline à longues fibres.\nTissu : mousseline 100 % coton, légère et douce au toucher.",
+            colors: ["turquoise"]
+        },
+        UA: {
+            category: "Сукні",
+            name: "Сукня «Bahroma»",
+            description: "Сукня з довговолокняного мусліну.\nТканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+            colors: ["бірюза"]
+        },
+        RU: {
+            category: "Платья",
+            name: "Платье «Бахрома»",
+            description: "Платье из длинноволокнистого муслина.\nТкань: муслин из 100% хлопка, легкая и мягкая на ощупь.",
+            colors: ["бирюза"]
+        }
+    }
+  },
+
   {
     id: 129,
     price: 2000,
@@ -498,6 +1065,11 @@ const products = [
         "/Dress/Santorini Dress/7.avif",
         "/Dress/Santorini Dress/8.avif",
         "/Dress/Santorini Dress/9.avif",
+        "/Dress/Santorini Dress/10.avif",
+        "/Dress/Santorini Dress/11.avif",
+        "/Dress/Santorini Dress/12.avif",
+        "/Dress/Santorini Dress/13.avif",
+
 
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
@@ -506,25 +1078,25 @@ const products = [
             category: "Dresses",
             name: "Santorini Dress",
             description: "A dress crafted from lightweight cotton with delicate lace embroidery.\nFabric: 95% cotton, 5% elastane. Proshva - a light, mostly solid-colored cotton fabric with distinctive lace embroidery.",
-            colors: ["fuchsia", "black"]
+            colors: ["fuchsia", "black", "White"]
         },
         FR: {
             category: "Robes",
             name: "Robe Santorini",
             description: "Une robe confectionnée en coton léger avec une broderie de dentelle délicate.\nTissu : 95 % coton, 5 % élasthanne. Proshva - un tissu en coton léger, généralement uni, avec une broderie de dentelle caractéristique.",
-            colors: ["fuchsia", "noir"]
+            colors: ["fuchsia", "noir", "blanc"]
         },
         UA: {
             category: "Сукні",
             name: "Сукня «Santorini»",
             description: "Сукня з легкої бавовняної тканини з делікатною мереживною вишивкою.\nТканина: 95% бавовна, 5% еластан. Прошва - легка, переважно однотонна, бавовняна тканина з характерною мереживною вишивкою.",
-            colors: ["фуксія", "чорна"]
+            colors: ["фуксія", "чорна", "білий"]
         },
         RU: {
             category: "Платья",
             name: "Платье «Санторини»",
             description: "Платье из легкой хлопковой ткани с изящной кружевной вышивкой.\nТкань: 95% хлопок, 5% эластан. Прошва - легкая, преимущественно однотонная хлопковая ткань с характерной кружевной вышивкой.",
-            colors: ["фуксия", "черный"]
+            colors: ["фуксия", "черный", "белый"]
         }
     }
   },
