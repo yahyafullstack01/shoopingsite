@@ -532,7 +532,7 @@ const handleFondyPayment = async (order) => {
           className="w-full p-2 border rounded"
         />
   
-        {/* Оплата8
+        {/* Оплата8*/}
         <div>
           <label className="block mb-1 font-medium">Оплата</label>
           <div className="space-y-2">
@@ -586,20 +586,20 @@ const handleFondyPayment = async (order) => {
                   onChange={() => setOnlinePaymentMethod('stripe')}
                 />
                 <span>Stripe (🌍 USD / EUR)</span>
-              </label>
+              </label> */}
             </div> 
           </div>
         )}
          
-       
-        {/* Кнопка 
+      
+        {/* Кнопка */}
         <button
           type="submit"
           className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
           disabled={!paymentType}
         >
           Оплатити замовлення
-        </button> */}
+        </button> 
         {/* Кнопка замовити без оплати */}
 <button
   type="button"
