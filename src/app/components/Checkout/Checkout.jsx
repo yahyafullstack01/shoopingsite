@@ -621,7 +621,7 @@ const handleWayforpayPayment = async (order) => {
                   onChange={() => setOnlinePaymentMethod('stripe')}
                 />
                 <span>Stripe (🌍 USD / EUR)</span>
-              </label> */}
+              </label>
               <label className="flex items-center space-x-2">
   <input
     type="radio"
@@ -631,7 +631,7 @@ const handleWayforpayPayment = async (order) => {
     onChange={() => setOnlinePaymentMethod('wayforpay')}
   />
   <span>WayForPay (UAH)</span>
-</label>
+</label> */}
             </div> 
           </div>
         )}
@@ -639,14 +639,14 @@ const handleWayforpayPayment = async (order) => {
  
 
       
-        {/* Кнопка*/}
+        {/* Кнопка
         <button
           type="submit"
           className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
           disabled={!paymentType}
         >
           Оплатити замовлення
-        </button>  
+        </button>  */}
         {/* Кнопка замовити без оплати */}
 <button
   type="button"
