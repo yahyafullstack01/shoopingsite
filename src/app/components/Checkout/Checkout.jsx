@@ -212,6 +212,37 @@ const handleFondyPayment = async (order) => {
     alert('Не вдалося ініціювати оплату Fondy. Спробуйте ще раз.');
   }
 };
+const handleWayforpayPayment = async (order) => {
+  try {
+    const response = await fetch(`${BACKEND_URL}/api/payments/wayforpay`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        amount: order.total,
+        resultUrl: `${window.location.origin}/success`,
+        serverUrl: `${BACKEND_URL}/api/payments/wayforpay-callback`,
+        order,
+      }),
+    });
+
+    const html = await response.text();
+
+    const container = document.createElement('div');
+    container.innerHTML = html;
+    document.body.appendChild(container);
+
+    const form = container.querySelector('form');
+    if (form) {
+      showLoader('Переходимо на WayForPay...');
+      form.submit();
+    } else {
+      alert('Не вдалося знайти форму для WayForPay');
+    }
+  } catch (error) {
+    console.error('❌ WayForPay помилка:', error);
+    alert('Не вдалося ініціювати оплату WayForPay');
+  }
+};
 
   const handleLiqPayPayment = async (order) => {
     try {
@@ -301,6 +332,11 @@ const handleFondyPayment = async (order) => {
           console.log("➡️ Переходимо до Fondy...");
           await handleFondyPayment(order);
         }
+        else if (onlinePaymentMethod === 'wayforpay') {
+          console.log("➡️ Переходимо до WayForPay...");
+          await handleWayforpayPayment(order);
+        }
+        
   
       } else {
         console.log("📦 Зберігаємо замовлення без онлайн-оплати...");
@@ -532,7 +568,7 @@ const handleFondyPayment = async (order) => {
           className="w-full p-2 border rounded"
         />
   
-        {/* Оплата8
+        {/* Оплата8*/}
         <div>
           <label className="block mb-1 font-medium">Оплата</label>
           <div className="space-y-2">
@@ -556,7 +592,7 @@ const handleFondyPayment = async (order) => {
           <div className="bg-gray-50 p-4 rounded border">
             <label className="block mb-2 font-medium">Спосіб онлайн-оплати</label>
             <div className="space-y-2">
-              <label className="flex items-center space-x-2">
+             {/*} <label className="flex items-center space-x-2">
                 <input
                   type="radio"
                   name="online-method"
@@ -576,8 +612,7 @@ const handleFondyPayment = async (order) => {
   />
   <span>Fondy (тест UAH)</span>
 </label>
-
-            {/*}  <label className="flex items-center space-x-2">
+ <label className="flex items-center space-x-2">
                 <input
                   type="radio"
                   name="online-method"
@@ -586,20 +621,32 @@ const handleFondyPayment = async (order) => {
                   onChange={() => setOnlinePaymentMethod('stripe')}
                 />
                 <span>Stripe (🌍 USD / EUR)</span>
-              </label> 
+              </label> */}
+              <label className="flex items-center space-x-2">
+  <input
+    type="radio"
+    name="online-method"
+    value="wayforpay"
+    checked={onlinePaymentMethod === 'wayforpay'}
+    onChange={() => setOnlinePaymentMethod('wayforpay')}
+  />
+  <span>WayForPay (UAH)</span>
+</label>
             </div> 
           </div>
         )}
-         
+
+ 
+
       
-        {/* Кнопка
+        {/* Кнопка*/}
         <button
           type="submit"
           className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
           disabled={!paymentType}
         >
           Оплатити замовлення
-        </button>  */}
+        </button>  
         {/* Кнопка замовити без оплати */}
 <button
   type="button"
