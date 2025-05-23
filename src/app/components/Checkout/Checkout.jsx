@@ -220,29 +220,29 @@ const handleWayforpayPayment = async (order) => {
       body: JSON.stringify({
         amount: order.total,
         resultUrl: `${window.location.origin}/success`,
-        serverUrl: `${BACKEND_URL}/api/payments/wayforpay-callback`,
+        serverUrl: `${BACKEND_URL}/api/payments/wayforpay/callback`,
         order,
       }),
     });
 
     const html = await response.text();
 
-    const container = document.createElement('div');
-    container.innerHTML = html;
-    document.body.appendChild(container);
-
-    const form = container.querySelector('form');
-    if (form) {
-      showLoader('Переходимо на WayForPay...');
-      form.submit();
-    } else {
-      alert('Не вдалося знайти форму для WayForPay');
+    // Відкриваємо нове вікно
+    const popup = window.open('', '_blank');
+    if (!popup) {
+      alert('Будь ласка, дозвольте відкриття спливаючих вікон для завершення оплати');
+      return;
     }
+
+    popup.document.open();
+    popup.document.write(html);
+    popup.document.close();
   } catch (error) {
     console.error('❌ WayForPay помилка:', error);
     alert('Не вдалося ініціювати оплату WayForPay');
   }
 };
+
 
   const handleLiqPayPayment = async (order) => {
     try {
