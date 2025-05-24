@@ -214,26 +214,6 @@ const handleFondyPayment = async (order) => {
 };
 const handleWayforpayPayment = async (order) => {
   try {
-    // Зібрати продукти з корзини (наприклад, з localStorage або order.items)
-    const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
-
-    // Якщо order.items вже є — використай їх
-    const items = order.items && order.items.length > 0 ? order.items : cartItems.map(item => ({
-      name: item.name || item.title || 'Товар',
-      quantity: item.quantity || 1,
-      price: item.price || 1,
-    }));
-
-    if (!items.length) {
-      alert('Корзина пуста або відсутні дані товарів');
-      return;
-    }
-
-    const fullOrder = {
-      ...order,
-      items,
-    };
-
     const response = await fetch(`${BACKEND_URL}/api/payments/wayforpay`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -241,30 +221,25 @@ const handleWayforpayPayment = async (order) => {
         amount: order.total,
         resultUrl: `${window.location.origin}/success`,
         serverUrl: `${BACKEND_URL}/api/payments/wayforpay/callback`,
-        order: fullOrder,
+        order,
       }),
     });
 
     const html = await response.text();
-
-    // Вставити HTML форму в DOM і одразу її відправити
-    const container = document.createElement('div');
-    container.innerHTML = html;
-    document.body.appendChild(container);
-    
-    const form = container.querySelector('form');
-    if (form) {
-      form.submit();
-    } else {
-      alert('Не вдалося знайти форму для WayForPay');
+    const popup = window.open('', '_blank');
+    if (!popup) {
+      alert('Будь ласка, дозвольте відкриття спливаючих вікон');
+      return;
     }
 
-  } catch (err) {
-    console.error('WayForPay помилка:', err);
-    alert('Не вдалося ініціювати оплату через WayForPay');
+    popup.document.open();
+    popup.document.write(html);
+    popup.document.close();
+  } catch (error) {
+    console.error('❌ WayForPay помилка:', error);
+    alert('Не вдалося ініціювати оплату WayForPay');
   }
 };
-
 
   const handleLiqPayPayment = async (order) => {
     try {
