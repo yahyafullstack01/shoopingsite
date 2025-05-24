@@ -218,6 +218,38 @@ const handleWayforpayPayment = async (order) => {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
+        amount: order.total, // ✅ сума замовлення
+        resultUrl: `${window.location.origin}/success`, // ✅ URL для повернення
+        serverUrl: `${BACKEND_URL}/api/payments/wayforpay/callback`, // ✅ для backend callback
+        order, // ✅ зберігаєш все замовлення
+      }),
+    });
+
+    const html = await response.text();
+
+    // ✅ Відкриває форму WayForPay у новому вікні
+    const popup = window.open('', '_blank');
+    if (!popup) {
+      alert('Будь ласка, дозвольте відкриття спливаючих вікон');
+      return;
+    }
+
+    popup.document.open();
+    popup.document.write(html);
+    popup.document.close();
+  } catch (error) {
+    console.error('❌ WayForPay помилка:', error);
+    alert('Не вдалося ініціювати оплату WayForPay');
+  }
+};
+
+{/*}
+const handleWayforpayPayment = async (order) => {
+  try {
+    const response = await fetch(`${BACKEND_URL}/api/payments/wayforpay`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
         amount: order.total,
         resultUrl: `${window.location.origin}/success`,
         serverUrl: `${BACKEND_URL}/api/payments/wayforpay/callback`,
@@ -240,7 +272,7 @@ const handleWayforpayPayment = async (order) => {
     alert('Не вдалося ініціювати оплату WayForPay');
   }
 };
-
+*/}
   const handleLiqPayPayment = async (order) => {
     try {
       const response = await fetch(`${BACKEND_URL}/api/payments/liqpay`, {
