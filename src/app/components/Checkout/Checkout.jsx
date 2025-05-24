@@ -212,36 +212,6 @@ const handleFondyPayment = async (order) => {
     alert('Не вдалося ініціювати оплату Fondy. Спробуйте ще раз.');
   }
 };*/}
-const handleWayforpayPayment = async (order) => {
-  try {
-    const response = await fetch(`${BACKEND_URL}/api/payments/wayforpay`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        amount: order.total, // ✅ сума замовлення
-        resultUrl: `${window.location.origin}/success`, // ✅ URL для повернення
-        serverUrl: `${BACKEND_URL}/api/payments/wayforpay/callback`, // ✅ для backend callback
-        order, // ✅ зберігаєш все замовлення
-      }),
-    });
-
-    const html = await response.text();
-
-    // ✅ Відкриває форму WayForPay у новому вікні
-    const popup = window.open('', '_blank');
-    if (!popup) {
-      alert('Будь ласка, дозвольте відкриття спливаючих вікон');
-      return;
-    }
-
-    popup.document.open();
-    popup.document.write(html);
-    popup.document.close();
-  } catch (error) {
-    console.error('❌ WayForPay помилка:', error);
-    alert('Не вдалося ініціювати оплату WayForPay');
-  }
-};
 
 {/*}
 const handleWayforpayPayment = async (order) => {
@@ -272,7 +242,7 @@ const handleWayforpayPayment = async (order) => {
     alert('Не вдалося ініціювати оплату WayForPay');
   }
 };
-*/}
+
   const handleLiqPayPayment = async (order) => {
     try {
       const response = await fetch(`${BACKEND_URL}/api/payments/liqpay`, {
@@ -295,7 +265,38 @@ const handleWayforpayPayment = async (order) => {
       alert('Не вдалося ініціювати LiqPay оплату');
     }
   };
+*/}
 
+const handleWayforpayPayment = async (order) => {
+  try {
+    const response = await fetch(`${BACKEND_URL}/api/payments/wayforpay`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        amount: order.total, // ✅ сума замовлення
+        resultUrl: `${window.location.origin}/success`, // ✅ URL для повернення
+        serverUrl: `${BACKEND_URL}/api/payments/wayforpay/callback`, // ✅ для backend callback
+        order, // ✅ зберігаєш все замовлення
+      }),
+    });
+
+    const html = await response.text();
+
+    // ✅ Відкриває форму WayForPay у новому вікні
+    const popup = window.open('', '_blank');
+    if (!popup) {
+      alert('Будь ласка, дозвольте відкриття спливаючих вікон');
+      return;
+    }
+
+    popup.document.open();
+    popup.document.write(html);
+    popup.document.close();
+  } catch (error) {
+    console.error('❌ WayForPay помилка:', error);
+    alert('Не вдалося ініціювати оплату WayForPay');
+  }
+};
   const saveOrder = async (order) => {
     const res = await fetch(`${BACKEND_URL}/api/orders`, {
       method: 'POST',
@@ -363,6 +364,8 @@ const handleWayforpayPayment = async (order) => {
         }
         else if (onlinePaymentMethod === 'wayforpay') {
           console.log("➡️ Переходимо до WayForPay...");
+          console.log('🧾 ORDER перед оплатою:', order);
+
           await handleWayforpayPayment(order);
         }
         
