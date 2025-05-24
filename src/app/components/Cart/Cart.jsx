@@ -107,7 +107,8 @@ useEffect(() => {
             />
             <div>
               <p className="font-medium">{item.name}</p>
-              <p>{item.price} грн</p>
+              <p>{item.price} <span className="text-sm text-gray-500">грн</span></p>
+
               <p className="text-sm text-gray-600">Колір: {item.color}</p>
               <p className="text-sm text-gray-600">Розмір: {item.size}</p>
             </div>
@@ -145,17 +146,21 @@ useEffect(() => {
       ))}
 {cartItems.length > 0 && (
   <div className="mt-6 text-right">
-    
-    <h2 className="text-xl font-bold">Всього: {total} грн</h2>
-    <button
-      onClick={() => 
-      {
-     localStorage.setItem('totalAmount', total); // зберігаємо суму
-     router.push('/Checkout')}}
-      className="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-    >
-      Оформити замовлення
-    </button>
+    <h2 className="text-xl font-bold">
+  Всього: {Number(total).toFixed(2)} грн
+</h2>
+
+<button
+  onClick={() => {
+    const cleanTotal = Number(String(total).replace(/[^\d.]/g, '')).toFixed(2);
+    localStorage.setItem('totalAmount', cleanTotal); // зберігаємо лише число
+    router.push('/Checkout');
+  }}
+  className="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+>
+  Оформити замовлення
+</button>
+
   </div>
 )}
 
