@@ -273,7 +273,7 @@ const handleWayforpayPayment = async (order) => {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        amount: order.total, // ✅ сума замовлення
+        amount: Number(order.total),
         resultUrl: `${window.location.origin}/success`, // ✅ URL для повернення
         serverUrl: `${BACKEND_URL}/api/payments/wayforpay/callback`, // ✅ для backend callback
         order, // ✅ зберігаєш все замовлення
