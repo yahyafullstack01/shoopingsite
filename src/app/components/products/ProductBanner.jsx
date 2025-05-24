@@ -36,27 +36,13 @@ const [selectedSize, setSelectedSize] = useState('');
       document.body.style.overflow = "auto";
     };
   }, [selectedProduct]);
-
   const handleAddToCart = async ({ product, selectedColor, selectedSize, quantity }) => {
     const sessionId = getSessionId();
   
-    const name =
-      product?.translations?.[language]?.name ||
-      product?.translations?.EN?.name ||
-      product?.name ||
-      "Товар";
+    const name = product.name || "Товар"; // ✅ просто бери готове
+    const price = Number(product.price);
   
-    const price = Number(product?.price);
-    console.log("➡️ Що летить в /api/cart:", {
-      sessionId,
-      productId: product.id,
-      name,
-      price,
-      color: selectedColor,
-      size: selectedSize,
-      quantity,
-    });
-    console.log("🧾 Додаємо в cart API:", {
+    console.log("🛒 ➡️ Дані до API:", {
       sessionId,
       productId: product.id,
       name,
