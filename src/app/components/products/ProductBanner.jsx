@@ -36,19 +36,20 @@ const [selectedSize, setSelectedSize] = useState('');
       document.body.style.overflow = "auto";
     };
   }, [selectedProduct]);
-  const handleAddToCart = async ({ selectedColor, selectedSize, quantity }) => {
+  const handleAddToCart = async ({ product, selectedColor, selectedSize, quantity }) => {
     const sessionId = getSessionId();
   
     const name =
-      selectedProduct?.translations?.[language]?.name ||
-      selectedProduct?.translations?.EN?.name ||
-      selectedProduct?.name ||
+      product?.translations?.[language]?.name ||
+      product?.translations?.EN?.name ||
+      product?.name ||
       'Товар';
   
-    const price = Number(selectedProduct?.price);
+    const price = Number(product?.price);
+  
     console.log('🛒 Додаємо в корзину:', {
       sessionId,
-      productId: selectedProduct.id,
+      productId: product.id,
       name,
       price,
       color: selectedColor,
@@ -62,7 +63,7 @@ const [selectedSize, setSelectedSize] = useState('');
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           sessionId,
-          productId: selectedProduct.id,
+          productId: product.id,
           name,
           price,
           color: selectedColor,
