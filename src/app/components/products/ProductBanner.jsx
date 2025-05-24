@@ -39,14 +39,9 @@ const [selectedSize, setSelectedSize] = useState('');
   const handleAddToCart = async ({ product, selectedColor, selectedSize, quantity }) => {
     const sessionId = getSessionId();
   
-    const name = product.name || "Товар"; // ✅ просто бери готове
-    const price = Number(product.price);
-  
-    console.log("🛒 ➡️ Дані до API:", {
+    console.log("🛒 ➡️ Дані до API (без name/price):", {
       sessionId,
       productId: product.id,
-      name,
-      price,
       color: selectedColor,
       size: selectedSize,
       quantity,
@@ -59,8 +54,6 @@ const [selectedSize, setSelectedSize] = useState('');
         body: JSON.stringify({
           sessionId,
           productId: product.id,
-          name,
-          price,
           color: selectedColor,
           size: selectedSize,
           quantity,
