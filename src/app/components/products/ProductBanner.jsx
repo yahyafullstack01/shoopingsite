@@ -36,6 +36,7 @@ const [selectedSize, setSelectedSize] = useState('');
       document.body.style.overflow = "auto";
     };
   }, [selectedProduct]);
+
   const handleAddToCart = async ({ product, selectedColor, selectedSize, quantity }) => {
     const sessionId = getSessionId();
   
@@ -46,7 +47,15 @@ const [selectedSize, setSelectedSize] = useState('');
       "Товар";
   
     const price = Number(product?.price);
-  
+    console.log("➡️ Що летить в /api/cart:", {
+      sessionId,
+      productId: product.id,
+      name,
+      price,
+      color: selectedColor,
+      size: selectedSize,
+      quantity,
+    });
     console.log("🧾 Додаємо в cart API:", {
       sessionId,
       productId: product.id,
