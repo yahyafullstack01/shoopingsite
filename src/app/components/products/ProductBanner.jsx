@@ -36,10 +36,16 @@ const [selectedSize, setSelectedSize] = useState('');
       document.body.style.overflow = "auto";
     };
   }, [selectedProduct]);
-  
   const handleAddToCart = async ({ selectedColor, selectedSize, quantity }) => {
     const sessionId = getSessionId();
-
+  
+    const name =
+      selectedProduct?.translations?.[language]?.name ||
+      selectedProduct?.translations?.EN?.name ||
+      selectedProduct?.name ||
+      "Товар";
+  
+    const price = Number(selectedProduct?.price) || 0;
   
     try {
       const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/cart`, {
@@ -48,8 +54,8 @@ const [selectedSize, setSelectedSize] = useState('');
         body: JSON.stringify({
           sessionId,
           productId: selectedProduct.id,
-          name: product.translations[language].name, 
-          price: product.price,
+          name,
+          price,
           color: selectedColor,
           size: selectedSize,
           quantity,
