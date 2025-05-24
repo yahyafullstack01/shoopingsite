@@ -43,9 +43,18 @@ const [selectedSize, setSelectedSize] = useState('');
       selectedProduct?.translations?.[language]?.name ||
       selectedProduct?.translations?.EN?.name ||
       selectedProduct?.name ||
-      "Товар";
+      'Товар';
   
-    const price = Number(selectedProduct?.price) || 0;
+    const price = Number(selectedProduct?.price);
+    console.log('🛒 Додаємо в корзину:', {
+      sessionId,
+      productId: selectedProduct.id,
+      name,
+      price,
+      color: selectedColor,
+      size: selectedSize,
+      quantity,
+    });
   
     try {
       const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/cart`, {
@@ -70,7 +79,6 @@ const [selectedSize, setSelectedSize] = useState('');
     }
   };
   
-
   if (!selectedProduct) return null;
 
   return (
