@@ -214,6 +214,26 @@ const handleFondyPayment = async (order) => {
 };
 const handleWayforpayPayment = async (order) => {
   try {
+    // Зібрати продукти з корзини (наприклад, з localStorage або order.items)
+    const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+
+    // Якщо order.items вже є — використай їх
+    const items = order.items && order.items.length > 0 ? order.items : cartItems.map(item => ({
+      name: item.name || item.title || 'Товар',
+      quantity: item.quantity || 1,
+      price: item.price || 1,
+    }));
+
+    if (!items.length) {
+      alert('Корзина пуста або відсутні дані товарів');
+      return;
+    }
+
+    const fullOrder = {
+      ...order,
+      items,
+    };
+
     const response = await fetch(`${BACKEND_URL}/api/payments/wayforpay`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -221,25 +241,27 @@ const handleWayforpayPayment = async (order) => {
         amount: order.total,
         resultUrl: `${window.location.origin}/success`,
         serverUrl: `${BACKEND_URL}/api/payments/wayforpay/callback`,
-        order,
+        order: fullOrder,
       }),
     });
 
     const html = await response.text();
 
-    // Відкриваємо нове вікно
-    const popup = window.open('', '_blank');
-    if (!popup) {
-      alert('Будь ласка, дозвольте відкриття спливаючих вікон для завершення оплати');
-      return;
+    // Вставити HTML форму в DOM і одразу її відправити
+    const container = document.createElement('div');
+    container.innerHTML = html;
+    document.body.appendChild(container);
+    
+    const form = container.querySelector('form');
+    if (form) {
+      form.submit();
+    } else {
+      alert('Не вдалося знайти форму для WayForPay');
     }
 
-    popup.document.open();
-    popup.document.write(html);
-    popup.document.close();
-  } catch (error) {
-    console.error('❌ WayForPay помилка:', error);
-    alert('Не вдалося ініціювати оплату WayForPay');
+  } catch (err) {
+    console.error('WayForPay помилка:', err);
+    alert('Не вдалося ініціювати оплату через WayForPay');
   }
 };
 
@@ -621,7 +643,7 @@ const handleWayforpayPayment = async (order) => {
                   onChange={() => setOnlinePaymentMethod('stripe')}
                 />
                 <span>Stripe (🌍 USD / EUR)</span>
-              </label>
+              </label> */}
               <label className="flex items-center space-x-2">
   <input
     type="radio"
@@ -631,7 +653,7 @@ const handleWayforpayPayment = async (order) => {
     onChange={() => setOnlinePaymentMethod('wayforpay')}
   />
   <span>WayForPay (UAH)</span>
-</label> */}
+</label>
             </div> 
           </div>
         )}
@@ -639,14 +661,14 @@ const handleWayforpayPayment = async (order) => {
  
 
       
-        {/* Кнопка
+        {/* Кнопка */}
         <button
           type="submit"
           className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
           disabled={!paymentType}
         >
           Оплатити замовлення
-        </button>  */}
+        </button> 
         {/* Кнопка замовити без оплати */}
 <button
   type="button"
