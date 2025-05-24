@@ -48,6 +48,8 @@ const [selectedSize, setSelectedSize] = useState('');
         body: JSON.stringify({
           sessionId,
           productId: selectedProduct.id,
+          name: product.translations[language].name, 
+          price: product.price,
           color: selectedColor,
           size: selectedSize,
           quantity,

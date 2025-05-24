@@ -162,7 +162,7 @@ const showLoader = (message = 'Переходимо на оплату...') => {
 };
 // ✅ Оновлена версія `handleFondyPayment`
 // Додаємо збереження замовлення в БД перед редіректом на Fondy
-
+{/*}
 const handleFondyPayment = async (order) => {
   try {
     // 1. Зберігаємо замовлення в БД
@@ -211,7 +211,7 @@ const handleFondyPayment = async (order) => {
     console.error('❌ Fondy помилка:', err);
     alert('Не вдалося ініціювати оплату Fondy. Спробуйте ще раз.');
   }
-};
+};*/}
 const handleWayforpayPayment = async (order) => {
   try {
     const response = await fetch(`${BACKEND_URL}/api/payments/wayforpay`, {
