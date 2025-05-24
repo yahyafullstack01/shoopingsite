@@ -43,11 +43,11 @@ const [selectedSize, setSelectedSize] = useState('');
       product?.translations?.[language]?.name ||
       product?.translations?.EN?.name ||
       product?.name ||
-      'Товар';
+      "Товар";
   
     const price = Number(product?.price);
   
-    console.log('🛒 Додаємо в корзину:', {
+    console.log("🧾 Додаємо в cart API:", {
       sessionId,
       productId: product.id,
       name,
@@ -79,6 +79,7 @@ const [selectedSize, setSelectedSize] = useState('');
       alert("Помилка при додаванні в корзину");
     }
   };
+  
   
   if (!selectedProduct) return null;
 

@@ -24,41 +24,40 @@ export default function InfoForm({
 
   const translatedName = product.translations?.[language]?.name || product.name;
   const translatedDescription = product.translations?.[language]?.description || product.description;
-
   const handleAddToCartClick = () => {
     let hasError = false;
-
+  
     if (!selectedColor) {
       setColorError("Оберіть колір");
       hasError = true;
     } else {
       setColorError("");
     }
-
+  
     if (!selectedSize) {
       setSizeError("Оберіть розмір");
       hasError = true;
     } else {
       setSizeError("");
     }
-
+  
     if (quantity <= 0) {
       setQuantityError("Вкажіть кількість");
       hasError = true;
     } else {
       setQuantityError("");
     }
-
+  
     if (hasError) return;
-
+  
+    // 🔥 ВАЖЛИВО: додати product
     onAddToCartClick({
-      product,
+      product, // ← ДОДАЙ
       selectedColor,
       selectedSize,
       quantity,
     });
   };
-  
   const handleContactClick = (e) => {
     e.preventDefault();
     let hasError = false;
