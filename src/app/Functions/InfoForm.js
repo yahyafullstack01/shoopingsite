@@ -52,7 +52,7 @@ export default function InfoForm({
   
     // 🔥 ВАЖЛИВО: додати product
     onAddToCartClick({
-      product: selectedProduct,
+      product,
       selectedColor,
       selectedSize,
       quantity,

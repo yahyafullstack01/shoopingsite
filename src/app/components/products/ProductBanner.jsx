@@ -123,6 +123,7 @@ const [selectedSize, setSelectedSize] = useState('');
                 name: translatedName,
                 description: translatedDescription,
                 image: getSrc(currentImage),
+                price: selectedProduct.price,
               }}
               color={
                 selectedProduct.translations?.[language]?.color || selectedProduct.color
