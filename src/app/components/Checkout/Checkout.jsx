@@ -615,7 +615,7 @@ const handleWayforpayPayment = async (order) => {
                   setOnlinePaymentMethod('');
                 }}
               />
-              <span>Оплата онлайн (повна сума: {total} грн)</span>
+              <span>Оплата онлайн (повна сума: {total} UAH)</span>
             </label>
           </div>
         </div>
