@@ -334,7 +334,8 @@ const handleWayforpayPayment = async (order) => {
       city: cityQuery,
       warehouse: selectedWarehouse,
       comment,
-      total,
+      total: Number(String(total).replace(/[^\d.]/g, '')),
+
       prepay: paymentType === 'prepay',
       paymentMethod: onlinePaymentMethod || 'cod',
       sessionId,
@@ -417,7 +418,7 @@ const handleWayforpayPayment = async (order) => {
       city: cityQuery,
       warehouse: selectedWarehouse,
       comment,
-      total,
+      total: Number(String(total).replace(/[^\d.]/g, '')),
       prepay: false,
       paymentMethod: 'no-payment',
       sessionId,
