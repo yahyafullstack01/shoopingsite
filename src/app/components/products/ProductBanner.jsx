@@ -38,7 +38,10 @@ const [selectedSize, setSelectedSize] = useState('');
   }, [selectedProduct]);
   const handleAddToCart = async ({ product, selectedColor, selectedSize, quantity }) => {
     const sessionId = getSessionId();
-    const name = product.translations?.[language]?.name || product.name || product.title;
+    const name = (product.translations?.[language]?.name || product.name || product.title)
+    .replace(/грн|₴/gi, '')   // ← очищення
+    .trim();
+
     const price = product.price;
     if (!sessionId) {
       alert("Не вдалося створити сесію. Спробуйте оновити сторінку.");
