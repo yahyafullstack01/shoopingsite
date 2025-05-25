@@ -39,7 +39,7 @@ const [selectedSize, setSelectedSize] = useState('');
   const handleAddToCart = async ({ product, selectedColor, selectedSize, quantity }) => {
     const sessionId = getSessionId();
     const name = (product.translations?.[language]?.name || product.name || product.title)
-    .replace(/грн|₴/gi, '')   // ← очищення
+    .replace(/грн|₴|«|»|["']/gi, '')    // ← очищення
     .trim();
 
     const price = product.price;
