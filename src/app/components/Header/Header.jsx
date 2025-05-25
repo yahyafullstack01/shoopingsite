@@ -85,8 +85,7 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
   >
     <FaBars className="sm:xl md:text-2xl lg:text-3xl" />
   </button>
- {/* Іконка корзини */}
- <CartIcon />
+
   <ul className="hidden lg:flex space-x-4 text-xs sm:text-sm md:text-base lg:text-lg" role="menubar">
     <li className="min-w-[80px] text-center" role="menuitem">
       <Link href="/" aria-label={`Go to ${menuItems[0]} page`}>
