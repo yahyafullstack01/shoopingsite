@@ -248,7 +248,12 @@ aria-expanded={isCategoriesOpen}
               <FaMoon className="text-xs sm:text-sm md:text-base lg:text-lg" />
             )}
           </button>
-    
+          <ul className="flex space-x-4">
+ 
+ <li role="menuitem">
+   <CartIcon />
+ </li>
+</ul>
         </div>
        
         <ul className="flex flex-col items-start space-y-4 p-6 text-xs sm:text-sm md:text-base lg:text-lg" role="menubar">
