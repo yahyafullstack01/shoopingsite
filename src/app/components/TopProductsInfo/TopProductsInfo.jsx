@@ -7,6 +7,7 @@ import { useLanguage } from "../../Functions/useLanguage";
 import { handleContactButtonClick } from "../../utils/products";
 import ThumbnailCarousel from "../ThumbnailCarousel/ThumbnailCarousel";
 import Image from "next/image";
+import { getSessionId } from "../../utils/session";
 
 export default function TopProductsInfo() {
   const { translateList, language } = useLanguage();
@@ -42,6 +43,43 @@ export default function TopProductsInfo() {
     scrollToDescription();
   };
 
+  const handleAddToCart = async ({ product, selectedColor, selectedSize, quantity }) => {
+    const sessionId = getSessionId();
+  
+    if (!sessionId) {
+      alert("Не вдалося створити сесію. Спробуйте оновити сторінку.");
+      return;
+    }
+  
+    const payload = {
+      sessionId,
+      productId: product.id,
+      color: selectedColor,
+      size: selectedSize,
+      quantity,
+    };
+  
+    try {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/cart`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+  
+      const data = await res.json();
+  
+      if (!res.ok) {
+        alert(data.message || "Помилка при додаванні в корзину");
+        return;
+      }
+  
+      alert(data.message || "Товар додано в корзину");
+    } catch (err) {
+      console.error("❌ Додавання в корзину не вдалося:", err);
+      alert("Помилка при додаванні в корзину");
+    }
+  };
+  
   const onContactClick = (selectedColor, selectedSize, quantity, currentLanguage) => {
     handleContactButtonClick(router, selectedProduct, selectedColor, selectedSize, quantity, currentLanguage);
   };
@@ -122,6 +160,7 @@ export default function TopProductsInfo() {
           sizes={selectedProduct.sizes}
           descriptionRef={descriptionRef}
           onContactClick={onContactClick}
+          onAddToCartClick={handleAddToCart}
         />
       </article>
     </div>
