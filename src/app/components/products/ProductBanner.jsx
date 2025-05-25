@@ -38,7 +38,10 @@ const [selectedSize, setSelectedSize] = useState('');
   }, [selectedProduct]);
   const handleAddToCart = async ({ product, selectedColor, selectedSize, quantity }) => {
     const sessionId = getSessionId();
-  
+    if (!sessionId) {
+      alert("Не вдалося створити сесію. Спробуйте оновити сторінку.");
+      return;
+    }
     console.log("🛒 ➡️ Дані до API (без name/price):", {
       sessionId,
       productId: product.id,
