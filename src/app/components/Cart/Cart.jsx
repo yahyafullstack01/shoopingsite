@@ -147,7 +147,7 @@ useEffect(() => {
 {cartItems.length > 0 && (
   <div className="mt-6 text-right">
     <h2 className="text-xl font-bold">
-  Всього: {Number(total).toFixed(2)} грн
+  Всього: {Number(total).toFixed(2)} UAH
 </h2>
 
 <button
