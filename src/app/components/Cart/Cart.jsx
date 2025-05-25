@@ -107,7 +107,7 @@ useEffect(() => {
             />
             <div>
               <p className="font-medium">{item.name}</p>
-              <p>{item.price} <span className="text-sm text-gray-500">грн</span></p>
+              <p>{item.price} <span className="text-sm text-gray-500">UAH</span></p>
 
               <p className="text-sm text-gray-600">Колір: {item.color}</p>
               <p className="text-sm text-gray-600">Розмір: {item.size}</p>
