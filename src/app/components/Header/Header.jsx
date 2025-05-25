@@ -85,7 +85,8 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
   >
     <FaBars className="sm:xl md:text-2xl lg:text-3xl" />
   </button>
-
+ {/* Іконка корзини */}
+ <CartIcon />
   <ul className="hidden lg:flex space-x-4 text-xs sm:text-sm md:text-base lg:text-lg" role="menubar">
     <li className="min-w-[80px] text-center" role="menuitem">
       <Link href="/" aria-label={`Go to ${menuItems[0]} page`}>
@@ -210,12 +211,16 @@ aria-expanded={isCategoriesOpen}
           aria-hidden="true"
           onClick={closeMenu}
           role="presentation"
-        ></div>
+        >
+         
+        </div>
       )}
+       
       <nav
         className={`${isMenuOpen ? "translate-x-0" : "-translate-x-full"} fixed top-0 left-0 h-full w-1/2 sm:w-1/3 bg-white dark:bg-black shadow-lg z-50 transition-transform duration-300 ease-in-out lg:hidden`}
         aria-label="Mobile Menu"
       >
+         
         <button
           onClick={closeMenu}
           aria-label="Close Menu"
@@ -244,12 +249,7 @@ aria-expanded={isCategoriesOpen}
               <FaMoon className="text-xs sm:text-sm md:text-base lg:text-lg" />
             )}
           </button>
-       <ul className="flex space-x-2">
- 
- <li role="menuitem">
-   <CartIcon />
- </li>
-</ul>
+    
         </div>
        
         <ul className="flex flex-col items-start space-y-4 p-6 text-xs sm:text-sm md:text-base lg:text-lg" role="menubar">
@@ -306,6 +306,7 @@ aria-expanded={isCategoriesOpen}
   </li>
 </ul>
       </nav>
+     
     </header>
   );
 });
