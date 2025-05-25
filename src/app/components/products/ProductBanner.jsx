@@ -38,6 +38,8 @@ const [selectedSize, setSelectedSize] = useState('');
   }, [selectedProduct]);
   const handleAddToCart = async ({ product, selectedColor, selectedSize, quantity }) => {
     const sessionId = getSessionId();
+    const name = product.translations?.[language]?.name || product.name || product.title;
+    const price = product.price;
     if (!sessionId) {
       alert("Не вдалося створити сесію. Спробуйте оновити сторінку.");
       return;
@@ -45,6 +47,8 @@ const [selectedSize, setSelectedSize] = useState('');
     console.log("🛒 ➡️ Дані до API (без name/price):", {
       sessionId,
       productId: product.id,
+      name,
+      price,
       color: selectedColor,
       size: selectedSize,
       quantity,
@@ -57,6 +61,9 @@ const [selectedSize, setSelectedSize] = useState('');
         body: JSON.stringify({
           sessionId,
           productId: product.id,
+          name,
+          price,
+
           color: selectedColor,
           size: selectedSize,
           quantity,
