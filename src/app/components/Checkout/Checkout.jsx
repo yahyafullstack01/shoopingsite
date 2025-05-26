@@ -601,7 +601,7 @@ const handleWayforpayPayment = async (order) => {
           className="w-full p-2 border rounded"
         />
   
-        {/* Оплата8*/}
+        {/* Оплата8
         <div>
           <label className="block mb-1 font-medium">Оплата</label>
           <div className="space-y-2">
@@ -633,7 +633,7 @@ const handleWayforpayPayment = async (order) => {
                   checked={onlinePaymentMethod === 'liqpay'}
                   onChange={() => setOnlinePaymentMethod('liqpay')}
                 />
-                <span>LiqPay (🇺🇦 грн)</span>
+                <span>LiqPay (🇺🇦 UAN)</span>
               </label>
               <label className="flex items-center space-x-2">
   <input
@@ -654,7 +654,7 @@ const handleWayforpayPayment = async (order) => {
                   onChange={() => setOnlinePaymentMethod('stripe')}
                 />
                 <span>Stripe (🌍 USD / EUR)</span>
-              </label> */}
+              </label> 
               <label className="flex items-center space-x-2">
   <input
     type="radio"
@@ -669,17 +669,17 @@ const handleWayforpayPayment = async (order) => {
           </div>
         )}
 
- 
+ */}
 
       
-        {/* Кнопка  */}
+        {/* Кнопка 
         <button
           type="submit"
           className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
           disabled={!paymentType}
         >
           Оплатити замовлення
-        </button>
+        </button> */}
         {/* Кнопка замовити без оплати */}
 <button
   type="button"
