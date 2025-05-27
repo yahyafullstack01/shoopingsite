@@ -122,7 +122,7 @@ export default function TopProductsInfo() {
                   <div className="p-2 sm:p-4 dark:bg-gray-200">
       
                     <h3 className="font-semibold text-sm sm:text-lg">{translatedName}</h3>
-                    <p className="text-black dark:text-gray-600 text-xs sm:text-base">{product.price} UAH</p>
+                    <p className="text-black dark:text-gray-600 text-xs sm:text-base">{product.price}</p>
                   </div>
                 </article>
               );
@@ -237,7 +237,7 @@ export default function TopProductsInfo() {
                   </div>
                   <div className="p-2 sm:p-4 dark:bg-gray-200">
                     <h3 className="font-semibold text-sm sm:text-lg">{translatedName}</h3>
-                    <p className="text-black dark:text-gray-600 text-xs sm:text-base">{product.price} UAH</p>
+                    <p className="text-black dark:text-gray-600 text-xs sm:text-base">{product.price}</p>
                   </div>
                 </article>
               );

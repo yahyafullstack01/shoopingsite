@@ -616,7 +616,7 @@ const handleWayforpayPayment = async (order) => {
                   setOnlinePaymentMethod('');
                 }}
               />
-              <span>Оплата онлайн (повна сума: {total} UAH)</span>
+              <span>Оплата онлайн (повна сума: {total})</span>
             </label>
           </div>
         </div>
@@ -643,7 +643,7 @@ const handleWayforpayPayment = async (order) => {
     checked={onlinePaymentMethod === 'fondy'}
     onChange={() => setOnlinePaymentMethod('fondy')}
   />
-  <span>Fondy (тест UAH)</span>
+  <span>Fondy (тест)</span>
 </label>
  <label className="flex items-center space-x-2">
                 <input
@@ -663,7 +663,7 @@ const handleWayforpayPayment = async (order) => {
     checked={onlinePaymentMethod === 'wayforpay'}
     onChange={() => setOnlinePaymentMethod('wayforpay')}
   />
-  <span>WayForPay (UAH)</span>
+  <span>WayForPay</span>
 </label>
             </div> 
           </div>

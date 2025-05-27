@@ -87,12 +87,12 @@ export default function OffersInfo() {
                     </h3>
                     <div className="flex justify-between items-center">
                       <p className="text-red-600 font-bold text-sm sm:text-base">
-                        {product.discountPrice || product.price} UAH
+                        {product.discountPrice || product.price} 
                       </p>
                       {product.discountPrice && (
                         <div className="flex gap-2 items-center">
                           <p className="line-through text-gray-500 text-xs sm:text-sm">
-                            {product.price} UAH
+                            {product.price} 
                           </p>
                           <p className="text-green-600 text-xs sm:text-sm">
                             -{Math.round(((product.price - product.discountPrice) / product.price) * 100)}%
@@ -191,12 +191,12 @@ export default function OffersInfo() {
                     </h3>
                     <div className="flex justify-between items-center">
                       <p className="text-red-600 font-bold text-sm sm:text-base">
-                        {product.discountPrice || product.price} UAH
+                        {product.discountPrice || product.price} 
                       </p>
                       {product.discountPrice && (
                         <div className="flex gap-2 items-center">
                           <p className="line-through text-gray-500 text-xs sm:text-sm">
-                            {product.price} UAH
+                            {product.price} 
                           </p>
                           <p className="text-green-600 text-xs sm:text-sm">
                             -{Math.round(((product.price - product.discountPrice) / product.price) * 100)}%
