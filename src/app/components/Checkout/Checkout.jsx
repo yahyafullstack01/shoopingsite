@@ -378,9 +378,16 @@ const handleWayforpayPayment = async (order) => {
       }
     } catch (error) {
       console.error('❌ Помилка при обробці замовлення:', error);
-      alert('Не вдалося обробити замовлення. Спробуйте ще раз.');
+    
+      if (error instanceof Response) {
+        const errText = await error.text();
+        alert(`Помилка з сервера: ${errText}`);
+      } else {
+        alert(`Не вдалося оформити замовлення. ${error.message || ''}`);
+      }
     }
   };
+    
   const resetForm = () => {
     setFirstName('');
     setLastName('');
