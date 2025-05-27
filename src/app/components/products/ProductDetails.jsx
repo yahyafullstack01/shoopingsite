@@ -43,7 +43,7 @@ const ProductDetails = ({ productData, formSubmitted }) => {
           <dt className="text-sm sm:text-base font-semibold flex items-center gap-2">
             <FaMoneyBillWave className="text-gray-600 dark:text-green-400" /> Price:
           </dt>
-          <dd className="text-sm sm:text-base">{productData.price}₴</dd>
+          <dd className="text-sm sm:text-base">{productData.price}</dd>
         </div>
         <div className="flex justify-between">
           <dt className="text-sm sm:text-base font-semibold flex items-center gap-2">

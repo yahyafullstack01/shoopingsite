@@ -162,8 +162,8 @@ export default function FilterSidebar({
           <div>
             <label className="block text-sm font-medium mb-8">{menuItems[3] || "Price range"}</label>
             <div className="flex items-center justify-between text-sm sm:text-base mb-2">
-              <span>100₴</span>
-              <span>{maxPrice}₴</span>
+              <span>100</span>
+              <span>{maxPrice}</span>
             </div>
             <input
               type="range"

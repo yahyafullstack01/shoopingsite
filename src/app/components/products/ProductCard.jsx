@@ -41,7 +41,7 @@ const ProductCard = ({ product, onClick }) => {
           {translatedName || "Unnamed Product"}
         </h3>
         <p className="text-xs sm:text-sm text-gray-700 dark:text-gray-400 mt-2 text-center sm:text-left">
-          <span className="font-semibold">{priceLabel}:</span> {product.price ? `${product.price}₴` : "N/A"}
+          <span className="font-semibold">{priceLabel}:</span> {product.price ? `${product.price}` : "N/A"}
         </p>
         <p className="text-xs sm:text-sm text-gray-700 dark:text-gray-400 text-center sm:text-left">
           <span className="font-semibold">{sizeLabel}:</span> {product.size || "Unknown"}

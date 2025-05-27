@@ -109,11 +109,11 @@ export default function InfoForm({
       <div className="text-xl md:text-2xl font-bold mb-4 text-center md:text-left">
         {showDiscount && product.discountPrice ? (
           <>
-            <span className="text-red-600">{product.discountPrice}₴</span>
-            <span className="line-through text-gray-500 ml-4">{product.price}₴</span>
+            <span className="text-red-600">{product.discountPrice}</span>
+            <span className="line-through text-gray-500 ml-4">{product.price}</span>
           </>
         ) : (
-          <span>{product.price}₴</span>
+          <span>{product.price}</span>
         )}
       </div>
 
