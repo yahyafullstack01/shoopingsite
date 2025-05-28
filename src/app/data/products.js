@@ -1,5 +1,47 @@
 const products = [
 
+  {
+    id: 143,
+    price: 100,
+    isTop: false,
+    sku: "67241",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Kylie Dress/1.avif",
+    images: [
+        "/Dress/Kylie Dress/2.avif",
+        "/Dress/Kylie Dress/3.avif",
+        "/Dress/Kylie Dress/4.avif",
+        "/Dress/Kylie Dress/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+        EN: {
+            category: "Dresses",
+            name: "Anja",
+            description: "A dress made from natural cotton, soft and comfortable. Pleasant to the touch and for the body.\nFabric: 100% cotton.",
+            colors: ["yellow"]
+        },
+        FR: {
+            category: "Robes",
+            name: "Anja",
+            description: "Une robe en coton naturel, douce et confortable. Agréable au toucher et pour le corps.\nTissu : 100 % coton.",
+            colors: ["jaune"]
+        },
+        UA: {
+            category: "Сукні",
+            name: "Anja",
+            description: "Сукня з натурального коттону, м'яка і комфортна. Приємна на дотик і для тіла.\nТканина: 100% бавовна.",
+            colors: ["жовтий"]
+        },
+        RU: {
+            category: "Платья",
+            name: "Anja",
+            description: "Платье из натурального хлопка, мягкое и комфортное. Приятное на ощупь и для тела.\nТкань: 100% хлопок.",
+            colors: ["желтый"]
+        }
+    }
+},
 {
     id: 142,
     price: 3100,
