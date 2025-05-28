@@ -162,7 +162,7 @@ const showLoader = (message = 'Переходимо на оплату...') => {
 };
 // ✅ Оновлена версія `handleFondyPayment`
 // Додаємо збереження замовлення в БД перед редіректом на Fondy
-
+{/*
 const handleFondyPayment = async (order) => {
   try {
     // 1. Зберігаємо замовлення в БД
@@ -212,7 +212,7 @@ const handleFondyPayment = async (order) => {
     alert('Не вдалося ініціювати оплату Fondy. Спробуйте ще раз.');
   }
 };
-
+*/}
 {/*}
 const handleWayforpayPayment = async (order) => {
   try {
@@ -639,7 +639,7 @@ const handleWayforpayPayment = async (order) => {
                   onChange={() => setOnlinePaymentMethod('liqpay')}
                 />
                 <span>LiqPay (🇺🇦 UAN)</span>
-              </label>*/}
+              </label>
               <label className="flex items-center space-x-2">
   <input
     type="radio"
@@ -650,7 +650,7 @@ const handleWayforpayPayment = async (order) => {
   />
   <span>Fondy (тест)</span>
 </label>
-{/*
+
  <label className="flex items-center space-x-2">
                 <input
                   type="radio"
