@@ -266,23 +266,20 @@ const handleWayforpayPayment = async (order) => {
     }
   };
 */}
-
 const handleWayforpayPayment = async (order) => {
   try {
     const response = await fetch(`${BACKEND_URL}/api/payments/wayforpay`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        amount: Number(order.total),
-        resultUrl: `${window.location.origin}/success`, // ✅ URL для повернення
-        serverUrl: `${BACKEND_URL}/api/payments/wayforpay/callback`, // ✅ для backend callback
-        order, // ✅ зберігаєш все замовлення
+        resultUrl: `${window.location.origin}/success`,        // ✅ редирект користувача
+        serverUrl: `${BACKEND_URL}/api/payments/wayforpay/callback`, // ✅ бекенд callback
+        order, // ✅ все замовлення, включно з sessionId
       }),
     });
 
     const html = await response.text();
 
-    // ✅ Відкриває форму WayForPay у новому вікні
     const popup = window.open('', '_blank');
     if (!popup) {
       alert('Будь ласка, дозвольте відкриття спливаючих вікон');
@@ -297,6 +294,7 @@ const handleWayforpayPayment = async (order) => {
     alert('Не вдалося ініціювати оплату WayForPay');
   }
 };
+
   const saveOrder = async (order) => {
     const res = await fetch(`${BACKEND_URL}/api/orders`, {
       method: 'POST',
