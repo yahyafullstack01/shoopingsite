@@ -1,4 +1,4 @@
-{/*export default async function handler(req, res) {
+export default async function handler(req, res) {
     try {
         // Отримуємо IP клієнта
         const clientIp = req.headers["x-forwarded-for"] || req.connection.remoteAddress;
@@ -16,4 +16,4 @@
         res.status(500).json({ error: "Failed to fetch geolocation data" });
     }
 }
-*/}
+
