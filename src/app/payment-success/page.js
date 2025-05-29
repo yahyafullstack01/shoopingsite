@@ -1,12 +1,12 @@
 'use client';
 
 import { useSearchParams, useRouter } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense } from 'react';
 
-export default function PaymentSuccessPage() {
+function PaymentSuccessInner() {
   const searchParams = useSearchParams();
   const router = useRouter();
-  const [status, setStatus] = useState('loading'); // loading | success | fail
+  const [status, setStatus] = useState('loading');
   const [message, setMessage] = useState('⏳ Перевіряємо статус оплати...');
 
   useEffect(() => {
@@ -59,5 +59,13 @@ export default function PaymentSuccessPage() {
         </button>
       )}
     </div>
+  );
+}
+
+export default function PaymentSuccessPage() {
+  return (
+    <Suspense fallback={<div className="p-4 text-center">Завантаження...</div>}>
+      <PaymentSuccessInner />
+    </Suspense>
   );
 }
