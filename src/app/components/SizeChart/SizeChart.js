@@ -22,39 +22,39 @@ export default function SizeChart({ onClose }) {
             </thead>
             <tbody>
               <tr>
-                <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">S</td>
+                <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">XS</td>
                 <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">32</td>
                 <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">80-83</td>
                 <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">60-63</td>
-                <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">86-89</td>
+                <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">0-88</td>
               </tr>
               <tr>
-                <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">M</td>
+                <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">S</td>
                 <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">34</td>
                 <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">84-87</td>
                 <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">66-69</td>
-                <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">90-93</td>
+                <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">87-90</td>
               </tr>
               <tr>
-                <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">L</td>
+                <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">M</td>
                 <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">36</td>
                 <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">88-91</td>
                 <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">70-73</td>
-                <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">94-97</td>
+                <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">90-94</td>
               </tr>
               <tr>
-                <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">XL</td>
+                <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">L</td>
                 <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">38</td>
                 <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">92-95</td>
                 <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">74-77</td>
-                <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">98-101</td>
+                <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">95-99</td>
               </tr>
               <tr>
-                <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">2XL</td>
+                <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">XL</td>
                 <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">40</td>
                 <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">96-99</td>
                 <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">78-81</td>
-                <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">102-105</td>
+                <td className="border border-gray-300 px-2 sm:px-4 py-2 text-center">100-104</td>
               </tr>
             </tbody>
           </table>
