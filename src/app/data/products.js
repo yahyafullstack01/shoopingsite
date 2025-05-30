@@ -1,48 +1,5 @@
 const products = [
 
-
-  {
-    id: 143,
-    price: 10,
-    isTop: false,
-    sku: "67235",
-    size: "XS S M L XL",
-    category: "Shirts",
-    image: "/Shirts/Muslin Mini Shirt/1.avif",
-    images: [
-        "/Shirts/Muslin Mini Shirt/2.avif",
-        "/Shirts/Muslin Mini Shirt/3.avif",
-        "/Shirts/Muslin Mini Shirt/4.avif",
-    ],
-    sizes: ["XS", "S", "M", "L", "XL"],
-    translations: {
-        EN: {
-            category: "Shirts",
-            name: "Muslin Mini Shirt",
-            description: "A mini shirt crafted from long-fiber muslin.\nFabric: 100% cotton muslin, light and soft to the touch.",
-            colors: ["milk"]
-        },
-        FR: {
-            category: "Chemises",
-            name: "Chemise Mini en Mousseline",
-            description: "Une chemise mini confectionnée en mousseline à longues fibres.\nTissu : mousseline 100 % coton, légère et douce au toucher.",
-            colors: ["lait"]
-        },
-        UA: {
-            category: "Сорочки",
-            name: "Муслінова сорочка mini",
-            description: "Сорочка з довговолокняного мусліну.\nТканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
-            colors: ["молоко"]
-        },
-        RU: {
-            category: "Рубашки",
-            name: "Муслиновая рубашка мини",
-            description: "Рубашка мини из длинноволокнистого муслина.\nТкань: муслин из 100% хлопка, легкая и мягкая на ощупь.",
-            colors: ["молоко"]
-        }
-    }
-},
-
 {
     id: 142,
     price: 3100,
