@@ -307,116 +307,116 @@ const handleWayforpayPayment = async (order) => {
     const saved = await res.json();
     console.log('✅ Замовлення збережено:', saved);
   };
-  
   const handleSubmit = async (e) => {
-    e.preventDefault();
-  
-    const formValues = { firstName, lastName, email, phone };
-    const validationErrors = validateForm(formValues);
-  
-    console.log("🔍 Перевірка форми:", formValues);
-    console.log("❌ Помилки валідації:", validationErrors);
-  
-    if (Object.keys(validationErrors).length > 0) {
-      setErrors(validationErrors);
-      return;
-    }
-  
-    setErrors({});
-  
-    const order = {
-      firstName,
-      lastName,
-      patronymic,
-      email,
-      phone,
-      deliveryMethod,
-      city: cityQuery,
-      warehouse: selectedWarehouse,
-      comment,
-      total: Number(String(total).replace(/[^\d.]/g, '')),
+  e.preventDefault();
 
-      prepay: paymentType === 'prepay',
-      paymentMethod: onlinePaymentMethod || 'cod',
-      sessionId,
-    };
-  
-    console.log("🧾 Готове замовлення:", order);
-    console.log("💳 Метод оплати:", paymentType, onlinePaymentMethod);
-  
-    try {
-      if (paymentType === 'full') {
-        if (!onlinePaymentMethod) {
-          alert('Будь ласка, оберіть метод онлайн-оплати');
-          return;
-        }
-  
-        localStorage.setItem('pendingOrder', JSON.stringify(order));
-  
-        if (onlinePaymentMethod === 'stripe') {
-          console.log("➡️ Переходимо до Stripe...");
-          await handleStripePayment();
-        } else if (onlinePaymentMethod === 'liqpay') {
-          console.log("➡️ Переходимо до LiqPay...");
-          await handleLiqPayPayment(order);
-        } else if (onlinePaymentMethod === 'fondy') {
-          console.log("➡️ Переходимо до Fondy...");
-          await handleFondyPayment(order);
-        }
-        else if (onlinePaymentMethod === 'wayforpay') {
-  console.log("➡️ Переходимо до WayForPay...");
-  console.log('🧾 ORDER перед оплатою:', order);
+  const formValues = { firstName, lastName, email, phone };
+  const validationErrors = validateForm(formValues);
 
-  // 🟨 Відкриваємо попап ДО АБСОЛЮТНО УСІХ await
-  const popup = window.open('', '_blank');
+  console.log("🔍 Перевірка форми:", formValues);
+  console.log("❌ Помилки валідації:", validationErrors);
 
-  if (!popup) {
-    alert('Будь ласка, дозвольте відкриття спливаючих вікон');
+  if (Object.keys(validationErrors).length > 0) {
+    setErrors(validationErrors);
     return;
   }
 
-  try {
-    const response = await fetch(`${BACKEND_URL}/api/payments/wayforpay`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        resultUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/api/payments/wayforpay/success`,
-        serverUrl: `${BACKEND_URL}/api/payments/wayforpay/callback`,
-        order,
-      }),
-    });
+  setErrors({});
 
-    const html = await response.text();
-
-    popup.document.open();
-    popup.document.write(html);
-    popup.document.close();
-  } catch (error) {
-    console.error('❌ WayForPay помилка:', error);
-    popup.close();
-    alert('Не вдалося ініціювати оплату WayForPay');
-  }
-
-  return;
-}
-
-  
-      } else {
-        console.log("📦 Зберігаємо замовлення без онлайн-оплати...");
-        await saveOrder(order);
-        alert('Замовлення оформлено! Очікуйте дзвінка 📞');
-      }
-    } catch (error) {
-      console.error('❌ Помилка при обробці замовлення:', error);
-    
-      if (error instanceof Response) {
-        const errText = await error.text();
-        alert(`Помилка з сервера: ${errText}`);
-      } else {
-        alert(`Не вдалося оформити замовлення. ${error.message || ''}`);
-      }
-    }
+  const order = {
+    firstName,
+    lastName,
+    patronymic,
+    email,
+    phone,
+    deliveryMethod,
+    city: cityQuery,
+    warehouse: selectedWarehouse,
+    comment,
+    total: Number(String(total).replace(/[^\d.]/g, '')),
+    prepay: paymentType === 'prepay',
+    paymentMethod: onlinePaymentMethod || 'cod',
+    sessionId,
   };
+
+  console.log("🧾 Готове замовлення:", order);
+  console.log("💳 Метод оплати:", paymentType, onlinePaymentMethod);
+
+  try {
+    if (paymentType === 'full') {
+      if (!onlinePaymentMethod) {
+        alert('Будь ласка, оберіть метод онлайн-оплати');
+        return;
+      }
+
+      if (onlinePaymentMethod === 'wayforpay') {
+        console.log("➡️ Переходимо до WayForPay...");
+        console.log('🧾 ORDER перед оплатою:', order);
+
+        // ✅ Відкриваємо попап одразу
+        const popup = window.open('', '_blank', 'noopener,noreferrer');
+        if (!popup) {
+          alert('Будь ласка, дозвольте відкриття спливаючих вікон');
+          return;
+        }
+
+        localStorage.setItem('pendingOrder', JSON.stringify(order));
+
+        try {
+          const response = await fetch(`${BACKEND_URL}/api/payments/wayforpay`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              resultUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/api/payments/wayforpay/success`,
+              serverUrl: `${BACKEND_URL}/api/payments/wayforpay/callback`,
+              order,
+            }),
+          });
+
+          const html = await response.text();
+          popup.document.open();
+          popup.document.write(html);
+          popup.document.close();
+        } catch (error) {
+          popup.close();
+          console.error('❌ WayForPay помилка:', error);
+          alert('Не вдалося ініціювати оплату WayForPay');
+        }
+
+        return; // обов’язково вийти після WayForPay
+      }
+
+      // Інші способи оплати
+      localStorage.setItem('pendingOrder', JSON.stringify(order));
+
+      if (onlinePaymentMethod === 'stripe') {
+        console.log("➡️ Переходимо до Stripe...");
+        await handleStripePayment();
+      } else if (onlinePaymentMethod === 'liqpay') {
+        console.log("➡️ Переходимо до LiqPay...");
+        await handleLiqPayPayment(order);
+      } else if (onlinePaymentMethod === 'fondy') {
+        console.log("➡️ Переходимо до Fondy...");
+        await handleFondyPayment(order);
+      }
+    } else {
+      // Оплата при отриманні
+      console.log("📦 Зберігаємо замовлення без онлайн-оплати...");
+      await saveOrder(order);
+      alert('Замовлення оформлено! Очікуйте дзвінка 📞');
+    }
+  } catch (error) {
+    console.error('❌ Помилка при обробці замовлення:', error);
+
+    if (error instanceof Response) {
+      const errText = await error.text();
+      alert(`Помилка з сервера: ${errText}`);
+    } else {
+      alert(`Не вдалося оформити замовлення. ${error.message || ''}`);
+    }
+  }
+};
+
     
   {/*}
   const handleSubmit = async (e) => {
@@ -792,6 +792,7 @@ const handleWayforpayPayment = async (order) => {
 
       
         {/* Кнопка */}
+      
         <button
           type="submit"
           className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
