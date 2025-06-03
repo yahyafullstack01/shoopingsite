@@ -265,7 +265,7 @@ const handleWayforpayPayment = async (order) => {
       alert('Не вдалося ініціювати LiqPay оплату');
     }
   };
-*/}{/*}
+*/}
 const handleWayforpayPayment = async (order) => {
   try {
     const response = await fetch(`${BACKEND_URL}/api/payments/wayforpay`, {
@@ -292,46 +292,6 @@ const handleWayforpayPayment = async (order) => {
     popup.document.close();
   } catch (error) {
     console.error('❌ WayForPay помилка:', error);
-    alert('Не вдалося ініціювати оплату WayForPay');
-  }
-};*/}
-const handleWayforpayPayment = async (order) => {
-  try {
-    const response = await fetch(`${BACKEND_URL}/api/payments/wayforpay`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        resultUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/api/payments/wayforpay/success`,
-        serverUrl: `${BACKEND_URL}/api/payments/wayforpay/callback`,
-        order,
-      }),
-    });
-
-    const html = await response.text();
-
-    // 🔧 Створюємо iframe
-    const iframe = document.createElement('iframe');
-    iframe.name = 'wayforpay-frame';
-    iframe.style.display = 'none';
-    document.body.appendChild(iframe);
-
-    // 🔧 Створюємо контейнер і вставляємо HTML
-    const container = document.createElement('div');
-    container.style.display = 'none';
-    container.innerHTML = html;
-    document.body.appendChild(container);
-
-    // 🔧 Знаходимо форму і сабмітимо в iframe
-    const form = container.querySelector('form');
-    if (form) {
-      form.target = 'wayforpay-frame';
-      form.submit();
-    } else {
-      alert('Не вдалося знайти форму для WayForPay');
-    }
-
-  } catch (error) {
-    console.error('❌ Помилка WayForPay:', error);
     alert('Не вдалося ініціювати оплату WayForPay');
   }
 };
@@ -718,20 +678,9 @@ const handleWayforpayPayment = async (order) => {
           </div>
         )}
 
- 
-<button
-  type="submit"
-  className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-  disabled={
-    !paymentType ||
-    (paymentType === 'full' && !onlinePaymentMethod)
-  }
->
-  Оплатити замовлення
-</button>
 
       
-        {/* Кнопка 
+        {/* Кнопка */}
       
         <button
           type="submit"
@@ -739,7 +688,7 @@ const handleWayforpayPayment = async (order) => {
           disabled={!paymentType}
         >
           Оплатити замовлення
-        </button> */}
+        </button> 
         {/* Кнопка замовити без оплати */}
 <button
   type="button"
