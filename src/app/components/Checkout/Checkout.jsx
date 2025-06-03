@@ -408,6 +408,7 @@ const handleWayforpayPayment = async (order) => {
           console.log('🧾 ORDER перед оплатою:', order);
 
           await handleWayforpayPayment(order);
+           return;
         }
         
   
