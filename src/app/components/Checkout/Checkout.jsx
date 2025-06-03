@@ -12,7 +12,10 @@ export default function Checkout() {
   const [filteredCities, setFilteredCities] = useState([]);
   const [selectedCityRef, setSelectedCityRef] = useState('');
   const [warehouses, setWarehouses] = useState([]);
+
   const [selectedWarehouse, setSelectedWarehouse] = useState('');
+const [selectedWarehouseRef, setSelectedWarehouseRef] = useState('');
+
   const [paymentType, setPaymentType] = useState('');
   const [total, setTotal] = useState(0);
   const [onlinePaymentMethod, setOnlinePaymentMethod] = useState('');
@@ -333,6 +336,7 @@ const handleWayforpayPayment = async (order) => {
       deliveryMethod,
       city: cityQuery,
       warehouse: selectedWarehouse,
+ warehouseRef: selectedWarehouseRef,  // (за потреби)
       comment,
       total: Number(String(total).replace(/[^\d.]/g, '')),
 
@@ -569,6 +573,23 @@ const handleWayforpayPayment = async (order) => {
               <div>
                 <label className="block mb-1 font-medium">Відділення</label>
                 <select
+  className="w-full p-2 border rounded"
+  value={selectedWarehouseRef}
+  onChange={(e) => {
+    const selectedWh = warehouses.find(wh => wh.Ref === e.target.value);
+    setSelectedWarehouseRef(e.target.value);
+    setSelectedWarehouse(selectedWh?.Description || '');
+  }}
+>
+  <option value="">Оберіть відділення</option>
+  {warehouses.map((wh) => (
+    <option key={wh.Ref} value={wh.Ref}>
+      {wh.Description}
+    </option>
+  ))}
+</select>
+{/*}
+                <select
                   className="w-full p-2 border rounded"
                   value={selectedWarehouse}
                   onChange={(e) => setSelectedWarehouse(e.target.value)}
@@ -579,7 +600,7 @@ const handleWayforpayPayment = async (order) => {
                       {wh.Description}
                     </option>
                   ))}
-                </select>
+                </select>*/}
               </div>
             )}
           </>
