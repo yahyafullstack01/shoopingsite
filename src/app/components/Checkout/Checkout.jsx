@@ -719,9 +719,19 @@ const handleWayforpayPayment = async (order) => {
         )}
 
  
+<button
+  type="submit"
+  className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+  disabled={
+    !paymentType ||
+    (paymentType === 'full' && !onlinePaymentMethod)
+  }
+>
+  Оплатити замовлення
+</button>
 
       
-        {/* Кнопка */}
+        {/* Кнопка 
       
         <button
           type="submit"
@@ -729,7 +739,7 @@ const handleWayforpayPayment = async (order) => {
           disabled={!paymentType}
         >
           Оплатити замовлення
-        </button> 
+        </button> */}
         {/* Кнопка замовити без оплати */}
 <button
   type="button"
