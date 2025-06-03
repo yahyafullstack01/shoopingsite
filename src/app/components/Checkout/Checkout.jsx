@@ -269,6 +269,7 @@ const handleWayforpayPayment = async (order) => {
     }
   };
 */}
+{/*
 const handleWayforpayPayment = async (order) => {
   try {
     const response = await fetch(`${BACKEND_URL}/api/payments/wayforpay`, {
@@ -299,7 +300,27 @@ const handleWayforpayPayment = async (order) => {
   }
 };
 
+*/}
 
+const handleWayforpayPayment = async (order) => {
+  try {
+    const response = await fetch(`${BACKEND_URL}/api/payments/wayforpay`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        resultUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/api/payments/wayforpay/success`,
+        serverUrl: `${BACKEND_URL}/api/payments/wayforpay/callback`, // ✅
+        order, // ✅ усе замовлення, включно з sessionId
+      }),
+    });
+
+    const html = await response.text();
+    document.getElementById('wayforpay-frame').srcdoc = html;
+  } catch (error) {
+    console.error('❌ WayForPay помилка:', error);
+    alert('Не вдалося ініціювати оплату WayForPay');
+  }
+};
   const saveOrder = async (order) => {
     const res = await fetch(`${BACKEND_URL}/api/orders`, {
       method: 'POST',
@@ -459,7 +480,12 @@ const handleWayforpayPayment = async (order) => {
     <div className="p-6 max-w-3xl mx-auto">
       <h1 className="text-2xl font-bold mb-4">Оформлення замовлення</h1>
       <form onSubmit={handleSubmit} className="space-y-4">
-  
+  {/* WayForPay Iframe (заповнюється через srcdoc) */}
+<iframe
+  id="wayforpay-frame"
+  title="WayForPay Payment"
+  style={{ display: 'none', width: '100%', height: '600px', border: 'none' }}
+/>
         {/* Імʼя, Прізвище, По батькові */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <div>
