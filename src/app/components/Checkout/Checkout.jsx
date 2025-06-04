@@ -268,7 +268,48 @@ const handleWayforpayPayment = async (order) => {
       alert('Не вдалося ініціювати LiqPay оплату');
     }
   };
-*/}
+*/}const handleWayforpayClick = () => {
+  // ✅ створюємо попап синхронно — саме тут Safari дозволяє!
+  const popup = window.open('', '_blank');
+  if (!popup) {
+    alert('Будь ласка, дозвольте відкриття спливаючих вікон');
+    return;
+  }
+
+  // ✅ завантаження вигляду одразу
+  popup.document.open();
+  popup.document.write('<p>Зачекайте...</p>');
+  popup.document.close();
+
+  // ✅ передаємо popup далі в async
+  proceedWithWayforpay(popup);
+};
+
+const proceedWithWayforpay = async (popup) => {
+  try {
+    const response = await fetch(`${BACKEND_URL}/api/payments/wayforpay`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        resultUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/api/payments/wayforpay/success`,
+        serverUrl: `${BACKEND_URL}/api/payments/wayforpay/callback`,
+        order,
+      }),
+    });
+
+    const html = await response.text();
+
+    popup.document.open();
+    popup.document.write(html);
+    popup.document.close();
+  } catch (error) {
+    console.error('❌ WayForPay помилка:', error);
+    popup.document.open();
+    popup.document.write('<p>Помилка при оплаті. Спробуйте пізніше</p>');
+    popup.document.close();
+  }
+};
+{/*}
 const handleWayforpayPayment = async (order) => {
   try {
     const response = await fetch(`${BACKEND_URL}/api/payments/wayforpay`, {
@@ -297,7 +338,7 @@ const handleWayforpayPayment = async (order) => {
     console.error('❌ WayForPay помилка:', error);
     alert('Не вдалося ініціювати оплату WayForPay');
   }
-};
+};*/}
   const saveOrder = async (order) => {
     const res = await fetch(`${BACKEND_URL}/api/orders`, {
       method: 'POST',
@@ -696,8 +737,15 @@ const handleWayforpayPayment = async (order) => {
             </div> 
           </div>
         )}
+<button
+  type="button"
+  onClick={handleWayforpayClick}
+  className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+>
+  Оплатити замовлення (WayForPay)
+</button>
 
-        {/* Кнопка */}
+        {/* Кнопка 
       
         <button
           type="submit"
@@ -705,7 +753,7 @@ const handleWayforpayPayment = async (order) => {
           disabled={!paymentType}
         >
           Оплатити замовлення
-        </button> 
+        </button> */}
         {/* Кнопка замовити без оплати */}
 <button
   type="button"
