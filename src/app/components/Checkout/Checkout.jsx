@@ -268,7 +268,7 @@ const handleWayforpayPayment = async (order) => {
       alert('Не вдалося ініціювати LiqPay оплату');
     }
   };
-*/}
+*/}{/*}
 const handleWayforpayPayment = async (order) => {
   try {
     const response = await fetch(`${BACKEND_URL}/api/payments/wayforpay`, {
@@ -297,6 +297,36 @@ const handleWayforpayPayment = async (order) => {
     console.error('❌ WayForPay помилка:', error);
     alert('Не вдалося ініціювати оплату WayForPay');
   }
+};*/}
+const handleWayforpayClick = () => {
+  const popup = window.open('', '_blank'); // має бути одразу після кліку!
+  if (!popup) {
+    alert('Будь ласка, дозвольте відкриття спливаючих вікон');
+    return;
+  }
+
+  popup.document.write('<p>Зачекайте...</p>');
+
+  fetch(`${BACKEND_URL}/api/payments/wayforpay`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      resultUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/api/payments/wayforpay/success`,
+      serverUrl: `${BACKEND_URL}/api/payments/wayforpay/callback`,
+      order,
+    }),
+  })
+    .then(res => res.text())
+    .then(html => {
+      popup.document.open();
+      popup.document.write(html);
+      popup.document.close();
+    })
+    .catch(error => {
+      console.error('❌ WayForPay помилка:', error);
+      popup.document.write('<p>Помилка при оплаті. Спробуйте пізніше</p>');
+      popup.document.close();
+    });
 };
 
   const saveOrder = async (order) => {
@@ -698,9 +728,10 @@ const handleWayforpayPayment = async (order) => {
           </div>
         )}
 
+<button type="button" onClick={handleWayforpayClick}>Оплатити замовлення</button>
 
       
-        {/* Кнопка */}
+        {/* Кнопка 
       
         <button
           type="submit"
@@ -708,7 +739,7 @@ const handleWayforpayPayment = async (order) => {
           disabled={!paymentType}
         >
           Оплатити замовлення
-        </button> 
+        </button> */}
         {/* Кнопка замовити без оплати */}
 <button
   type="button"
