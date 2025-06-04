@@ -299,14 +299,17 @@ const handleWayforpayPayment = async (order) => {
   }
 };*/}
 const handleWayforpayClick = () => {
-  const popup = window.open('', '_blank'); // має бути одразу після кліку!
+  const popup = window.open('', '_blank');
   if (!popup) {
     alert('Будь ласка, дозвольте відкриття спливаючих вікон');
     return;
   }
 
+  popup.document.open(); // ❗ ВАЖЛИВО
   popup.document.write('<p>Зачекайте...</p>');
+  popup.document.close();
 
+  // тепер fetch
   fetch(`${BACKEND_URL}/api/payments/wayforpay`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -318,16 +321,18 @@ const handleWayforpayClick = () => {
   })
     .then(res => res.text())
     .then(html => {
-      popup.document.open();
+      popup.document.open();   // ❗ обов'язково знову перед write
       popup.document.write(html);
       popup.document.close();
     })
     .catch(error => {
       console.error('❌ WayForPay помилка:', error);
+      popup.document.open();   // ❗ також на випадок помилки
       popup.document.write('<p>Помилка при оплаті. Спробуйте пізніше</p>');
       popup.document.close();
     });
 };
+
 
   const saveOrder = async (order) => {
     const res = await fetch(`${BACKEND_URL}/api/orders`, {
