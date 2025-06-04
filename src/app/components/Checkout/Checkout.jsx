@@ -268,7 +268,87 @@ const handleWayforpayPayment = async (order) => {
       alert('Не вдалося ініціювати LiqPay оплату');
     }
   };
-*/}const handleWayforpayClick = () => {
+*/}
+const handleWayforpayClick = async () => {
+  // ✅ Валідація
+  const formValues = { firstName, lastName, email, phone };
+  const validationErrors = validateForm(formValues);
+
+  if (Object.keys(validationErrors).length > 0) {
+    setErrors(validationErrors);
+    return;
+  }
+
+  // ✅ Формування замовлення
+  const order = {
+    firstName,
+    lastName,
+    patronymic,
+    email,
+    phone,
+    deliveryMethod,
+    city: cityQuery,
+    warehouse: selectedWarehouse,
+    warehouseRef: selectedWarehouseRef,
+    comment,
+    total: Number(String(total).replace(/[^\d.]/g, '')),
+    prepay: paymentType === 'prepay',
+    paymentMethod: 'wayforpay',
+    sessionId,
+  };
+
+  try {
+    // ✅ Запит до бекенду
+    const res = await fetch(`${BACKEND_URL}/api/payments/wayforpay`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        order,
+        serverUrl: `${BACKEND_URL}/api/payments/wayforpay/callback`,
+      }),
+    });
+
+    if (!res.ok) throw new Error('WayForPay не відповідає');
+
+    const { url, params } = await res.json();
+
+    // ✅ Створюємо форму
+    const form = document.createElement('form');
+    form.action = url;
+    form.method = 'POST';
+    form.target = '_blank';
+
+    Object.entries(params).forEach(([key, value]) => {
+      if (Array.isArray(value)) {
+        value.forEach((v) => {
+          const input = document.createElement('input');
+          input.type = 'hidden';
+          input.name = key;
+          input.value = v;
+          form.appendChild(input);
+        });
+      } else {
+        const input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = key;
+        input.value = value;
+        form.appendChild(input);
+      }
+    });
+
+    // ✅ Відправка
+    document.body.appendChild(form);
+    form.submit();
+    document.body.removeChild(form);
+  } catch (error) {
+    console.error('❌ WayForPay помилка:', error);
+    alert('Не вдалося ініціювати оплату через WayForPay');
+  }
+};
+
+{/*}
+//варіант1
+const handleWayforpayClick = () => {
   // ✅ 1. Одразу відкриваємо попап — Safari дозволяє лише синхронно
   const popup = window.open('', '_blank');
   if (!popup) {
@@ -340,7 +420,7 @@ const proceedWithWayforpay = async (popup, order) => {
     popup.document.close();
   }
 };
-
+*/}
 {/*}
 const handleWayforpayPayment = async (order) => {
   try {
