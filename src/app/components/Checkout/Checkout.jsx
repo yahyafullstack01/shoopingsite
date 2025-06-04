@@ -268,24 +268,47 @@ const handleWayforpayPayment = async (order) => {
       alert('Не вдалося ініціювати LiqPay оплату');
     }
   };
-*/}const handleWayforpayClick = () => {
-  // ✅ створюємо попап синхронно — саме тут Safari дозволяє!
+*/}
+const handleWayforpayClick = () => {
+  const formValues = { firstName, lastName, email, phone };
+  const validationErrors = validateForm(formValues);
+
+  if (Object.keys(validationErrors).length > 0) {
+    setErrors(validationErrors);
+    return;
+  }
+
+  const order = {
+    firstName,
+    lastName,
+    patronymic,
+    email,
+    phone,
+    deliveryMethod,
+    city: cityQuery,
+    warehouse: selectedWarehouse,
+    warehouseRef: selectedWarehouseRef,
+    comment,
+    total: Number(String(total).replace(/[^\d.]/g, '')),
+    prepay: paymentType === 'prepay',
+    paymentMethod: 'wayforpay',
+    sessionId,
+  };
+
   const popup = window.open('', '_blank');
   if (!popup) {
     alert('Будь ласка, дозвольте відкриття спливаючих вікон');
     return;
   }
 
-  // ✅ завантаження вигляду одразу
   popup.document.open();
   popup.document.write('<p>Зачекайте...</p>');
   popup.document.close();
 
-  // ✅ передаємо popup далі в async
-  proceedWithWayforpay(popup);
+  proceedWithWayforpay(popup, order); // ✅ передаємо order
 };
 
-const proceedWithWayforpay = async (popup) => {
+const proceedWithWayforpay = async (popup, order) => {
   try {
     const response = await fetch(`${BACKEND_URL}/api/payments/wayforpay`, {
       method: 'POST',
