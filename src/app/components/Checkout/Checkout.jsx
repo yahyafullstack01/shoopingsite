@@ -268,16 +268,29 @@ const handleWayforpayPayment = async (order) => {
       alert('Не вдалося ініціювати LiqPay оплату');
     }
   };
-*/}
-const handleWayforpayClick = () => {
+*/}const handleWayforpayClick = () => {
+  // ✅ 1. Одразу відкриваємо попап — Safari дозволяє лише синхронно
+  const popup = window.open('', '_blank');
+  if (!popup) {
+    alert('Будь ласка, дозвольте відкриття спливаючих вікон');
+    return;
+  }
+
+  popup.document.open();
+  popup.document.write('<p>Зачекайте...</p>');
+  popup.document.close();
+
+  // ✅ 2. Далі — перевірка форми
   const formValues = { firstName, lastName, email, phone };
   const validationErrors = validateForm(formValues);
 
   if (Object.keys(validationErrors).length > 0) {
     setErrors(validationErrors);
+    popup.close(); // ❌ закриваємо попап, бо не пройшла валідація
     return;
   }
 
+  // ✅ 3. Збираємо замовлення
   const order = {
     firstName,
     lastName,
@@ -295,17 +308,8 @@ const handleWayforpayClick = () => {
     sessionId,
   };
 
-  const popup = window.open('', '_blank');
-  if (!popup) {
-    alert('Будь ласка, дозвольте відкриття спливаючих вікон');
-    return;
-  }
-
-  popup.document.open();
-  popup.document.write('<p>Зачекайте...</p>');
-  popup.document.close();
-
-  proceedWithWayforpay(popup, order); // ✅ передаємо order
+  // ✅ 4. Передаємо все далі
+  proceedWithWayforpay(popup, order);
 };
 
 const proceedWithWayforpay = async (popup, order) => {
@@ -320,6 +324,10 @@ const proceedWithWayforpay = async (popup, order) => {
       }),
     });
 
+    if (!response.ok) {
+      throw new Error('Сервер не відповів');
+    }
+
     const html = await response.text();
 
     popup.document.open();
@@ -332,6 +340,7 @@ const proceedWithWayforpay = async (popup, order) => {
     popup.document.close();
   }
 };
+
 {/*}
 const handleWayforpayPayment = async (order) => {
   try {
