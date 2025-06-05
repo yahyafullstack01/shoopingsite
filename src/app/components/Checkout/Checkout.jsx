@@ -270,6 +270,102 @@ const handleWayforpayPayment = async (order) => {
   };
 */}
 const handleWayforpayClick = async () => {
+  console.log('🟡 Клік по кнопці WayForPay');
+
+  // 1. Валідація форми
+  const formValues = { firstName, lastName, email, phone };
+  const validationErrors = validateForm(formValues);
+  console.log('📋 Результат валідації:', validationErrors);
+
+  if (Object.keys(validationErrors).length > 0) {
+    setErrors(validationErrors);
+    console.warn('⚠️ Є помилки у формі. Зупиняємо обробку.');
+    return;
+  }
+
+  // 2. Синхронне відкриття нового вікна до await
+  const newWindow = window.open('', '_blank');
+  if (!newWindow) {
+    console.error('❌ Не вдалося відкрити нове вікно. Можливо, його заблокував браузер.');
+    alert('Будь ласка, дозвольте спливаючі вікна для цього сайту.');
+    return;
+  }
+  console.log('🪟 Вікно для оплати успішно відкрито');
+
+  // 3. Формування замовлення
+  const order = {
+    firstName,
+    lastName,
+    patronymic,
+    email,
+    phone,
+    deliveryMethod,
+    city: cityQuery,
+    warehouse: selectedWarehouse,
+    warehouseRef: selectedWarehouseRef,
+    comment,
+    total: Number(String(total).replace(/[^\d.]/g, '')),
+    prepay: paymentType === 'prepay',
+    paymentMethod: 'wayforpay',
+    sessionId,
+  };
+  console.log('🧾 Замовлення сформовано:', order);
+
+  try {
+    // 4. Запит до бекенду
+    console.log('📡 Відправляємо запит до бекенду...');
+    const res = await fetch(`${BACKEND_URL}/api/payments/wayforpay`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        order,
+        serverUrl: `${BACKEND_URL}/api/payments/wayforpay/callback`,
+      }),
+    });
+
+    if (!res.ok) throw new Error(`WayForPay не відповідає: ${res.status}`);
+
+    const { url, params } = await res.json();
+    console.log('✅ Отримано дані для оплати:', { url, params });
+
+    // 5. Створення форми
+    const form = document.createElement('form');
+    form.action = url;
+    form.method = 'POST';
+    form.target = newWindow.name || '_blank';
+
+    Object.entries(params).forEach(([key, value]) => {
+      if (Array.isArray(value)) {
+        value.forEach((v) => {
+          const input = document.createElement('input');
+          input.type = 'hidden';
+          input.name = key;
+          input.value = v;
+          form.appendChild(input);
+        });
+      } else {
+        const input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = key;
+        input.value = value;
+        form.appendChild(input);
+      }
+    });
+
+    document.body.appendChild(form);
+    console.log('📨 Відправляємо форму на WayForPay...');
+    form.submit();
+    document.body.removeChild(form);
+    console.log('✅ Оплата ініційована успішно');
+
+  } catch (error) {
+    console.error('❌ Помилка під час оплати через WayForPay:', error);
+    if (newWindow) newWindow.close();
+    alert('Не вдалося ініціювати оплату через WayForPay. Спробуйте ще раз.');
+  }
+};
+{/*варіант 2}
+const handleWayforpayClick = async () => {
   // ✅ Валідація
   const formValues = { firstName, lastName, email, phone };
   const validationErrors = validateForm(formValues);
@@ -345,7 +441,7 @@ const handleWayforpayClick = async () => {
     alert('Не вдалося ініціювати оплату через WayForPay');
   }
 };
-
+*/}
 {/*}
 //варіант1
 const handleWayforpayClick = () => {
