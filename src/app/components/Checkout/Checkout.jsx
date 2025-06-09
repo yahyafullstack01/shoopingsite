@@ -702,7 +702,8 @@ const handleWayforpayPayment = async (order) => {
             <input
               value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
-              className="p-2 border rounded w-full"
+    className="p-2 border rounded w-full bg-white dark:bg-black text-black dark:text-white placeholder-gray-500 dark:placeholder-gray-400 border-gray-300 dark:border-gray-600"
+           
               placeholder="Імʼя"
             />
             {errors.firstName && (
@@ -714,7 +715,8 @@ const handleWayforpayPayment = async (order) => {
             <input
               value={lastName}
               onChange={(e) => setLastName(e.target.value)}
-              className="p-2 border rounded w-full"
+              className="p-2 border rounded w-full bg-white dark:bg-black text-black dark:text-white placeholder-gray-500 dark:placeholder-gray-400 border-gray-300 dark:border-gray-600"
+           
               placeholder="Прізвище"
             />
             {errors.lastName && (
@@ -726,7 +728,8 @@ const handleWayforpayPayment = async (order) => {
             <input
               value={patronymic}
               onChange={(e) => setPatronymic(e.target.value)}
-              className="p-2 border rounded w-full"
+                 className="p-2 border rounded w-full bg-white dark:bg-black text-black dark:text-white placeholder-gray-500 dark:placeholder-gray-400 border-gray-300 dark:border-gray-600"
+           
               placeholder="По батькові"
             />
           </div>
@@ -788,7 +791,9 @@ const handleWayforpayPayment = async (order) => {
                 value={cityQuery}
                 onChange={handleCityInput}
                 placeholder="Почніть вводити назву"
-                className="w-full p-2 border rounded"
+                  className="w-full p-2 border rounded bg-white dark:bg-black text-black dark:text-white border-gray-300 dark:border-gray-600"
+
+            
               />
               {filteredCities.length > 0 && (
                 <ul className="mt-2 border rounded shadow bg-white max-h-40 overflow-auto z-10 relative">
@@ -796,7 +801,8 @@ const handleWayforpayPayment = async (order) => {
                     <li
                       key={idx}
                       onClick={() => handleCitySelect(city)}
-                      className="p-2 hover:bg-gray-100 cursor-pointer"
+                     className="p-2 hover:bg-gray-100 cursor-pointer bg-white dark:bg-black text-black dark:text-white border-gray-300 dark:border-gray-600"
+
                     >
                       {city.Present}
                     </li>
@@ -809,7 +815,8 @@ const handleWayforpayPayment = async (order) => {
               <div>
                 <label className="block mb-1 font-medium">Відділення</label>
                 <select
-  className="w-full p-2 border rounded"
+                  className="p-2 hover:bg-gray-100 cursor-pointer bg-white dark:bg-black text-black dark:text-white border-gray-300 dark:border-gray-600"
+
   value={selectedWarehouseRef}
   onChange={(e) => {
     const selectedWh = warehouses.find(wh => wh.Ref === e.target.value);
@@ -863,12 +870,13 @@ const handleWayforpayPayment = async (order) => {
           value={comment}
           onChange={(e) => setComment(e.target.value)}
           placeholder="Коментар до замовлення"
-          className="w-full p-2 border rounded"
+            className="w-full p-2 border rounded bg-white dark:bg-black text-black dark:text-white border-gray-300 dark:border-gray-600"
+
         />
   
         {/* Оплата8 */}
         <div>
-          <label className="block mb-1 font-medium">Оплата</label>
+          <label className="block mb-1 font-medium"></label>
           <div className="space-y-2">
             <label className="flex items-center space-x-2">
               <input
@@ -887,8 +895,10 @@ const handleWayforpayPayment = async (order) => {
         </div>
    
         {paymentType === 'full' && (
-          <div className="bg-gray-50 p-4 rounded border">
-            <label className="block mb-2 font-medium">Спосіб онлайн-оплати</label>
+          <div
+            className="bg-gray-50 p-4 rounded border dark:bg-black text-black dark:text-white border-gray-300 dark:border-gray-600"
+>
+            <label className="block mb-2 font-medium">Спосіб онлайн оплати</label>
             <div className="space-y-2">
              {/*} <label className="flex items-center space-x-2">
                 <input
