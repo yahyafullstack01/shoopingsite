@@ -1,5 +1,50 @@
 const products = [
 
+
+    {
+    id: 143,
+    price: 2950,
+    isTop: false,
+    sku: "98796",
+    size: "XS S M L XL",
+    category: "Сукні",
+    image: "/Dress/Becca Linen Dress/1.avif",
+    images: [
+      "/Dress/Becca Linen Dress/2.avif",
+      "/Dress/Becca Linen Dress/3.avif",
+      "/Dress/Becca Linen Dress/4.avif",
+      "/Dress/Becca Linen Dress/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Becca Linen Dress",
+        description: "Fabric: 100% natural linen, soft and comfortable. Doesn’t itch.",
+        colors: ["white"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe en Lin \"Becca\"",
+        description: "Tissu: 100% lin naturel, doux et confortable. Ne gratte pas.",
+        colors: ["blanc"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Сукня \"Becca\" лляна",
+        description: "Тканина: 100% натуральний льон, м'який і комфортний. Не колеться",
+        colors: ["білий"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Льняное платье \"Becca\"",
+        description: "Ткань: 100% натуральный лен, мягкий и комфортный. Не колется.",
+        colors: ["белый"]
+      }
+    }
+  },
+
+
 {
     id: 142,
     price: 3100,
@@ -12,7 +57,12 @@ const products = [
         "/Dress/Kylie Dress/2.avif",
         "/Dress/Kylie Dress/3.avif",
         "/Dress/Kylie Dress/4.avif",
-        "/Dress/Kylie Dress/5.avif"
+        "/Dress/Kylie Dress/5.avif",
+        "/Dress/Kylie Dress/6.avif",
+        "/Dress/Kylie Dress/7.avif",
+        "/Dress/Kylie Dress/8.avif",
+        "/Dress/Kylie Dress/9.avif",
+        "/Dress/Kylie Dress/10.avif",
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
     translations: {
@@ -20,25 +70,25 @@ const products = [
             category: "Dresses",
             name: "Kylie Dress",
             description: "A dress made from natural cotton, soft and comfortable. Pleasant to the touch and for the body.\nFabric: 100% cotton.",
-            colors: ["yellow"]
+            colors: ["yellow","SkyBlue"]
         },
         FR: {
             category: "Robes",
             name: "Robe Kylie",
             description: "Une robe en coton naturel, douce et confortable. Agréable au toucher et pour le corps.\nTissu : 100 % coton.",
-            colors: ["jaune"]
+            colors: ["jaune","bleu"]
         },
         UA: {
             category: "Сукні",
             name: "Сукня «Kylie»",
             description: "Сукня з натурального коттону, м'яка і комфортна. Приємна на дотик і для тіла.\nТканина: 100% бавовна.",
-            colors: ["жовтий"]
+            colors: ["жовтий","блакитний"]
         },
         RU: {
             category: "Платья",
             name: "Платье «Кайли»",
             description: "Платье из натурального хлопка, мягкое и комфортное. Приятное на ощупь и для тела.\nТкань: 100% хлопок.",
-            colors: ["желтый"]
+            colors: ["желтый","голубой"]
         }
     }
 },
@@ -55,7 +105,12 @@ const products = [
         "/Dress/Skyler Dress/2.avif",
         "/Dress/Skyler Dress/3.avif",
         "/Dress/Skyler Dress/4.avif",
-        "/Dress/Skyler Dress/5.avif"
+        "/Dress/Skyler Dress/5.avif",
+        "/Dress/Skyler Dress/6.avif",
+        "/Dress/Skyler Dress/7.avif",
+        "/Dress/Skyler Dress/8.avif",
+        "/Dress/Skyler Dress/9.avif",
+        "/Dress/Skyler Dress/10.avif",
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
     translations: {
@@ -63,25 +118,25 @@ const products = [
             category: "Dresses",
             name: "Skyler Dress",
             description: "A dress made from natural cotton, soft and comfortable. Pleasant to the touch and for the body.\nFabric: 100% cotton.",
-            colors: ["light blue"]
+            colors: ["light blue","Black"]
         },
         FR: {
             category: "Robes",
             name: "Robe Skyler",
             description: "Une robe en coton naturel, douce et confortable. Agréable au toucher et pour le corps.\nTissu : 100 % coton.",
-            colors: ["bleu clair"]
+            colors: ["bleu clair","noir"]
         },
         UA: {
             category: "Сукні",
             name: "Сукня «Skyler»",
             description: "Сукня з натурального коттону, м'яка і комфортна. Приємна на дотик і для тіла.\nТканина: 100% бавовна.",
-            colors: ["блакитний"]
+            colors: ["блакитний","чорний"]
         },
         RU: {
             category: "Платья",
             name: "Платье «Скайлер»",
             description: "Платье из натурального хлопка, мягкое и комфортное. Приятное на ощупь и для тела.\nТкань: 100% хлопок.",
-            colors: ["голубой"]
+            colors: ["голубой","черный"]
         }
     }
 },
@@ -536,7 +591,18 @@ const products = [
         "/Dress/Bahroma Dress/2.avif",
         "/Dress/Bahroma Dress/3.avif",
         "/Dress/Bahroma Dress/4.avif",
-        "/Dress/Bahroma Dress/5.avif"
+        "/Dress/Bahroma Dress/5.avif",
+        "/Dress/Bahroma Dress/6.avif",
+        "/Dress/Bahroma Dress/7.avif",
+        "/Dress/Bahroma Dress/8.avif",
+        "/Dress/Bahroma Dress/9.avif",
+        "/Dress/Bahroma Dress/10.avif",
+        "/Dress/Bahroma Dress/11.avif",
+        "/Dress/Bahroma Dress/12.avif",
+        "/Dress/Bahroma Dress/13.avif",
+        "/Dress/Bahroma Dress/14.avif",
+        "/Dress/Bahroma Dress/15.avif",
+
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
     translations: {
@@ -544,25 +610,25 @@ const products = [
             category: "Dresses",
             name: "Bahroma Dress",
             description: "A dress crafted from long-fiber muslin.\nFabric: 100% cotton muslin, light and soft to the touch.",
-            colors: ["turquoise"]
+            colors: ["turquoise","White", "Yellow"]
         },
         FR: {
             category: "Robes",
             name: "Robe Bahroma",
             description: "Une robe confectionnée en mousseline à longues fibres.\nTissu : mousseline 100 % coton, légère et douce au toucher.",
-            colors: ["turquoise"]
+            colors: ["turquoise","blanc", "Jaune"]
         },
         UA: {
             category: "Сукні",
             name: "Сукня «Bahroma»",
             description: "Сукня з довговолокняного мусліну.\nТканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
-            colors: ["бірюза"]
+            colors: ["бірюза", "білий", "жовтий"]
         },
         RU: {
             category: "Платья",
             name: "Платье «Бахрома»",
             description: "Платье из длинноволокнистого муслина.\nТкань: муслин из 100% хлопка, легкая и мягкая на ощупь.",
-            colors: ["бирюза"]
+            colors: ["бирюза", "Белый", "Желтый"]
         }
     }
   },
