@@ -2,8 +2,7 @@ const products = [
 
     {
     id: 144,
-    // price: 2950,
-    price : 1,
+    price: 2950,
     isTop: false,
     sku: "98797",
     size: "XS S M L XL",
