@@ -1,5 +1,53 @@
 const products = [
 
+    {
+    id: 144,
+    price: 2950,
+    isTop: false,
+    sku: "98797",
+    size: "XS S M L XL",
+    category: "Сукні",
+    image: "/Dress/Patricia Dress/1.avif",
+    images: [
+      "/Dress/Patricia Dress/1.avif",
+      "/Dress/Patricia Dress/2.avif",
+      "/Dress/Patricia Dress/3.avif",
+      "/Dress/Patricia Dress/4.avif",
+      "/Dress/Patricia Dress/5.avif",
+      "/Dress/Patricia Dress/6.avif",
+      "/Dress/Patricia Dress/7.avif",
+      "/Dress/Patricia Dress/8.avif",
+      "/Dress/Patricia Dress/9.avif",
+      "/Dress/Patricia Dress/10.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Patricia Dress",
+        description: "Fabric: natural cotton, soft and comfortable. Pleasant to the touch and for the body.",
+        colors: ["pink", "black"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe \"Patricia\"",
+        description: "Tissu: coton naturel, doux et confortable. Agréable au toucher et pour le corps.",
+        colors: ["rose", "noir"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Сукня \"Patricia\"",
+        description: "Тканина: натуральний коттон, м'який і комфортний. Приємний на дотик і для тіла",
+        colors: ["рожевий", "чорний"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Платье \"Patricia\"",
+        description: "Ткань: натуральный хлопок, мягкий и комфортный. Приятный на ощупь и для тела.",
+        colors: ["розовый", "черный"]
+      }
+    }
+  },
 
     {
     id: 143,
@@ -6535,6 +6583,52 @@ const products = [
         RU: {
           category: "Светри",
           name: "Гольф с V-горлом",
+          description: "Мягкий гольф с V-горлом и разрезами на рукавах. Ткань: 50% кашемир, 28% полиэстер, 28% нейлон.",
+          colors: ["чёрный", "синий"],
+        }
+      }
+    },
+        {
+      id: 0,
+      price: 1,
+      isTop: false,
+      sku: "76543",
+      color: "чорний",
+      size: "XS S M L XL",
+      category: "Sweaters",
+      image: "/Sweaters/V-Neck Golf/4.avif",
+      images: [
+        "/Sweaters/V-Neck Golf/2.avif",
+        "/Sweaters/V-Neck Golf/3.avif",
+        "/Sweaters/V-Neck Golf/1.avif",
+        "/Sweaters/V-Neck Golf/5.avif",
+        "/Sweaters/V-Neck Golf/6.avif",
+        "/Sweaters/V-Neck Golf/7.avif",
+      ],
+      
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          category: "Sweaters",
+          name: "Golf",
+          description: "Soft V-neck golf with sleeve slits. Fabric: 50% cashmere, 28% polyester, 28% nylon.",
+          colors: ["чорний", "сірий"],
+        },
+        FR: {
+          category: "Pulls",
+          name: "Golf",
+          description: "Golf doux à col en V avec fentes sur les manches. Tissu : 50% cachemire, 28% polyester, 28% nylon.",
+          colors: ["noir", "gris"],
+        },
+        UA: {
+          category: "Светри",
+          name: "Гольф",
+          description: "Мʼякий гольф із V-горлом і розрізами на рукавах. Тканина: 50% кашемір, 28% поліестер, 28% нейлон.",
+          colors: ["чорний", "сірий"],
+        },
+        RU: {
+          category: "Светри",
+          name: "Гольф",
           description: "Мягкий гольф с V-горлом и разрезами на рукавах. Ткань: 50% кашемир, 28% полиэстер, 28% нейлон.",
           colors: ["чёрный", "синий"],
         }
