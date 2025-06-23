@@ -201,7 +201,18 @@ const products = [
         "/Dress/Alison Dress/2.avif",
         "/Dress/Alison Dress/3.avif",
         "/Dress/Alison Dress/4.avif",
-        "/Dress/Alison Dress/5.avif"
+        "/Dress/Alison Dress/5.avif",
+        "/Dress/Alison Dress/6.avif",
+        "/Dress/Alison Dress/7.avif",
+        "/Dress/Alison Dress/8.avif",
+        "/Dress/Alison Dress/9.avif",
+        "/Dress/Alison Dress/10.avif",
+        "/Dress/Alison Dress/11.avif",
+        "/Dress/Alison Dress/12.avif",
+        "/Dress/Alison Dress/13.avif",
+        "/Dress/Alison Dress/14.avif",
+        "/Dress/Alison Dress/15.avif",
+        
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
     translations: {
@@ -209,25 +220,25 @@ const products = [
             category: "Dresses",
             name: "Alison Dress",
             description: "A dress made from 100% natural linen, ensuring excellent breathability for the body.\nFabric: 100% linen.",
-            colors: ["white"]
+            colors: ["white", "pink", "lemon"]
         },
         FR: {
             category: "Robes",
             name: "Robe Alison",
             description: "Une robe en lin naturel 100 %, offrant une excellente respirabilité pour le corps.\nTissu : 100 % lin.",
-            colors: ["blanc"]
+            colors: ["blanc", "rose", "citron"]
         },
         UA: {
             category: "Сукні",
             name: "Сукня «Alison»",
             description: "Сукня з 100% натурального льону, він забезпечує безмежний доступ повітря до тіла.\nТканина: 100% льон.",
-            colors: ["білий"]
+            colors: ["білий","рожевий", "лимонний"]
         },
         RU: {
             category: "Платья",
             name: "Платье «Алисон»",
             description: "Платье из 100% натурального льна, обеспечивающее отличную воздухопроницаемость для тела.\nТкань: 100% лен.",
-            colors: ["белый"]
+            colors: ["белый", "розовый", "лимонный"]
         }
     }
 },
