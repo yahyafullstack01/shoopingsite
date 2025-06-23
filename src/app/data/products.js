@@ -198,6 +198,7 @@ const products = [
     category: "Dresses",
     image: "/Dress/Alison Dress/1.avif",
     images: [
+        "/Dress/Alison Dress/1.avif",
         "/Dress/Alison Dress/2.avif",
         "/Dress/Alison Dress/3.avif",
         "/Dress/Alison Dress/4.avif",
