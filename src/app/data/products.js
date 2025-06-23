@@ -6,7 +6,7 @@ const products = [
     isTop: false,
     sku: "98797",
     size: "XS S M L XL",
-    category: "Сукні",
+    category: "Dresses",
     image: "/Dress/Patricia Dress/1.avif",
     images: [
       "/Dress/Patricia Dress/1.avif",
