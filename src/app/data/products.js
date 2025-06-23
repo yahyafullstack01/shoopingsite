@@ -55,7 +55,7 @@ const products = [
     isTop: false,
     sku: "98796",
     size: "XS S M L XL",
-    category: "Сукні",
+    category: "Dresses",
     image: "/Dress/Becca Linen Dress/1.avif",
     images: [
       "/Dress/Becca Linen Dress/2.avif",
