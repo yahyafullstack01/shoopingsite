@@ -1,5 +1,142 @@
 const products = [
 
+ {
+    id: 147,
+    price: 2100,
+    isTop: false,
+    sku: "98800",
+    size: "XS S M L XL",
+    category: "Shirts",
+    image: "/Shirts/Corset Shirt/1.avif",
+    images: [
+      "/Shirts/Corset Shirt/1.avif",
+      "/Shirts/Corset Shirt/2.avif",
+      "/Shirts/Corset Shirt/3.avif",
+      "/Shirts/Corset Shirt/4.avif",
+      "/Shirts/Corset Shirt/5.avif",
+      "/Shirts/Corset Shirt/6.avif",
+      "/Shirts/Corset Shirt/7.avif",
+      "/Shirts/Corset Shirt/8.avif",
+      "/Shirts/Corset Shirt/9.avif",
+      "/Shirts/Corset Shirt/10.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Shirts",
+        name: "Corset Shirt",
+        description: "Fitted shirt with pronounced bust and corset back. Fabric: 100% cotton",
+        colors: ["lemon", "black"]
+      },
+      FR: {
+        category: "Chemises",
+        name: "Chemise corset",
+        description: "Chemise cintrée avec buste prononcé et dos style corset. Tissu: 100% coton",
+        colors: ["citron", "noir"]
+      },
+      UA: {
+        category: "Сорочки",
+        name: "Сорочка із корсетом",
+        description: "Приталена сорочка із вираженим бюстом та корсетною спинкою. Тканина: 100% бавовна",
+        colors: ["лимонний", "чорний"]
+      },
+      RU: {
+        category: "Рубашки",
+        name: "Рубашка с корсетом",
+        description: "Приталенная рубашка с подчёркнутым бюстом и корсетной спинкой. Ткань: 100% хлопок",
+        colors: ["лимонный", "чёрный"]
+      }
+    }
+  },
+
+    {
+    id: 146,
+    price: 3900,
+    isTop: false,
+    sku: "98799",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Flora Dress/1.avif",
+    images: [
+      "/Dress/Flora Dress/1.avif",
+      "/Dress/Flora Dress/2.avif",
+      "/Dress/Flora Dress/3.avif",
+      "/Dress/Flora Dress/4.avif",
+      "/Dress/Flora Dress/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Flora Dress",
+        description: "Long-fiber muslin made of 100% cotton. Light and soft to the touch",
+        colors: ["one color"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe \"Flora\"",
+        description: "Mousseline à longues fibres en 100% coton. Tissu léger et doux au toucher",
+        colors: ["une couleur"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Сукня «Flora»",
+        description: "Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик",
+        colors: ["один колір"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Платье «Flora»",
+        description: "Ткань: длинноволокнистый муслин из 100% хлопка. Лёгкая и мягкая ткань на ощупь",
+        colors: ["один цвет"]
+      }
+    }
+  },
+
+  {
+  id: 145,
+  price: 3900,
+  isTop: false,
+  sku: "98798",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Hemp Printed Dress/1.avif",
+  images: [
+    "/Dress/Hemp Printed Dress/1.avif",
+    "/Dress/Hemp Printed Dress/2.avif",
+    "/Dress/Hemp Printed Dress/3.avif",
+    "/Dress/Hemp Printed Dress/4.avif",
+    "/Dress/Hemp Printed Dress/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Hemp Printed Dress",
+      description: "Double-layer muslin, 30% hemp, 70% cotton. One of the most eco-friendly fabrics as it is grown without pesticides.",
+      colors: ["hemp"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe imprimée en chanvre",
+      description: "Mousseline double couche, 30% chanvre, 70% coton. L'un des tissus les plus écologiques car il est cultivé sans pesticides.",
+      colors: ["chanvre"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Конопляна сукня із принтом",
+      description: "Тканина: двошаровий муслін, 30% коноплі, 70% бавовни. Це одна з найекологічніших тканин, бо виращується без пестицидів.",
+      colors: ["конопляний"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Конопляное платье с принтом",
+      description: "Ткань: двухслойный муслин, 30% конопли, 70% хлопка. Одна из самых экологичных тканей, так как выращивается без пестицидов.",
+      colors: ["конопляный"]
+    }
+  }
+},
+
     {
     id: 144,
     price: 2950,
