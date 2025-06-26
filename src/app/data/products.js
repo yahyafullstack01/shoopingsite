@@ -1,4 +1,47 @@
 const products = [
+{
+    id: 144,
+    price: 10,
+    isTop: false,
+    sku: "98796",
+    size: "XS S M L XL",
+    category: "Сукні",
+    image: "/Dress/Becca Linen Dress/1.avif",
+    images: [
+      "/Dress/Becca Linen Dress/2.avif",
+      "/Dress/Becca Linen Dress/3.avif",
+      "/Dress/Becca Linen Dress/4.avif",
+      "/Dress/Becca Linen Dress/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Test",
+        description: "Fabric: 100% natural linen, soft and comfortable. Doesn’t itch.",
+        colors: ["white"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe en Lin \"Becca\"",
+        description: "Tissu: 100% lin naturel, doux et confortable. Ne gratte pas.",
+        colors: ["blanc"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Сукня \"Becca\" лляна",
+        description: "Тканина: 100% натуральний льон, м'який і комфортний. Не колеться",
+        colors: ["білий"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Льняное платье \"Becca\"",
+        description: "Ткань: 100% натуральный лен, мягкий и комфортный. Не колется.",
+        colors: ["белый"]
+      }
+    }
+  },
+
 
  {
     id: 147,
