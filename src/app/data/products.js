@@ -1462,8 +1462,8 @@ const products = [
       "/Dress/Francesca Dress/2.avif",
       "/Dress/Francesca Dress/3.avif",
       "/Dress/Francesca Dress/4.avif",
-      "/Dress/Francesca Dress/5.avif",
-      "/Dress/Francesca Dress/6.avif"
+      // "/Dress/Francesca Dress/5.avif",
+      // "/Dress/Francesca Dress/6.avif"
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
     translations: {
@@ -1471,25 +1471,25 @@ const products = [
         category: "Dresses",
         name: "Francesca Dress",
         description: "A dress featuring delicate embroidery.\nFabric: 95% cotton, 5% elastane. Embroidered cotton fabric with characteristic lace-like stitching.",
-        colors: ["emerald", "beige"]
+        colors: ["emerald"]
       },
       FR: {
         category: "Robes",
         name: "Robe Francesca",
         description: "Une robe ornée de broderies délicates.\nTissu : 95 % coton, 5 % élasthanne. Tissu de coton brodé avec des coutures semblables à de la dentelle.",
-        colors: ["émeraude", "beige"]
+        colors: ["émeraude"]
       },
       UA: {
         category: "Сукні",
         name: "Сукня «Francesca»",
         description: "Сукня з делікатною вишивкою.\nТканина: 95% бавовна, 5% еластан. Прошва - легка, переважно однотонна, бавовняна тканина з характерною мереживною вишивкою.",
-        colors: ["смарагдова", "бежева"]
+        colors: ["смарагдова"]
       },
       RU: {
         category: "Платья",
         name: "Платье «Франческа»",
         description: "Платье с изящной вышивкой.\nТкань: 95% хлопок, 5% эластан. Прошивка - легкая, преимущественно однотонная хлопковая ткань с характерной кружевной вышивкой.",
-        colors: ["изумрудная", "бежевая"]
+        colors: ["изумрудная"]
       }
     }
   },
@@ -2874,7 +2874,7 @@ const products = [
   },  
   {
     id: 84,
-    price: 1450,
+    price: 2100,
     isTop: false,
     sku: "98804",
     size: "XS S M L XL",
@@ -2958,7 +2958,7 @@ const products = [
   
   {
     id: 82,
-    price: 3150,
+    price: 3800,
     isTop: false,
     sku: "98802",
     size: "XS S M L XL",
