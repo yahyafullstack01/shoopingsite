@@ -1,7 +1,7 @@
 
 "use client"; 
 import Head from "next/head";
-import React, { useEffect, useState } from "react";
+import React, {useRef, useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaMoon, FaSun, FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
@@ -50,7 +50,19 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
     setIsCategoriesOpen(false);
     closeMenu();
   };
+const catalogRef = useRef();
 
+useEffect(() => {
+  const handleClickOutside = (event) => {
+    if (catalogRef.current && !catalogRef.current.contains(event.target)) {
+      setIsCategoriesOpen(false);
+    }
+  };
+  document.addEventListener("mousedown", handleClickOutside);
+  return () => {
+    document.removeEventListener("mousedown", handleClickOutside);
+  };
+}, []);
   return (
     <header className={`flex items-center justify-between px-4 py-1 shadow-md
       ${isDarkMode ? "bg-black text-white shadow-gray-800" : "bg-white text-black shadow-gray-300"}`} role="banner">
@@ -96,61 +108,39 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
                  {menuItems[0]}
                </Link>
              </li>
-             <li className="relative flex items-center group" role="menuitem"
-               onMouseEnter={() => setIsCategoriesOpen(true)}
-               onMouseLeave={(e) => {
-                 const relatedTarget = e.relatedTarget;
-                 if (!relatedTarget || !(relatedTarget instanceof Node) || !e.currentTarget.contains(relatedTarget)) {
-                   setTimeout(() => {
-                     setIsCategoriesOpen(false);
-                   }, 500);
-                 }
-               }}
-             >
-               <button
-                 onClick={goToCatalog}
-                 className="flex-grow text-left"
-                 aria-label="Go to Catalogues"
-                 role="menuitem"
-               >
-                 {menuItems[1]}
-               </button>
-               <button
-                 onClick={(e) => {
-                   e.stopPropagation();
-                   setIsCategoriesOpen((prev) => !prev);
-                 }}
-                 className="ml-2 p-1"
-                 role="menuitem"
-                 aria-label="Toggle categories"
-                 aria-haspopup="true"
-                 aria-expanded={isCategoriesOpen}
-               >
-                 <FaChevronDown className={`transition-transform ${isCategoriesOpen ? "rotate-180" : ""}`} />
-               </button>
-               {isCategoriesOpen && (
-                 <ul
-                   className="absolute left-0 top-full mt-2 bg-white dark:bg-gray-800 rounded-md shadow-md p-2 w-48 z-50"
-                   onMouseEnter={() => setIsCategoriesOpen(true)}
-                   onMouseLeave={() => setIsCategoriesOpen(false)}
-                   role="menu"
-                 >
-                   {categories.map((category) => (
-                     <li key={category.path} role="menuitem">
-                       <button
-                         onClick={() => {
-                           handleCategoryClick(category.path);
-                           setIsCategoriesOpen(false);
-                         }}
-                         className="block w-full text-left px-4 py-2 text-sm hover:bg-gray-300 dark:hover:bg-gray-700 rounded-md"
-                       >
-                         {category.name}
-                       </button>
-                     </li>
-                   ))}
-                 </ul>
-               )}
-             </li>
+             <li className="relative" role="menuitem" ref={catalogRef}>
+  <div className="flex items-center">
+    <button
+      onClick={() => setIsCategoriesOpen((prev) => !prev)}
+      className="flex-grow text-left"
+      aria-haspopup="true"
+      aria-expanded={isCategoriesOpen}
+    >
+      {menuItems[1]}
+    </button>
+    <FaChevronDown className={`ml-1 transition-transform ${isCategoriesOpen ? "rotate-180" : ""}`} />
+  </div>
+
+  {isCategoriesOpen && (
+    <ul
+      className="absolute left-0 top-full mt-2 bg-white dark:bg-gray-800 rounded-md shadow-md p-2 w-48 z-50"
+      role="menu"
+    >
+      {categories.map((category) => (
+        <li key={category.path} role="menuitem">
+          <button
+            onClick={() => handleCategoryClick(category.path)}
+            className="block w-full text-left px-4 py-2 text-sm hover:bg-gray-300 dark:hover:bg-gray-700 rounded-md"
+          >
+            {category.name}
+          </button>
+        </li>
+      ))}
+    </ul>
+  )}
+</li>
+
+
              <li className="min-w-[80px] text-center" role="menuitem">
                <Link href="/#about" aria-label={`Learn more ${menuItems[2]}`}>
                  {menuItems[2]}
