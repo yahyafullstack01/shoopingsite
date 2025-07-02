@@ -1,12 +1,14 @@
+//import React, { useEffect, useState } from "react";
 import React, { useState } from "react";
 import ProductCard from "../products/ProductCard";
 import { useLanguage } from "../../Functions/useLanguage";
 
 const PaginatedProducts = ({ products, productsPerPage = 12, onProductClick }) => {
   const [currentPage, setCurrentPage] = useState(1);
+  //const [favorites, setFavorites] = useState([]);
   const { translateList } = useLanguage();
   const menuItems = translateList("Filtersidebar", "PaginatedProducts");
-  
+
   // Загальна кількість сторінок
   const totalPages = Math.ceil(products.length / productsPerPage);
 
@@ -15,7 +17,26 @@ const PaginatedProducts = ({ products, productsPerPage = 12, onProductClick }) =
     (currentPage - 1) * productsPerPage,
     currentPage * productsPerPage
   );
+{/*
+  // Читання favorites з localStorage при завантаженні
+  useEffect(() => {
+    const storedFavorites = JSON.parse(localStorage.getItem("favorites")) || [];
+    setFavorites(storedFavorites);
+  }, []);
 
+  // Перевірка, чи товар є в улюблених
+  const isFavorite = (productId) => favorites.includes(productId);
+
+  // Додавання/видалення товару з улюблених
+  const toggleFavorite = (productId) => {
+    const updatedFavorites = favorites.includes(productId)
+      ? favorites.filter((id) => id !== productId)
+      : [...favorites, productId];
+
+    setFavorites(updatedFavorites);
+    localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
+  };
+*/}
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
@@ -28,7 +49,9 @@ const PaginatedProducts = ({ products, productsPerPage = 12, onProductClick }) =
           <ProductCard
             key={product.id}
             product={product}
-            onClick={() => onProductClick(product)} // Передаємо функцію кліку
+            onClick={() => onProductClick(product)}
+            //isFavorite={isFavorite}
+           // toggleFavorite={toggleFavorite}
           />
         ))}
       </div>
@@ -42,10 +65,9 @@ const PaginatedProducts = ({ products, productsPerPage = 12, onProductClick }) =
                 onClick={() => handlePageChange(page)}
                 className={`px-4 py-2 rounded border font-semibold transition ${
                   currentPage === page
-                  ? "bg-gray-300 text-gray-500 border-gray-300 cursor-not-allowed dark:bg-[#1f2937] dark:text-[#475569] dark:border-[#334155]" // Вимкнена кнопка
-                  : "bg-gray-100 text-black border-gray-300 hover:bg-gray-200 dark:bg-[#1f2937] dark:text-[#60a5fa] dark:border-[#334155] dark:hover:bg-[#2563eb]" // Активна кнопка
-               
-                  }`}
+                    ? "bg-gray-300 text-gray-500 border-gray-300 cursor-not-allowed dark:bg-[#1f2937] dark:text-[#475569] dark:border-[#334155]"
+                    : "bg-gray-100 text-black border-gray-300 hover:bg-gray-200 dark:bg-[#1f2937] dark:text-[#60a5fa] dark:border-[#334155] dark:hover:bg-[#2563eb]"
+                }`}
               >
                 {page}
               </button>
@@ -54,17 +76,16 @@ const PaginatedProducts = ({ products, productsPerPage = 12, onProductClick }) =
         </ul>
       </div>
 
-      {/* Кнопки "Prev" та "Next" */}
+      {/* Prev / Next кнопки */}
       <div className="flex justify-between mt-4">
         <button
           onClick={() => handlePageChange(currentPage - 1)}
           disabled={currentPage === 1}
           className={`px-4 py-2 rounded border font-semibold transition ${
             currentPage === 1
-            ? "bg-gray-300 text-gray-500 border-gray-300 cursor-not-allowed dark:bg-[#1f2937] dark:text-[#475569] dark:border-[#334155]" // Вимкнена кнопка
-            : "bg-gray-100 text-black border-gray-300 hover:bg-gray-200 dark:bg-[#1f2937] dark:text-[#60a5fa] dark:border-[#334155] dark:hover:bg-[#2563eb]" // Активна кнопка
-           
-            }`}
+              ? "bg-gray-300 text-gray-500 border-gray-300 cursor-not-allowed dark:bg-[#1f2937] dark:text-[#475569] dark:border-[#334155]"
+              : "bg-gray-100 text-black border-gray-300 hover:bg-gray-200 dark:bg-[#1f2937] dark:text-[#60a5fa] dark:border-[#334155] dark:hover:bg-[#2563eb]"
+          }`}
         >
           {menuItems[0]}
         </button>
@@ -74,10 +95,9 @@ const PaginatedProducts = ({ products, productsPerPage = 12, onProductClick }) =
           disabled={currentPage === totalPages}
           className={`px-4 py-2 rounded border font-semibold transition ${
             currentPage === totalPages
-            ? "bg-gray-300 text-gray-500 border-gray-300 cursor-not-allowed dark:bg-[#1f2937] dark:text-[#475569] dark:border-[#334155]" // Вимкнена кнопка
-            : "bg-gray-100 text-black border-gray-300 hover:bg-gray-200 dark:bg-[#1f2937] dark:text-[#60a5fa] dark:border-[#334155] dark:hover:bg-[#2563eb]" // Активна кнопка
-          
-            }`}
+              ? "bg-gray-300 text-gray-500 border-gray-300 cursor-not-allowed dark:bg-[#1f2937] dark:text-[#475569] dark:border-[#334155]"
+              : "bg-gray-100 text-black border-gray-300 hover:bg-gray-200 dark:bg-[#1f2937] dark:text-[#60a5fa] dark:border-[#334155] dark:hover:bg-[#2563eb]"
+          }`}
         >
           {menuItems[1]}
         </button>

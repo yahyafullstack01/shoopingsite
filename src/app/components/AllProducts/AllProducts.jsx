@@ -1,11 +1,9 @@
-"use client";
-
 import React, { useState, useRef, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import FilterSidebar from "../../Functions/FilterSidebar";
 import SortMenu from "../../Functions/SortMenu";
 import ProductBanner from "../../components/products/ProductBanner";
-import PaginatedProducts from "../../components/PaginatedProducts/PaginatedProducts"; 
+import PaginatedProducts from "../../components/PaginatedProducts/PaginatedProducts";
 import {
   handleSizeSelect,
   filterAndSortProducts,
@@ -30,8 +28,28 @@ export default function AllProducts() {
   const [sortOrder, setSortOrder] = useState("recommended");
   const [isSortMenuOpen, setIsSortMenuOpen] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
+  //const [favorites, setFavorites] = useState([]);
   const descriptionRef = useRef(null);
 
+
+  
+ {/* useEffect(() => {
+    const storedFavorites = localStorage.getItem("favorites");
+    if (storedFavorites) {
+      setFavorites(JSON.parse(storedFavorites));
+    }
+  }, []);
+
+  const toggleFavorite = (productId) => {
+    const updated = favorites.includes(productId)
+      ? favorites.filter((id) => id !== productId)
+      : [...favorites, productId];
+    setFavorites(updated);
+    localStorage.setItem("favorites", JSON.stringify(updated));
+  };
+
+  const isFavorite = (productId) => favorites.includes(productId);
+*/}
   useEffect(() => {
     if (productId) {
       const matchedProduct = products.find((p) => String(p.id) === productId);
@@ -89,7 +107,7 @@ export default function AllProducts() {
             setMaxPrice={setMaxPrice}
             selectedSize={selectedSize}
             handleSizeSelect={(size) => handleSizeSelect(size, setSelectedSize)}
-            selectedCategory={categoryFromURL} // ✅
+            selectedCategory={categoryFromURL}
             handleCategorySelect={(category) => {
               router.push(`/All-products?category=${category.toLowerCase()}`);
             }}
@@ -135,6 +153,8 @@ export default function AllProducts() {
                 products={filteredProducts}
                 productsPerPage={12}
                 onProductClick={onProductClick}
+               // toggleFavorite={toggleFavorite}
+               // isFavorite={isFavorite}
               />
             </section>
           </main>
@@ -143,9 +163,3 @@ export default function AllProducts() {
     </section>
   );
 }
-
-
-
-
-
-
