@@ -1,5 +1,53 @@
 const products = [
- 
+ {
+    id: 148,
+    price: 10,
+    isTop: false,
+    sku: "98800",
+    size: "XS S M L XL",
+    category: "Shirts",
+    image: "/Shirts/Corset Shirt/1.avif",
+    images: [
+      "/Shirts/Corset Shirt/1.avif",
+      "/Shirts/Corset Shirt/2.avif",
+      "/Shirts/Corset Shirt/3.avif",
+      "/Shirts/Corset Shirt/4.avif",
+      "/Shirts/Corset Shirt/5.avif",
+      "/Shirts/Corset Shirt/6.avif",
+      "/Shirts/Corset Shirt/7.avif",
+      "/Shirts/Corset Shirt/8.avif",
+      "/Shirts/Corset Shirt/9.avif",
+      "/Shirts/Corset Shirt/10.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Shirts",
+        name: "Test",
+        description: "Fitted shirt with pronounced bust and corset back. Fabric: 100% cotton",
+        colors: ["lemon", "black"]
+      },
+      FR: {
+        category: "Chemises",
+        name: "Chemise corset",
+        description: "Chemise cintrée avec buste prononcé et dos style corset. Tissu: 100% coton",
+        colors: ["citron", "noir"]
+      },
+      UA: {
+        category: "Сорочки",
+        name: "Сорочка із корсетом",
+        description: "Приталена сорочка із вираженим бюстом та корсетною спинкою. Тканина: 100% бавовна",
+        colors: ["лимонний", "чорний"]
+      },
+      RU: {
+        category: "Рубашки",
+        name: "Рубашка с корсетом",
+        description: "Приталенная рубашка с подчёркнутым бюстом и корсетной спинкой. Ткань: 100% хлопок",
+        colors: ["лимонный", "чёрный"]
+      }
+    }
+  },
+
  {
     id: 147,
     price: 2100,
