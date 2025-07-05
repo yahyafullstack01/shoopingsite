@@ -109,11 +109,11 @@ export default function InfoForm({
       <div className="text-xl md:text-2xl font-bold mb-4 text-center md:text-left">
         {showDiscount && product.discountPrice ? (
           <>
-            <span className="text-red-600">{product.discountPrice}</span>
-            <span className="line-through text-gray-500 ml-4">{product.price}</span>
+            <span className="text-red-600">{product.discountPrice} UAH</span>
+            <span className="line-through text-gray-500 ml-4">{product.price} UAH</span>
           </>
         ) : (
-          <span>{product.price}</span>
+          <span>{product.price} UAH</span>
         )}
       </div>
 
@@ -153,6 +153,16 @@ export default function InfoForm({
           ))}
         </select>
         {sizeError && <p className="text-red-500 text-sm mt-2">{sizeError}</p>}
+           {/* Size chart */}
+      <div className="mb-6 md:mb-2 mt-4">
+        <button
+          onClick={() => setShowSizeChart(true)}
+          className="text-xl text-black dark:text-white underline transition-colors duration-300 hover:text-blue-500 focus-visible:text-blue-900 dark:hover:text-blue-500 dark:focus-visible:text-blue-500 focus-visible:outline-none"
+        >
+          {menuItems[6] || "Clothing Size Chart"}
+        </button>
+        {showSizeChart && <SizeChart onClose={() => setShowSizeChart(false)} />}
+      </div>
       </div>
 
       {/* Quantity */}
@@ -202,16 +212,7 @@ export default function InfoForm({
         </button>
       </div>
 
-      {/* Size chart */}
-      <div className="mb-6 md:mb-2 mt-4">
-        <button
-          onClick={() => setShowSizeChart(true)}
-          className="text-xl text-black dark:text-white underline transition-colors duration-300 hover:text-blue-500 focus-visible:text-blue-900 dark:hover:text-blue-500 dark:focus-visible:text-blue-500 focus-visible:outline-none"
-        >
-          {menuItems[6] || "Clothing Size Chart"}
-        </button>
-        {showSizeChart && <SizeChart onClose={() => setShowSizeChart(false)} />}
-      </div>
+   
 
       {/* Description */}
       <div className="mt-10">
