@@ -47,7 +47,7 @@ export default function TopProducts() {
       </Head>
       <section
         id="top-products"
-        className="bg-[#fcf8f3] dark:bg-gray-800 text-black dark:text-gray-100 section-container py-12"
+        className="bg-[#fcf8f3] dark:bg-gray-700 text-black dark:text-gray-100 section-container py-12 "
       >
         <div className="space-y-4">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-center">

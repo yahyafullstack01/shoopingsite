@@ -15,7 +15,7 @@ export default function SpecialOffers() {
 
   return (
     <section
-      className="bg-gray-100 dark:bg-gray-800 section-container"
+      className="bg-gray-100 dark:bg-gray-800 section-container mt-4"
       aria-labelledby="special-offers-heading"
     >
       <div className="space-y-4">
@@ -36,15 +36,16 @@ export default function SpecialOffers() {
   </div>
           {/* Text Container */}
           <div
-            className={`
-              absolute bottom-[5%] sm:bottom-[20%] md:bottom-[15%] lg:bottom-[20%] 
-              left-1/2  lg:left-[30%] 2xl:left-[10%] transform -translate-x-1/2 
-              dark:bg-gray-700 bg-white/75
-              p-4 sm:p-6 md:p-10 lg:p-16 xl:p-20 rounded-lg  
-              w-full max-w-none sm:w-[65%] lg:w-[55%] 2xl:w-[90%] text-center md:text-left
-              transition-all duration-500
-            `}
-          >
+  className={`
+    absolute bottom-[5%] sm:bottom-[20%] md:bottom-[15%] lg:bottom-[20%] 
+    left-1/2 lg:left-[30%] 2xl:left-[10%] transform -translate-x-1/2 
+    bg-white/50 dark:bg-gray-800/70 backdrop-blur-md
+    p-4 sm:p-6 md:p-10 lg:p-16 xl:p-20 rounded-lg  
+    w-full max-w-none sm:w-[65%] lg:w-[55%] 2xl:w-[90%] text-center md:text-left
+    transition-all duration-500
+  `}
+>
+
             <h2
               className={`text-base sm:text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold mb-8 md:mb-8
                 dark:text-[#f5e8d6] text-black`}

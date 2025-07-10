@@ -1,7 +1,8 @@
+
 import React from "react";
 import Image from "next/image";
 import { useLanguage } from "../../Functions/useLanguage";
-const ProductCard = ({ product, onClick }) => {
+const ProductCard = ({ product, onClick, onAddToCart }) => {
 //const ProductCard = ({ product, onClick, toggleFavorite, isFavorite }) => {
   const { language, translateList } = useLanguage();
   const translatedName = product.translations?.[language]?.name || product.name;
@@ -61,6 +62,19 @@ const ProductCard = ({ product, onClick }) => {
         <p className="text-xs sm:text-sm text-gray-700 dark:text-gray-400 text-center sm:text-left">
           <span className="font-semibold">{categoryLabel}:</span> {translatedCategory || "Uncategorized"}
         </p>*/}
+                {/* 👉 Кнопка додавання в корзину */}
+        <div className="mt-2 flex justify-center sm:justify-start">
+          <button
+            onClick={(e) => {
+              e.stopPropagation(); // Щоб не відкривався модал
+              onAddToCart({ product, selectedColor: "", selectedSize: "", quantity: 1 });
+            }}
+            className="px-4 py-2 text-sm bg-green-600 hover:bg-green-700 text-white rounded transition"
+          >
+          Додати в корзину
+          </button>
+        </div>
+
       </section>
     </article>
   );

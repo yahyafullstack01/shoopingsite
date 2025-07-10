@@ -6,7 +6,7 @@ export default function About() {
   const menuItems = translateList("home", "about");
 
   return (
-    <section className="bg-white dark:bg-gray-900 py-12 px-6 sm:px-12" id="about">
+    <section className="bg-white dark:bg-gray-900 py-12 px-6 sm:px-12 mt-4" id="about">
       <div className="max-w-8xl mx-auto relative">
        
         {/* Макет для планшетів та десктопів */}

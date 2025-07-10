@@ -127,6 +127,7 @@ const [selectedSize, setSelectedSize] = useState('');
 
           <div className="w-full sm:w-1/2 dark:bg-black bg-opacity-75 p-6 text-black dark:text-white rounded-lg">
             <InfoForm
+            requireSelection={true}
               product={{
                 ...selectedProduct,
                 name: translatedName,
