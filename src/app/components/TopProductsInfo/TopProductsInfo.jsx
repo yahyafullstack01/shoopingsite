@@ -8,6 +8,7 @@ import { handleContactButtonClick } from "../../utils/products";
 import ThumbnailCarousel from "../ThumbnailCarousel/ThumbnailCarousel";
 import Image from "next/image";
 import { getSessionId } from "../../utils/session";
+import Toast from "../ToastCart/Toast";
 
 export default function TopProductsInfo() {
   const { translateList, language } = useLanguage();
@@ -15,6 +16,8 @@ export default function TopProductsInfo() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const descriptionRef = useRef(null);
+const [showToast, setShowToast] = useState(false);
+const [lastProduct, setLastProduct] = useState(null);
 
   const topProducts = products.filter((product) => product.isTop === true);
 
@@ -72,8 +75,15 @@ export default function TopProductsInfo() {
         alert(data.message || "Помилка при додаванні в корзину");
         return;
       }
-  
-      alert(data.message || "Товар додано в корзину");
+  setLastProduct({
+  name: product.translations?.[language]?.name || product.title,
+  price: product.price,
+  image: product.image,
+  quantity,
+});
+setShowToast(true);
+
+   
     } catch (err) {
       console.error("❌ Додавання в корзину не вдалося:", err);
       alert("Помилка при додаванні в корзину");
@@ -163,6 +173,13 @@ export default function TopProductsInfo() {
           onAddToCartClick={handleAddToCart}
         />
       </article>
+      {showToast && lastProduct && (
+  <Toast
+    product={lastProduct}
+    onClose={() => setShowToast(false)}
+  />
+)}
+
     </div>
   );
 }

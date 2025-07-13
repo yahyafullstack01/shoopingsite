@@ -71,11 +71,12 @@ export default function TopProducts() {
             {displayedImages.map((imageIndex, idx) => {
   const product = topProducts[imageIndex];
 
-  if (!product) return null; // Запобігаємо помилкам, якщо product відсутній
+  if (!product) return null; 
 
   return (
+    
     <Link
-      key={`${product.id}-${idx}`} // Використовуємо idx для уникнення дублікатів
+      key={`${product.id}-${idx}`} 
       href={`/Top-products?product=${product.id}`}
       target="_blank"
       rel="noopener noreferrer"

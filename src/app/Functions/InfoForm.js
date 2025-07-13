@@ -118,7 +118,7 @@ const handleContactClick = (e) => {
         )}
       </div>
 
-      {/* Color */}
+      
       <div className="mb-6 md:mb-8">
         <label htmlFor="color" className="block text-sm font-medium mb-2 text-center md:text-left">
           {menuItems[1] || "Color"}
@@ -137,7 +137,7 @@ const handleContactClick = (e) => {
         {colorError && <p className="text-red-500 text-sm mt-2">{colorError}</p>}
       </div>
 
-      {/* Size */}
+      
       <div className="mb-6 md:mb-8">
         <label htmlFor="size" className="block text-sm font-medium mb-2 text-center md:text-left">
           {menuItems[3] || "Size"}
@@ -154,7 +154,7 @@ const handleContactClick = (e) => {
           ))}
         </select>
         {sizeError && <p className="text-red-500 text-sm mt-2">{sizeError}</p>}
-           {/* Size chart */}
+           
       <div className="mb-6 md:mb-2 mt-4">
         <button
           onClick={() => setShowSizeChart(true)}
@@ -166,7 +166,7 @@ const handleContactClick = (e) => {
       </div>
       </div>
 
-      {/* Quantity */}
+    
       <div className="mb-6 md:mb-8">
         <label htmlFor="quantity" className="block text-sm font-medium mb-2 text-center md:text-left">
           {menuItems[4] || "Quantity"}
@@ -215,7 +215,7 @@ const handleContactClick = (e) => {
 
    
 
-      {/* Description */}
+      
       <div className="mt-10">
         <h2 className="text-lg md:text-xl font-semibold text-black dark:text-white mb-4 text-center md:text-left">
           {menuItems[7] || "PRODUCT INFO"}

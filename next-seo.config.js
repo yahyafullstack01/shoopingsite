@@ -98,7 +98,25 @@ const seoConfig = {
     },
     canonical: "https://shoopingsite-my9e.vercel.app/all-products",
     robots: "index, follow"
+  },
+   newProducts: {
+    title: 'Новинки | Shoopingsite',
+    description: 'Останні новинки нашого магазину',
+    openGraph: {
+      title: 'Новинки | Shoopingsite',
+      description: 'Дивись найновіші товари першими',
+      url: 'https://www.latore.shop/new-products',
+      type: 'website',
+      images: [
+        {
+          url: 'https://www.latore.shop/logo-social.jpg',
+        },
+      ],
+    },
+    canonical: 'https://www.latore.shop/new-products',
+    robots: 'index, follow',
   }
+
 };
 
 export default seoConfig;

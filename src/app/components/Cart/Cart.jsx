@@ -5,12 +5,14 @@ import { useRouter } from 'next/navigation';
 import { getSessionId } from '../../utils/session'
 
 
+
 export default function Cart() {
   const [cartItems, setCartItems] = useState([]);
   const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(false);
   const [sessionId, setSessionId] = useState('');
   const router = useRouter();
+
 
   // 1. Ініціалізація sessionId
 
