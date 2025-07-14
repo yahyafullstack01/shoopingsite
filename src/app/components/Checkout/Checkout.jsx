@@ -189,6 +189,7 @@ const handleWayforpayClick = async () => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         order,
+        paymentType, 
         serverUrl: `${BACKEND_URL}/api/payments/wayforpay/callback`,
       }),
     });
