@@ -179,6 +179,7 @@ const handleWayforpayClick = async () => {
     total: Number(String(total).replace(/[^\d.]/g, '')),
     prepay: paymentType === 'prepay',
     paymentMethod: 'wayforpay',
+    paymentType,
     sessionId,
   };
 
