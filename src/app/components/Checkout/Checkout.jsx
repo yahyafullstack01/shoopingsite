@@ -4,8 +4,11 @@ import { useState, useEffect } from 'react';
 //import fetchGeoCities from '../../utils/fetchGeoCities'
 import { validateForm } from '../../utils/validationContactForm';
 import { getSessionId } from '../../utils/session';
+import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/style.css';
+import { FiUser, FiMail, FiPhone, FiTruck, FiCreditCard, FiMessageSquare } from "react-icons/fi";
 
-
+import OrderSummary from "../OrderSummary/OrderSummary"
 export default function Checkout() {
   const [deliveryMethod, setDeliveryMethod] = useState('');
   const [cityQuery, setCityQuery] = useState('');
@@ -116,26 +119,6 @@ const [selectedWarehouseRef, setSelectedWarehouseRef] = useState('');
       setFilteredCities([]);
     }
   };
-{/*}
-  const handleStripePayment = async () => {
-    try {
-      const response = await fetch(`${BACKEND_URL}/api/payments/stripe`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          amount: total,
-          successUrl: `${window.location.origin}/success`,
-          cancelUrl: `${window.location.origin}/checkout`,
-        }),
-      });
-      const data = await response.json();
-      if (data.url) window.location.href = data.url;
-    } catch (err) {
-      console.error('Stripe помилка:', err);
-      alert('Не вдалося перейти до Stripe оплати');
-    }
-  };
-*/}
 const showLoader = (message = 'Переходимо на оплату...') => {
   const loaderOverlay = document.createElement('div');
   loaderOverlay.style.position = 'fixed';
@@ -163,112 +146,7 @@ const showLoader = (message = 'Переходимо на оплату...') => {
 
   document.body.appendChild(loaderOverlay);
 };
-// ✅ Оновлена версія `handleFondyPayment`
-// Додаємо збереження замовлення в БД перед редіректом на Fondy
-{/*
-const handleFondyPayment = async (order) => {
-  try {
-    // 1. Зберігаємо замовлення в БД
-    const savedOrderResponse = await fetch(`${BACKEND_URL}/api/orders`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(order),
-    });
 
-    if (!savedOrderResponse.ok) throw new Error('❌ Не вдалося зберегти замовлення');
-
-    const savedOrder = await savedOrderResponse.json();
-    console.log('✅ Order збережено перед Fondy:', savedOrder);
-
-    // 2. Надсилаємо запит до /api/payments/fondy
-    const response = await fetch(`${BACKEND_URL}/api/payments/fondy`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        amount: order.total,
-        resultUrl: `${window.location.origin}/success`,
-        serverUrl: `https://shoopingsite-backend-1.onrender.com/api/payments/fondy-callback`,
-
-        order
-      }),
-    });
-
-    const html = await response.text();
-    console.log('📨 Отримано HTML від Fondy:\n', html); // 🧠 ВАЖЛИВО для дебагу
-
-    const container = document.createElement('div');
-    container.innerHTML = html;
-    document.body.appendChild(container);
-
-    setTimeout(() => {
-      const form = container.querySelector('form');
-      if (form) {
-        showLoader('Переходимо на Fondy...');
-        form.submit();
-      } else {
-        console.warn('❌ В HTML не знайдено форму!');
-        alert('Не вдалося знайти форму для Fondy:\n' + html);
-      }
-    }, 0);
-  } catch (err) {
-    console.error('❌ Fondy помилка:', err);
-    alert('Не вдалося ініціювати оплату Fondy. Спробуйте ще раз.');
-  }
-};
-*/}
-{/*}
-const handleWayforpayPayment = async (order) => {
-  try {
-    const response = await fetch(`${BACKEND_URL}/api/payments/wayforpay`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        amount: order.total,
-        resultUrl: `${window.location.origin}/success`,
-        serverUrl: `${BACKEND_URL}/api/payments/wayforpay/callback`,
-        order,
-      }),
-    });
-
-    const html = await response.text();
-    const popup = window.open('', '_blank');
-    if (!popup) {
-      alert('Будь ласка, дозвольте відкриття спливаючих вікон');
-      return;
-    }
-
-    popup.document.open();
-    popup.document.write(html);
-    popup.document.close();
-  } catch (error) {
-    console.error('❌ WayForPay помилка:', error);
-    alert('Не вдалося ініціювати оплату WayForPay');
-  }
-};
-
-  const handleLiqPayPayment = async (order) => {
-    try {
-      const response = await fetch(`${BACKEND_URL}/api/payments/liqpay`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          amount: order.total,
-          resultUrl: `${window.location.origin}/success`,
-          serverUrl: `${BACKEND_URL}/api/payments/payment-callback`,
-          order
-        })
-      });
-      const html = await response.text();
-      const container = document.createElement('div');
-      container.innerHTML = html;
-      document.body.appendChild(container);
-      container.querySelector('form').submit();
-    } catch (err) {
-      console.error('LiqPay помилка:', err);
-      alert('Не вдалося ініціювати LiqPay оплату');
-    }
-  };
-*/}
 const handleWayforpayClick = async () => {
   console.log('🟡 Клік по кнопці WayForPay');
 
@@ -353,189 +231,6 @@ const handleWayforpayClick = async () => {
   }
 };
 
-{/*варіант 2}
-const handleWayforpayClick = async () => {
-  // ✅ Валідація
-  const formValues = { firstName, lastName, email, phone };
-  const validationErrors = validateForm(formValues);
-
-  if (Object.keys(validationErrors).length > 0) {
-    setErrors(validationErrors);
-    return;
-  }
-
-  // ✅ Формування замовлення
-  const order = {
-    firstName,
-    lastName,
-    patronymic,
-    email,
-    phone,
-    deliveryMethod,
-    city: cityQuery,
-    warehouse: selectedWarehouse,
-    warehouseRef: selectedWarehouseRef,
-    comment,
-    total: Number(String(total).replace(/[^\d.]/g, '')),
-    prepay: paymentType === 'prepay',
-    paymentMethod: 'wayforpay',
-    sessionId,
-  };
-
-  try {
-    // ✅ Запит до бекенду
-    const res = await fetch(`${BACKEND_URL}/api/payments/wayforpay`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        order,
-        serverUrl: `${BACKEND_URL}/api/payments/wayforpay/callback`,
-      }),
-    });
-
-    if (!res.ok) throw new Error('WayForPay не відповідає');
-
-    const { url, params } = await res.json();
-
-    // ✅ Створюємо форму
-    const form = document.createElement('form');
-    form.action = url;
-    form.method = 'POST';
-    form.target = '_blank';
-
-    Object.entries(params).forEach(([key, value]) => {
-      if (Array.isArray(value)) {
-        value.forEach((v) => {
-          const input = document.createElement('input');
-          input.type = 'hidden';
-          input.name = key;
-          input.value = v;
-          form.appendChild(input);
-        });
-      } else {
-        const input = document.createElement('input');
-        input.type = 'hidden';
-        input.name = key;
-        input.value = value;
-        form.appendChild(input);
-      }
-    });
-
-    // ✅ Відправка
-    document.body.appendChild(form);
-    form.submit();
-    document.body.removeChild(form);
-  } catch (error) {
-    console.error('❌ WayForPay помилка:', error);
-    alert('Не вдалося ініціювати оплату через WayForPay');
-  }
-};
-*/}
-{/*}
-//варіант1
-const handleWayforpayClick = () => {
-  // ✅ 1. Одразу відкриваємо попап — Safari дозволяє лише синхронно
-  const popup = window.open('', '_blank');
-  if (!popup) {
-    alert('Будь ласка, дозвольте відкриття спливаючих вікон');
-    return;
-  }
-
-  popup.document.open();
-  popup.document.write('<p>Зачекайте...</p>');
-  popup.document.close();
-
-  // ✅ 2. Далі — перевірка форми
-  const formValues = { firstName, lastName, email, phone };
-  const validationErrors = validateForm(formValues);
-
-  if (Object.keys(validationErrors).length > 0) {
-    setErrors(validationErrors);
-    popup.close(); // ❌ закриваємо попап, бо не пройшла валідація
-    return;
-  }
-
-  // ✅ 3. Збираємо замовлення
-  const order = {
-    firstName,
-    lastName,
-    patronymic,
-    email,
-    phone,
-    deliveryMethod,
-    city: cityQuery,
-    warehouse: selectedWarehouse,
-    warehouseRef: selectedWarehouseRef,
-    comment,
-    total: Number(String(total).replace(/[^\d.]/g, '')),
-    prepay: paymentType === 'prepay',
-    paymentMethod: 'wayforpay',
-    sessionId,
-  };
-
-  // ✅ 4. Передаємо все далі
-  proceedWithWayforpay(popup, order);
-};
-
-const proceedWithWayforpay = async (popup, order) => {
-  try {
-    const response = await fetch(`${BACKEND_URL}/api/payments/wayforpay`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        resultUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/api/payments/wayforpay/success`,
-        serverUrl: `${BACKEND_URL}/api/payments/wayforpay/callback`,
-        order,
-      }),
-    });
-
-    if (!response.ok) {
-      throw new Error('Сервер не відповів');
-    }
-
-    const html = await response.text();
-
-    popup.document.open();
-    popup.document.write(html);
-    popup.document.close();
-  } catch (error) {
-    console.error('❌ WayForPay помилка:', error);
-    popup.document.open();
-    popup.document.write('<p>Помилка при оплаті. Спробуйте пізніше</p>');
-    popup.document.close();
-  }
-};
-*/}
-{/*}
-const handleWayforpayPayment = async (order) => {
-  try {
-    const response = await fetch(`${BACKEND_URL}/api/payments/wayforpay`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        resultUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/api/payments/wayforpay/success`,
-
- serverUrl: `${BACKEND_URL}/api/payments/wayforpay/callback`, // ✅
-        order, // ✅ все замовлення, включно з sessionId
-      }),
-    });
-
-    const html = await response.text();
-
-    const popup = window.open('', '_blank');
-    if (!popup) {
-      alert('Будь ласка, дозвольте відкриття спливаючих вікон');
-      return;
-    }
-
-    popup.document.open();
-    popup.document.write(html);
-    popup.document.close();
-  } catch (error) {
-    console.error('❌ WayForPay помилка:', error);
-    alert('Не вдалося ініціювати оплату WayForPay');
-  }
-};*/}
   const saveOrder = async (order) => {
     const res = await fetch(`${BACKEND_URL}/api/orders`, {
       method: 'POST',
@@ -692,284 +387,224 @@ const handleWayforpayPayment = async (order) => {
   
  
   return (
-    <div className="p-6 max-w-3xl mx-auto">
-      <h1 className="text-2xl font-bold mb-4">Оформлення замовлення</h1>
-      <form onSubmit={handleSubmit} className="space-y-4">
+  
 
-        {/* Імʼя, Прізвище, По батькові */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div>
+<div className="p-6 mt-8 max-w-5xl mx-auto bg-[#fdfcf7]  dark:bg-zinc-900 rounded-xl shadow-md space-y-6">
+  <h1 className="text-3xl font-bold mb-6 text-gray-800 dark:text-white">Оформлення замовлення</h1>
+
+  {/* ПІДСУМОК */}
+  <div className="md:flex gap-6">
+    <div className="md:w-2/3 space-y-6">
+
+      {/* ІМʼЯ / ПРІЗВИЩЕ / ПО БАТЬКОВІ */}
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        {[
+          { label: "Імʼя", value: firstName, setter: setFirstName, error: errors.firstName, icon: <FiUser /> },
+          { label: "Прізвище", value: lastName, setter: setLastName, error: errors.lastName, icon: <FiUser /> },
+          { label: "По батькові", value: patronymic, setter: setPatronymic, error: null, icon: <FiUser /> }
+        ].map(({ label, value, setter, error, icon }, idx) => (
+          <div key={idx} className="relative">
+            <span className="absolute left-3 top-3 text-gray-400">{icon}</span>
             <input
-              value={firstName}
-              onChange={(e) => setFirstName(e.target.value)}
-    className="p-2 border rounded w-full bg-white dark:bg-black text-black dark:text-white placeholder-gray-500 dark:placeholder-gray-400 border-gray-300 dark:border-gray-600"
-           
-              placeholder="Імʼя"
+              value={value}
+              onChange={(e) => setter(e.target.value)}
+              placeholder={label}
+              className="pl-10 p-3 border rounded-lg w-full bg-white dark:bg-zinc-800 text-gray-800 dark:text-white placeholder:text-gray-400 placeholder:opacity-70 border-gray-300 dark:border-zinc-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
             />
-            {errors.firstName && (
-              <p className="text-red-500 text-sm mt-1">{errors.firstName}</p>
+            {error && <p className="text-red-500 text-sm mt-1">{error}</p>}
+          </div>
+        ))}
+      </div>
+
+      {/* EMAIL */}
+      <div className="relative">
+        <span className="absolute left-3 top-3 text-gray-400"><FiMail /></span>
+        <input
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Email"
+          className="pl-10 w-full p-3 border rounded-lg bg-white dark:bg-zinc-800 text-gray-800 dark:text-white placeholder:text-gray-400 placeholder:opacity-70 border-gray-300 dark:border-zinc-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+        />
+        {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
+      </div>
+
+      {/* ТЕЛЕФОН */}
+      <label className="block font-semibold text-gray-700 dark:text-white mt-4">Телефон</label>
+      <PhoneInput
+        country={'ua'}
+        value={phone}
+        onChange={phone => setPhone(phone)}
+        inputClass="!w-full  !border !rounded-lg !text-gray-800 dark:!text-white dark:!bg-zinc-800 !border-gray-300 dark:!border-zinc-600"
+        containerClass="w-full"
+        inputStyle={{ width: '100%' }}
+        specialLabel=""
+        enableSearch
+        preferredCountries={['ua', 'pl', 'cz', 'de']}
+      />
+      {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
+
+      {/* СПОСІБ ДОСТАВКИ — КНОПКИ */}
+      <div>
+        <label className="block mb-1 font-semibold text-gray-700 dark:text-white flex items-center gap-2">
+          <FiTruck /> Спосіб доставки
+        </label>
+        <div className="flex flex-wrap gap-2">
+          {[
+            { value: 'nova-poshta', label: 'Нова Пошта' },
+            { value: 'ukr-poshta', label: 'Укрпошта' },
+            { value: 'courier', label: 'Курʼєром' }
+          ].map(({ value, label }) => (
+            <button
+              key={value}
+              type="button"
+              onClick={() => setDeliveryMethod(value)}
+              className={`px-4 py-2 rounded-lg border transition ${
+                deliveryMethod === value
+                  ? 'bg-blue-600 text-white'
+                  : 'bg-gray-100 dark:bg-zinc-700 text-gray-700 dark:text-white'
+              }`}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* МІСТО + ВІДДІЛЕННЯ */}
+      {deliveryMethod === 'nova-poshta' && (
+        <>
+          <div className="mt-4">
+            <label className="block mb-1 font-medium text-gray-700 dark:text-white">Населений пункт</label>
+            <input
+              type="text"
+              value={cityQuery}
+              onChange={handleCityInput}
+              placeholder="Почніть вводити назву"
+              className="w-full p-3 border rounded-lg bg-white dark:bg-zinc-800 text-gray-800 dark:text-white border-gray-300 dark:border-zinc-600"
+            />
+            {filteredCities.length > 0 && (
+              <ul className="mt-2 border rounded shadow bg-white max-h-40 overflow-auto z-10 relative">
+                {filteredCities.map((city, idx) => (
+                  <li
+                    key={idx}
+                    onClick={() => handleCitySelect(city)}
+                    className="p-2 hover:bg-gray-100 cursor-pointer"
+                  >
+                    {city.Present}
+                  </li>
+                ))}
+              </ul>
             )}
           </div>
-  
-          <div>
-            <input
-              value={lastName}
-              onChange={(e) => setLastName(e.target.value)}
-              className="p-2 border rounded w-full bg-white dark:bg-black text-black dark:text-white placeholder-gray-500 dark:placeholder-gray-400 border-gray-300 dark:border-gray-600"
-           
-              placeholder="Прізвище"
-            />
-            {errors.lastName && (
-              <p className="text-red-500 text-sm mt-1">{errors.lastName}</p>
-            )}
-          </div>
-  
-          <div>
-            <input
-              value={patronymic}
-              onChange={(e) => setPatronymic(e.target.value)}
-                 className="p-2 border rounded w-full bg-white dark:bg-black text-black dark:text-white placeholder-gray-500 dark:placeholder-gray-400 border-gray-300 dark:border-gray-600"
-           
-              placeholder="По батькові"
-            />
-          </div>
-        </div>
-  
-        {/* Email */}
-        <div className="mt-4">
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="Email"
-            className="w-full p-2 border rounded bg-white dark:bg-black text-black dark:text-white placeholder-gray-500 dark:placeholder-gray-400 border-gray-300 dark:border-gray-600"
-          />
-          {errors.email && (
-            <p className="text-red-500 text-sm mt-1">{errors.email}</p>
-          )}
-        </div>
-  
-        {/* Телефон */}
-        <div className="mt-4">
-          <input
-            type="tel"
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-            placeholder="Телефон"
-            className="w-full p-2 border rounded bg-white dark:bg-black text-black dark:text-white placeholder-gray-500 dark:placeholder-gray-400 border-gray-300 dark:border-gray-600"
-          />
-          {errors.phone && (
-            <p className="text-red-500 text-sm mt-1">{errors.phone}</p>
-          )}
-        </div>
-  
-        {/* Спосіб доставки */}
-        <div>
-          <label className="block mb-1 font-medium">
-            Спосіб доставки
-          </label>
-          <select
-            value={deliveryMethod}
-            onChange={(e) => setDeliveryMethod(e.target.value)}
-            className="w-full p-2 border rounded bg-white dark:bg-black text-black dark:text-white"
-            required
-          >
-            <option value="">Оберіть спосіб</option>
-            <option value="nova-poshta">Нова Пошта</option>
-            <option value="ukr-poshta">Укрпошта</option>
-            <option value="courier">Курʼєром</option>
-          </select>
-        </div>
-  
-        {/* Місто + Відділення */}
-        {deliveryMethod === 'nova-poshta' && (
-          <>
-            <div>
-              <label className="block mb-1 font-medium">Населений пункт</label>
-              <input
-                type="text"
-                value={cityQuery}
-                onChange={handleCityInput}
-                placeholder="Почніть вводити назву"
-                  className="w-full p-2 border rounded bg-white dark:bg-black text-black dark:text-white border-gray-300 dark:border-gray-600"
 
-            
-              />
-              {filteredCities.length > 0 && (
-                <ul className="mt-2 border rounded shadow bg-white max-h-40 overflow-auto z-10 relative">
-                  {filteredCities.map((city, idx) => (
-                    <li
-                      key={idx}
-                      onClick={() => handleCitySelect(city)}
-                     className="p-2 hover:bg-gray-100 cursor-pointer bg-white dark:bg-black text-black dark:text-white border-gray-300 dark:border-gray-600"
-
-                    >
-                      {city.Present}
-                    </li>
-                  ))}
-                </ul>
-              )}
+          {warehouses.length > 0 && (
+            <div className="mt-4">
+              <label className="block mb-1 font-medium text-gray-700 dark:text-white">Відділення</label>
+              <select
+                className="w-full p-3 border rounded-lg bg-white dark:bg-zinc-800 text-gray-800 dark:text-white border-gray-300 dark:border-zinc-600"
+                value={selectedWarehouseRef}
+                onChange={(e) => {
+                  const selectedWh = warehouses.find(wh => wh.Ref === e.target.value);
+                  setSelectedWarehouseRef(e.target.value);
+                  setSelectedWarehouse(selectedWh?.Description || '');
+                }}
+              >
+                <option value="">Оберіть відділення</option>
+                {warehouses.map((wh) => (
+                  <option key={wh.Ref} value={wh.Ref}>{wh.Description}</option>
+                ))}
+              </select>
             </div>
-  
-            {warehouses.length > 0 && (
-              <div>
-                <label className="block mb-1 font-medium">Відділення</label>
-                <select
-                  className="p-2 hover:bg-gray-100 cursor-pointer bg-white dark:bg-black text-black dark:text-white border-gray-300 dark:border-gray-600"
+          )}
+        </>
+      )}
 
-  value={selectedWarehouseRef}
-  onChange={(e) => {
-    const selectedWh = warehouses.find(wh => wh.Ref === e.target.value);
-    setSelectedWarehouseRef(e.target.value);
-    setSelectedWarehouse(selectedWh?.Description || '');
-  }}
->
-  <option value="">Оберіть відділення</option>
-  {warehouses.map((wh) => (
-    <option key={wh.Ref} value={wh.Ref}>
-      {wh.Description}
-    </option>
-  ))}
-</select>
-{/*}
-                <select
-                  className="w-full p-2 border rounded"
-                  value={selectedWarehouse}
-                  onChange={(e) => setSelectedWarehouse(e.target.value)}
-                >
-                  <option value="">Оберіть відділення</option>
-                  {warehouses.map((wh) => (
-                    <option key={wh.Ref} value={wh.Ref}>
-                      {wh.Description}
-                    </option>
-                  ))}
-                </select>*/}
-              </div>
-            )}
-          </>
-        )}
-  
-        {(deliveryMethod === 'ukr-poshta' || deliveryMethod === 'courier') && (
-          <div>
-            <label className="block mb-1 font-medium">Населений пункт</label>
-            <input
-  type="text"
-  value={cityQuery}
-  onChange={(e) => setCityQuery(e.target.value)}
-  placeholder="Введіть населений пункт вручну"
-  className="w-full p-2 border rounded"
-/>
+      {(deliveryMethod === 'ukr-poshta' || deliveryMethod === 'courier') && (
+        <div className="mt-4">
+          <label className="block mb-1 font-medium text-gray-700 dark:text-white">Населений пункт</label>
+          <input
+            type="text"
+            value={cityQuery}
+            onChange={(e) => setCityQuery(e.target.value)}
+            placeholder="Введіть населений пункт вручну"
+            className="w-full p-3 border rounded-lg bg-white dark:bg-zinc-800 text-gray-800 dark:text-white border-gray-300 dark:border-zinc-600"
+          />
+        </div>
+      )}
 
-      
-          </div>
-        )}
-  
-        {/* Коментар */}
+      {/* КОМЕНТАР */}
+      <div className="mt-4">
+        <label className="block mb-1 font-medium text-gray-700 dark:text-white flex items-center gap-1">
+          <FiMessageSquare /> 
+        </label>
         <textarea
-          rows={4}
+          rows={3}
           value={comment}
           onChange={(e) => setComment(e.target.value)}
           placeholder="Коментар до замовлення"
-            className="w-full p-2 border rounded bg-white dark:bg-black text-black dark:text-white border-gray-300 dark:border-gray-600"
-
+          className="w-full p-3 border rounded-lg bg-white dark:bg-zinc-800 text-gray-800 dark:text-white border-gray-300 dark:border-zinc-600"
         />
-  
-        {/* Оплата8 */}
-        <div>
-          <label className="block mb-1 font-medium"></label>
-          <div className="space-y-2">
-            <label className="flex items-center space-x-2">
-              <input
-                type="radio"
-                name="payment"
-                value="full"
-                checked={paymentType === 'full'}
-                onChange={() => {
-                  setPaymentType('full');
-                  setOnlinePaymentMethod('');
-                }}
-              />
-              <span>Оплата онлайн (повна сума: {total})</span>
-            </label>
-          </div>
+      </div>
+
+      {/* ОПЛАТА */}
+      <div className="space-y-3">
+        <label className="block font-semibold text-gray-700 dark:text-white">Тип оплати</label>
+        <label className="flex items-center space-x-2">
+          <input type="radio" name="payment" value="full" checked={paymentType === 'full'} onChange={() => { setPaymentType('full'); setOnlinePaymentMethod(''); }} />
+          <span className="text-gray-800 dark:text-white">Оплата онлайн (повна сума: {total} грн)</span>
+        </label>
+        <label className="flex items-center space-x-2">
+          <input type="radio" name="payment" value="half" checked={paymentType === 'half'} onChange={() => { setPaymentType('half'); setOnlinePaymentMethod(''); }} />
+          <span className="text-gray-800 dark:text-white">Передоплата 50% ({Math.round(total / 2)} грн)</span>
+        </label>
+      </div>
+
+      {/* ОНЛАЙН ОПЛАТА */}
+      {(paymentType === 'full' || paymentType === 'half') && (
+        <div className="bg-gray-50 dark:bg-zinc-800 p-4 rounded-lg border border-gray-200 dark:border-zinc-600 mt-4">
+          <label className="block font-semibold mb-2 text-gray-700 dark:text-white">Метод онлайн оплати</label>
+          <label className="flex items-center space-x-2">
+            <input
+              type="radio"
+              name="online-method"
+              value="wayforpay"
+              checked={onlinePaymentMethod === 'wayforpay'}
+              onChange={() => setOnlinePaymentMethod('wayforpay')}
+            />
+            <span className="text-gray-800 dark:text-white">WayForPay</span>
+          </label>
         </div>
-   
-        {paymentType === 'full' && (
-          <div
-            className="bg-gray-50 p-4 rounded border dark:bg-black text-black dark:text-white border-gray-300 dark:border-gray-600"
->
-            <label className="block mb-2 font-medium">Спосіб онлайн оплати</label>
-            <div className="space-y-2">
-             {/*} <label className="flex items-center space-x-2">
-                <input
-                  type="radio"
-                  name="online-method"
-                  value="liqpay"
-                  checked={onlinePaymentMethod === 'liqpay'}
-                  onChange={() => setOnlinePaymentMethod('liqpay')}
-                />
-                <span>LiqPay (🇺🇦 UAN)</span>
-              </label>
-              <label className="flex items-center space-x-2">
-  <input
-    type="radio"
-    name="online-method"
-    value="fondy"
-    checked={onlinePaymentMethod === 'fondy'}
-    onChange={() => setOnlinePaymentMethod('fondy')}
-  />
-  <span>Fondy (тест)</span>
-</label>
+      )}
 
- <label className="flex items-center space-x-2">
-                <input
-                  type="radio"
-                  name="online-method"
-                  value="stripe"
-                  checked={onlinePaymentMethod === 'stripe'}
-                  onChange={() => setOnlinePaymentMethod('stripe')}
-                />
-                <span>Stripe (🌍 USD / EUR)</span>
-              </label> */}
-              <label className="flex items-center space-x-2">
-  <input
-    type="radio"
-    name="online-method"
-    value="wayforpay"
-    checked={onlinePaymentMethod === 'wayforpay'}
-    onChange={() => setOnlinePaymentMethod('wayforpay')}
-  />
-  <span>WayForPay</span>
-</label>
-            </div> 
-          </div>
-        )}
-<button
-  type="button"
-  onClick={handleWayforpayClick}
-  className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
->
-  Оплатити замовлення (WayForPay)
-</button>
-
-        {/* Кнопка 
-      
+      {/* КНОПКИ */}
+      <div className="flex flex-wrap gap-4 pt-4">
         <button
-          type="submit"
-          className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-          disabled={!paymentType}
+          type="button"
+          onClick={handleWayforpayClick}
+          className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-xl shadow flex items-center gap-2"
         >
-          Оплатити замовлення
-        </button> */}
-        {/* Кнопка замовити без оплати */}
-<button
-  type="button"
-  onClick={handleOrderWithoutPayment}
-  className="mt-2 ml-4 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
->
- Зв&apos;яжіться з нами
-</button>
-      </form>
+          <FiCreditCard />
+          Оплатити {paymentType === 'half' ? '50%' : 'повну суму'}
+        </button>
+
+        <button
+          type="button"
+          onClick={handleOrderWithoutPayment}
+          className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-xl shadow flex items-center gap-2"
+        >
+          📞 Звʼязатись з менеджером
+        </button>
+      </div>
     </div>
+
+    {/* ПІДСУМОК ЗАМОВЛЕННЯ */}
+    <div className="md:w-1/3 mt-10 md:mt-0 md:sticky md:top-6 bg-white dark:bg-zinc-800 p-4 rounded-xl border border-gray-200 dark:border-zinc-700">
+      <OrderSummary />
+    </div>
+  </div>
+</div>
+
+
   );
-}  
+} 
