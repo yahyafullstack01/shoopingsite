@@ -77,7 +77,7 @@ const [selectedWarehouseRef, setSelectedWarehouseRef] = useState('');
           apiKey,
           modelName: 'AddressGeneral',
           calledMethod: 'getWarehouses',
-          methodProperties: { CityRef: cityRef, Limit: 50 }
+          methodProperties: { CityRef: cityRef, Limit: 400 }
         })
       });
       const data = await response.json();
