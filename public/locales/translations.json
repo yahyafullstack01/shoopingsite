@@ -9,9 +9,11 @@
       "hero": ["Ukrainian women's clothing brand","Ukrainian women's","clothing brand"],
       "about": [
         "ABOUT US:",
-        "LATORE - Ukrainian brand of women's clothing with its own production, with over 10 years of experience, with two showrooms in Ivano-Frankivsk and Kharkiv.",
+        "LATORE is a Ukrainian women's clothing brand with its own production facilities, over 10 years of experience, and two showrooms in Ivano-Frankivsk and Kharkiv.",
         "We are the embodiment of basic models and an original, designer approach to all products.",
-        "Our clothes are a combination of classics and comfort, femininity and harmony. Thanks to our own production, we guarantee the high quality of each product."
+        "We especially emphasize our custom tailoring service for each client — we sew according to individual measurements, ensuring that every piece fits the body perfectly.",
+        "Our clothing is a fusion of classic style and comfort, femininity and harmony. Thanks to our in-house production, we guarantee the high quality of every item.",
+        "Our professional team of seamstresses understands the needs of Ukrainian women and creates garments that easily complement one another."
         
       ],
       "top_products": ["Top Products"],
@@ -326,9 +328,11 @@
       "hero": ["Український бренд жіночого одягу.","Український бренд", "жіночого одягу"],
       "about": [
         "ПPO НАС",
-        "LATORE - український бренд жіночого одягу з власним виробництвом, з досвідом понад 10 років, з двома шоурумами в Івано-Франківську та Харкові.",
-        "Ми - втілення базових моделей та авторського, дизайнерського підходу до всіх виробів.",
-        "Наш одяг - це поєднання класики та комфорту, жіночності та гармонії. Завдяки власному виробництву ми гарантуємо високу якість кожного виробу."
+        "LATORE — український бренд жіночого одягу з власним виробництвом, з досвідом понад 10 років, з двома шоурумами в Івано-Франківську та Харкові.",
+        "Ми — втілення базових моделей та авторського, дизайнерського підходу до всіх виробів.",
+        "Особливо акцентуємо Вашу увагу стосовно індивідуального пошиву для кожного нашого клієнта — відшиваємо за параметрами, що дозволяє будь-якому одягу ідеально сидіти по фігурі.",
+        "Наш одяг — це поєднання класики та комфорту, жіночності та гармонії. Завдяки власному виробництву ми гарантуємо високу якість кожного виробу.",
+        "Професійна команда майстринь знає, що необхідно українським жінкам, та створює речі, які легко поєднуються між собою."
       ],
       "top_products": ["Топ продажів"],
       "Our_Products": ["Наші продукти"],

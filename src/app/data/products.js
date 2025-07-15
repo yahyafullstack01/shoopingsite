@@ -3,7 +3,7 @@ const products = [
     id: 148,
     price: 10,
     isTop: false,
-    isNew: true,
+    isNew: false,
 
     sku: "98800",
     size: "XS S M L XL",
@@ -105,7 +105,7 @@ const products = [
     id: 146,
     price: 3900,
     isTop: false,
-    isNew: true,
+    isNew: false,
     sku: "98799",
     size: "XS S M L XL",
     category: "Dresses",
@@ -386,6 +386,7 @@ const products = [
     id: 140,
     price: 3100,
     isTop: false,
+    isNew: true,
     sku: "67239",
     size: "XS S M L XL",
     category: "Dresses",
@@ -655,6 +656,7 @@ const products = [
     id: 134,
     price: 3500,
     isTop: false,
+    isNew: true,
     sku: "67233",
     size: "XS S M L XL",
     category: "Costumes",
@@ -703,6 +705,8 @@ const products = [
     id: 133,
     price: 2800,
     isTop: false,
+    isNew: true,
+
     sku: "67232",
     size: "XS S M L XL",
     category: "Dresses",
@@ -1105,6 +1109,7 @@ const products = [
     id: 124,
     price: 3500,
     isTop: false,
+    isNew: true,
     sku: "67223",
     size: "XS S M L XL",
     category: "Dresses",
@@ -1148,6 +1153,7 @@ const products = [
     id: 123,
     price: 3900,
     isTop: false,
+    isNew: true,
     sku: "67222",
     size: "XS S M L XL",
     category: "Dresses",
@@ -1602,10 +1608,6 @@ const products = [
     category: "Dresses",
     image: "/Dress/Oversize Linen Dress/1.avif",
     images: [
-      "/Dress/Oversize Linen Dress/2.avif",
-      "/Dress/Oversize Linen Dress/3.avif",
-      "/Dress/Oversize Linen Dress/4.avif",
-      "/Dress/Oversize Linen Dress/5.avif",
       "/Dress/Oversize Linen Dress/6.avif",
       "/Dress/Oversize Linen Dress/7.avif",
       "/Dress/Oversize Linen Dress/8.avif",
@@ -1619,25 +1621,25 @@ const products = [
         category: "Dresses",
         name: "Oversize Linen Dress",
         description: "An oversize dress crafted from a cotton-linen blend, mimicking boiled linen, sourced from a French fashion house in very limited quantities.\nFabric: 50% linen, 50% cotton.",
-        colors: ["blue", "white"]
+        colors: ["white"]
       },
       FR: {
         category: "Robes",
         name: "Robe oversize en lin",
         description: "Une robe oversize confectionnée dans un mélange de coton et lin, imitant le lin bouilli, provenant d'une maison de mode française en quantités très limitées.\nTissu : 50 % lin, 50 % coton.",
-        colors: ["bleu","blanc"]
+        colors: ["blanc"]
       },
       UA: {
         category: "Сукні",
         name: "Сукня лляна oversize",
         description: "Сукня оверсайз із імітації вареного льону з бавовни, виготовлена з тканини французького будинку моди в дуже обмеженій кількості.\nТканина: 50% льон, 50% бавовна.",
-        colors: ["синій","білий"]
+        colors: ["білий"]
       },
       RU: {
         category: "Платья",
         name: "Платье льняное оверсайз",
         description: "Платье оверсайз из имитации вареного льна с хлопком, изготовленное из ткани французского дома моды в очень ограниченном количестве.\nТкань: 50% лен, 50% хлопок.",
-        colors: ["синий","белый"]
+        colors: ["белый"]
       }
     }
   },
@@ -3552,143 +3554,143 @@ const products = [
     }
 },
 
-  {
-    id: 70,
-    price: 3920,
-    isTop: false,
-    sku: "98790",
-    size: "XS S M L XL",
-    category: "Dresses",
-    image: "/Dress/Maribella Dress/1.avif",
-    images: [
-      "/Dress/Maribella Dress/2.avif",
-      {
-        type: "video",
-        src: "/Dress/Maribella Dress/IMG_2330.mp4",
-        poster: "/Dress/Maribella Dress/1.avif"
-      },
-      "/Dress/Maribella Dress/3.avif",
-      "/Dress/Maribella Dress/4.avif",
-      "/Dress/Maribella Dress/5.avif",
-      "/Dress/Maribella Dress/6.avif",
-    ],
-    sizes: ["XS", "S", "M", "L", "XL"],
-    translations: {
-      EN: {
-        category: "Dresses",
-        name: "Maribella Dress",
-        description: "Imitation of washed linen from cotton, sourced from a French fashion house in a very limited quantity. Fabric: 50% linen, 50% cotton.",
-        colors: ["blue"]
-      },
-      FR: {
-        category: "Robes",
-        name: "Robe Maribella en Lin",
-        description: "Imitation de lin lavé en coton, provenant d'une maison de mode française en quantité très limitée. Tissu : 50% lin, 50% coton.",
-        colors: ["bleu"]
-      },
-      UA: {
-        category: "Сукні",
-        name: "Сукня \"Maribella\"",
-        description: "Імітація вареного льону з бавовни з французького будинку моди в дуже обмеженій кількості. Тканина: 50% льон, 50% бавовна.",
-        colors: ["синій"]
-      },
-      RU: {
-        category: "Платья",
-        name: "Платье \"Maribella\"",
-        description: "Имитация вареного льна из хлопка из французского дома моды в очень ограниченном количестве. Ткань: 50% лён, 50% хлопок.",
-        colors: ["синий"]
-      }
-    }
-},
+//   {
+//     id: 70,
+//     price: 3920,
+//     isTop: false,
+//     sku: "98790",
+//     size: "XS S M L XL",
+//     category: "Dresses",
+//     image: "/Dress/Maribella Dress/1.avif",
+//     images: [
+//       "/Dress/Maribella Dress/2.avif",
+//       {
+//         type: "video",
+//         src: "/Dress/Maribella Dress/IMG_2330.mp4",
+//         poster: "/Dress/Maribella Dress/1.avif"
+//       },
+//       "/Dress/Maribella Dress/3.avif",
+//       "/Dress/Maribella Dress/4.avif",
+//       "/Dress/Maribella Dress/5.avif",
+//       "/Dress/Maribella Dress/6.avif",
+//     ],
+//     sizes: ["XS", "S", "M", "L", "XL"],
+//     translations: {
+//       EN: {
+//         category: "Dresses",
+//         name: "Maribella Dress",
+//         description: "Imitation of washed linen from cotton, sourced from a French fashion house in a very limited quantity. Fabric: 50% linen, 50% cotton.",
+//         colors: ["blue"]
+//       },
+//       FR: {
+//         category: "Robes",
+//         name: "Robe Maribella en Lin",
+//         description: "Imitation de lin lavé en coton, provenant d'une maison de mode française en quantité très limitée. Tissu : 50% lin, 50% coton.",
+//         colors: ["bleu"]
+//       },
+//       UA: {
+//         category: "Сукні",
+//         name: "Сукня \"Maribella\"",
+//         description: "Імітація вареного льону з бавовни з французького будинку моди в дуже обмеженій кількості. Тканина: 50% льон, 50% бавовна.",
+//         colors: ["синій"]
+//       },
+//       RU: {
+//         category: "Платья",
+//         name: "Платье \"Maribella\"",
+//         description: "Имитация вареного льна из хлопка из французского дома моды в очень ограниченном количестве. Ткань: 50% лён, 50% хлопок.",
+//         colors: ["синий"]
+//       }
+//     }
+// },
 
 
-  {
-    id: 69,
-    price: 2270,
-    isTop: false,
-    sku: "98789",
-    size: "XS S M L XL",
-    category: "Dresses",
-    image: "/Dress/Linen Sundress/1.avif",
-    images: [
-      "/Dress/Linen Sundress/2.avif",
-      "/Dress/Linen Sundress/3.avif",
-      "/Dress/Linen Sundress/4.avif",
-      "/Dress/Linen Sundress/5.avif"
-    ],
-    sizes: ["XS", "S", "M", "L", "XL"],
-    translations: {
-      EN: {
-        category: "Dresses",
-        name: "Linen Sundress",
-        description: "Imitation of washed linen from cotton, sourced from a French fashion house in a very limited quantity. Fabric: 50% linen, 50% cotton.",
-        colors: ["blue"]
-      },
-      FR: {
-        category: "Robes",
-        name: "Robe Sundress en Lin",
-        description: "Imitation de lin lavé en coton, provenant d'une maison de mode française en quantité très limitée. Tissu : 50% lin, 50% coton.",
-        colors: ["bleu"]
-      },
-      UA: {
-        category: "Сукні",
-        name: "Сарафан лляний",
-        description: "Імітація вареного льону з бавовни з французького будинку моди в дуже обмеженій кількості. Тканина: 50% льон, 50% бавовна.",
-        colors: ["синій"]
-      },
-      RU: {
-        category: "Платья",
-        name: "Льняной сарафан",
-        description: "Имитация вареного льна из хлопка из французского дома моды в очень ограниченном количестве. Ткань: 50% лён, 50% хлопок.",
-        colors: ["синий"]
-      }
-    }
-},
+//   {
+//     id: 69,
+//     price: 2270,
+//     isTop: false,
+//     sku: "98789",
+//     size: "XS S M L XL",
+//     category: "Dresses",
+//     image: "/Dress/Linen Sundress/1.avif",
+//     images: [
+//       "/Dress/Linen Sundress/2.avif",
+//       "/Dress/Linen Sundress/3.avif",
+//       "/Dress/Linen Sundress/4.avif",
+//       "/Dress/Linen Sundress/5.avif"
+//     ],
+//     sizes: ["XS", "S", "M", "L", "XL"],
+//     translations: {
+//       EN: {
+//         category: "Dresses",
+//         name: "Linen Sundress",
+//         description: "Imitation of washed linen from cotton, sourced from a French fashion house in a very limited quantity. Fabric: 50% linen, 50% cotton.",
+//         colors: ["blue"]
+//       },
+//       FR: {
+//         category: "Robes",
+//         name: "Robe Sundress en Lin",
+//         description: "Imitation de lin lavé en coton, provenant d'une maison de mode française en quantité très limitée. Tissu : 50% lin, 50% coton.",
+//         colors: ["bleu"]
+//       },
+//       UA: {
+//         category: "Сукні",
+//         name: "Сарафан лляний",
+//         description: "Імітація вареного льону з бавовни з французького будинку моди в дуже обмеженій кількості. Тканина: 50% льон, 50% бавовна.",
+//         colors: ["синій"]
+//       },
+//       RU: {
+//         category: "Платья",
+//         name: "Льняной сарафан",
+//         description: "Имитация вареного льна из хлопка из французского дома моды в очень ограниченном количестве. Ткань: 50% лён, 50% хлопок.",
+//         colors: ["синий"]
+//       }
+//     }
+// },
 
 
-  {
-    id: 68,
-    price: 3920,
-    isTop: true,
-    sku: "98788",
-    size: "XS S M L XL",
-    category: "Dresses",
-    image: "/Dress/Linen Maxi Dress/1.avif",
-    images: [
-      "/Dress/Linen Maxi Dress/2.avif",
-      "/Dress/Linen Maxi Dress/3.avif",
-      "/Dress/Linen Maxi Dress/4.avif",
-      "/Dress/Linen Maxi Dress/5.avif",
-      "/Dress/Linen Maxi Dress/6.avif"
-    ],
-    sizes: ["XS", "S", "M", "L", "XL"],
-    translations: {
-      EN: {
-        category: "Dresses",
-        name: "Linen Maxi Dress",
-        description: "Imitation of washed linen from cotton, sourced from a French fashion house in a very limited quantity. Fabric: 50% linen, 50% cotton.",
-        colors: ["blue"]
-      },
-      FR: {
-        category: "Robes",
-        name: "Robe Maxi en Lin",
-        description: "Imitation de lin lavé en coton, provenant d'une maison de mode française en quantité très limitée. Tissu : 50% lin, 50% coton.",
-        colors: ["bleu"]
-      },
-      UA: {
-        category: "Сукні",
-        name: "Сукня лляна максі",
-        description: "Імітація вареного льону з бавовни з французького будинку моди в дуже обмеженій кількості. Тканина: 50% льон, 50% бавовна.",
-        colors: ["синій"]
-      },
-      RU: {
-        category: "Платья",
-        name: "Льняное макси платье",
-        description: "Имитация вареного льна из хлопка из французского дома моды в очень ограниченном количестве. Ткань: 50% лён, 50% хлопок.",
-        colors: ["синий"]
-      }
-    }
-},
+//   {
+//     id: 68,
+//     price: 3920,
+//     isTop: true,
+//     sku: "98788",
+//     size: "XS S M L XL",
+//     category: "Dresses",
+//     image: "/Dress/Linen Maxi Dress/1.avif",
+//     images: [
+//       "/Dress/Linen Maxi Dress/2.avif",
+//       "/Dress/Linen Maxi Dress/3.avif",
+//       "/Dress/Linen Maxi Dress/4.avif",
+//       "/Dress/Linen Maxi Dress/5.avif",
+//       "/Dress/Linen Maxi Dress/6.avif"
+//     ],
+//     sizes: ["XS", "S", "M", "L", "XL"],
+//     translations: {
+//       EN: {
+//         category: "Dresses",
+//         name: "Linen Maxi Dress",
+//         description: "Imitation of washed linen from cotton, sourced from a French fashion house in a very limited quantity. Fabric: 50% linen, 50% cotton.",
+//         colors: ["blue"]
+//       },
+//       FR: {
+//         category: "Robes",
+//         name: "Robe Maxi en Lin",
+//         description: "Imitation de lin lavé en coton, provenant d'une maison de mode française en quantité très limitée. Tissu : 50% lin, 50% coton.",
+//         colors: ["bleu"]
+//       },
+//       UA: {
+//         category: "Сукні",
+//         name: "Сукня лляна максі",
+//         description: "Імітація вареного льону з бавовни з французького будинку моди в дуже обмеженій кількості. Тканина: 50% льон, 50% бавовна.",
+//         colors: ["синій"]
+//       },
+//       RU: {
+//         category: "Платья",
+//         name: "Льняное макси платье",
+//         description: "Имитация вареного льна из хлопка из французского дома моды в очень ограниченном количестве. Ткань: 50% лён, 50% хлопок.",
+//         colors: ["синий"]
+//       }
+//     }
+// },
 
 
   {
@@ -3788,18 +3790,18 @@ const products = [
     sku: "98785",
     size: "XS S M L XL",
     category: "Costumes",
-    image: "/Costumes/Cotton Costume/1.avif",
+    image: "/Costumes/Cotton Costume/7.avif",
     images: [
-      "/Costumes/Cotton Costume/2.avif",
-      {
-        type: "video",
-        src: "/Costumes/Cotton Costume/IMG_7202.mp4",
-        poster: "/Costumes/Cotton Costume/1.avif"
-      },
-      "/Costumes/Cotton Costume/3.avif",
-      "/Costumes/Cotton Costume/4.avif",
-      "/Costumes/Cotton Costume/5.avif",
-      "/Costumes/Cotton Costume/6.avif",
+      // "/Costumes/Cotton Costume/2.avif",
+      // {
+      //   type: "video",
+      //   src: "/Costumes/Cotton Costume/IMG_7202.mp4",
+      //   poster: "/Costumes/Cotton Costume/1.avif"
+      // },
+      // "/Costumes/Cotton Costume/3.avif",
+      // "/Costumes/Cotton Costume/4.avif",
+      // "/Costumes/Cotton Costume/5.avif",
+      // "/Costumes/Cotton Costume/6.avif",
       "/Costumes/Cotton Costume/7.avif",
       "/Costumes/Cotton Costume/8.avif",
       "/Costumes/Cotton Costume/9.avif",
@@ -3813,77 +3815,77 @@ const products = [
         category: "Costumes",
         name: "Cotton Costume",
         description: "Imitation of washed linen from cotton, sourced from a French fashion house in a very limited quantity. Fabric: 50% linen, 50% cotton.",
-        colors: ["blue", "milk", "olive"]
+        colors: ["milk", "olive"]
       },
       FR: {
         category: "Costumes",
         name: "Costume en Coton",
         description: "Imitation de lin lavé en coton, provenant d'une maison de mode française en quantité très limitée. Tissu : 50% lin, 50% coton.",
-        colors: ["bleu", "lait", "olive"]
+        colors: ["lait", "olive"]
       },
       UA: {
         category: "Костюми",
         name: "Костюм бавовняний",
         description: "Імітація вареного льону з бавовни з французького будинку моди в дуже обмеженій кількості. Тканина: 50% льон, 50% бавовна.",
-        colors: ["синій", "молоко", "оливка"]
+        colors: ["молоко", "оливка"]
       },
       RU: {
         category: "Костюмы",
         name: "Хлопковый костюм",
         description: "Имитация вареного льна из хлопка из французского дома моды в очень ограниченном количестве. Ткань: 50% лён, 50% хлопок.",
-        colors: ["синий", "молоко", "оливка"]
+        colors: ["молоко", "оливка"]
       }
     }
 },
 
 
-  {
-    id: 64,
-    price: 3160,
-    isTop: false,
-    sku: "98784",
-    size: "XS S M L XL",
-    category: "Dresses",
-    image: "/Dress/Linen Mini Dress/1.avif",
-    images: [
-      "/Dress/Linen Mini Dress/2.avif",
-      "/Dress/Linen Mini Dress/3.avif",
-      "/Dress/Linen Mini Dress/4.avif",
-      "/Dress/Linen Mini Dress/5.avif",
-      "/Dress/Linen Mini Dress/6.avif",
-    ],
-    sizes: ["XS", "S", "M", "L", "XL"],
-    translations: {
-      EN: {
-        category: "Dresses",
-        name: "Linen Mini Dress",
-        description: "Imitation of washed linen from cotton, sourced from a French fashion house in a very limited quantity. Fabric: 50% linen, 50% cotton.",
-        color: "blue",
-        colors: ["blue"]
-      },
-      FR: {
-        category: "Robes",
-        name: "Robe Mini en Lin",
-        description: "Imitation de lin lavé en coton, provenant d'une maison de mode française en quantité très limitée. Tissu : 50% lin, 50% coton.",
-        color: "bleu",
-        colors: ["bleu"]
-      },
-      UA: {
-        category: "Сукні",
-        name: "Сукня лляна міні",
-        description: "Імітація вареного льону з бавовни з французького будинку моди в дуже обмеженій кількості. Тканина: 50% льон, 50% бавовна.",
-        color: "синій",
-        colors: ["синій"]
-      },
-      RU: {
-        category: "Платья",
-        name: "Льняное мини-платье",
-        description: "Имитация вареного льна из хлопка из французского дома моды в очень ограниченном количестве. Ткань: 50% лён, 50% хлопок.",
-        color: "синий",
-        colors: ["синий"]
-      }
-    }
-},
+//   {
+//     id: 64,
+//     price: 3160,
+//     isTop: false,
+//     sku: "98784",
+//     size: "XS S M L XL",
+//     category: "Dresses",
+//     image: "/Dress/Linen Mini Dress/1.avif",
+//     images: [
+//       "/Dress/Linen Mini Dress/2.avif",
+//       "/Dress/Linen Mini Dress/3.avif",
+//       "/Dress/Linen Mini Dress/4.avif",
+//       "/Dress/Linen Mini Dress/5.avif",
+//       "/Dress/Linen Mini Dress/6.avif",
+//     ],
+//     sizes: ["XS", "S", "M", "L", "XL"],
+//     translations: {
+//       EN: {
+//         category: "Dresses",
+//         name: "Linen Mini Dress",
+//         description: "Imitation of washed linen from cotton, sourced from a French fashion house in a very limited quantity. Fabric: 50% linen, 50% cotton.",
+//         color: "blue",
+//         colors: ["blue"]
+//       },
+//       FR: {
+//         category: "Robes",
+//         name: "Robe Mini en Lin",
+//         description: "Imitation de lin lavé en coton, provenant d'une maison de mode française en quantité très limitée. Tissu : 50% lin, 50% coton.",
+//         color: "bleu",
+//         colors: ["bleu"]
+//       },
+//       UA: {
+//         category: "Сукні",
+//         name: "Сукня лляна міні",
+//         description: "Імітація вареного льону з бавовни з французького будинку моди в дуже обмеженій кількості. Тканина: 50% льон, 50% бавовна.",
+//         color: "синій",
+//         colors: ["синій"]
+//       },
+//       RU: {
+//         category: "Платья",
+//         name: "Льняное мини-платье",
+//         description: "Имитация вареного льна из хлопка из французского дома моды в очень ограниченном количестве. Ткань: 50% лён, 50% хлопок.",
+//         color: "синий",
+//         colors: ["синий"]
+//       }
+//     }
+// },
 
   {
     id: 63,
