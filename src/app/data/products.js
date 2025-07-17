@@ -122,7 +122,15 @@ const products = [
       EN: {
         category: "Dresses",
         name: "Flora Dress",
-        description: "Long-fiber muslin made of 100% cotton. Light and soft to the touch",
+description: [
+  "The 'Flora' dress embodies femininity, tenderness, and natural freedom.",
+  "Perfect for nature walks, summer travels, or slow living style photoshoots.",
+  "Fabric: long-staple muslin made of 100% cotton.",
+  "Details:",
+  "• Loose cut with an elegant silhouette — emphasizes natural grace",
+  "• Accents with light golden print — like sunshine among the grass",
+  "• Front buttons add a touch of boho charm"
+],
         colors: ["one color"]
       },
       FR: {
@@ -134,7 +142,15 @@ const products = [
       UA: {
         category: "Сукні",
         name: "Сукня «Flora»",
-        description: "Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик",
+description: [
+  "Сукня «Flora» — уособлення жіночності, ніжності та природної свободи.",
+  "Ідеальна для прогулянок у природі, літніх подорожей чи фотосесій у стилі slow living.",
+  "Тканина: довговолокняний муслін зі 100% бавовни.",
+  "Деталі:",
+  "• Вільний крій з витонченим силуетом — підкреслює природну грацію",
+  "• Акценти зі світлим золотим принтом — мов сонячне сяйво серед трав",
+  "• Ґудзики спереду додають легкого бохо-шарму"
+],
         colors: ["один колір"]
       },
       RU: {
@@ -167,7 +183,15 @@ const products = [
     EN: {
       category: "Dresses",
       name: "Hemp Printed Dress",
-      description: "Double-layer muslin, 30% hemp, 70% cotton. One of the most eco-friendly fabrics as it is grown without pesticides.",
+description: [
+  "A multi-layered maxi dress with delicate prints on the chest and skirt.",
+  "Perfect for the summer season thanks to the fabric's natural properties.",
+  "Fabric: double-layered muslin, 30% hemp, 70% cotton. One of the most eco-friendly textiles as it is grown without pesticides.",
+  "Details:",
+  "• Voluminous sleeves add a charming touch",
+  "• Geometric patterns on the chest and hem — a stylish highlight",
+  "• Natural fabric feels pleasant on the skin and is environmentally friendly"
+],
       colors: ["hemp"]
     },
     FR: {
@@ -179,7 +203,15 @@ const products = [
     UA: {
       category: "Сукні",
       name: "Конопляна сукня із принтом",
-      description: "Тканина: двошаровий муслін, 30% коноплі, 70% бавовни. Це одна з найекологічніших тканин, бо виращується без пестицидів.",
+description: [
+  "Багатошарова сукня максі довжини із ніжним принтом на грудях та спідниці.",
+  "Ідеально підійде на літній сезон завдяки властивостям тканини.",
+  "Тканина: двошаровий муслін, 30% коноплі, 70% бавовни. Це одна з найекологічніших тканин, бо вирощується без пестицидів.",
+  "Деталі:",
+  "• Об’ємні рукави додають образу шарму",
+  "• Геометричні візерунки на грудях та подолі — стильна родзинка",
+  "• Натуральна тканина приємна до тіла та екологічна"
+],
       colors: ["конопляний"]
     },
     RU: {
@@ -1306,7 +1338,15 @@ const products = [
         EN: {
             category: "Dresses",
             name: "Cotton Dress",
-            description: "A maxi dress made from natural cotton. Unique cut with lantern sleeves and tie details.\nFabric: 100% cotton.",
+description: [
+  "Our new dress in a delicate lemon shade is a blend of femininity, lightness, and style.",
+  "Pair it with cowboy boots or sandals — and be stunning any day!",
+  "Fabric: 100% cotton.",
+  "Details:",
+  "• Puff sleeves with ties",
+  "• Perfect length for spring and summer walks",
+  "• Oversized fit"
+],
             colors: ["lemon", "white", "black"]
         },
         FR: {
@@ -1318,7 +1358,15 @@ const products = [
         UA: {
             category: "Сукні",
             name: "Бавовняна сукня",
-            description: "Сукня максі з натуральної бавовни. Незвичного крою із рукавами ліхтариками та зав‘язками.\nТканина: 100% бавовна.",
+description: [
+  "Наша нова сукня у ніжному лимонному відтінку — це поєднання жіночності, легкості та стилю.",
+  "Поєднуй із ковбойськими чоботами або босоніжками — і будь неперевершеною у будь-який день !",
+  "Тканина: 100% бавовна.",
+  "Деталі:",
+  "• Рукава ліхтарики із завʼязками",
+  "• Ідеальна довжина для весняних та літніх прогулянок",
+  "• Оверсайз фасон"
+],
             colors: ["лимонний", "білий", "чорний"]
         },
         RU: {
@@ -1349,7 +1397,15 @@ const products = [
         EN: {
             category: "Dresses",
             name: "Lily Dress",
-            description: "A dress crafted from lightweight cotton with delicate lace embroidery.\nFabric: 95% cotton, 5% elastane. Proshva - a light, mostly solid-colored cotton fabric with distinctive lace embroidery.",
+description: [
+  "This broderie dress in a delicate light blue shade embodies femininity and sophistication.",
+  "Pairs perfectly with both sandals and ballet flats, ideal for spring and summer.",
+  "Fabric: 95% cotton, 5% elastane. Broderie is a lightweight, mostly solid cotton fabric with characteristic lace embroidery.",
+  "Details:",
+  "• Openwork fabric",
+  "• Deep V-neckline and delicate buttons along the entire length",
+  "• Semi-fitted silhouette"
+],
             colors: ["light blue"]
         },
         FR: {
@@ -1361,7 +1417,16 @@ const products = [
         UA: {
             category: "Сукні",
             name: "Сукня «Lily»",
-            description: "Сукня з легкої бавовняної тканини з делікатною мереживною вишивкою.\nТканина: 95% бавовна, 5% еластан. Прошва - легка, переважно однотонна, бавовняна тканина з характерною мереживною вишивкою.",
+description: [
+  "Ця сукня з прошви у ніжно-блакитному відтінку — уособлення жіночності та витонченості.",
+  "Поєднується і з босоніжками, і з балетками, ідеальна для весни та літа.",
+  "Тканина: 95% бавовна, 5% еластан. Прошва - легка, переважно однотонна, бавовняна тканина з характерною мереживною вишивкою.",
+  "Деталі:",
+  "• Ажурна тканина",
+  "• Глибоке V-декольте та ніжні ґудзики по всій довжині",
+  "• Напівприталений силует"
+],
+
             colors: ["блакитний"]
         },
         RU: {
@@ -1402,7 +1467,15 @@ const products = [
         EN: {
             category: "Dresses",
             name: "Santorini Dress",
-            description: "A dress crafted from lightweight cotton with delicate lace embroidery.\nFabric: 95% cotton, 5% elastane. Proshva - a light, mostly solid-colored cotton fabric with distinctive lace embroidery.",
+description: [
+  "Our new arrival — a luxurious broderie dress that perfectly combines romance and comfort.",
+  "It features a feminine silhouette that highlights the figure.",
+  "Fabric: 95% cotton, 5% elastane. Broderie is a lightweight, mostly solid cotton fabric with characteristic lace embroidery.",
+  "Details:",
+  "• Deep V-neckline",
+  "• Light ruffles on the shoulders",
+  "• Flared maxi skirt"
+],
             colors: ["fuchsia", "black", "White"]
         },
         FR: {
@@ -1414,7 +1487,15 @@ const products = [
         UA: {
             category: "Сукні",
             name: "Сукня «Santorini»",
-            description: "Сукня з легкої бавовняної тканини з делікатною мереживною вишивкою.\nТканина: 95% бавовна, 5% еластан. Прошва - легка, переважно однотонна, бавовняна тканина з характерною мереживною вишивкою.",
+description: [
+  "Наша новинка — розкішна сукня з прошви, яка ідеально поєднує романтичність і комфорт.",
+  "Має жіночний силует, який підкреслює фігуру.",
+  "Тканина: 95% бавовна, 5% еластан. Прошва - легка, переважно однотонна, бавовняна тканина з характерною мереживною вишивкою.",
+  "Деталі:",
+  "• Глибокий V-виріз",
+  "• Легкі волани на плечах",
+  "• Розкльошена спідниця максі"
+],
             colors: ["фуксія", "чорна", "білий"]
         },
         RU: {
@@ -1445,7 +1526,15 @@ const products = [
       EN: {
         category: "Dresses",
         name: "Elodie Dress",
-        description: "A dress crafted from long-fiber muslin.\nFabric: 100% cotton muslin, light and soft to the touch.",
+description: [
+  "This powder-pink muslin dress is a perfect choice for a romantic date, city stroll, or a cozy meeting with friends.",
+  "Puffy sleeves add charm, while the ties on the neckline bring a touch of flirtiness.",
+  "Fabric: Long-staple muslin made of 100% cotton. Light and soft to the touch.",
+  "Details:",
+  "• Delicate lace and soft buttons",
+  "• Light texture",
+  "• Puffy sleeves and ties at the chest"
+],
         colors: ["powder"]
       },
       FR: {
@@ -1457,7 +1546,15 @@ const products = [
       UA: {
         category: "Сукні",
         name: "Сукня 'Elodie'",
-        description: "Сукня з довговолокняного мусліну.\nТканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+description: [
+  "Ця пудрово-рожева сукня з мусліну — ідеальний варіант для романтичного побачення, прогулянки містом або затишної зустрічі з подругами.",
+  "Пишні рукави додають шарму, а зав’язки на декольте — легкого флірту.",
+  "Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+  "Деталі:",
+  "• Делікатне мереживо та м’які ґудзики",
+  "• Легка текстура",
+  "• Пишні рукави та завʼязки на грудях"
+],
         colors: ["пудра"]
       },
       RU: {
@@ -1532,7 +1629,14 @@ const products = [
       EN: {
         category: "Dresses",
         name: "Francesca Dress",
-        description: "A dress featuring delicate embroidery.\nFabric: 95% cotton, 5% elastane. Embroidered cotton fabric with characteristic lace-like stitching.",
+description: [
+  "Bright green, light, and feminine — the perfect choice for walks, dates, or travels.",
+  "Fabric: 95% cotton, 5% elastane. Broderie anglaise — a light, mostly solid cotton fabric with distinctive lace embroidery.",
+  "Details:",
+  "• Elegant midi length",
+  "• Fitted silhouette",
+  "• Delicate buttons"
+],
         colors: ["emerald"]
       },
       FR: {
@@ -1544,7 +1648,14 @@ const products = [
       UA: {
         category: "Сукні",
         name: "Сукня «Francesca»",
-        description: "Сукня з делікатною вишивкою.\nТканина: 95% бавовна, 5% еластан. Прошва - легка, переважно однотонна, бавовняна тканина з характерною мереживною вишивкою.",
+description: [
+  "Яскраво-зелена, легка та жіночна — ідеальний варіант для прогулянок, побачень або подорожей.",
+  "Тканина: 95% бавовна, 5% еластан. Прошва — легка, переважно однотонна, бавовняна тканина з характерною мереживною вишивкою.",
+  "Деталі:",
+  "• Елегантна довжина міді",
+  "• Приталений силует",
+  "• Витончені ґудзики"
+],
         colors: ["смарагдова"]
       },
       RU: {

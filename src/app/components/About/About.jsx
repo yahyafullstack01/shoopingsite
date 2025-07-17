@@ -35,6 +35,12 @@ export default function About() {
               <p className="mt-4 text-gray dark:text-gray-300 text-base lg:text-2xl font-extrabold">
               {menuItems[3]}
               </p>
+              <p className="mt-4 text-gray dark:text-gray-300 text-base lg:text-2xl font-extrabold">
+              {menuItems[4]}
+              </p>
+              <p className="mt-4 text-gray dark:text-gray-300 text-base lg:text-2xl font-extrabold">
+              {menuItems[5]}
+              </p>              
           </div>
         </div>
 
@@ -67,6 +73,15 @@ export default function About() {
               <p className="text-gray font-extrabold dark:text-white text-xs sm:text-sm md:text-base lg:text-xl  mt-2">
               {menuItems[2]}
               </p>
+              <p className="mt-4 text-gray dark:text-gray-300 text-base lg:text-2xl font-extrabold">
+              {menuItems[3]}
+              </p>
+              {/* <p className="mt-4 text-gray dark:text-gray-300 text-base lg:text-2xl font-extrabold">
+              {menuItems[4]}
+              </p>  
+              <p className="mt-4 text-gray dark:text-gray-300 text-base lg:text-2xl font-extrabold">
+              {menuItems[5]}
+              </p>                       */}
             </div>
           </div>
         </div>
