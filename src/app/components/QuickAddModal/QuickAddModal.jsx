@@ -158,7 +158,7 @@ export default function QuickAddModal({ product, onClose, onAddToCart }) {
             onClick={handleAddToCartClick}
             className="px-3 py-2 bg-green-600 text-white rounded hover:bg-green-700 text-sm sm:text-base"
           >
-            Додати в корзину
+            ДОДАТИ В КОШИК
           </button>
         </div>
       </div>

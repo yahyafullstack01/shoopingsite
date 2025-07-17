@@ -128,7 +128,7 @@ const NewArrivalsInfo = ({ products }) => {
                   }}
                   className="px-4 py-2 text-sm bg-green-600 hover:bg-green-700 text-white rounded transition"
                 >
-                  Додати в корзину
+                  ДОДАТИ В КОШИК
                 </button>
                 <p className="text-[11px] text-gray-500 dark:text-gray-400">
                   Натисніть на фото, щоб переглянути деталі

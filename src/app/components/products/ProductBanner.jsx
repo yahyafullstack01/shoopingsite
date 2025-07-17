@@ -84,8 +84,9 @@ const ProductBanner = ({
   return (
     <>
       <div className="fixed inset-0 bg-black bg-opacity-90 flex justify-center items-center z-50">
+      
         <div className="relative w-full h-full max-w-5xl bg-gray-300 dark:bg-black rounded-lg shadow-lg overflow-y-auto">
-          <button
+       <button
             className="absolute top-4 right-4 text-5xl text-black dark:text-white hover:text-red-500 transition z-[200]"
             onClick={onClose}
           >

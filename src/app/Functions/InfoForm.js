@@ -203,7 +203,7 @@ const handleContactClick = (e) => {
           onClick={handleAddToCartClick}
           className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition"
         >
-          Додати в корзину
+          ДОДАТИ В КОШИК
         </button>  
         <button
           onClick={handleContactClick}
@@ -213,16 +213,33 @@ const handleContactClick = (e) => {
         </button>
       </div>
 
-   
 
       
       <div className="mt-10">
         <h2 className="text-lg md:text-xl font-semibold text-black dark:text-white mb-4 text-center md:text-left">
           {menuItems[7] || "PRODUCT INFO"}
         </h2>
-        <p className="text-gray-500 dark:text-gray-400 text-sm md:text-base text-center md:text-left">
-          {translatedDescription}
-        </p>
+        <div className="text-gray-500 dark:text-gray-400 text-sm md:text-base text-left space-y-2">
+  {Array.isArray(translatedDescription) && (
+    <>
+      {translatedDescription.map((line, index) => {
+        if (line.toLowerCase().includes("details")) {
+          return <p key={index} className="font-semibold">{line}</p>;
+        }
+
+        if (line.trim().startsWith("·")) {
+          return (
+            <ul key={index} className="list-disc list-inside ml-4">
+              <li>{line.replace("·", "").trim()}</li>
+            </ul>
+          );
+        }
+
+        return <p key={index}>{line}</p>;
+      })}
+    </>
+  )}
+</div>
       </div>
     </div>
   );
