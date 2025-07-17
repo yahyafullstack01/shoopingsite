@@ -1608,11 +1608,11 @@ const products = [
     category: "Dresses",
     image: "/Dress/Oversize Linen Dress/1.avif",
     images: [
-      "/Dress/Oversize Linen Dress/6.avif",
-      "/Dress/Oversize Linen Dress/7.avif",
-      "/Dress/Oversize Linen Dress/8.avif",
-      "/Dress/Oversize Linen Dress/9.avif",
-      "/Dress/Oversize Linen Dress/10.avif"
+      "/Dress/Oversize Linen Dress/1.avif",
+      "/Dress/Oversize Linen Dress/2.avif",
+      "/Dress/Oversize Linen Dress/3.avif",
+      "/Dress/Oversize Linen Dress/4.avif",
+      "/Dress/Oversize Linen Dress/5.avif"
 
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
