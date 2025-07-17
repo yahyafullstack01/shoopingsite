@@ -249,7 +249,14 @@ description: [
       EN: {
         category: "Dresses",
         name: "Patricia Dress",
-        description: "Fabric: natural cotton, soft and comfortable. Pleasant to the touch and for the body.",
+description: [
+  "This is the kind of look you want to wear on a date, a city stroll, or a morning coffee with a friend.",
+  "A dress that boosts your confidence — even if you're just stepping out for ice cream.",
+  "Fabric: 100% natural cotton, soft and comfortable. Gentle to the touch and skin-friendly.",
+  "Details:",
+  "• Stylish patch pockets",
+  "• Comfortable belt and maxi length"
+],
         colors: ["pink", "black"]
       },
       FR: {
@@ -261,7 +268,14 @@ description: [
       UA: {
         category: "Сукні",
         name: "Сукня \"Patricia\"",
-        description: "Тканина: натуральний коттон, м'який і комфортний. Приємний на дотик і для тіла",
+description: [
+  "Це саме той образ, у якому хочеться йти на побачення, прогулянку містом чи ранкову каву з подругою.",
+  "Сукня, яка додає впевненості, навіть якщо ти просто виходиш за морозивом.",
+  "Тканина: 100% натуральний коттон, м'який і комфортний. Приємний на дотик і для тіла.",
+  "Деталі:",
+  "• Стильні накладні кишені",
+  "• Зручний пояс та комфортна довжина максі"
+],
         colors: ["рожевий", "чорний"]
       },
       RU: {
@@ -293,7 +307,15 @@ description: [
       EN: {
         category: "Dresses",
         name: "Becca Linen Dress",
-        description: "Fabric: 100% natural linen, soft and comfortable. Doesn’t itch.",
+description: [
+  "This silhouette is designed to highlight your figure, accentuate the waist, and bring everyday comfort.",
+  "Effortless elegance and a refined fit — for a special mood with zero effort.",
+  "Fabric: 100% natural linen, soft and comfortable. Not scratchy.",
+  "Details:",
+  "• Natural linen that holds its shape beautifully",
+  "• Neat pleats and delicate side buttons",
+  "• Versatile midi length that always looks appropriate"
+],
         colors: ["white"]
       },
       FR: {
@@ -305,7 +327,15 @@ description: [
       UA: {
         category: "Сукні",
         name: "Сукня \"Becca\" лляна",
-        description: "Тканина: 100% натуральний льон, м'який і комфортний. Не колеться",
+description: [
+  "Цей фасон створений, щоб підкреслити твою фігуру, зробити акцент на талії й подарувати комфорт щодня.",
+  "Легка елегантність і витончена посадка — для особливого настрою без зайвих зусиль.",
+  "Тканина: 100% натуральний льон, м'який і комфортний. Не колеться.",
+  "Деталі:",
+  "• Натуральний льон, який чудово тримає форму",
+  "• Акуратні складки та ніжні ґудзики з боків",
+  "• Універсальна міді-довжина, що завжди виглядає доречно"
+],
         colors: ["білий"]
       },
       RU: {
@@ -342,7 +372,14 @@ description: [
         EN: {
             category: "Dresses",
             name: "Kylie Dress",
-            description: "A dress made from natural cotton, soft and comfortable. Pleasant to the touch and for the body.\nFabric: 100% cotton.",
+description: [
+  "Sunny, light, and elegant — made of natural cotton, this is the perfect outfit for a date, a city walk, or a morning coffee with a friend.",
+  "Fabric: 100% cotton. The dress is soft and comfortable, pleasant to the touch and skin-friendly.",
+  "Details:",
+  "• Lifting corset at the back for a perfect fit",
+  "• Gentle gathering at the bust for a soft silhouette",
+  "• A-line cut that highlights the waist and allows freedom of movement"
+],
             colors: ["yellow","SkyBlue"]
         },
         FR: {
@@ -354,7 +391,14 @@ description: [
         UA: {
             category: "Сукні",
             name: "Сукня «Kylie»",
-            description: "Сукня з натурального коттону, м'яка і комфортна. Приємна на дотик і для тіла.\nТканина: 100% бавовна.",
+description: [
+  "Сонячна, легка й елегантна з натурального котону — це саме той образ, у якому хочеться йти на побачення, прогулянку містом чи ранкову каву з подругою.",
+  "Тканина: 100% бавовна. Сукня з натурального коттону, м'яка і комфортна. Приємна на дотик і для тіла.",
+  "Деталі:",
+  "• Ліфтинг-корсет на спині з ідеальною посадкою",
+  "• М’який збір на грудях для ніжного силуету",
+  "• А-силует, що підкреслює талію і дарує свободу рухів"
+],
             colors: ["жовтий","блакитний"]
         },
         RU: {
@@ -390,7 +434,14 @@ description: [
         EN: {
             category: "Dresses",
             name: "Skyler Dress",
-            description: "A dress made from natural cotton, soft and comfortable. Pleasant to the touch and for the body.\nFabric: 100% cotton.",
+description: [
+  "A natural cotton dress that wins hearts from the very first step! Designed to offer freedom of movement and a feeling of confidence.",
+  "Fabric: 100% cotton. Soft and comfortable, gentle on the skin and pleasant to the touch.",
+  "Details:",
+  "• Perfect wrap cut that highlights the waist",
+  "• Large patch pockets",
+  "• Adjustable tie for your ideal fit"
+],
             colors: ["light blue","Black"]
         },
         FR: {
@@ -402,7 +453,14 @@ description: [
         UA: {
             category: "Сукні",
             name: "Сукня «Skyler»",
-            description: "Сукня з натурального коттону, м'яка і комфортна. Приємна на дотик і для тіла.\nТканина: 100% бавовна.",
+description: [
+  "Сукня з натурального котону, яка підкорює з першого кроку! Вона створена для того, щоб дарувати свободу руху і почуття впевненості.",
+  "Тканина: 100% бавовна. Сукня з натурального коттону, м'яка і комфортна. Приємна на дотик і для тіла.",
+  "Деталі:",
+  "• Ідеальний крій на запах, що підкреслює талію",
+  "• Великі накладні кишені",
+  "• Можна завʼязувати як вам зручно"
+],
             colors: ["блакитний","чорний"]
         },
         RU: {
@@ -446,7 +504,14 @@ description: [
         EN: {
             category: "Dresses",
             name: "Alison Dress",
-            description: "A dress made from 100% natural linen, ensuring excellent breathability for the body.\nFabric: 100% linen.",
+description: [
+  "Elegant, minimalist yet full of character — this wrap dress is made for those who choose naturalness, comfort, and style in one look.",
+  "Fabric: 100% natural linen. Soft and comfortable. Not itchy.",
+  "Details:",
+  "• Breathable linen keeps you cool in the heat",
+  "• Wrap silhouette highlights the waist and adds femininity",
+  "• Perfect choice for a city stroll or a dinner on the terrace"
+],
             colors: ["white", "pink", "lemon"]
         },
         FR: {
@@ -458,7 +523,14 @@ description: [
         UA: {
             category: "Сукні",
             name: "Сукня «Alison»",
-            description: "Сукня з 100% натурального льону, він забезпечує безмежний доступ повітря до тіла.\nТканина: 100% льон.",
+description: [
+  "Елегантна, стримана, але з характером — ця сукня на запах створена для тих, хто обирає натуральність, комфорт і стиль в одному образі.",
+  "Тканина: 100% натуральний льон, м'який і комфортний. Не колеться.",
+  "Деталі:",
+  "• Лляна тканина дихає та дарує прохолоду у спеку",
+  "• Силует на запах підкреслює талію та додає жіночності",
+  "• Ідеальний варіант як для прогулянки містом, так і для вечері на терасі"
+],
             colors: ["білий","рожевий", "лимонний"]
         },
         RU: {
@@ -489,7 +561,14 @@ description: [
         EN: {
             category: "Dresses",
             name: "Becca Dress",
-            description: "A dress made from natural cotton, soft and comfortable. Pleasant to the touch and for the body.\nFabric: 100% cotton.",
+description: [
+  "Perfect silhouette, soft fit along the figure, and an emphasis on the waist — all so you feel confident and elegant any day!",
+  "Fabric: 100% cotton. Dress made of natural cotton, soft and comfortable. Pleasant to touch and to wear.",
+  "Details:",
+  "• Dense cotton that holds its shape",
+  "• Delicate pleats and refined buttons on the sides",
+  "• Midi length — a classic that never lets you down"
+],
             colors: ["beige"]
         },
         FR: {
@@ -501,7 +580,14 @@ description: [
         UA: {
             category: "Сукні",
             name: "Сукня «Becca»",
-            description: "Сукня з натурального коттону, м'яка і комфортна. Приємна на дотик і для тіла.\nТканина: 100% бавовна.",
+description: [
+  "Ідеальний силует, м’яка посадка по фігурі та акцент на талії — усе для того, щоб ти почувалася впевненою і вишуканою в будь-який день!",
+  "Тканина: 100% бавовна. Сукня з натурального коттону, м'яка і комфортна. Приємна на дотик і для тіла.",
+  "Деталі:",
+  "• Щільний котон, що тримає форму",
+  "• Витончені складки й делікатні ґудзики з боків",
+  "• Довжина міді — класика, що ніколи не підведе"
+],
             colors: ["бежевий"]
         },
         RU: {
@@ -532,7 +618,14 @@ description: [
         EN: {
             category: "Dresses",
             name: "Tricolor Dress",
-            description: "A dress crafted from long-fiber muslin with a tricolor design.\nFabric: 100% cotton muslin, light and soft to the touch.",
+description: [
+  "Our new multi-layered dress is a combination of tenderness, comfort, and refined style. Perfect for walks, travels, and romantic meetings.",
+  "Fabric: long-staple muslin made of 100% cotton. Light and soft to the touch.",
+  "Details:",
+  "• Three-color design",
+  "• Delicate lace inserts",
+  "• Light accent ruffle"
+],
             colors: ["tricolor"]
         },
         FR: {
@@ -544,7 +637,14 @@ description: [
         UA: {
             category: "Сукні",
             name: "Сукня 3-х кольорова",
-            description: "Сукня з довговолокняного мусліну з триколірним дизайном.\nТканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+description: [
+  "Наша нова багатошарова сукня — це поєднання ніжності, комфорту та витонченого стилю. Ідеально підходить для прогулянок, подорожей і романтичних зустрічей.",
+  "Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+  "Деталі:",
+  "• 3-х кольоровий дизайн",
+  "• Делікатні мереживні вставки",
+  "• Легка акцентна оборка"
+],
             colors: ["триколірний"]
         },
         RU: {
@@ -754,7 +854,14 @@ description: [
         EN: {
             category: "Dresses",
             name: "Hemp Mini Dress",
-            description: "A mini dress made from double-layer muslin, 30% hemp, 70% cotton.\nOne of the most eco-friendly fabrics, grown without pesticides.",
+description: [
+  "The hemp muslin dress is about freedom, a touch of nature, and the aesthetics of simplicity. The natural fabric gently embraces the body, allowing the skin to breathe even on the hottest summer days.",
+  "Fabric: Double-layered muslin dress, 30% hemp, 70% cotton. One of the most eco-friendly fabrics, grown without pesticides.",
+  "Details:",
+  "• Delicate gathering on the chest",
+  "• Playful handmade buttons",
+  "• Comfortable fit that does not restrict movement"
+],
             colors: ["hemp"]
         },
         FR: {
@@ -766,7 +873,14 @@ description: [
         UA: {
             category: "Сукні",
             name: "Конопляна сукня mini",
-            description: "Сукня з двошарового мусліну, 30% коноплі, 70% бавовни.\nЦе одна з найекологічніших тканин, бо виращується без пестицидів.",
+description: [
+  "Сукня з конопляного мусліну — це про свободу, дотик природи та естетику простоти. Натуральна тканина ніжно обіймає тіло, дозволяючи шкірі дихати навіть у найспекотніші літні дні.",
+  "Тканина: Сукня з двошарового мусліну, 30% коноплі, 70% бавовни. Це одна з найекологічніших тканин, бо виращується без пестицидів.",
+  "Деталі:",
+  "• Делікатна збірка на грудях",
+  "• Кокетливі ґудзики ручної роботи",
+  "• Комфортний фасон, що не сковує рухів"
+],
             colors: ["конопляний"]
         },
         RU: {
@@ -797,7 +911,15 @@ description: [
         EN: {
             category: "Dresses",
             name: "Elodie Maxi Dress",
-            description: "A maxi dress crafted from long-fiber muslin.\nFabric: 100% cotton muslin, light and soft to the touch.",
+description: [
+  "This is a true symbol of femininity and harmony with nature. Made from natural fabric that breathes with you, it delicately emphasizes beauty.",
+  "Perfect for walks, picnics, and moments you want to remember.",
+  "Fabric: long-staple muslin made from 100% cotton. Light and soft to the touch.",
+  "Details:",
+  "• Romantic sleeves",
+  "• Elegant lace-up on the chest",
+  "• Flowing silhouette"
+],
             colors: ["milk"]
         },
         FR: {
@@ -809,7 +931,15 @@ description: [
         UA: {
             category: "Сукні",
             name: "Сукня «Elodie» maxi",
-            description: "Сукня з довговолокняного мусліну.\nТканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+description: [
+  "Це справжній символ жіночності та гармонії з природою. Вона створена з натуральної тканини, яка дихає разом із вами, і підкреслює красу в найделікатніший спосіб.",
+  "Для прогулянок, пікніків та моментів, які хочеться запам’ятати.",
+  "Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+  "Деталі:",
+  "• Романтичні рукава",
+  "• Елегантна шнурівка на грудях",
+  "• Струмуючий силует"
+],
             colors: ["молоко"]
         },
         RU: {
@@ -844,7 +974,14 @@ description: [
         EN: {
             category: "Dresses",
             name: "Coton Dress",
-            description: "A dress made from natural cotton, soft and comfortable. Pleasant to the touch and for the body.\nFabric: 100% cotton.",
+description: [
+  "Cotton dresses for harmony with nature. When you want calmness, lightness, and femininity.",
+  "Fabric: 100% cotton. Dress made of natural cotton, soft and comfortable. Pleasant to the touch and for the body.",
+  "Details:",
+  "• Perfect maxi length",
+  "• Buttons along the entire length",
+  "• Delicate ties on the sleeves"
+],
             colors: ["eucalyptus", "white"]
         },
         FR: {
@@ -856,7 +993,14 @@ description: [
         UA: {
             category: "Сукні",
             name: "Сукня «Coton»",
-            description: "Сукня з натурального коттону, м'яка і комфортна. Приємна на дотик і для тіла.\nТканина: 100% бавовна.",
+description: [
+  "Котон-сукні для гармонії з природою. Коли хочеться спокою, легкості та жіночності.",
+  "Тканина: 100% бавовна. Сукня з натурального коттону, м'яка і комфортна. Приємна на дотик і для тіла.",
+  "Деталі:",
+  "• Ідеальна довжина максі",
+  "• Ґудзики по всій довжині",
+  "• Ніжні завʼязки на рукавах"
+],
             colors: ["евкаліпт", "білий"]
         },
         RU: {
@@ -898,7 +1042,15 @@ description: [
         EN: {
             category: "Dresses",
             name: "Bahroma Dress",
-            description: "A dress crafted from long-fiber muslin.\nFabric: 100% cotton muslin, light and soft to the touch.",
+description: [
+  "The “Bahroma” dress is breathable, easy to move in, and perfect for dreaming. This sky-blue beauty is made for moments when you want to feel part of nature — free, feminine, and serene.",
+  "Fabric: long-staple muslin made of 100% cotton. Light and soft to the touch.",
+  "Details:",
+  "• Lightweight textured muslin fabric that plays with the wind",
+  "• Romantic puff sleeves",
+  "• Deep V-neckline with fringe lace",
+  "• Smooth silhouette that accentuates the waist"
+],
             colors: ["turquoise","White", "Yellow"]
         },
         FR: {
@@ -910,7 +1062,15 @@ description: [
         UA: {
             category: "Сукні",
             name: "Сукня «Bahroma»",
-            description: "Сукня з довговолокняного мусліну.\nТканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+description: [
+  "Сукня “Bahroma”, у якій легко дихати, рухатись, мріяти. Ця небесно-блакитна краса створена для моментів, коли хочеться відчути себе частиною природи — вільною, жіночною, спокійною.",
+  "Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+  "Деталі:",
+  "• Легка фактурна муслінова тканина, що грає з вітром",
+  "• Романтичні рукави з об’ємом",
+  "• Глибоке V-декольте з мереживом з бахромою",
+  "• Плавний силует, який підкреслює талію"
+],
             colors: ["бірюза", "білий", "жовтий"]
         },
         RU: {
@@ -1157,7 +1317,16 @@ description: [
         EN: {
             category: "Dresses",
             name: "Lemon Dress",
-            description: "A dress crafted from long-fiber muslin.\nFabric: 100% cotton muslin, light and soft to the touch.",
+description: [
+  "Our new muslin dress embodies tenderness, freedom of movement, and the feeling of summer on your skin.",
+  "Soft, breathable muslin wraps the body in a perfect silhouette, while airy sleeves add a touch of magic to the look.",
+  "A sunlit color perfect for barefoot walks in the field or sunset gatherings.",
+  "Fabric: long-staple muslin made of 100% cotton. Light and soft to the touch.",
+  "Details:",
+  "• Lightweight textured muslin fabric that plays with the wind",
+  "• Loose fit",
+  "• Ties at the waist and sleeves"
+],
             colors: ["yellow"]
         },
         FR: {
@@ -1169,7 +1338,16 @@ description: [
         UA: {
             category: "Сукні",
             name: "Сукня «Lemon»",
-            description: "Сукня з довговолокняного мусліну.\nТканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+description: [
+  "Наша нова муслінова сукня — це про ніжність, свободу рухів і відчуття літа на шкірі.",
+  "Мʼякий, дихаючий муслін огортає тіло ідеальним силуетом, а повітряні рукави додають образу магії.",
+  "Колір сонця, що підійде як для прогулянки босоніж по полю, так і для зустрічі на заході сонця.",
+  "Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+  "Деталі:",
+  "• Легка фактурна муслінова тканина, що грає з вітром",
+  "• Вільний фасон",
+  "• Зав’язки на талії та рукавах"
+],
             colors: ["жовтий"]
         },
         RU: {
@@ -1201,7 +1379,17 @@ description: [
         EN: {
             category: "Dresses",
             name: "Hemp Maxi Dress",
-            description: "A dress made from double-layer muslin, 30% hemp, 70% cotton.\nOne of the most eco-friendly fabrics, grown without pesticides.",
+description: [
+  "The hemp muslin dress embodies natural lightness and the strength of feminine energy.",
+  "Its natural texture and loose fit make it perfect for walks, travels, or simply to breathe deeply.",
+  "It’s about inner strength. About connection with yourself.",
+  "About a woman who knows what she wants.",
+  "Fabric: Double-layer muslin dress, 30% hemp, 70% cotton. One of the most eco-friendly fabrics, grown without pesticides.",
+  "Details:",
+  "• Breathable and comfortable in the heat",
+  "• Maxi length",
+  "• Oversized fit"
+],
             colors: ["hemp"]
         },
         FR: {
@@ -1213,7 +1401,17 @@ description: [
         UA: {
             category: "Сукні",
             name: "Конопляна сукня maxi",
-            description: "Сукня з двошарового мусліну, 30% коноплі, 70% бавовни.\nЦе одна з найекологічніших тканин, бо виращується без пестицидів.",
+description: [
+  "Сукня з конопляного мусліну — це втілення природної легкості та сили жіночої енергії.",
+  "Натуральна текстура, вільний крій роблять її ідеальною для прогулянок, подорожей або просто — щоб дихати глибше.",
+  "Вона про внутрішню силу. Про зв’язок із собою.",
+  "Про жінку, яка знає, чого хоче.",
+  "Тканина: Сукня з двошарового мусліну, 30% коноплі, 70% бавовни. Це одна з найекологічніших тканин, бо виращується без пестицидів.",
+  "Деталі:",
+  "• Дихає та дарує комфорт у спеку",
+  "• Максі довжина",
+  "• Оверсайз фасон"
+],
             colors: ["конопляний"]
         },
         RU: {
@@ -1287,7 +1485,14 @@ description: [
         EN: {
             category: "Dresses",
             name: "Maxi Sundress",
-            description: "A sundress crafted from long-fiber muslin.\nFabric: 100% cotton muslin, light and soft to the touch.",
+description: [
+  "Light and airy maxi sundress with wide straps. Perfect for summer season and vacations. A style suitable for everyday wear.",
+  "Fabric: Long-staple muslin made of 100% cotton. Light and soft to the touch.",
+  "Details:",
+  "• Asymmetric length",
+  "• Open back",
+  "• Oversized fit"
+],
             colors: ["eucalyptus"]
         },
         FR: {
@@ -1299,7 +1504,14 @@ description: [
         UA: {
             category: "Сукні",
             name: "Сарафан maxi",
-            description: "Сарафан з довговолокняного мусліну.\nТканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+description: [
+  "Легкий та повітряний максі сарафан на широких бретелях. Ідеальний до літнього сезону та відпусток. Фасон, який підходить на кожен день.",
+  "Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+  "Деталі:",
+  "• Асиметрична довжина",
+  "• Відкрита спинка",
+  "• Оверсайз фасон"
+],
             colors: ["евкаліпт"]
         },
         RU: {
@@ -1731,8 +1943,16 @@ description: [
       EN: {
         category: "Dresses",
         name: "Oversize Linen Dress",
-        description: "An oversize dress crafted from a cotton-linen blend, mimicking boiled linen, sourced from a French fashion house in very limited quantities.\nFabric: 50% linen, 50% cotton.",
-        colors: ["white"]
+description: [
+  "Wild, free, and tender at the same time. A dress that makes you feel part of nature.",
+  "The perfect formula for summer when you crave freedom, air, and harmony.",
+  "Fabric: long-staple muslin made of 100% cotton. Light and soft to the touch.",
+  "Details:",
+  "• Loose fit",
+  "• Delicate lace along the neckline",
+  "• Corset back with ties"
+],
+       colors: ["white"]
       },
       FR: {
         category: "Robes",
@@ -1743,8 +1963,15 @@ description: [
       UA: {
         category: "Сукні",
         name: "Сукня лляна oversize",
-        description: "Сукня оверсайз із імітації вареного льону з бавовни, виготовлена з тканини французького будинку моди в дуже обмеженій кількості.\nТканина: 50% льон, 50% бавовна.",
-        colors: ["білий"]
+description: [
+  "Дика, вільна і ніжна водночас. Сукня, в якій відчуваєш себе частиною природи.",
+  "Ідеальна формула для літа, коли хочеться свободи, повітря й гармонії.",
+  "Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+  "Деталі:",
+  "• Вільний крій",
+  "• Делікатне мереживо вздовж вирізу",
+  "• Корсетна спинка на завʼязках"
+],        colors: ["білий"]
       },
       RU: {
         category: "Платья",
@@ -1774,7 +2001,14 @@ description: [
       EN: {
         category: "Dresses",
         name: "Aria Dress",
-        description: "A dress made from long-fiber muslin.\nFabric: 100% cotton muslin, light and soft to the touch.",
+description: [
+  "Light as a breath and elegant as summer. This dress is a true find for those who value comfort and femininity.",
+  "Fabric: long-staple muslin made from 100% cotton. Light and soft to the touch.",
+  "Details:",
+  "• Exquisite lace on the neckline area",
+  "• Loose fit that beautifully emphasizes the figure and allows freedom of movement",
+  "• Midi length for maximum lightness and grace"
+],
         colors: ["water"]
       },
       FR: {
@@ -1786,7 +2020,14 @@ description: [
       UA: {
         category: "Сукні",
         name: "Сукня 'Aria'",
-        description: "Сукня з довговолокняного мусліну.\nТканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+description: [
+  "Легка як подих та елегантна як літо. Ця сукня — справжня знахідка для тих, хто цінує комфорт і жіночність.",
+  "Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+  "Деталі:",
+  "• Вишукане мереживо на зоні декольте",
+  "• Вільний крій, що красиво підкреслює фігуру і дарує свободу рухів",
+  "• Довжина міді — для максимальної легкості і граційності"
+],
         colors: ["колір води"]
       },
       RU: {
@@ -1817,7 +2058,14 @@ description: [
       EN: {
         category: "Dresses",
         name: "Marianna Dress",
-        description: "A dress made from long-fiber muslin.\nFabric: 100% cotton muslin, light and soft to the touch.",
+description: [
+  "A delicate and unique dress with a straight cut and comfortable midi length. Perfect for the summer season.",
+  "Fabric: long-staple muslin made from 100% cotton. Light and soft to the touch.",
+  "Details:",
+  "• Exquisite lace on the neckline area",
+  "• Loose fit",
+  "• Wide cropped sleeves"
+],
         colors: ["milk"]
       },
       FR: {
@@ -1829,7 +2077,14 @@ description: [
       UA: {
         category: "Сукні",
         name: "Сукня 'Marianna'",
-        description: "Сукня з довговолокняного мусліну.\nТканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+description: [
+  "Ніжна та неповторна сукня прямого фасону та комфортної міді довжини. Ідеальна для літнього сезону.",
+  "Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+  "Деталі:",
+  "• Вишукане мереживо на зоні декольте",
+  "• Вільний крій",
+  "• Широкі вкорочені рукава"
+],
         colors: ["молоко"]
       },
       RU: {
