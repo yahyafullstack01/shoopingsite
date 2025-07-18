@@ -468,7 +468,7 @@ const handleWayforpayClick = async () => {
   
 
 <div className="p-6 mt-8 max-w-5xl mx-auto bg-[#fdfcf7]  dark:bg-zinc-900 rounded-xl shadow-md space-y-6">
-  <h1 className="text-3xl font-bold mb-6 text-gray-800 dark:text-white">Оформлення замовлення</h1>
+  <h1 className="text-3xl font-normal mb-6 text-gray-800 dark:text-white">Оформлення замовлення</h1>
 
   {/* ПІДСУМОК */}
   <div className="md:flex gap-6">
@@ -508,7 +508,7 @@ const handleWayforpayClick = async () => {
       </div>
 
       {/* ТЕЛЕФОН */}
-      <label className="block font-semibold text-gray-700 dark:text-white mt-4">Телефон</label>
+      <label className="block font-normal text-gray-700 dark:text-white mt-4">Телефон</label>
       <PhoneInput
         country={'ua'}
         value={phone}
@@ -524,7 +524,7 @@ const handleWayforpayClick = async () => {
 
       {/* СПОСІБ ДОСТАВКИ — КНОПКИ */}
       <div>
-        <label className="block mb-1 font-semibold text-gray-700 dark:text-white flex items-center gap-2">
+        <label className="block mb-1 font-normal text-gray-700 dark:text-white flex items-center gap-2">
           <FiTruck /> Спосіб доставки
         </label>
         <div className="flex flex-wrap gap-2">
@@ -553,7 +553,7 @@ const handleWayforpayClick = async () => {
       {deliveryMethod === 'nova-poshta' && (
         <>
           <div className="mt-4">
-            <label className="block mb-1 font-medium text-gray-700 dark:text-white">Населений пункт</label>
+            <label className="block mb-1 font-normal text-gray-700 dark:text-white">Населений пункт</label>
             <input
               type="text"
               value={cityQuery}
@@ -562,12 +562,12 @@ const handleWayforpayClick = async () => {
               className="w-full p-3 border rounded-lg bg-white dark:bg-zinc-800 text-gray-800 dark:text-white border-gray-300 dark:border-zinc-600"
             />
             {filteredCities.length > 0 && (
-              <ul className="mt-2 border rounded shadow bg-white max-h-40 overflow-auto z-10 relative">
+              <ul className="mt-2 border rounded shadow bg-white dark:bg-zinc-800 max-h-40 overflow-auto z-10 relative">
                 {filteredCities.map((city, idx) => (
                   <li
                     key={idx}
                     onClick={() => handleCitySelect(city)}
-                    className="p-2 hover:bg-gray-100 cursor-pointer"
+                    className="p-2 hover:bg-gray-100 dark:hover:bg-zinc-400 cursor-pointer"
                   >
                     {city.Present}
                   </li>
@@ -578,7 +578,7 @@ const handleWayforpayClick = async () => {
 
           {warehouses.length > 0 && (
             <div className="mt-4">
-              <label className="block mb-1 font-medium text-gray-700 dark:text-white">Відділення</label>
+              <label className="block mb-1 font-normal text-gray-700 dark:text-white">Відділення</label>
               <select
                 className="w-full p-3 border rounded-lg bg-white dark:bg-zinc-800 text-gray-800 dark:text-white border-gray-300 dark:border-zinc-600"
                 value={selectedWarehouseRef}
@@ -600,7 +600,7 @@ const handleWayforpayClick = async () => {
 
       {(deliveryMethod === 'ukr-poshta' || deliveryMethod === 'courier') && (
         <div className="mt-4">
-          <label className="block mb-1 font-medium text-gray-700 dark:text-white">Населений пункт</label>
+          <label className="block mb-1 font-normal text-gray-700 dark:text-white">Населений пункт</label>
           <input
             type="text"
             value={cityQuery}
@@ -613,7 +613,7 @@ const handleWayforpayClick = async () => {
 
       {/* КОМЕНТАР */}
       <div className="mt-4">
-        <label className="block mb-1 font-medium text-gray-700 dark:text-white flex items-center gap-1">
+        <label className="block mb-1 font-normal text-gray-700 dark:text-white flex items-center gap-1">
           <FiMessageSquare /> 
         </label>
         <textarea
@@ -627,7 +627,7 @@ const handleWayforpayClick = async () => {
 
       {/* ОПЛАТА */}
       <div className="space-y-3">
-        <label className="block font-semibold text-gray-700 dark:text-white">Тип оплати</label>
+        <label className="block font-normal text-gray-700 dark:text-white">Тип оплати</label>
         <label className="flex items-center space-x-2">
           <input type="radio" name="payment" value="full" checked={paymentType === 'full'} onChange={() => { setPaymentType('full'); setOnlinePaymentMethod(''); }} />
           <span className="text-gray-800 dark:text-white">Оплата онлайн (повна сума: {total} грн)</span>

@@ -103,7 +103,7 @@ setShowToast(true);
   return (
     <div className="dark:bg-gray-800 bg-gray-100 text-black dark:text-white min-h-screen px-4 py-8">
   <div className="text-center">
-        <h1 className="text-3xl md:text-4xl font-bold mb-4">{menuItems[0]}</h1>
+        <h1 className="text-3xl md:text-4xl font-normal mb-4">{menuItems[0]}</h1>
       </div>
 
       <section aria-labelledby="top-products">
@@ -131,7 +131,7 @@ setShowToast(true);
                   </div>
                   <div className="p-2 sm:p-4 dark:bg-gray-200">
       
-                    <h3 className="font-semibold text-sm sm:text-lg">{translatedName}</h3>
+                    <h3 className="font-normal text-sm sm:text-lg">{translatedName}</h3>
                     <p className="text-black dark:text-gray-600 text-xs sm:text-base">{product.price}</p>
                   </div>
                 </article>

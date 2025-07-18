@@ -64,7 +64,7 @@ export default function FollowUs() {
   return (
     <section id="follow-us" className="bg-black text-white section-container py-12">
       <div className="space-y-4">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-center">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal mb-6 text-center">
           {menuItems[0]}
         </h2>
         <div className="border-t border-gray-700"></div>

@@ -22,7 +22,7 @@ const CategoryCatalog = () => {
 
   return (
     <section className="bg-white dark:bg-zinc-900 py-16 px-5">
-      <h2 className="text-3xl md:text-4xl font-semibold text-center uppercase text-black dark:text-white mb-10">
+      <h2 className="text-3xl md:text-4xl font-normal text-center uppercase text-black dark:text-white mb-10">
         Каталог
       </h2>
 
@@ -43,7 +43,7 @@ const CategoryCatalog = () => {
                   className="object-cover"
                   priority
                 />
-                <div className="absolute bottom-3 left-3 bg-white/90 dark:bg-black/70 text-sm font-semibold px-3 py-1 rounded-md text-black dark:text-white">
+                <div className="absolute bottom-3 left-3 bg-white/90 dark:bg-black/70 text-sm font-normal px-3 py-1 rounded-md text-black dark:text-white">
                   {cat.name}
                 </div>
               </Link>

@@ -34,7 +34,7 @@ const ProductCard = ({ product, onClick, onAddToCart }) => {
             className="w-full h-full object-cover rounded transform transition-transform duration-300 ease-in-out group-hover:scale-110"
           />
        
-          <figcaption className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white text-sm sm:text-base font-medium rounded">
+          <figcaption className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white text-sm sm:text-base font-normal rounded">
             Переглянути деталі
           </figcaption>
         </figure>
@@ -42,11 +42,11 @@ const ProductCard = ({ product, onClick, onAddToCart }) => {
 
     
       <section className="mt-3 sm:mt-4">
-        <h3 className="text-sm sm:text-lg font-semibold text-center sm:text-left">
+        <h3 className="text-sm sm:text-lg font-normal text-center sm:text-left">
           {translatedName || "Unnamed Product"}
         </h3>
         <p className="text-xs sm:text-sm text-gray-700 dark:text-gray-400 mt-1 text-center sm:text-left">
-          <span className="font-semibold">{priceLabel}:</span> {product.price || "N/A"} <span className="text-xs">UAH</span>
+          <span className="font-normal">{priceLabel}:</span> {product.price || "N/A"} <span className="text-xs">UAH</span>
         </p>
       </section>
 

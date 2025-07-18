@@ -8,7 +8,7 @@ export default function SizeChart({ onClose }) {
   return (
     <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-50">
       <div className="bg-white dark:bg-black rounded-lg shadow-lg p-4 md:p-6 w-11/12 sm:w-10/12 md:w-2/3 lg:w-1/2">
-        <h2 className="text-lg font-bold mb-4 text-center">{menuItems[0]}</h2>
+        <h2 className="text-lg font-normal mb-4 text-center">{menuItems[0]}</h2>
         <div className="overflow-auto">
           <table className="w-full border-collapse border border-gray-300 dark:border-gray-900 text-xs sm:text-sm">
             <thead>

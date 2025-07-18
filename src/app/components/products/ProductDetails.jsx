@@ -23,42 +23,42 @@ const ProductDetails = ({ productData, formSubmitted }) => {
 
   return (
     <section className="bg-gray-100 dark:bg-gray-900 text-gray-950 dark:text-white p-6 sm:p-8 rounded-lg shadow-lg" aria-labelledby="product-details-heading">
-      <h2 id="product-details-heading" className="text-2xl sm:text-3xl font-bold mb-6 text-center">
+      <h2 id="product-details-heading" className="text-2xl sm:text-3xl font-normal mb-6 text-center">
         Product Details
       </h2>
       <dl className="w-full max-w-lg space-y-4">
         <div className="flex flex-wrap justify-between items-start">
-          <dt className="text-sm sm:text-base font-semibold flex items-center gap-2">
+          <dt className="text-sm sm:text-base font-normal flex items-center gap-2">
             <FaTag className="text-gray-600 dark:text-lime-400" /> Product Name:
           </dt>
           <dd className="text-sm sm:text-base break-words max-w-[70%]">{translatedName}</dd>
         </div>
         <div className="flex justify-between">
-          <dt className="text-sm sm:text-base font-semibold flex items-center gap-2">
+          <dt className="text-sm sm:text-base font-normal flex items-center gap-2">
             <FaBarcode className="text-gray-600 dark:text-gray-400" /> SKU:
           </dt>
           <dd className="text-sm sm:text-base">{productData.sku}</dd>
         </div>
         <div className="flex justify-between">
-          <dt className="text-sm sm:text-base font-semibold flex items-center gap-2">
+          <dt className="text-sm sm:text-base font-normal flex items-center gap-2">
             <FaMoneyBillWave className="text-gray-600 dark:text-green-400" /> Price:
           </dt>
           <dd className="text-sm sm:text-base">{productData.price}</dd>
         </div>
         <div className="flex justify-between">
-          <dt className="text-sm sm:text-base font-semibold flex items-center gap-2">
+          <dt className="text-sm sm:text-base font-normal flex items-center gap-2">
             <FaPalette className="text-gray-600 dark:text-blue-400" /> Color:
           </dt>
           <dd className="text-sm sm:text-base">{productData.color}</dd>
         </div>
         <div className="flex justify-between">
-          <dt className="text-sm sm:text-base font-semibold flex items-center gap-2">
+          <dt className="text-sm sm:text-base font-normal flex items-center gap-2">
             <FaRulerVertical className="text-gray-600 dark:text-purple-400" /> Size:
           </dt>
           <dd className="text-sm sm:text-base">{productData.size}</dd>
         </div>
         <div className="flex justify-between">
-          <dt className="text-sm sm:text-base font-semibold flex items-center gap-2">
+          <dt className="text-sm sm:text-base font-normal flex items-center gap-2">
             <FaBoxes className="text-gray-600 dark:text-orange-400" /> Quantity:
           </dt>
           <dd className="text-sm sm:text-base">{productData.quantity}</dd>

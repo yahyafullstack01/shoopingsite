@@ -36,7 +36,7 @@ export default function OrderSummary() {
 
   return (
     <div className="border rounded-2xl shadow-lg p-6 bg-white dark:bg-zinc-800 text-black dark:text-white w-full">
-      <h2 className="text-2xl font-bold mb-6 text-center border-b pb-4">Ваше замовлення</h2>
+      <h2 className="text-2xl font-normal mb-6 text-center border-b pb-4">Ваше замовлення</h2>
 
       {cartItems.length === 0 ? (
         <p className="text-sm text-gray-500 dark:text-gray-400 text-center">Кошик порожній</p>
@@ -54,7 +54,7 @@ export default function OrderSummary() {
               />
 
               <div className="text-sm flex-1 text-center sm:text-left">
-                <p className="font-semibold text-base truncate">{item.name}</p>
+                <p className="font-normal text-base truncate">{item.name}</p>
                 <p className="text-gray-600 dark:text-gray-300">Ціна: {item.price} грн</p>
                 {item.size && <p className="text-gray-600 dark:text-gray-300">Розмір: {item.size}</p>}
                 {item.color && <p className="text-gray-600 dark:text-gray-300">Колір: {item.color}</p>}

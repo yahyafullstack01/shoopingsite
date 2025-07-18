@@ -44,7 +44,7 @@ return (
           <li key={page}>
             <button
               onClick={() => handlePageChange(page)}
-              className={`px-4 py-2 rounded border font-semibold transition ${
+              className={`px-4 py-2 rounded border font-normal transition ${
                 currentPage === page
                   ? "bg-gray-300 text-gray-500 border-gray-300 cursor-not-allowed dark:bg-[#1f2937] dark:text-[#475569] dark:border-[#334155]"
                   : "bg-gray-100 text-black border-gray-300 hover:bg-gray-200 dark:bg-[#1f2937] dark:text-[#60a5fa] dark:border-[#334155] dark:hover:bg-[#2563eb]"
@@ -62,7 +62,7 @@ return (
       <button
         onClick={() => handlePageChange(currentPage - 1)}
         disabled={currentPage === 1}
-        className={`px-4 py-2 rounded border font-semibold transition ${
+        className={`px-4 py-2 rounded border font-normal transition ${
           currentPage === 1
             ? "bg-gray-300 text-gray-500 border-gray-300 cursor-not-allowed dark:bg-[#1f2937] dark:text-[#475569] dark:border-[#334155]"
             : "bg-gray-100 text-black border-gray-300 hover:bg-gray-200 dark:bg-[#1f2937] dark:text-[#60a5fa] dark:border-[#334155] dark:hover:bg-[#2563eb]"
@@ -74,7 +74,7 @@ return (
       <button
         onClick={() => handlePageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
-        className={`px-4 py-2 rounded border font-semibold transition ${
+        className={`px-4 py-2 rounded border font-normal transition ${
           currentPage === totalPages
             ? "bg-gray-300 text-gray-500 border-gray-300 cursor-not-allowed dark:bg-[#1f2937] dark:text-[#475569] dark:border-[#334155]"
             : "bg-gray-100 text-black border-gray-300 hover:bg-gray-200 dark:bg-[#1f2937] dark:text-[#60a5fa] dark:border-[#334155] dark:hover:bg-[#2563eb]"

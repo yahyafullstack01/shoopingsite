@@ -64,7 +64,7 @@ export default function QuickAddModal({ product, onClose, onAddToCart }) {
       >
         {/* Header */}
         <div className="flex justify-between items-center mb-3">
-          <h2 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white">
+          <h2 className="text-lg sm:text-xl font-normal text-gray-900 dark:text-white">
             {translatedName}
           </h2>
           <button

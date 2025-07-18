@@ -9,36 +9,33 @@ export default function RootLayout({ children }) {
     return (
         <html lang="uk" className="h-full">
             <head>
-                <title>
-                    Ексклюзивний жіночий одяг від Latore Atelier | Створено для кожного сезону
-                </title>
-                <meta
-                    name="description"
-                    content="Latore Atelier пропонує стильний та ексклюзивний жіночий одяг, розроблений для того, щоб ви почувалися унікально у будь-якому сезоні. Відкрийте наші колекції сьогодні!"
-                />
-                <meta
-                    name="keywords"
-                    content="жіночий одяг, Latore Atelier, ексклюзивний одяг, сучасна мода, стильний одяг, сезонні колекції"
-                />
-                <meta name="author" content="Latore Atelier" />
-                <meta property="og:title" content="Ексклюзивний жіночий одяг від Latore Atelier" />
-                <meta
-                    property="og:description"
-                    content="Latore Atelier пропонує стильний та ексклюзивний жіночий одяг, розроблений для того, щоб ви почувалися унікально у будь-якому сезоні. Відкрийте наші колекції сьогодні!"
-                />
-                <meta
-                    property="og:image"
-                    content="https://www.latore.shop/light-logo.avif?v=1"
-                />
-                <meta property="og:image:width" content="1200" />
-                <meta property="og:image:height" content="630" />
-                <meta property="og:url" content="https://www.latore.shop/" />
-                <meta property="og:type" content="website" />
-                <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+              <title>Ексклюзивний жіночий одяг від Latore Atelier | Створено для кожної</title>
 
-                <link rel="canonical" href="https://www.latore.shop/" />
-                <link rel="preload" href="/fonts/Montserrat-Thin.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+<meta name="description" content="Latore Atelier пропонує стильний та ексклюзивний жіночий одяг, розроблений для того, щоб ви почувалися унікально у будь-якому сезоні. Відкрийте наші колекції сьогодні!" />
+<meta name="keywords" content="жіночий одяг, Latore Atelier, ексклюзивний одяг, сучасна мода, стильний одяг, сезонні колекції" />
+<meta name="author" content="Latore Atelier" />
+
+{/* Open Graph для соцмереж*/}
+<meta property="og:title" content="Ексклюзивний жіночий одяг від Latore Atelier" />
+<meta property="og:description" content="Latore Atelier пропонує стильний та ексклюзивний жіночий одяг, розроблений для того, щоб ви почувалися унікально у будь-якому сезоні. Відкрийте наші колекції сьогодні!" />
+<meta property="og:image" content="https://www.latore.shop/logo-social.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://www.latore.shop/" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+
+{/*Favicon*/}
+<link rel="icon" href="/logo/favicon-32x32.png" type="image/png" sizes="32x32" />
+<link rel="icon" type="image/png" sizes="16x16" href="/logo/favicon-16x16.png" />
+<link rel="shortcut icon" href="/logo/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" sizes="180x180" href="/logo/favicon-32x32.png" />
+
+{/*} SEO */}
+<link rel="canonical" href="https://www.latore.shop/" />
+
+{/*Fonts preload*/}
+<link rel="preload" href="/fonts/Montserrat-Thin.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
 <link rel="preload" href="/fonts/Montserrat-ThinItalic.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
 
                 <meta name="viewport" content="width=device-width, initial-scale=1" />

@@ -74,7 +74,7 @@ const Hero = () => {
               priority
             />
           </div>
-          <h2 className="text-xl sm:text-5xl lg:text-7xl font-bold text-gray-700 dark:text-white ml-2 sm:ml-12 sm:mt-2">
+          <h2 className="text-xl sm:text-5xl lg:text-7xl font-normal text-gray-700 dark:text-white ml-2 sm:ml-12 sm:mt-2">
             LATORE
           </h2>
           <p className="text-xs sm:text-xl lg:text-3xl text-gray-600 dark:text-white ml-2 sm:ml-12 sm:mt-4">

@@ -112,7 +112,7 @@ const NewArrivalsInfo = ({ products }) => {
               </div>
 
               <section className="mt-3 sm:mt-4">
-                <h3 className="text-sm sm:text-lg font-semibold text-center sm:text-left">
+                <h3 className="text-sm sm:text-lg font-normal text-center sm:text-left">
                   {translatedName}
                 </h3>
                 <p className="text-xs sm:text-sm text-gray-700 dark:text-gray-400 mt-1 text-center sm:text-left">

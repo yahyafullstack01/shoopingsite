@@ -29,7 +29,7 @@ const Toast = ({ product, onClose }) => {
           className="w-20 h-24 object-cover rounded-lg"
         />
         <div className="flex-1">
-          <p className="font-semibold text-base">{product.name}</p>
+          <p className="font-normaltext-base">{product.name}</p>
           <p className="text-sm mt-1">Кількість: {product.quantity}</p>
           <p className="text-sm">Ціна: {product.price} UAH</p>
         </div>

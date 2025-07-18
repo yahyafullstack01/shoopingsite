@@ -107,7 +107,7 @@ const ContactForm = ({
         <div className="flex items-center gap-4">
           <button
             type="submit"
-            className="dark:bg-lime-500 text-white  bg-[#3a2719] hover:bg-[#3a271970] font-semibold py-2 px-8 rounded-lg dark:hover:bg-lime-600"
+            className="dark:bg-lime-500 text-white  bg-[#3a2719] hover:bg-[#3a271970] font-normal py-2 px-8 rounded-lg dark:hover:bg-lime-600"
           >
             {menuItems[5]}
           

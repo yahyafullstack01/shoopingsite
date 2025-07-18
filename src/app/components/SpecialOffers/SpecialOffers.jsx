@@ -47,7 +47,7 @@ export default function SpecialOffers() {
 >
 
             <h2
-              className={`text-base sm:text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl font-bold mb-8 md:mb-8
+              className={`text-base sm:text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl font-normal mb-8 md:mb-8
                 dark:text-[#f5e8d6] text-black`}
             >
               {menuItems[0] || "Special Offers"}

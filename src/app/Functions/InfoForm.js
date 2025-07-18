@@ -97,17 +97,17 @@ const handleContactClick = (e) => {
 
   return (
     <div className="flex flex-col px-4 md:px-0">
-      <h1 className="text-2xl md:text-3xl font-semibold mb-2 text-center md:text-left">
+      <h1 className="text-2xl md:text-3xl font-normal mb-2 text-center md:text-left">
         {translatedName}
       </h1>
       <p className="text-gray-700 dark:text-gray-400 text-sm md:text-base mb-2 text-center md:text-left">
-        {menuItems[0]}: <span className="font-semibold">{product.category || "Unknown Category"}</span>
+        {menuItems[0]}: <span className="font-normal">{product.category || "Unknown Category"}</span>
       </p>
       <p className="text-gray-800 dark:text-gray-500 text-xs md:text-sm mb-4 text-center md:text-left">
         SKU: {product.sku}
       </p>
 
-      <div className="text-xl md:text-2xl font-bold mb-4 text-center md:text-left">
+      <div className="text-xl md:text-2xl font-normal mb-4 text-center md:text-left">
         {showDiscount && product.discountPrice ? (
           <>
             <span className="text-red-600">{product.discountPrice} UAH</span>
@@ -120,7 +120,7 @@ const handleContactClick = (e) => {
 
       
       <div className="mb-6 md:mb-8">
-        <label htmlFor="color" className="block text-sm font-medium mb-2 text-center md:text-left">
+        <label htmlFor="color" className="block text-sm font-normal mb-2 text-center md:text-left">
           {menuItems[1] || "Color"}
         </label>
         <select
@@ -139,7 +139,7 @@ const handleContactClick = (e) => {
 
       
       <div className="mb-6 md:mb-8">
-        <label htmlFor="size" className="block text-sm font-medium mb-2 text-center md:text-left">
+        <label htmlFor="size" className="block text-sm font-normal mb-2 text-center md:text-left">
           {menuItems[3] || "Size"}
         </label>
         <select
@@ -168,7 +168,7 @@ const handleContactClick = (e) => {
 
     
       <div className="mb-6 md:mb-8">
-        <label htmlFor="quantity" className="block text-sm font-medium mb-2 text-center md:text-left">
+        <label htmlFor="quantity" className="block text-sm font-normal mb-2 text-center md:text-left">
           {menuItems[4] || "Quantity"}
         </label>
         <div className="flex items-center w-full md:w-1/4 bg-gray-200 dark:bg-gray-700 rounded">
@@ -207,7 +207,7 @@ const handleContactClick = (e) => {
         </button>  
         <button
           onClick={handleContactClick}
-          className="w-full md:w-1/2 bg-gray-700 hover:bg-gray-500 text-white dark:bg-lime-500 dark:hover:bg-lime-600 dark:text-black font-semibold py-2 rounded transition duration-300"
+          className="w-full md:w-1/2 bg-gray-700 hover:bg-gray-500 text-white dark:bg-lime-500 dark:hover:bg-lime-600 dark:text-black font-normal py-2 rounded transition duration-300"
         >
           {menuItems[5] || "Contact Us"}
         </button>
@@ -216,7 +216,7 @@ const handleContactClick = (e) => {
 
       
       <div className="mt-10">
-        <h2 className="text-lg md:text-xl font-semibold text-black dark:text-white mb-4 text-center md:text-left">
+        <h2 className="text-lg md:text-xl font-normal text-black dark:text-white mb-4 text-center md:text-left">
           {menuItems[7] || "PRODUCT INFO"}
         </h2>
         <div className="text-gray-500 dark:text-gray-400 text-sm md:text-base text-left space-y-2">
@@ -224,7 +224,7 @@ const handleContactClick = (e) => {
     <>
       {translatedDescription.map((line, index) => {
         if (line.toLowerCase().includes("details")) {
-          return <p key={index} className="font-semibold">{line}</p>;
+          return <p key={index} className="font-normal">{line}</p>;
         }
 
         if (line.trim().startsWith("·")) {
