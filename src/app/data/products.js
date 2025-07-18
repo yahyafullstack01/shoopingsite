@@ -77,7 +77,14 @@ const products = [
       EN: {
         category: "Shirts",
         name: "Corset Shirt",
-        description: "Fitted shirt with pronounced bust and corset back. Fabric: 100% cotton",
+description: [
+  "Cotton shirt with a defined lace bust and a corset-style back. Perfect for any occasion — looks absolutely stunning.",
+  "Fabric: 100% natural cotton. Light and soft to the touch.",
+  "Details:",
+  "• Corset-style back",
+  "• Not see-through",
+  "• Hidden buttons"
+],
         colors: ["lemon", "black"]
       },
       FR: {
@@ -89,8 +96,14 @@ const products = [
       UA: {
         category: "Сорочки",
         name: "Сорочка із корсетом",
-        description: "Приталена сорочка із вираженим бюстом та корсетною спинкою. Тканина: 100% бавовна",
-        colors: ["лимонний", "чорний"]
+description: [
+  "Бавовняна сорочка із вираженим бюстом у вигляді мережива та корсетною спинкою. На будь-яку подію буде виглядати неперевершено.",
+  "Тканина: 100% натуральна бавовна. Легка та мʼяка тканина на дотик.",
+  "Деталі:",
+  "• Корсетна спинка",
+  "• Не просвічує",
+  "• Скриті ґудзики"
+],        colors: ["лимонний", "чорний"]
       },
       RU: {
         category: "Рубашки",
