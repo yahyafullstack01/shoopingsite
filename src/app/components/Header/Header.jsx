@@ -15,11 +15,10 @@ const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
   const menuItems = translateList("home", "header");
  
 
-  const toggleLanguage = () => {
-    setLanguage((prevLanguage) =>
-      prevLanguage === "EN" ? "FR" : prevLanguage === "FR" ? "UA" : "EN"
-    );
-  };
+ const toggleLanguage = () => {
+  setLanguage((prevLanguage) => (prevLanguage === "EN" ? "UA" : "EN"));
+};
+
   const [isDesktopCategoriesOpen, setIsDesktopCategoriesOpen] = useState(false);
 const [isMobileCategoriesOpen, setIsMobileCategoriesOpen] = useState(false);
 
@@ -184,7 +183,7 @@ useEffect(() => {
              aria-label="Toggle Language"
              className="p-1 sm:p-2 rounded-full border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-600 transition duration-300 text-xs sm:text-sm md:text-base lg:text-lg flex items-center justify-center"
            >
-             {language === "EN" ? "🇬🇧 EN" : language === "FR" ? "🇫🇷 FR" : "🇺🇦 UA"}
+              {language === "EN" ? "🇬🇧 EN" : "🇺🇦 UA"}
            </button>
            <button
              onClick={() => toggleDarkMode(!isDarkMode)}
@@ -223,7 +222,7 @@ useEffect(() => {
                aria-label={`Switch language, current language is ${language}`}
                className="p-1 sm:p-2 rounded-full border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-600 transition duration-300 text-xs sm:text-sm md:text-base lg:text-lg flex items-center justify-center"
              >
-               {language === "EN" ? "🇬🇧 EN" : language === "FR" ? "🇫🇷 FR" : "🇺🇦 UA"}
+                {language === "EN" ? "🇬🇧 EN" : "🇺🇦 UA"}
              </button>
              <button
                onClick={() => toggleDarkMode(!isDarkMode)}
