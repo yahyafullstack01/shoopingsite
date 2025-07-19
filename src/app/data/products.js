@@ -2390,8 +2390,15 @@ description: [
       EN: {
         category: "Dresses",
         name: "Open Back Sundress",
-        description: "A sundress featuring an open back design.\nFabric: long-fiber muslin made of 100% cotton. Light and soft to the touch.",
-        colors: ["water", "powder"]
+  description: [
+    "Muslin sundress with an open back — your perfect base for the summer season. You'll feel only lightness and comfort in it.",
+    "Fabric: long-staple muslin made of 100% cotton. Light and soft to the touch.",
+    "Details:",
+    "• Loose fit",
+    "• Open back with ties on the straps",
+    "• Midi length"
+  ],
+          colors: ["water", "powder"]
       },
       FR: {
         category: "Robes",
@@ -2402,7 +2409,14 @@ description: [
       UA: {
         category: "Сукні",
         name: "Сарафан із відкритою спинкою",
-        description: "Сарафан із дизайном відкритої спинки.\nТканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+  description: [
+    "Мусліновий сарафан із відкритою спинкою — твоя ідеальна база на літній сезон. У ньому ти будеш відчувати тільки легкість та комфорт.",
+    "Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+    "Деталі:",
+    "• Вільний крій",
+    "• Відкрита спинка та завʼязки на бретелях",
+    "• Міді довжина"
+  ],
         colors: ["колір води", "пудра"]
       },
       RU: {
@@ -2435,8 +2449,15 @@ description: [
       EN: {
         category: "Dresses",
         name: "Lace Sundress",
-        description: "A sundress adorned with lace detailing.\nFabric: long-fiber muslin made of 100% cotton. Light and soft to the touch.",
-        colors: ["milk", "powder"]
+  description: [
+    "Muslin sundress adorned with delicate lace on the chest and skirt. A romantic mood is definitely guaranteed.",
+    "Fabric: long-staple muslin made of 100% cotton. Light and soft to the touch.",
+    "Details:",
+    "• Loose fit with wide straps that tie",
+    "• Delicate lace",
+    "• Midi length"
+  ],
+          colors: ["milk", "powder"]
       },
       FR: {
         category: "Robes",
@@ -2447,8 +2468,15 @@ description: [
       UA: {
         category: "Сукні",
         name: "Сарафан із мереживом",
-        description: "Сарафан із оздобленням мереживом.\nТканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
-        colors: ["молоко", "пудра"]
+  description: [
+    "Мусліновий сарафан оздоблений ніжним мереживом на грудях та на спідниці. Романтичний настрій вам точно буде забезпечено.",
+    "Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+    "Деталі:",
+    "• Вільний крій та широкі бретелі на завʼязках",
+    "• Ніжне мереживо",
+    "• Міді довжина"
+  ],
+          colors: ["молоко", "пудра"]
       },
       RU: {
         category: "Платья",
@@ -4384,7 +4412,14 @@ description: [
       EN: {
         category: "Dresses",
         name: "Veronica Dress",
-        description: "Fabric: Composition: 95% cotton, 5% elastane. Broderie - a light, mostly solid-colored cotton fabric with characteristic lace embroidery. The fabric is natural and breathable, making the dress very comfortable.",
+description: [
+  "An elegant and romantic broderie anglaise dress that will catch every passerby's eye. Perfect for your events or romantic dates.",
+  "Fabric: 95% cotton, 5% elastane. Broderie anglaise is a lightweight, mostly solid-colored cotton fabric with delicate embroidered patterns.",
+  "Details:",
+  "• Off-shoulder design with elastic band",
+  "• Flared skirt",
+  "• Buttons along the entire length of the dress"
+],
         color: "milk",
         colors: ["milk"]
       },
@@ -4398,7 +4433,14 @@ description: [
       UA: {
         category: "Сукні",
         name: "Сукня \"Veronica\"",
-        description: "Тканина: Склад: 95% бавовна, 5% еластан. Прошва - легка, переважно однотонна, бавовняна тканина з характерною мереживною вишивкою. Тканина відноситься до натуральних і дихаючих матеріалів, за рахунок чого сукня буде дуже комфортною.",
+description: [
+  "Елегантний та романтичний фасон сукні із прошви, у якій ти будеш ловити всі погляди прохожих. Ідеальна до ваших заходів або побачень.",
+  "Тканина: 95% бавовна, 5% еластан. Прошва — легка, переважно однотонна, бавовняна тканина з характерною мереживною вишивкою.",
+  "Деталі:",
+  "• Відкриті плечі на резинці",
+  "• Пишна спідниця",
+  "• Ґудзики по всій довжині сукні"
+],
         color: "молоко",
         colors: ["молоко"]
       }
@@ -4431,7 +4473,14 @@ description: [
       EN: {
         category: "Dresses",
         name: "Muslin Sundress",
-        description: "Light wrap midi sundress with a patch pocket and belt. Fabric: long-fiber muslin, 100% cotton. Light and soft to the touch.",
+description: [
+  "The wrap-style muslin sundress is your perfect summer essential. It offers a feeling of lightness and ultimate comfort.",
+  "Fabric: long-fiber muslin made of 100% cotton. Soft and gentle to the touch.",
+  "Details:",
+  "• Wrap-style design",
+  "• Patch pocket",
+  "• Midi length"
+],
         color: "marengo",
         colors: ["marengo", "burgundy"]
       },
@@ -4445,7 +4494,14 @@ description: [
       UA: {
         category: "Сукні",
         name: "Мусліновий сарафан",
-        description: "Легкий сарафан на запах міді довжини із накладною кишенею та поясом. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+description: [
+  "Мусліновий сарафан на запах — твоя ідеальна база на літній сезон. У ньому ти будеш відчувати тільки легкість та комфорт.",
+  "Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+  "Деталі:",
+  "• Фасон на запах",
+  "• Накладна кишеня",
+  "• Міді довжина"
+],
         color: "маренго",
         colors: ["маренго", "бордо"]
       },
@@ -4492,7 +4548,14 @@ description: [
       EN: {
         category: "Dresses",
         name: "Nature Dress",
-        description: "Oversized maxi dress with long sleeves and a round neckline. Features decorative buttons and two pockets. Fabric: long-fiber muslin, 100% cotton. Light and soft to the touch.",
+description: [
+  "So light, it feels like you're floating on a cloud. “Nature” — tenderness in every movement. Perfect for creating an eco-inspired or romantic look.",
+  "Fabric: long-fiber muslin made of 100% cotton. Light and soft to the touch.",
+  "Details:",
+  "• Decorative buttons at the neckline",
+  "• Comfortable loose fit",
+  "• 2 pockets"
+],
         color: "burgundy",
         colors: ["burgundy", "milk"]
       },
@@ -4506,7 +4569,14 @@ description: [
       UA: {
         category: "Сукні",
         name: "Сукня \"Nature\"",
-        description: "Оверсайз сукня максі довжини із довгим рукавом та округлим вирізом. Має декоративні ґудзики та дві кишені. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+description: [
+  "Така легка, що здається — ти в хмарі. “Nature” — ніжність у кожному русі. Чудово підходить для створення екологічного або романтичного образу.",
+  "Тканина: довговолокняний муслін зі 100% бавовни. Легка та м’яка тканина на дотик.",
+  "Деталі:",
+  "• Декоративні ґудзики на декольте",
+  "• Комфортний вільний крій",
+  "• 2 кишені"
+],
         color: "бордо",
         colors: ["бордо", "молоко"]
       },
@@ -4545,7 +4615,15 @@ description: [
       EN: {
         category: "Dresses",
         name: "Freedom Dress",
-        description: "Layered loose-fitting maxi dress with long sleeves. Features ruffle details along the entire dress. Fabric: long-fiber muslin, 100% cotton. Light and soft to the touch.",
+description: [
+  "“Freedom” is not just a name — it’s a feeling. The loose silhouette of the dress brings comfort, while the deep neckline and romantic ruffles highlight femininity.",
+  "Choose between classic cream or rich wine and create your mood with “Freedom”.",
+  "Fabric: long-fiber muslin made of 100% cotton. Light and soft to the touch.",
+  "Details:",
+  "• Deep V-neckline",
+  "• Maxi length with a loose fit",
+  "• Long sleeves and ruffles along the entire length"
+],
         color: "burgundy",
         colors: ["burgundy", "milk"]
       },
@@ -4559,7 +4637,15 @@ description: [
       UA: {
         category: "Сукні",
         name: "Сукня \"Freedom\"",
-        description: "Багатошарова сукня вільного крою, має максі довжину із довгим рукавом. Деталі у вигляді рюш вздовж всієї сукні. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+description: [
+  "“Freedom” — це не просто назва, це відчуття. Силует сукні вільного крою дарує комфорт, а глибокий виріз і романтичні рюші підкреслюють жіночність.",
+  "Обирай класичну молочну або насичено-винну — і створюй настрій разом із “Freedom”.",
+  "Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+  "Деталі:",
+  "• Глибокий V - виріз",
+  "• Максі довжина та вільний крій",
+  "• Довгий рукав та рюші по всій довжині"
+],
         color: "бордо",
         colors: ["бордо", "молоко"]
       },
@@ -4594,7 +4680,14 @@ description: [
       EN: {
         category: "Dresses",
         name: "Valencia Dress",
-        description: "Layered maxi dress with tie straps and a knot detail at the chest. Fabric: long-fiber muslin, 100% cotton. Light and soft to the touch.",
+description: [
+  "The layered “Valencia” dress — for your most special moments. A unique design that won't leave anyone indifferent.",
+  "Fabric: Long-staple muslin made from 100% cotton. Soft and lightweight to the touch.",
+  "Details:",
+  "• Neckline adorned with bow-style ties",
+  "• Maxi length with a comfortable elastic back",
+  "• Adjustable and re-tieable straps"
+],
         color: "powder",
         colors: ["powder"]
       },
@@ -4608,7 +4701,14 @@ description: [
       UA: {
         category: "Сукні",
         name: "Сукня \"Valencia\"",
-        description: "Багатошарова сукня максі довжини із завʼязками на бретелях. Деталі у вигляді вузла на грудях. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+description: [
+  "Багатошарова сукня «Valencia» до твоїх особливих моментів. Унікальний дизайн, який жодного не залишить байдужим.",
+  "Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+  "Деталі:",
+  "• Декольте прикрашено завʼязками у вигляді банту",
+  "• Максі довжина та комфортна резинка на спинці",
+  "• Бретелі можна перевʼязувати"
+],
         color: "пудра",
         colors: ["пудра"]
       },
@@ -4647,7 +4747,14 @@ description: [
       EN: {
         category: "Dresses",
         name: "Ella Dress",
-        description: "Asymmetrical dress with short sleeves and delicate lace inserts. Fabric: long-fiber muslin, 100% cotton. Light and soft to the touch.",
+description: [
+  "Incredibly light, like a breeze. The “Ella” dress made from natural muslin offers comfort even on the hottest days.",
+  "Fabric: Long-staple muslin made from 100% cotton. Soft and lightweight to the touch.",
+  "Details:",
+  "• Elegant lace along the dress",
+  "• Asymmetrical length",
+  "• Cropped sleeves"
+],
         color: "marengo",
         colors: ["marengo"]
       },
@@ -4661,7 +4768,14 @@ description: [
       UA: {
         category: "Сукні",
         name: "Сукня \"Ella\"",
-        description: "Сукня асиметричної довжина із вкороченим рукавчиком та вставками із ніжного мережива. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+description: [
+  "Неймовірно легка, як подих вітру. Сукня “Ella” з натурального мусліну дарує комфорт навіть у найспекотніші дні.",
+  "Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+  "Деталі:",
+  "• Вишукане мереживо вздовж сукні",
+  "• Асиметрична довжина",
+  "• Вкорочені рукава"
+],
         color: "маренго",
         colors: ["маренго"]
       },
@@ -4704,8 +4818,15 @@ description: [
       EN: {
         category: "Dresses",
         name: "Dress 'Provence'",
-        description: "A mini-length dress with long sleeves and ruffles at the neckline. The skirt features a delicate flounce. Fabric: long-fiber muslin made of 100% cotton. A light and soft fabric to the touch.",
-        color: "milk",
+  description: [
+    "Immerse yourself in a French mood with the \"Provence\" dress. A romantic style with long sleeves and ruffles on the neckline. The skirt features a delicate flounce.",
+    "Fabric: long-staple muslin made of 100% cotton. Light and soft to the touch.",
+    "Details:",
+    "• Delicate ruffles on the neckline",
+    "• Mini length",
+    "• Comes with a cotton lining"
+  ],
+          color: "milk",
         colors: ["milk", "powder"]
       },
       FR: {
@@ -4718,8 +4839,15 @@ description: [
       UA: {
         category: "Сукні",
         name: "Сукня \"Provence\"",
-        description: "Сукня міні довжини із довгим рукавом та оброками на вирізі. На спідниці є ніжний волан. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
-        color: "молоко",
+  description: [
+    "Поринь у французський настрій разом із сукнею \"Provence\". Романтичний фасон із довгим рукавом та оборками на вирізі. На спідниці є ніжний волан.",
+    "Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+    "Деталі:",
+    "• Ніжні оборки на вирізі",
+    "• Міні довжина",
+    "• Має бавовняну підкладку"
+  ],
+         color: "молоко",
         colors: ["молоко", "пудра"]
       },
       RU: {
