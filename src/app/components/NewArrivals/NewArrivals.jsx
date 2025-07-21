@@ -41,14 +41,8 @@ const NewArrivals = () => {
           Дивитися всі →
         </button>
       </div>
-
-      <div
-        className={`grid gap-5 ${
-          isMobile
-            ? 'grid-cols-2 px-4 max-h-[430px] overflow-y-auto'
-            : 'grid-cols-3 md:grid-cols-4 lg:grid-cols-5'
-        }`}
-      >
+<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+   
         {newProducts.slice(0, visibleCount).map((product, index) => (
           <div
             key={product.id}
