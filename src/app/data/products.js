@@ -1,4 +1,222 @@
 const products = [
+  {
+  id: 151,
+  price: 5100,
+  isTop: false,
+  isNew: true,
+  sku: "98804",
+  size: "XS S M L XL",
+  category: "Костюми",
+  image: "/Costumes/Raw Cut Suit/1.avif",
+  images: [
+    "/Costumes/Raw Cut Suit/2.avif",
+    "/Costumes/Raw Cut Suit/3.avif",
+    "/Costumes/Raw Cut Suit/4.avif",
+    "/Costumes/Raw Cut Suit/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Raw Cut Suit",
+      description: [
+        "Butter-colored suit: oversized raw-cut linen jacket and classic high-waisted pants.",
+        "Fabric: 100% natural linen. Doesn’t itch and is nearly opaque.",
+        "Details:",
+        "• oversized fit",
+        "• raw cut",
+        "• high waist"
+      ],
+      colors: ["butter"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume en lin à coupe brute",
+      description: [
+        "Costume couleur beurre : veste oversize en lin à coupe brute et pantalon classique taille haute.",
+        "Tissu : 100% lin naturel. Ne gratte pas et presque pas transparent.",
+        "Détails :",
+        "• coupe oversize",
+        "• coupe brute",
+        "• taille haute"
+      ],
+      colors: ["beurre"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм необробленого крою",
+      description: [
+        "Масло костюм: лляний оверсайз жакет необробленого крою та класичні брюки на високій посадці.",
+        "Тканина: 100% натуральний льон. Не колеться та майже не просвічує.",
+        "Деталі:",
+        "• оверсайз фасон",
+        "• необроблений крій",
+        "• висока посадка"
+      ],
+      colors: ["масло"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм необработанного кроя",
+      description: [
+        "Костюм цвета масло: льняной жакет оверсайз необработанного кроя и классические брюки с высокой посадкой.",
+        "Ткань: 100% натуральный лён. Не колется и почти не просвечивает.",
+        "Детали:",
+        "• фасон оверсайз",
+        "• необработанный крой",
+        "• высокая посадка"
+      ],
+      colors: ["масло"]
+    }
+  }
+},
+
+  {
+  id: 150,
+  price: 3950,
+  isTop: false,
+  isNew: true,
+  sku: "98803",
+  size: "XS S M L XL",
+  category: "Костюми",
+  image: "/Costumes/Long Vest Suit/1.avif",
+  images: [
+    "/Costumes/Long Vest Costume/2.avif",
+    "/Costumes/Long Vest Costume/3.avif",
+    "/Costumes/Long Vest Costume/4.avif",
+    "/Costumes/Long Vest Costume/5.avif",
+    "/Costumes/Long Vest Costume/6.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Costume with Long Vest",
+      description: [
+        "Mocha linen suit: elongated linen vest with corset-style back and high-waisted bermuda shorts.",
+        "Fabric: 100% natural linen. Doesn’t itch and is nearly opaque.",
+        "Details:",
+        "• tailored silhouette",
+        "• corset-style back",
+        "• high waist"
+      ],
+      colors: ["mocha"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume avec gilet long",
+      description: [
+        "Costume couleur moka : gilet long en lin avec dos style corset et bermudas taille haute.",
+        "Tissu : 100% lin naturel. Ne gratte pas et presque pas transparent.",
+        "Détails :",
+        "• coupe cintrée",
+        "• dos style corset",
+        "• taille haute"
+      ],
+      colors: ["moka"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм із подовженим жилетом",
+      description: [
+        "Мокко костюм: лляний подовжений жилет з корсетною спинкою та шорти-бермуди на високій посадці.",
+        "Тканина: 100% натуральний льон. Не колеться та майже не просвічує.",
+        "Деталі:",
+        "• приталений фасон",
+        "• корсетна спинка",
+        "• висока посадка"
+      ],
+      colors: ["мокко"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм с удлинённым жилетом",
+      description: [
+        "Костюм цвета мокко: льняной удлинённый жилет с корсетной спинкой и бермуды с высокой посадкой.",
+        "Ткань: 100% натуральный лён. Не колется и почти не просвечивает.",
+        "Детали:",
+        "• приталенный фасон",
+        "• корсетная спинка",
+        "• высокая посадка"
+      ],
+      colors: ["мокко"]
+    }
+  }
+},
+  {
+  id: 149,
+  price: 5100,
+  isTop: false,
+  isNew: true,
+  sku: "98802",
+  size: "XS S M L XL",
+  category: "Костюми",
+  image: "/Costumes/Costume with Vest-Shirt/1.avif",
+  images: [
+    "/Costumes/Costume with Vest-Shirt/2.avif",
+    "/Costumes/Costume with Vest-Shirt/3.avif",
+    "/Costumes/Costume with Vest-Shirtt/4.avif",
+    "/Costumes/Costume with Vest-Shirt/5.avif",
+    "/Costumes/Costume with Vest-Shirt/6.avif",
+    
+    
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Costume with Vest-Shirt",
+      description: [
+        "White linen Costume: linen wrap vest with batiste shirt elements and high-waisted palazzo trousers.",
+        "Fabric: 100% natural linen. Doesn’t itch and is nearly opaque.",
+        "Details:",
+        "• wrap design",
+        "• batiste shirt-style inserts",
+        "• high waist"
+      ],
+      colors: ["white"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume avec gilet-chemise",
+      description: [
+        "Costume blanc : gilet portefeuille en lin avec éléments de chemise en batiste et pantalon palazzo taille haute.",
+        "Tissu : 100% lin naturel. Ne gratte pas et presque pas transparent.",
+        "Détails :",
+        "• coupe portefeuille",
+        "• inserts chemise en batiste",
+        "• taille haute"
+      ],
+      colors: ["blanc"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм із жилетом-сорочкою",
+      description: [
+        "Білий костюм: лляний жилет з елементами батистової сорочки із принтом та брюки-палаццо на високій посадці.",
+        "Тканина: 100% натуральний льон. Не колеться та майже не просвічує.",
+        "Деталі:",
+        "• фасон на запах",
+        "• батистові вставки у вигляді сорочки",
+        "• висока посадка"
+      ],
+      colors: ["білий"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм с жилетом-рубашкой",
+      description: [
+        "Белый костюм: льняной жилет с элементами батистовой рубашки с принтом и брюки-палаццо с высокой посадкой.",
+        "Ткань: 100% натуральный лён. Не колется и почти не просвечивает.",
+        "Детали:",
+        "• фасон на запах",
+        "• батистовые вставки в виде рубашки",
+        "• высокая посадка"
+      ],
+      colors: ["белый"]
+    }
+  }
+},
   // {
   //   id: 148,
   //   price: 10,
@@ -329,7 +547,7 @@ description: [
   "• Neat pleats and delicate side buttons",
   "• Versatile midi length that always looks appropriate"
 ],
-        colors: ["white"]
+        colors: ["white", "pink", "butter", "lemon"]
       },
       FR: {
         category: "Robes",
@@ -349,7 +567,7 @@ description: [
   "• Акуратні складки та ніжні ґудзики з боків",
   "• Універсальна міді-довжина, що завжди виглядає доречно"
 ],
-        colors: ["білий"]
+        colors: ["білий", "рожевий", "масло", "лимонний"]
       },
       RU: {
         category: "Платья",
