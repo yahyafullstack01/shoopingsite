@@ -1,12 +1,14 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { useLanguage } from '../../Functions/useLanguage';
 import Toast from '../ToastCart/Toast';
 import QuickAddModal from '../QuickAddModal/QuickAddModal';
 import ProductBanner from '../products/ProductBanner';
 import { getSessionId } from '../../utils/session';
+import { FaHeart, FaRegHeart } from 'react-icons/fa';
+import { getFavorites, toggleFavorite } from '../../utils/favorites';
 
 const NewArrivalsInfo = ({ products }) => {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -14,6 +16,7 @@ const NewArrivalsInfo = ({ products }) => {
   const [showBanner, setShowBanner] = useState(false);
   const [showToast, setShowToast] = useState(false);
   const [lastProduct, setLastProduct] = useState(null);
+const [favorites, setFavorites] = useState(getFavorites());
 
   const { language, translateList } = useLanguage();
   const infoLabels = translateList('Infoform', 'header');
@@ -70,6 +73,13 @@ const NewArrivalsInfo = ({ products }) => {
     setShowModal(false);
     setShowBanner(false);
   };
+ useEffect(() => {
+  setFavorites(getFavorites());
+}, []);
+const handleFavoriteToggle = (productId) => {
+  const updated = toggleFavorite(productId);
+  setFavorites(updated);
+};
 
   return (
     <section className="bg-white dark:bg-zinc-900 py-14 px-5 transition-colors duration-300">
@@ -80,12 +90,14 @@ const NewArrivalsInfo = ({ products }) => {
       <div className="grid gap-6 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
         {products.map((product) => {
           const translatedName = product.translations?.[language]?.name || product.name;
+    const isFav = favorites.includes(product.id);
 
           return (
             <article
               key={product.id}
               className="bg-gray-100 dark:bg-[#0f172a] p-3 sm:p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 relative"
             >
+            
               <div
                 onClick={() => openBanner(product)}
                 onKeyDown={(e) => e.key === 'Enter' && openBanner(product)}
@@ -95,6 +107,19 @@ const NewArrivalsInfo = ({ products }) => {
                 aria-label={`View details for ${translatedName}`}
               >
                 <figure className="w-full overflow-hidden rounded relative aspect-[3/4]">
+                 <button
+  onClick={(e) => {
+    e.stopPropagation();
+    handleFavoriteToggle(product.id);
+  }}
+  className={`absolute top-2 right-2 text-xl z-10 transition duration-300 ${
+    isFav ? 'text-red-600' : 'text-gray-400'
+  }`}
+  aria-label="Додати в улюблене"
+>
+  {isFav ? <FaHeart /> : <FaRegHeart />}
+</button>
+
                   <Image
                     src={product.image || `https://via.placeholder.com/300x400?text=${translatedName}`}
                     alt={translatedName || 'Product Image'}

@@ -1,3 +1,4 @@
+
 'use client';
 
 import React, { useState, useEffect } from "react";
@@ -44,8 +45,8 @@ const ProductBanner = ({
       .replace(/грн|₴|uah/gi, '')
       .replace(/\s+/g, ' ')
       .trim();
-
-    const price = Number(String(product.price).replace(/[^\d.]/g, '')).toFixed(2);
+const rawPrice = product.discountPrice || product.price;
+const price = Number(String(rawPrice).replace(/[^\d.]/g, '')).toFixed(2);
 
     if (!sessionId) {
       alert("Не вдалося створити сесію. Спробуйте оновити сторінку.");
@@ -60,7 +61,9 @@ const ProductBanner = ({
           sessionId,
           productId: product.id,
           name,
-          price,
+           price: Number(product.price), 
+  discountPrice: product.discountPrice ?? null, 
+         
           color: selectedColor,
           size: selectedSize,
           quantity,
@@ -129,7 +132,9 @@ const ProductBanner = ({
                   name: translatedName,
                   description: translatedDescription,
                   image: getSrc(currentImage),
-                  price: selectedProduct.price,
+                   price: selectedProduct.discountPrice || selectedProduct.price,
+  oldPrice: selectedProduct.discountPrice ? selectedProduct.price : null,
+             
                 }}
                 color={selectedProduct.translations?.[language]?.color || selectedProduct.color}
                 colors={selectedProduct.translations?.[language]?.colors || selectedProduct.colors}
@@ -151,17 +156,25 @@ const ProductBanner = ({
 
       {showToast && (
         <Toast
-          product={{
-            name: translatedName,
-            price: selectedProduct.price,
-            image: selectedProduct.image,
-            quantity,
-          }}
-          onClose={() => setShowToast(false)}
-        />
+  product={{
+    name: translatedName,
+    price: selectedProduct.discountPrice || selectedProduct.price,
+    oldPrice:
+      selectedProduct.discountPrice && selectedProduct.discountPrice < selectedProduct.price
+        ? selectedProduct.price
+        : null,
+    image: selectedProduct.image,
+    quantity,
+  }}
+  onClose={() => setShowToast(false)}
+/>
+
+   
+      
       )}
     </>
   );
 };
 
 export default ProductBanner;
+  

@@ -467,7 +467,7 @@ const handleWayforpayClick = async () => {
   return (
   
 
-<div className="p-6 mt-8 max-w-5xl mx-auto bg-[#fdfcf7]  dark:bg-zinc-900 rounded-xl shadow-md space-y-6">
+<div className="p-6 mt-8 sm:max-w-4xl xl:max-w-6xl mx-auto bg-[#fdfcf7]  dark:bg-zinc-900 rounded-xl shadow-md space-y-6">
   <h1 className="text-3xl font-normal mb-6 text-gray-800 dark:text-white">Оформлення замовлення</h1>
 
   {/* ПІДСУМОК */}

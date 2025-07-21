@@ -1,10 +1,11 @@
-import { Suspense } from "react";
-import Layout from "../components/Layout";
+
 import ContactUs from "../components/Contact_US/Contact_us";
 import Script from "next/script";
 import Head from "next/head";
 import seoConfig from "../../../next-seo.config";
 import contactJsonLd from "../seo/contact-jsonld";
+import Layout from "../components/Layout";
+import { Suspense } from "react";
 
 export const dynamic = "force-dynamic";
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import ProductCard from "../products/ProductCard";
 import { useLanguage } from "../../Functions/useLanguage";
 import QuickAddModal from "../QuickAddModal/QuickAddModal"; // імпортуй
@@ -6,6 +6,7 @@ import QuickAddModal from "../QuickAddModal/QuickAddModal"; // імпортуй
 const PaginatedProducts = ({ products, productsPerPage = 12, onProductClick, onAddToCart }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [quickAddProduct, setQuickAddProduct] = useState(null); // Додано
+const productsRef = useRef(null);
 
   const handleOpenQuickAdd = (product) => setQuickAddProduct(product);
   const handleCloseQuickAdd = () => setQuickAddProduct(null);
@@ -19,14 +20,18 @@ const PaginatedProducts = ({ products, productsPerPage = 12, onProductClick, onA
     (currentPage - 1) * productsPerPage,
     currentPage * productsPerPage
   );
-
   const handlePageChange = (pageNumber) => {
-    setCurrentPage(pageNumber);
-  };
+  setCurrentPage(pageNumber);
+  setTimeout(() => {
+    productsRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, 0);
+};
+
+
 return (
   <div className="w-full">
     {/* Список товарів */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+    <div ref={productsRef}  className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
       {currentProducts.map((product) => (
         <ProductCard
           key={product.id}

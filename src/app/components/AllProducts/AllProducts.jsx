@@ -48,20 +48,11 @@ export default function AllProducts() {
     const selectedColor = arg?.selectedColor || "";
     const selectedSize = arg?.selectedSize || "";
     const quantity = arg?.quantity || 1;
-
-    const name = (
-      product?.translations?.[language]?.name ||
-      product?.name ||
-      product?.title ||
-      "Unnamed Product"
-    )
-      .replace(/["«»]/g, "")
-      .replace(/грн|₴|uah/gi, "")
-      .replace(/\s+/g, " ")
-      .trim();
-
-    const rawPrice = product?.price || "0";
-    const price = Number(String(rawPrice).replace(/[^\d.]/g, "")).toFixed(2);
+    const name = product?.name || product?.title || "Unnamed Product";
+    const price = Number(product?.price || 0).toFixed(2);
+    const discountPrice = product?.oldPrice
+      ? Number(product?.price).toFixed(2)
+      : null;
 
     try {
       const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/cart`, {
@@ -72,6 +63,7 @@ export default function AllProducts() {
           productId: product?.id || "unknown",
           name,
           price,
+           discountPrice, 
           color: selectedColor,
           size: selectedSize,
           quantity,
@@ -79,7 +71,7 @@ export default function AllProducts() {
       });
 
       const data = await res.json();
-      setLastProduct({ name, price, image: product.image, quantity });
+      setLastProduct({ name, price: discountPrice || price,  image: product.image, quantity });
       setShowToast(true);
     } catch (err) {
       console.error("❌ Помилка додавання в корзину:", err);

@@ -2,10 +2,9 @@
 "use client"; 
 import Head from "next/head";
  import React, {useRef, useEffect, useState } from "react";
-//import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { FaMoon, FaSun, FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
+import { FaMoon, FaSun, FaBars, FaTimes, FaChevronDown,FaHeart } from "react-icons/fa";
 import { useHeaderState } from "../../hooks/useHeader"; 
 import { useLanguage } from "../../Functions/useLanguage"; 
 import { useRouter } from "next/navigation"
@@ -47,7 +46,23 @@ const [isMobileCategoriesOpen, setIsMobileCategoriesOpen] = useState(false);
     { name: menuItems[14], path: "outerwear" },
     {name: menuItems[15], path: "shorts"}
 ];
+const [count, setCount] = useState(0);
 
+  useEffect(() => {
+    const stored = localStorage.getItem('favorites');
+    if (stored) {
+      const favorites = JSON.parse(stored);
+      setCount(favorites.length);
+    }
+
+    const handleStorageChange = () => {
+      const updated = JSON.parse(localStorage.getItem('favorites') || '[]');
+      setCount(updated.length);
+    };
+
+    window.addEventListener('storage', handleStorageChange);
+    return () => window.removeEventListener('storage', handleStorageChange);
+  }, []);
   const handleCategoryClick = (categoryPath) => {
     router.push(`/All-products?category=${categoryPath}`);
     setIsCategoriesOpen(false);
@@ -103,6 +118,16 @@ useEffect(() => {
            </Link>
          </div>
          <div className="flex items-center space-x-4 lg:hidden">
+            <Link href="/favorites" aria-label="Go to Favorites">
+    <div className="relative p-2 rounded-full border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-600 transition duration-300">
+      <FaHeart className="text-gray-900 dark:text-gray-300" />
+      {count > 0 && (
+        <span className="absolute -top-1 -right-1 bg-red-600 text-white text-xs rounded-full px-1">
+          {count}
+        </span>
+      )}
+    </div>
+  </Link>
            <button
              onClick={toggleMenu}
              aria-label="Open Menu"
@@ -178,13 +203,27 @@ useEffect(() => {
          </nav>
    
          <div className="hidden lg:flex items-center space-x-2">
-           <button
-             onClick={toggleLanguage}
-             aria-label="Toggle Language"
-             className="p-1 sm:p-2 rounded-full border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-600 transition duration-300 text-xs sm:text-sm md:text-base lg:text-lg flex items-center justify-center"
-           >
-              {language === "EN" ? "🇬🇧 EN" : "🇺🇦 UA"}
-           </button>
+          
+         
+            <Link href="/favorites" aria-label="Go to Favorites">
+    <div className="relative p-2 rounded-full border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-600 transition duration-300">
+      <FaHeart className="text-gray-900 dark:text-gray-300" />
+      {count > 0 && (
+        <span className="absolute -top-1 -right-1 bg-red-600 text-white text-xs rounded-full px-1">
+          {count}
+        </span>
+      )}
+    </div>
+  </Link>
+     <button
+  onClick={toggleLanguage}
+  aria-label="Toggle Language"
+  className=" p-1 sm:p-2 rounded-full border border-gray-300 dark:border-gray-700 bg-white dark:bg-black hover:bg-gray-100 dark:hover:bg-gray-700 transition text-[11px] sm:text-sm font-semibold flex items-center justify-center"
+>
+  {language === "EN" ? "EN 🇬🇧" : "UA 🇺🇦"}
+</button>
+
+   
            <button
              onClick={() => toggleDarkMode(!isDarkMode)}
              aria-label="Toggle Dark Mode"
@@ -234,6 +273,11 @@ useEffect(() => {
            </div>
    
            <ul className="flex flex-col items-start space-y-4 p-6 text-xs sm:text-sm md:text-base lg:text-lg" role="menubar">
+           <li className="text-center" role="menuitem">
+               <Link href="/" aria-label={`Go to ${menuItems[0]} page`}>
+                 {menuItems[0]}
+               </Link>
+             </li>
             <li className="relative block lg:hidden" role="menuitem" ref={mobileCatalogRef}>
   <button
     onClick={() => setIsMobileCategoriesOpen((prev) => !prev)}

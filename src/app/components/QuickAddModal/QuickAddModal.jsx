@@ -19,28 +19,39 @@ export default function QuickAddModal({ product, onClose, onAddToCart }) {
   const translatedSizes = product.sizes || [];
 
   const handleAddToCartClick = () => {
-    let hasError = false;
+  let hasError = false;
 
-    if (!selectedColor) {
-      setColorError("Оберіть колір");
-      hasError = true;
-    } else setColorError("");
+  if (!selectedColor) {
+    setColorError("Оберіть колір");
+    hasError = true;
+  } else setColorError("");
 
-    if (!selectedSize) {
-      setSizeError("Оберіть розмір");
-      hasError = true;
-    } else setSizeError("");
+  if (!selectedSize) {
+    setSizeError("Оберіть розмір");
+    hasError = true;
+  } else setSizeError("");
 
-    if (quantity <= 0) {
-      setQuantityError("Вкажіть кількість");
-      hasError = true;
-    } else setQuantityError("");
+  if (quantity <= 0) {
+    setQuantityError("Вкажіть кількість");
+    hasError = true;
+  } else setQuantityError("");
 
-    if (hasError) return;
+  if (hasError) return;
 
-    onAddToCart({ product, selectedColor, selectedSize, quantity });
-    onClose();
-  };
+  onAddToCart({
+    product: {
+      ...product,
+      // передаємо повну ціну + знижку (якщо є)
+      price: product.price,
+      discountPrice: product.discountPrice ?? null,
+    },
+    selectedColor,
+    selectedSize,
+    quantity,
+  });
+
+  onClose();
+};
 
   const handleQuantityChange = (value) => {
     const valid = Math.max(1, Number(value));

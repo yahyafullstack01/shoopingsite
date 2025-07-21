@@ -20,6 +20,8 @@ const Toast = ({ product, onClose }) => {
     };
   }, [onClose]);
 
+  const hasDiscount = product.oldPrice && product.oldPrice > product.price;
+
   return (
     <div className="fixed top-6 right-6 bg-white dark:bg-gray-900 text-black dark:text-white border border-gray-300 dark:border-gray-700 rounded-xl shadow-xl w-[360px] p-5 z-50 animate-fade-in-up transition-all duration-300">
       <div className="flex items-center gap-3">
@@ -29,9 +31,20 @@ const Toast = ({ product, onClose }) => {
           className="w-20 h-24 object-cover rounded-lg"
         />
         <div className="flex-1">
-          <p className="font-normaltext-base">{product.name}</p>
+          <p className="font-normal text-base">{product.name}</p>
           <p className="text-sm mt-1">Кількість: {product.quantity}</p>
-          <p className="text-sm">Ціна: {product.price} UAH</p>
+
+          <p className="text-sm mt-1">
+            Ціна:{" "}
+            {hasDiscount ? (
+              <>
+                <span className="text-red-600 font-semibold">{product.price} UAH</span>{" "}
+                <span className="line-through text-gray-400">{product.oldPrice} UAH</span>
+              </>
+            ) : (
+              <span>{product.price} UAH</span>
+            )}
+          </p>
         </div>
       </div>
 
@@ -53,33 +66,3 @@ const Toast = ({ product, onClose }) => {
 };
 
 export default Toast;
-{/*}
-'use client';
-import { useEffect } from 'react';
-
-const Toast = ({ product, onClose }) => {
-  useEffect(() => {
-    const timer = setTimeout(() => onClose(), 10000);
-    return () => clearTimeout(timer);
-  }, [onClose]);
-
-  return (
-    <div className="fixed top-5 right-5 bg-white dark:bg-gray-900 text-black dark:text-white border border-gray-300 dark:border-gray-700 rounded-lg shadow-lg w-[300px] p-4 z-50 animate-fade-in-up">
-      <div className="flex items-center">
-        <img
-          src={product.image || `https://via.placeholder.com/80`}
-          alt={product.name}
-          className="w-16 h-20 object-cover rounded mr-3"
-        />
-        <div>
-          <p className="font-bold text-sm">{product.name}</p>
-          <p className="text-xs mt-1">Кількість: {product.quantity}</p>
-          <p className="text-xs">Ціна: {product.price} UAH</p>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default Toast;
-*/}

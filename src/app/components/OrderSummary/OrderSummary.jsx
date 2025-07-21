@@ -21,8 +21,11 @@ export default function OrderSummary() {
 
         if (res.ok && Array.isArray(data.cart)) {
           setCartItems(data.cart);
-          const totalSum = data.cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-          setTotal(totalSum);
+          const totalSum = data.cart.reduce(
+  (sum, item) => sum + (item.discountPrice ?? item.price) * item.quantity,
+  0
+);
+        setTotal(totalSum);
         } else {
           console.error('❌ Помилка у відповіді API корзини:', data);
         }
@@ -54,9 +57,19 @@ export default function OrderSummary() {
               />
 
               <div className="text-sm flex-1 text-center sm:text-left">
-                <p className="font-normal text-base truncate">{item.name}</p>
-                <p className="text-gray-600 dark:text-gray-300">Ціна: {item.price} грн</p>
-                {item.size && <p className="text-gray-600 dark:text-gray-300">Розмір: {item.size}</p>}
+                <p className="font-normal text-base break-words">{item.name}</p>
+                <p className="text-gray-600 dark:text-gray-300">
+  Ціна:{' '}
+  {item.discountPrice ? (
+    <>
+      <span className="text-red-600 font-semibold">{item.discountPrice} грн</span>{' '}
+      <span className="line-through text-gray-400">{item.price} грн</span>
+    </>
+  ) : (
+    <>{item.price} грн</>
+  )}
+</p>
+  {item.size && <p className="text-gray-600 dark:text-gray-300">Розмір: {item.size}</p>}
                 {item.color && <p className="text-gray-600 dark:text-gray-300">Колір: {item.color}</p>}
                 <p className="text-gray-600 dark:text-gray-300">Кількість: {item.quantity}</p>
 

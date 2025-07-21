@@ -1,4 +1,5 @@
-"use client";
+'use client';
+
 import products from "../../data/products";
 import { useState, useRef, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -9,6 +10,7 @@ import ThumbnailCarousel from "../ThumbnailCarousel/ThumbnailCarousel";
 import Image from "next/image";
 import { getSessionId } from "../../utils/session";
 import Toast from "../ToastCart/Toast";
+import QuickAddModal from "../QuickAddModal/QuickAddModal";
 
 export default function TopProductsInfo() {
   const { translateList, language } = useLanguage();
@@ -16,11 +18,15 @@ export default function TopProductsInfo() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const descriptionRef = useRef(null);
-const [showToast, setShowToast] = useState(false);
-const [lastProduct, setLastProduct] = useState(null);
+
+  const [showToast, setShowToast] = useState(false);
+  const [lastProduct, setLastProduct] = useState(null);
+  const [quickAddProduct, setQuickAddProduct] = useState(null);
+
+  const handleOpenQuickAdd = (product) => setQuickAddProduct(product);
+  const handleCloseQuickAdd = () => setQuickAddProduct(null);
 
   const topProducts = products.filter((product) => product.isTop === true);
-
   const selectedProductId = searchParams.get("product");
   const initialProduct = selectedProductId
     ? topProducts.find((p) => p.id === Number(selectedProductId))
@@ -48,12 +54,16 @@ const [lastProduct, setLastProduct] = useState(null);
 
   const handleAddToCart = async ({ product, selectedColor, selectedSize, quantity }) => {
     const sessionId = getSessionId();
-  
     if (!sessionId) {
       alert("Не вдалося створити сесію. Спробуйте оновити сторінку.");
       return;
     }
-  
+
+    if (!selectedColor || !selectedSize) {
+      alert("Вкажіть всі поля");
+      return;
+    }
+
     const payload = {
       sessionId,
       productId: product.id,
@@ -61,35 +71,34 @@ const [lastProduct, setLastProduct] = useState(null);
       size: selectedSize,
       quantity,
     };
-  
+
     try {
       const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/cart`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
-  
+
       const data = await res.json();
-  
+
       if (!res.ok) {
         alert(data.message || "Помилка при додаванні в корзину");
         return;
       }
-  setLastProduct({
-  name: product.translations?.[language]?.name || product.title,
-  price: product.price,
-  image: product.image,
-  quantity,
-});
-setShowToast(true);
 
-   
+      setLastProduct({
+        name: product.translations?.[language]?.name || product.title,
+        price: product.price,
+        image: product.image,
+        quantity,
+      });
+      setShowToast(true);
     } catch (err) {
       console.error("❌ Додавання в корзину не вдалося:", err);
       alert("Помилка при додаванні в корзину");
     }
   };
-  
+
   const onContactClick = (selectedColor, selectedSize, quantity, currentLanguage) => {
     handleContactButtonClick(router, selectedProduct, selectedColor, selectedSize, quantity, currentLanguage);
   };
@@ -101,40 +110,67 @@ setShowToast(true);
   };
 
   return (
-    <div className="dark:bg-gray-800 bg-gray-100 text-black dark:text-white min-h-screen px-4 py-8">
-  <div className="text-center">
+    <div className="dark:bg-black bg-gray-100 text-black dark:text-white min-h-screen px-4 py-8">
+      <div className="text-center">
         <h1 className="text-3xl md:text-4xl font-normal mb-4">{menuItems[0]}</h1>
       </div>
 
       <section aria-labelledby="top-products">
         <h2 id="top-products" className="sr-only">Top Products</h2>
-        <div className="bg-gray-100 dark:bg-gray-800 max-h-[450px] md:max-h-[600px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 mb-8">
+        <div className="bg-gray-100 dark:bg-black max-h-[450px] md:max-h-[600px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 mb-8">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 md:gap-6 p-4">
             {topProducts.map((product) => {
               const translatedName = product.translations?.[language]?.name || product.title;
+              const hasMultipleOptions = (product.colors?.length || 0) > 1 || (product.sizes?.length || 0) > 1;
 
               return (
                 <article
-                  key={product.id}
-                  className="text-black bg-gray-100 dark:bg-white dark:text-black rounded shadow-lg hover:scale-105 transition-transform cursor-pointer"
-               onClick={() => handleProductClick(product)}
-                >
-                  <div className="w-full h-[200px] sm:h-[350px] overflow-hidden rounded-t">
-                    <Image
-                      src={product.image}
-                      alt={`Preview of ${translatedName}`}
-                      width={300}
-                       height={350}
-                      className="w-full h-full object-cover"
-                      priority
-                    />
-                  </div>
-                  <div className="p-2 sm:p-4 dark:bg-gray-200">
-      
-                    <h3 className="font-normal text-sm sm:text-lg">{translatedName}</h3>
-                    <p className="text-black dark:text-gray-600 text-xs sm:text-base">{product.price}</p>
-                  </div>
-                </article>
+  key={product.id}
+  className="bg-white dark:bg-neutral-900 text-black dark:text-white rounded-xl shadow-md hover:shadow-lg p-4 flex flex-col justify-between hover:scale-[1.02] transition duration-300"
+>
+  <div
+    onClick={() => handleProductClick(product)}
+    className="cursor-pointer"
+  >
+    <div className="w-full h-[200px] sm:h-[350px] overflow-hidden rounded-lg">
+      <Image
+        src={product.image}
+        alt={`Preview of ${translatedName}`}
+        width={300}
+        height={350}
+        className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+        priority
+      />
+    </div>
+    <h3 className="font-light text-base sm:text-lg mt-3">{translatedName}</h3>
+    <p className="text-sm text-black/70 dark:text-white/70">
+      {product.price} UAH
+    </p>
+  </div>
+
+  <button
+    onClick={() => {
+      if (hasMultipleOptions) {
+        handleOpenQuickAdd(product);
+      } else {
+        handleAddToCart({
+          product,
+          selectedColor: product.color?.[0] || "",
+          selectedSize: product.sizes?.[0] || "",
+          quantity: 1,
+        });
+      }
+    }}
+    className="mt-4 w-full bg-black hover:bg-neutral-800 text-white text-sm py-2 rounded-md tracking-wide uppercase transition"
+  >
+    Додати в кошик
+  </button>
+
+  <p className="text-xs text-neutral-500 dark:text-neutral-400 mt-2">
+    Натисніть на фото, щоб переглянути деталі
+  </p>
+</article>
+
               );
             })}
           </div>
@@ -173,13 +209,18 @@ setShowToast(true);
           onAddToCartClick={handleAddToCart}
         />
       </article>
-      {showToast && lastProduct && (
-  <Toast
-    product={lastProduct}
-    onClose={() => setShowToast(false)}
-  />
-)}
 
+      {quickAddProduct && (
+        <QuickAddModal
+          product={quickAddProduct}
+          onClose={handleCloseQuickAdd}
+          onAddToCart={handleAddToCart}
+        />
+      )}
+
+      {showToast && lastProduct && (
+        <Toast product={lastProduct} onClose={() => setShowToast(false)} />
+      )}
     </div>
   );
 }
