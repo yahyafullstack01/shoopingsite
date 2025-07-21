@@ -45,14 +45,14 @@ const NewArrivals = () => {
       <div
         className={`grid gap-5 ${
           isMobile
-            ? 'grid-cols-2 max-h-[430px] overflow-y-auto pr-1'
+            ? 'grid-cols-2 px-4 max-h-[430px] overflow-y-auto'
             : 'grid-cols-3 md:grid-cols-4 lg:grid-cols-5'
         }`}
       >
         {newProducts.slice(0, visibleCount).map((product, index) => (
           <div
             key={product.id}
-            className="relative aspect-[2/3] min-h-0 rounded-xl overflow-hidden shadow-md dark:shadow-lg cursor-pointer transition-transform duration-300 hover:scale-[1.03]"
+            className="relative w-full aspect-[2/3] min-h-0 rounded-xl overflow-hidden shadow-md dark:shadow-lg cursor-pointer transition-transform duration-300 hover:scale-[1.03]"
             onClick={handleClick}
             itemScope
             itemProp="itemListElement"
