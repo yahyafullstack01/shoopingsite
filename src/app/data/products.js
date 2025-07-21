@@ -155,11 +155,9 @@ const products = [
   images: [
     "/Costumes/Costume with Vest-Shirt/2.avif",
     "/Costumes/Costume with Vest-Shirt/3.avif",
-    "/Costumes/Costume with Vest-Shirtt/4.avif",
+    "/Costumes/Costume with Vest-Shirt/4.avif",
     "/Costumes/Costume with Vest-Shirt/5.avif",
     "/Costumes/Costume with Vest-Shirt/6.avif",
-    
-    
   ],
   sizes: ["XS", "S", "M", "L", "XL"],
   translations: {
