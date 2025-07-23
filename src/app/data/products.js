@@ -6,7 +6,7 @@ const products = [
   isNew: true,
   sku: "98804",
   size: "XS S M L XL",
-  category: "Костюми",
+  category: "Costumes",
   image: "/Costumes/Raw Cut Suit/1.avif",
   images: [
     "/Costumes/Raw Cut Suit/2.avif",
@@ -78,7 +78,7 @@ const products = [
   isNew: true,
   sku: "98803",
   size: "XS S M L XL",
-  category: "Костюми",
+  category: "Costumes",
   image: "/Costumes/Long Vest Costume/1.avif",
   images: [
     "/Costumes/Long Vest Costume/2.avif",
@@ -150,7 +150,7 @@ const products = [
   isNew: true,
   sku: "98802",
   size: "XS S M L XL",
-  category: "Костюми",
+  category: "Costumes",
   image: "/Costumes/Costume with Vest-Shirt/1.avif",
   images: [
     "/Costumes/Costume with Vest-Shirt/2.avif",
