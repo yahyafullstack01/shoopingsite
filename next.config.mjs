@@ -6,7 +6,7 @@ const nextConfig = {
       remotePatterns: [
         {
           protocol: 'https',
-          hostname: 'shoopingsite-my9e.vercel.app', // Ваш основний домен
+          hostname: 'latore.shop', // Ваш основний домен
         },
         // Додайте сюди інші домени, якщо потрібно
         // {
