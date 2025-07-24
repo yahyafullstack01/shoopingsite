@@ -1,4 +1,5 @@
 "use client";
+import Head from "next/head";
 import React, { useState } from "react";
 import { useLanguage } from "../../Functions/useLanguage"; 
 import Image from "next/image";
@@ -55,7 +56,19 @@ const ContactUs = () => {
   const onInputChange = (e) => handleInputChange(e, setFormValues);
 
   return (
+
     <main className="font-sans relative">
+          <Head>
+  <title>Контакти LATORE | Зв&язок з нами</title>
+  <meta name="description" content="Зв'яжіться з LATORE — українським брендом жіночого одягу. Ми відповімо на ваші запити та допоможемо з вибором!" />
+  <meta name="keywords" content="контакти latore, зв'язок, жіночий одяг, пошта latore, latore контакти" />
+  <meta property="og:title" content="LATORE — Контакти" />
+  <meta property="og:description" content="Контакти українського бренду жіночого одягу LATORE. Зв’яжіться з нами!" />
+  <meta property="og:url" content="https://www.latore.shop/contact" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/hoom/hero2.avif" />
+  <link rel="canonical" href="https://www.latore.shop/contact" />
+</Head>
       <SuccessMessage />
       <section className="bg-gray-100  text-black dark:bg-black dark:text-white text-center py-8 sm:py-10 md:py-16">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-normal mb-4 sm:mb-6 md:mb-8">
@@ -67,14 +80,12 @@ const ContactUs = () => {
         <section className="flex flex-col sm:flex-row items-center sm:items-start gap-6 sm:gap-12 md:gap-16 lg:gap-28 bg-gray-200 dark:bg-[#111827] p-4 sm:p-6 md:p-8 rounded-lg shadow-lg">
           <div className="w-full sm:w-1/2 lg:w-[56%] h-[400px] sm:h-[600px]  lg:h-[600px] xl:h-[900px] dark:shadow-[0_0_20px_10px_rgba(59,130,246,0.4)]">
             <Image
-              src={productData.image}
+              src={productData.image || "/hoom/contact.avif"}
               alt={productData.name || "Default Image"}
               width={400}
               height={600}
               className="w-full h-full object-cover rounded-lg shadow-lg"
-              onError={(e) => {
-                e.target.src = "/hoom/contact.avif";
-              }}
+            
             />
           </div>
           
@@ -83,12 +94,13 @@ const ContactUs = () => {
               {menuItems[2]}
             </address>
             <div className="flex flex-col sm:flex-row xl:justify-center items-center gap-2 sm:gap-4">
-              <a
-                href="latoreatelier01@gmail.com"
+                 <a
+                href="mailto:latoreatelier01@gmail.com"
                 className="text-blue-400 hover:underline"
               >
                 latoreatelier01@gmail.com
               </a>
+             
               <span className="hidden sm:block  dark:text-white">|</span>
               <p className="text-sm sm:text-base">+380 97 367 82 57</p>
             </div>

@@ -25,6 +25,105 @@ const Hero = () => {
         <meta property="og:url" content="https://www.latore.shop/" />
       </Head>
 
+      {/* DESKTOP */}
+      <section className="hidden lg:flex relative w-full max-w-[2400px] h-[650px] mx-auto justify-center items-center">
+        <div className="relative w-full h-full">
+          <Image
+            src="/hoom/baner-desk.avif"
+            alt="Latore Collection"
+            fill
+            className="object-cover"
+            quality={100}
+            priority
+            sizes="(max-width: 2400px) 100vw"
+          />
+        </div>
+        <div className="absolute inset-0 flex items-end justify-center px-4 pb-10 text-white z-10 text-center">
+  <p className="text-lg sm:text-3xl lg:text-4xl xl:text-5xl leading-tight">
+    {menuItems[0]}
+  </p>
+</div>
+
+       
+      </section>
+
+      {/* MOBILE */}
+      <section
+        className="flex flex-row justify-center items-center gap-2 sm:gap-16 section-container overflow-hidden lg:hidden"
+        aria-labelledby="hero-heading"
+        role="banner"
+      >
+        {isClient && (
+          <div className="relative w-[200px] max-w-[300px] h-[333px] flex-shrink-0 overflow-hidden rounded-lg">
+            <video
+              src="/hoom/baner.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="metadata"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        )}
+
+        <div className="flex flex-col items-center md:items-start gap-2 text-center md:text-left w-[40vw] sm:w-auto">
+          <div className="relative w-[35vw] sm:w-[300px] lg:w-[350px] max-w-[600px] h-auto overflow-hidden">
+            <Image
+              src="/hoom/baner-mal.avif"
+              alt="Latore Collection Style"
+              width={600}
+              height={500}
+              className="object-cover shadow-lg w-full h-auto"
+              priority
+            />
+          </div>
+          <h2 className="text-xl sm:text-5xl lg:text-7xl font-normal text-gray-700 dark:text-white ml-2 sm:ml-12 sm:mt-2">
+            LATORE
+          </h2>
+  
+
+          <p className="text-xs sm:text-xl lg:text-3xl text-gray-600 dark:text-white ml-2 sm:ml-12 sm:mt-4">
+            {menuItems[1]}
+          </p>
+          <p className="text-xs sm:text-xl lg:text-3xl text-gray-600 dark:text-white ml-2 sm:ml-16">
+            {menuItems[2]}
+          </p>
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default Hero;
+
+{/*"use client";
+
+import Image from "next/image";
+import { useEffect, useState } from "react";
+import { useLanguage } from "../../Functions/useLanguage";
+import Head from "next/head";
+
+const Hero = () => {
+  const { translateList } = useLanguage();
+  const menuItems = translateList("home", "hero");
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  return (
+    <>
+      <Head>
+        <meta name="description" content="Latore - Український бренд жіночого одягу" />
+        <meta name="keywords" content="Latore, жіночий одяг, українська мода, стильний одяг" />
+        <meta property="og:title" content="Latore - Український бренд жіночого одягу" />
+        <meta property="og:description" content="Ласкаво просимо на наш сайт! Досліджуйте останні тренди моди." />
+        <meta property="og:image" content="/hoom/hero2.avif" />
+        <meta property="og:url" content="https://www.latore.shop/" />
+      </Head>
+
       <section className="hidden lg:flex relative w-[1280px] xl:w-[1800px] 2xl:w-[2400px] h-[400px] xl:h-[550px] 2xl:h-[650px] mx-auto justify-center items-center">
         <div className="absolute inset-0 w-full h-full">
           <Image
@@ -89,4 +188,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Hero;*/}

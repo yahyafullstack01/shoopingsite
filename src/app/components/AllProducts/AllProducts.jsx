@@ -129,6 +129,8 @@ export default function AllProducts() {
 
   return (
     <section className="bg-gray-100 text-black dark:text-white min-h-screen dark:bg-black">
+     {/* SEO текстовий блок для покращення пошуку */}
+
       <div className="w-full mx-auto px-4 sm:px-6 md:px-8 py-4">
         <div className="flex flex-col space-y-6">
           {/* Горизонтальні фільтри */}
@@ -165,13 +167,13 @@ export default function AllProducts() {
               />
             )}
 
+
             <section aria-labelledby="product-header" className="w-full mx-auto px-4 sm:px-6 md:px-8 py-4">
               <h1 id="product-header" className="text-3xl sm:text-4xl font-normal mb-2">
                 {menuItems[0]}
               </h1>
               <p className="text-gray-700 dark:text-gray-400 mb-4">{menuItems[1]}</p>
-
-              {categoryFromURL && categoryFromURL.toLowerCase() !== "all" && (
+           {categoryFromURL && categoryFromURL.toLowerCase() !== "all" && (
                 <h2 className="text-2xl font-normal text-gray-800 dark:text-gray-200 mb-2">
                   {translateCategory(categoryFromURL, translateList)}
                 </h2>
