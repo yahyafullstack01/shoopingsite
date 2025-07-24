@@ -22,7 +22,7 @@ const Hero = () => {
         <meta property="og:title" content="Latore - Український бренд жіночого одягу" />
         <meta property="og:description" content="Ласкаво просимо на наш сайт! Досліджуйте останні тренди моди." />
         <meta property="og:image" content="/hoom/hero2.avif" />
-        <meta property="og:url" content="https://example.com" />
+        <meta property="og:url" content="https://www.latore.shop/" />
       </Head>
 
       <section className="hidden lg:flex relative w-[1280px] xl:w-[1800px] 2xl:w-[2400px] h-[400px] xl:h-[550px] 2xl:h-[650px] mx-auto justify-center items-center">

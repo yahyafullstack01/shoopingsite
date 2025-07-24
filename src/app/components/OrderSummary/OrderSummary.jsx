@@ -51,7 +51,7 @@ export default function OrderSummary() {
               className="flex flex-col sm:flex-row items-center sm:items-start gap-4 border-b pb-4 last:border-none"
             >
               <img
-                src={item.image || '/placeholder.jpg'}
+                src={item.image || '/Darklogo.avif'}
                 alt={item.name}
                 className="w-28 h-28 object-cover rounded-lg shadow border dark:border-zinc-600"
               />
