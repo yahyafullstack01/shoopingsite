@@ -9,14 +9,14 @@ export default function RootLayout({ children }) {
     return (
         <html lang="uk" className="h-full">
             <head>
-              <title>Ексклюзивний жіночий одяг від Latore Atelier | Створено для кожної</title>
+              <title>Жіночий одяг від Latore Atelier | Створено для кожного сезону</title>
 
-<meta name="description" content="Latore Atelier пропонує стильний та ексклюзивний жіночий одяг, розроблений для того, щоб ви почувалися унікально у будь-якому сезоні. Відкрийте наші колекції сьогодні!" />
-<meta name="keywords" content="жіночий одяг, Latore Atelier, ексклюзивний одяг, сучасна мода, стильний одяг, сезонні колекції" />
+<meta name="description" content="Latore Atelier пропонує стильний та жіночий одяг, розроблений для того, щоб ви почувалися унікально у будь-якому сезоні. Відкрийте наші колекції сьогодні!" />
+<meta name="keywords" content="Жіночий одяг, Latore Atelier, сукні жіночі, сучасна мода, стильний одяг, сезонні колекції" />
 <meta name="author" content="Latore Atelier" />
 
 {/* Open Graph для соцмереж*/}
-<meta property="og:title" content="Ексклюзивний жіночий одяг від Latore Atelier" />
+<meta property="og:title" content="Жіночий жіночий одяг від Latore Atelier" />
 <meta property="og:description" content="Latore Atelier пропонує стильний та ексклюзивний жіночий одяг, розроблений для того, щоб ви почувалися унікально у будь-якому сезоні. Відкрийте наші колекції сьогодні!" />
 <meta property="og:image" content="https://www.latore.shop/logo-social.jpg" />
 <meta property="og:image:width" content="1200" />

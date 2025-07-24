@@ -110,27 +110,7 @@ const handleContactClick = (e) => {
   {translatedName}
 </h1>
 
-<div className="mt-12">
-  <h2 className="text-xl md:text-2xl font-medium text-gray-800 dark:text-white mb-6 text-center md:text-left">
-    {menuItems[7] || "PRODUCT INFO"}
-  </h2>
 
-  <div className="text-gray-600 dark:text-gray-400 text-base leading-relaxed space-y-3">
-    {Array.isArray(translatedDescription) && translatedDescription.map((line, index) => {
-      if (line.toLowerCase().includes("details")) {
-        return <p key={index} className="font-medium">{line}</p>;
-      }
-      if (line.trim().startsWith("·")) {
-        return (
-          <ul key={index} className="list-disc list-inside ml-6">
-            <li>{line.replace("·", "").trim()}</li>
-          </ul>
-        );
-      }
-      return <p key={index}>{line}</p>;
-    })}
-  </div>
-</div>
 
 <p className="text-gray-700 dark:text-gray-400 text-base mt-8 text-center md:text-left">
   {menuItems[0]}: <span className="font-medium">{product.category || "Unknown Category"}</span>
@@ -245,7 +225,31 @@ const handleContactClick = (e) => {
   >
     {menuItems[5] || "Contact Us"}
   </button>
+  
+  
+
+  
 </div>
+<div className="mt-12">
+<h2 className="text-xl md:text-2xl font-medium text-gray-800 dark:text-white mb-6 text-center md:text-left">
+    {menuItems[7] || "PRODUCT INFO"}
+  </h2>
+ <div className="text-gray-600 dark:text-gray-400 text-base leading-relaxed space-y-3">
+    {Array.isArray(translatedDescription) && translatedDescription.map((line, index) => {
+      if (line.toLowerCase().includes("details")) {
+        return <p key={index} className="font-medium">{line}</p>;
+      }
+      if (line.trim().startsWith("·")) {
+        return (
+          <ul key={index} className="list-disc list-inside ml-6">
+            <li>{line.replace("·", "").trim()}</li>
+          </ul>
+        );
+      }
+      return <p key={index}>{line}</p>;
+    })}
+  </div>
+ </div>
 {/*}
       <h1 className="text-2xl md:text-3xl font-normal mb-2 text-center md:text-left">
         {translatedName}
