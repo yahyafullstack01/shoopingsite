@@ -335,6 +335,8 @@ description: [
     price: 3900,
     isTop: false,
     isNew: false,
+     isSpecialOffer: true,
+      discountPrice: 3315,
     sku: "98799",
     size: "XS S M L XL",
     category: "Dresses",
