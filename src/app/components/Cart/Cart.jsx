@@ -103,14 +103,15 @@ const total = cartItems.reduce(
               <div>
                 <p className="text-lg font-medium">{item.name}</p>
                 <p className="text-gray-600 dark:text-gray-300 text-sm">
-  {item.discountPrice ? (
-    <>
-      <span className="text-red-600 font-semibold">{item.discountPrice} UAH</span>{' '}
-      <span className="line-through text-gray-400">{item.price} UAH</span>
-    </>
-  ) : (
-    <>{item.price} UAH</>
-  )}
+                  {item.discountPrice && item.discountPrice < item.price ? (
+  <>
+    <span className="text-red-600 font-semibold">{item.discountPrice} UAH</span>{' '}
+    <span className="line-through text-gray-400">{item.price} UAH</span>
+  </>
+) : (
+  <span>{item.price} UAH</span>
+)}
+
 </p>
 
                 <p className="text-sm text-gray-500">Колір: {item.color}</p>
