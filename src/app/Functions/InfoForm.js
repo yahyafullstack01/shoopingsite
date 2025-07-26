@@ -125,7 +125,7 @@ const handleContactClick = (e) => {
     <>
       <span className="text-red-600">{product.price} UAH</span>
       <span className="line-through text-gray-400 ml-4">{product.oldPrice} UAH</span>
-      <span className="text-green-600 text-sm ml-3">
+      <span className="text-green-600 text-sm ml-3 hidden">
         -{Math.round(100 - (product.price / product.oldPrice) * 100)}%
       </span>
     </>

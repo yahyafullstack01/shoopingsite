@@ -87,14 +87,14 @@ export default function OffersInfo() {
                     </h3>
                     <div className="flex justify-between items-center">
                       <p className="text-red-600 font-bold text-sm sm:text-base">
-                        {product.discountPrice || product.price} 
+                        Ціна: {product.discountPrice || product.price} UAH
                       </p>
                       {product.discountPrice && (
                         <div className="flex gap-2 items-center">
                           <p className="line-through text-gray-500 text-xs sm:text-sm">
-                            {product.price} 
+                            Ціна{product.price}UAH
                           </p>
-                          <p className="text-green-600 text-xs sm:text-sm">
+                          <p className="text-green-600 text-xs sm:text-sm hidden">
                             -{Math.round(((product.price - product.discountPrice) / product.price) * 100)}%
                           </p>
                         </div>
