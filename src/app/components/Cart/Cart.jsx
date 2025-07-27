@@ -72,10 +72,13 @@ export default function Cart() {
       setLoading(false);
     }
   };
-const total = cartItems.reduce(
-  (sum, item) => sum + Number(item.price) * item.quantity,
-  0
-);
+  const total = cartItems.reduce((sum, item) => {
+  const price = item.discountPrice && item.discountPrice < item.price
+    ? item.discountPrice
+    : item.price;
+  return sum + Number(price) * item.quantity;
+}, 0);
+
 
 
   return (
