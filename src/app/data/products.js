@@ -5781,8 +5781,17 @@ description: [
       EN: {
         category: "Dresses",
         name: "Oversize Dress",
-        description: "Light, minimalist oversized dress in an ethnic style with special weaving and lace detailing. Fabric: long-fiber muslin, 100% cotton. Light and soft to the touch.",
-        color: "water color",
+        description: [
+  "Calmness, lightness, and elegance!",
+  "The muslin dress is a blend of simplicity and elegance.",
+  "Perfect for slow-paced days when you want to feel naturally beautiful — without extra words or effort.",
+  "Fabric: long-fiber muslin made from 100% cotton. A light and soft fabric to the touch.",
+  "Details:",
+  "• High waist",
+  "• Oversized fit and midi length",
+  "• Lace and ruffles on the sleeves"
+],
+     color: "water color",
         colors: ["water color", "milk"]
       },
       FR: {
@@ -5795,8 +5804,17 @@ description: [
       UA: {
         category: "Сукні",
         name: "Oversize сукня",
-        description: "Легка, мінімалістична оверсайз сукня в етнічному стилі з особливим плетінням і обробкою у вигляді мережива. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
-        color: "колір води",
+    description:    ["Спокій, легкість і витонченість !",
+"Сукня з мусліну — це поєднання простоти й елегантності.",
+"Ідеальна для неспішних днів, коли хочеться відчути себе природно красивою — без зайвих слів і зусиль.",
+
+"Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+
+"Деталі:",
+"• Висока талія",
+"• Оверсайз фасон та міді довжина",
+"• Мереживо та рюші на рукавах"],
+         color: "колір води",
         colors: ["колір води", "молоко"]
       },
       RU: {
