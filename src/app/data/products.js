@@ -6589,13 +6589,8 @@ description: [
       
       size: "XS S M L XL",
       category: "Dresses",
-      image: "/Dress/Emily Dress/1.avif",
+      image: "/Dress/Emily Dress/6.avif",
       images: [
-        "/Dress/Emily Dress/2.avif",
-        "/Dress/Emily Dress/3.avif",
-        "/Dress/Emily Dress/4.avif",
-        "/Dress/Emily Dress/5.avif",
-        "/Dress/Emily Dress/6.avif",
         "/Dress/Emily Dress/7.avif",
         "/Dress/Emily Dress/8.avif",
         "/Dress/Emily Dress/9.avif",
@@ -6609,28 +6604,28 @@ description: [
           name: "Emily Dress",
           description: "Wool midi dress with a V-neck, shortened sleeves, and pockets.\nFabric: 80% wool, 20% polyester",
           color: "gray, camel",
-          colors: ["gray", "camel"],
+          colors: ["gray"],
         },
         FR: {
           category: "Robes",
           name: "Robe « Emily »",
           description: "Robe midi en laine avec col en V, manches raccourcies et poches.\nTissu: 80% laine, 20% polyester",
           color: "gris, camel",
-          colors: ["gris", "camel"],
+          colors: ["gris"],
         },
         UA: {
           category: "Сукнi",
           name: "Сукня «Emily»",
           description: "Вовняна сукня міді довжини із V-вирізом, вкороченими рукавами та кишенями.\nТканина: 80% вовна, 20% поліестер",
           color: "сірий, краватний",
-          colors: ["сірий", "кемел"],
+          colors: ["сірий"],
         },
         RU: {
           category: "Платья",
           name: "Платье «Emily»",
           description: "Шерстяное платье миди длины с V-вырезом, укороченными рукавами и карманами.\nТкань: 80% шерсть, 20% полиэстер",
           color: "серый, краватный",
-          colors: ["серый", "кемел"],
+          colors: ["серый"],
         }
       }
     },
