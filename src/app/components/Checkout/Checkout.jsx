@@ -1,4 +1,5 @@
 'use client';
+import { useRouter } from 'next/navigation';
 
 import { useState, useEffect } from 'react';
 //import fetchGeoCities from '../../utils/fetchGeoCities'
@@ -10,6 +11,8 @@ import { FiUser, FiMail, FiPhone, FiTruck, FiCreditCard, FiMessageSquare } from 
 
 import OrderSummary from "../OrderSummary/OrderSummary"
 export default function Checkout() {
+  const router = useRouter();
+
   const [deliveryMethod, setDeliveryMethod] = useState('');
   const [cityQuery, setCityQuery] = useState('');
   const [filteredCities, setFilteredCities] = useState([]);
@@ -176,6 +179,102 @@ const handleWayforpayClick = async () => {
   };
 
   try {
+    // 1️⃣ Зберігаємо замовлення у БД і отримуємо orderId
+    const orderRes = await fetch(`${BACKEND_URL}/api/orders`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(order)
+    });
+    if (!orderRes.ok) throw new Error('Не вдалося зберегти замовлення');
+    const savedOrder = await orderRes.json();
+    const orderId = savedOrder._id || savedOrder.id; // залежно від бекенду
+
+    // 2️⃣ Отримуємо форму WayForPay
+    const res = await fetch(`${BACKEND_URL}/api/payments/wayforpay`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        order: { ...order, orderId },
+        paymentType,
+        serverUrl: `${BACKEND_URL}/api/payments/wayforpay/callback`
+      }),
+    });
+
+    if (!res.ok) throw new Error('WayForPay не відповідає');
+
+    const { url, params } = await res.json();
+
+    // 3️⃣ Створюємо форму для редиректу
+    const form = document.createElement('form');
+    form.action = url;
+    form.method = 'POST';
+
+    Object.entries(params).forEach(([key, value]) => {
+      if (Array.isArray(value)) {
+        value.forEach((v) => {
+          const input = document.createElement('input');
+          input.type = 'hidden';
+          input.name = key;
+          input.value = v;
+          form.appendChild(input);
+        });
+      } else {
+        const input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = key;
+        input.value = value;
+        form.appendChild(input);
+      }
+    });
+
+    document.body.appendChild(form);
+
+    // 4️⃣ Перед відправкою на оплату зберігаємо orderId у localStorage
+    localStorage.setItem('currentOrderId', orderId);
+
+    // 5️⃣ Відправляємо форму на WayForPay
+    form.submit();
+
+    // 6️⃣ Після повернення з WayForPay — користувач потрапить на /payment-success
+    //    Це налаштовується на бекенді у successUrl:
+    // successUrl: `${process.env.NEXT_PUBLIC_FRONTEND_URL}/payment-success?order=${orderId}`
+
+  } catch (error) {
+    console.error('❌ Помилка під час ініціації оплати:', error);
+    alert('Не вдалося ініціювати оплату через WayForPay.');
+  }
+};
+{/*}
+const handleWayforpayClick = async () => {
+  console.log('🟡 Клік по кнопці WayForPay');
+
+  const formValues = { firstName, lastName, email, phone };
+  const validationErrors = validateForm(formValues);
+  if (Object.keys(validationErrors).length > 0) {
+    setErrors(validationErrors);
+    console.warn('⚠️ Помилки у формі:', validationErrors);
+    return;
+  }
+
+  const order = {
+    firstName,
+    lastName,
+    patronymic,
+    email,
+    phone,
+    deliveryMethod,
+    city: cityQuery,
+    warehouse: selectedWarehouse,
+    warehouseRef: selectedWarehouseRef,
+    comment,
+    total: Number(String(total).replace(/[^\d.]/g, '')),
+    prepay: paymentType === 'prepay',
+    paymentMethod: 'wayforpay',
+    paymentType,
+    sessionId,
+  };
+
+  try {
     const res = await fetch(`${BACKEND_URL}/api/payments/wayforpay`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -221,7 +320,7 @@ const handleWayforpayClick = async () => {
     console.error('❌ Помилка під час ініціалізації оплати:', error);
     alert('Не вдалося ініціювати оплату через WayForPay.');
   }
-};
+};*/}
 {/*}
 const handleWayforpayClick = async () => {
   console.log('🟡 Клік по кнопці WayForPay');
@@ -321,6 +420,73 @@ const handleWayforpayClick = async () => {
     console.log('✅ Замовлення збережено:', saved);
   };
   const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  const formValues = { firstName, lastName, email, phone };
+  const validationErrors = validateForm(formValues);
+
+  if (Object.keys(validationErrors).length > 0) {
+    setErrors(validationErrors);
+    return;
+  }
+
+  setErrors({});
+
+  const order = {
+    firstName,
+    lastName,
+    patronymic,
+    email,
+    phone,
+    deliveryMethod,
+    city: cityQuery,
+    warehouse: selectedWarehouse,
+    warehouseRef: selectedWarehouseRef, // (за потреби)
+    comment,
+    total: Number(String(total).replace(/[^\d.]/g, '')),
+    prepay: paymentType === 'half',               // ✅ виправлено
+    paymentMethod: onlinePaymentMethod || 'cod',
+    sessionId,
+  };
+
+  try {
+    // Онлайн-оплата потрібна і для full, і для half
+    if (paymentType === 'full' || paymentType === 'half') {
+      if (!onlinePaymentMethod) {
+        alert('Будь ласка, оберіть метод онлайн-оплати');
+        return;
+      }
+
+      localStorage.setItem('pendingOrder', JSON.stringify(order));
+
+      if (onlinePaymentMethod === 'stripe') {
+        await handleStripePayment();
+      } else if (onlinePaymentMethod === 'liqpay') {
+        await handleLiqPayPayment(order);
+      } else if (onlinePaymentMethod === 'fondy') {
+        await handleFondyPayment(order);
+      } else if (onlinePaymentMethod === 'wayforpay') {
+        // ✅ Використовуємо твою оновлену функцію, яка створює замовлення і редиректить
+        await handleWayforpayClick();
+        return;
+      }
+    } else {
+      // Оформлення без онлайн-оплати
+      await saveOrder(order);
+      alert('Замовлення оформлено! Очікуйте дзвінка 📞');
+    }
+  } catch (error) {
+    console.error('❌ Помилка при обробці замовлення:', error);
+    if (error instanceof Response) {
+      const errText = await error.text();
+      alert(`Помилка з сервера: ${errText}`);
+    } else {
+      alert(`Не вдалося оформити замовлення. ${error.message || ''}`);
+    }
+  }
+};
+{/*}
+  const handleSubmit = async (e) => {
     e.preventDefault();
   
     const formValues = { firstName, lastName, email, phone };
@@ -401,7 +567,7 @@ const handleWayforpayClick = async () => {
       }
     }
   };
-    
+    */}
   const resetForm = () => {
     setFirstName('');
     setLastName('');
