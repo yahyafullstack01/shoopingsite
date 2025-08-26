@@ -2524,92 +2524,6 @@ description: [
       }
     }
   },
-
-  {
-    id: 107,
-    price: 3900,
-    isTop: true,
-    sku: "91250",
-    size: "XS S M L XL",
-    category: "Jackets",
-    image: "/Jackets/Leather Jacket/1.avif",
-    images: [
-      "/Jackets/Leather Jacket/2.avif",
-      "/Jackets/Leather Jacket/3.avif",
-      "/Jackets/Leather Jacket/4.avif",
-      "/Jackets/Leather Jacket/5.avif",
-    ],
-    sizes: ["XS", "S", "M", "L", "XL"],
-    translations: {
-      EN: {
-        category: "Jackets",
-        name: "Leather Jacket",
-        description: "A stylish jacket made from high-quality eco-leather.\nFabric: stretch eco-leather on a suede base (durable, crack-resistant).",
-        colors: ["beige"]
-      },
-      FR: {
-        category: "Vestes",
-        name: "Veste en cuir",
-        description: "Une veste élégante en éco-cuir de haute qualité.\nTissu : éco-cuir extensible sur une base en daim (résistant, ne se fissure pas).",
-        colors: ["beige"]
-      },
-      UA: {
-        category: "Жакети",
-        name: "Шкіряний жакет",
-        description: "Стильний жакет з якісної екошкіри.\nТканина: якісна екошкіра на замшевій основі (стречева, не тріскається).",
-        colors: ["бежевий"]
-      },
-      RU: {
-        category: "Жакеты",
-        name: "Кожаный жакет",
-        description: "Стильный жакет из качественной эко-кожи.\nТкань: качественная эко-кожа на замшевой основе (эластичная, не трескается).",
-        colors: ["бежевый"]
-      }
-    }
-  },
-
-  {
-    id: 106,
-    price: 1650,
-    isTop: true,
-    sku: "78840",
-    size: "XS S M L XL",
-    category: "Shorts",
-    image: "/Shorts/Leather Shorts/1.avif",
-    images: [
-      "/Shorts/Leather Shorts/2.avif",
-      "/Shorts/Leather Shorts/3.avif",
-      "/Shorts/Leather Shorts/4.avif",
-      "/Shorts/Leather Shorts/5.avif",
-    ],
-    sizes: ["XS", "S", "M", "L", "XL"],
-    translations: {
-      EN: {
-        category: "Shorts",
-        name: "Leather Shorts",
-        description: "Stylish shorts made from high-quality eco-leather.\nFabric: stretch eco-leather on a suede base (durable, crack-resistant).",
-        colors: ["beige"]
-      },
-      FR: {
-        category: "Shorts",
-        name: "Short en cuir",
-        description: "Short élégant en éco-cuir de haute qualité.\nTissu : éco-cuir extensible sur une base en daim (résistant, ne se fissure pas).",
-        colors: ["beige"]
-      },
-      UA: {
-        category: "Шорти",
-        name: "Шкіряні шорти",
-        description: "Стильні шорти з якісної екошкіри.\nТканина: якісна екошкіра на замшевій основі (стречева, не тріскається).",
-        colors: ["бежевий"]
-      },
-      RU: {
-        category: "Шорты",
-        name: "Кожаные шорты",
-        description: "Стильные шорты из качественной эко-кожи.\nТкань: качественная эко-кожа на замшевой основе (эластичная, не трескается).",
-        colors: ["бежевый"]
-      }
-    }
-  },
   
   {
     id: 105,
@@ -2995,25 +2909,25 @@ description: [
         category: "Shirts",
         name: "Freedom Shirt",
         description: "Long-staple 100% cotton muslin. A lightweight and soft-touch fabric.",
-        colors: ["mint", "milk"]
+        colors: ["milk"]
       },
       FR: {
         category: "Chemises",
         name: "Chemise «Freedom»",
         description: "Mousseline de coton 100% à longues fibres. Un tissu léger et doux au toucher.",
-        colors: ["menthe", "lait"]
+        colors: ["lait"]
       },
       UA: {
         category: "Сорочки",
         name: "Сорочка «Freedom»",
         description: "Довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
-        colors: ["м’ята", "молоко"]
+        colors: ["молоко"]
       },
       RU: {
         category: "Рубашки",
         name: "Рубашка «Freedom»",
         description: "Долговолокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь ткань.",
-        colors: ["мята", "молоко"]
+        colors: ["молоко"]
       }
     }
   },  
@@ -3130,10 +3044,6 @@ description: [
       "/Skirts/Pleated Leather Skirt/2.avif",
       "/Skirts/Pleated Leather Skirt/3.avif",
       "/Skirts/Pleated Leather Skirt/5.avif",
-      "/Skirts/Pleated Leather Skirt/10.avif",
-      "/Skirts/Pleated Leather Skirt/18.avif",
-      "/Skirts/Pleated Leather Skirt/19.avif",
-      "/Skirts/Pleated Leather Skirt/20.avif"
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
     translations: {
@@ -3141,25 +3051,25 @@ description: [
         category: "Skirts",
         name: "Pleated Leather Skirt",
         description: "Maxi-length pleated skirt with a high waist.\nFabric: high-quality eco-leather with suede base (stretchy, doesn’t crack).",
-        colors: ["black", "beige"]
+        colors: ["black"]
       },
       FR: {
         category: "Jupes",
         name: "Jupe Plissée en Cuir",
         description: "Jupe plissée longue avec taille haute.\nTissu : simili cuir de haute qualité avec base en daim (extensible, ne se fissure pas).",
-        colors: ["noir", "beige"]
+        colors: ["noir"]
       },
       UA: {
         category: "Спідниці",
         name: "Шкіряна спідниця плісе",
         description: "Спідниця максі довжини з плісеруванням на високій посадці.\nТканина: якісна екошкіра на замшевій основі (стрейчева, не тріскається).",
-        colors: ["чорний", "бежевий"]
+        colors: ["чорний"]
       },
       RU: {
         category: "Юбки",
         name: "Кожаная юбка плиссе",
         description: "Юбка макси длины с плиссировкой на высокой посадке.\nТкань: качественная экокожа на замшевой основе (стрейчевая, не трескающаяся).",
-        colors: ["чёрный", "бежевый"]
+        colors: ["чёрный"]
       }
     }
   },  
@@ -3408,13 +3318,8 @@ description: [
     sku: "98809",
     size: "XS S M L XL",
     category: "Sweaters",
-    image: "/Sweaters/Knit Vest/1.avif",
+    image: "/Sweaters/Knit Vest/6.avif",
     images: [
-      "/Sweaters/Knit Vest/2.avif",
-      "/Sweaters/Knit Vest/3.avif",
-      "/Sweaters/Knit Vest/4.avif",
-      "/Sweaters/Knit Vest/5.avif",
-      "/Sweaters/Knit Vest/6.avif",
       "/Sweaters/Knit Vest/7.avif",
       "/Sweaters/Knit Vest/8.avif",
       "/Sweaters/Knit Vest/9.avif",
@@ -3431,25 +3336,25 @@ description: [
         category: "Sweaters",
         name: "Knit Vest",
         description: "Oversized wool vest with a V-neck.\nFabric: knitwear (60% wool, 20% acrylic, 10% viscose, 10% elastane).",
-        colors: ["beige", "white", "black"]
+        colors: [ "white", "black"]
       },
       FR: {
         category: "Pulls",
         name: "Gilet Tricoté",
         description: "Gilet en laine oversize avec col en V.\nTissu : tricot (60% laine, 20% acrylique, 10% viscose, 10% élasthanne).",
-        colors: ["beige", "blanc", "noir"]
+        colors: ["blanc", "noir"]
       },
       UA: {
         category: "Светри",
         name: "Трикотажний жилет",
         description: "Oversize вовняний жилет із V-вирізом.\nТканина: трикотаж (60% вовна, 20% акрил, 10% віскоза, 10% еластан).",
-        colors: ["бежевий", "білий", "чорний"]
+        colors: ["білий", "чорний"]
       },
       RU: {
         category: "Свитера",
         name: "Трикотажный жилет",
         description: "Oversize шерстяной жилет с V-вырезом.\nТкань: трикотаж (60% шерсть, 20% акрил, 10% вискоза, 10% эластан).",
-        colors: ["бежевый", "белый", "чёрный"]
+        colors: ["белый", "чёрный"]
       }
     }
   },  
@@ -3603,10 +3508,6 @@ description: [
       "/Shirts/Jasmine Shirt/3.avif",
       "/Shirts/Jasmine Shirt/4.avif",
        "/Shirts/Jasmine Shirt/5.avif",
-       "/Shirts/Jasmine Shirt/6.avif",
-       "/Shirts/Jasmine Shirt/7.avif",
-       "/Shirts/Jasmine Shirt/8.avif",
-       "/Shirts/Jasmine Shirt/9.avif"
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
     translations: {
@@ -3614,25 +3515,25 @@ description: [
         category: "Shirts",
         name: "Jasmine Shirt",
         description: "Long-staple 100% cotton muslin. A lightweight and soft-touch fabric.",
-        colors: ["milk", "mint"]
+        colors: ["milk",]
       },
       FR: {
         category: "Chemises",
         name: "Chemise Jasmine",
         description: "Mousseline de coton 100% à longues fibres. Un tissu léger et doux au toucher.",
-        colors: ["lait", "menthe"]
+        colors: ["lait",]
       },
       UA: {
         category: "Сорочки",
         name: "Сорочка «Jasmine»",
         description: "Довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
-        colors: ["молоко", "м’ята"]
+        colors: ["молоко",]
       },
       RU: {
         category: "Сорочки",
         name: "Рубашка «Jasmine»",
         description: "Долговолокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь ткань.",
-        colors: ["молоко", "мята"]
+        colors: ["молоко",]
       }
     }
   },  
@@ -5896,7 +5797,7 @@ description: [
     sku: "12345",
     size: "XS S M L XL",
     category: "Costumes",
-    image: "/Costumes/Woolen suit with skirt/9.avif",
+    image:"/Costumes/Woolen suit with skirt/11.avif",
     images: ["/Costumes/Woolen suit with skirt/10.avif", 
       {
         type: "video",
@@ -6205,44 +6106,6 @@ description: [
     //   }
     // },
     
-    {
-      id: 9,
-      price: 2100,
-      sku: "12345",
-      
-      size: "XS S M L XL",
-      category: "Dresses",
-      image: "/Dress/Asymmetrical_dress/1.avif",
-      images: ["/Dress/Asymmetrical_dress/2.avif", "/Dress/Asymmetrical_dress/3.avif", "/Dress/Asymmetrical_dress/4.avif", "/Dress/Asymmetrical_dress/5.avif"],
-       
-      sizes: ["XS", "S", "M", "L", "XL"],
-      translations: {
-        EN: {
-          category: "Dresses",
-          name: "Asymmetrical dress",
-          description: "Oversize asymmetrical dress with a turn-down collar and a chest pocket\n Fabric: high-quality eco-leather on a suede base. (stretchy, does not crack)",
-          color: "gray",
-          colors: ["gray"],
-        },
-        FR: {
-          category: "Robes",
-          name: "Robe asymétrique",
-          description : "Robe oversize de coupe asymétrique avec col plaqué et poche poitrine\n Tissu : éco-cuir de haute qualité sur base en daim. (extensible, ne craque pas)",
-          colors : ["gris"],
-        },
-        UA: {
-          category: "Сукні",
-          name: "Асиметрична сукня",
-          description: "Oversize сукня асиметричного крою із накладним коміром та кишенею на грудях\n Тканина: якісна екошкіра на замшевій основі.(стречева, не тріскається)",
-          colors: ["сірий"],
-        },
-        RU: {
-          name: "Асимметричное платье",
-          description: " Oversize платье асимметричного кроя с накладным воротником и карманом на груди\nТкань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся) ",
-          colors: ["серый"],
-        }
-      }
-    },
     
     {
       id: 10,
@@ -6834,49 +6697,6 @@ description: [
     // },
 
     {
-      id: 25,
-      price: 3100,
-      isTop: false,
-      sku: "67895",
-      color: "gray",
-      size: "XS S M L XL",
-      category: "Dresses",
-      image: "/Dress/Wool Dress/1.avif",
-      images: [
-        "/Dress/Wool Dress/2.avif",
-        "/Dress/Wool Dress/3.avif",
-        "/Dress/Wool Dress/4.avif"
-      ],
-      
-      sizes: ["XS", "S", "M", "L", "XL"],
-      translations: {
-        EN: {
-          category: "Dresses",
-          name: "Wool Dress",
-          description: "Wool dress with wide sleeves and a high round neckline.\nFabric: 80% wool, 20% polyester",
-          colors: ["gray"],
-        },
-        FR: {
-          category: "Robes",
-          name: "Robe en laine",
-          description: "Robe en laine avec manches larges et encolure ronde haute.\nTissu: 80% laine, 20% polyester",
-          colors: ["gris"],
-        },
-        UA: {
-          category: "Cукні",
-          name: "Вовняна сукня",
-          description: "Вовняна сукня із широкими рукавами та високим округлим вирізом на горловині.\nТканина: 80% вовна, 20% поліестер",
-          colors: ["сірий"],
-        },
-        RU: {
-          category: "Платья",
-          name: "Шерстяное платье",
-          description: "Шерстяное платье с широкими рукавами и высоким округлым вырезом на горловине.\nТкань: 80% шерсть, 20% полиэстер",
-          colors: ["серый"],
-        }
-      }
-    },
-    {
       id: 26,
       price: 2800,
       isTop: false,
@@ -6985,8 +6805,8 @@ description: [
       category: "Pants",
       image: "/Pants/Banana Pants/1.avif",
       images: ["/Pants/Banana Pants/2.avif", "/Pants/Banana Pants/3.avif", "/Pants/Banana Pants/4.avif", "/Pants/Banana Pants/5.avif",
-        "/Pants/Banana Pants/6.avif", "/Pants/Banana Pants/7.avif", "/Pants/Banana Pants/8.avif", "/Pants/Banana Pants/9.avif", "/Pants/Banana Pants/10.avif",
-      ],
+
+            ],
  
       sizes: ["XS", "S", "M", "L", "XL" ],
       translations: {
@@ -6994,26 +6814,26 @@ description: [
           category: "Pants",
           name: "Banana Pants",
           description: "High-waisted banana-style pants with two pockets.Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)",
-          colors: ["Black", "Beige"],
+          colors: ["Black",],
         },
         FR: {
           category: "Pantalons",
           name: "Pantalons en Cuir Banane",
           description: "Pantalons taille haute style banane avec deux poches.Tissu : Cuir éco-responsable de haute qualité avec une base en suède. (Extensible, ne se fissure pas.)",
-          colors: ["Noir", "Beige"],
+          colors: ["Noir",],
 
         },
         UA: {
           category: "Брюки",
           name: "Шкіряні брюки банани",
           description: "Описание: Брюки фасону бананів на високій посадці із двома кишенями Тканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається )",
-          colors: ["Чорний", "Бежевий"],
+          colors: ["Чорний",],
         },
         RU: {
           category: "Брюки",
           name: "Брюки бананы",
           description: "( Брюки фасона бананов на высокой посадке с двумя карманамиТкань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)",
-          colors: ["Черный", "Бежевый"],
+          colors: ["Черный",],
         }
       }
     },
@@ -7026,8 +6846,8 @@ description: [
 
       size: "XS S M L XL",
       category: "Pants",
-      image: "/Pants/Leather Flared Pants/1.avif",
-      images: ["//Pants/Leather Flared Pants/2.avif", "/Pants/Leather Flared Pants/3.avif", "/Pants/Leather Flared Pants/4.avif", "/Pants/Leather Flared Pants/5.avif", "/Pants/Leather Flared Pants/6.avif", 
+      image: "/Pants/Leather Flared Pants/6.avif",
+      images: [
         "/Pants/Leather Flared Pants/7.avif", "/Pants/Leather Flared Pants/8.avif", "/Pants/Leather Flared Pants/9.avif",],
        
       sizes: ["XS", "S", "M", "L", "XL" ],
@@ -7036,25 +6856,25 @@ description: [
           category: "Pants",
           name: "Leather Flared Pants",
           description: "High-waisted flared pants with pleats running along the entire length.Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)",
-          colors: ["Black", "Powder"],
+          colors: ["Black",],
         },
         FR: {
           category: "Pantalons",
           name: "Pantalons en Cuir Pattes d’Éph",
           description: "Pantalons taille haute évasés avec des plis sur toute la longueur.Tissu : Cuir éco-responsable de haute qualité avec une base en suède. (Extensible, ne se fissure pas.)",
-          colors: ["Noir", "Poudre"],
+          colors: ["Noir",],
         },
         UA: {
           category: "Брюки",
           name: "Шкіряні брюки кльош ",
           description: "Брюки фасону кльош на високій посадці із стрілками по всій довжиніТканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається )",
-          colors: ["Чорний", "Пудра"],
+          colors: ["Чорний",],
         },
         RU: {
           category: "Брюки",
           name: "Брюки кльош",
           description: "Брюки фасона клеш на высокой посадке со стрелками по всей длине Ткань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)",
-          colors: ["Черный", "Пудра"],
+          colors: ["Черный",],
         }
       }
     },
@@ -7067,13 +6887,8 @@ description: [
       
       size: "XS S M L XL",
       category: "Pants",
-      image: "/Pants/Leather Pants1/4.avif",
+      image: "/Pants/Leather Pants1/11.avif",
       images: [
-        "/Pants/Leather Pants1/2.avif", 
-        "/Pants/Leather Pants1/3.avif", 
-        "/Pants/Leather Pants1/1.avif", 
-        "/Pants/Leather Pants1/5.avif",
-        "/Pants/Leather Pants1/11.avif",
         "/Pants/Leather Pants1/12.avif",
         "/Pants/Leather Pants1/13.avif",
         "/Pants/Leather Pants1/14.avif",
@@ -7087,120 +6902,30 @@ description: [
           name: "Leather Tube Pants",
           description: "Slim-fit pants with a high waist and zippers at the ankles. Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)",
           color: "beige, caramel, black",
-          colors: ["beige", "black"],
+          colors: ["black"],
         },
         FR: {
           category: "Pantalon",
           name: "Pantalon en cuir tube",
           description: "Pantalon ajusté à taille haute avec fermetures éclair aux chevilles. Tissu : cuir écologique de haute qualité sur une base en daim (stretch, ne se fissure pas).",
           color: "beige, caramel, noir",
-          colors: ["beige",  "noir"],
+          colors: ["noir"],
         },
         UA: {
           category: "Брюки",
           name: "Шкіряні брюки труби",
           description: "Брюки завуженого фасону на високій посадці та замочками на ніжці. Тканина: якісна екошкіра на замшевій основі. (стречева, не тріскається)",
-          colors: ["бежевий", "Чорний"],
+          colors: ["Чорний"],
         },
         RU: {
           category: "Брюки",
           name: "Кожаные брюки трубы",
           description: "Брюки зауженного фасона на высокой посадке и замочками на ножке. Ткань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)",
-          colors: ["Бежевый", "Черный"],
+          colors: ["Черный"],
         }
       }
     },
     
-    
-    { id: 31,
-      price: 1820,
-      isTop: false, // Топ продукт
-      sku: "12345",
-      
-      size: "XS S M L XL",
-      category: "Pants",
-      image: "/Pants/Leather Pants/1.avif",
-      images: ["/Pants/Leather Pants/2.avif", "/Pants/Leather Pants/3.avif", "/Pants/Leather Pants/4.avif", "/Pants/Leather Pants/5.avif",],
-      
-      sizes: ["XS", "S", "M", "L", "XL" ],
-      translations: {
-        EN: {
-          category: "Pants",
-          name: "Leather Pants",
-          description: "Straight-cut pants with a high waist and two pockets.Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)",
-          color: "red",
-          colors: ["gray"], 
-        },
-        FR: {
-          category: "Pantalon",
-          name: "Pantalon en cuir",
-          description: "Pantalon coupe droite à taille haute avec deux poches. Tissu : cuir écologique de haute qualité sur une base en daim (stretch, ne se fissure pas).",
-          color: "rouge",
-          colors: ["gris"],
-        },
-        UA: {
-          category: "Брюки",
-          name: "Шкіряні брюки",
-          description: "Брюки прямого фасону на високій посадці із двома кишенямиТканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається )",
-          colors: ["сірий"],
-        },
-        RU: {
-          category: "Брюки",
-          name: "Кожаные брюки",
-          description: "Брюки прямого фасона на высокой посадке с двумя карманами Ткань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)",
-          colors: ["серый"],
-        }
-      }
-    },
-    
-    {
-      id: 32,
-      price: 1650,
-      isTop: false,
-      sku: "67890",
-     
-      size: "XS S M L XL",
-      category: "Skirts",
-      image: "/Skirts/Leather Pencil Skirt/1.avif",
-      images: [
-        "/Skirts/Leather Pencil Skirt/2.avif",
-        "/Skirts/Leather Pencil Skirt/3.avif",
-        "/Skirts/Leather Pencil Skirt/4.avif",
-        "/Skirts/Leather Pencil Skirt/5.avif",
-      ],
-
-      sizes: ["XS", "S", "M", "L", "XL"],
-      translations: {
-        EN: {
-          category: "Skirts",
-          name: "Leather Pencil Skirt",
-          description: "Mid-length pencil skirt with a high waist and a slit on the legs. Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)",
-          color: "black",
-          colors: ["beige"],
-        },
-        FR: {
-          category: "Jupes",
-          name: "Jupe crayon en cuir",
-          description: "Jupe crayon mi-longueur à taille haute avec une fente sur les jambes. Tissu : cuir écologique de haute qualité sur une base en daim (stretch, ne se fissure pas).",
-          color: "noir",
-          colors: ["beige"],
-        },
-        UA: {
-          category: "Спідниці",
-          name: "Шкіряна спідниця-олівець",
-          description: "Спідниця міді довжини фасону олівець на високій посадці із розрізом спереду Тканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається )",
-          color: "чорний",
-          colors: ["бежевий"],
-        },
-        RU: {
-          category: "Юбки",
-          name: "Кожаная юбка-карандаш",
-          description: "Юбка миди длины фасона карандаш на высокой посадке с разрезом на ножках. Ткань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)",
-          color: "черный",
-          colors: ["бежевый"],
-        }
-      }
-    },
 
     // {
     //   id: 33,
@@ -7251,55 +6976,6 @@ description: [
     //   }
     // },
     
-    {
-      id: 34,
-      price: 5360,
-      isTop: false,
-      sku: "12348",
-      color: "burgundy",
-      size: "XS S M L XL",
-      category: "Costumes",
-      image: "/Costumes/Wool Suit Burgundy/4.avif",
-      images: [
-        "/Costumes/Wool Suit Burgundy/2.avif", 
-        "/Costumes/Wool Suit Burgundy/3.avif", 
-        "/Costumes/Wool Suit Burgundy/1.avif", 
-        "/Costumes/Wool Suit Burgundy/5.avif"
-      ],
-      
-      sizes: ["XS", "S", "M", "L", "XL"],
-      translations: {
-        EN: {
-          category: "Costumes",
-          name: "Wool Suit Burgundy",
-          description: "Wrap jacket with a neckline + palazzo pants. Composition: 75% natural wool, soft, does not itch against the skin.",
-          color: "burgundy",
-          colors: ["burgundy"],
-        },
-        FR: {
-          category: "Costumes",
-          name: "Costume en laine bordeaux",
-          description: "Veste portefeuille avec encolure + pantalon palazzo. Composition : 75% laine naturelle, douce, ne gratte pas la peau.",
-          color: "bordeaux",
-          colors: ["bordeaux"],
-        },
-        UA: {
-          category: "Костюми",
-          name: "Вовняний костюм бургунді",
-          description: "Жакет на запах із вирізом + брюки палаццо. Склад: натуральна вовна 75%, мʼяка, не колеться до тіла.",
-          color: "бургундський",
-          colors: ["бургунді"],
-        },
-        RU: {
-          category: "Костюми",
-          name: "Шерстяной костюм бургунди",
-          description: "Жакет на запах с вырезом + брюки палаццо. Состав: натуральная шерсть 75%, мягкая, не колется телу.",
-          color: "бургундский",
-          colors: ["бургунди"],
-        }
-      }
-    },
-
     {
       id: 35,
       price: 1800,
@@ -7353,13 +7029,8 @@ description: [
       color: "beige",
       size: "XS S M L XL",
       category: "Sweaters",
-      image: "/Sweaters/Flare Sweater/1.avif",
+      image: "/Sweaters/Flare Sweater/6.avif",
       images: [
-        "/Sweaters/Flare Sweater/2.avif", 
-        "/Sweaters/Flare Sweater/3.avif", 
-        "/Sweaters/Flare Sweater/4.avif", 
-        "/Sweaters/Flare Sweater/5.avif",
-        "/Sweaters/Flare Sweater/6.avif",
         "/Sweaters/Flare Sweater/7.avif",
         "/Sweaters/Flare Sweater/8.avif",
         "/Sweaters/Flare Sweater/9.avif",
@@ -7377,25 +7048,25 @@ description: [
           category: "Sweaters",
           name: "Flare Sweater",
           description: "Cropped sweater with a turtleneck and flared sleeves. Fabric: Knit (60% wool, 20% acrylic, 10% viscose, 10% elastane).",
-          colors: ["beige", "black", "white"],
+          colors: ["black", "white"],
         },
         FR: {
           category: "Pulls",
           name: "Pull évasé",
           description: "Pull court avec col roulé et manches évasées. Tissu : maille (60% laine, 20% acrylique, 10% viscose, 10% élasthanne).",
-          colors: ["beige", "noir", "blanc"],
+          colors: ["noir", "blanc"],
         },
         UA: {
           category: "Светри",
           name: "Светр кльош",
           description: "Вкорочений светр із горлом та кльош рукавами. Тканина: трикотаж (60% вовна, 20% акрил, 10% віскоза, 10% еластан).",
-          colors: ["бежевий", "чорний", "білий"],
+          colors: ["чорний", "білий"],
         },
         RU: {
           category: "Светри",
           name: "Свитер клеш",
           description: "Укороченный свитер с горлом и клеш рукавами. Ткань: трикотаж (60% шерсть, 20% акрил, 10% вискоза, 10% эластан).",
-          colors: ["бежевый", "черный", "белый"],
+          colors: ["черный", "белый"],
         }
       }
     },
