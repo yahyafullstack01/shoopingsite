@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
 <link rel="apple-touch-icon" sizes="180x180" href="/logo/favicon-32x32.png" />
 
 {/*} SEO */}
-<link rel="canonical" href="https://www.latore.shop/" />
+<link rel="canonical" href="https://www.latore.store/" />
 
 {/*Fonts preload*/}
 <link rel="preload" href="/fonts/Montserrat-Thin.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />

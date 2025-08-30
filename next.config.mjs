@@ -6,7 +6,7 @@ const nextConfig = {
       remotePatterns: [
         {
           protocol: 'https',
-          hostname: 'latore.shop', // Ваш основний домен
+          hostname: 'latore.store', // Ваш основний домен
         },
         // Додайте сюди інші домени, якщо потрібно
         // {

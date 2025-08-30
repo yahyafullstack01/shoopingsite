@@ -1,5 +1,5 @@
 module.exports = {
-    siteUrl: 'https://latore.shop/', // Ваш основний домен
+    siteUrl: 'https://latore.store/', // Ваш основний домен
     generateRobotsTxt: true,                    // Генерація robots.txt
     sitemapSize: 5000,                          // Максимальна кількість URL
     
