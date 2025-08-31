@@ -105,15 +105,15 @@ const seoConfig = {
     openGraph: {
       title: 'Новинки | Shoopingsite',
       description: 'Дивись найновіші товари першими',
-      url: 'https://www.www.latore.store/new-products',
+      url: 'https://www.latore.store/new-products',
       type: 'website',
       images: [
         {
-          url: 'https://www.www.latore.store/logo-social.jpg',
+          url: 'https://www.latore.store/logo-social.jpg',
         },
       ],
     },
-    canonical: 'https://www.www.latore.store/new-products',
+    canonical: 'https://www.latore.store/new-products',
     robots: 'index, follow',
   }
 
