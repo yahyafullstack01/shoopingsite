@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
 <meta name="author" content="Latore Atelier" />
 
 {/* Open Graph для соцмереж*/}
-<meta property="og:title" content="Жіночий жіночий одяг від Latore Atelier" />
+<meta property="og:title" content="Жіночий одяг від Latore Atelier" />
 <meta property="og:description" content="Latore Atelier пропонує стильний та ексклюзивний жіночий одяг, розроблений для того, щоб ви почувалися унікально у будь-якому сезоні. Відкрийте наші колекції сьогодні!" />
 <meta property="og:image" content="https://www.latore.store/logo-social.jpg" />
 <meta property="og:image:width" content="1200" />
