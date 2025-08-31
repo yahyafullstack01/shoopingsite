@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://latore.store/
+Host: https://www.latore.store/
 
 # Sitemaps
-Sitemap: https://latore.store/sitemap.xml
+Sitemap: https://www.latore.store/sitemap.xml
