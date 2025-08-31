@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 {/* <meta name="google-site-verification" content="cYBcnqSIlXlPJZSokMAgKhJCS8MM2XfwV6-nd4o-Jag" /> */}
                {/* <meta name="google-site-verification" content="Lx8iDUB67zjk42dkkJQsEpoqSlKiSlc1peMe9-jmIqY" />*/}
-               <meta name="google-site-verification" content="g_0gD_liwrkkTj-WviMVpLi56EWXTq9nEfPl-uJU72s" />
+               <meta name="google-site-verification" content="yVOmx2g7merY2ILnbUl2yDqMthbJ4UqIBXaddBO0wb8" />
        {/* Google Analytics */}
        {
   process.env.NODE_ENV === "production" && (
