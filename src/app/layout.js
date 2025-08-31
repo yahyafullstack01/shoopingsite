@@ -18,10 +18,10 @@ export default function RootLayout({ children }) {
 {/* Open Graph для соцмереж*/}
 <meta property="og:title" content="Жіночий жіночий одяг від Latore Atelier" />
 <meta property="og:description" content="Latore Atelier пропонує стильний та ексклюзивний жіночий одяг, розроблений для того, щоб ви почувалися унікально у будь-якому сезоні. Відкрийте наші колекції сьогодні!" />
-<meta property="og:image" content="https://www.latore.shop/logo-social.jpg" />
+<meta property="og:image" content="https://www.latore.store/logo-social.jpg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:url" content="https://www.latore.shop/" />
+<meta property="og:url" content="https://www.latore.store/" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
 
