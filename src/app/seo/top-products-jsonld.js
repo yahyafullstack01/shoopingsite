@@ -8,7 +8,7 @@ const topProductsJsonLd = (products) => ({
     image: product.image
       ? {
           "@type": "ImageObject",
-          url: `https://www.latore.shop?id=${product.image}`,
+          url: `https://www.latore.store?id=${product.image}`,
           width: 1200,
           height: 628,
           caption: product.translations?.EN?.name || "Unnamed Product",
