@@ -1,9 +1,4 @@
-# *
 User-agent: *
 Allow: /
 
-# Host
-Host: https://www.latore.store/
-
-# Sitemaps
 Sitemap: https://www.latore.store/sitemap.xml
