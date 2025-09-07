@@ -1,5 +1,1811 @@
 const products = [
 
+{
+  id: 174,
+  price: 1500,
+  isTop: false,
+  isNew: true,
+  sku: "98827",
+  size: "XS S M L XL",
+  category: "Tops",
+  image: "/Top/Black Silk Top/1.avif",
+  images: [
+    "/Top/Black Silk Top/2.avif",
+    "/Top/Black Silk Top/3.avif",
+    "/Top/Black Silk Top/4.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Tops",
+      name: "Black Silk Top",
+      description: [
+        "Elegant black top made from delicate Armani silk. Features a V-neck, button closure, and refined lace accents on the shoulders. Perfect to pair with classic bottoms or more casual pieces.",
+        "Fabric: 100% Armani silk — premium fabric known for its soft sheen, delicate texture, and elegant drape.",
+        "Details:",
+        "• V-neck with wide straps",
+        "• Delicate lace inserts on the shoulders"
+      ],
+      colors: ["black"]
+    },
+    FR: {
+      category: "Tops",
+      name: "Top en soie noire",
+      description: [
+        "Top noir élégant en soie Armani délicate. Col en V, fermeture par boutons et détails raffinés en dentelle sur les épaules. Parfait à associer avec des bas classiques ou des pièces plus décontractées.",
+        "Tissu : 100 % soie Armani — tissu premium connu pour son éclat doux, sa texture délicate et sa chute élégante.",
+        "Détails :",
+        "• Col en V avec larges bretelles",
+        "• Inserts en dentelle délicate sur les épaules"
+      ],
+      colors: ["noir"]
+    },
+    UA: {
+      category: "Топи",
+      name: "Топ «Black silk»",
+      description: [
+        "Елегантний чорний топ із ніжного шовку Армані. Має V-подібний виріз, застібку на ґудзики та витончені мереживні акценти на плечах. Ідеальний для поєднання як із класичними низами, так і з більш повсякденними речами.",
+        "Тканина: 100% шовк Армані — преміальна тканина, відома своїм м’яким блиском, ніжною текстурою та елегантним падінням.",
+        "Деталі:",
+        "• V-подібний виріз із широкими бретелями",
+        "• Вставки з делікатного мережива на плечах"
+      ],
+      colors: ["чорний"]
+    },
+    RU: {
+      category: "Топы",
+      name: "Топ «Black silk»",
+      description: [
+        "Элегантный черный топ из нежного шелка Армани. Имеет V-образный вырез, застежку на пуговицы и изысканные кружевные акценты на плечах. Идеально сочетается как с классическими низами, так и с более повседневными вещами.",
+        "Ткань: 100% шелк Армани — премиальная ткань, известная своим мягким блеском, нежной текстурой и элегантным падением.",
+        "Детали:",
+        "• V-образный вырез с широкими бретелями",
+        "• Вставки из деликатного кружева на плечах"
+      ],
+      colors: ["чёрный"]
+    }
+  }
+},
+  {
+  id: 173,
+  price: 1850,
+  isTop: false,
+  isNew: true,
+  sku: "98826",
+  size: "XS S M L XL",
+  category: "Skirts",
+  image: "/Skirts/Black Silk/1.avif",
+  images: [
+    "/Skirts/Black Silk/2.avif",
+    "/Skirts/Black Silk/3.avif",
+    "/Skirts/Black Silk/4.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Skirts",
+      name: "Black Silk Skirt",
+      description: [
+        "Luxurious black midi skirt with lace trim at the hem. Made from Armani silk, it drapes softly, highlighting femininity and elegance. Perfect for both evening and stylish day looks.",
+        "Fabric: 100% Armani silk — premium fabric known for its soft sheen, delicate texture, and elegant drape.",
+        "Details:",
+        "• Midi length, refined silhouette with slight flare at the bottom",
+        "• Hem adorned with lace for added sensuality and elegance"
+      ],
+      colors: ["black"]
+    },
+    FR: {
+      category: "Jupes",
+      name: "Jupe soie noire",
+      description: [
+        "Jupe midi noire luxueuse avec bordure en dentelle. En soie Armani, elle tombe doucement, mettant en valeur la féminité et l'élégance. Idéale pour les soirées comme pour les sorties de jour.",
+        "Tissu : 100 % soie Armani — tissu premium connu pour son éclat doux, sa texture délicate et sa chute élégante.",
+        "Détails :",
+        "• Longueur midi, silhouette raffinée avec légère extension en bas",
+        "• Bord orné de dentelle pour plus de sensualité et d'élégance"
+      ],
+      colors: ["noir"]
+    },
+    UA: {
+      category: "Спідниці",
+      name: "Спідниця «Black silk»",
+      description: [
+        "Розкішна чорна спідниця довжини міді зі вставкою мережива по низу. Завдяки шовку Армані вона м’яко спадає, підкреслюючи жіночність та витонченість. Ідеальна як для вечірнього образу, так і для стильного денного виходу.",
+        "Тканина: 100% шовк Армані — преміальна тканина, відома своїм м’яким блиском, ніжною текстурою та елегантним падінням.",
+        "Деталі:",
+        "• Довжина міді, витончений фасон із легким розширенням донизу",
+        "• Низ прикрашений мереживом для додання чуттєвості та вишуканості"
+      ],
+      colors: ["чорний"]
+    },
+    RU: {
+      category: "Юбки",
+      name: "Юбка «Black silk»",
+      description: [
+        "Роскошная черная юбка длины миди с кружевной вставкой внизу. Благодаря шелку Армани мягко спадает, подчеркивая женственность и изысканность. Идеальна как для вечернего образа, так и для стильного дневного выхода.",
+        "Ткань: 100% шелк Армани — премиальная ткань, известная своим мягким блеском, нежной текстурой и элегантным падением.",
+        "Детали:",
+        "• Длина миди, изящный фасон с лёгким расширением к низу",
+        "• Низ украшен кружевом для придания чувственности и изысканности"
+      ],
+      colors: ["чёрный"]
+    }
+  }
+},
+  {
+  id: 172,
+  price: 3350,
+  isTop: false,
+  isNew: true,
+  sku: "98825",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Black Silk Set/1.avif",
+  images: [
+    "/Costumes/Black Silk Set/2.avif",
+    "/Costumes/Black Silk Set/3.avif",
+    "/Costumes/Black Silk Set/4.avif",
+    "/Costumes/Black Silk Set/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Black Silk Set",
+      description: [
+        "Elegant set combining the sensuality of satin with delicate lace. Creates a luxurious yet restrained look, suitable for evening outings or special events.",
+        "Fabric: 100% Armani silk — premium fabric known for soft sheen, delicate texture, and elegant drape.",
+        "Details:",
+        "• Top: V-neckline with wide straps",
+        "• Delicate lace inserts on shoulders",
+        "• Skirt: midi length, refined silhouette with slight flare at the bottom",
+        "• Hem adorned with lace for added sensuality and elegance"
+      ],
+      colors: ["black"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Ensemble soie noire",
+      description: [
+        "Ensemble élégant combinant sensualité du satin et délicatesse de la dentelle. Crée un look luxueux mais discret, adapté aux sorties en soirée ou événements spéciaux.",
+        "Tissu : 100 % soie Armani — tissu premium connu pour son éclat doux, sa texture délicate et sa chute élégante.",
+        "Détails :",
+        "• Haut : encolure en V avec larges bretelles",
+        "• Inserts en dentelle délicate sur les épaules",
+        "• Jupe : longueur midi, silhouette raffinée avec légère extension en bas",
+        "• Bas orné de dentelle pour plus de sensualité et d'élégance"
+      ],
+      colors: ["noir"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Комплект «Black silk»",
+      description: [
+        "Вишуканий дует, що поєднує чуттєвість сатину й делікатність мережива. Створює розкішний, але водночас стриманий образ, який підходить як для вечірніх виходів, так і для особливих подій.",
+        "Тканина: 100% шовк Армані — преміальна тканина з м’яким блиском, ніжною текстурою та елегантним падінням.",
+        "Деталі:",
+        "• Топ: V-подібний виріз із широкими бретелями",
+        "• Вставки з делікатного мережива на плечах",
+        "• Спідниця: довжина міді, витончений фасон із легким розширенням донизу",
+        "• Низ прикрашений мереживом для додання чуттєвості та елегантності"
+      ],
+      colors: ["чорний"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Комплект «Black silk»",
+      description: [
+        "Изысканный дуэт, сочетающий чувственность сатина и деликатность кружева. Создает роскошный, но сдержанный образ, подходящий для вечерних выходов и особых событий.",
+        "Ткань: 100% шелк Armani — премиальная ткань с мягким блеском, нежной текстурой и элегантным падением.",
+        "Детали:",
+        "• Топ: V-образный вырез с широкими бретелями",
+        "• Вставки из деликатного кружева на плечах",
+        "• Юбка: длина миди, изящный фасон с лёгким расширением к низу",
+        "• Низ украшен кружевом для добавления чувственности и изысканности"
+      ],
+      colors: ["чёрный"]
+    }
+  }
+},
+
+  {
+  id: 171,
+  price: 2300,
+  isTop: false,
+  isNew: true,
+  sku: "98824",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Satin Slip Dress/1.avif",
+  images: [
+    "/Dress/Satin Slip Dress/2.avif",
+    "/Dress/Satin Slip Dress/3.avif",
+    "/Dress/Satin Slip Dress/4.avif",
+    "/Dress/Satin Slip Dress/5.avif",
+    "/Dress/Satin Slip Dress/6.avif",
+    "/Dress/Satin Slip Dress/7.avif",
+    "/Dress/Satin Slip Dress/8.avif",
+    "/Dress/Satin Slip Dress/9.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Satin Slip Dress",
+      description: [
+        "Elegant and sensual dress combining luxurious satin with delicate lace. Perfect for women who value lightness, refinement, and modern femininity.",
+        "Fabric: Premium satin, beautifully flowing, lightweight, breathable, and pleasant to the touch.",
+        "Details:",
+        "• Slip dress silhouette with a free-flowing shape",
+        "• V-neckline adorned with delicate matching lace",
+        "• Hem decorated with a wide lace insert adding lightness and elegance"
+      ],
+      colors: ["khaki", "black"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe satinée",
+      description: [
+        "Robe élégante et sensuelle combinant satin luxueux et dentelle délicate. Parfaite pour les femmes qui apprécient légèreté, raffinement et féminité moderne.",
+        "Tissu : satin premium, fluide, léger, respirant et agréable au toucher.",
+        "Détails :",
+        "• Silhouette fluide type 'slip dress'",
+        "• Encolure en V ornée de dentelle délicate assortie",
+        "• Base décorée d'une large insertion en dentelle apportant légèreté et élégance"
+      ],
+      colors: ["kaki", "noir"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Сатинова сукня-комбінація",
+      description: [
+        "Елегантна та чуттєва сукня, що поєднує розкіш сатину з ніжністю мережива. Для жінок, які цінують легкість, витонченість і сучасну жіночність.",
+        "Тканина: Сатин преміум-класу, який красиво переливається, легкий, дихаючий та приємний до тіла.",
+        "Деталі:",
+        "• Фасон «комбінація» з вільним, плавним силуетом",
+        "• V-подібний виріз горловини, оздоблений делікатним мереживом у тон",
+        "• Низ сукні прикрашений широкою вставкою з мережива для легкості та елегантності"
+      ],
+      colors: ["хакі", "чорна"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Сатиновое платье-комбинация",
+      description: [
+        "Элегантное и чувственное платье, сочетание роскошного сатина и нежного кружева. Для женщин, ценящих лёгкость, утончённость и современную женственность.",
+        "Ткань: Сатин премиум-класса, красиво струится, лёгкий, дышащий и приятный на ощупь.",
+        "Детали:",
+        "• Силуэт 'комбинация' с плавным свободным кроем",
+        "• V-образный вырез, украшенный деликатным кружевом в тон",
+        "• Низ платья с широкой кружевной вставкой для лёгкости и элегантного акцента"
+      ],
+      colors: ["хаки", "чёрная"]
+    }
+  }
+},
+
+  {
+  id: 170,
+  price: 3200,
+  isTop: false,
+  isNew: true,
+  sku: "98823",
+  size: "XS S M L XL",
+  category: "Outerwear",
+  image: "/Outerwear/Milky/1.avif",
+  images: [
+    "/Outerwear/Milky/2.avif",
+    "/Outerwear/Milky/3.avif",
+    "/Outerwear/Milky/4.avif",
+    "/Outerwear/Milky/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Outerwear",
+      name: "Milky Quilted Jacket",
+      description: [
+        "Light cotton jacket with an interesting print on the sleeves, perfect for early autumn or spring. Adds a unique touch to your look.",
+        "Fabric: 100% cotton jacket with lining.",
+        "Details:",
+        "• Decorative check print on the sleeves",
+        "• Lined",
+        "• 2 pockets"
+      ],
+      colors: ["milky"]
+    },
+    FR: {
+      category: "Vêtements d'extérieur",
+      name: "Veste matelassée «Milky»",
+      description: [
+        "Veste légère en coton avec un imprimé intéressant sur les manches, idéale pour le début de l'automne ou le printemps. Apporte une touche originale à votre look.",
+        "Tissu: 100% coton avec doublure.",
+        "Détails:",
+        "• Imprimé décoratif en carreaux sur les manches",
+        "• Doublée",
+        "• 2 poches"
+      ],
+      colors: ["lait"]
+    },
+    UA: {
+      category: "Верхній одяг",
+      name: "Стьогана куртка «Milky»",
+      description: [
+        "Легка бавовняна куртка з цікавим принтом на рукавах на ранню осінь/весну. Стане цікавим доповненням до твого образу.",
+        "Тканина: 100% бавовняна куртка із підкладкою.",
+        "Деталі:",
+        "• Декоративний принт у вигляді клітинки на рукавах",
+        "• Є підклад",
+        "• 2 кишені"
+      ],
+      colors: ["молочний"]
+    },
+    RU: {
+      category: "Верхняя одежда",
+      name: "Стёганая куртка «Milky»",
+      description: [
+        "Лёгкая хлопковая куртка с интересным принтом на рукавах, подходит для ранней осени или весны. Станет интересным дополнением к образу.",
+        "Ткань: 100% хлопковая куртка с подкладкой.",
+        "Детали:",
+        "• Декоративный принт в виде клеточки на рукавах",
+        "• Есть подклад",
+        "• 2 кармана"
+      ],
+      colors: ["молочный"]
+    }
+  }
+},
+
+  {
+  id: 169,
+  price: 2100,
+  isTop: false,
+  isNew: true,
+  sku: "98822",
+  size: "XS S M L XL",
+  category: "Pants",
+  image: "/Pants/Olive Pants/1.avif",
+  images: [
+    "/Pants/Olive Pants/1.avif",
+    "/Pants/Olive Pants/2.avif",
+    "/Pants/Olive Pants/3.avif",
+    "/Pants/Olive Pants/4.avif",
+    "/Pants/Olive Pants/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Pants",
+      name: "Olive Pants",
+      description: [
+        "Elegant high-waisted pants with sharp creases. Visually lengthen the legs, provide comfort in movement, and perfectly pair with both heels and flat shoes.",
+        "Fabric: Premium suit fabric that holds its shape and feels comfortable on the body. [Composition: 75% viscose, 25% polyester]",
+        "Details:",
+        "• Straight flared cut with creases that visually elongate the legs.",
+        "• High waist accentuates the silhouette."
+      ],
+      colors: ["olive"]
+    },
+    FR: {
+      category: "Pantalons",
+      name: "Pantalon «Olive»",
+      description: [
+        "Pantalon élégant à taille haute avec plis marqués. Allonge visuellement les jambes, offre confort et se combine parfaitement avec talons ou chaussures plates.",
+        "Tissu: Tissu de costume premium qui garde sa forme et agréable au toucher. [Composition: 75% viscose, 25% polyester]",
+        "Détails:",
+        "• Coupe droite évasée avec plis qui allongent visuellement les jambes.",
+        "• Taille haute qui met en valeur la silhouette."
+      ],
+      colors: ["olive"]
+    },
+    UA: {
+      category: "Брюки",
+      name: "Брюки «Olive»",
+      description: [
+        "Елегантні брюки з високою посадкою та чіткими стрілками. Візуально подовжують ноги, дарують комфорт у русі та ідеально поєднуються як із підборами, так і з взуттям на низькому ходу.",
+        "Тканина: Щільна костюмна тканина преміум-класу, що тримає форму, але при цьому приємна до тіла. [Склад: 75% віскоза, 25% поліестер]",
+        "Деталі:",
+        "• Прямого розширеного крою зі стрілками, які візуально подовжують ноги.",
+        "• Висока посадка підкреслює силует."
+      ],
+      colors: ["оливка"]
+    },
+    RU: {
+      category: "Брюки",
+      name: "Брюки «Olive»",
+      description: [
+        "Элегантные брюки с высокой посадкой и четкими стрелками. Визуально удлиняют ноги, обеспечивают комфорт в движении и идеально сочетаются как с каблуками, так и с обувью на низком ходу.",
+        "Ткань: Плотная костюмная ткань премиум-класса, держит форму и приятна к телу. [Состав: 75% вискоза, 25% полиэстер]",
+        "Детали:",
+        "• Прямого расширенного кроя со стрелками, которые визуально удлиняют ноги.",
+        "• Высокая посадка подчеркивает силуэт."
+      ],
+      colors: ["оливка"]
+    }
+  }
+},
+
+  {
+  id: 168,
+  price: 3500,
+  isTop: false,
+  isNew: true,
+  sku: "98821",
+  size: "XS S M L XL",
+  category: "Jackets",
+  image: "/Jackets/Olive Jacket/1.avif",
+  images: [
+    "/Jackets/Olive Jacket/1.avif",
+    "/Jackets/Olive Jacket/2.avif",
+    "/Jackets/Olive Jacket/3.avif",
+    "/Jackets/Olive Jacket/4.avif",
+    "/Jackets/Olive Jacket/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Jackets",
+      name: "Olive Jacket",
+      description: [
+        "Modern classic jacket with a tailored silhouette and waist accent. The side straps allow easy adjustment for a perfect fit.",
+        "Suitable for office wear or evening looks.",
+        "Fabric: Premium suit fabric that holds its shape and feels comfortable on the body. [Composition: 75% viscose, 25% polyester]",
+        "Details:",
+        "• Elongated silhouette with defined shoulder line.",
+        "• Single-breasted button closure with side straps for waist adjustment."
+      ],
+      colors: ["olive"]
+    },
+    FR: {
+      category: "Vestes",
+      name: "Veste «Olive»",
+      description: [
+        "Veste classique moderne avec silhouette ajustée et accent sur la taille. Les lanières latérales permettent un ajustement facile.",
+        "Convient pour le bureau ou les looks du soir.",
+        "Tissu: Tissu de costume premium qui garde sa forme et agréable au toucher. [Composition: 75% viscose, 25% polyester]",
+        "Détails:",
+        "• Silhouette allongée avec ligne d'épaule définie.",
+        "• Fermeture boutonnée simple avec lanières latérales pour ajuster la taille."
+      ],
+      colors: ["olive"]
+    },
+    UA: {
+      category: "Жакети",
+      name: "Жакет «Olive»",
+      description: [
+        "Сучасний класичний жакет із приталеним силуетом та акцентом на талії. Завдяки боковим хлястикам легко регулюється посадка.",
+        "Підходить як для офісу, так і для вечірніх образів.",
+        "Тканина: Щільна костюмна тканина преміум-класу, що тримає форму, але при цьому приємна до тіла. [Склад: 75% віскоза, 25% поліестер]",
+        "Деталі:",
+        "• Подовжений силует із чіткою лінією плеча.",
+        "• Однобортна застібка на ґудзик із можливістю регулювати об’єм талії за допомогою бокових хлястиків."
+      ],
+      colors: ["оливка"]
+    },
+    RU: {
+      category: "Жакеты",
+      name: "Жакет «Olive»",
+      description: [
+        "Современный классический жакет с приталенным силуэтом и акцентом на талии. Боковые ремешки позволяют легко регулировать посадку.",
+        "Подходит как для офиса, так и для вечерних образов.",
+        "Ткань: Плотная костюмная ткань премиум-класса, держит форму и приятна к телу. [Состав: 75% вискоза, 25% полиэстер]",
+        "Детали:",
+        "• Удлинённый силуэт с чёткой линией плеча.",
+        "• Однобортная застёжка на пуговицу с возможностью регулировать объём талии с помощью боковых ремешков."
+      ],
+      colors: ["оливка"]
+    }
+  }
+},
+
+  {
+  id: 167,
+  price: 5600,
+  isTop: false,
+  isNew: true,
+  sku: "98820",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Olive Suit/1.avif",
+  images: [
+    "/Costumes/Olive Suit/1.avif",
+    "/Costumes/Olive Suit/2.avif",
+    "/Costumes/Olive Suit/3.avif",
+    "/Costumes/Olive Suit/4.avif",
+    "/Costumes/Olive Suit/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Olive Suit",
+      description: [
+        "This suit combines classic elegance with a fresh color. The clean cut and noble shade make it a versatile choice for both business meetings and stylish urban looks.",
+        "Can be worn as a total look, or combine the jacket and trousers separately with other wardrobe basics.",
+        "Fabric: 100% viscose, 25% polyester. Premium suit fabric that holds its shape and feels comfortable on the body.",
+        "Details:",
+        "• Jacket: elongated silhouette with a defined shoulder line.",
+        "• Single-breasted button closure with side straps for waist adjustment.",
+        "• Trousers: straight wide-leg cut with creases that visually elongate the legs.",
+        "• High waist emphasizes the silhouette."
+      ],
+      colors: ["olive"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume «Olive»",
+      description: [
+        "Ce costume combine l'élégance classique avec une couleur fraîche. La coupe épurée et la teinte noble en font un choix polyvalent pour les réunions d'affaires ou les looks urbains stylés.",
+        "Peut être porté en total look ou combiner séparément la veste et le pantalon avec d'autres basiques de garde-robe.",
+        "Tissu: 75% viscose, 25% polyester. Tissu de costume premium qui garde sa forme et agréable au toucher.",
+        "Détails:",
+        "• Veste: silhouette allongée avec ligne d'épaule définie.",
+        "• Fermeture boutonnée simple avec lanières latérales pour ajuster la taille.",
+        "• Pantalon: coupe droite et large avec plis qui allongent visuellement les jambes.",
+        "• Taille haute souligne la silhouette."
+      ],
+      colors: ["olive"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм «Olive»",
+      description: [
+        "Цей костюм поєднує елегантність класики та свіжість кольору. Лаконічний крій і благородний відтінок роблять його універсальним вибором як для ділових зустрічей, так і для стильних міських образів.",
+        "Можна носити як total look, або ж комбінувати окремо жакет і брюки з іншими базовими речами гардеробу.",
+        "Тканина: Щільна костюмна тканина преміум-класу, що тримає форму, але при цьому приємна до тіла. [Склад: 75% віскоза, 25% поліестер]",
+        "Деталі:",
+        "• Жакет: подовжений силует із чіткою лінією плеча.",
+        "• Однобортна застібка на ґудзик із можливістю регулювати об’єм талії за допомогою бокових хлястиків.",
+        "• Брюки: прямого розширеного крою зі стрілками, які візуально подовжують ноги.",
+        "• Висока посадка підкреслює силует."
+      ],
+      colors: ["оливка"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм «Olive»",
+      description: [
+        "Этот костюм сочетает классическую элегантность с свежестью цвета. Чистый крой и благородный оттенок делают его универсальным выбором как для деловых встреч, так и для стильных городских образов.",
+        "Можно носить как total look или комбинировать пиджак и брюки отдельно с другими базовыми вещами гардероба.",
+        "Ткань: Плотная костюмная ткань премиум-класса, держит форму и приятна к телу. [Состав: 75% вискоза, 25% полиэстер]",
+        "Детали:",
+        "• Пиджак: удлинённый силуэт с чёткой линией плеча.",
+        "• Однобортная застёжка на пуговицу с боковыми ремешками для регулировки объёма талии.",
+        "• Брюки: прямого расширенного кроя со стрелками, визуально удлиняют ноги.",
+        "• Высокая посадка подчёркивает силуэт."
+      ],
+      colors: ["оливка"]
+    }
+  }
+},
+
+  {
+  id: 166,
+  price: 2000,
+  isTop: false,
+  isNew: true,
+  sku: "98819",
+  size: "XS S M L XL",
+  category: "Shirts",
+  image: "/Shirts/Cocoa line Blouse/1.avif",
+  images: [
+    "/Shirts/Cocoa line Blouse/2.avif",
+    "/Shirts/Cocoa line Blouse/3.avif",
+    "/Shirts/Cocoa line Blouse/4.avif",
+    "/Shirts/Cocoa line Blouse/5.avif",
+    "/Shirts/Cocoa line Blouse/6.avif",
+    "/Shirts/Cocoa line Blouse/7.avif",
+    "/Shirts/Cocoa line Blouse/8.avif",
+    "/Shirts/Cocoa line Blouse/9.avif",
+    "/Shirts/Cocoa line Blouse/10.avif",
+    "/Shirts/Cocoa line Blouse/11.avif",
+    "/Shirts/Cocoa line Blouse/12.avif",
+    "/Shirts/Cocoa line Blouse/13.avif",
+
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Shirts",
+      name: "Cocoa line Blouse",
+      description: [
+        "Delicate yet stylish blouse that adds lightness to your look.",
+        "Perfectly pairs with classic skirts, trousers, or jeans, creating both office and more relaxed outfits.",
+        "Fabric:",
+        "[Blouse: 100% viscose]",
+        "Details:",
+        "• Loose fit with soft draping for a feminine silhouette.",
+        "• Back tie at the neck adds elegance and accent."
+      ],
+      colors: ["sage", "blue", "marsala"]
+    },
+    FR: {
+      category: "Chemises",
+      name: "Blouse «Cocoa line»",
+      description: [
+        "Blouse délicate et élégante qui ajoute de la légèreté à votre look.",
+        "Parfaitement associée aux jupes classiques, pantalons ou jeans, créant des tenues à la fois pour le bureau et plus décontractées.",
+        "Tissu :",
+        "[Blouse : 100% viscose]",
+        "Détails :",
+        "• Coupe ample avec drapés doux pour une silhouette féminine.",
+        "• Lien à l’arrière du cou pour ajouter élégance et accent."
+      ],
+      colors: ["sauge", "bleu", "marsala"]
+    },
+    UA: {
+      category: "Сорочки",
+      name: "Блуза «Cocoa line»",
+      description: [
+        "Ніжна й водночас стильна блуза, що додає образу легкості.",
+        "Ідеально комбінується з класичними спідницями, брюками чи джинсами, створюючи як офісні, так і більш розслаблені образи.",
+        "Тканина:",
+        "[Склад блузи: 100% віскоза]",
+        "Деталі:",
+        "• Вільний крій і м’які драпіровки створюють жіночний силует.",
+        "• Зав’язка ззаду на шиї додає витонченості та акценту."
+      ],
+      colors: ["полинь", "синій", "марсала"]
+    },
+    RU: {
+      category: "Рубашки",
+      name: "Блуза «Cocoa line»",
+      description: [
+        "Нежная и одновременно стильная блуза, которая добавляет легкости образу.",
+        "Идеально сочетается с классическими юбками, брюками или джинсами, создавая как офисные, так и более расслабленные образы.",
+        "Ткань:",
+        "[Состав блузы: 100% вискоза]",
+        "Детали:",
+        "• Свободный крой с мягкими драпировками создаёт женственный силуэт.",
+        "• Завязка сзади на шее добавляет утончённости и акцент."
+      ],
+      colors: ["полынь", "синий", "марсала"]
+    }
+  }
+},
+
+  {
+  id: 165,
+  price: 4000,
+  isTop: false,
+  isNew: true,
+  sku: "98818",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Cocoa line Set/1.avif",
+  images: [
+    "/Costumes/Cocoa line Set/2.avif",
+    "/Costumes/Cocoa line Set/3.avif",
+    "/Costumes/Cocoa line Set/4.avif",
+    "/Costumes/Cocoa line Set/5.avif",
+    "/Costumes/Cocoa line Set/6.avif",
+    "/Costumes/Cocoa line Set/7.avif",
+    "/Costumes/Cocoa line Set/8.avif",
+    "/Costumes/Cocoa line Set/9.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Cocoa line Set",
+      description: [
+        "Elegant duo for the modern woman who values femininity and comfort. Lightweight blouse made of airy fabric perfectly pairs with a pencil skirt, creating a harmonious and stylish look.",
+        "This set is suitable for both office meetings and evening outings where it is important to look restrained yet sophisticated.",
+        "Fabric:",
+        "[Blouse: 100% viscose. Skirt: 75% viscose, 25% polyester]",
+        "Details:",
+        "• Blouse: loose fit with soft draping for a feminine silhouette.",
+        "• Back tie at the neck adds elegance and accent.",
+        "• Skirt: pencil silhouette with high waist that visually elongates the figure and slims the body.",
+        "• Waistband accentuates the waist, creating a feminine touch."
+      ],
+      colors: ["sage", "blue"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Ensemble «Cocoa line»",
+      description: [
+        "Duo élégant pour la femme moderne qui apprécie la féminité et le confort. Blouse légère en tissu aérien parfaitement associée à une jupe crayon, créant un look harmonieux et stylé.",
+        "Cet ensemble convient aussi bien aux réunions de bureau qu’aux sorties du soir où il est important d’avoir un style sobre mais raffiné.",
+        "Tissu :",
+        "[Blouse : 100% viscose. Jupe : 75% viscose, 25% polyester]",
+        "Détails :",
+        "• Blouse : coupe ample avec drapés doux pour une silhouette féminine.",
+        "• Lien à l’arrière du cou pour ajouter élégance et accent.",
+        "• Jupe : coupe crayon avec taille haute qui allonge visuellement la silhouette et affine le corps.",
+        "• La ceinture souligne la taille, créant une touche féminine."
+      ],
+      colors: ["sauge", "bleu"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм «Cocoa line»",
+      description: [
+        "Елегантний дует для сучасної жінки, яка цінує жіночність та комфорт. Легка блуза з повітряної тканини ідеально поєднується зі спідницею-олівцем, створюючи гармонійний та стильний образ.",
+        "Цей комплект підходить як для офісних зустрічей, так і для вечірніх виходів, де важливо виглядати стримано, але вишукано.",
+        "Тканина:",
+        "[Склад блузи: 100% віскоза. Склад спідниці: 75% віскоза, 25% поліестер]",
+        "Деталі:",
+        "• Блуза: вільний крій і м’які драпіровки створюють жіночний силует.",
+        "• Зав’язка ззаду на шиї додає витонченості та акценту.",
+        "• Спідниця: фасону олівець із високою посадкою, який візуально витягує силует і робить фігуру стрункішою.",
+        "• Пояс підкреслює талію, створюючи жіночний акцент."
+      ],
+      colors: ["полинь", "синій"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм «Cocoa line»",
+      description: [
+        "Элегантный дуэт для современной женщины, которая ценит женственность и комфорт. Лёгкая блуза из воздушной ткани идеально сочетается с юбкой-карандаш, создавая гармоничный и стильный образ.",
+        "Этот комплект подходит как для офисных встреч, так и для вечерних выходов, где важно выглядеть сдержанно, но изысканно.",
+        "Ткань:",
+        "[Блуза: 100% вискоза. Юбка: 75% вискоза, 25% полиэстер]",
+        "Детали:",
+        "• Блуза: свободный крой с мягкими драпировками создаёт женственный силуэт.",
+        "• Завязка сзади на шее добавляет утончённости и акцент.",
+        "• Юбка: фасон карандаш с высокой посадкой, визуально вытягивает силуэт и делает фигуру стройнее.",
+        "• Пояс подчёркивает талию, создавая женственный акцент."
+      ],
+      colors: ["полынь", "синий"]
+    }
+  }
+},
+
+  {
+  id: 164,
+  price: 2000,
+  isTop: false,
+  isNew: true,
+  sku: "98817",
+  size: "XS S M L XL",
+  category: "Skirts",
+  image: "/Skirts/Cocoa line Skirt/1.avif",
+  images: [
+    "/Skirts/Cocoa line Skirt/2.avif",
+    "/Skirts/Cocoa line Skirt/3.avif",
+    "/Skirts/Cocoa line Skirt/4.avif",
+    "/Skirts/Cocoa line Skirt/5.avif",
+    "/Skirts/Cocoa line Skirt/6.avif",
+    "/Skirts/Cocoa line Skirt/7.avif",
+    "/Skirts/Cocoa line Skirt/8.avif",
+    "/Skirts/Cocoa line Skirt/9.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Skirts",
+      name: "Cocoa line Skirt",
+      description: [
+        "Feminine classic in a modern interpretation. This skirt highlights the silhouette while maintaining comfort and elegance, becoming a versatile wardrobe essential.",
+        "Perfectly pairs with classic heels for an office look or with more relaxed items like an oversized shirt or sweater.",
+        "Fabric: Premium dense suiting fabric that holds its shape yet feels pleasant on the skin.",
+        "[Composition: 75% viscose, 25% polyester]",
+        "Details:",
+        "• Pencil silhouette with a high waist that visually elongates the figure and makes it slimmer.",
+        "• Midi length adds elegance to the look.",
+        "• Back slit provides ease of movement.",
+        "• Waistband accentuates the waist, creating a feminine touch."
+      ],
+      colors: ["sage", "blue"]
+    },
+    FR: {
+      category: "Jupes",
+      name: "Jupe «Cocoa line»",
+      description: [
+        "Classique féminine dans une interprétation moderne. Cette jupe souligne la silhouette tout en conservant confort et élégance, devenant ainsi une pièce de base universelle de votre garde-robe.",
+        "Se combine parfaitement avec des talons classiques pour un look de bureau ou avec des pièces plus décontractées comme une chemise oversize ou un pull.",
+        "Tissu : tissu de costume dense de qualité premium, qui garde sa forme et reste agréable sur la peau.",
+        "[Composition : 75% viscose, 25% polyester]",
+        "Détails :",
+        "• Coupe crayon avec taille haute qui allonge visuellement la silhouette et affine la figure.",
+        "• Longueur midi qui ajoute de l’élégance.",
+        "• Fente discrète à l’arrière pour plus de confort en mouvement.",
+        "• Ceinture qui souligne la taille et crée une touche féminine."
+      ],
+      colors: ["sauge", "bleu"]
+    },
+    UA: {
+      category: "Спідниці",
+      name: "Спідниця «Cocoa line»",
+      description: [
+        "Жіночна класика у сучасному виконанні. Ця спідниця підкреслює силует, зберігаючи комфорт і витонченість, і стане універсальною базою у вашому гардеробі.",
+        "Цю спідницю можна комбінувати як із класичними підборами для офісного образу, так і з більш розслабленими речами — наприклад, сорочкою oversize чи светром.",
+        "Тканина: щільна костюмна тканина преміум-класу, що тримає форму, але при цьому приємна до тіла.",
+        "[Склад: 75% віскоза, 25% поліестер]",
+        "Деталі:",
+        "• Фасон олівець із високою посадкою, який візуально витягує силует і робить фігуру стрункішою.",
+        "• Довжина міді додає образу елегантності.",
+        "• Позаду — акуратний розріз для зручності рухів.",
+        "• Пояс підкреслює талію, створюючи жіночний акцент."
+      ],
+      colors: ["полинь", "синій"]
+    },
+    RU: {
+      category: "Юбки",
+      name: "Юбка «Cocoa line»",
+      description: [
+        "Женственная классика в современном исполнении. Эта юбка подчеркивает силуэт, сохраняя комфорт и изящество, и станет универсальной базой в вашем гардеробе.",
+        "Её можно сочетать как с классическими туфлями на каблуке для офисного образа, так и с более расслабленными вещами — например, с рубашкой oversize или свитером.",
+        "Ткань: плотная костюмная ткань премиум-класса, которая держит форму и приятна к телу.",
+        "[Состав: 75% вискоза, 25% полиэстер]",
+        "Детали:",
+        "• Фасон карандаш с высокой посадкой, визуально вытягивающий силуэт и стройнящий фигуру.",
+        "• Длина миди добавляет образу элегантности.",
+        "• Сзади аккуратный разрез для удобства движения.",
+        "• Пояс подчеркивает талию, создавая женственный акцент."
+      ],
+      colors: ["полынь", "синий"]
+    }
+  }
+},
+
+  {
+  id: 163,
+  price: 2100,
+  isTop: false,
+  isNew: true,
+  sku: "98816",
+  size: "XS S M L XL",
+  category: "Pants",
+  image: "/Pants/Alice Pants/1.avif",
+  images: [
+    "/Pants/Alice Pants/2.avif",
+    "/Pants/Alice Pants/3.avif",
+    "/Pants/Alice Pants/4.avif",
+    "/Pants/Alice Pants/5.avif",
+    "/Pants/Alice Pants/6.avif",
+    "/Pants/Alice Pants/7.avif",
+    "/Pants/Alice Pants/8.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Pants",
+      name: "Alice Pants",
+      description: [
+        "Stylish straight-leg trousers with a comfortable fit. Visually elongate the legs and pair perfectly with heels, sneakers, or boots.",
+        "A wardrobe essential that matches any top.",
+        "Fabric: Premium dense suiting fabric that holds its shape yet feels pleasant on the skin.",
+        "[Composition: 75% viscose, 25% polyester]",
+        "Details:",
+        "• Classic straight cut with a modest waistline.",
+        "• Relaxed fit ensures comfort in movement.",
+        "• Extended length visually slims the legs."
+      ],
+      colors: ["black", "chocolate"]
+    },
+    FR: {
+      category: "Pantalons",
+      name: "Pantalon «Alice»",
+      description: [
+        "Pantalon droit élégant avec une coupe confortable. Allonge visuellement les jambes et se combine parfaitement avec des talons, des baskets ou des bottes.",
+        "Une pièce de base qui s’adapte à tous les hauts.",
+        "Tissu : tissu de costume dense de qualité premium, qui garde sa forme et reste agréable sur la peau.",
+        "[Composition : 75% viscose, 25% polyester]",
+        "Détails :",
+        "• Coupe droite classique avec taille discrète.",
+        "• Coupe ample pour un confort de mouvement.",
+        "• Longueur allongée qui affine visuellement les jambes."
+      ],
+      colors: ["noir", "chocolat"]
+    },
+    UA: {
+      category: "Брюки",
+      name: "Брюки «Alice»",
+      description: [
+        "Стильні брюки прямого силуету з комфортною посадкою. Візуально подовжують ноги та чудово комбінуються з підборами, кедами чи черевиками.",
+        "Базова річ, яка пасує до будь-якого верху.",
+        "Тканина: щільна костюмна тканина преміум-класу, що тримає форму, але при цьому приємна до тіла.",
+        "[Склад: 75% віскоза, 25% поліестер]",
+        "Деталі:",
+        "• Класичного прямого крою зі стриманою лінією талії.",
+        "• Вільніший фасон забезпечує комфорт у русі.",
+        "• Подовжена довжина візуально робить ноги стрункішими."
+      ],
+      colors: ["чорний", "шоколад"]
+    },
+    RU: {
+      category: "Брюки",
+      name: "Брюки «Alice»",
+      description: [
+        "Стильные брюки прямого силуэта с комфортной посадкой. Визуально удлиняют ноги и отлично сочетаются с каблуками, кедами или ботинками.",
+        "Базовая вещь, которая подходит к любому верху.",
+        "Ткань: плотная костюмная ткань премиум-класса, которая держит форму и приятна к телу.",
+        "[Состав: 75% вискоза, 25% полиэстер]",
+        "Детали:",
+        "• Классический прямой крой с аккуратной линией талии.",
+        "• Более свободный фасон обеспечивает комфорт в движении.",
+        "• Удлинённая длина визуально делает ноги стройнее."
+      ],
+      colors: ["чёрный", "шоколад"]
+    }
+  }
+},
+
+  {
+  id: 162,
+  price: 3100,
+  isTop: false,
+  isNew: true,
+  sku: "98815",
+  size: "XS S M L XL",
+  category: "Jackets",
+  image: "/Jackets/Alice Jacket/1.avif",
+  images: [
+    "/Jackets/Alice Jacket/2.avif",
+    "/Jackets/Alice Jacket/3.avif",
+    "/Jackets/Alice Jacket/4.avif",
+    "/Jackets/Alice Jacket/5.avif",
+    "/Jackets/Alice Jacket/6.avif",
+    "/Jackets/Alice Jacket/7.avif",
+    "/Jackets/Alice Jacket/8.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Jackets",
+      name: "Alice Jacket",
+      description: [
+        "Minimalist single-breasted jacket with three buttons and pockets. Perfectly fits the figure, emphasizes the waist, and adds understated elegance.",
+        "A versatile piece — suitable for both office and casual looks.",
+        "Fabric: Premium dense suiting fabric that holds its shape yet feels pleasant on the skin.",
+        "[Composition: 75% viscose, 25% polyester]",
+        "Details:",
+        "• Minimalist cut with a single-breasted closure on three buttons.",
+        "• Extended shoulder line and tailored silhouette for a refined look.",
+        "• Two flap pockets add practicality.",
+        "• Perfect length — wearable with trousers, jeans, or skirts."
+      ],
+      colors: ["black", "chocolate"]
+    },
+    FR: {
+      category: "Vestes",
+      name: "Veste «Alice»",
+      description: [
+        "Veste minimaliste croisée à trois boutons avec poches. S’adapte parfaitement à la silhouette, souligne la taille et ajoute une élégance sobre.",
+        "Une pièce polyvalente — adaptée aussi bien au bureau qu’aux looks casual.",
+        "Tissu : tissu de costume dense de qualité premium, qui garde sa forme et reste agréable sur la peau.",
+        "[Composition : 75% viscose, 25% polyester]",
+        "Détails :",
+        "• Coupe minimaliste avec fermeture croisée à trois boutons.",
+        "• Ligne d’épaule allongée et silhouette cintrée pour un look raffiné.",
+        "• Deux poches à rabat ajoutent de la praticité.",
+        "• Longueur idéale — à porter avec pantalon, jean ou jupe."
+      ],
+      colors: ["noir", "chocolat"]
+    },
+    UA: {
+      category: "Жакети",
+      name: "Жакет «Alice»",
+      description: [
+        "Лаконічний жакет на три ґудзики з кишенями. Ідеально сідає по фігурі, підкреслює талію та додає стриманої елегантності.",
+        "Універсальний варіант — підходить і для офісу, і для casual-луків.",
+        "Тканина: щільна костюмна тканина преміум-класу, що тримає форму, але при цьому приємна до тіла.",
+        "[Склад: 75% віскоза, 25% поліестер]",
+        "Деталі:",
+        "• Лаконічний крій із однобортною застібкою на три ґудзики.",
+        "• Подовжена лінія плеча й приталений силует формують витончений образ.",
+        "• Дві кишені з клапанами додають практичності.",
+        "• Ідеальна довжина — для носіння як із брюками, так і з джинсами чи спідницями."
+      ],
+      colors: ["чорний", "шоколад"]
+    },
+    RU: {
+      category: "Жакеты",
+      name: "Жакет «Alice»",
+      description: [
+        "Лаконичный жакет на три пуговицы с карманами. Идеально сидит по фигуре, подчёркивает талию и добавляет сдержанной элегантности.",
+        "Универсальный вариант — подходит как для офиса, так и для casual-луков.",
+        "Ткань: плотная костюмная ткань премиум-класса, которая держит форму и приятна к телу.",
+        "[Состав: 75% вискоза, 25% полиэстер]",
+        "Детали:",
+        "• Лаконичный крой с однобортной застёжкой на три пуговицы.",
+        "• Удлинённая линия плеча и приталенный силуэт формируют изысканный образ.",
+        "• Два кармана с клапанами добавляют практичности.",
+        "• Идеальная длина — для ношения как с брюками, так и с джинсами или юбками."
+      ],
+      colors: ["чёрный", "шоколад"]
+    }
+  }
+},
+
+  {
+  id: 161,
+  price: 5200,
+  isTop: false,
+  isNew: true,
+  sku: "98814",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Alice Costume/1.avif",
+  images: [
+    "/Costumes/Alice Costume/2.avif",
+    "/Costumes/Alice Costume/3.avif",
+    "/Costumes/Alice Costume/4.avif",
+    "/Costumes/Alice Costume/5.avif",
+    "/Costumes/Alice Costume/6.avif",
+    "/Costumes/Alice Costume/7.avif",
+    "/Costumes/Alice Costume/8.avif",
+    "/Costumes/Alice Costume/9.avif",
+
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Alice Costume",
+      description: [
+        "A modern interpretation of classics that combines comfort and elegance. This suit is a perfect wardrobe staple — easily transforming from a business look to casual when paired with sneakers.",
+        "Fabric: Premium dense suiting fabric that holds its shape yet feels pleasant on the skin.",
+        "[Composition: 75% viscose, 25% polyester]",
+        "Details:",
+        "• Jacket: minimalist cut with a single-breasted closure on three buttons.",
+        "• Extended shoulder line and tailored silhouette create a refined look.",
+        "• Trousers: classic straight cut with a restrained waistline.",
+        "• A looser fit ensures comfort in motion."
+      ],
+      colors: ["chocolate", "black"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume «Alice»",
+      description: [
+        "Une interprétation moderne du classique, alliant confort et élégance. Ce costume est une pièce essentielle de la garde-robe — il passe facilement d’un look professionnel à un style casual avec des baskets.",
+        "Tissu : tissu de costume dense de qualité premium, qui garde sa forme et reste agréable sur la peau.",
+        "[Composition : 75% viscose, 25% polyester]",
+        "Détails :",
+        "• Veste : coupe minimaliste avec fermeture croisée à trois boutons.",
+        "• Ligne d’épaule allongée et silhouette cintrée pour un look raffiné.",
+        "• Pantalon : coupe droite classique avec taille sobre.",
+        "• Coupe plus ample pour un confort optimal en mouvement."
+      ],
+      colors: ["chocolat", "noir"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм «Alice»",
+      description: [
+        "Сучасна інтерпретація класики, яка поєднує комфорт та вишуканість. Цей костюм стане ідеальною базою гардеробу — він легко трансформується з ділового образу у casual, якщо доповнити його кедами чи кросівками.",
+        "Тканина: щільна костюмна тканина преміум-класу, що тримає форму, але при цьому приємна до тіла.",
+        "[Склад: 75% віскоза, 25% поліестер]",
+        "Деталі:",
+        "• Жакет: лаконічний крій із однобортною застібкою на три ґудзики.",
+        "• Подовжена лінія плеча й приталений силует формують витончений образ.",
+        "• Брюки: класичного прямого крою зі стриманою лінією талії.",
+        "• Вільніший фасон забезпечує комфорт у русі."
+      ],
+      colors: ["шоколад", "чорний"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм «Alice»",
+      description: [
+        "Современная интерпретация классики, сочетающая комфорт и изящество. Этот костюм станет идеальной базой гардероба — легко превращается из делового образа в casual, если дополнить его кедами или кроссовками.",
+        "Ткань: плотная костюмная ткань премиум-класса, которая держит форму и приятна к телу.",
+        "[Состав: 75% вискоза, 25% полиэстер]",
+        "Детали:",
+        "• Жакет: лаконичный крой с однобортной застёжкой на три пуговицы.",
+        "• Удлинённая линия плеча и приталенный силуэт создают изысканный образ.",
+        "• Брюки: классического прямого кроя со сдержанной линией талии.",
+        "• Более свободный фасон обеспечивает комфорт в движении."
+      ],
+      colors: ["шоколад", "чёрный"]
+    }
+  }
+},
+
+  {
+  id: 160,
+  price: 3100,
+  isTop: false,
+  isNew: true,
+  sku: "98813",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Kriston Dress/1.avif",
+  images: [
+    "/Dress/Kriston Dress/2.avif",
+    "/Dress/Kriston Dress/3.avif",
+    "/Dress/Kriston Dress/4.avif",
+    "/Dress/Kriston Dress/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Kriston Dress",
+      description: [
+        "This dress is designed for women who value comfort and understated elegance. It combines minimalist tailoring with refined details, creating a stylish yet versatile look.",
+        "Fabric: Turkish cotton mélange. Comfortable, breathable, shape-retaining, and easy to care for.",
+        "[Composition: 80% wool, 20% polyester]",
+        "Details:",
+        "• Fitted silhouette with a flared midi skirt that creates a delicate feminine line.",
+        "• High waistline accentuated with a decorative strap and buttons on both sides.",
+        "• Back zipper closure for comfortable wear."
+      ],
+      colors: ["mocha-mousse"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe «Kriston»",
+      description: [
+        "Cette robe est conçue pour les femmes qui apprécient le confort et l’élégance sobre. Elle associe une coupe minimaliste à des détails raffinés, créant un look élégant et polyvalent.",
+        "Tissu : mélange de coton turc. Agréable sur la peau, respirant, garde sa forme et facile d’entretien.",
+        "[Composition : 80% laine, 20% polyester]",
+        "Détails :",
+        "• Silhouette ajustée avec jupe midi évasée qui crée une ligne féminine délicate.",
+        "• Taille haute mise en valeur par une patte décorative avec boutons des deux côtés.",
+        "• Fermeture éclair au dos pour plus de confort."
+      ],
+      colors: ["moka-mousse"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Сукня «Kriston»",
+      description: [
+        "Ця сукня створена для жінок, які цінують комфорт і лаконічну елегантність. Вона поєднує мінімалізм крою та витончені деталі, які формують стильний і водночас універсальний образ.",
+        "Тканина: Турецький бавовняний меланж. Приємна до тіла, дихаюча, тримає форму та практична в догляді.",
+        "[Склад: 80% вовни, 20% поліестер]",
+        "Деталі:",
+        "• Силует приталений із розкльошеною спідницею міді, яка створює ніжну жіночну лінію.",
+        "• Висока лінія талії підкреслюється декоративним хлястиком із ґудзиками з обох боків.",
+        "• Спинка із застібкою-блискавкою забезпечує зручність у носінні."
+      ],
+      colors: ["мокко-мус"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Платье «Kriston»",
+      description: [
+        "Это платье создано для женщин, которые ценят комфорт и лаконичную элегантность. Оно сочетает минимализм кроя и изысканные детали, формируя стильный и универсальный образ.",
+        "Ткань: турецкий хлопковый меланж. Приятная к телу, дышащая, держит форму и практична в уходе.",
+        "[Состав: 80% шерсть, 20% полиэстер]",
+        "Детали:",
+        "• Приталенный силуэт с расклёшенной юбкой миди, создающей нежную женственную линию.",
+        "• Высокая линия талии подчёркнута декоративным хлястиком с пуговицами по бокам.",
+        "• Застёжка-молния на спинке для удобства в носке."
+      ],
+      colors: ["мокко-мусс"]
+    }
+  }
+},
+
+  {
+  id: 159,
+  price: 3100,
+  isTop: false,
+  isNew: true,
+  sku: "98812",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Kriston cocoa Dress/1.avif",
+  images: [
+    "/Dress/Kriston cocoa Dress/2.avif",
+    "/Dress/Kriston cocoa Dress/3.avif",
+    "/Dress/Kriston cocoa Dress/4.avif",
+    "/Dress/Kriston cocoa Dress/5.avif",
+    "/Dress/Kriston cocoa Dress/6.avif",
+    "/Dress/Kriston cocoa Dress/7.avif",
+    "/Dress/Kriston cocoa Dress/8.avif",
+    "/Dress/Kriston cocoa Dress/9.avif",
+    "/Dress/Kriston cocoa Dress/10.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Kriston cocoa Dress",
+      description: [
+        "This dress is designed for women who value comfort and understated elegance. It combines minimalist tailoring with refined details, creating a stylish yet versatile look.",
+        "Fabric: Medium-density matte fabric, soft to the touch.",
+        "[Composition: 35% viscose, 60% polyester, 5% spandex]",
+        "Details:",
+        "• Fitted silhouette with a flared midi skirt that creates a delicate feminine line.",
+        "• High waistline accentuated with a decorative strap and buttons on both sides.",
+        "• Back zipper closure for comfortable wear."
+      ],
+      colors: ["cocoa-powder"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe «Kriston cocoa»",
+      description: [
+        "Cette robe est conçue pour les femmes qui apprécient le confort et l’élégance sobre. Elle associe une coupe minimaliste à des détails raffinés, créant un look à la fois élégant et polyvalent.",
+        "Tissu : tissu mat de densité moyenne, doux au toucher.",
+        "[Composition : 35% viscose, 60% polyester, 5% élasthanne]",
+        "Détails :",
+        "• Silhouette ajustée avec une jupe midi évasée qui crée une ligne féminine délicate.",
+        "• Taille haute mise en valeur par une patte décorative avec boutons des deux côtés.",
+        "• Fermeture éclair au dos pour plus de confort."
+      ],
+      colors: ["cacao-poudre"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Сукня «Kriston cocoa»",
+      description: [
+        "Ця сукня створена для жінок, які цінують комфорт і лаконічну елегантність. Вона поєднує мінімалізм крою та витончені деталі, які формують стильний і водночас універсальний образ.",
+        "Тканина: тканина середньої щільності, матова, на дотик мʼяка.",
+        "[Склад: 35% віскоза, 60% поліестер, 5% спандекс]",
+        "Деталі:",
+        "• Силует приталений із розкльошеною спідницею міді, яка створює ніжну жіночну лінію.",
+        "• Висока лінія талії підкреслюється декоративним хлястиком із ґудзиками з обох боків.",
+        "• Спинка із застібкою-блискавкою забезпечує зручність у носінні."
+      ],
+      colors: ["какао-пудра"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Платье «Kriston cocoa»",
+      description: [
+        "Это платье создано для женщин, которые ценят комфорт и лаконичную элегантность. Оно сочетает минимализм кроя и изысканные детали, формируя стильный и универсальный образ.",
+        "Ткань: матовая ткань средней плотности, мягкая на ощупь.",
+        "[Состав: 35% вискоза, 60% полиэстер, 5% спандекс]",
+        "Детали:",
+        "• Приталенный силуэт с расклёшенной юбкой миди, создающей нежную женственную линию.",
+        "• Высокая линия талии подчёркнута декоративным хлястиком с пуговицами по бокам.",
+        "• Застёжка-молния на спинке для удобства в носке."
+      ],
+      colors: ["какао-пудра"]
+    }
+  }
+},
+
+  {
+  id: 158,
+  price: 3100,
+  isTop: false,
+  isNew: true,
+  sku: "98811",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Loden Grace Dress/1.avif",
+  images: [
+    "/Dress/Loden Grace Dress/2.avif",
+    "/Dress/Loden Grace Dress/3.avif",
+    "/Dress/Loden Grace Dress/4.avif",
+    "/Dress/Loden Grace Dress/5.avif",
+    "/Dress/Loden Grace Dress/6.avif",
+    "/Dress/Loden Grace Dress/7.avif",
+    "/Dress/Loden Grace Dress/8.avif",
+    "/Dress/Loden Grace Dress/9.avif",
+    "/Dress/Loden Grace Dress/10.avif",
+    
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Loden Grace Dress",
+      description: [
+        "An elegant dress that combines timeless classics with modern accents. Thanks to its premium fabric and thoughtful cut, it looks stylish while remaining comfortable for everyday wear.",
+        "Perfect choice for office days, business meetings, or evening outings.",
+        "Fabric: Loden wool — dense, warm, yet soft and flexible. It holds its shape perfectly and is ideal for the cooler season.",
+        "[Composition: 75% wool]",
+        "Details:",
+        "• Straight silhouette that gently emphasizes body lines",
+        "• ¾ sleeves with decorative zippers — a stylish element that allows adjusting the volume",
+        "• Back slit for ease of movement and a feminine accent"
+      ],
+      colors: ["denim", "sage"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe «Loden Grace»",
+      description: [
+        "Une robe élégante qui associe la classique intemporelle à des accents modernes. Grâce à son tissu premium et sa coupe soignée, elle allie style et confort au quotidien.",
+        "Un choix parfait pour le bureau, les réunions d'affaires ou les sorties en soirée.",
+        "Tissu : laine Loden — dense, chaude, mais souple et douce. Elle garde parfaitement sa forme et est idéale pour la saison fraîche.",
+        "[Composition : 75% laine]",
+        "Détails :",
+        "• Silhouette droite qui souligne délicatement les lignes du corps",
+        "• Manches ¾ avec fermetures éclair décoratives pour ajuster le volume",
+        "• Fente au dos pour plus d’aisance et une touche féminine"
+      ],
+      colors: ["denim", "sauge"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Сукня «Loden Grace»",
+      description: [
+        "Елегантна сукня, яка поєднує стриману класику з сучасними акцентами. Завдяки преміальній тканині та продуманому крою вона виглядає стильно та комфортно носиться щодня.",
+        "Ця сукня стане ідеальним вибором для офісних буднів, ділових зустрічей або вечірніх виходів.",
+        "Тканина: вовняна тканина «Лоден» — щільна, тепла, але при цьому пластична й м’яка. Вона чудово тримає форму і є ідеальною для прохолодного сезону.",
+        "[Склад: 75% вовни]",
+        "Деталі:",
+        "• Прямий силует, що м’яко підкреслює лінії фігури.",
+        "• Рукави ¾ з декоративними замочками — стильна деталь, яка дозволяє регулювати об’єм та створює сучасний акцент.",
+        "• На спинці передбачений розріз для зручності рухів і жіночного акценту."
+      ],
+      colors: ["джинс", "полинь"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Платье «Loden Grace»",
+      description: [
+        "Элегантное платье, сочетающее сдержанную классику с современными акцентами. Благодаря премиальной ткани и продуманному крою оно выглядит стильно и удобно для повседневной носки.",
+        "Идеальный выбор для офиса, деловых встреч или вечерних выходов.",
+        "Ткань: шерстяная ткань «Лоден» — плотная, тёплая, но пластичная и мягкая. Отлично держит форму и идеально подходит для прохладного сезона.",
+        "[Состав: 75% шерсти]",
+        "Детали:",
+        "• Прямой силуэт, мягко подчёркивающий линии фигуры",
+        "• Рукава ¾ с декоративными замочками — стильная деталь, позволяющая регулировать объём",
+        "• Разрез на спинке для удобства движения и женственного акцента"
+      ],
+      colors: ["джинс", "полынь"]
+    }
+  }
+},
+
+  {
+  id: 157,
+  price: 4350,
+  isTop: false,
+  isNew: true,
+  sku: "98810",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Poudre Suit/1.avif",
+  images: [
+    "/Costumes/Poudre Suit/2.avif",
+    "/Costumes/Poudre Suit/3.avif",
+    "/Costumes/Poudre Suit/4.avif",
+    "/Costumes/Poudre Suit/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Poudre Suit",
+      description: [
+        "This suit is created for women who appreciate refined classics and the warmth of natural fabrics. It combines elegance and comfort, highlighting femininity in every detail.",
+        "Perfect choice for the autumn-winter season.",
+        "Fabric: Premium-quality natural wool that provides warmth, coziness, and pleasant tactile sensations.",
+        "[Composition: 75% wool]",
+        "Details:",
+        "• Jumper: round neckline and long raglan sleeves with light volume",
+        "• Neat decorative pleats on the chest create a refined accent",
+        "• Pencil skirt: high waist emphasizes the figure and elongates the silhouette",
+        "• Decorative front buttons and imitation pockets add a modern character"
+      ],
+      colors: ["powder"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume «Poudre»",
+      description: [
+        "Ce costume est conçu pour les femmes qui apprécient le classique raffiné et la chaleur des tissus naturels. Il allie élégance et confort, mettant en valeur la féminité dans chaque détail.",
+        "Un choix idéal pour la saison automne-hiver.",
+        "Tissu : laine naturelle de qualité premium, offrant chaleur, confort et sensations agréables au toucher.",
+        "[Composition : 75% laine]",
+        "Détails :",
+        "• Pull : encolure ronde et manches raglan longues avec un léger volume",
+        "• Plis décoratifs soignés sur la poitrine créant un accent raffiné",
+        "• Jupe crayon : taille haute qui souligne la silhouette et allonge les jambes",
+        "• Boutons décoratifs sur le devant et fausses poches pour une touche moderne"
+      ],
+      colors: ["poudre"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм «Poudre»",
+      description: [
+        "Цей костюм створений для жінок, які цінують вишукану класику та тепло натуральних тканин. Він поєднує елегантність і комфорт, підкреслюючи жіночність у кожній деталі.",
+        "Ідеальний варіант для осінньо-зимового сезону.",
+        "Тканина: натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[Склад: 75% вовни]",
+        "Деталі:",
+        "• Джемпер: округлий виріз горловини та довгі рукави-реглан із легким об’ємом.",
+        "• Акуратні декоративні складки на грудях формують витончений акцент.",
+        "• Спідниця-олівець: висока посадка підкреслює талію та витягує силует.",
+        "• Декор у вигляді ґудзиків спереду та імітація кишень додають сучасного характеру."
+      ],
+      colors: ["пудра"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм «Poudre»",
+      description: [
+        "Этот костюм создан для женщин, которые ценят изысканную классику и тепло натуральных тканей. Он сочетает элегантность и комфорт, подчеркивая женственность в каждой детали.",
+        "Идеальный вариант для осенне-зимнего сезона.",
+        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло, уют и приятные тактильные ощущения.",
+        "[Состав: 75% шерсти]",
+        "Детали:",
+        "• Джемпер: круглый вырез горловины и длинные рукава-реглан с лёгким объёмом",
+        "• Аккуратные декоративные складки на груди создают изысканный акцент",
+        "• Юбка-карандаш: высокая посадка подчёркивает талию и вытягивает силуэт",
+        "• Декор в виде пуговиц спереди и имитация карманов добавляют современный характер"
+      ],
+      colors: ["пудра"]
+    }
+  }
+},
+
+  {
+  id: 156,
+  price: 2100,
+  isTop: false,
+  isNew: true,
+  sku: "98809",
+  size: "XS S M L XL",
+  category: "Pants",
+  image: "/Pants/Natalie Pants/1.avif",
+  images: [
+    "/Pants/Natalie Pants/2.avif",
+    "/Pants/Natalie Pants/3.avif",
+    "/Pants/Natalie Pants/4.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Pants",
+      name: "Natalie Pants",
+      description: [
+        "Stylish pants that will become the foundation of countless outfits — from office to evening looks.",
+        "Pair them with blouses, shirts, or tops to create a variety of moods, from business to romantic.",
+        "Fabric: Premium dense suiting fabric that holds its shape while being pleasant to the body.",
+        "[Composition: 75% viscose, 25% polyester]",
+        "Details:",
+        "• High-waist design for comfort and accentuating the silhouette",
+        "• Straight, elongated cut that visually lengthens the legs and adds elegance"
+      ],
+      colors: ["chocolate"]
+    },
+    FR: {
+      category: "Pantalons",
+      name: "Pantalon «Natalie»",
+      description: [
+        "Un pantalon élégant qui deviendra la base de nombreux looks — du bureau aux sorties du soir.",
+        "Associez-le à des chemisiers, des chemises ou des tops pour créer des styles variés, du business au romantique.",
+        "Tissu : tissu de costume dense premium qui garde sa forme tout en étant agréable au corps.",
+        "[Composition : 75% viscose, 25% polyester]",
+        "Détails :",
+        "• Taille haute pour le confort et la mise en valeur de la silhouette",
+        "• Coupe droite et allongée qui allonge visuellement les jambes et affine la silhouette"
+      ],
+      colors: ["chocolat"]
+    },
+    UA: {
+      category: "Брюки",
+      name: "Брюки «Natalie»",
+      description: [
+        "Стильні брюки, які стануть основою безлічі образів — від офісних до вечірніх.",
+        "Поєднуйте брюки з блузами, сорочками чи топами для створення різних настроїв — від ділового до романтичного.",
+        "Тканина: щільна костюмна тканина преміум-класу, що тримає форму, але при цьому приємна до тіла.",
+        "[Склад: 75% віскоза, 25% поліестер]",
+        "Деталі:",
+        "• Посадка: висока талія для зручності та акценту на силуеті.",
+        "• Крій: прямий, подовжений, візуально витягує ноги та додає стрункості."
+      ],
+      colors: ["шоколад"]
+    },
+    RU: {
+      category: "Брюки",
+      name: "Брюки «Natalie»",
+      description: [
+        "Стильные брюки, которые станут основой множества образов — от офисных до вечерних.",
+        "Сочетайте брюки с блузами, рубашками или топами, чтобы создать разное настроение — от делового до романтического.",
+        "Ткань: плотная костюмная ткань премиум-класса, которая держит форму, но при этом приятна к телу.",
+        "[Состав: 75% вискоза, 25% полиэстер]",
+        "Детали:",
+        "• Посадка: высокая талия для удобства и акцента на силуэте.",
+        "• Крой: прямой, удлинённый, визуально вытягивает ноги и добавляет стройности."
+      ],
+      colors: ["шоколад"]
+    }
+  }
+},
+
+  {
+  id: 155,
+  price: 2100,
+  isTop: false,
+  isNew: true,
+  sku: "98808",
+  size: "XS S M L XL",
+  category: "Tops",
+  image: "/Top/Natalie Vest/1.avif",
+  images: [
+    "/Top/Natalie Vest/2.avif",
+    "/Top/Natalie Vest/3.avif",
+    "/Top/Natalie Vest/4.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Tops",
+      name: "Natalie Vest",
+      description: [
+        "An exquisite vest in a deep chocolate shade — the perfect blend of classic and modern style.",
+        "Wear it separately with jeans or a skirt, or pair with trousers from the set for a flawless total look.",
+        "Fabric: Premium dense suiting fabric that holds its shape while being pleasant to the body.",
+        "[Composition: 75% viscose, 25% polyester]",
+        "Details:",
+        "• Sleeveless vest with a refined round neckline",
+        "• Features a subtle peplum that beautifully shapes the silhouette"
+      ],
+      colors: ["chocolate"]
+    },
+    FR: {
+      category: "Tops",
+      name: "Gilet «Natalie»",
+      description: [
+        "Un gilet raffiné dans une teinte chocolat profond — un mélange parfait de classique et de modernité.",
+        "Portez-le séparément avec un jean ou une jupe, ou combinez-le avec un pantalon de l’ensemble pour un look total impeccable.",
+        "Tissu : tissu de costume dense premium qui garde sa forme tout en étant agréable au corps.",
+        "[Composition : 75% viscose, 25% polyester]",
+        "Détails :",
+        "• Gilet sans manches avec une encolure ronde élégante",
+        "• Dispose d’un léger basque qui forme joliment la silhouette"
+      ],
+      colors: ["chocolat"]
+    },
+    UA: {
+      category: "Топи",
+      name: "Жилет «Natalie»",
+      description: [
+        "Вишуканий жилет у глибокому шоколадному відтінку — це ідеальне поєднання класики та сучасності.",
+        "Носіть жилет окремо з джинсами чи спідницею, або комбінуйте з брюками з комплекту для бездоганного total look.",
+        "Тканина: щільна костюмна тканина преміум-класу, що тримає форму, але при цьому приємна до тіла.",
+        "[Склад: 75% віскоза, 25% поліестер]",
+        "Деталі:",
+        "• Жилет без рукавів, із витонченим округлим вирізом",
+        "• Має легку баску, яка красиво формує силует"
+      ],
+      colors: ["шоколад"]
+    },
+    RU: {
+      category: "Топы",
+      name: "Жилет «Natalie»",
+      description: [
+        "Изысканный жилет в глубоком шоколадном оттенке — идеальное сочетание классики и современности.",
+        "Носите жилет отдельно с джинсами или юбкой, либо сочетайте с брюками из комплекта для безупречного total look.",
+        "Ткань: плотная костюмная ткань премиум-класса, которая держит форму, но при этом приятна к телу.",
+        "[Состав: 75% вискоза, 25% полиэстер]",
+        "Детали:",
+        "• Жилет без рукавов с изящным круглым вырезом",
+        "• Имеет лёгкую баску, которая красиво формирует силуэт"
+      ],
+      colors: ["шоколад"]
+    }
+  }
+},
+
+  {
+  id: 154,
+  price: 2000,
+  isTop: false,
+  isNew: true,
+  sku: "98807",
+  size: "XS S M L XL",
+  category: "Skirts",
+  image: "/Skirts/Natalie Skirt/1.avif",
+  images: [
+    "/Skirts/Natalie Skirt/2.avif",
+    "/Skirts/Natalie Skirt/3.avif",
+    "/Skirts/Natalie Skirt/4.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Skirts",
+      name: "Natalie Skirt",
+      description: [
+        "A feminine and sophisticated skirt that will become a favorite base of your wardrobe.",
+        "Pair it with strict shirts for the office or delicate tops for romantic outings.",
+        "Fabric: Premium dense suiting fabric that holds its shape while being pleasant to the body.",
+        "[Composition: 75% viscose, 25% polyester]",
+        "Details:",
+        "• Design: classic midi length with sharp pleats that add dynamics and lightness.",
+        "• Fit: high waist that visually elongates the legs."
+      ],
+      colors: ["chocolate"]
+    },
+    FR: {
+      category: "Jupes",
+      name: "Jupe «Natalie»",
+      description: [
+        "Une jupe féminine et sophistiquée qui deviendra la base préférée de votre garde-robe.",
+        "À associer avec des chemises strictes pour le bureau ou des tops délicats pour des sorties romantiques.",
+        "Tissu : tissu de costume dense premium qui garde sa forme tout en étant agréable au corps.",
+        "[Composition : 75% viscose, 25% polyester]",
+        "Détails :",
+        "• Design : longueur midi classique avec plis marqués qui ajoutent dynamisme et légèreté.",
+        "• Coupe : taille haute qui allonge visuellement les jambes."
+      ],
+      colors: ["chocolat"]
+    },
+    UA: {
+      category: "Спідниці",
+      name: "Спідниця «Natalie»",
+      description: [
+        "Жіночна та вишукана спідниця, яка стане улюбленою базою вашого гардеробу.",
+        "Поєднуйте зі строгими сорочками для офісу або з ніжними топами для романтичних виходів.",
+        "Тканина: щільна костюмна тканина преміум-класу, що тримає форму, але при цьому приємна до тіла.",
+        "[Склад: 75% віскоза, 25% поліестер]",
+        "Деталі:",
+        "• Дизайн: класична довжина міді, із чіткими плісе, що додають динаміки й легкості.",
+        "• Посадка: висока талія, яка візуально подовжує ноги."
+      ],
+      colors: ["шоколад"]
+    },
+    RU: {
+      category: "Юбки",
+      name: "Юбка «Natalie»",
+      description: [
+        "Женственная и изысканная юбка, которая станет любимой основой вашего гардероба.",
+        "Сочетайте с строгими рубашками для офиса или с нежными топами для романтических выходов.",
+        "Ткань: плотная костюмная ткань премиум-класса, которая держит форму, но при этом приятна к телу.",
+        "[Состав: 75% вискоза, 25% полиэстер]",
+        "Детали:",
+        "• Дизайн: классическая длина миди с чёткими плиссе, которые добавляют динамики и лёгкости.",
+        "• Посадка: высокая талия, которая визуально удлиняет ноги."
+      ],
+      colors: ["шоколад"]
+    }
+  }
+},
+  {
+  id: 153,
+  price: 4050,
+  isTop: false,
+  isNew: true,
+  sku: "98806",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Natalie Classic Suit/1.avif",
+  images: [
+    "/Costumes/Natalie Classic Suit/2.avif",
+    "/Costumes/Natalie Classic Suit/3.avif",
+    "/Costumes/Natalie Classic Suit/4.avif",
+    "/Costumes/Natalie Classic Suit/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Natalie Suit",
+      description: [
+        "This suit is designed for women who value elegance, comfort, and modern style.",
+        "The minimalist design accentuates the figure, while every detail adds sophistication.",
+        "Perfect for both business meetings and evening outings.",
+        "Fabric: Premium dense suiting fabric that holds its shape while being pleasant to the body.",
+        "[Composition: 75% viscose, 25% polyester]",
+        "Details:",
+        "• Sleeveless vest with a refined rounded neckline",
+        "• Light peplum beautifully shaping the silhouette",
+        "• Classic straight trousers with a high waist"
+      ],
+      colors: ["chocolate"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume «Natalie»",
+      description: [
+        "Ce costume est conçu pour la femme qui apprécie l'élégance, le confort et le style moderne.",
+        "Le design minimaliste met en valeur la silhouette et chaque détail ajoute de la sophistication.",
+        "Un choix idéal pour les réunions d'affaires comme pour les sorties en soirée.",
+        "Tissu : tissu de costume dense premium qui garde sa forme tout en étant agréable au corps.",
+        "[Composition : 75% viscose, 25% polyester]",
+        "Détails :",
+        "• Gilet sans manches avec encolure arrondie raffinée",
+        "• Basque légère qui forme joliment la silhouette",
+        "• Pantalon classique droit avec taille haute"
+      ],
+      colors: ["chocolat"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм «Natalie»",
+      description: [
+        "Цей костюм створений для жінки, яка цінує елегантність, комфорт та сучасний стиль.",
+        "Лаконічний дизайн підкреслює фігуру, а кожна деталь додає образу вишуканості.",
+        "Ідеальний варіант як для ділових зустрічей, так і для вечірніх виходів.",
+        "Тканина: щільна костюмна тканина преміум-класу, що тримає форму, але при цьому приємна до тіла.",
+        "[Склад: 75% віскоза, 25% поліестер]",
+        "Деталі:",
+        "• Жилет без рукавів, із витонченим округлим вирізом",
+        "• Має легку баску, яка красиво формує силует",
+        "• Брюки класичного прямого крою з високою посадкою"
+      ],
+      colors: ["шоколад"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм «Natalie»",
+      description: [
+        "Этот костюм создан для женщины, которая ценит элегантность, комфорт и современный стиль.",
+        "Лаконичный дизайн подчёркивает фигуру, а каждая деталь добавляет образу утончённости.",
+        "Идеальный вариант как для деловых встреч, так и для вечерних выходов.",
+        "Ткань: плотная костюмная ткань премиум-класса, которая держит форму, но приятна к телу.",
+        "[Состав: 75% вискоза, 25% полиэстер]",
+        "Детали:",
+        "• Жилет без рукавов с изящным круглым вырезом",
+        "• Лёгкая баска красиво формирует силуэт",
+        "• Классические прямые брюки с высокой посадкой"
+      ],
+      colors: ["шоколад"]
+    }
+  }
+},
+
+  {
+  id: 152,
+  price: 4100,
+  isTop: false,
+  isNew: true,
+  sku: "98805",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Natalie Suit/1.avif",
+  images: [
+    "/Costumes/Natalie Suit/2.avif",
+    "/Costumes/Natalie Suit/3.avif",
+    "/Costumes/Natalie Suit/4.avif",
+    "/Costumes/Natalie Suit/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Natalie Suit with Skirt",
+      description: [
+        "A stylish duo that combines structured tailoring with feminine details.",
+        "The set can be worn together as a total look or separately to create dozens of new combinations.",
+        "Fabric: Premium dense suiting fabric that holds its shape while being pleasant to the body.",
+        "[Composition: 75% viscose, 25% polyester]",
+        "Details:",
+        "• Elongated sleeveless vest with a refined neckline and peplum that shapes an elegant silhouette",
+        "• Midi-length skirt with deep pleats that move beautifully when walking"
+      ],
+      colors: ["chocolate"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume «Natalie» avec jupe",
+      description: [
+        "Un duo élégant qui combine la rigueur de la coupe et la féminité des détails.",
+        "L'ensemble peut être porté comme un total look ou séparé pour créer des dizaines de nouvelles combinaisons.",
+        "Tissu : tissu de costume dense premium qui garde sa forme tout en étant agréable au corps.",
+        "[Composition : 75% viscose, 25% polyester]",
+        "Détails :",
+        "• Gilet long sans manches avec encolure raffinée et basque formant une silhouette élégante",
+        "• Jupe midi avec de profonds plis qui bougent joliment à la marche"
+      ],
+      colors: ["chocolat"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм «Natalie» зі спідницею",
+      description: [
+        "Стильний дует, що поєднує в собі строгість крою та жіночність деталей.",
+        "Комплект можна носити разом як готовий total look, або розділяти й створювати десятки нових комбінацій.",
+        "Тканина: щільна костюмна тканина преміум-класу, що тримає форму, але при цьому приємна до тіла.",
+        "[Склад: 75% віскоза, 25% поліестер]",
+        "Деталі:",
+        "• Подовжений жилет без рукавів, із витонченим вирізом і баскою, яка формує елегантний силует",
+        "• Спідниця міді-довжини, з глибокими плісе, що красиво рухаються при ходьбі"
+      ],
+      colors: ["шоколад"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм «Natalie» с юбкой",
+      description: [
+        "Стильный дуэт, сочетающий строгость кроя и женственность деталей.",
+        "Комплект можно носить вместе как готовый total look или раздельно, создавая десятки новых комбинаций.",
+        "Ткань: плотная костюмная ткань премиум-класса, которая держит форму, но приятна к телу.",
+        "[Состав: 75% вискоза, 25% полиэстер]",
+        "Детали:",
+        "• Удлинённый жилет без рукавов с изящным вырезом и баской, формирующей элегантный силуэт",
+        "• Юбка миди-длины с глубокими складками, красиво двигающимися при ходьбе"
+      ],
+      colors: ["шоколад"]
+    }
+  }
+},
+
   {
   id: 151,
   price: 5100,
@@ -74,80 +1880,80 @@ const products = [
   }
 },
 
-  {
-  id: 150,
-  price: 3950,
-  isTop: false,
-  isNew: true,
-  // isSpecialOffer: true,
-  // discountPrice: 3550,
-  sku: "98803",
-  size: "XS S M L XL",
-  category: "Costumes",
-  image: "/Costumes/Long Vest Costume/1.avif",
-  images: [
-    "/Costumes/Long Vest Costume/2.avif",
-    "/Costumes/Long Vest Costume/3.avif",
-    "/Costumes/Long Vest Costume/4.avif",
-    "/Costumes/Long Vest Costume/5.avif",
-    "/Costumes/Long Vest Costume/6.avif",
-  ],
-  sizes: ["XS", "S", "M", "L", "XL"],
-  translations: {
-    EN: {
-      category: "Costumes",
-      name: "Costume with Long Vest",
-      description: [
-        "Mocha linen suit: elongated linen vest with corset-style back and high-waisted bermuda shorts.",
-        "Fabric: 100% natural linen. Doesn’t itch and is nearly opaque.",
-        "Details:",
-        "• tailored silhouette",
-        "• corset-style back",
-        "• high waist"
-      ],
-      colors: ["mocha"]
-    },
-    FR: {
-      category: "Costumes",
-      name: "Costume avec gilet long",
-      description: [
-        "Costume couleur moka : gilet long en lin avec dos style corset et bermudas taille haute.",
-        "Tissu : 100% lin naturel. Ne gratte pas et presque pas transparent.",
-        "Détails :",
-        "• coupe cintrée",
-        "• dos style corset",
-        "• taille haute"
-      ],
-      colors: ["moka"]
-    },
-    UA: {
-      category: "Костюми",
-      name: "Костюм із подовженим жилетом",
-      description: [
-        "Мокко костюм: лляний подовжений жилет з корсетною спинкою та шорти-бермуди на високій посадці.",
-        "Тканина: 100% натуральний льон. Не колеться та майже не просвічує.",
-        "Деталі:",
-        "• приталений фасон",
-        "• корсетна спинка",
-        "• висока посадка"
-      ],
-      colors: ["мокко"]
-    },
-    RU: {
-      category: "Костюмы",
-      name: "Костюм с удлинённым жилетом",
-      description: [
-        "Костюм цвета мокко: льняной удлинённый жилет с корсетной спинкой и бермуды с высокой посадкой.",
-        "Ткань: 100% натуральный лён. Не колется и почти не просвечивает.",
-        "Детали:",
-        "• приталенный фасон",
-        "• корсетная спинка",
-        "• высокая посадка"
-      ],
-      colors: ["мокко"]
-    }
-  }
-},
+//   {
+//   id: 150,
+//   price: 3950,
+//   isTop: false,
+//   isNew: true,
+//   // isSpecialOffer: true,
+//   // discountPrice: 3550,
+//   sku: "98803",
+//   size: "XS S M L XL",
+//   category: "Costumes",
+//   image: "/Costumes/Long Vest Costume/1.avif",
+//   images: [
+//     "/Costumes/Long Vest Costume/2.avif",
+//     "/Costumes/Long Vest Costume/3.avif",
+//     "/Costumes/Long Vest Costume/4.avif",
+//     "/Costumes/Long Vest Costume/5.avif",
+//     "/Costumes/Long Vest Costume/6.avif",
+//   ],
+//   sizes: ["XS", "S", "M", "L", "XL"],
+//   translations: {
+//     EN: {
+//       category: "Costumes",
+//       name: "Costume with Long Vest",
+//       description: [
+//         "Mocha linen suit: elongated linen vest with corset-style back and high-waisted bermuda shorts.",
+//         "Fabric: 100% natural linen. Doesn’t itch and is nearly opaque.",
+//         "Details:",
+//         "• tailored silhouette",
+//         "• corset-style back",
+//         "• high waist"
+//       ],
+//       colors: ["mocha"]
+//     },
+//     FR: {
+//       category: "Costumes",
+//       name: "Costume avec gilet long",
+//       description: [
+//         "Costume couleur moka : gilet long en lin avec dos style corset et bermudas taille haute.",
+//         "Tissu : 100% lin naturel. Ne gratte pas et presque pas transparent.",
+//         "Détails :",
+//         "• coupe cintrée",
+//         "• dos style corset",
+//         "• taille haute"
+//       ],
+//       colors: ["moka"]
+//     },
+//     UA: {
+//       category: "Костюми",
+//       name: "Костюм із подовженим жилетом",
+//       description: [
+//         "Мокко костюм: лляний подовжений жилет з корсетною спинкою та шорти-бермуди на високій посадці.",
+//         "Тканина: 100% натуральний льон. Не колеться та майже не просвічує.",
+//         "Деталі:",
+//         "• приталений фасон",
+//         "• корсетна спинка",
+//         "• висока посадка"
+//       ],
+//       colors: ["мокко"]
+//     },
+//     RU: {
+//       category: "Костюмы",
+//       name: "Костюм с удлинённым жилетом",
+//       description: [
+//         "Костюм цвета мокко: льняной удлинённый жилет с корсетной спинкой и бермуды с высокой посадкой.",
+//         "Ткань: 100% натуральный лён. Не колется и почти не просвечивает.",
+//         "Детали:",
+//         "• приталенный фасон",
+//         "• корсетная спинка",
+//         "• высокая посадка"
+//       ],
+//       colors: ["мокко"]
+//     }
+//   }
+// },
   {
   id: 149,
   price: 5100,
@@ -2484,7 +4290,7 @@ description: [
 
   {
     id: 108,
-    price: 1650,
+    price: 1800,
     isTop: true,
     sku: "78841",
     size: "XS S M L XL",
@@ -2696,7 +4502,7 @@ description: [
 
   {
     id: 102,
-    price: 1650,
+    price: 2100,
     isTop: true,
     sku: "45530",
     size: "XS S M L XL",
@@ -2985,7 +4791,7 @@ description: [
   },  
   {
     id: 96,
-    price: 1670,
+    price: 2100,
     isTop: false,
     sku: "98816",
     size: "XS S M L XL",
@@ -3034,7 +4840,7 @@ description: [
   },  
   {
     id: 95,
-    price: 2250,
+    price: 2400,
     isTop: false,
     sku: "98815",
     size: "XS S M L XL",
@@ -3075,7 +4881,7 @@ description: [
   },  
   {
     id: 94,
-    price: 1850,
+    price: 2000,
     isTop: false,
     sku: "98814",
     size: "XS S M L XL",
@@ -3169,7 +4975,7 @@ description: [
   },  
   {
     id: 92,
-    price: 1950,
+    price: 2100,
     isTop: false,
     sku: "98812",
     size: "XS S M L XL",
@@ -3221,7 +5027,7 @@ description: [
   },  
   {
     id: 91,
-    price: 1950,
+    price: 2100,
     isTop: false,
     sku: "98811",
     size: "XS S M L XL",
@@ -3271,7 +5077,7 @@ description: [
   },  
   {
     id: 90,
-    price: 1950,
+    price: 2100,
     isTop: false,
     sku: "98810",
     size: "XS S M L XL",
@@ -4456,25 +6262,25 @@ description: [
         category: "Costumes",
         name: "Cotton Costume",
         description: "Imitation of washed linen from cotton, sourced from a French fashion house in a very limited quantity. Fabric: 50% linen, 50% cotton.",
-        colors: ["milk", "olive"]
+        colors: ["milk",]
       },
       FR: {
         category: "Costumes",
         name: "Costume en Coton",
         description: "Imitation de lin lavé en coton, provenant d'une maison de mode française en quantité très limitée. Tissu : 50% lin, 50% coton.",
-        colors: ["lait", "olive"]
+        colors: ["lait",]
       },
       UA: {
         category: "Костюми",
         name: "Костюм бавовняний",
         description: "Імітація вареного льону з бавовни з французького будинку моди в дуже обмеженій кількості. Тканина: 50% льон, 50% бавовна.",
-        colors: ["молоко", "оливка"]
+        colors: ["молоко",]
       },
       RU: {
         category: "Костюмы",
         name: "Хлопковый костюм",
         description: "Имитация вареного льна из хлопка из французского дома моды в очень ограниченном количестве. Ткань: 50% лён, 50% хлопок.",
-        colors: ["молоко", "оливка"]
+        colors: ["молоко",]
       }
     }
 },
@@ -5799,11 +7605,11 @@ description: [
     category: "Costumes",
     image:"/Costumes/Woolen suit with skirt/11.avif",
     images: ["/Costumes/Woolen suit with skirt/10.avif", 
-      {
-        type: "video",
-        src: "/Costumes/Woolen suit with skirt/IMG_4440.mp4",
-        poster: "/Costumes/Woolen suit with skirt/1.avif"
-      },
+      // {
+      //   type: "video",
+      //   src: "/Costumes/Woolen suit with skirt/IMG_4440.mp4",
+      //   poster: "/Costumes/Woolen suit with skirt/1.avif"
+      // },
       "/Costumes/Woolen suit with skirt/11.avif",
       "/Costumes/Woolen suit with skirt/12.avif",
       "/Costumes/Woolen suit with skirt/13.avif",
@@ -6142,39 +7948,39 @@ description: [
     },
     
     
-     {
-      id: 11,
-      price: 5225,
-      sku: "12345",
-      color: "beige",
-      size: "XS S M L XL",
-      category: "Outerwear",
-      image: "/Outerwear/Leather trench coat/1.avif",
-      images: ["/Outerwear/Leather trench coat/2.avif", "/Outerwear/Leather trench coat/3.avif", "/Outerwear/Leather trench coat/4.avif", 
-              "/Outerwear/Leather trench coat/5.avif", "/Outerwear/Leather trench coat/6.avif"],
-      sizes: ["XS", "S", "M", "L", "XL"],
-      translations: {
-        EN: {
-          category: "Outerwear",
-          name: "Leather trench coat",
-          description: "Double-breasted leather trench coat in an oversize style with an included belt and two pockets. \nFabric: high-quality eco-leather on a suede base. (stretchy, does not crack)",
-          colors: ["beige"], 
-        },
-        FR: {
-          category: "Vêtements d'extérieur",
+    //  {
+    //   id: 11,
+    //   price: 5225,
+    //   sku: "12345",
+    //   color: "beige",
+    //   size: "XS S M L XL",
+    //   category: "Outerwear",
+    //   image: "/Outerwear/Leather trench coat/1.avif",
+    //   images: ["/Outerwear/Leather trench coat/2.avif", "/Outerwear/Leather trench coat/3.avif", "/Outerwear/Leather trench coat/4.avif", 
+    //           "/Outerwear/Leather trench coat/5.avif", "/Outerwear/Leather trench coat/6.avif"],
+    //   sizes: ["XS", "S", "M", "L", "XL"],
+    //   translations: {
+    //     EN: {
+    //       category: "Outerwear",
+    //       name: "Leather trench coat",
+    //       description: "Double-breasted leather trench coat in an oversize style with an included belt and two pockets. \nFabric: high-quality eco-leather on a suede base. (stretchy, does not crack)",
+    //       colors: ["beige"], 
+    //     },
+    //     FR: {
+    //       category: "Vêtements d'extérieur",
           
-          name: "Trench-coat en cuir",
-          description: "Trench-coat oversize en cuir à double boutonnage avec ceinture incluse et deux poches. \nTissu : éco-cuir de haute qualité sur base en daim. (extensible, incassable)",
-          colors: ["beige"],
-        },
-        UA: {
-          category: "Верхній одяг",
-          name: "Шкіряний тренч",
-          description: "Двобортний шкіряний тренч oversize фасону із поясом у комплекті та двома кишенями. \nТканина: якісна екошкіра на замшевій основі.(стречева, не тріскається)",
-          colors: ["бежевий"],
-        }
-      }
-    },
+    //       name: "Trench-coat en cuir",
+    //       description: "Trench-coat oversize en cuir à double boutonnage avec ceinture incluse et deux poches. \nTissu : éco-cuir de haute qualité sur base en daim. (extensible, incassable)",
+    //       colors: ["beige"],
+    //     },
+    //     UA: {
+    //       category: "Верхній одяг",
+    //       name: "Шкіряний тренч",
+    //       description: "Двобортний шкіряний тренч oversize фасону із поясом у комплекті та двома кишенями. \nТканина: якісна екошкіра на замшевій основі.(стречева, не тріскається)",
+    //       colors: ["бежевий"],
+    //     }
+    //   }
+    // },
     
     {
       id: 12,
@@ -6309,71 +8115,71 @@ description: [
     //  }
     //  },
 
-     {
-      id: 16,
-      price: 5350,
-      sku: "12345",
-      color: "olive",
-      size: "XS S M L XL",
-      category: "Costumes",
-      image: "/Costumes/Liana/2.avif",
-      images: ["/Costumes/Liana/3.avif", "/Costumes/Liana/1.avif", "/Costumes/Liana/4.avif","/Costumes/Liana/5.avif","/Costumes/Liana/6.avif"],
+    //  {
+    //   id: 16,
+    //   price: 5350,
+    //   sku: "12345",
+    //   color: "olive",
+    //   size: "XS S M L XL",
+    //   category: "Costumes",
+    //   image: "/Costumes/Liana/2.avif",
+    //   images: ["/Costumes/Liana/3.avif", "/Costumes/Liana/1.avif", "/Costumes/Liana/4.avif","/Costumes/Liana/5.avif","/Costumes/Liana/6.avif"],
       
-      sizes: ["XS", "S", "M", "L", "XL"],
-      translations: {
-        EN: {
-          category: "Costumes",
-          name: "Costume «Liana»",
-          description: "Double-breasted oversize jacket + belt + straight high-rise trousers n\Suit fabric (75% viscose, 25% polyester)",
-          colors: ["olive"],
-        },
-        FR: {
-          category: "Costumes",
-          name: "Costume «Liana»",
-          description: "Veste oversize croisée + ceinture + pantalon droit taille haute Tissu de costume (75% viscose, 25% polyester)",
-          colors: ["olive"],
-        },
-        UA: {
-          category: "Костюми",
-          name: "Костюм «Liana»",
-          description: "Двобортний oversize жакет + пояс + брюки прямі на високій посадці n\Костюмна тканина ( 75% віскоза, 25% поліестер )",
-          colors: ["оливка"],
-        }
-      }
-    },
+    //   sizes: ["XS", "S", "M", "L", "XL"],
+    //   translations: {
+    //     EN: {
+    //       category: "Costumes",
+    //       name: "Costume «Liana»",
+    //       description: "Double-breasted oversize jacket + belt + straight high-rise trousers n\Suit fabric (75% viscose, 25% polyester)",
+    //       colors: ["olive"],
+    //     },
+    //     FR: {
+    //       category: "Costumes",
+    //       name: "Costume «Liana»",
+    //       description: "Veste oversize croisée + ceinture + pantalon droit taille haute Tissu de costume (75% viscose, 25% polyester)",
+    //       colors: ["olive"],
+    //     },
+    //     UA: {
+    //       category: "Костюми",
+    //       name: "Костюм «Liana»",
+    //       description: "Двобортний oversize жакет + пояс + брюки прямі на високій посадці n\Костюмна тканина ( 75% віскоза, 25% поліестер )",
+    //       colors: ["оливка"],
+    //     }
+    //   }
+    // },
     
-     {
-       id: 17,
-       price: 5350,
-       sku: "12345",
-       color: "black",
-       size: "XS S M L XL",
-       category: "Costumes",
-       image: "/Costumes/Lucy/1.avif",
-       images: ["/Costumes/Lucy/2.avif", "/Costumes/Lucy/3.avif", "/Costumes/Lucy/4.avif", "/Costumes/Lucy/5.avif", "/Costumes/Lucy/6.avif"],
+    //  {
+    //    id: 17,
+    //    price: 5350,
+    //    sku: "12345",
+    //    color: "black",
+    //    size: "XS S M L XL",
+    //    category: "Costumes",
+    //    image: "/Costumes/Lucy/1.avif",
+    //    images: ["/Costumes/Lucy/2.avif", "/Costumes/Lucy/3.avif", "/Costumes/Lucy/4.avif", "/Costumes/Lucy/5.avif", "/Costumes/Lucy/6.avif"],
         
-       sizes: ["XS", "S", "M", "L", "XL"],
-       translations: {
-         EN: {
-          category: "Costumes",
-           name: "Costume Lucy",
-           description: "Double-breasted oversize jacket + cropped high-rise banana pants\nSuit fabric (75% viscose, 25% polyester)",
-           colors: ["black"],
-         },
-         FR: {
-          category: "Costumes",
-           name: "Costume Lucy",
-           description: "Veste oversize à double boutonnage + pantacourt taille haute façon banane\nTissu de costume (75% viscose, 25% polyester)",
-           colors: ["noir"],
-         },
-         UA: {
-          category: "Костюми",
-           name: "Костюм «Lucy»",
-           description: "Двобортний oversize жакет + вкорочені брюки фасону бананів на високій посадці \nКостюмна тканина ( 75% віскоза, 25% поліестер )",
-           colors: ["чорний"],
-         }
-       }
-     },
+    //    sizes: ["XS", "S", "M", "L", "XL"],
+    //    translations: {
+    //      EN: {
+    //       category: "Costumes",
+    //        name: "Costume Lucy",
+    //        description: "Double-breasted oversize jacket + cropped high-rise banana pants\nSuit fabric (75% viscose, 25% polyester)",
+    //        colors: ["black"],
+    //      },
+    //      FR: {
+    //       category: "Costumes",
+    //        name: "Costume Lucy",
+    //        description: "Veste oversize à double boutonnage + pantacourt taille haute façon banane\nTissu de costume (75% viscose, 25% polyester)",
+    //        colors: ["noir"],
+    //      },
+    //      UA: {
+    //       category: "Костюми",
+    //        name: "Костюм «Lucy»",
+    //        description: "Двобортний oversize жакет + вкорочені брюки фасону бананів на високій посадці \nКостюмна тканина ( 75% віскоза, 25% поліестер )",
+    //        colors: ["чорний"],
+    //      }
+    //    }
+    //  },
 
     //  {
     //   id: 18,
@@ -6611,7 +8417,7 @@ description: [
 
     {
       id: 23,
-      price: 4050,
+      price: 4200,
       isTop: false,
       sku: "67893",
       
@@ -6795,7 +8601,7 @@ description: [
     },
     
     { id: 28,
-      price: 2000,
+      price: 2100,
       isTop: false, // Топ продукт
       // isSpecialOffer: true,
       // discountPrice: 1820,
@@ -6839,7 +8645,7 @@ description: [
     },
     
     { id: 29,
-      price:  1820,
+      price:  2100,
       isTop: false, // Топ продукт
       sku: "12345",
       color: "red",
@@ -6881,7 +8687,7 @@ description: [
     
     { 
       id: 30,
-      price: 1820,
+      price: 2100,
       isTop: false, // Топ продукт
       sku: "12346",
       
