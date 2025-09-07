@@ -16,12 +16,12 @@ export default function RootLayout({ children }) {
 <meta name="author" content="Latore Atelier" />
 
 {/* Open Graph для соцмереж*/}
-<meta property="og:title" content="Жіночий жіночий одяг від Latore Atelier" />
+<meta property="og:title" content="Жіночий одяг від Latore Atelier" />
 <meta property="og:description" content="Latore Atelier пропонує стильний та ексклюзивний жіночий одяг, розроблений для того, щоб ви почувалися унікально у будь-якому сезоні. Відкрийте наші колекції сьогодні!" />
-<meta property="og:image" content="https://www.latore.shop/logo-social.jpg" />
+<meta property="og:image" content="https://www.latore.store/logo-social.jpg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:url" content="https://www.latore.shop/" />
+<meta property="og:url" content="https://www.latore.store/" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
 
@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
 <link rel="apple-touch-icon" sizes="180x180" href="/logo/favicon-32x32.png" />
 
 {/*} SEO */}
-<link rel="canonical" href="https://www.latore.shop/" />
+<link rel="canonical" href="https://www.latore.store/" />
 
 {/*Fonts preload*/}
 <link rel="preload" href="/fonts/Montserrat-Thin.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 {/* <meta name="google-site-verification" content="cYBcnqSIlXlPJZSokMAgKhJCS8MM2XfwV6-nd4o-Jag" /> */}
                {/* <meta name="google-site-verification" content="Lx8iDUB67zjk42dkkJQsEpoqSlKiSlc1peMe9-jmIqY" />*/}
-               <meta name="google-site-verification" content="g_0gD_liwrkkTj-WviMVpLi56EWXTq9nEfPl-uJU72s" />
+               <meta name="google-site-verification" content="yVOmx2g7merY2ILnbUl2yDqMthbJ4UqIBXaddBO0wb8" />
        {/* Google Analytics */}
        {
   process.env.NODE_ENV === "production" && (

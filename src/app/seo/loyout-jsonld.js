@@ -17,8 +17,8 @@ export const organizationJsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Latore Atelier",
-    url: "https://www.latore.shop/",
-    logo: "https://www.latore.shop/favicon.ico?v1",
+    url: "https://www.latore.store/",
+    logo: "https://www.latore.store/favicon.ico?v1",
     sameAs: [
         "https://www.facebook.com/share/18h6VtZV6k/?mibextid=wwXIfr",
         "https://www.instagram.com/latore.atelier?igsh=Y3RvbWZhZW12Zmxj",
