@@ -5308,12 +5308,12 @@ description: [
     sku: "98805",
     size: "XS S M L XL",
     category: "Shirts",
-    image: "/Shirts/Jasmine Shirt/1.avif",
+    image: "/Skirts/Jasmine Shirt/2.avif",
     images: [
-      "/Shirts/Jasmine Shirt/2.avif",
-      "/Shirts/Jasmine Shirt/3.avif",
-      "/Shirts/Jasmine Shirt/4.avif",
-       "/Shirts/Jasmine Shirt/5.avif",
+      "/Skirts/Jasmine Shirt/2.avif",
+      "/Skirts/Jasmine Shirt/3.avif",
+      "/Skirts/Jasmine Shirt/4.avif",
+       "/Skirts/Jasmine Shirt/5.avif",
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
     translations: {

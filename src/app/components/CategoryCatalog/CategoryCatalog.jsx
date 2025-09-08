@@ -6,13 +6,13 @@ import Link from 'next/link';
 
 const categories = [
   { name: 'Сукні', image: '/Dress/Bahroma Dress/1.avif', path: 'dresses' },
-  { name: 'Костюми', image: '/Costumes/Liana/1.avif', path: 'costumes' },
-  { name: 'Сорочки', image: '/Skirts/Short Leather Skirt/1.avif', path: 'Shirts' },
-  { name: 'Спідниці', image: '/Shirts/Wrap Cotton Shirt/1.avif', path: 'skirts' },
-  { name: 'Топи', image: '/Top/Openshouldergolf/1.avif', path: 'tops' },
-  { name: 'Брюки', image: '/Pants/Palazzo Pants/1.avif', path: 'pants' },
+  { name: 'Костюми', image: `/Costumes/Proshva Pants Costume/1.avif?v=2`, path: 'costumes' },
+  { name: 'Сорочки', image: '/Shirts/Fitted Batiste Shirt/1.avif', path: 'Shirts' },
+  { name: 'Спідниці', image: '/Skirts/Denim Skirt/1.avif', path: 'skirts' },
+  { name: 'Топи', image: '/Top/Linen Vest/1.avif', path: 'tops' },
+  { name: 'Брюки', image: '/Pants/Classic Pants/1.avif', path: 'pants' },
   { name: 'Жакети', image: '/Jackets/Leather Jacket/1.avif', path: 'jackets' },
-  { name: 'Светри', image: '/Sweaters/Draped Golf/6.avif', path: 'sweaters' },
+  { name: 'Светри', image: '/Sweaters/Flare Sweater/6.avif', path: 'sweaters' },
   { name: 'Верхній одяг', image: '/Outerwear/Leather trench coat/2.avif', path: 'outerwear' },
   { name: 'Шорти', image: '/Shorts/Linen Shorts/1.avif', path: 'shorts' },
 ];
@@ -42,6 +42,7 @@ const CategoryCatalog = () => {
                   fill
                   className="object-cover"
                   priority
+                  unoptimized
                 />
                 <div className="absolute bottom-3 left-3 bg-white/90 dark:bg-black/70 text-sm font-normal px-3 py-1 rounded-md text-black dark:text-white">
                   {cat.name}
