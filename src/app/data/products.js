@@ -1738,7 +1738,7 @@ const products = [
   sku: "98805",
   size: "XS S M L XL",
   category: "Costumes",
-  image: "/Costumes/Natalie Suit/1.avif",
+  image: "/Costumes/Natalie Suit/2.avif",
   images: [
     "/Costumes/Natalie Suit/2.avif",
     "/Costumes/Natalie Suit/3.avif",
@@ -5308,12 +5308,12 @@ description: [
     sku: "98805",
     size: "XS S M L XL",
     category: "Shirts",
-    image: "/Skirts/Jasmine Shirt/2.avif",
+    image: "/Shirts/Jasmine Shirt/1.avif",
     images: [
-      "/Skirts/Jasmine Shirt/2.avif",
-      "/Skirts/Jasmine Shirt/3.avif",
-      "/Skirts/Jasmine Shirt/4.avif",
-       "/Skirts/Jasmine Shirt/5.avif",
+      "/Shirts/Jasmine Shirt/2.avif",
+      "/Shirts/Jasmine Shirt/3.avif",
+      "/Shirts/Jasmine Shirt/4.avif",
+       "/Shirts/Jasmine Shirt/5.avif",
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
     translations: {
