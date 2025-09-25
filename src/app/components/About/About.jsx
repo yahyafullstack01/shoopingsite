@@ -50,7 +50,7 @@ export default function About() {
     {/* Зображення */}
     <div className="relative w-full h-[450px] sm:h-[600px] overflow-hidden">
       <Image
-        src="/hoom/about.avif"
+        src="/hoom/ab.jpg"
         alt="About Image"
         fill
         style={{ objectFit: "cover" }}
