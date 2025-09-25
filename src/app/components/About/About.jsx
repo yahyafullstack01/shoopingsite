@@ -15,7 +15,7 @@ export default function About() {
           {/* Зображення */}
           <div className="flex justify-start relative group  xl:ml-36 overflow-hidden xl:w-[600px]">
   <Image
-    src="/hoom/about.avif"
+    src="/hoom/ab.jpg"
     alt="About Image"
     width={500}
     height={600}

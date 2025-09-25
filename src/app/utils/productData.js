@@ -9,7 +9,7 @@ export const getInitialProductData = (searchParams) => {
   description: searchParams.get("productDescription") || "No description available.", // Default: No description
   image: productImage && !productImage.endsWith(".mp4")
   ? productImage
-  : "/hoom/contact.avif",
+  : "/hoom/cont.jpg",
   video: searchParams.get("productVideo") || null,
 
   color: searchParams.get("productColor") || "Not specified", // Default: Not specified

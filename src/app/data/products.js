@@ -1,5 +1,70 @@
 const products = [
-
+{
+  id: 175,
+  price: 5,
+  isTop: false,
+  isNew: true,
+  sku: "98827",
+  size: "XS S M L XL",
+  category: "Tops",
+  image: "/Top/Black Silk Top/1.avif",
+  images: [
+    "/Top/Black Silk Top/2.avif",
+    "/Top/Black Silk Top/3.avif",
+    "/Top/Black Silk Top/4.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Tops",
+      name: "Test",
+      description: [
+        "Elegant black top made from delicate Armani silk. Features a V-neck, button closure, and refined lace accents on the shoulders. Perfect to pair with classic bottoms or more casual pieces.",
+        "Fabric: 100% Armani silk — premium fabric known for its soft sheen, delicate texture, and elegant drape.",
+        "Details:",
+        "• V-neck with wide straps",
+        "• Delicate lace inserts on the shoulders"
+      ],
+      colors: ["black"]
+    },
+    FR: {
+      category: "Tops",
+      name: "Top en soie noire",
+      description: [
+        "Top noir élégant en soie Armani délicate. Col en V, fermeture par boutons et détails raffinés en dentelle sur les épaules. Parfait à associer avec des bas classiques ou des pièces plus décontractées.",
+        "Tissu : 100 % soie Armani — tissu premium connu pour son éclat doux, sa texture délicate et sa chute élégante.",
+        "Détails :",
+        "• Col en V avec larges bretelles",
+        "• Inserts en dentelle délicate sur les épaules"
+      ],
+      colors: ["noir"]
+    },
+    UA: {
+      category: "Топи",
+      name: "Топ «Black silk»",
+      description: [
+        "Елегантний чорний топ із ніжного шовку Армані. Має V-подібний виріз, застібку на ґудзики та витончені мереживні акценти на плечах. Ідеальний для поєднання як із класичними низами, так і з більш повсякденними речами.",
+        "Тканина: 100% шовк Армані — преміальна тканина, відома своїм м’яким блиском, ніжною текстурою та елегантним падінням.",
+        "Деталі:",
+        "• V-подібний виріз із широкими бретелями",
+        "• Вставки з делікатного мережива на плечах"
+      ],
+      colors: ["чорний"]
+    },
+    RU: {
+      category: "Топы",
+      name: "Топ «Black silk»",
+      description: [
+        "Элегантный черный топ из нежного шелка Армани. Имеет V-образный вырез, застежку на пуговицы и изысканные кружевные акценты на плечах. Идеально сочетается как с классическими низами, так и с более повседневными вещами.",
+        "Ткань: 100% шелк Армани — премиальная ткань, известная своим мягким блеском, нежной текстурой и элегантным падением.",
+        "Детали:",
+        "• V-образный вырез с широкими бретелями",
+        "• Вставки из деликатного кружева на плечах"
+      ],
+      colors: ["чёрный"]
+    }
+  }
+},
 {
   id: 174,
   price: 1500,
