@@ -13,8 +13,8 @@ const products = [
     images: [
       "/Shirts/JasmineShirt/2.avif",
       "/Shirts/JasmineShirt/3.avif",
-      "/Shirts/jasmineShirt/4.avif",
-      "/Shirts/jasmineShirt/5.avif",
+      "/Shirts/JasmineShirt/4.avif",
+      "/Shirts/JasmineShirt/5.avif",
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
     translations: {
