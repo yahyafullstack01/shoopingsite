@@ -630,7 +630,7 @@ const products = [
   isNew: true,
   sku: "98820",
   size: "XS S M L XL",
-  category: "costumes",
+  category: "Costumes",
   image: "/Costumes/Olive Suit/1.avif",
   images: [
     "/Costumes/Olive Suit/1.avif",
@@ -642,7 +642,7 @@ const products = [
   sizes: ["XS", "S", "M", "L", "XL"],
   translations: {
     EN: {
-      category: "costumes",
+      category: "Costumes",
       name: "Olive Suit",
       description: [
         "This suit combines classic elegance with a fresh color. The clean cut and noble shade make it a versatile choice for both business meetings and stylish urban looks.",
