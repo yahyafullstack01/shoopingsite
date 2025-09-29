@@ -6,7 +6,7 @@ const products = [
     sku: "12345",
     size: "XS S M L XL",
     category: "Costumes",
-    image:"/Costumes/Woolen suit with skirt/11.avif",
+    image:"/Costumes/Woolen suit with skirt/0.avif",
     images: ["/Costumes/Woolen suit with skirt/0.avif", 
       // {
       //   type: "video",
