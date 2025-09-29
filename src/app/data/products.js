@@ -1,5 +1,50 @@
 const products = [
 
+    { id: 1,
+    price: 3170,
+    isTop: false,
+    sku: "12345",
+    size: "XS S M L XL",
+    category: "Costumes",
+    image:"/Costumes/Woolen suit with skirt/11.avif",
+    images: ["/Costumes/Woolen suit with skirt/0.avif", 
+      // {
+      //   type: "video",
+      //   src: "/Costumes/Woolen suit with skirt/IMG_4440.mp4",
+      //   poster: "/Costumes/Woolen suit with skirt/1.avif"
+      // },
+      "/Costumes/Woolen suit with skirt/10.avif",
+      "/Costumes/Woolen suit with skirt/11.avif",
+      "/Costumes/Woolen suit with skirt/12.avif",
+      "/Costumes/Woolen suit with skirt/13.avif",
+      "/Costumes/Woolen suit with skirt/14.avif",
+    ],
+    sizes: ["XS", "S" , "M" , "L" , "XL"],
+    translations: {
+      EN: {
+        category: "Costumes",
+        name: "Woolen suit with skirt",
+        description: "Sweater + pencil skirt. Composition: 75% natural wool, soft, does not prick the body.",
+        color: "red",
+        colors: ["graphite"]
+      },
+      FR: {
+        category: "Costumes",
+        name: "Costume en laine avec jupe",
+        description: "Pull + jupe crayon. Composition: 75% laine naturelle, douce, ne pique pas la peau.",
+        color: "rouge",
+        colors: ["camel", "graphite", "gris"]
+      },
+      UA: {
+        category: "Костюми",
+        name: "Вовняний костюм зі спідницею",
+        description: "Светр + олівець спідниця. Склад: 75% натуральної вовни, м'яка, не колеться.",
+        color: "червоний",
+        colors: ["графітовий"]
+      }
+    }
+  },
+
 {
   id: 174,
   price: 1500,
@@ -7597,49 +7642,7 @@ description: [
     }
   },
 
-  { id: 1,
-    price: 3170,
-    isTop: false,
-    sku: "12345",
-    size: "XS S M L XL",
-    category: "Costumes",
-    image:"/Costumes/Woolen suit with skirt/11.avif",
-    images: ["/Costumes/Woolen suit with skirt/10.avif", 
-      // {
-      //   type: "video",
-      //   src: "/Costumes/Woolen suit with skirt/IMG_4440.mp4",
-      //   poster: "/Costumes/Woolen suit with skirt/1.avif"
-      // },
-      "/Costumes/Woolen suit with skirt/11.avif",
-      "/Costumes/Woolen suit with skirt/12.avif",
-      "/Costumes/Woolen suit with skirt/13.avif",
-      "/Costumes/Woolen suit with skirt/14.avif",
-    ],
-    sizes: ["XS", "S" , "M" , "L" , "XL"],
-    translations: {
-      EN: {
-        category: "Costumes",
-        name: "Woolen suit with skirt",
-        description: "Sweater + pencil skirt. Composition: 75% natural wool, soft, does not prick the body.",
-        color: "red",
-        colors: ["graphite"]
-      },
-      FR: {
-        category: "Costumes",
-        name: "Costume en laine avec jupe",
-        description: "Pull + jupe crayon. Composition: 75% laine naturelle, douce, ne pique pas la peau.",
-        color: "rouge",
-        colors: ["camel", "graphite", "gris"]
-      },
-      UA: {
-        category: "Костюми",
-        name: "Вовняний костюм зі спідницею",
-        description: "Светр + олівець спідниця. Склад: 75% натуральної вовни, м'яка, не колеться.",
-        color: "червоний",
-        colors: ["графітовий"]
-      }
-    }
-  },
+
   {
     id: 2,
     price: 3710,
@@ -8693,10 +8696,10 @@ description: [
       
       size: "XS S M L XL",
       category: "Pants",
-      image: "/Pants/Leather Pants1/11.avif",
+      image: "/Pants/Leather Pants1/13.avif",
       images: [
+        "/Pants/Leather Pants1/11.avif",
         "/Pants/Leather Pants1/12.avif",
-        "/Pants/Leather Pants1/13.avif",
         "/Pants/Leather Pants1/14.avif",
         
       ],
