@@ -114,6 +114,7 @@ const price = Number(String(rawPrice).replace(/[^\d.]/g, '')).toFixed(2);
                   height={600}
                   style={{ objectFit: "cover" }}
                   className="rounded-lg w-full"
+                     unoptimized={getSrc(currentImage).startsWith('/')} 
                 />
               )}
 
@@ -121,6 +122,7 @@ const price = Number(String(rawPrice).replace(/[^\d.]/g, '')).toFixed(2);
                 images={selectedProduct.images}
                 onImageSelect={(image) => setCurrentImage(image)}
                 visibleThumbnails={5}
+               
               />
             </div>
 
