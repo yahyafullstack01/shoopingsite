@@ -1,40 +1,6 @@
 const products = [
 
       {
-      id: 10,
-      price: 1350 ,
-      sku: "12345",
-      
-      size: "XS S M L XL",
-      category: "Tops",
-      image: "/Top/Openshouldergolf/5.avif",
-      images: ["/Top/Openshouldergolf/2.avif", "/Top/Openshouldergolf/3.avif", "/Top/Openshouldergolf/4.avif", "/Top/Openshouldergolf/1.avif","/Top/Openshouldergolf/5.avif", "/Top/Openshouldergolf/6.avif"],
-       
-      sizes: ["XS", "S", "M", "L", "XL"],
-      translations: {
-        EN: {
-          category: "Tops",
-          name: "Open-shoulder golf",
-          description: "off-shoulder turtleneck made of soft fabric: 50% cashmere, 28% polyester, 28% nylon",
-          color: "blue",
-          colors: ["milky", "black"],
-        },
-        FR: {
-          category: "Tops",
-          name: "Golfer avec les épaules ouvertes",
-          description: "col roulé à épaules dénudées en tissu doux : 50 % cachemire, 28 % polyester, 28 % nylon",
-          colors:["lait", "noir"],
-        },
-        UA: {
-          category: "Топи",
-          name: "Гольф із відкритими плечима",
-          description: "гольф із відкритими плечима із мʼякої тканини: 50% кашемір, 28% поліестер, 28% нейлон",
-          colors: ["молочний", "чорний"],
-        }
-      }
-    },
-
-    {
     id: 85,
     price: 2280,
     isTop: false,
@@ -78,6 +44,41 @@ const products = [
       }
     }
   },  
+
+      {
+      id: 10,
+      price: 1350 ,
+      sku: "12345",
+      
+      size: "XS S M L XL",
+      category: "Tops",
+      image: "/Top/Openshouldergolf/5.avif",
+      images: ["/Top/Openshouldergolf/2.avif", "/Top/Openshouldergolf/3.avif", "/Top/Openshouldergolf/4.avif", "/Top/Openshouldergolf/1.avif","/Top/Openshouldergolf/5.avif", "/Top/Openshouldergolf/6.avif"],
+       
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          category: "Tops",
+          name: "Open-shoulder golf",
+          description: "off-shoulder turtleneck made of soft fabric: 50% cashmere, 28% polyester, 28% nylon",
+          color: "blue",
+          colors: ["milky", "black"],
+        },
+        FR: {
+          category: "Tops",
+          name: "Golfer avec les épaules ouvertes",
+          description: "col roulé à épaules dénudées en tissu doux : 50 % cachemire, 28 % polyester, 28 % nylon",
+          colors:["lait", "noir"],
+        },
+        UA: {
+          category: "Топи",
+          name: "Гольф із відкритими плечима",
+          description: "гольф із відкритими плечима із мʼякої тканини: 50% кашемір, 28% поліестер, 28% нейлон",
+          colors: ["молочний", "чорний"],
+        }
+      }
+    },
+
 
     { id: 1,
     price: 3170,
