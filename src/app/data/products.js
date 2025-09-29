@@ -5353,12 +5353,12 @@ description: [
     sku: "98805",
     size: "XS S M L XL",
     category: "Shirts",
-    image: "/Shirts/Jasmine Shirt/1.avif",
+    image: "/Shirts/JasmineShirt/1.avif",
     images: [
-      "/Shirts/Jasmine Shirt/2.avif",
-      "/Shirts/Jasmine Shirt/3.avif",
-      "/Shirts/Jasmine Shirt/4.avif",
-       "/Shirts/Jasmine Shirt/5.avif",
+      "/Shirts/JasmineShirt/2.avif",
+      "/Shirts/JasmineShirt/3.avif",
+      "/Shirts/JasmineShirt/4.avif",
+      "/Shirts/JasmineShirt/5.avif",
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
     translations: {
@@ -7924,7 +7924,7 @@ description: [
       size: "XS S M L XL",
       category: "Tops",
       image: "/Top/Openshouldergolf/5.avif",
-      images: ["/Top/Openshouldergolf/2.avif", "/Top/Openshouldergolf/3.avif", "/Top/Openshouldergolf/4.avif", "/Top/Openshouldergolf/1.avif", "/Top/Openshouldergolf/6.avif"],
+      images: ["/Top/Openshouldergolf/2.avif", "/Top/Openshouldergolf/3.avif", "/Top/Openshouldergolf/4.avif", "/Top/Openshouldergolf/1.avif","/Top/Openshouldergolf/5.avif", "/Top/Openshouldergolf/6.avif"],
        
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
@@ -8655,9 +8655,9 @@ description: [
 
       size: "XS S M L XL",
       category: "Pants",
-      image: "/Pants/Leather Flared Pants/6.avif",
+      image: "/Pants/Leather Flared Pants/5.avif",
       images: [
-        "/Pants/Leather Flared Pants/7.avif", "/Pants/Leather Flared Pants/8.avif", "/Pants/Leather Flared Pants/9.avif",],
+        "/Pants/Leather Flared Pants/6.avif", "/Pants/Leather Flared Pants/7.avif", "/Pants/Leather Flared Pants/4.avif", "/Pants/Leather Flared Pants/8.avif", "/Pants/Leather Flared Pants/9.avif",],
        
       sizes: ["XS", "S", "M", "L", "XL" ],
       translations: {
