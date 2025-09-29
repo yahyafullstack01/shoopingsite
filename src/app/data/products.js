@@ -9,10 +9,10 @@ const products = [
     sku: "98805",
     size: "XS S M L XL",
     category: "Shirts",
-    image: "/Shirts/jasmineShirt/1.avif",
+    image: "/Shirts/JasmineShirt/1.avif",
     images: [
-      "/Shirts/jasmineShirt/2.avif",
-      "/Shirts/jasmineShirt/3.avif",
+      "/Shirts/JasmineShirt/2.avif",
+      "/Shirts/JasmineShirt/3.avif",
       "/Shirts/jasmineShirt/4.avif",
       "/Shirts/jasmineShirt/5.avif",
     ],
