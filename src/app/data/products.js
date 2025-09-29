@@ -124,51 +124,7 @@ const products = [
       }
     }
   },
- {
-    id: 175,
-    price: 2280,
-    isTop: false,
-    // isSpecialOffer: true,
-    // discountPrice: 1930,
-    sku: "98805",
-    size: "XS S M L XL",
-    category: "Shirts",
-    image: "/Shirts/JasmineShirt/1.avif",
-    images: [
-      "/Shirts/JasmineShirt/2.avif",
-      "/Shirts/JasmineShirt/3.avif",
-      "/Shirts/JasmineShirt/4.avif",
-      "/Shirts/JasmineShirt/5.avif",
-    ],
-    sizes: ["XS", "S", "M", "L", "XL"],
-    translations: {
-      EN: {
-        category: "Shirts",
-        name: "Jasmine Shirt",
-        description: "Long-staple 100% cotton muslin. A lightweight and soft-touch fabric.",
-        colors: ["milk",]
-      },
-      FR: {
-        category: "Chemises",
-        name: "Chemise Jasmine",
-        description: "Mousseline de coton 100% à longues fibres. Un tissu léger et doux au toucher.",
-        colors: ["lait",]
-      },
-      UA: {
-        category: "Сорочки",
-        name: "Сорочка «Jasmine»",
-        description: "Довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
-        colors: ["молоко",]
-      },
-      RU: {
-        category: "Сорочки",
-        name: "Рубашка «Jasmine»",
-        description: "Долговолокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь ткань.",
-        colors: ["молоко",]
-      }
-    }
-  },  
-
+ 
 {
   id: 174,
   price: 1500,
