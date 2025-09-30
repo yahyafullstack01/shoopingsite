@@ -1,4 +1,131 @@
 const products = [
+      { id: 1,
+    price: 3170,
+    isTop: false,
+    sku: "12345",
+    size: "XS S M L XL",
+    category: "Costumes",
+    image:"/Costumes/Woolen suit with skirt/0.avif",
+    images: ["/Costumes/Woolen suit with skirt/0.avif", 
+      // {
+      //   type: "video",
+      //   src: "/Costumes/Woolen suit with skirt/IMG_4440.mp4",
+      //   poster: "/Costumes/Woolen suit with skirt/1.avif"
+      // },
+      "/Costumes/Woolen suit with skirt/10.avif",
+      "/Costumes/Woolen suit with skirt/11.avif",
+      "/Costumes/Woolen suit with skirt/12.avif",
+      "/Costumes/Woolen suit with skirt/13.avif",
+      "/Costumes/Woolen suit with skirt/14.avif",
+      "/Costumes/Woolen suit with skirt/15.avif",
+      "/Costumes/Woolen suit with skirt/16.avif",
+      "/Costumes/Woolen suit with skirt/17.avif",
+      "/Costumes/Woolen suit with skirt/18.avif",
+      "/Costumes/Woolen suit with skirt/19.avif",
+      "/Costumes/Woolen suit with skirt/20.avif",
+      "/Costumes/Woolen suit with skirt/21.avif",
+      "/Costumes/Woolen suit with skirt/22.avif",
+    ],
+    sizes: ["XS", "S" , "M" , "L" , "XL"],
+    translations: {
+      EN: {
+        category: "Costumes",
+        name: "Woolen suit with skirt",
+        description: "Sweater + pencil skirt. Composition: 75% natural wool, soft, does not prick the body.",
+        color: "red",
+        colors: ["graphite","gray","Powder"]
+      },
+      FR: {
+        category: "Costumes",
+        name: "Costume en laine avec jupe",
+        description: "Pull + jupe crayon. Composition: 75% laine naturelle, douce, ne pique pas la peau.",
+        color: "rouge",
+        colors: ["camel", "graphite", "gris","Poudre"]
+      },
+      UA: {
+        category: "Костюми",
+        name: "Вовняний костюм зі спідницею",
+        description: "Светр + олівець спідниця. Склад: 75% натуральної вовни, м'яка, не колеться.",
+        color: "червоний",
+        colors: ["графітовий","Сірий","Пудра"]
+      }
+    }
+  },
+
+    {
+    id: 2,
+    price: 3710,
+    isTop: false,
+    sku: "12345",
+    size: "XS S M L XL",
+    category: "Costumes",
+    image: "/Costumes/Wool suit with trousers/1.avif",
+    images: ["/Costumes/Wool suit with trousers/2.avif","/Costumes/Wool suit with trousers/3.avif",
+      "/Costumes/Wool suit with trousers/4.avif","/Costumes/Wool suit with trousers/5.avif",
+      "/Costumes/Wool suit with trousers/7.avif", "/Costumes/Wool suit with trousers/8.avif", "/Costumes/Wool suit with trousers/9.avif",
+      "/Costumes/Wool suit with trousers/10.avif",
+      "/Costumes/Wool suit with trousers/11.avif",
+      "/Costumes/Wool suit with trousers/12.avif",
+    ],
+    sizes: ["XS", "S" , "M" , "L" , "XL"],
+    translations: {
+      EN: {
+        category: "Costumes",
+        name: "Woolen suit with trousers",
+        description: "Jumper + palazzo pants\nComposition: 75% natural wool, soft, does not prick the body.",
+        color: "blue",
+        colors: ["graphite", "gray"]
+      },
+      FR: {
+        category: "Costumes",
+        name: "Costume en laine avec pantalon",
+        description: "Pull + pantalon palazzo\nComposition: 75% laine naturelle, douce, ne pique pas la peau.",
+        color: "bleu",
+        colors: ["graphite", "gris"]
+      },
+      UA: {
+        category: "Костюми",
+        name: "Вовняний костюм із брюками",
+        description: "Джемпер + палаццо штани\nСклад: 75% натуральної вовни, м'яка, не колеться.",
+        color: "синій",
+        colors: ["графітовий","сірий"]
+      }
+    }
+  },
+
+        {
+      id: 10,
+      price: 1350 ,
+      sku: "12345",
+      
+      size: "XS S M L XL",
+      category: "Tops",
+      image: "/Top/Openshouldergolf/5.avif",
+      images: ["/Top/Openshouldergolf/2.avif", "/Top/Openshouldergolf/3.avif", "/Top/Openshouldergolf/4.avif", "/Top/Openshouldergolf/1.avif","/Top/Openshouldergolf/5.avif", "/Top/Openshouldergolf/6.avif"],
+       
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          category: "Tops",
+          name: "Open-shoulder golf",
+          description: "off-shoulder turtleneck made of soft fabric: 50% cashmere, 28% polyester, 28% nylon",
+          color: "blue",
+          colors: ["milky", "black"],
+        },
+        FR: {
+          category: "Tops",
+          name: "Golfer avec les épaules ouvertes",
+          description: "col roulé à épaules dénudées en tissu doux : 50 % cachemire, 28 % polyester, 28 % nylon",
+          colors:["lait", "noir"],
+        },
+        UA: {
+          category: "Топи",
+          name: "Гольф із відкритими плечима",
+          description: "гольф із відкритими плечима із мʼякої тканини: 50% кашемір, 28% поліестер, 28% нейлон",
+          colors: ["молочний", "чорний"],
+        }
+      }
+    },
 
       {
     id: 85,
@@ -45,85 +172,10 @@ const products = [
     }
   },  
 
-      {
-      id: 10,
-      price: 1350 ,
-      sku: "12345",
-      
-      size: "XS S M L XL",
-      category: "Tops",
-      image: "/Top/Openshouldergolf/5.avif",
-      images: ["/Top/Openshouldergolf/2.avif", "/Top/Openshouldergolf/3.avif", "/Top/Openshouldergolf/4.avif", "/Top/Openshouldergolf/1.avif","/Top/Openshouldergolf/5.avif", "/Top/Openshouldergolf/6.avif"],
-       
-      sizes: ["XS", "S", "M", "L", "XL"],
-      translations: {
-        EN: {
-          category: "Tops",
-          name: "Open-shoulder golf",
-          description: "off-shoulder turtleneck made of soft fabric: 50% cashmere, 28% polyester, 28% nylon",
-          color: "blue",
-          colors: ["milky", "black"],
-        },
-        FR: {
-          category: "Tops",
-          name: "Golfer avec les épaules ouvertes",
-          description: "col roulé à épaules dénudées en tissu doux : 50 % cachemire, 28 % polyester, 28 % nylon",
-          colors:["lait", "noir"],
-        },
-        UA: {
-          category: "Топи",
-          name: "Гольф із відкритими плечима",
-          description: "гольф із відкритими плечима із мʼякої тканини: 50% кашемір, 28% поліестер, 28% нейлон",
-          colors: ["молочний", "чорний"],
-        }
-      }
-    },
 
 
-    { id: 1,
-    price: 3170,
-    isTop: false,
-    sku: "12345",
-    size: "XS S M L XL",
-    category: "Costumes",
-    image:"/Costumes/Woolen suit with skirt/0.avif",
-    images: ["/Costumes/Woolen suit with skirt/0.avif", 
-      // {
-      //   type: "video",
-      //   src: "/Costumes/Woolen suit with skirt/IMG_4440.mp4",
-      //   poster: "/Costumes/Woolen suit with skirt/1.avif"
-      // },
-      "/Costumes/Woolen suit with skirt/10.avif",
-      "/Costumes/Woolen suit with skirt/11.avif",
-      "/Costumes/Woolen suit with skirt/12.avif",
-      "/Costumes/Woolen suit with skirt/13.avif",
-      "/Costumes/Woolen suit with skirt/14.avif",
-    ],
-    sizes: ["XS", "S" , "M" , "L" , "XL"],
-    translations: {
-      EN: {
-        category: "Costumes",
-        name: "Woolen suit with skirt",
-        description: "Sweater + pencil skirt. Composition: 75% natural wool, soft, does not prick the body.",
-        color: "red",
-        colors: ["graphite"]
-      },
-      FR: {
-        category: "Costumes",
-        name: "Costume en laine avec jupe",
-        description: "Pull + jupe crayon. Composition: 75% laine naturelle, douce, ne pique pas la peau.",
-        color: "rouge",
-        colors: ["camel", "graphite", "gris"]
-      },
-      UA: {
-        category: "Костюми",
-        name: "Вовняний костюм зі спідницею",
-        description: "Светр + олівець спідниця. Склад: 75% натуральної вовни, м'яка, не колеться.",
-        color: "червоний",
-        colors: ["графітовий"]
-      }
-    }
-  },
+
+
  
 {
   id: 174,
@@ -7680,44 +7732,7 @@ description: [
   },
 
 
-  {
-    id: 2,
-    price: 3710,
-    isTop: false,
-    sku: "12345",
-    size: "XS S M L XL",
-    category: "Costumes",
-    image: "/Costumes/Wool suit with trousers/7.avif",
-    images: ["/Costumes/Wool suit with trousers/8.avif", "/Costumes/Wool suit with trousers/9.avif",
-      "/Costumes/Wool suit with trousers/10.avif",
-      "/Costumes/Wool suit with trousers/11.avif",
-      "/Costumes/Wool suit with trousers/12.avif",
-    ],
-    sizes: ["XS", "S" , "M" , "L" , "XL"],
-    translations: {
-      EN: {
-        category: "Costumes",
-        name: "Woolen suit with trousers",
-        description: "Jumper + palazzo pants\nComposition: 75% natural wool, soft, does not prick the body.",
-        color: "blue",
-        colors: ["graphite"]
-      },
-      FR: {
-        category: "Costumes",
-        name: "Costume en laine avec pantalon",
-        description: "Pull + pantalon palazzo\nComposition: 75% laine naturelle, douce, ne pique pas la peau.",
-        color: "bleu",
-        colors: ["graphite"]
-      },
-      UA: {
-        category: "Костюми",
-        name: "Вовняний костюм із брюками",
-        description: "Джемпер + палаццо штани\nСклад: 75% натуральної вовни, м'яка, не колеться.",
-        color: "синій",
-        colors: ["графітовий"]
-      }
-    }
-  },
+
   // {
   //   id: 3,
   //   price: 4160,
