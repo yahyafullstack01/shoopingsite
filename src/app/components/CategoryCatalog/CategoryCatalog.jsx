@@ -5,15 +5,15 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
 const categories = [
-  { name: 'Сукні', image: '/Dress/Bahroma Dress/1.avif', path: 'dresses' },
-  { name: 'Костюми', image: `/Costumes/Proshva Pants Costume/1.avif?v=2`, path: 'costumes' },
+  { name: 'Сукні', image: '/HomeCatalog/1.avif', path: 'dresses' },
+  { name: 'Костюми', image: '/HomeCatalog/2.avif', path: 'costumes' },
   { name: 'Сорочки', image: '/Shirts/Fitted Batiste Shirt/1.avif', path: 'Shirts' },
   { name: 'Спідниці', image: '/Skirts/Denim Skirt/1.avif', path: 'skirts' },
-  { name: 'Топи', image: '/Top/Linen Vest/1.avif', path: 'tops' },
-  { name: 'Брюки', image: '/Pants/Classic Pants/1.avif', path: 'pants' },
-  { name: 'Жакети', image: '/Jackets/Leather Jacket/1.avif', path: 'jackets' },
+  { name: 'Топи', image: '/HomeCatalog/5.avif', path: 'tops' },
+  { name: 'Брюки', image: '/HomeCatalog/3.avif', path: 'pants' },
+  { name: 'Жакети', image: '/HomeCatalog/4.avif', path: 'jackets' },
   { name: 'Светри', image: '/Sweaters/Flare Sweater/6.avif', path: 'sweaters' },
-  { name: 'Верхній одяг', image: '/Outerwear/Leather trench coat/2.avif', path: 'outerwear' },
+  { name: 'Верхній одяг', image: '/HomeCatalog/6.avif', path: 'outerwear' },
   { name: 'Шорти', image: '/Shorts/Linen Shorts/1.avif', path: 'shorts' },
 ];
 
