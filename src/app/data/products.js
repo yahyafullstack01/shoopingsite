@@ -1,4 +1,39 @@
 const products = [
+
+      {
+      id: 13,
+      price: 3700,
+      sku: "12345",
+      color: "beige",
+      size: "XS S M L XL",
+      category: "Outerwear",
+      image: "/Outerwear/Твідовий бомбер/1.avif",
+      images: ["/Outerwear/Твідовий бомбер/2.avif", "/Outerwear/Твідовий бомбер/3.avif", "/Outerwear/Твідовий бомбер/4.avif",
+              ],
+      
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          category: "Outerwear",
+          name: "Tweed bomber jacket",
+          description: "Quilted bomber jacket with high-quality lining and two pockets",
+          colors: ["graphite"], 
+        },
+        FR: {
+          category: "Vêtements d'extérieur",
+          name: "Blouson aviateur en tweed",
+          description: "Bomber matelassé avec doublure de qualité et deux poches",
+          colors: ["graphite"],
+        },
+        UA: {
+          category: "Верхній одяг",
+          name: "Твідовий бомбер",
+          description: "Стьоганий бомбер із якісною підкладкою та двома кишенями",
+          colors: ["графіт"],
+        }
+      }
+    },
+
       { id: 1,
     price: 3170,
     isTop: false,
@@ -93,6 +128,176 @@ const products = [
     }
   },
 
+    {
+  id: 171,
+  price: 2300,
+  isTop: false,
+  isNew: true,
+  sku: "98824",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Satin Slip Dress/1.avif",
+  images: [
+    "/Dress/Satin Slip Dress/2.avif",
+    "/Dress/Satin Slip Dress/3.avif",
+    "/Dress/Satin Slip Dress/4.avif",
+    "/Dress/Satin Slip Dress/5.avif",
+    "/Dress/Satin Slip Dress/6.avif",
+    "/Dress/Satin Slip Dress/7.avif",
+    "/Dress/Satin Slip Dress/8.avif",
+    "/Dress/Satin Slip Dress/9.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Satin Slip Dress",
+      description: [
+        "Elegant and sensual dress combining luxurious satin with delicate lace. Perfect for women who value lightness, refinement, and modern femininity.",
+        "Fabric: Premium satin, beautifully flowing, lightweight, breathable, and pleasant to the touch.",
+        "Details:",
+        "• Slip dress silhouette with a free-flowing shape",
+        "• V-neckline adorned with delicate matching lace",
+        "• Hem decorated with a wide lace insert adding lightness and elegance"
+      ],
+      colors: ["khaki", "black"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe satinée",
+      description: [
+        "Robe élégante et sensuelle combinant satin luxueux et dentelle délicate. Parfaite pour les femmes qui apprécient légèreté, raffinement et féminité moderne.",
+        "Tissu : satin premium, fluide, léger, respirant et agréable au toucher.",
+        "Détails :",
+        "• Silhouette fluide type 'slip dress'",
+        "• Encolure en V ornée de dentelle délicate assortie",
+        "• Base décorée d'une large insertion en dentelle apportant légèreté et élégance"
+      ],
+      colors: ["kaki", "noir"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Сатинова сукня-комбінація",
+      description: [
+        "Елегантна та чуттєва сукня, що поєднує розкіш сатину з ніжністю мережива. Для жінок, які цінують легкість, витонченість і сучасну жіночність.",
+        "Тканина: Сатин преміум-класу, який красиво переливається, легкий, дихаючий та приємний до тіла.",
+        "Деталі:",
+        "• Фасон «комбінація» з вільним, плавним силуетом",
+        "• V-подібний виріз горловини, оздоблений делікатним мереживом у тон",
+        "• Низ сукні прикрашений широкою вставкою з мережива для легкості та елегантності"
+      ],
+      colors: ["хакі", "чорна"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Сатиновое платье-комбинация",
+      description: [
+        "Элегантное и чувственное платье, сочетание роскошного сатина и нежного кружева. Для женщин, ценящих лёгкость, утончённость и современную женственность.",
+        "Ткань: Сатин премиум-класса, красиво струится, лёгкий, дышащий и приятный на ощупь.",
+        "Детали:",
+        "• Силуэт 'комбинация' с плавным свободным кроем",
+        "• V-образный вырез, украшенный деликатным кружевом в тон",
+        "• Низ платья с широкой кружевной вставкой для лёгкости и элегантного акцента"
+      ],
+      colors: ["хаки", "чёрная"]
+    }
+  }
+},
+
+  {
+    id: 4,
+    price: 3100,
+    isTop: false,
+    sku: "12345",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Woolen trapeze dress/1.avif",
+    images: [
+    
+      "/Dress/Woolen trapeze dress/2.avif", "/Dress/Woolen trapeze dress/3.avif",
+      {
+        type: "video",
+        src: "/Dress/Woolen trapeze dress/IMG_6176.mp4",
+        poster: "/Dress/Woolen trapeze dress/1.avif"
+      },
+      "/Dress/Woolen trapeze dress/4.avif",
+      "/Dress/Woolen trapeze dress/5.avif",
+      "/Dress/Woolen trapeze dress/6.avif",
+    
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Woolen trapeze dress",
+        description: "Trapeze dress with a pronounced belt\nComposition: 75% natural wool, soft, does not stick to the body.",
+        color: "red",
+        colors: ["jeans"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe trapèze en laine",
+        description: "Robe trapèze avec ceinture marquée\nComposition: 75% laine naturelle, douce, ne colle pas à la peau.",
+        color: "rouge",
+        colors: ["jeans"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Вовняна сукня трапеція",
+        description: "Трапецеїдна сукня з виразним поясом\nСклад: 75% натуральної вовни, м'яка, не прилипає до тіла.",
+        color: "червоний",
+        colors: ["джинсовий"]
+      }
+    }
+  },
+
+    { 
+      id: 30,
+      price: 2100,
+      isTop: false, // Топ продукт
+      sku: "12346",
+      
+      size: "XS S M L XL",
+      category: "Pants",
+      image: "/Pants/Leather Pants1/13.avif",
+      images: [
+        "/Pants/Leather Pants1/11.avif",
+        "/Pants/Leather Pants1/12.avif",
+        "/Pants/Leather Pants1/14.avif",
+        
+      ],
+   
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          category: "Pants",
+          name: "Leather Tube Pants",
+          description: "Slim-fit pants with a high waist and zippers at the ankles. Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)",
+          color: "beige, caramel, black",
+          colors: ["black"],
+        },
+        FR: {
+          category: "Pantalon",
+          name: "Pantalon en cuir tube",
+          description: "Pantalon ajusté à taille haute avec fermetures éclair aux chevilles. Tissu : cuir écologique de haute qualité sur une base en daim (stretch, ne se fissure pas).",
+          color: "beige, caramel, noir",
+          colors: ["noir"],
+        },
+        UA: {
+          category: "Брюки",
+          name: "Шкіряні брюки труби",
+          description: "Брюки завуженого фасону на високій посадці та замочками на ніжці. Тканина: якісна екошкіра на замшевій основі. (стречева, не тріскається)",
+          colors: ["Чорний"],
+        },
+        RU: {
+          category: "Брюки",
+          name: "Кожаные брюки трубы",
+          description: "Брюки зауженного фасона на высокой посадке и замочками на ножке. Ткань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)",
+          colors: ["Черный"],
+        }
+      }
+    },
+
         {
       id: 10,
       price: 1350 ,
@@ -171,6 +376,142 @@ const products = [
       }
     }
   },  
+
+  {
+  id: 182,
+  price: 2800,
+  isTop: false,
+  isNew: true,
+  sku: "99324",
+  size: "XS S M L XL",
+  category: "Jackets",
+  image: "/Jackets/3D Effect Bomber/1.avif",
+  images: [
+    "/Jackets/3D Effect Bomber/2.avif",
+    "/Jackets/3D Effect Bomber/3.avif",
+    "/Jackets/3D Effect Bomber/4.avif",
+    "/Jackets/3D Effect Bomber/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Jackets",
+      name: "3D Effect Bomber",
+      description: [
+        "Lightweight bomber with 3D feather effect, perfect for early autumn or spring. A stylish addition to your outfits.",
+        "Fabric: 100% natural cotton.",
+        "Details:",
+        "• bomber without lining",
+        "• cuffs on sleeves and waistband"
+      ],
+      colors: ["milk"]
+    },
+    FR: {
+      category: "Vestes",
+      name: "Bomber effet 3D",
+      description: [
+        "Bomber léger avec effet plumes 3D, idéal pour le début de l’automne ou le printemps. Un ajout élégant à vos tenues.",
+        "Tissu : 100 % coton naturel.",
+        "Détails :",
+        "• bomber sans doublure",
+        "• poignets aux manches et ceinture"
+      ],
+      colors: ["blanc"]
+    },
+    UA: {
+      category: "Жакети",
+      name: "Бомбер з 3Д ефектом",
+      description: [
+        "Легкий бомбер з 3Д ефектом пір’їв на ранню осінь / весну. Стане цікавим доповненням до твоїх образів.",
+        "Тканина: 100% натуральна бавовна.",
+        "Деталі:",
+        "• бомбер без підкладки",
+        "• манжети на рукавах та поясі"
+      ],
+      colors: ["молочний"]
+    },
+    RU: {
+      category: "Жакеты",
+      name: "Бомбер с 3D эффектом",
+      description: [
+        "Лёгкий бомбер с 3D эффектом перьев для ранней осени или весны. Станет стильным дополнением твоих образов.",
+        "Ткань: 100% натуральный хлопок.",
+        "Детали:",
+        "• бомбер без подкладки",
+        "• манжеты на рукавах и поясе"
+      ],
+      colors: ["молочный"]
+    }
+  }
+},
+
+  {
+  id: 181,
+  price: 4900,
+  isTop: false,
+  isNew: true,
+  sku: "99323",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/3D Effect Suit/1.avif",
+  images: [
+    "/Costumes/3D Effect Suit/2.avif",
+    "/Costumes/3D Effect Suit/3.avif",
+    "/Costumes/3D Effect Suit/4.avif",
+    "/Costumes/3D Effect Suit/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "3D Effect Suit",
+      description: [
+        "Lightweight suit with 3D feather effect, perfect for early autumn or spring. Includes bomber + trousers.",
+        "Fabric: Bomber - 100% natural cotton; Trousers - 100% linen.",
+        "Details:",
+        "• bomber without lining",
+        "• high-waist trousers with a banana cut"
+      ],
+      colors: ["milk"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume effet 3D",
+      description: [
+        "Costume léger avec effet 3D plumes, idéal pour le début de l’automne ou le printemps. Comprend bomber + pantalon.",
+        "Tissu : Bomber - 100 % coton naturel ; Pantalon - 100 % lin.",
+        "Détails :",
+        "• bomber sans doublure",
+        "• pantalon taille haute coupe banane"
+      ],
+      colors: ["blanc"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм з 3Д ефектом",
+      description: [
+        "Легкий костюм з 3Д ефектом пір’їв на ранню осінь / весну: бомбер + брюки.",
+        "Тканина: Бомбер - 100% натуральна бавовна; Брюки - 100% льон.",
+        "Деталі:",
+        "• бомбер без підкладки",
+        "• висока посадка брюк та фасон бананів"
+      ],
+      colors: ["молочний"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм с 3D эффектом",
+      description: [
+        "Лёгкий костюм с 3D эффектом перьев для ранней осени или весны: бомбер + брюки.",
+        "Ткань: Бомбер - 100% натуральный хлопок; Брюки - 100% лён.",
+        "Детали:",
+        "• бомбер без подкладки",
+        "• высокая посадка брюк и фасон бананов"
+      ],
+      colors: ["молочный"]
+    }
+  }
+},
 
   {
   id: 180,
@@ -805,81 +1146,7 @@ const products = [
   }
 },
 
-  {
-  id: 171,
-  price: 2300,
-  isTop: false,
-  isNew: true,
-  sku: "98824",
-  size: "XS S M L XL",
-  category: "Dresses",
-  image: "/Dress/Satin Slip Dress/1.avif",
-  images: [
-    "/Dress/Satin Slip Dress/2.avif",
-    "/Dress/Satin Slip Dress/3.avif",
-    "/Dress/Satin Slip Dress/4.avif",
-    "/Dress/Satin Slip Dress/5.avif",
-    "/Dress/Satin Slip Dress/6.avif",
-    "/Dress/Satin Slip Dress/7.avif",
-    "/Dress/Satin Slip Dress/8.avif",
-    "/Dress/Satin Slip Dress/9.avif",
-  ],
-  sizes: ["XS", "S", "M", "L", "XL"],
-  translations: {
-    EN: {
-      category: "Dresses",
-      name: "Satin Slip Dress",
-      description: [
-        "Elegant and sensual dress combining luxurious satin with delicate lace. Perfect for women who value lightness, refinement, and modern femininity.",
-        "Fabric: Premium satin, beautifully flowing, lightweight, breathable, and pleasant to the touch.",
-        "Details:",
-        "• Slip dress silhouette with a free-flowing shape",
-        "• V-neckline adorned with delicate matching lace",
-        "• Hem decorated with a wide lace insert adding lightness and elegance"
-      ],
-      colors: ["khaki", "black"]
-    },
-    FR: {
-      category: "Robes",
-      name: "Robe satinée",
-      description: [
-        "Robe élégante et sensuelle combinant satin luxueux et dentelle délicate. Parfaite pour les femmes qui apprécient légèreté, raffinement et féminité moderne.",
-        "Tissu : satin premium, fluide, léger, respirant et agréable au toucher.",
-        "Détails :",
-        "• Silhouette fluide type 'slip dress'",
-        "• Encolure en V ornée de dentelle délicate assortie",
-        "• Base décorée d'une large insertion en dentelle apportant légèreté et élégance"
-      ],
-      colors: ["kaki", "noir"]
-    },
-    UA: {
-      category: "Сукні",
-      name: "Сатинова сукня-комбінація",
-      description: [
-        "Елегантна та чуттєва сукня, що поєднує розкіш сатину з ніжністю мережива. Для жінок, які цінують легкість, витонченість і сучасну жіночність.",
-        "Тканина: Сатин преміум-класу, який красиво переливається, легкий, дихаючий та приємний до тіла.",
-        "Деталі:",
-        "• Фасон «комбінація» з вільним, плавним силуетом",
-        "• V-подібний виріз горловини, оздоблений делікатним мереживом у тон",
-        "• Низ сукні прикрашений широкою вставкою з мережива для легкості та елегантності"
-      ],
-      colors: ["хакі", "чорна"]
-    },
-    RU: {
-      category: "Платья",
-      name: "Сатиновое платье-комбинация",
-      description: [
-        "Элегантное и чувственное платье, сочетание роскошного сатина и нежного кружева. Для женщин, ценящих лёгкость, утончённость и современную женственность.",
-        "Ткань: Сатин премиум-класса, красиво струится, лёгкий, дышащий и приятный на ощупь.",
-        "Детали:",
-        "• Силуэт 'комбинация' с плавным свободным кроем",
-        "• V-образный вырез, украшенный деликатным кружевом в тон",
-        "• Низ платья с широкой кружевной вставкой для лёгкости и элегантного акцента"
-      ],
-      colors: ["хаки", "чёрная"]
-    }
-  }
-},
+
 
   {
   id: 170,
@@ -8185,52 +8452,7 @@ description: [
   //     }
   //   }
   // },
-  {
-    id: 4,
-    price: 3100,
-    isTop: false,
-    sku: "12345",
-    size: "XS S M L XL",
-    category: "Dresses",
-    image: "/Dress/Woolen trapeze dress/1.avif",
-    images: [
-    
-      "/Dress/Woolen trapeze dress/2.avif", "/Dress/Woolen trapeze dress/3.avif",
-      {
-        type: "video",
-        src: "/Dress/Woolen trapeze dress/IMG_6176.mp4",
-        poster: "/Dress/Woolen trapeze dress/1.avif"
-      },
-      "/Dress/Woolen trapeze dress/4.avif",
-      "/Dress/Woolen trapeze dress/5.avif",
-      "/Dress/Woolen trapeze dress/6.avif",
-    
-    ],
-    sizes: ["XS", "S", "M", "L", "XL"],
-    translations: {
-      EN: {
-        category: "Dresses",
-        name: "Woolen trapeze dress",
-        description: "Trapeze dress with a pronounced belt\nComposition: 75% natural wool, soft, does not stick to the body.",
-        color: "red",
-        colors: ["jeans"]
-      },
-      FR: {
-        category: "Robes",
-        name: "Robe trapèze en laine",
-        description: "Robe trapèze avec ceinture marquée\nComposition: 75% laine naturelle, douce, ne colle pas à la peau.",
-        color: "rouge",
-        colors: ["jeans"]
-      },
-      UA: {
-        category: "Сукні",
-        name: "Вовняна сукня трапеція",
-        description: "Трапецеїдна сукня з виразним поясом\nСклад: 75% натуральної вовни, м'яка, не прилипає до тіла.",
-        color: "червоний",
-        colors: ["джинсовий"]
-      }
-    }
-  },
+
   // {
   //   id: 5,
   //   price: 3100,
@@ -8458,39 +8680,6 @@ description: [
       }
     },
     
-    {
-      id: 13,
-      price: 3700,
-      sku: "12345",
-      color: "beige",
-      size: "XS S M L XL",
-      category: "Outerwear",
-      image: "/Outerwear/Твідовий бомбер/1.avif",
-      images: ["/Outerwear/Твідовий бомбер/2.avif", "/Outerwear/Твідовий бомбер/3.avif", "/Outerwear/Твідовий бомбер/4.avif",
-              ],
-      
-      sizes: ["XS", "S", "M", "L", "XL"],
-      translations: {
-        EN: {
-          category: "Outerwear",
-          name: "Tweed bomber jacket",
-          description: "Quilted bomber jacket with high-quality lining and two pockets",
-          colors: ["graphite"], 
-        },
-        FR: {
-          category: "Vêtements d'extérieur",
-          name: "Blouson aviateur en tweed",
-          description: "Bomber matelassé avec doublure de qualité et deux poches",
-          colors: ["graphite"],
-        },
-        UA: {
-          category: "Верхній одяг",
-          name: "Твідовий бомбер",
-          description: "Стьоганий бомбер із якісною підкладкою та двома кишенями",
-          colors: ["графіт"],
-        }
-      }
-    },
     
     {
       id: 14,
@@ -9128,52 +9317,7 @@ description: [
       }
     },
     
-    { 
-      id: 30,
-      price: 2100,
-      isTop: false, // Топ продукт
-      sku: "12346",
-      
-      size: "XS S M L XL",
-      category: "Pants",
-      image: "/Pants/Leather Pants1/13.avif",
-      images: [
-        "/Pants/Leather Pants1/11.avif",
-        "/Pants/Leather Pants1/12.avif",
-        "/Pants/Leather Pants1/14.avif",
-        
-      ],
-   
-      sizes: ["XS", "S", "M", "L", "XL"],
-      translations: {
-        EN: {
-          category: "Pants",
-          name: "Leather Tube Pants",
-          description: "Slim-fit pants with a high waist and zippers at the ankles. Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)",
-          color: "beige, caramel, black",
-          colors: ["black"],
-        },
-        FR: {
-          category: "Pantalon",
-          name: "Pantalon en cuir tube",
-          description: "Pantalon ajusté à taille haute avec fermetures éclair aux chevilles. Tissu : cuir écologique de haute qualité sur une base en daim (stretch, ne se fissure pas).",
-          color: "beige, caramel, noir",
-          colors: ["noir"],
-        },
-        UA: {
-          category: "Брюки",
-          name: "Шкіряні брюки труби",
-          description: "Брюки завуженого фасону на високій посадці та замочками на ніжці. Тканина: якісна екошкіра на замшевій основі. (стречева, не тріскається)",
-          colors: ["Чорний"],
-        },
-        RU: {
-          category: "Брюки",
-          name: "Кожаные брюки трубы",
-          description: "Брюки зауженного фасона на высокой посадке и замочками на ножке. Ткань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)",
-          colors: ["Черный"],
-        }
-      }
-    },
+
     
 
     // {
