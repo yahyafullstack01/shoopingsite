@@ -172,8 +172,296 @@ const products = [
     }
   },  
 
+  {
+  id: 178,
+  price: 2800,
+  isTop: false,
+  isNew: true,
+  sku: "99320",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Amelie Dress/1.avif",
+  images: [
+    "/Dress/Amelie Dress/2.avif",
+    "/Dress/Amelie Dress/3.avif",
+    "/Dress/Amelie Dress/4.avif",
+    "/Dress/Amelie Dress/5.avif",
+    "/Dress/Amelie Dress/6.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Amelie Dress",
+      description: [
+        "Delicate chocolate satin dress with long loose sleeves and tie-back detail.",
+        "Fabric: dense and soft satin.",
+        "Details:",
+        "• trapeze silhouette",
+        "• corset-style back with ties",
+        "• midi length"
+      ],
+      colors: ["chocolate"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe Amelie",
+      description: [
+        "Robe en satin chocolat avec manches longues amples et dos à nouer.",
+        "Tissu : satin dense et doux.",
+        "Détails :",
+        "• coupe trapèze",
+        "• dos style corset avec liens",
+        "• longueur midi"
+      ],
+      colors: ["chocolat"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Сукня «Amelie»",
+      description: [
+        "Ніжна шоколадна сатинова сукня із довгим вільним рукавом та спинкою на завʼязках.",
+        "Тканина: щільний та мʼякий сатин.",
+        "Деталі:",
+        "• фасон трапеція",
+        "• корсетна спинка",
+        "• довжина міді"
+      ],
+      colors: ["шоколад"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Платье «Amelie»",
+      description: [
+        "Нежное шоколадное атласное платье с длинным свободным рукавом и завязками на спинке.",
+        "Ткань: плотный и мягкий сатин.",
+        "Детали:",
+        "• фасон трапеция",
+        "• корсетная спинка",
+        "• длина миди"
+      ],
+      colors: ["шоколад"]
+    }
+  }
+},
 
+  {
+  id: 177,
+  price: 3670,
+  isTop: false,
+  isNew: true,
+  sku: "98830",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Amelie/1.avif",
+  images: [
+    "/Costumes/Amelie/1.avif",
+    "/Costumes/Amelie/2.avif",
+    "/Costumes/Amelie/3.avif",
+    "/Costumes/Amelie/4.avif",
+    "/Costumes/Amelie/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Amelie Suit",
+      description: [
+        "Delicate satin suit featuring a blouse with expressive buttons and palazzo trousers.",
+        "Fabric: Dense and soft satin.",
+        "Details:",
+        "• Wide sleeves with cuffs",
+        "• Buttons along the blouse",
+        "• High-waisted trousers with a zipper closure"
+      ],
+      colors: ["grey"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume «Amelie»",
+      description: [
+        "Ensemble délicat en satin : blouse avec des boutons apparents et pantalon palazzo.",
+        "Tissu : satin dense et doux.",
+        "Détails :",
+        "• Manches larges avec poignets",
+        "• Boutons sur toute la longueur de la blouse",
+        "• Pantalon taille haute avec fermeture éclair"
+      ],
+      colors: ["gris"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм «Amelie»",
+      description: [
+        "Ніжний сатиновий костюм: блуза із вираженими ґудзиками та брюки палаццо.",
+        "Тканина: щільний та м’який сатин.",
+        "Деталі:",
+        "• Широкі рукава та манжети",
+        "• Ґудзики по довжині блузи",
+        "• Висока посадка брюк, які застібаються на змійку"
+      ],
+      colors: ["сірий"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм «Amelie»",
+      description: [
+        "Нежный атласный костюм: блуза с выразительными пуговицами и брюки палаццо.",
+        "Ткань: плотный и мягкий атлас.",
+        "Детали:",
+        "• Широкие рукава с манжетами",
+        "• Пуговицы вдоль блузы",
+        "• Высокая посадка брюк на молнии"
+      ],
+      colors: ["серый"]
+    }
+  }
+},
 
+{
+  id: 176,
+  price: 3200,
+  isTop: false,
+  isNew: true,
+  sku: "98829",
+  size: "XS S M L XL",
+  category: "Outerwear",
+  image: "/Outerwear/Alice/1.avif",
+  images: [
+    "/Outerwear/Alice/2.avif",
+    "/Outerwear/Alice/3.avif",
+    "/Outerwear/Alice/4.avif",
+    "/Outerwear/Alice/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Outerwear",
+      name: "Alice Quilted Jacket",
+      description: [
+        "Light cotton quilted jacket with a charming rose print and ruffles — perfect for early autumn or spring.",
+        "Fabric: 100% cotton with muslin lining.",
+        "Details:",
+        "• Decorative rose print",
+        "• Lined",
+        "• 2 patch pockets"
+      ],
+      colors: ["pink"]
+    },
+    FR: {
+      category: "Manteaux",
+      name: "Veste matelassée «Alice»",
+      description: [
+        "Veste matelassée légère en coton avec un joli imprimé de roses et des volants — idéale pour le début de l’automne ou le printemps.",
+        "Tissu : 100% coton avec doublure en mousseline.",
+        "Détails :",
+        "• Imprimé décoratif de roses",
+        "• Avec doublure",
+        "• 2 poches plaquées"
+      ],
+      colors: ["rose"]
+    },
+    UA: {
+      category: "Верхній одяг",
+      name: "Стьогана куртка «Alice»",
+      description: [
+        "Легка бавовняна куртка з цікавим принтом та оборками на ранню осінь / весну.",
+        "Тканина: 100% бавовняна куртка із мусліновою підкладкою.",
+        "Деталі:",
+        "• Декоративний принт у вигляді троянд",
+        "• Є підклад",
+        "• 2 накладні кишені"
+      ],
+      colors: ["рожевий"]
+    },
+    RU: {
+      category: "Верхняя одежда",
+      name: "Стёганая куртка «Alice»",
+      description: [
+        "Лёгкая хлопковая куртка с интересным принтом и оборками для ранней осени или весны.",
+        "Ткань: 100% хлопок с подкладкой из муслина.",
+        "Детали:",
+        "• Декоративный принт в виде роз",
+        "• Есть подкладка",
+        "• 2 накладных кармана"
+      ],
+      colors: ["розовый"]
+    }
+  }
+},
+
+{
+  id: 175,
+  price: 1850,
+  isTop: false,
+  isNew: true,
+  sku: "98828",
+  size: "XS S M L XL",
+  category: "Skirts",
+  image: "/Skirts/Amelie/1.avif",
+  images: [
+    "/Skirts/Amelie/1.avif",
+    "/Skirts/Amelie/2.avif",
+    "/Skirts/Amelie/3.avif",
+    "/Skirts/Amelie/4.avif",
+    "/Skirts/Amelie/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Skirts",
+      name: "Amelie Skirt",
+      description: [
+        "Delicate satin half-sun skirt in a soft butter shade.",
+        "Fabric: Dense and soft satin.",
+        "Details:",
+        "• Midi length",
+        "• Half-sun silhouette",
+        "• High waist"
+      ],
+      colors: ["butter"]
+    },
+    FR: {
+      category: "Jupes",
+      name: "Jupe «Amelie»",
+      description: [
+        "Jupe délicate en satin coupe demi-soleil dans une douce teinte beurre.",
+        "Tissu : satin dense et doux.",
+        "Détails :",
+        "• Longueur midi",
+        "• Coupe demi-soleil",
+        "• Taille haute"
+      ],
+      colors: ["beurre"]
+    },
+    UA: {
+      category: "Спідниці",
+      name: "Спідниця «Amelie»",
+      description: [
+        "Ніжна сатинова спідниця напів-сонце у ніжному масляному кольорі.",
+        "Тканина: щільний та м’який сатин.",
+        "Деталі:",
+        "• Міді довжина",
+        "• Фасон напів-сонце",
+        "• Висока посадка"
+      ],
+      colors: ["масло"]
+    },
+    RU: {
+      category: "Юбки",
+      name: "Юбка «Amelie»",
+      description: [
+        "Нежная атласная юбка полусолнце в мягком масляном оттенке.",
+        "Ткань: плотный и мягкий сатин.",
+        "Детали:",
+        "• Длина миди",
+        "• Фасон полусолнце",
+        "• Высокая посадка"
+      ],
+      colors: ["масло"]
+    }
+  }
+},
 
 
  
