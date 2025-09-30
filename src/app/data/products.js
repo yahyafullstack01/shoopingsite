@@ -34,7 +34,7 @@ const products = [
       }
     },
 
-      { id: 1,
+  { id: 1,
     price: 3170,
     isTop: false,
     sku: "12345",
@@ -223,6 +223,10 @@ const products = [
       "/Dress/Woolen trapeze dress/4.avif",
       "/Dress/Woolen trapeze dress/5.avif",
       "/Dress/Woolen trapeze dress/6.avif",
+      "/Dress/Woolen trapeze dress/9.avif",
+      "/Dress/Woolen trapeze dress/8.avif",
+      "/Dress/Woolen trapeze dress/11.avif",
+      "/Dress/Woolen trapeze dress/12.avif",
     
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
@@ -232,26 +236,26 @@ const products = [
         name: "Woolen trapeze dress",
         description: "Trapeze dress with a pronounced belt\nComposition: 75% natural wool, soft, does not stick to the body.",
         color: "red",
-        colors: ["jeans"]
+        colors: ["jeans","gray"]
       },
       FR: {
         category: "Robes",
         name: "Robe trapèze en laine",
         description: "Robe trapèze avec ceinture marquée\nComposition: 75% laine naturelle, douce, ne colle pas à la peau.",
         color: "rouge",
-        colors: ["jeans"]
+        colors: ["jeans","gris"]
       },
       UA: {
         category: "Сукні",
         name: "Вовняна сукня трапеція",
         description: "Трапецеїдна сукня з виразним поясом\nСклад: 75% натуральної вовни, м'яка, не прилипає до тіла.",
         color: "червоний",
-        colors: ["джинсовий"]
+        colors: ["джинсовий", "сірий"]
       }
     }
   },
 
-    { 
+  { 
       id: 30,
       price: 2100,
       isTop: false, // Топ продукт
@@ -264,6 +268,10 @@ const products = [
         "/Pants/Leather Pants1/11.avif",
         "/Pants/Leather Pants1/12.avif",
         "/Pants/Leather Pants1/14.avif",
+        "/Pants/Leather Pants1/15.avif",
+        "/Pants/Leather Pants1/16.avif",
+        "/Pants/Leather Pants1/17.avif",
+        "/Pants/Leather Pants1/18.avif",
         
       ],
    
@@ -274,20 +282,20 @@ const products = [
           name: "Leather Tube Pants",
           description: "Slim-fit pants with a high waist and zippers at the ankles. Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)",
           color: "beige, caramel, black",
-          colors: ["black"],
+          colors: ["black","caramel"],
         },
         FR: {
           category: "Pantalon",
           name: "Pantalon en cuir tube",
           description: "Pantalon ajusté à taille haute avec fermetures éclair aux chevilles. Tissu : cuir écologique de haute qualité sur une base en daim (stretch, ne se fissure pas).",
           color: "beige, caramel, noir",
-          colors: ["noir"],
+          colors: ["noir","caramel"],
         },
         UA: {
           category: "Брюки",
           name: "Шкіряні брюки труби",
           description: "Брюки завуженого фасону на високій посадці та замочками на ніжці. Тканина: якісна екошкіра на замшевій основі. (стречева, не тріскається)",
-          colors: ["Чорний"],
+          colors: ["Чорний","карамель"],
         },
         RU: {
           category: "Брюки",
@@ -297,7 +305,256 @@ const products = [
         }
       }
     },
-
+{
+      id: 27,
+      price: 1760,
+      isTop: false,
+      sku: "67897",
+      
+      size: "XS S M L XL",
+      category: "Pants",
+      image: "/Pants/Jersey Pants/1.avif",
+      images: [
+        "/Pants/Jersey Pants/2.avif",
+        "/Pants/Jersey Pants/3.avif",
+        "/Pants/Jersey Pants/4.avif",
+        "/Pants/Jersey Pants/5.avif",
+        "/Pants/Jersey Pants/6.avif",
+        "/Pants/Jersey Pants/7.avif",
+        "/Pants/Jersey Pants/8.avif",
+        "/Pants/Jersey Pants/9.avif", 
+        "/Pants/Jersey Pants/10.avif",
+      ],
+     
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          category: "Pants",
+          name: "Jersey Pants",
+          description: "Cropped pants with an elastic waistband. Feature pronounced seams throughout the length.\nFabric: dense jersey knit",
+          color: "black, cappuccino",
+          colors: ["black", "cappuccino"],
+        },
+        FR: {
+          category: "Pantalons",
+          name: "Pantalon en jersey",
+          description: "Pantalon court avec taille élastique. Doté de coutures prononcées sur toute la longueur.\nTissu: jersey dense",
+          color: "noir, cappuccino",
+          colors: ["noir", "cappuccino"],
+        },
+        UA: {
+          category: "Брюки",
+          name: "Брюки джерсі",
+          description: "Вкорочені брюки на резинці. Мають шви по всій довжині.\nТканина: щільний трикотаж Джерсі",
+          colors: ["чорний", "кавовий"],
+        },
+        RU: {
+          category: "Брюки",
+          name: "Брюки джерси",
+          description: "Укороченные брюки на резинке. Имеют выраженные швы по всей длине.\nТкань: плотный трикотаж Джерси",
+          colors: ["черный", "кавовий"],
+        }
+      }
+},
+  {
+    id: 102,
+    price: 2100,
+    isTop: true,
+    sku: "45530",
+    size: "XS S M L XL",
+    category: "Skirts",
+    image: "/Skirts/Leather Midi Skirt/1.avif",
+    images: [
+      "/Skirts/Leather Midi Skirt/2.avif",
+      "/Skirts/Leather Midi Skirt/3.avif",
+      "/Skirts/Leather Midi Skirt/4.avif",
+      "/Skirts/Leather Midi Skirt/5.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Skirts",
+        name: "Leather Midi Skirt",
+        description: "A midi-length pencil skirt with a high waist and a side slit.\nFabric: high-quality stretch eco-leather on a suede base (durable, crack-resistant).",
+        colors: ["black"]
+      },
+      FR: {
+        category: "Jupes",
+        name: "Jupe Midi en Cuir",
+        description: "Jupe crayon de longueur midi avec une taille haute et une fente latérale.\nTissu : éco-cuir extensible de haute qualité sur une base en daim (résistant, ne se fissure pas).",
+        colors: ["noir"]
+      },
+      UA: {
+        category: "Спідниці",
+        name: "Шкіряна спідниця",
+        description: "Спідниця міді довжини фасону олівець на високій посадці із розрізом збоку.\nТканина: якісна екошкіра на замшевій основі (стречева, не тріскається).",
+        colors: ["чорний"]
+      },
+      RU: {
+        category: "Юбки",
+        name: "Кожаная юбка",
+        description: "Юбка средней длины фасона карандаш с высокой посадкой и разрезом сбоку.\nТкань: качественная эко-кожа на замшевой основе (эластичная, не трескается).",
+        colors: ["черный"]
+      }
+    }
+  },
+  {
+    id: 95,
+    price: 2400,
+    isTop: false,
+    sku: "98815",
+    size: "XS S M L XL",
+    category: "Skirts",
+    image: "/Skirts/Pleated Leather Skirt/1.avif",
+    images: [
+      "/Skirts/Pleated Leather Skirt/2.avif",
+      "/Skirts/Pleated Leather Skirt/3.avif",
+      "/Skirts/Pleated Leather Skirt/5.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Skirts",
+        name: "Pleated Leather Skirt",
+        description: "Maxi-length pleated skirt with a high waist.\nFabric: high-quality eco-leather with suede base (stretchy, doesn’t crack).",
+        colors: ["black"]
+      },
+      FR: {
+        category: "Jupes",
+        name: "Jupe Plissée en Cuir",
+        description: "Jupe plissée longue avec taille haute.\nTissu : simili cuir de haute qualité avec base en daim (extensible, ne se fissure pas).",
+        colors: ["noir"]
+      },
+      UA: {
+        category: "Спідниці",
+        name: "Шкіряна спідниця плісе",
+        description: "Спідниця максі довжини з плісеруванням на високій посадці.\nТканина: якісна екошкіра на замшевій основі (стрейчева, не тріскається).",
+        colors: ["чорний"]
+      },
+      RU: {
+        category: "Юбки",
+        name: "Кожаная юбка плиссе",
+        description: "Юбка макси длины с плиссировкой на высокой посадке.\nТкань: качественная экокожа на замшевой основе (стрейчевая, не трескающаяся).",
+        colors: ["чёрный"]
+      }
+    }
+  },
+  {
+    id: 125,
+    price: 1800,
+    isTop: false,
+    sku: "67224",
+    size: "XS S M L XL",
+    category: "Shirts",
+    image: "/Shirts/Wrap Cotton Shirt/1.avif",
+    images: [
+        "/Shirts/Wrap Cotton Shirt/2.avif",
+        "/Shirts/Wrap Cotton Shirt/3.avif",
+        "/Shirts/Wrap Cotton Shirt/4.avif",
+        "/Shirts/Wrap Cotton Shirt/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+        EN: {
+            category: "Shirts",
+            name: "Wrap Cotton Shirt",
+            description: "A cotton wrap shirt. Fastens at the side waist with a button.\nFabric: 100% cotton.",
+            colors: ["white"]
+        },
+        FR: {
+            category: "Chemises",
+            name: "Chemise en Coton à Envelopper",
+            description: "Une chemise en coton à envelopper. Se ferme sur le côté de la taille avec un bouton.\nTissu : 100 % coton.",
+            colors: ["blanc"]
+        },
+        UA: {
+            category: "Сорочки",
+            name: "Сорочка на запах",
+            description: "Сорочка бавовняна на запах. Застібається збоку талії на ґудзик.\nТканина: 100% бавовна.",
+            colors: ["біла"]
+        },
+        RU: {
+            category: "Рубашки",
+            name: "Хлопковая рубашка на запах",
+            description: "Хлопковая рубашка на запах. Застегивается сбоку на талии на пуговицу.\nТкань: 100% хлопок.",
+            colors: ["белый"]
+        }
+    }
+  },  
+  {
+    id: 116,
+    price: 2000,
+    isTop: true,
+    sku: "33450",
+    size: "XS S M L XL",
+    category: "Shirts",
+    image: "/Shirts/Fitted Batiste Shirt/1.avif",
+    images: [
+      "/Shirts/Fitted Batiste Shirt/2.avif",
+      "/Shirts/Fitted Batiste Shirt/3.avif",
+      "/Shirts/Fitted Batiste Shirt/4.avif",
+      "/Shirts/Fitted Batiste Shirt/5.avif"
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Shirts",
+        name: "Fitted Batiste Shirt",
+        description: "A fitted shirt adorned with lace and embroidered inserts.\nFabric: natural batiste.",
+        colors: ["white"]
+      },
+      FR: {
+        category: "Chemises",
+        name: "Chemise en batiste ajustée",
+        description: "Une chemise ajustée ornée de dentelle et d'inserts brodés.\nTissu : batiste naturel.",
+        colors: ["blanc"]
+      },
+      UA: {
+        category: "Сорочки",
+        name: "Батистова сорочка приталена",
+        description: "Сорочка із натуральної тканини, яка оздоблена мереживом та вставками із прошви. Класичного приталеного крою.\nТканина: натуральний батист.",
+        colors: ["біла"]
+      },
+      RU: {
+        category: "Рубашки",
+        name: "Батистовая рубашка приталенная",
+        description: "Рубашка из натуральной ткани, украшенная кружевом и вставками с вышивкой. Классический приталенный крой.\nТкань: натуральный батист.",
+        colors: ["белая"]
+      }
+    }
+  },
+    {
+      id: 14,
+      price: 1800,
+      sku: "12345",
+      color: "blue",
+      size: "XS S M L XL",
+      category: "Shirts",
+      image: "/Shirts/Classicshirt/2.avif",
+      images: ["/Shirts/Classicshirt/1.avif", "/Shirts/Classicshirt/3.avif", "/Shirts/Classicshirt/4.avif", "/Shirts/Classicshirt/5.avif", "/Shirts/Classicshirt/1.avif"],
+       
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          category: "Shirts",
+          name: "Classic shirt",
+          description: "Loose-fitting cotton shirt. Fabric: 100% cotton",
+          colors: ["white"],
+        },
+        FR: {
+          category: "Chemises",
+          name: "Chemise classique",
+          description: "Chemise en coton à coupe libre. Tissu : 100 % coton",
+          colors: ["blanc"],
+        },
+        UA: {
+          category: "Сорочки",
+          name: "Класична сорочка",
+          description: "Сорочка бавовняна вільного крою. Тканина: 100% бавовна",
+          colors: ["білий"],
+        }
+      }
+    },
         {
       id: 10,
       price: 1350 ,
@@ -328,6 +585,102 @@ const products = [
           name: "Гольф із відкритими плечима",
           description: "гольф із відкритими плечима із мʼякої тканини: 50% кашемір, 28% поліестер, 28% нейлон",
           colors: ["молочний", "чорний"],
+        }
+      }
+    },
+
+    
+    {
+      id: 20,
+      price: 3100,
+      isTop: false, // Not marked as a top product
+      sku: "67890",
+      
+      size: "XS S M L XL",
+      category: "Dresses",
+      image: "/Dress/Emily Dress/6.avif",
+      images: [
+        "/Dress/Emily Dress/7.avif",
+        "/Dress/Emily Dress/8.avif",
+        "/Dress/Emily Dress/9.avif",
+        "/Dress/Emily Dress/10.avif",
+      ],
+      
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          category: "Dresses",
+          name: "Emily Dress",
+          description: "Wool midi dress with a V-neck, shortened sleeves, and pockets.\nFabric: 80% wool, 20% polyester",
+          color: "gray, camel",
+          colors: ["gray"],
+        },
+        FR: {
+          category: "Robes",
+          name: "Robe « Emily »",
+          description: "Robe midi en laine avec col en V, manches raccourcies et poches.\nTissu: 80% laine, 20% polyester",
+          color: "gris, camel",
+          colors: ["gris"],
+        },
+        UA: {
+          category: "Сукнi",
+          name: "Сукня «Emily»",
+          description: "Вовняна сукня міді довжини із V-вирізом, вкороченими рукавами та кишенями.\nТканина: 80% вовна, 20% поліестер",
+          color: "сірий, краватний",
+          colors: ["сірий"],
+        },
+        RU: {
+          category: "Платья",
+          name: "Платье «Emily»",
+          description: "Шерстяное платье миди длины с V-вырезом, укороченными рукавами и карманами.\nТкань: 80% шерсть, 20% полиэстер",
+          color: "серый, краватный",
+          colors: ["серый"],
+        }
+      }
+    },
+
+    {
+      id: 26,
+      price: 2800,
+      isTop: false,
+      sku: "67896",
+      
+      size: "XS S M L XL",
+      category: "Dresses",
+      image: "/Dress/Jersey Two-Piece Dress/1.avif",
+      images: [
+        "/Dress/Jersey Two-Piece Dress/2.avif",
+        "/Dress/Jersey Two-Piece Dress/3.avif",
+        "/Dress/Jersey Two-Piece Dress/4.avif"
+      ],
+      
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          category: "Dresses",
+          name: "Jersey Two-Piece Dress",
+          description: "Dense everyday dress. Precise lines, form, design, and style. Wash each part of the dress separately.\nFabric: dense jersey knit",
+          color: "black-white",
+          colors: ["black-white"],
+        },
+        FR: {
+          category: "Robes",
+          name: "Robe en jersey deux pièces",
+          description: "Robe quotidienne dense. Lignes précises, forme, design et style. Laver chaque partie de la robe séparément.\nTissu: jersey dense",
+          color: "noir-blanc",
+          colors: ["noir-blanc"],
+        },
+        UA: {
+          category: "Сукні",
+          name: "Сукня 2-ка джерсі",
+          description: "Щільна сукня на кожен день. Чіткі лінії, форма, дизайн та стиль. Кожну частину сукні прати окремо.\nТканина: щільний трикотаж Джерсі",
+          colors: ["чорно-білий"],
+        },
+        RU: {
+          category: "Платья",
+          name: "Платье 2-ка джерси",
+          description: "Плотное платье на каждый день. Четкие линии, форма, дизайн и стиль. Каждую часть платья стирать отдельно.\nТкань: плотный трикотаж Джерси",
+          colors: ["черно-белый"],
         }
       }
     },
@@ -4199,48 +4552,7 @@ description: [
     }
   },
 
-  {
-    id: 125,
-    price: 1800,
-    isTop: false,
-    sku: "67224",
-    size: "XS S M L XL",
-    category: "Shirts",
-    image: "/Shirts/Wrap Cotton Shirt/1.avif",
-    images: [
-        "/Shirts/Wrap Cotton Shirt/2.avif",
-        "/Shirts/Wrap Cotton Shirt/3.avif",
-        "/Shirts/Wrap Cotton Shirt/4.avif",
-        "/Shirts/Wrap Cotton Shirt/5.avif"
-    ],
-    sizes: ["XS", "S", "M", "L", "XL"],
-    translations: {
-        EN: {
-            category: "Shirts",
-            name: "Wrap Cotton Shirt",
-            description: "A cotton wrap shirt. Fastens at the side waist with a button.\nFabric: 100% cotton.",
-            colors: ["white"]
-        },
-        FR: {
-            category: "Chemises",
-            name: "Chemise en Coton à Envelopper",
-            description: "Une chemise en coton à envelopper. Se ferme sur le côté de la taille avec un bouton.\nTissu : 100 % coton.",
-            colors: ["blanc"]
-        },
-        UA: {
-            category: "Сорочки",
-            name: "Сорочка на запах",
-            description: "Сорочка бавовняна на запах. Застібається збоку талії на ґудзик.\nТканина: 100% бавовна.",
-            colors: ["біла"]
-        },
-        RU: {
-            category: "Рубашки",
-            name: "Хлопковая рубашка на запах",
-            description: "Хлопковая рубашка на запах. Застегивается сбоку на талии на пуговицу.\nТкань: 100% хлопок.",
-            colors: ["белый"]
-        }
-    }
-  },
+
 
   {
     id: 124,
@@ -4735,48 +5047,7 @@ description: [
     }
   },
 
-  {
-    id: 116,
-    price: 2000,
-    isTop: true,
-    sku: "33450",
-    size: "XS S M L XL",
-    category: "Shirts",
-    image: "/Shirts/Fitted Batiste Shirt/1.avif",
-    images: [
-      "/Shirts/Fitted Batiste Shirt/2.avif",
-      "/Shirts/Fitted Batiste Shirt/3.avif",
-      "/Shirts/Fitted Batiste Shirt/4.avif",
-      "/Shirts/Fitted Batiste Shirt/5.avif"
-    ],
-    sizes: ["XS", "S", "M", "L", "XL"],
-    translations: {
-      EN: {
-        category: "Shirts",
-        name: "Fitted Batiste Shirt",
-        description: "A fitted shirt adorned with lace and embroidered inserts.\nFabric: natural batiste.",
-        colors: ["white"]
-      },
-      FR: {
-        category: "Chemises",
-        name: "Chemise en batiste ajustée",
-        description: "Une chemise ajustée ornée de dentelle et d'inserts brodés.\nTissu : batiste naturel.",
-        colors: ["blanc"]
-      },
-      UA: {
-        category: "Сорочки",
-        name: "Батистова сорочка приталена",
-        description: "Сорочка із натуральної тканини, яка оздоблена мереживом та вставками із прошви. Класичного приталеного крою.\nТканина: натуральний батист.",
-        colors: ["біла"]
-      },
-      RU: {
-        category: "Рубашки",
-        name: "Батистовая рубашка приталенная",
-        description: "Рубашка из натуральной ткани, украшенная кружевом и вставками с вышивкой. Классический приталенный крой.\nТкань: натуральный батист.",
-        colors: ["белая"]
-      }
-    }
-  },
+
 
   {
     id: 115,
@@ -5364,48 +5635,7 @@ description: [
     }
   },
 
-  {
-    id: 102,
-    price: 2100,
-    isTop: true,
-    sku: "45530",
-    size: "XS S M L XL",
-    category: "Skirts",
-    image: "/Skirts/Leather Midi Skirt/1.avif",
-    images: [
-      "/Skirts/Leather Midi Skirt/2.avif",
-      "/Skirts/Leather Midi Skirt/3.avif",
-      "/Skirts/Leather Midi Skirt/4.avif",
-      "/Skirts/Leather Midi Skirt/5.avif",
-    ],
-    sizes: ["XS", "S", "M", "L", "XL"],
-    translations: {
-      EN: {
-        category: "Skirts",
-        name: "Leather Midi Skirt",
-        description: "A midi-length pencil skirt with a high waist and a side slit.\nFabric: high-quality stretch eco-leather on a suede base (durable, crack-resistant).",
-        colors: ["black"]
-      },
-      FR: {
-        category: "Jupes",
-        name: "Jupe Midi en Cuir",
-        description: "Jupe crayon de longueur midi avec une taille haute et une fente latérale.\nTissu : éco-cuir extensible de haute qualité sur une base en daim (résistant, ne se fissure pas).",
-        colors: ["noir"]
-      },
-      UA: {
-        category: "Спідниці",
-        name: "Шкіряна спідниця",
-        description: "Спідниця міді довжини фасону олівець на високій посадці із розрізом збоку.\nТканина: якісна екошкіра на замшевій основі (стречева, не тріскається).",
-        colors: ["чорний"]
-      },
-      RU: {
-        category: "Юбки",
-        name: "Кожаная юбка",
-        description: "Юбка средней длины фасона карандаш с высокой посадкой и разрезом сбоку.\nТкань: качественная эко-кожа на замшевой основе (эластичная, не трескается).",
-        colors: ["черный"]
-      }
-    }
-  },
+
   // {
   //   id: 101,
   //   price: 1850,
@@ -5702,47 +5932,7 @@ description: [
       }
     }
   },  
-  {
-    id: 95,
-    price: 2400,
-    isTop: false,
-    sku: "98815",
-    size: "XS S M L XL",
-    category: "Skirts",
-    image: "/Skirts/Pleated Leather Skirt/1.avif",
-    images: [
-      "/Skirts/Pleated Leather Skirt/2.avif",
-      "/Skirts/Pleated Leather Skirt/3.avif",
-      "/Skirts/Pleated Leather Skirt/5.avif",
-    ],
-    sizes: ["XS", "S", "M", "L", "XL"],
-    translations: {
-      EN: {
-        category: "Skirts",
-        name: "Pleated Leather Skirt",
-        description: "Maxi-length pleated skirt with a high waist.\nFabric: high-quality eco-leather with suede base (stretchy, doesn’t crack).",
-        colors: ["black"]
-      },
-      FR: {
-        category: "Jupes",
-        name: "Jupe Plissée en Cuir",
-        description: "Jupe plissée longue avec taille haute.\nTissu : simili cuir de haute qualité avec base en daim (extensible, ne se fissure pas).",
-        colors: ["noir"]
-      },
-      UA: {
-        category: "Спідниці",
-        name: "Шкіряна спідниця плісе",
-        description: "Спідниця максі довжини з плісеруванням на високій посадці.\nТканина: якісна екошкіра на замшевій основі (стрейчева, не тріскається).",
-        colors: ["чорний"]
-      },
-      RU: {
-        category: "Юбки",
-        name: "Кожаная юбка плиссе",
-        description: "Юбка макси длины с плиссировкой на высокой посадке.\nТкань: качественная экокожа на замшевой основе (стрейчевая, не трескающаяся).",
-        colors: ["чёрный"]
-      }
-    }
-  },  
+
   {
     id: 94,
     price: 2000,
@@ -8681,38 +8871,7 @@ description: [
     },
     
     
-    {
-      id: 14,
-      price: 1800,
-      sku: "12345",
-      color: "blue",
-      size: "XS S M L XL",
-      category: "Shirts",
-      image: "/Shirts/Classicshirt/2.avif",
-      images: ["/Shirts/Classicshirt/1.avif", "/Shirts/Classicshirt/3.avif", "/Shirts/Classicshirt/4.avif", "/Shirts/Classicshirt/5.avif", "/Shirts/Classicshirt/1.avif"],
-       
-      sizes: ["XS", "S", "M", "L", "XL"],
-      translations: {
-        EN: {
-          category: "Shirts",
-          name: "Classic shirt",
-          description: "Loose-fitting cotton shirt. Fabric: 100% cotton",
-          colors: ["white"],
-        },
-        FR: {
-          category: "Chemises",
-          name: "Chemise classique",
-          description: "Chemise en coton à coupe libre. Tissu : 100 % coton",
-          colors: ["blanc"],
-        },
-        UA: {
-          category: "Сорочки",
-          name: "Класична сорочка",
-          description: "Сорочка бавовняна вільного крою. Тканина: 100% бавовна",
-          colors: ["білий"],
-        }
-      }
-    },
+
     
     // {
     //  id: 15,
@@ -8900,55 +9059,7 @@ description: [
     //     }
     //   }
     // },
-    
-    {
-      id: 20,
-      price: 3100,
-      isTop: false, // Not marked as a top product
-      sku: "67890",
-      
-      size: "XS S M L XL",
-      category: "Dresses",
-      image: "/Dress/Emily Dress/6.avif",
-      images: [
-        "/Dress/Emily Dress/7.avif",
-        "/Dress/Emily Dress/8.avif",
-        "/Dress/Emily Dress/9.avif",
-        "/Dress/Emily Dress/10.avif",
-      ],
-      
-      sizes: ["XS", "S", "M", "L", "XL"],
-      translations: {
-        EN: {
-          category: "Dresses",
-          name: "Emily Dress",
-          description: "Wool midi dress with a V-neck, shortened sleeves, and pockets.\nFabric: 80% wool, 20% polyester",
-          color: "gray, camel",
-          colors: ["gray"],
-        },
-        FR: {
-          category: "Robes",
-          name: "Robe « Emily »",
-          description: "Robe midi en laine avec col en V, manches raccourcies et poches.\nTissu: 80% laine, 20% polyester",
-          color: "gris, camel",
-          colors: ["gris"],
-        },
-        UA: {
-          category: "Сукнi",
-          name: "Сукня «Emily»",
-          description: "Вовняна сукня міді довжини із V-вирізом, вкороченими рукавами та кишенями.\nТканина: 80% вовна, 20% поліестер",
-          color: "сірий, краватний",
-          colors: ["сірий"],
-        },
-        RU: {
-          category: "Платья",
-          name: "Платье «Emily»",
-          description: "Шерстяное платье миди длины с V-вырезом, укороченными рукавами и карманами.\nТкань: 80% шерсть, 20% полиэстер",
-          color: "серый, краватный",
-          colors: ["серый"],
-        }
-      }
-    },
+
 
     {
       id: 21,
@@ -9134,103 +9245,9 @@ description: [
     //   }
     // },
 
-    {
-      id: 26,
-      price: 2800,
-      isTop: false,
-      sku: "67896",
-      
-      size: "XS S M L XL",
-      category: "Dresses",
-      image: "/Dress/Jersey Two-Piece Dress/1.avif",
-      images: [
-        "/Dress/Jersey Two-Piece Dress/2.avif",
-        "/Dress/Jersey Two-Piece Dress/3.avif",
-        "/Dress/Jersey Two-Piece Dress/4.avif"
-      ],
-      
-      sizes: ["XS", "S", "M", "L", "XL"],
-      translations: {
-        EN: {
-          category: "Dresses",
-          name: "Jersey Two-Piece Dress",
-          description: "Dense everyday dress. Precise lines, form, design, and style. Wash each part of the dress separately.\nFabric: dense jersey knit",
-          color: "black-white",
-          colors: ["black-white"],
-        },
-        FR: {
-          category: "Robes",
-          name: "Robe en jersey deux pièces",
-          description: "Robe quotidienne dense. Lignes précises, forme, design et style. Laver chaque partie de la robe séparément.\nTissu: jersey dense",
-          color: "noir-blanc",
-          colors: ["noir-blanc"],
-        },
-        UA: {
-          category: "Сукні",
-          name: "Сукня 2-ка джерсі",
-          description: "Щільна сукня на кожен день. Чіткі лінії, форма, дизайн та стиль. Кожну частину сукні прати окремо.\nТканина: щільний трикотаж Джерсі",
-          colors: ["чорно-білий"],
-        },
-        RU: {
-          category: "Платья",
-          name: "Платье 2-ка джерси",
-          description: "Плотное платье на каждый день. Четкие линии, форма, дизайн и стиль. Каждую часть платья стирать отдельно.\nТкань: плотный трикотаж Джерси",
-          colors: ["черно-белый"],
-        }
-      }
-    },
+
     
-    {
-      id: 27,
-      price: 1760,
-      isTop: false,
-      sku: "67897",
-      
-      size: "XS S M L XL",
-      category: "Pants",
-      image: "/Pants/Jersey Pants/1.avif",
-      images: [
-        "/Pants/Jersey Pants/2.avif",
-        "/Pants/Jersey Pants/3.avif",
-        "/Pants/Jersey Pants/4.avif",
-        "/Pants/Jersey Pants/5.avif",
-        "/Pants/Jersey Pants/6.avif",
-        "/Pants/Jersey Pants/7.avif",
-        "/Pants/Jersey Pants/8.avif",
-        "/Pants/Jersey Pants/9.avif", 
-        "/Pants/Jersey Pants/10.avif",
-      ],
-     
-      sizes: ["XS", "S", "M", "L", "XL"],
-      translations: {
-        EN: {
-          category: "Pants",
-          name: "Jersey Pants",
-          description: "Cropped pants with an elastic waistband. Feature pronounced seams throughout the length.\nFabric: dense jersey knit",
-          color: "black, cappuccino",
-          colors: ["black", "cappuccino"],
-        },
-        FR: {
-          category: "Pantalons",
-          name: "Pantalon en jersey",
-          description: "Pantalon court avec taille élastique. Doté de coutures prononcées sur toute la longueur.\nTissu: jersey dense",
-          color: "noir, cappuccino",
-          colors: ["noir", "cappuccino"],
-        },
-        UA: {
-          category: "Брюки",
-          name: "Брюки джерсі",
-          description: "Вкорочені брюки на резинці. Мають шви по всій довжині.\nТканина: щільний трикотаж Джерсі",
-          colors: ["чорний", "кавовий"],
-        },
-        RU: {
-          category: "Брюки",
-          name: "Брюки джерси",
-          description: "Укороченные брюки на резинке. Имеют выраженные швы по всей длине.\nТкань: плотный трикотаж Джерси",
-          colors: ["черный", "кавовий"],
-        }
-      }
-    },
+
     
     { id: 28,
       price: 2100,
@@ -9242,7 +9259,8 @@ description: [
       size: "XS S M L XL",
       category: "Pants",
       image: "/Pants/Banana Pants/1.avif",
-      images: ["/Pants/Banana Pants/2.avif", "/Pants/Banana Pants/3.avif", "/Pants/Banana Pants/4.avif", "/Pants/Banana Pants/5.avif",
+      images: ["/Pants/Banana Pants/2.avif", "/Pants/Banana Pants/3.avif", "/Pants/Banana Pants/4.avif", "/Pants/Banana Pants/5.avif","/Pants/Banana Pants/6.avif","/Pants/Banana Pants/7.avif",
+        "/Pants/Banana Pants/8.avif","/Pants/Banana Pants/9.avif",
 
             ],
  
@@ -9252,26 +9270,26 @@ description: [
           category: "Pants",
           name: "Banana Pants",
           description: "High-waisted banana-style pants with two pockets.Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)",
-          colors: ["Black",],
+          colors: ["Black","caramel"],
         },
         FR: {
           category: "Pantalons",
           name: "Pantalons en Cuir Banane",
           description: "Pantalons taille haute style banane avec deux poches.Tissu : Cuir éco-responsable de haute qualité avec une base en suède. (Extensible, ne se fissure pas.)",
-          colors: ["Noir",],
+          colors: ["Noir","caramel"],
 
         },
         UA: {
           category: "Брюки",
           name: "Шкіряні брюки банани",
           description: "Описание: Брюки фасону бананів на високій посадці із двома кишенями Тканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається )",
-          colors: ["Чорний",],
+          colors: ["Чорний","карамель"],
         },
         RU: {
           category: "Брюки",
           name: "Брюки бананы",
           description: "( Брюки фасона бананов на высокой посадке с двумя карманамиТкань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)",
-          colors: ["Черный",],
+          colors: ["Черный","карамель"],
         }
       }
     },
