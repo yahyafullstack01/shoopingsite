@@ -173,10 +173,143 @@ const products = [
   },  
 
   {
+  id: 180,
+  price: 4900,
+  isTop: false,
+  isNew: false,
+  sku: "99322",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Distressed Effect Suit/1.avif",
+  images: [
+    "/Costumes/Distressed Effect Suit/2.avif",
+    "/Costumes/Distressed Effect Suit/3.avif",
+    "/Costumes/Distressed Effect Suit/4.avif",
+    "/Costumes/Distressed Effect Suit/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Distressed Effect Suit",
+      description: [
+        "Lightweight suit with a unique distressed effect, perfect for early autumn or spring. Includes bomber + trousers.",
+        "Fabric: Bomber - 100% natural distressed linen; Trousers - 100% linen.",
+        "Details:",
+        "• bomber without lining",
+        "• high-waist trousers with a banana cut"
+      ],
+      colors: ["black"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume effet usé",
+      description: [
+        "Costume léger avec un effet usé original, idéal pour le début de l’automne ou le printemps. Comprend un bomber + un pantalon.",
+        "Tissu : Bomber - 100 % lin naturel effet usé ; Pantalon - 100 % lin.",
+        "Détails :",
+        "• bomber sans doublure",
+        "• pantalon taille haute coupe banane"
+      ],
+      colors: ["noir"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм з рваним ефектом",
+      description: [
+        "Легкий костюм з цікавим рваним ефектом на ранню осінь / весну: бомбер + брюки.",
+        "Тканина: Бомбер - 100% натуральний рваний льон; Брюки - 100% льон.",
+        "Деталі:",
+        "• бомбер без підкладки",
+        "• висока посадка брюк та фасон бананів"
+      ],
+      colors: ["чорний"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм с рваным эффектом",
+      description: [
+        "Лёгкий костюм с интересным рваным эффектом для ранней осени или весны: бомбер + брюки.",
+        "Ткань: Бомбер - 100% натуральный рваный лён; Брюки - 100% лён.",
+        "Детали:",
+        "• бомбер без подкладки",
+        "• высокая посадка брюк и фасон бананов"
+      ],
+      colors: ["чёрный"]
+    }
+  }
+},
+
+  {
+  id: 179,
+  price: 3000,
+  isTop: false,
+  isNew: false,
+  sku: "99321",
+  size: "XS S M L XL",
+  category: "Jackets",
+  image: "/Jackets/Distressed Hoodie Bomber/1.avif",
+  images: [
+    "/Jackets/Distressed Hoodie Bomber/2.avif",
+    "/Jackets/Distressed Hoodie Bomber/3.avif",
+    "/Jackets/Distressed Hoodie Bomber/4.avif",
+    "/Jackets/Distressed Hoodie Bomber/5.avif",
+
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Jackets",
+      name: "Distressed Hoodie Bomber",
+      description: [
+        "Lightweight bomber with a unique distressed effect and a hood, perfect for early autumn or spring.",
+        "Fabric: 100% natural distressed linen.",
+        "Details:",
+        "• bomber has a batiste lining and drawstrings"
+      ],
+      colors: ["white"]
+    },
+    FR: {
+      category: "Vestes",
+      name: "Bomber à capuche effet usé",
+      description: [
+        "Bomber léger avec un effet usé original et une capuche, idéal pour le début de l’automne ou le printemps.",
+        "Tissu : 100 % lin naturel effet usé.",
+        "Détails :",
+        "• bomber avec doublure en baptiste et cordons de serrage"
+      ],
+      colors: ["blanc"]
+    },
+    UA: {
+      category: "Жакети",
+      name: "Рваний бомбер з капюшоном",
+      description: [
+        "Легкий бомбер з цікавим рваним ефектом та капюшоном на ранню осінь / весну. Стане цікавим доповненням до твого образу.",
+        "Тканина: 100% натуральний рваний льон.",
+        "Деталі:",
+        "• бомбер має батистову підкладку та затяжки"
+      ],
+      colors: ["білий"]
+    },
+    RU: {
+      category: "Жакеты",
+      name: "Рваный бомбер с капюшоном",
+      description: [
+        "Лёгкий бомбер с интересным рваным эффектом и капюшоном для ранней осени или весны. Станет стильным дополнением твоего образа.",
+        "Ткань: 100% натуральный рваный лён.",
+        "Детали:",
+        "• бомбер имеет батистовую подкладку и завязки"
+      ],
+      colors: ["белый"]
+    }
+  }
+},
+
+  {
   id: 178,
   price: 2800,
   isTop: false,
-  isNew: true,
+  isNew: false,
   sku: "99320",
   size: "XS S M L XL",
   category: "Dresses",
@@ -185,8 +318,7 @@ const products = [
     "/Dress/Amelie Dress/2.avif",
     "/Dress/Amelie Dress/3.avif",
     "/Dress/Amelie Dress/4.avif",
-    "/Dress/Amelie Dress/5.avif",
-    "/Dress/Amelie Dress/6.avif"
+    "/Dress/Amelie Dress/5.avif", 
   ],
   sizes: ["XS", "S", "M", "L", "XL"],
   translations: {
@@ -249,7 +381,7 @@ const products = [
   id: 177,
   price: 3670,
   isTop: false,
-  isNew: true,
+  isNew: false,
   sku: "98830",
   size: "XS S M L XL",
   category: "Costumes",
@@ -322,7 +454,7 @@ const products = [
   id: 176,
   price: 3200,
   isTop: false,
-  isNew: true,
+  isNew: false,
   sku: "98829",
   size: "XS S M L XL",
   category: "Outerwear",
