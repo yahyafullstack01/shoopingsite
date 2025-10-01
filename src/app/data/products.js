@@ -227,6 +227,14 @@ const products = [
       "/Dress/Woolen trapeze dress/8.avif",
       "/Dress/Woolen trapeze dress/11.avif",
       "/Dress/Woolen trapeze dress/12.avif",
+      "/Dress/Woolen trapeze dress/13.avif",
+      "/Dress/Woolen trapeze dress/14.avif",
+      "/Dress/Woolen trapeze dress/15.avif",
+      "/Dress/Woolen trapeze dress/16.avif",
+      "/Dress/Woolen trapeze dress/17.avif",
+      "/Dress/Woolen trapeze dress/18.avif",
+      "/Dress/Woolen trapeze dress/19.avif",
+      "/Dress/Woolen trapeze dress/20.avif",
     
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
@@ -236,21 +244,21 @@ const products = [
         name: "Woolen trapeze dress",
         description: "Trapeze dress with a pronounced belt\nComposition: 75% natural wool, soft, does not stick to the body.",
         color: "red",
-        colors: ["jeans","gray"]
+        colors: ["jeans","gray","marsala", "eggplant"]
       },
       FR: {
         category: "Robes",
         name: "Robe trapèze en laine",
         description: "Robe trapèze avec ceinture marquée\nComposition: 75% laine naturelle, douce, ne colle pas à la peau.",
         color: "rouge",
-        colors: ["jeans","gris"]
+        colors: ["jeans","gris","marsala", "eggplant"]
       },
       UA: {
         category: "Сукні",
         name: "Вовняна сукня трапеція",
         description: "Трапецеїдна сукня з виразним поясом\nСклад: 75% натуральної вовни, м'яка, не прилипає до тіла.",
         color: "червоний",
-        colors: ["джинсовий", "сірий"]
+        colors: ["джинсовий", "сірий", " марсала", "баклажан"]
       }
     }
   },
@@ -588,6 +596,1101 @@ const products = [
         }
       }
     },
+
+    {
+  id: 197,
+  price: 3150,
+  isTop: false,
+  isNew: true,
+  sku: "99339",
+  size: "XS S M L XL",
+  category: "Jackets",
+  image: "/Jackets/Wool Cardigan/1.avif",
+  images: [
+    "/Jackets/Wool Cardigan/2.avif",
+    "/Jackets/Wool Cardigan/3.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Jackets",
+      name: "Wool Cardigan",
+      description: [
+        "Loose-fit wool cardigan with a belt that highlights the waist.",
+        "Minimalist design with clean lines makes it easy to combine with basic tops and turtlenecks.",
+        "Fabric: Premium natural wool ensuring warmth, coziness, and a pleasant feel.",
+        "[ Composition: 75% wool ]",
+        "Details:",
+        "• Cardigan: V-neckline",
+        "• Convenient pockets"
+      ],
+      colors: ["graphite"]
+    },
+    FR: {
+      category: "Vestes",
+      name: "Cardigan en laine",
+      description: [
+        "Cardigan ample en laine avec une ceinture qui souligne la taille.",
+        "Sa ligne épurée sans détails superflus le rend facile à associer avec des tops basiques et des cols roulés.",
+        "Tissu : laine naturelle premium offrant chaleur, confort et toucher agréable.",
+        "[ Composition : 75% laine ]",
+        "Détails :",
+        "• Cardigan : encolure en V",
+        "• Poches pratiques"
+      ],
+      colors: ["graphite"]
+    },
+    UA: {
+      category: "Жакети",
+      name: "Вовняний кардиган",
+      description: [
+        "Кардиган вільного крою з поясом, який підкреслює талію.",
+        "Має чисту лінію без зайвих деталей, тому легко поєднується з базовими топами та водолазками.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[ Склад: 75% вовни ]",
+        "Деталі:",
+        "• Кардиган: V-подібний виріз",
+        "• Зручні кишені"
+      ],
+      colors: ["графіт"]
+    },
+    RU: {
+      category: "Жакеты",
+      name: "Шерстяной кардиган",
+      description: [
+        "Кардиган свободного кроя с поясом, подчёркивающим талию.",
+        "Имеет чистую линию без лишних деталей, поэтому легко сочетается с базовыми топами и водолазками.",
+        "Ткань: натуральная премиальная шерсть, обеспечивающая тепло, уют и приятные тактильные ощущения.",
+        "[ Состав: 75% шерсти ]",
+        "Детали:",
+        "• Кардиган: V-образный вырез",
+        "• Удобные карманы"
+      ],
+      colors: ["графит"]
+    }
+  }
+},
+
+    {
+  id: 196,
+  price: 5210,
+  isTop: false,
+  isNew: true,
+  sku: "99338",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Cardigan Suit/1.avif",
+  images: [
+    "/Costumes/Cardigan Suit/2.avif",
+    "/Costumes/Cardigan Suit/3.avif",
+    "/Costumes/Cardigan Suit/4.avif",
+    "/Costumes/Cardigan Suit/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Suits",
+      name: "Cardigan Suit",
+      description: [
+        "A minimalist suit in a contemporary style for modern women.",
+        "Includes a straight wrap cardigan and wide-leg high-waist trousers.",
+        "Perfect for both office looks and relaxed city outfits.",
+        "Fabric: Premium natural wool for warmth, coziness, and a pleasant feel.",
+        "[ Composition: 75% wool ]",
+        "Details:",
+        "• Cardigan: V-neckline, convenient pockets.",
+        "• Trousers: High waist, elongated silhouette."
+      ],
+      colors: ["graphite"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume avec cardigan",
+      description: [
+        "Un costume minimaliste au style contemporain pour les femmes modernes.",
+        "Composé d’un cardigan droit croisé et d’un pantalon large taille haute.",
+        "Idéal pour le bureau comme pour des tenues décontractées en ville.",
+        "Tissu : laine naturelle premium offrant chaleur, confort et toucher agréable.",
+        "[ Composition : 75% laine ]",
+        "Détails :",
+        "• Cardigan : encolure en V, poches pratiques.",
+        "• Pantalon : taille haute, silhouette allongée."
+      ],
+      colors: ["graphite"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм із кардиганом",
+      description: [
+        "Лаконічний костюм у мінімалістичному стилі для сучасних дівчат.",
+        "Складається з прямого кардигану на запах та широких брюк із високою посадкою.",
+        "Ідеально підходить як для офісу, так і для розслаблених міських образів.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[ Склад: 75% вовни ]",
+        "Деталі:",
+        "• Кардиган: V-подібний виріз, зручні кишені.",
+        "• Брюки: Висока посадка, подовжений силует."
+      ],
+      colors: ["графіт"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм с кардиганом",
+      description: [
+        "Лаконичный костюм в минималистичном стиле для современных девушек.",
+        "Состоит из прямого кардигана на запах и широких брюк с высокой посадкой.",
+        "Идеально подходит как для офиса, так и для расслабленных городских образов.",
+        "Ткань: натуральная премиальная шерсть, обеспечивающая тепло, уют и приятные тактильные ощущения.",
+        "[ Состав: 75% шерсти ]",
+        "Детали:",
+        "• Кардиган: V-образный вырез, удобные карманы.",
+        "• Брюки: высокая посадка, удлинённый силуэт."
+      ],
+      colors: ["графит"]
+    }
+  }
+},
+
+    {
+  id: 195,
+  price: 2250,
+  isTop: false,
+  isNew: true,
+  sku: "99337",
+  size: "XS S M L XL",
+  category: "Skirts",
+  image: "/Skirts/Lui Skirt/1.avif",
+  images: [
+    "/Skirts/Lui Skirt/2.avif",
+    "/Skirts/Lui Skirt/3.avif",
+    "/Skirts/Lui Skirt/4.avif",
+    "/Skirts/Lui Skirt/5.avif",
+    "/Skirts/Lui Skirt/6.avif",
+    "/Skirts/Lui Skirt/7.avif",
+    "/Skirts/Lui Skirt/8.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Skirts",
+      name: "Lui Skirt",
+      description: [
+        "A straight midi skirt with a comfortable waistband.",
+        "A minimalist model that adds elegance to your look and pairs easily with heels, chunky boots, or sneakers.",
+        "Fabric: Premium natural wool for warmth, coziness, and pleasant tactile sensations.",
+        "[ Composition: 75% wool ]"
+      ],
+      colors: ["graphite", "grey"]
+    },
+    FR: {
+      category: "Jupes",
+      name: "Jupe «Lui»",
+      description: [
+        "Jupe droite longueur midi avec une ceinture confortable.",
+        "Un modèle minimaliste qui apporte de l’élégance et se combine facilement avec des talons, des bottes massives ou des baskets.",
+        "Tissu : laine naturelle premium offrant chaleur, confort et toucher agréable.",
+        "[ Composition : 75% laine ]"
+      ],
+      colors: ["graphite", "gris"]
+    },
+    UA: {
+      category: "Спідниці",
+      name: "Спідниця «Lui»",
+      description: [
+        "Пряма спідниця довжини міді зі зручним поясом.",
+        "Лаконічна модель, яка додає образу витонченості й легко поєднується як із взуттям на підборах, так і з масивними чоботами чи кросівками.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[ Склад: 75% вовни ]"
+      ],
+      colors: ["графіт", "сірий"]
+    },
+    RU: {
+      category: "Юбки",
+      name: "Юбка «Lui»",
+      description: [
+        "Пряма юбка миди с удобным поясом.",
+        "Лаконичная модель, которая добавляет образу изысканности и легко сочетается как с обувью на каблуке, так и с массивными ботинками или кроссовками.",
+        "Ткань: натуральная премиальная шерсть, обеспечивающая тепло, уют и приятные тактильные ощущения.",
+        "[ Состав: 75% шерсти ]"
+      ],
+      colors: ["графит", "серый"]
+    }
+  }
+},
+
+{
+  id: 194,
+  price: 2100,
+  isTop: false,
+  isNew: true,
+  sku: "99336",
+  size: "XS S M L XL",
+  category: "Tops",
+  image: "/Top/Lui Jumper/1.avif",
+  images: [
+    "/Top/Lui Jumper/2.avif",
+    "/Top/Lui Jumper/3.avif",
+    "/Top/Lui Jumper/4.avif",
+    "/Top/Lui Jumper/5.avif",
+    "/Top/Lui Jumper/6.avif",
+    "/Top/Lui Jumper/7.avif",
+    "/Top/Lui Jumper/8.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Tops",
+      name: "Lui Jumper",
+      description: [
+        "The loose silhouette with a V-neckline makes the jumper both comfortable and feminine.",
+        "The soft texture provides a sense of coziness, while the minimalist cut allows you to pair it with both skirts and trousers.",
+        "Fabric: Premium natural wool for warmth, comfort, and pleasant tactile sensations.",
+        "[ Composition: 75% wool ]"
+      ],
+      colors: ["grey", "graphite"]
+    },
+    FR: {
+      category: "Tops",
+      name: "Pull «Lui»",
+      description: [
+        "La coupe ample avec un décolleté en V rend le pull à la fois confortable et féminin.",
+        "La texture douce procure une sensation de confort, tandis que la coupe minimaliste permet de l'associer aussi bien avec des jupes que des pantalons.",
+        "Tissu : laine naturelle premium pour chaleur, confort et toucher agréable.",
+        "[ Composition : 75% laine ]"
+      ],
+      colors: ["gris", "graphite"]
+    },
+    UA: {
+      category: "Топи",
+      name: "Джемпер «Lui»",
+      description: [
+        "Вільний силует із V-подібним вирізом робить джемпер комфортним та жіночним.",
+        "М’яка фактура дарує відчуття затишку, а мінімалістичний крій дозволяє поєднувати його як зі спідницею, так і з брюками.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[ Склад: 75% вовни ]"
+      ],
+      colors: ["сірий", "графіт"]
+    },
+    RU: {
+      category: "Топы",
+      name: "Джемпер «Lui»",
+      description: [
+        "Свободный силуэт с V-образным вырезом делает джемпер комфортным и женственным.",
+        "Мягкая фактура дарит ощущение уюта, а минималистичный крой позволяет сочетать его как с юбкой, так и с брюками.",
+        "Ткань: натуральная премиальная шерсть, обеспечивающая тепло, уют и приятные тактильные ощущения.",
+        "[ Состав: 75% шерсти ]"
+      ],
+      colors: ["серый", "графит"]
+    }
+  }
+},
+
+{
+  id: 193,
+  price: 2060,
+  isTop: false,
+  isNew: true,
+  sku: "99335",
+  size: "XS S M L XL",
+  category: "Pants",
+  image: "/Pants/Lui Pants/1.avif",
+  images: [
+    "/Pants/Lui Pants/2.avif",
+    "/Pants/Lui Pants/3.avif",
+    "/Pants/Lui Pants/4.avif",
+    "/Pants/Lui Pants/5.avif",
+    "/Pants/Lui Pants/6.avif",
+    "/Pants/Lui Pants/7.avif",
+    "/Pants/Lui Pants/8.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Pants",
+      name: "Lui Pants",
+      description: [
+        "Straight classic trousers with a high waist and sharp crease.",
+        "The elongated silhouette visually lengthens the figure, while the universal grey shade is easy to combine with any wardrobe tones.",
+        "Fabric: Premium natural wool for warmth, comfort, and pleasant tactile sensations.",
+        "[ Composition: 75% wool ]"
+      ],
+      colors: ["grey", "graphite"]
+    },
+    FR: {
+      category: "Pantalons",
+      name: "Pantalon «Lui»",
+      description: [
+        "Pantalon classique droit avec taille haute et pli marqué.",
+        "La silhouette allongée affine visuellement la silhouette, tandis que la teinte grise universelle se marie facilement avec toutes les couleurs de la garde-robe.",
+        "Tissu : laine naturelle premium pour chaleur, confort et toucher agréable.",
+        "[ Composition : 75% laine ]"
+      ],
+      colors: ["gris", "graphite"]
+    },
+    UA: {
+      category: "Брюки",
+      name: "Брюки «Lui»",
+      description: [
+        "Прямі класичні брюки з високою посадкою та чіткою стрілкою.",
+        "Подовжений силует візуально витягує фігуру, а універсальний сірий колір легко комбінується з будь-якими відтінками гардеробу.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[ Склад: 75% вовни ]"
+      ],
+      colors: ["сірий", "графіт"]
+    },
+    RU: {
+      category: "Брюки",
+      name: "Брюки «Lui»",
+      description: [
+        "Прямые классические брюки с высокой посадкой и чёткой стрелкой.",
+        "Удлинённый силуэт визуально вытягивает фигуру, а универсальный серый цвет легко комбинируется с любыми оттенками гардероба.",
+        "Ткань: натуральная премиальная шерсть, обеспечивающая тепло, уют и приятные тактильные ощущения.",
+        "[ Состав: 75% шерсти ]"
+      ],
+      colors: ["серый", "графит"]
+    }
+  }
+},
+
+    {
+  id: 192,
+  price: 1900,
+  isTop: false,
+  isNew: true,
+  sku: "99334",
+  size: "XS S M L XL",
+  category: "Pants",
+  image: "/Pants/Tweed Pants/1.avif",
+  images: [
+    "/Pants/Tweed Pants/2.avif",
+    "/Pants/Tweed Pants/3.avif",
+    "/Pants/Tweed Pants/4.avif",
+    "/Pants/Tweed Pants/5.avif",
+    "/Pants/Tweed Pants/6.avif",
+    "/Pants/Tweed Pants/7.avif",
+    "/Pants/Tweed Pants/8.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Pants",
+      name: "Tweed Pants",
+      description: [
+        "Banana-style trousers in graphite shade — the perfect balance between comfort and modern tailoring.",
+        "Loose at the hips and tapered at the bottom, they fit easily and add effortless chic to your look.",
+        "Fabric: Quilted tweed.",
+        "Details:",
+        "• Pair well with both sneakers and heels.",
+        "• Dense textured fabric holds its shape."
+      ],
+      colors: ["graphite", "grey"]
+    },
+    FR: {
+      category: "Pantalons",
+      name: "Pantalon en tweed",
+      description: [
+        "Pantalon banane en teinte graphite — l’équilibre parfait entre confort et coupe moderne.",
+        "Ample sur les hanches et resserré vers le bas, il s’adapte facilement et ajoute une touche chic décontractée à votre look.",
+        "Tissu : tweed matelassé.",
+        "Détails :",
+        "• S’accorde aussi bien avec des baskets qu’avec des talons.",
+        "• Tissu texturé dense qui garde sa forme."
+      ],
+      colors: ["graphite", "gris"]
+    },
+    UA: {
+      category: "Брюки",
+      name: "Твідові брюки",
+      description: [
+        "Банани у відтінку графіт — це ідеальний варіант для тих, хто шукає баланс між комфортом та сучасним кроєм.",
+        "Вільні у стегнах, звужені донизу — вони легко сідають по фігурі й додають образу невимушеного шику.",
+        "Тканина: стьобаний твід.",
+        "Деталі:",
+        "• Добре поєднуються як з кросівками, так і з підборами.",
+        "• Щільна фактурна тканина тримає форму."
+      ],
+      colors: ["графіт", "сірий"]
+    },
+    RU: {
+      category: "Брюки",
+      name: "Твидовые брюки",
+      description: [
+        "Бананы в графитовом оттенке — идеальный вариант для тех, кто ищет баланс между комфортом и современным кроем.",
+        "Свободные на бёдрах, зауженные книзу — они легко садятся по фигуре и добавляют образу непринуждённого шика.",
+        "Ткань: стёганый твид.",
+        "Детали:",
+        "• Отлично сочетаются как с кроссовками, так и с каблуками.",
+        "• Плотная фактурная ткань держит форму."
+      ],
+      colors: ["графит", "серый"]
+    }
+  }
+},
+
+{
+  id: 191,
+  price: 5600,
+  isTop: false,
+  isNew: true,
+  sku: "99333",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Bomber Suit/1.avif",
+  images: [
+    "/Costumes/Bomber Suit/2.avif",
+    "/Costumes/Bomber Suit/3.avif",
+    "/Costumes/Bomber Suit/4.avif",
+    "/Costumes/Bomber Suit/5.avif",
+    "/Costumes/Bomber Suit/6.avif",
+    "/Costumes/Bomber Suit/7.avif",
+    "/Costumes/Bomber Suit/8.avif",
+    "/Costumes/Bomber Suit/9.avif",
+    "/Costumes/Bomber Suit/10.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Bomber Suit",
+      description: [
+        "A stylish total grey look for the city.",
+        "The oversized quilted bomber adds character and warmth, while banana pants highlight a modern silhouette. This combination easily adapts: with chunky boots for street style or loafers for the office.",
+        "Fabric: Quilted tweed.",
+        "Details:",
+        "• Bomber: Dense fabric that holds its shape.",
+        "• Quilted design emphasizing texture.",
+        "• Pants: Pair well with both sneakers and heels.",
+        "• Dense textured fabric maintains structure."
+      ],
+      colors: ["graphite", "grey"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume avec bomber",
+      description: [
+        "Un total look gris élégant pour la ville.",
+        "Le bomber matelassé oversize ajoute du caractère et de la chaleur, tandis que le pantalon banane souligne une silhouette moderne. Cette combinaison s’adapte facilement : avec des bottes massives pour le street style ou des mocassins classiques pour le bureau.",
+        "Tissu : tweed matelassé.",
+        "Détails :",
+        "• Bomber : tissu dense qui garde sa forme.",
+        "• Design matelassé qui met en valeur la texture.",
+        "• Pantalon : se combine aussi bien avec des baskets qu’avec des talons.",
+        "• Tissu texturé dense qui conserve la structure."
+      ],
+      colors: ["graphite", "gris"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм із бомбером",
+      description: [
+        "Стильний total grey для міста.",
+        "Об’ємний стьобаний бомбер додає образу характеру та тепла, а брюки-банани створюють акцент на сучасному силуеті. Це поєднання легко адаптується: з масивними черевиками — для стрітстайлу, з класичними лоферами — для офісу.",
+        "Тканина: стьобаний твід.",
+        "Деталі:",
+        "• Бомбер: щільна тканина, що тримає форму.",
+        "• Стьобаний дизайн для акценту на фактурі.",
+        "• Брюки: добре поєднуються як з кросівками, так і з підборами.",
+        "• Щільна фактурна тканина тримає форму."
+      ],
+      colors: ["графіт", "сірий"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм с бомбером",
+      description: [
+        "Стильный total grey для города.",
+        "Объёмный стёганый бомбер добавляет образу характера и тепла, а брюки-бананы создают акцент на современном силуэте. Это сочетание легко адаптируется: с массивными ботинками — для стритстайла, с классическими лоферами — для офиса.",
+        "Ткань: стёганый твид.",
+        "Детали:",
+        "• Бомбер: плотная ткань, держащая форму.",
+        "• Стёганый дизайн для акцента на фактуре.",
+        "• Брюки: отлично сочетаются как с кроссовками, так и с каблуками.",
+        "• Плотная фактурная ткань держит форму."
+      ],
+      colors: ["графит", "серый"]
+    }
+  }
+},
+
+{
+  id: 190,
+  price: 6100,
+  isTop: false,
+  isNew: true,
+  sku: "99332",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Trench Suit/1.avif",
+  images: [
+    "/Costumes/Trench Suit/2.avif",
+    "/Costumes/Trench Suit/3.avif",
+    "/Costumes/Trench Suit/4.avif",
+    "/Costumes/Trench Suit/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Trench Suit",
+      description: [
+        "An elegant ensemble that combines modern femininity with classic style. A wrap sundress fits perfectly, while the trench adds a polished finish. Together they create a flawless look for the city, work, or special outings.",
+        "Fabric: Premium-quality natural wool for warmth, comfort, and a pleasant feel. [Composition: 75% wool]",
+        "Details:",
+        "• Sundress: Wrap design with buttons and a belt that accentuates the waist.",
+        "• Midi length adds elegance and makes the silhouette refined.",
+        "• V-neckline creates a feminine accent.",
+        "• Trench: Double-breasted buttons, classic lapels.",
+        "• Cropped length emphasizes proportions and gives lightness to the look."
+      ],
+      colors: ["graphite", "mocha"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume avec trench",
+      description: [
+        "Un ensemble élégant qui allie féminité moderne et style classique. La robe portefeuille s’adapte parfaitement à la silhouette, tandis que le trench apporte une touche finale sophistiquée. Ensemble, ils créent un look impeccable pour la ville, le travail ou les occasions spéciales.",
+        "Tissu : laine naturelle de qualité premium, offrant chaleur, confort et douceur au toucher. [Composition : 75% laine]",
+        "Détails :",
+        "• Robe : coupe portefeuille avec boutons et ceinture qui souligne la taille.",
+        "• Longueur midi pour plus d’élégance et une silhouette raffinée.",
+        "• Encolure en V pour un accent féminin.",
+        "• Trench : double rangée de boutons, revers classiques.",
+        "• Longueur courte qui souligne les proportions et apporte de la légèreté."
+      ],
+      colors: ["graphite", "moka"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм із тренчем",
+      description: [
+        "Елегантний ансамбль, який поєднує сучасну жіночність та класику. Стилізований сарафан на запах ідеально сідає по фігурі, а тренч додає завершеності образу. Разом вони створюють бездоганний лук для міста, роботи чи особливих виходів.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття. [Склад: 75% вовни]",
+        "Деталі:",
+        "• Сарафан: фасон із запахом на ґудзиках і поясом, який підкреслює талію.",
+        "• Довжина міді додає елегантності та робить силует витонченим.",
+        "• V-подібний виріз формує жіночний акцент.",
+        "• Тренч: подвійний ряд ґудзиків, класичні лацкани.",
+        "• Довжина до талії підкреслює пропорції та надає легкості образу."
+      ],
+      colors: ["графіт", "мокко"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм с тренчем",
+      description: [
+        "Элегантный ансамбль, сочетающий современную женственность и классику. Платье-сарафан на запах идеально садится по фигуре, а тренч завершает образ. Вместе они создают безупречный лук для города, работы или особых случаев.",
+        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло, уют и приятные тактильные ощущения. [Состав: 75% шерсти]",
+        "Детали:",
+        "• Сарафан: фасон с запахом на пуговицах и поясом, подчеркивающим талию.",
+        "• Длина миди добавляет элегантности и делает силуэт изящным.",
+        "• V-образный вырез формирует женственный акцент.",
+        "• Тренч: двойной ряд пуговиц, классические лацканы.",
+        "• Длина до талии подчеркивает пропорции и добавляет лёгкости образу."
+      ],
+      colors: ["графит", "мокко"]
+    }
+  }
+},
+
+{
+  id: 189,
+  price: 1700,
+  isTop: true,
+  isNew: true,
+  sku: "99331",
+  size: "XS S M L XL",
+  category: "Sweaters",
+  image: "/Sweaters/Lurex Sweater/1.avif",
+  images: [
+    "/Sweaters/Lurex Sweater/2.avif",
+    "/Sweaters/Lurex Sweater/3.avif",
+    "/Sweaters/Lurex Sweater/4.avif",
+    "/Sweaters/Lurex Sweater/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Sweaters",
+      name: "Lurex Sweater",
+      description: [
+        "A stylish accent for your wardrobe — a loose sweater made of soft yarn with delicate lurex. It combines comfort with a subtle shimmer, creating effortless elegance.",
+        "Fabric: Wool knit with lurex. [Composition: 65% wool]",
+        "Details:",
+        "• Relaxed oversize silhouette suitable for all body types.",
+        "• Deep V-neckline that beautifully opens the neck and allows for layered styling.",
+        "• Long dropped sleeves for a modern, laid-back look."
+      ],
+      colors: ["black"]
+    },
+    FR: {
+      category: "Pulls",
+      name: "Pull en lurex",
+      description: [
+        "Un accent élégant dans votre garde-robe — un pull ample en fil doux avec un délicat lurex. Il allie confort et léger éclat pour une élégance décontractée.",
+        "Tissu : tricot de laine avec lurex. [Composition : 65% laine]",
+        "Détails :",
+        "• Coupe oversize décontractée adaptée à toutes les morphologies.",
+        "• Profond col en V qui met en valeur le cou et permet des superpositions stylées.",
+        "• Manches longues tombantes pour un style moderne et détendu."
+      ],
+      colors: ["noir"]
+    },
+    UA: {
+      category: "Светри",
+      name: "Светр із люрексом",
+      description: [
+        "Стильний акцент у вашому гардеробі — вільний светр із м’якої пряжі з делікатним люрексом. Він поєднує комфорт і легкий блиск, створюючи ефект невимушеної елегантності.",
+        "Тканина: Вовняний трикотаж із люрексом. [Склад: 65% вовни]",
+        "Деталі:",
+        "• Вільний oversize силует, що підходить для будь-якого типу фігури.",
+        "• Глибокий V-подібний виріз, який красиво відкриває шию та дозволяє створювати багатошарові образи.",
+        "• Довгі спущені рукави для розслабленого, сучасного стилю."
+      ],
+      colors: ["чорний"]
+    },
+    RU: {
+      category: "Свитера",
+      name: "Свитер с люрексом",
+      description: [
+        "Стильный акцент в вашем гардеробе — свободный свитер из мягкой пряжи с деликатным люрексом. Он сочетает комфорт и лёгкий блеск, создавая эффект непринуждённой элегантности.",
+        "Ткань: шерстяной трикотаж с люрексом. [Состав: 65% шерсти]",
+        "Детали:",
+        "• Свободный oversize силуэт, подходящий для любого типа фигуры.",
+        "• Глубокий V-образный вырез, красиво открывающий шею и позволяющий создавать многослойные образы.",
+        "• Длинные спущенные рукава для расслабленного, современного стиля."
+      ],
+      colors: ["чёрный"]
+    }
+  }
+},
+
+{
+  id: 188,
+  price: 2060,
+  isBottom: true,
+  isNew: true,
+  sku: "99330",
+  size: "XS S M L XL",
+  category: "Pants",
+  image: "/Pants/Beige Pants/1.avif",
+  images: [
+    "/Pants/Beige Pants/2.avif",
+    "/Pants/Beige Pants/3.avif",
+    "/Pants/Beige Pants/4.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Pants",
+      name: "Beige Pants",
+      description: [
+        "Elegant and comfortable pants with a high waist. Their relaxed cut visually elongates the legs and works equally well for business and casual outfits.",
+        "Fabric: Premium-quality natural wool for warmth, coziness, and pleasant tactile sensations. [Composition: 75% wool]",
+        "Details:",
+        "• High waist with an elasticated waistband for comfort.",
+        "• Wide straight cut with neat decorative pleats that elongate the legs."
+      ],
+      colors: ["beige"]
+    },
+    FR: {
+      category: "Pantalons",
+      name: "Pantalon «Beige»",
+      description: [
+        "Pantalon élégant et confortable avec taille haute. Sa coupe ample allonge visuellement les jambes et convient aussi bien aux tenues de travail qu'aux looks décontractés.",
+        "Tissu : laine naturelle de qualité premium, offrant chaleur, confort et douceur au toucher. [Composition : 75% laine]",
+        "Détails :",
+        "• Taille haute avec ceinture élastiquée pour plus de confort.",
+        "• Coupe droite et large avec plis décoratifs nets qui allongent les jambes."
+      ],
+      colors: ["beige"]
+    },
+    UA: {
+      category: "Брюки",
+      name: "Брюки «Beige»",
+      description: [
+        "Елегантні та комфортні брюки із високою посадкою. Мають вільний крій, візуально подовжують ноги та підходять як для ділових, так і для розслаблених поєднань.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття. [Склад: 75% вовни]",
+        "Деталі:",
+        "• Брюки: висока посадка з поясом на резинці для комфорту.",
+        "• Широкий прямий крій із чіткими декоративними стрілками, що подовжують ноги."
+      ],
+      colors: ["бежевий"]
+    },
+    RU: {
+      category: "Брюки",
+      name: "Брюки «Beige»",
+      description: [
+        "Элегантные и комфортные брюки с высокой посадкой. Свободный крой визуально удлиняет ноги и подходит как для деловых, так и для расслабленных образов.",
+        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло, уют и приятные тактильные ощущения. [Состав: 75% шерсти]",
+        "Детали:",
+        "• Брюки: высокая посадка с поясом на резинке для комфорта.",
+        "• Широкий прямой крой с четкими декоративными стрелками, визуально удлиняющими ноги."
+      ],
+      colors: ["бежевый"]
+    }
+  }
+},
+
+{
+  id: 187,
+  price: 2100,
+  isTop: true,
+  isNew: true,
+  sku: "99329",
+  size: "XS S M L XL",
+  category: "Tops",
+  image: "/Top/Beige Jumper/1.avif",
+  images: [
+    "/Top/Beige Jumper/2.avif",
+    "/Top/Beige Jumper/3.avif",
+    "/Top/Beige Jumper/4.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Tops",
+      name: "Beige Jumper",
+      description: [
+        "Minimalist jumper with a boat neckline and patch pockets. Simple and stylish, it fits both classic and casual looks.",
+        "Fabric: Premium-quality natural wool for warmth, coziness, and pleasant tactile sensations. [Composition: 75% wool]",
+        "Details:",
+        "• Straight silhouette with long sleeves.",
+        "• Boat neckline with a small front slit.",
+        "• Two patch pockets as an accent detail."
+      ],
+      colors: ["beige"]
+    },
+    FR: {
+      category: "Tops",
+      name: "Pull «Beige»",
+      description: [
+        "Pull minimaliste avec encolure bateau et poches plaquées. Sobre et élégant, il convient aux tenues classiques comme aux looks casual.",
+        "Tissu : laine naturelle de qualité premium, offrant chaleur, confort et douceur au toucher. [Composition : 75% laine]",
+        "Détails :",
+        "• Coupe droite avec manches longues.",
+        "• Encolure bateau avec petite fente devant.",
+        "• Deux poches plaquées comme détail accentué."
+      ],
+      colors: ["beige"]
+    },
+    UA: {
+      category: "Топи",
+      name: "Джемпер «Beige»",
+      description: [
+        "Мінімалістичний джемпер із човниковим вирізом та накладними кишенями. Лаконічний і стильний, він пасує до класичних та casual образів.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття. [Склад: 75% вовни]",
+        "Деталі:",
+        "• Джемпер: прямий силует, довгий рукав.",
+        "• Горловина човник із невеликим розрізом спереду.",
+        "• Дві накладні кишені як акцент."
+      ],
+      colors: ["бежевий"]
+    },
+    RU: {
+      category: "Топы",
+      name: "Джемпер «Beige»",
+      description: [
+        "Минималистичный джемпер с вырезом-лодочкой и накладными карманами. Лаконичный и стильный, подходит как для классических, так и для casual образов.",
+        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло, уют и приятные тактильные ощущения. [Состав: 75% шерсти]",
+        "Детали:",
+        "• Джемпер: прямой силуэт, длинный рукав.",
+        "• Вырез-лодочка с небольшим разрезом спереди.",
+        "• Два накладных кармана как акцент."
+      ],
+      colors: ["бежевый"]
+    }
+  }
+},
+
+    {
+  id: 186,
+  price: 4160,
+  isTop: false,
+  isNew: true,
+  sku: "99328",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Beige Suit/1.avif",
+  images: [
+    "/Costumes/Beige Suit/2.avif",
+    "/Costumes/Beige Suit/3.avif",
+    "/Costumes/Beige Suit/4.avif",
+    "/Costumes/Beige Suit/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Beige Suit",
+      description: [
+        "Stylish and comfortable suit, perfect for the rhythm of city life. With its minimalistic design and noble shade, it looks both elegant and effortless.",
+        "The set can be worn together as a total look or separately: pair the jumper with jeans or skirts, and the trousers with classic shirts or t-shirts.",
+        "Fabric: Premium-quality natural wool for warmth, comfort, and pleasant tactile sensations. [Composition: 75% wool]",
+        "Details:",
+        "• Jumper: straight silhouette, long sleeve.",
+        "• Boat neckline with a small front slit.",
+        "• Two patch pockets as an accent detail.",
+        "• Trousers: high-waisted with an elastic waistband for comfort.",
+        "• Wide straight cut with sharp decorative pleats that elongate the legs."
+      ],
+      colors: ["beige"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume «Beige»",
+      description: [
+        "Un costume élégant et confortable, idéal pour le rythme de vie citadin. Grâce à son design épuré et sa teinte noble, il paraît à la fois raffiné et décontracté.",
+        "Peut être porté en total look ou séparément : pull avec jeans ou jupes, pantalon avec chemises classiques ou t-shirts.",
+        "Tissu : laine naturelle de qualité premium, offrant chaleur, confort et douceur au toucher. [Composition : 75% laine]",
+        "Détails :",
+        "• Pull : coupe droite, manches longues.",
+        "• Encolure bateau avec petite fente devant.",
+        "• Deux poches plaquées en détail accentué.",
+        "• Pantalon : taille haute avec ceinture élastique pour plus de confort.",
+        "• Coupe droite et large avec plis décoratifs qui allongent les jambes."
+      ],
+      colors: ["beige"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм «Beige»",
+      description: [
+        "Стильний і зручний костюм, який ідеально підходить для міського темпу життя. Завдяки лаконічному дизайну та благородному відтінку він виглядає водночас елегантно та невимушено.",
+        "Комплект можна носити разом як total look або розділяти: джемпер поєднувати з джинсами чи спідницями, брюки — зі строгими сорочками чи футболками.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття. [Склад: 75% вовни]",
+        "Деталі:",
+        "• Джемпер: прямий силует, довгий рукав.",
+        "• Горловина човник із невеликим розрізом спереду.",
+        "• Дві накладні кишені як акцент.",
+        "• Брюки: висока посадка з поясом на резинці для комфорту.",
+        "• Широкий прямий крій із чіткими декоративними стрілками, що подовжують ноги."
+      ],
+      colors: ["бежевий"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм «Beige»",
+      description: [
+        "Стильный и удобный костюм, идеально подходящий для городского ритма жизни. Благодаря лаконичному дизайну и благородному оттенку он выглядит одновременно элегантно и непринуждённо.",
+        "Комплект можно носить вместе как total look или раздельно: джемпер сочетать с джинсами или юбками, брюки — с классическими рубашками или футболками.",
+        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло, уют и приятные тактильные ощущения. [Состав: 75% шерсти]",
+        "Детали:",
+        "• Джемпер: прямой силуэт, длинный рукав.",
+        "• Вырез-лодочка с небольшим разрезом спереди.",
+        "• Два накладных кармана как акцент.",
+        "• Брюки: высокая посадка с поясом на резинке для комфорта.",
+        "• Широкий прямой крой с чёткими декоративными стрелками, удлиняющими ноги."
+      ],
+      colors: ["бежевый"]
+    }
+  }
+},
+
+{
+  id: 185,
+  price: 2250,
+  isTop: false,
+  isNew: true,
+  sku: "99327",
+  size: "XS S M L XL",
+  category: "Skirts",
+  image: "/Skirts/Mocha Skirt/1.avif",
+  images: [
+    "/Skirts/Mocha Skirt/2.avif",
+    "/Skirts/Mocha Skirt/3.avif",
+    "/Skirts/Mocha Skirt/4.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Skirts",
+      name: "Mocha Skirt",
+      description: [
+        "Elegant wool midi skirt with a gentle flare. A versatile base that pairs perfectly with jumpers or classic blouses.",
+        "Fabric: Premium-quality natural wool for warmth, comfort, and a pleasant tactile feel. [Composition: 75% wool]",
+        "Details:",
+        "• Midi length, gentle flare from the hips.",
+        "• Visually elongates the silhouette, adding a feminine accent."
+      ],
+      colors: ["mocha"]
+    },
+    FR: {
+      category: "Jupes",
+      name: "Jupe «Mocha»",
+      description: [
+        "Élégante jupe midi en laine avec une légère évasée. Une base polyvalente qui se marie aussi bien avec des pulls que des chemisiers classiques.",
+        "Tissu : laine naturelle de qualité premium, offrant chaleur, confort et douceur au toucher. [Composition : 75% laine]",
+        "Détails :",
+        "• Longueur midi, légère évasée à partir des hanches.",
+        "• Allonge visuellement la silhouette en ajoutant une touche féminine."
+      ],
+      colors: ["moka"]
+    },
+    UA: {
+      category: "Спідниці",
+      name: "Спідниця «Mocha»",
+      description: [
+        "Елегантна вовняна спідниця довжини міді з легким розкльошенням. Універсальна база, яка гармонійно виглядає як з джемперами, так і з класичними блузами.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття. [Склад: 75% вовни]",
+        "Деталі:",
+        "• Спідниця: довжина міді, легке розкльошення від стегон.",
+        "• Візуально подовжує силует, створюючи жіночний акцент."
+      ],
+      colors: ["мокко"]
+    },
+    RU: {
+      category: "Юбки",
+      name: "Юбка «Mocha»",
+      description: [
+        "Элегантная шерстяная юбка миди с лёгким расклёшением. Универсальная база, гармонично смотрится как с джемперами, так и с классическими блузками.",
+        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло, уют и приятные тактильные ощущения. [Состав: 75% шерсти]",
+        "Детали:",
+        "• Юбка: длина миди, лёгкое расклёшение от бёдер.",
+        "• Визуально удлиняет силуэт, создавая женственный акцент."
+      ],
+      colors: ["мокко"]
+    }
+  }
+},
+
+{
+  id: 184,
+  price: 2100,
+  isTop: true,
+  isNew: true,
+  sku: "99326",
+  size: "XS S M L XL",
+  category: "Tops",
+  image: "/Top/Mocha Jumper/1.avif",
+  images: [
+    "/Top/Mocha Jumper/2.avif",
+    "/Top/Mocha Jumper/3.avif",
+    "/Top/Mocha Jumper/4.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Tops",
+      name: "Mocha Jumper",
+      description: [
+        "A stylish and practical wool jumper with a straight cut, neckline slit, and patch pockets. Perfect for everyday looks during the cooler season.",
+        "Fabric: Premium-quality natural wool for warmth, comfort, and a pleasant tactile feel. [Composition: 75% wool]",
+        "Details:",
+        "• Straight silhouette with long sleeves.",
+        "• Two patch pockets as an accent detail."
+      ],
+      colors: ["mocha"]
+    },
+    FR: {
+      category: "Hauts",
+      name: "Jumper «Mocha»",
+      description: [
+        "Un pull en laine élégant et pratique, coupe droite, avec une fente à l’encolure et des poches plaquées. Idéal pour les looks quotidiens en saison fraîche.",
+        "Tissu : laine naturelle de qualité premium, offrant chaleur, confort et douceur au toucher. [Composition : 75% laine]",
+        "Détails :",
+        "• Coupe droite avec manches longues.",
+        "• Deux poches plaquées comme détail accentué."
+      ],
+      colors: ["moka"]
+    },
+    UA: {
+      category: "Топи",
+      name: "Джемпер «Mocha»",
+      description: [
+        "Стильний і практичний джемпер із вовни, прямого крою, з розрізом по горловині та накладними кишенями. Ідеальний для повсякденних образів у прохолодний сезон.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття. [Склад: 75% вовни]",
+        "Деталі:",
+        "• Джемпер: прямий силует із довгим рукавом.",
+        "• Дві накладні кишені як акцентна деталь."
+      ],
+      colors: ["мокко"]
+    },
+    RU: {
+      category: "Топы",
+      name: "Джемпер «Mocha»",
+      description: [
+        "Стильный и практичный шерстяной джемпер прямого кроя с разрезом по горловине и накладными карманами. Идеален для повседневных образов в прохладный сезон.",
+        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло, уют и приятные тактильные ощущения. [Состав: 75% шерсти]",
+        "Детали:",
+        "• Джемпер: прямой силуэт с длинным рукавом.",
+        "• Два накладных кармана как акцент."
+      ],
+      colors: ["мокко"]
+    }
+  }
+},
+
+{
+  id: 183,
+  price: 4350,
+  isTop: false,
+  isNew: true,
+  sku: "99325",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Mocha/1.avif",
+  images: [
+    "/Costumes/Mocha/2.avif",
+    "/Costumes/Mocha/3.avif",
+    "/Costumes/Mocha/4.avif",
+    "/Costumes/Mocha/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Mocha",
+      description: [
+        "An elegant ensemble that combines warmth and sophistication. The minimalist cut and noble wool texture create a modern ‘French chic’ style.",
+        "The set can be worn as a total look or combined separately: the jumper with trousers or jeans, the skirt with a blouse or sweater.",
+        "Fabric: Premium-quality natural wool for warmth, comfort, and a pleasant tactile feel. [Composition: 75% wool]",
+        "Details:",
+        "• Jumper: Straight silhouette with long sleeves, two patch pockets as an accent detail.",
+        "• Skirt: Midi length with a slight flare from the hips, visually elongates the silhouette and adds femininity."
+      ],
+      colors: ["mocha"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume «Mocha»",
+      description: [
+        "Un ensemble raffiné qui allie chaleur et élégance. La coupe minimaliste et la texture noble de la laine créent un style moderne «chic français».",
+        "Le set peut être porté en total look ou séparément : le pull avec un pantalon ou un jean, la jupe avec un chemisier ou un pull.",
+        "Tissu : laine naturelle de qualité premium, offrant chaleur, confort et douceur au toucher. [Composition : 75% laine]",
+        "Détails :",
+        "• Pull : coupe droite à manches longues, deux poches plaquées comme détail accentué.",
+        "• Jupe : longueur midi avec légère évasement à partir des hanches, allonge visuellement la silhouette et souligne la féminité."
+      ],
+      colors: ["moka"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм «Mocha»",
+      description: [
+        "Витончений ансамбль, який поєднує тепло та елегантність. Лаконічний крій і благородна фактура вовни створюють сучасний образ у стилі «французький шик».",
+        "Комплект можна носити як total look або комбінувати окремо: джемпер — із брюками чи джинсами, спідницю — з блузою або светром.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття. [Склад: 75% вовни]",
+        "Деталі:",
+        "• Джемпер: прямий силует із довгим рукавом, дві накладні кишені як акцентна деталь.",
+        "• Спідниця: довжина міді, легке розкльошення від стегон, візуально подовжує силует і створює жіночний акцент."
+      ],
+      colors: ["мокко"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм «Mocha»",
+      description: [
+        "Изысканный ансамбль, сочетающий тепло и элегантность. Лаконичный крой и благородная фактура шерсти создают современный образ в стиле «французский шик».",
+        "Комплект можно носить как total look или комбинировать отдельно: джемпер — с брюками или джинсами, юбку — с блузой или свитером.",
+        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло, уют и приятные тактильные ощущения. [Состав: 75% шерсти]",
+        "Детали:",
+        "• Джемпер: прямой силуэт с длинным рукавом, две накладные карманы как акцент.",
+        "• Юбка: длина миди, лёгкое расклешение от бёдер, визуально удлиняет силуэт и подчёркивает женственность."
+      ],
+      colors: ["мокко"]
+    }
+  }
+},
 
     
     {
@@ -9261,6 +10364,10 @@ description: [
       image: "/Pants/Banana Pants/1.avif",
       images: ["/Pants/Banana Pants/2.avif", "/Pants/Banana Pants/3.avif", "/Pants/Banana Pants/4.avif", "/Pants/Banana Pants/5.avif","/Pants/Banana Pants/6.avif","/Pants/Banana Pants/7.avif",
         "/Pants/Banana Pants/8.avif","/Pants/Banana Pants/9.avif",
+        "/Pants/Banana Pants/10.avif",
+        "/Pants/Banana Pants/11.avif",
+        "/Pants/Banana Pants/12.avif",
+        "/Pants/Banana Pants/13.avif",
 
             ],
  
@@ -9270,26 +10377,26 @@ description: [
           category: "Pants",
           name: "Banana Pants",
           description: "High-waisted banana-style pants with two pockets.Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)",
-          colors: ["Black","caramel"],
+          colors: ["Black","caramel", "chocolat"],
         },
         FR: {
           category: "Pantalons",
           name: "Pantalons en Cuir Banane",
           description: "Pantalons taille haute style banane avec deux poches.Tissu : Cuir éco-responsable de haute qualité avec une base en suède. (Extensible, ne se fissure pas.)",
-          colors: ["Noir","caramel"],
+          colors: ["Noir","caramel", "chocolat"],
 
         },
         UA: {
           category: "Брюки",
           name: "Шкіряні брюки банани",
           description: "Описание: Брюки фасону бананів на високій посадці із двома кишенями Тканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається )",
-          colors: ["Чорний","карамель"],
+          colors: ["Чорний","карамель", "шоколад"],
         },
         RU: {
           category: "Брюки",
           name: "Брюки бананы",
           description: "( Брюки фасона бананов на высокой посадке с двумя карманамиТкань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)",
-          colors: ["Черный","карамель"],
+          colors: ["Черный","карамель", "шоколад"],
         }
       }
     },
