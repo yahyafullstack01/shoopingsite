@@ -56,7 +56,7 @@ const Hero = () => {
         {isClient && (
           <div className="relative w-[200px] max-w-[300px] h-[333px] flex-shrink-0 overflow-hidden rounded-lg">
             <video
-              src="/hoom/baner.mp4"
+              src="/hoom/bannervidosen.mp4"
               autoPlay
               loop
               muted
@@ -70,7 +70,7 @@ const Hero = () => {
         <div className="flex flex-col items-center md:items-start gap-2 text-center md:text-left w-[40vw] sm:w-auto">
           <div className="relative w-[35vw] sm:w-[300px] lg:w-[350px] max-w-[600px] h-auto overflow-hidden">
             <Image
-              src="/hoom/baner-mal.avif"
+              src="/hoom/banerosen.avif"
               alt="Latore Collection Style"
               width={600}
               height={500}
