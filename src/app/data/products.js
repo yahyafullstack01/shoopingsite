@@ -6926,13 +6926,13 @@ description: [
     image: "/Shirts/Freedom Shirt/1.avif",
     images: [
       "/Shirts/Freedom Shirt/2.avif",
-      "/Shirts/Freedom Shirt/3.avif",
-     "/Shirts/Freedom Shirt/4.avif",
-      "/Shirts/Freedom Shirt/5.avif",
+    //   "/Shirts/Freedom Shirt/3.avif",
+    //  "/Shirts/Freedom Shirt/4.avif",
+    //   "/Shirts/Freedom Shirt/5.avif",
       "/Shirts/Freedom Shirt/6.avif",
-      "/Shirts/Freedom Shirt/7.avif",
-      "/Shirts/Freedom Shirt/8.avif",
-      "/Shirts/Freedom Shirt/9.avif",
+    //   "/Shirts/Freedom Shirt/7.avif",
+    //   "/Shirts/Freedom Shirt/8.avif",
+    //   "/Shirts/Freedom Shirt/9.avif",
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
     translations: {
@@ -6940,13 +6940,13 @@ description: [
         category: "Shirts",
         name: "Freedom Shirt",
         description: "Long-staple 100% cotton muslin. A lightweight and soft-touch fabric.",
-        colors: ["ment","milk"]
+        colors: ["milk"]
       },
       FR: {
         category: "Chemises",
         name: "Chemise «Freedom»",
         description: "Mousseline de coton 100% à longues fibres. Un tissu léger et doux au toucher.",
-        colors: ["ment","lait"]
+        colors: ["lait"]
       },
       UA: {
         category: "Сорочки",
