@@ -36,7 +36,7 @@ const products = [
 
   { id: 1,
     price: 3170,
-    isTop: false,
+    isTop: true,
     sku: "12345",
     size: "XS S M L XL",
     category: "Costumes",
@@ -90,7 +90,7 @@ const products = [
     {
     id: 2,
     price: 3710,
-    isTop: false,
+    isTop: true,
     sku: "12345",
     size: "XS S M L XL",
     category: "Costumes",
@@ -136,7 +136,7 @@ const products = [
     {
   id: 171,
   price: 2300,
-  isTop: false,
+  isTop: true,
   isNew: true,
   sku: "98824",
   size: "XS S M L XL",
@@ -214,10 +214,201 @@ const products = [
   }
 },
 
+{
+  id: 193,
+  price: 2060,
+  isTop: false,
+  isNew: true,
+  sku: "99335",
+  size: "XS S M L XL",
+  category: "Pants",
+  image: "/Pants/Lui Pants/1.avif",
+  images: [
+    "/Pants/Lui Pants/2.avif",
+    "/Pants/Lui Pants/3.avif",
+    "/Pants/Lui Pants/4.avif",
+    "/Pants/Lui Pants/5.avif",
+    "/Pants/Lui Pants/6.avif",
+    "/Pants/Lui Pants/7.avif",
+    "/Pants/Lui Pants/8.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Pants",
+      name: "Lui Pants",
+      description: [
+        "Straight classic trousers with a high waist and sharp crease.",
+        "The elongated silhouette visually lengthens the figure, while the universal grey shade is easy to combine with any wardrobe tones.",
+        "Fabric: Premium natural wool for warmth, comfort, and pleasant tactile sensations.",
+        "[ Composition: 75% wool ]"
+      ],
+      colors: ["grey", "graphite"]
+    },
+    FR: {
+      category: "Pantalons",
+      name: "Pantalon «Lui»",
+      description: [
+        "Pantalon classique droit avec taille haute et pli marqué.",
+        "La silhouette allongée affine visuellement la silhouette, tandis que la teinte grise universelle se marie facilement avec toutes les couleurs de la garde-robe.",
+        "Tissu : laine naturelle premium pour chaleur, confort et toucher agréable.",
+        "[ Composition : 75% laine ]"
+      ],
+      colors: ["gris", "graphite"]
+    },
+    UA: {
+      category: "Брюки",
+      name: "Брюки «Lui»",
+      description: [
+        "Прямі класичні брюки з високою посадкою та чіткою стрілкою.",
+        "Подовжений силует візуально витягує фігуру, а універсальний сірий колір легко комбінується з будь-якими відтінками гардеробу.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[ Склад: 75% вовни ]"
+      ],
+      colors: ["сірий", "графіт"]
+    },
+    RU: {
+      category: "Брюки",
+      name: "Брюки «Lui»",
+      description: [
+        "Прямые классические брюки с высокой посадкой и чёткой стрелкой.",
+        "Удлинённый силуэт визуально вытягивает фигуру, а универсальный серый цвет легко комбинируется с любыми оттенками гардероба.",
+        "Ткань: натуральная премиальная шерсть, обеспечивающая тепло, уют и приятные тактильные ощущения.",
+        "[ Состав: 75% шерсти ]"
+      ],
+      colors: ["серый", "графит"]
+    }
+  }
+},
+
+ {
+    id: 99,
+    price: 2000,
+    isTop: false,
+    sku: "98819",
+    size: "XS S M L XL",
+    category: "Shirts",
+    image: "/Shirts/Batiste Shirt 2/1.avif",
+    images: [
+      "/Shirts/Batiste Shirt 2/2.avif",
+      {
+        type: "video",
+        src: "/Shirts/Batiste Shirt 2/IMG_9010.mp4",
+        poster: "/Shirts/Batiste Shirt 2/1.avif"
+      },
+      "/Shirts/Batiste Shirt 2/3.avif",
+       "/Shirts/Batiste Shirt 2/4.avif",
+      "/Shirts/Batiste Shirt 2/5.avif",
+      "/Shirts/Batiste Shirt 2/6.avif",
+      "/Shirts/Batiste Shirt 2/7.avif",
+      "/Shirts/Batiste Shirt 2/8.avif",
+      "/Shirts/Batiste Shirt 2/9.avif",
+      "/Shirts/Batiste Shirt 2/10.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Shirts",
+        name: "Batiste Shirt",
+        description: "Shirt made of natural fabric, decorated with lace. Features puff sleeves.\nFabric: natural batiste.",
+        colors: ["white", "light blue"]
+      },
+      FR: {
+        category: "Chemises",
+        name: "Chemise en Batiste",
+        description: "Chemise en tissu naturel ornée de dentelle. Manches bouffantes.\nTissu : batiste naturel.",
+        colors: ["blanc", "bleu clair"]
+      },
+      UA: {
+        category: "Сорочки",
+        name: "Батистова сорочка",
+        description: "Сорочка із натуральної тканини, яка оздоблена мереживом. Має рукава ліхтарики.\nТканина: натуральна тканина батист.",
+        colors: ["білий", "блакитний"]
+      },
+      RU: {
+        category: "Рубашки",
+        name: "Батистовая рубашка",
+        description: "Рубашка из натуральной ткани, украшенная кружевом. Имеет рукава-фонарики.\nТкань: натуральная ткань батист.",
+        colors: ["белый", "голубой"]
+      }
+    }
+  },  
+
+{
+  id: 187,
+  price: 2100,
+  isTop: true,
+  isNew: true,
+  sku: "99329",
+  size: "XS S M L XL",
+  category: "Tops",
+  image: "/Top/BeigeJumper/1.avif",
+  images: [
+    "/Top/BeigeJumper/2.avif",
+    "/Top/BeigeJumper/3.avif",
+    "/Top/BeigeJumper/4.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Tops",
+      name: "Beige Jumper",
+      description: [
+        "Minimalist jumper with a boat neckline and patch pockets. Simple and stylish, it fits both classic and casual looks.",
+        "Fabric: Premium-quality natural wool for warmth, coziness, and pleasant tactile sensations. [Composition: 75% wool]",
+        "Details:",
+        "• Straight silhouette with long sleeves.",
+        "• Boat neckline with a small front slit.",
+        "• Two patch pockets as an accent detail."
+      ],
+      colors: ["beige"]
+    },
+    FR: {
+      category: "Tops",
+      name: "Pull «Beige»",
+      description: [
+        "Pull minimaliste avec encolure bateau et poches plaquées. Sobre et élégant, il convient aux tenues classiques comme aux looks casual.",
+        "Tissu : laine naturelle de qualité premium, offrant chaleur, confort et douceur au toucher. [Composition : 75% laine]",
+        "Détails :",
+        "• Coupe droite avec manches longues.",
+        "• Encolure bateau avec petite fente devant.",
+        "• Deux poches plaquées comme détail accentué."
+      ],
+      colors: ["beige"]
+    },
+    UA: {
+      category: "Топи",
+      name: "Джемпер «Beige»",
+      description: [
+        "Мінімалістичний джемпер із човниковим вирізом та накладними кишенями. Лаконічний і стильний, він пасує до класичних та casual образів.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття. [Склад: 75% вовни]",
+        "Деталі:",
+        "• Джемпер: прямий силует, довгий рукав.",
+        "• Горловина човник із невеликим розрізом спереду.",
+        "• Дві накладні кишені як акцент."
+      ],
+      colors: ["бежевий"]
+    },
+    RU: {
+      category: "Топы",
+      name: "Джемпер «Beige»",
+      description: [
+        "Минималистичный джемпер с вырезом-лодочкой и накладными карманами. Лаконичный и стильный, подходит как для классических, так и для casual образов.",
+        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло, уют и приятные тактильные ощущения. [Состав: 75% шерсти]",
+        "Детали:",
+        "• Джемпер: прямой силуэт, длинный рукав.",
+        "• Вырез-лодочка с небольшим разрезом спереди.",
+        "• Два накладных кармана как акцент."
+      ],
+      colors: ["бежевый"]
+    }
+  }
+},
+
   {
     id: 4,
     price: 3100,
-    isTop: false,
+    isTop: true,
     sku: "12345",
     size: "XS S M L XL",
     category: "Dresses",
@@ -273,10 +464,64 @@ const products = [
     }
   },
 
+    {
+    id: 100,
+    price: 2000,
+    isTop: true,
+    sku: "98820",
+    size: "XS S M L XL",
+    category: "Shirts",
+    image: "/Shirts/Batiste Shirt/1.avif",
+    images: [
+      "/Shirts/Batiste Shirt/2.avif",
+      {
+        type: "video",
+        src: "/Shirts/Batiste Shirt/IMG_7575.mp4",
+        poster: "/Shirts/Batiste Shirt/1.avif"
+      },
+      "/Shirts/Batiste Shirt/3.avif",
+      "/Shirts/Batiste Shirt/4.avif",
+      "/Shirts/Batiste Shirt/5.avif",
+      "/Shirts/Batiste Shirt/6.avif",
+      "/Shirts/Batiste Shirt/7.avif",
+      "/Shirts/Batiste Shirt/8.avif",
+      "/Shirts/Batiste Shirt/9.avif",
+      "/Shirts/Batiste Shirt/10.avif",
+      "/Shirts/Batiste Shirt/11.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Shirts",
+        name: "Batiste Shirt With lace",
+        description: "Shirt made of natural fabric, decorated with lace. Features puff sleeves.\nFabric: natural batiste.",
+        colors: ["white", "light blue"]
+      },
+      FR: {
+        category: "Chemises",
+        name: "Chemisier en batiste orné de dentelle",
+        description: "Chemise en tissu naturel ornée de dentelle. Manches bouffantes.\nTissu : batiste naturel.",
+        colors: ["blanc", "bleu clair"]
+      },
+      UA: {
+        category: "Сорочки",
+        name: "Батистова сорочка з мереживом",
+        description: "Сорочка із натуральної тканини, яка оздоблена мереживом. Має рукава ліхтарики.\nТканина: натуральна тканина батист.",
+        colors: ["білий", "блакитний"]
+      },
+      RU: {
+        category: "Рубашки",
+        name: "Батистовая блузка с кружевом",
+        description: "Рубашка из натуральной ткани, украшенная кружевом. Имеет рукава-фонарики.\nТкань: натуральная ткань батист.",
+        colors: ["белый", "голубой"]
+      }
+    }
+  }, 
+
   { 
       id: 30,
       price: 2100,
-      isTop: false, // Топ продукт
+      isTop: true, // Топ продукт
       sku: "12346",
       
       size: "XS S M L XL",
@@ -895,72 +1140,7 @@ const products = [
   }
 },
 
-{
-  id: 193,
-  price: 2060,
-  isTop: false,
-  isNew: true,
-  sku: "99335",
-  size: "XS S M L XL",
-  category: "Pants",
-  image: "/Pants/Lui Pants/1.avif",
-  images: [
-    "/Pants/Lui Pants/2.avif",
-    "/Pants/Lui Pants/3.avif",
-    "/Pants/Lui Pants/4.avif",
-    "/Pants/Lui Pants/5.avif",
-    "/Pants/Lui Pants/6.avif",
-    "/Pants/Lui Pants/7.avif",
-    "/Pants/Lui Pants/8.avif",
-  ],
-  sizes: ["XS", "S", "M", "L", "XL"],
-  translations: {
-    EN: {
-      category: "Pants",
-      name: "Lui Pants",
-      description: [
-        "Straight classic trousers with a high waist and sharp crease.",
-        "The elongated silhouette visually lengthens the figure, while the universal grey shade is easy to combine with any wardrobe tones.",
-        "Fabric: Premium natural wool for warmth, comfort, and pleasant tactile sensations.",
-        "[ Composition: 75% wool ]"
-      ],
-      colors: ["grey", "graphite"]
-    },
-    FR: {
-      category: "Pantalons",
-      name: "Pantalon «Lui»",
-      description: [
-        "Pantalon classique droit avec taille haute et pli marqué.",
-        "La silhouette allongée affine visuellement la silhouette, tandis que la teinte grise universelle se marie facilement avec toutes les couleurs de la garde-robe.",
-        "Tissu : laine naturelle premium pour chaleur, confort et toucher agréable.",
-        "[ Composition : 75% laine ]"
-      ],
-      colors: ["gris", "graphite"]
-    },
-    UA: {
-      category: "Брюки",
-      name: "Брюки «Lui»",
-      description: [
-        "Прямі класичні брюки з високою посадкою та чіткою стрілкою.",
-        "Подовжений силует візуально витягує фігуру, а універсальний сірий колір легко комбінується з будь-якими відтінками гардеробу.",
-        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
-        "[ Склад: 75% вовни ]"
-      ],
-      colors: ["сірий", "графіт"]
-    },
-    RU: {
-      category: "Брюки",
-      name: "Брюки «Lui»",
-      description: [
-        "Прямые классические брюки с высокой посадкой и чёткой стрелкой.",
-        "Удлинённый силуэт визуально вытягивает фигуру, а универсальный серый цвет легко комбинируется с любыми оттенками гардероба.",
-        "Ткань: натуральная премиальная шерсть, обеспечивающая тепло, уют и приятные тактильные ощущения.",
-        "[ Состав: 75% шерсти ]"
-      ],
-      colors: ["серый", "графит"]
-    }
-  }
-},
+
 
     {
   id: 192,
@@ -1341,76 +1521,7 @@ const products = [
   }
 },
 
-{
-  id: 187,
-  price: 2100,
-  isTop: true,
-  isNew: true,
-  sku: "99329",
-  size: "XS S M L XL",
-  category: "Tops",
-  image: "/Top/Beige Jumper/1.avif",
-  images: [
-    "/Top/Beige Jumper/2.avif",
-    "/Top/Beige Jumper/3.avif",
-    "/Top/Beige Jumper/4.avif",
-  ],
-  sizes: ["XS", "S", "M", "L", "XL"],
-  translations: {
-    EN: {
-      category: "Tops",
-      name: "Beige Jumper",
-      description: [
-        "Minimalist jumper with a boat neckline and patch pockets. Simple and stylish, it fits both classic and casual looks.",
-        "Fabric: Premium-quality natural wool for warmth, coziness, and pleasant tactile sensations. [Composition: 75% wool]",
-        "Details:",
-        "• Straight silhouette with long sleeves.",
-        "• Boat neckline with a small front slit.",
-        "• Two patch pockets as an accent detail."
-      ],
-      colors: ["beige"]
-    },
-    FR: {
-      category: "Tops",
-      name: "Pull «Beige»",
-      description: [
-        "Pull minimaliste avec encolure bateau et poches plaquées. Sobre et élégant, il convient aux tenues classiques comme aux looks casual.",
-        "Tissu : laine naturelle de qualité premium, offrant chaleur, confort et douceur au toucher. [Composition : 75% laine]",
-        "Détails :",
-        "• Coupe droite avec manches longues.",
-        "• Encolure bateau avec petite fente devant.",
-        "• Deux poches plaquées comme détail accentué."
-      ],
-      colors: ["beige"]
-    },
-    UA: {
-      category: "Топи",
-      name: "Джемпер «Beige»",
-      description: [
-        "Мінімалістичний джемпер із човниковим вирізом та накладними кишенями. Лаконічний і стильний, він пасує до класичних та casual образів.",
-        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття. [Склад: 75% вовни]",
-        "Деталі:",
-        "• Джемпер: прямий силует, довгий рукав.",
-        "• Горловина човник із невеликим розрізом спереду.",
-        "• Дві накладні кишені як акцент."
-      ],
-      colors: ["бежевий"]
-    },
-    RU: {
-      category: "Топы",
-      name: "Джемпер «Beige»",
-      description: [
-        "Минималистичный джемпер с вырезом-лодочкой и накладными карманами. Лаконичный и стильный, подходит как для классических, так и для casual образов.",
-        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло, уют и приятные тактильные ощущения. [Состав: 75% шерсти]",
-        "Детали:",
-        "• Джемпер: прямой силуэт, длинный рукав.",
-        "• Вырез-лодочка с небольшим разрезом спереди.",
-        "• Два накладных кармана как акцент."
-      ],
-      colors: ["бежевый"]
-    }
-  }
-},
+
 
     {
   id: 186,
@@ -3601,11 +3712,11 @@ const products = [
     "/Dress/Loden Grace Dress/3.avif",
     "/Dress/Loden Grace Dress/4.avif",
     "/Dress/Loden Grace Dress/5.avif",
-    "/Dress/Loden Grace Dress/6.avif",
-    "/Dress/Loden Grace Dress/7.avif",
-    "/Dress/Loden Grace Dress/8.avif",
-    "/Dress/Loden Grace Dress/9.avif",
-    "/Dress/Loden Grace Dress/10.avif",
+    // "/Dress/Loden Grace Dress/6.avif",
+    // "/Dress/Loden Grace Dress/7.avif",
+    // "/Dress/Loden Grace Dress/8.avif",
+    // "/Dress/Loden Grace Dress/9.avif",
+    // "/Dress/Loden Grace Dress/10.avif",
     
   ],
   sizes: ["XS", "S", "M", "L", "XL"],
@@ -3623,7 +3734,7 @@ const products = [
         "• ¾ sleeves with decorative zippers — a stylish element that allows adjusting the volume",
         "• Back slit for ease of movement and a feminine accent"
       ],
-      colors: ["denim", "sage"]
+      colors: ["denim",]
     },
     FR: {
       category: "Robes",
@@ -3638,7 +3749,7 @@ const products = [
         "• Manches ¾ avec fermetures éclair décoratives pour ajuster le volume",
         "• Fente au dos pour plus d’aisance et une touche féminine"
       ],
-      colors: ["denim", "sauge"]
+      colors: ["denim",]
     },
     UA: {
       category: "Сукні",
@@ -3653,7 +3764,7 @@ const products = [
         "• Рукави ¾ з декоративними замочками — стильна деталь, яка дозволяє регулювати об’єм та створює сучасний акцент.",
         "• На спинці передбачений розріз для зручності рухів і жіночного акценту."
       ],
-      colors: ["джинс", "полинь"]
+      colors: ["джинс",]
     },
     RU: {
       category: "Платья",
@@ -4949,7 +5060,7 @@ description: [
 {
     id: 139,
     price: 2950,
-    isTop: false,
+    isTop: true,
     sku: "67238",
     size: "XS S M L XL",
     category: "Dresses",
@@ -6801,111 +6912,8 @@ description: [
   //     }
   //   }
   // },  
-  {
-    id: 100,
-    price: 2000,
-    isTop: true,
-    sku: "98820",
-    size: "XS S M L XL",
-    category: "Shirts",
-    image: "/Shirts/Batiste Shirt/1.avif",
-    images: [
-      "/Shirts/Batiste Shirt/2.avif",
-      {
-        type: "video",
-        src: "/Shirts/Batiste Shirt/IMG_7575.mp4",
-        poster: "/Shirts/Batiste Shirt/1.avif"
-      },
-      "/Shirts/Batiste Shirt/3.avif",
-      "/Shirts/Batiste Shirt/4.avif",
-      "/Shirts/Batiste Shirt/5.avif",
-      "/Shirts/Batiste Shirt/6.avif",
-      "/Shirts/Batiste Shirt/7.avif",
-      "/Shirts/Batiste Shirt/8.avif",
-      "/Shirts/Batiste Shirt/9.avif",
-      "/Shirts/Batiste Shirt/10.avif",
-      "/Shirts/Batiste Shirt/11.avif",
-    ],
-    sizes: ["XS", "S", "M", "L", "XL"],
-    translations: {
-      EN: {
-        category: "Shirts",
-        name: "Batiste Shirt With lace",
-        description: "Shirt made of natural fabric, decorated with lace. Features puff sleeves.\nFabric: natural batiste.",
-        colors: ["white", "light blue"]
-      },
-      FR: {
-        category: "Chemises",
-        name: "Chemisier en batiste orné de dentelle",
-        description: "Chemise en tissu naturel ornée de dentelle. Manches bouffantes.\nTissu : batiste naturel.",
-        colors: ["blanc", "bleu clair"]
-      },
-      UA: {
-        category: "Сорочки",
-        name: "Батистова сорочка з мереживом",
-        description: "Сорочка із натуральної тканини, яка оздоблена мереживом. Має рукава ліхтарики.\nТканина: натуральна тканина батист.",
-        colors: ["білий", "блакитний"]
-      },
-      RU: {
-        category: "Рубашки",
-        name: "Батистовая блузка с кружевом",
-        description: "Рубашка из натуральной ткани, украшенная кружевом. Имеет рукава-фонарики.\nТкань: натуральная ткань батист.",
-        colors: ["белый", "голубой"]
-      }
-    }
-  },  
- {
-    id: 99,
-    price: 2000,
-    isTop: false,
-    sku: "98819",
-    size: "XS S M L XL",
-    category: "Shirts",
-    image: "/Shirts/Batiste Shirt 2/1.avif",
-    images: [
-      "/Shirts/Batiste Shirt 2/2.avif",
-      {
-        type: "video",
-        src: "/Shirts/Batiste Shirt 2/IMG_9010.mp4",
-        poster: "/Shirts/Batiste Shirt 2/1.avif"
-      },
-      "/Shirts/Batiste Shirt 2/3.avif",
-       "/Shirts/Batiste Shirt 2/4.avif",
-      "/Shirts/Batiste Shirt 2/5.avif",
-      "/Shirts/Batiste Shirt 2/6.avif",
-      "/Shirts/Batiste Shirt 2/7.avif",
-      "/Shirts/Batiste Shirt 2/8.avif",
-      "/Shirts/Batiste Shirt 2/9.avif",
-      "/Shirts/Batiste Shirt 2/10.avif",
-    ],
-    sizes: ["XS", "S", "M", "L", "XL"],
-    translations: {
-      EN: {
-        category: "Shirts",
-        name: "Batiste Shirt",
-        description: "Shirt made of natural fabric, decorated with lace. Features puff sleeves.\nFabric: natural batiste.",
-        colors: ["white", "light blue"]
-      },
-      FR: {
-        category: "Chemises",
-        name: "Chemise en Batiste",
-        description: "Chemise en tissu naturel ornée de dentelle. Manches bouffantes.\nTissu : batiste naturel.",
-        colors: ["blanc", "bleu clair"]
-      },
-      UA: {
-        category: "Сорочки",
-        name: "Батистова сорочка",
-        description: "Сорочка із натуральної тканини, яка оздоблена мереживом. Має рукава ліхтарики.\nТканина: натуральна тканина батист.",
-        colors: ["білий", "блакитний"]
-      },
-      RU: {
-        category: "Рубашки",
-        name: "Батистовая рубашка",
-        description: "Рубашка из натуральной ткани, украшенная кружевом. Имеет рукава-фонарики.\nТкань: натуральная ткань батист.",
-        colors: ["белый", "голубой"]
-      }
-    }
-  },  
+ 
+
   {
     id: 98,
     price: 2280,
@@ -6932,13 +6940,13 @@ description: [
         category: "Shirts",
         name: "Freedom Shirt",
         description: "Long-staple 100% cotton muslin. A lightweight and soft-touch fabric.",
-        colors: ["milk"]
+        colors: ["ment","milk"]
       },
       FR: {
         category: "Chemises",
         name: "Chemise «Freedom»",
         description: "Mousseline de coton 100% à longues fibres. Un tissu léger et doux au toucher.",
-        colors: ["lait"]
+        colors: ["ment","lait"]
       },
       UA: {
         category: "Сорочки",
