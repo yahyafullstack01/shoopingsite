@@ -42,11 +42,11 @@ const products = [
     category: "Costumes",
     image:"/Costumes/Woolen suit with skirt/0.avif",
     images: ["/Costumes/Woolen suit with skirt/0.avif", 
-      // {
-      //   type: "video",
-      //   src: "/Costumes/Woolen suit with skirt/IMG_4440.mp4",
-      //   poster: "/Costumes/Woolen suit with skirt/1.avif"
-      // },
+       {
+         type: "video",
+         src: "/Costumes/Woolen suit with skirt/IMG_4440.mp4",
+         poster: "/Costumes/Woolen suit with skirt/1.avif"
+       },
       "/Costumes/Woolen suit with skirt/10.avif",
       "/Costumes/Woolen suit with skirt/11.avif",
       "/Costumes/Woolen suit with skirt/12.avif",
@@ -95,7 +95,12 @@ const products = [
     size: "XS S M L XL",
     category: "Costumes",
     image: "/Costumes/Wool suit with trousers/1.avif",
-    images: ["/Costumes/Wool suit with trousers/2.avif","/Costumes/Wool suit with trousers/3.avif",
+    images: ["/Costumes/Wool suit with trousers/2.avif",
+        {
+      type: "video",
+      src: "/Costumes/Wool suit with trousers/IMG_4442.mp4",
+      poster: "/Costumes/Wool suit with trousers/1.avif",
+    },"/Costumes/Wool suit with trousers/3.avif",
       "/Costumes/Wool suit with trousers/4.avif","/Costumes/Wool suit with trousers/5.avif",
       "/Costumes/Wool suit with trousers/7.avif", "/Costumes/Wool suit with trousers/8.avif", "/Costumes/Wool suit with trousers/9.avif",
       "/Costumes/Wool suit with trousers/10.avif",
@@ -139,6 +144,11 @@ const products = [
   image: "/Dress/Satin Slip Dress/1.avif",
   images: [
     "/Dress/Satin Slip Dress/2.avif",
+      {
+      type: "video",
+      src: "/Dress/Satin Slip Dress/IMG_8623.mp4",
+      poster: "/Dress/Satin Slip Dress/1.avif",
+    },
     "/Dress/Satin Slip Dress/3.avif",
     "/Dress/Satin Slip Dress/4.avif",
     "/Dress/Satin Slip Dress/5.avif",
@@ -3583,6 +3593,11 @@ const products = [
   image: "/Dress/Loden Grace Dress/1.avif",
   images: [
     "/Dress/Loden Grace Dress/2.avif",
+     {
+      type: "video",
+      src: "/Dress/Loden Grace Dress/IMG_5263.mp4",
+      poster: "/Dress/Loden Grace Dress/2.avif",
+    },
     "/Dress/Loden Grace Dress/3.avif",
     "/Dress/Loden Grace Dress/4.avif",
     "/Dress/Loden Grace Dress/5.avif",
@@ -3669,6 +3684,11 @@ const products = [
   image: "/Costumes/Poudre Suit/1.avif",
   images: [
     "/Costumes/Poudre Suit/2.avif",
+     {
+      type: "video",
+      src: "/Costumes/Poudre Suit/IMG_8882.mp4",
+      poster: "/Costumes/Poudre Suit/1.avif",
+    },
     "/Costumes/Poudre Suit/3.avif",
     "/Costumes/Poudre Suit/4.avif",
     "/Costumes/Poudre Suit/5.avif"
