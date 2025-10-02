@@ -45,7 +45,7 @@ const products = [
        {
          type: "video",
          src: "/Costumes/Woolen suit with skirt/IMG_4440.mp4",
-         poster: "/Costumes/Woolen suit with skirt/1.avif"
+         poster: "/Costumes/Woolen suit with skirt/11.avif"
        },
       "/Costumes/Woolen suit with skirt/10.avif",
       "/Costumes/Woolen suit with skirt/11.avif",
