@@ -1,13 +1,18 @@
 'use client';
-
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { getSessionId } from '../../utils/session';
 import { useRouter } from 'next/navigation';
 import { FiEdit3 } from 'react-icons/fi';
 
+const toNumber = (v) =>
+  Number(String(v).replace(/[^\d.,-]/g, '').replace(',', '.')) || 0;
+
+const fmtUAH = (n) => new Intl.NumberFormat('uk-UA', { maximumFractionDigits: 2 }).format(Number(n));
+
 export default function OrderSummary() {
   const [cartItems, setCartItems] = useState([]);
-  const [total, setTotal] = useState(0);
+  const [total, setTotal] = useState(0); 
   const router = useRouter();
 
   useEffect(() => {
@@ -20,12 +25,21 @@ export default function OrderSummary() {
         const data = await res.json();
 
         if (res.ok && Array.isArray(data.cart)) {
-          setCartItems(data.cart);
-          const totalSum = data.cart.reduce(
-  (sum, item) => sum + (item.discountPrice ?? item.price) * item.quantity,
-  0
-);
-        setTotal(totalSum);
+          
+          const normalized = data.cart.map((item) => ({
+            ...item,
+            price: toNumber(item.price),
+            discountPrice: item.discountPrice != null ? toNumber(item.discountPrice) : null,
+            quantity: toNumber(item.quantity),
+          }));
+
+          setCartItems(normalized);
+
+          const totalSum = normalized.reduce(
+            (sum, item) => sum + (item.discountPrice ?? item.price) * item.quantity,
+            0
+          );
+          setTotal(totalSum); 
         } else {
           console.error('❌ Помилка у відповіді API корзини:', data);
         }
@@ -50,7 +64,7 @@ export default function OrderSummary() {
               key={index}
               className="flex flex-col sm:flex-row items-center sm:items-start gap-4 border-b pb-4 last:border-none"
             >
-              <img
+              <Image
                 src={item.image || '/Darklogo.avif'}
                 alt={item.name}
                 className="w-28 h-28 object-cover rounded-lg shadow border dark:border-zinc-600"
@@ -58,18 +72,25 @@ export default function OrderSummary() {
 
               <div className="text-sm flex-1 text-center sm:text-left">
                 <p className="font-normal text-base break-words">{item.name}</p>
+
                 <p className="text-gray-600 dark:text-gray-300">
-  Ціна:{' '}
-  {item.discountPrice ? (
-    <>
-      <span className="text-red-600 font-semibold">{item.discountPrice} грн</span>{' '}
-      <span className="line-through text-gray-400">{item.price} грн</span>
-    </>
-  ) : (
-    <>{item.price} грн</>
-  )}
-</p>
-  {item.size && <p className="text-gray-600 dark:text-gray-300">Розмір: {item.size}</p>}
+                  Ціна:{' '}
+                  {item.discountPrice != null ? (
+                    <>
+                      <span className="text-red-600 font-semibold">{fmtUAH(item.discountPrice)}</span>{' '}
+                      <span className="text-gray-600">грн</span>{' '}
+                      <span className="line-through text-gray-400">
+                        {fmtUAH(item.price)} <span className="text-gray-400">грн</span>
+                      </span>
+                    </>
+                  ) : (
+                    <>
+                      <span className="font-semibold">{fmtUAH(item.price)}</span> <span>грн</span>
+                    </>
+                  )}
+                </p>
+
+                {item.size && <p className="text-gray-600 dark:text-gray-300">Розмір: {item.size}</p>}
                 {item.color && <p className="text-gray-600 dark:text-gray-300">Колір: {item.color}</p>}
                 <p className="text-gray-600 dark:text-gray-300">Кількість: {item.quantity}</p>
 
@@ -89,7 +110,10 @@ export default function OrderSummary() {
       {cartItems.length > 0 && (
         <div className="mt-6 pt-4 border-t text-center">
           <p className="text-xl font-bold text-gray-900 dark:text-white">
-            Всього: <span className="text-blue-600 dark:text-blue-400">{total} грн</span>
+            Всього:{' '}
+            <span className="text-blue-600 dark:text-blue-400">
+              {fmtUAH(total)} <span>грн</span>
+            </span>
           </p>
         </div>
       )}
