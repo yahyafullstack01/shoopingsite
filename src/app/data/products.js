@@ -747,7 +747,7 @@ const products = [
   {
     id: 116,
     price: 2000,
-    isTop: true,
+    isTop: false,
     sku: "33450",
     size: "XS S M L XL",
     category: "Shirts",
@@ -5060,7 +5060,7 @@ description: [
 {
     id: 139,
     price: 2950,
-    isTop: true,
+    isTop: false,
     sku: "67238",
     size: "XS S M L XL",
     category: "Dresses",
@@ -6223,7 +6223,7 @@ description: [
   {
     id: 117,
     price: 3100,
-    isTop: true,
+    isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 2630,
     sku: "67216",
@@ -6346,7 +6346,7 @@ description: [
   {
     id: 114,
     price: 3500,
-    isTop: true,
+    isTop: false,
     isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 2800,
@@ -6513,7 +6513,7 @@ description: [
   {
     id: 111,
     price: 3650,
-    isTop: true,
+    isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 3100,
     sku: "67212",
@@ -6572,7 +6572,7 @@ description: [
   {
     id: 110,
     price: 1650,
-    isTop: true,
+    isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 1480,
     sku: "78843",
@@ -6660,7 +6660,7 @@ description: [
   {
     id: 108,
     price: 1800,
-    isTop: true,
+    isTop: false,
     sku: "78841",
     size: "XS S M L XL",
     category: "Shorts",
@@ -6703,7 +6703,7 @@ description: [
   {
     id: 105,
     price: 2280,
-    isTop: true,
+    isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 1930,
     sku: "45531",
@@ -6749,7 +6749,7 @@ description: [
   {
     id: 104,
     price: 2850,
-    isTop: true,
+    isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 2420,
     sku: "67211",
@@ -6811,7 +6811,7 @@ description: [
   {
     id: 103,
     price: 2850,
-    isTop: true,
+    isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 2420,
     sku: "67210",
@@ -6965,7 +6965,7 @@ description: [
   {
     id: 97,
     price: 2550,
-    isTop: true,
+    isTop: false,
     sku: "98817",
     size: "XS S M L XL",
     category: "Skirts",
@@ -9348,7 +9348,7 @@ description: [
   {
     id: 49,
     price: 3170,
-    isTop: true,
+    isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 2690,
     sku: "98770",
