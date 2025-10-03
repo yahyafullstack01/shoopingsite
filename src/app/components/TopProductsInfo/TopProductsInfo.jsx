@@ -191,12 +191,16 @@ export default function TopProductsInfo() {
             className="w-full max-w-xs md:max-w-md object-cover rounded-lg shadow-lg aspect-[3/4]"
             priority
           />
-          <div className="flex mt-4 sm:mt-8 gap-2 overflow-x-auto scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-200">
+          <div className="w-full mt-4 sm:mt-8 overflow-hidden">              
+  <div className="flex gap-2 overflow-x-auto overflow-y-hidden
+                  scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-200">
+   
             <ThumbnailCarousel
               images={selectedProduct.images}
               onImageSelect={(image) => setSelectedProduct({ ...selectedProduct, image })}
               visibleThumbnails={5}
             />
+             </div>
           </div>
         </div>
 
