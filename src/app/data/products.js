@@ -1142,7 +1142,7 @@ const products = [
 
 
 
-    {
+{
   id: 192,
   price: 1900,
   isTop: false,
