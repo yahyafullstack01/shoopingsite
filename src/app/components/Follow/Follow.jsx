@@ -23,7 +23,7 @@ export default function FollowUs() {
     { src: "/22.avif", link: Insta },
     // { src: "/23.avif", link: Insta },
     // { src: "/24.avif", link: Insta },
-     { src: "/25.avif", link: Insta },
+    // { src: "/25.avif", link: Insta },
     // { src: "/26.avif", link: Insta },
     // { src: "/27.avif", link: Insta },
     { src: "/28.avif", link: Insta },
@@ -38,7 +38,7 @@ export default function FollowUs() {
   ];
 
   // Контролюємо кількість відображуваних зображень
-  const [visibleImagesCount, setVisibleImagesCount] = useState(7);
+  const [visibleImagesCount, setVisibleImagesCount] = useState(6);
 
   useEffect(() => {
     const updateVisibleImages = () => {
