@@ -346,7 +346,7 @@ const products = [
   images: [
     "/Top/BeigeJumper/2.avif",
     "/Top/BeigeJumper/3.avif",
-    "/Top/BeigeJumper/4.avif",
+    "/Top/BeigeJumper/5.avif",
   ],
   sizes: ["XS", "S", "M", "L", "XL"],
   translations: {
