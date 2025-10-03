@@ -38,7 +38,7 @@ export default function FollowUs() {
   ];
 
   // Контролюємо кількість відображуваних зображень
-  const [visibleImagesCount, setVisibleImagesCount] = useState(6);
+  const [visibleImagesCount, setVisibleImagesCount] = useState(7);
 
   useEffect(() => {
     const updateVisibleImages = () => {
