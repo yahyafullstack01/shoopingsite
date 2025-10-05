@@ -40,7 +40,7 @@ function getImageClass(s, isMobile) {
 
   return `${fitClass} ${focusClass}`;
 }
-
+const localLoader = ({ src }) => src;
 
 export default function Hero() {
   const { translateList } = useLanguage();
@@ -181,17 +181,24 @@ fitMobile: "cover",
                 }`}
                 aria-hidden={i !== index}
               >
-                {s.type === "image" ? (
-                  <Image
-                    src={src}
-                    alt={s.alt || "Banner"}
-                    fill
-                    priority={i === 0}
-                    sizes="100vw"
-                     quality={90}
-                    className={getImageClass(s, isMobile)}
-                  />
-                ) : (
+                { s.type === "image" ? (() => {
+    const raw = (isMobile && s.mobileSrc) ? s.mobileSrc : s.src;
+    const isLocal = typeof raw === "string" && raw.startsWith("/"); // з /public
+    return (
+      <Image
+        src={raw}
+        alt={s.alt || "Banner"}
+        fill
+        sizes="100vw"
+        priority={i === 0}
+        quality={90}
+        unoptimized={isLocal}                  // ← вимкнути оптимізацію для локальних
+        loader={isLocal ? localLoader : undefined} // ← віддати прямий URL
+        className={getImageClass(s, isMobile)}
+      />
+    );
+  })()
+: (
                   <video
                     ref={(el) => (videoRefs.current[i] = el)}
                     src={s.src}
