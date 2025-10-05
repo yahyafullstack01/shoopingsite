@@ -52,8 +52,8 @@ export default function Hero() {
     () => [
     {
   type: "image",
-  src: "/HomeCatalog/baner2desk.avif",
-  mobileSrc: "/HomeCatalog/baner2mob.avif",
+  src: "/hoom/baner2desk.avif",
+  mobileSrc: "/hoom/baner2mob.avif",
  
   alt: "Latore banner 1",
   title: t[0],
@@ -81,8 +81,8 @@ fitMobile: "cover",
       // 3) Фото-слайд
       {
         type: "image",
-       src: "/HomeCatalog/baner1desk.avif",
-  mobileSrc: "/HomeCatalog/baner1mob.avif",
+       src: "/hoom/baner1desk.avif",
+  mobileSrc: "/hoom/baner1mob.avif",
         alt: "Latore banner 2",
         title: t[0],
         subtitle: t[3],
