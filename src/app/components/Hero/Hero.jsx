@@ -52,8 +52,9 @@ export default function Hero() {
     () => [
     {
   type: "image",
-  src: "/HomeCatalog/latore_hero_preserve-height_nogap.webp",
-  mobileSrc: "/hoom/banerosen.avif",
+  src: "/HomeCatalog/baner2desk.avif",
+  mobileSrc: "/HomeCatalog/baner2mob.avif",
+ 
   alt: "Latore banner 1",
   title: t[0],
   subtitle: t[3],
@@ -80,7 +81,8 @@ fitMobile: "cover",
       // 3) Фото-слайд
       {
         type: "image",
-        src: "/HomeCatalog/1.avif",
+       src: "/HomeCatalog/baner1desk.avif",
+  mobileSrc: "/HomeCatalog/baner1mob.avif",
         alt: "Latore banner 2",
         title: t[0],
         subtitle: t[3],
@@ -193,7 +195,7 @@ fitMobile: "cover",
                     ref={(el) => (videoRefs.current[i] = el)}
                     src={s.src}
                     poster={s.poster || undefined}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full  object-cover"
                     muted
                     playsInline
                     preload="metadata"
