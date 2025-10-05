@@ -160,7 +160,7 @@ fitMobile: "cover",
       {/* FULL-BLEED секція: edge-to-edge на всю ширину */}
       <section
   className="relative overflow-hidden 
-             h-[60vh] min-h-[420px] max-h-[850px]
+             h-[80vh] min-h-[460px] max-h-[1050px]
              w-[100vw] -mx-[calc(50%-50vw)]"
   aria-label="Hero slider"
   //onMouseEnter={() => setPaused(true)}
@@ -188,6 +188,7 @@ fitMobile: "cover",
                     fill
                     priority={i === 0}
                     sizes="100vw"
+                     quality={90}
                     className={getImageClass(s, isMobile)}
                   />
                 ) : (
