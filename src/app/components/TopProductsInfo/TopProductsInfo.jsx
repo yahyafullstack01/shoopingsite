@@ -1,7 +1,7 @@
 'use client';
 
 import products from "../../data/products";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useMemo } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import InfoForm from "../../Functions/InfoForm";
 import { useLanguage } from "../../Functions/useLanguage";
@@ -11,6 +11,17 @@ import Image from "next/image";
 import { getSessionId } from "../../utils/session";
 import Toast from "../ToastCart/Toast";
 import QuickAddModal from "../QuickAddModal/QuickAddModal";
+
+// ---- helpers ---------------------------------------------------------------
+const normalizeMedia = (m) =>
+  typeof m === "string" ? { type: "image", src: m } : m;
+
+const getDefaultMedia = (product) => {
+  // пріоритет: перший елемент у images -> fallback на product.image
+  const first = product?.images?.[0] ?? product?.image ?? null;
+  return first ? normalizeMedia(first) : null;
+};
+// ---------------------------------------------------------------------------
 
 export default function TopProductsInfo() {
   const { translateList, language } = useLanguage();
@@ -26,30 +37,43 @@ export default function TopProductsInfo() {
   const handleOpenQuickAdd = (product) => setQuickAddProduct(product);
   const handleCloseQuickAdd = () => setQuickAddProduct(null);
 
-  const topProducts = products.filter((product) => product.isTop === true);
+  // тільки Top-продукти
+  const topProducts = useMemo(
+    () => products.filter((p) => p.isTop === true),
+    []
+  );
+
   const selectedProductId = searchParams.get("product");
   const initialProduct = selectedProductId
     ? topProducts.find((p) => p.id === Number(selectedProductId))
     : topProducts[0];
 
   const [selectedProduct, setSelectedProduct] = useState(initialProduct);
+  const [selectedMedia, setSelectedMedia] = useState(
+    initialProduct ? getDefaultMedia(initialProduct) : null
+  );
 
+  // якщо змінився ?product у URL — підміняємо й дефолтне медіа
   useEffect(() => {
-    if (selectedProductId) {
-      const foundProduct = topProducts.find((p) => p.id === Number(selectedProductId));
-      if (foundProduct) {
-        setSelectedProduct(foundProduct);
-        setTimeout(() => {
-          descriptionRef.current?.scrollIntoView({ behavior: "smooth" });
-        }, 300);
-      }
+    if (!selectedProductId) return;
+    const found = topProducts.find((p) => p.id === Number(selectedProductId));
+    if (found) {
+      setSelectedProduct(found);
+      setSelectedMedia(getDefaultMedia(found));
+      setTimeout(() => {
+        descriptionRef.current?.scrollIntoView({ behavior: "smooth" });
+      }, 300);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedProductId]);
 
   const handleProductClick = (product) => {
     setSelectedProduct(product);
-    router.push(`?product=${product.id}`, undefined, { shallow: true });
-    scrollToDescription();
+    setSelectedMedia(getDefaultMedia(product));
+    router.push(`?product=${product.id}`, { scroll: false });
+    if (descriptionRef.current) {
+      descriptionRef.current.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   const handleAddToCart = async ({ product, selectedColor, selectedSize, quantity }) => {
@@ -58,7 +82,6 @@ export default function TopProductsInfo() {
       alert("Не вдалося створити сесію. Спробуйте оновити сторінку.");
       return;
     }
-
     if (!selectedColor || !selectedSize) {
       alert("Вкажіть всі поля");
       return;
@@ -80,16 +103,21 @@ export default function TopProductsInfo() {
       });
 
       const data = await res.json();
-
       if (!res.ok) {
         alert(data.message || "Помилка при додаванні в корзину");
         return;
       }
 
+      // для тосту використовуємо постер, якщо зараз вибране медіа — відео
+      const toastImage =
+        selectedMedia?.type === "video"
+          ? selectedMedia?.poster
+          : selectedMedia?.src || product.image;
+
       setLastProduct({
         name: product.translations?.[language]?.name || product.title,
         price: product.price,
-        image: product.image,
+        image: toastImage,
         quantity,
       });
       setShowToast(true);
@@ -100,13 +128,14 @@ export default function TopProductsInfo() {
   };
 
   const onContactClick = (selectedColor, selectedSize, quantity, currentLanguage) => {
-    handleContactButtonClick(router, selectedProduct, selectedColor, selectedSize, quantity, currentLanguage);
-  };
-
-  const scrollToDescription = () => {
-    if (descriptionRef.current) {
-      descriptionRef.current.scrollIntoView({ behavior: "smooth" });
-    }
+    handleContactButtonClick(
+      router,
+      selectedProduct,
+      selectedColor,
+      selectedSize,
+      quantity,
+      currentLanguage
+    );
   };
 
   return (
@@ -120,57 +149,57 @@ export default function TopProductsInfo() {
         <div className="bg-gray-100 dark:bg-black max-h-[450px] md:max-h-[600px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 mb-8">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 md:gap-6 p-4">
             {topProducts.map((product) => {
-              const translatedName = product.translations?.[language]?.name || product.title;
-              const hasMultipleOptions = (product.colors?.length || 0) > 1 || (product.sizes?.length || 0) > 1;
+              const translatedName =
+                product.translations?.[language]?.name || product.title;
+              const hasMultipleOptions =
+                (product.colors?.length || 0) > 1 ||
+                (product.sizes?.length || 0) > 1;
 
               return (
                 <article
-  key={product.id}
-  className="bg-white dark:bg-neutral-900 text-black dark:text-white rounded-xl shadow-md hover:shadow-lg p-4 flex flex-col justify-between hover:scale-[1.02] transition duration-300"
->
-  <div
-    onClick={() => handleProductClick(product)}
-    className="cursor-pointer"
-  >
-    <div className="w-full h-[200px] sm:h-[350px] overflow-hidden rounded-lg">
-      <Image
-        src={product.image}
-        alt={`Preview of ${translatedName}`}
-        width={300}
-        height={350}
-        className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-        priority
-      />
-    </div>
-    <h3 className="font-light text-base sm:text-lg mt-3">{translatedName}</h3>
-    <p className="text-sm text-black/70 dark:text-white/70">
-      {product.price} UAH
-    </p>
-  </div>
+                  key={product.id}
+                  className="bg-white dark:bg-neutral-900 text-black dark:text-white rounded-xl shadow-md hover:shadow-lg p-4 flex flex-col justify-between hover:scale-[1.02] transition duration-300"
+                >
+                  <div onClick={() => handleProductClick(product)} className="cursor-pointer">
+                    <div className="w-full h-[200px] sm:h-[350px] overflow-hidden rounded-lg">
+                      {/* прев’ю у списку — ТІЛЬКИ зображення (перше), щоб не автозапускати відео в гріді */}
+                      <Image
+                        src={normalizeMedia(product.image).src}
+                        alt={`Preview of ${translatedName}`}
+                        width={300}
+                        height={350}
+                        className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                        priority
+                      />
+                    </div>
+                    <h3 className="font-light text-base sm:text-lg mt-3">{translatedName}</h3>
+                    <p className="text-sm text-black/70 dark:text-white/70">
+                      {product.price} UAH
+                    </p>
+                  </div>
 
-  <button
-    onClick={() => {
-      if (hasMultipleOptions) {
-        handleOpenQuickAdd(product);
-      } else {
-        handleAddToCart({
-          product,
-          selectedColor: product.color?.[0] || "",
-          selectedSize: product.sizes?.[0] || "",
-          quantity: 1,
-        });
-      }
-    }}
-    className="mt-4 w-full bg-black hover:bg-neutral-800 text-white text-sm py-2 rounded-md tracking-wide uppercase transition"
-  >
-    Додати в кошик
-  </button>
+                  <button
+                    onClick={() => {
+                      if (hasMultipleOptions) {
+                        handleOpenQuickAdd(product);
+                      } else {
+                        handleAddToCart({
+                          product,
+                          selectedColor: product.color?.[0] || "",
+                          selectedSize: product.sizes?.[0] || "",
+                          quantity: 1,
+                        });
+                      }
+                    }}
+                    className="mt-4 w-full bg-black hover:bg-neutral-800 text-white text-sm py-2 rounded-md tracking-wide uppercase transition"
+                  >
+                    Додати в кошик
+                  </button>
 
-  <p className="text-xs text-neutral-500 dark:text-neutral-400 mt-2">
-    Натисніть на фото, щоб переглянути деталі
-  </p>
-</article>
-
+                  <p className="text-xs text-neutral-500 dark:text-neutral-400 mt-2">
+                    Натисніть на фото, щоб переглянути деталі
+                  </p>
+                </article>
               );
             })}
           </div>
@@ -183,34 +212,53 @@ export default function TopProductsInfo() {
         ref={descriptionRef}
       >
         <div className="flex flex-col items-center">
-          <Image
-            src={selectedProduct.image}
-            alt={`Full image of ${selectedProduct.title}`}
-            width={400}
-            height={400}
-            className="w-full max-w-xs md:max-w-md object-cover rounded-lg shadow-lg aspect-[3/4]"
-            priority
-          />
-          <div className="w-full mt-4 sm:mt-8 overflow-hidden">              
-  <div className="flex gap-2 overflow-x-auto overflow-y-hidden
-                  scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-200">
-   
-            <ThumbnailCarousel
-              images={selectedProduct.images}
-              onImageSelect={(image) => setSelectedProduct({ ...selectedProduct, image })}
-              visibleThumbnails={5}
-            />
-             </div>
+          {/* === ГОЛОВНЕ МІСЦЕ: умовний рендер відео/зображення === */}
+          <div className="w-full max-w-xs md:max-w-md rounded-lg shadow-lg aspect-[3/4] overflow-hidden">
+            {selectedMedia?.type === "video" ? (
+              <video
+                className="w-full h-full object-cover"
+                controls
+                playsInline
+                muted
+                loop
+                poster={selectedMedia?.poster}
+              >
+                <source src={selectedMedia?.src} type="video/mp4" />
+              </video>
+            ) : (
+              <Image
+                src={selectedMedia?.src || selectedProduct?.image}
+                alt={`Full image of ${selectedProduct?.title}`}
+                width={400}
+                height={400}
+                className="w-full h-full object-cover"
+                priority
+              />
+            )}
+          </div>
+
+          <div className="w-full mt-4 sm:mt-8 overflow-hidden">
+            <div className="flex gap-2 overflow-x-auto overflow-y-hidden scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-200">
+              <ThumbnailCarousel
+                images={selectedProduct?.images}
+                onImageSelect={(media) => setSelectedMedia(normalizeMedia(media))}
+                visibleThumbnails={5}
+              />
+            </div>
           </div>
         </div>
 
         <InfoForm
           product={selectedProduct}
-          colors={selectedProduct.colors}
-          sizes={selectedProduct.sizes}
+          colors={selectedProduct?.colors}
+          sizes={selectedProduct?.sizes}
           descriptionRef={descriptionRef}
-          onContactClick={onContactClick}
-          onAddToCartClick={handleAddToCart}
+          onContactClick={(color, size, qty) =>
+            onContactClick(color, size, qty, language)
+          }
+          onAddToCartClick={(args) =>
+            handleAddToCart({ ...args, product: selectedProduct })
+          }
         />
       </article>
 
