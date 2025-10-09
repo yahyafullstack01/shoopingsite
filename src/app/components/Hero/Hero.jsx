@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -8,7 +9,6 @@ import Link from "next/link";
 
 const AUTOPLAY_IMAGE_MS = 5000;
 
-/** Хук: true, якщо ширина < 1024px (lg) */
 function useIsMobile(breakpoint = 1024) {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
@@ -25,7 +25,6 @@ function useIsMobile(breakpoint = 1024) {
   return isMobile;
 }
 
-/** Підібрати класи для <Image> за fit/focus + mobile */
 function getImageClass(s, isMobile) {
   const fit   = isMobile && s.fitMobile   ? s.fitMobile   : s.fit   || "cover";
   const focus = isMobile && s.focusMobile ? s.focusMobile : s.focus || "center";
@@ -52,8 +51,8 @@ export default function Hero() {
     () => [
     {
   type: "image",
-  src: "/hoom/baner2desk.avif",
-  mobileSrc: "/hoom/baner2mob.avif",
+  src: "/hoom/2-min.jpg",
+  mobileSrc: "/Pants/Jersey Pants/1.avif",
  
   alt: "Latore banner 1",
   title: t[0],
@@ -70,7 +69,7 @@ fitMobile: "cover",
       // 2) Відео-слайд
       {
         type: "video",
-        src: "/hoom/bannervidosen.mp4",
+        src: "/hoom/IMG_3190.mp4",
         poster: "/hoom/banerosen.avif", 
         title: "LATORE ATELIER",
         subtitle: "2025",
@@ -81,8 +80,8 @@ fitMobile: "cover",
       // 3) Фото-слайд
       {
         type: "image",
-       src: "/hoom/baner1desk.avif",
-  mobileSrc: "/hoom/baner1mob.avif",
+       src: "/hoom/1-min.jpg",
+  mobileSrc: "/Skirts/Leather Midi Skirt/1.avif",
         alt: "Latore banner 2",
         title: t[0],
         subtitle: t[3],
@@ -157,10 +156,9 @@ fitMobile: "cover",
         <meta property="og:image" content="/HomeCatalog/4.avif" />
       </Head>
 
-      {/* FULL-BLEED секція: edge-to-edge на всю ширину */}
       <section
   className="relative overflow-hidden 
-             h-[80vh] min-h-[460px] max-h-[1050px]
+             h-[80vh] min-h-[420px] max-h-[1050px]
              w-[100vw] -mx-[calc(50%-50vw)]"
   aria-label="Hero slider"
   //onMouseEnter={() => setPaused(true)}
@@ -169,7 +167,6 @@ fitMobile: "cover",
   onTouchEnd={onTouchEnd}
 >
 
-        {/* Слайди (fade) */}
         <div className="absolute inset-0">
           {slides.map((s, i) => {
             const src = s.type === "image" && isMobile && s.mobileSrc ? s.mobileSrc : s.src;
@@ -215,10 +212,8 @@ fitMobile: "cover",
           })}
         </div>
 
-        {/* мʼяке затемнення для контрасту тексту */}
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-black/10 to-transparent" />
 
-        {/* Текст + CTA (підставляється з активного слайду) */}
         {(() => {
           const s = slides[index];
           return (
@@ -249,7 +244,7 @@ fitMobile: "cover",
           );
         })()}
 
-        {/* Стрілки */}
+      
         <button
           aria-label="Попередній слайд"
           onClick={prev}
@@ -265,7 +260,7 @@ fitMobile: "cover",
           ›
         </button>
 
-        {/* Крапки */}
+      
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex gap-2">
           {slides.map((_, i) => (
             <button
@@ -282,3 +277,4 @@ fitMobile: "cover",
     </>
   );
 }
+ 
