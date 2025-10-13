@@ -36,7 +36,7 @@ const products = [
 
         {
       id: 36,
-      price: 1375,
+      price: 1500,
       isTop: false,
       sku: "12350",
       color: "beige",
