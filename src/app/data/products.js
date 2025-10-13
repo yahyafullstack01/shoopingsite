@@ -9,6 +9,8 @@ const products = [
       category: "Outerwear",
       image: "/Outerwear/Твідовий бомбер/1.avif",
       images: ["/Outerwear/Твідовий бомбер/2.avif", "/Outerwear/Твідовий бомбер/3.avif", "/Outerwear/Твідовий бомбер/4.avif",
+              "/Outerwear/Твідовий бомбер/5.avif", "/Outerwear/Твідовий бомбер/6.avif",
+              "/Outerwear/Твідовий бомбер/7.avif", "/Outerwear/Твідовий бомбер/8.avif",
               ],
       
       sizes: ["XS", "S", "M", "L", "XL"],
@@ -17,19 +19,19 @@ const products = [
           category: "Outerwear",
           name: "Tweed bomber jacket",
           description: "Quilted bomber jacket with high-quality lining and two pockets",
-          colors: ["graphite"], 
+          colors: ["graphite", "gray"], 
         },
         FR: {
           category: "Vêtements d'extérieur",
           name: "Blouson aviateur en tweed",
           description: "Bomber matelassé avec doublure de qualité et deux poches",
-          colors: ["graphite"],
+          colors: ["graphite", "gris"],
         },
         UA: {
           category: "Верхній одяг",
           name: "Твідовий бомбер",
           description: "Стьоганий бомбер із якісною підкладкою та двома кишенями",
-          colors: ["графіт"],
+          colors: ["графіт", "сірий"],
         }
       }
     },
