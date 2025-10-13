@@ -34,6 +34,56 @@ const products = [
       }
     },
 
+        {
+      id: 36,
+      price: 1375,
+      isTop: false,
+      sku: "12350",
+      color: "beige",
+      size: "XS S M L XL",
+      category: "Sweaters",
+      image: "/Sweaters/Flare Sweater/6.avif",
+      images: [
+        "/Sweaters/Flare Sweater/7.avif",
+        "/Sweaters/Flare Sweater/8.avif",
+        "/Sweaters/Flare Sweater/9.avif",
+        "/Sweaters/Flare Sweater/10.avif",
+        "/Sweaters/Flare Sweater/11.avif",
+        "/Sweaters/Flare Sweater/12.avif",
+        "/Sweaters/Flare Sweater/13.avif",
+        "/Sweaters/Flare Sweater/14.avif",
+        "/Sweaters/Flare Sweater/15.avif",
+      ],
+      
+      sizes: ["XS", "S", "M", "L", "XL"],
+      translations: {
+        EN: {
+          category: "Sweaters",
+          name: "Flare Sweater",
+          description: "Cropped sweater with a turtleneck and flared sleeves. Fabric: Knit (60% wool, 20% acrylic, 10% viscose, 10% elastane).",
+          colors: ["black", "white"],
+        },
+        FR: {
+          category: "Pulls",
+          name: "Pull évasé",
+          description: "Pull court avec col roulé et manches évasées. Tissu : maille (60% laine, 20% acrylique, 10% viscose, 10% élasthanne).",
+          colors: ["noir", "blanc"],
+        },
+        UA: {
+          category: "Светри",
+          name: "Светр кльош",
+          description: "Вкорочений светр із горлом та кльош рукавами. Тканина: трикотаж (60% вовна, 20% акрил, 10% віскоза, 10% еластан).",
+          colors: ["чорний", "білий"],
+        },
+        RU: {
+          category: "Светри",
+          name: "Свитер клеш",
+          description: "Укороченный свитер с горлом и клеш рукавами. Ткань: трикотаж (60% шерсть, 20% акрил, 10% вискоза, 10% эластан).",
+          colors: ["черный", "белый"],
+        }
+      }
+    },
+
   { id: 1,
     price: 3170,
     isTop: true,
@@ -10643,55 +10693,7 @@ description: [
       }
     },
 
-    {
-      id: 36,
-      price: 1375,
-      isTop: false,
-      sku: "12350",
-      color: "beige",
-      size: "XS S M L XL",
-      category: "Sweaters",
-      image: "/Sweaters/Flare Sweater/6.avif",
-      images: [
-        "/Sweaters/Flare Sweater/7.avif",
-        "/Sweaters/Flare Sweater/8.avif",
-        "/Sweaters/Flare Sweater/9.avif",
-        "/Sweaters/Flare Sweater/10.avif",
-        "/Sweaters/Flare Sweater/11.avif",
-        "/Sweaters/Flare Sweater/12.avif",
-        "/Sweaters/Flare Sweater/13.avif",
-        "/Sweaters/Flare Sweater/14.avif",
-        "/Sweaters/Flare Sweater/15.avif",
-      ],
-      
-      sizes: ["XS", "S", "M", "L", "XL"],
-      translations: {
-        EN: {
-          category: "Sweaters",
-          name: "Flare Sweater",
-          description: "Cropped sweater with a turtleneck and flared sleeves. Fabric: Knit (60% wool, 20% acrylic, 10% viscose, 10% elastane).",
-          colors: ["black", "white"],
-        },
-        FR: {
-          category: "Pulls",
-          name: "Pull évasé",
-          description: "Pull court avec col roulé et manches évasées. Tissu : maille (60% laine, 20% acrylique, 10% viscose, 10% élasthanne).",
-          colors: ["noir", "blanc"],
-        },
-        UA: {
-          category: "Светри",
-          name: "Светр кльош",
-          description: "Вкорочений светр із горлом та кльош рукавами. Тканина: трикотаж (60% вовна, 20% акрил, 10% віскоза, 10% еластан).",
-          colors: ["чорний", "білий"],
-        },
-        RU: {
-          category: "Светри",
-          name: "Свитер клеш",
-          description: "Укороченный свитер с горлом и клеш рукавами. Ткань: трикотаж (60% шерсть, 20% акрил, 10% вискоза, 10% эластан).",
-          colors: ["черный", "белый"],
-        }
-      }
-    },
+
     
     {
       id: 37,
