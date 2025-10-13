@@ -51,7 +51,7 @@ export default function Hero() {
     () => [
     {
   type: "image",
-  src: "/hoom/2-min.jpg",
+  src: "/hoom/2.avif",
   mobileSrc: "/Pants/Jersey Pants/1.avif",
  
   alt: "Latore banner 1",
@@ -80,7 +80,7 @@ fitMobile: "cover",
       // 3) Фото-слайд
       {
         type: "image",
-       src: "/hoom/1-min.jpg",
+       src: "/hoom/1.avif",
   mobileSrc: "/Skirts/Leather Midi Skirt/1.avif",
         alt: "Latore banner 2",
         title: t[0],

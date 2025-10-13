@@ -213,7 +213,83 @@ const products = [
     }
   }
 },
-
+{
+  id: 198,
+  price: 2000,
+  isTop: false,
+  isNew: true,
+  sku: "LS-OVR-21057",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Leather Oversize Pinafore/1.avif",
+  images: [
+    "/Dress/Leather Oversize Pinafore/2.avif",
+  //  {
+   //   type: "video",
+   //   src: "/Dress/Leather Oversize Pinafore/preview.mp4",
+    //  poster: "/Dress/Leather Oversize Pinafore/1.avif",
+   // },
+    "/Dress/Leather Oversize Pinafore/3.avif",
+    "/Dress/Leather Oversize Pinafore/4.avif",
+    "/Dress/Leather Oversize Pinafore/5.avif",
+    "/Dress/Leather Oversize Pinafore/6.avif",
+    "/Dress/Leather Oversize Pinafore/7.avif",
+    "/Dress/Leather Oversize Pinafore/8.avif",
+    "/Dress/Leather Oversize Pinafore/9.avif",
+    "/Dress/Leather Oversize Pinafore/10.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Oversize Faux Leather Pinafore",
+      description: [
+        "A faux leather pinafore that blends strength and femininity. The oversize cut and smooth texture add confidence and style. Perfect with a sweater or blazer — for office, date night, or an evening out.",
+        "Fabric: High-quality faux leather on a suede backing (stretch, won’t crack).",
+        "Details:",
+        "• Closure: back zipper",
+        "• Length: midi"
+      ],
+      colors: ["white", "mocha", "caramel"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe-chasuble oversize en similicuir",
+      description: [
+        "Chasuble en similicuir alliant force et féminité. La coupe oversize et la texture lisse apportent assurance et style. Parfaite avec un pull ou un blazer — pour le bureau, un rendez-vous ou une soirée.",
+        "Tissu : similicuir de haute qualité sur base suédée (élastique, ne se fissure pas).",
+        "Détails :",
+        "• Fermeture : zip au dos",
+        "• Longueur : midi"
+      ],
+      colors: ["blanc", "moka", "caramel"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Шкіряний сарафан oversize",
+      description: [
+        "Сарафан із екошкіри, що поєднує в собі силу й жіночність. Oversize крій та гладка фактура додає образу впевненості та стилю. Ідеальний у парі зі светром чи жакетом — для офісу, побачення або вечірнього виходу.",
+        "Тканина: якісна екошкіра на замшевій основі (стретчева, не тріскається).",
+        "Деталі:",
+        "• Застібка: блискавка ззаду",
+        "• Довжина: міді"
+      ],
+      colors: ["білий", "мокко", "карамель"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Сарафан oversize из экокожи",
+      description: [
+        "Сарафан из экокожи, сочетающий силу и женственность. Oversize-крой и гладкая фактура добавляют уверенности и стиля. Идеален с свитером или жакетом — для офиса, свидания или вечернего выхода.",
+        "Ткань: качественная экокожа на замшевой основе (эластичная, не трескается).",
+        "Детали:",
+        "• Застёжка: молния сзади",
+        "• Длина: миди"
+      ],
+      colors: ["белый", "мокко", "карамель"]
+    }
+  }
+},
 {
   id: 193,
   price: 2060,
