@@ -48,7 +48,7 @@ export default function Hero() {
     () => [
       {
         type: "image",
-        src: "/hoom/1-min.jpg",                       // 1600–1920px ширина, ~200–350KB
+        src: "/hoom/1.webp",                       
         mobileSrc: "/Pants/Jersey Pants/1.avif",
         alt: "Latore banner 1",
         title: t[0],
@@ -71,7 +71,7 @@ export default function Hero() {
       },
       {
         type: "image",
-        src: "/hoom/2-min.jpg",
+        src: "/hoom/1.webp",
         mobileSrc: "/Skirts/Leather Midi Skirt/1.avif",
         alt: "Latore banner 2",
         title: t[0],
