@@ -164,7 +164,7 @@ export default function Hero() {
       </Head>
 
       <section
-        className="relative overflow-hidden min-h-[100svh]  md:min-h-[420px] max-h-[1050px] w-[100vw] -mx-[calc(50%-50vw)]"
+        className="relative overflow-hidden min-h-[70svh]  md:min-h-[420px] max-h-[1050px] w-[100vw] -mx-[calc(50%-50vw)]"
         aria-label="Hero slider"
         onTouchStart={onTouchStart}
         onTouchEnd={onTouchEnd}
