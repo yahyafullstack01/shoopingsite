@@ -8,49 +8,6 @@
   --foreground: #171717;
 }
 
-/* ---------- Шрифти ---------- */
-@font-face {
-  font-family: "Montserrat";
-  src: url("/fonts/Montserrat-Thin.woff2") format("woff2"),
-       url("/fonts/Montserrat-Thin.woff") format("woff");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: url("/fonts/Montserrat-ThinItalic.woff2") format("woff2"),
-       url("/fonts/Montserrat-ThinItalic.woff") format("woff");
-  font-weight: 100;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: url("/fonts/Montserrat-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: url("/fonts/Montserrat-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: url("/fonts/Montserrat-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
 /* ---------- Основні стилі ---------- */
 html,
 body {
@@ -58,26 +15,17 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  /* font-family не обовʼязковий — Montserrat приїде з next/font класом */
   background: var(--background);
   color: var(--foreground);
 }
 
 /* ---------- Теми ---------- */
-.dark {
-  background-color: black;
-  color: white;
-}
-
-.light {
-  background-color: white;
-  color: black;
-}
+.dark { background-color: black; color: white; }
+.light { background-color: white; color: black; }
 
 /* ---------- Стилі форм ---------- */
-input,
-textarea {
+input, textarea {
   background: transparent;
   border: none;
   border-bottom: 1px solid var(--foreground);
@@ -87,59 +35,23 @@ textarea {
 
 /* Chrome, Safari, Edge */
 input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
+input[type="number"]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
 /* Firefox */
-input[type="number"] {
-  -moz-appearance: textfield;
-}
+input[type="number"] { -moz-appearance: textfield; }
 
 /* ---------- Tailwind кастомні стилі ---------- */
 @layer base {
-  .section-container {
-    @apply flex flex-col relative mx-0 px-0 w-full max-w-none overflow-hidden pt-8 pb-8 sm:pt-12 sm:pb-12;
-  }
-  .content-wrapper {
-    @apply max-w-7xl mx-auto;
-  }
+  .section-container { @apply flex flex-col relative mx-0 px-0 w-full max-w-none overflow-hidden pt-8 pb-8 sm:pt-12 sm:pb-12; }
+  .content-wrapper { @apply max-w-7xl mx-auto; }
 }
-
 @layer utilities {
   @media (max-width: 320px) {
-    .mobile-320 {
-      @apply text-xs leading-tight p-1;
-    }
+    .mobile-320 { @apply text-xs leading-tight p-1; }
   }
 }
 
 /* ---------- Анімації ---------- */
-@keyframes slide-up {
-  from {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.animate-slide-up {
-  animation: slide-up 0.3s ease-out;
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.animate-fade-in {
-  animation: fade-in 0.3s ease-in;
-}
+@keyframes slide-up { from { transform: translateY(100%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+.animate-slide-up { animation: slide-up .3s ease-out; }
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+.animate-fade-in { animation: fade-in .3s ease-in; }
