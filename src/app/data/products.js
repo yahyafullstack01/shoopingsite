@@ -87,7 +87,7 @@ const products = [
     },
 
   { id: 1,
-    price: 3170,
+    price: 4350,
     isTop: true,
     sku: "12345",
     size: "XS S M L XL",
@@ -141,7 +141,7 @@ const products = [
 
     {
     id: 2,
-    price: 3710,
+    price: 4160,
     isTop: true,
     sku: "12345",
     size: "XS S M L XL",
