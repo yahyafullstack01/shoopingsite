@@ -1,11 +1,9 @@
-
 "use client";
 
 import Image from "next/image";
 import Head from "next/head";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useLanguage } from "../../Functions/useLanguage";
-import Link from "next/link";
 
 const AUTOPLAY_IMAGE_MS = 5000;
 
@@ -39,54 +37,47 @@ function getImageClass(s, isMobile) {
 
   return `${fitClass} ${focusClass}`;
 }
-const localLoader = ({ src }) => src;
 
 export default function Hero() {
   const { translateList } = useLanguage();
-  const t = translateList("home", "hero"); // [заголовок, рядок2, рядок3, ...]
+  const t = translateList("home", "hero");
   const isMobile = useIsMobile();
 
-  // --- СЛАЙДИ ---
+  // ---- СЛАЙДИ ----
   const slides = useMemo(
     () => [
-    {
-  type: "image",
-  src: "/hoom/2.avif",
-  mobileSrc: "/Pants/Jersey Pants/1.avif",
- 
-  alt: "Latore banner 1",
-  title: t[0],
-  subtitle: t[3],
-  ctaText: t[4],
-  ctaHref: "/All-products", 
-  fit: "cover",
-  focus: "left",
-fitMobile: "cover",
-  focusMobile: "top",
-},
-
-      
-      // 2) Відео-слайд
+      {
+        type: "image",
+        src: "/hoom/1-min.jpg",                       // 1600–1920px ширина, ~200–350KB
+        mobileSrc: "/Pants/Jersey Pants/1.avif",
+        alt: "Latore banner 1",
+        title: t[0],
+        subtitle: t[3],
+        ctaText: t[4],
+        ctaHref: "/All-products",
+        fit: "cover",
+        focus: "left",
+        fitMobile: "cover",
+        focusMobile: "top",
+      },
       {
         type: "video",
-        src: "/hoom/IMG_3190.mp4",
-        poster: "/hoom/banerosen.avif", 
+        src: "/hoom/IMG_3190.mp4",                    // H.264 720p, 1.5–3 Mbps
+        poster: "/hoom/banerosen.jpg",                // webp/jpg ~100–200KB
         title: "LATORE ATELIER",
         subtitle: "2025",
         ctaText: t[5],
-        ctaHref: "/All-products", 
-        
+        ctaHref: "/All-products",
       },
-      // 3) Фото-слайд
       {
         type: "image",
-       src: "/hoom/1.avif",
-  mobileSrc: "/Skirts/Leather Midi Skirt/1.avif",
+        src: "/hoom/2-min.jpg",
+        mobileSrc: "/Skirts/Leather Midi Skirt/1.avif",
         alt: "Latore banner 2",
         title: t[0],
         subtitle: t[3],
         ctaText: t[4],
-        ctaHref: "/All-products", 
+        ctaHref: "/All-products",
         fit: "cover",
         focus: "center",
       },
@@ -96,6 +87,8 @@ fitMobile: "cover",
 
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
+  const [hydrated, setHydrated] = useState(false);
+
   const timerRef = useRef(null);
   const videoRefs = useRef([]);
   const touchStartX = useRef(null);
@@ -103,8 +96,12 @@ fitMobile: "cover",
   const next = () => setIndex((i) => (i + 1) % slides.length);
   const prev = () => setIndex((i) => (i - 1 + slides.length) % slides.length);
 
-  // автоплей (фото — по таймеру, відео — після завершення)
+  // Вмикаємо все "динамічне" лише після гідрації
+  useEffect(() => { setHydrated(true); }, []);
+
+  // Автоплей (фото — за таймером, відео — після завершення)
   useEffect(() => {
+    if (!hydrated) return;
     if (timerRef.current) clearTimeout(timerRef.current);
     const current = slides[index];
     if (!current) return;
@@ -112,7 +109,7 @@ fitMobile: "cover",
     // керування відтворенням відео
     videoRefs.current.forEach((v, i) => {
       if (!v) return;
-      if (i === index) {
+      if (i === index && slides[i].type === "video") {
         v.currentTime = 0;
         setTimeout(() => v.play().catch(() => {}), 0);
       } else {
@@ -125,21 +122,22 @@ fitMobile: "cover",
       timerRef.current = setTimeout(next, ms);
     }
     return () => timerRef.current && clearTimeout(timerRef.current);
-  }, [index, paused, slides]);
+  }, [index, paused, slides, hydrated]);
 
   const onVideoEnded = () => next();
 
-  // клавіатура
+  // Клавіатура
   useEffect(() => {
+    if (!hydrated) return;
     const onKey = (e) => {
       if (e.key === "ArrowRight") next();
       if (e.key === "ArrowLeft") prev();
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, []);
+  }, [hydrated]);
 
-  // свайп
+  // Свайп
   const onTouchStart = (e) => { touchStartX.current = e.touches[0].clientX; };
   const onTouchEnd = (e) => {
     const start = touchStartX.current;
@@ -151,69 +149,89 @@ fitMobile: "cover",
 
   return (
     <>
+      {/* Якщо ти на app router — краще винести це в metadata на сторінці */}
       <Head>
-        <meta name="description" content="Latore - Український бренд жіночого одягу" />
-        <meta property="og:image" content="/HomeCatalog/4.avif" />
+        <meta name="description" content="Latore — український бренд жіночого одягу. Нові колекції, базові речі, швидка доставка." />
+        <meta property="og:title" content="LATORE ATELIER" />
+        <meta property="og:description" content="Жіночий одяг Latore — перегляньте нову колекцію." />
+        <meta property="og:image" content="/HomeCatalog/4.jpg" />
+        <meta property="og:type" content="website" />
       </Head>
 
       <section
-  className="relative overflow-hidden 
-             h-[80vh] min-h-[420px] max-h-[1050px]
-             w-[100vw] -mx-[calc(50%-50vw)]"
-  aria-label="Hero slider"
-  //onMouseEnter={() => setPaused(true)}
-  //onMouseLeave={() => setPaused(false)}
-  onTouchStart={onTouchStart}
-  onTouchEnd={onTouchEnd}
->
-
+        className="relative overflow-hidden 
+                   h-[80vh] min-h-[420px] max-h-[1050px]
+                   w-[100vw] -mx-[calc(50%-50vw)]"
+        aria-label="Hero slider"
+        onTouchStart={onTouchStart}
+        onTouchEnd={onTouchEnd}
+      >
         <div className="absolute inset-0">
-          {slides.map((s, i) => {
-            const src = s.type === "image" && isMobile && s.mobileSrc ? s.mobileSrc : s.src;
-            return (
-              <div
-                key={i}
-                className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
-                  i === index ? "opacity-100" : "opacity-0"
-                }`}
-                aria-hidden={i !== index}
-              >
-                { s.type === "image" ? (() => {
-    const raw = (isMobile && s.mobileSrc) ? s.mobileSrc : s.src;
-    const isLocal = typeof raw === "string" && raw.startsWith("/"); // з /public
-    return (
-      <Image
-        src={raw}
-        alt={s.alt || "Banner"}
-        fill
-        sizes="100vw"
-        priority={i === 0}
-        quality={90}
-        unoptimized={isLocal}                  // ← вимкнути оптимізацію для локальних
-        loader={isLocal ? localLoader : undefined} // ← віддати прямий URL
-        className={getImageClass(s, isMobile)}
-      />
-    );
-  })()
-: (
-                  <video
-                    ref={(el) => (videoRefs.current[i] = el)}
-                    src={s.src}
-                    poster={s.poster || undefined}
-                    className="w-full h-full  object-cover"
-                    muted
-                    playsInline
-                    preload="metadata"
-                    onEnded={onVideoEnded}
-                  />
-                )}
-              </div>
-            );
-          })}
+          {hydrated ? (
+            // Після гідрації — рендеримо активний і сусідів
+            slides.map((s, i) => {
+              const isActive = i === index;
+              const isNeighbor = Math.abs(i - index) === 1 || Math.abs(i - index) === slides.length - 1;
+              if (!isActive && !isNeighbor) return null;
+
+              const raw = s.type === "image" && isMobile && s.mobileSrc ? s.mobileSrc : s.src;
+
+              return (
+                <div
+                  key={i}
+                  className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+                    isActive ? "opacity-100" : "opacity-0"
+                  }`}
+                  aria-hidden={!isActive}
+                >
+                  {s.type === "image" ? (
+                    <Image
+                      src={raw}
+                      alt={s.alt || "Banner"}
+                      fill
+                      // адекватні розміри під екрани (щоб не тягнути 2560px всюди)
+                      sizes="(max-width: 640px) 100vw,
+                             (max-width: 1024px) 100vw,
+                             (max-width: 1536px) 100vw,
+                             1536px"
+                      priority={i === 0}
+                      fetchPriority={i === 0 ? "high" : undefined}
+                      quality={70}
+                      className={getImageClass(s, isMobile)}
+                    />
+                  ) : (
+                    <video
+                      ref={(el) => (videoRefs.current[i] = el)}
+                      src={s.src}
+                      poster={s.poster || undefined}
+                      className="w-full h-full object-cover"
+                      muted
+                      playsInline
+                      preload="none"           // не вантажимо завчасно
+                      onEnded={onVideoEnded}
+                    />
+                  )}
+                </div>
+              );
+            })
+          ) : (
+            // SSR: показуємо тільки перший кадр — мінімум байтів, кращий LCP
+            <Image
+              src={slides[0].src}
+              alt={slides[0].alt || "Banner"}
+              fill
+              sizes="(max-width: 1536px) 100vw, 1536px"
+              priority
+              fetchPriority="high"
+              quality={70}
+              className={getImageClass(slides[0], isMobile)}
+            />
+          )}
         </div>
 
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-black/10 to-transparent" />
 
+        {/* Контент поверх */}
         {(() => {
           const s = slides[index];
           return (
@@ -244,37 +262,39 @@ fitMobile: "cover",
           );
         })()}
 
-      
-        <button
-          aria-label="Попередній слайд"
-          onClick={prev}
-          className="absolute left-3 top-1/2 -translate-y-1/2 z-20 grid place-items-center h-10 w-10 rounded-full bg-black/35 text-white hover:bg-black/55"
-        >
-          ‹
-        </button>
-        <button
-          aria-label="Наступний слайд"
-          onClick={next}
-          className="absolute right-3 top-1/2 -translate-y-1/2 z-20 grid place-items-center h-10 w-10 rounded-full bg-black/35 text-white hover:bg-black/55"
-        >
-          ›
-        </button>
-
-      
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex gap-2">
-          {slides.map((_, i) => (
+        {/* Керування — лише після гідрації (щоб не навішувати зайвий JS на SSR) */}
+        {hydrated && (
+          <>
             <button
-              key={i}
-              aria-label={`Перейти до слайду ${i + 1}`}
-              onClick={() => setIndex(i)}
-              className={`h-2.5 w-2.5 rounded-full border border-white/70 transition ${
-                i === index ? "bg-white scale-110" : "bg-white/30 hover:bg-white/60"
-              }`}
-            />
-          ))}
-        </div>
+              aria-label="Попередній слайд"
+              onClick={prev}
+              className="absolute left-3 top-1/2 -translate-y-1/2 z-20 grid place-items-center h-10 w-10 rounded-full bg-black/35 text-white hover:bg-black/55"
+            >
+              ‹
+            </button>
+            <button
+              aria-label="Наступний слайд"
+              onClick={next}
+              className="absolute right-3 top-1/2 -translate-y-1/2 z-20 grid place-items-center h-10 w-10 rounded-full bg-black/35 text-white hover:bg-black/55"
+            >
+              ›
+            </button>
+
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+              {slides.map((_, i) => (
+                <button
+                  key={i}
+                  aria-label={`Перейти до слайду ${i + 1}`}
+                  onClick={() => setIndex(i)}
+                  className={`h-2.5 w-2.5 rounded-full border border-white/70 transition ${
+                    i === index ? "bg-white scale-110" : "bg-white/30 hover:bg-white/60"
+                  }`}
+                />
+              ))}
+            </div>
+          </>
+        )}
       </section>
     </>
   );
 }
- 
