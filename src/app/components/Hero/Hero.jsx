@@ -5,7 +5,8 @@ import Head from "next/head";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useLanguage } from "../../Functions/useLanguage";
 
-const AUTOPLAY_IMAGE_MS = 5000;
+const AUTOPLAY_IMAGE_MS = 5000;        // тривалість кадру
+const AUTOPLAY_START_DELAY_MS = 6000;  // пауза перед стартом автоплею (фіксує LCP)
 
 function useIsMobile(breakpoint = 1024) {
   const [isMobile, setIsMobile] = useState(false);
@@ -26,7 +27,6 @@ function useIsMobile(breakpoint = 1024) {
 function getImageClass(s, isMobile) {
   const fit   = isMobile && s.fitMobile   ? s.fitMobile   : s.fit   || "cover";
   const focus = isMobile && s.focusMobile ? s.focusMobile : s.focus || "center";
-
   const fitClass = fit === "contain" ? "object-contain bg-white" : "object-cover";
   const focusClass =
     focus === "left"   ? "object-left"   :
@@ -34,7 +34,6 @@ function getImageClass(s, isMobile) {
     focus === "top"    ? "object-top"    :
     focus === "bottom" ? "object-bottom" :
     "object-center";
-
   return `${fitClass} ${focusClass}`;
 }
 
@@ -48,8 +47,8 @@ export default function Hero() {
     () => [
       {
         type: "image",
-        src: "/hoom/1.webp",                       
-        mobileSrc: "/Pants/Jersey Pants/1.avif",
+        src: "/hoom/1.webp",                 
+        mobileSrc: "/hoom/mobile1.webp",    
         alt: "Latore banner 1",
         title: t[0],
         subtitle: t[3],
@@ -62,8 +61,8 @@ export default function Hero() {
       },
       {
         type: "video",
-        src: "/hoom/IMG_3190.mp4",                    // H.264 720p, 1.5–3 Mbps
-        poster: "/hoom/banerosen.jpg",                // webp/jpg ~100–200KB
+        src: "/hoom/IMG_3190.mp4",
+        poster: "/hoom/banerosen.jpg",       // webp/jpg 100–200KB
         title: "LATORE ATELIER",
         subtitle: "2025",
         ctaText: t[5],
@@ -71,8 +70,8 @@ export default function Hero() {
       },
       {
         type: "image",
-        src: "/hoom/1.webp",
-        mobileSrc: "/Skirts/Leather Midi Skirt/1.avif",
+        src: "/hoom/2.webp",
+        mobileSrc: "/hoom/mobile2.webp",
         alt: "Latore banner 2",
         title: t[0],
         subtitle: t[3],
@@ -88,6 +87,7 @@ export default function Hero() {
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
   const [hydrated, setHydrated] = useState(false);
+  const [autoplayReady, setAutoplayReady] = useState(false);
 
   const timerRef = useRef(null);
   const videoRefs = useRef([]);
@@ -96,17 +96,21 @@ export default function Hero() {
   const next = () => setIndex((i) => (i + 1) % slides.length);
   const prev = () => setIndex((i) => (i - 1 + slides.length) % slides.length);
 
-  // Вмикаємо все "динамічне" лише після гідрації
-  useEffect(() => { setHydrated(true); }, []);
+  // Увімкнути клієнтську логіку + дати паузу, щоб LCP зафіксувався
+  useEffect(() => {
+    setHydrated(true);
+    const t = setTimeout(() => setAutoplayReady(true), AUTOPLAY_START_DELAY_MS);
+    return () => clearTimeout(t);
+  }, []);
 
-  // Автоплей (фото — за таймером, відео — після завершення)
+  // Автоплей / керування відео
   useEffect(() => {
     if (!hydrated) return;
     if (timerRef.current) clearTimeout(timerRef.current);
     const current = slides[index];
     if (!current) return;
 
-    // керування відтворенням відео
+    // відео: грає тільки активний слайд
     videoRefs.current.forEach((v, i) => {
       if (!v) return;
       if (i === index && slides[i].type === "video") {
@@ -117,12 +121,13 @@ export default function Hero() {
       }
     });
 
-    if (current.type === "image" && !paused) {
+    // фото: не крутимо перші 6с
+    if (current.type === "image" && autoplayReady && !paused) {
       const ms = current.durationMs ?? AUTOPLAY_IMAGE_MS;
       timerRef.current = setTimeout(next, ms);
     }
     return () => timerRef.current && clearTimeout(timerRef.current);
-  }, [index, paused, slides, hydrated]);
+  }, [index, paused, slides, hydrated, autoplayReady]);
 
   const onVideoEnded = () => next();
 
@@ -149,7 +154,7 @@ export default function Hero() {
 
   return (
     <>
-      {/* Якщо ти на app router — краще винести це в metadata на сторінці */}
+      {/* якщо ти на app router — краще винести в metadata сторінки */}
       <Head>
         <meta name="description" content="Latore — український бренд жіночого одягу. Нові колекції, базові речі, швидка доставка." />
         <meta property="og:title" content="LATORE ATELIER" />
@@ -159,19 +164,18 @@ export default function Hero() {
       </Head>
 
       <section
-        className="relative overflow-hidden 
-                   h-[80vh] min-h-[420px] max-h-[1050px]
-                   w-[100vw] -mx-[calc(50%-50vw)]"
+        className="relative overflow-hidden h-[80vh] min-h-[420px] max-h-[1050px] w-[100vw] -mx-[calc(50%-50vw)]"
         aria-label="Hero slider"
         onTouchStart={onTouchStart}
         onTouchEnd={onTouchEnd}
       >
         <div className="absolute inset-0">
           {hydrated ? (
-            // Після гідрації — рендеримо активний і сусідів
+            // після гідрації рендеримо активний і сусідів (менше запитів)
             slides.map((s, i) => {
               const isActive = i === index;
-              const isNeighbor = Math.abs(i - index) === 1 || Math.abs(i - index) === slides.length - 1;
+              const isNeighbor =
+                Math.abs(i - index) === 1 || Math.abs(i - index) === slides.length - 1;
               if (!isActive && !isNeighbor) return null;
 
               const raw = s.type === "image" && isMobile && s.mobileSrc ? s.mobileSrc : s.src;
@@ -179,7 +183,7 @@ export default function Hero() {
               return (
                 <div
                   key={i}
-                  className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+                  className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${
                     isActive ? "opacity-100" : "opacity-0"
                   }`}
                   aria-hidden={!isActive}
@@ -189,7 +193,6 @@ export default function Hero() {
                       src={raw}
                       alt={s.alt || "Banner"}
                       fill
-                      // адекватні розміри під екрани (щоб не тягнути 2560px всюди)
                       sizes="(max-width: 640px) 100vw,
                              (max-width: 1024px) 100vw,
                              (max-width: 1536px) 100vw,
@@ -207,7 +210,7 @@ export default function Hero() {
                       className="w-full h-full object-cover"
                       muted
                       playsInline
-                      preload="none"           // не вантажимо завчасно
+                      preload="none"
                       onEnded={onVideoEnded}
                     />
                   )}
@@ -215,7 +218,7 @@ export default function Hero() {
               );
             })
           ) : (
-            // SSR: показуємо тільки перший кадр — мінімум байтів, кращий LCP
+            // SSR: тільки перший кадр — мінімум байтів, стабільний LCP
             <Image
               src={slides[0].src}
               alt={slides[0].alt || "Banner"}
@@ -231,7 +234,7 @@ export default function Hero() {
 
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-black/10 to-transparent" />
 
-        {/* Контент поверх */}
+        {/* контент поверх */}
         {(() => {
           const s = slides[index];
           return (
@@ -262,7 +265,7 @@ export default function Hero() {
           );
         })()}
 
-        {/* Керування — лише після гідрації (щоб не навішувати зайвий JS на SSR) */}
+        {/* керування — лише після гідрації */}
         {hydrated && (
           <>
             <button
