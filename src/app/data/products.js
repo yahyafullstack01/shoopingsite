@@ -13,7 +13,11 @@ const products = [
     "/Pants/Leather Pants with Belt/2.avif",
     "/Pants/Leather Pants with Belt/3.avif",
     "/Pants/Leather Pants with Belt/4.avif",
-    "/Pants/Leather Pants with Belt/5.avif"
+    "/Pants/Leather Pants with Belt/5.avif",
+    "/Pants/Leather Pants with Belt/6.avif",
+    "/Pants/Leather Pants with Belt/7.avif",
+    "/Pants/Leather Pants with Belt/8.avif",
+    "/Pants/Leather Pants with Belt/9.avif",
   ],
   sizes: ["XS", "S", "M", "L", "XL"],
   translations: {
