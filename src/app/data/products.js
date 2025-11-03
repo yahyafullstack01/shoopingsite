@@ -17,7 +17,7 @@ const products = [
     "/Pants/LeatherPants Belt/6.avif",
     "/Pants/LeatherPants Belt/7.avif",
     "/Pants/LeatherPants Belt/8.avif",
-    "/Pants/LeatherPants Beltt/9.avif",
+    "/Pants/LeatherPants Belt/9.avif",
   ],
   sizes: ["XS", "S", "M", "L", "XL"],
   translations: {
