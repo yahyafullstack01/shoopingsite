@@ -1,5 +1,686 @@
 const products = [
 
+  {
+  id: 205,
+  price: 2100,
+  isTop: false,
+  isNew: true,
+  sku: "99347",
+  size: "XS S M L XL",
+  category: "Pants",
+  image: "/Pants/Leather Pants with Belt/1.avif",
+  images: [
+    "/Pants/Leather Pants with Belt/2.avif",
+    "/Pants/Leather Pants with Belt/3.avif",
+    "/Pants/Leather Pants with Belt/4.avif",
+    "/Pants/Leather Pants with Belt/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Pants",
+      name: "Leather Pants with Belt",
+      description: [
+        "Pants that combine comfort, elegance, and confidence.",
+        "Made from dense eco-leather, they shape a perfect silhouette and add depth to the look.",
+        "The high waist emphasizes the figure, while the straight elongated cut visually lengthens the legs.",
+        "Fabric: high-quality eco-leather on a suede base (stretchy, does not crack).",
+        "Details:",
+        "• High waist with double button fastening",
+        "• Decorative vertical seams at the front create an elongated silhouette effect"
+      ],
+      colors: ["caramel", "mocha"]
+    },
+    FR: {
+      category: "Pantalons",
+      name: "Pantalon en cuir avec ceinture",
+      description: [
+        "Un pantalon qui allie confort, élégance et assurance.",
+        "Confectionné en cuir écologique dense, il sculpte une silhouette parfaite et ajoute de la profondeur à la tenue.",
+        "La taille haute met en valeur la silhouette, tandis que la coupe droite et allongée allonge visuellement les jambes.",
+        "Tissu : cuir écologique de haute qualité sur base en daim (extensible, ne se fissure pas).",
+        "Détails :",
+        "• Taille haute avec double fermeture à boutons",
+        "• Coutures verticales décoratives à l'avant pour un effet de silhouette allongée"
+      ],
+      colors: ["caramel", "moka"]
+    },
+    UA: {
+      category: "Брюки",
+      name: "Шкіряні брюки з поясом",
+      description: [
+        "Брюки, що поєднують комфорт, елегантність і впевненість.",
+        "Створені зі щільної екошкіри, вони формують ідеальний силует і додають образу глибини.",
+        "Висока посадка підкреслює талію, а прямий крій із подовженою лінією візуально видовжує ноги.",
+        "Тканина: якісна екошкіра на замшевій основі (стречева, не тріскається).",
+        "Деталі:",
+        "• Висока посадка з подвоєною застібкою на ґудзики",
+        "• Декоративні вертикальні шви спереду — ефект витягнутого силуету"
+      ],
+      colors: ["карамель", "мокко"]
+    },
+    RU: {
+      category: "Брюки",
+      name: "Кожаные брюки с поясом",
+      description: [
+        "Брюки, сочетающие комфорт, элегантность и уверенность.",
+        "Созданы из плотной экокожи, формируют идеальный силуэт и добавляют глубины образу.",
+        "Высокая посадка подчёркивает талию, а прямой удлинённый крой визуально вытягивает ноги.",
+        "Ткань: качественная экокожа на замшевой основе (стрейчевая, не трескается).",
+        "Детали:",
+        "• Высокая посадка с двойной застёжкой на пуговицы",
+        "• Декоративные вертикальные швы спереди — эффект вытянутого силуэта"
+      ],
+      colors: ["карамель", "мокко"]
+    }
+  }
+},
+
+  {
+  id: 204,
+  price: 2060,
+  isTop: false,
+  isNew: true,
+  sku: "99346",
+  size: "XS S M L XL",
+  category: "Pants",
+  image: "/Pants/Flanel Pants/1.avif",
+  images: [
+    "/Pants/Flanel Pants/2.avif",
+    "/Pants/Flanel Pants/3.avif",
+    "/Pants/Flanel Pants/4.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Pants",
+      name: "Flanel Pants",
+      description: [
+        "High-waisted trousers with wide legs — a symbol of timeless elegance.",
+        "They flow gracefully with movement, visually elongate the legs, and create an effect of soft dynamics.",
+        "Perfect for both work and evening outings.",
+        "Fabric: Premium-quality natural wool flannel that provides warmth, coziness, and pleasant tactile sensations.",
+        "[ Composition: 90% wool, 10% polyester ]",
+        "Details:",
+        "• High waist",
+        "• Flowing palazzo silhouette",
+        "• Classic pleats"
+      ],
+      colors: ["grey"]
+    },
+    FR: {
+      category: "Pantalons",
+      name: "Pantalon 'Flanel'",
+      description: [
+        "Pantalon taille haute à jambes larges — symbole d’élégance intemporelle.",
+        "Il tombe avec fluidité, allonge visuellement les jambes et crée un effet de mouvement souple.",
+        "Idéal aussi bien pour le travail que pour une sortie en soirée.",
+        "Tissu : flanelle de laine naturelle de qualité supérieure assurant chaleur, confort et douceur au toucher.",
+        "[ Composition : 90% laine, 10% polyester ]",
+        "Détails :",
+        "• Taille haute",
+        "• Silhouette fluide type palazzo",
+        "• Plis classiques"
+      ],
+      colors: ["gris"]
+    },
+    UA: {
+      category: "Брюки",
+      name: "Брюки 'Flanel'",
+      description: [
+        "Брюки з високою посадкою та широкими штанинами — символ вічної елегантності.",
+        "Легко струмують при русі, візуально подовжують ноги й створюють ефект м’якої динаміки.",
+        "Ідеальні як для роботи, так і для вечірнього виходу.",
+        "Тканина: натуральний вовняний фланель преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[ Склад: 90% вовна, 10% поліестер ]",
+        "Деталі:",
+        "• Висока посадка",
+        "• Струмуючий силует палаццо",
+        "• Класичні стрілки"
+      ],
+      colors: ["сірий"]
+    },
+    RU: {
+      category: "Брюки",
+      name: "Брюки 'Flanel'",
+      description: [
+        "Брюки с высокой посадкой и широкими штанинами — символ вечной элегантности.",
+        "Свободно струятся при движении, визуально удлиняют ноги и создают эффект мягкой динамики.",
+        "Идеальны как для работы, так и для вечернего выхода.",
+        "Ткань: натуральный шерстяной фланель премиум-качества, обеспечивающий тепло, уют и приятные тактильные ощущения.",
+        "[ Состав: 90% шерсть, 10% полиэстер ]",
+        "Детали:",
+        "• Высокая посадка",
+        "• Струящийся силуэт палаццо",
+        "• Классические стрелки"
+      ],
+      colors: ["серый"]
+    }
+  }
+},
+
+  {
+  id: 203,
+  price: 3300,
+  isTop: false,
+  isNew: true,
+  sku: "99345",
+  size: "XS S M L XL",
+  category: "Jackets",
+  image: "/Jackets/Flanel Jacket/1.avif",
+  images: [
+    "/Jackets/Flanel Jacket/2.avif",
+    "/Jackets/Flanel Jacket/3.avif",
+    "/Jackets/Flanel Jacket/4.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Jackets",
+      name: "Flanel Jacket",
+      description: [
+        "A classic double-breasted jacket with a modern fit.",
+        "A tailored cut, defined shoulders, and a delicately emphasized waist create a flawless silhouette.",
+        "The double-button fastening adds architectural precision, while the soft lining ensures comfort throughout the day.",
+        "Fabric: Premium-quality natural wool flannel that provides warmth, coziness, and pleasant tactile sensations.",
+        "[ Composition: 90% wool, 10% polyester ]",
+        "Details:",
+        "• Double-breasted design",
+        "• Darts for a perfect fit",
+        "• Tone-on-tone buttons"
+      ],
+      colors: ["grey"]
+    },
+    FR: {
+      category: "Vestes",
+      name: "Veste 'Flanel'",
+      description: [
+        "Veste croisée classique à la coupe moderne.",
+        "Une coupe ajustée, une ligne d’épaules nette et une taille subtilement marquée créent une silhouette impeccable.",
+        "La fermeture à double rangée de boutons apporte une touche architecturale, tandis que la doublure douce assure un confort optimal toute la journée.",
+        "Tissu : flanelle de laine naturelle de qualité supérieure assurant chaleur, confort et douceur au toucher.",
+        "[ Composition : 90% laine, 10% polyester ]",
+        "Détails :",
+        "• Coupe croisée",
+        "• Pinces pour une silhouette ajustée",
+        "• Boutons ton sur ton"
+      ],
+      colors: ["gris"]
+    },
+    UA: {
+      category: "Жакети",
+      name: "Жакет 'Flanel'",
+      description: [
+        "Класичний двобортний жакет із сучасною посадкою.",
+        "Виточений крій, чітка лінія плечей і делікатно підкреслена талія створюють бездоганний силует.",
+        "Застібка на два ряди ґудзиків додає архітектурності, а м’яка підкладка гарантує комфорт протягом дня.",
+        "Тканина: натуральний вовняний фланель преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[ Склад: 90% вовна, 10% поліестер ]",
+        "Деталі:",
+        "• Двобортний фасон",
+        "• Виточки по фігурі",
+        "• Ґудзики в тон тканини"
+      ],
+      colors: ["сірий"]
+    },
+    RU: {
+      category: "Жакеты",
+      name: "Жакет 'Flanel'",
+      description: [
+        "Классический двубортный жакет с современным кроем.",
+        "Точный силуэт, чёткая линия плеч и деликатно подчеркнутая талия создают безупречный образ.",
+        "Двурядная застёжка на пуговицы добавляет архитектурности, а мягкая подкладка обеспечивает комфорт в течение дня.",
+        "Ткань: натуральный шерстяной фланель премиум-качества, обеспечивающий тепло, уют и приятные тактильные ощущения.",
+        "[ Состав: 90% шерсть, 10% полиэстер ]",
+        "Детали:",
+        "• Двубортный фасон",
+        "• Вытачки по фигуре",
+        "• Пуговицы в тон ткани"
+      ],
+      colors: ["серый"]
+    }
+  }
+},
+
+  {
+  id: 202,
+  price: 5360,
+  isTop: false,
+  isNew: true,
+  sku: "99344",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Flanel Suit/1.avif",
+  images: [
+    "/Costumes/Flanel Suit/2.avif",
+    "/Costumes/Flanel Suit/3.avif",
+    "/Costumes/Flanel Suit/4.avif",
+    "/Costumes/Flanel Suit/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Flanel Suit",
+      description: [
+        "Elegance in every line. This suit is made for a woman who values the power of calm and the harmony of proportions.",
+        "A fitted jacket with defined shoulders shapes the perfect silhouette, while palazzo trousers add lightness and aristocratic ease.",
+        "Soft wool flannel ensures comfort while maintaining structure.",
+        "Fabric: Premium-quality natural wool flannel that provides warmth, coziness, and pleasant tactile sensations.",
+        "[ Composition: 90% wool, 10% polyester ]",
+        "Details:",
+        "Jacket: Double-breasted design",
+        "• Darts for a perfect fit",
+        "• Tone-on-tone buttons",
+        "Trousers: High waist",
+        "• Flowing palazzo silhouette",
+        "• Classic creases"
+      ],
+      colors: ["grey"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume 'Flanel'",
+      description: [
+        "L’élégance dans chaque ligne. Ce costume est conçu pour la femme qui apprécie la force du calme et l’harmonie des proportions.",
+        "La veste cintrée aux épaules marquées crée une silhouette parfaite, tandis que le pantalon palazzo apporte légèreté et une touche d’aisance aristocratique.",
+        "Le tissu en flanelle de laine douce offre confort et maintien de la forme.",
+        "Tissu : flanelle de laine naturelle de qualité supérieure assurant chaleur, confort et douceur au toucher.",
+        "[ Composition : 90% laine, 10% polyester ]",
+        "Détails :",
+        "Veste : coupe croisée",
+        "• Pinces sur la taille",
+        "• Boutons ton sur ton",
+        "Pantalon : taille haute",
+        "• Silhouette fluide palazzo",
+        "• Plis classiques"
+      ],
+      colors: ["gris"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм 'Flanel'",
+      description: [
+        "Витонченість у кожній лінії. Цей костюм створений для жінки, яка цінує силу спокою й гармонію пропорцій.",
+        "Приталений жакет із чіткою лінією плечей формує ідеальний силует, а брюки палаццо додають образу легкості й аристократичної недбалості.",
+        "М’яка вовняна тканина забезпечує комфорт, не втрачаючи форми.",
+        "Тканина: натуральний вовняний фланель преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[ Склад: 90% вовна, 10% поліестер ]",
+        "Деталі:",
+        "Жакет: двобортний фасон",
+        "• Виточки по фігурі",
+        "• Ґудзики в тон тканини",
+        "Брюки: висока посадка",
+        "• Струмуючий силует палаццо",
+        "• Класичні стрілки"
+      ],
+      colors: ["сірий"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм 'Flanel'",
+      description: [
+        "Изысканность в каждой линии. Этот костюм создан для женщины, ценящей силу спокойствия и гармонию пропорций.",
+        "Приталенный жакет с чёткой линией плеч формирует идеальный силуэт, а брюки-палаццо добавляют лёгкости и аристократичной небрежности.",
+        "Мягкая шерстяная ткань обеспечивает комфорт, не теряя формы.",
+        "Ткань: натуральный шерстяной фланель премиум-качества, обеспечивающий тепло, уют и приятные тактильные ощущения.",
+        "[ Состав: 90% шерсть, 10% полиэстер ]",
+        "Детали:",
+        "Жакет: двубортный фасон",
+        "• Вытачки по фигуре",
+        "• Пуговицы в тон ткани",
+        "Брюки: высокая посадка",
+        "• Лёгкий силуэт палаццо",
+        "• Классические стрелки"
+      ],
+      colors: ["серый"]
+    }
+  }
+},
+
+  {
+  id: 201,
+  price: 5800,
+  isTop: false,
+  isNew: true,
+  sku: "99343",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Leather Set/1.avif",
+  images: [
+    "/Costumes/Leather Set/2.avif",
+    "/Costumes/Leather Set/3.avif",
+    "/Costumes/Leather Set/4.avif",
+    "/Costumes/Leather Set/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Leather Set",
+      description: [
+        "The embodiment of confidence, elegance, and modern style.",
+        "A burgundy faux leather set designed for a woman who embraces soft strength and minimalism with character.",
+        "Perfectly balanced silhouette: a cropped jacket accentuates the waistline, while flared pants visually elongate the legs, creating a sleek and harmonious look.",
+        "Fabric: high-quality eco-leather on a suede base (stretchy, does not crack).",
+        "Details:",
+        "• Jacket fastening — tone-on-tone buttons",
+        "• High-waisted flared pants",
+        "• Perfect figure-hugging fit"
+      ],
+      colors: ["marsala"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Ensemble en cuir",
+      description: [
+        "L’incarnation de la confiance, de l’élégance et du style moderne.",
+        "Un ensemble en cuir synthétique couleur bordeaux conçu pour une femme qui allie force douce et minimalisme affirmé.",
+        "Silhouette parfaitement équilibrée : la veste courte souligne la taille, tandis que le pantalon évasé allonge visuellement les jambes pour une allure harmonieuse.",
+        "Tissu : cuir écologique de haute qualité sur base daim (extensible, ne se fissure pas).",
+        "Détails :",
+        "• Fermeture de la veste — boutons ton sur ton",
+        "• Pantalon taille haute et coupe évasée",
+        "• Coupe parfaite mettant en valeur la silhouette"
+      ],
+      colors: ["marsala"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Шкіряний комплект",
+      description: [
+        "Втілення впевненості, елегантності й сучасного стилю.",
+        "Комплект зі штучної шкіри кольору бордо створений для жінки, яка любить м’яку силу та мінімалізм із характером.",
+        "Ідеально збалансований силует: короткий жакет підкреслює лінію талії, а брюки кльош візуально подовжують ноги, формуючи стрункий і гармонійний образ.",
+        "Тканина: якісна екошкіра на замшевій основі (стрейчева, не тріскається).",
+        "Деталі:",
+        "• Застібка жакету — ґудзики у тон",
+        "• Брюки з високою посадкою та подовженою лінією кльошу",
+        "• Ідеальна посадка по фігурі"
+      ],
+      colors: ["марсала"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Кожаный комплект",
+      description: [
+        "Воплощение уверенности, элегантности и современного стиля.",
+        "Комплект из искусственной кожи бордового цвета создан для женщины, которая сочетает мягкую силу и минимализм с характером.",
+        "Идеально сбалансированный силуэт: короткий жакет подчёркивает талию, а расклёшенные брюки визуально удлиняют ноги, создавая стройный и гармоничный образ.",
+        "Ткань: качественная экокожа на замшевой основе (стрейчевая, не трескается).",
+        "Детали:",
+        "• Застёжка жакета — пуговицы в тон",
+        "• Брюки с высокой посадкой и расклёшенным кроем",
+        "• Идеальная посадка по фигуре"
+      ],
+      colors: ["марсала"]
+    }
+  }
+},
+
+  {
+  id: 200,
+  price: 3300,
+  isTop: false,
+  isNew: true,
+  sku: "99342",
+  size: "XS S M L XL",
+  category: "Jackets",
+  image: "/Jackets/Grace Jacket/1.avif",
+  images: [
+    "/Jackets/Grace Jacket/2.avif",
+    "/Jackets/Grace Jacket/3.avif",
+    "/Jackets/Grace Jacket/4.avif",
+    "/Jackets/Grace Jacket/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Jackets",
+      name: "Grace Jacket",
+      description: [
+        "A blazer with defined shoulders and a fitted waistline.",
+        "The tailored cut creates refined femininity, while neat lapels add understated luxury.",
+        "Fastens with two buttons, features decorative pockets, and pairs perfectly with the skirt from the collection.",
+        "Fabric: Premium natural wool providing warmth, coziness, and pleasant tactile sensations.",
+        "[ Composition: 75% wool ]",
+        "Details:",
+        "• Fitted silhouette",
+        "• Two front buttons",
+        "• Classic lapels"
+      ],
+      colors: ["gray"]
+    },
+    FR: {
+      category: "Vestes",
+      name: "Veste 'Grace'",
+      description: [
+        "Veste aux épaules structurées et taille marquée.",
+        "La coupe ajustée souligne la féminité, tandis que les revers soignés ajoutent une touche de luxe discret.",
+        "Fermeture à deux boutons, poches décoratives, s’associe parfaitement avec la jupe de la collection.",
+        "Tissu : laine naturelle premium offrant chaleur, confort et toucher agréable.",
+        "[ Composition : 75% laine ]",
+        "Détails :",
+        "• Coupe cintrée",
+        "• Deux boutons à l’avant",
+        "• Revers classiques"
+      ],
+      colors: ["gris"]
+    },
+    UA: {
+      category: "Жакети",
+      name: "Жакет \"Grace\"",
+      description: [
+        "Жакет із чіткою лінією плечей і акцентом на талії.",
+        "Виточений крій формує витончену жіночність, а акуратні лацкани додають стриманої розкоші.",
+        "Застібається на два ґудзики, має декоративні кишені й ідеально поєднується зі спідницею з колекції.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[ Склад: 75% вовни ]",
+        "Деталі:",
+        "• Приталений крій",
+        "• Два ґудзики спереду",
+        "• Лацкани класичної форми"
+      ],
+      colors: ["сірий"]
+    },
+    RU: {
+      category: "Жакеты",
+      name: "Жакет \"Grace\"",
+      description: [
+        "Жакет с чёткой линией плеч и акцентом на талии.",
+        "Выточенный крой создаёт утончённую женственность, а аккуратные лацканы добавляют сдержанной роскоши.",
+        "Застёгивается на две пуговицы, имеет декоративные карманы и идеально сочетается с юбкой из коллекции.",
+        "Ткань: натуральная премиальная шерсть, обеспечивающая тепло, уют и приятные тактильные ощущения.",
+        "[ Состав: 75% шерсти ]",
+        "Детали:",
+        "• Приталенный крой",
+        "• Две пуговицы спереди",
+        "• Классические лацканы"
+      ],
+      colors: ["серый"]
+    }
+  }
+},
+
+  {
+  id: 199,
+  price: 1900,
+  isTop: false,
+  isNew: true,
+  sku: "99341",
+  size: "XS S M L XL",
+  category: "Skirts",
+  image: "/Skirts/Grace Skirt/1.avif",
+  images: [
+    "/Skirts/Grace Skirt/2.avif",
+    "/Skirts/Grace Skirt/3.avif",
+    "/Skirts/Grace Skirt/4.avif",
+    "/Skirts/Grace Skirt/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Skirts",
+      name: "Grace Skirt",
+      description: [
+        "The midi skirt with deep pleats creates a soft volume and accentuates the waist.",
+        "Elegant both with a blazer and a turtleneck or silk blouse.",
+        "Easily adapts to different seasons — from winter to spring.",
+        "Fabric: Premium natural wool providing warmth, coziness, and pleasant tactile sensations.",
+        "[ Composition: 75% wool ]",
+        "Details:",
+        "• Deep pleats in front",
+        "• Length: below the knee",
+        "• Waistband at the waist"
+      ],
+      colors: ["gray"]
+    },
+    FR: {
+      category: "Jupes",
+      name: "Jupe 'Grace'",
+      description: [
+        "La jupe midi à plis profonds crée un léger volume et souligne la taille.",
+        "Élégante avec une veste, un col roulé ou une blouse en soie.",
+        "S’adapte facilement aux différentes saisons — de l’hiver au printemps.",
+        "Tissu : laine naturelle premium offrant chaleur, confort et toucher agréable.",
+        "[ Composition : 75% laine ]",
+        "Détails :",
+        "• Plis profonds à l’avant",
+        "• Longueur : sous le genou",
+        "• Ceinture à la taille"
+      ],
+      colors: ["gris"]
+    },
+    UA: {
+      category: "Спідниці",
+      name: "Спідниця \"Grace\"",
+      description: [
+        "Міді-спідниця з глибокими складками створює легкий об’єм і підкреслює талію.",
+        "Виглядає елегантно як у парі з жакетом, так і з гольфом чи шовковою блузою.",
+        "Легко адаптується під різні сезони — від зими до весни.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[ Склад: 75% вовни ]",
+        "Деталі:",
+        "• Глибокі складки спереду",
+        "• Довжина: нижче коліна",
+        "• Пояс на талії"
+      ],
+      colors: ["сірий"]
+    },
+    RU: {
+      category: "Юбки",
+      name: "Юбка \"Grace\"",
+      description: [
+        "Миди-юбка с глубокими складками создаёт лёгкий объём и подчёркивает талию.",
+        "Элегантно смотрится как с жакетом, так и с гольфом или шёлковой блузкой.",
+        "Легко адаптируется под разные сезоны — от зимы до весны.",
+        "Ткань: натуральная премиальная шерсть, обеспечивающая тепло, уют и приятные тактильные ощущения.",
+        "[ Состав: 75% шерсти ]",
+        "Детали:",
+        "• Глубокие складки спереди",
+        "• Длина: ниже колена",
+        "• Пояс на талии"
+      ],
+      colors: ["серый"]
+    }
+  }
+},
+
+  {
+  id: 198,
+  price: 5200,
+  isTop: false,
+  isNew: true,
+  sku: "99340",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Grace Suit/1.avif",
+  images: [
+    "/Costumes/Grace Suit/2.avif",
+    "/Costumes/Grace Suit/3.avif",
+    "/Costumes/Grace Suit/4.avif",
+    "/Costumes/Grace Suit/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Grace Suit",
+      description: [
+        "Modern classic at its finest. The 'Grace' suit embodies elegance and architectural precision of tailoring.",
+        "Soft premium wool fabric holds its shape, while the light gray shade adds a touch of sophistication.",
+        "The set consists of a fitted blazer and a midi skirt with pleats that create a refined silhouette.",
+        "Fabric: Premium natural wool ensuring warmth, coziness, and a pleasant feel.",
+        "[ Composition: 75% wool ]",
+        "Details:",
+        "Blazer: Fitted cut",
+        "• Two front buttons",
+        "• Classic lapels",
+        "Skirt: Deep front pleats",
+        "• Length: below the knee",
+        "• Waistband at the waist"
+      ],
+      colors: ["gray"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume 'Grace'",
+      description: [
+        "Classique moderne dans sa plus belle expression. Le costume 'Grace' incarne l’élégance et la précision architecturale de la coupe.",
+        "Le tissu en laine douce premium garde sa forme, tandis que la teinte gris clair apporte une touche de noblesse.",
+        "L'ensemble se compose d'une veste cintrée et d'une jupe midi à plis créant une silhouette raffinée.",
+        "Tissu : laine naturelle premium offrant chaleur, confort et toucher agréable.",
+        "[ Composition : 75% laine ]",
+        "Détails :",
+        "Veste : coupe ajustée",
+        "• Deux boutons à l’avant",
+        "• Revers classiques",
+        "Jupe : plis profonds à l’avant",
+        "• Longueur : sous le genou",
+        "• Ceinture à la taille"
+      ],
+      colors: ["gris"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм \"Grace\"",
+      description: [
+        "Сучасна класика в найкращому виконанні. Костюм “Grace” — це втілення елегантності та архітектурної точності крою.",
+        "М’яка вовняна тканина тримає форму, а світло-сірий відтінок додає образу благородності.",
+        "Комплект складається з приталеного жакету та спідниці міді зі складками, які створюють витончений силует.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[ Склад: 75% вовни ]",
+        "Деталі:",
+        "Жакет: Приталений крій",
+        "• Два ґудзики спереду",
+        "• Лацкани класичної форми",
+        "Спідниця: Глибокі складки спереду",
+        "• Довжина: нижче коліна",
+        "• Пояс на талії"
+      ],
+      colors: ["сірий"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм \"Grace\"",
+      description: [
+        "Современная классика в лучшем исполнении. Костюм “Grace” — воплощение элегантности и архитектурной точности кроя.",
+        "Мягкая шерстяная ткань держит форму, а светло-серый оттенок придаёт образу благородство.",
+        "Комплект состоит из приталенного жакета и миди-юбки со складками, создающими изысканный силуэт.",
+        "Ткань: натуральная премиальная шерсть, обеспечивающая тепло, уют и приятные тактильные ощущения.",
+        "[ Состав: 75% шерсти ]",
+        "Детали:",
+        "Жакет: приталенный крой",
+        "• Две пуговицы спереди",
+        "• Классические лацканы",
+        "Юбка: глубокие складки спереди",
+        "• Длина: ниже колена",
+        "• Пояс на талии"
+      ],
+      colors: ["серый"]
+    }
+  }
+},
       {
       id: 13,
       price: 3700,
