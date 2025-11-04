@@ -1,6 +1,336 @@
 const products = [
 
   {
+  id: 214,
+  price: 3100,
+  isTop: false,
+  isNew: true,
+  sku: "99356",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Wool V-Neck Dress/1.avif",
+  images: [
+    "/Dress/Wool V-Neck Dress/2.avif",
+    "/Dress/Wool V-Neck Dress/3.avif",
+    "/Dress/Wool V-Neck Dress/4.avif",
+    "/Dress/Wool V-Neck Dress/5.avif",
+    "/Dress/Wool V-Neck Dress/6.avif",
+    "/Dress/Wool V-Neck Dress/7.avif",
+    "/Dress/Wool V-Neck Dress/8.avif",
+    "/Dress/Wool V-Neck Dress/9.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Wool V-Neck Dress",
+      description: [
+        "The embodiment of warmth, comfort, and refined simplicity.",
+        "This elegant wool dress features a V-neckline that elongates the neck and gently defined shoulders.",
+        "Darts at the waist and vertical seams create a flattering feminine silhouette that feels both natural and graceful.",
+        "Fabric: Premium-quality natural wool for warmth, softness, and luxurious comfort.",
+        "[ Composition: 75% wool ]",
+        "Details:",
+        "• Silhouette: fitted top + midi-length flared skirt",
+        "• Length: midi",
+        "• Sleeve: long and straight",
+        "• Front button closure"
+      ],
+      colors: ["camel", "gray"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe en Laine à Col en V",
+      description: [
+        "L'incarnation de la chaleur, du confort et de la simplicité raffinée.",
+        "Cette robe en laine élégante présente un décolleté en V qui allonge visuellement le cou et des épaules délicatement dessinées.",
+        "Grâce aux pinces à la taille et aux coutures verticales, elle souligne parfaitement la silhouette féminine naturelle.",
+        "Tissu : laine naturelle de qualité supérieure pour la chaleur et la douceur.",
+        "[ Composition : 75% laine ]",
+        "Détails :",
+        "• Silhouette : haut ajusté + jupe évasée longueur midi",
+        "• Longueur : midi",
+        "• Manches : longues et droites",
+        "• Fermeture : boutonnée sur le devant"
+      ],
+      colors: ["camel", "gris"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Вовняна сукня V-виріз",
+      description: [
+        "Втілення тепла, затишку та вишуканої простоти.",
+        "Сукня має елегантний V-виріз, який візуально подовжує шию, і м’яко окреслену лінію плечей.",
+        "Завдяки виточкам у талії та вертикальним швам вона ідеально підкреслює фігуру, створюючи природний жіночний акцент.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[ Склад: 75% вовни ]",
+        "Деталі:",
+        "• Силует: приталений верх + спідниця-сонце міді довжини",
+        "• Довжина: міді",
+        "• Рукав: довгий, прямий",
+        "• Застібка спереду"
+      ],
+      colors: ["кемел", "сірий"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Шерстяное платье с V-образным вырезом",
+      description: [
+        "Воплощение тепла, уюта и изысканной простоты.",
+        "Платье имеет элегантный V-образный вырез, визуально удлиняющий шею, и мягко очерченные плечи.",
+        "Благодаря вытачкам на талии и вертикальным швам оно идеально подчеркивает фигуру, создавая естественный женственный акцент.",
+        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло и комфорт.",
+        "[ Состав: 75% шерсти ]",
+        "Детали:",
+        "• Силуэт: приталенный верх + юбка-солнце длины миди",
+        "• Длина: миди",
+        "• Рукав: длинный, прямой",
+        "• Застёжка спереди"
+      ],
+      colors: ["карамель", "серый"]
+    }
+  }
+},
+
+
+  {
+  id: 213,
+  price: 2000,
+  isTop: false,
+  isNew: true,
+  sku: "99355",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Asymmetric Leather Dress/1.avif",
+  images: [
+    "/Dress/Asymmetric Leather Dress/2.avif",
+    "/Dress/Asymmetric Leather Dress/3.avif",
+    "/Dress/Asymmetric Leather Dress/4.avif",
+    "/Dress/Asymmetric Leather Dress/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Asymmetric Leather Dress",
+      description: [
+        "An asymmetric dress that redefines modern femininity through structure and minimalism.",
+        "Crafted from smooth eco-leather in a deep gray-blue tone, it maintains shape while allowing fluid movement.",
+        "The sculptural silhouette with clean lines resembles architectural balance — every seam purposeful and aesthetic.",
+        "Fabric: high-quality stretch eco-leather on a suede base (durable, flexible, non-cracking).",
+        "Details:",
+        "• Cut: asymmetric with decorative draping on the top",
+        "• Sleeveless design emphasizes delicate shoulders",
+        "• Length: knee-length"
+      ],
+      colors: ["gray"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe Asymétrique en Cuir",
+      description: [
+        "Une robe asymétrique — interprétation moderne de la force et du minimalisme féminins.",
+        "Confectionnée en cuir écologique lisse dans une teinte gris-bleu profonde, elle garde sa forme tout en restant fluide.",
+        "Sa silhouette sculpturale et ses lignes nettes rappellent une composition architecturale équilibrée.",
+        "Tissu : cuir écologique extensible de haute qualité sur base daim (résistant et souple).",
+        "Détails :",
+        "• Coupe : asymétrique avec drapé décoratif sur le haut",
+        "• Sans manches — met en valeur la délicatesse des bras",
+        "• Longueur : jusqu'au genou"
+      ],
+      colors: ["gris"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Шкіряна асиметрична сукня",
+      description: [
+        "Асиметрична сукня — це сучасна інтерпретація жіночої сили й мінімалізму.",
+        "Створена з гладкої костюмної тканини в глибокому сіро-блакитному відтінку, вона тримає форму, не втрачаючи м’якості руху.",
+        "Скульптурний силует із чіткими лініями нагадує архітектурну композицію, у якій кожен шов — продуманий і естетичний.",
+        "Тканина: якісна екошкіра на замшевій основі (стречева, не тріскається).",
+        "Деталі:",
+        "• Крій: асиметричний — з декоративною драпіровкою у верхній частині",
+        "• Без рукавів — лаконічна форма плечей підкреслює тендітність рук",
+        "• Довжина: до коліна"
+      ],
+      colors: ["сірий"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Кожаное асимметричное платье",
+      description: [
+        "Асимметричное платье — современная интерпретация женской силы и минимализма.",
+        "Создано из гладкой эко-кожи глубокого серо-голубого оттенка, держит форму, оставаясь пластичным в движении.",
+        "Скульптурный силуэт с чёткими линиями напоминает архитектурную композицию, где каждый шов продуман и эстетичен.",
+        "Ткань: качественная эко-кожа на замшевой основе (тянется, не трескается).",
+        "Детали:",
+        "• Крой: асимметричный с декоративной драпировкой сверху",
+        "• Без рукавов — лаконичная линия плеч подчёркивает изящество рук",
+        "• Длина: до колена"
+      ],
+      colors: ["серый"]
+    }
+  }
+},
+
+
+  {
+  id: 212,
+  price: 3100,
+  isTop: false,
+  isNew: true,
+  sku: "99354",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Camel Dress/1.avif",
+  images: [
+    "/Dress/Camel Dress/2.avif",
+    "/Dress/Camel Dress/3.avif",
+    "/Dress/Camel Dress/4.avif",
+    "/Dress/Camel Dress/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Camel Dress",
+      description: [
+        "A refined dress in warm caramel beige — an embodiment of calm, strength, and feminine elegance.",
+        "The model with ¾ sleeves and a softly flared hem creates a harmonious silhouette, accentuating the waist.",
+        "The simple cut with hidden seams highlights natural beauty without unnecessary details.",
+        "Fabric: premium-quality natural wool for warmth, coziness, and a pleasant tactile feel.",
+        "Details:",
+        "• Length: midi",
+        "• Sleeve: ¾ with a gentle taper at the wrist",
+        "• Silhouette: fitted with a flared bottom"
+      ],
+      colors: ["camel"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe Camel",
+      description: [
+        "Une robe raffinée de couleur beige caramel chaud — incarnation de la sérénité, de la force et de l’élégance féminine.",
+        "Le modèle à manches ¾ et à ourlet évasé crée une silhouette harmonieuse, mettant en valeur la taille.",
+        "La coupe simple et les coutures discrètes soulignent la beauté naturelle sans détails superflus.",
+        "Tissu : laine naturelle de qualité supérieure, offrant chaleur et confort.",
+        "Détails :",
+        "• Longueur : midi",
+        "• Manches : ¾, légèrement resserrées au poignet",
+        "• Silhouette : ajustée avec bas évasé"
+      ],
+      colors: ["camel"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Сукня 'Camel'",
+      description: [
+        "Витончена сукня кольору теплого карамельного беж — втілення спокою, сили та жіночої елегантності.",
+        "Модель із довгими рукавами ¾ і м’яко розкльошеним низом створює гармонійну лінію силуету, акцентуючи талію.",
+        "Простий крій з прихованими швами ідеально підкреслює природну красу жінки, не потребуючи зайвих деталей.",
+        "Тканина: натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "Деталі:",
+        "• Довжина: міді",
+        "• Рукав: ¾ із легким звуженням до зап’ястя",
+        "• Силует: приталений із розкльошеним низом"
+      ],
+      colors: ["кемел"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Платье 'Camel'",
+      description: [
+        "Элегантное платье теплого карамельно-бежевого оттенка — воплощение спокойствия, силы и женственности.",
+        "Модель с рукавом ¾ и мягко расклешённым низом формирует гармоничный силуэт, подчёркивая талию.",
+        "Простой крой с потайными швами идеально подчёркивает естественную красоту без лишних деталей.",
+        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло и комфорт.",
+        "Детали:",
+        "• Длина: миди",
+        "• Рукав: ¾, слегка суженный к запястью",
+        "• Силуэт: приталенный с расклешённым низом"
+      ],
+      colors: ["кемел"]
+    }
+  }
+},
+
+  {
+  id: 211,
+  price: 3100,
+  isTop: false,
+  isNew: true,
+  sku: "99353",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Flanel Dress/1.avif",
+  images: [
+    "/Dress/Flanel Dress/2.avif",
+    "/Dress/Flanel Dress/3.avif",
+    "/Dress/Flanel Dress/4.avif",
+    "/Dress/Flanel Dress/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Flanel Dress",
+      description: [
+        "A minimalist grey wool dress that embodies modern elegance. Clean lines and a thoughtful cut create a sense of harmony and strength in simplicity.",
+        "The semi-fitted silhouette with a gentle flare elongates the figure, while the short sleeves balance the structured shape.",
+        "Fabric: premium-quality natural wool flannel for warmth, softness, and comfort.",
+        "Details:",
+        "• Short sleeves with soft volume",
+        "• Silhouette: semi-fitted with a slight flare toward the hem",
+        "• Neckline: standing collar with a softly rounded edge"
+      ],
+      colors: ["grey"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe Flanel",
+      description: [
+        "Une robe grise minimaliste en laine, incarnation de l'élégance moderne. Ses lignes épurées et sa coupe étudiée créent une sensation d’harmonie et de force dans la simplicité.",
+        "La silhouette semi-ajustée, légèrement évasée, allonge visuellement la silhouette, tandis que les manches courtes équilibrent la forme structurée.",
+        "Tissu : flanelle de laine naturelle de qualité supérieure pour la chaleur et le confort.",
+        "Détails :",
+        "• Manches courtes avec volume doux",
+        "• Silhouette semi-ajustée, légèrement évasée vers le bas",
+        "• Col montant à ligne légèrement arrondie"
+      ],
+      colors: ["gris"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Сукня 'Flanel'",
+      description: [
+        "Лаконічна сіра сукня з вовняної тканини — втілення сучасної елегантності.",
+        "Її чисті лінії та продуманий крій створюють відчуття гармонії та сили в простоті. Напівприталений силует із м’яким розкльошенням донизу візуально подовжує фігуру, а короткий рукав балансує строгість форми.",
+        "Тканина: натуральний вовняний фланель преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "Деталі:",
+        "• Рукав: короткий, із м’яким об’ємом",
+        "• Силует: приталений, із плавним розширенням донизу",
+        "• Горловина: стоячий комір зі злегка округленою лінією"
+      ],
+      colors: ["сірий"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Платье 'Flanel'",
+      description: [
+        "Лаконичное серое платье из шерстяной ткани — воплощение современной элегантности.",
+        "Чистые линии и продуманный крой создают ощущение гармонии и силы в простоте. Полуприлегающий силуэт с мягким расклешением визуально вытягивает фигуру, а короткий рукав смягчает строгость формы.",
+        "Ткань: натуральная шерстяная фланель премиум-качества, обеспечивающая тепло и комфорт.",
+        "Детали:",
+        "• Рукав короткий, с мягким объёмом",
+        "• Силуэт полуприлегающий, с лёгким расширением к низу",
+        "• Воротник стойка с мягко округлой линией"
+      ],
+      colors: ["серый"]
+    }
+  }
+},
+
+  {
   id: 210,
   price: 1900,
   isTop: false,
@@ -3057,8 +3387,13 @@ const products = [
       
       size: "XS S M L XL",
       category: "Dresses",
-      image: "/Dress/Emily Dress/6.avif",
+      image: "/Dress/Emily Dress/1.avif",
       images: [
+        "/Dress/Emily Dress/2.avif",
+        "/Dress/Emily Dress/3.avif",
+        "/Dress/Emily Dress/4.avif",
+        "/Dress/Emily Dress/5.avif",
+        "/Dress/Emily Dress/6.avif",
         "/Dress/Emily Dress/7.avif",
         "/Dress/Emily Dress/8.avif",
         "/Dress/Emily Dress/9.avif",
@@ -3072,21 +3407,21 @@ const products = [
           name: "Emily Dress",
           description: "Wool midi dress with a V-neck, shortened sleeves, and pockets.\nFabric: 80% wool, 20% polyester",
           color: "gray, camel",
-          colors: ["gray"],
+          colors: ["camel","gray"],
         },
         FR: {
           category: "Robes",
           name: "Robe « Emily »",
           description: "Robe midi en laine avec col en V, manches raccourcies et poches.\nTissu: 80% laine, 20% polyester",
           color: "gris, camel",
-          colors: ["gris"],
+          colors: ["camel","gris"],
         },
         UA: {
           category: "Сукнi",
           name: "Сукня «Emily»",
           description: "Вовняна сукня міді довжини із V-вирізом, вкороченими рукавами та кишенями.\nТканина: 80% вовна, 20% поліестер",
           color: "сірий, краватний",
-          colors: ["сірий"],
+          colors: ["кемел","сірий"],
         },
         RU: {
           category: "Платья",
@@ -11674,7 +12009,19 @@ description: [
       category: "Pants",
       image: "/Pants/Leather Flared Pants/5.avif",
       images: [
-        "/Pants/Leather Flared Pants/6.avif", "/Pants/Leather Flared Pants/7.avif", "/Pants/Leather Flared Pants/4.avif", "/Pants/Leather Flared Pants/8.avif", "/Pants/Leather Flared Pants/9.avif",],
+        "/Pants/Leather Flared Pants/6.avif", "/Pants/Leather Flared Pants/7.avif", "/Pants/Leather Flared Pants/4.avif", "/Pants/Leather Flared Pants/8.avif", "/Pants/Leather Flared Pants/9.avif",
+      "/Pants/Leather Flared Pants/10.avif",
+      "/Pants/Leather Flared Pants/11.avif",
+      "/Pants/Leather Flared Pants/12.avif",
+      "/Pants/Leather Flared Pants/13.avif",
+      "/Pants/Leather Flared Pants/14.avif",
+      "/Pants/Leather Flared Pants/15.avif",
+      "/Pants/Leather Flared Pants/16.avif",
+      "/Pants/Leather Flared Pants/17.avif",
+
+      
+      
+      ],
        
       sizes: ["XS", "S", "M", "L", "XL" ],
       translations: {
@@ -11682,7 +12029,7 @@ description: [
           category: "Pants",
           name: "Leather Flared Pants",
           description: "High-waisted flared pants with pleats running along the entire length.Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)",
-          colors: ["Black",],
+          colors: ["Black","powder","milk"],
         },
         FR: {
           category: "Pantalons",
@@ -11694,7 +12041,7 @@ description: [
           category: "Брюки",
           name: "Шкіряні брюки кльош ",
           description: "Брюки фасону кльош на високій посадці із стрілками по всій довжиніТканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається )",
-          colors: ["Чорний",],
+          colors: ["Чорний","пудра", "молоко"],
         },
         RU: {
           category: "Брюки",
