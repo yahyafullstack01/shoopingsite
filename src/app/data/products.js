@@ -1,6 +1,428 @@
 const products = [
 
   {
+  id: 210,
+  price: 1900,
+  isTop: false,
+  isNew: true,
+  sku: "99352",
+  size: "XS S M L XL",
+  category: "Shirts",
+  image: "/Shirts/Leopard Shirt/1.avif",
+  images: [
+    "/Shirts/Leopard Shirt/2.avif",
+    "/Shirts/Leopard Shirt/3.avif",
+    "/Shirts/Leopard Shirt/4.avif",
+    "/Shirts/Leopard Shirt/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Shirts",
+      name: "Leopard Shirt",
+      description: [
+        "Light, airy, and full of character — this leopard-print batiste shirt is made for women who embrace both tenderness and boldness.",
+        "The semi-transparent natural fabric flows beautifully in motion, while the animal print in chocolate, beige, and caramel tones adds depth and allure.",
+        "Fabric: premium-quality natural batiste.",
+        "Details:",
+        "• Classic collar",
+        "• Full-length button closure",
+        "• Relaxed fit that can be easily tucked into pants or a skirt"
+      ],
+      colors: ["leopard"]
+    },
+    FR: {
+      category: "Chemises",
+      name: "Chemise léopard",
+      description: [
+        "Légère, aérienne et pleine de caractère — une chemise en batiste fine à imprimé léopard pour les femmes à la fois douces et audacieuses.",
+        "Le tissu semi-transparent capte la lumière, créant un effet fluide et délicat, tandis que l’imprimé aux tons chocolat, beige et caramel ajoute de la profondeur.",
+        "Tissu : batiste naturelle de qualité supérieure.",
+        "Détails :",
+        "• Col classique",
+        "• Fermeture boutonnée sur toute la longueur",
+        "• Coupe ample facilement rentrable dans un pantalon ou une jupe"
+      ],
+      colors: ["léopard"]
+    },
+    UA: {
+      category: "Сорочки",
+      name: "Леопардова сорочка",
+      description: [
+        "Легка, невагома й водночас харизматична — сорочка з тонкого батисту з анімалістичним принтом створена для жінок, які вміють бути ніжними й сміливими водночас.",
+        "Напівпрозора тканина грає на світлі, створюючи м’який ефект струмування, а принт у відтінках шоколаду, бежу та карамелі додає глибини образу.",
+        "Тканина: натуральний батист преміум якості.",
+        "Деталі:",
+        "• Класичний комір",
+        "• Застібка на гудзики по всій довжині",
+        "• Вільний крій, який легко заправити в брюки чи спідницю"
+      ],
+      colors: ["леопард"]
+    },
+    RU: {
+      category: "Рубашки",
+      name: "Леопардовая рубашка",
+      description: [
+        "Легкая, воздушная и харизматичная — рубашка из тонкого батиста с анималистичным принтом создана для женщин, умеющих сочетать нежность и смелость.",
+        "Полупрозрачная ткань красиво играет на свету, а принт в оттенках шоколада, бежа и карамели добавляет глубины образу.",
+        "Ткань: натуральный батист премиум качества.",
+        "Детали:",
+        "• Классический воротник",
+        "• Застёжка на пуговицы по всей длине",
+        "• Свободный крой, легко заправляется в брюки или юбку"
+      ],
+      colors: ["леопард"]
+    }
+  }
+},
+
+  {
+  id: 209,
+  price: 1550,
+  isTop: false,
+  isNew: true,
+  sku: "99351",
+  size: "XS S M L XL",
+  category: "Skirts",
+  image: "/Skirts/Leather Mini Skirt/1.avif",
+  images: [
+    "/Skirts/Leather Mini Skirt/2.avif",
+    "/Skirts/Leather Mini Skirt/3.avif",
+    "/Skirts/Leather Mini Skirt/4.avif",
+    "/Skirts/Leather Mini Skirt/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Skirts",
+      name: "Leather Mini Skirt",
+      description: [
+        "A classic pencil mini skirt made of eco-leather in deep burgundy — femininity with character.",
+        "Its sleek silhouette accentuates the figure while remaining comfortable in motion.",
+        "Soft premium eco-leather with a subtle satin sheen keeps its shape throughout the day and doesn’t crack.",
+        "Fabric: high-quality stretch eco-leather on a suede base (durable, flexible, and soft).",
+        "Details:",
+        "• Silhouette: classic pencil",
+        "• High waist",
+        "• Neat waistline with darts for a perfect fit",
+        "• Length — 50 cm"
+      ],
+      colors: ["marsala"]
+    },
+    FR: {
+      category: "Jupes",
+      name: "Jupe en cuir mini",
+      description: [
+        "Une jupe crayon classique en cuir synthétique bordeaux profond — la féminité avec du caractère.",
+        "Sa forme épurée souligne la silhouette tout en restant confortable.",
+        "Le cuir écologique doux de qualité supérieure possède une légère brillance satinée et conserve sa forme toute la journée.",
+        "Tissu : cuir synthétique extensible sur base suédée (souple et résistant).",
+        "Détails :",
+        "• Silhouette : crayon classique",
+        "• Taille haute",
+        "• Ligne de taille ajustée avec pinces",
+        "• Longueur — 50 cm"
+      ],
+      colors: ["marsala"]
+    },
+    UA: {
+      category: "Спідниці",
+      name: "Шкіряна спідниця міні",
+      description: [
+        "Класична спідниця-олівець зі штучної шкіри у відтінку глибокого бордо — це втілення жіночності з характером.",
+        "Її лаконічна форма підкреслює фігуру, залишаючись водночас комфортною у русі.",
+        "М’яка екошкіра преміум якості має легкий сатиновий блиск і не заламується, а щільна посадка тримає форму протягом дня.",
+        "Тканина: якісна екошкіра на замшевій основі (стречева, не тріскається).",
+        "Деталі:",
+        "• Силует: класичний “олівець”",
+        "• Висока посадка",
+        "• Акуратна талієва лінія з виточками для ідеальної посадки",
+        "• Довжина — 50см"
+      ],
+      colors: ["марсала"]
+    },
+    RU: {
+      category: "Юбки",
+      name: "Кожаная мини-юбка",
+      description: [
+        "Классическая юбка-карандаш из искусственной кожи глубокого бордового оттенка — воплощение женственности с характером.",
+        "Её лаконичный крой подчеркивает фигуру, оставаясь комфортным в движении.",
+        "Мягкая эко-кожа премиум качества с лёгким сатиновым блеском не ломается и держит форму весь день.",
+        "Ткань: качественная эко-кожа на замшевой основе (стрейчевая, не трескается).",
+        "Детали:",
+        "• Силуэт: классический «карандаш»",
+        "• Высокая посадка",
+        "• Аккуратная линия талии с вытачками для идеальной посадки",
+        "• Длина — 50 см"
+      ],
+      colors: ["марсала"]
+    }
+  }
+},
+
+  {
+  id: 208,
+  price: 2060,
+  isTop: false,
+  isNew: true,
+  sku: "99350",
+  size: "XS S M L XL",
+  category: "Pants",
+  image: "/Pants/Khaki Pants/1.avif",
+  images: [
+    "/Pants/Khaki Pants/2.avif",
+    "/Pants/Khaki Pants/3.avif",
+    "/Pants/Khaki Pants/4.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Pants",
+      name: "Khaki Pants",
+      description: [
+        "Wide palazzo pants with a high waist — the key to perfect proportions.",
+        "The flowing fabric drapes beautifully in motion, visually elongating the legs.",
+        "Decorative front pleats create a soft volume, while the double-button closure accentuates the waist.",
+        "Fabric: Dense premium suiting fabric that holds its shape while remaining soft to the touch.",
+        "[ Composition: 75% viscose, 25% polyester ]",
+        "Details:",
+        "• Wide, relaxed silhouette",
+        "• High waist",
+        "• Zip and double-button closure"
+      ],
+      colors: ["khaki"]
+    },
+    FR: {
+      category: "Pantalons",
+      name: "Pantalon «Khaki»",
+      description: [
+        "Pantalon palazzo large à taille haute — la clé des proportions parfaites.",
+        "Le tissu fluide tombe élégamment en mouvement, allongeant visuellement les jambes.",
+        "Les plis décoratifs à l'avant créent un volume doux, tandis que la fermeture à double bouton souligne la taille.",
+        "Tissu : tissu de costume dense de qualité supérieure qui garde sa forme tout en restant agréable au toucher.",
+        "[ Composition : 75% viscose, 25% polyester ]",
+        "Détails :",
+        "• Coupe large et fluide",
+        "• Taille haute",
+        "• Fermeture éclair et double bouton"
+      ],
+      colors: ["kaki"]
+    },
+    UA: {
+      category: "Брюки",
+      name: "Брюки «Khaki»",
+      description: [
+        "Широкі брюки палаццо з високою посадкою — ключ до ідеальної пропорції.",
+        "Струмуюча тканина красиво лягає у русі, візуально подовжуючи ноги.",
+        "Декоративні защипи спереду створюють м’який об’єм, а подвоєна застібка підкреслює талію.",
+        "Тканина: Щільна костюмна тканина преміум-класу, що тримає форму, але при цьому приємна до тіла.",
+        "[ Склад: 75% віскоза, 25% поліестер ]",
+        "Деталі:",
+        "• Широкий, вільний силует",
+        "• Висока посадка",
+        "• Застібка на блискавку та два ґудзики"
+      ],
+      colors: ["хакі"]
+    },
+    RU: {
+      category: "Брюки",
+      name: "Брюки «Khaki»",
+      description: [
+        "Широкие брюки палаццо с высокой посадкой — ключ к идеальным пропорциям.",
+        "Струящаяся ткань красиво ложится в движении, визуально удлиняя ноги.",
+        "Декоративные защипы спереди создают мягкий объем, а двойная застёжка подчёркивает талию.",
+        "Ткань: плотная костюмная ткань премиум-класса, держащая форму и приятная к телу.",
+        "[ Состав: 75% вискоза, 25% полиэстер ]",
+        "Детали:",
+        "• Широкий, свободный силуэт",
+        "• Высокая посадка",
+        "• Застёжка на молнию и два пуговицы"
+      ],
+      colors: ["хаки"]
+    }
+  }
+},
+
+  {
+  id: 207,
+  price: 3750,
+  isTop: false,
+  isNew: true,
+  sku: "99349",
+  size: "XS S M L XL",
+  category: "Jackets",
+  image: "/Jackets/Khaki Jacket/1.avif",
+  images: [
+    "/Jackets/Khaki Jacket/2.avif",
+    "/Jackets/Khaki Jacket/3.avif",
+    "/Jackets/Khaki Jacket/4.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Jackets",
+      name: "Khaki Jacket",
+      description: [
+        "An oversized jacket with a soft shoulder line — minimalist yet expressive.",
+        "The subtle check pattern adds texture, while the elongated silhouette creates an elegant look with a touch of French nonchalance.",
+        "Features functional flap pockets and a back vent.",
+        "Fabric: Dense premium suiting fabric that holds its shape while remaining soft to the touch.",
+        "[ Composition: 75% viscose, 25% polyester ]",
+        "Details:",
+        "• Relaxed fit",
+        "• Elongated cut",
+        "• Single-breasted fastening"
+      ],
+      colors: ["khaki"]
+    },
+    FR: {
+      category: "Vestes",
+      name: "Veste «Khaki»",
+      description: [
+        "Veste oversize à ligne d'épaule douce — minimaliste mais expressive.",
+        "Le motif à carreaux ajoute de la texture, tandis que la silhouette allongée crée un look élégant avec une touche de désinvolture française.",
+        "Dispose de poches à rabat fonctionnelles et d'une fente au dos.",
+        "Tissu : tissu de costume dense de qualité supérieure qui garde sa forme tout en restant agréable au toucher.",
+        "[ Composition : 75% viscose, 25% polyester ]",
+        "Détails :",
+        "• Coupe ample",
+        "• Coupe allongée",
+        "• Fermeture simple à un bouton"
+      ],
+      colors: ["kaki"]
+    },
+    UA: {
+      category: "Жакети",
+      name: "Жакет «Khaki»",
+      description: [
+        "Oversize жакет із м’якою лінією плеча — лаконічний, але виразний.",
+        "Клітинка додає текстури, а подовжений силует створює елегантний образ із ноткою французької недбалості.",
+        "Має функціональні кишені з клапанами та шліцу ззаду.",
+        "Тканина: Щільна костюмна тканина преміум-класу, що тримає форму, але при цьому приємна до тіла.",
+        "[ Склад: 75% віскоза, 25% поліестер ]",
+        "Деталі:",
+        "• Вільна посадка",
+        "• Подовжений крій",
+        "• Однобортна застібка"
+      ],
+      colors: ["хакі"]
+    },
+    RU: {
+      category: "Жакеты",
+      name: "Жакет «Khaki»",
+      description: [
+        "Oversize жакет с мягкой линией плеч — лаконичный, но выразительный.",
+        "Клетка добавляет текстуры, а удлинённый силуэт создаёт элегантный образ с ноткой французской непринуждённости.",
+        "Имеет функциональные карманы с клапанами и шлицу сзади.",
+        "Ткань: плотная костюмная ткань премиум-класса, держащая форму и приятная к телу.",
+        "[ Состав: 75% вискоза, 25% полиэстер ]",
+        "Детали:",
+        "• Свободная посадка",
+        "• Удлинённый крой",
+        "• Однобортная застёжка"
+      ],
+      colors: ["хаки"]
+    }
+  }
+},
+
+  {
+  id: 206,
+  price: 5800,
+  isTop: false,
+  isNew: true,
+  sku: "99348",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Khaki Suit/1.avif",
+  images: [
+    "/Costumes/Khaki Suit/2.avif",
+    "/Costumes/Khaki Suit/3.avif",
+    "/Costumes/Khaki Suit/4.avif",
+    "/Costumes/Khaki Suit/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Khaki Suit",
+      description: [
+        "An elegant suit in a deep khaki shade — the perfect balance of sophistication and effortless chic.",
+        "Designed for the modern woman who values minimalism, naturalness, and confidence in every move.",
+        "The relaxed cut adds ease and comfort.",
+        "Fabric: Dense premium suiting fabric that holds its shape while remaining soft to the touch.",
+        "[ Composition: 75% viscose, 25% polyester ]",
+        "Details:",
+        "Jacket: Relaxed fit",
+        "• Elongated cut",
+        "• Single-breasted fastening",
+        "Pants: Wide, relaxed silhouette",
+        "• High waist",
+        "• Zip and double button closure"
+      ],
+      colors: ["khaki"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume «Khaki»",
+      description: [
+        "Un costume élégant dans une teinte kaki profonde — un équilibre parfait entre rigueur et chic naturel.",
+        "Créé pour la femme moderne qui apprécie le minimalisme, la simplicité et la confiance dans chaque mouvement.",
+        "La coupe ample ajoute légèreté et confort.",
+        "Tissu : tissu de costume dense de qualité supérieure qui garde sa forme tout en étant agréable au toucher.",
+        "[ Composition : 75% viscose, 25% polyester ]",
+        "Détails :",
+        "Veste : coupe ample",
+        "• Coupe allongée",
+        "• Fermeture à un seul bouton",
+        "Pantalon : silhouette large et fluide",
+        "• Taille haute",
+        "• Fermeture à glissière et double bouton"
+      ],
+      colors: ["kaki"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм «Khaki»",
+      description: [
+        "Витончений костюм у глибокому хакі відтінку — ідеальний баланс строгості та effortless-шику.",
+        "Створений для сучасної жінки, яка цінує мінімалізм, природність і впевненість у кожному русі.",
+        "Вільний крій додає легкості та комфорту.",
+        "Тканина: Щільна костюмна тканина преміум-класу, що тримає форму, але при цьому приємна до тіла.",
+        "[ Склад: 75% віскоза, 25% поліестер ]",
+        "Деталі:",
+        "Жакет: Вільна посадка",
+        "• Подовжений крій",
+        "• Однобортна застібка",
+        "Брюки: Широкий, вільний силует",
+        "• Висока посадка",
+        "• Застібка на блискавку та два ґудзики"
+      ],
+      colors: ["хакі"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм «Khaki»",
+      description: [
+        "Элегантный костюм глубокого хаки оттенка — идеальный баланс строгости и непринуждённого шика.",
+        "Создан для современной женщины, которая ценит минимализм, естественность и уверенность в каждом движении.",
+        "Свободный крой добавляет лёгкости и комфорта.",
+        "Ткань: плотная костюмная ткань премиум-класса, держащая форму и приятная к телу.",
+        "[ Состав: 75% вискоза, 25% полиэстер ]",
+        "Детали:",
+        "Жакет: свободная посадка",
+        "• Удлинённый крой",
+        "• Однобортная застёжка",
+        "Брюки: широкий, свободный силуэт",
+        "• Высокая посадка",
+        "• Застёжка на молнию и две пуговицы"
+      ],
+      colors: ["хаки"]
+    }
+  }
+},
+
+  {
   id: 205,
   price: 2100,
   isTop: false,
@@ -10781,38 +11203,38 @@ description: [
     //   }
     // },
     
-    {
-      id: 12,
-      price: 4920,
-      sku: "12345",
-      color: "camel",
-      size: "XS S M L XL",
-      category: "Outerwear",
-      image: "/Outerwear/Camel пальто/1.avif",
-      images: ["/Outerwear/Camel пальто/2.avif", "/Outerwear/Camel пальто/3.avif", "/Outerwear/Camel пальто/4.avif", "/Outerwear/Camel пальто/5.avif"],
+    // {
+    //   id: 12,
+    //   price: 4920,
+    //   sku: "12345",
+    //   color: "camel",
+    //   size: "XS S M L XL",
+    //   category: "Outerwear",
+    //   image: "/Outerwear/Camel пальто/1.avif",
+    //   images: ["/Outerwear/Camel пальто/2.avif", "/Outerwear/Camel пальто/3.avif", "/Outerwear/Camel пальто/4.avif", "/Outerwear/Camel пальто/5.avif"],
       
-      sizes: ["XS", "S", "M", "L", "XL"],
-      translations: {
-        EN: {
-          category: "Outerwear",
-          name: "Camel Coat",
-          description: "A thick, lined midi-length coat with two pockets and a belt included. The sleeves can be adjusted to your liking\nFabric: Italy. 85% wool, 15% polyester",
-          colors: ["camel"],
-        },
-        FR: {
-          category: "Vêtements d'extérieur",
-          name: "Manteau Camel",
-          description: "Manteau épais, de longueur midi, doublé, doté de deux poches et muni d'une ceinture. Les manches peuvent être ajustées à votre guise.\nTissu : Italie. 85% laine, 15% polyester",
-          colors: ["camel"],
-        },
-        UA: {
-          category: "Верхній одяг",
-          name: "Camel пальто",
-          description: "Щільне пальто міді довжини на підкладці, має дві кишені, а пояс іде у комплекті. Рукава можна регулювати, як вам зручно\nТканина:Італія. 85 % вовни, 15% поліестер",
-          colors: ["камель"],
-        }
-      }
-    },
+    //   sizes: ["XS", "S", "M", "L", "XL"],
+    //   translations: {
+    //     EN: {
+    //       category: "Outerwear",
+    //       name: "Camel Coat",
+    //       description: "A thick, lined midi-length coat with two pockets and a belt included. The sleeves can be adjusted to your liking\nFabric: Italy. 85% wool, 15% polyester",
+    //       colors: ["camel"],
+    //     },
+    //     FR: {
+    //       category: "Vêtements d'extérieur",
+    //       name: "Manteau Camel",
+    //       description: "Manteau épais, de longueur midi, doublé, doté de deux poches et muni d'une ceinture. Les manches peuvent être ajustées à votre guise.\nTissu : Italie. 85% laine, 15% polyester",
+    //       colors: ["camel"],
+    //     },
+    //     UA: {
+    //       category: "Верхній одяг",
+    //       name: "Camel пальто",
+    //       description: "Щільне пальто міді довжини на підкладці, має дві кишені, а пояс іде у комплекті. Рукава можна регулювати, як вам зручно\nТканина:Італія. 85 % вовни, 15% поліестер",
+    //       colors: ["камель"],
+    //     }
+    //   }
+    // },
     
     
 
