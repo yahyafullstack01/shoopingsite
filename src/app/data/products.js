@@ -3036,7 +3036,7 @@ const products = [
         "Fabric: Premium natural wool for warmth, coziness, and pleasant tactile sensations.",
         "[ Composition: 75% wool ]"
       ],
-      colors: ["graphite", "grey"]
+      colors: ["graphite", "grey", "plum"]
     },
     FR: {
       category: "Jupes",
@@ -3058,7 +3058,7 @@ const products = [
         "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
         "[ Склад: 75% вовни ]"
       ],
-      colors: ["графіт", "сірий"]
+      colors: ["графіт", "сірий", "слива"]
     },
     RU: {
       category: "Юбки",
