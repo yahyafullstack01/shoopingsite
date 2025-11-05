@@ -1,6 +1,422 @@
 const products = [
 
   {
+  id: 219,
+  price: 3900,
+  isTop: false,
+  isNew: true,
+  sku: "99361",
+  size: "XS S M L XL",
+  category: "Outerwear",
+  image: "/Outerwear/Herringbone Wool Aviator/1.avif",
+  images: [
+    "/Outerwear/Herringbone Wool Aviator/2.avif",
+    "/Outerwear/Herringbone Wool Aviator/3.avif",
+    "/Outerwear/Herringbone Wool Aviator/4.avif",
+    "/Outerwear/Herringbone Wool Aviator/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Outerwear",
+      name: "Herringbone Wool Aviator Jacket",
+      description: [
+        "An iconic classic reimagined for the modern woman.",
+        "This jacket blends a structured masculine cut with feminine elegance and meticulous attention to detail. Crafted from premium herringbone-patterned wool, it adds texture and visual depth to any look.",
+        "Fabric: Premium-quality natural wool providing warmth, coziness, and a pleasant tactile feel.",
+        "[ Composition: 75% wool ]",
+        "Details:",
+        "• Relaxed oversize silhouette with defined shoulders — looks stylish both open and buttoned.",
+        "• Fringe edge detailing adds movement and character to the design.",
+        "• Double button closure and adjustable side belt with metal buckle for a customizable fit."
+      ],
+      colors: ["gray herringbone"]
+    },
+    FR: {
+      category: "Manteaux",
+      name: "Veste aviateur en laine à chevrons",
+      description: [
+        "Un classique légendaire revisité dans une version moderne.",
+        "Cette veste associe une coupe masculine structurée à une élégance féminine et une attention méticuleuse aux détails. Confectionnée en laine à motif chevrons, elle ajoute de la texture et de la profondeur visuelle à chaque tenue.",
+        "Tissu : laine naturelle de qualité supérieure offrant chaleur, confort et douceur au toucher.",
+        "[ Composition : 75% laine ]",
+        "Détails :",
+        "• Silhouette oversize avec des lignes d’épaules nettes — élégante ouverte ou fermée.",
+        "• Finition à franges accentuée — ajoute du mouvement et du caractère.",
+        "• Fermeture double boutonnage et ceinture latérale réglable avec boucle métallique."
+      ],
+      colors: ["gris chevrons"]
+    },
+    UA: {
+      category: "Верхній одяг",
+      name: "Вовняна куртка авіатор",
+      description: [
+        "Легендарна класика у сучасному виконанні.",
+        "Куртка поєднує структуру чоловічого крою з жіночою елегантністю та бездоганною увагою до деталей. Вона створена з вовняної тканини у візерунку “ялинка”, що додає фактурності та візуальної глибини кожному образу.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[ Склад: 75% вовни ]",
+        "Деталі:",
+        "• Вільний oversize-силует із чіткими лініями плеча — виглядає стильно як у розстібнутому, так і застібнутому варіанті.",
+        "• Акцентна обробка країв бахромою — додає образу динамічності й характеру.",
+        "• Подвійна застібка на гудзики та ремінь із металевою пряжкою на боці для регулювання об’єму."
+      ],
+      colors: ["сіра ялинка"]
+    },
+    RU: {
+      category: "Верхняя одежда",
+      name: "Шерстяная куртка авиатор в ёлочку",
+      description: [
+        "Легендарная классика в современном исполнении.",
+        "Куртка сочетает структуру мужского кроя с женственной элегантностью и безупречным вниманием к деталям. Изготовлена из шерсти с узором «ёлочка», она добавляет образу фактурности и глубины.",
+        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло и комфорт.",
+        "[ Состав: 75% шерсти ]",
+        "Детали:",
+        "• Свободный oversize-силуэт с чёткими плечами — стильно смотрится как в расстёгнутом, так и застёгнутом виде.",
+        "• Отделка краёв бахромой — добавляет движению и характеру.",
+        "• Двойная застёжка на пуговицы и пояс с металлической пряжкой сбоку для регулировки объёма."
+      ],
+      colors: ["серая ёлочка"]
+    }
+  }
+},
+
+  {
+  id: 218,
+  price: 2000,
+  isTop: false,
+  isNew: true,
+  sku: "99360",
+  size: "XS S M L XL",
+  category: "Skirts",
+  image: "/Skirts/Herringbone Wool/1.avif",
+  images: [
+    "/Skirts/Herringbone Wool/2.avif",
+    "/Skirts/Herringbone Wool/3.avif",
+    "/Skirts/Herringbone Wool/4.avif",
+    "/Skirts/Herringbone Wool/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Skirts",
+      name: "Herringbone Wool Skirt",
+      description: [
+        "The embodiment of modern femininity with an architectural accent.",
+        "This skirt combines classic style and strong design: the soft herringbone-patterned wool contrasts beautifully with glossy leather inserts.",
+        "Fabric: Premium-quality natural wool providing warmth, coziness, and a pleasant tactile feel.",
+        "[ Composition: 75% wool ]",
+        "Details:",
+        "• A structured eco-leather waistband creates a corset effect and emphasizes the waist.",
+        "• Geometric leather inserts near the pockets form a defined silhouette and add graphic sophistication.",
+        "• A neat front slit ensures freedom of movement and adds elegant dynamism."
+      ],
+      colors: ["gray herringbone"]
+    },
+    FR: {
+      category: "Jupes",
+      name: "Jupe en laine à chevrons",
+      description: [
+        "L’incarnation de la féminité moderne avec une touche architecturale.",
+        "Cette jupe combine le style classique et la force du design : la laine douce à motif chevrons contraste harmonieusement avec les inserts en cuir brillant.",
+        "Tissu : laine naturelle de qualité supérieure offrant chaleur, confort et douceur au toucher.",
+        "[ Composition : 75% laine ]",
+        "Détails :",
+        "• Ceinture structurée en cuir écologique créant un effet corset et soulignant la taille.",
+        "• Inserts géométriques en cuir près des poches formant une silhouette nette et graphique.",
+        "• Fente avant discrète pour une liberté de mouvement élégante."
+      ],
+      colors: ["gris chevrons"]
+    },
+    UA: {
+      category: "Спідниці",
+      name: "Вовняна спідниця у ялинку",
+      description: [
+        "Втілення сучасної жіночності з архітектурним акцентом.",
+        "Спідниця поєднує в собі класику та силу дизайну: м’яка вовняна тканина у візерунку “ялинка” гармонійно контрастує з глянцевими шкіряними вставками.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[ Склад: 75% вовни ]",
+        "Деталі:",
+        "• Структурний пояс із екошкіри створює ефект корсету та підкреслює талію.",
+        "• Геометричні шкіряні вставки біля кишень формують чіткий силует і додають модній графічності.",
+        "• Акуратний розріз спереду забезпечує свободу рухів і додає елегантної динаміки."
+      ],
+      colors: ["сіра ялинка"]
+    },
+    RU: {
+      category: "Юбки",
+      name: "Шерстяная юбка в ёлочку",
+      description: [
+        "Воплощение современной женственности с архитектурным акцентом.",
+        "Юбка сочетает классику и силу дизайна: мягкая шерстяная ткань с узором «ёлочка» гармонично контрастирует с глянцевыми кожаными вставками.",
+        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло и комфорт.",
+        "[ Состав: 75% шерсти ]",
+        "Детали:",
+        "• Структурный пояс из экокожи создаёт эффект корсета и подчёркивает талию.",
+        "• Геометрические вставки из кожи у карманов формируют чёткий силуэт и добавляют графичности.",
+        "• Аккуратный разрез спереди обеспечивает свободу движений и добавляет элегантной динамики."
+      ],
+      colors: ["серая ёлочка"]
+    }
+  }
+},
+
+  {
+  id: 217,
+  price: 4160,
+  isTop: false,
+  isNew: true,
+  sku: "99359",
+  size: "XS S M L XL",
+  category: "Pants",
+  image: "/Pants/Camel Pants/1.avif",
+  images: [
+    "/Pants/Camel Pants/2.avif",
+    "/Pants/Camel Pants/3.avif",
+    "/Pants/Camel Pants/4.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Pants",
+      name: "Camel Pants",
+      description: [
+        "Palazzo pants with a high waist create the visual effect of longer legs and a slimmer figure.",
+        "Wide yet structured — they add both confidence and lightness to any look.",
+        "Fabric: Premium-quality natural wool providing warmth, coziness, and a pleasant tactile feel.",
+        "[ Composition: 75% wool ]",
+        "Details:",
+        "• High waist",
+        "• Wide straight-leg silhouette",
+        "• Closure: zipper + button"
+      ],
+      colors: ["camel"]
+    },
+    FR: {
+      category: "Pantalons",
+      name: "Pantalon Camel",
+      description: [
+        "Pantalon palazzo à taille haute créant un effet visuel de jambes plus longues et une silhouette élancée.",
+        "Large mais structuré — il apporte confiance et légèreté à la tenue.",
+        "Tissu : laine naturelle de qualité supérieure offrant chaleur et confort tactile.",
+        "[ Composition : 75% laine ]",
+        "Détails :",
+        "• Taille haute",
+        "• Coupe large et droite sur toute la longueur",
+        "• Fermeture : zip + bouton"
+      ],
+      colors: ["camel"]
+    },
+    UA: {
+      category: "Брюки",
+      name: "Брюки \"Camel\"",
+      description: [
+        "Брюки палаццо із високою посадкою створюють візуальний ефект довших ніг і стрункішої фігури.",
+        "Широкі, але структурні — вони додають образу впевненості та легкості.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[ Склад: 75% вовни ]",
+        "Деталі:",
+        "• Висока посадка",
+        "• Широкий силует, прямі по всій довжині",
+        "• Застібка: блискавка + ґудзик"
+      ],
+      colors: ["кемел"]
+    },
+    RU: {
+      category: "Брюки",
+      name: "Брюки \"Кэмел\"",
+      description: [
+        "Брюки палаццо с высокой посадкой создают визуальный эффект более длинных ног и стройной фигуры.",
+        "Широкие, но структурированные — добавляют образу уверенности и лёгкости.",
+        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло и комфорт.",
+        "[ Состав: 75% шерсти ]",
+        "Детали:",
+        "• Высокая посадка",
+        "• Прямой широкий силуэт по всей длине",
+        "• Застёжка: молния + пуговица"
+      ],
+      colors: ["карамель"]
+    }
+  }
+},
+
+  {
+  id: 216,
+  price: 2100,
+  isTop: false,
+  isNew: true,
+  sku: "99358",
+  size: "XS S M L XL",
+  category: "Tops",
+  image: "/Top/Camel Vest/1.avif",
+  images: [
+    "/Top/Camel Vest/2.avif",
+    "/Top/Camel Vest/3.avif",
+    "/Top/Camel Vest/4.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Tops",
+      name: "Camel Vest",
+      description: [
+        "A minimalist vest made from soft wool suiting fabric that perfectly holds its shape.",
+        "Features a V-neckline that visually elongates the neck and accent button line with a matte finish.",
+        "The fit is tailored yet comfortable — pairs beautifully with a classic shirt or turtleneck.",
+        "Fabric: Premium-quality natural wool for warmth, coziness, and pleasant tactile comfort.",
+        "[ Composition: 75% wool ]",
+        "Details:",
+        "• Front closure with 4 buttons",
+        "• Decorative welt pocket",
+        "• Waist-length with a straight hem"
+      ],
+      colors: ["camel"]
+    },
+    FR: {
+      category: "Tops",
+      name: "Gilet Camel",
+      description: [
+        "Gilet minimaliste en laine de costume douce qui garde parfaitement sa forme.",
+        "Présente un décolleté en V qui allonge visuellement le cou et une ligne de boutons mats.",
+        "La coupe est ajustée mais confortable — s’accorde aussi bien avec une chemise classique qu’un col roulé.",
+        "Tissu : laine naturelle de qualité supérieure, offrant chaleur et confort tactile.",
+        "[ Composition : 75% laine ]",
+        "Détails :",
+        "• Fermeture avant avec 4 boutons",
+        "• Poche passepoilée décorative",
+        "• Longueur à la taille, ourlet droit"
+      ],
+      colors: ["camel"]
+    },
+    UA: {
+      category: "Топи",
+      name: "Жилет \"Camel\"",
+      description: [
+        "Лаконічний жилет із м’якої костюмної вовни, що чудово тримає форму.",
+        "Має V-подібний виріз, який візуально подовжує шию, і акцентну лінію ґудзиків із матовим покриттям.",
+        "Посадка приталена, але комфортна — ідеально поєднується як із класичною сорочкою, так і з водолазкою.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[ Склад: 75% вовни ]",
+        "Деталі:",
+        "• Застібається на 4 ґудзики спереду",
+        "• Кишені: декоративна прорізна кишеня",
+        "• Довжина до талії, із рівним низом"
+      ],
+      colors: ["кемел"]
+    },
+    RU: {
+      category: "Топы",
+      name: "Жилет \"Кэмел\"",
+      description: [
+        "Лаконичный жилет из мягкой костюмной шерсти, прекрасно держащий форму.",
+        "Имеет V-образный вырез, визуально удлиняющий шею, и акцентную линию матовых пуговиц.",
+        "Посадка приталенная, но комфортная — идеально сочетается с классической рубашкой или водолазкой.",
+        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло и комфорт.",
+        "[ Состав: 75% шерсти ]",
+        "Детали:",
+        "• Застёжка спереди на 4 пуговицы",
+        "• Декоративный прорезной карман",
+        "• Длина до талии, прямой низ"
+      ],
+      colors: ["карамель"]
+    }
+  }
+},
+
+  {
+  id: 215,
+  price: 4160,
+  isTop: false,
+  isNew: true,
+  sku: "99357",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Camel Costume/1.avif",
+  images: [
+    "/Costumes/Camel Costume/2.avif",
+    "/Costumes/Camel Costume/3.avif",
+    "/Costumes/Camel Costume/4.avif",
+    "/Costumes/Camel Costume/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Camel Costume",
+      description: [
+        "The embodiment of modern classics in a warm caramel shade.",
+        "This costume celebrates refined lines, structured silhouette, and understated elegance — made for women who value comfort and quiet luxury.",
+        "Fabric: Premium-quality natural wool for warmth, softness, and exceptional tactile comfort.",
+        "[ Composition: 75% wool ]",
+        "Details:",
+        "Vest: front button closure with 4 buttons",
+        "• Decorative welt pocket",
+        "• Waist-length with a straight hem",
+        "Trousers: high-waisted",
+        "• Wide silhouette, straight along the entire length",
+        "• Fastening: zipper + button"
+      ],
+      colors: ["camel"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume Camel",
+      description: [
+        "L'incarnation du classique moderne dans une teinte caramel chaude.",
+        "Ce costume allie des lignes raffinées, une silhouette structurée et une élégance discrète — conçu pour les femmes qui apprécient le confort et le luxe sobre.",
+        "Tissu : laine naturelle de qualité supérieure, offrant chaleur, douceur et confort exceptionnel.",
+        "[ Composition : 75% laine ]",
+        "Détails :",
+        "Gilet : fermeture à 4 boutons à l’avant",
+        "• Poche passepoilée décorative",
+        "• Longueur à la taille, ourlet droit",
+        "Pantalon : taille haute",
+        "• Coupe large et droite sur toute la longueur",
+        "• Fermeture : zip + bouton"
+      ],
+      colors: ["camel"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм \"Camel\"",
+      description: [
+        "Втілення сучасної класики у відтінку теплої карамелі.",
+        "Цей костюм — про витонченість ліній, структуру силуету та спокійну елегантність.",
+        "Створений для жінок, які цінують комфорт і стриману розкіш.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[ Склад: 75% вовни ]",
+        "Деталі:",
+        "Жилет: застібається на 4 ґудзики спереду",
+        "• Кишені: декоративна прорізна кишеня",
+        "• Довжина до талії, із рівним низом",
+        "Брюки: висока посадка",
+        "• широкий силует, прямі по всій довжині",
+        "• Застібка: блискавка + ґудзик"
+      ],
+      colors: ["кемел"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм \"Кэмел\"",
+      description: [
+        "Воплощение современной классики в тёплом карамельном оттенке.",
+        "Этот костюм олицетворяет утончённость линий, структурированный силуэт и спокойную элегантность.",
+        "Создан для женщин, ценящих комфорт и сдержанную роскошь.",
+        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло и мягкость.",
+        "[ Состав: 75% шерсти ]",
+        "Детали:",
+        "Жилет: застёжка на 4 пуговицы спереди",
+        "• Декоративный прорезной карман",
+        "• Длина до талии, прямой низ",
+        "Брюки: высокая посадка",
+        "• Широкий силуэт, прямые по всей длине",
+        "• Застёжка: молния + пуговица"
+      ],
+      colors: ["карамель"]
+    }
+  }
+},
+
+  {
   id: 214,
   price: 3100,
   isTop: false,
@@ -1492,6 +1908,14 @@ const products = [
         "/Sweaters/Flare Sweater/13.avif",
         "/Sweaters/Flare Sweater/14.avif",
         "/Sweaters/Flare Sweater/15.avif",
+        "/Sweaters/Flare Sweater/16.avif",
+        "/Sweaters/Flare Sweater/17.avif",
+        "/Sweaters/Flare Sweater/18.avif",
+        "/Sweaters/Flare Sweater/19.avif",
+        "/Sweaters/Flare Sweater/20.avif",
+        "/Sweaters/Flare Sweater/21.avif",
+        "/Sweaters/Flare Sweater/22.avif",
+        "/Sweaters/Flare Sweater/23.avif",
       ],
       
       sizes: ["XS", "S", "M", "L", "XL"],
@@ -1500,7 +1924,7 @@ const products = [
           category: "Sweaters",
           name: "Flare Sweater",
           description: "Cropped sweater with a turtleneck and flared sleeves. Fabric: Knit (60% wool, 20% acrylic, 10% viscose, 10% elastane).",
-          colors: ["black", "white"],
+          colors: ["black", "white", "blue", "beige"],
         },
         FR: {
           category: "Pulls",
@@ -1512,7 +1936,7 @@ const products = [
           category: "Светри",
           name: "Светр кльош",
           description: "Вкорочений светр із горлом та кльош рукавами. Тканина: трикотаж (60% вовна, 20% акрил, 10% віскоза, 10% еластан).",
-          colors: ["чорний", "білий"],
+          colors: ["чорний", "білий", "блакитний", "бежевий"],
         },
         RU: {
           category: "Светри",
@@ -1549,6 +1973,10 @@ const products = [
       "/Costumes/Woolen suit with skirt/20.avif",
       "/Costumes/Woolen suit with skirt/21.avif",
       "/Costumes/Woolen suit with skirt/22.avif",
+      "/Costumes/Woolen suit with skirt/23.avif",
+      "/Costumes/Woolen suit with skirt/24.avif",
+      "/Costumes/Woolen suit with skirt/25.avif",
+      "/Costumes/Woolen suit with skirt/26.avif",
     ],
     sizes: ["XS", "S" , "M" , "L" , "XL"],
     translations: {
@@ -1557,7 +1985,7 @@ const products = [
         name: "Woolen suit with skirt",
         description: "Sweater + pencil skirt. Composition: 75% natural wool, soft, does not prick the body.",
         color: "red",
-        colors: ["graphite","gray","Powder"]
+        colors: ["graphite","gray","Powder", "plum"]
       },
       FR: {
         category: "Costumes",
@@ -1571,7 +1999,7 @@ const products = [
         name: "Вовняний костюм зі спідницею",
         description: "Светр + олівець спідниця. Склад: 75% натуральної вовни, м'яка, не колеться.",
         color: "червоний",
-        colors: ["графітовий","Сірий","Пудра"]
+        colors: ["графітовий","Сірий","Пудра", "слива"]
       }
     }
   },
@@ -1796,6 +2224,10 @@ const products = [
     "/Pants/Lui Pants/6.avif",
     "/Pants/Lui Pants/7.avif",
     "/Pants/Lui Pants/8.avif",
+    "/Pants/Lui Pants/9.avif",
+    "/Pants/Lui Pants/10.avif",
+    "/Pants/Lui Pants/11.avif",
+    "/Pants/Lui Pants/12.avif",
   ],
   sizes: ["XS", "S", "M", "L", "XL"],
   translations: {
@@ -1808,7 +2240,7 @@ const products = [
         "Fabric: Premium natural wool for warmth, comfort, and pleasant tactile sensations.",
         "[ Composition: 75% wool ]"
       ],
-      colors: ["grey", "graphite"]
+      colors: ["grey", "graphite", "plum"]
     },
     FR: {
       category: "Pantalons",
@@ -1830,7 +2262,7 @@ const products = [
         "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
         "[ Склад: 75% вовни ]"
       ],
-      colors: ["сірий", "графіт"]
+      colors: ["сірий", "графіт", "слива"]
     },
     RU: {
       category: "Брюки",
@@ -2588,6 +3020,10 @@ const products = [
     "/Skirts/Lui Skirt/6.avif",
     "/Skirts/Lui Skirt/7.avif",
     "/Skirts/Lui Skirt/8.avif",
+    "/Skirts/Lui Skirt/9.avif",
+    "/Skirts/Lui Skirt/10.avif",
+    "/Skirts/Lui Skirt/11.avif",
+    "/Skirts/Lui Skirt/12.avif",
   ],
   sizes: ["XS", "S", "M", "L", "XL"],
   translations: {
