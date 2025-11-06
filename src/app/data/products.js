@@ -1,5 +1,90 @@
 const products = [
 
+
+  {
+  id: 220,
+  price: 5400,
+  isTop: false,
+  isNew: true,
+  sku: "99362",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Wool Cardigan Skirt Set/1.avif",
+  images: [
+    "/Costumes/Wool Cardigan Skirt Set/2.avif",
+    "/Costumes/Wool Cardigan Skirt Set/3.avif",
+    "/Costumes/Wool Cardigan Skirt Set/4.avif",
+    "/Costumes/Wool Cardigan Skirt Set/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Wool Cardigan Skirt Set",
+      description: [
+        "A minimalist wool set designed for modern women.",
+        "This refined costume consists of a wrap-style straight cardigan and a high-waisted pencil skirt. Perfect for both the office and relaxed city looks.",
+        "Fabric: Premium-quality natural wool providing warmth, comfort, and a pleasant tactile feel.",
+        "[ Composition: 75% wool ]",
+        "Details:",
+        "• Cardigan: V-shaped neckline",
+        "• Convenient pockets",
+        "• Skirt: High-waisted design",
+        "• Elongated silhouette"
+      ],
+      colors: ["gray"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Ensemble en laine avec cardigan et jupe",
+      description: [
+        "Un ensemble minimaliste en laine pour les femmes modernes.",
+        "Ce costume raffiné comprend un cardigan droit croisé et une jupe crayon taille haute. Idéal pour le bureau comme pour un look citadin décontracté.",
+        "Tissu : laine naturelle de qualité supérieure offrant chaleur, confort et douceur au toucher.",
+        "[ Composition : 75% laine ]",
+        "Détails :",
+        "• Cardigan : encolure en V",
+        "• Poches pratiques",
+        "• Jupe : taille haute",
+        "• Silhouette allongée"
+      ],
+      colors: ["gris"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм із кардиганом та спідницею",
+      description: [
+        "Лаконічний костюм у мінімалістичному стилі для сучасних дівчат.",
+        "Складається з прямого кардигану на запах та спідниці-олівець із високою посадкою. Ідеально підходить як для офісу, так і для розслаблених міських образів.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[ Склад: 75% вовни ]",
+        "Деталі:",
+        "• Кардиган: V-подібний виріз",
+        "• Зручні кишені",
+        "• Спідниця: Висока посадка",
+        "• Подовжений силует"
+      ],
+      colors: ["сірий"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм с кардиганом и юбкой",
+      description: [
+        "Лаконичный костюм в минималистичном стиле для современных девушек.",
+        "Состоит из прямого кардигана на запах и юбки-карандаш с высокой посадкой. Идеально подходит как для офиса, так и для повседневных городских образов.",
+        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло и комфорт.",
+        "[ Состав: 75% шерсти ]",
+        "Детали:",
+        "• Кардиган: V-образный вырез",
+        "• Удобные карманы",
+        "• Юбка: высокая посадка",
+        "• Удлинённый силуэт"
+      ],
+      colors: ["серый"]
+    }
+  }
+},
+
   {
   id: 219,
   price: 3900,
@@ -2409,9 +2494,12 @@ const products = [
     sku: "12345",
     size: "XS S M L XL",
     category: "Dresses",
-    image: "/Dress/Woolen trapeze dress/1.avif",
+    image: "/Dress/Woolen trapeze dress/21.avif",
     images: [
-    
+      "/Dress/Woolen trapeze dress/22.avif",
+      "/Dress/Woolen trapeze dress/23.avif",
+      "/Dress/Woolen trapeze dress/24.avif",
+      "/Dress/Woolen trapeze dress/1.avif",
       "/Dress/Woolen trapeze dress/2.avif", "/Dress/Woolen trapeze dress/3.avif",
       {
         type: "video",
@@ -2442,7 +2530,7 @@ const products = [
         name: "Woolen trapeze dress",
         description: "Trapeze dress with a pronounced belt\nComposition: 75% natural wool, soft, does not stick to the body.",
         color: "red",
-        colors: ["jeans","gray","marsala", "eggplant"]
+        colors: ["milk chocolate", "jeans","gray","marsala", "eggplant"]
       },
       FR: {
         category: "Robes",
@@ -2456,7 +2544,7 @@ const products = [
         name: "Вовняна сукня трапеція",
         description: "Трапецеїдна сукня з виразним поясом\nСклад: 75% натуральної вовни, м'яка, не прилипає до тіла.",
         color: "червоний",
-        colors: ["джинсовий", "сірий", " марсала", "баклажан"]
+        colors: ["молочний шоколад","джинсовий", "сірий", " марсала", "баклажан"]
       }
     }
   },
@@ -2861,6 +2949,10 @@ const products = [
   images: [
     "/Jackets/Wool Cardigan/2.avif",
     "/Jackets/Wool Cardigan/3.avif",
+    "/Jackets/Wool Cardigan/4.avif",
+    "/Jackets/Wool Cardigan/5.avif",
+    "/Jackets/Wool Cardigan/6.avif",
+    "/Jackets/Wool Cardigan/7.avif",
   ],
   sizes: ["XS", "S", "M", "L", "XL"],
   translations: {
@@ -5707,8 +5799,12 @@ const products = [
   sku: "98811",
   size: "XS S M L XL",
   category: "Dresses",
-  image: "/Dress/Loden Grace Dress/1.avif",
+  image: "/Dress/Loden Grace Dress/11.avif", 
   images: [
+    "/Dress/Loden Grace Dress/12.avif",
+    "/Dress/Loden Grace Dress/13.avif",
+    "/Dress/Loden Grace Dress/14.avif",
+    "/Dress/Loden Grace Dress/1.avif",
     "/Dress/Loden Grace Dress/2.avif",
      {
       type: "video",
