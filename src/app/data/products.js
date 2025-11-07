@@ -2080,7 +2080,7 @@ const products = [
         name: "Вовняний костюм зі спідницею",
         description: "Светр + олівець спідниця. Склад: 75% натуральної вовни, м'яка, не колеться.",
         color: "червоний",
-        colors: ["графітовий","Сірий","Пудра", "слива"]
+        colors: ["графітовий","сірий","пудра", "слива"]
       }
     }
   },
@@ -3318,6 +3318,7 @@ const products = [
   image: "/Costumes/Bomber Suit/1.avif",
   images: [
     "/Costumes/Bomber Suit/2.avif",
+    
     "/Costumes/Bomber Suit/3.avif",
     "/Costumes/Bomber Suit/4.avif",
     "/Costumes/Bomber Suit/5.avif",
@@ -3403,6 +3404,11 @@ const products = [
   image: "/Costumes/Trench Suit/1.avif",
   images: [
     "/Costumes/Trench Suit/2.avif",
+     {
+      type: "video",
+      src: "/Costumes/Trench Suit/IMG_5568.mp4",
+      poster: "/Costumes/Trench Suit/4.avif",
+    },
     "/Costumes/Trench Suit/3.avif",
     "/Costumes/Trench Suit/4.avif",
     "/Costumes/Trench Suit/5.avif"
@@ -11951,6 +11957,7 @@ description: [
   },
   {
     id: 7,
+
     price: 1850,
     isTop: false,
     sku: "12345",

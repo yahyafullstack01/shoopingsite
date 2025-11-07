@@ -1,7 +1,6 @@
-
 'use client';
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import InfoForm from "../../Functions/InfoForm";
 import { useLanguage } from "../../Functions/useLanguage";
@@ -16,28 +15,71 @@ const ProductBanner = ({
   onClose,
 }) => {
   const { language } = useLanguage();
-  const [currentImage, setCurrentImage] = useState(selectedProduct?.image || "/4.jpg");
+
+  // === Відео-реф та допоміжні ф-ції ========================================
+  const videoRef = useRef(null);
+
+  const isVideo = (media) => typeof media === "object" && media?.type === "video";
+  const getSrc = (media) => (typeof media === "string" ? media : media?.src || "");
+  const getPoster = (media) =>
+    typeof media === "object" && media?.poster ? media.poster : "/default-poster.jpg";
+
+  // головне зображення/відео
+  const [currentImage, setCurrentImage] = useState(
+    selectedProduct?.image || "/4.jpg"
+  );
+
+  // вибори користувача
   const [selectedColor, setSelectedColor] = useState('');
   const [selectedSize, setSelectedSize] = useState('');
   const [quantity, setQuantity] = useState(1);
+
+  // тост
   const [showToast, setShowToast] = useState(false);
 
-  const translatedName = selectedProduct?.translations?.[language]?.name || selectedProduct?.name;
-  const translatedDescription = selectedProduct?.translations?.[language]?.description || selectedProduct?.description;
+  // переклади
+  const translatedName =
+    selectedProduct?.translations?.[language]?.name || selectedProduct?.name;
+  const translatedDescription =
+    selectedProduct?.translations?.[language]?.description || selectedProduct?.description;
 
-  const isVideo = (media) => typeof media === "object" && media?.type === "video";
-  const getSrc = (media) => (typeof media === "string" ? media : media.src);
-  const getPoster = (media) =>
-    typeof media === "object" && media.poster ? media.poster : "/default-poster.jpg";
-
+  // Блокування скролу під модалкою + ресет медіа при зміні товару
   useEffect(() => {
+    // зупинимо відео попереднього товару
+    if (videoRef.current) {
+      try { videoRef.current.pause(); } catch {}
+    }
     setCurrentImage(selectedProduct?.image || "/4.jpg");
+
     document.body.style.overflow = "hidden";
     return () => {
       document.body.style.overflow = "auto";
+      if (videoRef.current) {
+        try { videoRef.current.pause(); } catch {}
+      }
     };
   }, [selectedProduct]);
 
+  // Глушимо AbortError, який кидає браузер під час швидких play/pause
+  useEffect(() => {
+    const swallowAbort = (e) => {
+      if (String(e.reason)?.includes('AbortError')) {
+        e.preventDefault();
+      }
+    };
+    window.addEventListener('unhandledrejection', swallowAbort);
+    return () => window.removeEventListener('unhandledrejection', swallowAbort);
+  }, []);
+
+  // Перемикання мініатюр: спершу пауза, потім встановлюємо нове медіа
+  const onSelectMedia = (media) => {
+    if (isVideo(currentImage) && videoRef.current) {
+      try { videoRef.current.pause(); } catch {}
+    }
+    setCurrentImage(media);
+  };
+
+  // Додавання в кошик (без змін у твоїй логіці ціни/перекладів)
   const handleAddToCart = async ({ product, selectedColor, selectedSize, quantity }) => {
     const sessionId = getSessionId();
     const name = (product.translations?.[language]?.name || product.name || product.title)
@@ -45,8 +87,9 @@ const ProductBanner = ({
       .replace(/грн|₴|uah/gi, '')
       .replace(/\s+/g, ' ')
       .trim();
-const rawPrice = product.discountPrice || product.price;
-const price = Number(String(rawPrice).replace(/[^\d.]/g, '')).toFixed(2);
+
+    const rawPrice = product.discountPrice || product.price;
+    const price = Number(String(rawPrice).replace(/[^\d.]/g, '')).toFixed(2);
 
     if (!sessionId) {
       alert("Не вдалося створити сесію. Спробуйте оновити сторінку.");
@@ -61,9 +104,8 @@ const price = Number(String(rawPrice).replace(/[^\d.]/g, '')).toFixed(2);
           sessionId,
           productId: product.id,
           name,
-           price: Number(product.price), 
-  discountPrice: product.discountPrice ?? null, 
-         
+          price: Number(product.price),
+          discountPrice: product.discountPrice ?? null,
           color: selectedColor,
           size: selectedSize,
           quantity,
@@ -71,8 +113,8 @@ const price = Number(String(rawPrice).replace(/[^\d.]/g, '')).toFixed(2);
       });
 
       const data = await res.json();
-      if (data.success || data.message.includes("додано")) {
-        setShowToast(true); // Показати тост
+      if (data.success || data.message?.includes("додано")) {
+        setShowToast(true);
       } else {
         alert(data.message || "Помилка при додаванні в корзину");
       }
@@ -87,24 +129,35 @@ const price = Number(String(rawPrice).replace(/[^\d.]/g, '')).toFixed(2);
   return (
     <>
       <div className="fixed inset-0 bg-black bg-opacity-90 flex justify-center items-center z-50">
-      
         <div className="relative w-full h-full max-w-5xl bg-gray-300 dark:bg-black rounded-lg shadow-lg overflow-y-auto">
-       <button
+          <button
             className="absolute top-4 right-4 text-5xl text-black dark:text-white hover:text-red-500 transition z-[200]"
-            onClick={onClose}
+            onClick={() => {
+              // акуратно зупиняємо відео при закритті
+              if (videoRef.current) {
+                try { videoRef.current.pause(); } catch {}
+              }
+              onClose?.();
+            }}
           >
             &times;
           </button>
 
           <div className="relative flex flex-col sm:flex-row items-start overflow-y-auto p-4">
+            {/* Ліва колонка: медіа + карусель */}
             <div className="w-full sm:w-1/2 relative">
               {isVideo(currentImage) ? (
                 <video
+                  ref={videoRef}
                   src={getSrc(currentImage)}
                   poster={getPoster(currentImage)}
                   controls
+                  muted
+                  playsInline
+                  preload="metadata"
                   className="rounded-lg w-full"
                   style={{ maxHeight: "600px", objectFit: "cover" }}
+                  onPlay={(e) => e.currentTarget.play().catch(() => {})}
                 />
               ) : (
                 <Image
@@ -114,18 +167,19 @@ const price = Number(String(rawPrice).replace(/[^\d.]/g, '')).toFixed(2);
                   height={600}
                   style={{ objectFit: "cover" }}
                   className="rounded-lg w-full"
-                     unoptimized={getSrc(currentImage).startsWith('/')} 
+                  // якщо локальні зображення з /public — не оптимізуємо
+                  unoptimized={getSrc(currentImage).startsWith('/')}
                 />
               )}
 
               <ThumbnailCarousel
                 images={selectedProduct.images}
-                onImageSelect={(image) => setCurrentImage(image)}
+                onImageSelect={onSelectMedia}
                 visibleThumbnails={5}
-               
               />
             </div>
 
+            {/* Права колонка: форма */}
             <div className="w-full sm:w-1/2 dark:bg-black bg-opacity-75 p-6 text-black dark:text-white rounded-lg">
               <InfoForm
                 requireSelection={true}
@@ -134,9 +188,8 @@ const price = Number(String(rawPrice).replace(/[^\d.]/g, '')).toFixed(2);
                   name: translatedName,
                   description: translatedDescription,
                   image: getSrc(currentImage),
-                   price: selectedProduct.discountPrice || selectedProduct.price,
-  oldPrice: selectedProduct.discountPrice ? selectedProduct.price : null,
-             
+                  price: selectedProduct.discountPrice || selectedProduct.price,
+                  oldPrice: selectedProduct.discountPrice ? selectedProduct.price : null,
                 }}
                 color={selectedProduct.translations?.[language]?.color || selectedProduct.color}
                 colors={selectedProduct.translations?.[language]?.colors || selectedProduct.colors}
@@ -158,25 +211,22 @@ const price = Number(String(rawPrice).replace(/[^\d.]/g, '')).toFixed(2);
 
       {showToast && (
         <Toast
-  product={{
-    name: translatedName,
-    price: selectedProduct.discountPrice || selectedProduct.price,
-    oldPrice:
-      selectedProduct.discountPrice && selectedProduct.discountPrice < selectedProduct.price
-        ? selectedProduct.price
-        : null,
-    image: selectedProduct.image,
-    quantity,
-  }}
-  onClose={() => setShowToast(false)}
-/>
-
-   
-      
+          product={{
+            name: translatedName,
+            price: selectedProduct.discountPrice || selectedProduct.price,
+            oldPrice:
+              selectedProduct.discountPrice &&
+              selectedProduct.discountPrice < selectedProduct.price
+                ? selectedProduct.price
+                : null,
+            image: selectedProduct.image,
+            quantity,
+          }}
+          onClose={() => setShowToast(false)}
+        />
       )}
     </>
   );
 };
 
 export default ProductBanner;
-  
