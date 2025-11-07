@@ -247,7 +247,7 @@ const products = [
 
   {
   id: 217,
-  price: 4160,
+  price: 2060,
   isTop: false,
   isNew: true,
   sku: "99359",
@@ -515,10 +515,6 @@ const products = [
     "/Dress/Wool V-Neck Dress/3.avif",
     "/Dress/Wool V-Neck Dress/4.avif",
     "/Dress/Wool V-Neck Dress/5.avif",
-    "/Dress/Wool V-Neck Dress/6.avif",
-    "/Dress/Wool V-Neck Dress/7.avif",
-    "/Dress/Wool V-Neck Dress/8.avif",
-    "/Dress/Wool V-Neck Dress/9.avif",
   ],
   sizes: ["XS", "S", "M", "L", "XL"],
   translations: {
@@ -1556,7 +1552,7 @@ const products = [
     },
     UA: {
       category: "Костюми",
-      name: "Костюм 'Flanel'",
+      name: "Костюм Flanel",
       description: [
         "Витонченість у кожній лінії. Цей костюм створений для жінки, яка цінує силу спокою й гармонію пропорцій.",
         "Приталений жакет із чіткою лінією плечей формує ідеальний силует, а брюки палаццо додають образу легкості й аристократичної недбалості.",
@@ -2310,9 +2306,6 @@ const products = [
     "/Pants/Lui Pants/7.avif",
     "/Pants/Lui Pants/8.avif",
     "/Pants/Lui Pants/9.avif",
-    "/Pants/Lui Pants/10.avif",
-    "/Pants/Lui Pants/11.avif",
-    "/Pants/Lui Pants/12.avif",
   ],
   sizes: ["XS", "S", "M", "L", "XL"],
   translations: {
@@ -2325,7 +2318,7 @@ const products = [
         "Fabric: Premium natural wool for warmth, comfort, and pleasant tactile sensations.",
         "[ Composition: 75% wool ]"
       ],
-      colors: ["grey", "graphite", "plum"]
+      colors: ["grey", "graphite"]
     },
     FR: {
       category: "Pantalons",
@@ -2347,7 +2340,7 @@ const products = [
         "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
         "[ Склад: 75% вовни ]"
       ],
-      colors: ["сірий", "графіт", "слива"]
+      colors: ["сірий", "графіт"]
     },
     RU: {
       category: "Брюки",
@@ -2434,7 +2427,7 @@ const products = [
   translations: {
     EN: {
       category: "Tops",
-      name: "Beige Jumper",
+      name: "Mocha Jumper",
       description: [
         "Minimalist jumper with a boat neckline and patch pockets. Simple and stylish, it fits both classic and casual looks.",
         "Fabric: Premium-quality natural wool for warmth, coziness, and pleasant tactile sensations. [Composition: 75% wool]",
@@ -2443,7 +2436,7 @@ const products = [
         "• Boat neckline with a small front slit.",
         "• Two patch pockets as an accent detail."
       ],
-      colors: ["beige"]
+      colors: ["Mocha"]
     },
     FR: {
       category: "Tops",
@@ -2460,7 +2453,7 @@ const products = [
     },
     UA: {
       category: "Топи",
-      name: "Джемпер «Beige»",
+      name: "Джемпер «Мокка»",
       description: [
         "Мінімалістичний джемпер із човниковим вирізом та накладними кишенями. Лаконічний і стильний, він пасує до класичних та casual образів.",
         "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття. [Склад: 75% вовни]",
@@ -2469,7 +2462,7 @@ const products = [
         "• Горловина човник із невеликим розрізом спереду.",
         "• Дві накладні кишені як акцент."
       ],
-      colors: ["бежевий"]
+      colors: ["Мокка"]
     },
     RU: {
       category: "Топы",
@@ -2968,7 +2961,7 @@ const products = [
         "• Cardigan: V-neckline",
         "• Convenient pockets"
       ],
-      colors: ["graphite"]
+      colors: ["graphite", "gray"]
     },
     FR: {
       category: "Vestes",
@@ -2996,7 +2989,7 @@ const products = [
         "• Кардиган: V-подібний виріз",
         "• Зручні кишені"
       ],
-      colors: ["графіт"]
+      colors: ["графіт", "сірий"]
     },
     RU: {
       category: "Жакеты",
@@ -3183,6 +3176,10 @@ const products = [
     "/Top/Lui Jumper/6.avif",
     "/Top/Lui Jumper/7.avif",
     "/Top/Lui Jumper/8.avif",
+    "/Top/Lui Jumper/9.avif",
+    "/Top/Lui Jumper/10.avif",
+    "/Top/Lui Jumper/11.avif",
+
   ],
   sizes: ["XS", "S", "M", "L", "XL"],
   translations: {
@@ -3195,7 +3192,7 @@ const products = [
         "Fabric: Premium natural wool for warmth, comfort, and pleasant tactile sensations.",
         "[ Composition: 75% wool ]"
       ],
-      colors: ["grey", "graphite"]
+      colors: ["grey", "graphite", "plum"]
     },
     FR: {
       category: "Tops",
@@ -3217,7 +3214,7 @@ const products = [
         "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
         "[ Склад: 75% вовни ]"
       ],
-      colors: ["сірий", "графіт"]
+      colors: ["сірий", "графіт", "слива"]
     },
     RU: {
       category: "Топы",
@@ -3565,7 +3562,7 @@ const products = [
   translations: {
     EN: {
       category: "Pants",
-      name: "Beige Pants",
+      name: "Mocha Pants",
       description: [
         "Elegant and comfortable pants with a high waist. Their relaxed cut visually elongates the legs and works equally well for business and casual outfits.",
         "Fabric: Premium-quality natural wool for warmth, coziness, and pleasant tactile sensations. [Composition: 75% wool]",
@@ -3573,7 +3570,7 @@ const products = [
         "• High waist with an elasticated waistband for comfort.",
         "• Wide straight cut with neat decorative pleats that elongate the legs."
       ],
-      colors: ["beige"]
+      colors: ["mocha"]
     },
     FR: {
       category: "Pantalons",
@@ -3589,7 +3586,7 @@ const products = [
     },
     UA: {
       category: "Брюки",
-      name: "Брюки «Beige»",
+      name: "Брюки «Мокка»",
       description: [
         "Елегантні та комфортні брюки із високою посадкою. Мають вільний крій, візуально подовжують ноги та підходять як для ділових, так і для розслаблених поєднань.",
         "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття. [Склад: 75% вовни]",
@@ -3597,7 +3594,7 @@ const products = [
         "• Брюки: висока посадка з поясом на резинці для комфорту.",
         "• Широкий прямий крій із чіткими декоративними стрілками, що подовжують ноги."
       ],
-      colors: ["бежевий"]
+      colors: ["мокко"]
     },
     RU: {
       category: "Брюки",
@@ -3635,7 +3632,7 @@ const products = [
   translations: {
     EN: {
       category: "Costumes",
-      name: "Beige Suit",
+      name: "Mocha Suit",
       description: [
         "Stylish and comfortable suit, perfect for the rhythm of city life. With its minimalistic design and noble shade, it looks both elegant and effortless.",
         "The set can be worn together as a total look or separately: pair the jumper with jeans or skirts, and the trousers with classic shirts or t-shirts.",
@@ -3647,7 +3644,7 @@ const products = [
         "• Trousers: high-waisted with an elastic waistband for comfort.",
         "• Wide straight cut with sharp decorative pleats that elongate the legs."
       ],
-      colors: ["beige"]
+      colors: ["Mocha"]
     },
     FR: {
       category: "Costumes",
@@ -3667,7 +3664,7 @@ const products = [
     },
     UA: {
       category: "Костюми",
-      name: "Костюм «Beige»",
+      name: "Костюм «Мокка»",
       description: [
         "Стильний і зручний костюм, який ідеально підходить для міського темпу життя. Завдяки лаконічному дизайну та благородному відтінку він виглядає водночас елегантно та невимушено.",
         "Комплект можна носити разом як total look або розділяти: джемпер поєднувати з джинсами чи спідницями, брюки — зі строгими сорочками чи футболками.",
@@ -3679,7 +3676,7 @@ const products = [
         "• Брюки: висока посадка з поясом на резинці для комфорту.",
         "• Широкий прямий крій із чіткими декоративними стрілками, що подовжують ноги."
       ],
-      colors: ["бежевий"]
+      colors: ["mокка"]
     },
     RU: {
       category: "Костюмы",
@@ -3718,7 +3715,7 @@ const products = [
   translations: {
     EN: {
       category: "Skirts",
-      name: "Mocha Skirt",
+      name: "Eggplant Skirt",
       description: [
         "Elegant wool midi skirt with a gentle flare. A versatile base that pairs perfectly with jumpers or classic blouses.",
         "Fabric: Premium-quality natural wool for warmth, comfort, and a pleasant tactile feel. [Composition: 75% wool]",
@@ -3726,7 +3723,7 @@ const products = [
         "• Midi length, gentle flare from the hips.",
         "• Visually elongates the silhouette, adding a feminine accent."
       ],
-      colors: ["mocha"]
+      colors: ["eggplant"]
     },
     FR: {
       category: "Jupes",
@@ -3742,7 +3739,7 @@ const products = [
     },
     UA: {
       category: "Спідниці",
-      name: "Спідниця «Mocha»",
+      name: "Спідниця «баклажан»",
       description: [
         "Елегантна вовняна спідниця довжини міді з легким розкльошенням. Універсальна база, яка гармонійно виглядає як з джемперами, так і з класичними блузами.",
         "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття. [Склад: 75% вовни]",
@@ -3750,7 +3747,7 @@ const products = [
         "• Спідниця: довжина міді, легке розкльошення від стегон.",
         "• Візуально подовжує силует, створюючи жіночний акцент."
       ],
-      colors: ["мокко"]
+      colors: ["баклажан"]
     },
     RU: {
       category: "Юбки",
@@ -3785,7 +3782,7 @@ const products = [
   translations: {
     EN: {
       category: "Tops",
-      name: "Mocha Jumper",
+      name: "Eggplant Jumper",
       description: [
         "A stylish and practical wool jumper with a straight cut, neckline slit, and patch pockets. Perfect for everyday looks during the cooler season.",
         "Fabric: Premium-quality natural wool for warmth, comfort, and a pleasant tactile feel. [Composition: 75% wool]",
@@ -3809,7 +3806,7 @@ const products = [
     },
     UA: {
       category: "Топи",
-      name: "Джемпер «Mocha»",
+      name: "Джемпер «баклажан»",
       description: [
         "Стильний і практичний джемпер із вовни, прямого крою, з розрізом по горловині та накладними кишенями. Ідеальний для повсякденних образів у прохолодний сезон.",
         "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття. [Склад: 75% вовни]",
@@ -3817,7 +3814,7 @@ const products = [
         "• Джемпер: прямий силует із довгим рукавом.",
         "• Дві накладні кишені як акцентна деталь."
       ],
-      colors: ["мокко"]
+      colors: ["баклажан"]
     },
     RU: {
       category: "Топы",
@@ -3853,7 +3850,7 @@ const products = [
   translations: {
     EN: {
       category: "Costumes",
-      name: "Mocha",
+      name: "Eggplant",
       description: [
         "An elegant ensemble that combines warmth and sophistication. The minimalist cut and noble wool texture create a modern ‘French chic’ style.",
         "The set can be worn as a total look or combined separately: the jumper with trousers or jeans, the skirt with a blouse or sweater.",
@@ -3862,7 +3859,7 @@ const products = [
         "• Jumper: Straight silhouette with long sleeves, two patch pockets as an accent detail.",
         "• Skirt: Midi length with a slight flare from the hips, visually elongates the silhouette and adds femininity."
       ],
-      colors: ["mocha"]
+      colors: ["eggplant"]
     },
     FR: {
       category: "Costumes",
@@ -3879,7 +3876,7 @@ const products = [
     },
     UA: {
       category: "Костюми",
-      name: "Костюм «Mocha»",
+      name: "Костюм «баклажан»",
       description: [
         "Витончений ансамбль, який поєднує тепло та елегантність. Лаконічний крій і благородна фактура вовни створюють сучасний образ у стилі «французький шик».",
         "Комплект можна носити як total look або комбінувати окремо: джемпер — із брюками чи джинсами, спідницю — з блузою або светром.",
@@ -3888,7 +3885,7 @@ const products = [
         "• Джемпер: прямий силует із довгим рукавом, дві накладні кишені як акцентна деталь.",
         "• Спідниця: довжина міді, легке розкльошення від стегон, візуально подовжує силует і створює жіночний акцент."
       ],
-      colors: ["мокко"]
+      colors: ["баклажан"]
     },
     RU: {
       category: "Костюмы",
@@ -5836,7 +5833,7 @@ const products = [
         "• ¾ sleeves with decorative zippers — a stylish element that allows adjusting the volume",
         "• Back slit for ease of movement and a feminine accent"
       ],
-      colors: ["denim",]
+      colors: ["denim","fuchsia"]
     },
     FR: {
       category: "Robes",
@@ -5866,7 +5863,7 @@ const products = [
         "• Рукави ¾ з декоративними замочками — стильна деталь, яка дозволяє регулювати об’єм та створює сучасний акцент.",
         "• На спинці передбачений розріз для зручності рухів і жіночного акценту."
       ],
-      colors: ["джинс",]
+      colors: ["джинс","фуксія"]
     },
     RU: {
       category: "Платья",
