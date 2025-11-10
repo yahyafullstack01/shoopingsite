@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import products from "../../data/products";
 import { useState, useRef, useEffect, useMemo } from "react";
@@ -11,6 +11,9 @@ import Image from "next/image";
 import { getSessionId } from "../../utils/session";
 import Toast from "../ToastCart/Toast";
 import QuickAddModal from "../QuickAddModal/QuickAddModal";
+
+// ⬇️ додаємо пріоритети тільки для цієї сторінки
+import { PRIORITY_TOP, prioritizeByIds } from "../../utils/priorities";
 
 // ---- helpers ---------------------------------------------------------------
 const normalizeMedia = (m) =>
@@ -37,16 +40,19 @@ export default function TopProductsInfo() {
   const handleOpenQuickAdd = (product) => setQuickAddProduct(product);
   const handleCloseQuickAdd = () => setQuickAddProduct(null);
 
-  // тільки Top-продукти
-  const topProducts = useMemo(
-    () => products.filter((p) => p.isTop === true),
-    []
+  // 1) Сира вибірка топів
+  const topRaw = useMemo(() => products.filter((p) => p.isTop === true), []);
+
+  // 2) Пріоритетні ID -> на початок; решта — у вихідному порядку
+  const topSorted = useMemo(
+    () => prioritizeByIds(topRaw, PRIORITY_TOP),
+    [topRaw]
   );
 
   const selectedProductId = searchParams.get("product");
   const initialProduct = selectedProductId
-    ? topProducts.find((p) => p.id === Number(selectedProductId))
-    : topProducts[0];
+    ? topSorted.find((p) => p.id === Number(selectedProductId))
+    : topSorted[0];
 
   const [selectedProduct, setSelectedProduct] = useState(initialProduct);
   const [selectedMedia, setSelectedMedia] = useState(
@@ -56,7 +62,7 @@ export default function TopProductsInfo() {
   // якщо змінився ?product у URL — підміняємо й дефолтне медіа
   useEffect(() => {
     if (!selectedProductId) return;
-    const found = topProducts.find((p) => p.id === Number(selectedProductId));
+    const found = topSorted.find((p) => p.id === Number(selectedProductId));
     if (found) {
       setSelectedProduct(found);
       setSelectedMedia(getDefaultMedia(found));
@@ -64,8 +70,7 @@ export default function TopProductsInfo() {
         descriptionRef.current?.scrollIntoView({ behavior: "smooth" });
       }, 300);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [selectedProductId]);
+  }, [selectedProductId, topSorted]);
 
   const handleProductClick = (product) => {
     setSelectedProduct(product);
@@ -87,13 +92,7 @@ export default function TopProductsInfo() {
       return;
     }
 
-    const payload = {
-      sessionId,
-      productId: product.id,
-      color: selectedColor,
-      size: selectedSize,
-      quantity,
-    };
+    const payload = { sessionId, productId: product.id, color: selectedColor, size: selectedSize, quantity };
 
     try {
       const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/cart`, {
@@ -108,7 +107,6 @@ export default function TopProductsInfo() {
         return;
       }
 
-      // для тосту використовуємо постер, якщо зараз вибране медіа — відео
       const toastImage =
         selectedMedia?.type === "video"
           ? selectedMedia?.poster
@@ -148,7 +146,7 @@ export default function TopProductsInfo() {
         <h2 id="top-products" className="sr-only">Top Products</h2>
         <div className="bg-gray-100 dark:bg-black max-h-[450px] md:max-h-[600px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900 mb-8">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 md:gap-6 p-4">
-            {topProducts.map((product) => {
+            {topSorted.map((product) => {
               const translatedName =
                 product.translations?.[language]?.name || product.title;
               const hasMultipleOptions =
@@ -162,7 +160,7 @@ export default function TopProductsInfo() {
                 >
                   <div onClick={() => handleProductClick(product)} className="cursor-pointer">
                     <div className="w-full h-[200px] sm:h-[350px] overflow-hidden rounded-lg">
-                      {/* прев’ю у списку — ТІЛЬКИ зображення (перше), щоб не автозапускати відео в гріді */}
+                      {/* прев’ю у списку — тільки зображення */}
                       <Image
                         src={normalizeMedia(product.image).src}
                         alt={`Preview of ${translatedName}`}
@@ -212,7 +210,7 @@ export default function TopProductsInfo() {
         ref={descriptionRef}
       >
         <div className="flex flex-col items-center">
-          {/* === ГОЛОВНЕ МІСЦЕ: умовний рендер відео/зображення === */}
+          {/* умовний рендер відео/зображення */}
           <div className="w-full max-w-xs md:max-w-md rounded-lg shadow-lg aspect-[3/4] overflow-hidden">
             {selectedMedia?.type === "video" ? (
               <video

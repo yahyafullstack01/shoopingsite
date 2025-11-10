@@ -1,6 +1,6 @@
+'use client';
 
-"use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import Image from "next/image";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Link from "next/link";
@@ -9,25 +9,52 @@ import useKeyboardNavigation from "../../hooks/useKeyboardNavigation";
 import useImageFollow from "../../hooks/useImageFollow";
 import Head from "next/head";
 import products from "../../data/products";
+import { PRIORITY_TOP, prioritizeByIds } from "../../utils/priorities";
+
+// стабільний геттер id
+const getId = (p) => Number(p?.id ?? p?._id ?? p?.productId);
+
+// унікалізація за id
+const dedupeById = (list) => {
+  const seen = new Set();
+  return list.filter((p) => {
+    const id = getId(p);
+    if (seen.has(id)) return false;
+    seen.add(id);
+    return true;
+  });
+};
 
 export default function TopProducts() {
-  // тільки топ-продукти
-  const topProducts = products.filter((product) => product.isTop);
+  // 1) Сира вибірка топів + дедуплікація
+  const topRaw = useMemo(() => {
+    const onlyTop = products.filter((p) => p.isTop);
+    return dedupeById(onlyTop);
+  }, []);
+
+  // 2) Пріоритетні ID -> на початок (решта — як було)
+  const topProducts = useMemo(
+    () => prioritizeByIds(topRaw, PRIORITY_TOP),
+    [topRaw]
+  );
 
   const [visibleImagesCount, setVisibleImagesCount] = useState(10);
 
   useEffect(() => {
     const updateVisibleImages = () => {
-      setVisibleImagesCount(window.innerWidth <= 460 ? 1 : 10);
+      const base = window.innerWidth <= 460 ? 1 : 10;
+      // не більше наявних елементів
+      setVisibleImagesCount(Math.min(base, topProducts.length));
     };
     updateVisibleImages();
     window.addEventListener("resize", updateVisibleImages);
     return () => window.removeEventListener("resize", updateVisibleImages);
-  }, []);
+  }, [topProducts.length]);
 
+  // 3) Слайдер працює з відсортованим масивом
   const { displayedImages, handleNext, handlePrev } = useImageFollow(
     topProducts.length,
-    visibleImagesCount
+    Math.min(visibleImagesCount, topProducts.length)
   );
 
   const { translateList } = useLanguage();
@@ -35,13 +62,19 @@ export default function TopProducts() {
 
   useKeyboardNavigation(handlePrev, handleNext);
 
+  if (topProducts.length === 0) return null;
+
   return (
     <>
       <Head>
         <link
           rel="preload"
           as="image"
-          href={topProducts[0]?.image || "/Jackets/Leather Jacket/4.avif"}
+          href={
+            topProducts[0]?.image
+              ? encodeURI(topProducts[0].image) // кодує пробіли у %20
+              : "/Jackets/Leather-Jacket/4.avif"
+          }
           type="image/avif"
         />
       </Head>
@@ -70,29 +103,27 @@ export default function TopProducts() {
             className="flex overflow-hidden gap-4 px-4 justify-center"
             style={{ height: "400px" }}
           >
-            {displayedImages.map((imageIndex, idx) => {
+            {displayedImages.map((imageIndex) => {
               const product = topProducts[imageIndex];
               if (!product) return null;
 
-              // >>> додано:
+              const pid = getId(product);
               const src = product.image || "/Shirts/Corset Shirt/6.avif";
               const isLocal =
                 typeof src === "string" &&
-                (src.startsWith("/") ||
-                  src.startsWith("./") ||
-                  src.startsWith("../"));
+                (src.startsWith("/") || src.startsWith("./") || src.startsWith("../"));
 
               return (
                 <Link
-                   key={product.id}
-  href={`/Top-products?product=${product.id}`}
+                  key={`top-${pid}-${imageIndex}`} // ✅ унікальний ключ
+                  href={`/Top-products?product=${pid}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-shrink-0 group"
                 >
                   <Image
                     src={src}
-                    alt={`Топ продукт ${imageIndex + 1}`}
+                    alt={`Топ продукт ${pid}`}
                     width={300}
                     height={400}
                     priority={imageIndex === 0}
@@ -100,7 +131,6 @@ export default function TopProducts() {
                     sizes="(max-width: 425px) 100vw, (max-width: 768px) 45vw, (max-width: 1024px) 20vw, 300px"
                     quality={85}
                     className="rounded-lg object-cover shadow-lg transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:opacity-90"
-                    // >>> додано:
                     unoptimized={isLocal}
                     loader={isLocal ? ({ src }) => src : undefined}
                   />

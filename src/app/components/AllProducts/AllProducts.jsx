@@ -116,10 +116,11 @@ export default function AllProducts() {
 
   // фінальна вибірка для списку (фільтруємо ТІЛЬКИ з видимого пулу)
   const filteredProducts = filterAndSortProducts(
-    visiblePool,
-    { maxPrice, selectedSize, selectedColor },
-    sortOrder
-  );
+  visiblePool,
+  { maxPrice, selectedSize, selectedColor, selectedCategory: categoryFromURL },
+  sortOrder
+);
+
 
   const onProductClick = (product) => {
     setSelectedProduct(product);

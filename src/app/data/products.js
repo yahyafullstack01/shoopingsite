@@ -2291,7 +2291,7 @@ const products = [
 {
   id: 193,
   price: 2060,
-  isTop: false,
+  isTop: true,
   isNew: true,
   sku: "99335",
   size: "XS S M L XL",
@@ -2484,6 +2484,7 @@ const products = [
     id: 4,
     price: 3100,
     isTop: true,
+    isNew: true,
     sku: "12345",
     size: "XS S M L XL",
     category: "Dresses",
@@ -3310,7 +3311,7 @@ const products = [
 {
   id: 191,
   price: 5600,
-  isTop: false,
+  isTop: true,
   isNew: true,
   sku: "99333",
   size: "XS S M L XL",
@@ -3840,7 +3841,7 @@ const products = [
 {
   id: 183,
   price: 4350,
-  isTop: false,
+  isTop: true,
   isNew: true,
   sku: "99325",
   size: "XS S M L XL",

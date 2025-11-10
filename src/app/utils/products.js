@@ -1,3 +1,19 @@
+const PRIORITY_BY_CATEGORY = {
+  costumes: [196, 183, 1, 2, 215, 220, 186, 198],
+  dresses: [4, 171, 156, 214, 211, 20],     
+  shirts:  [],
+  skirts:  [],
+  sweaters:[],
+  pants:   [193, 163, 217, 205, 28, 29],
+  jackets: [],
+  tops:    [],
+  outerwear: [],
+  shorts:  [],
+};
+
+const getId = (p) => Number(p?.id ?? p?._id ?? p?.productId);
+const norm = (s) => (s || '').toString().trim().toLowerCase();
+
 // Size selection
 // This function updates the selected size, setting a value or clearing it if "All" is selected.
 
@@ -21,22 +37,66 @@ export const handleCategorySelect = (category, setSelectedCategory) => {
 export const filterAndSortProducts = (products, filters, sortOrder) => {
   const { maxPrice, selectedSize, selectedColor, selectedCategory } = filters;
 
-  return products
-    .filter((product) => {
-      const matchesPrice = product.price <= maxPrice;
-      const matchesSize = !selectedSize || product.sizes.includes(selectedSize); // Масив `sizes[]`
-      const matchesColor = !selectedColor || product.colors.includes(selectedColor); // Масив `colors[]`
-      const matchesCategory = !selectedCategory || product.category === selectedCategory;
-       
-     return matchesPrice && matchesSize && matchesColor && matchesCategory;
-    
-    })
-    .sort((a, b) => {
-      if (sortOrder === "priceAsc") return a.price - b.price;
-      if (sortOrder === "priceDesc") return b.price - a.price;
-      return 0;
-    });
+  // 1) Фільтр
+  let filtered = products.filter((product) => {
+    const price = product.discountPrice ?? product.price;
+    const matchesPrice = price <= maxPrice;
+    const matchesSize =
+      !selectedSize || (Array.isArray(product.sizes) && product.sizes.includes(selectedSize));
+    const matchesColor =
+      !selectedColor || (Array.isArray(product.colors) && product.colors.includes(selectedColor));
+    const matchesCategory =
+      !selectedCategory || norm(product.category) === norm(selectedCategory);
+
+    return matchesPrice && matchesSize && matchesColor && matchesCategory;
+  });
+
+  // 2) Пріоритет для поточної категорії (якщо заданий)
+  // 2) Пріоритет для поточної категорії (якщо заданий)
+const cat = norm(selectedCategory);
+const priorityIds = PRIORITY_BY_CATEGORY[cat] || [];
+
+if (priorityIds.length > 0) {
+  const set = new Set(priorityIds.map(Number));
+  const rank = new Map(priorityIds.map((id, i) => [Number(id), i]));
+
+  const priority = [];
+  const rest = [];
+
+  for (const p of filtered) (set.has(getId(p)) ? priority : rest).push(p);
+
+  // хелпер порівняння за ціною
+  const cmpPrice = (a, b) => {
+    const pa = Number(a?.discountPrice ?? a?.price ?? 0);
+    const pb = Number(b?.discountPrice ?? b?.price ?? 0);
+    if (sortOrder === "priceAsc") return pa - pb;
+    if (sortOrder === "priceDesc") return pb - pa;
+    return 0;
+  };
+
+  if (sortOrder === "priceAsc" || sortOrder === "priceDesc") {
+    // якщо користувач сортує за ціною — сортуємо і пріоритетних, і решту
+    priority.sort(cmpPrice);
+    rest.sort(cmpPrice);
+    return [...priority, ...rest]; // пріоритетні залишаються першими, але вже відсортовані за ціною
+  } else {
+    // recommended: фіксований порядок у пріоритетів, решта — як було
+    priority.sort((a, b) => rank.get(getId(a)) - rank.get(getId(b)));
+    return [...priority, ...rest];
+  }
+}
+
+  // 3) Якщо пріоритети не задані — звичайне сортування
+return filtered.sort((a, b) => {
+  const pa = Number(a?.discountPrice ?? a?.price ?? 0);
+  const pb = Number(b?.discountPrice ?? b?.price ?? 0);
+  if (sortOrder === "priceAsc") return pa - pb;
+  if (sortOrder === "priceDesc") return pb - pa;
+  return 0;
+});
+
 };
+
 
 // Product click handler
 // This function sets the selected product and scrolls the page to a specified element.
