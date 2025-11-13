@@ -264,6 +264,154 @@ const products = [
   }
 },
 
+{
+  id: 193,
+  price: 2060,
+  isTop: true,
+  isNew: true,
+  sku: "99335",
+  size: "XS S M L XL",
+  category: "Pants",
+  image: "/Pants/Lui Pants/1.avif",
+  images: [
+    "/Pants/Lui Pants/2.avif",
+    "/Pants/Lui Pants/3.avif",
+    "/Pants/Lui Pants/4.avif",
+    "/Pants/Lui Pants/5.avif",
+    "/Pants/Lui Pants/6.avif",
+    "/Pants/Lui Pants/7.avif",
+    "/Pants/Lui Pants/8.avif",
+    "/Pants/Lui Pants/9.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Pants",
+      name: "Lui Pants",
+      description: [
+        "Straight classic trousers with a high waist and sharp crease.",
+        "The elongated silhouette visually lengthens the figure, while the universal grey shade is easy to combine with any wardrobe tones.",
+        "Fabric: Premium natural wool for warmth, comfort, and pleasant tactile sensations.",
+        "[ Composition: 75% wool ]"
+      ],
+      colors: ["grey", "graphite"]
+    },
+    FR: {
+      category: "Pantalons",
+      name: "Pantalon «Lui»",
+      description: [
+        "Pantalon classique droit avec taille haute et pli marqué.",
+        "La silhouette allongée affine visuellement la silhouette, tandis que la teinte grise universelle se marie facilement avec toutes les couleurs de la garde-robe.",
+        "Tissu : laine naturelle premium pour chaleur, confort et toucher agréable.",
+        "[ Composition : 75% laine ]"
+      ],
+      colors: ["gris", "graphite"]
+    },
+    UA: {
+      category: "Брюки",
+      name: "Брюки «Lui»",
+      description: [
+        "Прямі класичні брюки з високою посадкою та чіткою стрілкою.",
+        "Подовжений силует візуально витягує фігуру, а універсальний сірий колір легко комбінується з будь-якими відтінками гардеробу.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[ Склад: 75% вовни ]"
+      ],
+      colors: ["сірий", "графіт"]
+    },
+    RU: {
+      category: "Брюки",
+      name: "Брюки «Lui»",
+      description: [
+        "Прямые классические брюки с высокой посадкой и чёткой стрелкой.",
+        "Удлинённый силуэт визуально вытягивает фигуру, а универсальный серый цвет легко комбинируется с любыми оттенками гардероба.",
+        "Ткань: натуральная премиальная шерсть, обеспечивающая тепло, уют и приятные тактильные ощущения.",
+        "[ Состав: 75% шерсти ]"
+      ],
+      colors: ["серый", "графит"]
+    }
+  }
+},
+
+  {
+  id: 205,
+  price: 2100,
+  isTop: false,
+  isNew: true,
+  sku: "99347",
+  size: "XS S M L XL",
+  category: "Pants",
+  image: "/Pants/LeatherPants Belt/6.avif",
+  images: [
+    "/Pants/LeatherPants Belt/7.avif",
+    "/Pants/LeatherPants Belt/8.avif",
+    "/Pants/LeatherPants Belt/9.avif",
+    "/Pants/LeatherPants Belt/1.avif",
+    "/Pants/LeatherPants Belt/2.avif",
+    "/Pants/LeatherPants Belt/3.avif",
+    "/Pants/LeatherPants Belt/4.avif",
+    "/Pants/LeatherPants Belt/5.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Pants",
+      name: "LeatherPants Belt",
+      description: [
+        "Pants that combine comfort, elegance, and confidence.",
+        "Made from dense eco-leather, they shape a perfect silhouette and add depth to the look.",
+        "The high waist emphasizes the figure, while the straight elongated cut visually lengthens the legs.",
+        "Fabric: high-quality eco-leather on a suede base (stretchy, does not crack).",
+        "Details:",
+        "• High waist with double button fastening",
+        "• Decorative vertical seams at the front create an elongated silhouette effect"
+      ],
+      colors: ["caramel", "mocha"]
+    },
+    FR: {
+      category: "Pantalons",
+      name: "Pantalon en cuir avec ceinture",
+      description: [
+        "Un pantalon qui allie confort, élégance et assurance.",
+        "Confectionné en cuir écologique dense, il sculpte une silhouette parfaite et ajoute de la profondeur à la tenue.",
+        "La taille haute met en valeur la silhouette, tandis que la coupe droite et allongée allonge visuellement les jambes.",
+        "Tissu : cuir écologique de haute qualité sur base en daim (extensible, ne se fissure pas).",
+        "Détails :",
+        "• Taille haute avec double fermeture à boutons",
+        "• Coutures verticales décoratives à l'avant pour un effet de silhouette allongée"
+      ],
+      colors: ["caramel", "moka"]
+    },
+    UA: {
+      category: "Брюки",
+      name: "Шкіряні брюки з поясом",
+      description: [
+        "Брюки, що поєднують комфорт, елегантність і впевненість.",
+        "Створені зі щільної екошкіри, вони формують ідеальний силует і додають образу глибини.",
+        "Висока посадка підкреслює талію, а прямий крій із подовженою лінією візуально видовжує ноги.",
+        "Тканина: якісна екошкіра на замшевій основі (стречева, не тріскається).",
+        "Деталі:",
+        "• Висока посадка з подвоєною застібкою на ґудзики",
+        "• Декоративні вертикальні шви спереду — ефект витягнутого силуету"
+      ],
+      colors: ["карамель", "мокко"]
+    },
+    RU: {
+      category: "Брюки",
+      name: "Кожаные брюки с поясом",
+      description: [
+        "Брюки, сочетающие комфорт, элегантность и уверенность.",
+        "Созданы из плотной экокожи, формируют идеальный силуэт и добавляют глубины образу.",
+        "Высокая посадка подчёркивает талию, а прямой удлинённый крой визуально вытягивает ноги.",
+        "Ткань: качественная экокожа на замшевой основе (стрейчевая, не трескается).",
+        "Детали:",
+        "• Высокая посадка с двойной застёжкой на пуговицы",
+        "• Декоративные вертикальные швы спереди — эффект вытянутого силуэта"
+      ],
+      colors: ["карамель", "мокко"]
+    }
+  }
+},
+
   {
   id: 218,
   price: 2000,
@@ -340,6 +488,87 @@ const products = [
         "• Аккуратный разрез спереди обеспечивает свободу движений и добавляет элегантной динамики."
       ],
       colors: ["серая ёлочка"]
+    }
+  }
+},
+
+    {
+  id: 171,
+  price: 2300,
+  isTop: true,
+  isNew: true,
+  sku: "98824",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Satin Slip Dress/1.avif",
+  images: [
+    "/Dress/Satin Slip Dress/2.avif",
+      {
+      type: "video",
+      src: "/Dress/Satin Slip Dress/IMG_8623.mp4",
+      poster: "/Dress/Satin Slip Dress/1.avif",
+    },
+    "/Dress/Satin Slip Dress/3.avif",
+    "/Dress/Satin Slip Dress/4.avif",
+    "/Dress/Satin Slip Dress/5.avif",
+    "/Dress/Satin Slip Dress/6.avif",
+    "/Dress/Satin Slip Dress/7.avif",
+    "/Dress/Satin Slip Dress/8.avif",
+    "/Dress/Satin Slip Dress/9.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Satin Slip Dress",
+      description: [
+        "Elegant and sensual dress combining luxurious satin with delicate lace. Perfect for women who value lightness, refinement, and modern femininity.",
+        "Fabric: Premium satin, beautifully flowing, lightweight, breathable, and pleasant to the touch.",
+        "Details:",
+        "• Slip dress silhouette with a free-flowing shape",
+        "• V-neckline adorned with delicate matching lace",
+        "• Hem decorated with a wide lace insert adding lightness and elegance"
+      ],
+      colors: ["khaki", "black"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe satinée",
+      description: [
+        "Robe élégante et sensuelle combinant satin luxueux et dentelle délicate. Parfaite pour les femmes qui apprécient légèreté, raffinement et féminité moderne.",
+        "Tissu : satin premium, fluide, léger, respirant et agréable au toucher.",
+        "Détails :",
+        "• Silhouette fluide type 'slip dress'",
+        "• Encolure en V ornée de dentelle délicate assortie",
+        "• Base décorée d'une large insertion en dentelle apportant légèreté et élégance"
+      ],
+      colors: ["kaki", "noir"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Сатинова сукня-комбінація",
+      description: [
+        "Елегантна та чуттєва сукня, що поєднує розкіш сатину з ніжністю мережива. Для жінок, які цінують легкість, витонченість і сучасну жіночність.",
+        "Тканина: Сатин преміум-класу, який красиво переливається, легкий, дихаючий та приємний до тіла.",
+        "Деталі:",
+        "• Фасон «комбінація» з вільним, плавним силуетом",
+        "• V-подібний виріз горловини, оздоблений делікатним мереживом у тон",
+        "• Низ сукні прикрашений широкою вставкою з мережива для легкості та елегантності"
+      ],
+      colors: ["хакі", "чорна"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Сатиновое платье-комбинация",
+      description: [
+        "Элегантное и чувственное платье, сочетание роскошного сатина и нежного кружева. Для женщин, ценящих лёгкость, утончённость и современную женственность.",
+        "Ткань: Сатин премиум-класса, красиво струится, лёгкий, дышащий и приятный на ощупь.",
+        "Детали:",
+        "• Силуэт 'комбинация' с плавным свободным кроем",
+        "• V-образный вырез, украшенный деликатным кружевом в тон",
+        "• Низ платья с широкой кружевной вставкой для лёгкости и элегантного акцента"
+      ],
+      colors: ["хаки", "чёрная"]
     }
   }
 },
@@ -1182,6 +1411,49 @@ const products = [
 },
 
   {
+    id: 102,
+    price: 2100,
+    isTop: true,
+    sku: "45530",
+    size: "XS S M L XL",
+    category: "Skirts",
+    image: "/Skirts/Leather Midi Skirt/1.avif",
+    images: [
+      "/Skirts/Leather Midi Skirt/2.avif",
+      "/Skirts/Leather Midi Skirt/3.avif",
+      "/Skirts/Leather Midi Skirt/4.avif",
+      "/Skirts/Leather Midi Skirt/5.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Skirts",
+        name: "Leather Midi Skirt",
+        description: "A midi-length pencil skirt with a high waist and a side slit.\nFabric: high-quality stretch eco-leather on a suede base (durable, crack-resistant).",
+        colors: ["black"]
+      },
+      FR: {
+        category: "Jupes",
+        name: "Jupe Midi en Cuir",
+        description: "Jupe crayon de longueur midi avec une taille haute et une fente latérale.\nTissu : éco-cuir extensible de haute qualité sur une base en daim (résistant, ne se fissure pas).",
+        colors: ["noir"]
+      },
+      UA: {
+        category: "Спідниці",
+        name: "Шкіряна спідниця",
+        description: "Спідниця міді довжини фасону олівець на високій посадці із розрізом збоку.\nТканина: якісна екошкіра на замшевій основі (стречева, не тріскається).",
+        colors: ["чорний"]
+      },
+      RU: {
+        category: "Юбки",
+        name: "Кожаная юбка",
+        description: "Юбка средней длины фасона карандаш с высокой посадкой и разрезом сбоку.\nТкань: качественная эко-кожа на замшевой основе (эластичная, не трескается).",
+        colors: ["черный"]
+      }
+    }
+  },
+
+  {
   id: 208,
   price: 2060,
   isTop: false,
@@ -1443,85 +1715,7 @@ const products = [
   }
 },
 
-  {
-  id: 205,
-  price: 2100,
-  isTop: false,
-  isNew: true,
-  sku: "99347",
-  size: "XS S M L XL",
-  category: "Pants",
-  image: "/Pants/LeatherPants Belt/1.avif",
-  images: [
-    "/Pants/LeatherPants Belt/2.avif",
-    "/Pants/LeatherPants Belt/3.avif",
-    "/Pants/LeatherPants Belt/4.avif",
-    "/Pants/LeatherPants Belt/5.avif",
-    "/Pants/LeatherPants Belt/6.avif",
-    "/Pants/LeatherPants Belt/7.avif",
-    "/Pants/LeatherPants Belt/8.avif",
-    "/Pants/LeatherPants Belt/9.avif",
-  ],
-  sizes: ["XS", "S", "M", "L", "XL"],
-  translations: {
-    EN: {
-      category: "Pants",
-      name: "LeatherPants Belt",
-      description: [
-        "Pants that combine comfort, elegance, and confidence.",
-        "Made from dense eco-leather, they shape a perfect silhouette and add depth to the look.",
-        "The high waist emphasizes the figure, while the straight elongated cut visually lengthens the legs.",
-        "Fabric: high-quality eco-leather on a suede base (stretchy, does not crack).",
-        "Details:",
-        "• High waist with double button fastening",
-        "• Decorative vertical seams at the front create an elongated silhouette effect"
-      ],
-      colors: ["caramel", "mocha"]
-    },
-    FR: {
-      category: "Pantalons",
-      name: "Pantalon en cuir avec ceinture",
-      description: [
-        "Un pantalon qui allie confort, élégance et assurance.",
-        "Confectionné en cuir écologique dense, il sculpte une silhouette parfaite et ajoute de la profondeur à la tenue.",
-        "La taille haute met en valeur la silhouette, tandis que la coupe droite et allongée allonge visuellement les jambes.",
-        "Tissu : cuir écologique de haute qualité sur base en daim (extensible, ne se fissure pas).",
-        "Détails :",
-        "• Taille haute avec double fermeture à boutons",
-        "• Coutures verticales décoratives à l'avant pour un effet de silhouette allongée"
-      ],
-      colors: ["caramel", "moka"]
-    },
-    UA: {
-      category: "Брюки",
-      name: "Шкіряні брюки з поясом",
-      description: [
-        "Брюки, що поєднують комфорт, елегантність і впевненість.",
-        "Створені зі щільної екошкіри, вони формують ідеальний силует і додають образу глибини.",
-        "Висока посадка підкреслює талію, а прямий крій із подовженою лінією візуально видовжує ноги.",
-        "Тканина: якісна екошкіра на замшевій основі (стречева, не тріскається).",
-        "Деталі:",
-        "• Висока посадка з подвоєною застібкою на ґудзики",
-        "• Декоративні вертикальні шви спереду — ефект витягнутого силуету"
-      ],
-      colors: ["карамель", "мокко"]
-    },
-    RU: {
-      category: "Брюки",
-      name: "Кожаные брюки с поясом",
-      description: [
-        "Брюки, сочетающие комфорт, элегантность и уверенность.",
-        "Созданы из плотной экокожи, формируют идеальный силуэт и добавляют глубины образу.",
-        "Высокая посадка подчёркивает талию, а прямой удлинённый крой визуально вытягивает ноги.",
-        "Ткань: качественная экокожа на замшевой основе (стрейчевая, не трескается).",
-        "Детали:",
-        "• Высокая посадка с двойной застёжкой на пуговицы",
-        "• Декоративные вертикальные швы спереди — эффект вытянутого силуэта"
-      ],
-      colors: ["карамель", "мокко"]
-    }
-  }
-},
+
 
   {
   id: 204,
@@ -2231,86 +2425,7 @@ const products = [
     }
   },
 
-    {
-  id: 171,
-  price: 2300,
-  isTop: true,
-  isNew: true,
-  sku: "98824",
-  size: "XS S M L XL",
-  category: "Dresses",
-  image: "/Dress/Satin Slip Dress/1.avif",
-  images: [
-    "/Dress/Satin Slip Dress/2.avif",
-      {
-      type: "video",
-      src: "/Dress/Satin Slip Dress/IMG_8623.mp4",
-      poster: "/Dress/Satin Slip Dress/1.avif",
-    },
-    "/Dress/Satin Slip Dress/3.avif",
-    "/Dress/Satin Slip Dress/4.avif",
-    "/Dress/Satin Slip Dress/5.avif",
-    "/Dress/Satin Slip Dress/6.avif",
-    "/Dress/Satin Slip Dress/7.avif",
-    "/Dress/Satin Slip Dress/8.avif",
-    "/Dress/Satin Slip Dress/9.avif",
-  ],
-  sizes: ["XS", "S", "M", "L", "XL"],
-  translations: {
-    EN: {
-      category: "Dresses",
-      name: "Satin Slip Dress",
-      description: [
-        "Elegant and sensual dress combining luxurious satin with delicate lace. Perfect for women who value lightness, refinement, and modern femininity.",
-        "Fabric: Premium satin, beautifully flowing, lightweight, breathable, and pleasant to the touch.",
-        "Details:",
-        "• Slip dress silhouette with a free-flowing shape",
-        "• V-neckline adorned with delicate matching lace",
-        "• Hem decorated with a wide lace insert adding lightness and elegance"
-      ],
-      colors: ["khaki", "black"]
-    },
-    FR: {
-      category: "Robes",
-      name: "Robe satinée",
-      description: [
-        "Robe élégante et sensuelle combinant satin luxueux et dentelle délicate. Parfaite pour les femmes qui apprécient légèreté, raffinement et féminité moderne.",
-        "Tissu : satin premium, fluide, léger, respirant et agréable au toucher.",
-        "Détails :",
-        "• Silhouette fluide type 'slip dress'",
-        "• Encolure en V ornée de dentelle délicate assortie",
-        "• Base décorée d'une large insertion en dentelle apportant légèreté et élégance"
-      ],
-      colors: ["kaki", "noir"]
-    },
-    UA: {
-      category: "Сукні",
-      name: "Сатинова сукня-комбінація",
-      description: [
-        "Елегантна та чуттєва сукня, що поєднує розкіш сатину з ніжністю мережива. Для жінок, які цінують легкість, витонченість і сучасну жіночність.",
-        "Тканина: Сатин преміум-класу, який красиво переливається, легкий, дихаючий та приємний до тіла.",
-        "Деталі:",
-        "• Фасон «комбінація» з вільним, плавним силуетом",
-        "• V-подібний виріз горловини, оздоблений делікатним мереживом у тон",
-        "• Низ сукні прикрашений широкою вставкою з мережива для легкості та елегантності"
-      ],
-      colors: ["хакі", "чорна"]
-    },
-    RU: {
-      category: "Платья",
-      name: "Сатиновое платье-комбинация",
-      description: [
-        "Элегантное и чувственное платье, сочетание роскошного сатина и нежного кружева. Для женщин, ценящих лёгкость, утончённость и современную женственность.",
-        "Ткань: Сатин премиум-класса, красиво струится, лёгкий, дышащий и приятный на ощупь.",
-        "Детали:",
-        "• Силуэт 'комбинация' с плавным свободным кроем",
-        "• V-образный вырез, украшенный деликатным кружевом в тон",
-        "• Низ платья с широкой кружевной вставкой для лёгкости и элегантного акцента"
-      ],
-      colors: ["хаки", "чёрная"]
-    }
-  }
-},
+
 {
   id: 198,
   price: 2000,
@@ -2388,73 +2503,7 @@ const products = [
     }
   }
 },
-{
-  id: 193,
-  price: 2060,
-  isTop: true,
-  isNew: true,
-  sku: "99335",
-  size: "XS S M L XL",
-  category: "Pants",
-  image: "/Pants/Lui Pants/1.avif",
-  images: [
-    "/Pants/Lui Pants/2.avif",
-    "/Pants/Lui Pants/3.avif",
-    "/Pants/Lui Pants/4.avif",
-    "/Pants/Lui Pants/5.avif",
-    "/Pants/Lui Pants/6.avif",
-    "/Pants/Lui Pants/7.avif",
-    "/Pants/Lui Pants/8.avif",
-    "/Pants/Lui Pants/9.avif",
-  ],
-  sizes: ["XS", "S", "M", "L", "XL"],
-  translations: {
-    EN: {
-      category: "Pants",
-      name: "Lui Pants",
-      description: [
-        "Straight classic trousers with a high waist and sharp crease.",
-        "The elongated silhouette visually lengthens the figure, while the universal grey shade is easy to combine with any wardrobe tones.",
-        "Fabric: Premium natural wool for warmth, comfort, and pleasant tactile sensations.",
-        "[ Composition: 75% wool ]"
-      ],
-      colors: ["grey", "graphite"]
-    },
-    FR: {
-      category: "Pantalons",
-      name: "Pantalon «Lui»",
-      description: [
-        "Pantalon classique droit avec taille haute et pli marqué.",
-        "La silhouette allongée affine visuellement la silhouette, tandis que la teinte grise universelle se marie facilement avec toutes les couleurs de la garde-robe.",
-        "Tissu : laine naturelle premium pour chaleur, confort et toucher agréable.",
-        "[ Composition : 75% laine ]"
-      ],
-      colors: ["gris", "graphite"]
-    },
-    UA: {
-      category: "Брюки",
-      name: "Брюки «Lui»",
-      description: [
-        "Прямі класичні брюки з високою посадкою та чіткою стрілкою.",
-        "Подовжений силует візуально витягує фігуру, а універсальний сірий колір легко комбінується з будь-якими відтінками гардеробу.",
-        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
-        "[ Склад: 75% вовни ]"
-      ],
-      colors: ["сірий", "графіт"]
-    },
-    RU: {
-      category: "Брюки",
-      name: "Брюки «Lui»",
-      description: [
-        "Прямые классические брюки с высокой посадкой и чёткой стрелкой.",
-        "Удлинённый силуэт визуально вытягивает фигуру, а универсальный серый цвет легко комбинируется с любыми оттенками гардероба.",
-        "Ткань: натуральная премиальная шерсть, обеспечивающая тепло, уют и приятные тактильные ощущения.",
-        "[ Состав: 75% шерсти ]"
-      ],
-      colors: ["серый", "графит"]
-    }
-  }
-},
+
 
  {
     id: 99,
@@ -2553,7 +2602,7 @@ const products = [
     },
     UA: {
       category: "Топи",
-      name: "Джемпер «Мокка»",
+      name: "Джемпер «Mocha»",
       description: [
         "Мінімалістичний джемпер із човниковим вирізом та накладними кишенями. Лаконічний і стильний, він пасує до класичних та casual образів.",
         "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття. [Склад: 75% вовни]",
@@ -2798,48 +2847,7 @@ const products = [
         }
       }
 },
-  {
-    id: 102,
-    price: 2100,
-    isTop: true,
-    sku: "45530",
-    size: "XS S M L XL",
-    category: "Skirts",
-    image: "/Skirts/Leather Midi Skirt/1.avif",
-    images: [
-      "/Skirts/Leather Midi Skirt/2.avif",
-      "/Skirts/Leather Midi Skirt/3.avif",
-      "/Skirts/Leather Midi Skirt/4.avif",
-      "/Skirts/Leather Midi Skirt/5.avif",
-    ],
-    sizes: ["XS", "S", "M", "L", "XL"],
-    translations: {
-      EN: {
-        category: "Skirts",
-        name: "Leather Midi Skirt",
-        description: "A midi-length pencil skirt with a high waist and a side slit.\nFabric: high-quality stretch eco-leather on a suede base (durable, crack-resistant).",
-        colors: ["black"]
-      },
-      FR: {
-        category: "Jupes",
-        name: "Jupe Midi en Cuir",
-        description: "Jupe crayon de longueur midi avec une taille haute et une fente latérale.\nTissu : éco-cuir extensible de haute qualité sur une base en daim (résistant, ne se fissure pas).",
-        colors: ["noir"]
-      },
-      UA: {
-        category: "Спідниці",
-        name: "Шкіряна спідниця",
-        description: "Спідниця міді довжини фасону олівець на високій посадці із розрізом збоку.\nТканина: якісна екошкіра на замшевій основі (стречева, не тріскається).",
-        colors: ["чорний"]
-      },
-      RU: {
-        category: "Юбки",
-        name: "Кожаная юбка",
-        description: "Юбка средней длины фасона карандаш с высокой посадкой и разрезом сбоку.\nТкань: качественная эко-кожа на замшевой основе (эластичная, не трескается).",
-        colors: ["черный"]
-      }
-    }
-  },
+
   {
     id: 95,
     price: 2400,
@@ -3693,7 +3701,7 @@ const products = [
     },
     UA: {
       category: "Брюки",
-      name: "Брюки «Мокка»",
+      name: "Брюки «Mocha»",
       description: [
         "Елегантні та комфортні брюки із високою посадкою. Мають вільний крій, візуально подовжують ноги та підходять як для ділових, так і для розслаблених поєднань.",
         "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття. [Склад: 75% вовни]",
@@ -3771,7 +3779,7 @@ const products = [
     },
     UA: {
       category: "Костюми",
-      name: "Костюм «Мокка»",
+      name: "Костюм «Mocha»",
       description: [
         "Стильний і зручний костюм, який ідеально підходить для міського темпу життя. Завдяки лаконічному дизайну та благородному відтінку він виглядає водночас елегантно та невимушено.",
         "Комплект можна носити разом як total look або розділяти: джемпер поєднувати з джинсами чи спідницями, брюки — зі строгими сорочками чи футболками.",
