@@ -5,6 +5,8 @@ const products = [
   price: 5200,
   isTop: false,
   isNew: true,
+  // isSpecialOffer: true,
+  // discountPrice: 2830,
   sku: "99340",
   size: "XS S M L XL",
   category: "Costumes",
@@ -101,6 +103,8 @@ const products = [
   price: 5400,
   isTop: false,
   isNew: true,
+  // isSpecialOffer: true,
+  // discountPrice: 2830,
   sku: "99362",
   size: "XS S M L XL",
   category: "Costumes",
@@ -11916,47 +11920,47 @@ description: [
   //     }
   //   }
   // },
-  {
-    id: 6,
-    price: 3100,
-    isTop: false,
-    sku: "12345",
-    size: "XS S M L XL",
-    category: "Dresses",
-    image: "/Dress/Dress Grace/1.avif",
-    images: ["/Dress/Dress Grace/2.avif", "/Dress/Dress Grace/3.avif", "/Dress/Dress Grace/4.avif", "/Dress/Dress Grace/5.avif", "/Dress/Dress Grace/6.avif"],
-    sizes: ["XS", "S", "M", "L", "XL"],
-    translations: {
-      EN: {
-        category: "Dresses",
-        name: "Dress Grace",
-        description: "A-line dress with wide sleeves of midi length. Has pronounced ribbons near the neck. There is a cutout on the back\nFabric: high-quality costume wool",
-        color: "gray",
-        colors: ["gray"],
-      },
-      FR: {
-        category: "Robes",
-        name: "Robe Grace",
-        description: "",
-        color: "gris",
-        colors: ["gris"]
-      },
-      UA: {
-        category: "Сукні",
-        name: "Сукня «Grace»",
-        description: "Сукня А-силуету із широкими рукавами міді довжини. Має виражені стрічки біля горловини. На спинці є виріз\nТканина: якісна костюмна вовна",
-        color: "сірий",
-        colors: ["сірий"]
-      },
-      RU: {
-        category: "Платья",
-        name: "Платье Грейс",
-        description: "Платье А-силуэта с широкими рукавами меди имеет выраженные швы у горловины.\n Ткань: качественная костюмная шерсть",
-        color: "серый",
-        colors: ["серый"]
-      }
-    }
-  },
+  // {
+  //   id: 6,
+  //   price: 3100,
+  //   isTop: false,
+  //   sku: "12345",
+  //   size: "XS S M L XL",
+  //   category: "Dresses",
+  //   image: "/Dress/Dress Grace/1.avif",
+  //   images: ["/Dress/Dress Grace/2.avif", "/Dress/Dress Grace/3.avif", "/Dress/Dress Grace/4.avif", "/Dress/Dress Grace/5.avif", "/Dress/Dress Grace/6.avif"],
+  //   sizes: ["XS", "S", "M", "L", "XL"],
+  //   translations: {
+  //     EN: {
+  //       category: "Dresses",
+  //       name: "Dress Grace",
+  //       description: "A-line dress with wide sleeves of midi length. Has pronounced ribbons near the neck. There is a cutout on the back\nFabric: high-quality costume wool",
+  //       color: "gray",
+  //       colors: ["gray"],
+  //     },
+  //     FR: {
+  //       category: "Robes",
+  //       name: "Robe Grace",
+  //       description: "",
+  //       color: "gris",
+  //       colors: ["gris"]
+  //     },
+  //     UA: {
+  //       category: "Сукні",
+  //       name: "Сукня «Grace»",
+  //       description: "Сукня А-силуету із широкими рукавами міді довжини. Має виражені стрічки біля горловини. На спинці є виріз\nТканина: якісна костюмна вовна",
+  //       color: "сірий",
+  //       colors: ["сірий"]
+  //     },
+  //     RU: {
+  //       category: "Платья",
+  //       name: "Платье Грейс",
+  //       description: "Платье А-силуэта с широкими рукавами меди имеет выраженные швы у горловины.\n Ткань: качественная костюмная шерсть",
+  //       color: "серый",
+  //       colors: ["серый"]
+  //     }
+  //   }
+  // },
   {
     id: 7,
 
