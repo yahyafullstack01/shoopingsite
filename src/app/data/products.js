@@ -1,5 +1,100 @@
 const products = [
 
+  {
+  id: 221,
+  price: 5200,
+  isTop: false,
+  isNew: true,
+  sku: "99340",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Grace Suit/1.avif",
+  images: [
+    "/Costumes/Grace Suit/2.avif",
+    "/Costumes/Grace Suit/3.avif",
+    "/Costumes/Grace Suit/4.avif",
+    "/Costumes/Grace Suit/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Grace Suit",
+      description: [
+        "Modern classic at its finest. The 'Grace' suit embodies elegance and architectural precision of tailoring.",
+        "Soft premium wool fabric holds its shape, while the light gray shade adds a touch of sophistication.",
+        "The set consists of a fitted blazer and a midi skirt with pleats that create a refined silhouette.",
+        "Fabric: Premium natural wool ensuring warmth, coziness, and a pleasant feel.",
+        "[ Composition: 75% wool ]",
+        "Details:",
+        "Blazer: Fitted cut",
+        "• Two front buttons",
+        "• Classic lapels",
+        "Skirt: Deep front pleats",
+        "• Length: below the knee",
+        "• Waistband at the waist"
+      ],
+      colors: ["gray"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume 'Grace'",
+      description: [
+        "Classique moderne dans sa plus belle expression. Le costume 'Grace' incarne l’élégance et la précision architecturale de la coupe.",
+        "Le tissu en laine douce premium garde sa forme, tandis que la teinte gris clair apporte une touche de noblesse.",
+        "L'ensemble se compose d'une veste cintrée et d'une jupe midi à plis créant une silhouette raffinée.",
+        "Tissu : laine naturelle premium offrant chaleur, confort et toucher agréable.",
+        "[ Composition : 75% laine ]",
+        "Détails :",
+        "Veste : coupe ajustée",
+        "• Deux boutons à l’avant",
+        "• Revers classiques",
+        "Jupe : plis profonds à l’avant",
+        "• Longueur : sous le genou",
+        "• Ceinture à la taille"
+      ],
+      colors: ["gris"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм \"Grace\"",
+      description: [
+        "Сучасна класика в найкращому виконанні. Костюм “Grace” — це втілення елегантності та архітектурної точності крою.",
+        "М’яка вовняна тканина тримає форму, а світло-сірий відтінок додає образу благородності.",
+        "Комплект складається з приталеного жакету та спідниці міді зі складками, які створюють витончений силует.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[ Склад: 75% вовни ]",
+        "Деталі:",
+        "Жакет: Приталений крій",
+        "• Два ґудзики спереду",
+        "• Лацкани класичної форми",
+        "Спідниця: Глибокі складки спереду",
+        "• Довжина: нижче коліна",
+        "• Пояс на талії"
+      ],
+      colors: ["сірий"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм \"Grace\"",
+      description: [
+        "Современная классика в лучшем исполнении. Костюм “Grace” — воплощение элегантности и архитектурной точности кроя.",
+        "Мягкая шерстяная ткань держит форму, а светло-серый оттенок придаёт образу благородство.",
+        "Комплект состоит из приталенного жакета и миди-юбки со складками, создающими изысканный силуэт.",
+        "Ткань: натуральная премиальная шерсть, обеспечивающая тепло, уют и приятные тактильные ощущения.",
+        "[ Состав: 75% шерсти ]",
+        "Детали:",
+        "Жакет: приталенный крой",
+        "• Две пуговицы спереди",
+        "• Классические лацканы",
+        "Юбка: глубокие складки спереди",
+        "• Длина: ниже колена",
+        "• Пояс на талии"
+      ],
+      colors: ["серый"]
+    }
+  }
+},
 
   {
   id: 220,
@@ -1839,101 +1934,7 @@ const products = [
   }
 },
 
-  {
-  id: 198,
-  price: 5200,
-  isTop: false,
-  isNew: true,
-  sku: "99340",
-  size: "XS S M L XL",
-  category: "Costumes",
-  image: "/Costumes/Grace Suit/1.avif",
-  images: [
-    "/Costumes/Grace Suit/2.avif",
-    "/Costumes/Grace Suit/3.avif",
-    "/Costumes/Grace Suit/4.avif",
-    "/Costumes/Grace Suit/5.avif"
-  ],
-  sizes: ["XS", "S", "M", "L", "XL"],
-  translations: {
-    EN: {
-      category: "Costumes",
-      name: "Grace Suit",
-      description: [
-        "Modern classic at its finest. The 'Grace' suit embodies elegance and architectural precision of tailoring.",
-        "Soft premium wool fabric holds its shape, while the light gray shade adds a touch of sophistication.",
-        "The set consists of a fitted blazer and a midi skirt with pleats that create a refined silhouette.",
-        "Fabric: Premium natural wool ensuring warmth, coziness, and a pleasant feel.",
-        "[ Composition: 75% wool ]",
-        "Details:",
-        "Blazer: Fitted cut",
-        "• Two front buttons",
-        "• Classic lapels",
-        "Skirt: Deep front pleats",
-        "• Length: below the knee",
-        "• Waistband at the waist"
-      ],
-      colors: ["gray"]
-    },
-    FR: {
-      category: "Costumes",
-      name: "Costume 'Grace'",
-      description: [
-        "Classique moderne dans sa plus belle expression. Le costume 'Grace' incarne l’élégance et la précision architecturale de la coupe.",
-        "Le tissu en laine douce premium garde sa forme, tandis que la teinte gris clair apporte une touche de noblesse.",
-        "L'ensemble se compose d'une veste cintrée et d'une jupe midi à plis créant une silhouette raffinée.",
-        "Tissu : laine naturelle premium offrant chaleur, confort et toucher agréable.",
-        "[ Composition : 75% laine ]",
-        "Détails :",
-        "Veste : coupe ajustée",
-        "• Deux boutons à l’avant",
-        "• Revers classiques",
-        "Jupe : plis profonds à l’avant",
-        "• Longueur : sous le genou",
-        "• Ceinture à la taille"
-      ],
-      colors: ["gris"]
-    },
-    UA: {
-      category: "Костюми",
-      name: "Костюм \"Grace\"",
-      description: [
-        "Сучасна класика в найкращому виконанні. Костюм “Grace” — це втілення елегантності та архітектурної точності крою.",
-        "М’яка вовняна тканина тримає форму, а світло-сірий відтінок додає образу благородності.",
-        "Комплект складається з приталеного жакету та спідниці міді зі складками, які створюють витончений силует.",
-        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
-        "[ Склад: 75% вовни ]",
-        "Деталі:",
-        "Жакет: Приталений крій",
-        "• Два ґудзики спереду",
-        "• Лацкани класичної форми",
-        "Спідниця: Глибокі складки спереду",
-        "• Довжина: нижче коліна",
-        "• Пояс на талії"
-      ],
-      colors: ["сірий"]
-    },
-    RU: {
-      category: "Костюмы",
-      name: "Костюм \"Grace\"",
-      description: [
-        "Современная классика в лучшем исполнении. Костюм “Grace” — воплощение элегантности и архитектурной точности кроя.",
-        "Мягкая шерстяная ткань держит форму, а светло-серый оттенок придаёт образу благородство.",
-        "Комплект состоит из приталенного жакета и миди-юбки со складками, создающими изысканный силуэт.",
-        "Ткань: натуральная премиальная шерсть, обеспечивающая тепло, уют и приятные тактильные ощущения.",
-        "[ Состав: 75% шерсти ]",
-        "Детали:",
-        "Жакет: приталенный крой",
-        "• Две пуговицы спереди",
-        "• Классические лацканы",
-        "Юбка: глубокие складки спереди",
-        "• Длина: ниже колена",
-        "• Пояс на талии"
-      ],
-      colors: ["серый"]
-    }
-  }
-},
+
       {
       id: 13,
       price: 3700,
