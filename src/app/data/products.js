@@ -1,5 +1,68 @@
 const products = [
 
+{
+  id: 222,
+  price: 2060,
+  isTop: false,
+  isNew: true,
+  sku: "99363",
+  size: "XS S M L XL",
+  category: "Pants",
+  image: "/Pants/Wool Pants/1.avif",
+  images: [
+    "/Pants/Wool Pants/2.avif",
+    "/Pants/Wool Pants/3.avif",
+    "/Pants/Wool Pants/4.avif",
+    "/Pants/Wool Pants/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Pants",
+      name: "Wool Pants",
+      description: [
+        "Classic straight pants with a high waist and crisp pleats.",
+        "The elongated silhouette visually elongates the figure, while the versatile gray color pairs effortlessly with any wardrobe tone.",
+        "Fabric: Premium-quality natural wool providing warmth, comfort, and a pleasant tactile feel.",
+        "[ Composition: 75% wool ]"
+      ],
+      colors: ["gray"]
+    },
+    FR: {
+      category: "Pantalons",
+      name: "Pantalon en laine",
+      description: [
+        "Pantalon droit classique à taille haute et plis nets.",
+        "La silhouette allongée affine visuellement la silhouette, tandis que la couleur grise polyvalente se marie facilement avec toutes les teintes de la garde-robe.",
+        "Tissu : laine naturelle de qualité supérieure offrant chaleur, confort et douceur au toucher.",
+        "[ Composition : 75% laine ]"
+      ],
+      colors: ["gris"]
+    },
+    UA: {
+      category: "Брюки",
+      name: "Вовняні брюки",
+      description: [
+        "Прямі класичні брюки з високою посадкою та чіткою стрілкою.",
+        "Подовжений силует візуально витягує фігуру, а універсальний сірий колір легко комбінується з будь-якими відтінками гардеробу.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[ Склад: 75% вовни ]"
+      ],
+      colors: ["сірий"]
+    },
+    RU: {
+      category: "Брюки",
+      name: "Шерстяные брюки",
+      description: [
+        "Классические прямые брюки с высокой посадкой и чёткой стрелкой.",
+        "Удлинённый силуэт визуально вытягивает фигуру, а универсальный серый цвет легко сочетается с любыми оттенками гардероба.",
+        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло, уют и приятные тактильные ощущения.",
+        "[ Состав: 75% шерсти ]"
+      ],
+      colors: ["серый"]
+    }
+  }
+},
   {
   id: 221,
   price: 5200,
