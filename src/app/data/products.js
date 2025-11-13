@@ -851,6 +851,101 @@ const products = [
 },
 
   {
+  id: 158,
+  price: 3100,
+  isTop: false,
+  isNew: true,
+  sku: "98811",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Loden Grace Dress/11.avif", 
+  images: [
+    "/Dress/Loden Grace Dress/12.avif",
+    "/Dress/Loden Grace Dress/13.avif",
+    "/Dress/Loden Grace Dress/14.avif",
+    "/Dress/Loden Grace Dress/1.avif",
+    "/Dress/Loden Grace Dress/2.avif",
+     {
+      type: "video",
+      src: "/Dress/Loden Grace Dress/IMG_5263.mp4",
+      poster: "/Dress/Loden Grace Dress/2.avif",
+    },
+    "/Dress/Loden Grace Dress/3.avif",
+    "/Dress/Loden Grace Dress/4.avif",
+    "/Dress/Loden Grace Dress/5.avif",
+    // "/Dress/Loden Grace Dress/6.avif",
+    // "/Dress/Loden Grace Dress/7.avif",
+    // "/Dress/Loden Grace Dress/8.avif",
+    // "/Dress/Loden Grace Dress/9.avif",
+    // "/Dress/Loden Grace Dress/10.avif",
+    
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Loden Grace Dress",
+      description: [
+        "An elegant dress that combines timeless classics with modern accents. Thanks to its premium fabric and thoughtful cut, it looks stylish while remaining comfortable for everyday wear.",
+        "Perfect choice for office days, business meetings, or evening outings.",
+        "Fabric: Loden wool — dense, warm, yet soft and flexible. It holds its shape perfectly and is ideal for the cooler season.",
+        "[Composition: 75% wool]",
+        "Details:",
+        "• Straight silhouette that gently emphasizes body lines",
+        "• ¾ sleeves with decorative zippers — a stylish element that allows adjusting the volume",
+        "• Back slit for ease of movement and a feminine accent"
+      ],
+      colors: ["denim","fuchsia"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe «Loden Grace»",
+      description: [
+        "Une robe élégante qui associe la classique intemporelle à des accents modernes. Grâce à son tissu premium et sa coupe soignée, elle allie style et confort au quotidien.",
+        "Un choix parfait pour le bureau, les réunions d'affaires ou les sorties en soirée.",
+        "Tissu : laine Loden — dense, chaude, mais souple et douce. Elle garde parfaitement sa forme et est idéale pour la saison fraîche.",
+        "[Composition : 75% laine]",
+        "Détails :",
+        "• Silhouette droite qui souligne délicatement les lignes du corps",
+        "• Manches ¾ avec fermetures éclair décoratives pour ajuster le volume",
+        "• Fente au dos pour plus d’aisance et une touche féminine"
+      ],
+      colors: ["denim",]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Сукня «Loden Grace»",
+      description: [
+        "Елегантна сукня, яка поєднує стриману класику з сучасними акцентами. Завдяки преміальній тканині та продуманому крою вона виглядає стильно та комфортно носиться щодня.",
+        "Ця сукня стане ідеальним вибором для офісних буднів, ділових зустрічей або вечірніх виходів.",
+        "Тканина: вовняна тканина «Лоден» — щільна, тепла, але при цьому пластична й м’яка. Вона чудово тримає форму і є ідеальною для прохолодного сезону.",
+        "[Склад: 75% вовни]",
+        "Деталі:",
+        "• Прямий силует, що м’яко підкреслює лінії фігури.",
+        "• Рукави ¾ з декоративними замочками — стильна деталь, яка дозволяє регулювати об’єм та створює сучасний акцент.",
+        "• На спинці передбачений розріз для зручності рухів і жіночного акценту."
+      ],
+      colors: ["джинс","фуксія"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Платье «Loden Grace»",
+      description: [
+        "Элегантное платье, сочетающее сдержанную классику с современными акцентами. Благодаря премиальной ткани и продуманному крою оно выглядит стильно и удобно для повседневной носки.",
+        "Идеальный выбор для офиса, деловых встреч или вечерних выходов.",
+        "Ткань: шерстяная ткань «Лоден» — плотная, тёплая, но пластичная и мягкая. Отлично держит форму и идеально подходит для прохладного сезона.",
+        "[Состав: 75% шерсти]",
+        "Детали:",
+        "• Прямой силуэт, мягко подчёркивающий линии фигуры",
+        "• Рукава ¾ с декоративными замочками — стильная деталь, позволяющая регулировать объём",
+        "• Разрез на спинке для удобства движения и женственного акцента"
+      ],
+      colors: ["джинс", "полынь"]
+    }
+  }
+},
+
+  {
   id: 211,
   price: 3100,
   isTop: false,
@@ -5800,100 +5895,7 @@ const products = [
   }
 },
 
-  {
-  id: 158,
-  price: 3100,
-  isTop: false,
-  isNew: true,
-  sku: "98811",
-  size: "XS S M L XL",
-  category: "Dresses",
-  image: "/Dress/Loden Grace Dress/11.avif", 
-  images: [
-    "/Dress/Loden Grace Dress/12.avif",
-    "/Dress/Loden Grace Dress/13.avif",
-    "/Dress/Loden Grace Dress/14.avif",
-    "/Dress/Loden Grace Dress/1.avif",
-    "/Dress/Loden Grace Dress/2.avif",
-     {
-      type: "video",
-      src: "/Dress/Loden Grace Dress/IMG_5263.mp4",
-      poster: "/Dress/Loden Grace Dress/2.avif",
-    },
-    "/Dress/Loden Grace Dress/3.avif",
-    "/Dress/Loden Grace Dress/4.avif",
-    "/Dress/Loden Grace Dress/5.avif",
-    // "/Dress/Loden Grace Dress/6.avif",
-    // "/Dress/Loden Grace Dress/7.avif",
-    // "/Dress/Loden Grace Dress/8.avif",
-    // "/Dress/Loden Grace Dress/9.avif",
-    // "/Dress/Loden Grace Dress/10.avif",
-    
-  ],
-  sizes: ["XS", "S", "M", "L", "XL"],
-  translations: {
-    EN: {
-      category: "Dresses",
-      name: "Loden Grace Dress",
-      description: [
-        "An elegant dress that combines timeless classics with modern accents. Thanks to its premium fabric and thoughtful cut, it looks stylish while remaining comfortable for everyday wear.",
-        "Perfect choice for office days, business meetings, or evening outings.",
-        "Fabric: Loden wool — dense, warm, yet soft and flexible. It holds its shape perfectly and is ideal for the cooler season.",
-        "[Composition: 75% wool]",
-        "Details:",
-        "• Straight silhouette that gently emphasizes body lines",
-        "• ¾ sleeves with decorative zippers — a stylish element that allows adjusting the volume",
-        "• Back slit for ease of movement and a feminine accent"
-      ],
-      colors: ["denim","fuchsia"]
-    },
-    FR: {
-      category: "Robes",
-      name: "Robe «Loden Grace»",
-      description: [
-        "Une robe élégante qui associe la classique intemporelle à des accents modernes. Grâce à son tissu premium et sa coupe soignée, elle allie style et confort au quotidien.",
-        "Un choix parfait pour le bureau, les réunions d'affaires ou les sorties en soirée.",
-        "Tissu : laine Loden — dense, chaude, mais souple et douce. Elle garde parfaitement sa forme et est idéale pour la saison fraîche.",
-        "[Composition : 75% laine]",
-        "Détails :",
-        "• Silhouette droite qui souligne délicatement les lignes du corps",
-        "• Manches ¾ avec fermetures éclair décoratives pour ajuster le volume",
-        "• Fente au dos pour plus d’aisance et une touche féminine"
-      ],
-      colors: ["denim",]
-    },
-    UA: {
-      category: "Сукні",
-      name: "Сукня «Loden Grace»",
-      description: [
-        "Елегантна сукня, яка поєднує стриману класику з сучасними акцентами. Завдяки преміальній тканині та продуманому крою вона виглядає стильно та комфортно носиться щодня.",
-        "Ця сукня стане ідеальним вибором для офісних буднів, ділових зустрічей або вечірніх виходів.",
-        "Тканина: вовняна тканина «Лоден» — щільна, тепла, але при цьому пластична й м’яка. Вона чудово тримає форму і є ідеальною для прохолодного сезону.",
-        "[Склад: 75% вовни]",
-        "Деталі:",
-        "• Прямий силует, що м’яко підкреслює лінії фігури.",
-        "• Рукави ¾ з декоративними замочками — стильна деталь, яка дозволяє регулювати об’єм та створює сучасний акцент.",
-        "• На спинці передбачений розріз для зручності рухів і жіночного акценту."
-      ],
-      colors: ["джинс","фуксія"]
-    },
-    RU: {
-      category: "Платья",
-      name: "Платье «Loden Grace»",
-      description: [
-        "Элегантное платье, сочетающее сдержанную классику с современными акцентами. Благодаря премиальной ткани и продуманному крою оно выглядит стильно и удобно для повседневной носки.",
-        "Идеальный выбор для офиса, деловых встреч или вечерних выходов.",
-        "Ткань: шерстяная ткань «Лоден» — плотная, тёплая, но пластичная и мягкая. Отлично держит форму и идеально подходит для прохладного сезона.",
-        "[Состав: 75% шерсти]",
-        "Детали:",
-        "• Прямой силуэт, мягко подчёркивающий линии фигуры",
-        "• Рукава ¾ с декоративными замочками — стильная деталь, позволяющая регулировать объём",
-        "• Разрез на спинке для удобства движения и женственного акцента"
-      ],
-      colors: ["джинс", "полынь"]
-    }
-  }
-},
+
 
   {
   id: 157,
@@ -12646,50 +12648,50 @@ description: [
     //   }
     // },
     
-    {
-      id: 35,
-      price: 1800,
-      isTop: false,
-      sku: "12349",
-      color: "mocha",
-      size: "XS S M L XL",
-      category: "Sweaters",
-      image: "/Sweaters/Mohair Sweater/1.avif",
-      images: [
-        "/Sweaters/Mohair Sweater/2.avif", 
-        "/Sweaters/Mohair Sweater/3.avif", 
-        "/Sweaters/Mohair Sweater/4.avif", 
-        "/Sweaters/Mohair Sweater/5.avif"
-      ],
+    // {
+    //   id: 35,
+    //   price: 1800,
+    //   isTop: false,
+    //   sku: "12349",
+    //   color: "mocha",
+    //   size: "XS S M L XL",
+    //   category: "Sweaters",
+    //   image: "/Sweaters/Mohair Sweater/1.avif",
+    //   images: [
+    //     "/Sweaters/Mohair Sweater/2.avif", 
+    //     "/Sweaters/Mohair Sweater/3.avif", 
+    //     "/Sweaters/Mohair Sweater/4.avif", 
+    //     "/Sweaters/Mohair Sweater/5.avif"
+    //   ],
       
-      sizes: ["XS", "S", "M", "L", "XL"],
-      translations: {
-        EN: {
-          category: "Sweaters",
-          name: "Mohair Sweater",
-          description: "Loose-fit sweater with a wide neckline, can be worn off one shoulder. Composition: 100% mohair.",
-          colors: ["mocha"],
-        },
-        FR: {
-          category: "Pulls",
-          name: "Pull en mohair",
-          description: "Pull ample avec une large encolure, peut être porté sur une épaule. Composition : 100% mohair.",
-          colors: ["moka"],
-        },
-        UA: {
-          category: "Светри",
-          name: "Светр із мохеру",
-          description: "Светр вільного крою з широкой горловиною, можна спустити на одне плече. Склад: 100% мохер.",
-          colors: ["мокко"],
-        },
-        RU: {
-          category: "Светри",
-          name: "Свитер из мохера",
-          description: "Свитер свободного кроя с широкой горловиной, можно спустить на одно плечо. Состав: 100% мохер.",
-          colors: ["мокко"],
-        }
-      }
-    },
+    //   sizes: ["XS", "S", "M", "L", "XL"],
+    //   translations: {
+    //     EN: {
+    //       category: "Sweaters",
+    //       name: "Mohair Sweater",
+    //       description: "Loose-fit sweater with a wide neckline, can be worn off one shoulder. Composition: 100% mohair.",
+    //       colors: ["mocha"],
+    //     },
+    //     FR: {
+    //       category: "Pulls",
+    //       name: "Pull en mohair",
+    //       description: "Pull ample avec une large encolure, peut être porté sur une épaule. Composition : 100% mohair.",
+    //       colors: ["moka"],
+    //     },
+    //     UA: {
+    //       category: "Светри",
+    //       name: "Светр із мохеру",
+    //       description: "Светр вільного крою з широкой горловиною, можна спустити на одне плече. Склад: 100% мохер.",
+    //       colors: ["мокко"],
+    //     },
+    //     RU: {
+    //       category: "Светри",
+    //       name: "Свитер из мохера",
+    //       description: "Свитер свободного кроя с широкой горловиной, можно спустить на одно плечо. Состав: 100% мохер.",
+    //       colors: ["мокко"],
+    //     }
+    //   }
+    // },
 
 
     
