@@ -9,7 +9,8 @@ import ThumbnailCarousel from "../ThumbnailCarousel/ThumbnailCarousel";
 import Image from "next/image";
 import ProductBanner from "../../components/products/ProductBanner"; // Імпортуємо банер
 import products from "../../data/products";
-
+const normalizeMedia = (m) =>
+  typeof m === "string" ? { type: "image", src: m } : m;
 export default function OffersInfo() {
   const { translateList, language } = useLanguage();
   const menuItems = translateList("SpecialOffers", "header");
@@ -73,7 +74,8 @@ export default function OffersInfo() {
                 >
                   <div className="w-full h-[300px] sm:h-[350px] overflow-hidden rounded-t">
                     <Image
-                      src={product.image}
+                      src={normalizeMedia(product.image || product.images?.[0]).src}
+                     
                       alt={`Preview of ${translatedName}`}
                       width={300}
                       height={350}
