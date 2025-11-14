@@ -64,11 +64,15 @@ export default function OrderSummary() {
               key={index}
               className="flex flex-col sm:flex-row items-center sm:items-start gap-4 border-b pb-4 last:border-none"
             >
-              <Image
-                src={item.image || '/Darklogo.avif'}
-                alt={item.name}
-                className="w-28 h-28 object-cover rounded-lg shadow border dark:border-zinc-600"
-              />
+              <div className="relative w-28 h-28">
+  <Image
+    src={item.image || '/Darklogo.avif'}
+    alt={item.name}
+    fill
+    className="object-cover rounded-lg shadow border dark:border-zinc-600"
+  />
+</div>
+
 
               <div className="text-sm flex-1 text-center sm:text-left">
                 <p className="font-normal text-base break-words">{item.name}</p>

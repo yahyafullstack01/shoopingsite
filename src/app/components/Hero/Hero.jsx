@@ -47,13 +47,13 @@ export default function Hero() {
     () => [
       {
         type: "image",
-        src: "/hoom/1.webp",                 
-        mobileSrc: "/hoom/mobile1.webp",    
+        src: "/hoom/blackfriday.avif",                 
+        mobileSrc: "/hoom/blackfirdayMobile.avif",    
         alt: "Latore banner 1",
-        title: t[0],
-        subtitle: t[3],
+        // title: t[0],
+        // subtitle: t[3],
         ctaText: t[4],
-        ctaHref: "/All-products",
+        ctaHref: "/special-offers",
         fit: "cover",
         focus: "left",
         fitMobile: "cover",
@@ -66,17 +66,17 @@ export default function Hero() {
         title: "LATORE ATELIER",
         subtitle: "2025",
         ctaText: t[5],
-        ctaHref: "/All-products",
+        ctaHref: "/special-offers",
       },
       {
         type: "image",
-        src: "/hoom/2.webp",
-        mobileSrc: "/hoom/mobile2.webp",
+        src: "/hoom/blackfriday2.avif",
+        mobileSrc: "/hoom/blackfidayMobile1.avif",
         alt: "Latore banner 2",
-        title: t[0],
-        subtitle: t[3],
+        //title: t[0],
+        // subtitle: t[3],
         ctaText: t[4],
-        ctaHref: "/All-products",
+        ctaHref: "/special-offers",
         fit: "cover",
         focus: "center",
       },
@@ -164,7 +164,7 @@ export default function Hero() {
       </Head>
 
       <section
-        className="relative overflow-hidden min-h-[70svh]  md:min-h-[420px] max-h-[1050px] w-[100vw] -mx-[calc(50%-50vw)]"
+      className="relative overflow-hidden min-h-[70svh]  md:min-h-[460px] max-h-[1050px] w-[100vw] -mx-[calc(50%-50vw)]"
         aria-label="Hero slider"
         onTouchStart={onTouchStart}
         onTouchEnd={onTouchEnd}
@@ -256,7 +256,9 @@ export default function Hero() {
               {s.ctaText && s.ctaHref && (
                 <a
                   href={s.ctaHref}
-                  className="mt-6 inline-block rounded bg-white px-5 py-2 text-sm sm:text-base font-medium text-gray-900 hover:bg-white/90 focus:outline-none focus:ring"
+                  className="mt-64 inline-block rounded bg-white px-5 py-2 text-sm sm:text-base font-medium text-gray-900 hover:bg-white/90"
+
+                 // className="mt-6 inline-block rounded bg-white px-5 py-2 text-sm sm:text-base font-medium text-gray-900 hover:bg-white/90 focus:outline-none focus:ring"
                 >
                   {s.ctaText}
                 </a>
@@ -271,8 +273,8 @@ export default function Hero() {
             <button
               aria-label="Попередній слайд"
               onClick={prev}
-              className="absolute left-3 top-1/2 -translate-y-1/2 z-20 grid place-items-center h-10 w-10 rounded-full bg-black/35 text-white hover:bg-black/55"
-            >
+                   className="absolute left-3 top-1/2 -translate-y-1/2 z-20 grid place-items-center h-10 w-10 rounded-full bg-black/35 text-white hover:bg-black/55"
+         >
               ‹
             </button>
             <button
