@@ -48,7 +48,7 @@ export default function Hero() {
       {
         type: "image",
         src: "/hoom/blackfriday.avif",                 
-        mobileSrc: "/hoom/blackfirdayMobile.avif",    
+        mobileSrc: "/hoom/blackfidayMobile1.avif",    
         alt: "Latore banner 1",
         // title: t[0],
         // subtitle: t[3],
@@ -71,7 +71,7 @@ export default function Hero() {
       {
         type: "image",
         src: "/hoom/blackfriday2.avif",
-        mobileSrc: "/hoom/blackfidayMobile1.avif",
+        mobileSrc: "/hoom/blackfirdayMobile.avif",
         alt: "Latore banner 2",
         //title: t[0],
         // subtitle: t[3],
