@@ -1,18 +1,36 @@
-'use client';
+"use client";
 
-import React, { useState, useEffect, useMemo } from 'react';
-import Image from 'next/image';
-import { useLanguage } from '../../Functions/useLanguage';
-import Toast from '../ToastCart/Toast';
-import QuickAddModal from '../QuickAddModal/QuickAddModal';
-import ProductBanner from '../products/ProductBanner';
-import { getSessionId } from '../../utils/session';
-import { FaHeart, FaRegHeart } from 'react-icons/fa';
-import { getFavorites, toggleFavorite } from '../../utils/favorites';
-import { PRIORITY_NEW, prioritizeByIds } from '../../utils/priorities';
+import React, { useState, useEffect, useMemo } from "react";
+import Image from "next/image";
+import { useLanguage } from "../../Functions/useLanguage";
+import Toast from "../ToastCart/Toast";
+import QuickAddModal from "../QuickAddModal/QuickAddModal";
+import ProductBanner from "../products/ProductBanner";
+import { getSessionId } from "../../utils/session";
+import { FaHeart, FaRegHeart } from "react-icons/fa";
+import { getFavorites, toggleFavorite } from "../../utils/favorites";
+import { PRIORITY_NEW, prioritizeByIds } from "../../utils/priorities";
 
 // хелпер для стабільного ID
 const getId = (p) => Number(p?.id ?? p?._id ?? p?.productId);
+
+// допоміжна функція для вибору картинки (та сама, що в OffersInfo)
+const getProductSrc = (product) => {
+  const raw =
+    product.image ||
+    (Array.isArray(product.images) && product.images.length > 0
+      ? product.images[0]
+      : null) ||
+    "/placeholder/300x400.jpg";
+
+  if (typeof raw === "string") return raw;
+
+  if (raw && typeof raw === "object" && typeof raw.src === "string") {
+    return raw.src;
+  }
+
+  return "/placeholder/300x400.jpg";
+};
 
 const NewArrivalsInfo = ({ products }) => {
   const [selectedProduct, setSelectedProduct] = useState(null);
@@ -23,12 +41,15 @@ const NewArrivalsInfo = ({ products }) => {
   const [favorites, setFavorites] = useState(getFavorites());
 
   const { language, translateList } = useLanguage();
-  const infoLabels = translateList('Infoform', 'header');
-  const priceLabel = infoLabels[8] || 'Price';
+  const infoLabels = translateList("Infoform", "header");
+  const priceLabel = infoLabels[8] || "Price";
 
   // 1) беремо лише новинки
   const onlyNew = useMemo(
-    () => (Array.isArray(products) ? products.filter((p) => p.isNew === true) : []),
+    () =>
+      Array.isArray(products)
+        ? products.filter((p) => p.isNew === true)
+        : [],
     [products]
   );
 
@@ -48,43 +69,59 @@ const NewArrivalsInfo = ({ products }) => {
     setShowModal(true);
   };
 
-  const handleAddToCart = async ({ product, selectedColor, selectedSize, quantity }) => {
+  const handleAddToCart = async ({
+    product,
+    selectedColor,
+    selectedSize,
+    quantity,
+  }) => {
     const sessionId = getSessionId();
     if (!sessionId) {
-      alert('Сесія не знайдена. Спробуйте оновити сторінку.');
+      alert("Сесія не знайдена. Спробуйте оновити сторінку.");
       return;
     }
 
     const id = getId(product);
-    const name = product.translations?.[language]?.name || product.name || product.title || 'Product';
+    const name =
+      product.translations?.[language]?.name ||
+      product.name ||
+      product.title ||
+      "Product";
 
     // підтримка ціни зі знижкою
-    const basePriceNum = Number(String(product.price).replace(/[^\d.]/g, '')) || 0;
+    const basePriceNum =
+      Number(String(product.price).replace(/[^\d.]/g, "")) || 0;
     const discountNum = product?.discountPrice
-      ? Number(String(product.discountPrice).replace(/[^\d.]/g, '')) || basePriceNum
+      ? Number(
+          String(product.discountPrice).replace(/[^\d.]/g, "")
+        ) || basePriceNum
       : null;
 
     const price = basePriceNum.toFixed(2);
-    const discountPrice = discountNum !== null ? discountNum.toFixed(2) : null;
+    const discountPrice =
+      discountNum !== null ? discountNum.toFixed(2) : null;
 
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/cart`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          sessionId,
-          productId: id,
-          name,
-          price,           // базова ціна
-          discountPrice,   // якщо є знижка — передаємо
-          color: selectedColor,
-          size: selectedSize,
-          quantity,
-        }),
-      });
+      const res = await fetch(
+        `${process.env.NEXT_PUBLIC_BASE_URL}/api/cart`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            sessionId,
+            productId: id,
+            name,
+            price, // базова ціна
+            discountPrice, // якщо є знижка — передаємо
+            color: selectedColor,
+            size: selectedSize,
+            quantity,
+          }),
+        }
+      );
 
       const data = await res.json();
-      if (data?.success || data?.message?.includes('додано')) {
+      if (data?.success || data?.message?.includes("додано")) {
         setLastProduct({
           name,
           price: discountPrice || price,
@@ -93,11 +130,11 @@ const NewArrivalsInfo = ({ products }) => {
         });
         setShowToast(true);
       } else {
-        alert(data?.message || 'Помилка при додаванні');
+        alert(data?.message || "Помилка при додаванні");
       }
     } catch (error) {
-      console.error('❌ API помилка:', error);
-      alert('Помилка при додаванні до кошика');
+      console.error("❌ API помилка:", error);
+      alert("Помилка при додаванні до кошика");
     }
 
     setShowModal(false);
@@ -121,11 +158,33 @@ const NewArrivalsInfo = ({ products }) => {
 
       <div className="grid gap-6 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
         {orderedNew.map((product) => {
-          const translatedName = product.translations?.[language]?.name || product.name || 'Товар';
+          const translatedName =
+            product.translations?.[language]?.name ||
+            product.name ||
+            "Товар";
           const pid = getId(product);
           const isFav = favorites.includes(pid);
-          const cleanPrice = String(product.price).replace(/[^\d.]/g, '');
+
+          const hasDiscount =
+            product.discountPrice !== undefined &&
+            product.discountPrice !== null &&
+            product.discountPrice !== "";
+
+          const cleanBasePrice = String(product.price).replace(
+            /[^\d.]/g,
+            ""
+          );
+          const cleanDiscountPrice = hasDiscount
+            ? String(product.discountPrice).replace(/[^\d.]/g, "")
+            : null;
+
+          const offerPrice = cleanDiscountPrice || cleanBasePrice;
           const productUrl = `/product/${pid}`;
+
+          // 👇 нове: беремо нормальний src + прапор локального файлу
+          const src = getProductSrc(product);
+          const isLocal =
+            typeof src === "string" && src.startsWith("/");
 
           return (
             <article
@@ -140,7 +199,9 @@ const NewArrivalsInfo = ({ products }) => {
 
               <div
                 onClick={() => openBanner(product)}
-                onKeyDown={(e) => e.key === 'Enter' && openBanner(product)}
+                onKeyDown={(e) =>
+                  e.key === "Enter" && openBanner(product)
+                }
                 role="button"
                 tabIndex={0}
                 className="relative cursor-pointer group"
@@ -153,7 +214,7 @@ const NewArrivalsInfo = ({ products }) => {
                       handleFavoriteToggle(pid);
                     }}
                     className={`absolute top-2 right-2 text-xl z-10 transition duration-300 ${
-                      isFav ? 'text-red-600' : 'text-gray-400'
+                      isFav ? "text-red-600" : "text-gray-400"
                     }`}
                     aria-label="Додати в улюблене"
                   >
@@ -161,16 +222,16 @@ const NewArrivalsInfo = ({ products }) => {
                   </button>
 
                   <Image
-                    src={
-                      product.image ||
-                      `https://via.placeholder.com/300x400?text=${encodeURIComponent(translatedName)}`
-                    }
-                    alt={translatedName || 'Product Image'}
+                    src={src}
+                    alt={translatedName || "Product Image"}
                     width={300}
                     height={400}
                     className="w-full h-full object-cover rounded transform transition-transform duration-300 ease-in-out group-hover:scale-110"
                     itemProp="image"
+                    unoptimized={isLocal}
+                    loader={isLocal ? ({ src }) => src : undefined}
                   />
+
                   <div className="absolute top-2 left-2 bg-black text-white text-xs font-semibold px-2 py-1 rounded">
                     НОВИНКА
                   </div>
@@ -180,21 +241,46 @@ const NewArrivalsInfo = ({ products }) => {
                 </figure>
               </div>
 
+              {/* Ціна з відображенням знижки */}
               <section className="mt-3 sm:mt-4">
                 <h3 className="text-sm sm:text-lg font-normal text-center sm:text-left">
                   {translatedName}
                 </h3>
                 <p className="text-xs sm:text-sm text-gray-700 dark:text-gray-400 mt-1 text-center sm:text-left">
-                  <span className="font-semibold">{priceLabel}:</span>{' '}
-                  {product.price} <span className="text-xs">UAH</span>
+                  <span className="font-semibold">{priceLabel}:</span>{" "}
+                  {hasDiscount ? (
+                    <>
+                      <span className="text-red-600 font-semibold">
+                        {product.discountPrice} UAH
+                      </span>{" "}
+                      <span className="line-through text-gray-500">
+                        {product.price} UAH
+                      </span>
+                    </>
+                  ) : (
+                    <>
+                      {product.price} <span className="text-xs">UAH</span>
+                    </>
+                  )}
                 </p>
               </section>
 
               {/* Offer для Product (schema.org) */}
-              <div itemProp="offers" itemScope itemType="https://schema.org/Offer" className="hidden">
+              <div
+                itemProp="offers"
+                itemScope
+                itemType="https://schema.org/Offer"
+                className="hidden"
+              >
                 <meta itemProp="priceCurrency" content="UAH" />
-                <meta itemProp="price" content={cleanPrice || '0'} />
-                <link itemProp="availability" href="https://schema.org/InStock" />
+                <meta
+                  itemProp="price"
+                  content={offerPrice || "0"}
+                />
+                <link
+                  itemProp="availability"
+                  href="https://schema.org/InStock"
+                />
                 <link itemProp="url" href={productUrl} />
               </div>
 
@@ -245,7 +331,10 @@ const NewArrivalsInfo = ({ products }) => {
 
       {/* Toast */}
       {showToast && lastProduct && (
-        <Toast product={lastProduct} onClose={() => setShowToast(false)} />
+        <Toast
+          product={lastProduct}
+          onClose={() => setShowToast(false)}
+        />
       )}
     </section>
   );

@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import { useRouter } from 'next/navigation';
-import { useEffect, useState, useMemo } from 'react';
-import products from '../../data/products';
-import { PRIORITY_NEW, prioritizeByIds } from '../../utils/priorities';
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useEffect, useState, useMemo } from "react";
+import products from "../../data/products";
+import { PRIORITY_NEW, prioritizeByIds } from "../../utils/priorities";
 
 const NewArrivals = () => {
   const router = useRouter();
@@ -19,8 +19,8 @@ const NewArrivals = () => {
     };
 
     handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   // 1) Беремо лише новинки
@@ -35,8 +35,12 @@ const NewArrivals = () => {
     [onlyNew]
   );
 
-  const handleViewAll = () => router.push('/new-products');
-  const handleCardClick = (id) => router.push(`/product/${id}`);
+  const handleViewAll = () => router.push("/new-products");
+
+  // 🔹 перехід по айді на сторінку new-products
+  const handleCardClick = (id) => {
+    router.push(`/new-products?product=${id}`, { scroll: false });
+  };
 
   const renderedCount = Math.min(visibleCount, newProducts.length);
 
@@ -46,10 +50,12 @@ const NewArrivals = () => {
       itemScope
       itemType="https://schema.org/ItemList"
     >
-      {/* дані ItemList */}
       <meta itemProp="name" content="Наші новинки" />
       <meta itemProp="numberOfItems" content={String(renderedCount)} />
-      <meta itemProp="itemListOrder" content="https://schema.org/ItemListOrderAscending" />
+      <meta
+        itemProp="itemListOrder"
+        content="https://schema.org/ItemListOrderAscending"
+      />
 
       <div className="flex justify-between items-center mb-8">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-black dark:text-white">
@@ -65,8 +71,9 @@ const NewArrivals = () => {
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
         {newProducts.slice(0, renderedCount).map((product, index) => {
-          const name = product.translations?.ua?.name || product.name || 'Новинка';
-          const url = `/product/${product.id}`;
+          const name =
+            product.translations?.ua?.name || product.name || "Новинка";
+          const url = `/new-products?product=${product.id}`;
 
           return (
             <div
@@ -79,7 +86,12 @@ const NewArrivals = () => {
             >
               <meta itemProp="position" content={String(index + 1)} />
 
-              <div itemProp="item" itemScope itemType="https://schema.org/Product" className="relative w-full h-full">
+              <div
+                itemProp="item"
+                itemScope
+                itemType="https://schema.org/Product"
+                className="relative w-full h-full"
+              >
                 <meta itemProp="name" content={name} />
                 <link itemProp="url" href={url} />
 
