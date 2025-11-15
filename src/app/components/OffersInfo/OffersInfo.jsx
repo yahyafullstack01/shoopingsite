@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
-import { useRouter } from "next/navigation";
+import React, { useState, useEffect } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useLanguage } from "../../Functions/useLanguage";
 import { handleContactButtonClick } from "../../utils/products";
 import Image from "next/image";
@@ -10,7 +10,6 @@ import products from "../../data/products";
 
 // допоміжна функція для вибору картинки
 const getProductSrc = (product) => {
-  // спочатку беремо image, якщо нема — першу з images
   const raw =
     product.image ||
     (Array.isArray(product.images) && product.images.length > 0
@@ -18,15 +17,12 @@ const getProductSrc = (product) => {
       : null) ||
     "/placeholder/300x400.jpg";
 
-  // якщо це строка — повертаємо як є
   if (typeof raw === "string") return raw;
 
-  // якщо це обʼєкт з src
   if (raw && typeof raw === "object" && typeof raw.src === "string") {
     return raw.src;
   }
 
-  // запасний варіант
   return "/placeholder/300x400.jpg";
 };
 
@@ -34,13 +30,30 @@ export default function OffersInfo() {
   const { translateList, language } = useLanguage();
   const menuItems = translateList("SpecialOffers", "header");
   const router = useRouter();
+  const searchParams = useSearchParams();
 
   const specialOffers = products.filter(
     (product) => product.isSpecialOffer === true
   );
+
   const [selectedProduct, setSelectedProduct] = useState(null);
 
+  // 🔹 беремо id з URL: /special-offers?product=219
+  const productId = searchParams.get("product");
+
+  // 🔹 коли змінюється ?product=... — оновлюємо selectedProduct
+  useEffect(() => {
+    if (productId) {
+      const found = products.find((p) => String(p.id) === productId);
+      setSelectedProduct(found || null);
+    } else {
+      setSelectedProduct(null);
+    }
+  }, [productId]);
+
+  // клік по картці: оновлюємо URL і відкриваємо банер
   const handleProductClick = (product) => {
+    router.push(`/special-offers?product=${product.id}`, { scroll: false });
     setSelectedProduct(product);
   };
 
@@ -57,7 +70,15 @@ export default function OffersInfo() {
     }
   };
 
+  // закриття банера: прибираємо ?product= з URL
   const handleCloseBanner = () => {
+    const params = new URLSearchParams(searchParams.toString());
+    params.delete("product");
+    const query = params.toString();
+    router.push(
+      query ? `/special-offers?${query}` : "/special-offers",
+      { scroll: false }
+    );
     setSelectedProduct(null);
   };
 
@@ -115,7 +136,6 @@ export default function OffersInfo() {
                       height={350}
                       className="w-full h-full object-cover"
                       priority
-                      // робимо як у ProductCard, щоб локальні картинки з /public працювали завжди
                       unoptimized={isLocal}
                       loader={isLocal ? ({ src }) => src : undefined}
                     />
@@ -137,7 +157,6 @@ export default function OffersInfo() {
                           <p className="line-through text-gray-500 text-xs sm:text-sm">
                             Ціна {product.price} UAH
                           </p>
-                          {/* знижку залишаю захованою, як було */}
                           <p className="text-green-600 text-xs sm:text-sm hidden">
                             -
                             {Math.round(
