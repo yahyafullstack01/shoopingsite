@@ -115,11 +115,22 @@ export default function AllProducts() {
   }, [productId]);
 
   // фінальна вибірка для списку (фільтруємо ТІЛЬКИ з видимого пулу)
-  const filteredProducts = filterAndSortProducts(
+  // перед фільтрацією (після useEffect з productId) додай:
+const selectedCategoryForFilter =
+  !categoryFromURL || categoryFromURL === "all" ? "" : categoryFromURL;
+
+// фінальна вибірка для списку (фільтруємо ТІЛЬКИ з видимого пулу)
+const filteredProducts = filterAndSortProducts(
   visiblePool,
-  { maxPrice, selectedSize, selectedColor, selectedCategory: categoryFromURL },
+  {
+    maxPrice,
+    selectedSize,
+    selectedColor,
+    selectedCategory: selectedCategoryForFilter, // ← тут більше не "all"
+  },
   sortOrder
 );
+
 
 
   const onProductClick = (product) => {
