@@ -5,6 +5,8 @@ const products = [
   price: 2060,
   isTop: false,
   isNew: true,
+  isSpecialOffer: true,
+  discountPrice: 1854,
   sku: "99363",
   size: "XS S M L XL",
   category: "Pants",
