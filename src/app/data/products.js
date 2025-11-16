@@ -590,6 +590,10 @@ const products = [
     "/Dress/Satin Slip Dress/7.avif",
     "/Dress/Satin Slip Dress/8.avif",
     "/Dress/Satin Slip Dress/9.avif",
+    "/Dress/Satin Slip Dress/10.avif",
+    "/Dress/Satin Slip Dress/11.avif",
+    "/Dress/Satin Slip Dress/12.avif",
+    "/Dress/Satin Slip Dress/13.avif",
   ],
   sizes: ["XS", "S", "M", "L", "XL"],
   translations: {
@@ -604,7 +608,7 @@ const products = [
         "• V-neckline adorned with delicate matching lace",
         "• Hem decorated with a wide lace insert adding lightness and elegance"
       ],
-      colors: ["khaki", "black"]
+      colors: ["khaki", "black", "gray"]
     },
     FR: {
       category: "Robes",
@@ -630,7 +634,7 @@ const products = [
         "• V-подібний виріз горловини, оздоблений делікатним мереживом у тон",
         "• Низ сукні прикрашений широкою вставкою з мережива для легкості та елегантності"
       ],
-      colors: ["хакі", "чорна"]
+      colors: ["хакі", "чорна", "сірий"]
     },
     RU: {
       category: "Платья",
@@ -3589,6 +3593,10 @@ const products = [
     "/Costumes/Bomber Suit/8.avif",
     "/Costumes/Bomber Suit/9.avif",
     "/Costumes/Bomber Suit/10.avif",
+    "/Costumes/Bomber Suit/11.avif",
+    "/Costumes/Bomber Suit/12.avif",
+    "/Costumes/Bomber Suit/13.avif",
+    "/Costumes/Bomber Suit/14.avif",
   ],
   sizes: ["XS", "S", "M", "L", "XL"],
   translations: {
@@ -3605,7 +3613,7 @@ const products = [
         "• Pants: Pair well with both sneakers and heels.",
         "• Dense textured fabric maintains structure."
       ],
-      colors: ["graphite", "grey"]
+      colors: ["graphite", "grey", "chocolat"]
     },
     FR: {
       category: "Costumes",
@@ -3635,7 +3643,7 @@ const products = [
         "• Брюки: добре поєднуються як з кросівками, так і з підборами.",
         "• Щільна фактурна тканина тримає форму."
       ],
-      colors: ["графіт", "сірий"]
+      colors: ["графіт", "сірий", "шоколад"]
     },
     RU: {
       category: "Костюмы",
