@@ -3154,6 +3154,8 @@ const products = [
       id: 10,
       price: 1350 ,
       sku: "12345",
+      isSpecialOffer: true,
+      discountPrice: 1080,
       
       size: "XS S M L XL",
       category: "Tops",
