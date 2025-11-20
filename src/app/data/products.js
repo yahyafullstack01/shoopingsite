@@ -8639,7 +8639,7 @@ description: [
   {
     id: 115,
     price: 2950,
-    isTop: true,
+    isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 2360,
     sku: "67215",
@@ -8745,7 +8745,7 @@ description: [
   {
     id: 113,
     price: 3650,
-    isTop: true,
+    isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 3100,
     sku: "67214",
@@ -8807,7 +8807,7 @@ description: [
   {
     id: 112,
     price: 3650,
-    isTop: true,
+    isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 3100,
     sku: "67213",
@@ -8970,7 +8970,7 @@ description: [
   {
     id: 109,
     price: 1550,
-    isTop: true,
+    isTop: false,
     sku: "78842",
     size: "XS S M L XL",
     category: "Shorts",
@@ -11834,7 +11834,7 @@ description: [
   {
     id: 47,
     price: 2855,
-    isTop: true,
+    isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 2420,
     sku: "98768",
@@ -12052,7 +12052,7 @@ description: [
   {
     id: 44,
     price: 3920,
-    isTop: true,
+    isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 3520,
     sku: "98765",
