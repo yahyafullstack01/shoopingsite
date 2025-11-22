@@ -1,7 +1,7 @@
 const PRIORITY_BY_CATEGORY = {
   all: [],
   costumes: [196, 183, 1, 2, 215, 220, 186, 198],
-  dresses: [4, 171, 156, 158, 214, 211, 20],     
+  dresses: [4, 171, 156, 158, 214, 211, 20, 198],     
   shirts:  [],
   skirts:  [102, ],
   sweaters:[],

@@ -2559,7 +2559,7 @@ const products = [
   isTop: false,
   isNew: true,
    isSpecialOffer: true,
-  discountPrice: 4680,
+  discountPrice: 1700,
   sku: "LS-OVR-21057",
   size: "XS S M L XL",
   category: "Dresses",
