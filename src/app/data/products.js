@@ -9320,7 +9320,7 @@ description: [
     price: 2550,
     isTop: false,
     isSpecialOffer: true,
-    discountPrice: 2167,
+    discountPrice: 2295,
     sku: "98817",
     size: "XS S M L XL",
     category: "Skirts",
