@@ -12772,8 +12772,10 @@ description: [
       size: "XS S M L XL",
       category: "Pants",
       image: "/Pants/Banana Pants/1.avif",
-      images: ["/Pants/Banana Pants/2.avif", "/Pants/Banana Pants/3.avif", "/Pants/Banana Pants/4.avif", "/Pants/Banana Pants/5.avif","/Pants/Banana Pants/6.avif","/Pants/Banana Pants/7.avif",
-        "/Pants/Banana Pants/8.avif","/Pants/Banana Pants/9.avif",
+      images: ["/Pants/Banana Pants/2.avif", 
+        "/Pants/Banana Pants/3.avif", 
+        "/Pants/Banana Pants/4.avif",
+        "/Pants/Banana Pants/5.avif",
         "/Pants/Banana Pants/10.avif",
         "/Pants/Banana Pants/11.avif",
         "/Pants/Banana Pants/12.avif",
@@ -12787,26 +12789,26 @@ description: [
           category: "Pants",
           name: "Banana Pants",
           description: "High-waisted banana-style pants with two pockets.Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)",
-          colors: ["Black","caramel", "chocolat"],
+          colors: ["Black", "chocolat"],
         },
         FR: {
           category: "Pantalons",
           name: "Pantalons en Cuir Banane",
           description: "Pantalons taille haute style banane avec deux poches.Tissu : Cuir éco-responsable de haute qualité avec une base en suède. (Extensible, ne se fissure pas.)",
-          colors: ["Noir","caramel", "chocolat"],
+          colors: ["Noir", "chocolat"],
 
         },
         UA: {
           category: "Брюки",
           name: "Шкіряні брюки банани",
           description: "Описание: Брюки фасону бананів на високій посадці із двома кишенями Тканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається )",
-          colors: ["Чорний","карамель", "шоколад"],
+          colors: ["Чорний", "шоколад"],
         },
         RU: {
           category: "Брюки",
           name: "Брюки бананы",
           description: "( Брюки фасона бананов на высокой посадке с двумя карманамиТкань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)",
-          colors: ["Черный","карамель", "шоколад"],
+          colors: ["Черный", "шоколад"],
         }
       }
     },
