@@ -1,6 +1,269 @@
 const products = [
 
 {
+  id: 225,
+  price: 1900,
+  isTop: false,
+  isNew: true,
+  sku: "99366",
+  size: "XS S M L XL",
+  category: "Skirts",
+  image: "/Skirts/Clariss Skirt/1.avif",
+  images: [
+    "/Skirts/Clariss Skirt/2.avif",
+    "/Skirts/Clariss Skirt/3.avif",
+    "/Skirts/Clariss Skirt/4.avif",
+    "/Skirts/Clariss Skirt/5.avif",
+    "/Skirts/Clariss Skirt/6.avif",
+    "/Skirts/Clariss Skirt/7.avif",
+    "/Skirts/Clariss Skirt/8.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Skirts",
+      name: "Clariss Skirt",
+      description: [
+        "A midi skirt with deep pleats creates a soft volume and accentuates the waist.",
+        "It looks elegant both paired with a blazer and with a turtleneck or silk blouse.",
+        "Easily adaptable for various seasons — from winter to spring.",
+        "Fabric: Premium-quality natural wool providing warmth, comfort, and a pleasant tactile feel.",
+        "[ Composition: 75% wool ]",
+        "Details:",
+        "• Deep pleats at the front",
+        "• Length: below the knee",
+        "• Waistband emphasizing the waist"
+      ],
+      colors: ["beige", "dark green"]
+    },
+    FR: {
+      category: "Jupes",
+      name: "Jupe Clariss",
+      description: [
+        "Une jupe midi à plis profonds crée un léger volume et souligne la taille.",
+        "Elle se porte avec élégance aussi bien avec une veste qu’avec un col roulé ou un chemisier en soie.",
+        "Facile à adapter selon les saisons — de l’hiver au printemps.",
+        "Tissu : laine naturelle de qualité supérieure offrant chaleur, confort et douceur au toucher.",
+        "[ Composition : 75% laine ]",
+        "Détails :",
+        "• Plis profonds sur le devant",
+        "• Longueur : sous le genou",
+        "• Ceinture soulignant la taille"
+      ],
+      colors: ["beige", "vert foncé"]
+    },
+    UA: {
+      category: "Спідниці",
+      name: "Спідниця \"Clariss\"",
+      description: [
+        "Міді-спідниця з глибокими складками створює легкий об’єм і підкреслює талію.",
+        "Виглядає елегантно як у парі з жакетом, так і з гольфом чи шовковою блузою.",
+        "Легко адаптується під різні сезони — від зими до весни.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[ Склад: 75% вовни ]",
+        "Деталі:",
+        "• Глибокі складки спереду",
+        "• Довжина: нижче коліна",
+        "• Пояс на талії"
+      ],
+      colors: ["бежевий", "темно-зелений"]
+    },
+    RU: {
+      category: "Юбки",
+      name: "Юбка \"Clariss\"",
+      description: [
+        "Юбка миди с глубокими складками создаёт лёгкий объём и подчёркивает талию.",
+        "Элегантно смотрится как в паре с жакетом, так и с гольфом или шёлковой блузой.",
+        "Легко адаптируется под разные сезоны — от зимы до весны.",
+        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло, уют и приятные тактильные ощущения.",
+        "[ Состав: 75% шерсти ]",
+        "Детали:",
+        "• Глубокие складки спереди",
+        "• Длина: ниже колена",
+        "• Пояс на талии"
+      ],
+      colors: ["бежевый", "тёмно-зелёный"]
+    }
+  }
+},
+
+
+{
+  id: 224,
+  price: 3500,
+  isTop: false,
+  isNew: true,
+  sku: "99365",
+  size: "XS S M L XL",
+  category: "Jackets",
+  image: "/Jackets/Clariss Jacket/1.avif",
+  images: [
+    "/Jackets/Clariss Jacket/2.avif",
+    "/Jackets/Clariss Jacket/3.avif",
+    "/Jackets/Clariss Jacket/4.avif",
+    "/Jackets/Clariss Jacket/5.avif",
+    "/Jackets/Clariss Jacket/6.avif",
+    "/Jackets/Clariss Jacket/7.avif",
+    "/Jackets/Clariss Jacket/8.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Jackets",
+      name: "Clariss Blazer",
+      description: [
+        "Tailored blazer that enhances your femininity with precision lines.",
+        "Features a two-button closure and two front pockets. Perfectly pairs with the skirt from the same collection.",
+        "Fabric: Premium-quality natural wool providing warmth, comfort, and a pleasant tactile feel.",
+        "[ Composition: 75% wool ]",
+        "Details:",
+        "• Oversized fit",
+        "• Two front buttons",
+        "• Classic lapel design"
+      ],
+      colors: ["beige", "dark green"]
+    },
+    FR: {
+      category: "Vestes",
+      name: "Veste Clariss",
+      description: [
+        "Veste ajustée qui souligne la féminité avec des lignes précises.",
+        "Se ferme par deux boutons et comporte deux poches avant. S’associe parfaitement avec la jupe de la même collection.",
+        "Tissu : laine naturelle de qualité supérieure offrant chaleur, confort et douceur au toucher.",
+        "[ Composition : 75% laine ]",
+        "Détails :",
+        "• Coupe oversize",
+        "• Deux boutons sur le devant",
+        "• Revers classiques"
+      ],
+      colors: ["beige", "vert foncé"]
+    },
+    UA: {
+      category: "Жакети",
+      name: "Жакет \"Clariss\"",
+      description: [
+        "Виточений крій формує вашу жіночність, застібається на два ґудзики та має 2 кишені.",
+        "Ідеально поєднується зі спідницею з колекції.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[ Склад: 75% вовни ]",
+        "Деталі:",
+        "• Oversize крій",
+        "• Два ґудзики спереду",
+        "• Лацкани класичної форми"
+      ],
+      colors: ["бежевий", "темно-зелений"]
+    },
+    RU: {
+      category: "Жакеты",
+      name: "Жакет \"Clariss\"",
+      description: [
+        "Приталенный крой подчеркивает женственность, застёгивается на две пуговицы и имеет два кармана.",
+        "Идеально сочетается с юбкой из этой коллекции.",
+        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло, уют и приятные тактильные ощущения.",
+        "[ Состав: 75% шерсти ]",
+        "Детали:",
+        "• Oversize крой",
+        "• Две пуговицы спереди",
+        "• Классические лацканы"
+      ],
+      colors: ["бежевый", "тёмно-зелёный"]
+    }
+  }
+},
+
+{
+  id: 223,
+  price: 5400,
+  isTop: false,
+  isNew: true,
+  sku: "99364",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Clariss Suit/1.avif",
+  images: [
+    "/Costumes/Clariss Suit/2.avif",
+    "/Costumes/Clariss Suit/3.avif",
+    "/Costumes/Clariss Suit/4.avif",
+    "/Costumes/Clariss Suit/5.avif",
+    "/Costumes/Clariss Suit/6.avif",
+    "/Costumes/Clariss Suit/7.avif",
+    "/Costumes/Clariss Suit/8.avif",
+    "/Costumes/Clariss Suit/9.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Clariss Suit",
+      description: [
+        "Modern classics at its finest. The “Clariss” suit embodies elegance and architectural precision in tailoring.",
+        "The soft wool fabric holds its shape, while the light beige tone adds refined sophistication. The set includes an oversized blazer and a midi skirt with deep pleats, creating a graceful silhouette.",
+        "Fabric: Premium-quality natural wool providing warmth, comfort, and a pleasant tactile feel.",
+        "[ Composition: 75% wool ]",
+        "Details:",
+        "Blazer: Oversized cut",
+        "• Two front buttons",
+        "Skirt: Deep pleats at the front",
+        "• Length: below the knee",
+        "• Waistband accentuating the waist"
+      ],
+      colors: ["beige", "dark green"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume Clariss",
+      description: [
+        "Classique moderne dans sa forme la plus élégante. Le costume « Clariss » incarne l’élégance et la précision architecturale du tailoring.",
+        "Le tissu en laine douce garde sa forme, tandis que la teinte beige clair ajoute une touche de raffinement. L’ensemble comprend une veste oversize et une jupe midi à plis profonds, créant une silhouette gracieuse.",
+        "Tissu : laine naturelle de qualité supérieure offrant chaleur, confort et douceur au toucher.",
+        "[ Composition : 75% laine ]",
+        "Détails :",
+        "Veste : coupe oversize",
+        "• Deux boutons sur le devant",
+        "Jupe : plis profonds sur le devant",
+        "• Longueur : sous le genou",
+        "• Ceinture soulignant la taille"
+      ],
+      colors: ["beige", "vert foncé"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм \"Clariss\"",
+      description: [
+        "Сучасна класика в найкращому виконанні. Костюм “Clariss” — це втілення елегантності та архітектурної точності крою.",
+        "М’яка вовняна тканина тримає форму, а світло-бежевий відтінок додає образу благородності. Комплект складається з oversize жакету та спідниці міді зі складками, які створюють витончений силует.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[ Склад: 75% вовни ]",
+        "Деталі:",
+        "Жакет: Oversize крій",
+        "• Два ґудзики спереду",
+        "Спідниця: Глибокі складки спереду",
+        "• Довжина: нижче коліна",
+        "• Пояс на талії"
+      ],
+      colors: ["бежевий", "темно-зелений"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм \"Clariss\"",
+      description: [
+        "Современная классика в лучшем исполнении. Костюм “Clariss” — воплощение элегантности и архитектурной точности кроя.",
+        "Мягкая шерстяная ткань держит форму, а светло-бежевый оттенок придаёт образу благородство. Комплект состоит из oversize жакета и юбки миди с глубокими складками, создающими утончённый силуэт.",
+        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло, уют и приятные тактильные ощущения.",
+        "[ Состав: 75% шерсти ]",
+        "Детали:",
+        "Жакет: Oversize крой",
+        "• Две пуговицы спереди",
+        "Юбка: глубокие складки спереди",
+        "• Длина: ниже колена",
+        "• Пояс на талии"
+      ],
+      colors: ["бежевый", "тёмно-зелёный"]
+    }
+  }
+},
+
+{
   id: 222,
   price: 2060,
   isTop: false,
