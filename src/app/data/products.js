@@ -105,6 +105,10 @@ const products = [
     "/Jackets/Clariss Jacket/6.avif",
     "/Jackets/Clariss Jacket/7.avif",
     "/Jackets/Clariss Jacket/8.avif",
+    "/Jackets/Clariss Jacket/9.avif",
+    "/Jackets/Clariss Jacket/10.avif",
+    "/Jackets/Clariss Jacket/11.avif",
+    "/Jackets/Clariss Jacket/12.avif",
   ],
   sizes: ["XS", "S", "M", "L", "XL"],
   translations: {
@@ -121,7 +125,7 @@ const products = [
         "• Two front buttons",
         "• Classic lapel design"
       ],
-      colors: ["beige", "dark green"]
+      colors: ["beige", "dark green", "camel"]
     },
     FR: {
       category: "Vestes",
@@ -151,7 +155,7 @@ const products = [
         "• Два ґудзики спереду",
         "• Лацкани класичної форми"
       ],
-      colors: ["бежевий", "темно-зелений"]
+      colors: ["бежевий", "темно-зелений", "кемел"]
     },
     RU: {
       category: "Жакеты",
@@ -166,7 +170,7 @@ const products = [
         "• Две пуговицы спереди",
         "• Классические лацканы"
       ],
-      colors: ["бежевый", "тёмно-зелёный"]
+      colors: ["бежевый", "тёмно-зелёный", "кемел"]
     }
   }
 },
@@ -1193,6 +1197,10 @@ const products = [
     "/Dress/Wool V-Neck Dress/3.avif",
     "/Dress/Wool V-Neck Dress/4.avif",
     "/Dress/Wool V-Neck Dress/5.avif",
+    "/Dress/Wool V-Neck Dress/6.avif",
+    "/Dress/Wool V-Neck Dress/7.avif",
+    "/Dress/Wool V-Neck Dress/8.avif",
+    "/Dress/Wool V-Neck Dress/9.avif",
   ],
   sizes: ["XS", "S", "M", "L", "XL"],
   translations: {
@@ -1211,7 +1219,7 @@ const products = [
         "• Sleeve: long and straight",
         "• Front button closure"
       ],
-      colors: ["camel", "gray"]
+      colors: ["camel", "gray", "powder"]
     },
     FR: {
       category: "Robes",
@@ -1228,7 +1236,7 @@ const products = [
         "• Manches : longues et droites",
         "• Fermeture : boutonnée sur le devant"
       ],
-      colors: ["camel", "gris"]
+      colors: ["camel", "gris", "pooder"]
     },
     UA: {
       category: "Сукні",
@@ -1245,7 +1253,7 @@ const products = [
         "• Рукав: довгий, прямий",
         "• Застібка спереду"
       ],
-      colors: ["кемел", "сірий"]
+      colors: ["кемел", "сірий", "пудра"]
     },
     RU: {
       category: "Платья",
@@ -1262,7 +1270,7 @@ const products = [
         "• Рукав: длинный, прямой",
         "• Застёжка спереди"
       ],
-      colors: ["карамель", "серый"]
+      colors: ["карамель", "серый", "пудра"]
     }
   }
 },
@@ -3062,6 +3070,11 @@ const products = [
       "/Dress/Woolen trapeze dress/18.avif",
       "/Dress/Woolen trapeze dress/19.avif",
       "/Dress/Woolen trapeze dress/20.avif",
+      "/Dress/Woolen trapeze dress/25.avif",
+      "/Dress/Woolen trapeze dress/26.avif",
+      "/Dress/Woolen trapeze dress/27.avif",
+      "/Dress/Woolen trapeze dress/28.avif",
+
     
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
@@ -3071,21 +3084,21 @@ const products = [
         name: "Woolen trapeze dress",
         description: "Trapeze dress with a pronounced belt\nComposition: 75% natural wool, soft, does not stick to the body.",
         color: "red",
-        colors: ["milk chocolate", "jeans","gray","marsala", "eggplant"]
+        colors: ["milk chocolate", "jeans","gray","marsala", "eggplant", "powder"]
       },
       FR: {
         category: "Robes",
         name: "Robe trapèze en laine",
         description: "Robe trapèze avec ceinture marquée\nComposition: 75% laine naturelle, douce, ne colle pas à la peau.",
         color: "rouge",
-        colors: ["jeans","gris","marsala", "eggplant"]
+        colors: ["jeans","gris","marsala", "eggplant", "pooder"]
       },
       UA: {
         category: "Сукні",
         name: "Вовняна сукня трапеція",
         description: ["Трапецеїдна сукня з виразним поясом","Склад: 75% натуральної вовни", "м'яка, не прилипає до тіла."],
         color: "червоний",
-        colors: ["молочний шоколад","джинсовий", "сірий", " марсала", "баклажан"]
+        colors: ["молочний шоколад","джинсовий", "сірий", " марсала", "баклажан", "пудра"]
       }
     }
   },
