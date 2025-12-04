@@ -49,7 +49,7 @@ const Conditions = () => {
       {menuItems[13]}
       </h2>
       <p>{menuItems[14]}</p>
-      <p>{menuItems[15]} <a href="tel:+380675795497" style={{ fontWeight: "bold", color: "#000", textDecoration: "underline" }}>+380 97 367 82 57</a></p>
+      <p>{menuItems[15]} <a href="tel:+380973678257" style={{ fontWeight: "bold", color: "#000", textDecoration: "underline" }}>+380 97 367 82 57</a></p>
       <h2 style={{ fontWeight: "bold", fontSize: "20px", marginTop: "24px", marginBottom: "12px" }}>
         {menuItems[16]}
       </h2>
