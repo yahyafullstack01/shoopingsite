@@ -1,6 +1,334 @@
 const products = [
 
 {
+  id: 229,
+  price: 1700,
+  isTop: false,
+  isNew: true,
+  sku: "99370",
+  size: "XS S M L XL",
+  category: "Sweaters",
+  image: "/Sweaters/Soft Sweater/1.avif",
+  images: [
+    "/Sweaters/Soft Sweater/2.avif",
+    "/Sweaters/Soft Sweater/3.avif",
+    "/Sweaters/Soft Sweater/4.avif",
+    "/Sweaters/Soft Sweater/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Sweaters",
+      name: "Soft Sweater",
+      description: [
+        "Minimalist, stylish, and incredibly cozy — this sweater is designed for those who seek the perfect balance between comfort and elegance.",
+        "Fabric: Wool knitwear [ Composition: 65% wool ]",
+        "Details:",
+        "• Voluminous silhouette with graceful draping — flows beautifully without clinging to the body.",
+        "• Unique sleeve design: soft, wide, with a ‘flutter’ effect that adds a fashionable accent and makes the piece distinctive.",
+        "• Perfect neckline fit — a soft round cut that looks beautiful both on its own and layered."
+      ],
+      colors: ["white"]
+    },
+    FR: {
+      category: "Pulls",
+      name: "Pull Soft",
+      description: [
+        "Minimaliste, élégant et incroyablement confortable — ce pull est conçu pour celles qui recherchent l’équilibre parfait entre confort et élégance.",
+        "Tissu : tricot de laine [ Composition : 65% laine ]",
+        "Détails :",
+        "• Silhouette ample avec un joli drapé — tombe naturellement sans mouler la silhouette.",
+        "• Forme de manche unique : douce, large, avec un effet ‘ailé’ qui ajoute une touche mode et rend le modèle unique.",
+        "• Encolure ronde douce, idéale portée seule ou en superposition."
+      ],
+      colors: ["blanc"]
+    },
+    UA: {
+      category: "Светри",
+      name: "Светр \"Soft\"",
+      description: [
+        "Лаконічний, стильний і водночас надзвичайно затишний — цей светр створений для тих, хто шукає ідеальний баланс між комфортом та елегантністю.",
+        "Тканина: Вовняний трикотаж [ Склад: 65% вовни ]",
+        "Деталі:",
+        "• Обʼємний силует із красивою драпіровкою — не обтягує, а струмиться по фігурі.",
+        "• Особлива форма рукава: мʼякі, широкі, з ефектом «летючості», що додає виробу модного акценту та робить його унікальним.",
+        "• Ідеальна посадка по горловині — мʼякий круглий виріз, який красиво виглядає як самостійно, так і в багатошарових образах."
+      ],
+      colors: ["білий"]
+    },
+    RU: {
+      category: "Свитера",
+      name: "Свитер \"Soft\"",
+      description: [
+        "Лаконичный, стильный и при этом невероятно уютный — этот свитер создан для тех, кто ищет идеальный баланс между комфортом и элегантностью.",
+        "Ткань: шерстяной трикотаж [ Состав: 65% шерсти ]",
+        "Детали:",
+        "• Объёмный силуэт с красивой драпировкой — мягко струится по фигуре, не облегая.",
+        "• Особая форма рукавов: мягкие, широкие, с эффектом «лёгкости», добавляющим модный акцент и индивидуальность.",
+        "• Идеальная посадка по горловине — мягкий круглый вырез, красиво смотрится как самостоятельно, так и в многослойных образах."
+      ],
+      colors: ["белый"]
+    }
+  }
+},
+
+
+{
+  id: 228,
+  price: 2060,
+  isTop: false,
+  isNew: true,
+  sku: "99369",
+  size: "XS S M L XL",
+  category: "Pants",
+  image: "/Pants/Urban Pants/1.avif",
+  images: [
+    "/Pants/Urban Pants/2.avif",
+    "/Pants/Urban Pants/3.avif",
+    "/Pants/Urban Pants/4.avif",
+    "/Pants/Urban Pants/5.avif",
+    "/Pants/Urban Pants/6.avif",
+    "/Pants/Urban Pants/7.avif",
+    "/Pants/Urban Pants/8.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Pants",
+      name: "Urban Pants",
+      description: [
+        "Palazzo trousers with a deep rise and refined pleats add elegant softness and visually elongate the legs.",
+        "Perfect both as part of a suit with the trench or worn separately — with shirts, turtlenecks, sweaters, or blazers.",
+        "Fabric: Premium-quality natural wool providing warmth, comfort, and a pleasant tactile feel.",
+        "[ Composition: 75% wool ]",
+        "Details:",
+        "• Fit: classic mid-rise that comfortably fits the waist without constriction.",
+        "• Silhouette: wide palazzo with a smooth flare from the hips.",
+        "• Pleats: carefully pressed in the front for a sleek and elongated look."
+      ],
+      colors: ["dark chocolate", "gray"]
+    },
+    FR: {
+      category: "Pantalons",
+      name: "Pantalon Urban",
+      description: [
+        "Le pantalon palazzo à taille moyenne et plis soignés apporte douceur et élégance tout en allongeant visuellement les jambes.",
+        "Parfait porté avec le trench ou séparément — avec des chemises, cols roulés, pulls ou vestes.",
+        "Tissu : laine naturelle de qualité supérieure offrant chaleur, confort et douceur au toucher.",
+        "[ Composition : 75% laine ]",
+        "Détails :",
+        "• Taille : classique, confortable sans comprimer la taille.",
+        "• Silhouette : large palazzo, légèrement évasée à partir des hanches.",
+        "• Plis : soigneusement repassés à l’avant pour un effet élancé et soigné."
+      ],
+      colors: ["chocolat foncé", "gris"]
+    },
+    UA: {
+      category: "Брюки",
+      name: "Брюки \"Urban\"",
+      description: [
+        "Брюки палаццо з глибокою посадкою та доглянутими стрілками додають образу елегантної м’якості та візуально подовжують ноги.",
+        "Ідеально працюють як у комплекті з тренчем, так і окремо — з сорочками, водолазками, светрами та жакетами.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[ Склад: 75% вовни ]",
+        "Деталі:",
+        "• Посадка: класична середня посадка, що комфортно фіксується на талії та не перетискає.",
+        "• Силует: широкі палаццо з плавним розширенням від стегон.",
+        "• Стрілки: акуратно прокладені спереду — для ефекту стрункості та доглянутого вигляду."
+      ],
+      colors: ["темний шоколад", "сірий"]
+    },
+    RU: {
+      category: "Брюки",
+      name: "Брюки \"Urban\"",
+      description: [
+        "Брюки палаццо с глубокой посадкой и аккуратными стрелками придают образу мягкую элегантность и визуально удлиняют ноги.",
+        "Идеально сочетаются как с тренчем, так и отдельно — с рубашками, водолазками, свитерами и жакетами.",
+        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло, уют и приятные тактильные ощущения.",
+        "[ Состав: 75% шерсти ]",
+        "Детали:",
+        "• Посадка: классическая средняя, комфортно фиксируется на талии без сжатия.",
+        "• Силуэт: широкие палаццо с плавным расширением от бёдер.",
+        "• Стрелки: аккуратно проложены спереди — для эффекта стройности и ухоженности."
+      ],
+      colors: ["тёмный шоколад", "серый"]
+    }
+  }
+},
+
+{
+  id: 227,
+  price: 3500,
+  isTop: false,
+  isNew: true,
+  sku: "99368",
+  size: "XS S M L XL",
+  category: "Jackets",
+  image: "/Jackets/Urban Mini Trench/1.avif",
+  images: [
+    "/Jackets/Urban Mini Trench/2.avif",
+    "/Jackets/Urban Mini Trench/3.avif",
+    "/Jackets/Urban Mini Trench/4.avif",
+    "/Jackets/Urban Mini Trench/5.avif",
+    "/Jackets/Urban Mini Trench/6.avif",
+    "/Jackets/Urban Mini Trench/7.avif",
+    "/Jackets/Urban Mini Trench/8.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Jackets",
+      name: "Urban Mini Trench",
+      description: [
+        "The cropped trench coat sculpts the silhouette, accentuates the waist, and creates long-leg proportions.",
+        "Perfect for office outfits, smart casual looks, city strolls — easily pairs with turtlenecks, tops, or knitwear.",
+        "Fabric: Premium-quality natural wool providing warmth, comfort, and a pleasant tactile feel.",
+        "[ Composition: 75% wool ]",
+        "Details:",
+        "• Oversized silhouette with a soft yet structured volume.",
+        "• Shoulder area: softly contoured with accent lines that enhance the refined shape.",
+        "• Collar: wide trench-style lapels that add a sense of structure and sophistication."
+      ],
+      colors: ["dark chocolate", "gray"]
+    },
+    FR: {
+      category: "Vestes",
+      name: "Mini Trench Urban",
+      description: [
+        "Le trench court sculpte la silhouette, souligne la taille et crée des proportions allongeantes.",
+        "Parfait pour les looks de bureau, le smart casual ou les promenades en ville — s’associe facilement avec un col roulé, un haut ou un tricot.",
+        "Tissu : laine naturelle de qualité supérieure offrant chaleur, confort et douceur au toucher.",
+        "[ Composition : 75% laine ]",
+        "Détails :",
+        "• Silhouette oversize avec volume souple mais structuré.",
+        "• Épaules : lignes douces et marquées ajoutant une touche raffinée.",
+        "• Col : larges revers de style trench qui apportent structure et élégance."
+      ],
+      colors: ["chocolat foncé", "gris"]
+    },
+    UA: {
+      category: "Жакети",
+      name: "Міні тренч \"Urban\"",
+      description: [
+        "Вкорочений тренч моделює силует, виділяє талію та створює пропорції «ноги від вух».",
+        "Тренч підходить для офісних образів, smart casual, прогулянок містом та поєднується з водолазками, топами, гольфами, трикотажем.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[ Склад: 75% вовни ]",
+        "Деталі:",
+        "• Oversize силует з м’яким, але структурним об’ємом.",
+        "• Плечова зона: м'яко окреслена, з акцентованими лініями, що додають силуету вишуканого вигляду.",
+        "• Комір: широкий тренчовий лацкан, що додає образу статусності та графічності."
+      ],
+      colors: ["темний шоколад", "сірий"]
+    },
+    RU: {
+      category: "Жакеты",
+      name: "Мини-тренч \"Urban\"",
+      description: [
+        "Укороченный тренч моделирует силуэт, подчёркивает талию и создаёт пропорции «ноги от ушей».",
+        "Подходит для офисных, smart casual и городских образов — сочетается с водолазками, топами и трикотажем.",
+        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло, уют и приятные тактильные ощущения.",
+        "[ Состав: 75% шерсти ]",
+        "Детали:",
+        "• Oversize силуэт с мягким, но структурным объёмом.",
+        "• Плечевая зона: мягко очерчена, с акцентными линиями для утончённого силуэта.",
+        "• Воротник: широкий тренчевый лацкан, добавляющий образу статусности и графичности."
+      ],
+      colors: ["тёмный шоколад", "серый"]
+    }
+  }
+},
+
+{
+  id: 226,
+  price: 5560,
+  isTop: false,
+  isNew: true,
+  sku: "99367",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Urban Suit/1.avif",
+  images: [
+    "/Costumes/Urban Suit/2.avif",
+    "/Costumes/Urban Suit/3.avif",
+    "/Costumes/Urban Suit/4.avif",
+    "/Costumes/Urban Suit/5.avif",
+    "/Costumes/Urban Suit/6.avif",
+    "/Costumes/Urban Suit/7.avif",
+    "/Costumes/Urban Suit/8.avif",
+    "/Costumes/Urban Suit/9.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Urban Suit",
+      description: [
+        "The set perfectly holds its shape, looks premium from every angle, and adds a touch of Parisian chic to your look.",
+        "The cropped trench sculpts the silhouette, accentuates the waist, and creates the illusion of longer legs. The palazzo trousers with a deep rise and sharp pleats bring elegant softness and elongate the legs visually.",
+        "Fabric: Premium-quality natural wool providing warmth, comfort, and a pleasant tactile feel.",
+        "[ Composition: 75% wool ]",
+        "Details:",
+        "Trench: Oversized silhouette with soft yet structured volume.",
+        "• Shoulder area: softly contoured with defined lines that enhance the refined shape.",
+        "Pants: Classic mid-rise fit, comfortably fixed at the waist without constriction.",
+        "• Wide palazzo silhouette with smooth expansion from the hips."
+      ],
+      colors: ["dark chocolate", "gray"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume Urban",
+      description: [
+        "L’ensemble garde parfaitement sa forme, offre un aspect premium sous tous les angles et ajoute une touche de chic parisien à votre look.",
+        "Le trench court sculpte la silhouette, souligne la taille et allonge visuellement les jambes. Le pantalon palazzo à taille moyenne et plis marqués apporte douceur et élégance au mouvement.",
+        "Tissu : laine naturelle de qualité supérieure offrant chaleur, confort et douceur au toucher.",
+        "[ Composition : 75% laine ]",
+        "Détails :",
+        "Trench : silhouette oversize avec volume structuré mais souple.",
+        "• Épaules : ligne douce et définie, ajoutant de la sophistication au look.",
+        "Pantalon : taille moyenne classique, confortable à la taille.",
+        "• Silhouette large palazzo, légèrement évasée à partir des hanches."
+      ],
+      colors: ["chocolat foncé", "gris"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм \"Urban\"",
+      description: [
+        "Комплект ідеально тримає форму, виглядає преміально з будь-якого ракурсу та додає образу харизму французького шику.",
+        "Вкорочений тренч моделює силует, виділяє талію та створює пропорції «ноги від вух». Брюки палаццо з глибокою посадкою та доглянутими стрілками додають образу елегантної м’якості та візуально подовжують ноги.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[ Склад: 75% вовни ]",
+        "Деталі:",
+        "Тренч: oversize силует з м’яким, але структурним об’ємом.",
+        "• Плечова зона: м'яко окреслена, з акцентованими лініями, що додають силуету вишуканого вигляду.",
+        "Брюки: класична середня посадка, що комфортно фіксується на талії та не перетискає.",
+        "• Широкі палаццо з плавним розширенням від стегон."
+      ],
+      colors: ["темний шоколад", "сірий"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм \"Urban\"",
+      description: [
+        "Комплект идеально держит форму, выглядит премиально под любым углом и добавляет образу харизму французского шика.",
+        "Укороченный тренч моделирует силуэт, подчёркивает талию и создаёт пропорции «ноги от ушей». Брюки палаццо с глубокой посадкой и ровными стрелками придают мягкость и визуально удлиняют ноги.",
+        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло, уют и приятные тактильные ощущения.",
+        "[ Состав: 75% шерсти ]",
+        "Детали:",
+        "Тренч: oversize силуэт с мягким, но структурным объёмом.",
+        "• Плечевая зона: мягко очерчена, с акцентированными линиями для утончённого вида.",
+        "Брюки: классическая средняя посадка, удобно фиксируется на талии.",
+        "• Широкие палаццо с плавным расширением от бёдер."
+      ],
+      colors: ["тёмный шоколад", "серый"]
+    }
+  }
+},  
+
+
+{
   id: 225,
   price: 1900,
   isTop: false,
