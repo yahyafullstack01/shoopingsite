@@ -1,6 +1,427 @@
 const products = [
 
 {
+  id: 234,
+  price: 3100,
+  isTop: false,
+  isNew: true,
+  sku: "99375",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dresses/Cocoa Line Belt Dress/1.avif",
+  images: [
+    "/Dresses/Cocoa Line Belt Dress/2.avif",
+    "/Dresses/Cocoa Line Belt Dress/3.avif",
+    "/Dresses/Cocoa Line Belt Dress/4.avif",
+    "/Dresses/Cocoa Line Belt Dress/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Cocoa Line Dress with Belt",
+      description: [
+        "This dress embodies comfort, warmth, and understated luxury, visible in every detail. The perfect option for the office, meetings, walks, or even travel — a truly versatile everyday look.",
+        "Fabric: Dense premium suit fabric that holds its shape while remaining soft and comfortable against the skin.",
+        "[ Composition: 75% viscose, 25% polyester ]",
+        "Details:",
+        "• Straight midi silhouette — elongates the figure and creates a refined body line.",
+        "• Functional chest flaps — add a light accent to the neckline and create a structured look.",
+        "• 3/4 sleeves with wide cuffs — reveal the wrists and add lightness to the silhouette."
+      ],
+      colors: ["cocoa"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe «Cocoa Line» avec Ceinture",
+      description: [
+        "Cette robe incarne le confort, la chaleur et le luxe discret visible dans chaque détail. Parfaite pour le bureau, les réunions, les promenades ou les voyages — une tenue polyvalente pour tous les jours.",
+        "Tissu : tissu de costume dense de qualité supérieure qui garde sa forme tout en restant doux et agréable sur la peau.",
+        "[ Composition : 75% viscose, 25% polyester ]",
+        "Détails :",
+        "• Silhouette droite midi — allonge la silhouette et affine la ligne du corps.",
+        "• Poches à rabat sur la poitrine — ajoutent une touche d’accent et de structure au décolleté.",
+        "• Manches 3/4 avec larges poignets — dévoilent les poignets et apportent de la légèreté à la silhouette."
+      ],
+      colors: ["cacao"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Сукня «Cocoa line» з поясом",
+      description: [
+        "Ця сукня — про комфорт, тепло та стриману розкіш, яку видно в кожній деталі. Ідеальний варіант для офісу, зустрічей, прогулянок і навіть подорожей — універсальний образ на кожен день.",
+        "Тканина: Щільна костюмна тканина преміум-класу, що тримає форму, але при цьому приємна до тіла.",
+        "[ Склад: 75% віскоза, 25% поліестер ]",
+        "Деталі:",
+        "• Прямий силует міді — витягує фігуру та робить лінію тіла більш витонченою.",
+        "• Функціональні нагрудні клапани — створюють легкий акцент у зоні декольте та додають образу структури.",
+        "• Рукав 3/4 із широким манжетом — відкриває зап’ястя й додає легкості силуету."
+      ],
+      colors: ["какао"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Платье «Cocoa Line» с поясом",
+      description: [
+        "Это платье — про комфорт, тепло и сдержанную роскошь, заметную в каждой детали. Идеальный вариант для офиса, встреч, прогулок и даже путешествий — универсальный образ на каждый день.",
+        "Ткань: плотная костюмная ткань премиум-класса, держащая форму, но мягкая и приятная к телу.",
+        "[ Состав: 75% вискоза, 25% полиэстер ]",
+        "Детали:",
+        "• Прямой силуэт миди — визуально вытягивает фигуру и делает линии тела более изящными.",
+        "• Функциональные нагрудные клапаны — добавляют акцент в зоне декольте и создают структурный вид.",
+        "• Рукав 3/4 с широким манжетом — открывает запястья и придаёт лёгкость силуэту."
+      ],
+      colors: ["какао"]
+    }
+  }
+},
+
+{
+  id: 233,
+  price: 3100,
+  isTop: false,
+  isNew: true,
+  sku: "99374",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dresses/Cocoa Line Dress/1.avif",
+  images: [
+    "/Dresses/Cocoa Line Dress/2.avif",
+    "/Dresses/Cocoa Line Dress/3.avif",
+    "/Dresses/Cocoa Line Dress/4.avif",
+    "/Dresses/Cocoa Line Dress/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Cocoa Line Dress",
+      description: [
+        "An elegant dress that perfectly balances sophistication, comfort, and a flattering fit. Designed for those who appreciate a clean silhouette with refined details that accentuate the figure.",
+        "An ideal choice for those seeking a timeless, effortlessly chic dress that remains a wardrobe staple for seasons to come.",
+        "Fabric: Dense premium suit fabric that holds its shape while remaining soft and comfortable against the skin.",
+        "[ Composition: 75% viscose, 25% polyester ]",
+        "Details:",
+        "• Deep V-neckline — visually elongates the neck and adds lightness to the look.",
+        "• Accent seams along the bodice — softly define the waistline without constriction.",
+        "• Perfect midi length — flows beautifully with movement, creating a gentle A-line silhouette."
+      ],
+      colors: ["cocoa"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe «Cocoa Line»",
+      description: [
+        "Une robe élégante qui allie sophistication, confort et coupe parfaite. Conçue pour celles qui aiment les lignes épurées mais apprécient les détails qui subliment la silhouette.",
+        "Un choix idéal pour celles qui recherchent une robe intemporelle, chic et facile à porter, qui reste un essentiel de la garde-robe saison après saison.",
+        "Tissu : tissu de costume dense de qualité supérieure qui garde sa forme tout en restant doux et agréable sur la peau.",
+        "[ Composition : 75% viscose, 25% polyester ]",
+        "Détails :",
+        "• Encolure en V profonde — allonge visuellement le cou et apporte de la légèreté à la silhouette.",
+        "• Coutures en relief le long du buste — soulignent délicatement la taille sans la marquer.",
+        "• Longueur midi parfaite — se déploie harmonieusement en mouvement, créant une silhouette évasée."
+      ],
+      colors: ["cacao"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Сукня «Cocoa line»",
+      description: [
+        "Вишукана сукня, яка поєднує в собі елегантність, комфорт і ідеальну посадку. Модель створена для тих, хто любить лаконічний силует, але цінує деталі, що формують фігуру.",
+        "Ідеальний вибір для тих, хто шукає базову, але неймовірно стильну сукню, яка працює в гардеробі багато сезонів поспіль.",
+        "Тканина: Щільна костюмна тканина преміум-класу, що тримає форму, але при цьому приємна до тіла.",
+        "[ Склад: 75% віскоза, 25% поліестер ]",
+        "Деталі:",
+        "• Глибокий V-виріз — візуально подовжує шию та додає образу легкості.",
+        "• Акцентні рельєфи вздовж ліфа — м’яко формують лінію талії без жодного зусилля.",
+        "• Ідеальна довжина міді — красиво розкривається при русі, утворюючи плавний А-силует."
+      ],
+      colors: ["какао"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Платье «Cocoa Line»",
+      description: [
+        "Изысканное платье, сочетающее элегантность, комфорт и идеальную посадку. Создано для тех, кто любит лаконичный силуэт и ценит детали, подчеркивающие фигуру.",
+        "Идеальный выбор для тех, кто ищет базовое, но невероятно стильное платье, которое будет актуально много сезонов подряд.",
+        "Ткань: плотная костюмная ткань премиум-класса, держащая форму, но мягкая и приятная к телу.",
+        "[ Состав: 75% вискоза, 25% полиэстер ]",
+        "Детали:",
+        "• Глубокий V-образный вырез — визуально удлиняет шею и добавляет лёгкости образу.",
+        "• Акцентные рельефы вдоль лифа — мягко формируют линию талии без утяжеления.",
+        "• Идеальная длина миди — красиво раскрывается при движении, создавая плавный А-силуэт."
+      ],
+      colors: ["какао"]
+    }
+  }
+},
+
+{
+  id: 232,
+  price: 3500,
+  isTop: false,
+  isNew: true,
+  sku: "99373",
+  size: "XS S M L XL",
+  category: "Jackets",
+  image: "/Jackets/Houndstooth Jacket/1.avif",
+  images: [
+    "/Jackets/Houndstooth Jacket/2.avif",
+    "/Jackets/Houndstooth Jacket/3.avif",
+    "/Jackets/Houndstooth Jacket/4.avif",
+    "/Jackets/Houndstooth Jacket/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Jackets",
+      name: "Houndstooth Jacket",
+      description: [
+        "Stylish, versatile, and perfectly tailored — designed for those who value elegance in every detail. A timeless piece that works for any occasion.",
+        "For the office — refined and sophisticated.",
+        "For everyday looks — stylish and modern, especially when paired with denim.",
+        "For colder seasons — warm and comfortable thanks to its high wool content.",
+        "Fabric: Premium-quality natural wool providing warmth, comfort, and a pleasant tactile feel.",
+        "[ Composition: 75% wool ]",
+        "Details:",
+        "• Straight, slightly fitted silhouette that flatters different body types.",
+        "• Classic collar adds understated elegance and emphasizes the shoulder line.",
+        "• Elongated length that shapes the silhouette and pairs easily with jeans, classic trousers, or skirts."
+      ],
+      colors: ["houndstooth"]
+    },
+    FR: {
+      category: "Vestes",
+      name: "Veste à motif pied-de-poule",
+      description: [
+        "Élégante, polyvalente et parfaitement coupée — conçue pour celles qui apprécient l’élégance dans chaque détail. Une pièce intemporelle qui s’adapte à toutes les occasions.",
+        "Pour le bureau — chic et raffinée.",
+        "Pour le quotidien — moderne et stylée, notamment associée au denim.",
+        "Pour les saisons froides — chaude et confortable grâce à sa forte teneur en laine.",
+        "Tissu : laine naturelle de qualité supérieure, offrant chaleur, confort et douceur au toucher.",
+        "[ Composition : 75% laine ]",
+        "Détails :",
+        "• Silhouette droite, légèrement cintrée, qui s’adapte à différentes morphologies.",
+        "• Col classique apportant une touche d’élégance et mettant en valeur la ligne des épaules.",
+        "• Longueur allongée, qui structure la silhouette et se combine facilement avec un jean, un pantalon ou une jupe."
+      ],
+      colors: ["pied-de-poule"]
+    },
+    UA: {
+      category: "Жакети",
+      name: "Жакет у гусячу лапку",
+      description: [
+        "Стильний, універсальний і бездоганно посаджений. Створений для тих, хто цінує елегантність у кожній деталі. Це той жакет, який працює завжди.",
+        "Для офісу — елегантний та стриманий.",
+        "Для щоденних образів — стильний і сучасний, особливо в парі з денімом.",
+        "Для холодного сезону — теплий завдяки високому вмісту вовни.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[ Склад: 75% вовни ]",
+        "Деталі:",
+        "• Силует прямий, трохи приталений, забезпечує ідеальну посадку на різні типи фігур.",
+        "• Комір класичного крою додає образу стриманої елегантності й підкреслює лінію плечей.",
+        "• Подовжена довжина, що моделює силует і легко комбінується як з джинсами, так і з класичними брюками чи спідницями."
+      ],
+      colors: ["гусяча лапка"]
+    },
+    RU: {
+      category: "Жакеты",
+      name: "Жакет в гусиную лапку",
+      description: [
+        "Стильный, универсальный и идеально сидящий жакет. Создан для тех, кто ценит элегантность в каждой детали. Это тот вариант, который всегда уместен.",
+        "Для офиса — элегантный и сдержанный.",
+        "Для повседневных образов — современный и модный, особенно в сочетании с денимом.",
+        "Для холодного сезона — тёплый благодаря высокому содержанию шерсти.",
+        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло, уют и приятные тактильные ощущения.",
+        "[ Состав: 75% шерсти ]",
+        "Детали:",
+        "• Прямой, слегка приталенный силуэт, обеспечивающий отличную посадку на любой тип фигуры.",
+        "• Классический воротник добавляет образу сдержанной элегантности и подчёркивает линию плеч.",
+        "• Удлинённая длина, формирующая силуэт и легко сочетающаяся с джинсами, брюками или юбками."
+      ],
+      colors: ["гусиная лапка"]
+    }
+  }
+},
+
+{
+  id: 231,
+  price: 5560,
+  isTop: false,
+  isNew: true,
+  sku: "99372",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Clariss Suit with Pants/1.avif",
+  images: [
+    "/Costumes/Clariss Suit with Pants/2.avif",
+    "/Costumes/Clariss Suit with Pants/3.avif",
+    "/Costumes/Clariss Suit with Pants/4.avif",
+    "/Costumes/Clariss Suit with Pants/5.avif",
+    "/Costumes/Clariss Suit with Pants/6.avif",
+    "/Costumes/Clariss Suit with Pants/7.avif",
+    "/Costumes/Clariss Suit with Pants/8.avif",
+    "/Costumes/Clariss Suit with Pants/9.avif",
+    "/Costumes/Clariss Suit with Pants/10.avif",
+    "/Costumes/Clariss Suit with Pants/11.avif",
+    "/Costumes/Clariss Suit with Pants/12.avif",
+    "/Costumes/Clariss Suit with Pants/13.avif",
+
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Clariss Suit with Pants",
+      description: [
+        "The embodiment of understated elegance that works for every occasion — office, meeting, event, or city stroll. The structured fabric and perfect cut create a look that appears effortlessly refined.",
+        "Fabric: Premium-quality natural wool providing warmth, comfort, and a pleasant tactile feel.",
+        "[ Composition: 75% wool ]",
+        "Details:",
+        "Blazer: Elegant silhouette with a soft shoulder line and classic lapels.",
+        "• Double-button fastening with a subtle shine — a refined detail that elevates the blazer’s look.",
+        "Pants: Straight elongated silhouette that visually lengthens the legs and creates clean vertical lines.",
+        "• Pleats: carefully pressed at the front for a sleek, polished appearance."
+      ],
+      colors: ["beige", "camel", "dark green"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume Clariss avec Pantalon",
+      description: [
+        "L’incarnation de l’élégance discrète, parfaite pour toutes les occasions — bureau, rendez-vous, événement ou balade en ville. Le tissu structuré et la coupe parfaite créent une allure raffinée sans effort.",
+        "Tissu : laine naturelle de qualité supérieure offrant chaleur, confort et douceur au toucher.",
+        "[ Composition : 75% laine ]",
+        "Détails :",
+        "Veste : silhouette élégante avec une ligne d’épaule douce et des revers classiques.",
+        "• Fermeture à double bouton avec une brillance subtile — un accent qui rend la veste plus luxueuse.",
+        "Pantalon : silhouette droite et allongée, qui allonge visuellement les jambes et crée une belle verticalité.",
+        "• Plis : soigneusement repassés à l’avant pour un effet élancé et soigné."
+      ],
+      colors: ["beige", "camel", "vert foncé"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм \"Clariss\" з брюками",
+      description: [
+        "Це втілення стриманої елегантності, яка працює на вас у будь-якій ситуації: офіс, зустріч, подія чи прогулянка містом. Структурна тканина та ідеальний крій створюють образ, який виглядає дорого без зайвих зусиль.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[ Склад: 75% вовни ]",
+        "Деталі:",
+        "Жакет: елегантний силует із м’якою лінією плеча та класичними лацканами.",
+        "• Подвійна застібка на ґудзики з елегантним блиском — акцент, який робить жакет візуально дорожчим.",
+        "Брюки: Прямий подовжений силует, що візуально подовжує ноги та створює акуратну вертикаль ліній.",
+        "• Стрілки: акуратно прокладені спереду — для ефекту стрункості та доглянутого вигляду."
+      ],
+      colors: ["бежевий", "кемел", "темно-зелений"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм \"Clariss\" с брюками",
+      description: [
+        "Воплощение сдержанной элегантности, подходящее для любой ситуации: офис, встреча, мероприятие или прогулка по городу. Структурированная ткань и идеальный крой создают образ, который выглядит дорого без усилий.",
+        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло, уют и приятные тактильные ощущения.",
+        "[ Состав: 75% шерсти ]",
+        "Детали:",
+        "Жакет: элегантный силуэт с мягкой линией плеч и классическими лацканами.",
+        "• Двойная застёжка на пуговицы с лёгким блеском — акцент, делающий жакет визуально дороже.",
+        "Брюки: прямой удлинённый силуэт, визуально удлиняющий ноги и создающий аккуратную вертикаль линий.",
+        "• Стрелки: аккуратно проложены спереди — для эффекта стройности и ухоженности."
+      ],
+      colors: ["бежевый", "кемел", "тёмно-зелёный"]
+    }
+  }
+},
+
+{
+  id: 230,
+  price: 2060,
+  isTop: false,
+  isNew: true,
+  sku: "99371",
+  size: "XS S M L XL",
+  category: "Pants",
+  image: "/Pants/Clariss Pants/1.avif",
+  images: [
+    "/Pants/Clariss Pants/2.avif",
+    "/Pants/Clariss Pants/3.avif",
+    "/Pants/Clariss Pants/4.avif",
+    "/Pants/Clariss Pants/5.avif",
+    "/Pants/Clariss Pants/6.avif",
+    "/Pants/Clariss Pants/7.avif",
+    "/Pants/Clariss Pants/8.avif",
+    "/Pants/Clariss Pants/9.avif",
+    "/Pants/Clariss Pants/10.avif",
+    "/Pants/Clariss Pants/11.avif",
+    "/Pants/Clariss Pants/12.avif",
+    "/Pants/Clariss Pants/13.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Pants",
+      name: "Clariss Pants",
+      description: [
+        "Palazzo trousers with a deep rise and refined pleats add elegant softness and visually elongate the legs.",
+        "Perfect both as part of a suit or worn separately — with shirts, turtlenecks, sweaters, or blazers.",
+        "Fabric: Premium-quality natural wool providing warmth, comfort, and a pleasant tactile feel.",
+        "[ Composition: 75% wool ]",
+        "Details:",
+        "• Fit: classic mid-rise that comfortably fits the waist without constriction.",
+        "• Silhouette: wide palazzo with a smooth flare from the hips.",
+        "• Pleats: carefully pressed in the front for a sleek and elongated look."
+      ],
+      colors: ["beige", "camel", "dark green"]
+    },
+    FR: {
+      category: "Pantalons",
+      name: "Pantalon Clariss",
+      description: [
+        "Le pantalon palazzo à taille moyenne et plis soignés apporte douceur et élégance tout en allongeant visuellement les jambes.",
+        "Parfait porté avec une veste ou séparément — avec des chemises, cols roulés, pulls ou vestes.",
+        "Tissu : laine naturelle de qualité supérieure offrant chaleur, confort et douceur au toucher.",
+        "[ Composition : 75% laine ]",
+        "Détails :",
+        "• Taille : classique, confortable sans comprimer la taille.",
+        "• Silhouette : large palazzo, légèrement évasée à partir des hanches.",
+        "• Plis : soigneusement repassés à l’avant pour un effet élancé et soigné."
+      ],
+      colors: ["beige", "camel", "vert foncé"]
+    },
+    UA: {
+      category: "Брюки",
+      name: "Брюки \"Clariss\"",
+      description: [
+        "Брюки палаццо з глибокою посадкою та доглянутими стрілками додають образу елегантної м’якості та візуально подовжують ноги.",
+        "Ідеально працюють як у комплекті з тренчем, так і окремо — з сорочками, водолазками, светрами та жакетами.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[ Склад: 75% вовни ]",
+        "Деталі:",
+        "• Посадка: класична середня посадка, що комфортно фіксується на талії та не перетискає.",
+        "• Силует: широкі палаццо з плавним розширенням від стегон.",
+        "• Стрілки: акуратно прокладені спереду — для ефекту стрункості та доглянутого вигляду."
+      ],
+      colors: ["бежевий", "кемел", "темно-зелений"]
+    },
+    RU: {
+      category: "Брюки",
+      name: "Брюки \"Clariss\"",
+      description: [
+        "Брюки палаццо с глубокой посадкой и аккуратными стрелками придают образу мягкую элегантность и визуально удлиняют ноги.",
+        "Идеально сочетаются как с тренчем, так и отдельно — с рубашками, водолазками, свитерами и жакетами.",
+        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло, уют и приятные тактильные ощущения.",
+        "[ Состав: 75% шерсти ]",
+        "Детали:",
+        "• Посадка: классическая средняя, комфортно фиксируется на талии без сжатия.",
+        "• Силуэт: широкие палаццо с плавным расширением от бёдер.",
+        "• Стрелки: аккуратно проложены спереди — для эффекта стройности и ухоженности."
+      ],
+      colors: ["бежевый", "кемел", "тёмно-зелёный"]
+    }
+  }
+},
+
+{
   id: 229,
   price: 1700,
   isTop: false,
