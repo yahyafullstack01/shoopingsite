@@ -1,6 +1,347 @@
 const products = [
 
 {
+  id: 243,
+  price: 1800,
+  isTop: false,
+  isNew: true,
+  sku: "99386",
+  size: "XS S M L XL",
+  category: "Sweaters",
+  image: "/Sweaters/Lurex Cardigan/1.avif",
+  images: [
+    "/Sweaters/Lurex Cardigan/2.avif",
+    "/Sweaters/Lurex Cardigan/3.avif",
+    "/Sweaters/Lurex Cardigan/4.avif",
+    "/Sweaters/Lurex Cardigan/5.avif",
+    "/Sweaters/Lurex Cardigan/6.avif",
+    "/Sweaters/Lurex Cardigan/7.avif",
+    "/Sweaters/Lurex Cardigan/8.avif",
+    "/Sweaters/Lurex Cardigan/9.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Sweaters",
+      name: "Lurex Cardigan",
+      description: [
+        "Created for those who choose comfort without giving up elegance.",
+        "This cardigan combines soft warm knitwear with a delicate shimmer of lurex, creating a look that’s both refined and festive.",
+        "Model features:",
+        "• Textured knit creates beautiful volume and maintains shape, subtly accentuating the waistline.",
+        "• Waist-accenting decorative star clasp adds sophistication and femininity to the silhouette.",
+        "• ¾ sleeves — the perfect length for freedom of movement and a stylish look.",
+        "• Lacy lurex thread creates a gentle glow that catches the light with every movement."
+      ],
+      colors: ["black", "gray"]
+    },
+    FR: {
+      category: "Pulls",
+      name: "Cardigan en lurex",
+      description: [
+        "Créé pour celles qui choisissent le confort sans renoncer à l’élégance.",
+        "Ce cardigan associe une maille douce et chaude à un éclat délicat de lurex, pour un look à la fois raffiné et festif.",
+        "Détails du modèle :",
+        "• La maille texturée crée un joli volume et conserve la forme, soulignant subtilement la taille.",
+        "• Une attache décorative en forme d’étoile à la taille ajoute sophistication et féminité.",
+        "• Manches ¾ — longueur idéale pour un style moderne et un confort optimal.",
+        "• Le fil de lurex apporte un éclat subtil visible au mouvement et sous la lumière du soir."
+      ],
+      colors: ["noir", "gris"]
+    },
+    UA: {
+      category: "Светри",
+      name: "Кардиган із люрексом",
+      description: [
+        "Створений для тих, хто обирає комфорт, але не готовий відмовлятися від елегантності.",
+        "Цей кардиган — поєднання м’якого теплого трикотажу та делікатного мерехтіння люрексу, що робить образ водночас стриманим і святковим.",
+        "Особливості моделі:",
+        "• Фактурна в’язка створює красивий об’єм і тримає форму, підкреслюючи лінію талії.",
+        "• Поясний акцент із декоративною застібкою-зіркою робить силует витонченим і додає образу вишуканості.",
+        "• Рукав ¾ — ідеальна довжина для легкості рухів та стильного вигляду.",
+        "• Мереживний люрекс у нитці створює легке сяйво, яке видно при русі та у вечірньому освітленні."
+      ],
+      colors: ["чорний", "сірий"]
+    },
+    RU: {
+      category: "Свитера",
+      name: "Кардиган с люрексом",
+      description: [
+        "Создан для тех, кто выбирает комфорт, не отказываясь от элегантности.",
+        "Этот кардиган сочетает мягкий тёплый трикотаж и деликатное мерцание люрекса, создавая образ одновременно сдержанный и праздничный.",
+        "Особенности модели:",
+        "• Фактурная вязка создаёт красивый объём и хорошо держит форму, подчёркивая линию талии.",
+        "• Акцент на талии с декоративной застёжкой-звездой придаёт силуэту утончённость и изысканность.",
+        "• Рукав ¾ — идеальная длина для свободы движений и стильного внешнего вида.",
+        "• Кружевной люрекс в нити создаёт лёгкое сияние, заметное при движении и в вечернем освещении."
+      ],
+      colors: ["чёрный", "серый"]
+    }
+  }
+},
+
+
+{
+  id: 242,
+  price: 6300,
+  isTop: false,
+  isNew: true,
+  sku: "99384",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Camel Skirt Suit/1.avif",
+  images: [
+    "/Costumes/Camel Skirt Suit/2.avif",
+    "/Costumes/Camel Skirt Suit/3.avif",
+    "/Costumes/Camel Skirt Suit/4.avif",
+    "/Costumes/Camel Skirt Suit/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Camel Skirt Suit",
+      description: [
+        "A wool suit in a caramel shade — a refined duo designed for the woman of taste.",
+        "A perfectly balanced silhouette: the structured jacket accentuates the shoulder line, while the asymmetric skirt adds fluidity and elegance. The top and bottom work as one harmonious set, yet each piece carries its own character.",
+        "Details that enchant:",
+        "• Premium wool fabric with a soft, warm feel;",
+        "• Accentuated waist — the suit perfectly responds to a belt, shaping an ideal silhouette;",
+        "• Rich caramel tone, flattering to all skin tones;",
+        "• Perfect fit of both jacket and skirt — creating the impression of a thoughtful, luxurious capsule.",
+        "A suit for the woman who loves classic elegance but chooses modern execution."
+      ],
+      colors: ["camel"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Tailleur jupe Camel",
+      description: [
+        "Un tailleur en laine couleur caramel — un duo raffiné créé pour une femme de goût.",
+        "Une silhouette parfaitement équilibrée : la veste structurée met en valeur la ligne des épaules, tandis que la jupe asymétrique ajoute fluidité et élégance. Le haut et le bas fonctionnent comme un ensemble harmonieux, mais chaque pièce possède son propre caractère.",
+        "Détails qui séduisent :",
+        "• Tissu en laine premium au toucher doux et chaud ;",
+        "• Taille marquée — la coupe réagit parfaitement à une ceinture, formant une silhouette impeccable ;",
+        "• Teinte caramel intense, flatteuse pour toutes les carnations ;",
+        "• Coupe parfaite de la veste et de la jupe — pour une allure de capsule sophistiquée et luxueuse.",
+        "Un tailleur pour la femme qui aime la classe intemporelle dans une interprétation moderne."
+      ],
+      colors: ["camel"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Camel костюм зі спідницею",
+      description: [
+        "Вовняний костюм у відтінку карамелі — вишуканий дует, що створений для жінки зі смаком.",
+        "Ідеально збалансований силует: структурований жакет підкреслює лінію плечей, а асиметрична спідниця додає образу плавного руху та елегантності. Верх і низ працюють як один витончений комплект, але кожен елемент має власний характер.",
+        "Деталі, що закохують:",
+        "• преміальна вовняна тканина з м’яким, теплим відчуттям;",
+        "• акцентна талія: костюм неймовірно реагує на ремінь, формуючи ідеальний силует;",
+        "• насичений карамельний колір, який компліментарний будь-якому тону шкіри;",
+        "• ідеальна посадка як у жакета, так і в спідниці — комплект створює ефект дорогої, продуманої капсули.",
+        "Костюм створений для жінки, яка любить класику, але обирає сучасне виконання."
+      ],
+      colors: ["кемел"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм Camel с юбкой",
+      description: [
+        "Шерстяной костюм в карамельном оттенке — изысканный дуэт, созданный для женщины со вкусом.",
+        "Идеально сбалансированный силуэт: структурированный жакет подчеркивает линию плеч, а асимметричная юбка добавляет образу плавности и элегантности. Верх и низ работают как единый комплект, но каждая деталь имеет свой характер.",
+        "Детали, в которые невозможно не влюбиться:",
+        "• премиальная шерстяная ткань с мягким, тёплым ощущением;",
+        "• акцент на талии — костюм прекрасно сочетается с ремнём, формируя идеальный силуэт;",
+        "• насыщенный карамельный цвет, подходящий для любого оттенка кожи;",
+        "• идеальная посадка как жакета, так и юбки — создаёт эффект продуманной, дорогой капсулы.",
+        "Костюм для женщины, которая любит классику, но выбирает современное исполнение."
+      ],
+      colors: ["кемел"]
+    }
+  }
+},
+
+{
+  id: 241,
+  price: 3100,
+  isTop: false,
+  isNew: true,
+  sku: "99383",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Copper Set/1.avif",
+  images: [
+    "/Costumes/Copper Set/2.avif",
+    "/Costumes/Copper Set/3.avif",
+    "/Costumes/Copper Set/4.avif",
+    "/Costumes/Copper Set/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Copper Set",
+      description: [
+        "A striking festive set created for special occasions. The copper sequin fabric with a deep metallic sheen highlights the silhouette and shimmers beautifully in motion.",
+        "Top:",
+        "• Cropped cut",
+        "• V-neckline in front",
+        "• Snug fit that accentuates the figure",
+        "• Soft elastic base for comfortable wear",
+        "Skirt:",
+        "• Midi length",
+        "• Side slit for ease and a touch of allure",
+        "• Elastic waistband for a comfortable fit",
+        "• Even sequin shine throughout the length",
+        "The set can be worn together or separately — each piece easily integrates into your festive capsule.",
+        "Perfect for: parties, celebrations, New Year events, and photoshoots."
+      ],
+      colors: ["copper"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Ensemble cuivré",
+      description: [
+        "Un ensemble de fête éclatant, créé pour les occasions spéciales. Le tissu à paillettes cuivrées, au brillant métallique profond, met en valeur la silhouette et scintille magnifiquement en mouvement.",
+        "Top :",
+        "• Coupe courte",
+        "• Décolleté en V à l’avant",
+        "• Coupe ajustée mettant en valeur la silhouette",
+        "• Base élastique douce et confortable sur la peau",
+        "Jupe :",
+        "• Longueur midi",
+        "• Fente latérale pour plus de confort et de charme",
+        "• Ceinture élastique pour un ajustement parfait",
+        "• Brillance uniforme des paillettes sur toute la longueur",
+        "Peut être porté ensemble ou séparément — chaque pièce s’intègre facilement dans une garde-robe festive.",
+        "Idéal pour : les soirées, les événements festifs, le Nouvel An et les séances photo."
+      ],
+      colors: ["cuivré"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Мідний комплект",
+      description: [
+        "Ефектний святковий комплект, створений для особливих подій. Мідна паєтка з глибоким металічним блиском підкреслює силует і красиво переливається в русі.",
+        "Топ:",
+        "• укорочений крій",
+        "• V-виріз спереду",
+        "• щільна посадка по фігурі",
+        "• м’яка еластична основа, комфортна до тіла",
+        "Спідниця:",
+        "• довжина міді",
+        "• розріз збоку для зручності та акценту",
+        "• еластичний пояс, що забезпечує комфортну посадку",
+        "• рівномірне сяйво паєтки по всій довжині",
+        "Комплект можна носити разом або поєднувати окремо — кожна річ легко інтегрується у святкову капсулу.",
+        "Ідеально для: вечірок, святкових заходів, новорічних подій, зйомок."
+      ],
+      colors: ["мідний"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Медный комплект",
+      description: [
+        "Эффектный праздничный комплект, созданный для особых событий. Медные пайетки с глубоким металлическим блеском подчеркивают силуэт и красиво переливаются в движении.",
+        "Топ:",
+        "• укороченный крой",
+        "• V-образный вырез спереди",
+        "• плотная посадка по фигуре",
+        "• мягкая эластичная основа, комфортная к телу",
+        "Юбка:",
+        "• длина миди",
+        "• разрез сбоку для удобства и акцента",
+        "• эластичный пояс для комфортной посадки",
+        "• равномерное сияние пайеток по всей длине",
+        "Комплект можно носить вместе или отдельно — каждая вещь легко интегрируется в праздничный гардероб.",
+        "Идеально для: вечеринок, праздничных мероприятий, новогодних событий, фотосессий."
+      ],
+      colors: ["медный"]
+    }
+  }
+},
+
+{
+  id: 240,
+  price: 1600,
+  isTop: true,
+  isNew: true,
+  sku: "99382",
+  size: "XS S M L XL",
+  category: "Tops",
+  image: "/Top/Sequin Open-Back Top/1.avif",
+  images: [
+    "/Top/Sequin Open-Back Top/2.avif",
+    "/Top/Sequin Open-Back Top/3.avif",
+    "/Top/Sequin Open-Back Top/4.avif",
+    "/Top/Sequin Open-Back Top/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Tops",
+      name: "Sequin Open-Back Top",
+      description: [
+        "A luxurious accent for your festive wardrobe. The top is made of shimmering fabric fully embroidered with sequins that beautifully reflect light from every angle.",
+        "The highlight of the design — an elegant open back tied with a ribbon — adds femininity and a touch of drama.",
+        "Model details:",
+        "• Semi-transparent sequin sleeves",
+        "• Structured corset-style bodice that keeps its shape",
+        "• Deep open back with tie ribbons",
+        "• Comfortable fit with soft sleeve cuffs",
+        "Perfectly pairs with midi skirts, wide-leg trousers, or tailored pieces — creating refined evening looks that radiate elegance."
+      ],
+      colors: ["black"]
+    },
+    FR: {
+      category: "Tops",
+      name: "Top à paillettes dos nu",
+      description: [
+        "Un accent luxueux pour votre garde-robe de fête. Ce top est confectionné dans un tissu scintillant entièrement brodé de paillettes qui captent magnifiquement la lumière sous tous les angles.",
+        "L’atout principal du modèle — un dos nu spectaculaire noué d’un ruban — apporte féminité et une touche de drame.",
+        "Détails du modèle :",
+        "• Manches semi-transparentes ornées de paillettes",
+        "• Haut corset structuré qui garde bien sa forme",
+        "• Dos nu profond avec liens à nouer",
+        "• Coupe confortable avec poignets souples",
+        "S’harmonise parfaitement avec des jupes midi, des pantalons larges ou des tenues habillées — pour des looks du soir élégants et sophistiqués."
+      ],
+      colors: ["noir"]
+    },
+    UA: {
+      category: "Топи",
+      name: "Топ у паєтку з відкритою спинкою",
+      description: [
+        "Розкішний акцент вашого святкового гардеробу. Топ створений із мерехтливого полотна, повністю розшитого паєтками, які красиво грають при будь-якому освітленні.",
+        "Особливість моделі — ефектна відкрита спинка, що зав’язується стрічкою, додаючи образу жіночності й легкої драматичності.",
+        "Деталі моделі:",
+        "• напівпрозорі рукави з паєткою",
+        "• щільний корсетний верх, що добре тримає форму",
+        "• глибока відкрита спинка з зав’язками",
+        "• комфортна посадка, м’які манжети на рукавах",
+        "Топ ідеально поєднується зі спідницями міді, широкими брюками або костюмними моделями — створюючи вечірні та святкові образи, що виглядають дорого та бездоганно."
+      ],
+      colors: ["чорний"]
+    },
+    RU: {
+      category: "Топы",
+      name: "Топ с пайетками и открытой спиной",
+      description: [
+        "Роскошный акцент вашего праздничного гардероба. Топ выполнен из мерцающего полотна, полностью расшитого пайетками, которые красиво переливаются при любом освещении.",
+        "Особенность модели — эффектная открытая спина с завязкой лентой, добавляющая образу женственности и лёгкой драматичности.",
+        "Детали модели:",
+        "• полупрозрачные рукава с пайетками",
+        "• плотный корсетный верх, хорошо держащий форму",
+        "• глубокая открытая спина с завязками",
+        "• комфортная посадка, мягкие манжеты на рукавах",
+        "Идеально сочетается с миди-юбками, широкими брюками или костюмными изделиями — создавая вечерние и праздничные образы, выглядящие дорого и безупречно."
+      ],
+      colors: ["чёрный"]
+    }
+  }
+},
+
+{
   id: 239,
   price: 4000,
   isTop: false,
@@ -4170,21 +4511,21 @@ const products = [
     sku: "12345",
     size: "XS S M L XL",
     category: "Dresses",
-    image: "/Dress/Woolen trapeze dress/21.avif",
+    image: "/Dress/Woolen trapeze dress/7.avif",
     images: [
-      "/Dress/Woolen trapeze dress/22.avif",
-      "/Dress/Woolen trapeze dress/23.avif",
-      "/Dress/Woolen trapeze dress/24.avif",
-      "/Dress/Woolen trapeze dress/1.avif",
-      "/Dress/Woolen trapeze dress/2.avif", "/Dress/Woolen trapeze dress/3.avif",
+      // "/Dress/Woolen trapeze dress/22.avif",
+      // "/Dress/Woolen trapeze dress/23.avif",
+      // "/Dress/Woolen trapeze dress/24.avif",
+      // "/Dress/Woolen trapeze dress/1.avif",
+      // "/Dress/Woolen trapeze dress/2.avif", "/Dress/Woolen trapeze dress/3.avif",
       {
         type: "video",
         src: "/Dress/Woolen trapeze dress/IMG_6176.mp4",
         poster: "/Dress/Woolen trapeze dress/1.avif"
       },
-      "/Dress/Woolen trapeze dress/4.avif",
-      "/Dress/Woolen trapeze dress/5.avif",
-      "/Dress/Woolen trapeze dress/6.avif",
+      // "/Dress/Woolen trapeze dress/4.avif",
+      // "/Dress/Woolen trapeze dress/5.avif",
+      // "/Dress/Woolen trapeze dress/6.avif",
       "/Dress/Woolen trapeze dress/9.avif",
       "/Dress/Woolen trapeze dress/8.avif",
       "/Dress/Woolen trapeze dress/11.avif",
@@ -4193,10 +4534,10 @@ const products = [
       "/Dress/Woolen trapeze dress/14.avif",
       "/Dress/Woolen trapeze dress/15.avif",
       "/Dress/Woolen trapeze dress/16.avif",
-      "/Dress/Woolen trapeze dress/17.avif",
-      "/Dress/Woolen trapeze dress/18.avif",
-      "/Dress/Woolen trapeze dress/19.avif",
-      "/Dress/Woolen trapeze dress/20.avif",
+      // "/Dress/Woolen trapeze dress/17.avif",
+      // "/Dress/Woolen trapeze dress/18.avif",
+      // "/Dress/Woolen trapeze dress/19.avif",
+      // "/Dress/Woolen trapeze dress/20.avif",
       "/Dress/Woolen trapeze dress/25.avif",
       "/Dress/Woolen trapeze dress/26.avif",
       "/Dress/Woolen trapeze dress/27.avif",
@@ -4211,21 +4552,21 @@ const products = [
         name: "Woolen trapeze dress",
         description: "Trapeze dress with a pronounced belt\nComposition: 75% natural wool, soft, does not stick to the body.",
         color: "red",
-        colors: ["milk chocolate", "jeans","gray","marsala", "eggplant", "powder"]
+        colors: ["jeans","gray","marsala","powder"]
       },
       FR: {
         category: "Robes",
         name: "Robe trapèze en laine",
         description: "Robe trapèze avec ceinture marquée\nComposition: 75% laine naturelle, douce, ne colle pas à la peau.",
         color: "rouge",
-        colors: ["jeans","gris","marsala", "eggplant", "pooder"]
+        colors: ["jeans","gris","marsala","pooder"]
       },
       UA: {
         category: "Сукні",
         name: "Вовняна сукня трапеція",
         description: ["Трапецеїдна сукня з виразним поясом","Склад: 75% натуральної вовни", "м'яка, не прилипає до тіла."],
         color: "червоний",
-        colors: ["молочний шоколад","джинсовий", "сірий", " марсала", "баклажан", "пудра"]
+        colors: ["джинсовий", "сірий", "марсала", "пудра"]
       }
     }
   },
@@ -5524,79 +5865,79 @@ const products = [
   }
 },
 
-{
-  id: 183,
-  price: 4350,
-  isTop: true,
-  isNew: true,
-  // isSpecialOffer: true,
-  //   discountPrice: 3915,
-  sku: "99325",
-  size: "XS S M L XL",
-  category: "Costumes",
-  image: "/Costumes/Mocha/1.avif",
-  images: [
-    "/Costumes/Mocha/2.avif",
-    "/Costumes/Mocha/3.avif",
-    "/Costumes/Mocha/4.avif",
-    "/Costumes/Mocha/5.avif"
-  ],
-  sizes: ["XS", "S", "M", "L", "XL"],
-  translations: {
-    EN: {
-      category: "Costumes",
-      name: "Eggplant",
-      description: [
-        "An elegant ensemble that combines warmth and sophistication. The minimalist cut and noble wool texture create a modern ‘French chic’ style.",
-        "The set can be worn as a total look or combined separately: the jumper with trousers or jeans, the skirt with a blouse or sweater.",
-        "Fabric: Premium-quality natural wool for warmth, comfort, and a pleasant tactile feel. [Composition: 75% wool]",
-        "Details:",
-        "• Jumper: Straight silhouette with long sleeves, two patch pockets as an accent detail.",
-        "• Skirt: Midi length with a slight flare from the hips, visually elongates the silhouette and adds femininity."
-      ],
-      colors: ["eggplant"]
-    },
-    FR: {
-      category: "Costumes",
-      name: "Costume «Mocha»",
-      description: [
-        "Un ensemble raffiné qui allie chaleur et élégance. La coupe minimaliste et la texture noble de la laine créent un style moderne «chic français».",
-        "Le set peut être porté en total look ou séparément : le pull avec un pantalon ou un jean, la jupe avec un chemisier ou un pull.",
-        "Tissu : laine naturelle de qualité premium, offrant chaleur, confort et douceur au toucher. [Composition : 75% laine]",
-        "Détails :",
-        "• Pull : coupe droite à manches longues, deux poches plaquées comme détail accentué.",
-        "• Jupe : longueur midi avec légère évasement à partir des hanches, allonge visuellement la silhouette et souligne la féminité."
-      ],
-      colors: ["moka"]
-    },
-    UA: {
-      category: "Костюми",
-      name: "Костюм «Eggplant»",
-      description: [
-        "Витончений ансамбль, який поєднує тепло та елегантність. Лаконічний крій і благородна фактура вовни створюють сучасний образ у стилі «французький шик».",
-        "Комплект можна носити як total look або комбінувати окремо: джемпер — із брюками чи джинсами, спідницю — з блузою або светром.",
-        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття. [Склад: 75% вовни]",
-        "Деталі:",
-        "• Джемпер: прямий силует із довгим рукавом, дві накладні кишені як акцентна деталь.",
-        "• Спідниця: довжина міді, легке розкльошення від стегон, візуально подовжує силует і створює жіночний акцент."
-      ],
-      colors: ["баклажан"]
-    },
-    RU: {
-      category: "Костюмы",
-      name: "Костюм «Mocha»",
-      description: [
-        "Изысканный ансамбль, сочетающий тепло и элегантность. Лаконичный крой и благородная фактура шерсти создают современный образ в стиле «французский шик».",
-        "Комплект можно носить как total look или комбинировать отдельно: джемпер — с брюками или джинсами, юбку — с блузой или свитером.",
-        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло, уют и приятные тактильные ощущения. [Состав: 75% шерсти]",
-        "Детали:",
-        "• Джемпер: прямой силуэт с длинным рукавом, две накладные карманы как акцент.",
-        "• Юбка: длина миди, лёгкое расклешение от бёдер, визуально удлиняет силуэт и подчёркивает женственность."
-      ],
-      colors: ["мокко"]
-    }
-  }
-},
+// {
+//   id: 183,
+//   price: 4350,
+//   isTop: true,
+//   isNew: true,
+//   // isSpecialOffer: true,
+//   //   discountPrice: 3915,
+//   sku: "99325",
+//   size: "XS S M L XL",
+//   category: "Costumes",
+//   image: "/Costumes/Mocha/1.avif",
+//   images: [
+//     "/Costumes/Mocha/2.avif",
+//     "/Costumes/Mocha/3.avif",
+//     "/Costumes/Mocha/4.avif",
+//     "/Costumes/Mocha/5.avif"
+//   ],
+//   sizes: ["XS", "S", "M", "L", "XL"],
+//   translations: {
+//     EN: {
+//       category: "Costumes",
+//       name: "Eggplant",
+//       description: [
+//         "An elegant ensemble that combines warmth and sophistication. The minimalist cut and noble wool texture create a modern ‘French chic’ style.",
+//         "The set can be worn as a total look or combined separately: the jumper with trousers or jeans, the skirt with a blouse or sweater.",
+//         "Fabric: Premium-quality natural wool for warmth, comfort, and a pleasant tactile feel. [Composition: 75% wool]",
+//         "Details:",
+//         "• Jumper: Straight silhouette with long sleeves, two patch pockets as an accent detail.",
+//         "• Skirt: Midi length with a slight flare from the hips, visually elongates the silhouette and adds femininity."
+//       ],
+//       colors: ["eggplant"]
+//     },
+//     FR: {
+//       category: "Costumes",
+//       name: "Costume «Mocha»",
+//       description: [
+//         "Un ensemble raffiné qui allie chaleur et élégance. La coupe minimaliste et la texture noble de la laine créent un style moderne «chic français».",
+//         "Le set peut être porté en total look ou séparément : le pull avec un pantalon ou un jean, la jupe avec un chemisier ou un pull.",
+//         "Tissu : laine naturelle de qualité premium, offrant chaleur, confort et douceur au toucher. [Composition : 75% laine]",
+//         "Détails :",
+//         "• Pull : coupe droite à manches longues, deux poches plaquées comme détail accentué.",
+//         "• Jupe : longueur midi avec légère évasement à partir des hanches, allonge visuellement la silhouette et souligne la féminité."
+//       ],
+//       colors: ["moka"]
+//     },
+//     UA: {
+//       category: "Костюми",
+//       name: "Костюм «Eggplant»",
+//       description: [
+//         "Витончений ансамбль, який поєднує тепло та елегантність. Лаконічний крій і благородна фактура вовни створюють сучасний образ у стилі «французький шик».",
+//         "Комплект можна носити як total look або комбінувати окремо: джемпер — із брюками чи джинсами, спідницю — з блузою або светром.",
+//         "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття. [Склад: 75% вовни]",
+//         "Деталі:",
+//         "• Джемпер: прямий силует із довгим рукавом, дві накладні кишені як акцентна деталь.",
+//         "• Спідниця: довжина міді, легке розкльошення від стегон, візуально подовжує силует і створює жіночний акцент."
+//       ],
+//       colors: ["баклажан"]
+//     },
+//     RU: {
+//       category: "Костюмы",
+//       name: "Костюм «Mocha»",
+//       description: [
+//         "Изысканный ансамбль, сочетающий тепло и элегантность. Лаконичный крой и благородная фактура шерсти создают современный образ в стиле «французский шик».",
+//         "Комплект можно носить как total look или комбинировать отдельно: джемпер — с брюками или джинсами, юбку — с блузой или свитером.",
+//         "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло, уют и приятные тактильные ощущения. [Состав: 75% шерсти]",
+//         "Детали:",
+//         "• Джемпер: прямой силуэт с длинным рукавом, две накладные карманы как акцент.",
+//         "• Юбка: длина миди, лёгкое расклешение от бёдер, визуально удлиняет силуэт и подчёркивает женственность."
+//       ],
+//       colors: ["мокко"]
+//     }
+//   }
+// },
 
     
     {
