@@ -8,12 +8,12 @@ const products = [
   sku: "99375",
   size: "XS S M L XL",
   category: "Dresses",
-  image: "/Dresses/Cocoa Line Belt Dress/1.avif",
+  image: "/Dress/Cocoa Line Belt Dress/1.avif",
   images: [
-    "/Dresses/Cocoa Line Belt Dress/2.avif",
-    "/Dresses/Cocoa Line Belt Dress/3.avif",
-    "/Dresses/Cocoa Line Belt Dress/4.avif",
-    "/Dresses/Cocoa Line Belt Dress/5.avif"
+    "/Dress/Cocoa Line Belt Dress/2.avif",
+    "/Dress/Cocoa Line Belt Dress/3.avif",
+    "/Dress/Cocoa Line Belt Dress/4.avif",
+    "/Dress/Cocoa Line Belt Dress/5.avif"
   ],
   sizes: ["XS", "S", "M", "L", "XL"],
   translations: {
@@ -84,12 +84,12 @@ const products = [
   sku: "99374",
   size: "XS S M L XL",
   category: "Dresses",
-  image: "/Dresses/Cocoa Line Dress/1.avif",
+  image: "/Dress/Cocoa Line Dress/1.avif",
   images: [
-    "/Dresses/Cocoa Line Dress/2.avif",
-    "/Dresses/Cocoa Line Dress/3.avif",
-    "/Dresses/Cocoa Line Dress/4.avif",
-    "/Dresses/Cocoa Line Dress/5.avif"
+    "/Dress/Cocoa Line Dress/2.avif",
+    "/Dress/Cocoa Line Dress/3.avif",
+    "/Dress/Cocoa Line Dress/4.avif",
+    "/Dress/Cocoa Line Dress/5.avif"
   ],
   sizes: ["XS", "S", "M", "L", "XL"],
   translations: {
