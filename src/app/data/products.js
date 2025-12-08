@@ -1,80 +1,80 @@
 const products = [
 
-{
-  id: 234,
-  price: 3100,
-  isTop: false,
-  isNew: true,
-  sku: "99375",
-  size: "XS S M L XL",
-  category: "Dresses",
-  image: "/Dresses/Cocoa Line Belt Dress/1.avif",
-  images: [
-    "/Dresses/Cocoa Line Belt Dress/2.avif",
-    "/Dresses/Cocoa Line Belt Dress/3.avif",
-    "/Dresses/Cocoa Line Belt Dress/4.avif",
-    "/Dresses/Cocoa Line Belt Dress/5.avif"
-  ],
-  sizes: ["XS", "S", "M", "L", "XL"],
-  translations: {
-    EN: {
-      category: "Dresses",
-      name: "Cocoa Line Dress with Belt",
-      description: [
-        "This dress embodies comfort, warmth, and understated luxury, visible in every detail. The perfect option for the office, meetings, walks, or even travel — a truly versatile everyday look.",
-        "Fabric: Dense premium suit fabric that holds its shape while remaining soft and comfortable against the skin.",
-        "[ Composition: 75% viscose, 25% polyester ]",
-        "Details:",
-        "• Straight midi silhouette — elongates the figure and creates a refined body line.",
-        "• Functional chest flaps — add a light accent to the neckline and create a structured look.",
-        "• 3/4 sleeves with wide cuffs — reveal the wrists and add lightness to the silhouette."
-      ],
-      colors: ["cocoa"]
-    },
-    FR: {
-      category: "Robes",
-      name: "Robe «Cocoa Line» avec Ceinture",
-      description: [
-        "Cette robe incarne le confort, la chaleur et le luxe discret visible dans chaque détail. Parfaite pour le bureau, les réunions, les promenades ou les voyages — une tenue polyvalente pour tous les jours.",
-        "Tissu : tissu de costume dense de qualité supérieure qui garde sa forme tout en restant doux et agréable sur la peau.",
-        "[ Composition : 75% viscose, 25% polyester ]",
-        "Détails :",
-        "• Silhouette droite midi — allonge la silhouette et affine la ligne du corps.",
-        "• Poches à rabat sur la poitrine — ajoutent une touche d’accent et de structure au décolleté.",
-        "• Manches 3/4 avec larges poignets — dévoilent les poignets et apportent de la légèreté à la silhouette."
-      ],
-      colors: ["cacao"]
-    },
-    UA: {
-      category: "Сукні",
-      name: "Сукня «Cocoa line» з поясом",
-      description: [
-        "Ця сукня — про комфорт, тепло та стриману розкіш, яку видно в кожній деталі. Ідеальний варіант для офісу, зустрічей, прогулянок і навіть подорожей — універсальний образ на кожен день.",
-        "Тканина: Щільна костюмна тканина преміум-класу, що тримає форму, але при цьому приємна до тіла.",
-        "[ Склад: 75% віскоза, 25% поліестер ]",
-        "Деталі:",
-        "• Прямий силует міді — витягує фігуру та робить лінію тіла більш витонченою.",
-        "• Функціональні нагрудні клапани — створюють легкий акцент у зоні декольте та додають образу структури.",
-        "• Рукав 3/4 із широким манжетом — відкриває зап’ястя й додає легкості силуету."
-      ],
-      colors: ["какао"]
-    },
-    RU: {
-      category: "Платья",
-      name: "Платье «Cocoa Line» с поясом",
-      description: [
-        "Это платье — про комфорт, тепло и сдержанную роскошь, заметную в каждой детали. Идеальный вариант для офиса, встреч, прогулок и даже путешествий — универсальный образ на каждый день.",
-        "Ткань: плотная костюмная ткань премиум-класса, держащая форму, но мягкая и приятная к телу.",
-        "[ Состав: 75% вискоза, 25% полиэстер ]",
-        "Детали:",
-        "• Прямой силуэт миди — визуально вытягивает фигуру и делает линии тела более изящными.",
-        "• Функциональные нагрудные клапаны — добавляют акцент в зоне декольте и создают структурный вид.",
-        "• Рукав 3/4 с широким манжетом — открывает запястья и придаёт лёгкость силуэту."
-      ],
-      colors: ["какао"]
-    }
-  }
-},
+// {
+//   id: 234,
+//   price: 3100,
+//   isTop: false,
+//   isNew: true,
+//   sku: "99375",
+//   size: "XS S M L XL",
+//   category: "Dresses",
+//   image: "/Dresses/Cocoa Line Belt Dress/1.avif",
+//   images: [
+//     "/Dresses/Cocoa Line Belt Dress/2.avif",
+//     "/Dresses/Cocoa Line Belt Dress/3.avif",
+//     "/Dresses/Cocoa Line Belt Dress/4.avif",
+//     "/Dresses/Cocoa Line Belt Dress/5.avif"
+//   ],
+//   sizes: ["XS", "S", "M", "L", "XL"],
+//   translations: {
+//     EN: {
+//       category: "Dresses",
+//       name: "Cocoa Line Dress with Belt",
+//       description: [
+//         "This dress embodies comfort, warmth, and understated luxury, visible in every detail. The perfect option for the office, meetings, walks, or even travel — a truly versatile everyday look.",
+//         "Fabric: Dense premium suit fabric that holds its shape while remaining soft and comfortable against the skin.",
+//         "[ Composition: 75% viscose, 25% polyester ]",
+//         "Details:",
+//         "• Straight midi silhouette — elongates the figure and creates a refined body line.",
+//         "• Functional chest flaps — add a light accent to the neckline and create a structured look.",
+//         "• 3/4 sleeves with wide cuffs — reveal the wrists and add lightness to the silhouette."
+//       ],
+//       colors: ["cocoa"]
+//     },
+//     FR: {
+//       category: "Robes",
+//       name: "Robe «Cocoa Line» avec Ceinture",
+//       description: [
+//         "Cette robe incarne le confort, la chaleur et le luxe discret visible dans chaque détail. Parfaite pour le bureau, les réunions, les promenades ou les voyages — une tenue polyvalente pour tous les jours.",
+//         "Tissu : tissu de costume dense de qualité supérieure qui garde sa forme tout en restant doux et agréable sur la peau.",
+//         "[ Composition : 75% viscose, 25% polyester ]",
+//         "Détails :",
+//         "• Silhouette droite midi — allonge la silhouette et affine la ligne du corps.",
+//         "• Poches à rabat sur la poitrine — ajoutent une touche d’accent et de structure au décolleté.",
+//         "• Manches 3/4 avec larges poignets — dévoilent les poignets et apportent de la légèreté à la silhouette."
+//       ],
+//       colors: ["cacao"]
+//     },
+//     UA: {
+//       category: "Сукні",
+//       name: "Сукня «Cocoa line» з поясом",
+//       description: [
+//         "Ця сукня — про комфорт, тепло та стриману розкіш, яку видно в кожній деталі. Ідеальний варіант для офісу, зустрічей, прогулянок і навіть подорожей — універсальний образ на кожен день.",
+//         "Тканина: Щільна костюмна тканина преміум-класу, що тримає форму, але при цьому приємна до тіла.",
+//         "[ Склад: 75% віскоза, 25% поліестер ]",
+//         "Деталі:",
+//         "• Прямий силует міді — витягує фігуру та робить лінію тіла більш витонченою.",
+//         "• Функціональні нагрудні клапани — створюють легкий акцент у зоні декольте та додають образу структури.",
+//         "• Рукав 3/4 із широким манжетом — відкриває зап’ястя й додає легкості силуету."
+//       ],
+//       colors: ["какао"]
+//     },
+//     RU: {
+//       category: "Платья",
+//       name: "Платье «Cocoa Line» с поясом",
+//       description: [
+//         "Это платье — про комфорт, тепло и сдержанную роскошь, заметную в каждой детали. Идеальный вариант для офиса, встреч, прогулок и даже путешествий — универсальный образ на каждый день.",
+//         "Ткань: плотная костюмная ткань премиум-класса, держащая форму, но мягкая и приятная к телу.",
+//         "[ Состав: 75% вискоза, 25% полиэстер ]",
+//         "Детали:",
+//         "• Прямой силуэт миди — визуально вытягивает фигуру и делает линии тела более изящными.",
+//         "• Функциональные нагрудные клапаны — добавляют акцент в зоне декольте и создают структурный вид.",
+//         "• Рукав 3/4 с широким манжетом — открывает запястья и придаёт лёгкость силуэту."
+//       ],
+//       colors: ["какао"]
+//     }
+//   }
+// },
 
 {
   id: 233,
