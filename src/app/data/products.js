@@ -1,6 +1,384 @@
 const products = [
 
 {
+  id: 239,
+  price: 4000,
+  isTop: false,
+  isNew: true,
+  sku: "99380",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Deep Green/1.avif",
+  images: [
+    "/Costumes/Deep Green/2.avif",
+    "/Costumes/Deep Green/3.avif",
+    "/Costumes/Deep Green/4.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Deep Green Costume",
+      description: [
+        "A combination of English restraint and femininity, valued by latore.atelier aesthetics. Designed for autumn and transitional seasons when you want to look aristocratic yet comfortable.",
+        "The fitted vest in fine check beautifully shapes the waistline, while the voluminous midi skirt adds softness and a noble dynamic to the silhouette.",
+        "Fabric: Premium-quality natural wool providing warmth, comfort, and a pleasant tactile feel.",
+        "[ Composition: 75% wool ]",
+        "Details:",
+        "Vest: fitted yet comfortable",
+        "• Length: at the waist with a soft curved hem",
+        "Skirt: deep front pleats",
+        "• Length: below the knee",
+        "• Waistband at the waist"
+      ],
+      colors: ["dark green"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume vert foncé",
+      description: [
+        "Combinaison de retenue anglaise et de féminité, appréciée par l’esthétique de latore.atelier. Conçu pour l’automne et les saisons intermédiaires, lorsque l’on souhaite un look aristocratique mais confortable.",
+        "Le gilet ajusté en fine check met en valeur la taille, tandis que la jupe midi volumineuse apporte douceur et dynamique noble au silhouette.",
+        "Tissu : laine naturelle de qualité supérieure procurant chaleur, confort et toucher agréable.",
+        "[ Composition : 75% laine ]",
+        "Détails :",
+        "Gilet : coupe ajustée mais confortable",
+        "• Longueur : jusqu’à la taille avec un ourlet courbé doux",
+        "Jupe : plis profonds sur le devant",
+        "• Longueur : sous le genou",
+        "• Ceinture à la taille"
+      ],
+      colors: ["vert foncé"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм 'Deep green'",
+      description: [
+        "Поєднання англійської стриманості та жіночності, які так цінує естетика latore.atelier. Комплект створений для осені та міжсезоння, коли хочеться виглядати аристократично, але комфортно.",
+        "Лаконічний жилет у дрібну клітинку чудово формує лінію талії, а об’ємна міді-спідниця додає силуету м’якості й благородної динаміки.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[ Склад: 75% вовни ]",
+        "Деталі:",
+        "Жилет: приталений фасон, але комфортний",
+        "• Довжина: до лінії талії, з м’яким фігурним низом",
+        "Спідниця: глибокі складки спереду",
+        "• Довжина: нижче коліна",
+        "• Пояс на талії"
+      ],
+      colors: ["темно-зелений"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм 'Deep green'",
+      description: [
+        "Сочетание английской сдержанности и женственности, которое так ценит эстетика latore.atelier. Комплект создан для осени и межсезонья, когда хочется выглядеть аристократично, но комфортно.",
+        "Лаконичный жилет в мелкую клетку прекрасно формирует линию талии, а объемная миди-юбка добавляет силуэту мягкости и благородной динамики.",
+        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло, уют и приятные тактильные ощущения.",
+        "[ Состав: 75% шерсти ]",
+        "Детали:",
+        "Жилет: приталенный фасон, но комфортный",
+        "• Длина: до линии талии, с мягким фигурным низом",
+        "Юбка: глубокие складки спереди",
+        "• Длина: ниже колена",
+        "• Пояс на талии"
+      ],
+      colors: ["тёмно-зелёный"]
+    }
+  }
+},
+
+{
+  id: 238,
+  price: 2100,
+  isTop: true,
+  isNew: true,
+  sku: "99379",
+  size: "XS S M L XL",
+  category: "Tops",
+  image: "/Top/Deep Green Vest/1.avif",
+  images: [
+    "/Top/Deep Green Vest/2.avif",
+    "/Top/Deep Green Vest/3.avif",
+    "/Top/Deep Green Vest/4.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Tops",
+      name: "Deep Green Vest",
+      description: [
+        "Vest crafted in a fine English check — detailed, structured, and incredibly versatile. The V-neck visually elongates the neck, while the sharply defined shoulder line makes the silhouette slimmer.",
+        "Fabric: Premium-quality natural wool providing warmth, comfort, and a pleasant tactile feel.",
+        "[ Composition: 75% wool ]",
+        "Details:",
+        "• Fitted yet comfortable cut",
+        "• Length: at the waist with a soft curved hem"
+      ],
+      colors: ["dark green"]
+    },
+    FR: {
+      category: "Tops",
+      name: "Gilet vert foncé",
+      description: [
+        "Gilet en petit motif anglais — détaillé, structuré et incroyablement polyvalent. Le col en V allonge visuellement le cou, tandis que la ligne des épaules bien définie affine la silhouette.",
+        "Tissu : laine naturelle de qualité supérieure offrant chaleur, confort et toucher agréable.",
+        "[ Composition : 75% laine ]",
+        "Détails :",
+        "• Coupe ajustée mais confortable",
+        "• Longueur : jusqu’à la taille avec un ourlet courbé doux"
+      ],
+      colors: ["vert foncé"]
+    },
+    UA: {
+      category: "Топи",
+      name: "Жилет 'Deep green'",
+      description: [
+        "Жилет виконаний у дрібну англійську клітинку — деталізований, структурний та неймовірно універсальний.",
+        "Його V-подібний виріз візуально подовжує шию, а чітко окреслена лінія плечей робить силует стрункішим.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[ Склад: 75% вовни ]",
+        "Деталі:",
+        "• Приталений фасон, але комфортний",
+        "• Довжина: до лінії талії, з м’яким фігурним низом"
+      ],
+      colors: ["темно-зелений"]
+    },
+    RU: {
+      category: "Топы",
+      name: "Жилет 'Deep green'",
+      description: [
+        "Жилет выполнен в мелкую английскую клетку — детализированный, структурный и невероятно универсальный.",
+        "V-образный вырез визуально удлиняет шею, а чётко очерченная линия плеч делает силуэт стройнее.",
+        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло, уют и приятные тактильные ощущения.",
+        "[ Состав: 75% шерсти ]",
+        "Детали:",
+        "• Приталенный фасон, но комфортный",
+        "• Длина: до линии талии, с мягким фигурным низом"
+      ],
+      colors: ["тёмно-зелёный"]
+    }
+  }
+},
+
+{
+  id: 237,
+  price: 2000,
+  isTop: false,
+  isNew: true,
+  sku: "99378",
+  size: "XS S M L XL",
+  category: "Shirts",
+  image: "/Shirts/Ruffled Blouse/1.avif",
+  images: [
+    "/Shirts/Ruffled Blouse/2.avif",
+    "/Shirts/Ruffled Blouse/3.avif",
+    "/Shirts/Ruffled Blouse/4.avif",
+    "/Shirts/Ruffled Blouse/5.avif",
+    "/Shirts/Ruffled Blouse/6.avif",
+    "/Shirts/Ruffled Blouse/7.avif",
+    "/Shirts/Ruffled Blouse/8.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Shirts",
+      name: "Ruffled Blouse",
+      description: [
+        "Airy, light, and incredibly expressive — this blouse will become your main romantic accent. The key design feature is cascading ruffles that trace the neckline and shoulders, adding volume and sophistication.",
+        "Fabric: 100% viscose.",
+        "Details:",
+        "• Delicate tie neckline can be worn two ways — untied for a relaxed look or tied for a more elegant appearance.",
+        "• Voluminous puff sleeves with soft gathers and elastic cuffs — feminine, comfortable, and charming."
+      ],
+      colors: ["camel", "dark blue"]
+    },
+    FR: {
+      category: "Chemises",
+      name: "Blouse à volants",
+      description: [
+        "Aérienne, légère et incroyablement expressive — cette blouse deviendra votre touche romantique principale. L’élément clé du design : des volants en cascade le long du décolleté et des épaules, ajoutant volume et sophistication.",
+        "Tissu : 100 % viscose.",
+        "Détails :",
+        "• Encolure à lien délicat pouvant se porter de deux façons — dénouée pour un look décontracté ou nouée pour une allure plus élégante.",
+        "• Manches bouffantes avec fronces douces et poignets élastiques — féminines, confortables et pleines de charme."
+      ],
+      colors: ["camel", "bleu foncé"]
+    },
+    UA: {
+      category: "Сорочки",
+      name: "Блуза з воланами",
+      description: [
+        "Повітряна, легка та неймовірно виразна — ця блуза стане вашим головним романтичним акцентом у гардеробі. Головна деталь моделі — каскадні волани, розташовані вздовж лінії декольте та плечей.",
+        "Тканина: 100% віскоза.",
+        "Деталі:",
+        "• Акуратна горловина на зав’язці, яку можна носити у двох варіантах: розв’язати для легкого розслабленого образу або зав’язати для більш елегантного вигляду.",
+        "• Об’ємні рукави-ліхтарі з м’якими зборками та еластичними манжетами — комфортні та дуже жіночні."
+      ],
+      colors: ["кемел", "темно-синій"]
+    },
+    RU: {
+      category: "Рубашки",
+      name: "Блуза с воланами",
+      description: [
+        "Воздушная, лёгкая и невероятно выразительная — эта блуза станет вашим главным романтическим акцентом в гардеробе. Главная деталь модели — каскадные воланы, расположенные вдоль линии декольте и плеч.",
+        "Ткань: 100% вискоза.",
+        "Детали:",
+        "• Аккуратный вырез с завязкой, который можно носить двумя способами: развязав для расслабленного образа или завязав для более элегантного вида.",
+        "• Объёмные рукава-фонари с мягкими сборками и эластичными манжетами — удобные и очень женственные."
+      ],
+      colors: ["кемел", "тёмно-синий"]
+    }
+  }
+},
+
+{
+  id: 236,
+  price: 2000,
+  isTop: false,
+  isNew: true,
+  sku: "99377",
+  size: "XS S M L XL",
+  category: "Shirts",
+  image: "/Shirts/Camel Blouse/1.avif",
+  images: [
+    "/Shirts/Camel Blouse/2.avif",
+    "/Shirts/Camel Blouse/3.avif",
+    "/Shirts/Camel Blouse/4.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Shirts",
+      name: "Camel Blouse",
+      description: [
+        "This blouse is created for those who appreciate comfort, femininity, and a refined silhouette in every movement. The light, airy fabric drapes softly, forming beautiful waves, while thoughtful details make this piece truly unique.",
+        "Fabric: 100% viscose.",
+        "Details:",
+        "• Elastic gathering at the neckline gently highlights the collarbones and allows you to adjust the fit. The back tie adds a romantic touch and ensures the blouse fits perfectly.",
+        "• Wide, airy sleeves with structured cuffs and button closure create an elegant look and make the silhouette lighter and more graceful."
+      ],
+      colors: ["camel"]
+    },
+    FR: {
+      category: "Chemises",
+      name: "Blouse Camel",
+      description: [
+        "Cette blouse est conçue pour celles qui aiment le confort, la féminité et une silhouette élégante dans chaque mouvement. Le tissu léger et aérien tombe délicatement, formant de belles vagues, tandis que les détails soignés rendent cette pièce vraiment unique.",
+        "Tissu : 100 % viscose.",
+        "Détails :",
+        "• Fronces élastiques à l’encolure soulignant délicatement la ligne des clavicules et permettant d’ajuster la coupe. Le lien au dos ajoute une touche romantique et assure un ajustement parfait.",
+        "• Manches larges et aérées avec poignets structurés et bouton pour un look raffiné et une silhouette gracieuse."
+      ],
+      colors: ["camel"]
+    },
+    UA: {
+      category: "Сорочки",
+      name: "Блуза «Camel»",
+      description: [
+        "Ця блуза створена для тих, хто любить комфорт, жіночність і виразний силует у кожному русі. Легка, повітряна тканина м’яко спадає, утворюючи красиві хвилі, а продумані деталі роблять модель по-справжньому унікальною.",
+        "Тканина: 100% віскоза.",
+        "Деталі:",
+        "• Еластична збірка по горловині ніжно підкреслює лінію ключиць і дозволяє регулювати посадку. Зав’язка ззаду додає романтичного акценту та дозволяє блузі сидіти ідеально.",
+        "• Широкий, повітряний рукав зі структурованою манжетою на ґудзику створює вишуканий образ і робить силует легшим та витонченішим."
+      ],
+      colors: ["кемел"]
+    },
+    RU: {
+      category: "Рубашки",
+      name: "Блуза «Camel»",
+      description: [
+        "Эта блуза создана для тех, кто любит комфорт, женственность и выразительный силуэт в каждом движении. Легкая воздушная ткань мягко ниспадает, образуя красивые волны, а продуманные детали делают модель по-настоящему уникальной.",
+        "Ткань: 100% вискоза.",
+        "Детали:",
+        "• Эластичная сборка по горловине мягко подчеркивает линию ключиц и позволяет регулировать посадку. Завязка сзади добавляет романтичный акцент и обеспечивает идеальную посадку.",
+        "• Широкий воздушный рукав со структурированной манжетой на пуговице создает утонченный образ и делает силуэт легче и изящнее."
+      ],
+      colors: ["кемел"]
+    }
+  }
+},
+
+{
+  id: 235,
+  price: 3100,
+  isTop: false,
+  isNew: true,
+  sku: "99376",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Wool Belted Dress/1.avif",
+  images: [
+    "/Dress/Wool Belted Dress/2.avif",
+    "/Dress/Wool Belted Dress/3.avif",
+    "/Dress/Wool Belted Dress/4.avif",
+    "/Dress/Wool Belted Dress/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Wool Belted Dress",
+      description: [
+        "This dress embodies comfort, warmth, and understated luxury visible in every detail. Made from soft wool fabric that keeps its shape while providing cozy warmth for the cooler season.",
+        "An ideal choice for the office, meetings, walks, and even travels — a versatile everyday look.",
+        "Fabric: Premium-quality natural wool providing warmth, comfort, and a pleasant tactile feel.",
+        "[ Composition: 75% wool ]",
+        "Details:",
+        "• Straight midi silhouette — elongates the figure and refines body lines.",
+        "• Functional chest flaps — add a light accent to the neckline and bring structure to the design.",
+        "• 3/4 sleeves with wide cuffs — reveal the wrists and add lightness to the silhouette."
+      ],
+      colors: ["beige"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe en laine avec ceinture",
+      description: [
+        "Cette robe incarne le confort, la chaleur et le luxe discret perceptible dans chaque détail. Réalisée en laine douce qui conserve sa forme tout en offrant une agréable sensation de chaleur pour la saison fraîche.",
+        "Un choix idéal pour le bureau, les rendez-vous, les promenades ou les voyages — un look polyvalent pour tous les jours.",
+        "Tissu : laine naturelle de qualité supérieure procurant chaleur, confort et douceur au toucher.",
+        "[ Composition : 75% laine ]",
+        "Détails :",
+        "• Silhouette droite midi — allonge la silhouette et affine la ligne du corps.",
+        "• Poches à rabat sur la poitrine — ajoutent une touche d’accent et de structure au design.",
+        "• Manches 3/4 avec larges poignets — dévoilent les poignets et apportent de la légèreté à la tenue."
+      ],
+      colors: ["beige"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Вовняна сукня з поясом",
+      description: [
+        "Ця сукня — про комфорт, тепло та стриману розкіш, яку видно в кожній деталі. Модель виконана з м’якої вовняної тканини, що тримає форму та дарує приємне відчуття тепла у прохолодний сезон.",
+        "Ідеальний варіант для офісу, зустрічей, прогулянок і навіть подорожей — універсальний образ на кожен день.",
+        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+        "[ Склад: 75% вовни ]",
+        "Деталі:",
+        "• Прямий силует міді — витягує фігуру та робить лінію тіла більш витонченою.",
+        "• Функціональні нагрудні клапани — створюють легкий акцент у зоні декольте та додають образу структури.",
+        "• Рукав 3/4 із широким манжетом — відкриває зап’ястя й додає легкості силуету."
+      ],
+      colors: ["бежевий"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Шерстяное платье с поясом",
+      description: [
+        "Это платье — про комфорт, тепло и сдержанную роскошь, заметную в каждой детали. Модель выполнена из мягкой шерстяной ткани, которая держит форму и дарит приятное ощущение тепла в прохладный сезон.",
+        "Идеальный вариант для офиса, встреч, прогулок и даже путешествий — универсальный образ на каждый день.",
+        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло, уют и приятные тактильные ощущения.",
+        "[ Состав: 75% шерсти ]",
+        "Детали:",
+        "• Прямой силуэт миди — визуально вытягивает фигуру и делает линии тела более изящными.",
+        "• Функциональные нагрудные клапаны — добавляют акцент в зоне декольте и структурируют образ.",
+        "• Рукав 3/4 с широким манжетом — открывает запястья и придаёт лёгкость силуэту."
+      ],
+      colors: ["бежевый"]
+    }
+  }
+},
+
+{
   id: 234,
   price: 3100,
   isTop: false,
