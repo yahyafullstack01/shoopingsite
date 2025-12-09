@@ -1,6 +1,1383 @@
 const products = [
 
 {
+  id: 260,
+  price: 3300,
+  isTop: false,
+  isNew: true,
+  sku: "99399",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Satin Belted Dress/1.avif",
+  images: [
+    "/Dress/Satin Belted Dress/2.avif",
+    "/Dress/Satin Belted Dress/3.avif",
+    "/Dress/Satin Belted Dress/4.avif",
+    "/Dress/Satin Belted Dress/5.avif",
+    "/Dress/Satin Belted Dress/6.avif",
+    "/Dress/Satin Belted Dress/7.avif",
+    "/Dress/Satin Belted Dress/8.avif",
+    "/Dress/Satin Belted Dress/9.avif",
+    "/Dress/Satin Belted Dress/10.avif",
+    "/Dress/Satin Belted Dress/11.avif",
+    "/Dress/Satin Belted Dress/12.avif",
+
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Satin Belted Dress",
+      description: [
+        "Designed for special occasions, this satin dress stands out with its elegant simplicity and refined texture play.",
+        "The soft satin glow enhances every movement, while the flawless silhouette celebrates feminine grace.",
+        "Key features:",
+        "• Premium-quality satin with a smooth, silky surface that reflects light for a delicate festive sheen.",
+        "• Voluminous sleeves with gentle draping — shaping a sophisticated and modern silhouette.",
+        "• Accentuated wide belt — highlights the waist and allows individual adjustment for perfect fit.",
+        "• Pleats along the waist and hips — create a fluid, sculpted structure that’s minimal yet striking."
+      ],
+      colors: ["grey", "chocolate", "graphite"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe en satin avec ceinture",
+      description: [
+        "Conçue pour les occasions spéciales, cette robe en satin se distingue par sa simplicité élégante et son jeu raffiné de textures.",
+        "La douce brillance du satin sublime chaque mouvement, tandis que la silhouette impeccable met en valeur la féminité.",
+        "Détails principaux :",
+        "• Satin de qualité premium à la surface lisse et soyeuse qui capte la lumière pour un éclat délicat.",
+        "• Manches volumineuses avec un drapé souple — pour une silhouette moderne et raffinée.",
+        "• Large ceinture accentuée — souligne la taille et permet un ajustement personnalisé.",
+        "• Plis au niveau de la taille et des hanches — créent une structure fluide et harmonieuse, minimaliste mais impressionnante."
+      ],
+      colors: ["gris", "chocolat", "graphite"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Сатинова сукня з поясом",
+      description: [
+        "Створена для особливих подій, ця сатинова сукня вирізняється елегантною простотою та витонченою грою фактур.",
+        "М’яке сяйво сатину підкреслює кожен рух, а бездоганний силует працює на вашу жіночність.",
+        "Основні деталі моделі:",
+        "• Бездоганний сатин преміум якості — гладка, шовковиста поверхня м’яко відбиває світло, створюючи делікатне святкове сяйво.",
+        "• Об’ємні рукави з м’яким драпуванням — формують виразний силует та додають моделі сучасної елегантності.",
+        "• Акцентний широкий пояс — підкреслює талію, структурує образ і дозволяє індивідуально регулювати посадку.",
+        "• Складки по лінії талії та стегон — формують м’яку, перетікаючу в плавний низ конструкцію — мінімалістичну, але вражаючу."
+      ],
+      colors: ["сірий", "шоколад", "графіт"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Атласное платье с поясом",
+      description: [
+        "Созданное для особых случаев, это атласное платье выделяется элегантной простотой и изысканной игрой фактур.",
+        "Мягкий блеск сатина подчеркивает каждый шаг, а безупречный силуэт работает на женственность.",
+        "Основные детали модели:",
+        "• Атлас премиум-качества с гладкой шелковистой поверхностью, отражающей свет и создающей деликатное сияние.",
+        "• Объёмные рукава с мягкими драпировками — формируют выразительный силуэт и добавляют современную элегантность.",
+        "• Акцентный широкий пояс — подчёркивает талию и позволяет регулировать посадку.",
+        "• Складки по линии талии и бёдер — создают мягкую, плавную форму, минималистичную, но эффектную."
+      ],
+      colors: ["серый", "шоколад", "графит"]
+    }
+  }
+},
+
+{
+  id: 259,
+  price: 3250,
+  isTop: false,
+  isNew: true,
+  sku: "99398",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Leo Dress/1.avif",
+  images: [
+    "/Dress/Leo Dress/2.avif",
+    "/Dress/Leo Dress/3.avif",
+    "/Dress/Leo Dress/4.avif",
+    "/Dress/Leo Dress/5.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Leo Dress",
+      description: [
+        "Bright, playful, and designed to capture attention — this dress combines a fitted top with a defined waist and a voluminous asymmetrical tulle skirt with a train, creating a look that’s impossible to ignore.",
+        "Details:",
+        "• Striking leopard sequin fabric with deep shimmer.",
+        "• Fitted silhouette that accentuates the figure.",
+        "• Long sleeves and a round neckline for comfortable wear.",
+        "• Asymmetrical skirt with multilayered tulle.",
+        "• Lightweight dramatic train that moves beautifully with every step.",
+        "• A closed upper construction perfectly balanced by an accent on the legs."
+      ],
+      colors: ["leo"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe Léopard",
+      description: [
+        "Éclatante, audacieuse et conçue pour attirer tous les regards. Cette robe associe un haut ajusté à une taille marquée et une jupe asymétrique en tulle avec traîne, pour une allure inoubliable.",
+        "Détails :",
+        "• Paillettes léopard aux reflets profonds et lumineux.",
+        "• Silhouette ajustée qui souligne la silhouette.",
+        "• Manches longues et encolure ronde pour un port confortable.",
+        "• Jupe asymétrique à plusieurs couches de tulle.",
+        "• Traîne légère et spectaculaire qui bouge élégamment à chaque pas.",
+        "• Haut fermé équilibré par un accent sur les jambes."
+      ],
+      colors: ["léopard"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Сукня Leo",
+      description: [
+        "Яскрава, грайлива і створена для того, щоб привертати увагу. Ця сукня поєднує обтислий верх із виразною талією та пишною асиметричною спідницею зі шлейфом із фатину — образ, у якому неможливо залишитися непоміченою.",
+        "Деталі моделі:",
+        "• ефектна леопардова паєтка з глибоким сяйвом;",
+        "• приталений силует, який підкреслює фігуру;",
+        "• довгі рукави та круглий виріз для комфортної посадки;",
+        "• асиметрична спідниця з багатошаровим фатином;",
+        "• легкий драматичний шлейф, що красиво рухається під час ходьби;",
+        "• закрита конструкція зверху, поєднана з акцентом на ноги."
+      ],
+      colors: ["леопард"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Платье Leo",
+      description: [
+        "Яркое, игривое и созданное для того, чтобы привлекать внимание. Это платье сочетает облегающий верх с выразительной талией и пышной асимметричной юбкой из фатина с шлейфом — образ, в котором невозможно остаться незамеченной.",
+        "Детали модели:",
+        "• эффектные леопардовые пайетки с глубоким блеском;",
+        "• приталенный силуэт, подчёркивающий фигуру;",
+        "• длинные рукава и круглый вырез для комфортной посадки;",
+        "• асимметричная юбка из многослойного фатина;",
+        "• лёгкий драматичный шлейф, красиво движущийся при ходьбе;",
+        "• закрытый верх в сочетании с акцентом на ноги."
+      ],
+      colors: ["леопардовый"]
+    }
+  }
+},
+
+
+{
+  id: 258,
+  price: 3250,
+  isTop: false,
+  isNew: true,
+  sku: "99397",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Snake Dress/1.avif",
+  images: [
+    "/Dress/Snake Dress/2.avif",
+    "/Dress/Snake Dress/3.avif",
+    "/Dress/Snake Dress/4.avif",
+    "/Dress/Snake Dress/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Snake Dress",
+      description: [
+        "A dress made for special moments and all eyes on you.",
+        "The maxi silhouette with striking snake-pattern sequins follows every movement, reflecting light beautifully. Thoughtful details — a defined waist, soft draping, and a high slit — create an elegant, feminine silhouette with a sense of lightness.",
+        "The boat neckline and long sleeves balance the bold texture of the fabric with a refined upper silhouette.",
+        "The front slit ensures freedom of movement while adding a delicate accent to the legs.",
+        "Perfect for: New Year’s Eve, festive occasions, parties, and moments when you want to look effortlessly luxurious."
+      ],
+      colors: ["snake"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe Serpent",
+      description: [
+        "Une robe créée pour les moments spéciaux et les regards captivés.",
+        "La silhouette maxi ornée de sequins au motif serpent épouse les mouvements et reflète magnifiquement la lumière. Les détails bien pensés — taille marquée, drapés doux et fente haute — forment une silhouette féminine et élégante tout en légèreté.",
+        "L’encolure bateau et les manches longues équilibrent la texture audacieuse du tissu avec une allure raffinée.",
+        "La fente avant assure confort et liberté de mouvement tout en ajoutant une touche sensuelle aux jambes.",
+        "Parfaite pour : le réveillon du Nouvel An, les soirées, les fêtes et tous les moments où l’on veut briller sans effort."
+      ],
+      colors: ["imprimé serpent"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Сукня Snake",
+      description: [
+        "Сукня, що створена для особливих моментів і фокусної уваги.",
+        "Максі силует із ефектною зміїною паєткою повторює кожен рух, красиво граючи на світлі. Асортимент продуманих деталей — акцент на талії, м’які драпірування та високий розріз — формують елегантно-жіночний силует і додають образу легкості.",
+        "Виріз човником та довгий рукав підкреслюють стриманий верх, який ідеально балансує сміливу фактуру тканини.",
+        "Розріз спереду забезпечує комфорт у русі та створює делікатний акцент на ногах.",
+        "Ідеальна для: новорічної ночі, святкових подій, вечірок та моментів, де хочеться виглядати розкішно без зайвих зусиль."
+      ],
+      colors: ["snake"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Платье Snake",
+      description: [
+        "Платье, созданное для особенных моментов и восхищённых взглядов.",
+        "Макси-силуэт с эффектными пайетками под змеиный принт повторяет каждый шаг, красиво играя на свету. Продуманные детали — акцент на талии, мягкие драпировки и высокий разрез — формируют женственный и лёгкий силуэт.",
+        "Вырез-лодочка и длинные рукава подчёркивают сдержанный верх, идеально уравновешивая смелую фактуру ткани.",
+        "Разрез спереди обеспечивает комфорт при движении и добавляет деликатный акцент на ноги.",
+        "Идеальна для: новогодней ночи, праздничных мероприятий, вечеринок и моментов, когда хочется выглядеть роскошно без усилий."
+      ],
+      colors: ["змеиный принт"]
+    }
+  }
+},
+
+
+{
+  id: 257,
+  price: 5600,
+  isTop: false,
+  isNew: true,
+  sku: "99396",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Snake Suit/1.avif",
+  images: [
+    "/Costumes/Snake Suit/2.avif",
+    "/Costumes/Snake Suit/3.avif",
+    "/Costumes/Snake Suit/4.avif",
+    "/Costumes/Snake Suit/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Snake Suit",
+      description: [
+        "A luxurious festive set that creates a flawless silhouette and instantly draws attention.",
+        "The snake-print fabric, fully covered with sequins, plays beautifully in the light, adding a touch of sophistication and boldness.",
+        "Blazer:",
+        "• Relaxed, soft oversize silhouette.",
+        "• Comfortable length that flatters the figure.",
+        "• Clean shoulder lines and structured tailoring.",
+        "• Can be worn over a top or as a standalone piece.",
+        "Pants:",
+        "• Elegant straight wide-leg cut.",
+        "• High waist that accentuates the figure.",
+        "• Sequins gently reflect the light, giving the fabric a luxurious texture.",
+        "• Lightweight and comfortable — perfect for parties or events."
+      ],
+      colors: ["snake"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume Serpent",
+      description: [
+        "Un ensemble luxueux et festif qui crée une silhouette impeccable et attire immédiatement le regard.",
+        "Le tissu à imprimé serpent entièrement orné de sequins capte la lumière et ajoute une touche d’audace et de raffinement.",
+        "Veste :",
+        "• Silhouette oversize souple et élégante.",
+        "• Longueur confortable qui équilibre la silhouette.",
+        "• Épaules nettes et coupe structurée.",
+        "• Peut se porter sur un top ou seul comme haut.",
+        "Pantalon :",
+        "• Coupe droite et large, raffinée.",
+        "• Taille haute qui met en valeur la silhouette.",
+        "• Les sequins reflètent doucement la lumière, créant un effet luxueux.",
+        "• Léger et agréable à porter — idéal pour les soirées ou les événements."
+      ],
+      colors: ["imprimé serpent"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм Snake",
+      description: [
+        "Розкішний святковий сет, який створює бездоганний силует та миттєво привертає увагу.",
+        "Зміїний принт, повністю розшитий паєтками, грає на світлі та додає образу статусності й сміливості.",
+        "Жакет:",
+        "• вільний, м’який oversize-силует;",
+        "• комфортна довжина, що вдало балансує фігуру;",
+        "• акуратні плечі та структурний крій;",
+        "• можна носити як на топ, так і як самостійний верх.",
+        "Штани:",
+        "• прямий, витончений широкий крій;",
+        "• висока посадка, що підкреслює талію;",
+        "• паєтки м’яко відблискують, створюючи ефект люксової тканини;",
+        "• легкі в русі, зручні для вечірки чи події."
+      ],
+      colors: ["snake"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм Snake",
+      description: [
+        "Роскошный праздничный комплект, создающий безупречный силуэт и мгновенно притягивающий внимание.",
+        "Ткань со змеиным принтом, полностью расшитая пайетками, красиво играет на свету, добавляя образу статусности и смелости.",
+        "Жакет:",
+        "• свободный мягкий oversize-силуэт;",
+        "• комфортная длина, выгодно балансирующая фигуру;",
+        "• аккуратные плечи и структурный крой;",
+        "• можно носить поверх топа или как самостоятельный верх.",
+        "Брюки:",
+        "• прямой, элегантный широкий крой;",
+        "• высокая посадка, подчёркивающая талию;",
+        "• пайетки мягко отражают свет, создавая эффект роскошной ткани;",
+        "• лёгкие в движении, удобные для вечеринок и мероприятий."
+      ],
+      colors: ["змеиный принт"]
+    }
+  }
+},
+
+
+{
+  id: 256,
+  price: 3350,
+  isTop: false,
+  isNew: true,
+  sku: "99395",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Leo Suit/1.avif",
+  images: [
+    "/Costumes/Leo Suit/2.avif",
+    "/Costumes/Leo Suit/3.avif",
+    "/Costumes/Leo Suit/4.avif",
+    "/Costumes/Leo Suit/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Leo Suit",
+      description: [
+        "A striking set created for those who love the mix of comfort, femininity, and dramatic shine.",
+        "The leopard sequin fabric looks luxurious while softly following the body’s movements, adding a playful shimmer to every step.",
+        "Top:",
+        "• Cropped silhouette that accentuates the waist.",
+        "• Soft V-neckline highlighting the décolleté.",
+        "• Fitted design that sculpts the figure thanks to its structure and fabric.",
+        "• Wide straps for comfort and stability.",
+        "Skirt:",
+        "• Maxi length for an elegant elongated silhouette.",
+        "• Slight flare at the hem — ensures freedom of movement and a graceful stride.",
+        "• High waist that shapes proportions and defines the waistline.",
+        "• Gentle sequin shimmer creates a dynamic effect while moving."
+      ],
+      colors: ["leo"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Ensemble Léopard",
+      description: [
+        "Un ensemble spectaculaire créé pour celles qui aiment allier confort, féminité et éclat dramatique.",
+        "La paillette léopard offre une allure luxueuse tout en épousant délicatement les mouvements du corps, ajoutant une touche scintillante à chaque pas.",
+        "Top :",
+        "• Silhouette courte qui met en valeur la taille.",
+        "• Encolure en V douce qui souligne le décolleté.",
+        "• Coupe ajustée grâce à la structure et au tissu.",
+        "• Bretelles larges pour plus de confort et de maintien.",
+        "Jupe :",
+        "• Longueur maxi pour une silhouette élégante et allongée.",
+        "• Légère évasement en bas pour la liberté de mouvement et une allure gracieuse.",
+        "• Taille haute qui affine la silhouette et met en valeur la taille.",
+        "• L’éclat subtil des paillettes crée un effet dynamique en mouvement."
+      ],
+      colors: ["léopard"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм Leo",
+      description: [
+        "Ефектний комплект, створений для тих, хто любить поєднання комфорту, жіночності та драматичного блиску.",
+        "Леопардова паєтка виглядає розкішно, але водночас м’яко лягає по фігурі, повторюючи рухи та додаючи образу грайливого сяйва.",
+        "Топ:",
+        "• вкорочений силует, що акцентує талію;",
+        "• м’який V-виріз, який підкреслює лінію декольте;",
+        "• щільна посадка на фігурі завдяки конструкції та тканині;",
+        "• широкі бретелі для комфорту й стабільності.",
+        "Спідниця:",
+        "• довжина максі для елегантного витягнутого силуету;",
+        "• легке розкльошення донизу — свобода руху та красива хода;",
+        "• висока посадка, яка формує пропорції та підкреслює талію;",
+        "• м’яке мерехтіння паєтки створює динамічний ефект під час руху."
+      ],
+      colors: ["леопард"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм Leo",
+      description: [
+        "Эффектный комплект, созданный для тех, кто любит сочетание комфорта, женственности и драматического блеска.",
+        "Леопардовые пайетки выглядят роскошно, но при этом мягко ложатся по фигуре, подчёркивая движения и добавляя образу игривого сияния.",
+        "Топ:",
+        "• укорочённый силуэт, акцентирующий талию;",
+        "• мягкий V-образный вырез, подчёркивающий линию декольте;",
+        "• плотная посадка по фигуре благодаря конструкции и ткани;",
+        "• широкие бретели для комфорта и устойчивости.",
+        "Юбка:",
+        "• длина макси для элегантного вытянутого силуэта;",
+        "• лёгкое расклешение книзу — свобода движений и изящная походка;",
+        "• высокая посадка, формирующая пропорции и подчёркивающая талию;",
+        "• мягкое мерцание пайеток создаёт динамичный эффект при движении."
+      ],
+      colors: ["леопардовый"]
+    }
+  }
+},
+
+{
+  id: 255,
+  price: 1600,
+  isTop: false,
+  isNew: true,
+  sku: "99394",
+  size: "XS S M L XL",
+  category: "Tops",
+  image: "/Top/Snake Top/1.avif",
+  images: [
+    "/Top/Snake Top/2.avif",
+    "/Top/Snake Top/3.avif",
+    "/Top/Snake Top/4.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Tops",
+      name: "Snake Top",
+      description: [
+        "An elegant top with shimmer and attitude — designed for striking looks and stylish combinations.",
+        "Crafted from sequin-embroidered fabric with a snake-skin pattern, its soft shine beautifully enhances the silhouette and adds a touch of drama.",
+        "The straight cut, neat round neckline, and long sleeves make this top versatile — it pairs perfectly with both classic trousers and evening pieces.",
+        "Model details:",
+        "• Sequin fabric with a snake print pattern.",
+        "• Straight, comfortable fit.",
+        "• Long sleeves for an elegant silhouette.",
+        "• Soft, noble shine in motion."
+      ],
+      colors: ["snake"]
+    },
+    FR: {
+      category: "Tops",
+      name: "Top Serpent",
+      description: [
+        "Un top raffiné avec éclat et caractère — conçu pour des tenues audacieuses et élégantes.",
+        "Réalisé en tissu orné de sequins avec un motif serpent, son éclat doux met en valeur la silhouette et ajoute une touche de drame.",
+        "La coupe droite, l’encolure ronde et les manches longues rendent ce top polyvalent — il se marie aussi bien avec un pantalon classique qu’avec des pièces de soirée.",
+        "Détails du modèle :",
+        "• Tissu à sequins motif serpent.",
+        "• Coupe droite et confortable.",
+        "• Manches longues pour une silhouette élégante.",
+        "• Éclat subtil et noble en mouvement."
+      ],
+      colors: ["imprimé serpent"]
+    },
+    UA: {
+      category: "Топи",
+      name: "Топ Snake",
+      description: [
+        "Вишуканий топ із блиском та характером — створений для яскравих виходів і стильних поєднань.",
+        "Модель виконана з тканини, розшитої паєтками під зміїний принт: м’яке сяйво гармонійно підкреслює форму та надає образу драматичності.",
+        "Прямий силует, акуратний круглий виріз та довгий рукав роблять топ універсальним — він однаково ефектно виглядає як з класичними брюками, так і з вечірніми низами.",
+        "Особливості моделі:",
+        "• тканина з паєтками у зміїний візерунок;",
+        "• прямий комфортний крій;",
+        "• довгий рукав для вишуканого силуету;",
+        "• м’який благородний блиск при русі."
+      ],
+      colors: ["snake"]
+    },
+    RU: {
+      category: "Топы",
+      name: "Топ Snake",
+      description: [
+        "Изысканный топ с блеском и характером — создан для ярких выходов и стильных сочетаний.",
+        "Модель выполнена из ткани, расшитой пайетками под змеиный принт: мягкое сияние гармонично подчёркивает форму и придаёт образу драматичность.",
+        "Прямой силуэт, аккуратный круглый вырез и длинный рукав делают топ универсальным — он одинаково эффектно смотрится с классическими брюками и вечерними низами.",
+        "Особенности модели:",
+        "• ткань с пайетками в змеиный узор;",
+        "• прямой комфортный крой;",
+        "• длинный рукав для изысканного силуэта;",
+        "• мягкое благородное сияние при движении."
+      ],
+      colors: ["змеиный принт"]
+    }
+  }
+},
+
+{
+  id: 254,
+  price: 2100,
+  isTop: false,
+  isNew: true,
+  sku: "99398",
+  size: "XS S M L XL",
+  category: "Pants",
+  image: "/Pants/Sequin Pants/1.avif",
+  images: [
+    "/Pants/Sequin Pants/2.avif",
+    "/Pants/Sequin Pants/3.avif",
+    "/Pants/Sequin Pants/4.avif",
+    "/Pants/Sequin Pants/5.avif",
+    "/Pants/Sequin Pants/6.avif",
+    "/Pants/Sequin Pants/7.avif",
+    "/Pants/Sequin Pants/8.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Pants",
+      name: "Sequin Pants",
+      description: [
+        "These pants speak for themselves — bold, confident, and luxurious. Made from fabric fully embroidered with sequins in a leopard or snake pattern, they shimmer softly with every movement, creating a sense of depth and rich texture.",
+        "The wide-leg design elongates the silhouette and adds lightness to every step, while the comfortable fit ensures confidence and freedom — whether at a party or in a daring everyday look.",
+        "Features:",
+        "• Fully sequin-covered fabric",
+        "• Rich pattern with delicate shimmer",
+        "• Wide cut that visually lengthens the legs",
+        "• Soft and comfortable fit"
+      ],
+      colors: ["leo", "snake"]
+    },
+    FR: {
+      category: "Pantalons",
+      name: "Pantalon à paillettes",
+      description: [
+        "Un pantalon qui se suffit à lui-même — audacieux, élégant et luxueux. Réalisé dans un tissu entièrement brodé de paillettes au motif léopard ou serpent, il capte la lumière à chaque mouvement, créant une texture riche et profonde.",
+        "La coupe large allonge la silhouette et apporte légèreté au pas, tandis que la taille confortable garantit une liberté absolue — parfaite pour une soirée ou un look quotidien audacieux.",
+        "Détails :",
+        "• Tissu entièrement recouvert de paillettes",
+        "• Motif intense avec un éclat subtil",
+        "• Coupe large qui allonge visuellement les jambes",
+        "• Ajustement doux et confortable"
+      ],
+      colors: ["léopard", "serpent"]
+    },
+    UA: {
+      category: "Брюки",
+      name: "Брюки у паєтку",
+      description: [
+        "Брюки, що не потребують додаткових слів — вони самі створюють настрій і задають тон усьому образу.",
+        "Модель виконана з тканини, розшитої паєтками з леопардовим або зміїним принтом: блиск м’яко переливається при русі, створюючи ефект глибини та дорогої фактури.",
+        "Широкий крій подовжує силует та додає легкості кроку, а комфортна посадка дозволяє відчувати себе впевнено у будь-якій ситуації — від вечірки до сміливого повсякденного луку.",
+        "Особливості моделі:",
+        "• тканина з повним паєтковим покриттям;",
+        "• насичений візерунок з делікатним блиском;",
+        "• широкі брюки, що візуально подовжують ноги;",
+        "• м’яке та комфортне прилягання."
+      ],
+      colors: ["leo", "snake"]
+    },
+    RU: {
+      category: "Брюки",
+      name: "Брюки с пайетками",
+      description: [
+        "Брюки, которые не нуждаются в словах — они сами создают настроение и задают тон всему образу.",
+        "Модель выполнена из ткани, расшитой пайетками с леопардовым или змеиным принтом: блеск мягко переливается при движении, создавая эффект глубины и дорогой фактуры.",
+        "Широкий крой визуально удлиняет ноги и добавляет лёгкости шагу, а комфортная посадка позволяет чувствовать уверенность — от вечеринки до смелого повседневного образа.",
+        "Особенности модели:",
+        "• ткань с полным покрытием пайетками;",
+        "• насыщенный узор с деликатным блеском;",
+        "• широкие брюки, визуально удлиняющие ноги;",
+        "• мягкое и комфортное прилегание."
+      ],
+      colors: ["лео", "змеиный"]
+    }
+  }
+},
+
+
+{
+  id: 253,
+  price: 1080,
+  isTop: false,
+  isNew: true,
+  sku: "99397",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Sequin Top/1.avif",
+  images: [
+    "/Dress/Sequin Top/2.avif",
+    "/Dress/Sequin Top/3.avif",
+    "/Dress/Sequin Top/4.avif",
+    "/Dress/Sequin Top/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Sequin Top",
+      description: [
+        "A top created for bold, statement looks.",
+        "The shimmering sequins add evening luxury, while the cropped length emphasizes the waist and enhances the silhouette.",
+        "Details:",
+        "• Luxurious sequin sparkle that catches the light with every movement.",
+        "• Deep V-neckline — an elegant accent highlighting the décolletage.",
+        "• Cropped cut pairs perfectly with high-waisted trousers or skirts.",
+        "• Soft, elastic base for a comfortable fit.",
+        "• Festive and evening-appropriate, yet versatile enough for stylish outings.",
+        "A top designed to make you stand out — it’s made to light up the night."
+      ],
+      colors: ["black"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Top à paillettes",
+      description: [
+        "Un top créé pour des looks audacieux et affirmés.",
+        "Les paillettes scintillantes ajoutent une touche de luxe nocturne, tandis que la coupe courte souligne la taille et affine la silhouette.",
+        "Détails :",
+        "• Éclat somptueux des paillettes, qui captent la lumière à chaque mouvement.",
+        "• Décolleté en V profond — accent élégant sur la zone du décolleté.",
+        "• Coupe courte, parfaite avec un pantalon ou une jupe taille haute.",
+        "• Base douce et élastique pour un confort absolu.",
+        "• Idéal pour les soirées, les fêtes ou les sorties stylées.",
+        "Un top conçu pour briller et attirer tous les regards."
+      ],
+      colors: ["noir"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Топ у паєтку",
+      description: [
+        "Топ, який створений для сміливих, акцентних образів.",
+        "Мерехтіння паєток додає вечірньої розкоші, а укорочена довжина підкреслює талію та робить силует більш виразним.",
+        "Деталі моделі:",
+        "• розкішне сяйво паєток, що переливається при кожному русі;",
+        "• глибоке V-декольте — елегантний акцент на зоні декольте;",
+        "• укорочений крій, який ідеально поєднується з високою посадкою брюк чи спідниці;",
+        "• м’яка еластична основа для комфортної посадки;",
+        "• святковий, вечірній, але водночас універсальний для стильних виходів;",
+        "Топ, у якому неможливо загубитися в натовпі — він створений, щоб запалювати вечір."
+      ],
+      colors: ["чорний"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Топ с пайетками",
+      description: [
+        "Топ, созданный для смелых, выразительных образов.",
+        "Мерцание пайеток придаёт вечерний шик, а укороченная длина подчёркивает талию и делает силуэт выразительнее.",
+        "Детали модели:",
+        "• Роскошное сияние пайеток, переливающихся при каждом движении;",
+        "• Глубокое V-декольте — элегантный акцент в зоне декольте;",
+        "• Укороченный крой идеально сочетается с брюками или юбками с высокой посадкой;",
+        "• Мягкая эластичная основа для комфортной посадки;",
+        "• Праздничный и вечерний, но при этом универсальный для стильных выходов;",
+        "Топ, в котором невозможно остаться незамеченной — он создан, чтобы зажигать вечер."
+      ],
+      colors: ["чёрный"]
+    }
+  }
+},
+
+{
+  id: 252,
+  price: 1080,
+  isTop: false,
+  isNew: true,
+  sku: "99396",
+  size: "XS S M L XL",
+  category: "Tops",
+  image: "/Top/Sequin Crop Top/1.avif",
+  images: [
+    "/Top/Sequin Crop Top/2.avif",
+    "/Top/Sequin Crop Top/3.avif",
+    "/Top/Sequin Crop Top/4.avif",
+    "/Top/Sequin Crop Top/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Tops",
+      name: "Sequin Crop Top",
+      description: [
+        "A top created for bold, statement looks.",
+        "The shimmering sequins add evening luxury, while the cropped length emphasizes the waist and enhances the silhouette.",
+        "Details:",
+        "• Luxurious sequin sparkle that catches the light with every movement.",
+        "• Deep V-neckline — an elegant accent highlighting the décolletage.",
+        "• Cropped cut pairs perfectly with high-waisted trousers or skirts.",
+        "• Soft, elastic base for a comfortable fit.",
+        "• Festive and evening-appropriate, yet versatile enough for stylish outings.",
+        "A top designed to make you stand out — it’s made to light up the night."
+      ],
+      colors: ["black"]
+    },
+    FR: {
+      category: "Tops",
+      name: "Top court à paillettes",
+      description: [
+        "Un top créé pour des looks audacieux et affirmés.",
+        "Les paillettes scintillantes ajoutent une touche de luxe nocturne, tandis que la coupe courte souligne la taille et affine la silhouette.",
+        "Détails :",
+        "• Éclat somptueux des paillettes, qui captent la lumière à chaque mouvement.",
+        "• Décolleté en V profond — accent élégant sur la zone du décolleté.",
+        "• Coupe courte, parfaite avec un pantalon ou une jupe taille haute.",
+        "• Base douce et élastique pour un confort absolu.",
+        "• Idéal pour les soirées, les fêtes ou les sorties stylées.",
+        "Un top conçu pour briller et attirer tous les regards."
+      ],
+      colors: ["noir"]
+    },
+    UA: {
+      category: "Топи",
+      name: "Топ у паєтку",
+      description: [
+        "Топ, який створений для сміливих, акцентних образів.",
+        "Мерехтіння паєток додає вечірньої розкоші, а укорочена довжина підкреслює талію та робить силует більш виразним.",
+        "Деталі моделі:",
+        "• розкішне сяйво паєток, що переливається при кожному русі;",
+        "• глибоке V-декольте — елегантний акцент на зоні декольте;",
+        "• укорочений крій, який ідеально поєднується з високою посадкою брюк чи спідниці;",
+        "• м’яка еластична основа для комфортної посадки;",
+        "• святковий, вечірній, але водночас універсальний для стильних виходів;",
+        "Топ, у якому неможливо загубитися в натовпі — він створений, щоб запалювати вечір."
+      ],
+      colors: ["чорний"]
+    },
+    RU: {
+      category: "Топы",
+      name: "Топ с пайетками",
+      description: [
+        "Топ, созданный для смелых, выразительных образов.",
+        "Мерцание пайеток придаёт вечерний шик, а укороченная длина подчёркивает талию и делает силуэт выразительнее.",
+        "Детали модели:",
+        "• Роскошное сияние пайеток, переливающихся при каждом движении;",
+        "• Глубокое V-декольте — элегантный акцент в зоне декольте;",
+        "• Укороченный крой идеально сочетается с брюками или юбками с высокой посадкой;",
+        "• Мягкая эластичная основа для комфортной посадки;",
+        "• Праздничный и вечерний, но при этом универсальный для стильных выходов;",
+        "Топ, в котором невозможно остаться незамеченной — он создан, чтобы зажигать вечер."
+      ],
+      colors: ["чёрный"]
+    }
+  }
+},
+
+{
+  id: 251,
+  price: 1450,
+  isTop: true,
+  isNew: true,
+  sku: "99395",
+  size: "XS S M L XL",
+  category: "Tops",
+  image: "/Top/Sequin Long Top/1.avif",
+  images: [
+    "/Top/Sequin Long Top/2.avif",
+    "/Top/Sequin Long Top/3.avif",
+    "/Top/Sequin Long Top/4.avif",
+    "/Top/Sequin Long Top/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Tops",
+      name: "Sequin Long Top",
+      description: [
+        "A top made for evenings when you want to shine — but with a touch of refined luxury.",
+        "The subtle shimmer of sequins catches the light beautifully, while the elastic knit base ensures comfort and a perfect fit.",
+        "Features:",
+        "• Delicate sparkle that looks luxurious and elegant.",
+        "• Soft, comfortable knit base — gentle on the skin and non-irritating.",
+        "• Elegant boat neckline that highlights the collarbones.",
+        "• A versatile silhouette that pairs effortlessly with skirts or trousers.",
+        "• Perfect for holidays, events, evening outings, or as a refined accent in everyday looks.",
+        "This is the top that makes every outfit complete."
+      ],
+      colors: ["black"]
+    },
+    FR: {
+      category: "Tops",
+      name: "Top long à paillettes",
+      description: [
+        "Un top créé pour les soirées où l’on veut briller — avec une touche de luxe discret.",
+        "La brillance légère des paillettes capte la lumière avec élégance, tandis que la base en maille extensible assure confort et tenue parfaite.",
+        "Détails :",
+        "• Éclat subtil et raffiné qui ne surcharge pas la tenue.",
+        "• Maille douce et agréable sur la peau.",
+        "• Encolure bateau qui met en valeur la ligne des clavicules.",
+        "• Silhouette polyvalente, facile à associer avec une jupe ou un pantalon.",
+        "• Idéal pour les fêtes, les événements, les soirées ou les looks de jour élégants.",
+        "Le top qui rend toute tenue complète et chic."
+      ],
+      colors: ["noir"]
+    },
+    UA: {
+      category: "Топи",
+      name: "Лонг у паєтку",
+      description: [
+        "Топ, що створений для вечорів, де хочеться сяяти — але з відчуттям стриманої розкоші.",
+        "Легкий блиск паєток підкорює з першого погляду, а еластичний трикотаж забезпечує комфорт та ідеальну посадку по фігурі.",
+        "Особливості моделі:",
+        "• делікатне мерехтіння, що виглядає дорого та не перевантажує образ;",
+        "• м’який трикотажний базис — комфортний, приємний до тіла, не колеться;",
+        "• елегантний виріз човником, що підкреслює лінію ключиць;",
+        "• силует, який легко поєднується з будь-якими спідницями та брюками;",
+        "• ідеальний варіант для свят, подій, вечірніх виходів або акцентних повсякденних образів;",
+        "Це той топ, який робить образ завершеним."
+      ],
+      colors: ["чорний"]
+    },
+    RU: {
+      category: "Топы",
+      name: "Лонг в пайетках",
+      description: [
+        "Топ, созданный для вечеров, когда хочется сиять — но со вкусом и сдержанным шиком.",
+        "Лёгкое мерцание пайеток очаровывает с первого взгляда, а эластичный трикотаж обеспечивает комфорт и идеальную посадку.",
+        "Особенности модели:",
+        "• Деликатное свечение, которое выглядит дорого и утончённо;",
+        "• Мягкая трикотажная основа — приятна к телу и не колется;",
+        "• Элегантный вырез «лодочка», подчёркивающий линию ключиц;",
+        "• Универсальный силуэт, который легко сочетается с юбками и брюками;",
+        "• Идеальный вариант для праздников, вечеров, мероприятий или повседневных образов с акцентом;",
+        "Топ, который делает любой образ завершённым."
+      ],
+      colors: ["чёрный"]
+    }
+  }
+},
+
+{
+  id: 250,
+  price: 1800,
+  isTop: false,
+  isNew: true,
+  sku: "99394",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Satin Mini Slip Dress/1.avif",
+  images: [
+    "/Dress/Satin Mini Slip Dress/2.avif",
+    "/Dress/Satin Mini Slip Dress/3.avif",
+    "/Dress/Satin Mini Slip Dress/4.avif",
+    "/Dress/Satin Mini Slip Dress/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Satin Mini Slip Dress",
+      description: [
+        "Thin lines, delicate satin sheen, and a flawless fit create a look that feels luxurious even without extra accents.",
+        "Features:",
+        "• Draped cowl neckline — softly shapes the bust area for an effortless chic effect.",
+        "• Thin straps — reveal the shoulders and add a delicate, refined silhouette.",
+        "• Mini length — the perfect balance between femininity and modern aesthetics.",
+        "• Smooth satin with 'liquid shine' — the fabric flows and shimmers beautifully with every movement.",
+        "• Straight silhouette — accentuates the figure while allowing freedom of movement and comfort.",
+        "• Neat open upper back — adds a tender, festive touch to the look."
+      ],
+      colors: ["gray"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe combinaison satin mini",
+      description: [
+        "Des lignes fines, un éclat satiné délicat et une coupe impeccable créent une allure luxueuse sans besoin d’artifices.",
+        "Détails :",
+        "• Encolure drapée — forme une onde douce sur le buste pour un effet chic naturel.",
+        "• Fines bretelles — dévoilent les épaules et affinent la silhouette.",
+        "• Longueur mini — équilibre entre féminité et modernité.",
+        "• Satin fluide à effet « liquid shine » — la matière ondule et brille au mouvement.",
+        "• Coupe droite — met en valeur la silhouette tout en offrant liberté et confort.",
+        "• Dos délicatement ouvert — apporte une touche tendre et festive."
+      ],
+      colors: ["gris"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Сукня комбінація-міні",
+      description: [
+        "Тонкі лінії, делікатний блиск сатину та ідеальна посадка створюють образ, який виглядає дорого навіть без додаткових акцентів.",
+        "Особливості сукні:",
+        "• Драпіроване декольте (cowl neckline) — легко формує м’яку хвилю в зоні грудей — той самий ефект effortless chic.",
+        "• Тонкі бретелі — відкривають плечі та роблять силует візуально тендітнішим.",
+        "• Довжина міні — баланс жіночності та сучасної естетики.",
+        "• Гладкий сатин із «liquid shine» — тканина переливається при русі й буквально обтікає фігуру.",
+        "• Прямий силует — підкреслює лінію тіла, але не обтягує — комфортна свобода рухів і бездоганна посадка.",
+        "• Акуратний відкритий верхній край спини — робить образ ніжним і святковим."
+      ],
+      colors: ["сірий"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Платье-комбинация мини",
+      description: [
+        "Тонкие линии, деликатный блеск сатина и идеальная посадка создают образ, который выглядит дорого даже без лишних акцентов.",
+        "Особенности платья:",
+        "• Драпированное декольте (cowl neckline) — мягко формирует зону груди, создавая эффект лёгкой элегантности.",
+        "• Тонкие бретели — открывают плечи и визуально делают силуэт более утончённым.",
+        "• Длина мини — баланс женственности и современной эстетики.",
+        "• Гладкий сатин с эффектом «liquid shine» — переливается при движении, обтекая фигуру.",
+        "• Прямой силуэт — подчёркивает линии тела, не обтягивая, обеспечивая комфорт и свободу движений.",
+        "• Аккуратно открытая верхняя часть спины — добавляет нежности и праздничного настроения."
+      ],
+      colors: ["серый"]
+    }
+  }
+},
+
+{
+  id: 249,
+  price: 3510,
+  isTop: false,
+  isNew: true,
+  sku: "99393",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Silk Pantsuit Blue/1.avif",
+  images: [
+    "/Costumes/Silk Pantsuit Blue/2.avif",
+    "/Costumes/Silk Pantsuit Blue/3.avif",
+    "/Costumes/Silk Pantsuit Blue/4.avif",
+    "/Costumes/Silk Pantsuit Blue/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Silk Pantsuit Blue",
+      description: [
+        "A silk set in a cool sky-blue shade — the embodiment of calmness, lightness, and impeccable taste.",
+        "The airy blouse and wide pants create a soft, fluid silhouette that moves gracefully with the body.",
+        "Features:",
+        "• Premium smooth silk with a delicate sheen.",
+        "• Perfect fit and comfortable movement.",
+        "• Visual lightness and refinement thanks to the softly flared cut.",
+        "• Versatility: from evening looks to stylish everyday ensembles.",
+        "Designed for women who appreciate the tenderness of fabric, freedom of movement, and modern elegance."
+      ],
+      colors: ["light blue"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume en soie bleu clair",
+      description: [
+        "Un ensemble en soie dans une teinte bleu ciel froide — incarnation de la sérénité, de la légèreté et du goût impeccable.",
+        "La blouse aérienne et le pantalon large créent une ligne fluide qui accompagne les mouvements du corps.",
+        "Détails :",
+        "• Soie lisse de qualité supérieure avec un éclat délicat.",
+        "• Coupe parfaite et liberté de mouvement.",
+        "• Légèreté visuelle et raffinement grâce à la coupe légèrement évasée.",
+        "• Polyvalent : idéal pour les soirées comme pour les tenues quotidiennes élégantes.",
+        "Conçu pour les femmes qui apprécient la douceur du tissu, la liberté de mouvement et l’élégance contemporaine."
+      ],
+      colors: ["bleu clair"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Шовковий костюм з брюками",
+      description: [
+        "Шовковий комплект у відтінку холодного блакиту — втілення спокою, легкості та бездоганного смаку.",
+        "Повітряна блуза та широкі штани створюють м’яку, струмливу лінію силуету та рухаються разом із тілом.",
+        "Особливості комплекту:",
+        "• преміальний гладкий шовк із делікатним блиском;",
+        "• ідеальна посадка та комфорт руху;",
+        "• візуальна легкість та витонченість завдяки м’якому розширеному крою;",
+        "• універсальність: від вечірніх образів до стильних повсякденних сетів;",
+        "Створений для жінок, які цінують ніжність тканини, свободу рухів і сучасну елегантність."
+      ],
+      colors: ["блакитний"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Шёлковый костюм с брюками",
+      description: [
+        "Шёлковый комплект в оттенке холодного голубого — воплощение спокойствия, лёгкости и безупречного вкуса.",
+        "Воздушная блуза и широкие брюки создают мягкую, струящуюся линию силуэта и двигаются вместе с телом.",
+        "Особенности комплекта:",
+        "• Премиальный гладкий шёлк с деликатным блеском;",
+        "• Идеальная посадка и комфорт движений;",
+        "• Визуальная лёгкость и изящество благодаря мягкому расклёшенному крою;",
+        "• Универсальность: от вечерних образов до стильных повседневных сетов;",
+        "Создан для женщин, которые ценят нежность ткани, свободу движений и современную элегантность."
+      ],
+      colors: ["голубой"]
+    }
+  }
+},
+
+
+{
+  id: 248,
+  price: 3300,
+  isTop: false,
+  isNew: true,
+  sku: "99392",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Off White Dress/1.avif",
+  images: [
+    "/Dress/Off White Dress/2.avif",
+    "/Dress/Off White Dress/3.avif",
+    "/Dress/Off White Dress/4.avif",
+    "/Dress/Off White Dress/5.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Off White Dress",
+      description: [
+        "A blazer-dress that combines the strength of a jacket with the delicacy of a dress.",
+        "Designed for festive evenings, events, and those moments when you want to look impeccable with no extra effort.",
+        "Model features:",
+        "• Elongated silhouette that creates a vertical line and visually elongates the figure.",
+        "• Double-breasted closure with accent metallic buttons.",
+        "• Defined shoulder line and perfect fit.",
+        "• Dense, elegant fabric that holds its shape.",
+        "• Length that allows wearing it both as a dress or as an overdress-jacket."
+      ],
+      colors: ["white"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe Off White",
+      description: [
+        "Une robe-veste qui allie la puissance d’une veste à la délicatesse d’une robe.",
+        "Conçue pour les soirées festives, les événements et ces moments où l’on veut être impeccable sans effort.",
+        "Détails du modèle :",
+        "• Silhouette allongée qui crée une ligne verticale et affine la silhouette.",
+        "• Fermeture croisée à boutons métalliques décoratifs.",
+        "• Ligne d’épaules nette et coupe impeccable.",
+        "• Tissu dense et élégant qui garde parfaitement sa forme.",
+        "• Longueur permettant de la porter aussi bien en robe qu’en veste habillée."
+      ],
+      colors: ["blanc"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Сукня Off white",
+      description: [
+        "Сукня-жакет, що поєднує в собі силу жакету та тендітність сукні.",
+        "Створена для святкових вечорів, подій та тих моментів, коли хочеться виглядати бездоганно без зайвих зусиль.",
+        "Особливості моделі:",
+        "• подовнений силует, що формує вертикаль і витягує фігуру;",
+        "• двобортне застібання з акцентними металевими ґудзиками;",
+        "• чітка лінія плеча та бездоганна посадка;",
+        "• щільна елегантна тканина, яка тримає форму;",
+        "• довжина, що дозволяє носити і як сукню, і як жакет-овердрес."
+      ],
+      colors: ["білий"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Платье Off white",
+      description: [
+        "Платье-пиджак, сочетающее силу жакета и нежность платья.",
+        "Создано для праздничных вечеров, событий и моментов, когда хочется выглядеть безупречно без лишних усилий.",
+        "Особенности модели:",
+        "• Удлинённый силуэт, формирующий вертикаль и визуально вытягивающий фигуру.",
+        "• Двубортная застёжка с акцентными металлическими пуговицами.",
+        "• Чёткая линия плеч и идеальная посадка.",
+        "• Плотная элегантная ткань, хорошо держащая форму.",
+        "• Длина, позволяющая носить как платье или как жакет поверх наряда."
+      ],
+      colors: ["белый"]
+    }
+  }
+},  
+
+{
+  id: 247,
+  price: 1840,
+  isTop: false,
+  isNew: true,
+  sku: "99391",
+  size: "XS S M L XL",
+  category: "Shirts",
+  image: "/Shirts/Silk Blouse with Tail/1.avif",
+  images: [
+    "/Shirts/Silk Blouse with Tail/2.avif",
+    "/Shirts/Silk Blouse with Tail/3.avif",
+    "/Shirts/Silk Blouse with Tail/4.avif",
+    "/Shirts/Silk Blouse with Tail/5.avif",
+    "/Shirts/Silk Blouse with Tail/6.avif",
+    "/Shirts/Silk Blouse with Tail/7.avif",
+    "/Shirts/Silk Blouse with Tail/8.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Shirts",
+      name: "Silk Blouse with Tail",
+      description: [
+        "An exquisite silk blouse made for evening looks and festive moments.",
+        "The soft satin sheen beautifully catches the light, highlighting feminine grace in every movement.",
+        "• Wrap design with long ties that define the waist elegantly.",
+        "• Voluminous sleeves with ribbons add drama and lightness.",
+        "• Smooth, delicate fabric feels luxurious on the skin and creates a refined texture effect."
+      ],
+      colors: ["beige", "black"]
+    },
+    FR: {
+      category: "Chemises",
+      name: "Blouse en soie avec rubans",
+      description: [
+        "Une blouse en soie raffinée, conçue pour les tenues de soirée et les moments festifs.",
+        "La douce brillance satinée joue délicatement avec la lumière, soulignant la féminité à chaque mouvement.",
+        "• Coupe portefeuille et longues attaches qui dessinent la taille avec élégance.",
+        "• Manches volumineuses avec rubans, ajoutant une touche dramatique et aérienne.",
+        "• Tissu doux et lisse, agréable sur la peau, avec un effet de texture luxueuse."
+      ],
+      colors: ["beige", "noir"]
+    },
+    UA: {
+      category: "Сорочки",
+      name: "Шовкова блуза з хвостом",
+      description: [
+        "Вишукана шовкова блуза, що створена для вечірніх образів і святкових моментів.",
+        "М’яке сатинове сяйво красиво грає у світлі, підкреслюючи жіночність кожного руху.",
+        "• Запах та подовлені зав’язки формують витончену лінію талії.",
+        "• Об’ємні рукави зі стрічками додають драматичності та легкості.",
+        "• Ніжна, гладка тканина — комфортна до тіла і створює ефект дорогої фактури."
+      ],
+      colors: ["бежевий", "чорний"]
+    },
+    RU: {
+      category: "Рубашки",
+      name: "Шёлковая блузка с лентами",
+      description: [
+        "Изысканная шёлковая блузка, созданная для вечерних образов и праздничных моментов.",
+        "Мягкое сатиновое сияние красиво играет на свету, подчёркивая женственность каждого движения.",
+        "• Запах и удлинённые завязки формируют изящную линию талии.",
+        "• Объёмные рукава с лентами добавляют драматичности и лёгкости.",
+        "• Нежная, гладкая ткань — приятная к телу и создаёт эффект дорогой фактуры."
+      ],
+      colors: ["бежевый", "чёрный"]
+    }
+  }
+},
+
+
+{
+  id: 246,
+  price: 5000,
+  isTop: false,
+  isNew: true,
+  sku: "99390",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Asymmetric Suit/1.avif",
+  images: [
+    "/Costumes/Asymmetric Suit/2.avif",
+    "/Costumes/Asymmetric Suit/3.avif",
+    "/Costumes/Asymmetric Suit/4.avif",
+    "/Costumes/Asymmetric Suit/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Asymmetric Suit",
+      description: [
+        "A set designed for evening outings and events where a flawless silhouette matters.",
+        "The structured jacket with a sculpted neckline accentuates the shoulders and defines the waist, while the asymmetric pleated skirt adds lightness and motion.",
+        "A feminine, elegant, and modern set that works both as a complete look or as separate expressive pieces in your wardrobe.",
+        "Perfect for celebrations, events, photoshoots, and smart-evening dress codes."
+      ],
+      colors: ["beige"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume Asymétrique",
+      description: [
+        "Un ensemble conçu pour les soirées et les événements où la silhouette doit être impeccable.",
+        "La veste structurée avec une encolure sculptée souligne les épaules et affine la taille, tandis que la jupe plissée asymétrique apporte légèreté et mouvement.",
+        "Un ensemble féminin, élégant et moderne, qui fonctionne aussi bien en total look qu’en pièces séparées dans la garde-robe.",
+        "Idéal pour les fêtes, les événements, les séances photo et les dress codes smart-evening."
+      ],
+      colors: ["beige"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм асиметричний",
+      description: [
+        "Комплект, що створений для вечірніх виходів та подій, де важлива бездоганна лінія силуету.",
+        "Структурований жакет із фігурним вирізом підкреслює плечі та формує витончену талію, а асиметрична плісована спідниця додає образу легкості та руху.",
+        "Дуже жіночний, елегантний та сучасний сет, який працює як цілісний лук або як окремі виразні елементи у твоєму гардеробі.",
+        "Ідеальний для свят, івентів, фотосесій та smart-evening дрес-коду."
+      ],
+      colors: ["бежевий"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Асимметричный костюм",
+      description: [
+        "Комплект, созданный для вечерних выходов и мероприятий, где важна безупречная линия силуэта.",
+        "Структурированный жакет с фигурным вырезом подчёркивает плечи и формирует утончённую талию, а асимметричная плиссированная юбка добавляет лёгкости и движения.",
+        "Женственный, элегантный и современный сет, который работает как цельный лук или как отдельные выразительные элементы гардероба.",
+        "Идеален для праздников, мероприятий, фотосессий и smart-evening дресс-кода."
+      ],
+      colors: ["бежевый"]
+    }
+  }
+},
+
+{
+  id: 245,
+  price: 4400,
+  isTop: false,
+  isNew: true,
+  sku: "99389",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Graphite Suit/1.avif",
+  images: [
+    "/Costumes/Graphite Suit/2.avif",
+    "/Costumes/Graphite Suit/3.avif",
+    "/Costumes/Graphite Suit/4.avif",
+    "/Costumes/Graphite Suit/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Graphite Suit",
+      description: [
+        "An elegant wool set created for those seeking the perfect balance between warmth, comfort, and refined silhouette.",
+        "Minimalist tailoring, a defined waist, and a subtle texture make this set a timeless choice for winter — ideal for both formal occasions and everyday outings.",
+        "Jacket:",
+        "• Fitted silhouette that highlights the waistline",
+        "• Classic lapels and refined decorative buttons",
+        "• Long sleeves and a perfectly tailored shoulder line",
+        "• Dense warm wool that holds its shape beautifully",
+        "Mini Skirt:",
+        "• High-rise waist accentuating the figure",
+        "• Wide pleats create volume and a graceful feminine flow",
+        "• Comfortable length and structured wool texture"
+      ],
+      colors: ["graphite"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume Graphite",
+      description: [
+        "Un ensemble en laine élégant, conçu pour celles qui recherchent l’équilibre parfait entre chaleur, confort et silhouette raffinée.",
+        "Une coupe minimaliste, une taille marquée et une texture subtile en font un choix intemporel pour l’hiver — parfait pour les événements officiels comme pour les sorties quotidiennes.",
+        "Veste :",
+        "• Silhouette ajustée soulignant la taille",
+        "• Revers classiques et boutons décoratifs raffinés",
+        "• Manches longues et coupe impeccable aux épaules",
+        "• Laine dense et chaude qui conserve parfaitement sa forme",
+        "Jupe mini :",
+        "• Taille haute mettant en valeur la silhouette",
+        "• Larges plis créant du volume et un mouvement féminin",
+        "• Longueur confortable et texture structurée de la laine"
+      ],
+      colors: ["graphite"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм Graphite",
+      description: [
+        "Елегантний вовняний комплект, створений для тих, хто шукає ідеальний баланс між теплом, комфортом і вишуканим силуетом.",
+        "Лаконічний крій, акцент на талії та стримана фактура роблять цей сет універсальним вибором для зими — як для офіційних подій, так і для повсякденних виходів.",
+        "Жакет:",
+        "• приталений силует, що формує виразну талію",
+        "• класичні лацкани та витончені декоративні ґудзики",
+        "• довгі рукави та ідеальна посадка по плечах",
+        "• щільна тепла вовна, що тримає форму",
+        "Міні спідниця:",
+        "• висока посадка, що підкреслює лінію талії",
+        "• широкі складки створюють красивий об’єм і жіночний рух",
+        "• комфортна довжина та щільна текстура тканини"
+      ],
+      colors: ["графіт"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм Graphite",
+      description: [
+        "Элегантный шерстяной комплект, созданный для тех, кто ищет идеальный баланс между теплом, комфортом и утончённым силуэтом.",
+        "Лаконичный крой, акцент на талии и сдержанная фактура делают этот сет универсальным выбором для зимы — как для официальных мероприятий, так и для повседневных выходов.",
+        "Жакет:",
+        "• Приталенный силуэт, формирующий выразительную талию",
+        "• Классические лацканы и изящные декоративные пуговицы",
+        "• Длинные рукава и идеальная посадка по плечам",
+        "• Плотная тёплая шерсть, хорошо держащая форму",
+        "Мини-юбка:",
+        "• Высокая посадка, подчёркивающая линию талии",
+        "• Широкие складки создают красивый объём и женственное движение",
+        "• Комфортная длина и плотная текстура ткани"
+      ],
+      colors: ["графит"]
+    }
+  }
+},
+
+{
+  id: 244,
+  price: 3510,
+  isTop: false,
+  isNew: true,
+  sku: "99388",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Noir Set/1.avif",
+  images: [
+    "/Costumes/Noir Set/2.avif",
+    "/Costumes/Noir Set/3.avif",
+    "/Costumes/Noir Set/4.avif",
+    "/Costumes/Noir Set/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Noir Set",
+      description: [
+        "An elegant silk set designed for those who appreciate understated luxury and a flawless silhouette.",
+        "Soft, fluid silk gracefully drapes over the body, adding lightness and a noble sheen — pure minimalism at its most sophisticated.",
+        "The blouse features a classic collar, an elongated placket, and a perfectly tailored shoulder line. The subtle satin sheen adds depth to the black tone — refined yet striking.",
+        "The midi skirt with a soft waistband continues the blouse’s line, creating a cohesive silhouette. Its length makes the set versatile — ideal for festive occasions, evenings out, or elegant everyday wear.",
+        "Both pieces can be worn together or separately — each is effortlessly timeless and easy to style."
+      ],
+      colors: ["black"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Ensemble Noir",
+      description: [
+        "Un ensemble en soie élégant, créé pour celles qui apprécient le luxe discret et la silhouette parfaite.",
+        "La soie douce et fluide épouse délicatement la silhouette, apportant légèreté et éclat noble — un minimalisme raffiné et festif.",
+        "La blouse présente un col classique, une patte de boutonnage allongée et une coupe impeccable aux épaules. Le léger éclat satiné apporte de la profondeur au noir — sobre, mais saisissant.",
+        "La jupe midi à taille souple prolonge la ligne de la blouse pour une silhouette harmonieuse. Sa longueur en fait une pièce polyvalente — parfaite pour les fêtes, les soirées ou un style quotidien élégant.",
+        "Les deux pièces peuvent être portées ensemble ou séparément — chacune s’intègre facilement à toute garde-robe."
+      ],
+      colors: ["noir"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Комплект Noir",
+      description: [
+        "Елегантний шовковий комплект, створений для тих, хто цінує стриману розкіш та бездоганний силует.",
+        "М’який, текучий шовк красиво огортає фігуру й надає образу легкості та шляхетного блиску — саме той випадок, коли мінімалізм виглядає бездоганно святково.",
+        "Блуза з класичним коміром має подовжену лінію планки та ідеальну посадку по плечах. Делікатний сатиновий відблиск додає глибини чорному кольору — стримано, але ефектно.",
+        "Спідниця міді на м’якому поясі продовжує лінію блузи, утворюючи цілісний силует. Довжина міді робить комплект універсальним — для свят, вечірніх виходів чи елегантного повсякденного стилю.",
+        "Комплект можна носити разом або комбінувати окремо — обидві речі настільки самодостатні, що легко впишуться у будь-який гардероб."
+      ],
+      colors: ["чорний"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Комплект Noir",
+      description: [
+        "Элегантный шёлковый комплект, созданный для тех, кто ценит сдержанную роскошь и безупречный силуэт.",
+        "Мягкий, струящийся шёлк красиво обволакивает фигуру, придавая образу лёгкость и благородное сияние — минимализм в его идеальном воплощении.",
+        "Блуза с классическим воротником и удлинённой планкой идеально сидит по плечам. Лёгкий сатиновый блеск добавляет глубину чёрному цвету — сдержанно, но эффектно.",
+        "Юбка миди на мягком поясе продолжает линию блузы, формируя цельный силуэт. Длина миди делает комплект универсальным — для праздников, вечеров или элегантных повседневных образов.",
+        "Комплект можно носить вместе или отдельно — каждая вещь самодостаточна и легко сочетается с другими элементами гардероба."
+      ],
+      colors: ["чёрный"]
+    }
+  }
+},
+
+{
   id: 243,
   price: 1800,
   isTop: false,
