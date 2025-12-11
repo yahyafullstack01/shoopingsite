@@ -1,4 +1,140 @@
 const products = [
+{
+  id: 262,
+  price: 1400,
+  isTop: true,
+  isNew: true,
+  sku: "99401",
+  size: "XS S M L XL",
+  category: "Tops",
+  image: "/Top/One Shoulder Satin Top/1.avif",
+  images: [
+    "/Top/One Shoulder Satin Top/2.avif",
+    "/Top/One Shoulder Satin Top/3.avif",
+    "/Top/One Shoulder Satin Top/4.avif",
+    "/Top/One Shoulder Satin Top/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Tops",
+      name: "One Shoulder Satin Top",
+      description: [
+        "Light, fluid, and magnetic — a top made for special moments. The asymmetric design reveals one shoulder, adding a touch of elegant drama and modern femininity.",
+        "The satin softly shimmers with movement, while the loose silhouette drapes beautifully, creating smooth and graceful lines.",
+        "Pairs perfectly with classic trousers or more extravagant pieces — the top always remains the focal point of the look."
+      ],
+      colors: ["chocolate"]
+    },
+    FR: {
+      category: "Tops",
+      name: "Top en satin asymétrique",
+      description: [
+        "Léger, fluide et magnétique — un top créé pour les moments spéciaux. La coupe asymétrique dévoile une épaule, ajoutant une touche de féminité moderne et d’élégance dramatique.",
+        "Le satin capte délicatement la lumière au mouvement, tandis que la silhouette fluide épouse les lignes du corps avec douceur.",
+        "S’accorde parfaitement avec un pantalon classique ou une tenue plus audacieuse — le top reste toujours la pièce maîtresse du look."
+      ],
+      colors: ["chocolat"]
+    },
+    UA: {
+      category: "Топи",
+      name: "Сатиновий топ на одне плече",
+      description: [
+        "Легкий, струмкий та магнетичний — топ, який створений для особливих моментів. Асиметрія відкриває одне плече, додаючи образу елегантної драматичності та сучасної жіночності.",
+        "Сатин м’яко переливається у русі, а вільний силует красиво грає на фігурі, створюючи легкість і плавність ліній.",
+        "Поєднується як із класичними брюками, так і з більш екстравагантними моделями — аксент на топі завжди залишиться незмінним."
+      ],
+      colors: ["шоколад"]
+    },
+    RU: {
+      category: "Топы",
+      name: "Атласный топ на одно плечо",
+      description: [
+        "Лёгкий, струящийся и магнетичный — топ, созданный для особенных моментов. Асимметрия открывает одно плечо, добавляя образу изысканную драматичность и современную женственность.",
+        "Атлас мягко переливается в движении, а свободный силуэт красиво ложится по фигуре, создавая плавные линии.",
+        "Сочетается как с классическими брюками, так и с более эффектными моделями — акцент всегда остаётся на топе."
+      ],
+      colors: ["шоколадный"]
+    }
+  }
+},
+
+
+{
+  id: 261,
+  price: 2700,
+  isTop: false,
+  isNew: true,
+  sku: "99400",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Draped Dress/1.avif",
+  images: [
+    "/Dress/Draped Dress/2.avif",
+    "/Dress/Draped Dress/3.avif",
+    "/Dress/Draped Dress/4.avif",
+    "/Dress/Draped Dress/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Draped Dress",
+      description: [
+        "A dress created for those who want to shine not through sparkle, but through silhouette. Smooth satin emphasizes the figure, while the thoughtful draping adds an elegant accent at the waist.",
+        "Features that make it special:",
+        "• Noble satin sheen that beautifully catches the light.",
+        "• Soft draping along the waist and hips — provides a subtle shaping effect.",
+        "• Long sleeves and a graceful cowl neckline add a touch of luxury.",
+        "• Mini length balances the covered top for a harmonious look.",
+        "• Perfect fit for evening outings, celebrations, and special occasions."
+      ],
+      colors: ["graphite", "grey"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe drapée",
+      description: [
+        "Une robe conçue pour celles qui veulent briller par la silhouette plutôt que par les paillettes. Le satin lisse met en valeur la silhouette, tandis que le drapé étudié souligne délicatement la taille.",
+        "Détails distinctifs :",
+        "• Éclat satiné noble qui capte magnifiquement la lumière.",
+        "• Drapé doux au niveau de la taille et des hanches — effet sculptant subtil.",
+        "• Manches longues et encolure cascade pour une touche de luxe.",
+        "• Longueur mini équilibrant le haut fermé pour une allure harmonieuse.",
+        "• Coupe parfaite pour les soirées, fêtes et événements élégants."
+      ],
+      colors: ["graphite", "gris"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Сукня у драпіровку",
+      description: [
+        "Сукня, яка створена для тих, хто хоче сяяти не завдяки блиску, а завдяки силуету. Гладкий сатин підкреслює фігуру, а продумане драпування формує ефектний акцент на талії.",
+        "Деталі, що роблять її особливою:",
+        "• благородний сатиновий блиск, який красиво ловить світло;",
+        "• м’яке драпування на талії та стегнах — делікатний коригувальний ефект;",
+        "• довгий рукав та плавна горловина-водоспад, що додає образу розкішності;",
+        "• міні довжина, яка врівноважує закритий верх;",
+        "• ідеальна посадка для вечірніх виходів, свят і подій."
+      ],
+      colors: ["графіт", "сірий"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Платье с драпировкой",
+      description: [
+        "Платье, созданное для тех, кто хочет сиять не блеском, а силуэтом. Гладкий атлас подчёркивает фигуру, а продуманная драпировка делает акцент на талии.",
+        "Детали, которые делают его особенным:",
+        "• Благородный атласный блеск, красиво отражающий свет;",
+        "• Мягкая драпировка на талии и бёдрах — лёгкий корректирующий эффект;",
+        "• Длинный рукав и плавный ворот-водопад придают образу роскоши;",
+        "• Мини-длина, уравновешивающая закрытый верх;",
+        "• Идеальная посадка для вечерних выходов, праздников и событий."
+      ],
+      colors: ["графит", "серый"]
+    }
+  }
+},
 
 {
   id: 260,
