@@ -54,6 +54,7 @@ export default function Hero() {
         subtitle: t[3],
         ctaText: t[4],
         ctaHref: "/All-products",
+        //ctaHref: "/new-year-offers",
         fit: "cover",
         focus: "left",
         fitMobile: "cover",
