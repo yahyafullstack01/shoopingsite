@@ -5,9 +5,9 @@ const products = [
   isTop: true,
   isNew: true,
 
-  isNewYearOffer: true,
-       isSpecialOffer: true,
-     discountPrice: 1390,
+ // isNewYearOffer: true,
+   //    isSpecialOffer: true,
+   //  discountPrice: 1390,
   sku: "99401",
   size: "XS S M L XL",
   category: "Tops",
