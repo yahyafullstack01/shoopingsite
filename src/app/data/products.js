@@ -9699,7 +9699,7 @@ const products = [
   price: 2000,
   isTop: false,
   isNew: true,
-  isSpecialOffer: true,
+  //isSpecialOffer: true,
   discountPrice: 1700,
   sku: "98807",
   size: "XS S M L XL",
@@ -15583,7 +15583,7 @@ description: [
     price: 1850,
     isTop: false,
 
-    isSpecialOffer: true,
+    //isSpecialOffer: true,
     discountPrice: 1573,
     sku: "12345",
     size: "XS S M L XL",
