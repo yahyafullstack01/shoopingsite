@@ -60,21 +60,38 @@ export default function Hero() {
         fitMobile: "cover",
         focusMobile: "top",
       },
-      {
-        type: "video", 
-        src: "/hoom/IMG_3190.mp4",
-        // poster: "/hoom/banerosen.jpg",       // webp/jpg 100–200KB
-        poster: "/hoom/newyear1.png",
-        title: "LATORE ATELIER",
-        subtitle: "2025",
-        ctaText: t[5],
+      // {
+      //   type: "video", 
+      //   src: "/hoom/IMG_3190.mp4",
+      //   // poster: "/hoom/banerosen.jpg",       // webp/jpg 100–200KB
+      //   poster: "/hoom/newyear1.png",
+      //   title: "LATORE ATELIER",
+      //   subtitle: "2025",
+      //   ctaText: t[5],
+      //   // ctaHref: "/All-products",
+      //   ctaHref: "/new-year-offers",
+      // },
+
+        {
+        type: "image",
+        src: "/hoom/newyear2.png",                 
+        mobileSrc: "/hoom/newyearmobile2.png",    
+        alt: "Latore banner 2",
+        // title: t[0],
+        // subtitle: t[3],
+        ctaText: t[4],
         // ctaHref: "/All-products",
         ctaHref: "/new-year-offers",
+        fit: "cover",
+        focus: "left",
+        fitMobile: "cover",
+        focusMobile: "top",
       },
+
       {
         type: "image",
-        src: "/hoom/newyear2.png",
-        mobileSrc: "/hoom/newyearmobile2.png",
+        src: "/hoom/newyear3.png",
+        mobileSrc: "/hoom/newyearmobile3.png",
         alt: "Latore banner 2",
         // title: t[0],
         // subtitle: t[3],
