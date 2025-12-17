@@ -768,12 +768,12 @@ const products = [
   sku: "99397",
   size: "XS S M L XL",
   category: "Dresses",
-  image: "/Dress/Sequin Top/1.avif",
+  image: "/Dress/Sequin/1.avif",
   images: [
-    "/Dress/Sequin Top/2.avif",
-    "/Dress/Sequin Top/3.avif",
-    "/Dress/Sequin Top/4.avif",
-    "/Dress/Sequin Top/5.avif"
+    "/Dress/Sequin/2.avif",
+    "/Dress/Sequin/3.avif",
+    "/Dress/Sequin/4.avif",
+    "/Dress/Sequin/5.avif"
   ],
   sizes: ["XS", "S", "M", "L", "XL"],
   translations: {
@@ -811,7 +811,7 @@ const products = [
     },
     UA: {
       category: "Сукні",
-      name: "Топ у паєтку",
+      name: "Сукні у паєтку",
       description: [
         "Топ, який створений для сміливих, акцентних образів.",
         "Мерехтіння паєток додає вечірньої розкоші, а укорочена довжина підкреслює талію та робить силует більш виразним.",
