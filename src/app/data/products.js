@@ -759,97 +759,91 @@ const products = [
 
 {
   id: 253,
-  price: 1080,
+  price: 2090,
   isTop: false,
   isNew: true,
-    isNewYearOffer: true,
-  //isSpecialOffer: true,
-  //discountPrice: 1390,
-  sku: "99397",
+  sku: "99402",
   size: "XS S M L XL",
   category: "Dresses",
-  image: "/Dress/Sequin/1.avif",
+  image: "/Dress/Satin Midi Slip Dress/1.avif",
   images: [
-    "/Dress/Sequin/2.avif",
-    "/Dress/Sequin/3.avif",
-    "/Dress/Sequin/4.avif",
-    "/Dress/Sequin/5.avif"
+    "/Dress/Satin Midi Slip Dress/2.avif",
+    "/Dress/Satin Midi Slip Dress/3.avif",
+    "/Dress/Satin Midi Slip Dress/4.avif",
+    "/Dress/Satin Midi Slip Dress/5.avif"
   ],
   sizes: ["XS", "S", "M", "L", "XL"],
   translations: {
     EN: {
-      category: "Dresses",
-      name: "Sequin Top",
+      category: "New Year 2025",
+      name: "Satin Midi Slip Dress",
       description: [
-        "A top created for bold, statement looks.",
-        "The shimmering sequins add evening luxury, while the cropped length emphasizes the waist and enhances the silhouette.",
-        "Details:",
-        "• Luxurious sequin sparkle that catches the light with every movement.",
-        "• Deep V-neckline — an elegant accent highlighting the décolletage.",
-        "• Cropped cut pairs perfectly with high-waisted trousers or skirts.",
-        "• Soft, elastic base for a comfortable fit.",
-        "• Festive and evening-appropriate, yet versatile enough for stylish outings.",
-        "A top designed to make you stand out — it’s made to light up the night."
+        "Thin lines, delicate satin sheen, and perfect fit create a look that feels luxurious without any extra accents.",
+        "Features:",
+        "• Draped cowl neckline — softly forms a graceful wave across the chest for an effortless chic effect.",
+        "• Thin straps — open the shoulders and visually make the silhouette more delicate.",
+        "• Midi length — a perfect balance of femininity and modern aesthetics.",
+        "• Smooth satin with a ‘liquid shine’ — the fabric flows with movement and softly embraces the figure.",
+        "• Straight silhouette — enhances natural lines without clinging, ensuring both comfort and elegance.",
+        "• Gracefully open upper back — adds a tender, festive touch."
       ],
       colors: ["black"]
     },
     FR: {
-      category: "Robes",
-      name: "Top à paillettes",
+      category: "Nouvel An 2025",
+      name: "Robe slip midi en satin",
       description: [
-        "Un top créé pour des looks audacieux et affirmés.",
-        "Les paillettes scintillantes ajoutent une touche de luxe nocturne, tandis que la coupe courte souligne la taille et affine la silhouette.",
-        "Détails :",
-        "• Éclat somptueux des paillettes, qui captent la lumière à chaque mouvement.",
-        "• Décolleté en V profond — accent élégant sur la zone du décolleté.",
-        "• Coupe courte, parfaite avec un pantalon ou une jupe taille haute.",
-        "• Base douce et élastique pour un confort absolu.",
-        "• Idéal pour les soirées, les fêtes ou les sorties stylées.",
-        "Un top conçu pour briller et attirer tous les regards."
+        "Des lignes fines, une brillance satinée délicate et une coupe parfaite créent un look qui respire le luxe sans effort.",
+        "Détails de la robe :",
+        "• Décolleté drapé (cowl neckline) — forme une vague douce et élégante sur la poitrine.",
+        "• Bretelles fines — dégagent les épaules pour une silhouette plus délicate.",
+        "• Longueur midi — équilibre entre féminité et esthétique contemporaine.",
+        "• Satin fluide au ‘liquid shine’ — ondule à chaque mouvement et épouse les formes.",
+        "• Silhouette droite — met en valeur le corps sans le serrer, pour un confort absolu.",
+        "• Dos subtilement ouvert — apporte une touche de douceur et de raffinement."
       ],
       colors: ["noir"]
     },
     UA: {
-      category: "Сукні",
-      name: "Сукні у паєтку",
+      category: "New year 2025",
+      name: "Сукня комбінація-міді",
       description: [
-        "Топ, який створений для сміливих, акцентних образів.",
-        "Мерехтіння паєток додає вечірньої розкоші, а укорочена довжина підкреслює талію та робить силует більш виразним.",
-        "Деталі моделі:",
-        "• розкішне сяйво паєток, що переливається при кожному русі;",
-        "• глибоке V-декольте — елегантний акцент на зоні декольте;",
-        "• укорочений крій, який ідеально поєднується з високою посадкою брюк чи спідниці;",
-        "• м’яка еластична основа для комфортної посадки;",
-        "• святковий, вечірній, але водночас універсальний для стильних виходів;",
-        "Топ, у якому неможливо загубитися в натовпі — він створений, щоб запалювати вечір."
+        "Тонкі лінії, делікатний блиск сатину та ідеальна посадка створюють образ, який виглядає дорого навіть без додаткових акцентів.",
+        "Особливості сукні:",
+        "• Драпіроване декольте (cowl neckline) — легко формує м’яку хвилю в зоні грудей — той самий ефект effortless chic.",
+        "• Тонкі бретелі — відкривають плечі та роблять силует візуально тендітнішим.",
+        "• Довжина міді — баланс жіночності та сучасної естетики.",
+        "• Гладкий сатин із 'liquid shine' — тканина переливається при русі й буквально обтікає фігуру.",
+        "• Прямий силует — підкреслює лінію тіла, але не обтягує — комфортна свобода рухів і бездоганна посадка.",
+        "• Акуратний відкритий верхній край спини — робить образ ніжним і святковим."
       ],
       colors: ["чорний"]
     },
     RU: {
-      category: "Платья",
-      name: "Топ с пайетками",
+      category: "Новый год 2025",
+      name: "Сатиновое платье-комбинация миди",
       description: [
-        "Топ, созданный для смелых, выразительных образов.",
-        "Мерцание пайеток придаёт вечерний шик, а укороченная длина подчёркивает талию и делает силуэт выразительнее.",
-        "Детали модели:",
-        "• Роскошное сияние пайеток, переливающихся при каждом движении;",
-        "• Глубокое V-декольте — элегантный акцент в зоне декольте;",
-        "• Укороченный крой идеально сочетается с брюками или юбками с высокой посадкой;",
-        "• Мягкая эластичная основа для комфортной посадки;",
-        "• Праздничный и вечерний, но при этом универсальный для стильных выходов;",
-        "Топ, в котором невозможно остаться незамеченной — он создан, чтобы зажигать вечер."
+        "Тонкие линии, деликатный блеск сатина и идеальная посадка создают образ, который выглядит роскошно без лишних деталей.",
+        "Особенности платья:",
+        "• Драпированное декольте (cowl neckline) — формирует мягкую волну на груди, создавая эффект лёгкой элегантности.",
+        "• Тонкие бретели — открывают плечи и визуально делают силуэт изящнее.",
+        "• Длина миди — баланс женственности и современности.",
+        "• Гладкий сатин с эффектом 'liquid shine' — мягко переливается при движении и обтекает фигуру.",
+        "• Прямой силуэт — подчёркивает линии тела, не обтягивая, обеспечивая комфорт.",
+        "• Аккуратно открытая верхняя часть спины — добавляет нежность и праздничность."
       ],
       colors: ["чёрный"]
     }
   }
 },
 
+
 {
   id: 252,
   price: 1080,
   isTop: false,
   isNew: true,
-    isNewYearOffer: true,
+  isNewYearOffer: true,
   //isSpecialOffer: true,
   //discountPrice: 1390,
   sku: "99396",
@@ -7312,143 +7306,143 @@ const products = [
   }
 },
 
-{
-  id: 185,
-  price: 2250,
-  isTop: false,
-  isNew: true,
-  // isSpecialOffer: true,
-  // discountPrice: 2025,
-  sku: "99327",
-  size: "XS S M L XL",
-  category: "Skirts",
-  image: "/Skirts/Mocha Skirt/1.avif",
-  images: [
-    "/Skirts/Mocha Skirt/2.avif",
-    "/Skirts/Mocha Skirt/3.avif",
-    "/Skirts/Mocha Skirt/4.avif"
-  ],
-  sizes: ["XS", "S", "M", "L", "XL"],
-  translations: {
-    EN: {
-      category: "Skirts",
-      name: "Eggplant Skirt",
-      description: [
-        "Elegant wool midi skirt with a gentle flare. A versatile base that pairs perfectly with jumpers or classic blouses.",
-        "Fabric: Premium-quality natural wool for warmth, comfort, and a pleasant tactile feel. [Composition: 75% wool]",
-        "Details:",
-        "• Midi length, gentle flare from the hips.",
-        "• Visually elongates the silhouette, adding a feminine accent."
-      ],
-      colors: ["eggplant"]
-    },
-    FR: {
-      category: "Jupes",
-      name: "Jupe «Mocha»",
-      description: [
-        "Élégante jupe midi en laine avec une légère évasée. Une base polyvalente qui se marie aussi bien avec des pulls que des chemisiers classiques.",
-        "Tissu : laine naturelle de qualité premium, offrant chaleur, confort et douceur au toucher. [Composition : 75% laine]",
-        "Détails :",
-        "• Longueur midi, légère évasée à partir des hanches.",
-        "• Allonge visuellement la silhouette en ajoutant une touche féminine."
-      ],
-      colors: ["moka"]
-    },
-    UA: {
-      category: "Спідниці",
-      name: "Спідниця «Eggplant»",
-      description: [
-        "Елегантна вовняна спідниця довжини міді з легким розкльошенням. Універсальна база, яка гармонійно виглядає як з джемперами, так і з класичними блузами.",
-        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття. [Склад: 75% вовни]",
-        "Деталі:",
-        "• Спідниця: довжина міді, легке розкльошення від стегон.",
-        "• Візуально подовжує силует, створюючи жіночний акцент."
-      ],
-      colors: ["баклажан"]
-    },
-    RU: {
-      category: "Юбки",
-      name: "Юбка «Mocha»",
-      description: [
-        "Элегантная шерстяная юбка миди с лёгким расклёшением. Универсальная база, гармонично смотрится как с джемперами, так и с классическими блузками.",
-        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло, уют и приятные тактильные ощущения. [Состав: 75% шерсти]",
-        "Детали:",
-        "• Юбка: длина миди, лёгкое расклёшение от бёдер.",
-        "• Визуально удлиняет силуэт, создавая женственный акцент."
-      ],
-      colors: ["мокко"]
-    }
-  }
-},
+// {
+//   id: 185,
+//   price: 2250,
+//   isTop: false,
+//   isNew: true,
+//   // isSpecialOffer: true,
+//   // discountPrice: 2025,
+//   sku: "99327",
+//   size: "XS S M L XL",
+//   category: "Skirts",
+//   image: "/Skirts/Mocha Skirt/1.avif",
+//   images: [
+//     "/Skirts/Mocha Skirt/2.avif",
+//     "/Skirts/Mocha Skirt/3.avif",
+//     "/Skirts/Mocha Skirt/4.avif"
+//   ],
+//   sizes: ["XS", "S", "M", "L", "XL"],
+//   translations: {
+//     EN: {
+//       category: "Skirts",
+//       name: "Eggplant Skirt",
+//       description: [
+//         "Elegant wool midi skirt with a gentle flare. A versatile base that pairs perfectly with jumpers or classic blouses.",
+//         "Fabric: Premium-quality natural wool for warmth, comfort, and a pleasant tactile feel. [Composition: 75% wool]",
+//         "Details:",
+//         "• Midi length, gentle flare from the hips.",
+//         "• Visually elongates the silhouette, adding a feminine accent."
+//       ],
+//       colors: ["eggplant"]
+//     },
+//     FR: {
+//       category: "Jupes",
+//       name: "Jupe «Mocha»",
+//       description: [
+//         "Élégante jupe midi en laine avec une légère évasée. Une base polyvalente qui se marie aussi bien avec des pulls que des chemisiers classiques.",
+//         "Tissu : laine naturelle de qualité premium, offrant chaleur, confort et douceur au toucher. [Composition : 75% laine]",
+//         "Détails :",
+//         "• Longueur midi, légère évasée à partir des hanches.",
+//         "• Allonge visuellement la silhouette en ajoutant une touche féminine."
+//       ],
+//       colors: ["moka"]
+//     },
+//     UA: {
+//       category: "Спідниці",
+//       name: "Спідниця «Eggplant»",
+//       description: [
+//         "Елегантна вовняна спідниця довжини міді з легким розкльошенням. Універсальна база, яка гармонійно виглядає як з джемперами, так і з класичними блузами.",
+//         "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття. [Склад: 75% вовни]",
+//         "Деталі:",
+//         "• Спідниця: довжина міді, легке розкльошення від стегон.",
+//         "• Візуально подовжує силует, створюючи жіночний акцент."
+//       ],
+//       colors: ["баклажан"]
+//     },
+//     RU: {
+//       category: "Юбки",
+//       name: "Юбка «Mocha»",
+//       description: [
+//         "Элегантная шерстяная юбка миди с лёгким расклёшением. Универсальная база, гармонично смотрится как с джемперами, так и с классическими блузками.",
+//         "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло, уют и приятные тактильные ощущения. [Состав: 75% шерсти]",
+//         "Детали:",
+//         "• Юбка: длина миди, лёгкое расклёшение от бёдер.",
+//         "• Визуально удлиняет силуэт, создавая женственный акцент."
+//       ],
+//       colors: ["мокко"]
+//     }
+//   }
+// },
 
-{
-  id: 184,
-  price: 2100,
-  isTop: true,
-  isNew: true,
-  //  isSpecialOffer: true,
-  // discountPrice: 1890,
-  sku: "99326",
-  size: "XS S M L XL",
-  category: "Tops",
-  image: "/Top/Mocha Jumper/1.avif",
-  images: [
-    "/Top/Mocha Jumper/2.avif",
-    "/Top/Mocha Jumper/3.avif",
-    "/Top/Mocha Jumper/4.avif"
-  ],
-  sizes: ["XS", "S", "M", "L", "XL"],
-  translations: {
-    EN: {
-      category: "Tops",
-      name: "Eggplant Jumper",
-      description: [
-        "A stylish and practical wool jumper with a straight cut, neckline slit, and patch pockets. Perfect for everyday looks during the cooler season.",
-        "Fabric: Premium-quality natural wool for warmth, comfort, and a pleasant tactile feel. [Composition: 75% wool]",
-        "Details:",
-        "• Straight silhouette with long sleeves.",
-        "• Two patch pockets as an accent detail."
-      ],
-      colors: ["mocha"]
-    },
-    FR: {
-      category: "Hauts",
-      name: "Jumper «Mocha»",
-      description: [
-        "Un pull en laine élégant et pratique, coupe droite, avec une fente à l’encolure et des poches plaquées. Idéal pour les looks quotidiens en saison fraîche.",
-        "Tissu : laine naturelle de qualité premium, offrant chaleur, confort et douceur au toucher. [Composition : 75% laine]",
-        "Détails :",
-        "• Coupe droite avec manches longues.",
-        "• Deux poches plaquées comme détail accentué."
-      ],
-      colors: ["moka"]
-    },
-    UA: {
-      category: "Топи",
-      name: "Джемпер «Eggplant»",
-      description: [
-        "Стильний і практичний джемпер із вовни, прямого крою, з розрізом по горловині та накладними кишенями. Ідеальний для повсякденних образів у прохолодний сезон.",
-        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття. [Склад: 75% вовни]",
-        "Деталі:",
-        "• Джемпер: прямий силует із довгим рукавом.",
-        "• Дві накладні кишені як акцентна деталь."
-      ],
-      colors: ["баклажан"]
-    },
-    RU: {
-      category: "Топы",
-      name: "Джемпер «Mocha»",
-      description: [
-        "Стильный и практичный шерстяной джемпер прямого кроя с разрезом по горловине и накладными карманами. Идеален для повседневных образов в прохладный сезон.",
-        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло, уют и приятные тактильные ощущения. [Состав: 75% шерсти]",
-        "Детали:",
-        "• Джемпер: прямой силуэт с длинным рукавом.",
-        "• Два накладных кармана как акцент."
-      ],
-      colors: ["мокко"]
-    }
-  }
-},
+// {
+//   id: 184,
+//   price: 2100,
+//   isTop: true,
+//   isNew: true,
+//   //  isSpecialOffer: true,
+//   // discountPrice: 1890,
+//   sku: "99326",
+//   size: "XS S M L XL",
+//   category: "Tops",
+//   image: "/Top/Mocha Jumper/1.avif",
+//   images: [
+//     "/Top/Mocha Jumper/2.avif",
+//     "/Top/Mocha Jumper/3.avif",
+//     "/Top/Mocha Jumper/4.avif"
+//   ],
+//   sizes: ["XS", "S", "M", "L", "XL"],
+//   translations: {
+//     EN: {
+//       category: "Tops",
+//       name: "Eggplant Jumper",
+//       description: [
+//         "A stylish and practical wool jumper with a straight cut, neckline slit, and patch pockets. Perfect for everyday looks during the cooler season.",
+//         "Fabric: Premium-quality natural wool for warmth, comfort, and a pleasant tactile feel. [Composition: 75% wool]",
+//         "Details:",
+//         "• Straight silhouette with long sleeves.",
+//         "• Two patch pockets as an accent detail."
+//       ],
+//       colors: ["mocha"]
+//     },
+//     FR: {
+//       category: "Hauts",
+//       name: "Jumper «Mocha»",
+//       description: [
+//         "Un pull en laine élégant et pratique, coupe droite, avec une fente à l’encolure et des poches plaquées. Idéal pour les looks quotidiens en saison fraîche.",
+//         "Tissu : laine naturelle de qualité premium, offrant chaleur, confort et douceur au toucher. [Composition : 75% laine]",
+//         "Détails :",
+//         "• Coupe droite avec manches longues.",
+//         "• Deux poches plaquées comme détail accentué."
+//       ],
+//       colors: ["moka"]
+//     },
+//     UA: {
+//       category: "Топи",
+//       name: "Джемпер «Eggplant»",
+//       description: [
+//         "Стильний і практичний джемпер із вовни, прямого крою, з розрізом по горловині та накладними кишенями. Ідеальний для повсякденних образів у прохолодний сезон.",
+//         "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття. [Склад: 75% вовни]",
+//         "Деталі:",
+//         "• Джемпер: прямий силует із довгим рукавом.",
+//         "• Дві накладні кишені як акцентна деталь."
+//       ],
+//       colors: ["баклажан"]
+//     },
+//     RU: {
+//       category: "Топы",
+//       name: "Джемпер «Mocha»",
+//       description: [
+//         "Стильный и практичный шерстяной джемпер прямого кроя с разрезом по горловине и накладными карманами. Идеален для повседневных образов в прохладный сезон.",
+//         "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло, уют и приятные тактильные ощущения. [Состав: 75% шерсти]",
+//         "Детали:",
+//         "• Джемпер: прямой силуэт с длинным рукавом.",
+//         "• Два накладных кармана как акцент."
+//       ],
+//       colors: ["мокко"]
+//     }
+//   }
+// },
 
 // {
 //   id: 183,
