@@ -74,8 +74,8 @@ export default function Hero() {
 
         {
         type: "image",
-        src: "/hoom/newyear2.png",                 
-        mobileSrc: "/hoom/newyearmobile2.png",    
+        src: "/hoom/newyear2.PNG",                 
+        mobileSrc: "/hoom/newyearmobile2.PNG",    
         alt: "Latore banner 2",
         // title: t[0],
         // subtitle: t[3],
