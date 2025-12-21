@@ -45,21 +45,39 @@ export default function Hero() {
   // ---- СЛАЙДИ ----
   const slides = useMemo(
     () => [
-      {
-        type: "image",
-        src: "/hoom/newyear1.png",                 
-        mobileSrc: "/hoom/newyearmobile1.png",    
-        alt: "Latore banner 1",
-        // title: t[0],
-        // subtitle: t[3],
-        ctaText: t[4],
-        // ctaHref: "/All-products",
-        ctaHref: "/new-year-offers",
-        fit: "cover",
-        focus: "left",
-        fitMobile: "cover",
-        focusMobile: "top",
-      },
+      // {
+      //   type: "image",
+      //   src: "/hoom/newyear1.png",                 
+      //   mobileSrc: "/hoom/newyearmobile1.png",    
+      //   alt: "Latore banner 1",
+      //   // title: t[0],
+      //   // subtitle: t[3],
+      //   ctaText: t[4],
+      //   // ctaHref: "/All-products",
+      //   ctaHref: "/new-year-offers",
+      //   fit: "cover",
+      //   focus: "left",
+      //   fitMobile: "cover",
+      //   focusMobile: "top",
+      // },
+
+{
+  type: "image",
+  src: "/hoom/newyear1.png",
+  mobileSrc: "/hoom/newyearmobile1.png",
+  alt: "Latore banner 1",
+
+  ctaText: t[4],
+  ctaHref: "/new-year-offers",
+
+  fit: "cover",
+  focus: "top",          // 🔴 THIS is the key change
+  fitMobile: "cover",
+  focusMobile: "top",    // 🔴 also important for mobile
+},
+
+
+
       // {
       //   type: "video", 
       //   src: "/hoom/IMG_3190.mp4",
@@ -72,35 +90,72 @@ export default function Hero() {
       //   ctaHref: "/new-year-offers",
       // },
 
-        {
-        type: "image",
-        src: "/hoom/newyear2.png",                 
-        mobileSrc: "/hoom/newyearmobile2.png",    
-        alt: "Latore banner 2",
-        // title: t[0],
-        // subtitle: t[3],
-        ctaText: t[4],
-        // ctaHref: "/All-products",
-        ctaHref: "/new-year-offers",
-        fit: "cover",
-        focus: "left",
-        fitMobile: "cover",
-        focusMobile: "top",
-      },
+
 
       {
-        type: "image",
-        src: "/hoom/newyear3.png",
-        mobileSrc: "/hoom/newyearmobile3.png",
-        alt: "Latore banner 2",
-        // title: t[0],
-        // subtitle: t[3],
-        ctaText: t[4],
-        // ctaHref: "/special-offers",
-        ctaHref: "/new-year-offers",
-        fit: "cover",
-        focus: "center",
-      },
+  type: "image",
+  src: "/hoom/newyear2.png",
+  mobileSrc: "/hoom/newyearmobile2.png",
+  alt: "Latore banner 2",
+
+  ctaText: t[4],
+  ctaHref: "/new-year-offers",
+
+  fit: "cover",
+
+  // Keep subject on the left, protect the head
+  focus: "left top",
+
+  fitMobile: "cover",
+  focusMobile: "top",
+},
+
+      //   {
+      //   type: "image",
+      //   src: "/hoom/newyear2.png",                 
+      //   mobileSrc: "/hoom/newyearmobile2.png",    
+      //   alt: "Latore banner 2",
+      //   // title: t[0],
+      //   // subtitle: t[3],
+      //   ctaText: t[4],
+      //   // ctaHref: "/All-products",
+      //   ctaHref: "/new-year-offers",
+      //   fit: "cover",
+      //   focus: "left",
+      //   fitMobile: "cover",
+      //   focusMobile: "top",
+      // },
+
+      // {
+      //   type: "image",
+      //   src: "/hoom/newyear3.png",
+      //   mobileSrc: "/hoom/newyearmobile3.png",
+      //   alt: "Latore banner 2",
+      //   // title: t[0],
+      //   // subtitle: t[3],
+      //   ctaText: t[4],
+      //   // ctaHref: "/special-offers",
+      //   ctaHref: "/new-year-offers",
+      //   fit: "cover",
+      //   focus: "center",
+      // },
+
+      {
+  type: "image",
+  src: "/hoom/newyear3.png",
+  mobileSrc: "/hoom/newyearmobile3.png",
+  alt: "Latore banner 2",
+
+  ctaText: t[4],
+  ctaHref: "/new-year-offers",
+
+  fit: "cover",
+  focus: "top",          // 🔴 change from "center" to "top"
+  fitMobile: "cover",
+  focusMobile: "top",    // 🔴 very important for mobile
+},
+
+      
     ],
     [t]
   );
@@ -185,7 +240,7 @@ export default function Hero() {
       </Head>
 
       <section
-        className="relative overflow-hidden min-h-[70svh]  md:min-h-[420px] max-h-[1050px] w-[100vw] -mx-[calc(50%-50vw)]"
+        className="relative overflow-hidden min-h-[70svh]  md:min-h-[420px] max-h-[1150px] w-[100vw] -mx-[calc(50%-50vw)]"
         aria-label="Hero slider"
         onTouchStart={onTouchStart}
         onTouchEnd={onTouchEnd}
