@@ -762,6 +762,8 @@ const products = [
   price: 2090,
   isTop: false,
   isNew: true,
+  isSpecialOffer: true,
+  discountPrice: 2075,
   sku: "99402",
   size: "XS S M L XL",
   category: "Dresses",
