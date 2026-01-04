@@ -2478,7 +2478,7 @@ const products = [
   isTop: false,
   isNew: true,
   isSpecialOffer: true,
-  discountPrice: 1975,
+  discountPrice: 2975,
   sku: "99373",
   size: "XS S M L XL",
   category: "Jackets",
