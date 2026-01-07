@@ -90,15 +90,15 @@ const NewYearOffersInfo = ({ products }) => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          sessionId,
-          productId: id,
-          name,
-          price: finalPrice.toFixed(2), // 🔥 ФІНАЛЬНА ЦІНА
-          originalPrice: base.toFixed(2), // для закреслення
-          color: selectedColor,
-          size: selectedSize,
-          quantity,
-        }),
+  sessionId,
+  productId: id,
+  name,
+  price: base, 
+  discountPrice: hasDiscount ? disc : null, // ✅ знижка окремо
+  color: selectedColor,
+  size: selectedSize,
+  quantity,
+}),
       }
     );
 
