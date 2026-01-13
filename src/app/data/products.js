@@ -6147,10 +6147,10 @@ const products = [
       "/Dress/Woolen trapeze dress/8.avif",
       "/Dress/Woolen trapeze dress/11.avif",
       "/Dress/Woolen trapeze dress/12.avif",
-      "/Dress/Woolen trapeze dress/13.avif",
-      "/Dress/Woolen trapeze dress/14.avif",
-      "/Dress/Woolen trapeze dress/15.avif",
-      "/Dress/Woolen trapeze dress/16.avif",
+      // "/Dress/Woolen trapeze dress/13.avif",
+      // "/Dress/Woolen trapeze dress/14.avif",
+      // "/Dress/Woolen trapeze dress/15.avif",
+      // "/Dress/Woolen trapeze dress/16.avif",
       // "/Dress/Woolen trapeze dress/17.avif",
       // "/Dress/Woolen trapeze dress/18.avif",
       // "/Dress/Woolen trapeze dress/19.avif",
@@ -6169,21 +6169,21 @@ const products = [
         name: "Woolen trapeze dress",
         description: "Trapeze dress with a pronounced belt\nComposition: 75% natural wool, soft, does not stick to the body.",
         color: "red",
-        colors: ["jeans","gray","marsala","powder"]
+        colors: ["jeans","gray","powder"]
       },
       FR: {
         category: "Robes",
         name: "Robe trapèze en laine",
         description: "Robe trapèze avec ceinture marquée\nComposition: 75% laine naturelle, douce, ne colle pas à la peau.",
         color: "rouge",
-        colors: ["jeans","gris","marsala","pooder"]
+        colors: ["jeans","gris","pooder"]
       },
       UA: {
         category: "Сукні",
         name: "Вовняна сукня трапеція",
         description: ["Трапецеїдна сукня з виразним поясом","Склад: 75% натуральної вовни", "м'яка, не прилипає до тіла."],
         color: "червоний",
-        colors: ["джинсовий", "сірий", "марсала", "пудра"]
+        colors: ["джинсовий", "сірий", "пудра"]
       }
     }
   },
