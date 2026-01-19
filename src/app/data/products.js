@@ -4283,9 +4283,6 @@ const products = [
     "/Dress/Wool V-Neck Dress/4.avif",
     "/Dress/Wool V-Neck Dress/5.avif",
     "/Dress/Wool V-Neck Dress/6.avif",
-    "/Dress/Wool V-Neck Dress/7.avif",
-    "/Dress/Wool V-Neck Dress/8.avif",
-    "/Dress/Wool V-Neck Dress/9.avif",
   ],
   sizes: ["XS", "S", "M", "L", "XL"],
   translations: {
@@ -4304,7 +4301,7 @@ const products = [
         "• Sleeve: long and straight",
         "• Front button closure"
       ],
-      colors: ["camel", "gray", "powder"]
+      colors: ["camel", "gray"]
     },
     FR: {
       category: "Robes",
@@ -4321,7 +4318,7 @@ const products = [
         "• Manches : longues et droites",
         "• Fermeture : boutonnée sur le devant"
       ],
-      colors: ["camel", "gris", "pooder"]
+      colors: ["camel", "gris"]
     },
     UA: {
       category: "Сукні",
@@ -4338,7 +4335,7 @@ const products = [
         "• Рукав: довгий, прямий",
         "• Застібка спереду"
       ],
-      colors: ["кемел", "сірий", "пудра"]
+      colors: ["кемел", "сірий"]
     },
     RU: {
       category: "Платья",
@@ -4536,11 +4533,8 @@ const products = [
   sku: "98811",
   size: "XS S M L XL",
   category: "Dresses",
-  image: "/Dress/Loden Grace Dress/11.avif", 
+  image: "/Dress/Loden Grace Dress/1.avif", 
   images: [
-    "/Dress/Loden Grace Dress/12.avif",
-    "/Dress/Loden Grace Dress/13.avif",
-    "/Dress/Loden Grace Dress/14.avif",
     "/Dress/Loden Grace Dress/1.avif",
     "/Dress/Loden Grace Dress/2.avif",
      {
@@ -4573,7 +4567,7 @@ const products = [
         "• ¾ sleeves with decorative zippers — a stylish element that allows adjusting the volume",
         "• Back slit for ease of movement and a feminine accent"
       ],
-      colors: ["denim","fuchsia"]
+      colors: ["denim"]
     },
     FR: {
       category: "Robes",
@@ -4603,7 +4597,7 @@ const products = [
         "• Рукави ¾ з декоративними замочками — стильна деталь, яка дозволяє регулювати об’єм та створює сучасний акцент.",
         "• На спинці передбачений розріз для зручності рухів і жіночного акценту."
       ],
-      colors: ["джинс","фуксія"]
+      colors: ["джинс"]
     },
     RU: {
       category: "Платья",
