@@ -1,4 +1,158 @@
 const products = [
+
+
+{
+  id: 264,
+  price: 2100,
+  isTop: false,
+  isNew: true,
+  sku: "99404",
+  size: "XS S M L XL",
+  category: "Skirts",
+  image: "/Skirts/Leather Skirt Alice/1.avif",
+  images: [
+    "/Skirts/Leather Skirt Alice/2.avif",
+    "/Skirts/Leather Skirt Alice/3.avif",
+    "/Skirts/Leather Skirt Alice/4.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Skirts",
+      name: "Leather Skirt Alice",
+      description: [
+        "An elegant midi skirt made of eco-leather — about understated sensuality and modern femininity. The clean waistline and A-line silhouette flatter the figure while ensuring comfort in movement.",
+        "A perfect base piece for an autumn-winter wardrobe with character.",
+        "Fabric: High-quality eco-leather with a suede backing (stretchy, does not crack).",
+        "Details:",
+        "• A-line silhouette",
+        "• Midi length",
+        "• High waist"
+      ],
+      colors: ["black"]
+    },
+    FR: {
+      category: "Jupes",
+      name: "Jupe en cuir « Alice »",
+      description: [
+        "Une jupe midi élégante en cuir synthétique — pour une féminité moderne et une sensualité discrète. La taille marquée et la coupe évasée en A mettent la silhouette en valeur tout en garantissant le confort.",
+        "Une base idéale pour une garde-robe automne-hiver au caractère affirmé.",
+        "Tissu : cuir écologique de haute qualité sur base en suédine (extensible, ne se fissure pas).",
+        "Détails :",
+        "• Coupe en A",
+        "• Longueur midi",
+        "• Taille haute"
+      ],
+      colors: ["noir"]
+    },
+    UA: {
+      category: "Спідниці",
+      name: "Шкіряна спідниця Alice",
+      description: [
+        "Елегантна міді-спідниця зі штучної шкіри — про стриману сексуальність і сучасну жіночність. Чітка лінія талії та А-подібний силует красиво підкреслюють фігуру, зберігаючи комфорт у русі.",
+        "Ідеальна база для осінньо-зимового гардеробу з характером.",
+        "Тканина: якісна екошкіра на замшевій основі (стрейчева, не тріскається).",
+        "Деталі:",
+        "• А-силует",
+        "• довжина міді",
+        "• висока посадка"
+      ],
+      colors: ["чорний"]
+    },
+    RU: {
+      category: "Юбки",
+      name: "Кожаная юбка Alice",
+      description: [
+        "Элегантная миди-юбка из искусственной кожи — о сдержанной сексуальности и современной женственности. Чёткая линия талии и А-силуэт красиво подчеркивают фигуру, сохраняя комфорт при движении.",
+        "Идеальная база для осенне-зимнего гардероба с характером.",
+        "Ткань: качественная экокожа на замшевой основе (тянется, не трескается).",
+        "Детали:",
+        "• А-силуэт",
+        "• длина миди",
+        "• высокая посадка"
+      ],
+      colors: ["чёрный"]
+    }
+  }
+},
+
+
+{
+  id: 263,
+  price: 1500,
+  isTop: false,
+  isNew: true,
+  sku: "99403",
+  size: "XS S M L XL",
+  category: "Sweaters",
+  image: "/Sweaters/Sheer Longsleeve/1.avif",
+  images: [
+    "/Sweaters/Sheer Longsleeve/2.avif",
+    "/Sweaters/Sheer Longsleeve/3.avif",
+    "/Sweaters/Sheer Longsleeve/4.avif",
+    "/Sweaters/Sheer Longsleeve/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Sweaters",
+      name: "Sheer Longsleeve",
+      description: [
+        "A minimalistic longsleeve — a true wardrobe essential. The relaxed, slightly cropped silhouette with dropped shoulders creates an easy relaxed-chic vibe, while the high neckline adds structure and style.",
+        "Fabric: Soft to the touch, keeps its shape, and drapes beautifully — perfect to wear tucked in or loose.",
+        "[ Composition: 100% knitted linen ]",
+        "Details:",
+        "• Relaxed fit",
+        "• Dropped shoulder line",
+        "• Semi-sheer texture"
+      ],
+      colors: ["white"]
+    },
+    FR: {
+      category: "Pulls",
+      name: "Longsleeve transparent",
+      description: [
+        "Un longsleeve minimaliste — une base incontournable de toute garde-robe. Sa coupe ample et légèrement raccourcie avec des épaules tombantes crée une allure détendue et chic, tandis que le col montant ajoute de la structure et du style.",
+        "Tissu : doux au toucher, garde bien sa forme et se drape élégamment — idéal à porter rentré ou lâché.",
+        "[ Composition : 100% lin tricoté ]",
+        "Détails :",
+        "• Coupe ample",
+        "• Ligne d'épaule tombante",
+        "• Texture semi-transparente"
+      ],
+      colors: ["blanc"]
+    },
+    UA: {
+      category: "Светри",
+      name: "Лонгслів напівпрозорий",
+      description: [
+        "Лаконічний лонгслів — база, яка працює в будь-якому гардеробі. Вільний, трохи укорочений силует із спущеною лінією плеча створює легке відчуття relaxed-шик, а високий комір додає образу зібраності та стилю.",
+        "Тканина: Тканина приємна до тіла, добре тримає форму й красиво драпірується, дозволяючи носити лонгслів як навипуск, так і заправленим.",
+        "[ Склад: 100% трикотажний льон ]",
+        "Деталі:",
+        "• вільний силует",
+        "• спущена лінія плеча",
+        "• напівпрозорий"
+      ],
+      colors: ["білий"]
+    },
+    RU: {
+      category: "Свитеры",
+      name: "Полупрозрачный лонгслив",
+      description: [
+        "Лаконичный лонгслив — базовая вещь, которая впишется в любой гардероб. Свободный, слегка укороченный силуэт со спущенной линией плеч создаёт ощущение расслабленного шика, а высокий ворот добавляет собранности и стиля.",
+        "Ткань: приятная к телу, хорошо держит форму и красиво драпируется, позволяя носить лонгслив как навыпуск, так и заправленным.",
+        "[ Состав: 100% трикотажный лён ]",
+        "Детали:",
+        "• свободный силуэт",
+        "• спущенная линия плеча",
+        "• полупрозрачная фактура"
+      ],
+      colors: ["белый"]
+    }
+  }
+},
+
 {
   id: 262,
   price: 1400,
