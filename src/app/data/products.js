@@ -1,5 +1,60 @@
 const products = [
 
+    {
+    id: 100,
+    price: 2000,
+    isTop: true,
+    // isSpecialOffer: true,
+    // discountPrice: 1700,
+    sku: "98820",
+    size: "XS S M L XL",
+    category: "Shirts",
+    image: "/Shirts/Batiste Shirt/7.avif",
+    images: [
+      "/Shirts/Batiste Shirt/8.avif",
+      {
+        type: "video",
+        src: "/Shirts/Batiste Shirt/IMG_7575.mp4",
+        poster: "/Shirts/Batiste Shirt/7.avif"
+      },
+      "/Shirts/Batiste Shirt/9.avif",
+      "/Shirts/Batiste Shirt/10.avif",
+      "/Shirts/Batiste Shirt/11.avif",
+      "/Shirts/Batiste Shirt/1.avif",
+      "/Shirts/Batiste Shirt/2.avif",
+      "/Shirts/Batiste Shirt/3.avif",
+      "/Shirts/Batiste Shirt/4.avif",
+      "/Shirts/Batiste Shirt/5.avif",
+      "/Shirts/Batiste Shirt/6.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Shirts",
+        name: "Batiste Shirt With lace",
+        description: "Shirt made of natural fabric, decorated with lace. Features puff sleeves.\nFabric: natural batiste.",
+        colors: ["white", "light blue"]
+      },
+      FR: {
+        category: "Chemises",
+        name: "Chemisier en batiste orné de dentelle",
+        description: "Chemise en tissu naturel ornée de dentelle. Manches bouffantes.\nTissu : batiste naturel.",
+        colors: ["blanc", "bleu clair"]
+      },
+      UA: {
+        category: "Сорочки",
+        name: "Батистова сорочка з мереживом",
+        description: "Сорочка із натуральної тканини, яка оздоблена мереживом. Має рукава ліхтарики.\nТканина: натуральна тканина батист.",
+        colors: ["білий", "блакитний"]
+      },
+      RU: {
+        category: "Рубашки",
+        name: "Батистовая блузка с кружевом",
+        description: "Рубашка из натуральной ткани, украшенная кружевом. Имеет рукава-фонарики.\nТкань: натуральная ткань батист.",
+        colors: ["белый", "голубой"]
+      }
+    }
+  }, 
 
 {
   id: 264,
@@ -6091,61 +6146,7 @@ const products = [
     }
   },
 
-    {
-    id: 100,
-    price: 2000,
-    isTop: true,
-    // isSpecialOffer: true,
-    // discountPrice: 1700,
-    sku: "98820",
-    size: "XS S M L XL",
-    category: "Shirts",
-    image: "/Shirts/Batiste Shirt/1.avif",
-    images: [
-      "/Shirts/Batiste Shirt/2.avif",
-      {
-        type: "video",
-        src: "/Shirts/Batiste Shirt/IMG_7575.mp4",
-        poster: "/Shirts/Batiste Shirt/1.avif"
-      },
-      "/Shirts/Batiste Shirt/3.avif",
-      "/Shirts/Batiste Shirt/4.avif",
-      "/Shirts/Batiste Shirt/5.avif",
-      "/Shirts/Batiste Shirt/6.avif",
-      "/Shirts/Batiste Shirt/7.avif",
-      "/Shirts/Batiste Shirt/8.avif",
-      "/Shirts/Batiste Shirt/9.avif",
-      "/Shirts/Batiste Shirt/10.avif",
-      "/Shirts/Batiste Shirt/11.avif",
-    ],
-    sizes: ["XS", "S", "M", "L", "XL"],
-    translations: {
-      EN: {
-        category: "Shirts",
-        name: "Batiste Shirt With lace",
-        description: "Shirt made of natural fabric, decorated with lace. Features puff sleeves.\nFabric: natural batiste.",
-        colors: ["white", "light blue"]
-      },
-      FR: {
-        category: "Chemises",
-        name: "Chemisier en batiste orné de dentelle",
-        description: "Chemise en tissu naturel ornée de dentelle. Manches bouffantes.\nTissu : batiste naturel.",
-        colors: ["blanc", "bleu clair"]
-      },
-      UA: {
-        category: "Сорочки",
-        name: "Батистова сорочка з мереживом",
-        description: "Сорочка із натуральної тканини, яка оздоблена мереживом. Має рукава ліхтарики.\nТканина: натуральна тканина батист.",
-        colors: ["білий", "блакитний"]
-      },
-      RU: {
-        category: "Рубашки",
-        name: "Батистовая блузка с кружевом",
-        description: "Рубашка из натуральной ткани, украшенная кружевом. Имеет рукава-фонарики.\nТкань: натуральная ткань батист.",
-        colors: ["белый", "голубой"]
-      }
-    }
-  }, 
+
 
   { 
       id: 30,
