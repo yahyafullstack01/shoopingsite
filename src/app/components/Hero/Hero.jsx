@@ -63,17 +63,17 @@ export default function Hero() {
 
 {
   type: "image",
-  src: "/hoom/newyear1.png",
-  mobileSrc: "/hoom/newyearmobile1.png",
+  src: "/hoom/hero1.PNG",
+  mobileSrc: "/hoom/heromobile1.jpg",
   alt: "Latore banner 1",
 
   ctaText: t[4],
-  ctaHref: "/new-year-offers",
+  ctaHref: "/All-products",
 
   fit: "cover",
-  focus: "top",          // 🔴 THIS is the key change
+  focus: "center",
   fitMobile: "cover",
-  focusMobile: "top",    // 🔴 also important for mobile
+  focusMobile: "center",
 },
 
 
@@ -94,20 +94,18 @@ export default function Hero() {
 
       {
   type: "image",
-  src: "/hoom/newyear2.png",
-  mobileSrc: "/hoom/newyearmobile2.png",
+  src: "/hoom/hero2.PNG",
+  mobileSrc: "/hoom/heromobile2.jpg",
   alt: "Latore banner 2",
 
   ctaText: t[4],
-  ctaHref: "/new-year-offers",
+  ctaHref: "/All-products",
 
   fit: "cover",
-
-  // Keep subject on the left, protect the head
-  focus: "left top",
+  focus: "center",
 
   fitMobile: "cover",
-  focusMobile: "top",
+  focusMobile: "center",
 },
 
       //   {
@@ -142,17 +140,17 @@ export default function Hero() {
 
       {
   type: "image",
-  src: "/hoom/newyear3.png",
-  mobileSrc: "/hoom/newyearmobile3.png",
-  alt: "Latore banner 2",
+  src: "/hoom/hero3.PNG",
+  mobileSrc: "/hoom/heromobile3.jpg",
+  alt: "Latore banner 3",
 
   ctaText: t[4],
-  ctaHref: "/new-year-offers",
+  ctaHref: "/All-products",
 
   fit: "cover",
-  focus: "top",          // 🔴 change from "center" to "top"
+  focus: "center",
   fitMobile: "cover",
-  focusMobile: "top",    // 🔴 very important for mobile
+  focusMobile: "center",
 },
 
       
