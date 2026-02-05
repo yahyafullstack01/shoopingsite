@@ -5,16 +5,16 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 
 const categories = [
-  { name: 'Сукні', image: '/HomeCatalog/1.avif', path: 'dresses' },
-  { name: 'Костюми', image: '/HomeCatalog/2.avif', path: 'costumes' },
-  { name: 'Сорочки', image: '/Shirts/Fitted Batiste Shirt/1.avif', path: 'Shirts' },
-  { name: 'Спідниці', image: '/Skirts/Denim Skirt/1.avif', path: 'skirts' },
-  { name: 'Топи', image: '/HomeCatalog/5.avif', path: 'tops' },
-  { name: 'Брюки', image: '/HomeCatalog/3.avif', path: 'pants' },
-  { name: 'Жакети', image: '/HomeCatalog/4.avif', path: 'jackets' },
-  { name: 'Светри', image: '/Sweaters/Flare Sweater/6.avif', path: 'sweaters' },
-  { name: 'Верхній одяг', image: '/HomeCatalog/6.avif', path: 'outerwear' },
-  { name: 'Шорти', image: '/Shorts/Linen Shorts/1.avif', path: 'shorts' },
+  { name: 'Сукні', image: '/HomeCatalog/5.avif', path: 'dresses' },
+  { name: 'Костюми', image: '/HomeCatalog/6.avif', path: 'costumes' },
+  { name: 'Сорочки', image: '/HomeCatalog/7.avif', path: 'Shirts' },
+  { name: 'Спідниці', image: '/HomeCatalog/8.avif', path: 'skirts' },
+  { name: 'Топи', image: '/HomeCatalog/9.avif', path: 'tops' },
+  { name: 'Брюки', image: '/HomeCatalog/10.avif', path: 'pants' },
+  { name: 'Жакети', image: '/HomeCatalog/11.avif', path: 'jackets' },
+  { name: 'Светри', image: '/HomeCatalog/12.avif', path: 'sweaters' },
+  { name: 'Верхній одяг', image: '/HomeCatalog/13.avif', path: 'outerwear' },
+  { name: 'Шорти', image: '/HomeCatalog/14.avif', path: 'shorts' },
 ];
 
 const CategoryCatalog = () => {
