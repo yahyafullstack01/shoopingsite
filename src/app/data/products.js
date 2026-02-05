@@ -56,6 +56,592 @@ const products = [
     }
   }, 
 
+  {
+    id: 272,
+    price: 1950,
+    isTop: false,
+    isNew: true,
+    sku: "99412",
+    size: "XS S M L XL",
+    category: "Pants",
+    image: "/Pants/Provence Pants/1.avif",
+    images: [
+      "/Pants/Provence Pants/2.avif",
+      "/Pants/Provence Pants/3.avif",
+      "/Pants/Provence Pants/4.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Pants",
+        name: "Provence Pants",
+        description: [
+          "Straight elongated trousers with a comfortable fit and laconic cut. The high or mid waist (depending on fit) beautifully emphasizes the figure, while the restrained form makes the model universal for everyday and business looks.",
+          "Fabric: suiting fabric, 75% viscose, 25% polyester",
+          "Details:",
+          "• High waist",
+          "• 2 pockets",
+          "• Creases along the length"
+        ],
+        colors: ["wormwood"]
+      },
+      FR: {
+        category: "Pantalons",
+        name: "Pantalon Provence",
+        description: [
+          "Pantalon droit allongé avec une coupe confortable et laconique. La taille haute ou moyenne (selon l'ajustement) souligne magnifiquement la silhouette, tandis que la forme sobre rend le modèle universel pour les looks quotidiens et professionnels.",
+          "Tissu : tissu de costume, 75% viscose, 25% polyester",
+          "Détails :",
+          "• Taille haute",
+          "• 2 poches",
+          "• Plis sur la longueur"
+        ],
+        colors: ["armoise"]
+      },
+      UA: {
+        category: "Брюки",
+        name: "Брюки Provence",
+        description: [
+          "Прямі подовжені брюки з комфортною посадкою та лаконічним кроєм. Висока або середня талія (залежно від посадки) красиво підкреслює фігуру, а стримана форма робить модель універсальною для щоденних і ділових образів.",
+          "Тканина: костюмна, 75% віскоза, 25% поліестер",
+          "Деталі:",
+          "• висока посадка",
+          "• 2 кишені",
+          "• стрілки по довжині"
+        ],
+        colors: ["полинь"]
+      },
+      RU: {
+        category: "Брюки",
+        name: "Брюки Provence",
+        description: [
+          "Прямые удлинённые брюки с комфортной посадкой и лаконичным кроем. Высокая или средняя талия (в зависимости от посадки) красиво подчёркивает фигуру, а сдержанная форма делает модель универсальной для повседневных и деловых образов.",
+          "Ткань: костюмная, 75% вискоза, 25% полиэстер",
+          "Детали:",
+          "• высокая посадка",
+          "• 2 кармана",
+          "• стрелки по длине"
+        ],
+        colors: ["полынь"]
+      }
+    }
+  },
+
+  {
+    id: 271,
+    price: 3100,
+    isTop: false,
+    isNew: true,
+    sku: "99411",
+    size: "XS S M L XL",
+    category: "Jackets",
+    image: "/Jackets/Provence Jacket/1.avif",
+    images: [
+      "/Jackets/Provence Jacket/2.avif",
+      "/Jackets/Provence Jacket/3.avif",
+      "/Jackets/Provence Jacket/4.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Jackets",
+        name: "Provence Jacket",
+        description: [
+          "A fitted blazer with a clear shoulder line and refined silhouette. The construction of the model accentuates the waist thanks to relief seams, creating a feminine and polished look. The classic notched collar and buttons add versatility and restrained elegance to the blazer.",
+          "Fabric: suiting fabric, 75% viscose, 25% polyester",
+          "Details:",
+          "• Fitted blazer",
+          "• Has lining",
+          "• Accentuates the waist"
+        ],
+        colors: ["wormwood"]
+      },
+      FR: {
+        category: "Vestes",
+        name: "Veste Provence",
+        description: [
+          "Un blazer ajusté avec une ligne d'épaules nette et une silhouette raffinée. La construction du modèle accentue la taille grâce aux coutures en relief, créant un look féminin et soigné. Le col classique cranté et les boutons ajoutent polyvalence et élégance sobre au blazer.",
+          "Tissu : tissu de costume, 75% viscose, 25% polyester",
+          "Détails :",
+          "• Blazer ajusté",
+          "• Avec doublure",
+          "• Accentue la taille"
+        ],
+        colors: ["armoise"]
+      },
+      UA: {
+        category: "Жакети",
+        name: "Жакет Provence",
+        description: [
+          "Приталений жакет із чіткою лінією плечей і витонченим силуетом. Конструкція моделі акцентує талію завдяки рельєфним швам, створюючи жіночний та зібраний образ. Класичний відкладний комір і ґудзики додають жакету універсальності та стриманої елегантності.",
+          "Тканина: костюмна, 75% віскоза, 25% поліестер",
+          "Деталі:",
+          "• приталений жакет",
+          "• має підкладку",
+          "• акцентує талію"
+        ],
+        colors: ["полинь"]
+      },
+      RU: {
+        category: "Жакеты",
+        name: "Жакет Provence",
+        description: [
+          "Приталенный жакет с чёткой линией плеч и изысканным силуэтом. Конструкция модели акцентирует талию благодаря рельефным швам, создавая женственный и собранный образ. Классический отложной воротник и пуговицы добавляют жакету универсальности и сдержанной элегантности.",
+          "Ткань: костюмная, 75% вискоза, 25% полиэстер",
+          "Детали:",
+          "• приталенный жакет",
+          "• имеет подкладку",
+          "• акцентирует талию"
+        ],
+        colors: ["полынь"]
+      }
+    }
+  },
+
+  {
+    id: 270,
+    price: 5050,
+    isTop: false,
+    isNew: true,
+    sku: "99410",
+    size: "XS S M L XL",
+    category: "Costumes",
+    image: "/Costumes/Provence Suit/1.avif",
+    images: [
+      "/Costumes/Provence Suit/2.avif",
+      "/Costumes/Provence Suit/3.avif",
+      "/Costumes/Provence Suit/4.avif",
+      "/Costumes/Provence Suit/5.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Costumes",
+        name: "Provence Suit",
+        description: [
+          "An elegant suit in a noble shade — the perfect balance between classic and modern femininity. The fitted blazer and elongated straight trousers form a refined silhouette, emphasizing the figure and visually elongating the height. The suit is made of smooth suiting fabric that holds its shape well and is comfortable throughout the day.",
+          "Fabric: suiting fabric, 75% viscose, 25% polyester",
+          "Details:",
+          "• Fitted blazer",
+          "• High waist",
+          "• Refined silhouette"
+        ],
+        colors: ["wormwood"]
+      },
+      FR: {
+        category: "Costumes",
+        name: "Costume Provence",
+        description: [
+          "Un costume élégant dans une teinte noble — l'équilibre parfait entre classique et féminité moderne. Le blazer ajusté et le pantalon droit allongé forment une silhouette raffinée, soulignant la silhouette et allongeant visuellement la taille. Le costume est réalisé en tissu de costume lisse qui maintient bien sa forme et est confortable tout au long de la journée.",
+          "Tissu : tissu de costume, 75% viscose, 25% polyester",
+          "Détails :",
+          "• Blazer ajusté",
+          "• Taille haute",
+          "• Silhouette raffinée"
+        ],
+        colors: ["armoise"]
+      },
+      UA: {
+        category: "Костюми",
+        name: "Костюм Provence",
+        description: [
+          "Елегантний костюм у благородному відтінку — ідеальний баланс між класикою та сучасною жіночністю. Приталений жакет і подовжені прямі брюки формують витончений силует, підкреслюючи фігуру та візуально витягаючи зріст. Костюм виконаний з гладкої костюмної тканини, яка добре тримає форму та комфортна впродовж усього дня.",
+          "Тканина: костюмна, 75% віскоза, 25% поліестер",
+          "Деталі:",
+          "• приталений жакет",
+          "• висока посадка",
+          "• витончений силует"
+        ],
+        colors: ["полинь"]
+      },
+      RU: {
+        category: "Костюмы",
+        name: "Костюм Provence",
+        description: [
+          "Элегантный костюм в благородном оттенке — идеальный баланс между классикой и современной женственностью. Приталенный жакет и удлинённые прямые брюки формируют изысканный силуэт, подчёркивая фигуру и визуально вытягивая рост. Костюм выполнен из гладкой костюмной ткани, которая хорошо держит форму и комфортна в течение всего дня.",
+          "Ткань: костюмная, 75% вискоза, 25% полиэстер",
+          "Детали:",
+          "• приталенный жакет",
+          "• высокая посадка",
+          "• изысканный силуэт"
+        ],
+        colors: ["полынь"]
+      }
+    }
+  },
+
+  {
+    id: 269,
+    price: 2000,
+    isTop: false,
+    isNew: true,
+    sku: "99409",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Leather Sundress Olive/1.avif",
+    images: [
+      "/Dress/Leather Sundress Olive/2.avif",
+      "/Dress/Leather Sundress Olive/3.avif",
+      "/Dress/Leather Sundress Olive/4.avif",
+      "/Dress/Leather Sundress Olive/5.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Leather Sundress with Straps",
+        description: [
+          "A minimalist eco-leather sundress in a noble olive shade — the perfect base for layered looks. The clean A-line silhouette elongates the figure, while vertical seams add architecture. Thin adjustable straps allow you to adapt the fit to height and style, making the model universal for different seasons.",
+          "Fabric: High-quality eco-leather with a suede backing (stretchy, does not crack).",
+          "Details:",
+          "• Straight A-line silhouette",
+          "• Adjustable straps",
+          "• Hidden back zipper"
+        ],
+        colors: ["olive"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe-chasuble en cuir à bretelles",
+        description: [
+          "Une robe-chasuble minimaliste en cuir synthétique dans une teinte olive noble — la base parfaite pour des looks superposés. La silhouette trapèze épurée allonge la silhouette, tandis que les coutures verticales ajoutent de l'architecture. Les fines bretelles réglables permettent d'adapter l'ajustement à la taille et au style, rendant le modèle universel pour différentes saisons.",
+          "Tissu : cuir écologique de haute qualité sur base en suédine (extensible, ne se fissure pas).",
+          "Détails :",
+          "• Silhouette trapèze droite",
+          "• Bretelles réglables",
+          "• Fermeture éclair dissimulée au dos"
+        ],
+        colors: ["olive"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Шкіряний сарафан на бретелях",
+        description: [
+          "Мінімалістичний сарафан із еко-шкіри в благородному оливковому відтінку — ідеальна база для багатошарових образів. Чіткий А-силует витягує фігуру, а вертикальні шви додають архітектурності. Тонкі регульовані бретелі дозволяють адаптувати посадку під зріст і стиль, роблячи модель універсальною для різних сезонів.",
+          "Тканина: якісна екошкіра на замшевій основі (стречева, не тріскається).",
+          "Деталі:",
+          "• прямий А-силует",
+          "• регульовані бретелі",
+          "• потайна застібка ззаду"
+        ],
+        colors: ["оливка"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Кожаный сарафан на бретелях",
+        description: [
+          "Минималистичный сарафан из эко-кожи в благородном оливковом оттенке — идеальная база для многослойных образов. Чёткий А-силуэт вытягивает фигуру, а вертикальные швы добавляют архитектурности. Тонкие регулируемые бретели позволяют адаптировать посадку под рост и стиль, делая модель универсальной для разных сезонов.",
+          "Ткань: качественная экокожа на замшевой основе (стрейчевая, не трескается).",
+          "Детали:",
+          "• прямой А-силуэт",
+          "• регулируемые бретели",
+          "• потайная застёжка сзади"
+        ],
+        colors: ["оливковый"]
+      }
+    }
+  },
+
+  {
+    id: 268,
+    price: 2900,
+    isTop: false,
+    isNew: true,
+    sku: "99408",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Denim Sundress/1.avif",
+    images: [
+      "/Dress/Denim Sundress/2.avif",
+      "/Dress/Denim Sundress/3.avif",
+      "/Dress/Denim Sundress/4.avif",
+      "/Dress/Denim Sundress/5.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Denim Sundress",
+        description: [
+          "A laconic sundress made of dense denim cotton — a universal wardrobe base that easily adapts to the season and mood. The clean A-line silhouette beautifully emphasizes the waist, while the midi length makes the look restrained and elegant.",
+          "Adjustable straps that cross at the back ensure a comfortable fit and add accent to the details. The belt with a metal buckle shapes the feminine silhouette, and vertical reliefs visually elongate the figure. Natural denim cotton holds its shape, is pleasant to the body and practical for everyday wear.",
+          "Fabric: denim cotton",
+          "Details:",
+          "• A-line silhouette, midi length",
+          "• Adjustable straps, cross-back",
+          "• Belt with metal buckle"
+        ],
+        colors: ["blue"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe-chasuble en denim",
+        description: [
+          "Une robe-chasuble laconique en coton denim dense — une base de garde-robe universelle qui s'adapte facilement à la saison et à l'humeur. La silhouette trapèze épurée souligne magnifiquement la taille, tandis que la longueur midi rend le look sobre et élégant.",
+          "Les bretelles réglables qui se croisent dans le dos assurent un ajustement confortable et ajoutent un accent aux détails. La ceinture avec boucle métallique façonne la silhouette féminine, et les reliefs verticaux allongent visuellement la silhouette. Le coton denim naturel garde sa forme, est agréable au toucher et pratique pour un port quotidien.",
+          "Tissu : coton denim",
+          "Détails :",
+          "• Silhouette trapèze, longueur midi",
+          "• Bretelles réglables, dos croisé",
+          "• Ceinture avec boucle métallique"
+        ],
+        colors: ["bleu"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Джинсовий сарафан",
+        description: [
+          "Лаконічний сарафан із щільного джинс-котону — універсальна основа гардероба, яка легко адаптується до сезону та настрою. Чіткий А-силует красиво підкреслює талію, а довжина міді робить образ стриманим і елегантним.",
+          "Регульовані бретелі, що перехрещуються на спинці, забезпечують комфортну посадку та додають акцент у деталях. Пояс із металевою пряжкою формує жіночний силует, а вертикальні рельєфи візуально витягують фігуру. Натуральний джинс-котон тримає форму, приємний до тіла та практичний у щоденному носінні.",
+          "Тканина: джинс котон",
+          "Деталі:",
+          "• А-силует, довжина міді",
+          "• регульовані бретелі, перехрест на спинці",
+          "• пояс із металевою пряжкою"
+        ],
+        colors: ["синій"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Джинсовый сарафан",
+        description: [
+          "Лаконичный сарафан из плотного джинс-коттона — универсальная основа гардероба, которая легко адаптируется к сезону и настроению. Чёткий А-силуэт красиво подчёркивает талию, а длина миди делает образ сдержанным и элегантным.",
+          "Регулируемые бретели, перекрещивающиеся на спине, обеспечивают комфортную посадку и добавляют акцент в деталях. Пояс с металлической пряжкой формирует женственный силуэт, а вертикальные рельефы визуально вытягивают фигуру. Натуральный джинс-коттон держит форму, приятен к телу и практичен в повседневной носке.",
+          "Ткань: джинс коттон",
+          "Детали:",
+          "• А-силуэт, длина миди",
+          "• регулируемые бретели, перекрест на спинке",
+          "• пояс с металлической пряжкой"
+        ],
+        colors: ["синий"]
+      }
+    }
+  },
+
+  {
+    id: 267,
+    price: 2400,
+    isTop: false,
+    isNew: true,
+    sku: "99407",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Wool Sundress Houndstooth/1.avif",
+    images: [
+      "/Dress/Wool Sundress Houndstooth/2.avif",
+      "/Dress/Wool Sundress Houndstooth/3.avif",
+      "/Dress/Wool Sundress Houndstooth/4.avif",
+      "/Dress/Wool Sundress Houndstooth/5.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Wool Sundress with Straps",
+        description: [
+          "A wool sundress in houndstooth print — the embodiment of restrained elegance and thoughtful design. The model is made of dense wool fabric that holds its shape well and is comfortable to wear in the cool season. The classic print adds sophistication to the look and easily combines with basic wardrobe pieces.",
+          "The sundress has a laconic A-line silhouette that gently emphasizes the figure without restricting movement. Adjustable straps and decorative leather elements create an accent on the waist and add a modern character to the look. The model looks perfect both with shirts and turtlenecks or blouses, allowing you to create layered looks.",
+          "Fabric: natural wool, 75% content",
+          "Details:",
+          "• A-line silhouette",
+          "• Adjustable straps",
+          "• Decorative leather elements"
+        ],
+        colors: ["houndstooth"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe-chasuble en laine à bretelles",
+        description: [
+          "Une robe-chasuble en laine à motif pied-de-poule — l'incarnation de l'élégance sobre et du design réfléchi. Le modèle est réalisé en tissu de laine dense qui maintient bien sa forme et est confortable à porter en saison fraîche. Le motif classique ajoute de la sophistication au look et se combine facilement avec les pièces de base de la garde-robe.",
+          "La robe a une silhouette trapèze laconique qui souligne doucement la silhouette sans entraver les mouvements. Les bretelles réglables et les éléments décoratifs en cuir créent un accent sur la taille et ajoutent un caractère moderne au look. Le modèle est parfait avec des chemises, des cols roulés ou des blouses, permettant de créer des looks superposés.",
+          "Tissu : laine naturelle, 75% de contenu",
+          "Détails :",
+          "• Silhouette trapèze",
+          "• Bretelles réglables",
+          "• Éléments décoratifs en cuir"
+        ],
+        colors: ["pied-de-poule"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Вовняний сарафан на бретелях",
+        description: [
+          "Вовняний сарафан у принті «гусяча лапка» — втілення стриманої елегантності й продуманого дизайну. Модель виконана з щільної вовняної тканини, яка добре тримає форму та комфортна в носінні в прохолодний сезон. Класичний принт додає образу інтелігентності й легко поєднується з базовими речами гардероба.",
+          "Сарафан має лаконічний А-силует, який м'яко підкреслює фігуру, не сковуючи рухів. Регульовані бретелі та декоративні шкіряні елементи створюють акцент на талії та додають образу сучасного характеру. Модель ідеально виглядає як з сорочками, так і з гольфами чи блузами, дозволяючи створювати багатошарові образи.",
+          "Тканина: натуральна вовна, 75% у складі",
+          "Деталі:",
+          "• А-силует",
+          "• регульовані бретелі",
+          "• декоративні шкіряні елементи"
+        ],
+        colors: ["гусяча лапка"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Шерстяной сарафан на бретелях",
+        description: [
+          "Шерстяной сарафан в принте «гусиная лапка» — воплощение сдержанной элегантности и продуманного дизайна. Модель выполнена из плотной шерстяной ткани, которая хорошо держит форму и комфортна в носке в прохладный сезон. Классический принт добавляет образу интеллигентности и легко сочетается с базовыми вещами гардероба.",
+          "Сарафан имеет лаконичный А-силуэт, который мягко подчёркивает фигуру, не сковывая движений. Регулируемые бретели и декоративные кожаные элементы создают акцент на талии и добавляют образу современный характер. Модель идеально выглядит как с рубашками, так и с гольфами или блузами, позволяя создавать многослойные образы.",
+          "Ткань: натуральная шерсть, 75% в составе",
+          "Детали:",
+          "• А-силуэт",
+          "• регулируемые бретели",
+          "• декоративные кожаные элементы"
+        ],
+        colors: ["гусиная лапка"]
+      }
+    }
+  },
+
+  {
+    id: 266,
+    price: 3200,
+    isTop: false,
+    isNew: true,
+    sku: "99406",
+    size: "XS S M L XL",
+    category: "Dresses",
+    image: "/Dress/Deep Blue Dress/1.avif",
+    images: [
+      "/Dress/Deep Blue Dress/2.avif",
+      "/Dress/Deep Blue Dress/3.avif",
+      "/Dress/Deep Blue Dress/4.avif",
+      "/Dress/Deep Blue Dress/5.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Dresses",
+        name: "Deep Blue Dress",
+        description: [
+          "A refined midi dress in deep dark blue — about quiet elegance and inner strength. The gently pleated texture creates soft fabric movement with every step, while the relaxed silhouette beautifully wraps the figure without overwhelming the look.",
+          "Voluminous sleeves with delicate gathering add character to the dress and balance the simple cut. The round neckline looks restrained and versatile — the dress easily transforms from a casual look to a more festive one with accessories.",
+          "Details:",
+          "• Midi length",
+          "• Relaxed silhouette",
+          "• Pleated, lightweight fabric"
+        ],
+        colors: ["dark blue"]
+      },
+      FR: {
+        category: "Robes",
+        name: "Robe Deep Blue",
+        description: [
+          "Une robe midi raffinée en bleu marine profond — pour l'élégance tranquille et la force intérieure. La texture légèrement plissée crée un doux mouvement du tissu à chaque pas, tandis que la silhouette décontractée enveloppe magnifiquement la silhouette sans surcharger le look.",
+          "Les manches volumineuses aux fronces délicates ajoutent du caractère à la robe et équilibrent la coupe simple. Le col rond est sobre et polyvalent — la robe se transforme facilement d'un look décontracté à un look plus festif grâce aux accessoires.",
+          "Détails :",
+          "• Longueur midi",
+          "• Silhouette décontractée",
+          "• Tissu plissé léger"
+        ],
+        colors: ["bleu marine"]
+      },
+      UA: {
+        category: "Сукні",
+        name: "Сукня Deep blue",
+        description: [
+          "Витончена міді-сукня глибокого темно-синього кольору — про спокійну елегантність і внутрішню силу. Легко плісерована фактура створює м'який рух тканини при кожному кроці, а вільний силует красиво огортає фігуру, не перевантажуючи образ.",
+          "Обʼємні рукави з делікатною зборкою додають сукні характеру та балансують простий крій. Кругла горловина виглядає стримано й універсально — сукня легко трансформується з повсякденного образу у більш святковий завдяки аксесуарам.",
+          "Деталі:",
+          "• довжина міді",
+          "• вільний силует",
+          "• плісерована, легка тканина"
+        ],
+        colors: ["темно-синій"]
+      },
+      RU: {
+        category: "Платья",
+        name: "Платье Deep blue",
+        description: [
+          "Изысканное миди-платье глубокого тёмно-синего цвета — о спокойной элегантности и внутренней силе. Лёгкая плиссированная фактура создаёт мягкое движение ткани при каждом шаге, а свободный силуэт красиво окутывает фигуру, не перегружая образ.",
+          "Объёмные рукава с деликатной сборкой придают платью характер и балансируют простой крой. Круглый вырез выглядит сдержанно и универсально — платье легко трансформируется из повседневного образа в более праздничный благодаря аксессуарам.",
+          "Детали:",
+          "• длина миди",
+          "• свободный силуэт",
+          "• плиссированная, лёгкая ткань"
+        ],
+        colors: ["тёмно-синий"]
+      }
+    }
+  },
+
+  {
+    id: 265,
+    price: 2100,
+    isTop: false,
+    isNew: true,
+    sku: "99405",
+    size: "XS S M L XL",
+    category: "Skirts",
+    image: "/Skirts/Leather Skirt Front Slit/1.avif",
+    images: [
+      "/Skirts/Leather Skirt Front Slit/2.avif",
+      "/Skirts/Leather Skirt Front Slit/3.avif",
+      "/Skirts/Leather Skirt Front Slit/4.avif",
+      "/Skirts/Leather Skirt Front Slit/5.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Skirts",
+        name: "Leather Skirt with Front Slit",
+        description: [
+          "A statement midi skirt in rich red eco-leather — about boldness, elegance, and confidence. The high waist beautifully accentuates the waistline, while the straight silhouette elongates the figure, creating a refined and modern look.",
+          "The neat front slit adds dynamism and subtle sensuality without disturbing the balance between restraint and impact.",
+          "Fabric: High-quality eco-leather with a suede backing (stretchy, does not crack).",
+          "Details:",
+          "• Midi length",
+          "• Front slit",
+          "• High waist"
+        ],
+        colors: ["red"]
+      },
+      FR: {
+        category: "Jupes",
+        name: "Jupe en cuir avec fente devant",
+        description: [
+          "Une jupe midi audacieuse en cuir synthétique rouge vif — pour l'élégance, la confiance et l'assurance. La taille haute souligne magnifiquement la silhouette, tandis que la coupe droite allonge la figure pour un look raffiné et moderne.",
+          "La fente devant ajoute du dynamisme et une touche de sensualité sans rompre l'équilibre entre retenue et impact.",
+          "Tissu : cuir écologique de haute qualité sur base en suédine (extensible, ne se fissure pas).",
+          "Détails :",
+          "• Longueur midi",
+          "• Fente devant",
+          "• Taille haute"
+        ],
+        colors: ["rouge"]
+      },
+      UA: {
+        category: "Спідниці",
+        name: "Шкіряна спідниця розріз спереду",
+        description: [
+          "Акцентна міді-спідниця зі штучної шкіри насиченого червоного кольору — про сміливість, елегантність і впевненість у собі. Висока посадка красиво підкреслює талію, а прямий силует витягує фігуру, створюючи витончений і сучасний образ.",
+          "Акуратний розріз спереду додає динаміки та легкої сексуальності, не порушуючи балансу між стриманістю й ефектністю.",
+          "Тканина: якісна екошкіра на замшевій основі (стречева, не тріскається).",
+          "Деталі:",
+          "• довжина міді",
+          "• розріз спереду",
+          "• висока посадка"
+        ],
+        colors: ["червоний"]
+      },
+      RU: {
+        category: "Юбки",
+        name: "Кожаная юбка с разрезом спереди",
+        description: [
+          "Акцентная миди-юбка из искусственной кожи насыщенного красного цвета — о смелости, элегантности и уверенности в себе. Высокая посадка красиво подчёркивает талию, а прямой силуэт удлиняет фигуру, создавая изысканный и современный образ.",
+          "Аккуратный разрез спереди добавляет динамики и лёгкой сексуальности, не нарушая баланса между сдержанностью и эффектностью.",
+          "Ткань: качественная экокожа на замшевой основе (стрейчевая, не трескается).",
+          "Детали:",
+          "• длина миди",
+          "• разрез спереди",
+          "• высокая посадка"
+        ],
+        colors: ["красный"]
+      }
+    }
+  },
+
 {
   id: 264,
   price: 2100,
