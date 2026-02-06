@@ -57,6 +57,708 @@ const products = [
   }, 
 
   {
+    id: 282,
+    price: 3700,
+    isTop: false,
+    isNew: true,
+    sku: "99422",
+    size: "XS S M L XL",
+    category: "Outerwear",
+    image: "/Outerwear/Elongated Bomber/1.avif",
+    images: [
+      "/Outerwear/Elongated Bomber/2.avif",
+      "/Outerwear/Elongated Bomber/3.avif",
+      "/Outerwear/Elongated Bomber/4.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Outerwear",
+        name: "Elongated Bomber",
+        description: [
+          "A tweed bomber with soft stitching — an accent model for stylish everyday looks. The loose fit, rounded shoulder line and elastic cuffs create a comfortable fit, while the front zipper adds practicality. Patch pockets emphasize the utilitarian character of the garment.",
+          "Fabric: quilted tweed",
+          "Details:",
+          "• Has lining",
+          "• Loose fit",
+          "• Patch pockets"
+        ],
+        colors: ["milk chocolate"]
+      },
+      FR: {
+        category: "Vêtements d'extérieur",
+        name: "Bomber allongé",
+        description: [
+          "Un bomber en tweed avec piqûres douces — un modèle d'accent pour des looks quotidiens élégants. La coupe ample, la ligne d'épaules arrondie et les poignets élastiques créent un ajustement confortable, tandis que la fermeture éclair frontale ajoute de la praticité. Les poches plaquées soulignent le caractère utilitaire du vêtement.",
+          "Tissu : tweed matelassé",
+          "Détails :",
+          "• Avec doublure",
+          "• Coupe ample",
+          "• Poches plaquées"
+        ],
+        colors: ["chocolat au lait"]
+      },
+      UA: {
+        category: "Верхній одяг",
+        name: "Подовжений бомбер",
+        description: [
+          "Твідовий бомбер із мʼякою прострочкою — акцентна модель для стильних повсякденних образів. Вільний крій, округла лінія плечей та еластичні манжети створюють комфортну посадку, а фронтальна застібка на блискавці додає практичності. Накладні кишені підкреслюють утилітарний характер виробу.",
+          "Тканина: стьобаний твід",
+          "Деталі:",
+          "• має підклад",
+          "• вільний крій",
+          "• накладні кишені"
+        ],
+        colors: ["молочний шоколад"]
+      },
+      RU: {
+        category: "Верхняя одежда",
+        name: "Удлинённый бомбер",
+        description: [
+          "Твидовый бомбер с мягкой прострочкой — акцентная модель для стильных повседневных образов. Свободный крой, округлая линия плеч и эластичные манжеты создают комфортную посадку, а фронтальная застёжка на молнии добавляет практичности. Накладные карманы подчёркивают утилитарный характер изделия.",
+          "Ткань: стёганый твид",
+          "Детали:",
+          "• имеет подкладку",
+          "• свободный крой",
+          "• накладные карманы"
+        ],
+        colors: ["молочный шоколад"]
+      }
+    }
+  },
+
+  {
+    id: 281,
+    price: 5600,
+    isTop: false,
+    isNew: true,
+    sku: "99421",
+    size: "XS S M L XL",
+    category: "Costumes",
+    image: "/Costumes/Tweed Suit with Bomber/1.avif",
+    images: [
+      "/Costumes/Tweed Suit with Bomber/2.avif",
+      "/Costumes/Tweed Suit with Bomber/3.avif",
+      "/Costumes/Tweed Suit with Bomber/4.avif",
+      "/Costumes/Tweed Suit with Bomber/5.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Costumes",
+        name: "Tweed Suit with Elongated Bomber",
+        description: [
+          "A tweed suit in warm natural shade — a combination of coziness, structure and modern aesthetics. The voluminous bomber with stitching and straight trousers create a relaxed but polished silhouette. Textured tweed adds depth and character to the look while remaining comfortable for everyday wear.",
+          "Fabric: quilted tweed",
+          "Details:",
+          "• Elongated bomber",
+          "• Has lining",
+          "• High waist, banana fit"
+        ],
+        colors: ["milk chocolate"]
+      },
+      FR: {
+        category: "Costumes",
+        name: "Costume en tweed avec bomber allongé",
+        description: [
+          "Un costume en tweed dans une teinte naturelle chaleureuse — une combinaison de confort, de structure et d'esthétique moderne. Le bomber volumineux avec piqûres et le pantalon droit créent une silhouette décontractée mais soignée. Le tweed texturé ajoute de la profondeur et du caractère au look tout en restant confortable pour un port quotidien.",
+          "Tissu : tweed matelassé",
+          "Détails :",
+          "• Bomber allongé",
+          "• Avec doublure",
+          "• Taille haute, coupe banane"
+        ],
+        colors: ["chocolat au lait"]
+      },
+      UA: {
+        category: "Костюми",
+        name: "Твідовий костюм з подовженим бомбером",
+        description: [
+          "Твідовий костюм у теплому природному відтінку — поєднання затишку, структури й сучасної естетики. Обʼємний бомбер із прострочкою та прямі брюки створюють розслаблений, але зібраний силует. Фактурний твід додає образу глибини та характеру, залишаючись комфортним для щоденного носіння.",
+          "Тканина: стьобаний твід",
+          "Деталі:",
+          "• подовжений бомбер",
+          "• має підклаж",
+          "• висока посадка, фасон бананів"
+        ],
+        colors: ["молочний шоколад"]
+      },
+      RU: {
+        category: "Костюмы",
+        name: "Твидовый костюм с удлинённым бомбером",
+        description: [
+          "Твидовый костюм в тёплом натуральном оттенке — сочетание уюта, структуры и современной эстетики. Объёмный бомбер с прострочкой и прямые брюки создают расслабленный, но собранный силуэт. Фактурный твид добавляет образу глубины и характера, оставаясь комфортным для повседневной носки.",
+          "Ткань: стёганый твид",
+          "Детали:",
+          "• удлинённый бомбер",
+          "• имеет подкладку",
+          "• высокая посадка, фасон бананов"
+        ],
+        colors: ["молочный шоколад"]
+      }
+    }
+  },
+
+  {
+    id: 280,
+    price: 2060,
+    isTop: false,
+    isNew: true,
+    sku: "99420",
+    size: "XS S M L XL",
+    category: "Pants",
+    image: "/Pants/Checkered Pants/1.avif",
+    images: [
+      "/Pants/Checkered Pants/2.avif",
+      "/Pants/Checkered Pants/3.avif",
+      "/Pants/Checkered Pants/4.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Pants",
+        name: "Checkered Pants",
+        description: [
+          "Straight-cut wool trousers — a universal base for a thoughtful wardrobe. The high waist and neat leg line create a clean, balanced silhouette and emphasize the figure without excess volume. The fabric is soft to the touch, dense and holds its shape well.",
+          "Fabric: natural wool, 75% content",
+          "Details:",
+          "• High waist",
+          "• 2 pockets"
+        ],
+        colors: ["dark chocolate"]
+      },
+      FR: {
+        category: "Pantalons",
+        name: "Pantalon à carreaux",
+        description: [
+          "Pantalon en laine à coupe droite — une base universelle pour une garde-robe réfléchie. La taille haute et la ligne nette des jambes créent une silhouette propre et équilibrée et soulignent la silhouette sans volume excessif. Le tissu est doux au toucher, dense et garde bien sa forme.",
+          "Tissu : laine naturelle, 75% de contenu",
+          "Détails :",
+          "• Taille haute",
+          "• 2 poches"
+        ],
+        colors: ["chocolat foncé"]
+      },
+      UA: {
+        category: "Брюки",
+        name: "Картаті брюки",
+        description: [
+          "Вовняні брюки прямого крою — універсальна база для продуманого гардероба. Висока посадка та акуратна лінія штанин створюють чистий, врівноважений силует і підкреслюють фігуру без зайвого обʼєму. Тканина мʼяка на дотик, щільна та добре тримає форму.",
+          "Тканина: натуральна вовна, 75% у складі",
+          "Деталі:",
+          "• висока посадка",
+          "• 2 кишені"
+        ],
+        colors: ["темний шоколад"]
+      },
+      RU: {
+        category: "Брюки",
+        name: "Клетчатые брюки",
+        description: [
+          "Шерстяные брюки прямого кроя — универсальная база для продуманного гардероба. Высокая посадка и аккуратная линия брючин создают чистый, сбалансированный силуэт и подчёркивают фигуру без лишнего объёма. Ткань мягкая на ощупь, плотная и хорошо держит форму.",
+          "Ткань: натуральная шерсть, 75% в составе",
+          "Детали:",
+          "• высокая посадка",
+          "• 2 кармана"
+        ],
+        colors: ["тёмный шоколад"]
+      }
+    }
+  },
+
+  {
+    id: 279,
+    price: 5560,
+    isTop: false,
+    isNew: true,
+    sku: "99419",
+    size: "XS S M L XL",
+    category: "Costumes",
+    image: "/Costumes/Checkered Suit with Pants/1.avif",
+    images: [
+      "/Costumes/Checkered Suit with Pants/2.avif",
+      "/Costumes/Checkered Suit with Pants/3.avif",
+      "/Costumes/Checkered Suit with Pants/4.avif",
+      "/Costumes/Checkered Suit with Pants/5.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Costumes",
+        name: "Checkered Suit with Pants",
+        description: [
+          "A wool suit in deep brown-graphite melange — the embodiment of restrained elegance and functional minimalism. The blazer with a clean fit and straight trousers form a refined, elongated silhouette, equally appropriate for both city looks and business meetings.",
+          "Fabric: natural wool, 75% content",
+          "Details:",
+          "• Cropped blazer",
+          "• High waist"
+        ],
+        colors: ["dark chocolate"]
+      },
+      FR: {
+        category: "Costumes",
+        name: "Costume à carreaux avec pantalon",
+        description: [
+          "Un costume en laine en mélange brun-graphite profond — l'incarnation de l'élégance sobre et du minimalisme fonctionnel. Le blazer avec une coupe nette et le pantalon droit forment une silhouette raffinée et allongée, également appropriée pour les looks urbains et les réunions d'affaires.",
+          "Tissu : laine naturelle, 75% de contenu",
+          "Détails :",
+          "• Blazer court",
+          "• Taille haute"
+        ],
+        colors: ["chocolat foncé"]
+      },
+      UA: {
+        category: "Костюми",
+        name: "Картатий костюм із брюками",
+        description: [
+          "Вовняний костюм у глибокому коричнево-графітовому меланжі — втілення стриманої елегантності та функціонального мінімалізму. Жакет із чіткою посадкою та прямі брюки формують витончений, витягнутий силует, який однаково доречний і для міських образів, і для ділових зустрічей.",
+          "Тканина: натуральна вовна, 75% у складі",
+          "Деталі:",
+          "• вкорочений жакет",
+          "• висока посадка"
+        ],
+        colors: ["темний шоколад"]
+      },
+      RU: {
+        category: "Костюмы",
+        name: "Клетчатый костюм с брюками",
+        description: [
+          "Шерстяной костюм в глубоком коричнево-графитовом меланже — воплощение сдержанной элегантности и функционального минимализма. Жакет с чёткой посадкой и прямые брюки формируют изысканный, вытянутый силуэт, одинаково уместный как для городских образов, так и для деловых встреч.",
+          "Ткань: натуральная шерсть, 75% в составе",
+          "Детали:",
+          "• укороченный жакет",
+          "• высокая посадка"
+        ],
+        colors: ["тёмный шоколад"]
+      }
+    }
+  },
+
+  {
+    id: 278,
+    price: 1900,
+    isTop: false,
+    isNew: true,
+    sku: "99418",
+    size: "XS S M L XL",
+    category: "Skirts",
+    image: "/Skirts/Checkered Skirt/1.avif",
+    images: [
+      "/Skirts/Checkered Skirt/2.avif",
+      "/Skirts/Checkered Skirt/3.avif",
+      "/Skirts/Checkered Skirt/4.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Skirts",
+        name: "Checkered Skirt",
+        description: [
+          "A classic wool A-line skirt — universal and feminine. The soft dense fabric drapes beautifully and provides a comfortable fit. The midi length makes the model practical and elegant at the same time. The skirt easily combines with the blazer from the set, knitwear or basic shirts, creating complete looks for every day.",
+          "Fabric: natural wool, 75% content",
+          "Details:",
+          "• A-line silhouette",
+          "• High waist",
+          "• Has pleating"
+        ],
+        colors: ["dark chocolate"]
+      },
+      FR: {
+        category: "Jupes",
+        name: "Jupe à carreaux",
+        description: [
+          "Une jupe trapèze classique en laine — universelle et féminine. Le tissu dense et doux se drape magnifiquement et offre un ajustement confortable. La longueur midi rend le modèle pratique et élégant à la fois. La jupe se combine facilement avec le blazer de l'ensemble, des tricots ou des chemises basiques, créant des looks complets pour tous les jours.",
+          "Tissu : laine naturelle, 75% de contenu",
+          "Détails :",
+          "• Silhouette trapèze",
+          "• Taille haute",
+          "• Avec plissage"
+        ],
+        colors: ["chocolat foncé"]
+      },
+      UA: {
+        category: "Спідниці",
+        name: "Картата спідниця",
+        description: [
+          "Класична вовняна спідниця А-силуету — універсальна та жіночна. М'яка щільна тканина красиво драпірується й забезпечує комфортну посадку. Довжина міді робить модель практичною та елегантною водночас. Спідниця легко комбінується з жакетом із комплекту, трикотажем або базовими сорочками, створюючи завершені образи на кожен день.",
+          "Тканина: натуральна вовна, 75% у складі",
+          "Деталі:",
+          "• А-силуету",
+          "• висока посадка",
+          "• має плісерування"
+        ],
+        colors: ["темний шоколад"]
+      },
+      RU: {
+        category: "Юбки",
+        name: "Клетчатая юбка",
+        description: [
+          "Классическая шерстяная юбка А-силуэта — универсальная и женственная. Мягкая плотная ткань красиво драпируется и обеспечивает комфортную посадку. Длина миди делает модель практичной и элегантной одновременно. Юбка легко комбинируется с жакетом из комплекта, трикотажем или базовыми рубашками, создавая завершённые образы на каждый день.",
+          "Ткань: натуральная шерсть, 75% в составе",
+          "Детали:",
+          "• А-силуэт",
+          "• высокая посадка",
+          "• имеет плиссировку"
+        ],
+        colors: ["тёмный шоколад"]
+      }
+    }
+  },
+
+  {
+    id: 277,
+    price: 3500,
+    isTop: false,
+    isNew: true,
+    sku: "99417",
+    size: "XS S M L XL",
+    category: "Jackets",
+    image: "/Jackets/Checkered Jacket/1.avif",
+    images: [
+      "/Jackets/Checkered Jacket/2.avif",
+      "/Jackets/Checkered Jacket/3.avif",
+      "/Jackets/Checkered Jacket/4.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Jackets",
+        name: "Checkered Jacket",
+        description: [
+          "A structured wool blazer with a refined V-neckline — an accent wardrobe base. Neat buttons, clean fit and noble fabric texture create an elegant, polished look. The blazer beautifully holds its shape, emphasizes the waist and easily combines with both skirts and trousers or jeans. Perfect option for office and city looks.",
+          "Fabric: natural wool, 75% content",
+          "Details:",
+          "• Cropped blazer",
+          "• Has lining"
+        ],
+        colors: ["dark chocolate"]
+      },
+      FR: {
+        category: "Vestes",
+        name: "Veste à carreaux",
+        description: [
+          "Un blazer en laine structuré avec un décolleté en V raffiné — une base de garde-robe d'accent. Des boutons soignés, une coupe nette et une texture de tissu noble créent un look élégant et soigné. Le blazer garde magnifiquement sa forme, souligne la taille et se combine facilement avec des jupes, des pantalons ou des jeans. Option parfaite pour les looks de bureau et de ville.",
+          "Tissu : laine naturelle, 75% de contenu",
+          "Détails :",
+          "• Blazer court",
+          "• Avec doublure"
+        ],
+        colors: ["chocolat foncé"]
+      },
+      UA: {
+        category: "Жакети",
+        name: "Картатий жакет",
+        description: [
+          "Структурований вовняний жакет із витонченим V-подібним вирізом — акцентна база гардероба. Акуратні ґудзики, чітка посадка та благородна текстура тканини створюють елегантний, зібраний образ. Жакет красиво тримає форму, підкреслює талію та легко поєднується як зі спідницями, так і з брюками чи джинсами. Ідеальний варіант для офісу та міських образів.",
+          "Тканина: натуральна вовна, 75% у складі",
+          "Деталі:",
+          "• вкорочений жакет",
+          "• має підклад"
+        ],
+        colors: ["темний шоколад"]
+      },
+      RU: {
+        category: "Жакеты",
+        name: "Клетчатый жакет",
+        description: [
+          "Структурированный шерстяной жакет с изысканным V-образным вырезом — акцентная база гардероба. Аккуратные пуговицы, чёткая посадка и благородная текстура ткани создают элегантный, собранный образ. Жакет красиво держит форму, подчёркивает талию и легко сочетается как с юбками, так и с брюками или джинсами. Идеальный вариант для офиса и городских образов.",
+          "Ткань: натуральная шерсть, 75% в составе",
+          "Детали:",
+          "• укороченный жакет",
+          "• имеет подкладку"
+        ],
+        colors: ["тёмный шоколад"]
+      }
+    }
+  },
+
+  {
+    id: 276,
+    price: 5400,
+    isTop: false,
+    isNew: true,
+    sku: "99416",
+    size: "XS S M L XL",
+    category: "Costumes",
+    image: "/Costumes/Checkered Suit with Skirt/1.avif",
+    images: [
+      "/Costumes/Checkered Suit with Skirt/2.avif",
+      "/Costumes/Checkered Suit with Skirt/3.avif",
+      "/Costumes/Checkered Suit with Skirt/4.avif",
+      "/Costumes/Checkered Suit with Skirt/5.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Costumes",
+        name: "Checkered Suit with Skirt",
+        description: [
+          "An elegant wool suit in noble checkered pattern — the embodiment of restrained femininity and timeless style. The thoughtful cut emphasizes the silhouette, while the soft natural wool provides comfort and warmth in the cool season. The suit is perfect for both business looks and stylish everyday outings. Wear as a set or combine pieces separately to create new looks.",
+          "Fabric: natural wool, 75% content",
+          "Details:",
+          "• Cropped blazer",
+          "• High waist",
+          "• Pleated skirt"
+        ],
+        colors: ["dark chocolate"]
+      },
+      FR: {
+        category: "Costumes",
+        name: "Costume à carreaux avec jupe",
+        description: [
+          "Un costume élégant en laine à motif à carreaux noble — l'incarnation de la féminité sobre et du style intemporel. La coupe réfléchie souligne la silhouette, tandis que la laine naturelle douce offre confort et chaleur en saison fraîche. Le costume est parfait pour les looks professionnels et les sorties quotidiennes élégantes. Portez en ensemble ou combinez les pièces séparément pour créer de nouveaux looks.",
+          "Tissu : laine naturelle, 75% de contenu",
+          "Détails :",
+          "• Blazer court",
+          "• Taille haute",
+          "• Jupe plissée"
+        ],
+        colors: ["chocolat foncé"]
+      },
+      UA: {
+        category: "Костюми",
+        name: "Картатий костюм зі спідницею",
+        description: [
+          "Елегантний вовняний костюм у благородній клітинці — втілення стриманої жіночності та позачасового стилю. Продуманий крій підкреслює силует, а м'яка натуральна вовна забезпечує комфорт і тепло в прохолодний сезон. Костюм ідеально підходить як для ділових образів, так і для стильних повсякденних виходів. Носіть комплектом або комбінуйте елементи окремо, створюючи нові образи.",
+          "Тканина: натуральна вовна, 75% у складі",
+          "Деталі:",
+          "• вкорочений жакет",
+          "• висока посадка",
+          "• плісерована спідниця"
+        ],
+        colors: ["темний шоколад"]
+      },
+      RU: {
+        category: "Костюмы",
+        name: "Клетчатый костюм с юбкой",
+        description: [
+          "Элегантный шерстяной костюм в благородную клетку — воплощение сдержанной женственности и вневременного стиля. Продуманный крой подчёркивает силуэт, а мягкая натуральная шерсть обеспечивает комфорт и тепло в прохладный сезон. Костюм идеально подходит как для деловых образов, так и для стильных повседневных выходов. Носите комплектом или комбинируйте элементы отдельно, создавая новые образы.",
+          "Ткань: натуральная шерсть, 75% в составе",
+          "Детали:",
+          "• укороченный жакет",
+          "• высокая посадка",
+          "• плиссированная юбка"
+        ],
+        colors: ["тёмный шоколад"]
+      }
+    }
+  },
+
+  {
+    id: 275,
+    price: 2060,
+    isTop: false,
+    isNew: true,
+    sku: "99415",
+    size: "XS S M L XL",
+    category: "Pants",
+    image: "/Pants/Deep Green Pants/1.avif",
+    images: [
+      "/Pants/Deep Green Pants/2.avif",
+      "/Pants/Deep Green Pants/3.avif",
+      "/Pants/Deep Green Pants/4.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Pants",
+        name: "Deep Green Pants",
+        description: [
+          "Wool trousers with a straight elongated cut and elegant fit. The model visually elongates the silhouette, creating a sense of lightness and balance. Natural fabric is pleasant to the body, holds its shape well and is suitable for everyday wear in the cold season.",
+          "Fabric: natural wool, 75% content",
+          "Details:",
+          "• High waist",
+          "• 2 pockets",
+          "• Creases along the length"
+        ],
+        colors: ["dark green"]
+      },
+      FR: {
+        category: "Pantalons",
+        name: "Pantalon Deep Green",
+        description: [
+          "Pantalon en laine avec une coupe droite allongée et un ajustement élégant. Le modèle allonge visuellement la silhouette, créant une sensation de légèreté et d'équilibre. Le tissu naturel est agréable au toucher, garde bien sa forme et convient à un port quotidien en saison froide.",
+          "Tissu : laine naturelle, 75% de contenu",
+          "Détails :",
+          "• Taille haute",
+          "• 2 poches",
+          "• Plis sur la longueur"
+        ],
+        colors: ["vert foncé"]
+      },
+      UA: {
+        category: "Брюки",
+        name: "Брюки Deep green",
+        description: [
+          "Вовняні брюки прямого подовженого крою з елегантною посадкою. Модель візуально витягує силует, створюючи відчуття легкості та балансу. Натуральна тканина приємна до тіла, добре тримає форму та підходить для щоденного носіння в холодний сезон.",
+          "Тканина: натуральна вовна, 75% у складі",
+          "Деталі:",
+          "• висока посадка",
+          "• 2 кишені",
+          "• стрілки по довжині"
+        ],
+        colors: ["темно зелений"]
+      },
+      RU: {
+        category: "Брюки",
+        name: "Брюки Deep green",
+        description: [
+          "Шерстяные брюки прямого удлинённого кроя с элегантной посадкой. Модель визуально вытягивает силуэт, создавая ощущение лёгкости и баланса. Натуральная ткань приятна к телу, хорошо держит форму и подходит для повседневной носки в холодный сезон.",
+          "Ткань: натуральная шерсть, 75% в составе",
+          "Детали:",
+          "• высокая посадка",
+          "• 2 кармана",
+          "• стрелки по длине"
+        ],
+        colors: ["тёмно-зелёный"]
+      }
+    }
+  },
+
+  {
+    id: 274,
+    price: 3500,
+    isTop: false,
+    isNew: true,
+    sku: "99414",
+    size: "XS S M L XL",
+    category: "Jackets",
+    image: "/Jackets/Deep Green Jacket/1.avif",
+    images: [
+      "/Jackets/Deep Green Jacket/2.avif",
+      "/Jackets/Deep Green Jacket/3.avif",
+      "/Jackets/Deep Green Jacket/4.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Jackets",
+        name: "Deep Green Jacket",
+        description: [
+          "A fitted wool blazer with a clear shoulder line and refined relief seams that accentuate the waist. The classic notched collar and laconic fastening create a restrained, noble look. Thanks to the thoughtful cut, the blazer forms a feminine silhouette and remains comfortable to wear.",
+          "Fabric: natural wool, 75% content",
+          "Details:",
+          "• Fitted blazer",
+          "• Has lining",
+          "• Accentuates the waist"
+        ],
+        colors: ["dark green"]
+      },
+      FR: {
+        category: "Vestes",
+        name: "Veste Deep Green",
+        description: [
+          "Un blazer en laine ajusté avec une ligne d'épaules nette et des coutures en relief raffinées qui accentuent la taille. Le col classique cranté et la fermeture laconique créent un look sobre et noble. Grâce à la coupe réfléchie, le blazer forme une silhouette féminine et reste confortable à porter.",
+          "Tissu : laine naturelle, 75% de contenu",
+          "Détails :",
+          "• Blazer ajusté",
+          "• Avec doublure",
+          "• Accentue la taille"
+        ],
+        colors: ["vert foncé"]
+      },
+      UA: {
+        category: "Жакети",
+        name: "Жакет Deep green",
+        description: [
+          "Приталений вовняний жакет із чіткою лінією плечей та витонченими рельєфними швами, що акцентують талію. Класичний відкладний комір і лаконічна застібка створюють стриманий, благородний вигляд. Завдяки продуманому крою жакет формує жіночний силует і залишається комфортним у носінні.",
+          "Тканина: натуральна вовна, 75% у складі",
+          "Деталі:",
+          "• приталений жакет",
+          "• має підкладку",
+          "• акцентує талію"
+        ],
+        colors: ["темно зелений"]
+      },
+      RU: {
+        category: "Жакеты",
+        name: "Жакет Deep green",
+        description: [
+          "Приталенный шерстяной жакет с чёткой линией плеч и изысканными рельефными швами, акцентирующими талию. Классический отложной воротник и лаконичная застёжка создают сдержанный, благородный вид. Благодаря продуманному крою жакет формирует женственный силуэт и остаётся комфортным в носке.",
+          "Ткань: натуральная шерсть, 75% в составе",
+          "Детали:",
+          "• приталенный жакет",
+          "• имеет подкладку",
+          "• акцентирует талию"
+        ],
+        colors: ["тёмно-зелёный"]
+      }
+    }
+  },
+
+  {
+    id: 273,
+    price: 5560,
+    isTop: false,
+    isNew: true,
+    sku: "99413",
+    size: "XS S M L XL",
+    category: "Costumes",
+    image: "/Costumes/Deep Green Suit/1.avif",
+    images: [
+      "/Costumes/Deep Green Suit/2.avif",
+      "/Costumes/Deep Green Suit/3.avif",
+      "/Costumes/Deep Green Suit/4.avif",
+      "/Costumes/Deep Green Suit/5.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Costumes",
+        name: "Deep Green Suit",
+        description: [
+          "An elegant wool suit in a deep shade — a timeless wardrobe investment. The fitted blazer and elongated straight trousers form a clear, refined silhouette and emphasize the figure without excessive strictness. Natural wool fabric provides comfort, warmth and perfect fit, maintaining its shape throughout the day.",
+          "Fabric: natural wool, 75% content",
+          "Details:",
+          "• Fitted blazer",
+          "• High waist",
+          "• Refined silhouette"
+        ],
+        colors: ["dark green"]
+      },
+      FR: {
+        category: "Costumes",
+        name: "Costume Deep Green",
+        description: [
+          "Un costume élégant en laine dans une teinte profonde — un investissement intemporel pour la garde-robe. Le blazer ajusté et le pantalon droit allongé forment une silhouette claire et raffinée et soulignent la silhouette sans rigueur excessive. Le tissu en laine naturelle offre confort, chaleur et ajustement parfait, conservant sa forme tout au long de la journée.",
+          "Tissu : laine naturelle, 75% de contenu",
+          "Détails :",
+          "• Blazer ajusté",
+          "• Taille haute",
+          "• Silhouette raffinée"
+        ],
+        colors: ["vert foncé"]
+      },
+      UA: {
+        category: "Костюми",
+        name: "Костюм Deep green",
+        description: [
+          "Елегантний вовняний костюм у глибокому відтінку — позачасова інвестиція в гардероб. Приталений жакет і подовжені прямі брюки формують чіткий, витончений силует та підкреслюють фігуру без зайвої строгості. Натуральна вовняна тканина забезпечує комфорт, тепло та ідеальну посадку, зберігаючи форму протягом дня.",
+          "Тканина: натуральна вовна, 75% у складі",
+          "Деталі:",
+          "• приталений жакет",
+          "• висока посадка",
+          "• витончений силует"
+        ],
+        colors: ["темно зелений"]
+      },
+      RU: {
+        category: "Костюмы",
+        name: "Костюм Deep green",
+        description: [
+          "Элегантный шерстяной костюм в глубоком оттенке — вневременная инвестиция в гардероб. Приталенный жакет и удлинённые прямые брюки формируют чёткий, изысканный силуэт и подчёркивают фигуру без лишней строгости. Натуральная шерстяная ткань обеспечивает комфорт, тепло и идеальную посадку, сохраняя форму в течение дня.",
+          "Ткань: натуральная шерсть, 75% в составе",
+          "Детали:",
+          "• приталенный жакет",
+          "• высокая посадка",
+          "• изысканный силуэт"
+        ],
+        colors: ["тёмно-зелёный"]
+      }
+    }
+  },
+
+  {
     id: 272,
     price: 1950,
     isTop: false,
