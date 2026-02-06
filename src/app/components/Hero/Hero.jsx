@@ -64,7 +64,7 @@ export default function Hero() {
 {
   type: "image",
   src: "/hoom/hero1.PNG",
-  mobileSrc: "/hoom/heromobile1.PNG",
+  mobileSrc: "/hoom/1.PNG",
   alt: "Latore banner 1",
 
   ctaText: t[4],
@@ -95,7 +95,7 @@ export default function Hero() {
       {
   type: "image",
   src: "/hoom/hero2.PNG",
-  mobileSrc: "/hoom/heromobile2.PNG",
+  mobileSrc: "/hoom/2.PNG",
   alt: "Latore banner 2",
 
   ctaText: t[4],
@@ -141,7 +141,7 @@ export default function Hero() {
       {
   type: "image",
   src: "/hoom/hero3.PNG",
-  mobileSrc: "/hoom/heromobile3.PNG",
+  mobileSrc: "/hoom/3.PNG",
   alt: "Latore banner 3",
 
   ctaText: t[4],
