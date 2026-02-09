@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { getSessionId } from '../../utils/session';
+import { useLanguage } from '../../Functions/useLanguage';
 
 export default function Cart() {
   const [cartItems, setCartItems] = useState([]);
@@ -10,6 +11,8 @@ export default function Cart() {
   const [loading, setLoading] = useState(false);
   const [sessionId, setSessionId] = useState('');
   const router = useRouter();
+  const { translateList } = useLanguage();
+  const cartTranslations = translateList("home", "cart") || {};
 
   useEffect(() => {
     const id = getSessionId();
@@ -83,12 +86,12 @@ export default function Cart() {
 
   return (
     <div className="p-6 max-w-3xl mx-auto section-container py-12 text-black dark:text-white">
-      <h1 className="text-3xl font-semibold mb-6">🛒 Корзина</h1>
+      <h1 className="text-3xl font-semibold mb-6">{cartTranslations.heading || "🛒 Cart"}</h1>
 
       {message && <p className="mb-4 text-green-600">{message}</p>}
-      {loading && <p>Завантаження...</p>}
+      {loading && <p>{cartTranslations.loading || "Loading..."}</p>}
       {!loading && cartItems.length === 0 && (
-        <p className="text-gray-500 dark:text-gray-400">Корзина порожня.</p>
+        <p className="text-gray-500 dark:text-gray-400">{cartTranslations.empty || "Cart is empty."}</p>
       )}
 
       <div className="space-y-6">
@@ -117,8 +120,8 @@ export default function Cart() {
 
 </p>
 
-                <p className="text-sm text-gray-500">Колір: {item.color}</p>
-                <p className="text-sm text-gray-500">Розмір: {item.size}</p>
+                <p className="text-sm text-gray-500">{cartTranslations.color || "Color:"} {item.color}</p>
+                <p className="text-sm text-gray-500">{cartTranslations.size || "Size:"} {item.size}</p>
               </div>
             </div>
 
@@ -147,14 +150,14 @@ export default function Cart() {
                 }}
                 className="flex items-center text-sm text-blue-600 hover:underline transition"
               >
-                ✏️ <span className="ml-1">Редагувати</span>
+                ✏️ <span className="ml-1">{cartTranslations.edit || "Edit"}</span>
               </button>
 
               <button
                 onClick={() => removeItem(item.id)}
                 className="flex items-center text-sm text-red-600 hover:underline transition"
               >
-                🗑 <span className="ml-1">Видалити</span>
+                🗑 <span className="ml-1">{cartTranslations.delete || "Delete"}</span>
               </button>
             </div>
           </div>
@@ -164,7 +167,7 @@ export default function Cart() {
       {cartItems.length > 0 && (
         <div className="mt-10 text-right border-t pt-6">
           <h2 className="text-2xl font-semibold mb-4">
-            Всього: {Number(total).toFixed(2)} UAH
+            {cartTranslations.total || "Total:"} {Number(total).toFixed(2)} UAH
           </h2>
           <button
             onClick={() => {
@@ -174,7 +177,7 @@ export default function Cart() {
             }}
             className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition"
           >
-            Оформити замовлення
+            {cartTranslations.checkout || "Proceed to Checkout"}
           </button>
         </div>
       )}

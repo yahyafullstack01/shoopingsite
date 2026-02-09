@@ -43,6 +43,7 @@ const NewArrivalsInfo = ({ products }) => {
   const { language, translateList } = useLanguage();
   const infoLabels = translateList("Infoform", "header");
   const priceLabel = infoLabels[8] || "Price";
+  const pageTranslations = translateList("home", "newArrivalsPage") || {};
 
   // 1) беремо лише новинки
   const onlyNew = useMemo(
@@ -77,7 +78,7 @@ const NewArrivalsInfo = ({ products }) => {
   }) => {
     const sessionId = getSessionId();
     if (!sessionId) {
-      alert("Сесія не знайдена. Спробуйте оновити сторінку.");
+      alert(pageTranslations.sessionNotFound || "Session not found. Try refreshing the page.");
       return;
     }
 
@@ -86,7 +87,7 @@ const NewArrivalsInfo = ({ products }) => {
       product.translations?.[language]?.name ||
       product.name ||
       product.title ||
-      "Product";
+      pageTranslations.productFallback || "Product";
 
     // підтримка ціни зі знижкою
     const basePriceNum =
@@ -130,11 +131,11 @@ const NewArrivalsInfo = ({ products }) => {
         });
         setShowToast(true);
       } else {
-        alert(data?.message || "Помилка при додаванні");
+        alert(data?.message || pageTranslations.errorAdding || "Error adding");
       }
     } catch (error) {
-      console.error("❌ API помилка:", error);
-      alert("Помилка при додаванні до кошика");
+      console.error("❌ API error:", error);
+      alert(pageTranslations.errorAdding || "Error adding to cart");
     }
 
     setShowModal(false);
@@ -153,7 +154,7 @@ const NewArrivalsInfo = ({ products }) => {
   return (
     <section className="bg-white dark:bg-zinc-900 py-14 px-5 transition-colors duration-300">
       <h2 className="text-3xl font-semibold text-black dark:text-white mb-8 text-center uppercase">
-        Усі новинки
+        {pageTranslations.heading || "All New Arrivals"}
       </h2>
 
       <div className="grid gap-6 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
@@ -161,7 +162,7 @@ const NewArrivalsInfo = ({ products }) => {
           const translatedName =
             product.translations?.[language]?.name ||
             product.name ||
-            "Товар";
+            pageTranslations.productFallback || "Product";
           const pid = getId(product);
           const isFav = favorites.includes(pid);
 
@@ -216,7 +217,7 @@ const NewArrivalsInfo = ({ products }) => {
                     className={`absolute top-2 right-2 text-xl z-10 transition duration-300 ${
                       isFav ? "text-red-600" : "text-gray-400"
                     }`}
-                    aria-label="Додати в улюблене"
+                    aria-label={pageTranslations.addToFavorites || "Add to favorites"}
                   >
                     {isFav ? <FaHeart /> : <FaRegHeart />}
                   </button>
@@ -233,10 +234,10 @@ const NewArrivalsInfo = ({ products }) => {
                   />
 
                   <div className="absolute top-2 left-2 bg-black text-white text-xs font-semibold px-2 py-1 rounded">
-                    НОВИНКА
+                    {pageTranslations.badge || "NEW"}
                   </div>
                   <figcaption className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white text-sm sm:text-base font-medium rounded">
-                    Переглянути деталі
+                    {pageTranslations.viewDetails || "View details"}
                   </figcaption>
                 </figure>
               </div>
@@ -292,10 +293,10 @@ const NewArrivalsInfo = ({ products }) => {
                   }}
                   className="px-4 py-2 text-sm bg-green-600 hover:bg-green-700 text-white rounded transition"
                 >
-                  ДОДАТИ В КОШИК
+                  {pageTranslations.addToCart || "ADD TO CART"}
                 </button>
                 <p className="text-[11px] text-gray-500 dark:text-gray-400">
-                  Натисніть на фото, щоб переглянути деталі
+                  {pageTranslations.clickPhoto || "Click on the photo to view details"}
                 </p>
               </div>
             </article>

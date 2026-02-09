@@ -29,6 +29,7 @@ const getDefaultMedia = (product) => {
 export default function TopProductsInfo() {
   const { translateList, language } = useLanguage();
   const menuItems = translateList("home", "top_products");
+  const pageTranslations = translateList("home", "topProductsPage") || {};
   const router = useRouter();
   const searchParams = useSearchParams();
   const descriptionRef = useRef(null);
@@ -84,11 +85,11 @@ export default function TopProductsInfo() {
   const handleAddToCart = async ({ product, selectedColor, selectedSize, quantity }) => {
     const sessionId = getSessionId();
     if (!sessionId) {
-      alert("Не вдалося створити сесію. Спробуйте оновити сторінку.");
+      alert(pageTranslations.sessionError || "Could not create session. Try refreshing the page.");
       return;
     }
     if (!selectedColor || !selectedSize) {
-      alert("Вкажіть всі поля");
+      alert(pageTranslations.fillAllFields || "Please fill all fields");
       return;
     }
 
@@ -103,7 +104,7 @@ export default function TopProductsInfo() {
 
       const data = await res.json();
       if (!res.ok) {
-        alert(data.message || "Помилка при додаванні в корзину");
+        alert(data.message || pageTranslations.addToCartError || "Error adding to cart");
         return;
       }
 
@@ -120,8 +121,8 @@ export default function TopProductsInfo() {
       });
       setShowToast(true);
     } catch (err) {
-      console.error("❌ Додавання в корзину не вдалося:", err);
-      alert("Помилка при додаванні в корзину");
+      console.error("❌ Adding to cart failed:", err);
+      alert(pageTranslations.addToCartError || "Error adding to cart");
     }
   };
 
@@ -191,11 +192,11 @@ export default function TopProductsInfo() {
                     }}
                     className="mt-4 w-full bg-black hover:bg-neutral-800 text-white text-sm py-2 rounded-md tracking-wide uppercase transition"
                   >
-                    Додати в кошик
+                    {pageTranslations.addToCart || "Add to cart"}
                   </button>
 
                   <p className="text-xs text-neutral-500 dark:text-neutral-400 mt-2">
-                    Натисніть на фото, щоб переглянути деталі
+                    {pageTranslations.clickPhoto || "Click on the photo to view details"}
                   </p>
                 </article>
               );

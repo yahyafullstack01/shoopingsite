@@ -25,7 +25,56 @@
         "Shop Now"
       ],
       "follow_us": ["Follow Us"],
-      "Footer": ["Poltavskyi Shliakh St, 144 А Kharkiv", "Torhovyy Tsentr", "Kyyivsʹkyy Ivano Frankivsk"]
+      "Footer": ["Poltavskyi Shliakh St, 144 А Kharkiv", "Torhovyy Tsentr", "Kyyivsʹkyy Ivano Frankivsk"],
+      "categoryCatalog": {
+        "heading": "Catalogue",
+        "categories": ["Dresses", "Costumes", "Shirts", "Skirts", "Tops", "Pants", "Jackets", "Sweaters", "Outerwear", "Shorts"]
+      },
+      "newArrivals": {
+        "heading": "Our New Arrivals",
+        "viewAll": "View All →",
+        "productFallback": "New Arrival"
+      },
+      "newArrivalsPage": {
+        "heading": "All New Arrivals",
+        "badge": "NEW",
+        "viewDetails": "View details",
+        "addToCart": "ADD TO CART",
+        "clickPhoto": "Click on the photo to view details",
+        "addToFavorites": "Add to favorites",
+        "productFallback": "Product",
+        "sessionNotFound": "Session not found. Try refreshing the page.",
+        "errorAdding": "Error adding to cart"
+      },
+      "topProductsPage": {
+        "sessionError": "Could not create session. Try refreshing the page.",
+        "fillAllFields": "Please fill all fields",
+        "addToCartError": "Error adding to cart",
+        "addToCart": "Add to cart",
+        "clickPhoto": "Click on the photo to view details"
+      },
+      "productCard": {
+        "viewDetails": "View details",
+        "addToCart": "ADD TO CART",
+        "clickPhoto": "Click on the photo to view details"
+      },
+      "cart": {
+        "heading": "🛒 Cart",
+        "loading": "Loading...",
+        "empty": "Cart is empty.",
+        "color": "Color:",
+        "size": "Size:",
+        "edit": "Edit",
+        "delete": "Delete",
+        "total": "Total:",
+        "checkout": "Proceed to Checkout"
+      },
+      "infoForm": {
+        "addToCart": "ADD TO CART",
+        "colorError": "Select a color",
+        "sizeError": "Select a size",
+        "quantityError": "Specify quantity"
+      }
     },
     "products": {
       "header": ["Catalogues", "About", "Contact", "Conditions"]
@@ -172,7 +221,56 @@
         "Купуйте зараз"
       ],
       "follow_us": ["Слідкуйте за нами"],
-      "Footer": ["Вул.Полтавський шлях 144А Харків", "Торговий центр", "Київський Івано-Франківськ"]
+      "Footer": ["Вул.Полтавський шлях 144А Харків", "Торговий центр", "Київський Івано-Франківськ"],
+      "categoryCatalog": {
+        "heading": "Каталог",
+        "categories": ["Сукні", "Костюми", "Сорочки", "Спідниці", "Топи", "Брюки", "Жакети", "Светри", "Верхній одяг", "Шорти"]
+      },
+      "newArrivals": {
+        "heading": "Наші новинки",
+        "viewAll": "Дивитися всі →",
+        "productFallback": "Новинка"
+      },
+      "newArrivalsPage": {
+        "heading": "Усі новинки",
+        "badge": "НОВИНКА",
+        "viewDetails": "Переглянути деталі",
+        "addToCart": "ДОДАТИ В КОШИК",
+        "clickPhoto": "Натисніть на фото, щоб переглянути деталі",
+        "addToFavorites": "Додати в улюблене",
+        "productFallback": "Товар",
+        "sessionNotFound": "Сесія не знайдена. Спробуйте оновити сторінку.",
+        "errorAdding": "Помилка при додаванні до кошика"
+      },
+      "topProductsPage": {
+        "sessionError": "Не вдалося створити сесію. Спробуйте оновити сторінку.",
+        "fillAllFields": "Вкажіть всі поля",
+        "addToCartError": "Помилка при додаванні в корзину",
+        "addToCart": "Додати в кошик",
+        "clickPhoto": "Натисніть на фото, щоб переглянути деталі"
+      },
+      "productCard": {
+        "viewDetails": "Переглянути деталі",
+        "addToCart": "ДОДАТИ В КОШИК",
+        "clickPhoto": "Натисніть на фото, щоб переглянути деталі"
+      },
+      "cart": {
+        "heading": "🛒 Корзина",
+        "loading": "Завантаження...",
+        "empty": "Корзина порожня.",
+        "color": "Колір:",
+        "size": "Розмір:",
+        "edit": "Редагувати",
+        "delete": "Видалити",
+        "total": "Всього:",
+        "checkout": "Оформити замовлення"
+      },
+      "infoForm": {
+        "addToCart": "ДОДАТИ В КОШИК",
+        "colorError": "Оберіть колір",
+        "sizeError": "Оберіть розмір",
+        "quantityError": "Вкажіть кількість"
+      }
       
     },
     "contact": {

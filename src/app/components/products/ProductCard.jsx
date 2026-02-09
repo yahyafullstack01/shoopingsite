@@ -15,6 +15,7 @@ const ProductCard = ({ product, onClick, onAddToCart }) => {
 
   const infoLabels = translateList("Infoform", "header");
   const priceLabel = infoLabels[8] || "Price";
+  const cardTranslations = translateList("home", "productCard") || {};
 
   const [favorite, setFavorite] = useState(false);
 
@@ -31,8 +32,18 @@ const ProductCard = ({ product, onClick, onAddToCart }) => {
     e.stopPropagation();
     const finalPrice = product.discountPrice ?? product.price;
     const oldPrice = product.discountPrice ? product.price : null;
+    
+    // Handle video objects - extract poster or src for the image
+    const getImageSrc = (img) => {
+      if (!img) return '/placeholder/300x400.jpg';
+      if (typeof img === 'string') return img;
+      if (img.type === 'video' && img.poster) return img.poster;
+      if (img.src) return img.src;
+      return '/placeholder/300x400.jpg';
+    };
+    
     onAddToCart({
-      product: { ...product, price: finalPrice, oldPrice, name: translatedName, image: product.image },
+      product: { ...product, price: finalPrice, oldPrice, name: translatedName, image: getImageSrc(product.image) },
       selectedColor: "",
       selectedSize: "",
       quantity: 1,
@@ -73,7 +84,7 @@ const ProductCard = ({ product, onClick, onAddToCart }) => {
           />
 
           <figcaption className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white text-sm sm:text-base font-normal rounded">
-            Переглянути деталі
+            {cardTranslations.viewDetails || "View details"}
           </figcaption>
         </figure>
       </div>
@@ -97,10 +108,10 @@ const ProductCard = ({ product, onClick, onAddToCart }) => {
 
       <div className="mt-3 flex flex-col items-center sm:items-start gap-2">
         <button onClick={handleAddToCart} className="px-4 py-2 text-sm bg-green-600 hover:bg-green-700 text-white rounded transition">
-          ДОДАТИ В КОШИК
+          {cardTranslations.addToCart || "ADD TO CART"}
         </button>
         <p className="text-[11px] text-gray-500 dark:text-gray-400">
-          Натисніть на фото, щоб переглянути деталі
+          {cardTranslations.clickPhoto || "Click on the photo to view details"}
         </p>
       </div>
     </article>

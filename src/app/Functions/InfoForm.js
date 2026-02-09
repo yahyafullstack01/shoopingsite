@@ -23,6 +23,7 @@ export default function InfoForm({
 
   const { language, translateList } = useLanguage();
   const menuItems = translateList("Infoform", "header");
+  const formTranslations = translateList("home", "infoForm") || {};
 
   const translatedName = product.translations?.[language]?.name || product.name;
   const translatedDescription = product.translations?.[language]?.description || product.description;
@@ -30,21 +31,21 @@ export default function InfoForm({
   let hasError = false;
 
   if (requireSelection && !selectedColor) {
-    setColorError("Оберіть колір");
+    setColorError(formTranslations.colorError || "Select a color");
     hasError = true;
   } else {
     setColorError("");
   }
 
   if (requireSelection && !selectedSize) {
-    setSizeError("Оберіть розмір");
+    setSizeError(formTranslations.sizeError || "Select a size");
     hasError = true;
   } else {
     setSizeError("");
   }
 
   if (quantity <= 0) {
-    setQuantityError("Вкажіть кількість");
+    setQuantityError(formTranslations.quantityError || "Specify quantity");
     hasError = true;
   } else {
     setQuantityError("");
@@ -72,21 +73,21 @@ const handleContactClick = (e) => {
   let hasError = false;
 
   if (requireSelection && !selectedColor) {
-    setColorError("Оберіть колір");
+    setColorError(formTranslations.colorError || "Select a color");
     hasError = true;
   } else {
     setColorError("");
   }
 
   if (requireSelection && !selectedSize) {
-    setSizeError("Оберіть розмір");
+    setSizeError(formTranslations.sizeError || "Select a size");
     hasError = true;
   } else {
     setSizeError("");
   }
 
   if (quantity <= 0) {
-    setQuantityError("Вкажіть кількість");
+    setQuantityError(formTranslations.quantityError || "Specify quantity");
     hasError = true;
   } else {
     setQuantityError("");
@@ -216,7 +217,7 @@ const handleContactClick = (e) => {
     onClick={handleAddToCartClick}
     className="w-full md:w-auto bg-green-500 hover:bg-green-600 text-white text-sm font-medium px-6 py-3 rounded-md transition"
   >
-    ДОДАТИ В КОШИК
+    {formTranslations.addToCart || "ADD TO CART"}
   </button>
 
   <button

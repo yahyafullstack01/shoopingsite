@@ -5,11 +5,14 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState, useMemo } from "react";
 import products from "../../data/products";
 import { PRIORITY_NEW, prioritizeByIds } from "../../utils/priorities";
+import { useLanguage } from "../../Functions/useLanguage";
 
 const NewArrivals = () => {
   const router = useRouter();
   const [isMobile, setIsMobile] = useState(false);
   const [visibleCount, setVisibleCount] = useState(10);
+  const { language, translateList } = useLanguage();
+  const newArrivalsData = translateList("home", "newArrivals") || {};
 
   useEffect(() => {
     const handleResize = () => {
@@ -50,7 +53,7 @@ const NewArrivals = () => {
       itemScope
       itemType="https://schema.org/ItemList"
     >
-      <meta itemProp="name" content="Наші новинки" />
+      <meta itemProp="name" content={newArrivalsData.heading || "Our New Arrivals"} />
       <meta itemProp="numberOfItems" content={String(renderedCount)} />
       <meta
         itemProp="itemListOrder"
@@ -59,20 +62,20 @@ const NewArrivals = () => {
 
       <div className="flex justify-between items-center mb-8">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-black dark:text-white">
-          Наші новинки
+          {newArrivalsData.heading || "Our New Arrivals"}
         </h2>
         <button
           onClick={handleViewAll}
           className="text-sm sm:text-base font-medium text-black dark:text-white hover:underline"
         >
-          Дивитися всі →
+          {newArrivalsData.viewAll || "View All →"}
         </button>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
         {newProducts.slice(0, renderedCount).map((product, index) => {
           const name =
-            product.translations?.ua?.name || product.name || "Новинка";
+            product.translations?.[language]?.name || product.name || newArrivalsData.productFallback || "New Arrival";
           const url = `/new-products?product=${product.id}`;
 
           return (
