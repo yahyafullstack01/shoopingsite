@@ -3,7 +3,7 @@ const products = [
     {
     id: 100,
     price: 2000,
-    isTop: true,
+    isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 1700,
     sku: "98820",
@@ -203,7 +203,7 @@ const products = [
     id: 280,
     price: 2060,
     isTop: false,
-    isNew: true,
+    isNew: false,
     sku: "99420",
     size: "XS S M L XL",
     category: "Pants",
@@ -338,7 +338,7 @@ const products = [
     id: 278,
     price: 1900,
     isTop: false,
-    isNew: true,
+    isNew: false,
     sku: "99418",
     size: "XS S M L XL",
     category: "Skirts",
@@ -409,7 +409,7 @@ const products = [
     id: 277,
     price: 3500,
     isTop: false,
-    isNew: true,
+    isNew: false,
     sku: "99417",
     size: "XS S M L XL",
     category: "Jackets",
@@ -548,7 +548,7 @@ const products = [
     id: 275,
     price: 2060,
     isTop: false,
-    isNew: true,
+    isNew: false,
     sku: "99415",
     size: "XS S M L XL",
     category: "Pants",
@@ -619,7 +619,7 @@ const products = [
     id: 274,
     price: 3500,
     isTop: false,
-    isNew: true,
+    isNew: false,
     sku: "99414",
     size: "XS S M L XL",
     category: "Jackets",
@@ -762,7 +762,7 @@ const products = [
     id: 272,
     price: 1950,
     isTop: false,
-    isNew: true,
+    isNew: false,
     sku: "99412",
     size: "XS S M L XL",
     category: "Pants",
@@ -833,7 +833,7 @@ const products = [
     id: 271,
     price: 3100,
     isTop: false,
-    isNew: true,
+    isNew: false,
     sku: "99411",
     size: "XS S M L XL",
     category: "Jackets",
@@ -1047,7 +1047,7 @@ const products = [
   {
     id: 268,
     price: 2900,
-    isTop: false,
+    isTop: true,
     isNew: true,
     sku: "99408",
     size: "XS S M L XL",
@@ -1348,7 +1348,7 @@ const products = [
   id: 264,
   price: 2100,
   isTop: false,
-  isNew: true,
+  isNew: false,
   sku: "99404",
   size: "XS S M L XL",
   category: "Skirts",
@@ -1424,7 +1424,7 @@ const products = [
   id: 263,
   price: 1500,
   isTop: false,
-  isNew: true,
+  isNew: false,
   sku: "99403",
   size: "XS S M L XL",
   category: "Sweaters",
@@ -1499,8 +1499,8 @@ const products = [
 {
   id: 262,
   price: 1400,
-  isTop: true,
-  isNew: true,
+  isTop: false,
+  isNew: false,
 
   isNewYearOffer: true,
   // isSpecialOffer: true,
@@ -1565,7 +1565,7 @@ const products = [
   id: 261,
   price: 2700,
   isTop: false,
-  isNew: true,
+  isNew: false,
   isNewYearOffer: true,
   // isSpecialOffer: true,
   // discountPrice: 2295,
@@ -1644,7 +1644,7 @@ const products = [
   id: 260,
   price: 3300,
   isTop: false,
-  isNew: true,
+  isNew: false,
     isNewYearOffer: true,
   // isSpecialOffer: true,
   // discountPrice: 2805,
@@ -1731,7 +1731,7 @@ const products = [
   id: 259,
   price: 3250,
   isTop: false,
-  isNew: true,
+  isNew: false,
     isNewYearOffer: true,
   // isSpecialOffer: true,
   // discountPrice: 2763,
@@ -1815,7 +1815,7 @@ const products = [
   id: 258,
   price: 3250,
   isTop: false,
-  isNew: true,
+  isNew: false,
 
     isNewYearOffer: true,
   // isSpecialOffer: true,
@@ -1888,7 +1888,7 @@ const products = [
   id: 257,
   price: 5600,
   isTop: false,
-  isNew: true,
+  isNew: false,
 
     isNewYearOffer: true,
   // isSpecialOffer: true,
@@ -1989,7 +1989,7 @@ const products = [
   id: 256,
   price: 3350,
   isTop: false,
-  isNew: true,
+  isNew: false,
 
   isNewYearOffer: true,
   // isSpecialOffer: true,
@@ -2089,7 +2089,7 @@ const products = [
   id: 255,
   price: 1600,
   isTop: false,
-  isNew: true,
+  isNew: false,
 
   isNewYearOffer: true,
   // isSpecialOffer: true,
@@ -2172,7 +2172,7 @@ const products = [
   id: 254,
   price: 2100,
   isTop: false,
-  isNew: true,
+  isNew: false,
 
   isNewYearOffer: true,
   // isSpecialOffer: true,
@@ -2341,7 +2341,7 @@ const products = [
   id: 252,
   price: 1080,
   isTop: false,
-  isNew: true,
+  isNew: false,
   isNewYearOffer: true,
   // isSpecialOffer: true,
   // discountPrice: 918,
@@ -2427,7 +2427,7 @@ const products = [
 {
   id: 251,
   price: 1450,
-  isTop: true,
+  isTop: false,
   isNew: true,
     isNewYearOffer: true,
   // isSpecialOffer: true,
@@ -3168,7 +3168,7 @@ const products = [
 {
   id: 240,
   price: 1600,
-  isTop: true,
+  isTop: false,
   isNew: true,
   // isSpecialOffer: true,
   // discountPrice: 1360,
@@ -3339,7 +3339,7 @@ const products = [
 {
   id: 238,
   price: 2100,
-  isTop: true,
+  isTop: false,
   isNew: true,
   // isSpecialOffer: true,
   // discountPrice: 1785,
@@ -4069,7 +4069,7 @@ const products = [
 {
   id: 229,
   price: 1700,
-  isTop: false,
+  isTop: true,
   isNew: true,
   //   isSpecialOffer: true,
   // discountPrice: 1445,
@@ -4591,13 +4591,13 @@ const products = [
   sku: "99364",
   size: "XS S M L XL",
   category: "Costumes",
-  image: "/Costumes/Clariss Suit/1.avif",
+  image: "/Costumes/Clariss Suit/6.avif",
   images: [
-    "/Costumes/Clariss Suit/2.avif",
-    "/Costumes/Clariss Suit/3.avif",
-    "/Costumes/Clariss Suit/4.avif",
-    "/Costumes/Clariss Suit/5.avif",
-    "/Costumes/Clariss Suit/6.avif",
+    // "/Costumes/Clariss Suit/2.avif",
+    // "/Costumes/Clariss Suit/3.avif",
+    // "/Costumes/Clariss Suit/4.avif",
+    // "/Costumes/Clariss Suit/5.avif",
+    // "/Costumes/Clariss Suit/6.avif",
     "/Costumes/Clariss Suit/7.avif",
     "/Costumes/Clariss Suit/8.avif",
     "/Costumes/Clariss Suit/9.avif",
@@ -4619,7 +4619,7 @@ const products = [
         "• Length: below the knee",
         "• Waistband accentuating the waist"
       ],
-      colors: ["beige", "dark green"]
+      colors: ["dark green"]
     },
     FR: {
       category: "Costumes",
@@ -4636,7 +4636,7 @@ const products = [
         "• Longueur : sous le genou",
         "• Ceinture soulignant la taille"
       ],
-      colors: ["beige", "vert foncé"]
+      colors: ["vert foncé"]
     },
     UA: {
       category: "Костюми",
@@ -4653,7 +4653,7 @@ const products = [
         "• Довжина: нижче коліна",
         "• Пояс на талії"
       ],
-      colors: ["бежевий", "темно-зелений"]
+      colors: ["темно-зелений"]
     },
     RU: {
       category: "Костюмы",
@@ -4670,7 +4670,7 @@ const products = [
         "• Длина: ниже колена",
         "• Пояс на талии"
       ],
-      colors: ["бежевый", "тёмно-зелёный"]
+      colors: ["тёмно-зелёный"]
     }
   }
 },
@@ -4678,7 +4678,7 @@ const products = [
 {
   id: 222,
   price: 2060,
-  isTop: false,
+  isTop: true,
   isNew: true,
   // isSpecialOffer: true,
   // discountPrice: 1751,
@@ -5009,7 +5009,7 @@ const products = [
 {
   id: 193,
   price: 2060,
-  isTop: true,
+  isTop: false,
   isNew: true,
   // isSpecialOffer: true,
   // discountPrice: 1751,
@@ -5079,7 +5079,7 @@ const products = [
   {
   id: 205,
   price: 2100,
-  isTop: false,
+  isTop: true,
   isNew: true,
   // isSpecialOffer: true,
   // discountPrice: 1785,
@@ -6185,7 +6185,7 @@ const products = [
   {
     id: 102,
     price: 2100,
-    isTop: true,
+    isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 1785,
     sku: "45530",
@@ -7120,7 +7120,7 @@ const products = [
 
   { id: 1,
     price: 4350,
-    isTop: true,
+    isTop: false,
     sku: "12345",
     // isSpecialOffer: true,
     // discountPrice: 3698,
@@ -7180,7 +7180,7 @@ const products = [
     {
     id: 2,
     price: 4160,
-    isTop: true,
+    isTop: false,
     //  isSpecialOffer: true,
     // discountPrice: 3536,
     sku: "12345",
@@ -7367,7 +7367,7 @@ const products = [
   {
     id: 4,
     price: 3100,
-    isTop: true,
+    isTop: false,
     isNew: true,
     // isSpecialOffer: true,
     // discountPrice: 2635,
@@ -7439,7 +7439,7 @@ const products = [
   { 
       id: 30,
       price: 2100,
-      isTop: true, // Топ продукт
+      isTop: false, // Топ продукт
       sku: "12346",
   //      isSpecialOffer: true,
   // discountPrice: 1785,
@@ -8131,7 +8131,7 @@ const products = [
 {
   id: 191,
   price: 5600,
-  isTop: true,
+  isTop: false,
   isNew: true,
   //  isSpecialOffer: true,
   // discountPrice: 4760,
@@ -8310,7 +8310,7 @@ const products = [
 {
   id: 189,
   price: 1700,
-  isTop: true,
+  isTop: false,
   isNew: true,
   // isSpecialOffer: true,
   // discountPrice: 1445,
