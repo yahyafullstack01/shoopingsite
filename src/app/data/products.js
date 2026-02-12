@@ -8317,18 +8317,26 @@ const products = [
   sku: "99331",
   size: "XS S M L XL",
   category: "Sweaters",
-  image: "/Sweaters/Lurex Sweater/1.avif",
+  image: "/Sweaters/V-neck sweater/6.avif",
   images: [
-    "/Sweaters/Lurex Sweater/2.avif",
-    "/Sweaters/Lurex Sweater/3.avif",
-    "/Sweaters/Lurex Sweater/4.avif",
-    "/Sweaters/Lurex Sweater/5.avif"
+    "/Sweaters/V-neck sweater/7.avif",
+    "/Sweaters/V-neck sweater/8.avif",
+    "/Sweaters/V-neck sweater/9.avif",
+    "/Sweaters/V-neck sweater/10.avif",
+    "/Sweaters/V-neck sweater/11.avif",
+    "/Sweaters/V-neck sweater/12.avif",
+    "/Sweaters/V-neck sweater/13.avif",
+    "/Sweaters/V-neck sweater/1.avif",
+    "/Sweaters/V-neck sweater/2.avif",
+    "/Sweaters/V-neck sweater/3.avif",
+    "/Sweaters/V-neck sweater/4.avif",
+    "/Sweaters/V-neck sweater/5.avif",
   ],
   sizes: ["XS", "S", "M", "L", "XL"],
   translations: {
     EN: {
       category: "Sweaters",
-      name: "Lurex Sweater",
+      name: "V-neck sweater",
       description: [
         "A stylish accent for your wardrobe — a loose sweater made of soft yarn with delicate lurex. It combines comfort with a subtle shimmer, creating effortless elegance.",
         "Fabric: Wool knit with lurex. [Composition: 65% wool]",
@@ -8337,10 +8345,10 @@ const products = [
         "• Deep V-neckline that beautifully opens the neck and allows for layered styling.",
         "• Long dropped sleeves for a modern, laid-back look."
       ],
-      colors: ["black"]
+      colors: ["pistachio", "white", "black"]
     },
     FR: {
-      category: "Pulls",
+      category: "Sweaters",
       name: "Pull en lurex",
       description: [
         "Un accent élégant dans votre garde-robe — un pull ample en fil doux avec un délicat lurex. Il allie confort et léger éclat pour une élégance décontractée.",
@@ -8350,11 +8358,11 @@ const products = [
         "• Profond col en V qui met en valeur le cou et permet des superpositions stylées.",
         "• Manches longues tombantes pour un style moderne et détendu."
       ],
-      colors: ["noir"]
+      colors: ["pistachio", "blanc","noir"]
     },
     UA: {
       category: "Светри",
-      name: "Светр із люрексом",
+      name: "Светр з V-вирізом",
       description: [
         "Стильний акцент у вашому гардеробі — вільний светр із м’якої пряжі з делікатним люрексом. Він поєднує комфорт і легкий блиск, створюючи ефект невимушеної елегантності.",
         "Тканина: Вовняний трикотаж із люрексом. [Склад: 65% вовни]",
@@ -8363,7 +8371,7 @@ const products = [
         "• Глибокий V-подібний виріз, який красиво відкриває шию та дозволяє створювати багатошарові образи.",
         "• Довгі спущені рукави для розслабленого, сучасного стилю."
       ],
-      colors: ["чорний"]
+      colors: ["фісташка", "білий", "чорний"]
     },
     RU: {
       category: "Свитера",
@@ -8376,7 +8384,7 @@ const products = [
         "• Глубокий V-образный вырез, красиво открывающий шею и позволяющий создавать многослойные образы.",
         "• Длинные спущенные рукава для расслабленного, современного стиля."
       ],
-      colors: ["чёрный"]
+      colors: ["фісташка", "білий", "чорний"]
     }
   }
 },
