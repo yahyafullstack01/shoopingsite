@@ -5,6 +5,7 @@ import Script from "next/script";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import ErrorBoundary from "../app/components/ErrorBoundary/ErrorBoundary";
 import { siteJsonLd, organizationJsonLd } from "./seo/loyout-jsonld";
+import { faqSchema, localBusinessSchema } from "./seo/faq-schema";
 import { Montserrat } from "next/font/google";
 
 // тільки потрібні ваги + кирилиця
@@ -21,9 +22,12 @@ export default function RootLayout({ children }) {
       <head>
         <title>Жіночий одяг від Latore Atelier | Створено для кожного сезону</title>
 
-        <meta name="description" content="Latore Atelier пропонує стильний та жіночий одяг, розроблений для того, щоб ви почувалися унікально у будь-якому сезоні. Відкрийте наші колекції сьогодні!" />
-        <meta name="keywords" content="Жіночий одяг, Latore Atelier, сукні жіночі, сучасна мода, стильний одяг, сезонні колекції" />
+        <meta name="description" content="Latore Atelier - український бренд жіночого одягу з власним виробництвом. Костюми, сукні, брюки, верхній одяг. Індивідуальний пошив за вашими параметрами. Шоуруми в Харкові та Івано-Франківську. ☎ +38 (097) 367 82 57" />
+        <meta name="keywords" content="жіночий одяг україна, жіночий одяг київ, жіночий одяг харків, жіночі сукні купити, жіночі костюми, latore atelier, латоре ательє, український бренд одягу, індивідуальний пошиття одягу, власне виробництво одягу, якісний жіночий одяг, базовий гардероб, офісний одяг для жінок, елегантні сукні, вовняні костюми, класичні брюки, жакети жіночі, верхній одяг жіночий, дизайнерський одяг україна, модний жіночий одяг 2026, одяг на замовлення україна" />
         <meta name="author" content="Latore Atelier" />
+        <meta name="geo.region" content="UA-63" />
+        <meta name="geo.placename" content="Kharkiv, Ivano-Frankivsk" />
+        <meta name="geo.position" content="49.9935;36.2304" />
 
         {/* OG */}
         <meta property="og:title" content="Жіночий одяг від Latore Atelier" />
@@ -86,6 +90,12 @@ export default function RootLayout({ children }) {
               dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
             <Script id="website-jsonld" type="application/ld+json" strategy="lazyOnload"
               dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }} />
+            <Script id="faq-jsonld" type="application/ld+json" strategy="lazyOnload"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+            <Script id="local-business-kharkiv-jsonld" type="application/ld+json" strategy="lazyOnload"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema[0]) }} />
+            <Script id="local-business-ivano-jsonld" type="application/ld+json" strategy="lazyOnload"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema[1]) }} />
           </>
         )}
       </head>
