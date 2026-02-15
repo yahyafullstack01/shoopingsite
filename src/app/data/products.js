@@ -9,7 +9,7 @@ const products = [
     sku: "98820",
     size: "XS S M L XL",
     category: "Shirts",
-    image: "/Shirts/Batiste Shirt/7.avif",
+    image: "/Shirts/Batiste Shirt/1.avif",
     images: [
       "/Shirts/Batiste Shirt/8.avif",
       {
@@ -17,15 +17,15 @@ const products = [
         src: "/Shirts/Batiste Shirt/IMG_7575.mp4",
         poster: "/Shirts/Batiste Shirt/7.avif"
       },
-      "/Shirts/Batiste Shirt/9.avif",
-      "/Shirts/Batiste Shirt/10.avif",
-      "/Shirts/Batiste Shirt/11.avif",
-      "/Shirts/Batiste Shirt/1.avif",
+
       "/Shirts/Batiste Shirt/2.avif",
       "/Shirts/Batiste Shirt/3.avif",
       "/Shirts/Batiste Shirt/4.avif",
       "/Shirts/Batiste Shirt/5.avif",
-      "/Shirts/Batiste Shirt/6.avif",
+      "/Shirts/Batiste Shirt/6.JPG",
+      "/Shirts/Batiste Shirt/7.TIF",
+      "/Shirts/Batiste Shirt/8.TIF",
+      "/Shirts/Batiste Shirt/9.TIF",
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
     translations: {
@@ -55,6 +55,785 @@ const products = [
       }
     }
   }, 
+
+
+{
+  id: 292,
+  price: 2100,
+  isTop: false,
+  isNew: true,
+  sku: "99423",
+  size: "XS S M L XL",
+  category: "Tops",
+  image: "/Top/Denim Vest/1.avif",
+  images: [
+    "/Top/Denim Vest/2.avif",
+    "/Top/Denim Vest/3.avif",
+    "/Top/Denim Vest/4.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Tops",
+      name: "Denim Vest",
+      description: [
+        "Fitted vest made from dense denim — a statement piece for your wardrobe. The V-neckline visually elongates the silhouette, while clear vertical lines and contrasting stitching create a neat fit.",
+        "Metal buttons add structure and make the model versatile — easy to pair with classic trousers, denim, or skirts.",
+        "Can be worn alone or as part of a suit.",
+        "Fabric: dense denim cotton",
+        "Details:",
+        "• Fitted silhouette",
+        "• V-neckline",
+        "• Decorative contrast stitching"
+      ],
+      colors: ["blue"]
+    },
+    FR: {
+      category: "Tops",
+      name: "Gilet en denim",
+      description: [
+        "Gilet ajusté en denim dense — pièce accent pour votre garde-robe. L'encolure en V allonge visuellement la silhouette, tandis que les lignes verticales nettes et les surpiqûres contrastantes assurent un ajustement soigné.",
+        "Les boutons métalliques ajoutent de la structure et rendent le modèle polyvalent — facile à associer avec des pantalons classiques, du denim ou des jupes.",
+        "Peut se porter seul ou comme partie d'un ensemble.",
+        "Tissu : denim coton dense",
+        "Détails :",
+        "• Silhouette ajustée",
+        "• Encolure en V",
+        "• Surpiqûres contrastantes décoratives"
+      ],
+      colors: ["bleu"]
+    },
+    UA: {
+      category: "Топи",
+      name: "Джинс жилет",
+      description: [
+        "Приталений жилет із щільного деніму — акцентна річ у гардеробі. V-подібний виріз візуально подовжує силует, а чіткі вертикальні лінії та контрастна строчка формують акуратну посадку по фігурі.",
+        "Металеві ґудзики додають структурності та роблять модель універсальною — його легко поєднувати як із класичними брюками, так і з денімом або спідницями.",
+        "Можна носити самостійно або як частину костюму.",
+        "Тканина: щільний джинс-котон",
+        "Деталі:",
+        "• приталений силует",
+        "• V-виріз",
+        "• декоративна контрастна строчка"
+      ],
+      colors: ["синій"]
+    },
+    RU: {
+      category: "Топы",
+      name: "Джинсовый жилет",
+      description: [
+        "Приталенный жилет из плотного денима — акцентная вещь в гардеробе. V-образный вырез визуально удлиняет силуэт, а четкие вертикальные линии и контрастная строчка создают аккуратную посадку по фигуре.",
+        "Металлические пуговицы добавляют структуру и делают модель универсальной — легко сочетать с классическими брюками, джинсом или юбками.",
+        "Можно носить самостоятельно или как часть костюма.",
+        "Ткань: плотный джинс-коттон",
+        "Детали:",
+        "• приталенный силуэт",
+        "• V-образный вырез",
+        "• декоративная контрастная строчка"
+      ],
+      colors: ["синий"]
+    }
+  }
+},
+
+
+{
+  id: 291,
+  price: 3650,
+  isTop: false,
+  isNew: true,
+  sku: "99422",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Denim Vest Set/1.avif",
+  images: [
+    "/Costumes/Denim Vest Set/2.avif",
+    "/Costumes/Denim Vest Set/3.avif",
+    "/Costumes/Denim Vest Set/4.avif",
+    "/Costumes/Denim Vest Set/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Suits",
+      name: "Denim Set with Vest",
+      description: [
+        "Structured denim in a modern interpretation. The suit combines a feminine silhouette with a subtle edge: a fitted vest with V-neckline and mini skirt with precise fit create a cohesive, striking look.",
+        "Contrasting light stitching accentuates the lines, metallic buttons add character, and the dense denim holds its shape beautifully. Wear together for a total look or mix with basic shirts, tees, or knitwear.",
+        "Perfect for urban outfits, meetings, and events when you want to look stylish effortlessly.",
+        "Fabric: dense denim cotton",
+        "Details:",
+        "• Contrasting decorative stitching",
+        "• Functional pockets"
+      ],
+      colors: ["blue"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Ensemble denim avec gilet",
+      description: [
+        "Denim structuré dans une interprétation moderne. La tenue combine silhouette féminine et subtil caractère : gilet ajusté avec encolure en V et mini-jupe bien ajustée créent un look cohérent et expressif.",
+        "Les surpiqûres contrastantes soulignent les lignes, les boutons métalliques ajoutent du caractère, et le denim dense garde parfaitement sa forme. Portez ensemble pour un total look ou combinez avec des chemises basiques, t-shirts ou tricots.",
+        "Parfait pour les looks urbains, les réunions et événements, quand on veut être stylé sans effort.",
+        "Tissu : denim coton dense",
+        "Détails :",
+        "• Surpiqûres décoratives contrastantes",
+        "• Poches fonctionnelles"
+      ],
+      colors: ["bleu"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Джинсовий комплект із жилетом",
+      description: [
+        "Структурований денім у сучасному прочитанні. Костюм поєднує жіночність силуету та легку зухвалість фактури: приталений жилет із V-подібним вирізом та міні-спідниця з чіткою посадкою створюють цілісний, виразний образ.",
+        "Контрастна світла строчка підкреслює лінії крою, металеві ґудзики додають характеру, а щільний денім тримає форму та красиво моделює фігуру. Носіть разом для ефектного total look або комбінуйте окремо з базовими сорочками, футболками чи трикотажем.",
+        "Ідеальний варіант для міських образів, зустрічей і подій, коли хочеться виглядати стильно без зайвої складності.",
+        "Тканина: щільний джинс-котон",
+        "Деталі:",
+        "• контрастна декоративна строчка",
+        "• функціональні кишені"
+      ],
+      colors: ["синій"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Джинсовый комплект с жилетом",
+      description: [
+        "Структурированный деним в современном прочтении. Костюм сочетает женственность силуэта и легкую дерзость фактуры: приталенный жилет с V-образным вырезом и мини-юбка с четкой посадкой создают цельный, выразительный образ.",
+        "Контрастная светлая строчка подчеркивает линии кроя, металлические пуговицы добавляют характер, а плотный деним держит форму и красиво моделирует фигуру. Носите вместе для эффектного total look или комбинируйте отдельно с базовыми рубашками, футболками или трикотажем.",
+        "Идеальный вариант для городских образов, встреч и мероприятий, когда хочется выглядеть стильно без лишней сложности.",
+        "Ткань: плотный джинс-коттон",
+        "Детали:",
+        "• контрастная декоративная строчка",
+        "• функциональные карманы"
+      ],
+      colors: ["синий"]
+    }
+  }
+},
+
+
+{
+  id: 290,
+  price: 1550,
+  isTop: false,
+  isNew: true,
+  sku: "99421",
+  size: "XS S M L XL",
+  category: "Skirts",
+  image: "/Skirts/Denim Mini/1.avif",
+  images: [
+    "/Skirts/Denim Mini/2.avif",
+    "/Skirts/Denim Mini/3.avif",
+    "/Skirts/Denim Mini/4.avif",
+    "/Skirts/Denim Mini/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Skirts",
+      name: "Denim Mini Skirt",
+      description: [
+        "Mini skirt with a comfortable high waist and clean lines. Accentuates the waist and visually elongates the legs. Contrasting stitching adds structure and character.",
+        "Pair with sweatshirts, shirts, or the matching jacket — a versatile base for any season.",
+        "Fabric: dense denim cotton.",
+        "Details:",
+        "• High waist",
+        "• Straight silhouette",
+        "• Comfortable mini length"
+      ],
+      colors: ["blue"]
+    },
+    FR: {
+      category: "Jupes",
+      name: "Mini-jupe en jean",
+      description: [
+        "Mini-jupe avec une taille haute confortable et des lignes épurées. Accentue la taille et allonge visuellement les jambes. Les coutures contrastantes ajoutent structure et caractère.",
+        "À porter avec des sweatshirts, des chemises ou la veste assortie — une base polyvalente pour toutes les saisons.",
+        "Tissu : denim coton dense.",
+        "Détails :",
+        "• Taille haute",
+        "• Silhouette droite",
+        "• Longueur mini confortable"
+      ],
+      colors: ["bleu"]
+    },
+    UA: {
+      category: "Спідниці",
+      name: "Джинс спідниця міні",
+      description: [
+        "Міні зі зручною високою посадкою та чистими лініями. Підкреслює талію та візуально подовжує ноги. Контрастна строчка додає структури й характеру.",
+        "Носіть зі світшотами, сорочками або жакетом із комплекту — універсальна база для будь-якого сезону.",
+        "Тканина: щільний джинс-котон.",
+        "Деталі:",
+        "• високий пояс",
+        "• прямий силует",
+        "• комфортна довжина міні"
+      ],
+      colors: ["синій"]
+    },
+    RU: {
+      category: "Юбки",
+      name: "Джинсовая мини-юбка",
+      description: [
+        "Мини с удобной высокой посадкой и чистыми линиями. Подчеркивает талию и визуально удлиняет ноги. Контрастная строчка добавляет структуру и характер.",
+        "Носите со свитшотами, рубашками или жакетом из комплекта — универсальная база для любого сезона.",
+        "Ткань: плотный джинс-коттон.",
+        "Детали:",
+        "• высокая талия",
+        "• прямой силуэт",
+        "• комфортная длина мини"
+      ],
+      colors: ["синий"]
+    }
+  }
+},
+
+
+{
+  id: 289,
+  price: 2950,
+  isTop: false,
+  isNew: true,
+  sku: "99420",
+  size: "XS S M L XL",
+  category: "Outerwear",
+  image: "/Outerwear/Denim Jacket/1.avif",
+  images: [
+    "/Outerwear/Denim Jacket/2.avif",
+    "/Outerwear/Denim Jacket/3.avif",
+    "/Outerwear/Denim Jacket/4.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Outerwear",
+      name: "Denim Jacket",
+      description: [
+        "A minimalist denim jacket with a light structure — a perfect balance between classic and casual. The straight silhouette, metal fittings, and distinct seams create a timeless, slightly retro vibe.",
+        "Pairs perfectly with the matching skirt, as well as with basic trousers or dresses.",
+        "Fabric: dense denim cotton.",
+        "Details:",
+        "• Patch pockets",
+        "• Structured and shape-retaining",
+        "• Straight cut"
+      ],
+      colors: ["blue"]
+    },
+    FR: {
+      category: "Manteaux",
+      name: "Veste en jean",
+      description: [
+        "Veste en jean minimaliste à la structure légère — un équilibre parfait entre classique et casual. La silhouette droite, la quincaillerie métallique et les coutures marquées créent une allure intemporelle avec une touche rétro.",
+        "Se marie parfaitement avec la jupe assortie ainsi qu’avec un pantalon ou une robe basique.",
+        "Tissu : denim coton dense.",
+        "Détails :",
+        "• Poches plaquées",
+        "• Tissu structuré qui garde sa forme",
+        "• Coupe droite"
+      ],
+      colors: ["bleu"]
+    },
+    UA: {
+      category: "Верхній одяг",
+      name: "Джинсова куртка",
+      description: [
+        "Лаконічний джинсовий жакет із легкою структурою — баланс між класикою та casual. Прямий силует, металева фурнітура та виразні шви створюють актуальний, трохи ретро настрій.",
+        "Ідеально поєднується зі спідницею з комплекту, а також із базовими брюками або сукнями.",
+        "Тканина: щільний джинс-котон.",
+        "Деталі:",
+        "• накладні кишені",
+        "• щільний, тримає форму",
+        "• прямий крій"
+      ],
+      colors: ["синій"]
+    },
+    RU: {
+      category: "Верхняя одежда",
+      name: "Джинсовая куртка",
+      description: [
+        "Лаконичная джинсовая куртка с лёгкой структурой — баланс между классикой и casual. Прямой силуэт, металлическая фурнитура и выразительные швы создают актуальное, немного ретро настроение.",
+        "Идеально сочетается с юбкой из комплекта, а также с базовыми брюками или платьями.",
+        "Ткань: плотный джинс-коттон.",
+        "Детали:",
+        "• накладные карманы",
+        "• плотная ткань, держит форму",
+        "• прямой крой"
+      ],
+      colors: ["синий"]
+    }
+  }
+},
+
+  {
+  id: 288,
+  price: 4500,
+  isTop: false,
+  isNew: true,
+  sku: "99419",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Denim Suit with Jacket/1.avif",
+  images: [
+    "/Costumes/Denim Suit with Jacket/2.avif",
+    "/Costumes/Denim Suit with Jacket/3.avif",
+    "/Costumes/Denim Suit with Jacket/4.avif",
+    "/Costumes/Denim Suit with Jacket/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Denim Suit with Jacket",
+      description: [
+        "Stylish denim reimagined for today. The suit combines a clean cut, contrasting decorative seams, and a perfect fit that highlights the silhouette. It easily adapts to different moods: with boots for a bolder look, or with loafers or sneakers for a relaxed city style.",
+        "The set can be worn together or separately, allowing dozens of combinations for everyday and evening outfits.",
+        "Fabric: dense denim cotton.",
+        "Details:",
+        "• Contrasting decorative seams",
+        "• Precise finishing and tailored fit"
+      ],
+      colors: ["blue"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Ensemble en jean avec veste",
+      description: [
+        "Le denim revisité dans une version moderne. L’ensemble allie une coupe épurée, des coutures contrastantes et une coupe parfaite qui met la silhouette en valeur. Il s’adapte facilement aux différentes ambiances : avec des bottes pour un look audacieux ou avec des mocassins ou baskets pour un style décontracté urbain.",
+        "L’ensemble peut être porté ensemble ou séparément, offrant des dizaines de combinaisons pour des tenues de jour ou de soirée.",
+        "Tissu : denim coton dense.",
+        "Détails :",
+        "• Coutures décoratives contrastantes",
+        "• Finition soignée et coupe étudiée"
+      ],
+      colors: ["bleu"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Джинсовий комплект із жакетом",
+      description: [
+        "Стильний денім у сучасному прочитанні. Костюм поєднує лаконічний крій, акцентні контрастні шви та ідеальну посадку, що підкреслює силует. Легко адаптується під різні настрої: з чоботами — більш сміливо, з лоферами або кедами — у relaxed-місті стилі.",
+        "Комплект можна носити разом або комбінувати окремо, створюючи десятки варіацій для повсякденних і вечірніх образів.",
+        "Тканина: щільний джинс-котон.",
+        "Деталі:",
+        "• контрастні декоративні шви",
+        "• акуратна обробка та продумана посадка по фігурі"
+      ],
+      colors: ["синій"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Джинсовый комплект с жакетом",
+      description: [
+        "Стильный деним в современном прочтении. Костюм сочетает лаконичный крой, контрастные декоративные швы и идеальную посадку, подчёркивающую силуэт. Легко адаптируется под разные настроения: с сапогами — смелее, с лоферами или кедами — в расслабленном городском стиле.",
+        "Комплект можно носить вместе или отдельно, создавая десятки вариантов для повседневных и вечерних образов.",
+        "Ткань: плотный джинс-коттон.",
+        "Детали:",
+        "• контрастные декоративные швы",
+        "• аккуратная обработка и продуманная посадка по фигуре"
+      ],
+      colors: ["синий"]
+    }
+  }
+},
+
+{
+  id: 287,
+  price: 1950,
+  isTop: false,
+  isNew: true,
+  sku: "99418",
+  size: "XS S M L XL",
+  category: "Skirts",
+  image: "/Skirts/Denim Pencil Skirt/1.avif",
+  images: [
+    "/Skirts/Denim Pencil Skirt/2.avif",
+    "/Skirts/Denim Pencil Skirt/3.avif",
+    "/Skirts/Denim Pencil Skirt/4.avif",
+    "/Skirts/Denim Pencil Skirt/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Skirts",
+      name: "Denim Pencil Skirt",
+      description: [
+        "A minimalist denim skirt in a light blue shade — a modern interpretation of an everyday essential. The clean silhouette, high waist, and neat front slit create a balanced, refined look with a subtle touch of boldness.",
+        "Made from dense denim cotton that holds its shape yet remains comfortable to wear. Vertical seams visually elongate the figure, while the slit adds freedom of movement and a feminine accent.",
+        "Perfectly pairs with sneakers and a T-shirt for casual looks, or with a shirt, heels, or jacket for a more polished style.",
+        "Fabric: dense denim cotton.",
+        "Details:",
+        "• Midi length",
+        "• High-rise waist",
+        "• Neat front slit"
+      ],
+      colors: ["light blue"]
+    },
+    FR: {
+      category: "Jupes",
+      name: "Jupe crayon en jean",
+      description: [
+        "Jupe en jean minimaliste dans une teinte bleu clair — une interprétation moderne de la pièce essentielle du quotidien. La silhouette nette, la taille haute et la fente avant soignée créent un look équilibré et raffiné avec une touche subtile d’audace.",
+        "Réalisée en coton denim dense qui conserve bien sa forme tout en restant confortable à porter. Les coutures verticales allongent visuellement la silhouette, tandis que la fente apporte liberté de mouvement et féminité.",
+        "Se combine parfaitement avec des baskets et un t-shirt pour un look décontracté, ou avec une chemise, des talons ou une veste pour un style plus structuré.",
+        "Tissu : denim coton dense.",
+        "Détails :",
+        "• Longueur midi",
+        "• Taille haute",
+        "• Fente avant soignée"
+      ],
+      colors: ["bleu clair"]
+    },
+    UA: {
+      category: "Спідниці",
+      name: "Джинс спідниця-олівець",
+      description: [
+        "Мінімалістична джинсова спідниця у світло-блакитному відтінку — сучасна інтерпретація бази на кожен день. Чіткий силует, висока посадка та акуратний передній розріз створюють збалансований, витончений образ із легкою ноткою сміливості.",
+        "Модель виконана з щільного джинс-котону, який добре тримає форму та водночас комфортний у носінні. Вертикальні шви візуально витягують силует, а розріз додає свободи руху та підкреслює жіночність.",
+        "Ідеально поєднується як із кедами та футболкою для повсякденних образів, так і з сорочкою, підборами чи жакетом для більш зібраного стилю.",
+        "Тканина: щільний джинс-котон.",
+        "Деталі:",
+        "• довжина міді",
+        "• висока посадка",
+        "• акуратний передній розріз"
+      ],
+      colors: ["блакитний"]
+    },
+    RU: {
+      category: "Юбки",
+      name: "Джинсовая юбка-карандаш",
+      description: [
+        "Минималистичная джинсовая юбка светло-голубого оттенка — современная интерпретация базовой вещи на каждый день. Чёткий силуэт, высокая посадка и аккуратный передний разрез создают сбалансированный, утончённый образ с лёгким акцентом дерзости.",
+        "Модель выполнена из плотного джинс-коттона, который хорошо держит форму и при этом комфортен в носке. Вертикальные швы визуально вытягивают силуэт, а разрез добавляет свободы движений и женственности.",
+        "Идеально сочетается с кедами и футболкой для повседневных образов или с рубашкой, каблуками и жакетом для более собранного стиля.",
+        "Ткань: плотный джинс-коттон.",
+        "Детали:",
+        "• длина миди",
+        "• высокая посадка",
+        "• аккуратный передний разрез"
+      ],
+      colors: ["голубой"]
+    }
+  }
+},
+
+  {
+  id: 286,
+  price: 1650,
+  isTop: false,
+  isNew: true,
+  sku: "99417",
+  size: "XS S M L XL",
+  category: "Skirts",
+  image: "/Skirts/Silk Maxi Skirt/1.avif",
+  images: [
+    "/Skirts/Silk Maxi Skirt/2.avif",
+    "/Skirts/Silk Maxi Skirt/3.avif",
+    "/Skirts/Silk Maxi Skirt/4.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Skirts",
+      name: "Silk Maxi Skirt",
+      description: [
+        "A minimalist silk skirt — an elegant essential for a feminine wardrobe. The soft sheen of the fabric subtly accentuates movement, creating a smooth, refined silhouette.",
+        "Designed with a clean waistline and no unnecessary details — the focus is on fabric and fit. The skirt flows beautifully as you walk, elongating the figure and pairing effortlessly with shirts, turtlenecks, or jackets.",
+        "Perfect for the office, evening outings, or events — simply switch up shoes and accessories.",
+        "Fabric: Armani silk.",
+        "Details:",
+        "• Maxi length",
+        "• High-rise waist",
+        "• Clean finishing at the waist"
+      ],
+      colors: ["black"]
+    },
+    FR: {
+      category: "Jupes",
+      name: "Jupe longue en soie",
+      description: [
+        "Jupe en soie minimaliste — une base élégante pour une garde-robe féminine. La brillance subtile du tissu souligne délicatement le mouvement, créant une silhouette fluide et raffinée.",
+        "Modèle à la taille épurée sans détails superflus — l’accent est mis sur la matière et la coupe. La jupe ondule élégamment à la marche, allonge visuellement la silhouette et se marie aussi bien avec une chemise classique qu’un col roulé ou une veste.",
+        "Un choix idéal pour le bureau, les sorties du soir ou les événements — il suffit de changer les chaussures et les accessoires.",
+        "Tissu : soie Armani.",
+        "Détails :",
+        "• Longueur maxi",
+        "• Taille haute",
+        "• Finition soignée à la taille"
+      ],
+      colors: ["noir"]
+    },
+    UA: {
+      category: "Спідниці",
+      name: "Шовкова спідниця максі",
+      description: [
+        "Лаконічна шовкова спідниця — елегантна база для жіночного гардероба. М’який блиск тканини делікатно підкреслює рух, створюючи плавний, витончений силует.",
+        "Модель виконана з чистою лінією талії без зайвих деталей — акцент на тканині та посадці. Спідниця красиво струмує під час ходи, візуально подовжує силует та легко комбінується як із класичною сорочкою, так і з гольфом чи жакетом.",
+        "Ідеальний варіант для офісу, вечірніх виходів або подій — достатньо змінити взуття та аксесуари.",
+        "Тканина: шовк 'Армані'.",
+        "Деталі:",
+        "• довжина максі",
+        "• висока посадка",
+        "• акуратна обробка по талії"
+      ],
+      colors: ["чорний"]
+    },
+    RU: {
+      category: "Юбки",
+      name: "Шёлковая юбка макси",
+      description: [
+        "Лаконичная шёлковая юбка — элегантная база для женственного гардероба. Мягкий блеск ткани деликатно подчёркивает движение, создавая плавный, утончённый силуэт.",
+        "Модель выполнена с чистой линией талии без лишних деталей — акцент на ткани и посадке. Юбка красиво струится при ходьбе, визуально вытягивает фигуру и легко сочетается как с классической рубашкой, так и с водолазкой или жакетом.",
+        "Идеальный вариант для офиса, вечерних выходов или событий — достаточно сменить обувь и аксессуары.",
+        "Ткань: шёлк 'Армани'.",
+        "Детали:",
+        "• длина макси",
+        "• высокая посадка",
+        "• аккуратная обработка по линии талии"
+      ],
+      colors: ["чёрный"]
+    }
+  }
+},
+
+
+{
+  id: 285,
+  price: 2250,
+  isTop: false,
+  isNew: true,
+  sku: "99416",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Transformer Sundress/1.avif",
+  images: [
+    "/Dress/Transformer Sundress/2.avif",
+    "/Dress/Transformer Sundress/3.avif",
+    "/Dress/Transformer Sundress/4.avif",
+    "/Dress/Transformer Sundress/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Transformer Sundress",
+      description: [
+        "An elegant transformer sundress — a versatile base for business and evening looks. The minimalist cut is enhanced with thoughtful details: adjustable straps that cross at the back, creating an accent and allowing you to customize the fit.",
+        "Designed in a midi length with a soft fitted waist and a neat front pleat that adds grace to the silhouette. A convenient back slit ensures comfort in motion.",
+        "Perfectly pairs with a classic shirt, turtleneck, or top — depending on your style and mood.",
+        "Fabric: Suit wool.",
+        "Details:",
+        "• Midi length",
+        "• Adjustable straps (can be fixed in different ways)",
+        "• Neat back slit"
+      ],
+      colors: ["black"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe salopette transformable",
+      description: [
+        "Élégante robe salopette transformable — une base polyvalente pour les looks professionnels et de soirée. La coupe minimaliste est complétée par des détails bien pensés : des bretelles réglables qui se croisent dans le dos, créant un accent raffiné et permettant un ajustement personnalisé.",
+        "Longueur midi, taille légèrement marquée et pli soigné à l’avant pour une silhouette gracieuse. Une fente arrière assure un confort de mouvement optimal.",
+        "Se combine parfaitement avec une chemise classique, un col roulé ou un top — selon le style et l’occasion.",
+        "Tissu : laine de costume.",
+        "Détails :",
+        "• Longueur midi",
+        "• Bretelles réglables (différentes options de fixation)",
+        "• Fente arrière discrète"
+      ],
+      colors: ["noir"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Сарафан-трансформер",
+      description: [
+        "Елегантний сарафан-трансформер — універсальна база для ділових та вечірніх образів. Лаконічний крій поєднується з продуманими деталями: регульовані бретелі, що перехрещуються на спинці, формують акцент і дозволяють змінювати посадку під себе.",
+        "Модель виконана у довжині міді, з м’яким приталенням та акуратною складкою спереду, яка додає силуету витонченості. Ззаду — зручний розріз для комфорту рухів.",
+        "Ідеально комбінується з класичною сорочкою, гольфом або топом — залежно від стилю та настрою.",
+        "Тканина: костюмна вовна.",
+        "Деталі:",
+        "• довжина міді",
+        "• регульовані бретелі (можна змінювати спосіб фіксації)",
+        "• акуратний розріз ззаду"
+      ],
+      colors: ["чорний"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Сарафан-трансформер",
+      description: [
+        "Элегантный сарафан-трансформер — универсальная база для деловых и вечерних образов. Лаконичный крой сочетается с продуманными деталями: регулируемые бретели, перекрещивающиеся на спине, создают акцент и позволяют подогнать посадку под себя.",
+        "Модель длины миди с мягким приталиванием и аккуратной складкой спереди, добавляющей изящности силуэту. Сзади — удобный разрез для свободы движений.",
+        "Идеально сочетается с классической рубашкой, водолазкой или топом — в зависимости от стиля и настроения.",
+        "Ткань: костюмная шерсть.",
+        "Детали:",
+        "• длина миди",
+        "• регулируемые бретели (вариативная фиксация)",
+        "• аккуратный разрез сзади"
+      ],
+      colors: ["чёрный"]
+    }
+  }
+},
+
+
+{
+  id: 284,
+  price: 3100,
+  isTop: false,
+  isNew: true,
+  sku: "99415",
+  size: "XS S M L XL",
+  category: "Jackets",
+  image: "/Jackets/Tweed Jacket White/1.avif",
+  images: [
+    "/Jackets/Tweed Jacket White/2.avif",
+    "/Jackets/Tweed Jacket White/3.avif",
+    "/Jackets/Tweed Jacket White/4.avif",
+    "/Jackets/Tweed Jacket White/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Jackets",
+      name: "Tweed Jacket",
+      description: [
+        "An elegant tweed jacket in a refined milk white shade. The minimalist collarless cut enhances the feminine silhouette, while the structured fabric maintains its shape and ensures a perfect fit.",
+        "Tone-on-tone decorative buttons and neat patch pockets add sophistication in a timeless modern classic style.",
+        "Pairs beautifully with classic trousers, denim, or a leather skirt — transitioning easily from business to evening looks.",
+        "Fabric: Tweed.",
+        "Details:",
+        "• Silhouette: semi-fitted",
+        "• Pockets: decorative patch pockets",
+        "• Collar: rounded neckline without lapels"
+      ],
+      colors: ["white"]
+    },
+    FR: {
+      category: "Vestes",
+      name: "Veste en tweed",
+      description: [
+        "Veste élégante en tweed texturé dans une teinte blanc lait. La coupe épurée sans col met en valeur la silhouette féminine, tandis que le tissu structuré conserve sa forme pour une allure impeccable.",
+        "Les boutons ton sur ton et les poches plaquées décoratives ajoutent une touche de sophistication au style modern classic.",
+        "S’harmonise parfaitement avec un pantalon classique, un jean ou une jupe en cuir — du bureau aux tenues de soirée.",
+        "Tissu : tweed.",
+        "Détails :",
+        "• Silhouette : semi-ajustée",
+        "• Poches : plaquées décoratives",
+        "• Col : encolure ronde sans revers"
+      ],
+      colors: ["blanc"]
+    },
+    UA: {
+      category: "Жакети",
+      name: "Твідовий жакет",
+      description: [
+        "Елегантний жакет із фактурного твіду у світлому відтінку milk white. Лаконічний крій без коміра підкреслює жіночний силует, а структурована тканина тримає форму та створює бездоганну посадку.",
+        "Декоративні ґудзики в тон і акуратні накладні кишені додають виробу витонченості в стилі modern classic.",
+        "Ідеально поєднується як із класичними брюками, так і з денімом або шкіряною спідницею — для образів від ділових до вечірніх.",
+        "Тканина: твід.",
+        "Деталі:",
+        "• силует: напівприталений",
+        "• кишені: декоративні накладні",
+        "• комір: округла горловина без лацканів"
+      ],
+      colors: ["білий"]
+    },
+    RU: {
+      category: "Жакеты",
+      name: "Твидовый жакет",
+      description: [
+        "Элегантный жакет из фактурного твида в светлом оттенке молочного белого. Лаконичный крой без воротника подчёркивает женственный силуэт, а структурированная ткань держит форму и обеспечивает идеальную посадку.",
+        "Декоративные пуговицы в тон и аккуратные накладные карманы придают изделию изысканность в стиле modern classic.",
+        "Идеально сочетается как с классическими брюками, так и с денимом или кожаной юбкой — для образов от деловых до вечерних.",
+        "Ткань: твид.",
+        "Детали:",
+        "• силуэт: полуприталенный",
+        "• карманы: декоративные накладные",
+        "• воротник: круглая горловина без лацканов"
+      ],
+      colors: ["белый"]
+    }
+  }
+},
+
+  {
+  id: 283,
+  price: 3700,
+  isTop: false,
+  isNew: true,
+  sku: "99412",
+  size: "XS S M L XL",
+  category: "Outerwear",
+  image: "/Outerwear/Leather Bomber Mocha/1.avif",
+  images: [
+    "/Outerwear/Leather Bomber Mocha/2.avif",
+    "/Outerwear/Leather Bomber Mocha/3.avif",
+    "/Outerwear/Leather Bomber Mocha/4.avif",
+    "/Outerwear/Leather Bomber Mocha/5.avif"
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Outerwear",
+      name: "Leather Bomber Jacket",
+      description: [
+        "A modern interpretation of the classic bomber — minimalist, structured, and effortlessly soft in presentation. The straight silhouette with relaxed shoulders and perfect length makes it a versatile piece — pair it with feminine midi skirts, denim, or tailored trousers.",
+        "Perfect for transitional weather, it works beautifully as a layering piece over a turtleneck or lightweight knitwear. A timeless balance between minimalism and character — this bomber is made to last for years.",
+        "Fabric: High-quality eco-leather with a suede backing (stretchy, does not crack).",
+        "Details:",
+        "• Welt pockets",
+        "• Oversized fit",
+        "• Stand-up collar"
+      ],
+      colors: ["mocha"]
+    },
+    FR: {
+      category: "Manteaux",
+      name: "Blouson aviateur en cuir",
+      description: [
+        "Une interprétation moderne du blouson aviateur classique — minimaliste, structuré et souple dans son allure. Sa coupe droite, ses épaules tombantes et sa longueur équilibrée en font une pièce polyvalente — parfaite avec une jupe midi féminine, un jean ou un pantalon habillé.",
+        "Idéal pour la mi-saison, il se porte aisément sur un col roulé ou un tricot léger. Un équilibre intemporel entre minimalisme et caractère — conçu pour durer des années.",
+        "Tissu : cuir écologique de haute qualité sur base en suédine (extensible, ne se fissure pas).",
+        "Détails :",
+        "• Poches passepoilées",
+        "• Coupe oversize",
+        "• Col montant"
+      ],
+      colors: ["moka"]
+    },
+    UA: {
+      category: "Верхній одяг",
+      name: "Шкіряний бомбер",
+      description: [
+        "Сучасна інтерпретація класичного бомберу — лаконічний, структурований і водночас м’який у подачі. Прямий силует з легкою свободою посадки, спущена лінія плеча та акуратна довжина роблять його універсальним для поєднань — від жіночної міді-спідниці до деніму чи класичних брюк.",
+        "Бомбер легко стилізується у міжсезоння — як верхній шар на гольф або тонкий трикотаж. Баланс між мінімалізмом і характером — саме той варіант, який працює роками.",
+        "Тканина: якісна екошкіра на замшевій основі (стрейчева, не тріскається).",
+        "Деталі:",
+        "• прорізні кишені",
+        "• оверсайз фасон",
+        "• комір-стійка"
+      ],
+      colors: ["мокко"]
+    },
+    RU: {
+      category: "Верхняя одежда",
+      name: "Кожаный бомбер",
+      description: [
+        "Современная интерпретация классического бомбера — лаконичный, структурированный и мягкий в подаче. Прямой силуэт со спущенной линией плеч и сбалансированной длиной делает его универсальным — от женственной миди-юбки до денима или классических брюк.",
+        "Бомбер легко стилизуется в межсезонье — как верхний слой на гольф или лёгкий трикотаж. Баланс минимализма и характера — идеальный вариант на долгие годы.",
+        "Ткань: качественная экокожа на замшевой основе (тянется, не трескается).",
+        "Детали:",
+        "• прорезные карманы",
+        "• фасон oversize",
+        "• воротник-стойка"
+      ],
+      colors: ["мокко"]
+    }
+  }
+},
 
   {
     id: 282,
@@ -123,6 +902,81 @@ const products = [
           "• накладные карманы"
         ],
         colors: ["молочный шоколад"]
+      }
+    }
+  },
+
+  {
+    id: 283,
+    price: 3700,
+    isTop: false,
+    isNew: true,
+    sku: "99423",
+    size: "XS S M L XL",
+    category: "Outerwear",
+    image: "/Outerwear/Leather Bomber/1.avif",
+    images: [
+      "/Outerwear/Leather Bomber/2.avif",
+      "/Outerwear/Leather Bomber/3.avif",
+      "/Outerwear/Leather Bomber/4.avif",
+    ],
+    sizes: ["XS", "S", "M", "L", "XL"],
+    translations: {
+      EN: {
+        category: "Outerwear",
+        name: "Leather Bomber",
+        description: [
+          "A modern interpretation of the classic bomber — laconic, structured, and soft at the same time. Straight silhouette with a slight freedom of fit, dropped shoulder line, and neat length make it versatile for combinations — from feminine midi skirt to denim or classic trousers.",
+          "The bomber is easily styled for transitional seasons — as a top layer over a golf or thin knitwear. The balance between minimalism and character — exactly the option that works for years.",
+          "Fabric: high-quality eco-leather on a suede basis (stretchy, does not crack)",
+          "Details:",
+          "• Slash pockets",
+          "• Oversize fit",
+          "• Stand collar"
+        ],
+        colors: ["mocha"]
+      },
+      FR: {
+        category: "Vêtements d'extérieur",
+        name: "Bomber en cuir",
+        description: [
+          "Une interprétation moderne du bomber classique — laconique, structurée et douce à la fois. Silhouette droite avec une légère liberté de coupe, ligne d'épaules descendue et longueur soignée le rendent polyvalent pour les combinaisons — de la jupe midi féminine au denim ou au pantalon classique.",
+          "Le bomber sestylise facilement pour les saisons intermédiaires — comme couche supérieure sur un golf ou un tricot fin. L'équilibre entre minimalisme et caractère — exactement l'option qui fonctionne pendant des années.",
+          "Tissu : cuir écologique de haute qualité sur base en suédine (extensible, ne se fissure pas)",
+          "Détails :",
+          "• Poches biais",
+          "• Coupe oversize",
+          "• Col montant"
+        ],
+        colors: ["moka"]
+      },
+      UA: {
+        category: "Верхній одяг",
+        name: "Шкіряний бомбер",
+        description: [
+          "Сучасна інтерпретація класичного бомберу — лаконічний, структурований і водночас м’який у подачі. Прямий силует з легкою свободою посадки, спущена лінія плеча та акуратна довжина роблять його універсальним для поєднань — від жіночної міді-спідниці до деніму чи класичних брюк.",
+          "Бомбер легко стилізується у міжсезоння — як верхній шар на гольф або тонкий трикотаж. Баланс між мінімалізмом і характером — саме той варіант, який працює роками.",
+          "Тканина: якісна екошкіра на замшевій основі (стрейчева, не тріскається)",
+          "Деталі:",
+          "• прорізні кишені",
+          "• оверсайз фасон",
+          "• комір-стійка"
+        ],
+        colors: ["мокко"]
+      },
+      RU: {
+        category: "Верхняя одежда",
+        name: "Кожаный бомбер",
+        description: [
+          "Современная интерпретация классического бомбера — лаконичный, структурированный и одновременно мягкий в подаче. Прямой силуэт с лёгкой свободой посадки, опущенная линия плеча и аккуратная длина делают его универсальным для сочетаний — от женственной миди-юбки до денима или классических брюк.",
+          "Бомбер легко стилизуется в межсезонье — как верхний слой на гольф или тонкий трикотаж. Баланс между минимализмом и характером — именно тот вариант, который работает годами.",
+          "Ткань: качественная экокожа на замшевой основе (стрейчевая, не трескается)",
+          "Детали:",
+          "• прорезные карманы",
+          "• оверсайз фасон",
+          "• воротник-стойка"
+        ],
+        colors: ["мокко"]
       }
     }
   },
