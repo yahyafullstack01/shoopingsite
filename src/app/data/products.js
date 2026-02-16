@@ -14,7 +14,7 @@ const products = [
       "/Shirts/Batiste Shirt/8.avif",
       {
         type: "video",
-        src: "/Shirts/Batiste Shirt/IMG_7575.mp4",
+        src: "/Shirts/Batiste Shirt/IMG_7771.mp4",
         poster: "/Shirts/Batiste Shirt/7.avif"
       },
 
@@ -23,9 +23,9 @@ const products = [
       "/Shirts/Batiste Shirt/4.avif",
       "/Shirts/Batiste Shirt/5.avif",
       "/Shirts/Batiste Shirt/6.JPG",
-      "/Shirts/Batiste Shirt/7.TIF",
-      "/Shirts/Batiste Shirt/8.TIF",
-      "/Shirts/Batiste Shirt/9.TIF",
+      "/Shirts/Batiste Shirt/7.avif",
+      "/Shirts/Batiste Shirt/8.avif",
+      "/Shirts/Batiste Shirt/9.avif",
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
     translations: {
