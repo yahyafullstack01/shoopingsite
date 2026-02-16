@@ -4663,6 +4663,7 @@ const products = [
   category: "Pants",
   image: "/Pants/LeatherPants Belt/6.avif",
   images: [
+    "/Pants/LeatherPants Belt/6.avif",
     "/Pants/LeatherPants Belt/7.avif",
     "/Pants/LeatherPants Belt/8.avif",
     "/Pants/LeatherPants Belt/9.avif",
