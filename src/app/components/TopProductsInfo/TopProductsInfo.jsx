@@ -56,8 +56,9 @@ export default function TopProductsInfo() {
     : topSorted[0];
 
   const [selectedProduct, setSelectedProduct] = useState(initialProduct);
+  // Use product.image as fallback, consistent with ProductBanner
   const [selectedMedia, setSelectedMedia] = useState(
-    initialProduct ? getDefaultMedia(initialProduct) : null
+    initialProduct ? (getDefaultMedia(initialProduct) || normalizeMedia(initialProduct.image)) : null
   );
 
   // якщо змінився ?product у URL — підміняємо й дефолтне медіа
@@ -66,7 +67,9 @@ export default function TopProductsInfo() {
     const found = topSorted.find((p) => p.id === Number(selectedProductId));
     if (found) {
       setSelectedProduct(found);
-      setSelectedMedia(getDefaultMedia(found));
+      // Ensure we always have valid media - try images array first, then fallback to product.image
+      const media = getDefaultMedia(found) || normalizeMedia(found.image);
+      setSelectedMedia(media);
       setTimeout(() => {
         descriptionRef.current?.scrollIntoView({ behavior: "smooth" });
       }, 300);
@@ -75,7 +78,9 @@ export default function TopProductsInfo() {
 
   const handleProductClick = (product) => {
     setSelectedProduct(product);
-    setSelectedMedia(getDefaultMedia(product));
+    // Ensure we always have valid media - try images array first, then fallback to product.image
+    const media = getDefaultMedia(product) || normalizeMedia(product.image);
+    setSelectedMedia(media);
     router.push(`?product=${product.id}`, { scroll: false });
     if (descriptionRef.current) {
       descriptionRef.current.scrollIntoView({ behavior: "smooth" });

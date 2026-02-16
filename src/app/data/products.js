@@ -4661,6 +4661,7 @@ const products = [
   sku: "99347",
   size: "XS S M L XL",
   category: "Pants",
+  title: "Шкіряні брюки з поясом",
   image: "/Pants/LeatherPants Belt/6.avif",
   images: [
     "/Pants/LeatherPants Belt/6.avif",
@@ -4674,6 +4675,7 @@ const products = [
     "/Pants/LeatherPants Belt/5.avif",
   ],
   sizes: ["XS", "S", "M", "L", "XL"],
+  colors: ["карамель", "мокко"],
   translations: {
     EN: {
       category: "Pants",
