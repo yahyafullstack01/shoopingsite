@@ -4654,7 +4654,7 @@ const products = [
   {
   id: 205,
   price: 2100,
-  isTop: true,
+  isTop: false,
   isNew: false,
   // isSpecialOffer: true,
   // discountPrice: 1785,
