@@ -760,16 +760,16 @@ const products = [
 },
 
   {
-  id: 283,
+  id: 1,
   price: 3700,
   isTop: false,
   isNew: true,
   sku: "99412",
   size: "XS S M L XL",
   category: "Outerwear",
-  image: "/Outerwear/Leather Bomber Mocha/2.avif",
+  image: "/Outerwear/Leather Bomber Mocha/1.avif",
   images: [
-    "/Outerwear/Leather Bomber Mocha/1.avif",
+    "/Outerwear/Leather Bomber Mocha/2.avif",
     "/Outerwear/Leather Bomber Mocha/3.avif",
     "/Outerwear/Leather Bomber Mocha/4.avif",
     "/Outerwear/Leather Bomber Mocha/5.avif"
@@ -4726,87 +4726,7 @@ const products = [
 
 
 
-  {
-  id: 219,
-  price: 3900,
-  isTop: false,
-  isNew: false,
-  // isSpecialOffer: true,
-  // discountPrice: 3315,
-  sku: "99361",
-  size: "XS S M L XL",
-  category: "Outerwear",
-  image: "/Outerwear/Herringbone Wool Aviator/1.avif",
-  images: [
-    "/Outerwear/Herringbone Wool Aviator/2.avif",
-    "/Outerwear/Herringbone Wool Aviator/3.avif",
-    "/Outerwear/Herringbone Wool Aviator/4.avif",
-    "/Outerwear/Herringbone Wool Aviator/5.avif"
-  ],
-  sizes: ["XS", "S", "M", "L", "XL"],
-  translations: {
-    EN: {
-      category: "Outerwear",
-      name: "Herringbone Wool Aviator Jacket",
-      description: [
-        "An iconic classic reimagined for the modern woman.",
-        "This jacket blends a structured masculine cut with feminine elegance and meticulous attention to detail. Crafted from premium herringbone-patterned wool, it adds texture and visual depth to any look.",
-        "Fabric: Premium-quality natural wool providing warmth, coziness, and a pleasant tactile feel.",
-        "[ Composition: 75% wool ]",
-        "Details:",
-        "• Relaxed oversize silhouette with defined shoulders — looks stylish both open and buttoned.",
-        "• Fringe edge detailing adds movement and character to the design.",
-        "• Double button closure and adjustable side belt with metal buckle for a customizable fit."
-      ],
-      colors: ["gray herringbone"]
-    },
-    FR: {
-      category: "Manteaux",
-      name: "Veste aviateur en laine à chevrons",
-      description: [
-        "Un classique légendaire revisité dans une version moderne.",
-        "Cette veste associe une coupe masculine structurée à une élégance féminine et une attention méticuleuse aux détails. Confectionnée en laine à motif chevrons, elle ajoute de la texture et de la profondeur visuelle à chaque tenue.",
-        "Tissu : laine naturelle de qualité supérieure offrant chaleur, confort et douceur au toucher.",
-        "[ Composition : 75% laine ]",
-        "Détails :",
-        "• Silhouette oversize avec des lignes d’épaules nettes — élégante ouverte ou fermée.",
-        "• Finition à franges accentuée — ajoute du mouvement et du caractère.",
-        "• Fermeture double boutonnage et ceinture latérale réglable avec boucle métallique."
-      ],
-      colors: ["gris chevrons"]
-    },
-    UA: {
-      category: "Верхній одяг",
-      name: "Вовняна куртка авіатор",
-      description: [
-        "Легендарна класика у сучасному виконанні.",
-        "Куртка поєднує структуру чоловічого крою з жіночою елегантністю та бездоганною увагою до деталей. Вона створена з вовняної тканини у візерунку “ялинка”, що додає фактурності та візуальної глибини кожному образу.",
-        "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
-        "[ Склад: 75% вовни ]",
-        "Деталі:",
-        "• Вільний oversize-силует із чіткими лініями плеча — виглядає стильно як у розстібнутому, так і застібнутому варіанті.",
-        "• Акцентна обробка країв бахромою — додає образу динамічності й характеру.",
-        "• Подвійна застібка на гудзики та ремінь із металевою пряжкою на боці для регулювання об’єму."
-      ],
-      colors: ["сіра ялинка"]
-    },
-    RU: {
-      category: "Верхняя одежда",
-      name: "Шерстяная куртка авиатор в ёлочку",
-      description: [
-        "Легендарная классика в современном исполнении.",
-        "Куртка сочетает структуру мужского кроя с женственной элегантностью и безупречным вниманием к деталям. Изготовлена из шерсти с узором «ёлочка», она добавляет образу фактурности и глубины.",
-        "Ткань: натуральная шерсть премиум-качества, обеспечивающая тепло и комфорт.",
-        "[ Состав: 75% шерсти ]",
-        "Детали:",
-        "• Свободный oversize-силуэт с чёткими плечами — стильно смотрится как в расстёгнутом, так и застёгнутом виде.",
-        "• Отделка краёв бахромой — добавляет движению и характеру.",
-        "• Двойная застёжка на пуговицы и пояс с металлической пряжкой сбоку для регулировки объёма."
-      ],
-      colors: ["серая ёлочка"]
-    }
-  }
-},
+
 
 
 
@@ -8968,15 +8888,15 @@ const products = [
   sku: "98816",
   size: "XS S M L XL",
   category: "Pants",
-  image: "/Pants/Alice Pants/1.avif",
+  image: "/Pants/Alice Pants/6.avif",
   images: [
+    "/Pants/Alice Pants/5.avif",
+    "/Pants/Alice Pants/7.avif",
+    "/Pants/Alice Pants/8.avif",
+    "/Pants/Alice Pants/1.avif",
     "/Pants/Alice Pants/2.avif",
     "/Pants/Alice Pants/3.avif",
     "/Pants/Alice Pants/4.avif",
-    "/Pants/Alice Pants/5.avif",
-    "/Pants/Alice Pants/6.avif",
-    "/Pants/Alice Pants/7.avif",
-    "/Pants/Alice Pants/8.avif",
   ],
   sizes: ["XS", "S", "M", "L", "XL"],
   translations: {
@@ -9053,15 +8973,15 @@ const products = [
   sku: "98815",
   size: "XS S M L XL",
   category: "Jackets",
-  image: "/Jackets/Alice Jacket/1.avif",
+  image: "/Jackets/Alice Jacket/5.avif",
   images: [
-    "/Jackets/Alice Jacket/2.avif",
-    "/Jackets/Alice Jacket/3.avif",
-    "/Jackets/Alice Jacket/4.avif",
-    "/Jackets/Alice Jacket/5.avif",
     "/Jackets/Alice Jacket/6.avif",
     "/Jackets/Alice Jacket/7.avif",
     "/Jackets/Alice Jacket/8.avif",
+    "/Jackets/Alice Jacket/1.avif",
+    "/Jackets/Alice Jacket/2.avif",
+    "/Jackets/Alice Jacket/3.avif",
+    "/Jackets/Alice Jacket/4.avif",
   ],
   sizes: ["XS", "S", "M", "L", "XL"],
   translations: {
