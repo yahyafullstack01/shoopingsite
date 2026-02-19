@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "postbuild": "next-sitemap --config next-sitemap.config.cjs",
-    "seed": "node src/app/frontend/scripts/send-to-db.js"
+    "seed": "node src/app/frontend/scripts/send-to-db.js",
+    "test:crypto-flow": "node scripts/test-crypto-payment-flow.js"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
