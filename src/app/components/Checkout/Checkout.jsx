@@ -8,10 +8,13 @@ import { getSessionId } from '../../utils/session';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import { FiUser, FiMail, FiPhone, FiTruck, FiCreditCard, FiMessageSquare } from "react-icons/fi";
+import { useLanguage } from '../../Functions/useLanguage';
 
 import OrderSummary from "../OrderSummary/OrderSummary"
 export default function Checkout() {
   const router = useRouter();
+  const { translateList } = useLanguage();
+  const checkoutTranslations = translateList("home", "checkoutPage") || {};
 
   const [deliveryMethod, setDeliveryMethod] = useState('');
   const [cityQuery, setCityQuery] = useState('');
@@ -383,6 +386,70 @@ const handleWayforpayClick = async () => {
       alert('Помилка при оформленні. Спробуйте пізніше.');
     }
   };
+
+  const handleCryptoPayment = async () => {
+    const formValues = { firstName, lastName, email, phone };
+    const validationErrors = validateForm(formValues);
+
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      return;
+    }
+
+    const order = {
+      firstName,
+      lastName,
+      patronymic,
+      email,
+      phone,
+      deliveryMethod,
+      city: cityQuery,
+      warehouse: selectedWarehouse,
+      warehouseRef: selectedWarehouseRef,
+      comment,
+      total: Number(String(total).replace(/[^\d.]/g, '')),
+      prepay: false,
+      paymentMethod: 'crypto',
+      sessionId,
+    };
+
+    try {
+      // Save order to database
+      const orderRes = await fetch(`${BACKEND_URL}/api/orders`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(order),
+      });
+
+      if (!orderRes.ok) throw new Error('Failed to save order');
+      const savedOrder = await orderRes.json();
+      const orderId = savedOrder._id || savedOrder.id;
+
+      // Send crypto payment email
+      const emailRes = await fetch('/api/sendCryptoEmail', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          ...order,
+          orderId,
+        }),
+      });
+
+      if (!emailRes.ok) {
+        console.error('Failed to send email, but order was saved');
+      }
+
+      alert(checkoutTranslations.cryptoSuccess || '✅ Ваше замовлення прийнято! Ми зв\'яжемося з вами найближчим часом для отримання реквізитів криптовалютного платежу.');
+      resetForm();
+      
+      // Clear cart
+      localStorage.removeItem('totalAmount');
+      
+    } catch (error) {
+      console.error('❌ Error with crypto payment order:', error);
+      alert(checkoutTranslations.cryptoError || 'Помилка при оформленні замовлення. Спробуйте пізніше.');
+    }
+  };
   
  
   return (
@@ -557,6 +624,10 @@ const handleWayforpayClick = async () => {
           <input type="radio" name="payment" value="half" checked={paymentType === 'half'} onChange={() => { setPaymentType('half'); setOnlinePaymentMethod(''); }} />
           <span className="text-gray-800 dark:text-white">Передоплата 50% ({Math.round(total / 2)} грн)</span>
         </label>
+        <label className="flex items-center space-x-2">
+          <input type="radio" name="payment" value="crypto" checked={paymentType === 'crypto'} onChange={() => { setPaymentType('crypto'); setOnlinePaymentMethod(''); }} />
+          <span className="text-gray-800 dark:text-white">💰 {checkoutTranslations.cryptoPayment || 'Оплата криптовалютою'} (BTC, ETH, USDT)</span>
+        </label>
       </div>
 
       {/* ОНЛАЙН ОПЛАТА */}
@@ -578,14 +649,24 @@ const handleWayforpayClick = async () => {
 
       {/* КНОПКИ */}
       <div className="flex flex-wrap gap-4 pt-4">
-        <button
-          type="button"
-          onClick={handleWayforpayClick}
-          className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-xl shadow flex items-center gap-2"
-        >
-          <FiCreditCard />
-          Оплатити {paymentType === 'half' ? '50%' : 'повну суму'}
-        </button>
+        {paymentType === 'crypto' ? (
+          <button
+            type="button"
+            onClick={handleCryptoPayment}
+            className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-xl shadow flex items-center gap-2"
+          >
+            💰 {checkoutTranslations.cryptoButton || 'Оплатити криптовалютою'}
+          </button>
+        ) : (
+          <button
+            type="button"
+            onClick={handleWayforpayClick}
+            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-xl shadow flex items-center gap-2"
+          >
+            <FiCreditCard />
+            Оплатити {paymentType === 'half' ? '50%' : 'повну суму'}
+          </button>
+        )}
 
         <button
           type="button"

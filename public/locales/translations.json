@@ -74,6 +74,13 @@
         "colorError": "Select a color",
         "sizeError": "Select a size",
         "quantityError": "Specify quantity"
+      },
+      "checkoutPage": {
+        "cryptoPayment": "Pay with Cryptocurrency",
+        "cryptoDescription": "We accept Bitcoin, Ethereum, USDT",
+        "cryptoButton": "Order with Crypto Payment",
+        "cryptoSuccess": "✅ Order received! We will contact you soon with cryptocurrency payment instructions.",
+        "cryptoError": "Error placing order. Please try again later."
       }
     },
     "products": {
@@ -270,6 +277,13 @@
         "colorError": "Оберіть колір",
         "sizeError": "Оберіть розмір",
         "quantityError": "Вкажіть кількість"
+      },
+      "checkoutPage": {
+        "cryptoPayment": "Оплата криптовалютою",
+        "cryptoDescription": "Ми приймаємо Bitcoin, Ethereum, USDT",
+        "cryptoButton": "Оплатити криптовалютою",
+        "cryptoSuccess": "✅ Ваше замовлення прийнято! Ми зв'яжемося з вами найближчим часом для отримання реквізитів криптовалютного платежу.",
+        "cryptoError": "Помилка при оформленні замовлення. Спробуйте пізніше."
       }
       
     },
