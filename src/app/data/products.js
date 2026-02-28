@@ -1,5 +1,8 @@
 const products = [
 
+
+
+
   {
   id: 294,
   price: 3000,
@@ -70,6 +73,76 @@ const products = [
   }
 },
 
+//   {
+//   id: 295,
+//   price: 2800,
+//   isTop: true,
+//   isNew: true,
+//   sku: "99424",
+//   size: "XS S M L XL",
+//   category: "Жакети",
+//   image: "/Jackets/Distressed Bomber/1.avif",
+//   images: [
+//     "/Jackets/Distressed Bomber/2.avif",
+//     "/Jackets/Distressed Bomber/3.avif",
+//     "/Jackets/Distressed Bomber/4.avif",
+//     "/Jackets/Distressed Bomber/5.avif",
+
+//   ],
+//   sizes: ["XS", "S", "M", "L", "XL"],
+//   translations: {
+//     EN: {
+//       category: "Jackets",
+//       name: "Distressed Linen Bomber",
+//       description: [
+//         "A lightweight linen bomber with a distressed effect — a perfect piece for spring and summer looks.",
+//         "The breathable fabric and relaxed fit make it an ideal choice for layering and everyday comfort.",
+//         "Fabric: 100% natural linen",
+//         "Details:",
+//         "• Unlined bomber",
+//         "• Ribbed cuffs and waistband"
+//       ],
+//       colors: ["black"]
+//     },
+//     FR: {
+//       category: "Vestes",
+//       name: "Blouson effet usé",
+//       description: [
+//         "Blouson léger en lin avec effet usé — un complément original pour la saison printemps-été.",
+//         "Le tissu respirant et la coupe décontractée en font un choix idéal pour les superpositions et le confort quotidien.",
+//         "Tissu : 100 % lin naturel",
+//         "Détails :",
+//         "• Blouson sans doublure",
+//         "• Poignets et ceinture côtelés"
+//       ],
+//       colors: ["noir"]
+//     },
+//     UA: {
+//       category: "Жакети",
+//       name: "Бомбер із рваним ефектом",
+//       description: [
+//         "Легкий бомбер із рваним ефектом на весняний-літній сезон. Стане цікавим доповненням до твоїх образів.",
+//         "Тканина: 100% натуральний льон",
+//         "Деталі:",
+//         "• бомбер без підкладки",
+//         "• манжети на рукавах та поясі"
+//       ],
+//       colors: ["чорний"]
+//     },
+//     RU: {
+//       category: "Жакеты",
+//       name: "Бомбер с эффектом потертости",
+//       description: [
+//         "Легкий бомбер с эффектом потертости для весенне-летнего сезона. Станет интересным дополнением к твоим образам.",
+//         "Ткань: 100% натуральный лён",
+//         "Детали:",
+//         "• бомбер без подкладки",
+//         "• манжеты на рукавах и поясе"
+//       ],
+//       colors: ["черный"]
+//     }
+//   }
+// },
 
     {
     id: 100,
