@@ -3,8 +3,8 @@ const products = [
   {
   id: 294,
   price: 3000,
-  isTop: false,
-  isNew: false,
+  isTop: true,
+  isNew: true,
   sku: "99425",
   size: "XS S M L XL",
   category: "Жакети",
@@ -71,10 +71,10 @@ const products = [
 },
 
   {
-  id: 293,
+  id: 295,
   price: 2800,
-  isTop: false,
-  isNew: false,
+  isTop: true,
+  isNew: true,
   sku: "99424",
   size: "XS S M L XL",
   category: "Жакети",
@@ -7588,7 +7588,7 @@ const products = [
   {
   id: 182,
   price: 2800,
-  isTop: false,
+  isTop: true,
   isNew: false,
   // isSpecialOffer: true,
   // discountPrice: 2023,
