@@ -1,6 +1,142 @@
 const products = [
 
   {
+  id: 297,
+  price: 3000,
+  isTop: false,
+  isNew: true,
+  sku: "99428",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Knitted Lace Dress/1.avif",
+  images: [
+    "/Dress/Knitted Lace Dress/2.avif",
+    "/Dress/Knitted Lace Dress/3.avif",
+    "/Dress/Knitted Lace Dress/4.avif",
+    "/Dress/Knitted Lace Dress/5.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Knitted Lace Dress",
+      description: [
+        "An elegant black midi dress that combines comfort and sophistication. The clean silhouette drapes gently over the body, while velvety lace on both sides adds depth and femininity.",
+        "A V-shaped neckline with delicate lace trim highlights the décolleté, and the lace finish along the hem creates a refined accent. Thanks to the adjustable drawstring waist, the fit can be customized for a more defined or relaxed silhouette.",
+        "(Belt not included)",
+        "Perfect for evening outings, special occasions, or stylish everyday looks during the colder season.",
+        "Fabric: Knit fabric with velvety lace detailing on both sides."
+      ],
+      colors: ["black"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe en maille avec dentelle",
+      description: [
+        "Une élégante robe midi noire alliant confort et raffinement. La silhouette fluide épouse délicatement le corps, tandis que la dentelle effet velours des deux côtés ajoute profondeur et féminité.",
+        "L’encolure en V ornée de dentelle souligne le décolleté, et la finition en dentelle sur l’ourlet apporte une touche sophistiquée. Grâce au cordon de serrage à la taille, la coupe peut être ajustée pour un style plus cintré ou plus fluide.",
+        "(Ceinture non incluse)",
+        "Idéale pour les sorties du soir, les occasions spéciales ou les looks élégants du quotidien pendant la saison froide.",
+        "Tissu : maille avec dentelle effet velours des deux côtés."
+      ],
+      colors: ["noir"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Трикотажна сукня з мереживом",
+      description: [
+        "Елегантна чорна сукня міді — поєднання комфорту та вишуканості. Лаконічний силует м’яко спадає по фігурі, а оксамитове мереживо з обох сторін додає образу глибини та жіночності.",
+        "V-подібний виріз із делікатним мереживним оздобленням підкреслює зону декольте, а мереживна обробка по низу створює витончений акцент. Завдяки поясу-кулісці на талії можна регулювати посадку, формуючи більш приталений або вільний силует.",
+        "(пояс не йде у комплекті)",
+        "Ідеальний варіант для вечірніх виходів, особливих подій або стильних повсякденних образів у холодний сезон.",
+        "Тканина: трикотажне полотно з оксамитовим мереживом з обох сторін."
+      ],
+      colors: ["чорний"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Трикотажное платье с кружевом",
+      description: [
+        "Элегантное черное платье миди — сочетание комфорта и утонченности. Лаконичный силуэт мягко ложится по фигуре, а бархатное кружево с обеих сторон добавляет глубину и женственность.",
+        "V-образный вырез с деликатной кружевной отделкой подчеркивает зону декольте, а кружевная отделка по низу создаёт изысканный акцент. Благодаря кулиске на талии можно регулировать посадку, создавая более приталенный или свободный силуэт.",
+        "(пояс не входит в комплект)",
+        "Идеальный вариант для вечерних выходов, особых событий или стильных повседневных образов в холодный сезон.",
+        "Ткань: трикотажное полотно с бархатным кружевом с обеих сторон."
+      ],
+      colors: ["черный"]
+    }
+  }
+},
+
+  {
+  id: 296,
+  price: 3200,
+  isTop: false,
+  isNew: true,
+  sku: "99427",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Knitted Lace Set/1.avif",
+  images: [
+    "/Costumes/Knitted Lace Set/2.avif",
+    "/Costumes/Knitted Lace Set/3.avif",
+    "/Costumes/Knitted Lace Set/4.avif",
+    "/Costumes/Knitted Lace Set/5.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Knitted Lace Set",
+      description: [
+        "An elegant black set that blends comfort with femininity. The ensemble consists of a relaxed jumper and a midi skirt, forming a refined silhouette with delicate accents.",
+        "Velvety lace trim decorates the sleeves, hem of the jumper, and skirt, adding depth and sophistication. The soft knit fabric drapes beautifully over the body, offering freedom of movement and comfort throughout the day.",
+        "A perfect choice for events, evening outings, or stylish everyday looks during the colder season.",
+        "Fabric: Knit fabric with velvety lace detailing on both sides.",
+        "(Belt not included)"
+      ],
+      colors: ["black"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Ensemble en maille avec dentelle",
+      description: [
+        "Un ensemble noir raffiné qui allie confort et féminité. Il se compose d’un pull ample et d’une jupe midi, créant une silhouette élégante aux accents délicats.",
+        "Une dentelle à effet velours orne les manches, le bas du pull et la jupe, ajoutant de la profondeur et de la sophistication. Le tricot doux épouse le corps sans le contraindre, offrant confort et liberté de mouvement toute la journée.",
+        "Un choix parfait pour les événements, les soirées ou les looks quotidiens élégants pendant la saison froide.",
+        "Tissu : maille avec dentelle effet velours des deux côtés.",
+        "(Ceinture non incluse)"
+      ],
+      colors: ["noir"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Трикотажний комплект з мереживом",
+      description: [
+        "Вишуканий чорний костюм, що поєднує комфорт і жіночність. Комплект складається з вільного джемпера та спідниці міді, створюючи елегантний силует із делікатними акцентами.",
+        "Мереживне оздоблення з оксамитовим ефектом прикрашає рукави, низ джемпера та спідниці, додаючи образу глибини та витонченості. Завдяки м’якому трикотажу костюм красиво лягає по фігурі, не сковує рухів і дарує відчуття комфорту протягом усього дня.",
+        "Ідеальний вибір для подій, вечірніх виходів або стильних повсякденних образів у холодний сезон.",
+        "Тканина: трикотажне полотно з оксамитовим мереживом з обох сторін.",
+        "(пояс не йде у комплекті)"
+      ],
+      colors: ["чорний"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Трикотажный комплект с кружевом",
+      description: [
+        "Изысканный черный костюм, сочетающий комфорт и женственность. Комплект состоит из свободного джемпера и юбки миди, создавая элегантный силуэт с деликатными акцентами.",
+        "Кружевная отделка с бархатным эффектом украшает рукава, низ джемпера и юбки, добавляя глубину и утонченность. Благодаря мягкому трикотажу костюм красиво садится по фигуре, не стесняет движений и обеспечивает комфорт на протяжении всего дня.",
+        "Идеальный выбор для мероприятий, вечерних выходов или стильных повседневных образов в холодный сезон.",
+        "Ткань: трикотажное полотно с бархатным кружевом с обеих сторон.",
+        "(пояс не входит в комплект)"
+      ],
+      colors: ["черный"]
+    }
+  }
+},
+
+  {
   id: 294,
   price: 3000,
   isTop: true,

@@ -6,7 +6,7 @@ const PRIORITY_BY_CATEGORY = {
   skirts:  [97, 286, 102, 154 ],
   sweaters:[229, 189, 263, 36],
   pants:   [222, 205, 28, 192, 90],
-  jackets: [162, 232, 182],
+  jackets: [295, 294, 162, 232, 182],
   tops:    [],
   outerwear: [],
   shorts:  [],
