@@ -1,4 +1,71 @@
 const products = [
+  {
+  id: 298,
+  price: 1700,
+  isTop: false,
+  isNew: true,
+  sku: "99429",
+  size: "XS S M L XL",
+  category: "Sweaters",
+  image: "/Sweaters/Spiderweb Sweater/1.avif",
+  images: [
+    "/Sweaters/Spiderweb Sweater/2.avif",
+    "/Sweaters/Spiderweb Sweater/3.avif",
+    "/Sweaters/Spiderweb Sweater/4.avif",
+    "/Sweaters/Spiderweb Sweater/5.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Sweaters",
+      name: "Spiderweb Sweater",
+      description: [
+        "Deep chocolate — a color of confidence and calm 🤎",
+        "A look that appears effortlessly luxurious. The minimalist silhouette, soft lines, and delicate lace create a feminine, refined mood — perfect for city outings or special occasions.",
+        "Lace accents add lightness, while the waist tie highlights the figure, forming elegant proportions.",
+        "Wear as a set or style separately — a versatile base with character.",
+        "Fabric: Viscose knit 'spiderweb' texture."
+      ],
+      colors: ["chocolate"]
+    },
+    FR: {
+      category: "Pulls",
+      name: "Pull toile d’araignée",
+      description: [
+        "Chocolat profond — une teinte de confiance et de sérénité 🤎",
+        "Un look qui respire l’élégance sans effort. La silhouette épurée, les lignes douces et la dentelle délicate créent une allure féminine et raffinée — idéale pour la ville comme pour les occasions spéciales.",
+        "Les détails en dentelle ajoutent de la légèreté, tandis que la ceinture souligne la taille et crée des proportions élégantes.",
+        "À porter en ensemble ou séparément — une base polyvalente avec du caractère.",
+        "Tissu : tricot en viscose effet ‘toile d’araignée’."
+      ],
+      colors: ["chocolat"]
+    },
+    UA: {
+      category: "Светри",
+      name: "Светр павутинка",
+      description: [
+        "Глибокий шоколад — колір впевненості та спокою 🤎",
+        "Образ, який виглядає дорого без зайвого. Лаконічний силует, м’які лінії та делікатне мереживо створюють жіночний, витончений настрій — ідеальний як для міських зустрічей, так і для особливих подій.",
+        "Мереживні акценти додають легкості, а пояс підкреслює талію, формуючи витончені пропорції.",
+        "Носіть комплектом або стилізуйте окремо — це універсальна база з характером.",
+        "Тканина: віскозний трикотаж «павутинка»."
+      ],
+      colors: ["шоколад"]
+    },
+    RU: {
+      category: "Свитеры",
+      name: "Свитер паутинка",
+      description: [
+        "Глубокий шоколад — цвет уверенности и спокойствия 🤎",
+        "Образ, который выглядит дорого без лишнего. Лаконичный силуэт, мягкие линии и деликатное кружево создают женственное, утончённое настроение — идеально для городских встреч или особых случаев.",
+        "Кружевные акценты добавляют лёгкости, а пояс подчёркивает талию, формируя изящные пропорции.",
+        "Носите комплектом или отдельно — это универсальная база с характером.",
+        "Ткань: вискозный трикотаж «паутинка»."
+      ],
+      colors: ["шоколад"]
+    }
+  }
+},
 
   {
   id: 297,
