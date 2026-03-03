@@ -2182,6 +2182,18 @@ const products = [
       "/Dress/Denim Sundress/3.avif",
       "/Dress/Denim Sundress/4.avif",
       "/Dress/Denim Sundress/5.avif",
+      "/Dress/Denim Sundress/6.avif",
+      "/Dress/Denim Sundress/7.avif",
+      "/Dress/Denim Sundress/8.avif",
+      "/Dress/Denim Sundress/9.avif",
+      "/Dress/Denim Sundress/10.avif",
+      "/Dress/Denim Sundress/11.avif",
+      "/Dress/Denim Sundress/12.avif",
+      "/Dress/Denim Sundress/13.avif",
+      "/Dress/Denim Sundress/14.avif",
+      "/Dress/Denim Sundress/15.avif",
+      "/Dress/Denim Sundress/16.avif",
+      "/Dress/Denim Sundress/17.avif",
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
     translations: {
@@ -2197,7 +2209,7 @@ const products = [
           "• Adjustable straps, cross-back",
           "• Belt with metal buckle"
         ],
-        colors: ["blue"]
+        colors: ["blue", "light blue", "milk white", "dark blue"]
       },
       FR: {
         category: "Robes",
@@ -2211,7 +2223,7 @@ const products = [
           "• Bretelles réglables, dos croisé",
           "• Ceinture avec boucle métallique"
         ],
-        colors: ["bleu"]
+        colors: ["bleu", "bleu clair", "blanc lait", "bleu foncé"]
       },
       UA: {
         category: "Сукні",
@@ -2225,7 +2237,7 @@ const products = [
           "• регульовані бретелі, перехрест на спинці",
           "• пояс із металевою пряжкою"
         ],
-        colors: ["синій"]
+        colors: ["синій", "блакитний", "молочний", "темно-синій"]
       },
       RU: {
         category: "Платья",
@@ -2239,7 +2251,7 @@ const products = [
           "• регулируемые бретели, перекрест на спинке",
           "• пояс с металлической пряжкой"
         ],
-        colors: ["синий"]
+        colors: ["синий", "голубой", "молочный", "темно-синий"]
       }
     }
   },
