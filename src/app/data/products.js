@@ -7709,7 +7709,7 @@ const products = [
 
     {
       id: 26,
-      price: 2380,
+      price: 2800,
       isTop: false,
       // isSpecialOffer: true,
       // discountPrice: 2520,
