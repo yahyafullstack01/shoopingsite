@@ -20,6 +20,7 @@ export default async function handler(req, res) {
     comment,
     total,
     sessionId,
+    cartItems = [], // Cart items array
   } = req.body;
 
   console.log("Crypto payment order received:", req.body);
@@ -36,6 +37,23 @@ export default async function handler(req, res) {
   const safeComment = escape(comment || "Немає коментарів");
   const safeTotal = escape(String(total || 0));
   const safeOrderId = escape(orderId || "N/A");
+
+  // Generate cart items HTML for email
+  const cartItemsHTML = cartItems.length > 0 
+    ? cartItems.map((item, index) => `
+        <tr style="border-bottom: 1px solid #e5e5e5;">
+          <td style="padding: 12px 8px;">${index + 1}</td>
+          <td style="padding: 12px 8px;">
+            <strong>${escape(item.name || item.productName || 'N/A')}</strong><br>
+            <small style="color: #666;">ID: ${escape(String(item.productId || item.id || 'N/A'))}</small>
+          </td>
+          <td style="padding: 12px 8px;">${escape(item.color || 'N/A')}</td>
+          <td style="padding: 12px 8px;">${escape(item.size || 'N/A')}</td>
+          <td style="padding: 12px 8px; text-align: center;">${escape(String(item.quantity || 1))}</td>
+          <td style="padding: 12px 8px; text-align: right;"><strong>${escape(String(item.price || 0))} грн</strong></td>
+        </tr>
+      `).join('')
+    : '<tr><td colspan="6" style="padding: 20px; text-align: center; color: #999;">Товари не вказані</td></tr>';
 
   const transporter = nodemailer.createTransport({
     service: "gmail",
@@ -140,6 +158,23 @@ export default async function handler(req, res) {
               <li><strong>Місто:</strong> ${safeCity}</li>
               <li><strong>Відділення:</strong> ${safeWarehouse}</li>
             </ul>
+            
+            <div class="section-title">🛒 Замовлені товари</div>
+            <table style="width: 100%; border-collapse: collapse; background-color: white; border-radius: 8px; overflow: hidden;">
+              <thead>
+                <tr style="background-color: #9333ea; color: white;">
+                  <th style="padding: 12px 8px; text-align: left;">#</th>
+                  <th style="padding: 12px 8px; text-align: left;">Товар</th>
+                  <th style="padding: 12px 8px; text-align: left;">Колір</th>
+                  <th style="padding: 12px 8px; text-align: left;">Розмір</th>
+                  <th style="padding: 12px 8px; text-align: center;">Кількість</th>
+                  <th style="padding: 12px 8px; text-align: right;">Ціна</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${cartItemsHTML}
+              </tbody>
+            </table>
             
             <div class="section-title">💵 Оплата</div>
             <ul class="details-list">
@@ -264,7 +299,43 @@ export default async function handler(req, res) {
             </div>
             
             <div class="details-box">
-              <h3 style="margin-top: 0; color: #9333ea;">📦 Деталі замовлення:</h3>
+              <h3 style="margin-top: 0; color: #9333ea;">🛒 Ваше замовлення:</h3>
+              <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+                <thead>
+                  <tr style="border-bottom: 2px solid #e5e5e5;">
+                    <th style="padding: 8px; text-align: left; font-size: 14px;">Товар</th>
+                    <th style="padding: 8px; text-align: center; font-size: 14px;">К-ть</th>
+                    <th style="padding: 8px; text-align: right; font-size: 14px;">Ціна</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${cartItems.length > 0 
+                    ? cartItems.map(item => `
+                        <tr style="border-bottom: 1px solid #f5f5f5;">
+                          <td style="padding: 8px;">
+                            <strong>${escape(item.name || item.productName || 'N/A')}</strong><br>
+                            <small style="color: #666;">
+                              Колір: ${escape(item.color || 'N/A')} | Розмір: ${escape(item.size || 'N/A')}
+                            </small>
+                          </td>
+                          <td style="padding: 8px; text-align: center;">${escape(String(item.quantity || 1))}</td>
+                          <td style="padding: 8px; text-align: right;"><strong>${escape(String(item.price || 0))} грн</strong></td>
+                        </tr>
+                      `).join('')
+                    : '<tr><td colspan="3" style="padding: 20px; text-align: center; color: #999;">Товари не вказані</td></tr>'
+                  }
+                </tbody>
+                <tfoot>
+                  <tr style="border-top: 2px solid #9333ea;">
+                    <td colspan="2" style="padding: 12px; text-align: right;"><strong>Разом:</strong></td>
+                    <td style="padding: 12px; text-align: right;"><strong style="color: #9333ea; font-size: 18px;">${safeTotal} грн</strong></td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+            
+            <div class="details-box">
+              <h3 style="margin-top: 0; color: #9333ea;">📦 Деталі доставки:</h3>
               <p><strong>Доставка:</strong> ${safeDeliveryMethod}</p>
               <p><strong>Місто:</strong> ${safeCity}</p>
               <p><strong>Відділення:</strong> ${safeWarehouse}</p>

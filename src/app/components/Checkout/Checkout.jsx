@@ -414,6 +414,17 @@ const handleWayforpayClick = async () => {
     };
 
     try {
+      // Fetch cart items first
+      const cartRes = await fetch(`${BACKEND_URL}/api/cart?sessionId=${sessionId}`);
+      let cartItems = [];
+      
+      if (cartRes.ok) {
+        const cartData = await cartRes.json();
+        cartItems = cartData.items || cartData || [];
+      } else {
+        console.warn('Could not fetch cart items');
+      }
+
       // Save order to database
       const orderRes = await fetch(`${BACKEND_URL}/api/orders`, {
         method: 'POST',
@@ -425,13 +436,14 @@ const handleWayforpayClick = async () => {
       const savedOrder = await orderRes.json();
       const orderId = savedOrder._id || savedOrder.id;
 
-      // Send crypto payment email
+      // Send crypto payment email with cart items
       const emailRes = await fetch('/api/sendCryptoEmail', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           ...order,
           orderId,
+          cartItems, // Include cart items
         }),
       });
 
