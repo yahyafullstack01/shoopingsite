@@ -414,41 +414,49 @@ const handleWayforpayClick = async () => {
     };
 
     try {
-      // Fetch cart items first
-      const cartRes = await fetch(`${BACKEND_URL}/api/cart?sessionId=${sessionId}`);
-      let cartItems = [];
-      
-      if (cartRes.ok) {
-        const cartData = await cartRes.json();
-        cartItems = cartData.items || cartData || [];
-      } else {
-        console.warn('Could not fetch cart items');
-      }
+      console.log('🔐 Submitting crypto payment order with sessionId:', sessionId);
 
-      // Save order to database
+      // Save order to database - backend will fetch cart items from MongoDB
       const orderRes = await fetch(`${BACKEND_URL}/api/orders`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(order),
       });
 
-      if (!orderRes.ok) throw new Error('Failed to save order');
+      if (!orderRes.ok) {
+        const errorText = await orderRes.text();
+        console.error('❌ Order save failed:', errorText);
+        throw new Error('Failed to save order');
+      }
+      
       const savedOrder = await orderRes.json();
+      console.log('✅ Order saved:', savedOrder);
+      
       const orderId = savedOrder._id || savedOrder.id;
+      
+      // Get cart items from backend response (backend fetches from MongoDB by sessionId)
+      const cartItems = savedOrder.items || savedOrder.cartItems || [];
+      console.log('🛒 Cart items from backend:', cartItems);
+      
+      if (cartItems.length === 0) {
+        console.warn('⚠️ No cart items returned from backend. Check MongoDB CartItem collection for sessionId:', sessionId);
+      }
 
-      // Send crypto payment email with cart items
+      // Send crypto payment email with cart items from backend
       const emailRes = await fetch('/api/sendCryptoEmail', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           ...order,
           orderId,
-          cartItems, // Include cart items
+          cartItems, // Cart items from backend MongoDB query
         }),
       });
 
       if (!emailRes.ok) {
-        console.error('Failed to send email, but order was saved');
+        console.error('⚠️ Email send failed, but order was saved');
+      } else {
+        console.log('✅ Crypto payment email sent successfully');
       }
 
       alert(checkoutTranslations.cryptoSuccess || '✅ Ваше замовлення прийнято! Ми зв\'яжемося з вами найближчим часом для отримання реквізитів криптовалютного платежу.');
