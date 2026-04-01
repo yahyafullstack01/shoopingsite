@@ -1,5 +1,5 @@
-export const PRIORITY_TOP = [295, 294, 182, 2, 4, 193, 171, 183, 191, 1];
-export const PRIORITY_NEW = [249, 4, 171, 183, 196, 220, 158, 161]; 
+export const PRIORITY_TOP = [182, 268, 100, 97, 143, 44, 144, 140, 181];
+export const PRIORITY_NEW = [268, 182, 171, 295, 131, 294, 123]; 
 
 export const PRIORITY_NEW_YEAR = [101, 205, 333]; 
 

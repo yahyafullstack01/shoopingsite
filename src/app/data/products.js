@@ -14068,19 +14068,14 @@ description: [
     sku: "98775",
     size: "XS S M L XL",
     category: "Dresses",
-    image: "/Dress/Breeze Dress/1.avif",
+    image: "/Dress/Breeze Dress/7.avif",
     images: [
       "/Dress/Breeze Dress/2.avif",
       {
         type: "video",
         src: "/Dress/Breeze Dress/IMG_732.mp4",
-        poster: "/Dress/Breeze Dress/1.avif"
+        poster: "/Dress/Breeze Dress/7.avif"
       },
-      "/Dress/Breeze Dress/3.avif",
-      "/Dress/Breeze Dress/4.avif",
-      "/Dress/Breeze Dress/5.avif",
-      "/Dress/Breeze Dress/6.avif",
-      "/Dress/Breeze Dress/7.avif",
       "/Dress/Breeze Dress/8.avif",
       "/Dress/Breeze Dress/9.avif",
       "/Dress/Breeze Dress/10.avif",
@@ -14094,28 +14089,28 @@ description: [
         name: "Breeze Dress",
         description: "Oversized asymmetrical dress with long sleeves and a V-neck. Features ruffle details along the sleeves and dress. Fabric: long-fiber muslin, 100% cotton. Light and soft to the touch.",
         color: "fuchsia",
-        colors: ["fuchsia", "milk"]
+        colors: ["milk"]
       },
       FR: {
         category: "Robes",
         name: "Robe Breeze",
         description: "Robe oversize asymétrique avec manches longues et col en V. Détails de volants le long des manches et de la robe. Tissu : mousseline à longues fibres, 100% coton. Tissu léger et doux au toucher.",
         color: "fuchsia",
-        colors: ["fuchsia", "lait"]
+        colors: ["lait"]
       },
       UA: {
         category: "Сукні",
         name: "Сукня «Breeze»",
         description: "Оверсайз сукня асиметричної довжини із довгим рукавом та V-вирізом. На рукавчиках та вздовж сукні деталі у вигляді рюш. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
         color: "фуксія",
-        colors: ["фуксія", "молоко"]
+        colors: ["молоко"]
       },
       RU: {
         category: "Платья",
         name: "Платье \"Breeze\"",
         description: "Оверсайз платье асимметричной длины с длинными рукавами и V-образным вырезом. Детали в виде рюшек на рукавах и вдоль платья. Ткань: длинноволокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь.",
         color: "фуксия",
-        colors: ["фуксия", "молоко"]
+        colors: ["молоко"]
       }
     }
 },
