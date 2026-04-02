@@ -206,7 +206,7 @@ const products = [
   {
   id: 294,
   price: 3000,
-  isTop: true,
+  isTop: false,
   isNew: true,
   sku: "99425",
   size: "XS S M L XL",
@@ -276,7 +276,7 @@ const products = [
   {
   id: 295,
   price: 2800,
-  isTop: true,
+  isTop: false,
   isNew: true,
   sku: "99424",
   size: "XS S M L XL",
@@ -347,7 +347,7 @@ const products = [
     {
     id: 100,
     price: 2000,
-    isTop: false,
+    isTop: true,
     // isSpecialOffer: true,
     // discountPrice: 1700,
     sku: "98820",
@@ -4331,7 +4331,7 @@ const products = [
 {
   id: 229,
   price: 1700,
-  isTop: true,
+  isTop: false,
   isNew: false,
   //   isSpecialOffer: true,
   // discountPrice: 1445,
@@ -4940,7 +4940,7 @@ const products = [
 {
   id: 222,
   price: 2060,
-  isTop: true,
+  isTop: false,
   isNew: false,
   // isSpecialOffer: true,
   // discountPrice: 1751,
@@ -5182,7 +5182,7 @@ const products = [
     {
   id: 171,
   price: 2300,
-  isTop: true,
+  isTop: false,
   isNew: true,
   // isSpecialOffer: true,
   // discountPrice: 1955,
@@ -7830,7 +7830,7 @@ const products = [
   {
   id: 181,
   price: 4900,
-  isTop: false,
+  isTop: true,
   isNew: false,
   // isSpecialOffer: true,
   // discountPrice: 4165,
@@ -10362,7 +10362,7 @@ description: [
     price: 2950,
     // isSpecialOffer: true,
     // discountPrice: 2508,
-    isTop: false,
+    isTop: true,
     isNew: false,
     sku: "98797",
     size: "XS S M L XL",
@@ -10426,7 +10426,7 @@ description: [
     {
     id: 143,
     price: 2950,
-    isTop: false,
+    isTop: true,
     isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 2508,
@@ -10629,7 +10629,7 @@ description: [
 {
     id: 140,
     price: 3100,
-    isTop: false,
+    isTop: true,
     isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 2635,
@@ -12404,7 +12404,7 @@ description: [
   {
     id: 97,
     price: 2550,
-    isTop: false,
+    isTop: true,
     // isSpecialOffer: true,
     // discountPrice: 2168,
     sku: "98817",
@@ -14560,7 +14560,7 @@ description: [
   {
     id: 44,
     price: 3920,
-    isTop: false,
+    isTop: true,
     // isSpecialOffer: true,
     // discountPrice: 3332,
     sku: "98765",
