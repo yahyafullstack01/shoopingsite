@@ -13780,20 +13780,17 @@ description: [
     sku: "98780",
     size: "XS S M L XL",
     category: "Dresses",
-    image: "/Dress/Nature Dress/1.avif",
+    image: "/Dress/Nature Dress/7.avif",
     images: [
-      "/Dress/Nature Dress/2.avif",
-      "/Dress/Nature Dress/3.avif",
+      "/Dress/Nature Dress/7.avif",
+      "/Dress/Nature Dress/8.avif",
       {
         type: "video",
         src: "/Dress/Nature Dress/IMG_6723.mp4",
-        poster: "/Dress/Nature Dress/1.avif"
+        poster: "/Dress/Nature Dress/7.avif"
       },
-      "/Dress/Nature Dress/4.avif",
-      "/Dress/Nature Dress/5.avif",
-      "/Dress/Nature Dress/6.avif",
-      "/Dress/Nature Dress/7.avif",
-      "/Dress/Nature Dress/8.avif",
+
+ 
       "/Dress/Nature Dress/9.avif",
       "/Dress/Nature Dress/10.avif",
       "/Dress/Nature Dress/11.avif",
@@ -13814,14 +13811,14 @@ description: [
   "• 2 pockets"
 ],
         color: "burgundy",
-        colors: ["burgundy", "milk"]
+        colors: ["milk"]
       },
       FR: {
         category: "Robes",
         name: "Robe Nature",
         description: "Robe maxi oversize avec manches longues et encolure ronde. Boutons décoratifs et deux poches. Tissu : mousseline à longues fibres, 100% coton. Léger et doux au toucher.",
         color: "bordeaux",
-        colors: ["bordeaux", "lait"]
+        colors: ["lait"]
       },
       UA: {
         category: "Сукні",
@@ -13835,14 +13832,14 @@ description: [
   "• 2 кишені"
 ],
         color: "бордо",
-        colors: ["бордо", "молоко"]
+        colors: ["молоко"]
       },
       RU: {
         category: "Платья",
         name: "Платье \"Nature\"",
         description: "Оверсайз макси-платье с длинными рукавами и круглым вырезом. Декоративные пуговицы и два кармана. Ткань: длинноволокнистый муслин, 100% хлопок. Легкое и мягкое на ощупь.",
         color: "бордо",
-        colors: ["бордо", "молоко"]
+        colors: ["молоко"]
       }
     }
 },
@@ -13856,18 +13853,19 @@ description: [
     sku: "98779",
     size: "XS S M L XL",
     category: "Dresses",
-    image: "/Dress/Freedom Dress/1.avif",
+    image: "/Dress/Freedom Dress/7.avif",
     images: [
-      "/Dress/Freedom Dress/2.avif",
+      "/Dress/Freedom Dress/8.avif",
       {
         type: "video",
         src: "/Dress/Freedom Dress/IMG_6714.mp4",
-        poster: "/Dress/Freedom Dress/1.avif"
+        poster: "/Dress/Freedom Dress/7.avif"
       },
-      "/Dress/Freedom Dress/3.avif",
-      "/Dress/Freedom Dress/4.avif",
-      "/Dress/Freedom Dress/5.avif",
-      "/Dress/Freedom Dress/6.avif"
+      "/Dress/Freedom Dress/9.avif",
+      "/Dress/Freedom Dress/10.avif",
+      "/Dress/Freedom Dress/11.avif",
+      "/Dress/Freedom Dress/12.avif",
+
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
     translations: {
@@ -13884,14 +13882,14 @@ description: [
   "• Long sleeves and ruffles along the entire length"
 ],
         color: "burgundy",
-        colors: ["burgundy", "milk"]
+        colors: ["milk"]
       },
       FR: {
         category: "Robes",
         name: "Robe Freedom",
         description: "Robe maxi ample à plusieurs couches avec des manches longues. Détails de volants le long de toute la robe. Tissu : mousseline à longues fibres, 100% coton. Léger et doux au toucher.",
         color: "bordeaux",
-        colors: ["bordeaux", "lait"]
+        colors: ["lait"]
       },
       UA: {
         category: "Сукні",
@@ -13906,14 +13904,14 @@ description: [
   "• Довгий рукав та рюші по всій довжині"
 ],
         color: "бордо",
-        colors: ["бордо", "молоко"]
+        colors: ["молоко"]
       },
       RU: {
         category: "Платья",
         name: "Платье \"Freedom\"",
         description: "Многослойное свободное макси-платье с длинными рукавами. Детали в виде рюшек по всей длине платья. Ткань: длинноволокнистый муслин, 100% хлопок. Легкое и мягкое на ощупь.",
         color: "бордо",
-        colors: ["бордо", "молоко"]
+        colors: ["молоко"]
       }
     }
 },
@@ -14361,19 +14359,15 @@ description: [
     sku: "98768",
     size: "XS S M L XL",
     category: "Dresses",
-    image: "/Dress/Muslin/1.avif",
+    image: "/Dress/Muslin/7.avif",
     images: [
-      "/Dress/Muslin/2.avif",
+      "/Dress/Muslin/7.avif",
       {
         type: "video",
         src: "/Dress/Muslin/IMG_4392.mp4",
-        poster: "/Dress/Muslin/1.avif"
+        poster: "/Dress/Muslin/7.avif"
       },
-      "/Dress/Muslin/3.avif",
-      "/Dress/Muslin/4.avif",
-      "/Dress/Muslin/5.avif",
-      "/Dress/Muslin/6.avif",
-      "/Dress/Muslin/7.avif",
+
       "/Dress/Muslin/8.avif",
       "/Dress/Muslin/9.avif",
       "/Dress/Muslin/10.avif",
@@ -14390,14 +14384,6 @@ description: [
       "/Dress/Muslin/21.avif",
       "/Dress/Muslin/22.avif",
       "/Dress/Muslin/23.avif",
-      "/Dress/Muslin/24.avif",
-      "/Dress/Muslin/25.avif",
-      "/Dress/Muslin/26.avif",
-      "/Dress/Muslin/27.avif",
-      "/Dress/Muslin/28.avif",
-      "/Dress/Muslin/29.avif",
-
-
 
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
@@ -14407,28 +14393,28 @@ description: [
         name: "Muslin Dress",
         description: "Midi dress with short sleeves. Features buttons along the entire length, allowing for adjustable slit. Fabric: long-fiber muslin, 100% cotton. Light and soft to the touch.",
         color: "eucalyptus",
-        colors: ["eucalyptus", "milk", "powder", "water color", "mint"]
+        colors: ["milk", "powder", "water color"]
       },
       FR: {
         category: "Robes",
         name: "Robe en mousseline",
         description: "Robe midi avec manches courtes. Dotée de boutons sur toute la longueur, permettant d'ajuster la fente. Tissu : mousseline à longues fibres, 100% coton. Tissu léger et doux au toucher.",
         color: "eucalyptus",
-        colors: ["eucalyptus", "lait", "poudre", "couleur de l'eau", "menthe"]
+        colors: ["lait", "poudre", "couleur de l'eau"]
       },
       UA: {
         category: "Сукні",
         name: "Муслінова сукня",
         description: "Сукня міді із короткими рукавами. Має ґудзики по всій довжині, якими можна регулювати розріз. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
         color: "евкаліпт",
-        colors: ["евкаліпт", "молоко", "пудра", "колір води", "мʼята"]
+        colors: ["молоко", "пудра", "колір води"]
       },
       RU: {
         category: "Платья",
         name: "Муслиновое платье",
         description: "Платье миди с короткими рукавами. Имеет пуговицы по всей длине, позволяя регулировать разрез. Ткань: длинноволокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь.",
         color: "эвкалипт",
-        colors: ["эвкалипт", "молоко", "пудра", "цвет воды", "мята"]
+        colors: ["молоко", "пудра", "цвет воды"]
       }
     }
   },
