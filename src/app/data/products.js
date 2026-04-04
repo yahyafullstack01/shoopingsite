@@ -10698,65 +10698,6 @@ description: [
     }
 },
 
-{
-    id: 139,
-    price: 2950,
-    // isSpecialOffer: true,
-    // discountPrice: 2508,
-    isTop: false,
-    sku: "67238",
-    size: "XS S M L XL",
-    category: "Dresses",
-    image: "/Dress/Becca Dress/1.avif",
-    images: [
-        "/Dress/Becca Dress/2.avif",
-        "/Dress/Becca Dress/3.avif",
-        "/Dress/Becca Dress/4.avif",
-        "/Dress/Becca Dress/5.avif"
-    ],
-    sizes: ["XS", "S", "M", "L", "XL"],
-    translations: {
-        EN: {
-            category: "Dresses",
-            name: "Becca Dress",
-description: [
-  "Perfect silhouette, soft fit along the figure, and an emphasis on the waist — all so you feel confident and elegant any day!",
-  "Fabric: 100% cotton. Dress made of natural cotton, soft and comfortable. Pleasant to touch and to wear.",
-  "Details:",
-  "• Dense cotton that holds its shape",
-  "• Delicate pleats and refined buttons on the sides",
-  "• Midi length — a classic that never lets you down"
-],
-            colors: ["beige"]
-        },
-        FR: {
-            category: "Robes",
-            name: "Robe Becca",
-            description: "Une robe en coton naturel, douce et confortable. Agréable au toucher et pour le corps.\nTissu : 100 % coton.",
-            colors: ["beige"]
-        },
-        UA: {
-            category: "Сукні",
-            name: "Сукня «Becca»",
-description: [
-  "Ідеальний силует, м’яка посадка по фігурі та акцент на талії — усе для того, щоб ти почувалася впевненою і вишуканою в будь-який день!",
-  "Тканина: 100% бавовна. Сукня з натурального коттону, м'яка і комфортна. Приємна на дотик і для тіла.",
-  "Деталі:",
-  "• Щільний котон, що тримає форму",
-  "• Витончені складки й делікатні ґудзики з боків",
-  "• Довжина міді — класика, що ніколи не підведе"
-],
-            colors: ["бежевий"]
-        },
-        RU: {
-            category: "Платья",
-            name: "Платье «Бекка»",
-            description: "Платье из натурального хлопка, мягкое и комфортное. Приятное на ощупь и для тела.\nТкань: 100% хлопок.",
-            colors: ["бежевый"]
-        }
-    }
-},
-
 
 {
     id: 137,
