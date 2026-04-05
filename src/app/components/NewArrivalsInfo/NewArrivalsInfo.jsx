@@ -7,6 +7,7 @@ import Toast from "../ToastCart/Toast";
 import QuickAddModal from "../QuickAddModal/QuickAddModal";
 import ProductBanner from "../products/ProductBanner";
 import { getSessionId } from "../../utils/session";
+import { getBackendBaseUrl } from "../../utils/backendUrl";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { getFavorites, toggleFavorite } from "../../utils/favorites";
 import { PRIORITY_NEW, prioritizeByIds } from "../../utils/priorities";
@@ -104,7 +105,7 @@ const NewArrivalsInfo = ({ products }) => {
 
     try {
       const res = await fetch(
-        `${process.env.NEXT_PUBLIC_BASE_URL}/api/cart`,
+        `${getBackendBaseUrl()}/api/cart`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

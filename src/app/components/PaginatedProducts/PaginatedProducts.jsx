@@ -35,14 +35,15 @@ const PaginatedProducts = ({ products, productsPerPage = 12, onProductClick, onA
     }, 0);
   };
 
-  // Прокрутити смугу пагінації до поточної сторінки на мобільній
+  // Лише горизонтальна прокрутка смуги номерів (без scrollIntoView — інакше весь вікно їде вниз до пагінації)
   useEffect(() => {
     if (!paginationScrollRef.current || totalPages <= 1) return;
-    const el = paginationScrollRef.current;
-    const activeBtn = el.querySelector(`[data-page="${currentPage}"]`);
-    if (activeBtn) {
-      activeBtn.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
-    }
+    const container = paginationScrollRef.current;
+    const activeBtn = container.querySelector(`[data-page="${currentPage}"]`);
+    if (!activeBtn) return;
+    const left =
+      activeBtn.offsetLeft - container.clientWidth / 2 + activeBtn.offsetWidth / 2;
+    container.scrollTo({ left: Math.max(0, left), behavior: "smooth" });
   }, [currentPage, totalPages]);
 
   if (totalPages <= 0) {

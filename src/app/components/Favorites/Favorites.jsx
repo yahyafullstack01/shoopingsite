@@ -8,7 +8,8 @@ import productsData from '../../data/products';
 
 import ProductBanner from '../products/ProductBanner';
 import QuickAddModal from '../QuickAddModal/QuickAddModal';
-import Toast from '../ToastCart/Toast'; // ✅ імпорт кастомного toast
+import Toast from '../ToastCart/Toast';
+import { getBackendBaseUrl } from '../../utils/backendUrl';
 
 const Favorites = () => {
   const [favoriteProducts, setFavoriteProducts] = useState([]);
@@ -41,7 +42,7 @@ const Favorites = () => {
     };
 
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/cart`, {
+      const res = await fetch(`${getBackendBaseUrl()}/api/cart`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(dataToSend),

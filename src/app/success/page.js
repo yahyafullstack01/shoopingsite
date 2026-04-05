@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { getBackendBaseUrl } from '../utils/backendUrl';
 
 export default function SuccessPage() {
   const [message, setMessage] = useState('Обробляємо замовлення...');
@@ -17,7 +18,7 @@ export default function SuccessPage() {
 
     const sendOrder = async () => {
       try {
-        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/orders`, {
+        const res = await fetch(`${getBackendBaseUrl()}/api/orders`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(order),

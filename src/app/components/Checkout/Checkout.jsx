@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 
 import { validateForm } from '../../utils/validationContactForm';
 import { getSessionId } from '../../utils/session';
+import { getBackendBaseUrl } from '../../utils/backendUrl';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import { FiUser, FiMail, FiPhone, FiTruck, FiCreditCard, FiMessageSquare } from "react-icons/fi";
@@ -50,7 +51,7 @@ const [selectedWarehouseRef, setSelectedWarehouseRef] = useState('');
   }, []);
 
   const prepayAmount = (total * 0.1).toFixed(2);
-  const BACKEND_URL = process.env.NEXT_PUBLIC_BASE_URL;
+  const BACKEND_URL = getBackendBaseUrl();
 
   const fetchNovaPoshtaCities = async (query) => {
     const apiKey = process.env.NEXT_PUBLIC_NP_API_KEY;

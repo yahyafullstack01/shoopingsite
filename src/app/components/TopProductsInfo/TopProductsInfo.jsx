@@ -14,6 +14,8 @@ import QuickAddModal from "../QuickAddModal/QuickAddModal";
 
 // ⬇️ додаємо пріоритети тільки для цієї сторінки
 import { PRIORITY_TOP, prioritizeByIds } from "../../utils/priorities";
+import { getProductImageSrc } from "../../utils/productData";
+import { getBackendBaseUrl } from "../../utils/backendUrl";
 
 // ---- helpers ---------------------------------------------------------------
 const normalizeMedia = (m) =>
@@ -101,7 +103,7 @@ export default function TopProductsInfo() {
     const payload = { sessionId, productId: product.id, color: selectedColor, size: selectedSize, quantity };
 
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/cart`, {
+      const res = await fetch(`${getBackendBaseUrl()}/api/cart`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
@@ -168,7 +170,7 @@ export default function TopProductsInfo() {
                     <div className="w-full h-[200px] sm:h-[350px] overflow-hidden rounded-lg">
                       {/* прев’ю у списку — тільки зображення */}
                       <Image
-                        src={normalizeMedia(product.image).src}
+                        src={getProductImageSrc(product.image)}
                         alt={`Preview of ${translatedName}`}
                         width={300}
                         height={350}
@@ -231,7 +233,7 @@ export default function TopProductsInfo() {
               </video>
             ) : (
               <Image
-                src={selectedMedia?.src || selectedProduct?.image}
+                src={getProductImageSrc(selectedMedia?.src || selectedProduct?.image)}
                 alt={`Full image of ${selectedProduct?.title}`}
                 width={400}
                 height={400}

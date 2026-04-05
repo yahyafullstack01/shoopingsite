@@ -28,7 +28,7 @@ const [isMobileCategoriesOpen, setIsMobileCategoriesOpen] = useState(false);
   };
   
   const goToCatalog = () => {
-    router.push("/All-products");
+    router.push("/All-products", { scroll: true });
   };
   const { isMenuOpen, toggleMenu, closeMenu } = useHeaderState();
   const router = useRouter();
@@ -64,7 +64,7 @@ const [count, setCount] = useState(0);
     return () => window.removeEventListener('storage', handleStorageChange);
   }, []);
   const handleCategoryClick = (categoryPath) => {
-    router.push(`/All-products?category=${categoryPath}`);
+    router.push(`/All-products?category=${categoryPath}`, { scroll: true });
     setIsCategoriesOpen(false);
     closeMenu();
   };
@@ -107,7 +107,6 @@ useEffect(() => {
              <Image
                src="/light-logo.avif"
                alt="Latore Atelier Logo – High-Quality Clothing"
-               layout="intrinsic"
                width={128}
                height={69}
                quality={90}

@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { getProductImageSrc } from '../../utils/productData';
 
 const Toast = ({ product, onClose }) => {
   const [progress, setProgress] = useState(100);
@@ -26,7 +27,7 @@ const Toast = ({ product, onClose }) => {
     <div className="fixed top-6 right-6 bg-white dark:bg-gray-900 text-black dark:text-white border border-gray-300 dark:border-gray-700 rounded-xl shadow-xl w-[360px] p-5 z-50 animate-fade-in-up transition-all duration-300">
       <div className="flex items-center gap-3">
         <img
-          src={product.image || `https://via.placeholder.com/80`}
+          src={getProductImageSrc(product.image)}
           alt={product.name}
           className="w-20 h-24 object-cover rounded-lg"
         />

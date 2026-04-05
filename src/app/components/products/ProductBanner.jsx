@@ -6,6 +6,7 @@ import InfoForm from "../../Functions/InfoForm";
 import { useLanguage } from "../../Functions/useLanguage";
 import ThumbnailCarousel from "../../components/ThumbnailCarousel/ThumbnailCarousel";
 import { getSessionId } from '../../utils/session';
+import { getBackendBaseUrl } from "../../utils/backendUrl";
 import Toast from "../ToastCart/Toast";
 
 const ProductBanner = ({
@@ -97,7 +98,7 @@ const ProductBanner = ({
     }
 
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/cart`, {
+      const res = await fetch(`${getBackendBaseUrl()}/api/cart`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

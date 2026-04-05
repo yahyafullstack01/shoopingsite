@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { getProductImageSrc } from "../../utils/productData";
 import { useRouter } from "next/navigation";
 import { useEffect, useState, useMemo } from "react";
 import products from "../../data/products";
@@ -100,7 +101,7 @@ const NewArrivals = () => {
 
                 <div className="relative w-full h-full">
                   <Image
-                    src={product.image}
+                    src={getProductImageSrc(product.image)}
                     alt={name}
                     fill
                     className="object-cover"

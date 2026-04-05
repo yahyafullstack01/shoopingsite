@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { getSessionId } from '../../utils/session';
 import { useLanguage } from '../../Functions/useLanguage';
+import { getProductImageSrc } from '../../utils/productData';
+import { getBackendBaseUrl } from '../../utils/backendUrl';
 
 export default function Cart() {
   const [cartItems, setCartItems] = useState([]);
@@ -25,7 +27,7 @@ export default function Cart() {
     const fetchCart = async () => {
       setLoading(true);
       try {
-        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/cart?sessionId=${sessionId}`, {
+        const res = await fetch(`${getBackendBaseUrl()}/api/cart?sessionId=${sessionId}`, {
           credentials: 'include',
         });
         const data = await res.json();
@@ -44,7 +46,7 @@ export default function Cart() {
     if (quantity < 1) return;
     setLoading(true);
     try {
-      await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/cart`, {
+      await fetch(`${getBackendBaseUrl()}/api/cart`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ cartId, quantity, sessionId }),
@@ -63,7 +65,7 @@ export default function Cart() {
   const removeItem = async (cartId) => {
     setLoading(true);
     try {
-      await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/cart`, {
+      await fetch(`${getBackendBaseUrl()}/api/cart`, {
         method: 'DELETE',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ cartId, sessionId }),
@@ -102,7 +104,7 @@ export default function Cart() {
           >
             <div className="flex items-center space-x-4">
               <img
-                src={item.image}
+                src={getProductImageSrc(item.image)}
                 alt={item.name}
                 className="w-20 h-20 rounded-lg object-cover"
               />

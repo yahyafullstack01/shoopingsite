@@ -2,6 +2,7 @@
 
 import { useSearchParams, useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
+import { getBackendBaseUrl } from '../../utils/backendUrl';
 
 export default function PaymentSuccessPage() {
   const searchParams = useSearchParams();
@@ -20,7 +21,7 @@ export default function PaymentSuccessPage() {
     const checkPayment = async () => {
       try {
         const res = await fetch(
-          `${process.env.NEXT_PUBLIC_BASE_URL}/api/orders/status?order=${orderId}`
+          `${getBackendBaseUrl()}/api/orders/status?order=${orderId}`
         );
         if (!res.ok) throw new Error('Не вдалося перевірити оплату');
 

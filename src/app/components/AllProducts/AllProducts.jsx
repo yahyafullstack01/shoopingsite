@@ -15,6 +15,8 @@ import products from "../../data/products";
 import { useLanguage } from "../../Functions/useLanguage";
 import { translateCategory } from "../../utils/categoryTranslation";
 import { getSessionId } from '../../utils/session';
+import { getBackendBaseUrl } from '../../utils/backendUrl';
+import { getProductImageSrc } from "../../utils/productData";
 import Toast from "../../components/ToastCart/Toast";
 
 export default function AllProducts() {
@@ -25,6 +27,10 @@ export default function AllProducts() {
   const searchParams = useSearchParams();
   const productId = searchParams.get("product");
   const categoryFromURL = (searchParams.get("category") || "").toLowerCase();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [categoryFromURL]);
 
   // --------------------------------------------
   // 1) БАЗОВИЙ пул видимих товарів за категорією
@@ -79,7 +85,7 @@ export default function AllProducts() {
       : null;
 
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/cart`, {
+      const res = await fetch(`${getBackendBaseUrl()}/api/cart`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -94,8 +100,16 @@ export default function AllProducts() {
         }),
       });
 
-      await res.json();
-      setLastProduct({ name, price: discountPrice || price, image: product.image, quantity });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        throw new Error(data.message || data.error || res.statusText || "Cart error");
+      }
+      setLastProduct({
+        name,
+        price: discountPrice || price,
+        image: getProductImageSrc(product?.image),
+        quantity,
+      });
       setShowToast(true);
     } catch (err) {
       console.error("❌ Помилка додавання в корзину:", err);
@@ -176,7 +190,7 @@ const filteredProducts = filterAndSortProducts(
               handleCategorySelect={(category) => {
             
                 const slug = (category || "").toLowerCase();
-                router.push(`/All-products?category=${slug || "all"}`);
+                router.push(`/All-products?category=${slug || "all"}`, { scroll: true });
               }}
               isHorizontal={true}
             >

@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { useLanguage } from "../../Functions/useLanguage";
+import { getProductImageSrc } from "../../utils/productData";
 
 export default function QuickAddModal({ product, onClose, onAddToCart }) {
   const [selectedColor, setSelectedColor] = useState("");
@@ -81,7 +82,7 @@ export default function QuickAddModal({ product, onClose, onAddToCart }) {
         {/* Image */}
         {product.images?.[0] && (
           <Image
-            src={product.images[0]}
+            src={getProductImageSrc(product.images[0])}
             alt={translatedName}
             width={800}
             height={600}
@@ -251,7 +252,7 @@ export default function QuickAddModal({ product, onClose, onAddToCart }) {
 
         {product.images?.[0] && (
           <img
-            src={product.images[0]}
+            src={getProductImageSrc(product.images[0])}
             alt={translatedName}
             className="w-full h-48 sm:h-56 object-cover rounded-lg mb-3"
           />

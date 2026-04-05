@@ -4,7 +4,8 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { FaShoppingCart } from "react-icons/fa";
 import { useLanguage } from "../../Functions/useLanguage";
-import { getSessionId } from "../../utils/session"; // ✅ додано
+import { getSessionId } from "../../utils/session";
+import { getBackendBaseUrl } from "../../utils/backendUrl";
 
 export default function CartIcon() {
   const [cartCount, setCartCount] = useState(0);
@@ -14,7 +15,7 @@ export default function CartIcon() {
     const fetchCartCount = async () => {
       try {
         const sessionId = getSessionId(); // ✅ використовуємо ту ж саму сесію
-        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/cart?sessionId=${sessionId}`);
+        const res = await fetch(`${getBackendBaseUrl()}/api/cart?sessionId=${sessionId}`);
         const data = await res.json();
 
         if (res.ok) {

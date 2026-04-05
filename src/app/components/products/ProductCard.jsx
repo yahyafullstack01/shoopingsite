@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useLanguage } from "../../Functions/useLanguage";
 import { FaHeart, FaRegHeart } from 'react-icons/fa';
 import { toggleFavorite, isFavorite } from "../../utils/favorites";
+import { getProductImageSrc } from "../../utils/productData";
 
 const ProductCard = ({ product, onClick, onAddToCart }) => {
   const { language, translateList } = useLanguage();
@@ -33,24 +34,15 @@ const ProductCard = ({ product, onClick, onAddToCart }) => {
     const finalPrice = product.discountPrice ?? product.price;
     const oldPrice = product.discountPrice ? product.price : null;
     
-    // Handle video objects - extract poster or src for the image
-    const getImageSrc = (img) => {
-      if (!img) return '/placeholder/300x400.jpg';
-      if (typeof img === 'string') return img;
-      if (img.type === 'video' && img.poster) return img.poster;
-      if (img.src) return img.src;
-      return '/placeholder/300x400.jpg';
-    };
-    
     onAddToCart({
-      product: { ...product, price: finalPrice, oldPrice, name: translatedName, image: getImageSrc(product.image) },
+      product: { ...product, price: finalPrice, oldPrice, name: translatedName, image: getProductImageSrc(product.image) },
       selectedColor: "",
       selectedSize: "",
       quantity: 1,
     });
   };
 
-  const src = product.image || "/placeholder/300x400.jpg";
+  const src = getProductImageSrc(product.image);
   const isLocal = typeof src === "string" && src.startsWith("/");
 
   return (

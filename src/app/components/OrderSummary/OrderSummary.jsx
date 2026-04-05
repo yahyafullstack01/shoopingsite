@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { getSessionId } from '../../utils/session';
+import { getBackendBaseUrl } from '../../utils/backendUrl';
 import { useRouter } from 'next/navigation';
 import { FiEdit3 } from 'react-icons/fi';
 
@@ -21,7 +22,7 @@ export default function OrderSummary() {
       if (!sessionId) return;
 
       try {
-        const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/cart?sessionId=${sessionId}`);
+        const res = await fetch(`${getBackendBaseUrl()}/api/cart?sessionId=${sessionId}`);
         const data = await res.json();
 
         if (res.ok && Array.isArray(data.cart)) {
