@@ -14362,60 +14362,59 @@ description: [
   },
   
   
-  //{
-    //id: 46,
-   // price: 3335,
-   // isTop: false,
-    // isSpecialOffer: true,
-    // discountPrice: 2835,
-    //sku: "98767",
-   // size: "XS S M L XL",
-   // category: "Dresses",
-    //image: "/Dress/Lantern/1.avif",
-   // images: [
-    //  "/Dress/Lantern/2.avif",
-     // {
-     //   type: "video",
-     //   src: "/Dress/Lantern/IMG_061.mp4",
-     //   poster: "/Dress/Lantern/1.avif"
-     // },
-     // "/Dress/Lantern/3.avif",
-     // "/Dress/Lantern/4.avif",
-     // "/Dress/Lantern/5.avif",
-     // "/Dress/Lantern/6.avif",
-    //],
-   // sizes: ["XS", "S", "M", "L", "XL"],
-   // translations: {
-   //   EN: {
-      //  category: "Dresses",
-      //  name: "Lantern Dress",
-      //  description: "Delicate midi dress with lantern sleeves and handmade lace inserts. Fabric: long-fiber muslin, 100% cotton. Light and soft to the touch.",
-       // color: "milk",
-       // colors: ["milk"]
-     // },
-     // FR: {
-     //   category: "Robes",
-     //   name: "Robe Lanterne",
-     //   description: "Robe midi délicate avec des manches lanterne et des inserts en dentelle faite à la main. Tissu : mousseline à longues fibres, 100% coton. Tissu léger et doux au toucher.",
-     //   color: "lait",
-     //   colors: ["lait"]
-     // },
-     // UA: {
-     //   category: "Сукні",
-     //   name: "Сукня ліхтарик",
-     //   description: "Ніжна сукня міді довжини. Має рукава ліхтарики та вставки із мережива ручної роботи. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
-     //   color: "молоко",
-      //  colors: ["молоко"]
-     // },
-     //  RU: {
-     //   category: "Платья",
-     //   name: "Платье Лантерн",
-     //   description: "Нежное платье миди длины. Имеет рукава фонарики и вставки из кружева ручной работы. Ткань: длинноволокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь.",
-     //   color: "молоко",
-     //   colors: ["молоко"]
-     // }
-   // }
- // },
+  {
+    id: 46,
+   price: 3335,
+   isTop: false,
+    isSpecialOffer: true,
+    discountPrice: 2835,
+    sku: "98767",
+   size: "XS S M L XL",
+   category: "Dresses",
+    image: "/Dress/Lantern/1.avif",
+   images: [
+     "/Dress/Lantern/2.avif",
+    //  {
+    //    type: "video",
+    //    src: "/Dress/Lantern/IMG_061.mp4",
+    //    poster: "/Dress/Lantern/1.avif"
+    //  },
+     "/Dress/Lantern/3.avif",
+     "/Dress/Lantern/4.avif",
+     "/Dress/Lantern/5.avif",
+    ],
+   sizes: ["XS", "S", "M", "L", "XL"],
+   translations: {
+     EN: {
+       category: "Dresses",
+       name: "Lantern Dress",
+       description: "Delicate midi dress with lantern sleeves and handmade lace inserts. Fabric: long-fiber muslin, 100% cotton. Light and soft to the touch.",
+       color: "milk",
+       colors: ["milk"]
+     },
+     FR: {
+       category: "Robes",
+       name: "Robe Lanterne",
+       description: "Robe midi délicate avec des manches lanterne et des inserts en dentelle faite à la main. Tissu : mousseline à longues fibres, 100% coton. Tissu léger et doux au toucher.",
+       color: "lait",
+       colors: ["lait"]
+     },
+     UA: {
+       category: "Сукні",
+       name: "Сукня ліхтарик",
+       description: "Ніжна сукня міді довжини. Має рукава ліхтарики та вставки із мережива ручної роботи. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
+       color: "молоко",
+       colors: ["молоко"]
+     },
+      RU: {
+       category: "Платья",
+       name: "Платье Лантерн",
+       description: "Нежное платье миди длины. Имеет рукава фонарики и вставки из кружева ручной работы. Ткань: длинноволокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь.",
+       color: "молоко",
+       colors: ["молоко"]
+     }
+   }
+ },
   
 
   {
