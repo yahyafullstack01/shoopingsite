@@ -96,7 +96,7 @@ useEffect(() => {
   };
 }, []);
   return (
-    <header className={`flex items-center justify-between px-4 py-1 shadow-md
+    <header className={`sticky top-0 z-[60] flex items-center justify-between px-4 py-1 shadow-md
       ${isDarkMode ? "bg-black text-white shadow-gray-800" : "bg-white text-black shadow-gray-300"}`} role="banner">
          <div className="flex-shrink-0 ml-0 sm:ml-8">
            <Head>
