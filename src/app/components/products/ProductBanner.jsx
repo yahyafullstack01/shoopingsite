@@ -2,7 +2,13 @@
 
 import React, { useState, useEffect, useRef, useMemo } from "react";
 import Image from "next/image";
-import { FaArrowLeft, FaHeart, FaRegHeart } from "react-icons/fa";
+import {
+  FaArrowLeft,
+  FaChevronLeft,
+  FaChevronRight,
+  FaHeart,
+  FaRegHeart,
+} from "react-icons/fa";
 import InfoForm from "../../Functions/InfoForm";
 import { useLanguage } from "../../Functions/useLanguage";
 import ThumbnailCarousel from "../../components/ThumbnailCarousel/ThumbnailCarousel";
@@ -64,6 +70,14 @@ const ProductBanner = ({
     return idx >= 0 ? idx : 0;
   }, [currentImage, galleryItems]);
 
+  const galleryIndexRef = useRef(galleryIndex);
+  galleryIndexRef.current = galleryIndex;
+  const touchStartRef = useRef(null);
+
+  const isMobileProductGallery = () =>
+    typeof window !== 'undefined' &&
+    window.matchMedia('(max-width: 639px)').matches;
+
   useEffect(() => {
     if (videoRef.current) {
       try { videoRef.current.pause(); } catch {}
@@ -100,6 +114,55 @@ const ProductBanner = ({
       try { videoRef.current.pause(); } catch {}
     }
     setCurrentImage(media);
+  };
+
+  const SWIPE_MIN_PX = 48;
+
+  const handleGalleryTouchStart = (e) => {
+    if (!isMobileProductGallery() || galleryItems.length <= 1) return;
+    const t = e.targetTouches[0];
+    touchStartRef.current = { x: t.clientX, y: t.clientY };
+  };
+
+  const handleGalleryTouchEnd = (e) => {
+    if (!touchStartRef.current || !isMobileProductGallery() || galleryItems.length <= 1) {
+      touchStartRef.current = null;
+      return;
+    }
+    const t = e.changedTouches[0];
+    const dx = t.clientX - touchStartRef.current.x;
+    const dy = t.clientY - touchStartRef.current.y;
+    touchStartRef.current = null;
+
+    if (Math.abs(dx) < SWIPE_MIN_PX) return;
+    if (Math.abs(dy) > Math.abs(dx) * 0.75) return;
+
+    const idx = galleryIndexRef.current;
+    if (dx < 0) {
+      const next = (idx + 1) % galleryItems.length;
+      onSelectMedia(galleryItems[next]);
+    } else {
+      const prev = (idx - 1 + galleryItems.length) % galleryItems.length;
+      onSelectMedia(galleryItems[prev]);
+    }
+  };
+
+  const handleGalleryTouchCancel = () => {
+    touchStartRef.current = null;
+  };
+
+  const goGalleryPrev = () => {
+    if (galleryItems.length <= 1) return;
+    const idx = galleryIndexRef.current;
+    const prev = (idx - 1 + galleryItems.length) % galleryItems.length;
+    onSelectMedia(galleryItems[prev]);
+  };
+
+  const goGalleryNext = () => {
+    if (galleryItems.length <= 1) return;
+    const idx = galleryIndexRef.current;
+    const next = (idx + 1) % galleryItems.length;
+    onSelectMedia(galleryItems[next]);
   };
 
   const onToggleFav = () => {
@@ -233,34 +296,68 @@ const ProductBanner = ({
                 )}
               </button>
 
-              <div className="relative w-full overflow-hidden sm:rounded-lg">
-                {isVideo(currentImage) ? (
-                  <video
-                    ref={videoRef}
-                    src={getSrc(currentImage)}
-                    poster={getPoster(currentImage)}
-                    controls
-                    muted
-                    playsInline
-                    preload="metadata"
-                    className="w-full rounded-none sm:rounded-lg"
-                    style={{ maxHeight: "min(70vh, 600px)", objectFit: "cover" }}
-                    onPlay={(e) => e.currentTarget.play().catch(() => {})}
-                  />
-                ) : (
-                  <Image
-                    src={getSrc(currentImage)}
-                    alt={translatedName}
-                    width={800}
-                    height={600}
-                    style={{ objectFit: "cover" }}
-                    className="w-full rounded-none sm:rounded-lg"
-                    unoptimized={getSrc(currentImage).startsWith('/')}
-                  />
-                )}
+              <div className="group relative w-full overflow-hidden sm:rounded-lg">
+                <div
+                  className="relative max-sm:touch-pan-y max-sm:select-none"
+                  onTouchStart={handleGalleryTouchStart}
+                  onTouchEnd={handleGalleryTouchEnd}
+                  onTouchCancel={handleGalleryTouchCancel}
+                >
+                  {isVideo(currentImage) ? (
+                    <video
+                      ref={videoRef}
+                      src={getSrc(currentImage)}
+                      poster={getPoster(currentImage)}
+                      controls
+                      muted
+                      playsInline
+                      preload="metadata"
+                      className="w-full rounded-none sm:rounded-lg"
+                      style={{ maxHeight: "min(70vh, 600px)", objectFit: "cover" }}
+                      onPlay={(e) => e.currentTarget.play().catch(() => {})}
+                    />
+                  ) : (
+                    <Image
+                      src={getSrc(currentImage)}
+                      alt={translatedName}
+                      width={800}
+                      height={600}
+                      style={{ objectFit: "cover" }}
+                      className="w-full rounded-none sm:rounded-lg pointer-events-none sm:pointer-events-auto"
+                      draggable={false}
+                      unoptimized={getSrc(currentImage).startsWith('/')}
+                    />
+                  )}
+                </div>
 
                 {galleryItems.length > 1 ? (
                   <>
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        goGalleryPrev();
+                      }}
+                      className="absolute left-2 top-1/2 z-20 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-neutral-200/80 bg-white/90 text-lg text-neutral-900 shadow-md backdrop-blur-sm transition-opacity duration-200 hover:bg-white focus-visible:opacity-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-400 dark:border-neutral-600 dark:bg-neutral-800/95 dark:text-white dark:hover:bg-neutral-800 sm:flex sm:opacity-0 sm:pointer-events-none sm:group-hover:opacity-100 sm:group-hover:pointer-events-auto sm:group-focus-within:opacity-100 sm:group-focus-within:pointer-events-auto"
+                      aria-label={
+                        formTranslations.galleryPrev || "Previous image"
+                      }
+                    >
+                      <FaChevronLeft aria-hidden />
+                    </button>
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        goGalleryNext();
+                      }}
+                      className="absolute right-2 top-1/2 z-20 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-neutral-200/80 bg-white/90 text-lg text-neutral-900 shadow-md backdrop-blur-sm transition-opacity duration-200 hover:bg-white focus-visible:opacity-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-400 dark:border-neutral-600 dark:bg-neutral-800/95 dark:text-white dark:hover:bg-neutral-800 sm:flex sm:opacity-0 sm:pointer-events-none sm:group-hover:opacity-100 sm:group-hover:pointer-events-auto sm:group-focus-within:opacity-100 sm:group-focus-within:pointer-events-auto"
+                      aria-label={
+                        formTranslations.galleryNext || "Next image"
+                      }
+                    >
+                      <FaChevronRight aria-hidden />
+                    </button>
                     <div className="absolute bottom-3 left-0 right-0 flex justify-center gap-1.5 sm:hidden">
                       {galleryItems.map((item, i) => (
                         <button
