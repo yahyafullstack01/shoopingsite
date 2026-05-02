@@ -52,18 +52,97 @@ export default function InfoForm({
   const formTranslations =
     typeof rawInfoForm === "object" && rawInfoForm !== null ? rawInfoForm : {};
 
-  const translatedName = product.translations?.[language]?.name || product.name;
-  const translatedDescription =
-    product.translations?.[language]?.description || product.description;
+  const langKey = useMemo(() => {
+    const u = language ? String(language).toUpperCase() : "EN";
+    return u === "UK" ? "UA" : u;
+  }, [language]);
+
+  /** Ім'я з урахуванням різних кодів мов у БД (UA / UK / EN). */
+  const translatedName = useMemo(() => {
+    const tr = product?.translations;
+    if (tr && typeof tr === "object") {
+      const tryKeys = [langKey, "EN", "UA", "UK"];
+      for (const k of tryKeys) {
+        const n = tr[k]?.name;
+        if (typeof n === "string" && n.trim()) return n.trim();
+      }
+      for (const k of Object.keys(tr)) {
+        const n = tr[k]?.name;
+        if (typeof n === "string" && n.trim()) return n.trim();
+      }
+    }
+    return product?.name || "";
+  }, [product, langKey]);
+
+  /**
+   * Опис завжди як масив рядків для рендеру (у БД/файлі — масив або один рядок).
+   * Fallback між мовами, бо раніше показувалось лише translations[language], без EN/UA та без нормалізації string → lines.
+   */
+  const descriptionLines = useMemo(() => {
+    const normalizeToLines = (raw) => {
+      if (raw == null || raw === "") return [];
+      if (Array.isArray(raw)) {
+        return raw
+          .map((l) => (typeof l === "string" ? l : String(l)))
+          .map((l) => l.trim())
+          .filter(Boolean);
+      }
+      if (typeof raw === "string") {
+        const t = raw.trim();
+        if (!t) return [];
+        const byNewline = t.split(/\r?\n/).map((s) => s.trim()).filter(Boolean);
+        return byNewline.length ? byNewline : [t];
+      }
+      return [];
+    };
+
+    const fromLang = (key) => {
+      if (key == null || key === "") return null;
+      const d = product?.translations?.[key]?.description;
+      if (d == null) return null;
+      if (typeof d === "string" && !d.trim()) return null;
+      if (Array.isArray(d) && !d.length) return null;
+      return d;
+    };
+
+    const pickRaw = () => {
+      const order = [
+        langKey,
+        "EN",
+        "UA",
+        "UK",
+        language ? String(language).toUpperCase() : null,
+      ].filter(Boolean);
+      const tried = new Set();
+      for (const k of order) {
+        if (tried.has(k)) continue;
+        tried.add(k);
+        const d = fromLang(k);
+        if (d != null) return d;
+      }
+      const tr = product?.translations;
+      if (tr && typeof tr === "object") {
+        for (const key of Object.keys(tr)) {
+          if (tried.has(key)) continue;
+          const d = fromLang(key);
+          if (d != null) return d;
+        }
+      }
+      const root = product?.description;
+      if (root != null && root !== "") return root;
+      return null;
+    };
+
+    return normalizeToLines(pickRaw());
+  }, [product, langKey, language]);
 
   const detailLines = useMemo(() => {
-    if (!Array.isArray(translatedDescription)) return [];
-    return translatedDescription.filter(
+    return descriptionLines.filter(
       (line) =>
         typeof line === "string" &&
         (/detail/i.test(line) || line.trim().startsWith("·"))
     );
-  }, [translatedDescription]);
+  }, [descriptionLines]);
 
   const tabDefs = useMemo(
     () => [
@@ -81,9 +160,7 @@ export default function InfoForm({
   );
 
   const desktopDescriptionParts = useMemo(() => {
-    const lines = Array.isArray(translatedDescription)
-      ? translatedDescription.filter((l) => typeof l === "string" && l.trim())
-      : [];
+    const lines = descriptionLines.filter((l) => typeof l === "string" && l.trim());
     if (!lines.length)
       return { introLines: [], featureLines: [], materialValue: null };
 
@@ -102,7 +179,7 @@ export default function InfoForm({
       .filter((l) => !/detail/i.test(String(l)));
 
     return { introLines, featureLines, materialValue };
-  }, [translatedDescription]);
+  }, [descriptionLines]);
 
   const specFit = product.fit ?? formTranslations.specFitDefault ?? "Relaxed";
   const specOrigin = formTranslations.madeInValue ?? "Ukraine";
@@ -206,24 +283,28 @@ export default function InfoForm({
 
   const renderDescriptionLines = () => (
     <>
-      {Array.isArray(translatedDescription) &&
-        translatedDescription.map((line, index) => {
-          if (String(line).toLowerCase().includes("details")) {
-            return (
-              <p key={index} className="font-medium">
-                {line}
-              </p>
-            );
-          }
-          if (String(line).trim().startsWith("·")) {
-            return (
-              <ul key={index} className="ml-6 list-inside list-disc">
-                <li>{String(line).replace("·", "").trim()}</li>
-              </ul>
-            );
-          }
-          return <p key={index}>{line}</p>;
-        })}
+      {descriptionLines.length === 0 ? (
+        <p className="text-neutral-500">
+          {formTranslations.noDescription || "—"}
+        </p>
+      ) : null}
+      {descriptionLines.map((line, index) => {
+        if (String(line).toLowerCase().includes("details")) {
+          return (
+            <p key={index} className="font-medium">
+              {line}
+            </p>
+          );
+        }
+        if (String(line).trim().startsWith("·")) {
+          return (
+            <ul key={index} className="ml-6 list-inside list-disc">
+              <li>{String(line).replace("·", "").trim()}</li>
+            </ul>
+          );
+        }
+        return <p key={index}>{line}</p>;
+      })}
     </>
   );
 
@@ -283,7 +364,13 @@ export default function InfoForm({
 
       <ProductColorSwatches
         label={menuItems[1] || "Color"}
-        colors={product.translations?.[language]?.colors || product.colors || []}
+        colors={
+          product.translations?.[langKey]?.colors ||
+          product.translations?.[language]?.colors ||
+          product.translations?.EN?.colors ||
+          product.colors ||
+          []
+        }
         value={selectedColor}
         onChange={(c) => {
           setSelectedColor(c);
@@ -533,7 +620,15 @@ export default function InfoForm({
                     ) : null}
                   </>
                 ) : (
-                  <div className="space-y-3">{renderDescriptionLines()}</div>
+                  <div className="space-y-3">
+                    {descriptionLines.length === 0 ? (
+                      <p className="text-neutral-500">
+                        {formTranslations.noDescription || "—"}
+                      </p>
+                    ) : (
+                      renderDescriptionLines()
+                    )}
+                  </div>
                 )}
               </>
             )}
