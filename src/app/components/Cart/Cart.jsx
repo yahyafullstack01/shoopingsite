@@ -1,12 +1,9 @@
 'use client';
 
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import Image from 'next/image';
-import Link from 'next/link';
 import {
   FaAward,
-  FaChevronRight,
   FaHeart,
   FaLock,
   FaPen,
@@ -20,7 +17,6 @@ import { getSessionId } from '../../utils/session';
 import { useLanguage } from '../../Functions/useLanguage';
 import { getProductImageSrc } from '../../utils/productData';
 import { getBackendBaseUrl } from '../../utils/backendUrl';
-import products from '../../data/products';
 import { isFavorite, toggleFavorite } from '../../utils/favorites';
 
 export default function Cart() {
@@ -30,7 +26,7 @@ export default function Cart() {
   const [sessionId, setSessionId] = useState('');
   const [favTick, setFavTick] = useState(0);
   const router = useRouter();
-  const { translateList, language } = useLanguage();
+  const { translateList } = useLanguage();
   const rawCart = translateList('home', 'cart');
   const cartTranslations =
     typeof rawCart === 'object' && rawCart !== null ? rawCart : {};
@@ -107,30 +103,6 @@ export default function Cart() {
     (sum, item) => sum + Number(linePrice(item)) * item.quantity,
     0
   );
-
-  const cartProductIds = useMemo(
-    () => new Set(cartItems.map((i) => Number(i.productId))),
-    [cartItems]
-  );
-
-  const youMayAlsoLike = useMemo(() => {
-    return products.filter((p) => !cartProductIds.has(p.id)).slice(0, 4);
-  }, [cartProductIds]);
-
-  const onToggleUpsellFav = (e, productId) => {
-    e.preventDefault();
-    e.stopPropagation();
-    toggleFavorite(productId);
-    setFavTick((t) => t + 1);
-    try {
-      window.dispatchEvent(new Event('storage'));
-    } catch {}
-  };
-
-  const upsellHref = (p) => {
-    const cat = (p.category || 'all').toLowerCase();
-    return `/All-products?category=${encodeURIComponent(cat)}&product=${p.id}`;
-  };
 
   return (
     <div className="min-h-screen bg-neutral-100 pb-8 pt-4 text-black dark:bg-neutral-950 dark:text-white md:pb-12 md:pt-5">
@@ -482,66 +454,6 @@ export default function Cart() {
                 </p>
               </aside>
             </div>
-
-            {youMayAlsoLike.length > 0 ? (
-              <section className="mt-12">
-                <h2 className="mb-6 flex items-center gap-1 text-xl font-bold">
-                  <span>
-                    {cartTranslations.youMayAlsoLike || 'You may also like'}
-                  </span>
-                  <FaChevronRight
-                    className="text-sm opacity-45"
-                    aria-hidden
-                  />
-                </h2>
-                <div className="-mx-4 flex snap-x snap-mandatory gap-3 overflow-x-auto scroll-smooth px-4 pb-2 sm:mx-0 sm:grid sm:grid-cols-2 sm:gap-4 sm:overflow-visible sm:px-0 sm:pb-0 md:grid-cols-4 md:gap-6">
-                  {youMayAlsoLike.map((p) => {
-                    const name =
-                      p.translations?.[language]?.name || p.name || 'Product';
-                    const price = p.price;
-                    const fav = isFavorite(p.id);
-                    return (
-                      <Link
-                        key={p.id}
-                        href={upsellHref(p)}
-                        className="group w-[min(11.5rem,72vw)] shrink-0 snap-start overflow-hidden rounded-2xl border border-neutral-200/80 bg-white shadow-sm transition hover:shadow-md dark:border-neutral-800 dark:bg-neutral-900 sm:w-auto sm:snap-none"
-                      >
-                        <div className="relative aspect-[3/4] w-full overflow-hidden bg-neutral-100 dark:bg-neutral-800">
-                          <Image
-                            src={getProductImageSrc(p.image)}
-                            alt={name}
-                            fill
-                            className="object-cover transition group-hover:scale-[1.02]"
-                            sizes="(max-width:768px) 50vw, 25vw"
-                            unoptimized={String(p.image || '').startsWith('/')}
-                          />
-                          <button
-                            type="button"
-                            onClick={(e) => onToggleUpsellFav(e, p.id)}
-                            className="absolute right-2 top-2 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-neutral-700 shadow-md backdrop-blur-sm dark:bg-neutral-900/90 dark:text-white"
-                            aria-label="Wishlist"
-                          >
-                            {fav ? (
-                              <FaHeart className="text-red-500" />
-                            ) : (
-                              <FaRegHeart />
-                            )}
-                          </button>
-                        </div>
-                        <div className="p-3">
-                          <p className="line-clamp-2 text-sm font-medium leading-snug">
-                            {name}
-                          </p>
-                          <p className="mt-1 text-sm font-semibold text-neutral-900 dark:text-white">
-                            {price} UAH
-                          </p>
-                        </div>
-                      </Link>
-                    );
-                  })}
-                </div>
-              </section>
-            ) : null}
           </>
         ) : null}
       </div>

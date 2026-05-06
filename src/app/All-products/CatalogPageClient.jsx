@@ -7,11 +7,21 @@ const AllProducts = dynamic(() => import("../components/AllProducts/AllProducts"
   ssr: false,
 });
 
-export default function CatalogPageClient({ catalogPool, prefetchedProduct }) {
+export default function CatalogPageClient({
+  catalogPool,
+  catalogTotalPages,
+  catalogPageItems,
+  prefetchedProduct,
+}) {
   return (
     <div className="transition-colors">
       <Layout>
-        <AllProducts catalogPool={catalogPool} prefetchedProduct={prefetchedProduct} />
+        <AllProducts
+          catalogPool={catalogPool}
+          catalogTotalPages={catalogTotalPages}
+          catalogPageItems={catalogPageItems}
+          prefetchedProduct={prefetchedProduct}
+        />
       </Layout>
     </div>
   );

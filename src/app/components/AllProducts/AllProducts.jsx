@@ -20,7 +20,12 @@ import { getBackendBaseUrl } from '../../utils/backendUrl';
 import { getProductImageSrc } from "../../utils/productData";
 import Toast from "../../components/ToastCart/Toast";
 
-export default function AllProducts({ catalogPool = [], prefetchedProduct = null }) {
+export default function AllProducts({
+  catalogPool = [],
+  catalogTotalPages = 1,
+  catalogPageItems = [],
+  prefetchedProduct = null,
+}) {
   const { translateList, language } = useLanguage();
   const menuItems = translateList("Catalogues", "header");
 
@@ -144,22 +149,42 @@ export default function AllProducts({ catalogPool = [], prefetchedProduct = null
     sortOrder
   );
 
-  const filteredTotalPages = Math.max(
+  const usesDefaultFilters =
+    !selectedSize &&
+    !selectedColor &&
+    maxPrice >= priceLimit &&
+    sortOrder === "recommended";
+
+  const clientFilteredTotalPages = Math.max(
     1,
     Math.ceil(filteredProducts.length / productsPerPage)
   );
-  const safePage = Math.min(pageFromUrl, filteredTotalPages);
-  const paginatedSlice = filteredProducts.slice(
-    (safePage - 1) * productsPerPage,
-    safePage * productsPerPage
-  );
+
+  const filteredTotalPages = usesDefaultFilters
+    ? catalogTotalPages
+    : clientFilteredTotalPages;
+
+  const pageFromUrlClamped = Math.min(pageFromUrl, filteredTotalPages);
+
+  const paginatedSlice = usesDefaultFilters
+    ? catalogPageItems.length > 0
+      ? catalogPageItems
+      : filteredProducts.slice(
+          (pageFromUrlClamped - 1) * productsPerPage,
+          pageFromUrlClamped * productsPerPage
+        )
+    : filteredProducts.slice(
+        (pageFromUrlClamped - 1) * productsPerPage,
+        pageFromUrlClamped * productsPerPage
+      );
 
   useEffect(() => {
-    if (pageFromUrl === safePage) return;
+    if (pageFromUrl === pageFromUrlClamped) return;
     const p = new URLSearchParams(searchParams.toString());
-    p.set("page", String(safePage));
+    p.set("page", String(pageFromUrlClamped));
     router.replace(`/All-products?${p.toString()}`, { scroll: false });
-  }, [pageFromUrl, safePage, router, searchParams]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- only react to page/clamp; including searchParams would re-run on every query change
+  }, [pageFromUrl, pageFromUrlClamped, router]);
 
   const skipFilterPageResetRef = useRef(true);
   useEffect(() => {
@@ -171,7 +196,8 @@ export default function AllProducts({ catalogPool = [], prefetchedProduct = null
     if (!p.get("page") || p.get("page") === "1") return;
     p.set("page", "1");
     router.replace(`/All-products?${p.toString()}`, { scroll: false });
-  }, [maxPrice, selectedSize, selectedColor, sortOrder, router, searchParams]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- reset page only when filters change; searchParams must not trigger (e.g. page=2 navigation)
+  }, [maxPrice, selectedSize, selectedColor, sortOrder, router]);
 
   const onProductClick = (product) => {
     const p = new URLSearchParams(searchParams.toString());
@@ -263,7 +289,7 @@ export default function AllProducts({ catalogPool = [], prefetchedProduct = null
               <PaginatedProducts
                 products={paginatedSlice}
                 productsPerPage={12}
-                controlledPage={safePage}
+                controlledPage={pageFromUrlClamped}
                 controlledTotalPages={filteredTotalPages}
                 onPageChange={(next) => {
                   const p = new URLSearchParams(searchParams.toString());
