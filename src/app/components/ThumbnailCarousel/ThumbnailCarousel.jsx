@@ -8,45 +8,20 @@ const ThumbnailCarousel = ({ images = [], onImageSelect }) => {
 
   // refs для прокрутки контейнерів
   const itemRefs = useRef([]);
-  // refs для самих <video>, щоб мати змогу ставити на паузу всі разом
-  const videoRefs = useRef([]);
-  // один таймер для debouce hover-відтворення
-  const hoverTimerRef = useRef(null);
 
   const isVideo   = (item) => typeof item === "object" && item?.type === "video";
   const getSrc    = (item) => (typeof item === "string" ? item : item?.src || "");
   const getPoster = (item) =>
     typeof item === "object" && item?.poster ? item.poster : "/default-poster.jpg";
 
-  const safePlay = (videoEl) => {
-    if (!videoEl) return;
-    const p = videoEl.play?.();
-    if (p && typeof p.catch === "function") p.catch(() => {}); // глушимо AbortError
-  };
-
-  const safePause = (videoEl) => {
-    try {
-      if (videoEl?.pause) {
-        videoEl.pause();
-        videoEl.currentTime = 0;
-      }
-    } catch {}
-  };
-
-  const pauseAllVideos = () => {
-    videoRefs.current.forEach((v) => safePause(v));
-  };
-
   const handleScrollLeft = () => {
     const prevIndex = thumbnailIndex - 1 < 0 ? images.length - 1 : thumbnailIndex - 1;
-    pauseAllVideos();
     setThumbnailIndex(prevIndex);
     onImageSelect?.(images[prevIndex]);
   };
 
   const handleScrollRight = () => {
     const nextIndex = (thumbnailIndex + 1) % images.length;
-    pauseAllVideos();
     setThumbnailIndex(nextIndex);
     onImageSelect?.(images[nextIndex]);
   };
@@ -61,14 +36,6 @@ const ThumbnailCarousel = ({ images = [], onImageSelect }) => {
       block: "nearest",
     });
   }, [thumbnailIndex]);
-
-  // при розмонтуванні — прибираємо таймер і ставимо паузу
-  useEffect(() => {
-    return () => {
-      if (hoverTimerRef.current) clearTimeout(hoverTimerRef.current);
-      pauseAllVideos();
-    };
-  }, []);
 
   return (
     <div className="relative flex justify-center items-center mt-2">
@@ -85,9 +52,9 @@ const ThumbnailCarousel = ({ images = [], onImageSelect }) => {
           const src = getSrc(item);
           const poster = getPoster(item);
           const isLocal = typeof src === "string" && src.startsWith("/");
+          const posterIsLocal = typeof poster === "string" && poster.startsWith("/");
 
           const selectThis = () => {
-            pauseAllVideos();
             setThumbnailIndex(index);
             onImageSelect?.(item);
           };
@@ -99,32 +66,19 @@ const ThumbnailCarousel = ({ images = [], onImageSelect }) => {
               className="w-24 sm:w-32 h-36 sm:h-48 shrink-0 relative"
             >
               {isVideo(item) ? (
-                <video
-                  ref={(el) => (videoRefs.current[index] = el)}
+                <Image
+                  src={poster}
+                  alt={`Thumbnail ${index + 1}`}
                   width={96}
                   height={96}
-                  muted
-                  playsInline
-                  preload="metadata"
-                  poster={poster}
                   className={`border rounded cursor-pointer object-cover h-full w-full hover:brightness-150 hover:scale-105 transition-transform duration-300 ${
                     index === thumbnailIndex ? "border-black dark:border-white" : "border-gray-500"
                   }`}
-                  // дебаунсимо старт відтворення при наведенні
-                  onMouseEnter={(e) => {
-                    if (hoverTimerRef.current) clearTimeout(hoverTimerRef.current);
-                    const el = e.currentTarget;
-                    hoverTimerRef.current = setTimeout(() => safePlay(el), 120);
-                  }}
-                  onMouseLeave={(e) => {
-                    if (hoverTimerRef.current) clearTimeout(hoverTimerRef.current);
-                    safePause(e.currentTarget);
-                  }}
+                  style={{ objectFit: "cover" }}
                   onClick={selectThis}
-                  onPlay={(e) => e.currentTarget.play().catch(() => {})}
-                >
-                  <source src={src} type="video/mp4" />
-                </video>
+                  unoptimized={posterIsLocal}
+                  loader={posterIsLocal ? ({ src }) => src : undefined}
+                />
               ) : (
                 <Image
                   src={src}

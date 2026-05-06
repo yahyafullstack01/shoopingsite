@@ -70,6 +70,7 @@ const ProductCard = ({ product, onClick, onAddToCart }) => {
             alt={translatedName}
             width={300}
             height={400}
+            loading="lazy"
             className="w-full h-full object-cover rounded transform transition-transform duration-300 ease-in-out group-hover:scale-110"
             unoptimized={isLocal}                       // ← важливо для /public
             loader={isLocal ? ({ src }) => src : undefined} // ← віддаємо напряму

@@ -96,6 +96,7 @@ export default function Hero() {
   type: "video",
   src: "/hoom/videoJar.mp4",
   mobileSrc: "/hoom/videoJarmobile.mp4",
+  poster: "/hoom/1.webp",
   alt: "Latore banner 2",
 
   ctaText: t[4],
@@ -253,6 +254,8 @@ export default function Hero() {
               if (!isActive && !isNeighbor) return null;
 
               const raw = s.type === "image" && isMobile && s.mobileSrc ? s.mobileSrc : s.src;
+              const videoSrc =
+                s.type === "video" && isActive ? s.src : undefined;
 
               return (
                 <div
@@ -279,7 +282,7 @@ export default function Hero() {
                   ) : (
                     <video
                       ref={(el) => (videoRefs.current[i] = el)}
-                      src={s.src}
+                      src={videoSrc}
                       poster={s.poster || undefined}
                       className="w-full h-full object-cover"
                       muted

@@ -1,10 +1,25 @@
 import React, { useState, useRef, useEffect } from "react";
+import dynamic from "next/dynamic";
 import ProductCard from "../products/ProductCard";
 import { useLanguage } from "../../Functions/useLanguage";
-import QuickAddModal from "../QuickAddModal/QuickAddModal";
 
-const PaginatedProducts = ({ products, productsPerPage = 12, onProductClick, onAddToCart }) => {
-  const [currentPage, setCurrentPage] = useState(1);
+const QuickAddModal = dynamic(() => import("../QuickAddModal/QuickAddModal"));
+
+const PaginatedProducts = ({
+  products,
+  productsPerPage = 12,
+  onProductClick,
+  onAddToCart,
+  controlledPage,
+  controlledTotalPages,
+  onPageChange,
+}) => {
+  const isControlled =
+    typeof controlledPage === "number" &&
+    typeof controlledTotalPages === "number" &&
+    typeof onPageChange === "function";
+
+  const [internalPage, setInternalPage] = useState(1);
   const [quickAddProduct, setQuickAddProduct] = useState(null);
   const productsRef = useRef(null);
   const paginationScrollRef = useRef(null);
@@ -15,21 +30,32 @@ const PaginatedProducts = ({ products, productsPerPage = 12, onProductClick, onA
   const { translateList } = useLanguage();
   const menuItems = translateList("Filtersidebar", "PaginatedProducts");
 
-  const totalPages = Math.max(1, Math.ceil(products.length / productsPerPage));
+  const totalPages = isControlled
+    ? Math.max(1, controlledTotalPages)
+    : Math.max(1, Math.ceil(products.length / productsPerPage));
 
-  // Скинути на 1 при зміні списку (наприклад категорія)
+  const currentPage = isControlled ? controlledPage : internalPage;
+
+  // Скинути на 1 при зміні списку (наприклад категорія) — лише в некерованому режимі
   useEffect(() => {
-    setCurrentPage((p) => (p > totalPages ? 1 : p));
-  }, [products.length, totalPages]);
+    if (isControlled) return;
+    setInternalPage((p) => (p > totalPages ? 1 : p));
+  }, [products.length, totalPages, isControlled]);
 
-  const currentProducts = products.slice(
-    (currentPage - 1) * productsPerPage,
-    currentPage * productsPerPage
-  );
+  const currentProducts = isControlled
+    ? products
+    : products.slice(
+        (currentPage - 1) * productsPerPage,
+        currentPage * productsPerPage
+      );
 
   const handlePageChange = (pageNumber) => {
     const page = Math.max(1, Math.min(pageNumber, totalPages));
-    setCurrentPage(page);
+    if (isControlled) {
+      onPageChange(page);
+    } else {
+      setInternalPage(page);
+    }
     setTimeout(() => {
       productsRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
     }, 0);

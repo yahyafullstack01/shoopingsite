@@ -1,17 +1,18 @@
 'use client';
 
 import React, { useState, useRef, useEffect, useMemo } from "react";
+import dynamic from "next/dynamic";
 import { useRouter, useSearchParams } from "next/navigation";
 import FilterSidebar from "../../Functions/FilterSidebar";
 import SortMenu from "../../Functions/SortMenu";
-import ProductBanner from "../../components/products/ProductBanner";
 import PaginatedProducts from "../../components/PaginatedProducts/PaginatedProducts";
+
+const ProductBanner = dynamic(() => import("../../components/products/ProductBanner"));
 import {
   handleSizeSelect as applySizeSelect,
   filterAndSortProducts,
   handleContactButtonClick
 } from "../../utils/products";
-import products from "../../data/products";
 import { useLanguage } from "../../Functions/useLanguage";
 import { translateCategory } from "../../utils/categoryTranslation";
 import { getSessionId } from '../../utils/session';
@@ -19,7 +20,7 @@ import { getBackendBaseUrl } from '../../utils/backendUrl';
 import { getProductImageSrc } from "../../utils/productData";
 import Toast from "../../components/ToastCart/Toast";
 
-export default function AllProducts() {
+export default function AllProducts({ catalogPool = [], prefetchedProduct = null }) {
   const { translateList, language } = useLanguage();
   const menuItems = translateList("Catalogues", "header");
 
@@ -28,20 +29,19 @@ export default function AllProducts() {
   const productId = searchParams.get("product");
   const categoryFromURL = (searchParams.get("category") || "").toLowerCase();
 
+  const pageParamRaw = parseInt(searchParams.get("page") || "1", 10);
+  const pageFromUrl =
+    Number.isFinite(pageParamRaw) && pageParamRaw > 0 ? pageParamRaw : 1;
+  const productsPerPage = 12;
+
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [categoryFromURL]);
 
   // --------------------------------------------
-  // 1) БАЗОВИЙ пул видимих товарів за категорією
-  //    ('' або 'all' => всі товари)
+  // 1) Пул товарів для поточної категорії (з сервера)
   // --------------------------------------------
-  const visiblePool = useMemo(() => {
-    if (!categoryFromURL || categoryFromURL === "all") return products;
-    return products.filter(
-      (p) => p.category.toLowerCase() === categoryFromURL
-    );
-  }, [categoryFromURL]);
+  const visiblePool = useMemo(() => catalogPool, [catalogPool]);
 
   // --------------------------------------------
   // 2) Динамічна “стеля” ціни для слайдера
@@ -117,42 +117,67 @@ export default function AllProducts() {
     }
   };
 
-  // відкриття анонсу товару з URL ?product=
+  // Анонс товару з URL ?product= (повний об'єкт з сервера для ProductBanner)
   useEffect(() => {
     if (productId) {
-      const matched = products.find((p) => String(p.id) === productId);
-      setSelectedProduct(matched || null);
+      if (prefetchedProduct && String(prefetchedProduct.id) === productId) {
+        setSelectedProduct(prefetchedProduct);
+      } else {
+        setSelectedProduct(null);
+      }
     } else {
       setSelectedProduct(null);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [productId]);
+  }, [productId, prefetchedProduct]);
 
-  // фінальна вибірка для списку (фільтруємо ТІЛЬКИ з видимого пулу)
-  // перед фільтрацією (після useEffect з productId) додай:
-const selectedCategoryForFilter =
-  !categoryFromURL || categoryFromURL === "all" ? "" : categoryFromURL;
+  const selectedCategoryForFilter =
+    !categoryFromURL || categoryFromURL === "all" ? "" : categoryFromURL;
 
-// фінальна вибірка для списку (фільтруємо ТІЛЬКИ з видимого пулу)
-const filteredProducts = filterAndSortProducts(
-  visiblePool,
-  {
-    maxPrice,
-    selectedSize,
-    selectedColor,
-    selectedCategory: selectedCategoryForFilter, // ← тут більше не "all"
-  },
-  sortOrder
-);
+  const filteredProducts = filterAndSortProducts(
+    visiblePool,
+    {
+      maxPrice,
+      selectedSize,
+      selectedColor,
+      selectedCategory: selectedCategoryForFilter,
+    },
+    sortOrder
+  );
 
+  const filteredTotalPages = Math.max(
+    1,
+    Math.ceil(filteredProducts.length / productsPerPage)
+  );
+  const safePage = Math.min(pageFromUrl, filteredTotalPages);
+  const paginatedSlice = filteredProducts.slice(
+    (safePage - 1) * productsPerPage,
+    safePage * productsPerPage
+  );
 
+  useEffect(() => {
+    if (pageFromUrl === safePage) return;
+    const p = new URLSearchParams(searchParams.toString());
+    p.set("page", String(safePage));
+    router.replace(`/All-products?${p.toString()}`, { scroll: false });
+  }, [pageFromUrl, safePage, router, searchParams]);
+
+  const skipFilterPageResetRef = useRef(true);
+  useEffect(() => {
+    if (skipFilterPageResetRef.current) {
+      skipFilterPageResetRef.current = false;
+      return;
+    }
+    const p = new URLSearchParams(searchParams.toString());
+    if (!p.get("page") || p.get("page") === "1") return;
+    p.set("page", "1");
+    router.replace(`/All-products?${p.toString()}`, { scroll: false });
+  }, [maxPrice, selectedSize, selectedColor, sortOrder, router, searchParams]);
 
   const onProductClick = (product) => {
-    setSelectedProduct(product);
-    router.push(
-      `/All-products?category=${categoryFromURL || "all"}&product=${product.id}`,
-      { scroll: false }
-    );
+    const p = new URLSearchParams(searchParams.toString());
+    p.set("category", categoryFromURL || "all");
+    p.set("product", String(product.id));
+    router.push(`/All-products?${p.toString()}`, { scroll: false });
   };
 
   const onContactClick = (color, size, quantity) => {
@@ -190,7 +215,7 @@ const filteredProducts = filterAndSortProducts(
               handleCategorySelect={(category) => {
             
                 const slug = (category || "").toLowerCase();
-                router.push(`/All-products?category=${slug || "all"}`, { scroll: true });
+                router.push(`/All-products?category=${slug || "all"}&page=1`, { scroll: true });
               }}
               isHorizontal={true}
             >
@@ -236,8 +261,15 @@ const filteredProducts = filterAndSortProducts(
               <h2 id="product-list" className="sr-only">{menuItems[3]}</h2>
 
               <PaginatedProducts
-                products={filteredProducts}
+                products={paginatedSlice}
                 productsPerPage={12}
+                controlledPage={safePage}
+                controlledTotalPages={filteredTotalPages}
+                onPageChange={(next) => {
+                  const p = new URLSearchParams(searchParams.toString());
+                  p.set("page", String(next));
+                  router.push(`/All-products?${p.toString()}`, { scroll: false });
+                }}
                 onProductClick={onProductClick}
                 onAddToCart={handleAddToCart}
               />
