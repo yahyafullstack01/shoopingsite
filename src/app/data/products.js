@@ -346,7 +346,7 @@ const products = [
 
     {
     id: 100,
-    price: 2000,
+    price: 2100,
     isTop: true,
     // isSpecialOffer: true,
     // discountPrice: 1700,
@@ -403,7 +403,7 @@ const products = [
 
 {
   id: 292,
-  price: 2100,
+  price: 2310,
   isTop: false,
   isNew: false,
   sku: "99423",
@@ -560,7 +560,7 @@ const products = [
 
 {
   id: 290,
-  price: 1550,
+  price: 1705,
   isTop: false,
   isNew: false,
   sku: "99421",
@@ -637,7 +637,7 @@ const products = [
 
 {
   id: 289,
-  price: 2950,
+  price: 3245,
   isTop: false,
   isNew: false,
   sku: "99420",
@@ -712,7 +712,7 @@ const products = [
 
   {
   id: 288,
-  price: 4500,
+  price: 4950,
   isTop: false,
   isNew: false,
   sku: "99419",
@@ -784,7 +784,7 @@ const products = [
 
 {
   id: 287,
-  price: 1950,
+  price: 2145,
   isTop: false,
   isNew: false,
   sku: "99418",
@@ -2170,7 +2170,7 @@ const products = [
 
   {
     id: 268,
-    price: 2900,
+    price: 3190,
     isTop: true,
     isNew: true,
     sku: "99408",
@@ -6629,7 +6629,7 @@ const products = [
 
  {
     id: 99,
-    price: 2000,
+    price: 2100,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 1700,
@@ -6949,7 +6949,7 @@ const products = [
   },  
   {
     id: 116,
-    price: 2000,
+    price: 2100,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 1700,
@@ -9893,7 +9893,7 @@ const products = [
 
   {
   id: 151,
-  price: 5100,
+  price: 5865,
   isTop: false,
   isNew: false,
   // isSpecialOffer: true,
@@ -10041,7 +10041,7 @@ const products = [
 // },
   {
   id: 149,
-  price: 5100,
+  price: 5865,
   isTop: false,
   isNew: false,
   // isSpecialOffer: true,
@@ -10233,7 +10233,7 @@ description: [
 
     {
     id: 146,
-    price: 3900,
+    price: 4290,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -10296,7 +10296,7 @@ description: [
 
   {
   id: 145,
-  price: 3900,
+  price: 4290,
   isTop: false,
   isNew: false,
   // isSpecialOffer: true,
@@ -10359,7 +10359,7 @@ description: [
 
     {
     id: 144,
-    price: 2950,
+    price: 3392,
     // isSpecialOffer: true,
     // discountPrice: 2508,
     isTop: true,
@@ -10425,7 +10425,7 @@ description: [
 
     {
     id: 143,
-    price: 2950,
+    price: 3392,
     isTop: true,
     isNew: false,
     // isSpecialOffer: true,
@@ -10500,7 +10500,7 @@ description: [
 
 {
     id: 142,
-    price: 3100,
+    price: 3565,
   //  isSpecialOffer: true,
   //   discountPrice: 2635,
     isTop: false,
@@ -10564,7 +10564,7 @@ description: [
 
 {
     id: 141,
-    price: 2500,
+    price: 2875,
     // isSpecialOffer: true,
     // discountPrice: 2125,
     isTop: false,
@@ -10628,7 +10628,7 @@ description: [
 
 {
     id: 140,
-    price: 3100,
+    price: 3565,
     isTop: true,
     isNew: false,
     // isSpecialOffer: true,
@@ -10701,7 +10701,7 @@ description: [
 
 {
     id: 137,
-    price: 1350,
+    price: 1552,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 1148,
@@ -10746,7 +10746,7 @@ description: [
 
 {
     id: 136,
-    price: 1650,
+    price: 1897,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 1403,
@@ -10790,7 +10790,7 @@ description: [
 
   {
     id: 135,
-    price: 3000,
+    price: 3450,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -10888,7 +10888,7 @@ description: [
 
   {
     id: 133,
-    price: 2800,
+    price: 3080,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -10948,7 +10948,7 @@ description: [
 
   {
     id: 132,
-    price: 3450,
+    price: 3967.5,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 2933,
@@ -11009,7 +11009,7 @@ description: [
 
 {
     id: 131,
-    price: 3900,
+    price: 4290,
     // isSpecialOffer: true,
     // discountPrice: 3315,
     isTop: false,
@@ -11073,7 +11073,7 @@ description: [
 
   {
     id: 130,
-    price: 3600,
+    price: 3960,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 3060,
@@ -11327,7 +11327,7 @@ description: [
 
   {
     id: 124,
-    price: 3500,
+    price: 3850,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -11391,7 +11391,7 @@ description: [
   },
   {
     id: 123,
-    price: 3900,
+    price: 4290,
     isTop: false,
     isNew: true,
   //  isSpecialOffer: true,
@@ -11457,7 +11457,7 @@ description: [
 
   {
     id: 122,
-    price: 2000,
+    price: 2100,
     // isSpecialOffer: true,
     // discountPrice: 1700,
     isTop: false,
@@ -11503,7 +11503,7 @@ description: [
 
   {
     id: 120,
-    price: 2500,
+    price: 2875,
     // isSpecialOffer: true,
     // discountPrice: 2125,
     isTop: false,
@@ -11644,7 +11644,7 @@ description: [
 
   {
     id: 117,
-    price: 3100,
+    price: 3565,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 2635,
@@ -11813,7 +11813,7 @@ description: [
 
   {
     id: 113,
-    price: 3650,
+    price: 4015,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 3103,
@@ -11875,7 +11875,7 @@ description: [
 
   {
     id: 112,
-    price: 3650,
+    price: 4015,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 3103,
@@ -11934,7 +11934,7 @@ description: [
 
   {
     id: 111,
-    price: 3650,
+    price: 4015,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 3103,
@@ -11993,7 +11993,7 @@ description: [
 
   {
     id: 110,
-    price: 1650,
+    price: 1897,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 1403,
@@ -12038,7 +12038,7 @@ description: [
 
   {
     id: 109,
-    price: 1550,
+    price: 1705,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 1318,
@@ -12174,7 +12174,7 @@ description: [
 
   {
     id: 104,
-    price: 2850,
+    price: 3277,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 2423,
@@ -12236,7 +12236,7 @@ description: [
 
   {
     id: 103,
-    price: 2850,
+    price: 3277,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 2423,
@@ -12344,7 +12344,7 @@ description: [
 
   {
     id: 97,
-    price: 2550,
+    price: 2805,
     isTop: true,
     // isSpecialOffer: true,
     // discountPrice: 2168,
@@ -12849,7 +12849,7 @@ description: [
   },  
   {
     id: 86,
-    price: 1825,
+    price: 2098,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 1551,
@@ -12900,7 +12900,7 @@ description: [
 
   {
     id: 81,
-    price: 2200,
+    price: 2420,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 1870,
@@ -12946,7 +12946,7 @@ description: [
 
   {
     id: 80,
-    price: 2200,
+    price: 2420,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 1870,
@@ -12991,7 +12991,7 @@ description: [
   
   {
     id: 79,
-    price: 2430,
+    price: 2673,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 2066,
@@ -13036,7 +13036,7 @@ description: [
   
   {
     id: 78,
-    price: 1580,
+    price: 1738,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 1343,
@@ -13083,7 +13083,7 @@ description: [
 
   {
     id: 77,
-    price: 3780,
+    price: 4158,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -13129,7 +13129,7 @@ description: [
   
   {
     id: 76,
-    price: 4630,
+    price: 5093,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -13177,7 +13177,7 @@ description: [
 
   {
     id: 75,
-    price: 3170,
+    price: 3487,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -13224,7 +13224,7 @@ description: [
 
   {
     id: 74,
-    price: 1900,
+    price: 2185,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 1615,
@@ -13272,7 +13272,7 @@ description: [
 
   {
     id: 73,
-    price: 2024,
+    price: 2327,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 1720,
@@ -13319,7 +13319,7 @@ description: [
 
   {
     id: 72,
-    price: 1380,
+    price: 1587,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 1173,
@@ -13365,7 +13365,7 @@ description: [
 
   {
     id: 71,
-    price: 5300,
+    price: 6095,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -13614,7 +13614,7 @@ description: [
 
   {
     id: 63,
-    price: 2024,
+    price: 2327,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 1720,
@@ -13662,7 +13662,7 @@ description: [
 
   {
     id: 62,
-    price: 3924,
+    price: 4512,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 3335,
@@ -13715,7 +13715,7 @@ description: [
 
   {
     id: 59,
-    price: 3565,
+    price: 3921,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 3030,
@@ -13788,7 +13788,7 @@ description: [
 
   {
     id: 58,
-    price: 3565,
+    price: 3921,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 3030,
@@ -13861,7 +13861,7 @@ description: [
   
   {
     id: 57,
-    price: 3565,
+    price: 3921,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 3030,
@@ -13926,7 +13926,7 @@ description: [
 
   {
     id: 55,
-    price: 3220,
+    price: 3703,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 2737,
@@ -14001,7 +14001,7 @@ description: [
   
   {
     id: 54,
-    price: 3220,
+    price: 3703,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 2737,
@@ -14058,7 +14058,7 @@ description: [
 
   {
     id: 53,
-    price: 3920,
+    price: 4312,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 3332,
@@ -14114,7 +14114,7 @@ description: [
 
   {
     id: 52,
-    price: 3920,
+    price: 4312,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 3332,
@@ -14173,7 +14173,7 @@ description: [
 
   {
     id: 51,
-    price: 3920,
+    price: 4312,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 3332,
@@ -14229,7 +14229,7 @@ description: [
 
   {
     id: 49,
-    price: 3170,
+    price: 3487,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 2695,
@@ -14294,7 +14294,7 @@ description: [
 
   {
     id: 47,
-    price: 2855,
+    price: 3283,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 2427,
@@ -14364,10 +14364,10 @@ description: [
   
   {
     id: 46,
-   price: 3335,
+   price: 3835,
    isTop: false,
     isSpecialOffer: true,
-   // discountPrice: 2835,
+    discountPrice: 2835,
     sku: "98767",
    size: "XS S M L XL",
    category: "Dresses",
@@ -14419,7 +14419,7 @@ description: [
 
   {
     id: 45,
-    price: 3335,
+    price: 3835,
     isTop: false,
     // isSpecialOffer: true,
     // discountPrice: 2835,
@@ -14499,7 +14499,7 @@ description: [
 
   {
     id: 44,
-    price: 3920,
+    price: 4312,
     isTop: true,
     // isSpecialOffer: true,
     // discountPrice: 3332,
