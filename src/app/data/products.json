@@ -410,7 +410,7 @@
   },
   {
     "id": 100,
-    "price": 2000,
+    "price": 2100,
     "isTop": true,
     "sku": "98820",
     "size": "XS S M L XL",
@@ -480,7 +480,7 @@
   },
   {
     "id": 292,
-    "price": 2100,
+    "price": 2310,
     "isTop": false,
     "isNew": false,
     "sku": "99423",
@@ -661,7 +661,7 @@
   },
   {
     "id": 290,
-    "price": 1550,
+    "price": 1705,
     "isTop": false,
     "isNew": false,
     "sku": "99421",
@@ -750,7 +750,7 @@
   },
   {
     "id": 289,
-    "price": 2950,
+    "price": 3245,
     "isTop": false,
     "isNew": false,
     "sku": "99420",
@@ -838,7 +838,7 @@
   },
   {
     "id": 288,
-    "price": 4500,
+    "price": 4950,
     "isTop": false,
     "isNew": false,
     "sku": "99419",
@@ -923,7 +923,7 @@
   },
   {
     "id": 287,
-    "price": 1950,
+    "price": 2145,
     "isTop": false,
     "isNew": false,
     "sku": "99418",
@@ -2553,7 +2553,7 @@
   },
   {
     "id": 268,
-    "price": 2900,
+    "price": 3190,
     "isTop": true,
     "isNew": true,
     "sku": "99408",
@@ -6110,7 +6110,7 @@
   },
   {
     "id": 99,
-    "price": 2000,
+    "price": 2100,
     "isTop": false,
     "sku": "98819",
     "size": "XS S M L XL",
@@ -6486,7 +6486,7 @@
   },
   {
     "id": 116,
-    "price": 2000,
+    "price": 2100,
     "isTop": false,
     "sku": "33450",
     "size": "XS S M L XL",
@@ -9452,7 +9452,7 @@
   },
   {
     "id": 151,
-    "price": 5100,
+    "price": 5865,
     "isTop": false,
     "isNew": false,
     "sku": "98804",
@@ -9537,7 +9537,7 @@
   },
   {
     "id": 149,
-    "price": 5100,
+    "price": 5865,
     "isTop": false,
     "isNew": false,
     "sku": "98802",
@@ -9704,7 +9704,7 @@
   },
   {
     "id": 146,
-    "price": 3900,
+    "price": 4290,
     "isTop": false,
     "isNew": false,
     "sku": "98799",
@@ -9778,7 +9778,7 @@
   },
   {
     "id": 145,
-    "price": 3900,
+    "price": 4290,
     "isTop": false,
     "isNew": false,
     "sku": "98798",
@@ -9852,7 +9852,7 @@
   },
   {
     "id": 144,
-    "price": 2950,
+    "price": 3392,
     "isTop": true,
     "isNew": false,
     "sku": "98797",
@@ -9933,7 +9933,7 @@
   },
   {
     "id": 143,
-    "price": 2950,
+    "price": 3392,
     "isTop": true,
     "isNew": false,
     "sku": "98796",
@@ -10024,7 +10024,7 @@
   },
   {
     "id": 142,
-    "price": 3100,
+    "price": 3565,
     "isTop": false,
     "sku": "67241",
     "size": "XS S M L XL",
@@ -10103,7 +10103,7 @@
   },
   {
     "id": 141,
-    "price": 2500,
+    "price": 2875,
     "isTop": false,
     "sku": "67240",
     "size": "XS S M L XL",
@@ -10182,7 +10182,7 @@
   },
   {
     "id": 140,
-    "price": 3100,
+    "price": 3565,
     "isTop": true,
     "isNew": false,
     "sku": "67239",
@@ -10272,7 +10272,7 @@
   },
   {
     "id": 137,
-    "price": 1350,
+    "price": 1552,
     "isTop": false,
     "sku": "67236",
     "size": "XS S M L XL",
@@ -10328,7 +10328,7 @@
   },
   {
     "id": 136,
-    "price": 1650,
+    "price": 1897,
     "isTop": false,
     "sku": "67235",
     "size": "XS S M L XL",
@@ -10383,7 +10383,7 @@
   },
   {
     "id": 135,
-    "price": 3000,
+    "price": 3450,
     "isTop": false,
     "isNew": false,
     "sku": "67234",
@@ -10506,7 +10506,7 @@
   },
   {
     "id": 133,
-    "price": 2800,
+    "price": 3080,
     "isTop": false,
     "isNew": false,
     "sku": "67232",
@@ -10577,7 +10577,7 @@
   },
   {
     "id": 132,
-    "price": 3450,
+    "price": 3967.5,
     "isTop": false,
     "sku": "67231",
     "size": "XS S M L XL",
@@ -10649,7 +10649,7 @@
   },
   {
     "id": 131,
-    "price": 3900,
+    "price": 4290,
     "isTop": false,
     "isNew": true,
     "sku": "67230",
@@ -10727,7 +10727,7 @@
   },
   {
     "id": 130,
-    "price": 3600,
+    "price": 3960,
     "isTop": false,
     "sku": "67229",
     "size": "XS S M L XL",
@@ -11041,7 +11041,7 @@
   },
   {
     "id": 124,
-    "price": 3500,
+    "price": 3850,
     "isTop": false,
     "isNew": false,
     "sku": "67223",
@@ -11116,7 +11116,7 @@
   },
   {
     "id": 123,
-    "price": 3900,
+    "price": 4290,
     "isTop": false,
     "isNew": true,
     "sku": "67222",
@@ -11193,7 +11193,7 @@
   },
   {
     "id": 122,
-    "price": 2000,
+    "price": 2100,
     "isTop": false,
     "sku": "67221",
     "size": "XS S M L XL",
@@ -11249,7 +11249,7 @@
   },
   {
     "id": 120,
-    "price": 2500,
+    "price": 2875,
     "isTop": false,
     "sku": "67219",
     "size": "XS S M L XL",
@@ -11425,7 +11425,7 @@
   },
   {
     "id": 117,
-    "price": 3100,
+    "price": 3565,
     "isTop": false,
     "sku": "67216",
     "size": "XS S M L XL",
@@ -11623,7 +11623,7 @@
   },
   {
     "id": 113,
-    "price": 3650,
+    "price": 4015,
     "isTop": false,
     "sku": "67214",
     "size": "XS S M L XL",
@@ -11696,7 +11696,7 @@
   },
   {
     "id": 112,
-    "price": 3650,
+    "price": 4015,
     "isTop": false,
     "sku": "67213",
     "size": "XS S M L XL",
@@ -11766,7 +11766,7 @@
   },
   {
     "id": 111,
-    "price": 3650,
+    "price": 4015,
     "isTop": false,
     "sku": "67212",
     "size": "XS S M L XL",
@@ -11836,7 +11836,7 @@
   },
   {
     "id": 110,
-    "price": 1650,
+    "price": 1897,
     "isTop": false,
     "sku": "78843",
     "size": "XS S M L XL",
@@ -11892,7 +11892,7 @@
   },
   {
     "id": 109,
-    "price": 1550,
+    "price": 1705,
     "isTop": false,
     "sku": "78842",
     "size": "XS S M L XL",
@@ -12004,7 +12004,7 @@
   },
   {
     "id": 104,
-    "price": 2850,
+    "price": 3277,
     "isTop": false,
     "sku": "67211",
     "size": "XS S M L XL",
@@ -12081,7 +12081,7 @@
   },
   {
     "id": 103,
-    "price": 2850,
+    "price": 3277,
     "isTop": false,
     "sku": "67210",
     "size": "XS S M L XL",
@@ -12157,7 +12157,7 @@
   },
   {
     "id": 97,
-    "price": 2550,
+    "price": 2805,
     "isTop": true,
     "sku": "98817",
     "size": "XS S M L XL",
@@ -12822,7 +12822,7 @@
   },
   {
     "id": 86,
-    "price": 1825,
+    "price": 2098,
     "isTop": false,
     "sku": "98806",
     "size": "XS S M L XL",
@@ -12878,7 +12878,7 @@
   },
   {
     "id": 81,
-    "price": 2200,
+    "price": 2420,
     "isTop": false,
     "sku": "98801",
     "size": "XS S M L XL",
@@ -12932,7 +12932,7 @@
   },
   {
     "id": 80,
-    "price": 2200,
+    "price": 2420,
     "isTop": false,
     "sku": "98800",
     "size": "XS S M L XL",
@@ -12986,7 +12986,7 @@
   },
   {
     "id": 79,
-    "price": 2430,
+    "price": 2673,
     "isTop": false,
     "sku": "98799",
     "size": "XS S M L XL",
@@ -13040,7 +13040,7 @@
   },
   {
     "id": 78,
-    "price": 1580,
+    "price": 1738,
     "isTop": false,
     "sku": "98798",
     "size": "XS S M L XL",
@@ -13094,7 +13094,7 @@
   },
   {
     "id": 77,
-    "price": 3780,
+    "price": 4158,
     "isTop": false,
     "isNew": false,
     "sku": "98797",
@@ -13151,7 +13151,7 @@
   },
   {
     "id": 76,
-    "price": 4630,
+    "price": 5093,
     "isTop": false,
     "isNew": false,
     "sku": "98796",
@@ -13209,7 +13209,7 @@
   },
   {
     "id": 75,
-    "price": 3170,
+    "price": 3487,
     "isTop": false,
     "isNew": false,
     "sku": "98795",
@@ -13267,7 +13267,7 @@
   },
   {
     "id": 74,
-    "price": 1900,
+    "price": 2185,
     "isTop": false,
     "sku": "98794",
     "size": "XS S M L XL",
@@ -13328,7 +13328,7 @@
   },
   {
     "id": 73,
-    "price": 2024,
+    "price": 2327,
     "isTop": false,
     "sku": "98793",
     "size": "XS S M L XL",
@@ -13389,7 +13389,7 @@
   },
   {
     "id": 72,
-    "price": 1380,
+    "price": 1587,
     "isTop": false,
     "sku": "98792",
     "size": "XS S M L XL",
@@ -13450,7 +13450,7 @@
   },
   {
     "id": 71,
-    "price": 5300,
+    "price": 6095,
     "isTop": false,
     "isNew": false,
     "sku": "98791",
@@ -13524,7 +13524,7 @@
   },
   {
     "id": 63,
-    "price": 2024,
+    "price": 2327,
     "isTop": false,
     "sku": "98784",
     "size": "XS S M L XL",
@@ -13582,7 +13582,7 @@
   },
   {
     "id": 62,
-    "price": 3924,
+    "price": 4512,
     "isTop": false,
     "sku": "98783",
     "size": "XS S M L XL",
@@ -13643,7 +13643,7 @@
   },
   {
     "id": 59,
-    "price": 3565,
+    "price": 3921,
     "isTop": false,
     "sku": "98780",
     "size": "XS S M L XL",
@@ -13724,7 +13724,7 @@
   },
   {
     "id": 58,
-    "price": 3565,
+    "price": 3921,
     "isTop": false,
     "sku": "98779",
     "size": "XS S M L XL",
@@ -13806,7 +13806,7 @@
   },
   {
     "id": 57,
-    "price": 3565,
+    "price": 3921,
     "isTop": false,
     "sku": "98778",
     "size": "XS S M L XL",
@@ -13881,7 +13881,7 @@
   },
   {
     "id": 55,
-    "price": 3220,
+    "price": 3703,
     "isTop": false,
     "sku": "98776",
     "size": "XS S M L XL",
@@ -13969,7 +13969,7 @@
   },
   {
     "id": 54,
-    "price": 3220,
+    "price": 3703,
     "isTop": false,
     "sku": "98775",
     "size": "XS S M L XL",
@@ -14036,7 +14036,7 @@
   },
   {
     "id": 53,
-    "price": 3920,
+    "price": 4312,
     "isTop": false,
     "sku": "98774",
     "size": "XS S M L XL",
@@ -14102,7 +14102,7 @@
   },
   {
     "id": 52,
-    "price": 3920,
+    "price": 4312,
     "isTop": false,
     "sku": "98773",
     "size": "XS S M L XL",
@@ -14176,7 +14176,7 @@
   },
   {
     "id": 51,
-    "price": 3920,
+    "price": 4312,
     "isTop": false,
     "sku": "98772",
     "size": "XS S M L XL",
@@ -14241,7 +14241,7 @@
   },
   {
     "id": 49,
-    "price": 3170,
+    "price": 3487,
     "isTop": false,
     "sku": "98770",
     "size": "XS S M L XL",
@@ -14326,7 +14326,7 @@
   },
   {
     "id": 47,
-    "price": 2855,
+    "price": 3283,
     "isTop": false,
     "sku": "98768",
     "size": "XS S M L XL",
@@ -14412,9 +14412,10 @@
   },
   {
     "id": 46,
-    "price": 3335,
+    "price": 3835,
     "isTop": false,
     "isSpecialOffer": true,
+    "discountPrice": 2835,
     "sku": "98767",
     "size": "XS S M L XL",
     "category": "Dresses",
@@ -14473,7 +14474,7 @@
   },
   {
     "id": 45,
-    "price": 3335,
+    "price": 3835,
     "isTop": false,
     "sku": "98766",
     "size": "XS S M L XL",
@@ -14567,7 +14568,7 @@
   },
   {
     "id": 44,
-    "price": 3920,
+    "price": 4312,
     "isTop": true,
     "sku": "98765",
     "size": "XS S M L XL",

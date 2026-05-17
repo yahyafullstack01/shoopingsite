@@ -10,6 +10,7 @@
     "lint": "next lint",
     "postbuild": "next-sitemap --config next-sitemap.config.cjs",
     "seed": "node src/app/frontend/scripts/send-to-db.js",
+    "sync:products-json": "node scripts/sync-products-json.mjs",
     "test:crypto-flow": "node scripts/test-crypto-payment-flow.js",
     "optimize:images": "node scripts/optimize-hoom-images.mjs",
     "optimize:videos": "node scripts/optimize-hoom-videos.mjs",
