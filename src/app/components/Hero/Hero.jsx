@@ -63,8 +63,8 @@ export default function Hero() {
 
 {
   type: "image",
-  src: "/hoom/1Jar.png",
-  mobileSrc: "/hoom/1mobileJar.png",
+  src: "/hoom/1(5).png",
+  mobileSrc: "/hoom/1(4).png",
   alt: "Latore banner 1",
 
   ctaText: t[4],
@@ -94,8 +94,8 @@ export default function Hero() {
 
       {
   type: "video",
-  src: "/hoom/videoJar.mp4",
-  mobileSrc: "/hoom/videoJarmobile.mp4",
+  src: "/hoom/1.mp4",
+  mobileSrc: "/hoom/2.mp4",
   poster: "/hoom/1.webp",
   alt: "Latore banner 2",
 
@@ -141,8 +141,8 @@ export default function Hero() {
 
       {
   type: "image",
-  src: "/hoom/3Jar.png",
-  mobileSrc: "/hoom/3mobileJar.png",
+  src: "/hoom/3(1).png",
+  mobileSrc: "/hoom/3(2).png",
   alt: "Latore banner 3",
 
   ctaText: t[4],

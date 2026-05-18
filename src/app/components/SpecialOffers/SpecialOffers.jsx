@@ -23,7 +23,7 @@ export default function SpecialOffers() {
           {/* Image Container */}
           <div className="w-full h-[450px] sm:h-[500px] md:h-[600px] lg:h-[1000px] sm:w-[80%] md:w-[60%] lg:w-[70%] relative rounded-lg overflow-hidden">
     <Image
-      src="/hoom/specialoffer.avif"
+      src="/hoom/4.png"
       alt="Special Offers Image"
       layout="responsive"
       width={800}    // Базова ширина для збереження пропорцій
