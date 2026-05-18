@@ -10845,13 +10845,8 @@ description: [
     sku: "67233",
     size: "XS S M L XL",
     category: "Costumes",
-    image: "/Costumes/Proshva Pants Costume/1.avif",
+    image: "/Costumes/Proshva Pants Costume/6.avif",
     images: [
-        "/Costumes/Proshva Pants Costume/2.avif",
-        "/Costumes/Proshva Pants Costume/3.avif",
-        "/Costumes/Proshva Pants Costume/4.avif",
-        "/Costumes/Proshva Pants Costume/5.avif",
-        "/Costumes/Proshva Pants Costume/6.avif",
         "/Costumes/Proshva Pants Costume/7.avif",
         "/Costumes/Proshva Pants Costume/8.avif",
         "/Costumes/Proshva Pants Costume/9.avif",
@@ -10863,25 +10858,25 @@ description: [
             category: "Costumes",
             name: "Proshva Pants Costume",
             description: "A costume crafted from lightweight cotton with delicate lace embroidery.\nFabric: 95% cotton, 5% elastane. Proshva - a light, mostly solid-colored cotton fabric with distinctive lace embroidery.",
-            colors: ["black", "white"]
+            colors: ["white"]
         },
         FR: {
             category: "Costumes",
             name: "Costume avec Pantalon en Proshva",
             description: "Un costume confectionné en coton léger avec une broderie de dentelle délicate.\nTissu : 95 % coton, 5 % élasthanne. Proshva - un tissu en coton léger, généralement uni, avec une broderie de dentelle caractéristique.",
-            colors: ["noir", "blanc"]
+            colors: ["blanc"]
         },
         UA: {
             category: "Костюми",
             name: "Костюм з прошви зі штанами",
             description: "Костюм з легкої бавовняної тканини з делікатною мереживною вишивкою.\nТканина: 95% бавовна, 5% еластан. Прошва - легка, переважно однотонна, бавовняна тканина з характерною мереживною вишивкою.",
-            colors: ["чорний", "білий"]
+            colors: ["білий"]
         },
         RU: {
             category: "Костюмы",
             name: "Костюм с прошвой и брюками",
             description: "Костюм из легкой хлопковой ткани с изящной кружевной вышивкой.\nТкань: 95% хлопок, 5% эластан. Прошва - легкая, преимущественно однотонная хлопковая ткань с характерной кружевной вышивкой.",
-            colors: ["черный", "белый"]
+            colors: ["белый"]
         }
     }
 },
