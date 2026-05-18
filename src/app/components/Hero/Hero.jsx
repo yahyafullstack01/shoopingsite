@@ -141,8 +141,8 @@ export default function Hero() {
 
       {
   type: "image",
-  src: "/hoom/3(1).png",
-  mobileSrc: "/hoom/3(2).png",
+  src: "/hoom/3Leto.png",
+  mobileSrc: "/hoom/3(1).png",
   alt: "Latore banner 3",
 
   ctaText: t[4],
