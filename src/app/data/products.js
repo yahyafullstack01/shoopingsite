@@ -1,5 +1,513 @@
 const products = [
   {
+  id: 305,
+  price: 4100,
+  isTop: false,
+  isNew: true,
+  sku: "99436",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Coraline Dress/1.avif",
+  images: [
+    "/Dress/Coraline Dress/2.avif",
+    "/Dress/Coraline Dress/3.avif",
+    "/Dress/Coraline Dress/4.avif",
+    "/Dress/Coraline Dress/5.avif",
+    "/Dress/Coraline Dress/6.avif",
+    "/Dress/Coraline Dress/7.avif",
+    "/Dress/Coraline Dress/8.avif",
+    "/Dress/Coraline Dress/9.avif",
+    "/Dress/Coraline Dress/10.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Coraline Dress",
+      description: [
+        "The lightweight Coraline dress is created for warm days, sea air, and moments when you want to feel absolute freedom.",
+        "Soft viscose, a deep neckline, and an airy silhouette make the model both refined and effortless.",
+        "The Coraline dress combines femininity, lightness, and natural elegance.",
+        "The deep V-neck visually elongates the silhouette, while soft draping and a tiered cut add lightness and romance to the look.",
+        "The relaxed fit provides comfort in hot weather and allows the dress to be styled both for seaside getaways and summer evening outings.",
+        "Fabric: viscose.",
+        "Season: spring, summer."
+      ],
+      colors: ["camel", "dark blue", "milk white"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe Coraline",
+      description: [
+        "La robe légère Coraline est créée pour les journées chaudes, l’air marin et les moments où l’on veut ressentir une liberté absolue.",
+        "La viscose douce, le décolleté profond et la silhouette aérienne rendent le modèle à la fois raffiné et effortless.",
+        "La robe Coraline associe féminité, légèreté et élégance naturelle.",
+        "Le profond décolleté en V allonge visuellement la silhouette, tandis que les drapés doux et la coupe à étages ajoutent légèreté et romantisme au look.",
+        "La coupe ample assure le confort par temps chaud et permet de porter la robe aussi bien au bord de la mer que lors de sorties estivales en soirée.",
+        "Tissu : viscose.",
+        "Saison : printemps, été."
+      ],
+      colors: ["camel", "bleu foncé", "blanc lait"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Сукня «Coraline»",
+      description: [
+        "Легка сукня «Coraline» створена для теплих днів, морського повітря та моментів, у які хочеться відчувати абсолютну свободу.",
+        "М’яка віскоза, глибоке декольте та повітряний силует роблять модель витонченою й водночас невимушеною.",
+        "Сукня «Coraline» — це поєднання жіночності, легкості та природної елегантності.",
+        "Глибоке V-декольте візуально подовжує силует, а м’які драпірування та багаторівневий крій додають образу легкості й романтичності.",
+        "Вільний фасон забезпечує комфорт у спекотну погоду та дозволяє стилізувати сукню як для відпочинку біля моря, так і для літніх вечірніх виходів.",
+        "Тканина: віскоза.",
+        "Сезон: весна, літо."
+      ],
+      colors: ["кемел", "темно-синій", "молочний"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Платье «Coraline»",
+      description: [
+        "Легкое платье «Coraline» создано для теплых дней, морского воздуха и моментов, когда хочется ощущать абсолютную свободу.",
+        "Мягкая вискоза, глубокое декольте и воздушный силуэт делают модель утонченной и одновременно непринужденной.",
+        "Платье «Coraline» — это сочетание женственности, легкости и природной элегантности.",
+        "Глубокое V-декольте визуально удлиняет силуэт, а мягкие драпировки и многоуровневый крой добавляют образу легкости и романтичности.",
+        "Свободный фасон обеспечивает комфорт в жаркую погоду и позволяет стилизовать платье как для отдыха у моря, так и для летних вечерних выходов.",
+        "Ткань: вискоза.",
+        "Сезон: весна, лето."
+      ],
+      colors: ["кэмел", "темно-синий", "молочный"]
+    }
+  }
+},
+
+  {
+  id: 304,
+  price: 4200,
+  isTop: false,
+  isNew: true,
+  sku: "99435",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Sirena Dress/1.avif",
+  images: [
+    "/Dress/Sirena Dress/2.avif",
+    "/Dress/Sirena Dress/3.avif",
+    "/Dress/Sirena Dress/4.avif",
+    "/Dress/Sirena Dress/5.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Sirena Dress",
+      description: [
+        "The Sirena dress embodies tenderness, natural femininity, and summer lightness.",
+        "An airy silhouette, handmade textured fabric, and a delicate milk shade create an effortless look for warm days and special moments.",
+        "The Sirena dress is made for moments when you want to feel lightness in every movement.",
+        "The accentuated fitted waistline highlights the silhouette, while the relaxed maxi skirt moves beautifully as you walk.",
+        "The laconic top with soft draping and open shoulders makes the look gentle and refined.",
+        "Fabric: handmade eco-crash.",
+        "Season: spring, summer."
+      ],
+      colors: ["milk white"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe Sirena",
+      description: [
+        "La robe Sirena incarne la douceur, la féminité naturelle et la légèreté estivale.",
+        "La silhouette aérienne, le tissu texturé fait main et la délicate teinte blanc lait créent une allure effortless pour les journées chaudes et les moments particuliers.",
+        "La robe Sirena est créée pour ces moments où l’on veut sentir la légèreté à chaque mouvement.",
+        "La taille ajustée accentuée souligne la silhouette, tandis que la jupe maxi ample bouge joliment à chaque pas.",
+        "Le haut épuré avec un drapé doux et les épaules dénudées rend le look délicat et raffiné.",
+        "Tissu : eco-crash fait main.",
+        "Saison : printemps, été."
+      ],
+      colors: ["blanc lait"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Сукня «Sirena»",
+      description: [
+        "Сукня «Sirena» — втілення ніжності, природної жіночності та літньої легкості.",
+        "Повітряний силует, фактурна тканина ручної роботи та делікатний молочний відтінок створюють effortless образ для теплих днів і особливих моментів.",
+        "Сукня «Sirena» створена для тих моментів, коли хочеться відчувати легкість у кожному русі.",
+        "Акцентна приталена лінія талії підкреслює силует, а вільна спідниця maxi красиво рухається під час ходьби.",
+        "Лаконічний верх із м’якою драпіровкою та відкритими плечима робить образ ніжним і витонченим.",
+        "Тканина: еко-креш ручної роботи.",
+        "Сезон: весна, літо."
+      ],
+      colors: ["молочний"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Платье «Sirena»",
+      description: [
+        "Платье «Sirena» — воплощение нежности, природной женственности и летней легкости.",
+        "Воздушный силуэт, фактурная ткань ручной работы и деликатный молочный оттенок создают effortless образ для теплых дней и особых моментов.",
+        "Платье «Sirena» создано для тех моментов, когда хочется ощущать легкость в каждом движении.",
+        "Акцентная приталенная линия талии подчеркивает силуэт, а свободная юбка maxi красиво движется во время ходьбы.",
+        "Лаконичный верх с мягкой драпировкой и открытыми плечами делает образ нежным и утонченным.",
+        "Ткань: эко-креш ручной работы.",
+        "Сезон: весна, лето."
+      ],
+      colors: ["молочный"]
+    }
+  }
+},
+
+  {
+  id: 303,
+  price: 4100,
+  isTop: false,
+  isNew: true,
+  sku: "99434",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Eco Crash Suit/1.avif",
+  images: [
+    "/Costumes/Eco Crash Suit/2.avif",
+    "/Costumes/Eco Crash Suit/3.avif",
+    "/Costumes/Eco Crash Suit/4.avif",
+    "/Costumes/Eco Crash Suit/5.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Eco Crash Suit",
+      description: [
+        "The Eco Crash suit combines natural lightness, comfort, and refined femininity.",
+        "An airy silhouette, handmade textured fabric, and an open-shoulder accent create a relaxed summer mood.",
+        "The off-shoulder top highlights the neck and shoulder line, while voluminous sleeves add softness and lightness to the silhouette.",
+        "Wide high-waisted pants with a waist accent create an elongated, fluid silhouette and provide maximum comfort in movement.",
+        "Fabric: handmade eco-crash.",
+        "Season: spring, summer."
+      ],
+      colors: ["milk white"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume Eco Crash",
+      description: [
+        "Le costume Eco Crash associe légèreté naturelle, confort et féminité raffinée.",
+        "La silhouette aérienne, le tissu texturé fait main et l’accent sur les épaules dénudées créent une allure estivale détendue.",
+        "Le top épaules dénudées souligne la ligne du cou et des épaules, tandis que les manches volumineuses ajoutent douceur et légèreté à la silhouette.",
+        "Le pantalon large à taille haute avec accent sur la taille crée une silhouette allongée et fluide, tout en offrant un confort maximal en mouvement.",
+        "Tissu : eco-crash fait main.",
+        "Saison : printemps, été."
+      ],
+      colors: ["blanc lait"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Еко-креш костюм",
+      description: [
+        "Еко-креш костюм — це поєднання природної легкості, комфорту та витонченої жіночності.",
+        "Повітряний силует, фактурна тканина ручної роботи та акцент на відкритих плечах створюють розслаблений літній настрій.",
+        "Топ із відкритими плечима підкреслює лінію шиї та плечей, а об’ємні рукави додають силуету ніжності та легкості.",
+        "Широкі штани з високою посадкою та акцентом на талії створюють витягнутий, плавний силует і дарують максимальний комфорт у русі.",
+        "Тканина: еко-креш ручної роботи.",
+        "Сезон: весна, літо."
+      ],
+      colors: ["молочний"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Эко-креш костюм",
+      description: [
+        "Эко-креш костюм — это сочетание природной легкости, комфорта и утонченной женственности.",
+        "Воздушный силуэт, фактурная ткань ручной работы и акцент на открытых плечах создают расслабленное летнее настроение.",
+        "Топ с открытыми плечами подчеркивает линию шеи и плеч, а объемные рукава добавляют силуэту нежности и легкости.",
+        "Широкие брюки с высокой посадкой и акцентом на талии создают вытянутый, плавный силуэт и дарят максимальный комфорт в движении.",
+        "Ткань: эко-креш ручной работы.",
+        "Сезон: весна, лето."
+      ],
+      colors: ["молочный"]
+    }
+  }
+},
+
+  {
+  id: 302,
+  price: 2000,
+  isTop: false,
+  isNew: true,
+  sku: "99433",
+  size: "XS S M L XL",
+  category: "Tops",
+  image: "/Top/Eco Crash Top/1.avif",
+  images: [
+    "/Top/Eco Crash Top/2.avif",
+    "/Top/Eco Crash Top/3.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Tops",
+      name: "Eco Crash Top",
+      description: [
+        "The Eco Crash top is a light and airy accent for a summer wardrobe, created for feminine and effortless looks.",
+        "The elastic neckline allows the top to be worn off the shoulders, creating a refined and feminine accent.",
+        "Voluminous sleeves with decorative ties add softness to the look, while the wide elastic insert at the waist highlights the silhouette and ensures a comfortable fit.",
+        "Fabric: handmade eco-crash.",
+        "Season: spring, summer."
+      ],
+      colors: ["milk white"]
+    },
+    FR: {
+      category: "Tops",
+      name: "Top Eco Crash",
+      description: [
+        "Le top Eco Crash est un accent léger et aérien du vestiaire estival, créé pour des looks féminins et effortless.",
+        "L’encolure élastique permet de porter le top épaules dénudées, créant un accent raffiné et féminin.",
+        "Les manches volumineuses avec liens décoratifs ajoutent de la douceur au look, tandis que le large empiècement élastique à la taille souligne la silhouette et assure une coupe confortable.",
+        "Tissu : eco-crash fait main.",
+        "Saison : printemps, été."
+      ],
+      colors: ["blanc lait"]
+    },
+    UA: {
+      category: "Топи",
+      name: "Топ Еко-креш",
+      description: [
+        "Топ Еко-креш — легкий та повітряний акцент літнього гардероба, створений для жіночних і effortless образів.",
+        "Еластична лінія декольте дозволяє носити топ із відкритими плечима, створюючи витончений і жіночний акцент.",
+        "Об’ємні рукави з декоративними зав’язками додають образу ніжності, а широка еластична вставка на талії підкреслює силует та забезпечує комфортну посадку.",
+        "Тканина: еко-креш ручної роботи.",
+        "Сезон: весна, літо."
+      ],
+      colors: ["молочний"]
+    },
+    RU: {
+      category: "Топы",
+      name: "Топ Эко-креш",
+      description: [
+        "Топ Эко-креш — легкий и воздушный акцент летнего гардероба, созданный для женственных и effortless образов.",
+        "Эластичная линия декольте позволяет носить топ с открытыми плечами, создавая утонченный и женственный акцент.",
+        "Объемные рукава с декоративными завязками добавляют образу нежности, а широкая эластичная вставка на талии подчеркивает силуэт и обеспечивает комфортную посадку.",
+        "Ткань: эко-креш ручной работы.",
+        "Сезон: весна, лето."
+      ],
+      colors: ["молочный"]
+    }
+  }
+},
+
+  {
+  id: 301,
+  price: 2100,
+  isTop: false,
+  isNew: true,
+  sku: "99432",
+  size: "XS S M L XL",
+  category: "Pants",
+  image: "/Pants/Aladdin Pants/1.avif",
+  images: [
+    "/Pants/Aladdin Pants/2.avif",
+    "/Pants/Aladdin Pants/3.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Pants",
+      name: "Aladdin Pants",
+      description: [
+        "Aladdin pants are a light and airy model for comfortable summer looks in resort style.",
+        "The relaxed silhouette, handmade textured fabric, and waist accent create an effortless mood with complete freedom of movement.",
+        "The high waist with an elastic waistband comfortably highlights the waist, while the wide silhouette creates smooth, airy lines.",
+        "Tie cuffs at the bottom add a distinctive relaxed mood and make the silhouette even more expressive.",
+        "Fabric: handmade eco-crash.",
+        "Season: spring, summer."
+      ],
+      colors: ["milk white"]
+    },
+    FR: {
+      category: "Pantalons",
+      name: "Pantalon Aladdin",
+      description: [
+        "Le pantalon Aladdin est un modèle léger et aérien pour des looks d’été confortables dans un esprit resort.",
+        "La silhouette ample, le tissu texturé fait main et l’accent sur la taille créent une allure effortless avec une liberté de mouvement totale.",
+        "La taille haute avec ceinture élastique souligne confortablement la taille, tandis que la coupe large crée des lignes fluides et aériennes.",
+        "Les poignets à nouer en bas ajoutent une touche relaxed caractéristique et rendent la silhouette encore plus expressive.",
+        "Tissu : eco-crash fait main.",
+        "Saison : printemps, été."
+      ],
+      colors: ["blanc lait"]
+    },
+    UA: {
+      category: "Брюки",
+      name: "Штани-аладіни",
+      description: [
+        "Штани-аладіни — легка та повітряна модель для комфортних літніх образів у resort style.",
+        "Вільний силует, фактурна тканина ручної роботи та акцент на талії створюють effortless настрій і абсолютну свободу рухів.",
+        "Висока посадка з еластичним поясом комфортно підкреслює талію, а широкий силует створює плавні, повітряні лінії.",
+        "Манжети на зав’язках внизу додають штанам характерного relaxed настрою та роблять силует ще більш виразним.",
+        "Тканина: еко-креш ручної роботи.",
+        "Сезон: весна, літо."
+      ],
+      colors: ["молочний"]
+    },
+    RU: {
+      category: "Брюки",
+      name: "Брюки-аладдины",
+      description: [
+        "Брюки-аладдины — легкая и воздушная модель для комфортных летних образов в resort style.",
+        "Свободный силуэт, фактурная ткань ручной работы и акцент на талии создают effortless настроение и абсолютную свободу движений.",
+        "Высокая посадка с эластичным поясом комфортно подчеркивает талию, а широкий силуэт создает плавные, воздушные линии.",
+        "Манжеты на завязках внизу добавляют брюкам характерное relaxed настроение и делают силуэт еще более выразительным.",
+        "Ткань: эко-креш ручной работы.",
+        "Сезон: весна, лето."
+      ],
+      colors: ["молочный"]
+    }
+  }
+},
+
+  {
+  id: 300,
+  price: 2400,
+  isTop: false,
+  isNew: true,
+  sku: "99431",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Lagune Dress/1.avif",
+  images: [
+    "/Dress/Lagune Dress/2.avif",
+    "/Dress/Lagune Dress/3.avif",
+    "/Dress/Lagune Dress/4.avif",
+    "/Dress/Lagune Dress/5.avif",
+    "/Dress/Lagune Dress/6.avif",
+    "/Dress/Lagune Dress/7.avif",
+    "/Dress/Lagune Dress/8.avif",
+    "/Dress/Lagune Dress/9.avif",
+    "/Dress/Lagune Dress/10.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Lagune Dress",
+      description: [
+        "The Lagune dress is a striking piece made from textured crinkled knit, created for atmospheric summer looks.",
+        "The deep V-neckline and asymmetric wrap visually elongate the silhouette, while open side accents add a modern sensual touch.",
+        "The relaxed cut provides comfort even on a hot day, keeping the look light and effortless.",
+        "Fabric: crinkled knit.",
+        "Season: spring, summer."
+      ],
+      colors: ["chocolate", "milk white", "beige"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe Lagune",
+      description: [
+        "La robe Lagune est une pièce expressive en maille gaufrée texturée, créée pour des looks d’été pleins d’atmosphère.",
+        "Le profond décolleté en V et le drapé asymétrique allongent visuellement la silhouette, tandis que les accents ouverts sur les côtés ajoutent une sensualité moderne.",
+        "La coupe ample offre du confort même par temps chaud, en gardant une allure légère et effortless.",
+        "Tissu : maille gaufrée.",
+        "Saison : printemps, été."
+      ],
+      colors: ["chocolat", "blanc lait", "beige"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Сукня «Lagune»",
+      description: [
+        "Сукня «Lagune» — ефектна модель із фактурного жатого трикотажу, створена для атмосферних літніх образів.",
+        "Глибокий V-подібний виріз та асиметричний запах візуально витягують силует, а відкриті бокові акценти додають образу сучасної чуттєвості.",
+        "Вільний крій дарує комфорт навіть у спекотний день, залишаючи образ легким та effortless.",
+        "Тканина: жатий трикотаж.",
+        "Сезон: весна, літо."
+      ],
+      colors: ["шоколад", "молочний", "беж"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Платье «Lagune»",
+      description: [
+        "Платье «Lagune» — эффектная модель из фактурного жатого трикотажа, созданная для атмосферных летних образов.",
+        "Глубокий V-образный вырез и асимметричный запах визуально вытягивают силуэт, а открытые боковые акценты добавляют образу современной чувственности.",
+        "Свободный крой дарит комфорт даже в жаркий день, оставляя образ легким и effortless.",
+        "Ткань: жатый трикотаж.",
+        "Сезон: весна, лето."
+      ],
+      colors: ["шоколад", "молочный", "беж"]
+    }
+  }
+},
+
+  {
+  id: 299,
+  price: 2900,
+  isTop: false,
+  isNew: true,
+  sku: "99430",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Azura Dress/1.avif",
+  images: [
+    "/Dress/Azura Dress/2.avif",
+    "/Dress/Azura Dress/3.avif",
+    "/Dress/Azura Dress/4.avif",
+    "/Dress/Azura Dress/5.avif",
+    "/Dress/Azura Dress/6.avif",
+    "/Dress/Azura Dress/7for.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Azura Dress",
+      description: [
+        "A light and airy Azura dress created for warm days and special moments.",
+        "The relaxed silhouette drapes softly over the figure without restricting movement, while decorative contrast lace at the neckline adds a refined accent.",
+        "Thanks to its laconic cut, the dress adapts easily both for seaside getaways and summer city looks.",
+        "Fabric: two-layer Egyptian muslin.",
+        "Season: spring, summer."
+      ],
+      colors: ["milk white", "black"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe Azura",
+      description: [
+        "Une robe Azura légère et aérienne, créée pour les journées chaudes et les moments particuliers.",
+        "La silhouette ample tombe délicatement sur la figure sans limiter les mouvements, tandis que la dentelle contrastante décorative au décolleté ajoute une touche raffinée.",
+        "Grâce à sa coupe épurée, la robe s’adapte facilement aux escapades au bord de la mer comme aux looks d’été en ville.",
+        "Tissu : mousseline égyptienne double couche.",
+        "Saison : printemps, été."
+      ],
+      colors: ["blanc lait", "noir"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Сукня «Azura»",
+      description: [
+        "Легка та повітряна сукня «Azura» створена для теплих днів і особливих моментів.",
+        "Вільний силует м’яко спадає по фігурі, не обмежуючи рухів, а декоративне контрастне мереживо на декольте додає образу витонченого акценту.",
+        "Завдяки лаконічному крою сукня легко адаптується як для відпочинку біля моря, так і для міських літніх образів.",
+        "Тканина: двошаровий єгипетський муслін.",
+        "Сезон: весна, літо."
+      ],
+      colors: ["молоко", "чорний"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Платье «Azura»",
+      description: [
+        "Легкое и воздушное платье «Azura» создано для теплых дней и особых моментов.",
+        "Свободный силуэт мягко ниспадает по фигуре, не ограничивая движений, а декоративное контрастное кружево на декольте добавляет образу изысканный акцент.",
+        "Благодаря лаконичному крою платье легко адаптируется как для отдыха у моря, так и для городских летних образов.",
+        "Ткань: двухслойный египетский муслин.",
+        "Сезон: весна, лето."
+      ],
+      colors: ["молочный", "черный"]
+    }
+  }
+},
+
+  {
   id: 298,
   price: 1700,
   isTop: false,
@@ -207,7 +715,7 @@ const products = [
   id: 294,
   price: 3000,
   isTop: false,
-  isNew: true,
+  isNew: false,
   sku: "99425",
   size: "XS S M L XL",
   category: "Jackets",
@@ -277,7 +785,7 @@ const products = [
   id: 295,
   price: 2800,
   isTop: false,
-  isNew: true,
+  isNew: false,
   sku: "99424",
   size: "XS S M L XL",
   category: "Jackets",
@@ -348,6 +856,7 @@ const products = [
     id: 100,
     price: 2100,
     isTop: true,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 1700,
     sku: "98820",
@@ -2172,7 +2681,7 @@ const products = [
     id: 268,
     price: 3190,
     isTop: true,
-    isNew: true,
+    isNew: false,
     sku: "99408",
     size: "XS S M L XL",
     category: "Dresses",
@@ -5183,7 +5692,7 @@ const products = [
   id: 171,
   price: 2300,
   isTop: false,
-  isNew: true,
+  isNew: false,
   // isSpecialOffer: true,
   // discountPrice: 1955,
   sku: "98824",
@@ -6048,6 +6557,7 @@ const products = [
     id: 102,
     price: 2100,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 1785,
     sku: "45530",
@@ -6450,6 +6960,7 @@ const products = [
       {
       id: 13,
       price: 3700,
+      isNew: false,
       // isSpecialOffer: true,
       // discountPrice: 3145,
       sku: "12345",
@@ -6489,6 +7000,7 @@ const products = [
       id: 36,
       price: 1500,
       isTop: false,
+      isNew: false,
       // isSpecialOffer: true,
       // discountPrice: 1275,
       sku: "12350",
@@ -6631,6 +7143,7 @@ const products = [
     id: 99,
     price: 2100,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 1700,
     sku: "98819",
@@ -6759,6 +7272,7 @@ const products = [
   { 
       id: 30,
       price: 2100,
+      isNew: false,
       isTop: false, // Топ продукт
       sku: "12346",
   //      isSpecialOffer: true,
@@ -6811,6 +7325,7 @@ const products = [
       id: 27,
       price: 1760,
       isTop: false,
+      isNew: false,
       sku: "67897",
       // isSpecialOffer: true,
       // discountPrice: 1496,
@@ -6864,6 +7379,7 @@ const products = [
     id: 95,
     price: 2400,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 2040,
     sku: "98815",
@@ -6907,6 +7423,7 @@ const products = [
     id: 125,
     price: 1800,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 1530,
     sku: "67224",
@@ -6951,6 +7468,7 @@ const products = [
     id: 116,
     price: 2100,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 1700,
     sku: "33450",
@@ -6994,6 +7512,7 @@ const products = [
     {
       id: 14,
       price: 1800,
+      isNew: false,
       // isSpecialOffer: true,
       // discountPrice: 1530,
       sku: "12345",
@@ -7028,6 +7547,7 @@ const products = [
         {
       id: 10,
       price: 1350 ,
+      isNew: false,
       sku: "12345",
       // isSpecialOffer: true,
       // discountPrice: 1148,
@@ -7711,6 +8231,7 @@ const products = [
       id: 26,
       price: 2800,
       isTop: false,
+      isNew: false,
       // isSpecialOffer: true,
       // discountPrice: 2520,
       sku: "67896",
@@ -7761,7 +8282,7 @@ const products = [
   id: 182,
   price: 2800,
   isTop: true,
-  isNew: true,
+  isNew: false,
   // isSpecialOffer: true,
   // discountPrice: 2023,
   sku: "99324",
@@ -10504,6 +11025,7 @@ description: [
   //  isSpecialOffer: true,
   //   discountPrice: 2635,
     isTop: false,
+    isNew: false,
     sku: "67241",
     size: "XS S M L XL",
     category: "Dresses",
@@ -10568,6 +11090,7 @@ description: [
     // isSpecialOffer: true,
     // discountPrice: 2125,
     isTop: false,
+    isNew: false,
     sku: "67240",
     size: "XS S M L XL",
     category: "Dresses",
@@ -10703,6 +11226,7 @@ description: [
     id: 137,
     price: 1552,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 1148,
     sku: "67236",
@@ -10748,6 +11272,7 @@ description: [
     id: 136,
     price: 1897,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 1403,
     sku: "67235",
@@ -10945,6 +11470,7 @@ description: [
     id: 132,
     price: 3967.5,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 2933,
     sku: "67231",
@@ -11008,7 +11534,7 @@ description: [
     // isSpecialOffer: true,
     // discountPrice: 3315,
     isTop: false,
-    isNew: true,
+    isNew: false,
     sku: "67230",
     size: "XS S M L XL",
     category: "Dresses",
@@ -11070,6 +11596,7 @@ description: [
     id: 130,
     price: 3960,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 3060,
     sku: "67229",
@@ -11142,6 +11669,7 @@ description: [
     id: 129,
     price: 2000,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 1700,
     sku: "67228",
@@ -11187,6 +11715,7 @@ description: [
     id: 128,
     price: 1800,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 1530,
     sku: "67227",
@@ -11234,6 +11763,7 @@ description: [
     // isSpecialOffer: true,
     // discountPrice: 1530,
     isTop: false,
+    isNew: false,
     sku: "67226",
     size: "XS S M L XL",
     category: "Shirts",
@@ -11279,6 +11809,7 @@ description: [
     // isSpecialOffer: true,
     // discountPrice: 1700,
     isTop: false,
+    isNew: false,
     sku: "67225",
     size: "XS S M L XL",
     category: "Shirts",
@@ -11388,7 +11919,7 @@ description: [
     id: 123,
     price: 4290,
     isTop: false,
-    isNew: true,
+    isNew: false,
   //  isSpecialOffer: true,
   //   discountPrice: 3315,
     sku: "67222",
@@ -11456,6 +11987,7 @@ description: [
     // isSpecialOffer: true,
     // discountPrice: 1700,
     isTop: false,
+    isNew: false,
     sku: "67221",
     size: "XS S M L XL",
     category: "Shirts",
@@ -11502,6 +12034,7 @@ description: [
     // isSpecialOffer: true,
     // discountPrice: 2125,
     isTop: false,
+    isNew: false,
     sku: "67219",
     size: "XS S M L XL",
     category: "Dresses",
@@ -11570,6 +12103,7 @@ description: [
     id: 118,
     price: 3700,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 3145,
     sku: "67217",
@@ -11641,6 +12175,7 @@ description: [
     id: 117,
     price: 3565,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 2635,
     sku: "67216",
@@ -11704,6 +12239,7 @@ description: [
     id: 115,
     price: 2950,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 2508,
     sku: "67215",
@@ -11810,6 +12346,7 @@ description: [
     id: 113,
     price: 4015,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 3103,
     sku: "67214",
@@ -11872,6 +12409,7 @@ description: [
     id: 112,
     price: 4015,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 3103,
     sku: "67213",
@@ -11931,6 +12469,7 @@ description: [
     id: 111,
     price: 4015,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 3103,
     sku: "67212",
@@ -11990,6 +12529,7 @@ description: [
     id: 110,
     price: 1897,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 1403,
     sku: "78843",
@@ -12035,6 +12575,7 @@ description: [
     id: 109,
     price: 1705,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 1318,
     sku: "78842",
@@ -12080,6 +12621,7 @@ description: [
     id: 108,
     price: 1800,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 1530,
     sku: "78841",
@@ -12171,6 +12713,7 @@ description: [
     id: 104,
     price: 3277,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 2423,
     sku: "67211",
@@ -12233,6 +12776,7 @@ description: [
     id: 103,
     price: 3277,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 2423,
     sku: "67210",
@@ -12341,6 +12885,7 @@ description: [
     id: 97,
     price: 2805,
     isTop: true,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 2168,
     sku: "98817",
@@ -12396,6 +12941,7 @@ description: [
     id: 96,
     price: 2100,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 1785,
     sku: "98816",
@@ -12448,6 +12994,7 @@ description: [
     id: 94,
     price: 2000,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 1700,
     sku: "98814",
@@ -12493,6 +13040,7 @@ description: [
     id: 93,
     price: 2150,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 1828,
     sku: "98813",
@@ -12548,6 +13096,7 @@ description: [
     id: 92,
     price: 2100,
     isTop: false,
+    isNew: false,
   //  isSpecialOffer: true,
   //   discountPrice: 1785,
     sku: "98812",
@@ -12603,6 +13152,7 @@ description: [
     id: 91,
     price: 2100,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 1785,
     sku: "98811",
@@ -12656,6 +13206,7 @@ description: [
     id: 90,
     price: 2100,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 1785,
     sku: "98810",
@@ -12701,6 +13252,7 @@ description: [
     id: 89,
     price: 1375,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 1169,
     sku: "98809",
@@ -12751,6 +13303,7 @@ description: [
     id: 88,
     price: 1500,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 1275,
     sku: "98808",
@@ -12802,6 +13355,7 @@ description: [
     id: 87,
     price: 1800,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 1530,
     sku: "98807",
@@ -12846,6 +13400,7 @@ description: [
     id: 86,
     price: 2098,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 1551,
     sku: "98806",
@@ -12897,6 +13452,7 @@ description: [
     id: 81,
     price: 2420,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 1870,
     sku: "98801",
@@ -12943,6 +13499,7 @@ description: [
     id: 80,
     price: 2420,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 1870,
     sku: "98800",
@@ -12988,6 +13545,7 @@ description: [
     id: 79,
     price: 2673,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 2066,
     sku: "98799",
@@ -13033,6 +13591,7 @@ description: [
     id: 78,
     price: 1738,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 1343,
     sku: "98798",
@@ -13221,6 +13780,7 @@ description: [
     id: 74,
     price: 2185,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 1615,
     sku: "98794",
@@ -13269,6 +13829,7 @@ description: [
     id: 73,
     price: 2327,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 1720,
     sku: "98793",
@@ -13316,6 +13877,7 @@ description: [
     id: 72,
     price: 1587,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 1173,
     sku: "98792",
@@ -13611,6 +14173,7 @@ description: [
     id: 63,
     price: 2327,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 1720,
     sku: "98784",
@@ -13659,6 +14222,7 @@ description: [
     id: 62,
     price: 4512,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 3335,
     sku: "98783",
@@ -13712,6 +14276,7 @@ description: [
     id: 59,
     price: 3921,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 3030,
     sku: "98780",
@@ -13785,6 +14350,7 @@ description: [
     id: 58,
     price: 3921,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 3030,
     sku: "98779",
@@ -13858,6 +14424,7 @@ description: [
     id: 57,
     price: 3921,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 3030,
     sku: "98778",
@@ -13923,6 +14490,7 @@ description: [
     id: 55,
     price: 3703,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 2737,
     sku: "98776",
@@ -13998,6 +14566,7 @@ description: [
     id: 54,
     price: 3703,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 2737,
     sku: "98775",
@@ -14055,6 +14624,7 @@ description: [
     id: 53,
     price: 4312,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 3332,
     sku: "98774",
@@ -14111,6 +14681,7 @@ description: [
     id: 52,
     price: 4312,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 3332,
     sku: "98773",
@@ -14170,6 +14741,7 @@ description: [
     id: 51,
     price: 4312,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 3332,
     sku: "98772",
@@ -14226,6 +14798,7 @@ description: [
     id: 49,
     price: 3487,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 2695,
     sku: "98770",
@@ -14291,6 +14864,7 @@ description: [
     id: 47,
     price: 3283,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 2427,
     sku: "98768",
@@ -14361,6 +14935,7 @@ description: [
     id: 46,
    price: 3835,
    isTop: false,
+   isNew: false,
     isSpecialOffer: true,
     discountPrice: 2835,
     sku: "98767",
@@ -14416,6 +14991,7 @@ description: [
     id: 45,
     price: 3835,
     isTop: false,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 2835,
     sku: "98766",
@@ -14496,6 +15072,7 @@ description: [
     id: 44,
     price: 4312,
     isTop: true,
+    isNew: false,
     // isSpecialOffer: true,
     // discountPrice: 3332,
     sku: "98765",
@@ -14669,6 +15246,7 @@ description: [
 
     price: 1850,
     isTop: false,
+    isNew: false,
 
     // isSpecialOffer: true,
     // discountPrice: 1573,
@@ -15013,6 +15591,7 @@ description: [
     {
       id: 21,
       price: 3025,
+      isNew: false,
       isTop: false, // Not marked as a top product
       // isSpecialOffer: true,
       // discountPrice: 2571,
@@ -15064,6 +15643,7 @@ description: [
     {
       id: 22,
       price: 1650,
+      isNew: false,
       isTop: false, // Not marked as a top product
 
       // isSpecialOffer: true,
@@ -15116,6 +15696,7 @@ description: [
       id: 23,
       price: 4200,
       isTop: false,
+      isNew: false,
       sku: "67893",
       // isSpecialOffer: true,
       // discountPrice: 3570,
@@ -15206,6 +15787,7 @@ description: [
     
     { id: 28,
       price: 2100,
+      isNew: false,
       isTop: false, // Топ продукт
       // isSpecialOffer: true,
       // discountPrice: 1785,
@@ -15258,6 +15840,7 @@ description: [
     
     { id: 29,
       price:  2100,
+      isNew: false,
       isTop: false, // Топ продукт
       // isSpecialOffer: true,
       // discountPrice: 1785,
@@ -15414,6 +15997,7 @@ description: [
       id: 37,
       price: 1375,
       isTop: false,
+      isNew: false,
       // isSpecialOffer: true,
       // discountPrice: 1169,
       sku: "12351",
@@ -15466,6 +16050,7 @@ description: [
       id: 38,
       price: 1375,
       isTop: false,
+      isNew: false,
       // isSpecialOffer: true,
       // discountPrice: 1169,
       sku: "12352",
@@ -15559,6 +16144,7 @@ description: [
       id: 40,
       price: 1250,
       isTop: false,
+      isNew: false,
       // isSpecialOffer: true,
       //  discountPrice: 1063,
       sku: "54321",
@@ -15613,6 +16199,7 @@ description: [
       id: 41,
       price: 1500,
       isTop: false,
+      isNew: false,
       // isSpecialOffer: true,
       // discountPrice: 1275,
       sku: "65432",
@@ -15664,6 +16251,7 @@ description: [
       id: 42,
       price: 1500,
       isTop: false,
+      isNew: false,
       // isSpecialOffer: true,
       // discountPrice: 1275,
       sku: "76543",
