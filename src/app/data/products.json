@@ -11082,13 +11082,8 @@
     "sku": "67233",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Proshva Pants Costume/1.avif",
+    "image": "/Costumes/Proshva Pants Costume/6.avif",
     "images": [
-      "/Costumes/Proshva Pants Costume/2.avif",
-      "/Costumes/Proshva Pants Costume/3.avif",
-      "/Costumes/Proshva Pants Costume/4.avif",
-      "/Costumes/Proshva Pants Costume/5.avif",
-      "/Costumes/Proshva Pants Costume/6.avif",
       "/Costumes/Proshva Pants Costume/7.avif",
       "/Costumes/Proshva Pants Costume/8.avif",
       "/Costumes/Proshva Pants Costume/9.avif",
@@ -11213,7 +11208,7 @@
   },
   {
     "id": 132,
-    "price": 3967.5,
+    "price": 3967,
     "isTop": false,
     "isNew": false,
     "sku": "67231",
@@ -12070,7 +12065,7 @@
   },
   {
     "id": 117,
-    "price": 3565,
+    "price": 3967,
     "isTop": false,
     "isNew": false,
     "sku": "67216",

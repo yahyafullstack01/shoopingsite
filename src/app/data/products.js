@@ -11468,7 +11468,7 @@ description: [
 
   {
     id: 132,
-    price: 3967.5,
+    price: 3967,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
