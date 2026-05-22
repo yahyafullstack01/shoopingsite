@@ -15,9 +15,6 @@ const products = [
     "/Dress/Coraline Dress/5.avif",
     "/Dress/Coraline Dress/6.avif",
     "/Dress/Coraline Dress/7.avif",
-    "/Dress/Coraline Dress/8.avif",
-    "/Dress/Coraline Dress/9.avif",
-    "/Dress/Coraline Dress/10.avif",
   ],
   sizes: ["XS", "S", "M", "L", "XL"],
   translations: {
@@ -33,7 +30,7 @@ const products = [
         "Fabric: viscose.",
         "Season: spring, summer."
       ],
-      colors: ["camel", "dark blue", "milk white"]
+      colors: ["camel", "dark blue"]
     },
     FR: {
       category: "Robes",
@@ -47,7 +44,7 @@ const products = [
         "Tissu : viscose.",
         "Saison : printemps, été."
       ],
-      colors: ["camel", "bleu foncé", "blanc lait"]
+      colors: ["camel", "bleu foncé"]
     },
     UA: {
       category: "Сукні",
@@ -61,7 +58,7 @@ const products = [
         "Тканина: віскоза.",
         "Сезон: весна, літо."
       ],
-      colors: ["кемел", "темно-синій", "молочний"]
+      colors: ["кемел", "темно-синій"]
     },
     RU: {
       category: "Платья",
@@ -75,7 +72,7 @@ const products = [
         "Ткань: вискоза.",
         "Сезон: весна, лето."
       ],
-      colors: ["кэмел", "темно-синий", "молочный"]
+      colors: ["кэмел", "темно-синий"]
     }
   }
 },

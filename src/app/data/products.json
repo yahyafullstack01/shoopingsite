@@ -14,10 +14,7 @@
       "/Dress/Coraline Dress/4.avif",
       "/Dress/Coraline Dress/5.avif",
       "/Dress/Coraline Dress/6.avif",
-      "/Dress/Coraline Dress/7.avif",
-      "/Dress/Coraline Dress/8.avif",
-      "/Dress/Coraline Dress/9.avif",
-      "/Dress/Coraline Dress/10.avif"
+      "/Dress/Coraline Dress/7.avif"
     ],
     "sizes": [
       "XS",
@@ -41,8 +38,7 @@
         ],
         "colors": [
           "camel",
-          "dark blue",
-          "milk white"
+          "dark blue"
         ]
       },
       "FR": {
@@ -59,8 +55,7 @@
         ],
         "colors": [
           "camel",
-          "bleu foncé",
-          "blanc lait"
+          "bleu foncé"
         ]
       },
       "UA": {
@@ -77,8 +72,7 @@
         ],
         "colors": [
           "кемел",
-          "темно-синій",
-          "молочний"
+          "темно-синій"
         ]
       },
       "RU": {
@@ -95,8 +89,7 @@
         ],
         "colors": [
           "кэмел",
-          "темно-синий",
-          "молочный"
+          "темно-синий"
         ]
       }
     }
