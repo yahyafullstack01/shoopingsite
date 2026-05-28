@@ -909,7 +909,7 @@ const products = [
 
 {
   id: 292,
-  price: 2310,
+  price: 2300,
   isTop: false,
   isNew: false,
   sku: "99423",
@@ -1066,7 +1066,7 @@ const products = [
 
 {
   id: 290,
-  price: 1705,
+  price: 1700,
   isTop: false,
   isNew: false,
   sku: "99421",
@@ -1143,7 +1143,7 @@ const products = [
 
 {
   id: 289,
-  price: 3245,
+  price: 3200,
   isTop: false,
   isNew: false,
   sku: "99420",
@@ -1218,7 +1218,7 @@ const products = [
 
   {
   id: 288,
-  price: 4950,
+  price: 5000,
   isTop: false,
   isNew: false,
   sku: "99419",
@@ -1290,7 +1290,7 @@ const products = [
 
 {
   id: 287,
-  price: 2145,
+  price: 2100,
   isTop: false,
   isNew: false,
   sku: "99418",
@@ -2676,7 +2676,7 @@ const products = [
 
   {
     id: 268,
-    price: 3190,
+    price: 3200,
     isTop: true,
     isNew: false,
     sku: "99408",
@@ -10411,7 +10411,7 @@ const products = [
 
   {
   id: 151,
-  price: 5865,
+  price: 5900,
   isTop: false,
   isNew: false,
   // isSpecialOffer: true,
@@ -10559,7 +10559,7 @@ const products = [
 // },
   {
   id: 149,
-  price: 5865,
+  price: 5900,
   isTop: false,
   isNew: false,
   // isSpecialOffer: true,
@@ -10751,7 +10751,7 @@ description: [
 
     {
     id: 146,
-    price: 4290,
+    price: 4300,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -10814,7 +10814,7 @@ description: [
 
   {
   id: 145,
-  price: 4290,
+  price: 4300,
   isTop: false,
   isNew: false,
   // isSpecialOffer: true,
@@ -10877,7 +10877,7 @@ description: [
 
     {
     id: 144,
-    price: 3392,
+    price: 3400,
     // isSpecialOffer: true,
     // discountPrice: 2508,
     isTop: true,
@@ -10943,7 +10943,7 @@ description: [
 
     {
     id: 143,
-    price: 3392,
+    price: 3400,
     isTop: true,
     isNew: false,
     // isSpecialOffer: true,
@@ -11018,7 +11018,7 @@ description: [
 
 {
     id: 142,
-    price: 3565,
+    price: 3600,
   //  isSpecialOffer: true,
   //   discountPrice: 2635,
     isTop: false,
@@ -11083,7 +11083,7 @@ description: [
 
 {
     id: 141,
-    price: 2875,
+    price: 2900,
     // isSpecialOffer: true,
     // discountPrice: 2125,
     isTop: false,
@@ -11148,7 +11148,7 @@ description: [
 
 {
     id: 140,
-    price: 3565,
+    price: 3600,
     isTop: true,
     isNew: false,
     // isSpecialOffer: true,
@@ -11221,7 +11221,7 @@ description: [
 
 {
     id: 137,
-    price: 1552,
+    price: 1600,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -11267,7 +11267,7 @@ description: [
 
 {
     id: 136,
-    price: 1897,
+    price: 1900,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -11312,7 +11312,7 @@ description: [
 
   {
     id: 135,
-    price: 3450,
+    price: 3500,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -11405,7 +11405,7 @@ description: [
 
   {
     id: 133,
-    price: 3080,
+    price: 3100,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -11465,7 +11465,7 @@ description: [
 
   {
     id: 132,
-    price: 3967,
+    price: 4000,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -11527,7 +11527,7 @@ description: [
 
 {
     id: 131,
-    price: 4290,
+    price: 4300,
     // isSpecialOffer: true,
     // discountPrice: 3315,
     isTop: false,
@@ -11591,7 +11591,7 @@ description: [
 
   {
     id: 130,
-    price: 3960,
+    price: 4000,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -11850,7 +11850,7 @@ description: [
 
   {
     id: 124,
-    price: 3850,
+    price: 3900,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -11914,7 +11914,7 @@ description: [
   },
   {
     id: 123,
-    price: 4290,
+    price: 4300,
     isTop: false,
     isNew: false,
   //  isSpecialOffer: true,
@@ -12027,7 +12027,7 @@ description: [
 
   {
     id: 120,
-    price: 2875,
+    price: 2900,
     // isSpecialOffer: true,
     // discountPrice: 2125,
     isTop: false,
@@ -12170,7 +12170,7 @@ description: [
 
   {
     id: 117,
-    price: 3565,
+    price: 3600,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -12341,7 +12341,7 @@ description: [
 
   {
     id: 113,
-    price: 4015,
+    price: 4000,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -12404,7 +12404,7 @@ description: [
 
   {
     id: 112,
-    price: 4015,
+    price: 4000,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -12464,7 +12464,7 @@ description: [
 
   {
     id: 111,
-    price: 4015,
+    price: 4000,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -12524,7 +12524,7 @@ description: [
 
   {
     id: 110,
-    price: 1897,
+    price: 1900,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -12570,7 +12570,7 @@ description: [
 
   {
     id: 109,
-    price: 1705,
+    price: 1700,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -12708,7 +12708,7 @@ description: [
 
   {
     id: 104,
-    price: 3277,
+    price: 3300,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -12771,7 +12771,7 @@ description: [
 
   {
     id: 103,
-    price: 3277,
+    price: 3300,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -12880,7 +12880,7 @@ description: [
 
   {
     id: 97,
-    price: 2805,
+    price: 2800,
     isTop: true,
     isNew: false,
     // isSpecialOffer: true,
@@ -13395,7 +13395,7 @@ description: [
   },  
   {
     id: 86,
-    price: 2098,
+    price: 2100,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -13447,7 +13447,7 @@ description: [
 
   {
     id: 81,
-    price: 2420,
+    price: 2400,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -13494,7 +13494,7 @@ description: [
 
   {
     id: 80,
-    price: 2420,
+    price: 2400,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -13540,7 +13540,7 @@ description: [
   
   {
     id: 79,
-    price: 2673,
+    price: 2700,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -13586,7 +13586,7 @@ description: [
   
   {
     id: 78,
-    price: 1738,
+    price: 1700,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -13634,7 +13634,7 @@ description: [
 
   {
     id: 77,
-    price: 4158,
+    price: 4200,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -13680,7 +13680,7 @@ description: [
   
   {
     id: 76,
-    price: 5093,
+    price: 5100,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -13775,7 +13775,7 @@ description: [
 
   {
     id: 74,
-    price: 2185,
+    price: 2200,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -13824,7 +13824,7 @@ description: [
 
   {
     id: 73,
-    price: 2327,
+    price: 2300,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -13872,7 +13872,7 @@ description: [
 
   {
     id: 72,
-    price: 1587,
+    price: 1600,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -13919,7 +13919,7 @@ description: [
 
   {
     id: 71,
-    price: 6095,
+    price: 6100,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -14168,7 +14168,7 @@ description: [
 
   {
     id: 63,
-    price: 2327,
+    price: 2300,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -14217,7 +14217,7 @@ description: [
 
   {
     id: 62,
-    price: 4512,
+    price: 4500,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -14271,7 +14271,7 @@ description: [
 
   {
     id: 59,
-    price: 3921,
+    price: 3900,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -14345,7 +14345,7 @@ description: [
 
   {
     id: 58,
-    price: 3921,
+    price: 3900,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -14419,7 +14419,7 @@ description: [
   
   {
     id: 57,
-    price: 3921,
+    price: 3900,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -14485,7 +14485,7 @@ description: [
 
   {
     id: 55,
-    price: 3703,
+    price: 3700,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -14561,7 +14561,7 @@ description: [
   
   {
     id: 54,
-    price: 3703,
+    price: 3700,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -14619,7 +14619,7 @@ description: [
 
   {
     id: 53,
-    price: 4312,
+    price: 4300,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -14676,7 +14676,7 @@ description: [
 
   {
     id: 52,
-    price: 4312,
+    price: 4300,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -14736,7 +14736,7 @@ description: [
 
   {
     id: 51,
-    price: 4312,
+    price: 4300,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -14793,7 +14793,7 @@ description: [
 
   {
     id: 49,
-    price: 3487,
+    price: 3500,
     isTop: false,
     isNew: false,
     // isSpecialOffer: true,
@@ -15066,7 +15066,7 @@ description: [
 
   {
     id: 44,
-    price: 4312,
+    price: 4300,
     isTop: true,
     isNew: false,
     // isSpecialOffer: true,
