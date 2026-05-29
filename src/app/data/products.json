@@ -1,5 +1,454 @@
 [
   {
+    "id": 310,
+    "price": 3400,
+    "isTop": false,
+    "isNew": true,
+    "sku": "99441",
+    "size": "XS S M L XL",
+    "category": "Dresses",
+    "image": "/Dress/Iris Dress/1.avif",
+    "images": [
+      "/Dress/Iris Dress/2.avif",
+      "/Dress/Iris Dress/3.avif",
+      "/Dress/Iris Dress/4.avif",
+      "/Dress/Iris Dress/5.avif"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "translations": {
+      "EN": {
+        "category": "Dresses",
+        "name": "Iris Dress",
+        "description": [
+          "The Iris dress is a light and airy model made from natural two-layer muslin in a delicate blue shade.",
+          "The relaxed silhouette, tiered hem, and delicate lace create a romantic look with a feeling of summer freedom.",
+          "The model features a relaxed straight silhouette that does not restrict movement and provides maximum comfort.",
+          "The tiered hem with contrasting inserts and delicate lace adds a gentle romantic mood and draws attention to the details.",
+          "The minimalist cut makes the dress easy to style for vacations, travel, and city summer looks with natural accessories and footwear.",
+          "Fabric: natural two-layer muslin.",
+          "Season: spring, summer."
+        ],
+        "colors": [
+          "light blue"
+        ]
+      },
+      "FR": {
+        "category": "Robes",
+        "name": "Robe Iris",
+        "description": [
+          "La robe Iris est un modèle léger et aérien en mousseline naturelle double couche dans une délicate nuance bleu clair.",
+          "La silhouette ample, le bas à étages et la dentelle délicate créent une allure romantique avec une sensation de liberté estivale.",
+          "Le modèle présente une coupe droite ample qui ne limite pas les mouvements et offre un confort maximal.",
+          "Le bas à étages avec des empiècements contrastés et une dentelle délicate apporte une douce note romantique et met l’accent sur les détails.",
+          "La coupe minimaliste permet de styliser facilement la robe pour les vacances, les voyages et les looks d’été en ville avec des accessoires et chaussures naturels.",
+          "Tissu : mousseline naturelle double couche.",
+          "Saison : printemps, été."
+        ],
+        "colors": [
+          "bleu clair"
+        ]
+      },
+      "UA": {
+        "category": "Сукні",
+        "name": "Сукня «Iris»",
+        "description": [
+          "Сукня «Iris» — легка та повітряна модель із натурального двошарового мусліну у ніжному блакитному відтінку.",
+          "Вільний силует, багатоярусний низ та делікатне мереживо створюють романтичний образ із відчуттям літньої свободи.",
+          "Модель має вільний прямий силует, який не сковує рухів та створює максимально комфортну посадку.",
+          "Багатоярусний низ із контрастними вставками та делікатним мереживом додає сукні ніжного романтичного настрою та акцентує увагу на деталях.",
+          "Мінімалістичний крій дозволяє легко стилізувати модель як для відпочинку та подорожей, так і для міських літніх образів у поєднанні з натуральними аксесуарами та взуттям.",
+          "Тканина: натуральний двошаровий муслін.",
+          "Сезон: весна, літо."
+        ],
+        "colors": [
+          "блакитний"
+        ]
+      },
+      "RU": {
+        "category": "Платья",
+        "name": "Платье «Iris»",
+        "description": [
+          "Платье «Iris» — легкая и воздушная модель из натурального двухслойного муслина в нежном голубом оттенке.",
+          "Свободный силуэт, многоярусный низ и деликатное кружево создают романтичный образ с ощущением летней свободы.",
+          "Модель имеет свободный прямой силуэт, который не сковывает движений и обеспечивает максимально комфортную посадку.",
+          "Многоярусный низ с контрастными вставками и деликатным кружевом добавляет платью нежного романтичного настроения и акцентирует внимание на деталях.",
+          "Минималистичный крой позволяет легко стилизовать модель для отдыха, путешествий и городских летних образов в сочетании с натуральными аксессуарами и обувью.",
+          "Ткань: натуральный двухслойный муслин.",
+          "Сезон: весна, лето."
+        ],
+        "colors": [
+          "голубой"
+        ]
+      }
+    }
+  },
+  {
+    "id": 309,
+    "price": 2700,
+    "isTop": false,
+    "isNew": true,
+    "sku": "99440",
+    "size": "XS S M L XL",
+    "category": "Dresses",
+    "image": "/Dress/Bella Dress/1.avif",
+    "images": [
+      "/Dress/Bella Dress/2.avif",
+      "/Dress/Bella Dress/3.avif",
+      "/Dress/Bella Dress/4.avif",
+      "/Dress/Bella Dress/5.avif"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "translations": {
+      "EN": {
+        "category": "Dresses",
+        "name": "Bella Dress",
+        "description": [
+          "The Bella dress is an elegant model made from natural proshva, created for light and feminine summer looks.",
+          "Its laconic silhouette, delicate fabric texture, and soft fit make it versatile for the city, vacations, and special moments.",
+          "The model features a neat fitted top with a square neckline that beautifully highlights the shoulders and neck.",
+          "The relaxed skirt moves softly as you walk, creating a light and romantic silhouette.",
+          "Thanks to its minimalist design, the dress is easy to style in casual looks and more feminine summer combinations.",
+          "The dress is perfect for walks, vacations, travel, and warm evenings when you want to combine comfort and refinement.",
+          "Fabric: natural proshva.",
+          "Season: spring, summer."
+        ],
+        "colors": [
+          "beige"
+        ]
+      },
+      "FR": {
+        "category": "Robes",
+        "name": "Robe Bella",
+        "description": [
+          "La robe Bella est un modèle raffiné en broderie anglaise naturelle, créé pour des looks d’été légers et féminins.",
+          "Sa silhouette laconique, la texture délicate du tissu et sa coupe douce la rendent polyvalente pour la ville, les vacances et les moments particuliers.",
+          "Le modèle présente un haut ajusté soigné avec une encolure carrée qui souligne joliment la ligne des épaules et du cou.",
+          "La jupe ample bouge doucement à chaque pas, créant une silhouette légère et romantique.",
+          "Grâce à son design minimaliste, la robe se stylise facilement dans des looks casual comme dans des associations estivales plus féminines.",
+          "Elle est idéale pour les promenades, les vacances, les voyages et les soirées chaudes où l’on veut associer confort et raffinement.",
+          "Tissu : broderie anglaise naturelle.",
+          "Saison : printemps, été."
+        ],
+        "colors": [
+          "beige"
+        ]
+      },
+      "UA": {
+        "category": "Сукні",
+        "name": "Сукня «Bella»",
+        "description": [
+          "Сукня «Bella» — витончена модель із натуральної прошви, створена для легких та жіночних літніх образів.",
+          "Лаконічний силует, делікатна фактура тканини та м’яка посадка роблять її універсальною для міста, відпочинку чи особливих моментів.",
+          "Модель має акуратний приталений верх із квадратним вирізом, який красиво підкреслює лінію плечей та шиї.",
+          "Вільна спідниця м’яко рухається під час ходи, створюючи легкий та романтичний силует.",
+          "Завдяки мінімалістичному дизайну сукня легко стилізується як у casual-образах, так і в більш жіночних літніх поєднаннях.",
+          "Сукня ідеально пасує для прогулянок, відпочинку, подорожей та теплих вечорів, коли хочеться поєднати комфорт і витонченість.",
+          "Тканина: натуральна прошва.",
+          "Сезон: весна, літо."
+        ],
+        "colors": [
+          "бежевий"
+        ]
+      },
+      "RU": {
+        "category": "Платья",
+        "name": "Платье «Bella»",
+        "description": [
+          "Платье «Bella» — утонченная модель из натуральной прошвы, созданная для легких и женственных летних образов.",
+          "Лаконичный силуэт, деликатная фактура ткани и мягкая посадка делают его универсальным для города, отдыха и особых моментов.",
+          "Модель имеет аккуратный приталенный верх с квадратным вырезом, который красиво подчеркивает линию плеч и шеи.",
+          "Свободная юбка мягко движется при ходьбе, создавая легкий и романтичный силуэт.",
+          "Благодаря минималистичному дизайну платье легко стилизуется как в casual-образах, так и в более женственных летних сочетаниях.",
+          "Платье идеально подходит для прогулок, отдыха, путешествий и теплых вечеров, когда хочется сочетать комфорт и утонченность.",
+          "Ткань: натуральная прошва.",
+          "Сезон: весна, лето."
+        ],
+        "colors": [
+          "бежевый"
+        ]
+      }
+    }
+  },
+  {
+    "id": 308,
+    "price": 2700,
+    "isTop": false,
+    "isNew": true,
+    "sku": "99439",
+    "size": "XS S M L XL",
+    "category": "Dresses",
+    "image": "/Dress/Linen mini/1.avif",
+    "images": [
+      "/Dress/Linen mini/2.avif",
+      "/Dress/Linen mini/3.avif",
+      "/Dress/Linen mini/4.avif",
+      "/Dress/Linen mini/5.avif"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "translations": {
+      "EN": {
+        "category": "Dresses",
+        "name": "Linen mini Dress",
+        "description": [
+          "The Linen mini dress is a laconic model made from 100% natural linen, created for light summer looks.",
+          "Its relaxed silhouette, soft pleats, and minimalist design make it a versatile base for the city, vacations, and travel.",
+          "The model features a relaxed A-line silhouette with soft vertical pleats that create fluid movement and visually elongate the figure.",
+          "The high collar adds a modern accent, while the minimalist cut makes the dress easy to style in different ways.",
+          "It pairs easily with sandals or open-toe shoes, as well as statement boots and accessories for a more styled look.",
+          "Fabric: 100% linen.",
+          "Season: spring, summer."
+        ],
+        "colors": [
+          "beige"
+        ]
+      },
+      "FR": {
+        "category": "Robes",
+        "name": "Robe Linen mini",
+        "description": [
+          "La robe Linen mini est un modèle laconique en lin 100% naturel, créé pour des looks d’été légers.",
+          "Sa silhouette ample, ses plis souples et son design minimaliste en font une base polyvalente pour la ville, les vacances et les voyages.",
+          "Le modèle présente une coupe A ample avec de doux plis verticaux qui créent un mouvement fluide du tissu et allongent visuellement la silhouette.",
+          "Le col montant apporte un accent moderne, tandis que la coupe minimaliste rend la robe facile à styliser de différentes façons.",
+          "Elle se porte facilement avec des sandales ou des nu-pieds, mais aussi avec des bottes et accessoires plus affirmés pour un look plus travaillé.",
+          "Tissu : 100% lin.",
+          "Saison : printemps, été."
+        ],
+        "colors": [
+          "beige"
+        ]
+      },
+      "UA": {
+        "category": "Сукні",
+        "name": "Сукня «Linen mini»",
+        "description": [
+          "Сукня «Linen mini» — лаконічна модель із 100% натурального льону, створена для легких літніх образів.",
+          "Вільний силует, м’які складки та мінімалістичний дизайн роблять її універсальною базою для міста, відпочинку чи подорожей.",
+          "Модель має вільний А-силует із м’якими вертикальними складками, що створюють плавний рух тканини та візуально витягують силует.",
+          "Високий комір додає образу сучасного акценту, а мінімалістичний крій робить сукню універсальною для різних стилізацій.",
+          "Сукня легко поєднується як із сандалями чи босоніжками, так і з акцентними чоботами та аксесуарами для більш стилізованого образу.",
+          "Тканина: 100% льон.",
+          "Сезон: весна, літо."
+        ],
+        "colors": [
+          "бежевий"
+        ]
+      },
+      "RU": {
+        "category": "Платья",
+        "name": "Платье «Linen mini»",
+        "description": [
+          "Платье «Linen mini» — лаконичная модель из 100% натурального льна, созданная для легких летних образов.",
+          "Свободный силуэт, мягкие складки и минималистичный дизайн делают его универсальной базой для города, отдыха и путешествий.",
+          "Модель имеет свободный А-силуэт с мягкими вертикальными складками, которые создают плавное движение ткани и визуально вытягивают силуэт.",
+          "Высокий воротник добавляет образу современный акцент, а минималистичный крой делает платье универсальным для разных стилизаций.",
+          "Платье легко сочетается как с сандалиями или босоножками, так и с акцентными сапогами и аксессуарами для более стилизованного образа.",
+          "Ткань: 100% лен.",
+          "Сезон: весна, лето."
+        ],
+        "colors": [
+          "бежевый"
+        ]
+      }
+    }
+  },
+  {
+    "id": 307,
+    "price": 3400,
+    "isTop": false,
+    "isNew": true,
+    "sku": "99438",
+    "size": "XS S M L XL",
+    "category": "Dresses",
+    "image": "/Dress/Elza Dress/1.avif",
+    "images": [
+      "/Dress/Elza Dress/2.avif",
+      "/Dress/Elza Dress/3.avif",
+      "/Dress/Elza Dress/4.avif",
+      "/Dress/Elza Dress/5.avif"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "translations": {
+      "EN": {
+        "category": "Dresses",
+        "name": "Elza Dress",
+        "description": [
+          "The Elza dress is a delicate summer look made from natural two-layer muslin, created for lightness and femininity.",
+          "The airy silhouette, delicate sleeves, and textured details add a romantic mood and effortless elegance to the model.",
+          "The dress features a refined fitted silhouette with a waist accent, a square neckline, and voluminous sleeves that create a gentle and feminine look.",
+          "Decorative textured inserts and horizontal elements at the hem give the piece a special character and delicate romance.",
+          "The dress pairs easily with minimalist sandals or statement accessories for summer walks, vacations, and special occasions.",
+          "Fabric: natural two-layer muslin.",
+          "Season: spring, summer."
+        ],
+        "colors": [
+          "milk white"
+        ]
+      },
+      "FR": {
+        "category": "Robes",
+        "name": "Robe Elza",
+        "description": [
+          "La robe Elza est une silhouette estivale douce en mousseline naturelle double couche, pensée pour la légèreté et la féminité.",
+          "La silhouette aérienne, les manches délicates et les détails texturés apportent une note romantique et une élégance effortless au modèle.",
+          "La robe présente une coupe ajustée raffinée avec un accent sur la taille, une encolure carrée et des manches volumineuses qui créent une allure douce et féminine.",
+          "Les empiècements texturés décoratifs et les éléments horizontaux au bas de la robe donnent à la pièce un caractère particulier et une romance délicate.",
+          "Elle se porte facilement avec des sandales minimalistes ou des accessoires marqués pour les promenades estivales, les vacances et les occasions spéciales.",
+          "Tissu : mousseline naturelle double couche.",
+          "Saison : printemps, été."
+        ],
+        "colors": [
+          "blanc lait"
+        ]
+      },
+      "UA": {
+        "category": "Сукні",
+        "name": "Сукня «Elza»",
+        "description": [
+          "Сукня «Elza» — ніжний літній образ із натурального двошарового мусліну, створений для легкості та жіночності.",
+          "Повітряний силует, делікатні рукави та фактурні деталі додають моделі романтичного настрою та effortless elegance.",
+          "Модель має витончений приталений силует із акцентом на талії, квадратний виріз та об’ємні рукави, що створюють ніжний і жіночний образ.",
+          "Декоративні фактурні вставки та горизонтальні елементи внизу сукні додають виробу особливого характеру та делікатної романтики.",
+          "Сукня легко поєднується як із мінімалістичними босоніжками, так і з акцентними аксесуарами для літніх прогулянок, відпочинку чи особливих подій.",
+          "Тканина: натуральний двошаровий муслін.",
+          "Сезон: весна, літо."
+        ],
+        "colors": [
+          "молочний"
+        ]
+      },
+      "RU": {
+        "category": "Платья",
+        "name": "Платье «Elza»",
+        "description": [
+          "Платье «Elza» — нежный летний образ из натурального двухслойного муслина, созданный для легкости и женственности.",
+          "Воздушный силуэт, деликатные рукава и фактурные детали добавляют модели романтичного настроения и effortless elegance.",
+          "Модель имеет изящный приталенный силуэт с акцентом на талии, квадратный вырез и объемные рукава, которые создают нежный и женственный образ.",
+          "Декоративные фактурные вставки и горизонтальные элементы внизу платья придают изделию особый характер и деликатную романтику.",
+          "Платье легко сочетается как с минималистичными босоножками, так и с акцентными аксессуарами для летних прогулок, отдыха и особых событий.",
+          "Ткань: натуральный двухслойный муслин.",
+          "Сезон: весна, лето."
+        ],
+        "colors": [
+          "молочный"
+        ]
+      }
+    }
+  },
+  {
+    "id": 306,
+    "price": 4300,
+    "isTop": false,
+    "isNew": true,
+    "sku": "99437",
+    "size": "XS S M L XL",
+    "category": "Dresses",
+    "image": "/Dress/Jasmine Dress/1.avif",
+    "images": [
+      "/Dress/Jasmine Dress/2.avif",
+      "/Dress/Jasmine Dress/3.avif",
+      "/Dress/Jasmine Dress/4.avif",
+      "/Dress/Jasmine Dress/5.avif"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "translations": {
+      "EN": {
+        "category": "Dresses",
+        "name": "Jasmine Dress",
+        "description": [
+          "The Jasmine dress is a delicate and romantic look made from natural two-layer muslin.",
+          "The light texture of the fabric, accent tiered skirt, and lace details create a feeling of effortless femininity and summer ease.",
+          "The bodice with delicate draping beautifully highlights the figure, while the relaxed tiered skirt creates soft movement as you walk.",
+          "Contrasting inserts in warm natural shades add depth and a bohemian mood, and lace trim completes the look with a gentle accent.",
+          "Voluminous sleeves and a comfortable fit make the model versatile for vacations, travel, summer evenings, and special warm-season moments.",
+          "Fabric: natural two-layer muslin.",
+          "Season: spring, summer."
+        ],
+        "colors": [
+          "milk white"
+        ]
+      },
+      "FR": {
+        "category": "Robes",
+        "name": "Robe Jasmine",
+        "description": [
+          "La robe Jasmine est une silhouette douce et romantique en mousseline naturelle double couche.",
+          "La texture légère du tissu, la jupe à étages marquée et les détails en dentelle créent une sensation de féminité effortless et de légèreté estivale.",
+          "Le corsage au drapé délicat souligne joliment la silhouette, tandis que la jupe ample à étages apporte un mouvement fluide à chaque pas.",
+          "Les empiècements contrastés dans des tons naturels chauds ajoutent de la profondeur et une touche bohème, tandis que la finition en dentelle complète le look avec douceur.",
+          "Les manches volumineuses et la coupe confortable rendent ce modèle idéal pour les vacances, les voyages, les soirées d’été et les moments particuliers de la belle saison.",
+          "Tissu : mousseline naturelle double couche.",
+          "Saison : printemps, été."
+        ],
+        "colors": [
+          "blanc lait"
+        ]
+      },
+      "UA": {
+        "category": "Сукні",
+        "name": "Сукня «Jasmine»",
+        "description": [
+          "Сукня «Jasmine» — ніжний та романтичний образ із натурального двошарового мусліну.",
+          "Легка текстура тканини, акцентна багатоярусна спідниця та мереживні деталі створюють відчуття effortless femininity та літньої легкості.",
+          "Ліф із делікатною драпіровкою красиво підкреслює фігуру, а вільна багатоярусна спідниця створює легкий рух під час ходи.",
+          "Контрастні вставки у теплих натуральних відтінках додають сукні глибини та богемного настрою, а мереживне оздоблення завершує образ ніжним акцентом.",
+          "Об’ємні рукави та комфортна посадка роблять модель універсальною як для відпочинку, подорожей чи літніх вечорів, так і для особливих моментів у теплу пору року.",
+          "Тканина: натуральний двошаровий муслін.",
+          "Сезон: весна, літо."
+        ],
+        "colors": [
+          "молочний"
+        ]
+      },
+      "RU": {
+        "category": "Платья",
+        "name": "Платье «Jasmine»",
+        "description": [
+          "Платье «Jasmine» — нежный и романтичный образ из натурального двухслойного муслина.",
+          "Легкая текстура ткани, акцентная многоярусная юбка и кружевные детали создают ощущение effortless femininity и летней легкости.",
+          "Лиф с деликатной драпировкой красиво подчеркивает фигуру, а свободная многоярусная юбка создает легкое движение при ходьбе.",
+          "Контрастные вставки в теплых натуральных оттенках добавляют платью глубины и богемного настроения, а кружевная отделка завершает образ нежным акцентом.",
+          "Объемные рукава и комфортная посадка делают модель универсальной для отдыха, путешествий, летних вечеров и особых моментов в теплое время года.",
+          "Ткань: натуральный двухслойный муслин.",
+          "Сезон: весна, лето."
+        ],
+        "colors": [
+          "молочный"
+        ]
+      }
+    }
+  },
+  {
     "id": 305,
     "price": 4100,
     "isTop": false,
