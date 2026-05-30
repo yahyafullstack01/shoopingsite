@@ -1,44 +1,117 @@
-'use client';
+import { readFile } from "fs/promises";
+import path from "path";
+import seoConfig from "../../../next-seo.config";
+import { PRIORITY_NEW, prioritizeByIds } from "../utils/priorities";
+import { getProductImageSrc } from "../utils/productData";
+import NewProductsPageClient from "./NewProductsPageClient";
 
-import dynamic from 'next/dynamic';
-import Script from 'next/script';
-import Head from 'next/head';
-import products from '../data/products';
-import seoConfig from '../../../next-seo.config';
-import generateProductsJsonLd from '../seo/all-products-jsonld';
+const PRODUCTS_JSON = path.join(process.cwd(), "src/app/data/products.json");
 
-const Layout = dynamic(() => import('../components/Layout'), { ssr: false });
-const NewArrivalsInfo = dynamic(() => import('../components/NewArrivalsInfo/NewArrivalsInfo'), { ssr: false });
+function slimTranslations(translations) {
+  if (!translations || typeof translations !== "object") return undefined;
+  const out = {};
+  for (const [lang, v] of Object.entries(translations)) {
+    if (v && typeof v === "object") {
+      out[lang] = {
+        name: v.name,
+        category: v.category,
+        colors: v.colors,
+        description: v.description,
+      };
+    }
+  }
+  return Object.keys(out).length ? out : undefined;
+}
 
-export default function NewProductsPage() {
-  const newProducts = products.filter((p) => p.isNew === true);
-  const jsonLd = generateProductsJsonLd(newProducts);
-  const seo = seoConfig.newProducts;
+function mapRowForNewArrivals(p) {
+  const en = p?.translations?.EN;
+  const colorsFromEn = Array.isArray(en?.colors) ? en.colors : [];
+  return {
+    id: p.id,
+    price: p.price,
+    image: p.image,
+    name: en?.name ?? p.name ?? "",
+    category: en?.category ?? p.category ?? "",
+    discountPrice: p.discountPrice,
+    sizes: Array.isArray(p.sizes) ? p.sizes : [],
+    colors: Array.isArray(p.colors) ? p.colors : colorsFromEn,
+    images:
+      Array.isArray(p.images) && p.images.length > 0
+        ? p.images
+        : p.image
+          ? [p.image]
+          : [],
+    translations: slimTranslations(p.translations),
+    isNew: true,
+  };
+}
+
+function generateNewProductsJsonLd(products) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    itemListElement: products.map((product, index) => {
+      const imgSrc = getProductImageSrc(product.image);
+      const name =
+        product.translations?.EN?.name || product.name || "Unnamed Product";
+      return {
+        "@type": "ListItem",
+        position: index + 1,
+        url: `https://www.latore.store/new-products?product=${product.id}`,
+        name,
+        image: {
+          "@type": "ImageObject",
+          url: imgSrc.startsWith("http")
+            ? imgSrc
+            : `https://www.latore.store${imgSrc}`,
+        },
+      };
+    }),
+  };
+}
+
+const seo = seoConfig.newProducts;
+
+export const metadata = {
+  title: seo.title,
+  description: seo.description,
+  alternates: { canonical: seo.canonical },
+  robots: seo.robots,
+  openGraph: {
+    title: seo.openGraph.title,
+    description: seo.openGraph.description,
+    url: seo.openGraph.url,
+    type: seo.openGraph.type,
+    images: seo.openGraph.images,
+  },
+};
+
+export default async function NewProductsPage({ searchParams }) {
+  const sp = await searchParams;
+  const raw = JSON.parse(await readFile(PRODUCTS_JSON, "utf8"));
+
+  const newProductsRaw = raw.filter((p) => p.isNew === true);
+  const mapped = newProductsRaw.map(mapRowForNewArrivals);
+  const newProducts = prioritizeByIds(mapped, PRIORITY_NEW);
+
+  const productParam = sp?.product;
+  const prefetchedProduct =
+    productParam != null && productParam !== ""
+      ? raw.find((p) => String(p.id) === String(productParam)) ?? null
+      : null;
+
+  const jsonLd = generateNewProductsJsonLd(newProducts);
 
   return (
-    <div className="transition-colors">
-      <Head>
-        <title>{seo.title}</title>
-        <meta name="description" content={seo.description} />
-        <meta property="og:title" content={seo.openGraph.title} />
-        <meta property="og:description" content={seo.openGraph.description} />
-        <meta property="og:url" content={seo.openGraph.url} />
-        <meta property="og:type" content={seo.openGraph.type} />
-        <meta property="og:image" content={seo.openGraph.images[0].url} />
-        <link rel="canonical" href={seo.canonical} />
-        <meta name="robots" content={seo.robots} />
-      </Head>
-
-      <Script
-        id="new-products-jsonld"
+    <>
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-
-      <Layout>
-         <NewArrivalsInfo products={newProducts} />
-       
-      </Layout>
-    </div>
+      <NewProductsPageClient
+        newProducts={newProducts}
+        prefetchedProduct={prefetchedProduct}
+      />
+    </>
   );
 }

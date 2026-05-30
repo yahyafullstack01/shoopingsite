@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useMemo } from "react";
 import Image from "next/image";
+import { useSearchParams } from "next/navigation";
 import { useLanguage } from "../../Functions/useLanguage";
 import Toast from "../ToastCart/Toast";
 import QuickAddModal from "../QuickAddModal/QuickAddModal";
@@ -10,8 +11,6 @@ import { getSessionId } from "../../utils/session";
 import { getBackendBaseUrl } from "../../utils/backendUrl";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { getFavorites, toggleFavorite } from "../../utils/favorites";
-import { PRIORITY_NEW, prioritizeByIds } from "../../utils/priorities";
-
 // хелпер для стабільного ID
 const getId = (p) => Number(p?.id ?? p?._id ?? p?.productId);
 
@@ -33,7 +32,10 @@ const getProductSrc = (product) => {
   return "/placeholder/300x400.jpg";
 };
 
-const NewArrivalsInfo = ({ products }) => {
+const NewArrivalsInfo = ({ products, prefetchedProduct = null }) => {
+  const searchParams = useSearchParams();
+  const productId = searchParams.get("product");
+
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [showModal, setShowModal] = useState(false);
   const [showBanner, setShowBanner] = useState(false);
@@ -46,19 +48,9 @@ const NewArrivalsInfo = ({ products }) => {
   const priceLabel = infoLabels[8] || "Price";
   const pageTranslations = translateList("home", "newArrivalsPage") || {};
 
-  // 1) беремо лише новинки
-  const onlyNew = useMemo(
-    () =>
-      Array.isArray(products)
-        ? products.filter((p) => p.isNew === true)
-        : [],
-    [products]
-  );
-
-  // 2) застосовуємо пріоритети новинок
   const orderedNew = useMemo(
-    () => prioritizeByIds(onlyNew, PRIORITY_NEW),
-    [onlyNew]
+    () => (Array.isArray(products) ? products : []),
+    [products]
   );
 
   const openBanner = (product) => {
@@ -147,6 +139,18 @@ const NewArrivalsInfo = ({ products }) => {
     setFavorites(getFavorites());
   }, []);
 
+  useEffect(() => {
+    if (productId && prefetchedProduct && String(prefetchedProduct.id) === productId) {
+      setSelectedProduct(prefetchedProduct);
+      setShowBanner(true);
+      return;
+    }
+    if (!productId) {
+      setShowBanner(false);
+      setSelectedProduct(null);
+    }
+  }, [productId, prefetchedProduct]);
+
   const handleFavoriteToggle = (productId) => {
     const updated = toggleFavorite(productId);
     setFavorites(updated);
@@ -228,6 +232,8 @@ const NewArrivalsInfo = ({ products }) => {
                     alt={translatedName || "Product Image"}
                     width={300}
                     height={400}
+                    loading="lazy"
+                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
                     className="w-full h-full object-cover rounded transform transition-transform duration-300 ease-in-out group-hover:scale-110"
                     itemProp="image"
                     unoptimized={isLocal}
