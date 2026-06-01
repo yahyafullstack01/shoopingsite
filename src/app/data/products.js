@@ -699,7 +699,7 @@ const products = [
   sku: "99455",
   size: "XS S M L XL",
   category: "Pants",
-  image: "/Pants/Palma Pants/2.avif",
+  image: "/Pants/Palma Pants/1.avif",
   images: [
     "/Pants/Palma Pants/2.avif",
     "/Pants/Palma Pants/3.avif",
