@@ -1,5 +1,1773 @@
 const products = [
   {
+  id: 333,
+  price: 4800,
+  isTop: false,
+  isNew: true,
+  sku: "99464",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Palma Suit/1.avif",
+  images: [
+    "/Costumes/Palma Suit/2.avif",
+    "/Costumes/Palma Suit/3.avif",
+    "/Costumes/Palma Suit/4.avif",
+    "/Costumes/Palma Suit/5.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Palma Suit",
+      description: [
+        "The Palma suit is a laconic set in natural shades for light summer looks. A relaxed cut, textured fabric, and minimalist design create an effortless style with a sense of comfort and freedom.",
+        "The vest with a V-neckline and decorative buttons shapes a refined silhouette and styles easily as a standalone wardrobe piece.",
+        "Relaxed wide-leg pants with a high waist and tie belt ensure a comfortable fit and a beautiful flowing effect in movement.",
+        "The suit is perfect for urban summer looks, leisure, or travel. It pairs harmoniously with woven accessories, sandals, and minimalist jewelry.",
+        "Fabric: 100% linen.",
+        "Season: spring, summer."
+      ],
+      colors: ["beige"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume «Palma»",
+      description: [
+        "Le costume « Palma » est un ensemble épuré aux teintes naturelles pour des looks estivaux légers. La coupe ample, le tissu texturé et le design minimaliste créent un style effortless avec une sensation de confort et de liberté.",
+        "Le gilet à encolure en V et boutons décoratifs façonne une silhouette raffinée et se stylise facilement comme pièce distincte.",
+        "Le pantalon ample à taille haute et ceinture à nouer assure une coupe confortable et un bel effet fluide en mouvement.",
+        "Le costume convient parfaitement aux looks estivaux en ville, aux moments de détente ou aux voyages. Il s’harmonise avec des accessoires tressés, des sandales et des bijoux minimalistes.",
+        "Tissu : 100 % lin.",
+        "Saison : printemps, été."
+      ],
+      colors: ["beige"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм «Palma»",
+      description: [
+        "Костюм «Palma» — лаконічний комплект у натуральних відтінках для легких літніх образів. Вільний крій, фактурна тканина та мінімалістичний дизайн створюють effortless стиль із відчуттям комфорту та свободи.",
+        "Жилет із V-подібним вирізом та декоративними ґудзиками формує витончений силует і легко стилізується як окремий елемент гардероба.",
+        "Штани вільного крою з високою посадкою та поясом на зав’язках забезпечують комфортну посадку та красивий струмуючий ефект у русі.",
+        "Костюм ідеально підходить для міських літніх образів, відпочинку або подорожей. Гармонійно поєднується з плетеними аксесуарами, сандалями та мінімалістичними прикрасами.",
+        "Тканина: 100% льон.",
+        "Сезон: весна, літо."
+      ],
+      colors: ["бежевий"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм «Palma»",
+      description: [
+        "Костюм «Palma» — лаконичный комплект в натуральных оттенках для лёгких летних образов. Свободный крой, фактурная ткань и минималистичный дизайн создают effortless стиль с ощущением комфорта и свободы.",
+        "Жилет с V-образным вырезом и декоративными пуговицами формирует изящный силуэт и легко стилизуется как отдельный элемент гардероба.",
+        "Брюки свободного кроя с высокой посадкой и поясом на завязках обеспечивают комфортную посадку и красивый струящийся эффект в движении.",
+        "Костюм идеально подходит для городских летних образов, отдыха или путешествий. Гармонично сочетается с плетёными аксессуарами, сандалиями и минималистичными украшениями.",
+        "Ткань: 100% лён.",
+        "Сезон: весна, лето."
+      ],
+      colors: ["бежевый"]
+    }
+  }
+},
+
+  {
+  id: 332,
+  price: 3700,
+  isTop: false,
+  isNew: true,
+  sku: "99463",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Milano Dress/1.avif",
+  images: [
+    "/Dress/Milano Dress/2.avif",
+    "/Dress/Milano Dress/3.avif",
+    "/Dress/Milano Dress/4.avif",
+    "/Dress/Milano Dress/5.avif",
+    "/Dress/Milano Dress/6.avif",
+    "/Dress/Milano Dress/7.avif",
+    "/Dress/Milano Dress/8.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Milano Dress",
+      description: [
+        "The Milano dress is a clean model in 100% linen, created for effortless city and vacation looks.",
+        "A minimalist silhouette, contrasting stripes, and decorative buttons add a refined accent in quiet luxury style.",
+        "The relaxed straight silhouette creates a light effortless mood and allows you to feel comfortable throughout the day.",
+        "Contrasting stripes add graphic appeal and a refined accent to the look, while a decorative row of buttons visually elongates the silhouette and makes the model even more expressive.",
+        "The dress pairs perfectly with sandals and woven accessories for relaxed summer looks, as well as with more statement footwear for city outfits.",
+        "Fabric: 100% linen.",
+        "Season: spring, summer."
+      ],
+      colors: ["beige", "black"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe «Milano»",
+      description: [
+        "La robe « Milano » est un modèle épuré en 100 % lin, créé pour des looks effortless en ville et en vacances.",
+        "La silhouette minimaliste, les rayures contrastées et les boutons décoratifs apportent un accent raffiné dans un style quiet luxury.",
+        "La silhouette droite ample crée une ambiance effortless légère et permet de se sentir à l’aise tout au long de la journée.",
+        "Les rayures contrastées ajoutent un effet graphique et un accent raffiné au look, tandis qu’une rangée de boutons décoratifs allonge visuellement la silhouette et rend le modèle encore plus expressif.",
+        "La robe s’associe parfaitement avec des sandales et des accessoires tressés pour des looks estivaux relaxed, ainsi qu’avec des chaussures plus marquées pour les looks en ville.",
+        "Tissu : 100 % lin.",
+        "Saison : printemps, été."
+      ],
+      colors: ["beige", "noir"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Сукня «Milano»",
+      description: [
+        "Сукня «Milano» — лаконічна модель із 100% льону, створена для effortless міських і vacation образів.",
+        "Мінімалістичний силует, контрастні смуги та декоративні ґудзики додають сукні витонченого акценту в стилі quiet luxury.",
+        "Вільний прямий силует створює легкий effortless настрій і дозволяє почуватися комфортно протягом усього дня.",
+        "Контрастні смуги додають образу графічності та витонченого акценту, а декоративний ряд ґудзиків візуально витягує силует і робить модель ще більш виразною.",
+        "Сукня ідеально поєднується як із сандалями та плетеними аксесуарами для relaxed summer looks, так і з більш акцентним взуттям для міських образів.",
+        "Тканина: 100% льон.",
+        "Сезон: весна, літо."
+      ],
+      colors: ["беж", "чорний"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Платье «Milano»",
+      description: [
+        "Платье «Milano» — лаконичная модель из 100% льна, созданная для effortless городских и vacation образов.",
+        "Минималистичный силуэт, контрастные полосы и декоративные пуговицы добавляют платью изящного акцента в стиле quiet luxury.",
+        "Свободный прямой силуэт создаёт лёгкое effortless настроение и позволяет чувствовать себя комфортно весь день.",
+        "Контрастные полосы добавляют образу графичности и изящного акцента, а декоративный ряд пуговиц визуально вытягивает силуэт и делает модель ещё более выразительной.",
+        "Платье идеально сочетается как с сандалиями и плетёными аксессуарами для relaxed summer looks, так и с более акцентной обувью для городских образов.",
+        "Ткань: 100% лён.",
+        "Сезон: весна, лето."
+      ],
+      colors: ["беж", "черный"]
+    }
+  }
+},
+
+  {
+  id: 331,
+  price: 3700,
+  isTop: false,
+  isNew: true,
+  sku: "99462",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Monaco Dress/1.avif",
+  images: [
+    "/Dress/Monaco Dress/2.avif",
+    "/Dress/Monaco Dress/3.avif",
+    "/Dress/Monaco Dress/4.avif",
+    "/Dress/Monaco Dress/5.avif",
+    "/Dress/Monaco Dress/6.avif",
+    "/Dress/Monaco Dress/7.avif",
+  
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Monaco Dress",
+      description: [
+        "The Monaco dress combines natural linen, a clean cut, and modern geometry.",
+        "Contrasting vertical lines visually elongate the silhouette, while a relaxed fit offers absolute comfort in hot weather.",
+        "The relaxed silhouette moves softly as you walk and drapes beautifully on the figure without restricting movement.",
+        "A special accent of the model is the asymmetric combination of black linen and contrasting vertical stripes in beige shades, adding graphic appeal and visually lengthening the silhouette.",
+        "The dress styles easily for both city looks and seaside leisure — just add minimalist accessories and sandals.",
+        "Fabric: 100% linen.",
+        "Season: spring, summer."
+      ],
+      colors: ["black", "beige"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe «Monaco»",
+      description: [
+        "La robe « Monaco » allie lin naturel, coupe épurée et géométrie contemporaine.",
+        "Les lignes verticales contrastées allongent visuellement la silhouette, tandis que la coupe ample offre un confort absolu en saison chaude.",
+        "La silhouette ample bouge doucement à la marche et tombe joliment sur la silhouette sans limiter les mouvements.",
+        "L’accent particulier du modèle est l’association asymétrique de lin noir et de rayures verticales contrastées dans des tons beige, apportant un effet graphique et allongeant visuellement la silhouette.",
+        "La robe se stylise facilement pour les looks en ville comme pour les moments de détente au bord de la mer — il suffit d’ajouter des accessoires minimalistes et des sandales.",
+        "Tissu : 100 % lin.",
+        "Saison : printemps, été."
+      ],
+      colors: ["noir", "beige"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Сукня «Monaco»",
+      description: [
+        "Сукня «Monaco» — поєднання натурального льону, лаконічного крою та сучасної геометрії.",
+        "Контрастні вертикальні лінії візуально витягують силует, а вільна посадка дарує абсолютний комфорт у спекотний сезон.",
+        "Вільний силует м’яко рухається під час ходи та красиво сідає по фігурі, не обмежуючи рухів.",
+        "Особливий акцент моделі — асиметричне поєднання чорного льону та контрастних вертикальних смуг у бежевих відтінках, що додають образу графічності та візуально подовжують силует.",
+        "Сукня легко стилізується як для міських образів, так і для відпочинку біля моря — достатньо додати мінімалістичні аксесуари та сандалі.",
+        "Тканина: 100% льон.",
+        "Сезон: весна, літо."
+      ],
+      colors: ["чорний", "беж"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Платье «Monaco»",
+      description: [
+        "Платье «Monaco» — сочетание натурального льна, лаконичного кроя и современной геометрии.",
+        "Контрастные вертикальные линии визуально вытягивают силуэт, а свободная посадка дарит абсолютный комфорт в жаркий сезон.",
+        "Свободный силуэт мягко движется при ходьбе и красиво садится по фигуре, не ограничивая движений.",
+        "Особый акцент модели — асимметричное сочетание чёрного льна и контрастных вертикальных полос в бежевых оттенках, которые добавляют образу графичности и визуально удлиняют силуэт.",
+        "Платье легко стилизуется как для городских образов, так и для отдыха у моря — достаточно добавить минималистичные аксессуары и сандалии.",
+        "Ткань: 100% лён.",
+        "Сезон: весна, лето."
+      ],
+      colors: ["черный", "беж"]
+    }
+  }
+},
+
+  {
+  id: 330,
+  price: 1700,
+  isTop: false,
+  isNew: true,
+  sku: "99461",
+  size: "XS S M L XL",
+  category: "Tops",
+  image: "/Top/Nerea Cover-up No Hood/1.avif",
+  images: [
+    "/Top/Nerea Cover-up No Hood/2.avif",
+    "/Top/Nerea Cover-up No Hood/3.avif",
+
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Tops",
+      name: "Nerea Cover-up (No Hood)",
+      description: [
+        "The Nerea cover-up is a light semi-sheer viscose model in a mocha shade.",
+        "A relaxed silhouette and soft fabric texture add layering and effortless ease to the look.",
+        "The model features a relaxed oversize cut without a hood, making it easy to pair with basic tops, suits, or dresses.",
+        "The semi-sheer structure adds depth to the look and creates a stylish layered effect.",
+        "The mocha shade looks warm and refined, while the minimalist design makes the cover-up a versatile wardrobe piece — for city looks as well as leisure or travel.",
+        "Fabric: viscose.",
+        "Season: spring, summer."
+      ],
+      colors: ["mocha"]
+    },
+    FR: {
+      category: "Tops",
+      name: "Cape «Nerea» sans capuche",
+      description: [
+        "La cape « Nerea » est un modèle léger semi-transparent en viscose dans une teinte moka.",
+        "La silhouette ample et la texture douce du tissu apportent superposition et une légère désinvolture au look.",
+        "Le modèle présente une coupe oversize ample sans capuche, ce qui permet de l’associer facilement avec des tops basiques, des costumes ou des robes.",
+        "La structure semi-transparente ajoute de la profondeur au look et crée un effet superposé stylé.",
+        "La teinte moka paraît chaleureuse et noble, tandis que le design minimaliste fait de la cape une pièce polyvalente — pour les looks en ville comme pour les moments de détente ou les voyages.",
+        "Tissu : viscose.",
+        "Saison : printemps, été."
+      ],
+      colors: ["moka"]
+    },
+    UA: {
+      category: "Топи",
+      name: "Накидка «Nerea» без капюшону",
+      description: [
+        "Накидка «Nerea» — легка напівпрозора модель із віскози у відтінку мокко.",
+        "Вільний силует і м’яка фактура тканини додають образу багатошаровості та легкої недбалості.",
+        "Модель має вільний oversize крій без капюшону, завдяки чому легко поєднується з базовими топами, костюмами або сукнями.",
+        "Напівпрозора структура додає образу глибини та створює стильний багатошаровий ефект.",
+        "Відтінок мокко виглядає тепло та благородно, а мінімалістичний дизайн робить накидку універсальним елементом гардероба — як для міських образів, так і для відпочинку чи подорожей.",
+        "Тканина: віскоза.",
+        "Сезон: весна, літо."
+      ],
+      colors: ["мокко"]
+    },
+    RU: {
+      category: "Топы",
+      name: "Накидка «Nerea» без капюшона",
+      description: [
+        "Накидка «Nerea» — лёгкая полупрозрачная модель из вискозы в оттенке мокко.",
+        "Свободный силуэт и мягкая фактура ткани добавляют образу многослойности и лёгкой небрежности.",
+        "Модель имеет свободный oversize крой без капюшона, благодаря чему легко сочетается с базовыми топами, костюмами или платьями.",
+        "Полупрозрачная структура добавляет образу глубины и создаёт стильный многослойный эффект.",
+        "Оттенок мокко выглядит тепло и благородно, а минималистичный дизайн делает накидку универсальным элементом гардероба — как для городских образов, так и для отдыха или путешествий.",
+        "Ткань: вискоза.",
+        "Сезон: весна, лето."
+      ],
+      colors: ["мокко"]
+    }
+  }
+},
+
+  {
+  id: 329,
+  price: 2300,
+  isTop: false,
+  isNew: true,
+  sku: "99460",
+  size: "XS S M L XL",
+  category: "Tops",
+  image: "/Top/Nerea Top/1.avif",
+  images: [
+    "/Top/Nerea Top/2.avif",
+    "/Top/Nerea Top/3.avif",
+
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Tops",
+      name: "Nerea Top",
+      description: [
+        "The Nerea top is an asymmetric model in natural muslin in a mocha shade.",
+        "Light fabric, a relaxed silhouette, and a clean design create a modern and comfortable look for warm seasons.",
+        "The model features an asymmetric cut that creates interesting silhouette geometry and adds accent to the look.",
+        "A relaxed fit does not restrict movement and ensures comfort for everyday wear.",
+        "The deep mocha shade pairs easily with wardrobe basics, while the minimalist design allows styling the top for both casual looks and more accent-driven summer combinations.",
+        "Fabric: natural muslin.",
+        "Season: spring, summer."
+      ],
+      colors: ["mocha"]
+    },
+    FR: {
+      category: "Tops",
+      name: "Top «Nerea»",
+      description: [
+        "Le top « Nerea » est un modèle asymétrique en mousseline naturelle dans une teinte moka.",
+        "Le tissu léger, la silhouette ample et le design épuré créent un look moderne et confortable pour la saison chaude.",
+        "Le modèle présente une coupe asymétrique qui crée une géométrie de silhouette intéressante et apporte de l’accent au look.",
+        "La coupe ample ne limite pas les mouvements et assure le confort au quotidien.",
+        "La teinte moka profonde s’associe facilement avec les basiques du dressing, tandis que le design minimaliste permet de styliser le top en looks casual comme en combinaisons estivales plus marquées.",
+        "Tissu : mousseline naturelle.",
+        "Saison : printemps, été."
+      ],
+      colors: ["moka"]
+    },
+    UA: {
+      category: "Топи",
+      name: "Топ «Nerea»",
+      description: [
+        "Топ «Nerea» — асиметрична модель із натурального мусліну у відтінку мокко.",
+        "Легкий матеріал, вільний силует і лаконічний дизайн створюють сучасний та комфортний образ для теплої пори року.",
+        "Модель має асиметричний крій, що створює цікаву геометрію силуету та додає образу акцентності.",
+        "Вільна посадка не сковує рухів і забезпечує комфорт у щоденному носінні.",
+        "Глибокий відтінок мокко легко поєднується з базовими речами гардероба, а мінімалістичний дизайн дозволяє стилізувати топ як у casual образах, так і в більш акцентних літніх поєднаннях.",
+        "Тканина: натуральний муслін.",
+        "Сезон: весна, літо."
+      ],
+      colors: ["мокко"]
+    },
+    RU: {
+      category: "Топы",
+      name: "Топ «Nerea»",
+      description: [
+        "Топ «Nerea» — асимметричная модель из натурального муслина в оттенке мокко.",
+        "Лёгкий материал, свободный силуэт и лаконичный дизайн создают современный и комфортный образ для тёплого сезона.",
+        "Модель имеет асимметричный крой, который создаёт интересную геометрию силуэта и добавляет образу акцентности.",
+        "Свободная посадка не сковывает движений и обеспечивает комфорт в повседневной носке.",
+        "Глубокий оттенок мокко легко сочетается с базовыми вещами гардероба, а минималистичный дизайн позволяет стилизовать топ как в casual образах, так и в более акцентных летних сочетаниях.",
+        "Ткань: натуральный муслин.",
+        "Сезон: весна, лето."
+      ],
+      colors: ["мокко"]
+    }
+  }
+},
+
+  {
+  id: 328,
+  price: 2400,
+  isTop: false,
+  isNew: true,
+  sku: "99459",
+  size: "XS S M L XL",
+  category: "Pants",
+  image: "/Pants/Nerea Pants/1.avif",
+  images: [
+    "/Pants/Nerea Pants/2.avif",
+    "/Pants/Nerea Pants/3.avif",
+    "/Pants/Nerea Pants/4.avif",
+
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Pants",
+      name: "Nerea Pants",
+      description: [
+        "The Nerea pants are a light model in natural muslin in a warm mocha shade.",
+        "A relaxed silhouette and accent patch pockets create a comfortable and stylish everyday look.",
+        "The model features a relaxed cut with a soft elastic waistband that ensures a comfortable fit and freedom of movement.",
+        "Large patch pockets with textured inserts add expressiveness to the look and make the design more accent-driven.",
+        "Thanks to the deep mocha shade, the pants pair easily with basic tops as well as layered summer looks.",
+        "An ideal choice for the city, travel, or leisure.",
+        "Fabric: natural muslin.",
+        "Season: spring, summer."
+      ],
+      colors: ["mocha"]
+    },
+    FR: {
+      category: "Pantalons",
+      name: "Pantalon «Nerea»",
+      description: [
+        "Le pantalon « Nerea » est un modèle léger en mousseline naturelle dans une teinte moka chaude.",
+        "La silhouette ample et les poches plaquées accentuées créent un look confortable et stylé pour le quotidien.",
+        "Le modèle présente une coupe ample avec une taille élastique douce qui assure une coupe confortable et une grande liberté de mouvement.",
+        "Les grandes poches plaquées avec inserts texturés ajoutent de l’expressivité au look et rendent le design plus marqué.",
+        "Grâce à la teinte moka profonde, le pantalon s’associe facilement avec des tops basiques ou des looks estivaux superposés.",
+        "Un choix idéal pour la ville, les voyages ou les moments de détente.",
+        "Tissu : mousseline naturelle.",
+        "Saison : printemps, été."
+      ],
+      colors: ["moka"]
+    },
+    UA: {
+      category: "Брюки",
+      name: "Штани «Nerea»",
+      description: [
+        "Штани «Nerea» — легка модель із натурального мусліну у теплому відтінку мокко.",
+        "Вільний силует і акцентні накладні кишені створюють комфортний та стильний образ на щодень.",
+        "Модель має вільний крій із м’якою резинкою на талії, що забезпечує комфортну посадку та свободу рухів.",
+        "Великі накладні кишені з фактурними вставками додають образу виразності та роблять дизайн більш акцентним.",
+        "Завдяки глибокому відтінку мокко штани легко поєднуються як із базовими топами, так і з багатошаровими літніми образами.",
+        "Ідеальний варіант для міста, подорожей або відпочинку.",
+        "Тканина: натуральний муслін.",
+        "Сезон: весна, літо."
+      ],
+      colors: ["мокко"]
+    },
+    RU: {
+      category: "Брюки",
+      name: "Брюки «Nerea»",
+      description: [
+        "Брюки «Nerea» — лёгкая модель из натурального муслина в тёплом оттенке мокко.",
+        "Свободный силуэт и акцентные накладные карманы создают комфортный и стильный образ на каждый день.",
+        "Модель имеет свободный крой с мягкой резинкой на талии, которая обеспечивает комфортную посадку и свободу движений.",
+        "Большие накладные карманы с фактурными вставками добавляют образу выразительности и делают дизайн более акцентным.",
+        "Благодаря глубокому оттенку мокко брюки легко сочетаются как с базовыми топами, так и с многослойными летними образами.",
+        "Идеальный вариант для города, путешествий или отдыха.",
+        "Ткань: натуральный муслин.",
+        "Сезон: весна, лето."
+      ],
+      colors: ["мокко"]
+    }
+  }
+},
+
+  {
+  id: 327,
+  price: 6400,
+  isTop: false,
+  isNew: true,
+  sku: "99458",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Nerea Suit/1.avif",
+  images: [
+    "/Costumes/Nerea Suit/2.avif",
+    "/Costumes/Nerea Suit/3.avif",
+    "/Costumes/Nerea Suit/4.avif",
+    "/Costumes/Nerea Suit/5.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Nerea Suit",
+      description: [
+        "The Nerea suit is a light set in natural muslin in a deep mocha shade.",
+        "A relaxed silhouette, layering, and textured fabric create a relaxed yet stylish summer look.",
+        "The set includes a relaxed asymmetric top, wide pants with voluminous pockets, and a semi-sheer mesh cover-up that creates a layered effect.",
+        "The relaxed cut does not restrict movement and suits both city looks and leisure.",
+        "The deep mocha shade adds warmth and elegance to the look, while accent details make the set expressive without feeling overloaded.",
+        "Nerea styles easily with basic accessories, heeled shoes, or more casual options.",
+        "Fabric: natural muslin.",
+        "Season: spring, summer."
+      ],
+      colors: ["mocha"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume «Nerea»",
+      description: [
+        "Le costume « Nerea » est un ensemble léger en mousseline naturelle dans une teinte moka profonde.",
+        "La silhouette ample, la superposition et le tissu texturé créent un look décontracté mais stylé pour l’été.",
+        "L’ensemble comprend un top asymétrique ample, un pantalon large avec poches volumineuses et une cape filet semi-transparente qui crée un effet superposé.",
+        "La coupe ample ne limite pas les mouvements et convient aussi bien aux looks en ville qu’aux moments de détente.",
+        "La teinte moka profonde apporte chaleur et élégance à la silhouette, tandis que les détails accentués rendent l’ensemble expressif sans surcharge.",
+        "« Nerea » se stylise facilement avec des accessoires basiques, des chaussures à talons ou des options plus casual.",
+        "Tissu : mousseline naturelle.",
+        "Saison : printemps, été."
+      ],
+      colors: ["moka"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм «Nerea»",
+      description: [
+        "Костюм «Nerea» — легкий комплект із натурального мусліну у глибокому відтінку мокко.",
+        "Вільний силует, багатошаровість та фактурна тканина створюють розслаблений, але стильний образ для літа.",
+        "Комплект складається з вільного асиметричного топа, широких штанів із об’ємними кишенями та напівпрозорої накидки-сітки, що створює багатошаровий ефект.",
+        "Вільний крій не сковує рухів і підходить як для міських образів, так і для відпочинку.",
+        "Глибокий відтінок мокко додає образу тепла та елегантності, а акцентні деталі роблять комплект виразним без зайвого перевантаження.",
+        "«Nerea» легко стилізується з базовими аксесуарами, взуттям на підборах або більш casual варіантами.",
+        "Тканина: натуральний муслін.",
+        "Сезон: весна, літо."
+      ],
+      colors: ["мокко"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм «Nerea»",
+      description: [
+        "Костюм «Nerea» — лёгкий комплект из натурального муслина в глубоком оттенке мокко.",
+        "Свободный силуэт, многослойность и фактурная ткань создают расслабленный, но стильный образ для лета.",
+        "Комплект состоит из свободного асимметричного топа, широких брюк с объёмными карманами и полупрозрачной накидки-сетки, создающей многослойный эффект.",
+        "Свободный крой не сковывает движений и подходит как для городских образов, так и для отдыха.",
+        "Глубокий оттенок мокко добавляет образу тепла и элегантности, а акцентные детали делают комплект выразительным без лишней перегруженности.",
+        "«Nerea» легко стилизуется с базовыми аксессуарами, обувью на каблуках или более casual вариантами.",
+        "Ткань: натуральный муслин.",
+        "Сезон: весна, лето."
+      ],
+      colors: ["мокко"]
+    }
+  }
+},
+
+  {
+  id: 326,
+  price: 2000,
+  isTop: false,
+  isNew: true,
+  sku: "99457",
+  size: "XS S M L XL",
+  category: "Skirts",
+  image: "/Skirts/Linen Skirt/1.avif",
+  images: [
+    "/Skirts/Linen Skirt/2.avif",
+    "/Skirts/Linen Skirt/3.avif",
+    "/Skirts/Linen Skirt/4.avif",
+    "/Skirts/Linen Skirt/5.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Skirts",
+      name: "Linen Skirt",
+      description: [
+        "The Linen skirt is an elegant model in 100% linen in a natural beige shade.",
+        "Accent buttons, an asymmetric cut, and a clean silhouette make it a versatile base for a summer wardrobe.",
+        "The model features a refined straight silhouette with a high waist that beautifully highlights the figure.",
+        "An asymmetric wrap with decorative buttons adds elegance and a modern accent to the look, while a decorative pocket makes the design even more interesting.",
+        "The skirt pairs easily with romantic blouses as well as basic tops or shirts, creating feminine summer looks in minimal and effortless chic style.",
+        "Fabric: 100% linen.",
+        "Season: spring, summer."
+      ],
+      colors: ["beige"]
+    },
+    FR: {
+      category: "Jupes",
+      name: "Jupe «Linen»",
+      description: [
+        "La jupe « Linen » est un modèle élégant en 100 % lin dans une teinte beige naturelle.",
+        "Les boutons accentués, la coupe asymétrique et la silhouette épurée en font une base polyvalente pour une garde-robe estivale.",
+        "Le modèle présente une silhouette droite raffinée avec taille haute qui met joliment la silhouette en valeur.",
+        "Un portefeuille asymétrique avec boutons décoratifs apporte élégance et un accent moderne au look, tandis qu’une poche décorative rend le design encore plus intéressant.",
+        "La jupe s’associe facilement avec des blouses romantiques, des tops basiques ou des chemises, créant des looks estivaux féminins en minimal et effortless chic.",
+        "Tissu : 100 % lin.",
+        "Saison : printemps, été."
+      ],
+      colors: ["beige"]
+    },
+    UA: {
+      category: "Спідниці",
+      name: "Спідниця «Linen»",
+      description: [
+        "Спідниця «Linen» — елегантна модель із 100% льону у натуральному бежевому відтінку.",
+        "Акцентні ґудзики, асиметричний крій та лаконічний силует роблять її універсальною базою для літнього гардероба.",
+        "Модель має витончений прямий силует із високою посадкою, що красиво підкреслює фігуру.",
+        "Асиметричний запах із декоративними ґудзиками додає образу елегантності та сучасного акценту, а декоративна кишеня робить дизайн ще цікавішим.",
+        "Спідниця легко комбінується як із романтичними блузами, так і з базовими топами чи сорочками, створюючи жіночні літні образи у стилі minimal та effortless chic.",
+        "Тканина: 100% льон.",
+        "Сезон: весна, літо."
+      ],
+      colors: ["бежевий"]
+    },
+    RU: {
+      category: "Юбки",
+      name: "Юбка «Linen»",
+      description: [
+        "Юбка «Linen» — элегантная модель из 100% льна в натуральном бежевом оттенке.",
+        "Акцентные пуговицы, асимметричный крой и лаконичный силуэт делают её универсальной базой для летнего гардероба.",
+        "Модель имеет изящный прямой силуэт с высокой посадкой, которая красиво подчёркивает фигуру.",
+        "Асимметричный запах с декоративными пуговицами добавляет образу элегантности и современного акцента, а декоративный карман делает дизайн ещё интереснее.",
+        "Юбка легко сочетается как с романтичными блузами, так и с базовыми топами или рубашками, создавая женственные летние образы в стиле minimal и effortless chic.",
+        "Ткань: 100% лён.",
+        "Сезон: весна, лето."
+      ],
+      colors: ["бежевый"]
+    }
+  }
+},
+
+  {
+  id: 325,
+  price: 2000,
+  isTop: false,
+  isNew: true,
+  sku: "99456",
+  size: "XS S M L XL",
+  category: "Shirts",
+  image: "/Shirts/Sierra Shirt/1.avif",
+  images: [
+    "/Shirts/Sierra Shirt/2.avif",
+    "/Shirts/Sierra Shirt/3.avif",
+    "/Shirts/Sierra Shirt/4.avif",
+    "/Shirts/Sierra Shirt/5.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Shirts",
+      name: "Sierra Shirt",
+      description: [
+        "The Sierra shirt is a light and feminine model in natural batiste, created for warm days and refined summer looks.",
+        "Voluminous sleeves, a defined waist, and delicate details add romance and lightness to the silhouette.",
+        "The model features a deep V-neckline, decorative front buttons, and an accent waist with a drawstring that allows you to adjust the fit.",
+        "Voluminous sleeves with cuffs add refinement to the look, while delicate inserts make the design even more feminine and elegant.",
+        "The shirt pairs easily with skirts, linen pants, or denim, creating romantic looks in boho chic and modern feminine style.",
+        "Fabric: natural batiste.",
+        "Season: spring, summer."
+      ],
+      colors: ["white"]
+    },
+    FR: {
+      category: "Chemises",
+      name: "Chemise «Sierra»",
+      description: [
+        "La chemise « Sierra » est un modèle léger et féminin en batiste naturelle, créé pour les journées chaudes et les looks estivaux raffinés.",
+        "Les manches volumineuses, la taille accentuée et les détails délicats ajoutent romantisme et légèreté à la silhouette.",
+        "Le modèle présente un profond décolleté en V, des boutons décoratifs à l’avant et une taille accentuée avec cordon permettant d’ajuster la coupe.",
+        "Les manches volumineuses avec poignets apportent du raffinement au look, tandis que les inserts délicats rendent le design encore plus féminin et élégant.",
+        "La chemise s’associe facilement avec jupes, pantalons en lin ou denim, créant des looks romantiques en boho chic et modern feminine.",
+        "Tissu : batiste naturelle.",
+        "Saison : printemps, été."
+      ],
+      colors: ["blanc"]
+    },
+    UA: {
+      category: "Сорочки",
+      name: "Сорочка «Sierra»",
+      description: [
+        "Сорочка «Sierra» — легка та жіночна модель із натурального батисту, створена для теплих днів і витончених літніх образів.",
+        "Об’ємні рукави, акцентна талія та делікатні деталі додають силуету романтичності й легкості.",
+        "Модель має глибокий V-подібний виріз, декоративні ґудзики спереду та акцентну талію на кулісці, що дозволяє регулювати посадку.",
+        "Об’ємні рукави з манжетами додають образу витонченості, а делікатні вставки роблять дизайн ще більш жіночним та елегантним.",
+        "Сорочка легко поєднується зі спідницями, лляними брюками чи денімом, створюючи романтичні образи у стилі boho chic та modern feminine.",
+        "Тканина: натуральний батист.",
+        "Сезон: весна, літо."
+      ],
+      colors: ["білий"]
+    },
+    RU: {
+      category: "Рубашки",
+      name: "Сорочка «Sierra»",
+      description: [
+        "Сорочка «Sierra» — лёгкая и женственная модель из натурального батиста, созданная для тёплых дней и изящных летних образов.",
+        "Объёмные рукава, акцентная талия и деликатные детали добавляют силуэту романтичности и лёгкости.",
+        "Модель имеет глубокий V-образный вырез, декоративные пуговицы спереди и акцентную талию на кулиске, что позволяет регулировать посадку.",
+        "Объёмные рукава с манжетами добавляют образу изящества, а деликатные вставки делают дизайн ещё более женственным и элегантным.",
+        "Сорочка легко сочетается с юбками, льняными брюками или денимом, создавая романтичные образы в стиле boho chic и modern feminine.",
+        "Ткань: натуральный батист.",
+        "Сезон: весна, лето."
+      ],
+      colors: ["белый"]
+    }
+  }
+},
+
+  {
+  id: 324,
+  price: 2400,
+  isTop: false,
+  isNew: true,
+  sku: "99455",
+  size: "XS S M L XL",
+  category: "Pants",
+  image: "/Pants/Palma Pants/1.avif",
+  images: [
+    "/Pants/Palma Pants/2.avif",
+    "/Pants/Palma Pants/3.avif",
+    "/Pants/Palma Pants/4.avif",
+
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Pants",
+      name: "Palma Pants",
+      description: [
+        "The Palma pants are a relaxed model in 100% linen in a natural beige shade.",
+        "A high waist, tie belt, and clean cut create a comfortable effortless look for summer.",
+        "The model features a relaxed wide cut with a high waist and tie belt that ensures a comfortable fit and a beautiful flowing effect in movement.",
+        "The pants pair perfectly with the Palma vest, basic tops, or shirts, and harmonize with woven accessories and sandals.",
+        "An ideal choice for city looks, travel, or leisure.",
+        "Fabric: 100% linen.",
+        "Season: spring, summer."
+      ],
+      colors: ["beige"]
+    },
+    FR: {
+      category: "Pantalons",
+      name: "Pantalon «Palma»",
+      description: [
+        "Le pantalon « Palma » est un modèle ample en 100 % lin dans une teinte beige naturelle.",
+        "La taille haute, la ceinture à nouer et la coupe épurée créent un look effortless confortable pour l’été.",
+        "Le modèle présente une coupe large et décontractée avec taille haute et ceinture à nouer qui assure une coupe confortable et un bel effet fluide en mouvement.",
+        "Le pantalon s’associe parfaitement avec le gilet « Palma », des tops basiques ou des chemises, et s’harmonise avec des accessoires tressés et des sandales.",
+        "Un choix idéal pour les looks en ville, les voyages ou les moments de détente.",
+        "Tissu : 100 % lin.",
+        "Saison : printemps, été."
+      ],
+      colors: ["beige"]
+    },
+    UA: {
+      category: "Брюки",
+      name: "Штани «Palma»",
+      description: [
+        "Штани «Palma» — вільна модель із 100% льону у натуральному бежевому відтінку.",
+        "Висока посадка, пояс на зав’язках та лаконічний крій створюють комфортний effortless образ для літа.",
+        "Модель має вільний широкий крій із високою посадкою та поясом на зав’язках, що забезпечує комфортну посадку та красивий струмуючий ефект у русі.",
+        "Штани ідеально поєднуються з жилетом «Palma», базовими топами чи сорочками, а також з плетеними аксесуарами та сандалями.",
+        "Ідеальний варіант для міських образів, подорожей або відпочинку.",
+        "Тканина: 100% льон.",
+        "Сезон: весна, літо."
+      ],
+      colors: ["бежевий"]
+    },
+    RU: {
+      category: "Брюки",
+      name: "Брюки «Palma»",
+      description: [
+        "Брюки «Palma» — свободная модель из 100% льна в натуральном бежевом оттенке.",
+        "Высокая посадка, пояс на завязках и лаконичный крой создают комфортный effortless образ для лета.",
+        "Модель имеет свободный широкий крой с высокой посадкой и поясом на завязках, который обеспечивает комфортную посадку и красивый струящийся эффект в движении.",
+        "Брюки идеально сочетаются с жилетом «Palma», базовыми топами или рубашками, а также с плетёными аксессуарами и сандалиями.",
+        "Идеальный вариант для городских образов, путешествий или отдыха.",
+        "Ткань: 100% лён.",
+        "Сезон: весна, лето."
+      ],
+      colors: ["бежевый"]
+    }
+  }
+},
+
+  {
+  id: 323,
+  price: 2400,
+  isTop: false,
+  isNew: true,
+  sku: "99454",
+  size: "XS S M L XL",
+  category: "Tops",
+  image: "/Top/Palma Vest/1.avif",
+  images: [
+    "/Top/Palma Vest/2.avif",
+    "/Top/Palma Vest/3.avif",
+    "/Top/Palma Vest/4.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Tops",
+      name: "Palma Vest",
+      description: [
+        "The Palma vest is a minimalist model in a natural style made from light textured Anne fabric.",
+        "A clean cut, decorative buttons, and a natural shade create a versatile look for warm seasons.",
+        "The model features a relaxed straight cut, a V-neckline, and decorative front buttons that create a refined accent in minimalist style.",
+        "Thanks to its versatile design, the vest pairs easily with wide pants as well as denim, skirts, or basic summer looks.",
+        "The vest is perfect for city walks, leisure, and a summer wardrobe in natural chic style.",
+        "Fabric: 100% linen.",
+        "Season: spring, summer."
+      ],
+      colors: ["beige"]
+    },
+    FR: {
+      category: "Tops",
+      name: "Gilet «Palma»",
+      description: [
+        "Le gilet « Palma » est un modèle minimaliste au style naturel en tissu texturé léger Anne.",
+        "La coupe épurée, les boutons décoratifs et la teinte naturelle créent un look polyvalent pour les saisons chaudes.",
+        "Le modèle présente une coupe droite ample, une encolure en V et des boutons décoratifs à l’avant qui créent un accent raffiné dans un style minimaliste.",
+        "Grâce à son design polyvalent, le gilet s’associe facilement avec un pantalon large, du denim, des jupes ou des looks estivaux basiques.",
+        "Le gilet convient parfaitement aux promenades en ville, aux moments de détente et à une garde-robe estivale en natural chic.",
+        "Tissu : 100 % lin.",
+        "Saison : printemps, été."
+      ],
+      colors: ["beige"]
+    },
+    UA: {
+      category: "Топи",
+      name: "Жилет «Palma»",
+      description: [
+        "Жилет «Palma» — мінімалістична модель у натуральному стилі з легкої фактурної тканини Anne.",
+        "Лаконічний крій, декоративні ґудзики та природний відтінок створюють універсальний образ для теплих сезонів.",
+        "Модель має вільний прямий крій, V-подібний виріз та декоративні ґудзики спереду, що створюють витончений акцент у мінімалістичному стилі.",
+        "Завдяки універсальному дизайну жилет легко комбінується як із широкими штанами, так і з денімом, спідницями чи базовими літніми образами.",
+        "Жилет ідеально підходить для міських прогулянок, відпочинку та літнього гардероба в стилі natural chic.",
+        "Тканина: 100% льон.",
+        "Сезон: весна, літо."
+      ],
+      colors: ["бежевий"]
+    },
+    RU: {
+      category: "Топы",
+      name: "Жилет «Palma»",
+      description: [
+        "Жилет «Palma» — минималистичная модель в натуральном стиле из лёгкой фактурной ткани Anne.",
+        "Лаконичный крой, декоративные пуговицы и натуральный оттенок создают универсальный образ для тёплых сезонов.",
+        "Модель имеет свободный прямой крой, V-образный вырез и декоративные пуговицы спереди, которые создают изящный акцент в минималистичном стиле.",
+        "Благодаря универсальному дизайну жилет легко сочетается как с широкими брюками, так и с денимом, юбками или базовыми летними образами.",
+        "Жилет идеально подходит для городских прогулок, отдыха и летнего гардероба в стиле natural chic.",
+        "Ткань: 100% лён.",
+        "Сезон: весна, лето."
+      ],
+      colors: ["бежевый"]
+    }
+  }
+},
+
+  {
+  id: 322,
+  price: 1600,
+  isTop: false,
+  isNew: true,
+  sku: "99453",
+  size: "XS S M L XL",
+  category: "Pants",
+  image: "/Pants/Bohemia Pants/1.avif",
+  images: [
+    "/Pants/Bohemia Pants/2.avif",
+    "/Pants/Bohemia Pants/3.avif",
+
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Pants",
+      name: "Bohemia Pants",
+      description: [
+        "The Bohemia pants are a relaxed bohemian-style model in soft Anne knit.",
+        "A light voluminous silhouette, waist accent, and comfortable fit create an effortless look for warm seasons.",
+        "The model features a high waist with a defined waistline and a relaxed wide cut that adds both ease and refinement to the look.",
+        "Thanks to the elastic waistband, the pants sit comfortably on the figure and adapt easily to different styling options.",
+        "The pants pair perfectly with the Bohemia top, as well as with basic tank tops, shirts, or light summer tops.",
+        "An ideal choice for leisure, city looks, or summer evening outings.",
+        "Fabric: Anne knit.",
+        "Season: spring, summer."
+      ],
+      colors: ["black"]
+    },
+    FR: {
+      category: "Pantalons",
+      name: "Pantalon «Bohemia»",
+      description: [
+        "Le pantalon « Bohemia » est un modèle ample de style bohème en tricot doux Anne.",
+        "La silhouette légère et volumineuse, l’accent sur la taille et une coupe confortable créent un look effortless pour les saisons chaudes.",
+        "Le modèle présente une taille haute avec accent sur la taille et une coupe large et décontractée qui apporte à la fois décontraction et raffinement.",
+        "Grâce à la ceinture élastique, le pantalon épouse confortablement la silhouette et s’adapte facilement à différentes stylisations.",
+        "Le pantalon s’associe parfaitement avec le top « Bohemia », ainsi qu’avec des débardeurs basiques, des chemises ou des tops estivaux légers.",
+        "Un choix idéal pour les moments de détente, les looks en ville ou les sorties estivales en soirée.",
+        "Tissu : tricot Anne.",
+        "Saison : printemps, été."
+      ],
+      colors: ["noir"]
+    },
+    UA: {
+      category: "Брюки",
+      name: "Штани «Bohemia»",
+      description: [
+        "Штани «Bohemia» — вільна модель у богемному стилі з м’якого трикотажу Anne.",
+        "Легкий об’ємний силует, акцент на талії та комфортна посадка створюють effortless образ для теплих сезонів.",
+        "Модель має високу посадку з акцентом на талії та вільний широкий крій, що додає образу розслабленості та витонченості одночасно.",
+        "Завдяки еластичному поясу штани комфортно сідають по фігурі та легко адаптуються до різних стилізацій.",
+        "Штани ідеально поєднуються з топом «Bohemia», а також із базовими майками, сорочками чи легкими літніми топами.",
+        "Ідеальний варіант для відпочинку, міських образів або вечірніх літніх виходів.",
+        "Тканина: трикотаж Anne.",
+        "Сезон: весна, літо."
+      ],
+      colors: ["чорний"]
+    },
+    RU: {
+      category: "Брюки",
+      name: "Брюки «Bohemia»",
+      description: [
+        "Брюки «Bohemia» — свободная модель в богемном стиле из мягкого трикотажа Anne.",
+        "Лёгкий объёмный силуэт, акцент на талии и комфортная посадка создают effortless образ для тёплых сезонов.",
+        "Модель имеет высокую посадку с акцентом на талии и свободный широкий крой, который добавляет образу расслабленности и изящества одновременно.",
+        "Благодаря эластичному поясу брюки комфортно сидят по фигуре и легко адаптируются к разным стилизациям.",
+        "Брюки идеально сочетаются с топом «Bohemia», а также с базовыми майками, рубашками или лёгкими летними топами.",
+        "Идеальный вариант для отдыха, городских образов или летних вечерних выходов.",
+        "Ткань: трикотаж Anne.",
+        "Сезон: весна, лето."
+      ],
+      colors: ["черный"]
+    }
+  }
+},
+
+  {
+  id: 321,
+  price: 1400,
+  isTop: false,
+  isNew: true,
+  sku: "99452",
+  size: "XS S M L XL",
+  category: "Tops",
+  image: "/Top/Bohemia Top/1.avif",
+  images: [
+    "/Top/Bohemia Top/2.avif",
+    "/Top/Bohemia Top/3.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Tops",
+      name: "Bohemia Top",
+      description: [
+        "The Bohemia top is a statement piece in modern boho style.",
+        "An open shoulder line, soft textured fabric, and voluminous sleeves create a light and feminine silhouette for warm seasons.",
+        "Voluminous sleeves create a striking accent and add a bohemian mood to the look.",
+        "Thanks to the versatile black shade, the top pairs easily with relaxed pants as well as skirts or denim.",
+        "The model is perfect for summer walks, seaside leisure, or evening looks with statement jewelry and natural accessories.",
+        "Fabric: Anne knit.",
+        "Season: spring, summer."
+      ],
+      colors: ["black"]
+    },
+    FR: {
+      category: "Tops",
+      name: "Top «Bohemia»",
+      description: [
+        "Le top « Bohemia » est une pièce forte du look en modern boho.",
+        "La ligne d’épaules ouverte, le tissu texturé doux et les manches volumineuses créent une silhouette légère et féminine pour les saisons chaudes.",
+        "Les manches volumineuses créent un accent saisissant et apportent une ambiance bohème à la silhouette.",
+        "Grâce au noir polyvalent, le top s’associe facilement avec un pantalon ample, une jupe ou du denim.",
+        "Le modèle convient parfaitement aux promenades estivales, aux moments de détente au bord de la mer ou aux looks du soir avec des bijoux marquants et des accessoires naturels.",
+        "Tissu : tricot Anne.",
+        "Saison : printemps, été."
+      ],
+      colors: ["noir"]
+    },
+    UA: {
+      category: "Топи",
+      name: "Топ «Bohemia»",
+      description: [
+        "Топ «Bohemia» — акцентний елемент образу у стилі modern boho.",
+        "Відкрита лінія плечей, м’яка фактурна тканина та об’ємні рукави створюють легкий і жіночний силует для теплих сезонів.",
+        "Об’ємні рукави створюють ефектний акцент і додають образу богемного настрою.",
+        "Завдяки універсальному чорному кольору топ легко поєднується як із вільними штанами, так і зі спідницями чи денімом.",
+        "Модель ідеально підходить для літніх прогулянок, відпочинку біля моря або вечірніх образів із акцентними прикрасами та натуральними аксесуарами.",
+        "Тканина: трикотаж Anne.",
+        "Сезон: весна, літо."
+      ],
+      colors: ["чорний"]
+    },
+    RU: {
+      category: "Топы",
+      name: "Топ «Bohemia»",
+      description: [
+        "Топ «Bohemia» — акцентный элемент образа в стиле modern boho.",
+        "Открытая линия плеч, мягкая фактурная ткань и объёмные рукава создают лёгкий и женственный силуэт для тёплых сезонов.",
+        "Объёмные рукава создают эффектный акцент и добавляют образу богемного настроения.",
+        "Благодаря универсальному чёрному цвету топ легко сочетается как со свободными брюками, так и с юбками или денимом.",
+        "Модель идеально подходит для летних прогулок, отдыха у моря или вечерних образов с акцентными украшениями и натуральными аксессуарами.",
+        "Ткань: трикотаж Anne.",
+        "Сезон: весна, лето."
+      ],
+      colors: ["черный"]
+    }
+  }
+},
+
+  {
+  id: 320,
+  price: 3000,
+  isTop: false,
+  isNew: true,
+  sku: "99451",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Bohemia Suit/1.avif",
+  images: [
+    "/Costumes/Bohemia Suit/2.avif",
+    "/Costumes/Bohemia Suit/3.avif",
+    "/Costumes/Bohemia Suit/4.avif",
+    "/Costumes/Bohemia Suit/5.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Bohemia Suit",
+      description: [
+        "The Bohemia suit is a striking bohemian-style set made from light textured Anne fabric.",
+        "Voluminous sleeves, open shoulders, and relaxed pants create a feminine silhouette with a sense of freedom and lightness.",
+        "The top with an open shoulder line highlights femininity and adds refinement to the look.",
+        "Voluminous sleeves and a waist accent form a harmonious silhouette, while relaxed pants add maximum comfort and ease of movement.",
+        "The suit is easy to style for city summer looks as well as for leisure or evening outings.",
+        "It pairs perfectly with woven accessories, sandals, or statement jewelry.",
+        "Fabric: Anne knit.",
+        "Season: spring, summer."
+      ],
+      colors: ["black"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume «Bohemia»",
+      description: [
+        "Le costume « Bohemia » est un ensemble saisissant de style bohème en tissu texturé léger Anne.",
+        "Les manches volumineuses, les épaules dénudées et le pantalon ample créent une silhouette féminine avec une sensation de liberté et de légèreté.",
+        "Le top avec une ligne d’épaules ouverte souligne la féminité et apporte du raffinement au look.",
+        "Les manches volumineuses et l’accent sur la taille forment une silhouette harmonieuse, tandis que le pantalon ample apporte un confort maximal et une grande liberté de mouvement.",
+        "Le costume se stylise facilement pour les looks estivaux en ville comme pour les moments de détente ou les sorties en soirée.",
+        "Il s’associe parfaitement avec des accessoires tressés, des sandales ou des bijoux marquants.",
+        "Tissu : tricot Anne.",
+        "Saison : printemps, été."
+      ],
+      colors: ["noir"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм «Bohemia»",
+      description: [
+        "Костюм «Bohemia» — ефектний комплект у богемному стилі з легкої фактурної тканини Anne.",
+        "Об’ємні рукави, відкриті плечі та вільні штани створюють жіночний силует із відчуттям свободи та легкості.",
+        "Топ із відкритою лінією плечей підкреслює жіночність та додає образу витонченості.",
+        "Об’ємні рукави та акцент на талії формують гармонійний силует, а вільні штани додають максимального комфорту та легкості у русі.",
+        "Костюм легко стилізується як для міських літніх образів, так і для відпочинку чи вечірніх виходів.",
+        "Ідеально поєднується з плетеними аксесуарами, сандалями або акцентними прикрасами.",
+        "Тканина: трикотаж Anne.",
+        "Сезон: весна, літо."
+      ],
+      colors: ["чорний"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм «Bohemia»",
+      description: [
+        "Костюм «Bohemia» — эффектный комплект в богемном стиле из лёгкой фактурной ткани Anne.",
+        "Объёмные рукава, открытые плечи и свободные брюки создают женственный силуэт с ощущением свободы и лёгкости.",
+        "Топ с открытой линией плеч подчёркивает женственность и добавляет образу изящества.",
+        "Объёмные рукава и акцент на талии формируют гармоничный силуэт, а свободные брюки добавляют максимального комфорта и лёгкости в движении.",
+        "Костюм легко стилизуется как для городских летних образов, так и для отдыха или вечерних выходов.",
+        "Идеально сочетается с плетёными аксессуарами, сандалиями или акцентными украшениями.",
+        "Ткань: трикотаж Anne.",
+        "Сезон: весна, лето."
+      ],
+      colors: ["черный"]
+    }
+  }
+},
+
+  {
+  id: 319,
+  price: 4200,
+  isTop: false,
+  isNew: true,
+  sku: "99450",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Mirage Dress/1.avif",
+  images: [
+    "/Dress/Mirage Dress/2.avif",
+    "/Dress/Mirage Dress/3.avif",
+    "/Dress/Mirage Dress/4.avif",
+    "/Dress/Mirage Dress/5.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Mirage Dress",
+      description: [
+        "The Mirage dress is a transformation of mood and look in a single piece.",
+        "Light textured fabric, an airy silhouette, and the ability to wear the model in two ways create the perfect summer set for leisure and special moments.",
+        "The Mirage dress is made for those who value versatility, natural fabrics, and effortless aesthetics.",
+        "The set can be worn in two ways: as an airy maxi dress with a relaxed silhouette and long sleeves, or as a fitted mini dress on thin straps that highlights the figure.",
+        "Thanks to its layered design, the look appears soft, natural, and very feminine at the same time.",
+        "Fabric: handmade eco-crash.",
+        "Season: spring, summer."
+      ],
+      colors: ["milk white"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe «Mirage»",
+      description: [
+        "La robe « Mirage » est une transformation d’ambiance et de silhouette en une seule pièce.",
+        "Le tissu texturé léger, la silhouette aérienne et la possibilité de porter le modèle de deux façons créent l’ensemble estival idéal pour les moments de détente et les occasions spéciales.",
+        "La robe « Mirage » est conçue pour celles qui apprécient la polyvalence, les tissus naturels et une esthétique effortless.",
+        "L’ensemble peut se porter de deux manières : comme une robe maxi aérienne à silhouette ample et manches longues, ou comme une mini-robe ajustée à fines bretelles qui met la silhouette en valeur.",
+        "Grâce à sa superposition, le look paraît doux, naturel et très féminin à la fois.",
+        "Tissu : eco-crash fait main.",
+        "Saison : printemps, été."
+      ],
+      colors: ["blanc lait"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Сукня «Mirage»",
+      description: [
+        "Сукня «Mirage» — це трансформація настрою та образу в одному виробі.",
+        "Легка фактурна тканина, повітряний силует і можливість носити модель у двох варіантах створюють ідеальний літній комплект для відпочинку та особливих моментів.",
+        "Сукня «Mirage» створена для тих, хто цінує універсальність, натуральні тканини та effortless естетику.",
+        "Комплект можна носити у двох варіантах: як повітряну maxi сукню з вільним силуетом та довгими рукавами або як приталену міні-сукню на тонких бретелях, що підкреслює фігуру.",
+        "Завдяки багатошаровості образ виглядає ніжно, природно та водночас дуже жіночно.",
+        "Тканина: еко-креш ручної роботи.",
+        "Сезон: весна, літо."
+      ],
+      colors: ["молочний"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Платье «Mirage»",
+      description: [
+        "Платье «Mirage» — это трансформация настроения и образа в одном изделии.",
+        "Лёгкая фактурная ткань, воздушный силуэт и возможность носить модель двумя способами создают идеальный летний комплект для отдыха и особых моментов.",
+        "Платье «Mirage» создано для тех, кто ценит универсальность, натуральные ткани и effortless эстетику.",
+        "Комплект можно носить двумя способами: как воздушное maxi платье со свободным силуэтом и длинными рукавами или как приталенное мини-платье на тонких бретелях, подчёркивающее фигуру.",
+        "Благодаря многослойности образ выглядит нежно, естественно и при этом очень женственно.",
+        "Ткань: эко-креш ручной работы.",
+        "Сезон: весна, лето."
+      ],
+      colors: ["молочный"]
+    }
+  }
+},
+
+  {
+  id: 318,
+  price: 2000,
+  isTop: false,
+  isNew: true,
+  sku: "99449",
+  size: "XS S M L XL",
+  category: "Tops",
+  image: "/Top/Nerea Cover-up/1.avif",
+  images: [
+    "/Top/Nerea Cover-up/2.avif",
+    "/Top/Nerea Cover-up/3.avif",
+    "/Top/Nerea Cover-up/4.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Tops",
+      name: "Nerea Cover-up",
+      description: [
+        "The light Nerea cover-up is the perfect finishing touch for summer looks and seaside leisure.",
+        "A semi-sheer texture, voluminous hood, and relaxed silhouette create an effortless mood and comfort even on hot days.",
+        "The Nerea cover-up is made for warm evenings, sea breeze, and layered summer outfits.",
+        "The relaxed cut does not restrict movement, while the voluminous hood adds a relaxed resort-style aesthetic to the look.",
+        "The cover-up pairs perfectly with dresses, swimwear, tops, and basic summer sets.",
+        "Fabric: viscose.",
+        "Season: spring, summer."
+      ],
+      colors: ["camel"]
+    },
+    FR: {
+      category: "Tops",
+      name: "Cape «Nerea»",
+      description: [
+        "La légère cape « Nerea » est la touche idéale pour les looks estivaux et les moments de détente au bord de la mer.",
+        "La texture semi-transparente, la capuche volumineuse et la silhouette ample créent une ambiance effortless et un confort même par temps chaud.",
+        "La cape « Nerea » est conçue pour les soirées chaudes, la brise marine et les looks estivaux superposés.",
+        "La coupe ample ne limite pas les mouvements, tandis que la capuche volumineuse apporte une esthétique décontractée resort style à la silhouette.",
+        "La cape s’associe parfaitement avec robes, maillots de bain, tops et ensembles estivaux basiques.",
+        "Tissu : viscose.",
+        "Saison : printemps, été."
+      ],
+      colors: ["camel"]
+    },
+    UA: {
+      category: "Топи",
+      name: "Накидка «Nerea»",
+      description: [
+        "Легка накидка «Nerea» — ідеальне доповнення до літніх образів та відпочинку біля моря.",
+        "Напівпрозора текстура, об’ємний капюшон і вільний силует створюють effortless настрій та дарують комфорт навіть у спекотні дні.",
+        "Накидка «Nerea» створена для теплих вечорів, морського бризу та багатошарових літніх образів.",
+        "Вільний крій не обмежує рухів, а об’ємний капюшон додає образу розслабленої естетики resort style.",
+        "Накидка ідеально поєднується із сукнями, купальниками, топами та базовими літніми комплектами.",
+        "Тканина: віскоза.",
+        "Сезон: весна, літо."
+      ],
+      colors: ["кемел"]
+    },
+    RU: {
+      category: "Топы",
+      name: "Накидка «Nerea»",
+      description: [
+        "Лёгкая накидка «Nerea» — идеальное дополнение к летним образам и отдыху у моря.",
+        "Полупрозрачная текстура, объёмный капюшон и свободный силуэт создают effortless настроение и дарят комфорт даже в жаркие дни.",
+        "Накидка «Nerea» создана для тёплых вечеров, морского бриза и многослойных летних образов.",
+        "Свободный крой не ограничивает движений, а объёмный капюшон добавляет образу расслабленной эстетики resort style.",
+        "Накидка идеально сочетается с платьями, купальниками, топами и базовыми летними комплектами.",
+        "Ткань: вискоза.",
+        "Сезон: весна, лето."
+      ],
+      colors: ["кэмел"]
+    }
+  }
+},
+
+  {
+  id: 317,
+  price: 2300,
+  isTop: false,
+  isNew: true,
+  sku: "99448",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Nerea Dress/1.avif",
+  images: [
+    "/Dress/Nerea Dress/2.avif",
+    "/Dress/Nerea Dress/3.avif",
+    "/Dress/Nerea Dress/4.avif",
+    "/Dress/Nerea Dress/5.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Nerea Dress",
+      description: [
+        "The light Nerea dress is made for hot days, sea breeze, and absolute comfort.",
+        "A relaxed silhouette, soft viscose, and a natural camel shade make it the perfect base for a summer wardrobe.",
+        "The Nerea dress is about freedom of movement, naturalness, and effortless femininity.",
+        "A deep V-neckline and thin straps add refinement to the look, while the relaxed maxi silhouette creates a sense of lightness and fluid movement.",
+        "The dress does not restrict movement and is perfect for both seaside leisure and city summer looks.",
+        "Fabric: viscose.",
+        "Season: spring, summer."
+      ],
+      colors: ["camel"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe «Nerea»",
+      description: [
+        "La légère robe « Nerea » est créée pour les journées chaudes, la brise marine et un confort absolu.",
+        "La silhouette ample, la viscose douce et la teinte camel naturelle en font une base idéale pour une garde-robe estivale.",
+        "La robe « Nerea », c’est la liberté de mouvement, la naturalité et une féminité effortless.",
+        "Le profond décolleté en V et les fines bretelles apportent du raffinement à la silhouette, tandis que le maxi ample crée un effet de légèreté et de mouvement fluide.",
+        "La robe ne limite pas les mouvements et convient aussi bien au bord de la mer qu’aux looks estivaux en ville.",
+        "Tissu : viscose.",
+        "Saison : printemps, été."
+      ],
+      colors: ["camel"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Сукня «Nerea»",
+      description: [
+        "Легка сукня «Nerea» створена для спекотних днів, морського бризу та абсолютного комфорту.",
+        "Вільний силует, м’яка віскоза та природний відтінок кемел роблять її ідеальною базою для літнього гардероба.",
+        "Сукня «Nerea» — це про свободу рухів, натуральність і effortless жіночність.",
+        "Глибоке V-декольте та тонкі бретелі додають образу витонченості, а вільний maxi силует створює ефект легкості й плавного руху.",
+        "Сукня не обмежує рухів та ідеально підходить як для відпочинку біля моря, так і для міських літніх образів.",
+        "Тканина: віскоза.",
+        "Сезон: весна, літо."
+      ],
+      colors: ["кемел"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Платье «Nerea»",
+      description: [
+        "Лёгкое платье «Nerea» создано для жарких дней, морского бриза и абсолютного комфорта.",
+        "Свободный силуэт, мягкая вискоза и натуральный оттенок кэмел делают его идеальной базой для летнего гардероба.",
+        "Платье «Nerea» — это про свободу движений, натуральность и effortless женственность.",
+        "Глубокое V-декольте и тонкие бретели добавляют образу изящества, а свободный maxi силуэт создаёт эффект лёгкости и плавного движения.",
+        "Платье не ограничивает движений и идеально подходит как для отдыха у моря, так и для городских летних образов.",
+        "Ткань: вискоза.",
+        "Сезон: весна, лето."
+      ],
+      colors: ["кэмел"]
+    }
+  }
+},
+
+  {
+  id: 316,
+  price: 4100,
+  isTop: false,
+  isNew: true,
+  sku: "99447",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Terra Suit/1.avif",
+  images: [
+    "/Costumes/Terra Suit/2.avif",
+    "/Costumes/Terra Suit/3.avif",
+    "/Costumes/Terra Suit/4.avif",
+    "/Costumes/Terra Suit/5.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Terra Suit",
+      description: [
+        "The Terra suit combines natural texture, a clean cut, and effortless style.",
+        "Made from hemp muslin in a warm beige shade, it is designed for comfortable everyday summer looks.",
+        "The set includes a straight sleeveless top and relaxed tie-waist pants.",
+        "The minimalist design is complemented by accent buttons on the back of the top, adding refinement and a natural aesthetic to the look.",
+        "The relaxed silhouette makes the suit versatile — for the city, travel, leisure, or everyday summer outfits.",
+        "The suit pairs easily with basic accessories, straw bags, and natural textures, creating a relaxed natural look in modern minimalism style.",
+        "Fabric: hemp muslin.",
+        "Season: spring, summer."
+      ],
+      colors: ["beige"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume «Terra»",
+      description: [
+        "Le costume « Terra » allie texture naturelle, coupe épurée et style effortless.",
+        "Réalisé en mousseline de chanvre dans une teinte beige chaude, il est conçu pour des looks estivaux confortables au quotidien.",
+        "L’ensemble comprend un top droit sans manches et un pantalon ample à liens.",
+        "Le design minimaliste est complété par des boutons accentués au dos du top, apportant raffinement et esthétique naturelle à la silhouette.",
+        "La silhouette ample rend le costume polyvalent — pour la ville, les voyages, les moments de détente ou les looks estivaux du quotidien.",
+        "Le costume s’associe facilement avec des accessoires basiques, des sacs en paille et des textures naturelles, créant un look natural relaxed dans un style modern minimalism.",
+        "Tissu : mousseline de chanvre.",
+        "Saison : printemps, été."
+      ],
+      colors: ["beige"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм «Terra»",
+      description: [
+        "Костюм «Terra» — це поєднання натуральної фактури, лаконічного крою та effortless стилю.",
+        "Виконаний із конопляного мусліну у теплому бежевому відтінку, він створений для комфортних літніх образів на щодень.",
+        "Комплект складається з прямого топа без рукавів та вільних брюк на зав’язках.",
+        "Мінімалістичний дизайн доповнений акцентними ґудзиками на спинці топа, що додають образу витонченості та натуральної естетики.",
+        "Вільний силует робить костюм універсальним — для міста, подорожей, відпочинку чи повсякденних літніх образів.",
+        "Костюм легко комбінується з базовими аксесуарами, солом’яними сумками та натуральними текстурами, створюючи relaxed natural look у стилі modern minimalism.",
+        "Тканина: конопляний муслін.",
+        "Сезон: весна, літо."
+      ],
+      colors: ["бежевий"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм «Terra»",
+      description: [
+        "Костюм «Terra» — это сочетание натуральной фактуры, лаконичного кроя и effortless стиля.",
+        "Выполненный из конопляного муслина в тёплом бежевом оттенке, он создан для комфортных летних образов на каждый день.",
+        "Комплект состоит из прямого топа без рукавов и свободных брюк на завязках.",
+        "Минималистичный дизайн дополнен акцентными пуговицами на спинке топа, которые добавляют образу изящества и натуральной эстетики.",
+        "Свободный силуэт делает костюм универсальным — для города, путешествий, отдыха или повседневных летних образов.",
+        "Костюм легко сочетается с базовыми аксессуарами, соломенными сумками и натуральными текстурами, создавая relaxed natural look в стиле modern minimalism.",
+        "Ткань: конопляный муслин.",
+        "Сезон: весна, лето."
+      ],
+      colors: ["бежевый"]
+    }
+  }
+},
+
+  {
+  id: 315,
+  price: 1700,
+  isTop: false,
+  isNew: true,
+  sku: "99446",
+  size: "XS S M L XL",
+  category: "Tops",
+  image: "/Top/Provence Top/1.avif",
+  images: [
+    "/Top/Provence Top/2.avif",
+    "/Top/Provence Top/3.avif",
+    "/Top/Provence Top/4.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Tops",
+      name: "Provence Top",
+      description: [
+        "The Provence top is a clean hemp muslin model in a natural beige shade.",
+        "An asymmetric cut with a waist tie adds lightness, femininity, and a refined French mood to the look.",
+        "The model features an asymmetric cut with a decorative wrap and an accent side tie that beautifully highlights the silhouette.",
+        "The light fabric texture and natural beige shade create a relaxed aesthetic in effortless chic style.",
+        "The top pairs easily with skirts, linen pants, or shorts, forming a cohesive summer look for the city, travel, or leisure.",
+        "Fabric: hemp muslin.",
+        "Season: spring, summer."
+      ],
+      colors: ["beige"]
+    },
+    FR: {
+      category: "Tops",
+      name: "Top «Provence»",
+      description: [
+        "Le top « Provence » est un modèle épuré en mousseline de chanvre dans une teinte beige naturelle.",
+        "La coupe asymétrique avec lien à la taille apporte légèreté, féminité et une ambiance française raffinée à la silhouette.",
+        "Le modèle présente une coupe asymétrique avec portefeuille décoratif et lien accentué sur le côté qui souligne joliment la silhouette.",
+        "La texture légère du tissu et la teinte beige naturelle créent une esthétique relaxed dans un style effortless chic.",
+        "Le top s’associe facilement avec jupes, pantalons en lin ou shorts, formant un look estival cohérent pour la ville, les voyages ou les moments de détente.",
+        "Tissu : mousseline de chanvre.",
+        "Saison : printemps, été."
+      ],
+      colors: ["beige"]
+    },
+    UA: {
+      category: "Топи",
+      name: "Топ «Provence»",
+      description: [
+        "Топ «Provence» — лаконічна модель із конопляного мусліну в натуральному бежевому відтінку.",
+        "Асиметричний крій із зав’язкою на талії додає образу легкості, жіночності та витонченого французького настрою.",
+        "Модель має асиметричний крій із декоративним запахом та акцентною зав’язкою збоку, що красиво підкреслює силует.",
+        "Легка текстура тканини та природний бежевий відтінок створюють relaxed aesthetic у стилі effortless chic.",
+        "Топ легко поєднується зі спідницями, лляними брюками або шортами, формуючи цілісний літній образ для міста, подорожей чи відпочинку.",
+        "Тканина: конопляний муслін.",
+        "Сезон: весна, літо."
+      ],
+      colors: ["бежевий"]
+    },
+    RU: {
+      category: "Топы",
+      name: "Топ «Provence»",
+      description: [
+        "Топ «Provence» — лаконичная модель из конопляного муслина в натуральном бежевом оттенке.",
+        "Асимметричный крой с завязкой на талии добавляет образу лёгкости, женственности и утончённого французского настроения.",
+        "Модель имеет асимметричный крой с декоративным запахом и акцентной завязкой сбоку, которая красиво подчёркивает силуэт.",
+        "Лёгкая текстура ткани и натуральный бежевый оттенок создают relaxed aesthetic в стиле effortless chic.",
+        "Топ легко сочетается с юбками, льняными брюками или шортами, формируя цельный летний образ для города, путешествий или отдыха.",
+        "Ткань: конопляный муслин.",
+        "Сезон: весна, лето."
+      ],
+      colors: ["бежевый"]
+    }
+  }
+},
+
+  {
+  id: 314,
+  price: 2300,
+  isTop: false,
+  isNew: true,
+  sku: "99445",
+  size: "XS S M L XL",
+  category: "Skirts",
+  image: "/Skirts/Provence Skirt/1.avif",
+  images: [
+    "/Skirts/Provence Skirt/2.avif",
+    "/Skirts/Provence Skirt/3.avif",
+    "/Skirts/Provence Skirt/4.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Skirts",
+      name: "Provence Skirt",
+      description: [
+        "The Provence skirt is a light hemp muslin model in a natural beige shade.",
+        "Soft pleats, a relaxed silhouette, and the natural fabric texture create a feminine effortless chic look.",
+        "The midi design with a relaxed cut creates a light and refined silhouette.",
+        "Thanks to soft pleats, the skirt looks voluminous yet very airy.",
+        "The natural beige shade makes it versatile to pair with tops, vests, shirts, or basic tank tops.",
+        "Provence is the perfect foundation for a summer capsule wardrobe — for walks, travel, and leisure.",
+        "Fabric: hemp muslin.",
+        "Season: spring, summer."
+      ],
+      colors: ["beige"]
+    },
+    FR: {
+      category: "Jupes",
+      name: "Jupe «Provence»",
+      description: [
+        "La jupe « Provence » est un modèle léger en mousseline de chanvre dans une teinte beige naturelle.",
+        "Des plis doux, une silhouette ample et la texture naturelle du tissu créent un look féminin effortless chic.",
+        "Le modèle présente une coupe midi ample qui crée une silhouette légère et raffinée.",
+        "Grâce aux plis doux, la jupe paraît volumineuse tout en restant très aérienne.",
+        "La teinte beige naturelle rend le modèle polyvalent pour l’associer avec tops, gilets, chemises ou débardeurs basiques.",
+        "« Provence » devient la base idéale d’une garde-robe capsule estivale — pour les promenades, les voyages et les moments de détente.",
+        "Tissu : mousseline de chanvre.",
+        "Saison : printemps, été."
+      ],
+      colors: ["beige"]
+    },
+    UA: {
+      category: "Спідниці",
+      name: "Спідниця «Provence»",
+      description: [
+        "Спідниця «Provence» — легка модель із конопляного мусліну у природному бежевому відтінку.",
+        "М’які складки, вільний силует та натуральна фактура тканини створюють жіночний образ у стилі effortless chic.",
+        "Модель має вільний крій міді, що створює легкий та витончений силует.",
+        "Завдяки м’яким складкам спідниця виглядає об’ємно та водночас дуже легко.",
+        "Натуральний бежевий відтінок робить модель універсальною для поєднання з топами, жилетами, сорочками або базовими майками.",
+        "«Provence» стане ідеальною основою для літнього капсульного гардероба — для прогулянок, подорожей та відпочинку.",
+        "Тканина: конопляний муслін.",
+        "Сезон: весна, літо."
+      ],
+      colors: ["бежевий"]
+    },
+    RU: {
+      category: "Юбки",
+      name: "Юбка «Provence»",
+      description: [
+        "Юбка «Provence» — лёгкая модель из конопляного муслина в натуральном бежевом оттенке.",
+        "Мягкие складки, свободный силуэт и натуральная фактура ткани создают женственный образ в стиле effortless chic.",
+        "Модель имеет свободный крой миди, который создаёт лёгкий и изящный силуэт.",
+        "Благодаря мягким складкам юбка выглядит объёмной и при этом очень лёгкой.",
+        "Натуральный бежевый оттенок делает модель универсальной для сочетания с топами, жилетами, рубашками или базовыми майками.",
+        "«Provence» станет идеальной основой для летнего капсульного гардероба — для прогулок, путешествий и отдыха.",
+        "Ткань: конопляный муслин.",
+        "Сезон: весна, лето."
+      ],
+      colors: ["бежевый"]
+    }
+  }
+},
+
+  {
+  id: 313,
+  price: 4000,
+  isTop: false,
+  isNew: true,
+  sku: "99444",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Provence Suit Biege/1.avif",
+  images: [
+    "/Costumes/Provence Suit Biege/2.avif",
+    "/Costumes/Provence Suit Biege/3.avif",
+    "/Costumes/Provence Suit Biege/4.avif",
+    "/Costumes/Provence Suit Biege/5.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Provence Suit Biege",
+      description: [
+        "The Provence suit is an elegant hemp muslin set in a natural beige shade.",
+        "Light fabric texture, a feminine wrap top, and a skirt with soft pleats create an effortless silhouette in the spirit of the French countryside.",
+        "The set includes an asymmetric wrap top with a decorative tie and a midi skirt with a relaxed cut.",
+        "The clean silhouette highlights femininity while keeping a sense of lightness and freedom of movement.",
+        "Thanks to its natural tone, the suit is easy to style for both casual and more romantic summer looks.",
+        "Provence is perfect for travel, walks, seaside leisure, and a capsule wardrobe in a natural aesthetic.",
+        "Fabric: hemp muslin.",
+        "Season: spring, summer."
+      ],
+      colors: ["beige"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume «Provence» beige",
+      description: [
+        "Le costume « Provence » est un ensemble raffiné en mousseline de chanvre dans une teinte beige naturelle.",
+        "La texture légère du tissu, un top portefeuille féminin et une jupe aux plis doux créent une silhouette effortless dans l’esprit de la province française.",
+        "L’ensemble comprend un top asymétrique portefeuille avec lien décoratif et une jupe midi à coupe ample.",
+        "La silhouette épurée souligne la féminité tout en conservant une sensation de légèreté et de liberté de mouvement.",
+        "Grâce à sa teinte naturelle, le costume se stylise facilement en looks casual comme en looks estivaux plus romantiques.",
+        "« Provence » est idéal pour les voyages, les promenades, les moments de détente au bord de la mer et une garde-robe capsule en natural aesthetic.",
+        "Tissu : mousseline de chanvre.",
+        "Saison : printemps, été."
+      ],
+      colors: ["beige"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм «Provence» бежевий",
+      description: [
+        "Костюм «Provence» — витончений комплект із конопляного мусліну у натуральному бежевому відтінку.",
+        "Легка фактура тканини, жіночний топ на запах та спідниця з м’якими складками створюють effortless silhouette у стилі французької провінції.",
+        "Комплект складається з асиметричного топу на запах із декоративною зав’язкою та спідниці міді вільного крою.",
+        "Лаконічний силует підкреслює жіночність і водночас зберігає відчуття легкості та свободи рухів.",
+        "Завдяки натуральному відтінку костюм легко стилізується як у casual, так і в більш романтичних літніх образах.",
+        "«Provence» — ідеальний варіант для подорожей, прогулянок, відпочинку біля моря та капсульного гардероба у natural aesthetic.",
+        "Тканина: конопляний муслін.",
+        "Сезон: весна, літо."
+      ],
+      colors: ["бежевий"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм «Provence» Biege",
+      description: [
+        "Костюм «Provence» — изящный комплект из конопляного муслина в натуральном бежевом оттенке.",
+        "Лёгкая фактура ткани, женственный топ на запах и юбка с мягкими складками создают effortless silhouette в духе французской провинции.",
+        "Комплект состоит из асимметричного топа на запах с декоративной завязкой и юбки миди свободного кроя.",
+        "Лаконичный силуэт подчёркивает женственность и при этом сохраняет ощущение лёгкости и свободы движений.",
+        "Благодаря натуральному оттенку костюм легко стилизуется как в casual, так и в более романтичных летних образах.",
+        "«Provence» — идеальный вариант для путешествий, прогулок, отдыха у моря и капсульного гардероба в natural aesthetic.",
+        "Ткань: конопляный муслин.",
+        "Сезон: весна, лето."
+      ],
+      colors: ["бежевый"]
+    }
+  }
+},
+
+  {
+  id: 312,
+  price: 2600,
+  isTop: false,
+  isNew: true,
+  sku: "99443",
+  size: "XS S M L XL",
+  category: "Tops",
+  image: "/Top/Willow Top/1.avif",
+  images: [
+    "/Top/Willow Top/2.avif",
+    "/Top/Willow Top/3.avif",
+    "/Top/Willow Top/4.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Tops",
+      name: "Willow Top",
+      description: [
+        "The Willow top is a light hemp muslin model in a natural beige shade.",
+        "An asymmetric cut, accent buttons, and voluminous sleeves create a relaxed silhouette for comfortable summer looks.",
+        "The model has a loose asymmetric cut that drapes beautifully and adds an effortless feel to the outfit.",
+        "Decorative shoulder buttons create a stylish accent, while voluminous sleeves make the silhouette more feminine and soft.",
+        "The top pairs easily with pants, shorts, or skirts in a natural aesthetic and becomes a base for a capsule summer wardrobe.",
+        "Fabric: hemp muslin.",
+        "Season: spring, summer."
+      ],
+      colors: ["beige"]
+    },
+    FR: {
+      category: "Tops",
+      name: "Top «Willow»",
+      description: [
+        "Le top « Willow » est un modèle léger en mousseline de chanvre dans une teinte beige naturelle.",
+        "La coupe asymétrique, les boutons accentués et les manches volumineuses créent une silhouette relaxed pour des looks estivaux confortables.",
+        "Le modèle présente une coupe asymétrique ample qui tombe joliment et apporte une allure décontractée.",
+        "Les boutons décoratifs sur l’épaule créent un accent stylé, tandis que les manches volumineuses rendent la silhouette plus féminine et douce.",
+        "Le top s’associe facilement avec pantalons, shorts ou jupes dans une esthétique natural et devient une base pour une garde-robe capsule estivale.",
+        "Tissu : mousseline de chanvre.",
+        "Saison : printemps, été."
+      ],
+      colors: ["beige"]
+    },
+    UA: {
+      category: "Топи",
+      name: "Топ «Willow»",
+      description: [
+        "Топ «Willow» — легка модель із конопляного мусліну у природному відтінку беж.",
+        "Асиметричний крій, акцентні ґудзики та об’ємні рукави створюють relaxed silhouette для комфортних літніх образів.",
+        "Модель має вільний асиметричний крій, який красиво лягає по фігурі та додає образу невимушеності.",
+        "Декоративні ґудзики на плечі створюють стильний акцент, а об’ємні рукави роблять силует більш жіночним та м’яким.",
+        "Топ легко поєднується з брюками, шортами чи спідницями у natural aesthetic та стане базою для капсульного літнього гардероба.",
+        "Тканина: конопляний муслін.",
+        "Сезон: весна, літо."
+      ],
+      colors: ["бежевий"]
+    },
+    RU: {
+      category: "Топы",
+      name: "Топ «Willow»",
+      description: [
+        "Топ «Willow» — лёгкая модель из конопляного муслина в природном бежевом оттенке.",
+        "Асимметричный крой, акцентные пуговицы и объёмные рукава создают relaxed silhouette для комфортных летних образов.",
+        "Модель имеет свободный асимметричный крой, который красиво ложится по фигуре и добавляет образу непринуждённости.",
+        "Декоративные пуговицы на плече создают стильный акцент, а объёмные рукава делают силуэт более женственным и мягким.",
+        "Топ легко сочетается с брюками, шортами или юбками в natural aesthetic и станет базой для капсульного летнего гардероба.",
+        "Ткань: конопляный муслин.",
+        "Сезон: весна, лето."
+      ],
+      colors: ["бежевый"]
+    }
+  }
+},
+
+  {
+  id: 311,
+  price: 5000,
+  isTop: false,
+  isNew: true,
+  sku: "99442",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Willow Suit/1.avif",
+  images: [
+    "/Costumes/Willow Suit/2.avif",
+    "/Costumes/Willow Suit/3.avif",
+    "/Costumes/Willow Suit/4.avif",
+    "/Costumes/Willow Suit/5.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Willow Suit",
+      description: [
+        "The Willow suit is a laconic hemp muslin set created for light, natural looks.",
+        "A relaxed silhouette, natural fabric texture, and accent buttons give the piece an effortless natural chic aesthetic.",
+        "The set includes an asymmetric tunic with decorative buttons and relaxed pants with a comfortable fit.",
+        "Voluminous sleeves add softness and femininity, while the clean cut makes the suit easy to style for both casual and more elegant summer outfits.",
+        "Willow is perfect for travel, leisure, city walks, and a capsule wardrobe in natural tones.",
+        "Fabric: hemp muslin.",
+        "Season: spring, summer."
+      ],
+      colors: ["beige"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume «Willow»",
+      description: [
+        "Le costume « Willow » est un ensemble laconic en mousseline de chanvre, créé pour des looks légers et naturels.",
+        "La silhouette ample, la texture naturelle du tissu et les boutons accentués confèrent à la pièce une esthétique effortless natural chic.",
+        "L’ensemble comprend une tunique asymétrique avec boutons décoratifs et un pantalon ample à coupe confortable.",
+        "Les manches volumineuses ajoutent douceur et féminité, tandis que la coupe épurée permet de le styliser facilement en looks casual ou estivaux plus élégants.",
+        "« Willow » est idéal pour les voyages, les moments de détente, les promenades en ville et une garde-robe capsule aux tons naturels.",
+        "Tissu : mousseline de chanvre.",
+        "Saison : printemps, été."
+      ],
+      colors: ["beige"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм «Willow»",
+      description: [
+        "Костюм «Willow» — лаконічний комплект із конопляного мусліну, створений для легких та природних образів.",
+        "Вільний силует, натуральна текстура тканини та акцентні ґудзики додають виробу effortless естетики у стилі natural chic.",
+        "Комплект складається з асиметричної туніки з декоративними ґудзиками та вільних брюк із комфортною посадкою.",
+        "Об’ємні рукави додають образу м’якості та жіночності, а лаконічний крій дозволяє легко стилізувати костюм як у casual, так і в більш елегантних літніх образах.",
+        "«Willow» — ідеальний варіант для подорожей, відпочинку, прогулянок містом та капсульного гардероба у природних відтінках.",
+        "Тканина: конопляний муслін.",
+        "Сезон: весна, літо."
+      ],
+      colors: ["бежевий"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм «Willow»",
+      description: [
+        "Костюм «Willow» — лаконичный комплект из конопляного муслина, созданный для лёгких и природных образов.",
+        "Свободный силуэт, натуральная текстура ткани и акцентные пуговицы придают изделию effortless эстетику в стиле natural chic.",
+        "Комплект состоит из асимметричной туники с декоративными пуговицами и свободных брюк с комфортной посадкой.",
+        "Объёмные рукава добавляют образу мягкости и женственности, а лаконичный крой позволяет легко стилизовать костюм как в casual, так и в более элегантных летних образах.",
+        "«Willow» — идеальный вариант для путешествий, отдыха, прогулок по городу и капсульного гардероба в природных оттенках.",
+        "Ткань: конопляный муслин.",
+        "Сезон: весна, лето."
+      ],
+      colors: ["бежевый"]
+    }
+  }
+},
+
+  {
   id: 310,
   price: 3400,
   isTop: false,
