@@ -14,7 +14,8 @@
     "test:crypto-flow": "node scripts/test-crypto-payment-flow.js",
     "optimize:images": "node scripts/optimize-hoom-images.mjs",
     "optimize:videos": "node scripts/optimize-hoom-videos.mjs",
-    "optimize:media": "npm run optimize:images && npm run optimize:videos"
+    "optimize:media": "npm run optimize:images && npm run optimize:videos",
+    "optimize:new-products": "node scripts/optimize-new-product-images.mjs"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",

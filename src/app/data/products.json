@@ -2076,12 +2076,12 @@
     "sku": "99441",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Iris Dress/1.avif",
+    "image": "/Dress/Iris Dress/1.webp",
     "images": [
-      "/Dress/Iris Dress/2.avif",
-      "/Dress/Iris Dress/3.avif",
-      "/Dress/Iris Dress/4.avif",
-      "/Dress/Iris Dress/5.avif"
+      "/Dress/Iris Dress/2.webp",
+      "/Dress/Iris Dress/3.webp",
+      "/Dress/Iris Dress/4.webp",
+      "/Dress/Iris Dress/5.webp"
     ],
     "sizes": [
       "XS",
@@ -2165,12 +2165,12 @@
     "sku": "99440",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Bella Dress/1.avif",
+    "image": "/Dress/Bella Dress/1.webp",
     "images": [
-      "/Dress/Bella Dress/2.avif",
-      "/Dress/Bella Dress/3.avif",
-      "/Dress/Bella Dress/4.avif",
-      "/Dress/Bella Dress/5.avif"
+      "/Dress/Bella Dress/2.webp",
+      "/Dress/Bella Dress/3.webp",
+      "/Dress/Bella Dress/4.webp",
+      "/Dress/Bella Dress/5.webp"
     ],
     "sizes": [
       "XS",
@@ -2258,12 +2258,12 @@
     "sku": "99439",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Linen mini/1.avif",
+    "image": "/Dress/Linen mini/1.webp",
     "images": [
-      "/Dress/Linen mini/2.avif",
-      "/Dress/Linen mini/3.avif",
-      "/Dress/Linen mini/4.avif",
-      "/Dress/Linen mini/5.avif"
+      "/Dress/Linen mini/2.webp",
+      "/Dress/Linen mini/3.webp",
+      "/Dress/Linen mini/4.webp",
+      "/Dress/Linen mini/5.webp"
     ],
     "sizes": [
       "XS",
@@ -2347,12 +2347,12 @@
     "sku": "99438",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Elza Dress/1.avif",
+    "image": "/Dress/Elza Dress/1.webp",
     "images": [
-      "/Dress/Elza Dress/2.avif",
-      "/Dress/Elza Dress/3.avif",
-      "/Dress/Elza Dress/4.avif",
-      "/Dress/Elza Dress/5.avif"
+      "/Dress/Elza Dress/2.webp",
+      "/Dress/Elza Dress/3.webp",
+      "/Dress/Elza Dress/4.webp",
+      "/Dress/Elza Dress/5.webp"
     ],
     "sizes": [
       "XS",
@@ -2436,12 +2436,12 @@
     "sku": "99437",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Jasmine Dress/1.avif",
+    "image": "/Dress/Jasmine Dress/1.webp",
     "images": [
-      "/Dress/Jasmine Dress/2.avif",
-      "/Dress/Jasmine Dress/3.avif",
-      "/Dress/Jasmine Dress/4.avif",
-      "/Dress/Jasmine Dress/5.avif"
+      "/Dress/Jasmine Dress/2.webp",
+      "/Dress/Jasmine Dress/3.webp",
+      "/Dress/Jasmine Dress/4.webp",
+      "/Dress/Jasmine Dress/5.webp"
     ],
     "sizes": [
       "XS",
@@ -2525,14 +2525,14 @@
     "sku": "99436",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Coraline Dress/1.avif",
+    "image": "/Dress/Coraline Dress/1.webp",
     "images": [
-      "/Dress/Coraline Dress/2.avif",
-      "/Dress/Coraline Dress/3.avif",
-      "/Dress/Coraline Dress/4.avif",
-      "/Dress/Coraline Dress/5.avif",
-      "/Dress/Coraline Dress/6.avif",
-      "/Dress/Coraline Dress/7.avif"
+      "/Dress/Coraline Dress/2.webp",
+      "/Dress/Coraline Dress/3.webp",
+      "/Dress/Coraline Dress/4.webp",
+      "/Dress/Coraline Dress/5.webp",
+      "/Dress/Coraline Dress/6.webp",
+      "/Dress/Coraline Dress/7.webp"
     ],
     "sizes": [
       "XS",
@@ -2620,12 +2620,12 @@
     "sku": "99435",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Sirena Dress/1.avif",
+    "image": "/Dress/Sirena Dress/1.webp",
     "images": [
-      "/Dress/Sirena Dress/2.avif",
-      "/Dress/Sirena Dress/3.avif",
-      "/Dress/Sirena Dress/4.avif",
-      "/Dress/Sirena Dress/5.avif"
+      "/Dress/Sirena Dress/2.webp",
+      "/Dress/Sirena Dress/3.webp",
+      "/Dress/Sirena Dress/4.webp",
+      "/Dress/Sirena Dress/5.webp"
     ],
     "sizes": [
       "XS",
@@ -2709,12 +2709,12 @@
     "sku": "99434",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Eco Crash Suit/1.avif",
+    "image": "/Costumes/Eco Crash Suit/1.webp",
     "images": [
-      "/Costumes/Eco Crash Suit/2.avif",
-      "/Costumes/Eco Crash Suit/3.avif",
-      "/Costumes/Eco Crash Suit/4.avif",
-      "/Costumes/Eco Crash Suit/5.avif"
+      "/Costumes/Eco Crash Suit/2.webp",
+      "/Costumes/Eco Crash Suit/3.webp",
+      "/Costumes/Eco Crash Suit/4.webp",
+      "/Costumes/Eco Crash Suit/5.webp"
     ],
     "sizes": [
       "XS",
@@ -2794,10 +2794,10 @@
     "sku": "99433",
     "size": "XS S M L XL",
     "category": "Tops",
-    "image": "/Top/Eco Crash Top/1.avif",
+    "image": "/Top/Eco Crash Top/1.webp",
     "images": [
-      "/Top/Eco Crash Top/2.avif",
-      "/Top/Eco Crash Top/3.avif"
+      "/Top/Eco Crash Top/2.webp",
+      "/Top/Eco Crash Top/3.webp"
     ],
     "sizes": [
       "XS",
@@ -2873,10 +2873,10 @@
     "sku": "99432",
     "size": "XS S M L XL",
     "category": "Pants",
-    "image": "/Pants/Aladdin Pants/1.avif",
+    "image": "/Pants/Aladdin Pants/1.webp",
     "images": [
-      "/Pants/Aladdin Pants/2.avif",
-      "/Pants/Aladdin Pants/3.avif"
+      "/Pants/Aladdin Pants/2.webp",
+      "/Pants/Aladdin Pants/3.webp"
     ],
     "sizes": [
       "XS",
@@ -2956,17 +2956,17 @@
     "sku": "99431",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Lagune Dress/1.avif",
+    "image": "/Dress/Lagune Dress/1.webp",
     "images": [
-      "/Dress/Lagune Dress/2.avif",
-      "/Dress/Lagune Dress/3.avif",
-      "/Dress/Lagune Dress/4.avif",
-      "/Dress/Lagune Dress/5.avif",
-      "/Dress/Lagune Dress/6.avif",
-      "/Dress/Lagune Dress/7.avif",
-      "/Dress/Lagune Dress/8.avif",
-      "/Dress/Lagune Dress/9.avif",
-      "/Dress/Lagune Dress/10.avif"
+      "/Dress/Lagune Dress/2.webp",
+      "/Dress/Lagune Dress/3.webp",
+      "/Dress/Lagune Dress/4.webp",
+      "/Dress/Lagune Dress/5.webp",
+      "/Dress/Lagune Dress/6.webp",
+      "/Dress/Lagune Dress/7.webp",
+      "/Dress/Lagune Dress/8.webp",
+      "/Dress/Lagune Dress/9.webp",
+      "/Dress/Lagune Dress/10.webp"
     ],
     "sizes": [
       "XS",
@@ -3050,13 +3050,13 @@
     "sku": "99430",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Azura Dress/1.avif",
+    "image": "/Dress/Azura Dress/1.webp",
     "images": [
-      "/Dress/Azura Dress/2.avif",
-      "/Dress/Azura Dress/3.avif",
-      "/Dress/Azura Dress/4.avif",
-      "/Dress/Azura Dress/5.avif",
-      "/Dress/Azura Dress/6.avif",
+      "/Dress/Azura Dress/2.webp",
+      "/Dress/Azura Dress/3.webp",
+      "/Dress/Azura Dress/4.webp",
+      "/Dress/Azura Dress/5.webp",
+      "/Dress/Azura Dress/6.webp",
       "/Dress/Azura Dress/7for.avif"
     ],
     "sizes": [
@@ -13613,7 +13613,6 @@
         "name": "Proshva Pants Costume",
         "description": "A costume crafted from lightweight cotton with delicate lace embroidery.\nFabric: 95% cotton, 5% elastane. Proshva - a light, mostly solid-colored cotton fabric with distinctive lace embroidery.",
         "colors": [
-          "black",
           "white"
         ]
       },
@@ -13622,7 +13621,6 @@
         "name": "Costume avec Pantalon en Proshva",
         "description": "Un costume confectionné en coton léger avec une broderie de dentelle délicate.\nTissu : 95 % coton, 5 % élasthanne. Proshva - un tissu en coton léger, généralement uni, avec une broderie de dentelle caractéristique.",
         "colors": [
-          "noir",
           "blanc"
         ]
       },
@@ -13631,7 +13629,6 @@
         "name": "Костюм з прошви зі штанами",
         "description": "Костюм з легкої бавовняної тканини з делікатною мереживною вишивкою.\nТканина: 95% бавовна, 5% еластан. Прошва - легка, переважно однотонна, бавовняна тканина з характерною мереживною вишивкою.",
         "colors": [
-          "чорний",
           "білий"
         ]
       },
@@ -13640,7 +13637,6 @@
         "name": "Костюм с прошвой и брюками",
         "description": "Костюм из легкой хлопковой ткани с изящной кружевной вышивкой.\nТкань: 95% хлопок, 5% эластан. Прошва - легкая, преимущественно однотонная хлопковая ткань с характерной кружевной вышивкой.",
         "colors": [
-          "черный",
           "белый"
         ]
       }
