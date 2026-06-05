@@ -1,0 +1,173 @@
+.scene {
+  perspective: 1400px;
+  width: 100%;
+  max-width: 920px;
+  margin-inline: auto;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  min-height: clamp(460px, 72vh, 620px);
+  transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cardFlipped {
+  transform: rotateY(180deg);
+}
+
+.face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+/* ——— Light mode (default) ——— */
+
+.sectionBg {
+  background: #fcf8f3;
+}
+
+.faceCard {
+  background: linear-gradient(135deg, #ffffff 0%, #fff9f4 100%);
+  color: #1f1f1f;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(200, 162, 122, 0.22);
+}
+
+.photoWrap {
+  background: #fffdfb;
+  border-bottom: 1px solid rgba(200, 162, 122, 0.18);
+}
+
+.photoFade {
+  background: linear-gradient(
+    to top,
+    #fff9f4 0%,
+    rgba(255, 249, 244, 0.4) 45%,
+    transparent 100%
+  );
+}
+
+.contentArea {
+  background: linear-gradient(135deg, #ffffff 0%, #fff9f4 100%);
+  color: #1f1f1f;
+}
+
+.title {
+  color: #1f1f1f;
+}
+
+.bodyText {
+  color: #1f1f1f;
+  opacity: 0.88;
+}
+
+.backHeader {
+  border-bottom: 1px solid rgba(200, 162, 122, 0.18);
+}
+
+.ctaBtn {
+  background: transparent;
+  border: 1px solid #c8a27a;
+  color: #1f1f1f;
+  transition: background 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+}
+
+.ctaBtn:hover {
+  background: #c8a27a;
+  color: #ffffff;
+}
+
+.backScroll {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(31, 31, 31, 0.25) transparent;
+}
+
+.backScroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.backScroll::-webkit-scrollbar-thumb {
+  background: rgba(31, 31, 31, 0.25);
+  border-radius: 999px;
+}
+
+/* ——— Dark mode ——— */
+
+:global(.dark) .sectionBg {
+  background: transparent;
+}
+
+:global(.dark) .faceCard {
+  background: rgba(24, 24, 27, 0.95);
+  color: #f5e8d6;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+:global(.dark) .photoWrap {
+  background: transparent;
+  border-bottom: none;
+}
+
+:global(.dark) .photoFade {
+  background: linear-gradient(
+    to top,
+    rgb(9, 9, 11) 0%,
+    rgba(9, 9, 11, 0.2) 45%,
+    transparent 100%
+  );
+}
+
+:global(.dark) .contentArea {
+  background: rgba(24, 24, 27, 0.95);
+  color: #f5e8d6;
+}
+
+:global(.dark) .title {
+  color: #f5e8d6;
+}
+
+:global(.dark) .bodyText {
+  color: rgb(212, 212, 216);
+  opacity: 1;
+}
+
+:global(.dark) .backHeader {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+:global(.dark) .ctaBtn {
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: #ffffff;
+  backdrop-filter: blur(6px);
+}
+
+:global(.dark) .ctaBtn:hover {
+  background: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+}
+
+:global(.dark) .backScroll {
+  scrollbar-color: rgba(255, 255, 255, 0.25) transparent;
+}
+
+:global(.dark) .backScroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.25);
+}
