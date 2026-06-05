@@ -333,8 +333,7 @@ export default function Hero() {
               {s.ctaText && s.ctaHref && (
                 <a
                   href={s.ctaHref}
-                  className="mt-6 inline-block rounded bg-white px-5 py-2 text-sm sm:text-base font-medium text-gray-900 hover:bg-white/90 focus:outline-none focus:ring"
-                 // className="mt-6 inline-block rounded bg-white px-5 py-2 text-sm sm:text-base font-medium text-gray-900 hover:bg-white/90 focus:outline-none focus:ring"
+                  className="mt-6 inline-block rounded border border-white/60 bg-black/25 px-5 py-2 text-sm sm:text-base font-medium text-white backdrop-blur-[6px] hover:bg-black/35 focus:outline-none focus:ring-2 focus:ring-white/50"
                 >
                   {s.ctaText}
                 </a>
