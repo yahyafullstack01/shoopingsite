@@ -1626,11 +1626,11 @@
     "sku": "99446",
     "size": "XS S M L XL",
     "category": "Tops",
-    "image": "/Top/Provence Top/1.avif",
+    "image": "/Top/Écru Top/1.avif",
     "images": [
-      "/Top/Provence Top/2.avif",
-      "/Top/Provence Top/3.avif",
-      "/Top/Provence Top/4.avif"
+      "/Top/Écru Top/2.avif",
+      "/Top/Écru Top/3.avif",
+      "/Top/Écru Top/4.avif"
     ],
     "sizes": [
       "XS",
@@ -1642,9 +1642,9 @@
     "translations": {
       "EN": {
         "category": "Tops",
-        "name": "Provence Top",
+        "name": "Écru Top",
         "description": [
-          "The Provence top is a clean hemp muslin model in a natural beige shade.",
+          "The «Écru» top is a clean hemp muslin model in a natural beige shade.",
           "An asymmetric cut with a waist tie adds lightness, femininity, and a refined French mood to the look.",
           "The model features an asymmetric cut with a decorative wrap and an accent side tie that beautifully highlights the silhouette.",
           "The light fabric texture and natural beige shade create a relaxed aesthetic in effortless chic style.",
@@ -1658,9 +1658,9 @@
       },
       "FR": {
         "category": "Tops",
-        "name": "Top «Provence»",
+        "name": "Top ««Écru»»",
         "description": [
-          "Le top « Provence » est un modèle épuré en mousseline de chanvre dans une teinte beige naturelle.",
+          "Le top « «Écru» » est un modèle épuré en mousseline de chanvre dans une teinte beige naturelle.",
           "La coupe asymétrique avec lien à la taille apporte légèreté, féminité et une ambiance française raffinée à la silhouette.",
           "Le modèle présente une coupe asymétrique avec portefeuille décoratif et lien accentué sur le côté qui souligne joliment la silhouette.",
           "La texture légère du tissu et la teinte beige naturelle créent une esthétique relaxed dans un style effortless chic.",
@@ -1674,9 +1674,9 @@
       },
       "UA": {
         "category": "Топи",
-        "name": "Топ «Provence»",
+        "name": "Топ ««Écru»»",
         "description": [
-          "Топ «Provence» — лаконічна модель із конопляного мусліну в натуральному бежевому відтінку.",
+          "Топ ««Écru»» — лаконічна модель із конопляного мусліну в натуральному бежевому відтінку.",
           "Асиметричний крій із зав’язкою на талії додає образу легкості, жіночності та витонченого французького настрою.",
           "Модель має асиметричний крій із декоративним запахом та акцентною зав’язкою збоку, що красиво підкреслює силует.",
           "Легка текстура тканини та природний бежевий відтінок створюють relaxed aesthetic у стилі effortless chic.",
@@ -1690,9 +1690,9 @@
       },
       "RU": {
         "category": "Топы",
-        "name": "Топ «Provence»",
+        "name": "Топ «Écru»",
         "description": [
-          "Топ «Provence» — лаконичная модель из конопляного муслина в натуральном бежевом оттенке.",
+          "Топ «Écru» — лаконичная модель из конопляного муслина в натуральном бежевом оттенке.",
           "Асимметричный крой с завязкой на талии добавляет образу лёгкости, женственности и утончённого французского настроения.",
           "Модель имеет асимметричный крой с декоративным запахом и акцентной завязкой сбоку, которая красиво подчёркивает силуэт.",
           "Лёгкая текстура ткани и натуральный бежевый оттенок создают relaxed aesthetic в стиле effortless chic.",
@@ -1714,11 +1714,11 @@
     "sku": "99445",
     "size": "XS S M L XL",
     "category": "Skirts",
-    "image": "/Skirts/Provence Skirt/1.avif",
+    "image": "/Skirts/Écru Skirt/1.avif",
     "images": [
-      "/Skirts/Provence Skirt/2.avif",
-      "/Skirts/Provence Skirt/3.avif",
-      "/Skirts/Provence Skirt/4.avif"
+      "/Skirts/Écru Skirt/2.avif",
+      "/Skirts/Écru Skirt/3.avif",
+      "/Skirts/Écru Skirt/4.avif"
     ],
     "sizes": [
       "XS",
@@ -1730,9 +1730,9 @@
     "translations": {
       "EN": {
         "category": "Skirts",
-        "name": "Provence Skirt",
+        "name": "«Écru» Skirt",
         "description": [
-          "The Provence skirt is a light hemp muslin model in a natural beige shade.",
+          "The «Écru» skirt is a light hemp muslin model in a natural beige shade.",
           "Soft pleats, a relaxed silhouette, and the natural fabric texture create a feminine effortless chic look.",
           "The midi design with a relaxed cut creates a light and refined silhouette.",
           "Thanks to soft pleats, the skirt looks voluminous yet very airy.",
@@ -1747,9 +1747,9 @@
       },
       "FR": {
         "category": "Jupes",
-        "name": "Jupe «Provence»",
+        "name": "Jupe «Écru»",
         "description": [
-          "La jupe « Provence » est un modèle léger en mousseline de chanvre dans une teinte beige naturelle.",
+          "La jupe «Écru» est un modèle léger en mousseline de chanvre dans une teinte beige naturelle.",
           "Des plis doux, une silhouette ample et la texture naturelle du tissu créent un look féminin effortless chic.",
           "Le modèle présente une coupe midi ample qui crée une silhouette légère et raffinée.",
           "Grâce aux plis doux, la jupe paraît volumineuse tout en restant très aérienne.",
@@ -1764,9 +1764,9 @@
       },
       "UA": {
         "category": "Спідниці",
-        "name": "Спідниця «Provence»",
+        "name": "Спідниця «Écru»",
         "description": [
-          "Спідниця «Provence» — легка модель із конопляного мусліну у природному бежевому відтінку.",
+          "Спідниця «Écru» — легка модель із конопляного мусліну у природному бежевому відтінку.",
           "М’які складки, вільний силует та натуральна фактура тканини створюють жіночний образ у стилі effortless chic.",
           "Модель має вільний крій міді, що створює легкий та витончений силует.",
           "Завдяки м’яким складкам спідниця виглядає об’ємно та водночас дуже легко.",
@@ -1781,9 +1781,9 @@
       },
       "RU": {
         "category": "Юбки",
-        "name": "Юбка «Provence»",
+        "name": "Юбка «Écru»",
         "description": [
-          "Юбка «Provence» — лёгкая модель из конопляного муслина в натуральном бежевом оттенке.",
+          "Юбка «Écru» — лёгкая модель из конопляного муслина в натуральном бежевом оттенке.",
           "Мягкие складки, свободный силуэт и натуральная фактура ткани создают женственный образ в стиле effortless chic.",
           "Модель имеет свободный крой миди, который создаёт лёгкий и изящный силуэт.",
           "Благодаря мягким складкам юбка выглядит объёмной и при этом очень лёгкой.",
@@ -1806,12 +1806,12 @@
     "sku": "99444",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Provence Suit Biege/1.avif",
+    "image": "/Costumes/Écru Suit/1.avif",
     "images": [
-      "/Costumes/Provence Suit Biege/2.avif",
-      "/Costumes/Provence Suit Biege/3.avif",
-      "/Costumes/Provence Suit Biege/4.avif",
-      "/Costumes/Provence Suit Biege/5.avif"
+      "/Costumes/Écru Suit/2.avif",
+      "/Costumes/Écru Suit/3.avif",
+      "/Costumes/Écru Suit/4.avif",
+      "/Costumes/Écru Suit/5.avif"
     ],
     "sizes": [
       "XS",
@@ -1823,7 +1823,7 @@
     "translations": {
       "EN": {
         "category": "Costumes",
-        "name": "Provence Suit Biege",
+        "name": "Provence «Écru»",
         "description": [
           "The Provence suit is an elegant hemp muslin set in a natural beige shade.",
           "Light fabric texture, a feminine wrap top, and a skirt with soft pleats create an effortless silhouette in the spirit of the French countryside.",
@@ -1840,7 +1840,7 @@
       },
       "FR": {
         "category": "Costumes",
-        "name": "Costume «Provence» beige",
+        "name": "Costume «Écru»",
         "description": [
           "Le costume « Provence » est un ensemble raffiné en mousseline de chanvre dans une teinte beige naturelle.",
           "La texture légère du tissu, un top portefeuille féminin et une jupe aux plis doux créent une silhouette effortless dans l’esprit de la province française.",
@@ -1857,7 +1857,7 @@
       },
       "UA": {
         "category": "Костюми",
-        "name": "Костюм «Provence» бежевий",
+        "name": "Костюм «Écru»",
         "description": [
           "Костюм «Provence» — витончений комплект із конопляного мусліну у натуральному бежевому відтінку.",
           "Легка фактура тканини, жіночний топ на запах та спідниця з м’якими складками створюють effortless silhouette у стилі французької провінції.",
