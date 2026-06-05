@@ -2,7 +2,7 @@ const products = [
   {
   id: 333,
   price: 4800,
-  isTop: true,
+  isTop: false,
   isNew: true,
   sku: "99464",
   size: "XS S M L XL",
