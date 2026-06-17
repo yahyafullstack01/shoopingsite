@@ -1,5 +1,317 @@
 const products = [
   {
+  id: 337,
+  price: 2700,
+  isTop: false,
+  isNew: true,
+  sku: "99468",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Denim Mini Dress/1.avif",
+  images: [
+    "/Dress/Denim Mini Dress/2.avif",
+    "/Dress/Denim Mini Dress/3.avif",
+    "/Dress/Denim Mini Dress/4.avif",
+    "/Dress/Denim Mini Dress/5.avif",
+    "/Dress/Denim Mini Dress/6.avif",
+    "/Dress/Denim Mini Dress/7.avif",
+    "/Dress/Denim Mini Dress/8.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Denim Mini Dress",
+      description: [
+        "A stylish denim mini dress that combines denim comfort with a feminine silhouette. The laconic cut, decorative pockets, and metal buttons make it a versatile choice for warm-season city looks.",
+        "The straight silhouette beautifully emphasizes the figure, while the vertical row of metal buttons visually lengthens the silhouette.",
+        "Decorative chest flaps and patch pockets add character and practicality to the look.",
+        "The sleeveless design makes the dress ideal for the spring-summer season, while the versatile styling pairs easily with heeled sandals or more relaxed footwear.",
+        "The model will become a base for stylish city outfits and adapts easily to everyday outings, meetings, or travel.",
+        "Fabric: denim cotton.",
+        "Season: spring, summer."
+      ],
+      colors: ["blue", "milk", "light blue"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe mini en jean",
+      description: [
+        "Une robe mini en jean élégante qui associe le confort du denim à une silhouette féminine. La coupe épurée, les poches décoratives et les boutons métalliques en font un choix polyvalent pour les looks urbains de saison chaude.",
+        "La silhouette droite met joliment la silhouette en valeur, tandis que la rangée verticale de boutons métalliques allonge visuellement la ligne.",
+        "Les rabats décoratifs sur la poitrine et les poches plaquées ajoutent du caractère et de la praticité au look.",
+        "L’absence de manches rend la robe idéale pour la saison printemps-été, et son design universel permet de l’associer aussi bien à des sandales à talons qu’à des chaussures plus décontractées.",
+        "Le modèle deviendra une base pour des looks urbains stylés et s’adaptera facilement aux sorties du quotidien, aux rendez-vous ou aux voyages.",
+        "Tissu : denim coton.",
+        "Saison : printemps, été."
+      ],
+      colors: ["bleu", "lait", "bleu clair"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Джинсова сукня міні",
+      description: [
+        "Стильна джинсова сукня міні, яка поєднує комфорт деніму та жіночний силует. Лаконічний крій, декоративні кишені та металеві ґудзики роблять модель універсальним вибором для міських образів у теплий сезон.",
+        "Прямий силует красиво підкреслює фігуру, а вертикальний ряд металевих ґудзиків візуально витягує силует.",
+        "Декоративні нагрудні клапани та накладні кишені додають образу характеру й практичності.",
+        "Відсутність рукавів робить сукню ідеальною для весняно-літнього сезону, а універсальний дизайн дозволяє легко поєднувати її як із босоніжками на підборах, так і з більш розслабленим взуттям.",
+        "Модель стане основою стильних міських образів та легко адаптується як для повсякденних виходів, так і для зустрічей чи подорожей.",
+        "Тканина: джинс-котон.",
+        "Сезон: весна, літо."
+      ],
+      colors: ["синій", "молочний", "блакитний"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Джинсовое платье мини",
+      description: [
+        "Стильное джинсовое платье мини, которое сочетает комфорт денима и женственный силуэт. Лаконичный крой, декоративные карманы и металлические пуговицы делают модель универсальным выбором для городских образов в теплый сезон.",
+        "Прямой силуэт красиво подчеркивает фигуру, а вертикальный ряд металлических пуговиц визуально вытягивает силуэт.",
+        "Декоративные нагрудные клапаны и накладные карманы добавляют образу характера и практичности.",
+        "Отсутствие рукавов делает платье идеальным для весенне-летнего сезона, а универсальный дизайн позволяет легко сочетать его как с босоножками на каблуке, так и с более расслабленной обувью.",
+        "Модель станет основой стильных городских образов и легко адаптируется как для повседневных выходов, так и для встреч или путешествий.",
+        "Ткань: джинс-коттон.",
+        "Сезон: весна, лето."
+      ],
+      colors: ["синий", "молочный", "голубой"]
+    }
+  }
+},
+
+  {
+  id: 336,
+  price: 3850,
+  isTop: false,
+  isNew: true,
+  sku: "99467",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Linen Jumpsuit/1.avif",
+  images: [
+    "/Costumes/Linen Jumpsuit/2.avif",
+    "/Costumes/Linen Jumpsuit/3.avif",
+    "/Costumes/Linen Jumpsuit/4.avif",
+    "/Costumes/Linen Jumpsuit/5.avif",
+    "/Costumes/Linen Jumpsuit/6.avif",
+    "/Costumes/Linen Jumpsuit/7.avif",
+    "/Costumes/Linen Jumpsuit/8.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Linen Jumpsuit",
+      description: [
+        "The linen jumpsuit is the embodiment of effortless elegance and comfort. A relaxed silhouette, natural linen, and laconic design make it a versatile choice for warm days.",
+        "The relaxed cut with wide legs moves beautifully as you walk and creates a striking silhouette.",
+        "Adjustable straps allow the fit to be adapted to individual proportions, while side pockets add practicality.",
+        "The jumpsuit pairs easily with basic T-shirts, tops, or shirts, allowing a variety of looks from everyday outfits to more polished city styling.",
+        "The black color emphasizes the laconic character of the model and makes it a versatile wardrobe base for the spring-summer season.",
+        "Fabric: 100% natural linen.",
+        "Season: spring, summer."
+      ],
+      colors: ["black", "beige"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Combinaison en lin",
+      description: [
+        "La combinaison en lin incarne une élégance décontractée et le confort. Sa silhouette ample, son lin naturel et son design épuré en font un choix polyvalent pour les journées chaudes.",
+        "La coupe ample avec jambes larges bouge joliment à la marche et crée une silhouette expressive.",
+        "Les bretelles réglables permettent d’adapter la coupe aux proportions individuelles, tandis que les poches latérales ajoutent de la praticité.",
+        "La combinaison s’associe facilement avec des T-shirts basiques, des tops ou des chemises, permettant de créer des looks variés, du quotidien aux silhouettes urbaines plus stylées.",
+        "La couleur noire souligne le minimalisme du modèle et en fait une base universelle du vestiaire printemps-été.",
+        "Tissu : 100 % lin naturel.",
+        "Saison : printemps, été."
+      ],
+      colors: ["noir", "beige"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Лляний комбінезон",
+      description: [
+        "Лляний комбінезон — втілення невимушеної елегантності та комфорту. Вільний силует, натуральний льон і лаконічний дизайн роблять його універсальним вибором для теплих днів.",
+        "Вільний крій із широкими штанинами красиво рухається під час ходьби та створює ефектний силует.",
+        "Регульовані бретелі дозволяють адаптувати посадку під індивідуальні параметри, а бокові кишені додають практичності.",
+        "Комбінезон легко поєднується з базовими футболками, топами чи сорочками, дозволяючи створювати різноманітні образи — від повсякденних до більш стильних міських.",
+        "Чорний колір підкреслює лаконічність моделі та робить її універсальною основою гардероба на сезон весна–літо.",
+        "Тканина: 100% натуральний льон.",
+        "Сезон: весна, літо."
+      ],
+      colors: ["чорний", "беж"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Льняной комбинезон",
+      description: [
+        "Льняной комбинезон — воплощение непринужденной элегантности и комфорта. Свободный силуэт, натуральный лен и лаконичный дизайн делают его универсальным выбором для теплых дней.",
+        "Свободный крой с широкими штанинами красиво движется при ходьбе и создает эффектный силуэт.",
+        "Регулируемые бретели позволяют адаптировать посадку под индивидуальные параметры, а боковые карманы добавляют практичности.",
+        "Комбинезон легко сочетается с базовыми футболками, топами или рубашками, позволяя создавать разные образы — от повседневных до более стильных городских.",
+        "Черный цвет подчеркивает лаконичность модели и делает ее универсальной основой гардероба на сезон весна-лето.",
+        "Ткань: 100% натуральный лен.",
+        "Сезон: весна, лето."
+      ],
+      colors: ["черный", "беж"]
+    }
+  }
+},
+
+  {
+  id: 335,
+  price: 3700,
+  isTop: false,
+  isNew: true,
+  sku: "99466",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Estelle Dress/1.avif",
+  images: [
+    "/Dress/Estelle Dress/2.avif",
+    "/Dress/Estelle Dress/3.avif",
+    "/Dress/Estelle Dress/4.avif",
+    "/Dress/Estelle Dress/5.avif",
+    "/Dress/Estelle Dress/6.avif",
+    "/Dress/Estelle Dress/7.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Estelle Dress",
+      description: [
+        "The Estelle dress combines laconic design, natural materials, and expressive details. Contrasting trim creates a graphic silhouette, while the relaxed cut brings comfort and lightness throughout the day.",
+        "The model has an elongated relaxed silhouette with a deep V-neckline that visually lengthens the figure and adds elegance to the look.",
+        "Contrasting black inserts emphasize the architectural cut and create a striking accent, making the dress recognizable and modern.",
+        "Thanks to the relaxed fit and natural linen, the dress moves beautifully as you walk and provides comfort even on the warmest days.",
+        "It adapts easily to city looks, leisure, and summer travel.",
+        "Fabric: 100% natural linen.",
+        "Season: spring, summer."
+      ],
+      colors: ["beige", "black"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe «Estelle»",
+      description: [
+        "La robe « Estelle » associe ligne épurée, matières naturelles et détails expressifs. Les finitions contrastantes créent une silhouette graphique, tandis que la coupe ample offre confort et légèreté tout au long de la journée.",
+        "Le modèle présente une silhouette longue et ample avec un profond décolleté en V, qui allonge visuellement la silhouette et apporte de l’élégance au look.",
+        "Les empiècements noirs contrastants soulignent l’architecture de la coupe et créent un accent marqué, rendant la robe reconnaissable et contemporaine.",
+        "Grâce à sa coupe ample et au lin naturel, la robe bouge joliment à la marche et assure un confort même pendant les journées les plus chaudes.",
+        "Elle s’adapte facilement aux looks urbains, aux moments de détente et aux voyages d’été.",
+        "Tissu : 100 % lin naturel.",
+        "Saison : printemps, été."
+      ],
+      colors: ["beige", "noir"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Сукня «Estelle»",
+      description: [
+        "Сукня «Estelle» — поєднання лаконічності, натуральних матеріалів та виразних деталей. Контрастне оздоблення створює графічний силует, а вільний крій дарує комфорт і легкість упродовж усього дня.",
+        "Модель має подовжений вільний силует із глибоким V-подібним вирізом, який візуально витягує фігуру та додає образу елегантності.",
+        "Контрастні чорні вставки підкреслюють архітектурність крою та створюють ефектний акцент, роблячи сукню впізнаваною та сучасною.",
+        "Завдяки вільній посадці та натуральному льону сукня красиво рухається під час ходьби, забезпечуючи комфорт навіть у найтепліші дні.",
+        "Вона легко адаптується як до міських образів, так і до відпочинку чи літніх подорожей.",
+        "Тканина: 100% натуральний льон.",
+        "Сезон: весна, літо."
+      ],
+      colors: ["беж", "чорний"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Платье «Estelle»",
+      description: [
+        "Платье «Estelle» — сочетание лаконичности, натуральных материалов и выразительных деталей. Контрастная отделка создает графичный силуэт, а свободный крой дарит комфорт и легкость в течение всего дня.",
+        "Модель имеет удлиненный свободный силуэт с глубоким V-образным вырезом, который визуально вытягивает фигуру и добавляет образу элегантности.",
+        "Контрастные черные вставки подчеркивают архитектурность кроя и создают эффектный акцент, делая платье узнаваемым и современным.",
+        "Благодаря свободной посадке и натуральному льну платье красиво движется при ходьбе, обеспечивая комфорт даже в самые теплые дни.",
+        "Оно легко адаптируется как к городским образам, так и к отдыху или летним путешествиям.",
+        "Ткань: 100% натуральный лен.",
+        "Сезон: весна, лето."
+      ],
+      colors: ["беж", "черный"]
+    }
+  }
+},
+
+  {
+  id: 334,
+  price: 3200,
+  isTop: false,
+  isNew: true,
+  sku: "99465",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Elara Dress/1.avif",
+  images: [
+    "/Dress/Elara Dress/2.avif",
+    "/Dress/Elara Dress/3.avif",
+    "/Dress/Elara Dress/4.avif",
+    "/Dress/Elara Dress/5.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Elara Dress",
+      description: [
+        "The Elara dress is an elegant linen model that combines the natural beauty of pure fabrics with delicate decorative accents. Lace inserts add lightness to the look, while the clean silhouette highlights femininity and elegance.",
+        "The fitted straight silhouette beautifully emphasizes the figure while remaining comfortable to wear.",
+        "Openwork lace inserts at the waist and along the hem draw special attention, adding romance and refinement to the look.",
+        "Decorative fringe along the lower edge creates a light accent and gives the piece a finished appearance.",
+        "Thanks to its versatile white color, the dress fits easily into both festive wardrobes and everyday summer outfits. It is a beautiful choice for walks, leisure, special occasions, or travel.",
+        "Fabric: 100% natural linen.",
+        "Season: spring, summer."
+      ],
+      colors: ["white"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe «Elara»",
+      description: [
+        "La robe « Elara » est un modèle raffiné en lin qui associe la beauté naturelle des matières naturelles à de délicats accents décoratifs. Les empiècements en dentelle apportent de la légèreté, tandis que la silhouette épurée souligne la féminité et l’élégance.",
+        "La silhouette droite ajustée met joliment la silhouette en valeur tout en restant confortable à porter.",
+        "Les empiècements ajourés en dentelle à la taille et au bas de la robe attirent particulièrement l’attention, ajoutant une touche romantique et raffinée.",
+        "La frange décorative sur le bord inférieur crée un accent léger et apporte une finition harmonieuse à la pièce.",
+        "Grâce à sa couleur blanche universelle, la robe s’intègre facilement aussi bien dans une garde-robe festive que dans des looks d’été du quotidien. Elle sera un excellent choix pour les promenades, les moments de détente, les événements spéciaux ou les voyages.",
+        "Tissu : 100 % lin naturel.",
+        "Saison : printemps, été."
+      ],
+      colors: ["blanc"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Сукня «Elara»",
+      description: [
+        "Сукня «Elara» — вишукана лляна модель, що поєднує природну красу натуральних тканин і делікатні декоративні акценти. Мереживні вставки додають образу легкості, а лаконічний силует підкреслює жіночність та елегантність.",
+        "Приталений прямий силует красиво підкреслює фігуру, залишаючись комфортним у носінні.",
+        "Особливу увагу привертають ажурні мереживні вставки на талії та по низу сукні, які додають образу романтичності та витонченості.",
+        "Декоративна бахрома по нижньому краю створює легкий акцент і завершений вигляд виробу.",
+        "Завдяки універсальному білому кольору сукня легко впишеться як у святковий гардероб, так і в повсякденні літні образи. Вона стане чудовим вибором для прогулянок, відпочинку, особливих подій чи подорожей.",
+        "Тканина: 100% натуральний льон.",
+        "Сезон: весна, літо."
+      ],
+      colors: ["білий"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Платье «Elara»",
+      description: [
+        "Платье «Elara» — изысканная льняная модель, которая сочетает природную красоту натуральных тканей и деликатные декоративные акценты. Кружевные вставки добавляют образу легкости, а лаконичный силуэт подчеркивает женственность и элегантность.",
+        "Приталенный прямой силуэт красиво подчеркивает фигуру, оставаясь комфортным в носке.",
+        "Особое внимание привлекают ажурные кружевные вставки на талии и по низу платья, которые добавляют образу романтичности и утонченности.",
+        "Декоративная бахрома по нижнему краю создает легкий акцент и завершенный вид изделия.",
+        "Благодаря универсальному белому цвету платье легко впишется как в праздничный гардероб, так и в повседневные летние образы. Оно станет отличным выбором для прогулок, отдыха, особых событий или путешествий.",
+        "Ткань: 100% натуральный лен.",
+        "Сезон: весна, лето."
+      ],
+      colors: ["белый"]
+    }
+  }
+},
+
+  {
   id: 333,
   price: 4800,
   isTop: false,
