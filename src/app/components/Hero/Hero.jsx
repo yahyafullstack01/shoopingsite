@@ -96,7 +96,8 @@ export default function Hero() {
   type: "video",
   src: "/hoom/1.mp4",
   mobileSrc: "/hoom/2.mp4",
-  poster: "/hoom/1.webp",
+  poster: "/hoom/hero-sea-poster-desktop.png",
+  mobilePoster: "/hoom/hero-sea-poster-mobile.png",
   alt: "Latore banner 2",
 
   ctaText: t[4],
@@ -255,7 +256,17 @@ export default function Hero() {
 
               const raw = s.type === "image" && isMobile && s.mobileSrc ? s.mobileSrc : s.src;
               const videoSrc =
-                s.type === "video" && isActive ? s.src : undefined;
+                s.type === "video" && isActive
+                  ? isMobile && s.mobileSrc
+                    ? s.mobileSrc
+                    : s.src
+                  : undefined;
+              const videoPoster =
+                s.type === "video"
+                  ? isMobile && s.mobilePoster
+                    ? s.mobilePoster
+                    : s.poster
+                  : undefined;
 
               return (
                 <div
@@ -283,7 +294,7 @@ export default function Hero() {
                     <video
                       ref={(el) => (videoRefs.current[i] = el)}
                       src={videoSrc}
-                      poster={s.poster || undefined}
+                      poster={videoPoster || undefined}
                       className="w-full h-full object-cover"
                       muted
                       playsInline
