@@ -8279,8 +8279,8 @@ sku: "99347",
   price: 2300,
   isTop: false,
   isNew: false,
-  isSpecialOffer: false,
-  // discountPrice: 1955,
+  isSpecialOffer: true,
+  discountPrice: 1955,
 sku: "98824",
   size: "XS S M L XL",
   category: "Dresses",
@@ -8299,10 +8299,11 @@ sku: "98824",
     "/Dress/Satin Slip Dress/7.avif",
     "/Dress/Satin Slip Dress/8.avif",
     "/Dress/Satin Slip Dress/9.avif",
-    "/Dress/Satin Slip Dress/10.avif",
-    "/Dress/Satin Slip Dress/11.avif",
-    "/Dress/Satin Slip Dress/12.avif",
-    "/Dress/Satin Slip Dress/13.avif",
+    "/Dress/Satin Slip Dress/1.avif",
+    "/Dress/Satin Slip Dress/2.avif",
+    "/Dress/Satin Slip Dress/3.avif",
+    "/Dress/Satin Slip Dress/4.avif",
+
   ],
   sizes: ["XS", "S", "M", "L", "XL"],
   translations: {
@@ -8317,7 +8318,7 @@ sku: "98824",
         "• V-neckline adorned with delicate matching lace",
         "• Hem decorated with a wide lace insert adding lightness and elegance"
       ],
-      colors: ["black", "gray"]
+      colors: ["black", "khaki"]
     },
     FR: {
       category: "Robes",
@@ -8343,7 +8344,7 @@ sku: "98824",
         "• V-подібний виріз горловини, оздоблений делікатним мереживом у тон",
         "• Низ сукні прикрашений широкою вставкою з мережива для легкості та елегантності"
       ],
-      colors: ["чорна", "сірий"]
+      colors: ["чорна", "хакі"]
     },
     RU: {
       category: "Платья",

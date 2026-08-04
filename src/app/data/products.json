@@ -8629,7 +8629,8 @@
     "price": 2300,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
+    "discountPrice": 1955,
     "sku": "98824",
     "size": "XS S M L XL",
     "category": "Dresses",
@@ -8639,10 +8640,10 @@
       "/Dress/Satin Slip Dress/7.avif",
       "/Dress/Satin Slip Dress/8.avif",
       "/Dress/Satin Slip Dress/9.avif",
-      "/Dress/Satin Slip Dress/10.avif",
-      "/Dress/Satin Slip Dress/11.avif",
-      "/Dress/Satin Slip Dress/12.avif",
-      "/Dress/Satin Slip Dress/13.avif"
+      "/Dress/Satin Slip Dress/1.avif",
+      "/Dress/Satin Slip Dress/2.avif",
+      "/Dress/Satin Slip Dress/3.avif",
+      "/Dress/Satin Slip Dress/4.avif"
     ],
     "sizes": [
       "XS",
@@ -8665,7 +8666,7 @@
         ],
         "colors": [
           "black",
-          "gray"
+          "khaki"
         ]
       },
       "FR": {
@@ -8696,7 +8697,7 @@
         ],
         "colors": [
           "чорна",
-          "сірий"
+          "хакі"
         ]
       },
       "RU": {
