@@ -3633,7 +3633,7 @@
   {
     "id": 297,
     "price": 3000,
-    "isTop": false,
+    "isTop": true,
     "isNew": false,
     "isSpecialOffer": false,
     "sku": "99428",
@@ -6134,7 +6134,7 @@
   {
     "id": 268,
     "price": 3200,
-    "isTop": true,
+    "isTop": false,
     "isNew": false,
     "isSpecialOffer": false,
     "sku": "99408",
@@ -7712,7 +7712,7 @@
   {
     "id": 229,
     "price": 1700,
-    "isTop": false,
+    "isTop": true,
     "isNew": false,
     "isSpecialOffer": false,
     "sku": "99370",
@@ -8397,7 +8397,7 @@
   {
     "id": 222,
     "price": 2060,
-    "isTop": false,
+    "isTop": true,
     "isNew": false,
     "isSpecialOffer": false,
     "sku": "99363",
@@ -8579,7 +8579,7 @@
   {
     "id": 171,
     "price": 2300,
-    "isTop": false,
+    "isTop": true,
     "isNew": false,
     "isSpecialOffer": false,
     "sku": "98824",
@@ -9054,7 +9054,7 @@
   {
     "id": 102,
     "price": 2100,
-    "isTop": false,
+    "isTop": true,
     "isNew": false,
     "isSpecialOffer": false,
     "sku": "45530",
@@ -10282,7 +10282,7 @@
   {
     "id": 192,
     "price": 1900,
-    "isTop": false,
+    "isTop": true,
     "isNew": false,
     "isSpecialOffer": false,
     "sku": "99334",
@@ -10748,7 +10748,7 @@
   {
     "id": 182,
     "price": 2800,
-    "isTop": true,
+    "isTop": false,
     "isNew": true,
     "isSpecialOffer": false,
     "sku": "99324",
@@ -10830,7 +10830,7 @@
   {
     "id": 181,
     "price": 5400,
-    "isTop": true,
+    "isTop": false,
     "isNew": false,
     "isSpecialOffer": false,
     "sku": "99323",
@@ -13527,7 +13527,7 @@
   {
     "id": 144,
     "price": 3400,
-    "isTop": true,
+    "isTop": false,
     "isNew": false,
     "isSpecialOffer": false,
     "sku": "98797",
@@ -13609,7 +13609,7 @@
   {
     "id": 143,
     "price": 3400,
-    "isTop": true,
+    "isTop": false,
     "isNew": false,
     "isSpecialOffer": false,
     "sku": "98796",
@@ -13863,7 +13863,7 @@
   {
     "id": 140,
     "price": 3600,
-    "isTop": true,
+    "isTop": false,
     "isNew": false,
     "isSpecialOffer": false,
     "sku": "67239",
@@ -15879,7 +15879,7 @@
   {
     "id": 97,
     "price": 2800,
-    "isTop": true,
+    "isTop": false,
     "isNew": false,
     "isSpecialOffer": false,
     "sku": "98817",
@@ -18356,7 +18356,7 @@
   {
     "id": 44,
     "price": 4300,
-    "isTop": true,
+    "isTop": false,
     "isNew": false,
     "isSpecialOffer": false,
     "sku": "98765",
