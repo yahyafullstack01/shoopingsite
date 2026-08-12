@@ -46,8 +46,13 @@ export const filterAndSortProducts = (products, filters, sortOrder) => {
       !selectedSize || (Array.isArray(product.sizes) && product.sizes.includes(selectedSize));
     const matchesColor =
       !selectedColor || (Array.isArray(product.colors) && product.colors.includes(selectedColor));
-    const matchesCategory =
-      !selectedCategory || norm(product.category) === norm(selectedCategory);
+    const matchesCategory = (() => {
+      if (!selectedCategory) return true;
+      const cat = norm(selectedCategory);
+      if (cat === "new") return product.isNew === true;
+      if (cat === "top-products") return product.isTop === true;
+      return norm(product.category) === cat;
+    })();
 
     return matchesPrice && matchesSize && matchesColor && matchesCategory;
   });

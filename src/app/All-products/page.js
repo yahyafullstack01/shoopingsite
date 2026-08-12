@@ -41,6 +41,8 @@ function mapRowForCatalog(p) {
           ? [p.image]
           : [],
     translations: slimTranslations(p.translations),
+    isNew: p.isNew === true,
+    isTop: p.isTop === true,
   };
 }
 
@@ -67,7 +69,11 @@ export default async function Products({ searchParams }) {
   const pool =
     !categoryParam || categoryParam === "all"
       ? mapped
-      : mapped.filter((p) => p.category.toLowerCase() === categoryParam);
+      : categoryParam === "new"
+        ? mapped.filter((p) => p.isNew === true)
+        : categoryParam === "top-products"
+          ? mapped.filter((p) => p.isTop === true)
+          : mapped.filter((p) => p.category.toLowerCase() === categoryParam);
 
   const priceCeiling =
     pool.length > 0

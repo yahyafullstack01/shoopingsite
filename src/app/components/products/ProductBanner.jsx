@@ -277,8 +277,17 @@ const ProductBanner = ({
 
           <div className="relative grid flex-1 grid-cols-1 sm:grid-cols-2 sm:items-start sm:gap-4 sm:p-4">
             <div className="relative w-full sm:col-start-1 sm:row-start-1">
+              {selectedProduct.isTop ? (
+                <span className="absolute left-3 top-3 z-10 rounded bg-red-600 px-2 py-0.5 text-xs font-semibold text-white">
+                  {formTranslations.topBadge || "TOP"}
+                </span>
+              ) : null}
               {selectedProduct.isNew ? (
-                <span className="absolute left-3 top-3 z-10 rounded bg-emerald-100 px-2 py-0.5 text-xs font-semibold text-emerald-800 dark:bg-emerald-900/90 dark:text-emerald-200">
+                <span
+                  className={`absolute left-3 z-10 rounded bg-emerald-100 px-2 py-0.5 text-xs font-semibold text-emerald-800 dark:bg-emerald-900/90 dark:text-emerald-200 ${
+                    selectedProduct.isTop ? "top-10" : "top-3"
+                  }`}
+                >
                   {formTranslations.newBadge || "NEW"}
                 </span>
               ) : null}

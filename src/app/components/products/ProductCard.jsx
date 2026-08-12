@@ -65,6 +65,19 @@ const ProductCard = ({ product, onClick, onAddToCart }) => {
             {favorite ? <FaHeart /> : <FaRegHeart />}
           </button>
 
+          <div className="absolute top-2 left-2 z-10 flex flex-col gap-1">
+            {product.isTop ? (
+              <span className="bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded">
+                {cardTranslations.topBadge || "TOP"}
+              </span>
+            ) : null}
+            {product.isNew ? (
+              <span className="rounded bg-emerald-100 px-2 py-0.5 text-xs font-semibold text-emerald-800 dark:bg-emerald-900/90 dark:text-emerald-200">
+                {cardTranslations.newBadge || "NEW"}
+              </span>
+            ) : null}
+          </div>
+
           <Image
             src={src}
             alt={translatedName}

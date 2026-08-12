@@ -37,7 +37,7 @@ export default function FilterSidebar({
   const selectLabel = translateList("Infoform", "header")[2] || "Select";
 
   const originalCategories = [
-    "All", "Costumes", "Dresses", "Shirts", "Skirts",
+    "All", "New", "Top-products", "Costumes", "Dresses", "Shirts", "Skirts",
     "Sweaters", "Pants", "Jackets", "Tops", "Outerwear", "Shorts"
   ];
   const translatedCategories = Array.isArray(translateList("Filtersidebar", "Categories"))

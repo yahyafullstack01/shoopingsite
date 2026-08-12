@@ -167,7 +167,10 @@ export default function TopProductsInfo() {
                   className="bg-white dark:bg-neutral-900 text-black dark:text-white rounded-xl shadow-md hover:shadow-lg p-4 flex flex-col justify-between hover:scale-[1.02] transition duration-300"
                 >
                   <div onClick={() => handleProductClick(product)} className="cursor-pointer">
-                    <div className="w-full h-[200px] sm:h-[350px] overflow-hidden rounded-lg">
+                    <div className="relative w-full h-[200px] sm:h-[350px] overflow-hidden rounded-lg">
+                      <div className="absolute top-2 left-2 z-10 bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded">
+                        {pageTranslations.badge || "TOP"}
+                      </div>
                       {/* прев’ю у списку — тільки зображення */}
                       <Image
                         src={getProductImageSrc(product.image)}

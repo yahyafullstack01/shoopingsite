@@ -51,12 +51,15 @@
         "fillAllFields": "Please fill all fields",
         "addToCartError": "Error adding to cart",
         "addToCart": "Add to cart",
-        "clickPhoto": "Click on the photo to view details"
+        "clickPhoto": "Click on the photo to view details",
+        "badge": "TOP"
       },
       "productCard": {
         "viewDetails": "View details",
         "addToCart": "ADD TO CART",
-        "clickPhoto": "Click on the photo to view details"
+        "clickPhoto": "Click on the photo to view details",
+        "newBadge": "NEW",
+        "topBadge": "TOP"
       },
       "cart": {
         "heading": "🛒 Cart",
@@ -92,6 +95,7 @@
         "sizeError": "Select a size",
         "quantityError": "Specify quantity",
         "newBadge": "NEW",
+        "topBadge": "TOP",
         "back": "Back",
         "close": "Close",
         "galleryPrev": "Previous image",
@@ -222,7 +226,7 @@
       ],
       "SizeCatalogue": [ "All", "S", "M", "L", "XL" ],
       "Categories": [
-        "All", "Costumes", "Dresses", "Shirts", "Skirts", 
+        "All", "New", "Top products", "Costumes", "Dresses", "Shirts", "Skirts", 
         "Sweaters",  "Pants", "Jackets", "Tops", "Outerwear", "Shorts "
       ],
       "PaginatedProducts": ["Prev", "Next"]
@@ -290,12 +294,15 @@
         "fillAllFields": "Вкажіть всі поля",
         "addToCartError": "Помилка при додаванні в корзину",
         "addToCart": "Додати в кошик",
-        "clickPhoto": "Натисніть на фото, щоб переглянути деталі"
+        "clickPhoto": "Натисніть на фото, щоб переглянути деталі",
+        "badge": "ТОП"
       },
       "productCard": {
         "viewDetails": "Переглянути деталі",
         "addToCart": "ДОДАТИ В КОШИК",
-        "clickPhoto": "Натисніть на фото, щоб переглянути деталі"
+        "clickPhoto": "Натисніть на фото, щоб переглянути деталі",
+        "newBadge": "НОВИНКА",
+        "topBadge": "ТОП"
       },
       "cart": {
         "heading": "🛒 Корзина",
@@ -331,6 +338,7 @@
         "sizeError": "Оберіть розмір",
         "quantityError": "Вкажіть кількість",
         "newBadge": "НОВИНКА",
+        "topBadge": "ТОП",
         "back": "Назад",
         "close": "Закрити",
         "galleryPrev": "Попереднє фото",
@@ -464,7 +472,7 @@
       ],
       "SizeCatalogue": [ "Усі", "S", "M", "L", "XL" ],
       "Categories": [
-        "Усі", "Костюми", "Сукні", "Сорочки", "Спідниці", 
+        "Усі", "Новинки", "Топ продажів", "Костюми", "Сукні", "Сорочки", "Спідниці", 
         "Светри", "Брюки", "Жакети", "Топи", "Верхній одяг", "Шорти"
       ],
       "PaginatedProducts": ["Попередня", "Наступна"]
