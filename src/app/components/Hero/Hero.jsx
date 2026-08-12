@@ -45,117 +45,44 @@ export default function Hero() {
   // ---- СЛАЙДИ ----
   const slides = useMemo(
     () => [
-      // {
-      //   type: "image",
-      //   src: "/hoom/newyear1.png",                 
-      //   mobileSrc: "/hoom/newyearmobile1.png",    
-      //   alt: "Latore banner 1",
-      //   // title: t[0],
-      //   // subtitle: t[3],
-      //   ctaText: t[4],
-      //   // ctaHref: "/All-products",
-      //   ctaHref: "/new-year-offers",
-      //   fit: "cover",
-      //   focus: "left",
-      //   fitMobile: "cover",
-      //   focusMobile: "top",
-      // },
-
-{
-  type: "image",
-  src: "/hoom/1(5).png",
-  mobileSrc: "/hoom/1(4).png",
-  alt: "Latore banner 1",
-
-  ctaText: t[4],
-  ctaHref: "/All-products",
-
-  fit: "cover",
-  focus: "center",
-  fitMobile: "cover",
-  focusMobile: "center",
-},
-
-
-
-      // {
-      //   type: "video", 
-      //   src: "/hoom/IMG_3190.mp4",
-      //   // poster: "/hoom/banerosen.jpg",       // webp/jpg 100–200KB
-      //   poster: "/hoom/newyear1.png",
-      //   title: "LATORE ATELIER",
-      //   subtitle: "2025",
-      //   ctaText: t[5],
-      //   // ctaHref: "/All-products",
-      //   ctaHref: "/new-year-offers",
-      // },
-
-
-
       {
-  type: "video",
-  src: "/hoom/1.mp4",
-  mobileSrc: "/hoom/2.mp4",
-  poster: "/hoom/hero-sea-poster-desktop.png",
-  mobilePoster: "/hoom/hero-sea-poster-mobile.png",
-  alt: "Latore banner 2",
-
-  ctaText: t[4],
-  ctaHref: "/All-products",
-
-  fit: "cover",
-  focus: "center",
-
-  fitMobile: "cover",
-  focusMobile: "center",
-},
-
-      //   {
-      //   type: "image",
-      //   src: "/hoom/newyear2.png",                 
-      //   mobileSrc: "/hoom/newyearmobile2.png",    
-      //   alt: "Latore banner 2",
-      //   // title: t[0],
-      //   // subtitle: t[3],
-      //   ctaText: t[4],
-      //   // ctaHref: "/All-products",
-      //   ctaHref: "/new-year-offers",
-      //   fit: "cover",
-      //   focus: "left",
-      //   fitMobile: "cover",
-      //   focusMobile: "top",
-      // },
-
-      // {
-      //   type: "image",
-      //   src: "/hoom/newyear3.png",
-      //   mobileSrc: "/hoom/newyearmobile3.png",
-      //   alt: "Latore banner 2",
-      //   // title: t[0],
-      //   // subtitle: t[3],
-      //   ctaText: t[4],
-      //   // ctaHref: "/special-offers",
-      //   ctaHref: "/new-year-offers",
-      //   fit: "cover",
-      //   focus: "center",
-      // },
-
+        type: "image",
+        src: "/hoom/Bannerdesk.PNG",
+        mobileSrc: "/hoom/Bannermob.png",
+        alt: "Latore banner 1",
+        ctaText: t[4],
+        ctaHref: "/All-products",
+        fit: "cover",
+        focus: "center",
+        fitMobile: "cover",
+        focusMobile: "center",
+      },
       {
-  type: "image",
-  src: "/hoom/3Leto.png",
-  mobileSrc: "/hoom/3(1).png",
-  alt: "Latore banner 3",
-
-  ctaText: t[4],
-  ctaHref: "/All-products",
-
-  fit: "cover",
-  focus: "center",
-  fitMobile: "cover",
-  focusMobile: "center",
-},
-
-      
+        type: "video",
+        src: "/hoom/Bannervideodesk.mp4",
+        mobileSrc: "/hoom/Bannermobilevideo.mp4",
+        poster: "/hoom/Bannerdesk.PNG",
+        mobilePoster: "/hoom/Bannermob.png",
+        alt: "Latore banner video",
+        ctaText: t[4],
+        ctaHref: "/All-products",
+        fit: "cover",
+        focus: "center",
+        fitMobile: "cover",
+        focusMobile: "center",
+      },
+      {
+        type: "image",
+        src: "/hoom/Bannerdesk2.PNG",
+        mobileSrc: "/hoom/Bannermob2.png",
+        alt: "Latore banner 2",
+        ctaText: t[4],
+        ctaHref: "/All-products",
+        fit: "cover",
+        focus: "center",
+        fitMobile: "cover",
+        focusMobile: "center",
+      },
     ],
     [t]
   );
