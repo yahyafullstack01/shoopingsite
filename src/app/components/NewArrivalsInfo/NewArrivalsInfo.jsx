@@ -23,7 +23,7 @@ const getProductSrc = (product) => {
       : null) ||
     "/placeholder/300x400.jpg";
 
-  if (typeof raw === "string") return raw;
+  if (typeof raw === "string") return raw.includes(" ") ? encodeURI(raw) : raw;
 
   if (raw && typeof raw === "object" && typeof raw.src === "string") {
     return raw.src;
@@ -189,6 +189,7 @@ const NewArrivalsInfo = ({ products, prefetchedProduct = null }) => {
 
           // 👇 нове: беремо нормальний src + прапор локального файлу
           const src = getProductSrc(product);
+          const isLocal = typeof src === "string" && src.startsWith("/");
 
           return (
             <article
@@ -234,6 +235,8 @@ const NewArrivalsInfo = ({ products, prefetchedProduct = null }) => {
                     sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
                     className="w-full h-full object-cover rounded transform transition-transform duration-300 ease-in-out group-hover:scale-110"
                     itemProp="image"
+                    unoptimized={isLocal}
+                    loader={isLocal ? ({ src }) => src : undefined}
                   />
 
                   <div className="absolute top-2 left-2 bg-black text-white text-xs font-semibold px-2 py-1 rounded">
