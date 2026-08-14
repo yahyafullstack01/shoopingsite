@@ -1,5 +1,426 @@
 const products = [
   {
+  id: 343,
+  price: 3300,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+sku: "99474",
+  size: "XS S M L XL",
+  category: "Jackets",
+  image: "/Jackets/Wool Jacket/1.avif",
+  images: [
+    "/Jackets/Wool Jacket/2.avif",
+    "/Jackets/Wool Jacket/3.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Jackets",
+      name: "Wool Jacket",
+      description: [
+        "The Wool jacket, made from 75% natural wool, is a fitted design with a defined shoulder line and classic lapels. Its structured cut beautifully accentuates the waist and creates a refined, feminine silhouette.",
+        "The model has a fitted silhouette with a clearly defined shoulder line and classic lapels. Shaped seams contour the fit, while the subtly flared lower section further emphasizes the waist.",
+        "A two-button fastening supports the laconic design, while the light gray shade makes the jacket a versatile wardrobe foundation. It can be worn as part of a suit with the Wool skirt or styled separately with classic trousers, denim, and basic knitwear.",
+        "Fabric: 75% natural wool.",
+        "Season: autumn, winter."
+      ],
+      colors: ["gray"]
+    },
+    FR: {
+      category: "Vestes",
+      name: "Veste « Wool »",
+      description: [
+        "La veste « Wool », composée de 75 % de laine naturelle, est un modèle cintré doté d’une ligne d’épaules marquée et de revers classiques. Sa coupe structurée souligne joliment la taille et crée une silhouette féminine raffinée.",
+        "Le modèle présente une silhouette cintrée avec une ligne d’épaules clairement dessinée et des revers classiques. Les coutures structurantes ajustent la veste à la silhouette, tandis que le léger évasement de la partie inférieure accentue davantage la taille.",
+        "La fermeture à deux boutons préserve le design épuré, tandis que la nuance gris clair fait de cette veste une base polyvalente du vestiaire. Elle peut se porter avec la jupe « Wool » ou séparément avec un pantalon classique, du denim et des mailles basiques.",
+        "Tissu : 75 % laine naturelle.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["gris"]
+    },
+    UA: {
+      category: "Жакети",
+      name: "Жакет «Wool»",
+      description: [
+        "Жакет «Wool» із 75% натуральної вовни — приталена модель із виразною лінією плечей та класичними лацканами. Структурний крій красиво підкреслює талію та створює витончений жіночний силует.",
+        "Модель має приталений силует із чітко окресленою лінією плечей та класичними лацканами. Рельєфні шви формують посадку по фігурі, а легке розширення нижньої частини жакета додатково акцентує талію.",
+        "Застібка на два ґудзики підтримує лаконічний дизайн, а світло-сірий відтінок робить жакет універсальною основою гардероба. Його можна носити як частину костюма зі спідницею «Wool» або поєднувати окремо з класичними брюками, денімом та базовим трикотажем.",
+        "Тканина: 75% натуральна вовна.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["сірий"]
+    },
+    RU: {
+      category: "Жакеты",
+      name: "Жакет «Wool»",
+      description: [
+        "Жакет «Wool» из 75% натуральной шерсти — приталенная модель с выразительной линией плеч и классическими лацканами. Структурный крой красиво подчеркивает талию и создает утонченный женственный силуэт.",
+        "Модель имеет приталенный силуэт с четко очерченной линией плеч и классическими лацканами. Рельефные швы формируют посадку по фигуре, а легкое расширение нижней части жакета дополнительно акцентирует талию.",
+        "Застежка на две пуговицы поддерживает лаконичный дизайн, а светло-серый оттенок делает жакет универсальной основой гардероба. Его можно носить как часть костюма с юбкой «Wool» или сочетать отдельно с классическими брюками, денимом и базовым трикотажем.",
+        "Ткань: 75% натуральная шерсть.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["серый"]
+    }
+  }
+},
+
+  {
+  id: 342,
+  price: 5200,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+sku: "99473",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Wool Skirt Suit/1.avif",
+  images: [
+    "/Costumes/Wool Skirt Suit/2.avif",
+    "/Costumes/Wool Skirt Suit/3.avif",
+    "/Costumes/Wool Skirt Suit/4.avif",
+    "/Costumes/Wool Skirt Suit/5.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Wool Suit",
+      description: [
+        "The Wool suit, made from 75% natural wool, is an elegant set consisting of a fitted jacket and a pleated midi skirt. Its structured silhouette and light gray shade create a refined, feminine look for the autumn-winter season.",
+        "The set consists of a fitted jacket and a midi-length skirt. The jacket features a defined shoulder line, classic lapels, and a two-button fastening. Its considered cut with shaped seams and a softly flared hem accentuates the waist and creates a feminine silhouette.",
+        "The midi skirt is finished with wide pleats that add volume and open beautifully in motion. The laconic light gray shade pairs easily with wardrobe basics and contrasting accessories.",
+        "Fabric: 75% natural wool.",
+        "Season: autumn, winter."
+      ],
+      colors: ["gray"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Ensemble « Wool »",
+      description: [
+        "L’ensemble « Wool », composé de 75 % de laine naturelle, réunit une veste cintrée et une jupe midi plissée. Sa silhouette structurée et sa nuance gris clair créent un look féminin et sobre pour la saison automne-hiver.",
+        "L’ensemble se compose d’une veste cintrée et d’une jupe midi. La veste présente une ligne d’épaules marquée, des revers classiques et une fermeture à deux boutons. Sa coupe étudiée, avec des coutures structurantes et un léger évasement vers le bas, souligne la taille et dessine une silhouette féminine.",
+        "La jupe midi est agrémentée de larges plis qui apportent du volume et s’ouvrent joliment en mouvement. La nuance gris clair épurée s’associe facilement aux pièces basiques et aux accessoires contrastants.",
+        "Tissu : 75 % laine naturelle.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["gris"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм «Wool»",
+      description: [
+        "Костюм «Wool» із 75% натуральної вовни — елегантний комплект із приталеного жакета та спідниці міді у складку. Структурний силует і світло-сірий відтінок створюють стриманий жіночний образ для осінньо-зимового сезону.",
+        "Комплект складається з приталеного жакета та спідниці довжини міді. Жакет має виражену лінію плечей, класичні лацкани та застібку на два ґудзики. Продуманий крій із рельєфними швами та м’яким розширенням донизу акцентує талію й формує жіночний силует.",
+        "Спідниця міді доповнена широкими складками, які додають моделі об’єму та красиво розкриваються під час руху. Лаконічний світло-сірий відтінок легко поєднується з базовими речами та контрастними аксесуарами.",
+        "Тканина: 75% натуральна вовна.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["сірий"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм «Wool»",
+      description: [
+        "Костюм «Wool» из 75% натуральной шерсти — элегантный комплект из приталенного жакета и юбки миди в складку. Структурный силуэт и светло-серый оттенок создают сдержанный женственный образ для осенне-зимнего сезона.",
+        "Комплект состоит из приталенного жакета и юбки длины миди. Жакет имеет выраженную линию плеч, классические лацканы и застежку на две пуговицы. Продуманный крой с рельефными швами и мягким расширением книзу акцентирует талию и формирует женственный силуэт.",
+        "Юбка миди дополнена широкими складками, которые добавляют модели объема и красиво раскрываются при движении. Лаконичный светло-серый оттенок легко сочетается с базовыми вещами и контрастными аксессуарами.",
+        "Ткань: 75% натуральная шерсть.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["серый"]
+    }
+  }
+},
+
+  {
+  id: 341,
+  price: 2100,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+sku: "99472",
+  size: "XS S M L XL",
+  category: "Jackets",
+  image: "/Jackets/Lui Pocket Jumper/1.avif",
+  images: [
+    "/Jackets/Lui Pocket Jumper/2.avif",
+    "/Jackets/Lui Pocket Jumper/3.avif",
+    "/Jackets/Lui Pocket Jumper/4.avif",
+    "/Jackets/Lui Pocket Jumper/5.avif",
+
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Jackets",
+      name: "Lui Pocket Jumper",
+      description: [
+        "The Lui pocket jumper is a laconic design made from 75% natural wool with a soft, structured silhouette. A wide neckline, patch pockets, and minimalist cut make it a versatile foundation for an autumn-winter wardrobe.",
+        "The model has a straight, relaxed cut, long sleeves, and a wide round neckline that delicately reveals the collarbones. A central decorative seam emphasizes the geometry of the silhouette, while two front patch pockets add a functional accent.",
+        "The laconic length makes the jumper easy to pair with high-rise trousers and skirts. Worn with the Lui trousers, it creates a cohesive monochrome look, while also integrating easily into a basic wardrobe as a standalone piece.",
+        "Fabric: 75% natural wool.",
+        "Season: autumn, winter."
+      ],
+      colors: ["beige", "gray"]
+    },
+    FR: {
+      category: "Vestes",
+      name: "Pull « Lui » à poches",
+      description: [
+        "Le pull « Lui » à poches est un modèle épuré composé de 75 % de laine naturelle, à la silhouette souple et structurée. Sa large encolure, ses poches plaquées et sa coupe minimaliste en font une base polyvalente du vestiaire automne-hiver.",
+        "Le modèle présente une coupe droite et ample, des manches longues et une large encolure ronde qui dévoile délicatement les clavicules. Une couture décorative centrale souligne la géométrie de la silhouette, tandis que deux poches plaquées sur le devant ajoutent une touche fonctionnelle.",
+        "Sa longueur épurée permet de l’associer facilement à des pantalons et des jupes taille haute. Porté avec le pantalon « Lui », il crée un look monochrome harmonieux, tout en s’intégrant aisément au vestiaire de base comme pièce indépendante.",
+        "Tissu : 75 % laine naturelle.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["beige", "gris"]
+    },
+    UA: {
+      category: "Жакети",
+      name: "Джемпер «Lui» із кишенями",
+      description: [
+        "Джемпер «Lui» із кишенями — лаконічна модель із 75% натуральної вовни з м’яким, структурним силуетом. Широкий виріз, накладні кишені та мінімалістичний крій роблять його універсальною основою осінньо-зимового гардероба.",
+        "Модель має прямий вільний крій, довгі рукави та широкий округлий виріз, який делікатно відкриває лінію ключиць. Центральний декоративний шов підкреслює геометрію силуету, а дві накладні кишені спереду додають функціональний акцент.",
+        "Лаконічна довжина дозволяє легко поєднувати джемпер із брюками та спідницями з високою посадкою. У комплекті з брюками «Lui» створює цілісний монохромний образ, водночас легко інтегрується в базовий гардероб як самостійна річ.",
+        "Тканина: 75% натуральна вовна.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["бежевий", "сірий"]
+    },
+    RU: {
+      category: "Жакеты",
+      name: "Джемпер «Lui» с карманами",
+      description: [
+        "Джемпер «Lui» с карманами — лаконичная модель из 75% натуральной шерсти с мягким, структурным силуэтом. Широкий вырез, накладные карманы и минималистичный крой делают его универсальной основой осенне-зимнего гардероба.",
+        "Модель имеет прямой свободный крой, длинные рукава и широкий округлый вырез, который деликатно открывает линию ключиц. Центральный декоративный шов подчеркивает геометрию силуэта, а два накладных кармана спереди добавляют функциональный акцент.",
+        "Лаконичная длина позволяет легко сочетать джемпер с брюками и юбками с высокой посадкой. В комплекте с брюками «Lui» он создает цельный монохромный образ и легко интегрируется в базовый гардероб как самостоятельная вещь.",
+        "Ткань: 75% натуральная шерсть.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["бежевый", "серый"]
+    }
+  }
+},
+
+  {
+  id: 340,
+  price: 4160,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+sku: "99471",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Lui Jumper Suit/1.avif",
+  images: [
+    "/Costumes/Lui Jumper Suit/2.avif",
+    "/Costumes/Lui Jumper Suit/3.avif",
+    "/Costumes/Lui Jumper Suit/4.avif",
+    "/Costumes/Lui Jumper Suit/5.avif",
+    "/Costumes/Lui Jumper Suit/6.avif",
+    "/Costumes/Lui Jumper Suit/7.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Lui Jumper Suit",
+      description: [
+        "The Lui suit is a minimalist set consisting of a jumper and wide-leg trousers, made from a fabric containing 75% natural wool. Its laconic cut and soft beige shade create a refined look for an autumn-winter wardrobe.",
+        "The jumper has a straight, relaxed silhouette, a wide round neckline, and long sleeves. Central decorative seams and patch pockets add character while preserving a clean minimalist aesthetic.",
+        "The high-rise trousers feature wide, straight legs that visually elongate the silhouette. Vertical front creases add structure and make the fit more graphic.",
+        "The pieces can be worn together as a complete monochrome look or styled separately with wardrobe basics.",
+        "Fabric: 75% natural wool.",
+        "Season: autumn, winter."
+      ],
+      colors: ["beige", "gray"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Ensemble « Lui » avec pull",
+      description: [
+        "L’ensemble « Lui » est un duo minimaliste composé d’un pull et d’un pantalon large, confectionné dans un tissu contenant 75 % de laine naturelle. Sa coupe épurée et sa douce nuance beige créent un look sobre pour le vestiaire automne-hiver.",
+        "Le pull présente une silhouette droite et ample, une large encolure ronde et des manches longues. Les coutures décoratives centrales et les poches plaquées apportent du caractère tout en préservant une esthétique minimaliste et épurée.",
+        "Le pantalon taille haute possède de larges jambes droites qui allongent visuellement la silhouette. Les plis verticaux sur le devant structurent le look et rendent la coupe plus graphique.",
+        "L’ensemble peut se porter comme un look monochrome complet ou chaque pièce peut être associée séparément aux basiques du vestiaire.",
+        "Tissu : 75 % laine naturelle.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["beige", "gris"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм «Lui» із джемпером",
+      description: [
+        "Костюм «Lui» — мінімалістичний комплект із джемпера та широких брюк, виконаний із тканини з 75% натуральної вовни. Лаконічний крій і м’який бежевий відтінок створюють стриманий образ для осінньо-зимового гардероба.",
+        "Джемпер має прямий вільний силует, округлий широкий виріз та довгі рукави. Центральні декоративні шви й накладні кишені додають моделі виразності, зберігаючи чисту мінімалістичну естетику.",
+        "Брюки з високою посадкою та широкими прямими штанинами візуально витягують силует. Вертикальні стрілки спереду додають образу структурності та роблять посадку більш графічною.",
+        "Комплект можна носити разом як готовий монохромний образ або стилізувати кожну річ окремо з базовим гардеробом.",
+        "Тканина: 75% натуральна вовна.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["бежевий", "сірий"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм «Lui» с джемпером",
+      description: [
+        "Костюм «Lui» — минималистичный комплект из джемпера и широких брюк, выполненный из ткани с 75% натуральной шерсти. Лаконичный крой и мягкий бежевый оттенок создают сдержанный образ для осенне-зимнего гардероба.",
+        "Джемпер имеет прямой свободный силуэт, широкий округлый вырез и длинные рукава. Центральные декоративные швы и накладные карманы добавляют модели выразительности, сохраняя чистую минималистичную эстетику.",
+        "Брюки с высокой посадкой и широкими прямыми штанинами визуально вытягивают силуэт. Вертикальные стрелки спереди добавляют образу структурности и делают посадку более графичной.",
+        "Комплект можно носить вместе как готовый монохромный образ или стилизовать каждую вещь отдельно с базовым гардеробом.",
+        "Ткань: 75% натуральная шерсть.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["бежевый", "серый"]
+    }
+  }
+},
+
+  {
+  id: 339,
+  price: 3150,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+sku: "99470",
+  size: "XS S M L XL",
+  category: "Jackets",
+  image: "/Jackets/Lui Cardigan/1.avif",
+  images: [
+    "/Jackets/Lui Cardigan/2.avif",
+    "/Jackets/Lui Cardigan/3.avif",
+    "/Jackets/Lui Cardigan/4.avif",
+    "/Jackets/Lui Cardigan/5.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Jackets",
+      name: "Lui Cardigan",
+      description: [
+        "The Lui cardigan is a laconic design made from 75% natural wool, featuring a relaxed cut and an accent belt at the waist. A soft shoulder line, wide lapels, and minimalist styling make it a versatile foundation for an autumn-winter wardrobe.",
+        "The model has a relaxed straight cut without fastenings, wide lapels, and an elongated length. The removable belt allows the fit to be adjusted: wear the cardigan open or define the waist for a more feminine silhouette.",
+        "Functional welt pockets and wide sleeves with expressive cuffs complete the understated design. The cardigan is easy to style with skirts, trousers, and denim, or pair with the Lui skirt for a cohesive monochrome look.",
+        "Fabric: 75% natural wool.",
+        "Season: autumn, winter."
+      ],
+      colors: ["gray", "beige"]
+    },
+    FR: {
+      category: "Vestes",
+      name: "Cardigan « Lui »",
+      description: [
+        "Le cardigan « Lui » est un modèle épuré composé de 75 % de laine naturelle, doté d’une coupe ample et d’une ceinture qui souligne la taille. Sa ligne d’épaule souple, ses larges revers et son design minimaliste en font une base polyvalente du vestiaire automne-hiver.",
+        "Le modèle présente une coupe droite et ample sans fermeture, de larges revers et une longueur allongée. La ceinture amovible permet d’ajuster la silhouette : porter le cardigan ouvert ou marquer la taille pour une allure plus féminine.",
+        "Des poches passepoilées fonctionnelles et de larges manches aux poignets marqués complètent ce design sobre. Le cardigan se porte facilement avec des jupes, des pantalons ou du denim, ou avec la jupe « Lui » pour créer un look monochrome harmonieux.",
+        "Tissu : 75 % laine naturelle.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["gris", "beige"]
+    },
+    UA: {
+      category: "Жакети",
+      name: "Кардиган «Lui»",
+      description: [
+        "Кардиган «Lui» — лаконічна модель із 75% натуральної вовни з вільним кроєм та акцентним поясом на талії. М’яка лінія плеча, широкі лацкани та мінімалістичний дизайн роблять його універсальною основою осінньо-зимового гардероба.",
+        "Модель має вільний прямий крій без застібок, широкі лацкани та подовжену довжину. Знімний пояс дозволяє регулювати посадку: носити кардиган вільно або підкреслювати талію, створюючи більш жіночний силует.",
+        "Функціональні прорізні кишені та широкі рукави з виразними манжетами доповнюють стриманий дизайн. Кардиган легко стилізувати зі спідницями, брюками та денімом або поєднувати зі спідницею «Lui» для цілісного монохромного образу.",
+        "Тканина: 75% натуральна вовна.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["сірий", "бежевий"]
+    },
+    RU: {
+      category: "Жакеты",
+      name: "Кардиган «Lui»",
+      description: [
+        "Кардиган «Lui» — лаконичная модель из 75% натуральной шерсти со свободным кроем и акцентным поясом на талии. Мягкая линия плеча, широкие лацканы и минималистичный дизайн делают его универсальной основой осенне-зимнего гардероба.",
+        "Модель имеет свободный прямой крой без застежек, широкие лацканы и удлиненную длину. Съемный пояс позволяет регулировать посадку: носить кардиган свободно или подчеркивать талию, создавая более женственный силуэт.",
+        "Функциональные прорезные карманы и широкие рукава с выразительными манжетами дополняют сдержанный дизайн. Кардиган легко стилизовать с юбками, брюками и денимом или сочетать с юбкой «Lui» для цельного монохромного образа.",
+        "Ткань: 75% натуральная шерсть.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["серый", "бежевый"]
+    }
+  }
+},
+
+  {
+  id: 338,
+  price: 5400,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+sku: "99469",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Lui Cardigan Suit/1.avif",
+  images: [
+    "/Costumes/Lui Cardigan Suit/2.avif",
+    "/Costumes/Lui Cardigan Suit/3.avif",
+    "/Costumes/Lui Cardigan Suit/4.avif",
+    "/Costumes/Lui Cardigan Suit/5.avif",
+    "/Costumes/Lui Cardigan Suit/6.avif",
+    "/Costumes/Lui Cardigan Suit/7.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Lui Cardigan Suit",
+      description: [
+        "The Lui cardigan suit is an elegant wool set consisting of an elongated belted cardigan and a midi skirt. A soft silhouette, clean lines, and 75% natural wool create a warm yet refined look for the cold season.",
+        "The elongated relaxed-fit cardigan has no fastenings and comes with a wide matching belt. It can be worn open or cinched at the waist, changing the character of the silhouette. A wide turn-down collar and laconic pockets complete the design.",
+        "The straight-cut midi skirt balances the voluminous top and creates a restrained, feminine silhouette. Together, the pieces form a cohesive monochrome look, while each can also be easily combined with other wardrobe staples.",
+        "Fabric: 75% natural wool.",
+        "Season: autumn, winter."
+      ],
+      colors: ["gray", "beige"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Ensemble « Lui » avec cardigan",
+      description: [
+        "L’ensemble « Lui » avec cardigan est un élégant ensemble en laine composé d’un cardigan long ceinturé et d’une jupe midi. Sa silhouette souple, ses lignes épurées et ses 75 % de laine naturelle créent un look chaud et raffiné pour la saison froide.",
+        "Le cardigan long à la coupe ample est dépourvu de fermeture et complété par une large ceinture ton sur ton. Il peut se porter ouvert ou ceinturé pour souligner la taille et modifier le caractère de la silhouette. Un large col rabattu et des poches épurées finalisent le modèle.",
+        "La jupe midi droite équilibre le volume du haut et dessine une silhouette féminine et sobre. Ensemble, les deux pièces créent un look monochrome harmonieux, tout en se combinant facilement séparément avec d’autres éléments du vestiaire.",
+        "Tissu : 75 % laine naturelle.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["gris", "beige"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм «Lui» із кардиганом",
+      description: [
+        "Костюм «Lui» із кардиганом — елегантний вовняний комплект, що складається з подовженого кардигана з поясом та спідниці міді. М’який силует, чисті лінії та 75% натуральної вовни створюють теплий і водночас витончений образ для холодного сезону.",
+        "Подовжений кардиган вільного крою виконаний без застібок та доповнений широким поясом у тон. Його можна носити вільно або підкреслювати талію поясом, змінюючи характер силуету. Широкий відкладний комір і лаконічні кишені додають моделі завершеності.",
+        "Спідниця прямого крою довжини міді врівноважує об’ємний верх і формує стриманий жіночний силует. Разом речі створюють цілісний монохромний образ, але легко комбінуються з іншими елементами гардероба окремо.",
+        "Тканина: 75% натуральна вовна.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["сірий", "бежевий"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм «Lui» с кардиганом",
+      description: [
+        "Костюм «Lui» с кардиганом — элегантный шерстяной комплект, состоящий из удлиненного кардигана с поясом и юбки миди. Мягкий силуэт, чистые линии и 75% натуральной шерсти создают теплый и одновременно утонченный образ для холодного сезона.",
+        "Удлиненный кардиган свободного кроя выполнен без застежек и дополнен широким поясом в тон. Его можно носить свободно или подчеркивать талию поясом, меняя характер силуэта. Широкий отложной воротник и лаконичные карманы завершают модель.",
+        "Юбка прямого кроя длины миди уравновешивает объемный верх и формирует сдержанный женственный силуэт. Вместе вещи создают цельный монохромный образ, но также легко сочетаются с другими элементами гардероба по отдельности.",
+        "Ткань: 75% натуральная шерсть.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["серый", "бежевый"]
+    }
+  }
+},
+
+  {
   id: 337,
   price: 2700,
   isTop: false,
