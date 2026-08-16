@@ -1,5 +1,411 @@
 const products = [
   {
+  id: 349,
+  price: 3500,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+sku: "99480",
+  size: "XS S M L XL",
+  category: "Outerwear",
+  image: "/Outerwear/Light Grey Trench/1.avif",
+  images: [
+    "/Outerwear/Light Grey Trench/2.avif",
+    "/Outerwear/Light Grey Trench/3.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Outerwear",
+      name: "Light Grey Trench Coat",
+      description: [
+        "The cropped Light Grey trench coat, made from 75% natural wool, is a modern alternative to classic outerwear. Its voluminous cut, wide lapels, and light gray shade create a distinctive silhouette for autumn-winter looks.",
+        "The design has a cropped relaxed cut with a dropped shoulder line and wide lapels. A double-breasted fastening emphasizes the trench coat’s character, while decorative shoulder tabs and wide buttoned cuffs add signature details of the classic trench.",
+        "Thanks to its voluminous silhouette, the design pairs easily with warm knitwear, turtlenecks, and layered looks. The light gray shade remains versatile and combines effortlessly with both a calm neutral palette and contrasting colors.",
+        "Fabric: 75% natural wool.",
+        "Season: autumn, winter."
+      ],
+      colors: ["gray"]
+    },
+    FR: {
+      category: "Vêtements d’extérieur",
+      name: "Trench « Light Grey »",
+      description: [
+        "Le trench court « Light Grey », composé de 75 % de laine naturelle, offre une alternative contemporaine aux vêtements d’extérieur classiques. Sa coupe volumineuse, ses larges revers et sa nuance gris clair créent une silhouette expressive pour les tenues automne-hiver.",
+        "Le modèle présente une coupe courte et ample avec une ligne d’épaules tombante et de larges revers. La fermeture croisée souligne le caractère du trench, tandis que les pattes décoratives aux épaules et les larges poignets boutonnés reprennent les détails emblématiques du trench classique.",
+        "Grâce à sa silhouette volumineuse, le modèle s’associe facilement aux mailles chaudes, aux cols roulés et aux looks superposés. La nuance gris clair reste polyvalente et s’accorde aussi bien avec une palette neutre et douce qu’avec des couleurs contrastées.",
+        "Tissu : 75 % laine naturelle.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["gris"]
+    },
+    UA: {
+      category: "Верхній одяг",
+      name: "Тренч «Light grey»",
+      description: [
+        "Укорочений тренч «Light grey» із 75% натуральної вовни — сучасна альтернатива класичному верхньому одягу. Об’ємний крій, широкі лацкани та світло-сірий відтінок створюють виразний силует для осінньо-зимових образів.",
+        "Модель має укорочений вільний крій зі спущеною лінією плеча та широкими лацканами. Двобортна застібка підкреслює характер тренча, а декоративні пати на плечах і широкі манжети з ґудзиками додають образу характерних деталей класичного тренча.",
+        "Завдяки об’ємному силуету модель легко комбінується з теплим трикотажем, гольфами та багатошаровими образами. Світло-сірий відтінок залишається універсальним і легко поєднується як зі спокійною базовою палітрою, так і з контрастними кольорами.",
+        "Тканина: 75% натуральна вовна.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["сірий"]
+    },
+    RU: {
+      category: "Верхняя одежда",
+      name: "Тренч «Light grey»",
+      description: [
+        "Укороченный тренч «Light grey» из 75% натуральной шерсти — современная альтернатива классической верхней одежде. Объемный крой, широкие лацканы и светло-серый оттенок создают выразительный силуэт для осенне-зимних образов.",
+        "Модель имеет укороченный свободный крой со спущенной линией плеча и широкими лацканами. Двубортная застежка подчеркивает характер тренча, а декоративные паты на плечах и широкие манжеты с пуговицами добавляют образу характерные детали классического тренча.",
+        "Благодаря объемному силуэту модель легко сочетается с теплым трикотажем, водолазками и многослойными образами. Светло-серый оттенок остается универсальным и легко сочетается как со спокойной базовой палитрой, так и с контрастными цветами.",
+        "Ткань: 75% натуральная шерсть.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["серый"]
+    }
+  }
+},
+
+  {
+  id: 348,
+  price: 5560,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+sku: "99479",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Light Grey Suit/1.avif",
+  images: [
+    "/Costumes/Light Grey Suit/2.avif",
+    "/Costumes/Light Grey Suit/3.avif",
+    "/Costumes/Light Grey Suit/2.avif",
+    "/Costumes/Light Grey Suit/3.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Light Grey Suit",
+      description: [
+        "The Light Grey suit, made from 75% natural wool, is a modern interpretation of the classic trouser suit. A relaxed cropped jacket and wide high-waisted trousers create a distinctive, balanced silhouette.",
+        "The cropped jacket has a relaxed cut with a dropped shoulder line, wide lapels, and statement cuffs. The voluminous top combined with the shorter length emphasizes the proportions and gives the suit a contemporary character.",
+        "The trousers have a high waist and wide, straight legs. Pleats at the waistband create a beautiful fit, while stitched front creases visually elongate the silhouette. The full length looks especially striking with heeled shoes.",
+        "Fabric: 75% natural wool.",
+        "Season: autumn, winter."
+      ],
+      colors: ["gray"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume « Light Grey »",
+      description: [
+        "Le costume « Light Grey », composé de 75 % de laine naturelle, offre une interprétation contemporaine du tailleur-pantalon classique. Une veste courte à la coupe ample et un pantalon large taille haute créent une silhouette expressive et équilibrée.",
+        "La veste courte présente une coupe ample avec une ligne d’épaules tombante, de larges revers et des poignets marqués. Le volume du haut associé à la longueur raccourcie souligne les proportions et apporte au costume un caractère contemporain.",
+        "Le pantalon présente une taille haute et des jambes larges et droites. Les plis à la ceinture créent une belle coupe, tandis que les plis nervurés sur le devant allongent visuellement la silhouette. Sa longueur pleine est particulièrement élégante avec des chaussures à talons.",
+        "Tissu : 75 % laine naturelle.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["gris"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм «Light grey»",
+      description: [
+        "Костюм «Light grey» із 75% натуральної вовни — сучасна інтерпретація класичного брючного костюма. Укорочений жакет вільного крою та широкі брюки з високою посадкою створюють виразний, збалансований силует.",
+        "Укорочений жакет має вільний крій зі спущеною лінією плеча, широкі лацкани та акцентні манжети. Об’ємний верх у поєднанні з коротшою довжиною підкреслює пропорції та додає костюму сучасного характеру.",
+        "Брюки — з високою посадкою та широкими прямими штанинами. Складки біля пояса формують красиву посадку, а застрочені стрілки спереду візуально витягують силует. Повна довжина брюк особливо ефектно виглядає із взуттям на підборах.",
+        "Тканина: 75% натуральна вовна.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["сірий"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм «Light grey»",
+      description: [
+        "Костюм «Light grey» из 75% натуральной шерсти — современная интерпретация классического брючного костюма. Укороченный жакет свободного кроя и широкие брюки с высокой посадкой создают выразительный, сбалансированный силуэт.",
+        "Укороченный жакет имеет свободный крой со спущенной линией плеча, широкие лацканы и акцентные манжеты. Объемный верх в сочетании с укороченной длиной подчеркивает пропорции и придает костюму современный характер.",
+        "Брюки имеют высокую посадку и широкие прямые штанины. Складки у пояса формируют красивую посадку, а застроченные стрелки спереди визуально вытягивают силуэт. Полная длина брюк особенно эффектно выглядит с обувью на каблуке.",
+        "Ткань: 75% натуральная шерсть.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["серый"]
+    }
+  }
+},
+
+  {
+  id: 347,
+  price: 2060,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+sku: "99478",
+  size: "XS S M L XL",
+  category: "Pants",
+  image: "/Pants/Camel Pants/1.avif",
+  images: [
+    "/Pants/Camel Pants/2.avif",
+    "/Pants/Camel Pants/3.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Pants",
+      name: "Camel Pants",
+      description: [
+        "The Camel pants are a classic design made from 75% natural wool in a warm camel shade. The high waist, relaxed cut, and wide straight legs create an elongated and elegant silhouette.",
+        "The design has a high waist and a relaxed cut with wide, straight legs. Soft pleats at the waistband add the necessary volume and provide a comfortable fit, while stitched front creases visually elongate the silhouette.",
+        "The full length creates a beautiful vertical line and looks especially striking when paired with heeled shoes. The deep camel shade integrates easily into an autumn-winter wardrobe.",
+        "Fabric: 75% natural wool.",
+        "Season: autumn, winter."
+      ],
+      colors: ["camel"]
+    },
+    FR: {
+      category: "Pantalons",
+      name: "Pantalon « Camel »",
+      description: [
+        "Le pantalon « Camel » est un modèle classique composé de 75 % de laine naturelle dans une chaleureuse nuance camel. La taille haute, la coupe ample et les jambes larges et droites créent une silhouette élancée et élégante.",
+        "Le modèle présente une taille haute et une coupe ample aux jambes larges et droites. De doux plis à la ceinture apportent le volume nécessaire et assurent une coupe confortable, tandis que les plis nervurés sur le devant allongent visuellement la silhouette.",
+        "La longueur pleine crée une belle ligne verticale et se révèle particulièrement élégante avec des chaussures à talons. La profonde nuance camel s’intègre facilement dans un vestiaire automne-hiver.",
+        "Tissu : 75 % laine naturelle.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["camel"]
+    },
+    UA: {
+      category: "Брюки",
+      name: "Брюки «Camel»",
+      description: [
+        "Брюки «Camel» — класична модель із 75% натуральної вовни у теплому відтінку кемел. Висока посадка, вільний крій і широкі прямі штанини формують витягнутий та елегантний силует.",
+        "Модель має високу посадку та вільний крій із широкими прямими штанинами. М’які складки біля пояса додають необхідного об’єму та забезпечують комфортну посадку, а застрочені стрілки спереду візуально витягують силует.",
+        "Повна довжина створює красиву вертикаль і особливо ефектно виглядає у поєднанні з взуттям на підборах. Глибокий відтінок кемел легко інтегрується в осінньо-зимовий гардероб.",
+        "Тканина: 75% натуральна вовна.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["кемел"]
+    },
+    RU: {
+      category: "Брюки",
+      name: "Брюки «Camel»",
+      description: [
+        "Брюки «Camel» — классическая модель из 75% натуральной шерсти в теплом оттенке кэмел. Высокая посадка, свободный крой и широкие прямые штанины формируют вытянутый и элегантный силуэт.",
+        "Модель имеет высокую посадку и свободный крой с широкими прямыми штанинами. Мягкие складки у пояса добавляют необходимый объем и обеспечивают комфортную посадку, а застроченные стрелки спереди визуально вытягивают силуэт.",
+        "Полная длина создает красивую вертикаль и особенно эффектно выглядит в сочетании с обувью на каблуке. Глубокий оттенок кэмел легко интегрируется в осенне-зимний гардероб.",
+        "Ткань: 75% натуральная шерсть.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["кэмел"]
+    }
+  }
+},
+
+  {
+  id: 346,
+  price: 3500,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+sku: "99477",
+  size: "XS S M L XL",
+  category: "Jackets",
+  image: "/Jackets/Camel Jacket/1.avif",
+  images: [
+    "/Jackets/Camel Jacket/2.avif",
+    "/Jackets/Camel Jacket/3.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Jackets",
+      name: "Camel Jacket",
+      description: [
+        "The Camel jacket is a classic design made from 75% natural wool in a warm camel shade. Its elongated cut, defined shoulder line, and classic lapels create a structured yet feminine silhouette.",
+        "The design has an elongated straight cut with a subtly defined waistline and structured shoulders. Classic lapels and a two-button fastening create an understated, timeless look.",
+        "Functional flap pockets are positioned at the front, while a breast pocket completes the jacket’s classic styling. The warm camel shade pairs easily with basic colors and adds depth to any look.",
+        "Fabric: 75% natural wool.",
+        "Season: autumn, winter."
+      ],
+      colors: ["camel"]
+    },
+    FR: {
+      category: "Vestes",
+      name: "Veste « Camel »",
+      description: [
+        "La veste « Camel » est un modèle classique composé de 75 % de laine naturelle dans une chaleureuse nuance camel. Sa coupe allongée, sa ligne d’épaules marquée et ses revers classiques créent une silhouette structurée tout en restant féminine.",
+        "Le modèle présente une coupe droite et allongée, une taille délicatement dessinée et des épaules structurées. Les revers classiques et la fermeture à deux boutons composent un design sobre et intemporel.",
+        "Des poches à rabat fonctionnelles sont disposées sur le devant, tandis qu’une poche poitrine complète le style classique du modèle. La chaude nuance camel s’associe facilement aux couleurs basiques et apporte de la profondeur aux tenues.",
+        "Tissu : 75 % laine naturelle.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["camel"]
+    },
+    UA: {
+      category: "Жакети",
+      name: "Жакет «Camel»",
+      description: [
+        "Жакет «Camel» — класична модель із 75% натуральної вовни у теплому відтінку кемел. Подовжений крій, виразна лінія плеча та класичні лацкани формують структурний і водночас жіночний силует.",
+        "Модель має подовжений прямий крій із делікатно окресленою лінією талії та структурованими плечима. Класичні лацкани й застібка на два ґудзики створюють стриманий позачасовий дизайн.",
+        "Спереду розташовані функціональні кишені з клапанами, а нагрудна кишеня завершує класичну стилістику моделі. Теплий відтінок кемел легко поєднується з базовими кольорами та додає образам глибини.",
+        "Тканина: 75% натуральна вовна.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["кемел"]
+    },
+    RU: {
+      category: "Жакеты",
+      name: "Жакет «Camel»",
+      description: [
+        "Жакет «Camel» — классическая модель из 75% натуральной шерсти в теплом оттенке кэмел. Удлиненный крой, выразительная линия плеча и классические лацканы формируют структурный и одновременно женственный силуэт.",
+        "Модель имеет удлиненный прямой крой с деликатно очерченной линией талии и структурированными плечами. Классические лацканы и застежка на две пуговицы создают сдержанный вневременной дизайн.",
+        "Спереди расположены функциональные карманы с клапанами, а нагрудный карман завершает классическую стилистику модели. Теплый оттенок кэмел легко сочетается с базовыми цветами и добавляет образам глубины.",
+        "Ткань: 75% натуральная шерсть.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["кэмел"]
+    }
+  }
+},
+
+  {
+  id: 345,
+  price: 5560,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+sku: "99476",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Camel Suit/1.avif",
+  images: [
+    "/Costumes/Camel Suit/2.avif",
+    "/Costumes/Camel Suit/3.avif",
+    "/Costumes/Camel Suit/4.avif",
+    "/Costumes/Camel Suit/5.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Camel Suit",
+      description: [
+        "The Camel suit is a classic wool duo consisting of a jacket and wide-leg trousers in a deep camel shade. Its structured cut and 75% natural wool create an elegant look for an autumn-winter wardrobe.",
+        "The elongated straight-cut jacket features classic lapels, a defined shoulder line, and a two-button fastening. Flap pockets complete the understated design and preserve its classic character.",
+        "The high-waisted trousers with wide, straight legs visually elongate the silhouette. Full-length pressed creases add a graphic quality to the look and make the fit more structured.",
+        "Fabric: 75% natural wool.",
+        "Season: autumn, winter."
+      ],
+      colors: ["camel"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume « Camel »",
+      description: [
+        "Le costume « Camel » est un duo classique en laine composé d’une veste et d’un pantalon large dans une profonde nuance camel. Sa coupe structurée et ses 75 % de laine naturelle créent une allure élégante pour le vestiaire automne-hiver.",
+        "La veste droite et allongée présente des revers classiques, une ligne d’épaules marquée et une fermeture à deux boutons. Les poches à rabat complètent le design sobre et préservent son caractère classique.",
+        "Le pantalon taille haute aux jambes larges et droites allonge visuellement la silhouette. Les plis marqués sur toute la longueur apportent une touche graphique et structurent davantage la coupe.",
+        "Tissu : 75 % laine naturelle.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["camel"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм «Camel»",
+      description: [
+        "Костюм «Camel» — класичний вовняний дует із жакета та широких брюк у глибокому відтінку кемел. Структурний крій і 75% натуральної вовни створюють елегантний образ для осінньо-зимового гардероба.",
+        "Жакет подовженого прямого крою має класичні лацкани, виразну лінію плеча та застібку на два ґудзики. Кишені з клапанами доповнюють стриманий дизайн і зберігають його класичний характер.",
+        "Брюки з високою посадкою та широкими прямими штанинами візуально витягують силует. Стрілки по всій довжині додають образу графічності та роблять посадку більш структурованою.",
+        "Тканина: 75% натуральна вовна.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["кемел"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм «Camel»",
+      description: [
+        "Костюм «Camel» — классический шерстяной дуэт из жакета и широких брюк в глубоком оттенке кэмел. Структурный крой и 75% натуральной шерсти создают элегантный образ для осенне-зимнего гардероба.",
+        "Жакет удлиненного прямого кроя имеет классические лацканы, выразительную линию плеча и застежку на две пуговицы. Карманы с клапанами дополняют сдержанный дизайн и сохраняют его классический характер.",
+        "Брюки с высокой посадкой и широкими прямыми штанинами визуально вытягивают силуэт. Стрелки по всей длине придают образу графичность и делают посадку более структурированной.",
+        "Ткань: 75% натуральная шерсть.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["кэмел"]
+    }
+  }
+},
+
+  {
+  id: 344,
+  price: 1900,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+sku: "99475",
+  size: "XS S M L XL",
+  category: "Skirts",
+  image: "/Skirts/Wool Skirt/1.avif",
+  images: [
+    "/Skirts/Wool Skirt/2.avif",
+    "/Skirts/Wool Skirt/3.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Skirts",
+      name: "Wool Skirt",
+      description: [
+        "The Wool skirt, made from 75% natural wool, is a feminine midi-length design with statement wide pleats. The structured fabric holds its shape beautifully, creating a voluminous yet refined silhouette.",
+        "The midi-length design has an A-line silhouette and wide set-in pleats, allowing the skirt to retain its defined shape and move beautifully while walking. The clean waistline balances the volume of the lower section and emphasizes the femininity of the silhouette.",
+        "The light gray shade integrates easily into a basic wardrobe. The skirt can be worn as a set with the Wool jacket or styled separately with turtlenecks, shirts, sweaters, and basic knitwear.",
+        "Fabric: 75% natural wool.",
+        "Season: autumn, winter."
+      ],
+      colors: ["gray"]
+    },
+    FR: {
+      category: "Jupes",
+      name: "Jupe « Wool »",
+      description: [
+        "La jupe « Wool », composée de 75 % de laine naturelle, est un modèle féminin de longueur midi doté de larges plis marqués. Le tissu structuré conserve joliment sa forme et crée une silhouette volumineuse tout en restant raffinée.",
+        "Ce modèle midi présente une coupe trapèze et de larges plis couchés qui lui permettent de garder une forme nette et d’accompagner élégamment les mouvements. La taille épurée équilibre le volume de la partie inférieure et souligne la féminité de la silhouette.",
+        "La nuance gris clair s’intègre facilement dans un vestiaire basique. La jupe peut se porter avec la veste « Wool » ou séparément avec des cols roulés, des chemises, des pulls et des mailles basiques.",
+        "Tissu : 75 % laine naturelle.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["gris"]
+    },
+    UA: {
+      category: "Спідниці",
+      name: "Спідниця «Wool»",
+      description: [
+        "Спідниця «Wool» із 75% натуральної вовни — жіночна модель довжини міді з виразними широкими складками. Структурна тканина красиво тримає форму та створює об’ємний, але водночас витончений силует.",
+        "Модель довжини міді має А-силует та широкі закладені складки, завдяки яким спідниця зберігає чітку форму й красиво рухається під час ходьби. Лаконічна посадка на талії врівноважує об’єм нижньої частини та підкреслює жіночність силуету.",
+        "Світло-сірий відтінок легко інтегрується в базовий гардероб. Спідницю можна носити в комплекті з жакетом «Wool» або окремо — з гольфами, сорочками, светрами та базовим трикотажем.",
+        "Тканина: 75% натуральна вовна.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["сірий"]
+    },
+    RU: {
+      category: "Юбки",
+      name: "Юбка «Wool»",
+      description: [
+        "Юбка «Wool» из 75% натуральной шерсти — женственная модель длины миди с выразительными широкими складками. Структурная ткань красиво держит форму и создает объемный, но в то же время утонченный силуэт.",
+        "Модель длины миди имеет А-силуэт и широкие заложенные складки, благодаря которым юбка сохраняет четкую форму и красиво движется при ходьбе. Лаконичная посадка на талии уравновешивает объем нижней части и подчеркивает женственность силуэта.",
+        "Светло-серый оттенок легко интегрируется в базовый гардероб. Юбку можно носить в комплекте с жакетом «Wool» или отдельно — с гольфами, рубашками, свитерами и базовым трикотажем.",
+        "Ткань: 75% натуральная шерсть.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["серый"]
+    }
+  }
+},
+
+  {
   id: 343,
   price: 3300,
   isTop: false,
