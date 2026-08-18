@@ -1,5 +1,421 @@
 const products = [
   {
+  id: 355,
+  price: 2250,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+sku: "99486",
+  size: "XS S M L XL",
+  category: "Skirts",
+  image: "/Skirts/Lui Straight Midi Skirt/1.avif",
+  images: [
+    "/Skirts/Lui Straight Midi Skirt/2.avif",
+    "/Skirts/Lui Straight Midi Skirt/3.avif",
+    "/Skirts/Lui Straight Midi Skirt/4.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Skirts",
+      name: "Lui Straight Midi Skirt",
+      description: [
+        "The Lui Straight Midi Skirt is a clean, high-waisted design with a straight midi-length cut. The fabric, made with 75% natural wool, holds its shape beautifully, while the understated silhouette makes it a versatile foundation for an autumn-winter wardrobe.",
+        "The straight cut softly defines the silhouette without restricting movement, while the midi length adds understated elegance to the look. The high waist emphasizes the waistline and creates harmonious proportions.",
+        "A back slit provides comfort while walking and adds a functional detail to the minimalist design. The skirt can be worn with the Lui jumper or paired with shirts, turtlenecks, and jackets.",
+        "Fabric: 75% natural wool.",
+        "Season: autumn, winter."
+      ],
+      colors: ["gray", "beige"]
+    },
+    FR: {
+      category: "Jupes",
+      name: "Jupe midi droite « Lui »",
+      description: [
+        "La jupe midi droite « Lui » est un modèle épuré à taille haute et coupe droite. Le tissu contenant 75 % de laine naturelle conserve joliment sa forme, tandis que sa silhouette sobre en fait une base polyvalente du vestiaire automne-hiver.",
+        "La coupe droite souligne délicatement la silhouette sans entraver les mouvements, tandis que la longueur midi apporte une élégance discrète au look. La taille haute met en valeur la ligne de taille et crée des proportions harmonieuses.",
+        "Une fente au dos assure le confort pendant la marche et ajoute un détail fonctionnel au design minimaliste. La jupe peut se porter avec le pull « Lui » ou être associée à des chemises, des cols roulés et des vestes.",
+        "Tissu : 75 % laine naturelle.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["gris", "beige"]
+    },
+    UA: {
+      category: "Спідниці",
+      name: "Спідниця «Lui»",
+      description: [
+        "Спідниця «Lui» — лаконічна модель прямого крою довжини міді з високою посадкою. Тканина з 75% натуральної вовни добре тримає форму, а стриманий силует робить спідницю універсальною основою осінньо-зимового гардероба.",
+        "Прямий крій м’яко окреслює силует, не обмежуючи рухів, а довжина міді додає образу стриманої елегантності. Висока посадка підкреслює лінію талії та створює гармонійні пропорції.",
+        "Ззаду передбачений розріз, який забезпечує комфорт під час ходьби та додає мінімалістичному дизайну функціональної деталі. Спідницю можна носити разом із джемпером «Lui» або поєднувати з сорочками, гольфами та жакетами.",
+        "Тканина: 75% натуральна вовна.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["сірий", "бежевий"]
+    },
+    RU: {
+      category: "Юбки",
+      name: "Юбка «Lui»",
+      description: [
+        "Юбка «Lui» — лаконичная модель прямого кроя длины миди с высокой посадкой. Ткань с 75% натуральной шерсти хорошо держит форму, а сдержанный силуэт делает юбку универсальной основой осенне-зимнего гардероба.",
+        "Прямой крой мягко очерчивает силуэт, не ограничивая движений, а длина миди добавляет образу сдержанной элегантности. Высокая посадка подчеркивает линию талии и создает гармоничные пропорции.",
+        "Сзади предусмотрен разрез, который обеспечивает комфорт при ходьбе и добавляет минималистичному дизайну функциональную деталь. Юбку можно носить вместе с джемпером «Lui» или сочетать с рубашками, водолазками и жакетами.",
+        "Ткань: 75% натуральная шерсть.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["серый", "бежевый"]
+    }
+  }
+},
+
+  {
+  id: 354,
+  price: 2100,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+sku: "99485",
+  size: "XS S M L XL",
+  category: "Tops",
+  image: "/Top/Lui V-Neck Jumper/1.avif",
+  images: [
+    "/Top/Lui V-Neck Jumper/2.avif",
+    "/Top/Lui V-Neck Jumper/3.avif",
+    "/Top/Lui V-Neck Jumper/4.avif",
+    "/Top/Lui V-Neck Jumper/5.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Tops",
+      name: "Lui V-Neck Jumper",
+      description: [
+        "The Lui jumper is a clean, relaxed-fit design with a distinctive V-neckline. The soft fabric, made with 75% natural wool, provides comfort and warmth, while the minimalist design fits effortlessly into an everyday wardrobe.",
+        "The design has a relaxed straight silhouette, a dropped shoulder line, and long sleeves. The deep V-neckline delicately reveals the décolletage, while a decorative center seam emphasizes the geometry of the cut.",
+        "Thanks to its understated design, the jumper pairs easily with Lui trousers for a cohesive monochrome look, as well as with denim, skirts, or classic trousers.",
+        "Fabric: 75% natural wool.",
+        "Season: autumn, winter."
+      ],
+      colors: ["gray", "beige"]
+    },
+    FR: {
+      category: "Hauts",
+      name: "Pull « Lui »",
+      description: [
+        "Le pull « Lui » est un modèle épuré à la coupe ample doté d’une encolure en V marquée. Le tissu doux contenant 75 % de laine naturelle apporte confort et chaleur, tandis que son design minimaliste s’intègre facilement au vestiaire quotidien.",
+        "Le modèle présente une silhouette droite et ample, une ligne d’épaules tombante et des manches longues. La profonde encolure en V dévoile délicatement le décolleté, tandis qu’une couture centrale décorative souligne la géométrie de la coupe.",
+        "Grâce à son design sobre, le pull s’associe facilement au pantalon « Lui » pour créer un look monochrome harmonieux, ainsi qu’au denim, aux jupes ou aux pantalons classiques.",
+        "Tissu : 75 % laine naturelle.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["gris", "beige"]
+    },
+    UA: {
+      category: "Топи",
+      name: "Джемпер «Lui»",
+      description: [
+        "Джемпер «Lui» — лаконічна модель вільного крою з виразним V-подібним вирізом. М’яка тканина з 75% натуральної вовни дарує комфорт і тепло, а мінімалістичний дизайн легко вписується у повсякденний гардероб.",
+        "Модель має вільний прямий силует, спущену лінію плеча та довгі рукави. Глибокий V-подібний виріз делікатно відкриває зону декольте, а декоративний центральний шов підкреслює геометрію крою.",
+        "Завдяки стриманому дизайну джемпер легко поєднувати як із брюками «Lui» для цілісного монохромного образу, так і з денімом, спідницями чи класичними брюками.",
+        "Тканина: 75% натуральна вовна.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["сірий", "бежевий"]
+    },
+    RU: {
+      category: "Топы",
+      name: "Джемпер «Lui»",
+      description: [
+        "Джемпер «Lui» — лаконичная модель свободного кроя с выразительным V-образным вырезом. Мягкая ткань с 75% натуральной шерсти дарит комфорт и тепло, а минималистичный дизайн легко вписывается в повседневный гардероб.",
+        "Модель имеет свободный прямой силуэт, спущенную линию плеча и длинные рукава. Глубокий V-образный вырез деликатно открывает зону декольте, а декоративный центральный шов подчеркивает геометрию кроя.",
+        "Благодаря сдержанному дизайну джемпер легко сочетать как с брюками «Lui» для цельного монохромного образа, так и с денимом, юбками или классическими брюками.",
+        "Ткань: 75% натуральная шерсть.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["серый", "бежевый"]
+    }
+  }
+},
+
+  {
+  id: 353,
+  price: 4350,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+sku: "99484",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Lui Skirt Suit/1.avif",
+  images: [
+    "/Costumes/Lui Skirt Suit/2.avif",
+    "/Costumes/Lui Skirt Suit/3.avif",
+    "/Costumes/Lui Skirt Suit/4.avif",
+    "/Costumes/Lui Skirt Suit/5.avif",
+    "/Costumes/Lui Skirt Suit/6.avif",
+    "/Costumes/Lui Skirt Suit/7.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Lui Skirt Suit",
+      description: [
+        "The Lui skirt suit is a minimalist set consisting of a V-neck jumper and a straight midi skirt. The fabric, made with 75% natural wool, provides warmth and comfort, while the understated cut creates an elegant silhouette.",
+        "The jumper features a V-neckline, a dropped shoulder line, long sleeves, and a decorative center seam. Its relaxed silhouette provides a comfortable fit while preserving the clean character of the look.",
+        "The straight-cut skirt softly follows the lines of the figure, while the midi length adds understated elegance to the set. Together, the pieces create a cohesive monochrome look, while each can also be styled separately with ease.",
+        "Fabric: 75% natural wool.",
+        "Season: autumn, winter."
+      ],
+      colors: ["gray", "beige"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume « Lui » avec jupe",
+      description: [
+        "Le costume « Lui » avec jupe est un ensemble minimaliste composé d’un pull à col V et d’une jupe midi droite. Le tissu contenant 75 % de laine naturelle apporte chaleur et confort, tandis que la coupe sobre crée une silhouette élégante.",
+        "Le pull présente une encolure en V, une ligne d’épaules tombante, des manches longues et une couture centrale décorative. Sa silhouette ample assure une coupe confortable tout en préservant le caractère épuré du look.",
+        "La jupe droite suit délicatement les lignes de la silhouette, tandis que sa longueur midi apporte une élégance discrète à l’ensemble. Les deux pièces créent un look monochrome harmonieux et peuvent également être facilement portées séparément.",
+        "Tissu : 75 % laine naturelle.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["gris", "beige"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм «Lui» зі спідницею",
+      description: [
+        "Костюм «Lui» зі спідницею — мінімалістичний комплект із джемпера з V-подібним вирізом та прямої спідниці міді. Тканина з 75% натуральної вовни дарує тепло та комфорт, а стриманий крій створює елегантний силует.",
+        "Джемпер має V-подібний виріз, спущену лінію плеча, довгі рукави та декоративний центральний шов. Вільний силует створює комфортну посадку та зберігає лаконічність образу.",
+        "Спідниця прямого крою м’яко повторює лінії фігури, а довжина міді додає комплекту стриманої елегантності. Разом речі створюють цілісний монохромний образ, водночас кожну з них легко стилізувати окремо.",
+        "Тканина: 75% натуральна вовна.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["сірий", "бежевий"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм «Lui» с юбкой",
+      description: [
+        "Костюм «Lui» с юбкой — минималистичный комплект из джемпера с V-образным вырезом и прямой юбки миди. Ткань с 75% натуральной шерсти дарит тепло и комфорт, а сдержанный крой создает элегантный силуэт.",
+        "Джемпер имеет V-образный вырез, спущенную линию плеча, длинные рукава и декоративный центральный шов. Свободный силуэт обеспечивает комфортную посадку и сохраняет лаконичность образа.",
+        "Юбка прямого кроя мягко повторяет линии фигуры, а длина миди добавляет комплекту сдержанной элегантности. Вместе вещи создают цельный монохромный образ, при этом каждую из них легко стилизовать отдельно.",
+        "Ткань: 75% натуральная шерсть.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["серый", "бежевый"]
+    }
+  }
+},
+
+  {
+  id: 352,
+  price: 2060,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+sku: "99483",
+  size: "XS S M L XL",
+  category: "Pants",
+  image: "/Pants/Lui Trousers/1.avif",
+  images: [
+    "/Pants/Lui Trousers/2.avif",
+    "/Pants/Lui Trousers/3.avif",
+    "/Pants/Lui Trousers/4.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Pants",
+      name: "Lui Trousers",
+      description: [
+        "The Lui pants have a relaxed straight cut, a high waist, and statement creases. Natural wool in the fabric and a clean silhouette make them a versatile foundation for understated, contemporary looks.",
+        "The design features a high waist and wide, straight legs that create an elongated, proportional silhouette. Vertical front creases add structure to the pants and visually lengthen the legs.",
+        "The minimalist design makes Lui easy to integrate into different looks: wear them with the jumper from the matching set, shirts, jackets, or basic tops.",
+        "Fabric: 75% natural wool.",
+        "Season: autumn, winter."
+      ],
+      colors: ["gray", "beige"]
+    },
+    FR: {
+      category: "Pantalons",
+      name: "Pantalon « Lui »",
+      description: [
+        "Le pantalon « Lui » présente une coupe droite et ample, une taille haute et des plis marqués. La laine naturelle présente dans le tissu et sa silhouette épurée en font une base polyvalente pour des looks sobres et contemporains.",
+        "Le modèle possède une taille haute et de larges jambes droites qui créent une silhouette élancée et proportionnée. Les plis verticaux sur le devant structurent le pantalon et allongent visuellement les jambes.",
+        "Son design minimaliste permet d’intégrer facilement « Lui » à différents looks : avec le pull de l’ensemble assorti, des chemises, des vestes ou des hauts basiques.",
+        "Tissu : 75 % laine naturelle.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["gris", "beige"]
+    },
+    UA: {
+      category: "Брюки",
+      name: "Брюки «Lui»",
+      description: [
+        "Брюки «Lui» — модель вільного прямого крою з високою посадкою та акцентними стрілками. Натуральна вовна у складі та лаконічний силует роблять їх універсальною основою для стриманих і сучасних образів.",
+        "Модель має високу посадку та широкі прямі штанини, що створюють витягнутий, пропорційний силует. Вертикальні стрілки спереду додають брюкам структурності та візуально подовжують ноги.",
+        "Мінімалістичний дизайн дозволяє легко інтегрувати «Lui» у різні образи: носити з джемпером із однойменного комплекту, сорочками, жакетами або базовими топами.",
+        "Тканина: 75% натуральна вовна.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["сірий", "бежевий"]
+    },
+    RU: {
+      category: "Брюки",
+      name: "Брюки «Lui»",
+      description: [
+        "Брюки «Lui» — модель свободного прямого кроя с высокой посадкой и акцентными стрелками. Натуральная шерсть в составе и лаконичный силуэт делают их универсальной основой для сдержанных и современных образов.",
+        "Модель имеет высокую посадку и широкие прямые штанины, создающие вытянутый, пропорциональный силуэт. Вертикальные стрелки спереди добавляют брюкам структурности и визуально удлиняют ноги.",
+        "Минималистичный дизайн позволяет легко интегрировать «Lui» в разные образы: носить с джемпером из одноименного комплекта, рубашками, жакетами или базовыми топами.",
+        "Ткань: 75% натуральная шерсть.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["серый", "бежевый"]
+    }
+  }
+},
+
+  {
+  id: 351,
+  price: 4160,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+sku: "99482",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Lui V-Neck Suit/1.avif",
+  images: [
+    "/Costumes/Lui V-Neck Suit/2.avif",
+    "/Costumes/Lui V-Neck Suit/3.avif",
+    "/Costumes/Lui V-Neck Suit/4.avif",
+    "/Costumes/Lui V-Neck Suit/5.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Lui Suit",
+      description: [
+        "The Lui suit is a minimalist wool set with a soft, relaxed silhouette. A V-neck jumper and wide-leg trousers create an understated look that combines comfort with modern classics.",
+        "The top has a relaxed straight cut, a dropped shoulder line, and a V-neckline. Its clean design is complemented by statement vertical seams that emphasize the geometry of the piece.",
+        "The high-waisted trousers with wide, straight legs visually elongate the silhouette and create a smooth line from waist to hem. Vertical creases give the look a more polished and elegant character.",
+        "Lui can be worn as a complete set or each piece can be styled separately.",
+        "Fabric: 75% natural wool.",
+        "Season: autumn, winter."
+      ],
+      colors: ["gray", "beige"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume « Lui »",
+      description: [
+        "Le costume « Lui » est un ensemble minimaliste en laine à la silhouette souple et ample. Un pull à col V et un pantalon large créent une allure sobre qui associe confort et classique contemporain.",
+        "Le haut présente une coupe droite et ample, une ligne d’épaules tombante et une encolure en V. Son design épuré est complété par des coutures verticales marquées qui soulignent la géométrie du modèle.",
+        "Le pantalon taille haute aux jambes larges et droites allonge visuellement la silhouette et crée une ligne fluide de la taille jusqu’à l’ourlet. Les plis verticaux apportent à la tenue un caractère plus soigné et élégant.",
+        "« Lui » peut se porter comme un ensemble complet ou chaque pièce peut être stylisée séparément.",
+        "Tissu : 75 % laine naturelle.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["gris", "beige"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм «Lui»",
+      description: [
+        "Костюм «Lui» — мінімалістичний вовняний комплект із м’яким, вільним силуетом. Джемпер із V-подібним вирізом та широкі брюки створюють стриманий образ, у якому поєднуються комфорт і сучасна класика.",
+        "Верх костюма має вільний прямий крій, спущену лінію плеча та V-подібний виріз. Лаконічний дизайн доповнений акцентними вертикальними швами, які підкреслюють геометрію моделі.",
+        "Брюки з високою посадкою та широкими прямими штанинами візуально витягують силует і створюють плавну лінію від талії до низу. Вертикальні стрілки додають образу більш зібраного та елегантного характеру.",
+        "«Lui» можна носити повним комплектом або стилізувати кожну річ окремо.",
+        "Тканина: 75% натуральна вовна.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["сірий", "бежевий"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм «Lui»",
+      description: [
+        "Костюм «Lui» — минималистичный шерстяной комплект с мягким, свободным силуэтом. Джемпер с V-образным вырезом и широкие брюки создают сдержанный образ, в котором сочетаются комфорт и современная классика.",
+        "Верх костюма имеет свободный прямой крой, спущенную линию плеча и V-образный вырез. Лаконичный дизайн дополнен акцентными вертикальными швами, которые подчеркивают геометрию модели.",
+        "Брюки с высокой посадкой и широкими прямыми штанинами визуально вытягивают силуэт и создают плавную линию от талии до низа. Вертикальные стрелки придают образу более собранный и элегантный характер.",
+        "«Lui» можно носить полным комплектом или стилизовать каждую вещь отдельно.",
+        "Ткань: 75% натуральная шерсть.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["серый", "бежевый"]
+    }
+  }
+},
+
+  {
+  id: 350,
+  price: 2060,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+sku: "99481",
+  size: "XS S M L XL",
+  category: "Pants",
+  image: "/Pants/Light Grey Pants/1.avif",
+  images: [
+    "/Pants/Light Grey Pants/2.avif",
+    "/Pants/Light Grey Pants/3.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Pants",
+      name: "Light Grey Pants",
+      description: [
+        "The Light Grey pants, made from 75% natural wool, feature a high waist and wide, straight legs. Their light gray shade and clean cut make them a versatile foundation for an autumn-winter wardrobe.",
+        "The design has a high waist with a wide waistband and belt loops. Soft front pleats create beautiful volume through the upper section, while the wide, straight legs form an elongated, balanced silhouette.",
+        "Stitched creases along the legs emphasize the vertical line and give the design a more structured appearance. The full length allows the pants to be styled with both heeled shoes and more casual footwear.",
+        "Fabric: 75% natural wool.",
+        "Season: autumn, winter."
+      ],
+      colors: ["gray"]
+    },
+    FR: {
+      category: "Pantalons",
+      name: "Pantalon « Light Grey »",
+      description: [
+        "Le pantalon « Light Grey », composé de 75 % de laine naturelle, présente une taille haute et des jambes larges et droites. Sa nuance gris clair et sa coupe épurée en font une base polyvalente du vestiaire automne-hiver.",
+        "Le modèle présente une taille haute avec une large ceinture et des passants. De doux plis sur le devant créent un beau volume dans la partie supérieure, tandis que les jambes larges et droites dessinent une silhouette élancée et équilibrée.",
+        "Les plis nervurés le long des jambes soulignent la ligne verticale et confèrent au modèle une allure plus structurée. Sa longueur pleine permet de l’associer aussi bien à des chaussures à talons qu’à des modèles plus décontractés.",
+        "Tissu : 75 % laine naturelle.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["gris"]
+    },
+    UA: {
+      category: "Брюки",
+      name: "Брюки «Light grey»",
+      description: [
+        "Брюки «Light grey» із 75% натуральної вовни — модель із високою посадкою та широкими прямими штанинами. Світло-сірий відтінок і лаконічний крій роблять їх універсальною основою осінньо-зимового гардероба.",
+        "Модель має високу посадку з широким поясом і шльовками. М’які складки спереду формують красивий об’єм у верхній частині, а широкі прямі штанини створюють витягнутий, збалансований силует.",
+        "Застрочені стрілки вздовж штанин підкреслюють вертикаль та додають моделі більш структурного вигляду. Повна довжина дозволяє стилізувати брюки як із взуттям на підборах, так і з більш повсякденними моделями.",
+        "Тканина: 75% натуральна вовна.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["сірий"]
+    },
+    RU: {
+      category: "Брюки",
+      name: "Брюки «Light grey»",
+      description: [
+        "Брюки «Light grey» из 75% натуральной шерсти — модель с высокой посадкой и широкими прямыми штанинами. Светло-серый оттенок и лаконичный крой делают их универсальной основой осенне-зимнего гардероба.",
+        "Модель имеет высокую посадку с широким поясом и шлевками. Мягкие складки спереди формируют красивый объем в верхней части, а широкие прямые штанины создают вытянутый, сбалансированный силуэт.",
+        "Застроченные стрелки вдоль штанин подчеркивают вертикаль и придают модели более структурный вид. Полная длина позволяет стилизовать брюки как с обувью на каблуке, так и с более повседневными моделями.",
+        "Ткань: 75% натуральная шерсть.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["серый"]
+    }
+  }
+},
+
+  {
   id: 349,
   price: 3500,
   isTop: false,
