@@ -62,21 +62,21 @@ export default function QuickAddModal({ product, onClose, onAddToCart }) {
 
   return (
     <div
-      className="fixed inset-0 z-50 bg-black/50 flex justify-center items-end sm:items-center px-2"
+      className="fixed inset-0 z-[80] bg-black/50 flex justify-center items-center px-3 pt-16 sm:pt-20 pb-4"
       onClick={onClose}
     >
       <div
-        className="w-full sm:max-w-md max-h-[90vh] overflow-y-auto bg-white dark:bg-gray-900 rounded-t-2xl sm:rounded-lg p-4 shadow-lg animate-slide-up sm:animate-fade-in"
+        className="w-full sm:max-w-md max-h-[calc(100vh-5.5rem)] sm:max-h-[85vh] overflow-y-auto bg-white dark:bg-gray-900 rounded-2xl sm:rounded-xl p-5 pt-4 shadow-xl animate-fade-in"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Header */}
-        <div className="flex justify-between items-center mb-3">
-          <h2 className="text-lg sm:text-xl font-normal text-gray-900 dark:text-white">
+        {/* Header — sticky so title stays visible while scrolling */}
+        <div className="sticky top-0 z-10 -mx-5 -mt-4 mb-4 flex items-start justify-between gap-3 bg-white/95 dark:bg-gray-900/95 px-5 pt-4 pb-3 backdrop-blur-sm border-b border-gray-100 dark:border-gray-800">
+          <h2 className="text-lg sm:text-xl font-medium leading-snug text-gray-900 dark:text-white pr-2">
             {translatedName}
           </h2>
           <button
             onClick={onClose}
-            className="text-gray-400 hover:text-black dark:hover:text-white text-2xl"
+            className="shrink-0 leading-none text-gray-400 hover:text-black dark:hover:text-white text-3xl"
             aria-label="Закрити"
           >
             &times;
