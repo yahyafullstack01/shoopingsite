@@ -1,5 +1,843 @@
 const products = [
   {
+  id: 367,
+  price: 2300,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+sku: "99498",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Light Blue Denim Pinafore Dress/1.avif",
+  images: [
+    "/Dress/Light Blue Denim Pinafore Dress/2.avif",
+    "/Dress/Light Blue Denim Pinafore Dress/3.avif",
+    "/Dress/Light Blue Denim Pinafore Dress/4.avif",
+    "/Dress/Light Blue Denim Pinafore Dress/5.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Light Blue Denim Pinafore Dress",
+      description: [
+        "The Jeans pinafore dress is a clean design made from light blue denim and created for layered looks. Its straight silhouette, adjustable straps, and midi length make it a versatile foundation for an autumn-winter wardrobe.",
+        "The design features a deep V-neckline at both the front and back. Wide straps are finished with metal buckles and eyelets, allowing their length and the fit of the pinafore dress to be adjusted.",
+        "A vertical center seam visually elongates the silhouette, while side pockets add practicality. A metal zipper is positioned at the back. The clean design and light blue denim shade make the piece easy to style with shirts, blouses, turtlenecks, and knitwear.",
+        "Fabric: heavyweight denim cotton.",
+        "Season: autumn, winter."
+      ],
+      colors: ["light blue"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe chasuble en denim bleu clair",
+      description: [
+        "La robe chasuble « Jeans » est un modèle épuré en denim bleu clair conçu pour les looks superposés. Sa silhouette droite, ses bretelles réglables et sa longueur midi en font une base polyvalente du vestiaire automne-hiver.",
+        "Le modèle présente une profonde encolure en V à l’avant comme au dos. Les larges bretelles sont agrémentées de boucles métalliques et d’œillets qui permettent d’ajuster leur longueur et la coupe de la robe chasuble.",
+        "Une couture centrale verticale allonge visuellement la silhouette, tandis que les poches latérales ajoutent une touche pratique. Une fermeture éclair métallique est placée au dos. Le design épuré et la nuance bleu clair du denim permettent d’associer facilement le modèle à des chemises, des blouses, des cols roulés et des mailles.",
+        "Tissu : denim de coton épais.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["bleu clair"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Сарафан «Jeans»",
+      description: [
+        "Сарафан «Jeans» — лаконічна модель із блакитного деніму, створена для багатошарових образів. Прямий силует, регульовані бретелі та довжина міді роблять його універсальною основою осінньо-зимового гардероба.",
+        "Модель має глибокий V-подібний виріз спереду та ззаду. Широкі бретелі доповнені металевими пряжками та люверсами, завдяки яким можна регулювати їхню довжину та посадку сарафана.",
+        "Вертикальний центральний шов візуально витягує силует, а бічні кишені додають практичності. На спинці передбачена металева блискавка. Лаконічний дизайн та світло-блакитний відтінок деніму дозволяють легко стилізувати модель з сорочками, блузами, водолазками та трикотажем.",
+        "Тканина: щільний джинс-котон.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["блакитний"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Сарафан «Jeans»",
+      description: [
+        "Сарафан «Jeans» — лаконичная модель из голубого денима, созданная для многослойных образов. Прямой силуэт, регулируемые бретели и длина миди делают его универсальной основой осенне-зимнего гардероба.",
+        "Модель имеет глубокий V-образный вырез спереди и сзади. Широкие бретели дополнены металлическими пряжками и люверсами, благодаря которым можно регулировать их длину и посадку сарафана.",
+        "Вертикальный центральный шов визуально вытягивает силуэт, а боковые карманы добавляют практичности. На спинке предусмотрена металлическая молния. Лаконичный дизайн и светло-голубой оттенок денима позволяют легко стилизовать модель с рубашками, блузами, водолазками и трикотажем.",
+        "Ткань: плотный джинс-коттон.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["голубой"]
+    }
+  }
+},
+
+  {
+  id: 366,
+  price: 1300,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+sku: "99497",
+  size: "XS S M L XL",
+  category: "Tops",
+  image: "/Top/Eco-Crinkle Sheer Turtleneck/1.avif",
+  images: [
+    "/Top/Eco-Crinkle Sheer Turtleneck/2.avif",
+    "/Top/Eco-Crinkle Sheer Turtleneck/3.avif",
+    "/Top/Eco-Crinkle Sheer Turtleneck/4.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Tops",
+      name: "Eco-Crinkle Sheer Turtleneck",
+      description: [
+        "The Eco-Crinkle turtleneck is a statement wardrobe essential made from textured semi-sheer fabric. Its fitted silhouette and high collar create a refined look, while the expressive fabric texture gives the design a distinctive character.",
+        "The design features a high stand collar and long sleeves. The vertical texture visually elongates the silhouette and makes even a monochrome black look more expressive.",
+        "Thanks to its clean cut, the turtleneck fits easily into both everyday and evening wardrobes. It can be worn on its own with trousers and skirts or used as a base layer under jackets, pinafore dresses, and suits.",
+        "Fabric: eco-crinkle.",
+        "Season: autumn, winter."
+      ],
+      colors: ["black"]
+    },
+    FR: {
+      category: "Hauts",
+      name: "Col roulé transparent « Eco-Crinkle »",
+      description: [
+        "Le col roulé « Eco-Crinkle » est une pièce basique affirmée confectionnée dans une matière texturée semi-transparente. Sa silhouette ajustée et son col montant créent un look raffiné, tandis que la texture expressive du tissu donne au modèle un caractère particulier.",
+        "Le modèle présente un col montant et des manches longues. La texture verticale allonge visuellement la silhouette et rend même un look noir monochrome plus expressif.",
+        "Grâce à sa coupe épurée, le col roulé s’intègre facilement aux vestiaires quotidien et de soirée. Il peut se porter seul avec un pantalon ou une jupe, ou servir de première couche sous une veste, une robe chasuble ou un costume.",
+        "Tissu : éco-crinkle.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["noir"]
+    },
+    UA: {
+      category: "Топи",
+      name: "Гольф «Еко-креш»",
+      description: [
+        "Гольф «Еко-креш» — акцентна база з фактурного напівпрозорого полотна. Приталений силует і високий комір створюють витончений образ, а виразна текстура тканини додає моделі особливого характеру.",
+        "Модель має високий комір-стійку та довгі рукави. Вертикальна фактура візуально витягує силует і робить навіть монохромний чорний образ більш виразним.",
+        "Завдяки лаконічному крою гольф легко інтегрується як у повсякденний, так і у вечірній гардероб. Його можна носити самостійно з брюками та спідницями або використовувати як нижній шар під жакети, сарафани та костюми.",
+        "Тканина: еко-креш.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["чорний"]
+    },
+    RU: {
+      category: "Топы",
+      name: "Гольф «Эко-крэш»",
+      description: [
+        "Гольф «Эко-крэш» — акцентная база из фактурного полупрозрачного полотна. Приталенный силуэт и высокий воротник создают утонченный образ, а выразительная текстура ткани придает модели особый характер.",
+        "Модель имеет высокий воротник-стойку и длинные рукава. Вертикальная фактура визуально вытягивает силуэт и делает даже монохромный черный образ более выразительным.",
+        "Благодаря лаконичному крою гольф легко интегрируется как в повседневный, так и в вечерний гардероб. Его можно носить самостоятельно с брюками и юбками или использовать как нижний слой под жакеты, сарафаны и костюмы.",
+        "Ткань: эко-крэш.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["черный"]
+    }
+  }
+},
+
+  {
+  id: 365,
+  price: 6300,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+sku: "99496",
+  size: "XS S M L XL",
+  category: "Outerwear",
+  image: "/Outerwear/Mocha Belted Leather Trench/1.avif",
+  images: [
+    "/Outerwear/Mocha Belted Leather Trench/2.avif",
+    "/Outerwear/Mocha Belted Leather Trench/3.avif",
+    "/Outerwear/Mocha Belted Leather Trench/4.avif",
+    "/Outerwear/Mocha Belted Leather Trench/5.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Outerwear",
+      name: "Mocha Belted Leather Trench",
+      description: [
+        "The Mocha leather trench is an expressive classic in a contemporary mocha shade. Its elongated silhouette, statement waist belt, and soft eco-leather create an elegant design for autumn-winter looks.",
+        "The design has an elongated relaxed silhouette with classic trench details: wide lapels, a double-breasted fastening, shoulder epaulettes, and decorative sleeve tabs. A storm flap at the back adds signature architectural structure to the silhouette.",
+        "The wide removable buckle belt allows the fit to be adjusted and the waist to be emphasized. The trench can be worn fitted or relaxed and open over suits, dresses, and layered looks.",
+        "Fabric: high-quality eco-leather on a suede base; flexible and resistant to cracking.",
+        "Season: autumn, winter."
+      ],
+      colors: ["mocha"]
+    },
+    FR: {
+      category: "Vêtements d’extérieur",
+      name: "Trench en cuir ceinturé « Mocha »",
+      description: [
+        "Le trench en cuir « Mocha » est un classique expressif dans une nuance moka contemporaine. Sa silhouette allongée, sa ceinture marquée à la taille et son éco-cuir souple créent un modèle élégant pour les looks automne-hiver.",
+        "Le modèle présente une silhouette ample et allongée avec les détails classiques du trench : larges revers, fermeture croisée, épaulettes et pattes décoratives aux manches. Un bavolet au dos apporte à la silhouette son architecture caractéristique.",
+        "La large ceinture amovible à boucle permet d’ajuster la coupe et de souligner la taille. Le trench peut se porter cintré ou de façon décontractée, ouvert sur des costumes, des robes et des looks superposés.",
+        "Tissu : éco-cuir de haute qualité sur base suédée, extensible et résistant aux craquelures.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["moka"]
+    },
+    UA: {
+      category: "Верхній одяг",
+      name: "Шкіряний тренч «Mocha»",
+      description: [
+        "Шкіряний тренч «Mocha» — виразна класика в актуальному відтінку мокко. Подовжений силует, акцентний пояс на талії та м’яка екошкіра створюють елегантну модель для осінньо-зимових образів.",
+        "Модель має подовжений вільний силует із класичними деталями тренча: широкими лацканами, двобортною застібкою, погонами на плечах і декоративними патами на рукавах. Відлітна кокетка на спинці додає силуету характерної архітектурності.",
+        "Широкий знімний пояс із пряжкою дозволяє регулювати посадку та підкреслювати талію. Тренч можна носити як приталеним, так і розслаблено — розстебнутим поверх костюмів, суконь та багатошарових образів.",
+        "Тканина: якісна екошкіра на замшевій основі, еластична, не тріскається.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["мокко"]
+    },
+    RU: {
+      category: "Верхняя одежда",
+      name: "Кожаный тренч «Mocha»",
+      description: [
+        "Кожаный тренч «Mocha» — выразительная классика в актуальном оттенке мокко. Удлиненный силуэт, акцентный пояс на талии и мягкая экокожа создают элегантную модель для осенне-зимних образов.",
+        "Модель имеет удлиненный свободный силуэт с классическими деталями тренча: широкими лацканами, двубортной застежкой, погонами на плечах и декоративными патами на рукавах. Отлетная кокетка на спинке добавляет силуэту характерную архитектурность.",
+        "Широкий съемный пояс с пряжкой позволяет регулировать посадку и подчеркивать талию. Тренч можно носить как приталенным, так и расслабленно — расстегнутым поверх костюмов, платьев и многослойных образов.",
+        "Ткань: качественная экокожа на замшевой основе, эластичная, не трескается.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["мокко"]
+    }
+  }
+},
+
+  {
+  id: 364,
+  price: 3100,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+sku: "99495",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Cozy Asymmetric Wool Dress/1.avif",
+  images: [
+    "/Dress/Cozy Asymmetric Wool Dress/2.avif",
+    "/Dress/Cozy Asymmetric Wool Dress/3.avif",
+    "/Dress/Cozy Asymmetric Wool Dress/4.avif",
+    "/Dress/Cozy Asymmetric Wool Dress/5.avif",
+    "/Dress/Cozy Asymmetric Wool Dress/6.avif",
+    "/Dress/Cozy Asymmetric Wool Dress/7.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Cozy Asymmetric Wool Dress",
+      description: [
+        "The Cozy dress, made from 75% natural wool, is an elegant design for the cooler season with emphasis on a feminine silhouette. A fitted bodice, A-line skirt, and asymmetric length create a distinctive yet understated shape.",
+        "The fitted cut softly emphasizes the waist, while the skirt flares toward the hem to form a feminine A-line silhouette. The key accent is the asymmetric hem, shorter at the front and longer at the back, which adds lightness and movement to the silhouette.",
+        "The high collar delicately covers the neck and makes the dress comfortable for the cold season. Decorative flaps at the waistline complement the clean geometry of the design.",
+        "Fabric: 75% natural wool.",
+        "Season: autumn, winter."
+      ],
+      colors: ["gray", "beige"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe asymétrique en laine « Cozy »",
+      description: [
+        "La robe « Cozy », composée de 75 % de laine naturelle, est un modèle élégant pour la saison fraîche qui met en valeur une silhouette féminine. Le haut cintré, la jupe trapèze et la longueur asymétrique créent une forme expressive tout en restant sobre.",
+        "La coupe cintrée souligne délicatement la taille, tandis que la jupe s’évase vers le bas pour former une silhouette trapèze féminine. L’accent principal du modèle est son ourlet asymétrique, plus court devant et allongé derrière, qui apporte légèreté et mouvement à la silhouette.",
+        "Le col montant couvre délicatement le cou et rend la robe confortable pour la saison froide. Les rabats décoratifs à la taille complètent la géométrie épurée du modèle.",
+        "Tissu : 75 % laine naturelle.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["gris", "beige"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Сукня «Cozy»",
+      description: [
+        "Сукня «Cozy» із 75% натуральної вовни — елегантна модель для прохолодного сезону з акцентом на жіночний силует. Приталений верх, спідниця А-силуету та асиметрична довжина створюють виразну й водночас стриману форму.",
+        "Приталений крій м’яко підкреслює талію, а розширена донизу спідниця формує жіночний А-силует. Особливий акцент моделі — асиметричний низ: коротший спереду та подовжений ззаду, що додає силуету легкості й динаміки.",
+        "Високий комір делікатно закриває шию та робить сукню комфортною для холодного сезону. Декоративні клапани на лінії талії підтримують лаконічну геометрію моделі.",
+        "Тканина: 75% натуральна вовна.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["сірий", "бежевий"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Платье «Cozy»",
+      description: [
+        "Платье «Cozy» из 75% натуральной шерсти — элегантная модель для прохладного сезона с акцентом на женственный силуэт. Приталенный верх, юбка А-силуэта и асимметричная длина создают выразительную и одновременно сдержанную форму.",
+        "Приталенный крой мягко подчеркивает талию, а расширенная книзу юбка формирует женственный А-силуэт. Особый акцент модели — асимметричный низ: короче спереди и удлиненный сзади, что добавляет силуэту легкости и динамики.",
+        "Высокий воротник деликатно закрывает шею и делает платье комфортным для холодного сезона. Декоративные клапаны на линии талии поддерживают лаконичную геометрию модели.",
+        "Ткань: 75% натуральная шерсть.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["серый", "бежевый"]
+    }
+  }
+},
+
+  {
+  id: 363,
+  price: 3800,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+sku: "99494",
+  size: "XS S M L XL",
+  category: "Jackets",
+  image: "/Jackets/Jeans Belted Trench Jacket/1.avif",
+  images: [
+    "/Jackets/Jeans Belted Trench Jacket/2.avif",
+    "/Jackets/Jeans Belted Trench Jacket/3.avif",
+    "/Jackets/Jeans Belted Trench Jacket/4.avif",
+    "/Jackets/Jeans Belted Trench Jacket/5.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Jackets",
+      name: "Jeans Belted Trench Jacket",
+      description: [
+        "The Jeans trench jacket combines a classic trench cut with textured denim. Statement lapels, contrasting stitching, and a belt create a contemporary silhouette with emphasis at the waist.",
+        "The wide turn-down collar and distinctive lapels reference classic trench design. Shoulder details, sleeve tabs, and metal hardware complete the piece and give it a more structured appearance.",
+        "A special accent is the warm-toned contrasting stitching, which emphasizes the lines of the cut and stands out beautifully against the blue denim. The removable wide belt allows the fit to be adjusted and the waist to be emphasized.",
+        "Fabric: heavyweight denim cotton.",
+        "Season: autumn, winter."
+      ],
+      colors: ["blue"]
+    },
+    FR: {
+      category: "Vestes",
+      name: "Veste trench en denim ceinturée",
+      description: [
+        "La veste trench « Jeans » associe la coupe classique du trench à un denim texturé. Les revers marqués, les surpiqûres contrastantes et la ceinture créent une silhouette contemporaine qui souligne la taille.",
+        "Le large col rabattu et les revers expressifs font référence au design classique du trench. Les détails aux épaules, les pattes aux manches et les éléments métalliques complètent le modèle et lui donnent une allure plus structurée.",
+        "Les surpiqûres contrastantes aux tons chauds constituent un accent particulier : elles soulignent les lignes de la coupe et ressortent joliment sur le denim bleu. La large ceinture amovible permet d’ajuster la coupe et de mettre la taille en valeur.",
+        "Tissu : denim de coton épais.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["bleu"]
+    },
+    UA: {
+      category: "Жакети",
+      name: "Тренч «Jeans»",
+      description: [
+        "Тренч «Jeans» — поєднання класичного тренчевого крою та фактурного деніму. Виразні лацкани, контрастна строчка та пояс формують сучасний силует з акцентом на талії.",
+        "Широкий відкладний комір і виразні лацкани відсилають до класичного дизайну тренча. Деталі на плечах, пати на рукавах та металева фурнітура доповнюють модель і роблять її більш структурною.",
+        "Особливий акцент — контрастна строчка теплого відтінку, яка підкреслює лінії крою та красиво виділяється на синьому денімі. Знімний широкий пояс дозволяє регулювати посадку та акцентувати талію.",
+        "Тканина: щільний джинс-котон.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["синій"]
+    },
+    RU: {
+      category: "Жакеты",
+      name: "Тренч «Jeans»",
+      description: [
+        "Тренч «Jeans» — сочетание классического тренчевого кроя и фактурного денима. Выразительные лацканы, контрастная строчка и пояс формируют современный силуэт с акцентом на талии.",
+        "Широкий отложной воротник и выразительные лацканы отсылают к классическому дизайну тренча. Детали на плечах, паты на рукавах и металлическая фурнитура дополняют модель и делают ее более структурной.",
+        "Особый акцент — контрастная строчка теплого оттенка, которая подчеркивает линии кроя и красиво выделяется на синем дениме. Съемный широкий пояс позволяет регулировать посадку и акцентировать талию.",
+        "Ткань: плотный джинс-коттон.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["синий"]
+    }
+  }
+},
+
+  {
+  id: 362,
+  price: 6200,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+sku: "99493",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Jeans Trench Maxi Skirt Suit/1.avif",
+  images: [
+    "/Costumes/Jeans Trench Maxi Skirt Suit/2.avif",
+    "/Costumes/Jeans Trench Maxi Skirt Suit/3.avif",
+    "/Costumes/Jeans Trench Maxi Skirt Suit/4.avif",
+    "/Costumes/Jeans Trench Maxi Skirt Suit/5.avif",
+    "/Costumes/Jeans Trench Maxi Skirt Suit/6.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Jeans Trench Maxi Skirt Suit",
+      description: [
+        "The Jeans suit offers a modern interpretation of denim in an elegant feminine silhouette. A trench-inspired jacket and long skirt create a cohesive look, while contrasting stitching and metal details add character.",
+        "The jacket draws inspiration from the classic trench coat with a wide turn-down collar and lapels, decorative shoulder details, metal-buttoned cuffs, and a removable belt. The belt allows the fit to be adjusted, so the jacket can be worn relaxed or cinched at the waist.",
+        "The maxi skirt has a clean A-line silhouette that balances the voluminous top and creates elongated proportions. A raw hem gives the denim an effortless quality and makes the classic set feel more contemporary.",
+        "Fabric: heavyweight denim cotton.",
+        "Season: autumn, winter."
+      ],
+      colors: ["blue"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume trench en denim avec jupe longue",
+      description: [
+        "Le costume « Jeans » propose une interprétation contemporaine du denim dans une silhouette féminine élégante. Une veste inspirée du trench et une jupe longue créent un look harmonieux, tandis que les surpiqûres contrastantes et les détails métalliques lui donnent du caractère.",
+        "La veste s’inspire du trench classique avec un large col rabattu à revers, des détails décoratifs aux épaules, des poignets à boutons métalliques et une ceinture amovible. Celle-ci permet d’ajuster la coupe afin de porter la veste ample ou de souligner la taille.",
+        "La jupe longue présente une coupe trapèze épurée qui équilibre le volume du haut et crée des proportions élancées. Le bord brut apporte une touche décontractée au denim et modernise cet ensemble classique.",
+        "Tissu : denim de coton épais.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["bleu"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм «Jeans»",
+      description: [
+        "Костюм «Jeans» — сучасне прочитання деніму в елегантному жіночному силуеті. Жакет у стилі тренча та довга спідниця створюють цілісний образ, а контрастна строчка й металеві деталі додають характеру.",
+        "Жакет натхненний класичним тренчем: широкий відкладний комір із лацканами, декоративні деталі на плечах, манжети з металевими ґудзиками та знімний пояс. Завдяки поясу можна змінювати посадку — носити жакет вільно або акцентувати талію.",
+        "Спідниця довжини максі має лаконічний А-силует, який урівноважує об’ємний верх і створює витягнуту пропорцію. Необроблений край додає деніму легкої невимушеності та робить класичний комплект більш сучасним.",
+        "Тканина: щільний джинс-котон.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["синій"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм «Jeans»",
+      description: [
+        "Костюм «Jeans» — современное прочтение денима в элегантном женственном силуэте. Жакет в стиле тренча и длинная юбка создают цельный образ, а контрастная строчка и металлические детали добавляют характер.",
+        "Жакет вдохновлен классическим тренчем: широкий отложной воротник с лацканами, декоративные детали на плечах, манжеты с металлическими пуговицами и съемный пояс. Благодаря поясу можно менять посадку — носить жакет свободно или акцентировать талию.",
+        "Юбка длины макси имеет лаконичный А-силуэт, который уравновешивает объемный верх и создает вытянутые пропорции. Необработанный край добавляет дениму легкой непринужденности и делает классический комплект более современным.",
+        "Ткань: плотный джинс-коттон.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["синий"]
+    }
+  }
+},
+
+  {
+  id: 361,
+  price: 3600,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+sku: "99492",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Plaid Denim Maxi Dress/1.avif",
+  images: [
+    "/Dress/Plaid Denim Maxi Dress/2.avif",
+    "/Dress/Plaid Denim Maxi Dress/3.avif",
+    "/Dress/Plaid Denim Maxi Dress/4.avif",
+    "/Dress/Plaid Denim Maxi Dress/5.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Plaid Denim Maxi Dress",
+      description: [
+        "The Plaid Denim Maxi Dress combines denim and suiting wool in one distinctive silhouette. A fitted bodice, flared maxi skirt, and belt create a feminine look with the character of modern classics.",
+        "The fitted bodice features a high stand collar and shaped seams that define the silhouette. Metal buttons fasten the full length of the design, while a removable long belt provides additional emphasis at the waist.",
+        "The lower section is made from plaid suiting wool and has a voluminous flared cut. The maxi length adds elegance, while the combination of plaid and denim makes the dress a relevant choice for an autumn-winter wardrobe.",
+        "Fabric: 75% suiting wool, denim cotton.",
+        "Season: autumn, winter."
+      ],
+      colors: ["blue"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe longue en denim et laine à carreaux",
+      description: [
+        "La robe longue à carreaux associe le denim et la laine de costume dans une silhouette expressive. Le haut cintré, la jupe longue évasée et la ceinture créent une allure féminine au caractère classique contemporain.",
+        "Le haut cintré présente un col montant et des coutures structurantes qui dessinent la silhouette. Une fermeture à boutons métalliques parcourt toute la longueur du modèle, tandis qu’une longue ceinture amovible permet de souligner davantage la taille.",
+        "La partie inférieure est confectionnée en laine de costume à carreaux et présente une coupe évasée volumineuse. La longueur maxi apporte de l’élégance, tandis que l’association des carreaux et du denim rend la robe idéale pour le vestiaire automne-hiver.",
+        "Tissu : 75 % laine de costume, denim de coton.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["bleu"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Картата сукня",
+      description: [
+        "Картата сукня — поєднання деніму та костюмної вовни в одному виразному силуеті. Приталений верх, розкльошена спідниця максі та пояс створюють жіночний образ із характером сучасної класики.",
+        "Верх сукні має приталений крій із високим коміром-стійкою та рельєфними швами, які формують силует. Застібка на металеві ґудзики проходить по всій довжині моделі, а знімний довгий пояс дозволяє додатково підкреслити талію.",
+        "Нижня частина виконана з картатої костюмної вовни та має об’ємний розкльошений крій. Довжина максі додає образу елегантності, а поєднання клітинки з денімом робить сукню актуальною для осінньо-зимового гардероба.",
+        "Тканина: 75% костюмна вовна, джинс-котон.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["синій"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Клетчатое платье",
+      description: [
+        "Клетчатое платье — сочетание денима и костюмной шерсти в одном выразительном силуэте. Приталенный верх, расклешенная юбка макси и пояс создают женственный образ с характером современной классики.",
+        "Верх платья имеет приталенный крой с высоким воротником-стойкой и рельефными швами, которые формируют силуэт. Застежка на металлические пуговицы проходит по всей длине модели, а съемный длинный пояс позволяет дополнительно подчеркнуть талию.",
+        "Нижняя часть выполнена из клетчатой костюмной шерсти и имеет объемный расклешенный крой. Длина макси добавляет образу элегантности, а сочетание клетки с денимом делает платье актуальным для осенне-зимнего гардероба.",
+        "Ткань: 75% костюмная шерсть, джинс-коттон.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["синий"]
+    }
+  }
+},
+
+  {
+  id: 360,
+  price: 3150,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+sku: "99491",
+  size: "XS S M L XL",
+  category: "Jackets",
+  image: "/Jackets/Cozy Wool Cardigan/1.avif",
+  images: [
+    "/Jackets/Cozy Wool Cardigan/2.avif",
+    "/Jackets/Cozy Wool Cardigan/3.avif",
+    "/Jackets/Cozy Wool Cardigan/4.avif",
+    "/Jackets/Cozy Wool Cardigan/5.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Jackets",
+      name: "Cozy Wool Cardigan",
+      description: [
+        "The Cozy cardigan, made from 75% natural wool, is a warm and comfortable design with a relaxed silhouette. A clean V-neckline, decorative buttons, and a relaxed cut make it a versatile foundation for an autumn-winter wardrobe.",
+        "The deep V-neckline emphasizes the neck, while statement metal buttons add a distinctive detail. Large patch pockets are positioned at the front, and a wide bottom band completes the silhouette.",
+        "The cardigan pairs easily with trousers, skirts, and denim, while wearing it with the Cozy trousers creates a cohesive monochrome look. It works equally well for an everyday wardrobe and more elegant styling.",
+        "Fabric: 75% natural wool.",
+        "Season: autumn, winter."
+      ],
+      colors: ["beige", "gray"]
+    },
+    FR: {
+      category: "Vestes",
+      name: "Cardigan en laine « Cozy »",
+      description: [
+        "Le cardigan « Cozy », composé de 75 % de laine naturelle, est un modèle chaud et confortable à la silhouette décontractée. Son encolure en V épurée, ses boutons décoratifs et sa coupe ample en font une base polyvalente du vestiaire automne-hiver.",
+        "La profonde encolure en V souligne la ligne du cou, tandis que les boutons métalliques marqués ajoutent un détail expressif. De grandes poches plaquées sont disposées sur le devant et une large bande au bas complète la silhouette.",
+        "Le cardigan s’associe facilement aux pantalons, aux jupes et au denim, tandis qu’avec le pantalon « Cozy », il crée un look monochrome harmonieux. Il convient aussi bien au vestiaire quotidien qu’aux tenues plus élégantes.",
+        "Tissu : 75 % laine naturelle.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["beige", "gris"]
+    },
+    UA: {
+      category: "Жакети",
+      name: "Кардиган «Cozy»",
+      description: [
+        "Кардиган «Cozy» із 75% натуральної вовни — тепла та комфортна модель із розслабленим силуетом. Лаконічний V-подібний виріз, декоративні ґудзики та вільний крій роблять його універсальною основою осінньо-зимового гардероба.",
+        "Глибокий V-подібний виріз підкреслює лінію шиї, а акцентні металеві ґудзики додають моделі виразної деталі. Спереду розташовані великі накладні кишені, а широкий пояс по низу формує завершений силует.",
+        "Кардиган легко поєднується з брюками, спідницями та денімом, а в комплекті з брюками «Cozy» створює цілісний монохромний образ. Підійде як для повсякденного гардероба, так і для більш елегантних стилізацій.",
+        "Тканина: 75% натуральна вовна.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["бежевий", "сірий"]
+    },
+    RU: {
+      category: "Жакеты",
+      name: "Кардиган «Cozy»",
+      description: [
+        "Кардиган «Cozy» из 75% натуральной шерсти — теплая и комфортная модель с расслабленным силуэтом. Лаконичный V-образный вырез, декоративные пуговицы и свободный крой делают его универсальной основой осенне-зимнего гардероба.",
+        "Глубокий V-образный вырез подчеркивает линию шеи, а акцентные металлические пуговицы добавляют модели выразительную деталь. Спереди расположены большие накладные карманы, а широкий пояс по низу формирует завершенный силуэт.",
+        "Кардиган легко сочетается с брюками, юбками и денимом, а в комплекте с брюками «Cozy» создает цельный монохромный образ. Подойдет как для повседневного гардероба, так и для более элегантных стилизаций.",
+        "Ткань: 75% натуральная шерсть.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["бежевый", "серый"]
+    }
+  }
+},
+
+  {
+  id: 359,
+  price: 5210,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+sku: "99490",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Cozy Wool Cardigan Suit/1.avif",
+  images: [
+    "/Costumes/Cozy Wool Cardigan Suit/2.avif",
+    "/Costumes/Cozy Wool Cardigan Suit/3.avif",
+    "/Costumes/Cozy Wool Cardigan Suit/4.avif",
+    "/Costumes/Cozy Wool Cardigan Suit/5.avif",
+    "/Costumes/Cozy Wool Cardigan Suit/6.avif",
+    "/Costumes/Cozy Wool Cardigan Suit/7.avif",
+    "/Costumes/Cozy Wool Cardigan Suit/8.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Cozy Wool Cardigan Suit",
+      description: [
+        "The Cozy suit, made from 75% natural wool, is a warm and clean set for an autumn-winter wardrobe. A relaxed cardigan jacket and wide-leg trousers create an easy silhouette while preserving the elegance of the look.",
+        "The jacket has a relaxed cut with a dropped shoulder line, a V-neckline, and decorative button fastening. Patch pockets add practicality, while the clean construction makes it easy to style with wardrobe basics.",
+        "The high-waisted trousers with wide, straight legs visually elongate the silhouette and fit comfortably. Front creases give the look a more structured and polished appearance.",
+        "Fabric: 75% natural wool.",
+        "Season: autumn, winter."
+      ],
+      colors: ["beige", "gray"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume cardigan en laine « Cozy »",
+      description: [
+        "Le costume « Cozy », composé de 75 % de laine naturelle, est un ensemble chaud et épuré pour le vestiaire automne-hiver. Une veste-cardigan ample et un pantalon large créent une silhouette décontractée tout en préservant l’élégance du look.",
+        "La veste présente une coupe ample avec une ligne d’épaules tombante, une encolure en V et une fermeture à boutons décoratifs. Les poches plaquées apportent une touche pratique, tandis que la construction épurée permet de l’associer facilement aux pièces basiques du vestiaire.",
+        "Le pantalon taille haute aux jambes larges et droites allonge visuellement la silhouette et offre une coupe confortable. Les plis sur le devant confèrent au look une allure plus structurée et soignée.",
+        "Tissu : 75 % laine naturelle.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["beige", "gris"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм «Cozy»",
+      description: [
+        "Костюм «Cozy» із 75% натуральної вовни — теплий та лаконічний комплект для осінньо-зимового гардероба. Вільний жакет-кардиган і широкі брюки створюють розслаблений силует, зберігаючи елегантність образу.",
+        "Жакет має вільний крій зі спущеною лінією плеча, V-подібний виріз та застібку на декоративні ґудзики. Накладні кишені додають моделі практичності, а лаконічна конструкція дозволяє легко стилізувати її з базовими речами.",
+        "Брюки з високою посадкою та широкими прямими штанинами візуально витягують силует і комфортно сідають по фігурі. Стрілки спереду додають образу більш структурного та зібраного вигляду.",
+        "Тканина: 75% натуральна вовна.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["бежевий", "сірий"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм «Cozy»",
+      description: [
+        "Костюм «Cozy» из 75% натуральной шерсти — теплый и лаконичный комплект для осенне-зимнего гардероба. Свободный жакет-кардиган и широкие брюки создают расслабленный силуэт, сохраняя элегантность образа.",
+        "Жакет имеет свободный крой со спущенной линией плеча, V-образный вырез и застежку на декоративные пуговицы. Накладные карманы добавляют модели практичности, а лаконичная конструкция позволяет легко стилизовать ее с базовыми вещами.",
+        "Брюки с высокой посадкой и широкими прямыми штанинами визуально вытягивают силуэт и комфортно сидят по фигуре. Стрелки спереди придают образу более структурный и собранный вид.",
+        "Ткань: 75% натуральная шерсть.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["бежевый", "серый"]
+    }
+  }
+},
+
+  {
+  id: 358,
+  price: 2150,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+sku: "99489",
+  size: "XS S M L XL",
+  category: "Skirts",
+  image: "/Skirts/Japan Front-Slit Midi Skirt/1.avif",
+  images: [
+    "/Skirts/Japan Front-Slit Midi Skirt/2.avif",
+    "/Skirts/Japan Front-Slit Midi Skirt/3.avif",
+    "/Skirts/Japan Front-Slit Midi Skirt/4.avif",
+    "/Skirts/Japan Front-Slit Midi Skirt/5.avif",
+    "/Skirts/Japan Front-Slit Midi Skirt/6.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Skirts",
+      name: "Japan Front-Slit Midi Skirt",
+      description: [
+        "The Japan skirt, made from 75% natural wool, is a clean midi-length design with a statement front slit. Its high waist and straight silhouette create an elegant shape and make the skirt a versatile foundation for an autumn-winter wardrobe.",
+        "The design has a high waist and a straight, subtly tapered midi-length silhouette. The clean waistband emphasizes the waist, while vertical construction seams visually elongate the silhouette and ensure a neat fit along the figure.",
+        "The main accent is the high front slit, which adds movement to the understated design and provides freedom of movement. The minimalist finish makes the skirt easy to pair with both wardrobe basics and more expressive tops.",
+        "Fabric: 75% natural wool.",
+        "Season: autumn, winter."
+      ],
+      colors: ["gray", "beige"]
+    },
+    FR: {
+      category: "Jupes",
+      name: "Jupe midi « Japan » fendue devant",
+      description: [
+        "La jupe « Japan », composée de 75 % de laine naturelle, est un modèle midi épuré doté d’une fente marquée sur le devant. Sa taille haute et sa silhouette droite créent une forme élégante et en font une base polyvalente du vestiaire automne-hiver.",
+        "Le modèle présente une taille haute et une silhouette midi droite, légèrement fuselée. La ceinture épurée souligne la taille, tandis que les coutures verticales allongent visuellement la silhouette et assurent une coupe soignée près du corps.",
+        "L’accent principal du modèle est la fente haute sur le devant, qui dynamise le design sobre et assure une grande liberté de mouvement. Sa finition minimaliste permet d’associer facilement la jupe aussi bien à des pièces basiques qu’à des hauts plus affirmés.",
+        "Tissu : 75 % laine naturelle.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["gris", "beige"]
+    },
+    UA: {
+      category: "Спідниці",
+      name: "Спідниця «Japan»",
+      description: [
+        "Спідниця «Japan» із 75% натуральної вовни — лаконічна міді-модель із виразним розрізом спереду. Висока посадка та прямий силует створюють елегантну форму й роблять спідницю універсальною основою осінньо-зимового гардероба.",
+        "Модель має високу посадку та прямий, злегка звужений силует довжини міді. Лаконічний пояс підкреслює талію, а вертикальні конструктивні шви візуально витягують силует і забезпечують акуратну посадку по фігурі.",
+        "Головний акцент моделі — високий розріз спереду, який додає динаміки стриманому дизайну та забезпечує свободу рухів. Мінімалістичне оформлення дозволяє легко поєднувати спідницю як із базовими речами, так і з більш акцентним верхом.",
+        "Тканина: 75% натуральна вовна.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["сірий", "бежевий"]
+    },
+    RU: {
+      category: "Юбки",
+      name: "Юбка «Japan»",
+      description: [
+        "Юбка «Japan» из 75% натуральной шерсти — лаконичная модель миди с выразительным разрезом спереди. Высокая посадка и прямой силуэт создают элегантную форму и делают юбку универсальной основой осенне-зимнего гардероба.",
+        "Модель имеет высокую посадку и прямой, слегка зауженный силуэт длины миди. Лаконичный пояс подчеркивает талию, а вертикальные конструктивные швы визуально вытягивают силуэт и обеспечивают аккуратную посадку по фигуре.",
+        "Главный акцент модели — высокий разрез спереди, который добавляет динамики сдержанному дизайну и обеспечивает свободу движений. Минималистичное оформление позволяет легко сочетать юбку как с базовыми вещами, так и с более акцентным верхом.",
+        "Ткань: 75% натуральная шерсть.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["серый", "бежевый"]
+    }
+  }
+},
+
+  {
+  id: 357,
+  price: 3150,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+sku: "99488",
+  size: "XS S M L XL",
+  category: "Jackets",
+  image: "/Jackets/Japan Wool Bomber/1.avif",
+  images: [
+    "/Jackets/Japan Wool Bomber/2.avif",
+    "/Jackets/Japan Wool Bomber/3.avif",
+    "/Jackets/Japan Wool Bomber/4.avif",
+    "/Jackets/Japan Wool Bomber/5.avif",
+    "/Jackets/Japan Wool Bomber/6.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Jackets",
+      name: "Japan Wool Bomber",
+      description: [
+        "The Japan bomber, made from 75% natural wool, is a modern interpretation of a basic jacket with statement details. Its relaxed silhouette, Eastern-inspired decorative fastenings, and contrasting elements create a distinctive look for the autumn-winter season.",
+        "The design has a relaxed cut with a dropped shoulder line and voluminous sleeves that form a soft, contemporary silhouette. A round collarless neckline preserves the clean design, while contrasting decorative Eastern-inspired fastenings become the main accent of the piece.",
+        "Functional zip pockets are positioned at the sides. The cuffs and finished hem complete the silhouette and help the bomber retain its shape.",
+        "Fabric: 75% natural wool.",
+        "Season: autumn, winter."
+      ],
+      colors: ["gray", "beige"]
+    },
+    FR: {
+      category: "Vestes",
+      name: "Blouson en laine « Japan »",
+      description: [
+        "Le blouson « Japan », composé de 75 % de laine naturelle, offre une interprétation contemporaine de la veste basique enrichie de détails marquants. Sa silhouette ample, ses fermetures décoratives d’inspiration orientale et ses éléments contrastants créent un look expressif pour la saison automne-hiver.",
+        "Le modèle présente une coupe ample avec une ligne d’épaules tombante et des manches volumineuses qui dessinent une silhouette douce et contemporaine. L’encolure ronde sans col préserve le caractère épuré du design, tandis que les fermetures décoratives contrastantes d’inspiration orientale deviennent l’accent principal du modèle.",
+        "Des poches zippées fonctionnelles sont placées sur les côtés. Les poignets et la finition du bord inférieur complètent la silhouette et aident le blouson à conserver sa forme.",
+        "Tissu : 75 % laine naturelle.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["gris", "beige"]
+    },
+    UA: {
+      category: "Жакети",
+      name: "Бомбер «Japan»",
+      description: [
+        "Бомбер «Japan» із 75% натуральної вовни — сучасна інтерпретація базового жакета з акцентними деталями. Вільний силует, декоративні застібки у східній стилістиці та контрастні елементи створюють виразний образ для осінньо-зимового сезону.",
+        "Модель має вільний крій зі спущеною лінією плеча та об’ємними рукавами, що формують м’який сучасний силует. Кругла горловина без коміра підтримує лаконічність дизайну, а контрастні декоративні застібки у східній стилістиці стають головним акцентом моделі.",
+        "З боків розташовані функціональні кишені на блискавках. Манжети та оформлений нижній край додають силуету завершеності й допомагають бомберу зберігати форму.",
+        "Тканина: 75% натуральна вовна.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["сірий", "бежевий"]
+    },
+    RU: {
+      category: "Жакеты",
+      name: "Бомбер «Japan»",
+      description: [
+        "Бомбер «Japan» из 75% натуральной шерсти — современная интерпретация базового жакета с акцентными деталями. Свободный силуэт, декоративные застежки в восточной стилистике и контрастные элементы создают выразительный образ для осенне-зимнего сезона.",
+        "Модель имеет свободный крой со спущенной линией плеча и объемными рукавами, формирующими мягкий современный силуэт. Круглая горловина без воротника поддерживает лаконичность дизайна, а контрастные декоративные застежки в восточной стилистике становятся главным акцентом модели.",
+        "По бокам расположены функциональные карманы на молниях. Манжеты и оформленный нижний край придают силуэту завершенность и помогают бомберу сохранять форму.",
+        "Ткань: 75% натуральная шерсть.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["серый", "бежевый"]
+    }
+  }
+},
+
+  {
+  id: 356,
+  price: 5300,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+sku: "99487",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Japan Suit/1.avif",
+  images: [
+    "/Costumes/Japan Suit/2.avif",
+    "/Costumes/Japan Suit/3.avif",
+    "/Costumes/Japan Suit/4.avif",
+    "/Costumes/Japan Suit/5.avif",
+    "/Costumes/Japan Suit/6.avif",
+    "/Costumes/Japan Suit/7.avif",
+    "/Costumes/Japan Suit/8.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Japan Suit",
+      description: [
+        "The Japan suit, made from 75% natural wool, is a modern combination of a relaxed-fit jacket and a clean midi skirt. Decorative Asian-inspired fastenings and an understated silhouette make the set distinctive yet versatile.",
+        "The jacket has a relaxed silhouette with a dropped shoulder line and voluminous sleeves. A round collarless neckline emphasizes its minimalist character, while contrasting decorative Eastern-inspired fastenings become the main design accent. Functional zip pockets are positioned at the sides.",
+        "The straight-cut midi skirt creates an elongated, clean silhouette. The high waist emphasizes the waistline, while a front slit adds lightness to the look and ensures comfort while moving.",
+        "Fabric: 75% natural wool.",
+        "Season: autumn, winter."
+      ],
+      colors: ["gray", "beige"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume « Japan »",
+      description: [
+        "Le costume « Japan », composé de 75 % de laine naturelle, associe de façon contemporaine une veste ample et une jupe midi épurée. Les fermetures décoratives d’inspiration asiatique et la silhouette sobre rendent l’ensemble expressif tout en restant polyvalent.",
+        "La veste présente une silhouette ample avec une ligne d’épaules tombante et des manches volumineuses. L’encolure ronde sans col souligne son caractère minimaliste, tandis que les fermetures décoratives contrastantes d’inspiration orientale constituent l’accent principal du design. Des poches zippées fonctionnelles sont placées sur les côtés.",
+        "La jupe midi droite crée une silhouette élancée et épurée. La taille haute souligne la ligne de taille, tandis que la fente sur le devant apporte de la légèreté au look et assure le confort pendant les mouvements.",
+        "Tissu : 75 % laine naturelle.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["gris", "beige"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм «Japan»",
+      description: [
+        "Костюм «Japan» із 75% натуральної вовни — сучасне поєднання жакета вільного крою та лаконічної спідниці міді. Декоративні застібки в азійській стилістиці та стриманий силует роблять комплект виразним, але водночас універсальним.",
+        "Жакет має вільний силует зі спущеною лінією плеча та об’ємними рукавами. Кругла горловина без коміра підкреслює мінімалістичність моделі, а контрастні декоративні застібки у східній стилістиці стають головним акцентом дизайну. З боків передбачені функціональні кишені на блискавках.",
+        "Спідниця прямого крою довжини міді створює витягнутий, лаконічний силует. Висока посадка підкреслює талію, а розріз спереду додає образу легкості та забезпечує комфорт під час руху.",
+        "Тканина: 75% натуральна вовна.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["сірий", "бежевий"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм «Japan»",
+      description: [
+        "Костюм «Japan» из 75% натуральной шерсти — современное сочетание жакета свободного кроя и лаконичной юбки миди. Декоративные застежки в азиатской стилистике и сдержанный силуэт делают комплект выразительным, но одновременно универсальным.",
+        "Жакет имеет свободный силуэт со спущенной линией плеча и объемными рукавами. Круглая горловина без воротника подчеркивает минималистичность модели, а контрастные декоративные застежки в восточной стилистике становятся главным акцентом дизайна. По бокам предусмотрены функциональные карманы на молниях.",
+        "Юбка прямого кроя длины миди создает вытянутый, лаконичный силуэт. Высокая посадка подчеркивает талию, а разрез спереди добавляет образу легкости и обеспечивает комфорт во время движения.",
+        "Ткань: 75% натуральная шерсть.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["серый", "бежевый"]
+    }
+  }
+},
+
+  {
   id: 355,
   price: 2250,
   isTop: false,
