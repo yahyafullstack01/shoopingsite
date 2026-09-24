@@ -15,7 +15,13 @@
       "/Dress/Light Blue Denim Pinafore Dress/4.avif",
       "/Dress/Light Blue Denim Pinafore Dress/5.avif"
     ],
-    "sizes": ["XS", "S", "M", "L", "XL"],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
     "translations": {
       "EN": {
         "category": "Dresses",
@@ -27,7 +33,9 @@
           "Fabric: heavyweight denim cotton.",
           "Season: autumn, winter."
         ],
-        "colors": ["light blue"]
+        "colors": [
+          "light blue"
+        ]
       },
       "FR": {
         "category": "Robes",
@@ -39,7 +47,9 @@
           "Tissu : denim de coton épais.",
           "Saison : automne, hiver."
         ],
-        "colors": ["bleu clair"]
+        "colors": [
+          "bleu clair"
+        ]
       },
       "UA": {
         "category": "Сукні",
@@ -51,7 +61,9 @@
           "Тканина: щільний джинс-котон.",
           "Сезон: осінь, зима."
         ],
-        "colors": ["блакитний"]
+        "colors": [
+          "блакитний"
+        ]
       },
       "RU": {
         "category": "Платья",
@@ -63,7 +75,9 @@
           "Ткань: плотный джинс-коттон.",
           "Сезон: осень, зима."
         ],
-        "colors": ["голубой"]
+        "colors": [
+          "голубой"
+        ]
       }
     }
   },
@@ -82,7 +96,13 @@
       "/Top/Eco-Crinkle Sheer Turtleneck/3.avif",
       "/Top/Eco-Crinkle Sheer Turtleneck/4.avif"
     ],
-    "sizes": ["XS", "S", "M", "L", "XL"],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
     "translations": {
       "EN": {
         "category": "Tops",
@@ -94,7 +114,9 @@
           "Fabric: eco-crinkle.",
           "Season: autumn, winter."
         ],
-        "colors": ["black"]
+        "colors": [
+          "black"
+        ]
       },
       "FR": {
         "category": "Hauts",
@@ -106,7 +128,9 @@
           "Tissu : éco-crinkle.",
           "Saison : automne, hiver."
         ],
-        "colors": ["noir"]
+        "colors": [
+          "noir"
+        ]
       },
       "UA": {
         "category": "Топи",
@@ -118,7 +142,9 @@
           "Тканина: еко-креш.",
           "Сезон: осінь, зима."
         ],
-        "colors": ["чорний"]
+        "colors": [
+          "чорний"
+        ]
       },
       "RU": {
         "category": "Топы",
@@ -130,7 +156,9 @@
           "Ткань: эко-крэш.",
           "Сезон: осень, зима."
         ],
-        "colors": ["черный"]
+        "colors": [
+          "черный"
+        ]
       }
     }
   },
@@ -150,7 +178,13 @@
       "/Outerwear/Mocha Belted Leather Trench/4.avif",
       "/Outerwear/Mocha Belted Leather Trench/5.avif"
     ],
-    "sizes": ["XS", "S", "M", "L", "XL"],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
     "translations": {
       "EN": {
         "category": "Outerwear",
@@ -162,7 +196,9 @@
           "Fabric: high-quality eco-leather on a suede base; flexible and resistant to cracking.",
           "Season: autumn, winter."
         ],
-        "colors": ["mocha"]
+        "colors": [
+          "mocha"
+        ]
       },
       "FR": {
         "category": "Vêtements d’extérieur",
@@ -174,7 +210,9 @@
           "Tissu : éco-cuir de haute qualité sur base suédée, extensible et résistant aux craquelures.",
           "Saison : automne, hiver."
         ],
-        "colors": ["moka"]
+        "colors": [
+          "moka"
+        ]
       },
       "UA": {
         "category": "Верхній одяг",
@@ -186,7 +224,9 @@
           "Тканина: якісна екошкіра на замшевій основі, еластична, не тріскається.",
           "Сезон: осінь, зима."
         ],
-        "colors": ["мокко"]
+        "colors": [
+          "мокко"
+        ]
       },
       "RU": {
         "category": "Верхняя одежда",
@@ -198,7 +238,9 @@
           "Ткань: качественная экокожа на замшевой основе, эластичная, не трескается.",
           "Сезон: осень, зима."
         ],
-        "colors": ["мокко"]
+        "colors": [
+          "мокко"
+        ]
       }
     }
   },
@@ -220,7 +262,13 @@
       "/Dress/Cozy Asymmetric Wool Dress/6.avif",
       "/Dress/Cozy Asymmetric Wool Dress/7.avif"
     ],
-    "sizes": ["XS", "S", "M", "L", "XL"],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
     "translations": {
       "EN": {
         "category": "Dresses",
@@ -232,7 +280,10 @@
           "Fabric: 75% natural wool.",
           "Season: autumn, winter."
         ],
-        "colors": ["gray", "beige"]
+        "colors": [
+          "gray",
+          "beige"
+        ]
       },
       "FR": {
         "category": "Robes",
@@ -244,7 +295,10 @@
           "Tissu : 75 % laine naturelle.",
           "Saison : automne, hiver."
         ],
-        "colors": ["gris", "beige"]
+        "colors": [
+          "gris",
+          "beige"
+        ]
       },
       "UA": {
         "category": "Сукні",
@@ -256,7 +310,10 @@
           "Тканина: 75% натуральна вовна.",
           "Сезон: осінь, зима."
         ],
-        "colors": ["сірий", "бежевий"]
+        "colors": [
+          "сірий",
+          "бежевий"
+        ]
       },
       "RU": {
         "category": "Платья",
@@ -268,7 +325,10 @@
           "Ткань: 75% натуральная шерсть.",
           "Сезон: осень, зима."
         ],
-        "colors": ["серый", "бежевый"]
+        "colors": [
+          "серый",
+          "бежевый"
+        ]
       }
     }
   },
@@ -288,7 +348,13 @@
       "/Jackets/Jeans Belted Trench Jacket/4.avif",
       "/Jackets/Jeans Belted Trench Jacket/5.avif"
     ],
-    "sizes": ["XS", "S", "M", "L", "XL"],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
     "translations": {
       "EN": {
         "category": "Jackets",
@@ -300,7 +366,9 @@
           "Fabric: heavyweight denim cotton.",
           "Season: autumn, winter."
         ],
-        "colors": ["blue"]
+        "colors": [
+          "blue"
+        ]
       },
       "FR": {
         "category": "Vestes",
@@ -312,7 +380,9 @@
           "Tissu : denim de coton épais.",
           "Saison : automne, hiver."
         ],
-        "colors": ["bleu"]
+        "colors": [
+          "bleu"
+        ]
       },
       "UA": {
         "category": "Жакети",
@@ -324,7 +394,9 @@
           "Тканина: щільний джинс-котон.",
           "Сезон: осінь, зима."
         ],
-        "colors": ["синій"]
+        "colors": [
+          "синій"
+        ]
       },
       "RU": {
         "category": "Жакеты",
@@ -336,7 +408,9 @@
           "Ткань: плотный джинс-коттон.",
           "Сезон: осень, зима."
         ],
-        "colors": ["синий"]
+        "colors": [
+          "синий"
+        ]
       }
     }
   },
@@ -357,7 +431,13 @@
       "/Costumes/Jeans Trench Maxi Skirt Suit/5.avif",
       "/Costumes/Jeans Trench Maxi Skirt Suit/6.avif"
     ],
-    "sizes": ["XS", "S", "M", "L", "XL"],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
     "translations": {
       "EN": {
         "category": "Costumes",
@@ -369,7 +449,9 @@
           "Fabric: heavyweight denim cotton.",
           "Season: autumn, winter."
         ],
-        "colors": ["blue"]
+        "colors": [
+          "blue"
+        ]
       },
       "FR": {
         "category": "Costumes",
@@ -381,7 +463,9 @@
           "Tissu : denim de coton épais.",
           "Saison : automne, hiver."
         ],
-        "colors": ["bleu"]
+        "colors": [
+          "bleu"
+        ]
       },
       "UA": {
         "category": "Костюми",
@@ -393,7 +477,9 @@
           "Тканина: щільний джинс-котон.",
           "Сезон: осінь, зима."
         ],
-        "colors": ["синій"]
+        "colors": [
+          "синій"
+        ]
       },
       "RU": {
         "category": "Костюмы",
@@ -405,7 +491,9 @@
           "Ткань: плотный джинс-коттон.",
           "Сезон: осень, зима."
         ],
-        "colors": ["синий"]
+        "colors": [
+          "синий"
+        ]
       }
     }
   },
@@ -425,7 +513,13 @@
       "/Dress/Plaid Denim Maxi Dress/4.avif",
       "/Dress/Plaid Denim Maxi Dress/5.avif"
     ],
-    "sizes": ["XS", "S", "M", "L", "XL"],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
     "translations": {
       "EN": {
         "category": "Dresses",
@@ -437,7 +531,9 @@
           "Fabric: 75% suiting wool, denim cotton.",
           "Season: autumn, winter."
         ],
-        "colors": ["blue"]
+        "colors": [
+          "blue"
+        ]
       },
       "FR": {
         "category": "Robes",
@@ -449,7 +545,9 @@
           "Tissu : 75 % laine de costume, denim de coton.",
           "Saison : automne, hiver."
         ],
-        "colors": ["bleu"]
+        "colors": [
+          "bleu"
+        ]
       },
       "UA": {
         "category": "Сукні",
@@ -461,7 +559,9 @@
           "Тканина: 75% костюмна вовна, джинс-котон.",
           "Сезон: осінь, зима."
         ],
-        "colors": ["синій"]
+        "colors": [
+          "синій"
+        ]
       },
       "RU": {
         "category": "Платья",
@@ -473,7 +573,9 @@
           "Ткань: 75% костюмная шерсть, джинс-коттон.",
           "Сезон: осень, зима."
         ],
-        "colors": ["синий"]
+        "colors": [
+          "синий"
+        ]
       }
     }
   },
@@ -493,7 +595,13 @@
       "/Jackets/Cozy Wool Cardigan/4.avif",
       "/Jackets/Cozy Wool Cardigan/5.avif"
     ],
-    "sizes": ["XS", "S", "M", "L", "XL"],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
     "translations": {
       "EN": {
         "category": "Jackets",
@@ -505,7 +613,10 @@
           "Fabric: 75% natural wool.",
           "Season: autumn, winter."
         ],
-        "colors": ["beige", "gray"]
+        "colors": [
+          "beige",
+          "gray"
+        ]
       },
       "FR": {
         "category": "Vestes",
@@ -517,7 +628,10 @@
           "Tissu : 75 % laine naturelle.",
           "Saison : automne, hiver."
         ],
-        "colors": ["beige", "gris"]
+        "colors": [
+          "beige",
+          "gris"
+        ]
       },
       "UA": {
         "category": "Жакети",
@@ -529,7 +643,10 @@
           "Тканина: 75% натуральна вовна.",
           "Сезон: осінь, зима."
         ],
-        "colors": ["бежевий", "сірий"]
+        "colors": [
+          "бежевий",
+          "сірий"
+        ]
       },
       "RU": {
         "category": "Жакеты",
@@ -541,7 +658,10 @@
           "Ткань: 75% натуральная шерсть.",
           "Сезон: осень, зима."
         ],
-        "colors": ["бежевый", "серый"]
+        "colors": [
+          "бежевый",
+          "серый"
+        ]
       }
     }
   },
@@ -564,7 +684,13 @@
       "/Costumes/Cozy Wool Cardigan Suit/7.avif",
       "/Costumes/Cozy Wool Cardigan Suit/8.avif"
     ],
-    "sizes": ["XS", "S", "M", "L", "XL"],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
     "translations": {
       "EN": {
         "category": "Costumes",
@@ -576,7 +702,10 @@
           "Fabric: 75% natural wool.",
           "Season: autumn, winter."
         ],
-        "colors": ["beige", "gray"]
+        "colors": [
+          "beige",
+          "gray"
+        ]
       },
       "FR": {
         "category": "Costumes",
@@ -588,7 +717,10 @@
           "Tissu : 75 % laine naturelle.",
           "Saison : automne, hiver."
         ],
-        "colors": ["beige", "gris"]
+        "colors": [
+          "beige",
+          "gris"
+        ]
       },
       "UA": {
         "category": "Костюми",
@@ -600,7 +732,10 @@
           "Тканина: 75% натуральна вовна.",
           "Сезон: осінь, зима."
         ],
-        "colors": ["бежевий", "сірий"]
+        "colors": [
+          "бежевий",
+          "сірий"
+        ]
       },
       "RU": {
         "category": "Костюмы",
@@ -612,7 +747,10 @@
           "Ткань: 75% натуральная шерсть.",
           "Сезон: осень, зима."
         ],
-        "colors": ["бежевый", "серый"]
+        "colors": [
+          "бежевый",
+          "серый"
+        ]
       }
     }
   },
@@ -633,7 +771,13 @@
       "/Skirts/Japan Front-Slit Midi Skirt/5.avif",
       "/Skirts/Japan Front-Slit Midi Skirt/6.avif"
     ],
-    "sizes": ["XS", "S", "M", "L", "XL"],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
     "translations": {
       "EN": {
         "category": "Skirts",
@@ -645,7 +789,10 @@
           "Fabric: 75% natural wool.",
           "Season: autumn, winter."
         ],
-        "colors": ["gray", "beige"]
+        "colors": [
+          "gray",
+          "beige"
+        ]
       },
       "FR": {
         "category": "Jupes",
@@ -657,7 +804,10 @@
           "Tissu : 75 % laine naturelle.",
           "Saison : automne, hiver."
         ],
-        "colors": ["gris", "beige"]
+        "colors": [
+          "gris",
+          "beige"
+        ]
       },
       "UA": {
         "category": "Спідниці",
@@ -669,7 +819,10 @@
           "Тканина: 75% натуральна вовна.",
           "Сезон: осінь, зима."
         ],
-        "colors": ["сірий", "бежевий"]
+        "colors": [
+          "сірий",
+          "бежевий"
+        ]
       },
       "RU": {
         "category": "Юбки",
@@ -681,7 +834,10 @@
           "Ткань: 75% натуральная шерсть.",
           "Сезон: осень, зима."
         ],
-        "colors": ["серый", "бежевый"]
+        "colors": [
+          "серый",
+          "бежевый"
+        ]
       }
     }
   },
@@ -702,7 +858,13 @@
       "/Jackets/Japan Wool Bomber/5.avif",
       "/Jackets/Japan Wool Bomber/6.avif"
     ],
-    "sizes": ["XS", "S", "M", "L", "XL"],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
     "translations": {
       "EN": {
         "category": "Jackets",
@@ -714,7 +876,10 @@
           "Fabric: 75% natural wool.",
           "Season: autumn, winter."
         ],
-        "colors": ["gray", "beige"]
+        "colors": [
+          "gray",
+          "beige"
+        ]
       },
       "FR": {
         "category": "Vestes",
@@ -726,7 +891,10 @@
           "Tissu : 75 % laine naturelle.",
           "Saison : automne, hiver."
         ],
-        "colors": ["gris", "beige"]
+        "colors": [
+          "gris",
+          "beige"
+        ]
       },
       "UA": {
         "category": "Жакети",
@@ -738,7 +906,10 @@
           "Тканина: 75% натуральна вовна.",
           "Сезон: осінь, зима."
         ],
-        "colors": ["сірий", "бежевий"]
+        "colors": [
+          "сірий",
+          "бежевий"
+        ]
       },
       "RU": {
         "category": "Жакеты",
@@ -750,7 +921,10 @@
           "Ткань: 75% натуральная шерсть.",
           "Сезон: осень, зима."
         ],
-        "colors": ["серый", "бежевый"]
+        "colors": [
+          "серый",
+          "бежевый"
+        ]
       }
     }
   },
@@ -773,7 +947,13 @@
       "/Costumes/Japan Suit/7.avif",
       "/Costumes/Japan Suit/8.avif"
     ],
-    "sizes": ["XS", "S", "M", "L", "XL"],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
     "translations": {
       "EN": {
         "category": "Costumes",
@@ -785,7 +965,10 @@
           "Fabric: 75% natural wool.",
           "Season: autumn, winter."
         ],
-        "colors": ["gray", "beige"]
+        "colors": [
+          "gray",
+          "beige"
+        ]
       },
       "FR": {
         "category": "Costumes",
@@ -797,7 +980,10 @@
           "Tissu : 75 % laine naturelle.",
           "Saison : automne, hiver."
         ],
-        "colors": ["gris", "beige"]
+        "colors": [
+          "gris",
+          "beige"
+        ]
       },
       "UA": {
         "category": "Костюми",
@@ -809,7 +995,10 @@
           "Тканина: 75% натуральна вовна.",
           "Сезон: осінь, зима."
         ],
-        "colors": ["сірий", "бежевий"]
+        "colors": [
+          "сірий",
+          "бежевий"
+        ]
       },
       "RU": {
         "category": "Костюмы",
@@ -821,7 +1010,10 @@
           "Ткань: 75% натуральная шерсть.",
           "Сезон: осень, зима."
         ],
-        "colors": ["серый", "бежевый"]
+        "colors": [
+          "серый",
+          "бежевый"
+        ]
       }
     }
   },
@@ -840,7 +1032,13 @@
       "/Skirts/Lui Straight Midi Skirt/3.avif",
       "/Skirts/Lui Straight Midi Skirt/4.avif"
     ],
-    "sizes": ["XS", "S", "M", "L", "XL"],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
     "translations": {
       "EN": {
         "category": "Skirts",
@@ -852,7 +1050,10 @@
           "Fabric: 75% natural wool.",
           "Season: autumn, winter."
         ],
-        "colors": ["gray", "beige"]
+        "colors": [
+          "gray",
+          "beige"
+        ]
       },
       "FR": {
         "category": "Jupes",
@@ -864,7 +1065,10 @@
           "Tissu : 75 % laine naturelle.",
           "Saison : automne, hiver."
         ],
-        "colors": ["gris", "beige"]
+        "colors": [
+          "gris",
+          "beige"
+        ]
       },
       "UA": {
         "category": "Спідниці",
@@ -876,7 +1080,10 @@
           "Тканина: 75% натуральна вовна.",
           "Сезон: осінь, зима."
         ],
-        "colors": ["сірий", "бежевий"]
+        "colors": [
+          "сірий",
+          "бежевий"
+        ]
       },
       "RU": {
         "category": "Юбки",
@@ -888,7 +1095,10 @@
           "Ткань: 75% натуральная шерсть.",
           "Сезон: осень, зима."
         ],
-        "colors": ["серый", "бежевый"]
+        "colors": [
+          "серый",
+          "бежевый"
+        ]
       }
     }
   },
@@ -908,7 +1118,13 @@
       "/Top/Lui V-Neck Jumper/4.avif",
       "/Top/Lui V-Neck Jumper/5.avif"
     ],
-    "sizes": ["XS", "S", "M", "L", "XL"],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
     "translations": {
       "EN": {
         "category": "Tops",
@@ -920,7 +1136,10 @@
           "Fabric: 75% natural wool.",
           "Season: autumn, winter."
         ],
-        "colors": ["gray", "beige"]
+        "colors": [
+          "gray",
+          "beige"
+        ]
       },
       "FR": {
         "category": "Hauts",
@@ -932,7 +1151,10 @@
           "Tissu : 75 % laine naturelle.",
           "Saison : automne, hiver."
         ],
-        "colors": ["gris", "beige"]
+        "colors": [
+          "gris",
+          "beige"
+        ]
       },
       "UA": {
         "category": "Топи",
@@ -944,7 +1166,10 @@
           "Тканина: 75% натуральна вовна.",
           "Сезон: осінь, зима."
         ],
-        "colors": ["сірий", "бежевий"]
+        "colors": [
+          "сірий",
+          "бежевий"
+        ]
       },
       "RU": {
         "category": "Топы",
@@ -956,7 +1181,10 @@
           "Ткань: 75% натуральная шерсть.",
           "Сезон: осень, зима."
         ],
-        "colors": ["серый", "бежевый"]
+        "colors": [
+          "серый",
+          "бежевый"
+        ]
       }
     }
   },
@@ -978,7 +1206,13 @@
       "/Costumes/Lui Skirt Suit/6.avif",
       "/Costumes/Lui Skirt Suit/7.avif"
     ],
-    "sizes": ["XS", "S", "M", "L", "XL"],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
     "translations": {
       "EN": {
         "category": "Costumes",
@@ -990,7 +1224,10 @@
           "Fabric: 75% natural wool.",
           "Season: autumn, winter."
         ],
-        "colors": ["gray", "beige"]
+        "colors": [
+          "gray",
+          "beige"
+        ]
       },
       "FR": {
         "category": "Costumes",
@@ -1002,7 +1239,10 @@
           "Tissu : 75 % laine naturelle.",
           "Saison : automne, hiver."
         ],
-        "colors": ["gris", "beige"]
+        "colors": [
+          "gris",
+          "beige"
+        ]
       },
       "UA": {
         "category": "Костюми",
@@ -1014,7 +1254,10 @@
           "Тканина: 75% натуральна вовна.",
           "Сезон: осінь, зима."
         ],
-        "colors": ["сірий", "бежевий"]
+        "colors": [
+          "сірий",
+          "бежевий"
+        ]
       },
       "RU": {
         "category": "Костюмы",
@@ -1026,7 +1269,10 @@
           "Ткань: 75% натуральная шерсть.",
           "Сезон: осень, зима."
         ],
-        "colors": ["серый", "бежевый"]
+        "colors": [
+          "серый",
+          "бежевый"
+        ]
       }
     }
   },
@@ -1045,7 +1291,13 @@
       "/Pants/Lui Trousers/3.avif",
       "/Pants/Lui Trousers/4.avif"
     ],
-    "sizes": ["XS", "S", "M", "L", "XL"],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
     "translations": {
       "EN": {
         "category": "Pants",
@@ -1057,7 +1309,10 @@
           "Fabric: 75% natural wool.",
           "Season: autumn, winter."
         ],
-        "colors": ["gray", "beige"]
+        "colors": [
+          "gray",
+          "beige"
+        ]
       },
       "FR": {
         "category": "Pantalons",
@@ -1069,7 +1324,10 @@
           "Tissu : 75 % laine naturelle.",
           "Saison : automne, hiver."
         ],
-        "colors": ["gris", "beige"]
+        "colors": [
+          "gris",
+          "beige"
+        ]
       },
       "UA": {
         "category": "Брюки",
@@ -1081,7 +1339,10 @@
           "Тканина: 75% натуральна вовна.",
           "Сезон: осінь, зима."
         ],
-        "colors": ["сірий", "бежевий"]
+        "colors": [
+          "сірий",
+          "бежевий"
+        ]
       },
       "RU": {
         "category": "Брюки",
@@ -1093,7 +1354,10 @@
           "Ткань: 75% натуральная шерсть.",
           "Сезон: осень, зима."
         ],
-        "colors": ["серый", "бежевый"]
+        "colors": [
+          "серый",
+          "бежевый"
+        ]
       }
     }
   },
@@ -1113,7 +1377,13 @@
       "/Costumes/Lui V-Neck Suit/4.avif",
       "/Costumes/Lui V-Neck Suit/5.avif"
     ],
-    "sizes": ["XS", "S", "M", "L", "XL"],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
     "translations": {
       "EN": {
         "category": "Costumes",
@@ -1126,7 +1396,10 @@
           "Fabric: 75% natural wool.",
           "Season: autumn, winter."
         ],
-        "colors": ["gray", "beige"]
+        "colors": [
+          "gray",
+          "beige"
+        ]
       },
       "FR": {
         "category": "Costumes",
@@ -1139,7 +1412,10 @@
           "Tissu : 75 % laine naturelle.",
           "Saison : automne, hiver."
         ],
-        "colors": ["gris", "beige"]
+        "colors": [
+          "gris",
+          "beige"
+        ]
       },
       "UA": {
         "category": "Костюми",
@@ -1152,7 +1428,10 @@
           "Тканина: 75% натуральна вовна.",
           "Сезон: осінь, зима."
         ],
-        "colors": ["сірий", "бежевий"]
+        "colors": [
+          "сірий",
+          "бежевий"
+        ]
       },
       "RU": {
         "category": "Костюмы",
@@ -1165,7 +1444,10 @@
           "Ткань: 75% натуральная шерсть.",
           "Сезон: осень, зима."
         ],
-        "colors": ["серый", "бежевый"]
+        "colors": [
+          "серый",
+          "бежевый"
+        ]
       }
     }
   },
@@ -1183,7 +1465,13 @@
       "/Pants/Light Grey Pants/2.avif",
       "/Pants/Light Grey Pants/3.avif"
     ],
-    "sizes": ["XS", "S", "M", "L", "XL"],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
     "translations": {
       "EN": {
         "category": "Pants",
@@ -1195,7 +1483,9 @@
           "Fabric: 75% natural wool.",
           "Season: autumn, winter."
         ],
-        "colors": ["gray"]
+        "colors": [
+          "gray"
+        ]
       },
       "FR": {
         "category": "Pantalons",
@@ -1207,7 +1497,9 @@
           "Tissu : 75 % laine naturelle.",
           "Saison : automne, hiver."
         ],
-        "colors": ["gris"]
+        "colors": [
+          "gris"
+        ]
       },
       "UA": {
         "category": "Брюки",
@@ -1219,7 +1511,9 @@
           "Тканина: 75% натуральна вовна.",
           "Сезон: осінь, зима."
         ],
-        "colors": ["сірий"]
+        "colors": [
+          "сірий"
+        ]
       },
       "RU": {
         "category": "Брюки",
@@ -1231,7 +1525,9 @@
           "Ткань: 75% натуральная шерсть.",
           "Сезон: осень, зима."
         ],
-        "colors": ["серый"]
+        "colors": [
+          "серый"
+        ]
       }
     }
   },
@@ -1249,7 +1545,13 @@
       "/Outerwear/Light Grey Trench/2.avif",
       "/Outerwear/Light Grey Trench/3.avif"
     ],
-    "sizes": ["XS", "S", "M", "L", "XL"],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
     "translations": {
       "EN": {
         "category": "Outerwear",
@@ -1261,7 +1563,9 @@
           "Fabric: 75% natural wool.",
           "Season: autumn, winter."
         ],
-        "colors": ["gray"]
+        "colors": [
+          "gray"
+        ]
       },
       "FR": {
         "category": "Vêtements d’extérieur",
@@ -1273,7 +1577,9 @@
           "Tissu : 75 % laine naturelle.",
           "Saison : automne, hiver."
         ],
-        "colors": ["gris"]
+        "colors": [
+          "gris"
+        ]
       },
       "UA": {
         "category": "Верхній одяг",
@@ -1285,7 +1591,9 @@
           "Тканина: 75% натуральна вовна.",
           "Сезон: осінь, зима."
         ],
-        "colors": ["сірий"]
+        "colors": [
+          "сірий"
+        ]
       },
       "RU": {
         "category": "Верхняя одежда",
@@ -1297,7 +1605,9 @@
           "Ткань: 75% натуральная шерсть.",
           "Сезон: осень, зима."
         ],
-        "colors": ["серый"]
+        "colors": [
+          "серый"
+        ]
       }
     }
   },
@@ -1317,7 +1627,13 @@
       "/Costumes/Light Grey Suit/2.avif",
       "/Costumes/Light Grey Suit/3.avif"
     ],
-    "sizes": ["XS", "S", "M", "L", "XL"],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
     "translations": {
       "EN": {
         "category": "Costumes",
@@ -1329,7 +1645,9 @@
           "Fabric: 75% natural wool.",
           "Season: autumn, winter."
         ],
-        "colors": ["gray"]
+        "colors": [
+          "gray"
+        ]
       },
       "FR": {
         "category": "Costumes",
@@ -1341,7 +1659,9 @@
           "Tissu : 75 % laine naturelle.",
           "Saison : automne, hiver."
         ],
-        "colors": ["gris"]
+        "colors": [
+          "gris"
+        ]
       },
       "UA": {
         "category": "Костюми",
@@ -1353,7 +1673,9 @@
           "Тканина: 75% натуральна вовна.",
           "Сезон: осінь, зима."
         ],
-        "colors": ["сірий"]
+        "colors": [
+          "сірий"
+        ]
       },
       "RU": {
         "category": "Костюмы",
@@ -1365,207 +1687,9 @@
           "Ткань: 75% натуральная шерсть.",
           "Сезон: осень, зима."
         ],
-        "colors": ["серый"]
-      }
-    }
-  },
-  {
-    "id": 347,
-    "price": 2060,
-    "isTop": false,
-    "isNew": false,
-    "isSpecialOffer": false,
-    "sku": "99478",
-    "size": "XS S M L XL",
-    "category": "Pants",
-    "image": "/Pants/Camel Pants/1.avif",
-    "images": [
-      "/Pants/Camel Pants/2.avif",
-      "/Pants/Camel Pants/3.avif"
-    ],
-    "sizes": ["XS", "S", "M", "L", "XL"],
-    "translations": {
-      "EN": {
-        "category": "Pants",
-        "name": "Camel Pants",
-        "description": [
-          "The Camel pants are a classic design made from 75% natural wool in a warm camel shade. The high waist, relaxed cut, and wide straight legs create an elongated and elegant silhouette.",
-          "The design has a high waist and a relaxed cut with wide, straight legs. Soft pleats at the waistband add the necessary volume and provide a comfortable fit, while stitched front creases visually elongate the silhouette.",
-          "The full length creates a beautiful vertical line and looks especially striking when paired with heeled shoes. The deep camel shade integrates easily into an autumn-winter wardrobe.",
-          "Fabric: 75% natural wool.",
-          "Season: autumn, winter."
-        ],
-        "colors": ["camel"]
-      },
-      "FR": {
-        "category": "Pantalons",
-        "name": "Pantalon « Camel »",
-        "description": [
-          "Le pantalon « Camel » est un modèle classique composé de 75 % de laine naturelle dans une chaleureuse nuance camel. La taille haute, la coupe ample et les jambes larges et droites créent une silhouette élancée et élégante.",
-          "Le modèle présente une taille haute et une coupe ample aux jambes larges et droites. De doux plis à la ceinture apportent le volume nécessaire et assurent une coupe confortable, tandis que les plis nervurés sur le devant allongent visuellement la silhouette.",
-          "La longueur pleine crée une belle ligne verticale et se révèle particulièrement élégante avec des chaussures à talons. La profonde nuance camel s’intègre facilement dans un vestiaire automne-hiver.",
-          "Tissu : 75 % laine naturelle.",
-          "Saison : automne, hiver."
-        ],
-        "colors": ["camel"]
-      },
-      "UA": {
-        "category": "Брюки",
-        "name": "Брюки «Camel»",
-        "description": [
-          "Брюки «Camel» — класична модель із 75% натуральної вовни у теплому відтінку кемел. Висока посадка, вільний крій і широкі прямі штанини формують витягнутий та елегантний силует.",
-          "Модель має високу посадку та вільний крій із широкими прямими штанинами. М’які складки біля пояса додають необхідного об’єму та забезпечують комфортну посадку, а застрочені стрілки спереду візуально витягують силует.",
-          "Повна довжина створює красиву вертикаль і особливо ефектно виглядає у поєднанні з взуттям на підборах. Глибокий відтінок кемел легко інтегрується в осінньо-зимовий гардероб.",
-          "Тканина: 75% натуральна вовна.",
-          "Сезон: осінь, зима."
-        ],
-        "colors": ["кемел"]
-      },
-      "RU": {
-        "category": "Брюки",
-        "name": "Брюки «Camel»",
-        "description": [
-          "Брюки «Camel» — классическая модель из 75% натуральной шерсти в теплом оттенке кэмел. Высокая посадка, свободный крой и широкие прямые штанины формируют вытянутый и элегантный силуэт.",
-          "Модель имеет высокую посадку и свободный крой с широкими прямыми штанинами. Мягкие складки у пояса добавляют необходимый объем и обеспечивают комфортную посадку, а застроченные стрелки спереди визуально вытягивают силуэт.",
-          "Полная длина создает красивую вертикаль и особенно эффектно выглядит в сочетании с обувью на каблуке. Глубокий оттенок кэмел легко интегрируется в осенне-зимний гардероб.",
-          "Ткань: 75% натуральная шерсть.",
-          "Сезон: осень, зима."
-        ],
-        "colors": ["кэмел"]
-      }
-    }
-  },
-  {
-    "id": 346,
-    "price": 3500,
-    "isTop": false,
-    "isNew": false,
-    "isSpecialOffer": false,
-    "sku": "99477",
-    "size": "XS S M L XL",
-    "category": "Jackets",
-    "image": "/Jackets/Camel Jacket/1.avif",
-    "images": [
-      "/Jackets/Camel Jacket/2.avif",
-      "/Jackets/Camel Jacket/3.avif"
-    ],
-    "sizes": ["XS", "S", "M", "L", "XL"],
-    "translations": {
-      "EN": {
-        "category": "Jackets",
-        "name": "Camel Jacket",
-        "description": [
-          "The Camel jacket is a classic design made from 75% natural wool in a warm camel shade. Its elongated cut, defined shoulder line, and classic lapels create a structured yet feminine silhouette.",
-          "The design has an elongated straight cut with a subtly defined waistline and structured shoulders. Classic lapels and a two-button fastening create an understated, timeless look.",
-          "Functional flap pockets are positioned at the front, while a breast pocket completes the jacket’s classic styling. The warm camel shade pairs easily with basic colors and adds depth to any look.",
-          "Fabric: 75% natural wool.",
-          "Season: autumn, winter."
-        ],
-        "colors": ["camel"]
-      },
-      "FR": {
-        "category": "Vestes",
-        "name": "Veste « Camel »",
-        "description": [
-          "La veste « Camel » est un modèle classique composé de 75 % de laine naturelle dans une chaleureuse nuance camel. Sa coupe allongée, sa ligne d’épaules marquée et ses revers classiques créent une silhouette structurée tout en restant féminine.",
-          "Le modèle présente une coupe droite et allongée, une taille délicatement dessinée et des épaules structurées. Les revers classiques et la fermeture à deux boutons composent un design sobre et intemporel.",
-          "Des poches à rabat fonctionnelles sont disposées sur le devant, tandis qu’une poche poitrine complète le style classique du modèle. La chaude nuance camel s’associe facilement aux couleurs basiques et apporte de la profondeur aux tenues.",
-          "Tissu : 75 % laine naturelle.",
-          "Saison : automne, hiver."
-        ],
-        "colors": ["camel"]
-      },
-      "UA": {
-        "category": "Жакети",
-        "name": "Жакет «Camel»",
-        "description": [
-          "Жакет «Camel» — класична модель із 75% натуральної вовни у теплому відтінку кемел. Подовжений крій, виразна лінія плеча та класичні лацкани формують структурний і водночас жіночний силует.",
-          "Модель має подовжений прямий крій із делікатно окресленою лінією талії та структурованими плечима. Класичні лацкани й застібка на два ґудзики створюють стриманий позачасовий дизайн.",
-          "Спереду розташовані функціональні кишені з клапанами, а нагрудна кишеня завершує класичну стилістику моделі. Теплий відтінок кемел легко поєднується з базовими кольорами та додає образам глибини.",
-          "Тканина: 75% натуральна вовна.",
-          "Сезон: осінь, зима."
-        ],
-        "colors": ["кемел"]
-      },
-      "RU": {
-        "category": "Жакеты",
-        "name": "Жакет «Camel»",
-        "description": [
-          "Жакет «Camel» — классическая модель из 75% натуральной шерсти в теплом оттенке кэмел. Удлиненный крой, выразительная линия плеча и классические лацканы формируют структурный и одновременно женственный силуэт.",
-          "Модель имеет удлиненный прямой крой с деликатно очерченной линией талии и структурированными плечами. Классические лацканы и застежка на две пуговицы создают сдержанный вневременной дизайн.",
-          "Спереди расположены функциональные карманы с клапанами, а нагрудный карман завершает классическую стилистику модели. Теплый оттенок кэмел легко сочетается с базовыми цветами и добавляет образам глубины.",
-          "Ткань: 75% натуральная шерсть.",
-          "Сезон: осень, зима."
-        ],
-        "colors": ["кэмел"]
-      }
-    }
-  },
-  {
-    "id": 345,
-    "price": 5560,
-    "isTop": false,
-    "isNew": false,
-    "isSpecialOffer": false,
-    "sku": "99476",
-    "size": "XS S M L XL",
-    "category": "Costumes",
-    "image": "/Costumes/Camel Suit/1.avif",
-    "images": [
-      "/Costumes/Camel Suit/2.avif",
-      "/Costumes/Camel Suit/3.avif",
-      "/Costumes/Camel Suit/4.avif",
-      "/Costumes/Camel Suit/5.avif"
-    ],
-    "sizes": ["XS", "S", "M", "L", "XL"],
-    "translations": {
-      "EN": {
-        "category": "Costumes",
-        "name": "Camel Suit",
-        "description": [
-          "The Camel suit is a classic wool duo consisting of a jacket and wide-leg trousers in a deep camel shade. Its structured cut and 75% natural wool create an elegant look for an autumn-winter wardrobe.",
-          "The elongated straight-cut jacket features classic lapels, a defined shoulder line, and a two-button fastening. Flap pockets complete the understated design and preserve its classic character.",
-          "The high-waisted trousers with wide, straight legs visually elongate the silhouette. Full-length pressed creases add a graphic quality to the look and make the fit more structured.",
-          "Fabric: 75% natural wool.",
-          "Season: autumn, winter."
-        ],
-        "colors": ["camel"]
-      },
-      "FR": {
-        "category": "Costumes",
-        "name": "Costume « Camel »",
-        "description": [
-          "Le costume « Camel » est un duo classique en laine composé d’une veste et d’un pantalon large dans une profonde nuance camel. Sa coupe structurée et ses 75 % de laine naturelle créent une allure élégante pour le vestiaire automne-hiver.",
-          "La veste droite et allongée présente des revers classiques, une ligne d’épaules marquée et une fermeture à deux boutons. Les poches à rabat complètent le design sobre et préservent son caractère classique.",
-          "Le pantalon taille haute aux jambes larges et droites allonge visuellement la silhouette. Les plis marqués sur toute la longueur apportent une touche graphique et structurent davantage la coupe.",
-          "Tissu : 75 % laine naturelle.",
-          "Saison : automne, hiver."
-        ],
-        "colors": ["camel"]
-      },
-      "UA": {
-        "category": "Костюми",
-        "name": "Костюм «Camel»",
-        "description": [
-          "Костюм «Camel» — класичний вовняний дует із жакета та широких брюк у глибокому відтінку кемел. Структурний крій і 75% натуральної вовни створюють елегантний образ для осінньо-зимового гардероба.",
-          "Жакет подовженого прямого крою має класичні лацкани, виразну лінію плеча та застібку на два ґудзики. Кишені з клапанами доповнюють стриманий дизайн і зберігають його класичний характер.",
-          "Брюки з високою посадкою та широкими прямими штанинами візуально витягують силует. Стрілки по всій довжині додають образу графічності та роблять посадку більш структурованою.",
-          "Тканина: 75% натуральна вовна.",
-          "Сезон: осінь, зима."
-        ],
-        "colors": ["кемел"]
-      },
-      "RU": {
-        "category": "Костюмы",
-        "name": "Костюм «Camel»",
-        "description": [
-          "Костюм «Camel» — классический шерстяной дуэт из жакета и широких брюк в глубоком оттенке кэмел. Структурный крой и 75% натуральной шерсти создают элегантный образ для осенне-зимнего гардероба.",
-          "Жакет удлиненного прямого кроя имеет классические лацканы, выразительную линию плеча и застежку на две пуговицы. Карманы с клапанами дополняют сдержанный дизайн и сохраняют его классический характер.",
-          "Брюки с высокой посадкой и широкими прямыми штанинами визуально вытягивают силуэт. Стрелки по всей длине придают образу графичность и делают посадку более структурированной.",
-          "Ткань: 75% натуральная шерсть.",
-          "Сезон: осень, зима."
-        ],
-        "colors": ["кэмел"]
+        "colors": [
+          "серый"
+        ]
       }
     }
   },
@@ -5795,170 +5919,6 @@
     }
   },
   {
-    "id": 297,
-    "price": 3000,
-    "isTop": true,
-    "isNew": false,
-    "isSpecialOffer": false,
-    "sku": "99428",
-    "size": "XS S M L XL",
-    "category": "Dresses",
-    "image": "/Dress/Knitted Lace Dress/1.avif",
-    "images": [
-      "/Dress/Knitted Lace Dress/2.avif",
-      "/Dress/Knitted Lace Dress/3.avif",
-      "/Dress/Knitted Lace Dress/4.avif",
-      "/Dress/Knitted Lace Dress/5.avif"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "translations": {
-      "EN": {
-        "category": "Dresses",
-        "name": "Knitted Lace Dress",
-        "description": [
-          "An elegant black midi dress that combines comfort and sophistication. The clean silhouette drapes gently over the body, while velvety lace on both sides adds depth and femininity.",
-          "A V-shaped neckline with delicate lace trim highlights the décolleté, and the lace finish along the hem creates a refined accent. Thanks to the adjustable drawstring waist, the fit can be customized for a more defined or relaxed silhouette.",
-          "(Belt not included)",
-          "Perfect for evening outings, special occasions, or stylish everyday looks during the colder season.",
-          "Fabric: Knit fabric with velvety lace detailing on both sides."
-        ],
-        "colors": [
-          "black"
-        ]
-      },
-      "FR": {
-        "category": "Robes",
-        "name": "Robe en maille avec dentelle",
-        "description": [
-          "Une élégante robe midi noire alliant confort et raffinement. La silhouette fluide épouse délicatement le corps, tandis que la dentelle effet velours des deux côtés ajoute profondeur et féminité.",
-          "L’encolure en V ornée de dentelle souligne le décolleté, et la finition en dentelle sur l’ourlet apporte une touche sophistiquée. Grâce au cordon de serrage à la taille, la coupe peut être ajustée pour un style plus cintré ou plus fluide.",
-          "(Ceinture non incluse)",
-          "Idéale pour les sorties du soir, les occasions spéciales ou les looks élégants du quotidien pendant la saison froide.",
-          "Tissu : maille avec dentelle effet velours des deux côtés."
-        ],
-        "colors": [
-          "noir"
-        ]
-      },
-      "UA": {
-        "category": "Сукні",
-        "name": "Трикотажна сукня з мереживом",
-        "description": [
-          "Елегантна чорна сукня міді — поєднання комфорту та вишуканості. Лаконічний силует м’яко спадає по фігурі, а оксамитове мереживо з обох сторін додає образу глибини та жіночності.",
-          "V-подібний виріз із делікатним мереживним оздобленням підкреслює зону декольте, а мереживна обробка по низу створює витончений акцент. Завдяки поясу-кулісці на талії можна регулювати посадку, формуючи більш приталений або вільний силует.",
-          "(пояс не йде у комплекті)",
-          "Ідеальний варіант для вечірніх виходів, особливих подій або стильних повсякденних образів у холодний сезон.",
-          "Тканина: трикотажне полотно з оксамитовим мереживом з обох сторін."
-        ],
-        "colors": [
-          "чорний"
-        ]
-      },
-      "RU": {
-        "category": "Платья",
-        "name": "Трикотажное платье с кружевом",
-        "description": [
-          "Элегантное черное платье миди — сочетание комфорта и утонченности. Лаконичный силуэт мягко ложится по фигуре, а бархатное кружево с обеих сторон добавляет глубину и женственность.",
-          "V-образный вырез с деликатной кружевной отделкой подчеркивает зону декольте, а кружевная отделка по низу создаёт изысканный акцент. Благодаря кулиске на талии можно регулировать посадку, создавая более приталенный или свободный силуэт.",
-          "(пояс не входит в комплект)",
-          "Идеальный вариант для вечерних выходов, особых событий или стильных повседневных образов в холодный сезон.",
-          "Ткань: трикотажное полотно с бархатным кружевом с обеих сторон."
-        ],
-        "colors": [
-          "черный"
-        ]
-      }
-    }
-  },
-  {
-    "id": 296,
-    "price": 3200,
-    "isTop": false,
-    "isNew": true,
-    "isSpecialOffer": false,
-    "sku": "99427",
-    "size": "XS S M L XL",
-    "category": "Costumes",
-    "image": "/Costumes/Knitted Lace Set/1.avif",
-    "images": [
-      "/Costumes/Knitted Lace Set/2.avif",
-      "/Costumes/Knitted Lace Set/3.avif",
-      "/Costumes/Knitted Lace Set/4.avif",
-      "/Costumes/Knitted Lace Set/5.avif"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "translations": {
-      "EN": {
-        "category": "Costumes",
-        "name": "Knitted Lace Set",
-        "description": [
-          "An elegant black set that blends comfort with femininity. The ensemble consists of a relaxed jumper and a midi skirt, forming a refined silhouette with delicate accents.",
-          "Velvety lace trim decorates the sleeves, hem of the jumper, and skirt, adding depth and sophistication. The soft knit fabric drapes beautifully over the body, offering freedom of movement and comfort throughout the day.",
-          "A perfect choice for events, evening outings, or stylish everyday looks during the colder season.",
-          "Fabric: Knit fabric with velvety lace detailing on both sides.",
-          "(Belt not included)"
-        ],
-        "colors": [
-          "black"
-        ]
-      },
-      "FR": {
-        "category": "Costumes",
-        "name": "Ensemble en maille avec dentelle",
-        "description": [
-          "Un ensemble noir raffiné qui allie confort et féminité. Il se compose d’un pull ample et d’une jupe midi, créant une silhouette élégante aux accents délicats.",
-          "Une dentelle à effet velours orne les manches, le bas du pull et la jupe, ajoutant de la profondeur et de la sophistication. Le tricot doux épouse le corps sans le contraindre, offrant confort et liberté de mouvement toute la journée.",
-          "Un choix parfait pour les événements, les soirées ou les looks quotidiens élégants pendant la saison froide.",
-          "Tissu : maille avec dentelle effet velours des deux côtés.",
-          "(Ceinture non incluse)"
-        ],
-        "colors": [
-          "noir"
-        ]
-      },
-      "UA": {
-        "category": "Костюми",
-        "name": "Трикотажний комплект з мереживом",
-        "description": [
-          "Вишуканий чорний костюм, що поєднує комфорт і жіночність. Комплект складається з вільного джемпера та спідниці міді, створюючи елегантний силует із делікатними акцентами.",
-          "Мереживне оздоблення з оксамитовим ефектом прикрашає рукави, низ джемпера та спідниці, додаючи образу глибини та витонченості. Завдяки м’якому трикотажу костюм красиво лягає по фігурі, не сковує рухів і дарує відчуття комфорту протягом усього дня.",
-          "Ідеальний вибір для подій, вечірніх виходів або стильних повсякденних образів у холодний сезон.",
-          "Тканина: трикотажне полотно з оксамитовим мереживом з обох сторін.",
-          "(пояс не йде у комплекті)"
-        ],
-        "colors": [
-          "чорний"
-        ]
-      },
-      "RU": {
-        "category": "Костюмы",
-        "name": "Трикотажный комплект с кружевом",
-        "description": [
-          "Изысканный черный костюм, сочетающий комфорт и женственность. Комплект состоит из свободного джемпера и юбки миди, создавая элегантный силуэт с деликатными акцентами.",
-          "Кружевная отделка с бархатным эффектом украшает рукава, низ джемпера и юбки, добавляя глубину и утонченность. Благодаря мягкому трикотажу костюм красиво садится по фигуре, не стесняет движений и обеспечивает комфорт на протяжении всего дня.",
-          "Идеальный выбор для мероприятий, вечерних выходов или стильных повседневных образов в холодный сезон.",
-          "Ткань: трикотажное полотно с бархатным кружевом с обеих сторон.",
-          "(пояс не входит в комплект)"
-        ],
-        "colors": [
-          "черный"
-        ]
-      }
-    }
-  },
-  {
     "id": 294,
     "price": 3000,
     "isTop": false,
@@ -6826,100 +6786,6 @@
           "• длина макси",
           "• высокая посадка",
           "• аккуратная обработка по линии талии"
-        ],
-        "colors": [
-          "чёрный"
-        ]
-      }
-    }
-  },
-  {
-    "id": 285,
-    "price": 2250,
-    "isTop": false,
-    "isNew": false,
-    "isSpecialOffer": false,
-    "sku": "99416",
-    "size": "XS S M L XL",
-    "category": "Dresses",
-    "image": "/Dress/Transformer Sundress/1.avif",
-    "images": [
-      "/Dress/Transformer Sundress/2.avif",
-      "/Dress/Transformer Sundress/3.avif",
-      "/Dress/Transformer Sundress/4.avif",
-      "/Dress/Transformer Sundress/5.avif"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "translations": {
-      "EN": {
-        "category": "Dresses",
-        "name": "Transformer Sundress",
-        "description": [
-          "An elegant transformer sundress — a versatile base for business and evening looks. The minimalist cut is enhanced with thoughtful details: adjustable straps that cross at the back, creating an accent and allowing you to customize the fit.",
-          "Designed in a midi length with a soft fitted waist and a neat front pleat that adds grace to the silhouette. A convenient back slit ensures comfort in motion.",
-          "Perfectly pairs with a classic shirt, turtleneck, or top — depending on your style and mood.",
-          "Fabric: Suit wool.",
-          "Details:",
-          "• Midi length",
-          "• Adjustable straps (can be fixed in different ways)",
-          "• Neat back slit"
-        ],
-        "colors": [
-          "black"
-        ]
-      },
-      "FR": {
-        "category": "Robes",
-        "name": "Robe salopette transformable",
-        "description": [
-          "Élégante robe salopette transformable — une base polyvalente pour les looks professionnels et de soirée. La coupe minimaliste est complétée par des détails bien pensés : des bretelles réglables qui se croisent dans le dos, créant un accent raffiné et permettant un ajustement personnalisé.",
-          "Longueur midi, taille légèrement marquée et pli soigné à l’avant pour une silhouette gracieuse. Une fente arrière assure un confort de mouvement optimal.",
-          "Se combine parfaitement avec une chemise classique, un col roulé ou un top — selon le style et l’occasion.",
-          "Tissu : laine de costume.",
-          "Détails :",
-          "• Longueur midi",
-          "• Bretelles réglables (différentes options de fixation)",
-          "• Fente arrière discrète"
-        ],
-        "colors": [
-          "noir"
-        ]
-      },
-      "UA": {
-        "category": "Сукні",
-        "name": "Сарафан-трансформер",
-        "description": [
-          "Елегантний сарафан-трансформер — універсальна база для ділових та вечірніх образів. Лаконічний крій поєднується з продуманими деталями: регульовані бретелі, що перехрещуються на спинці, формують акцент і дозволяють змінювати посадку під себе.",
-          "Модель виконана у довжині міді, з м’яким приталенням та акуратною складкою спереду, яка додає силуету витонченості. Ззаду — зручний розріз для комфорту рухів.",
-          "Ідеально комбінується з класичною сорочкою, гольфом або топом — залежно від стилю та настрою.",
-          "Тканина: костюмна вовна.",
-          "Деталі:",
-          "• довжина міді",
-          "• регульовані бретелі (можна змінювати спосіб фіксації)",
-          "• акуратний розріз ззаду"
-        ],
-        "colors": [
-          "чорний"
-        ]
-      },
-      "RU": {
-        "category": "Платья",
-        "name": "Сарафан-трансформер",
-        "description": [
-          "Элегантный сарафан-трансформер — универсальная база для деловых и вечерних образов. Лаконичный крой сочетается с продуманными деталями: регулируемые бретели, перекрещивающиеся на спине, создают акцент и позволяют подогнать посадку под себя.",
-          "Модель длины миди с мягким приталиванием и аккуратной складкой спереди, добавляющей изящности силуэту. Сзади — удобный разрез для свободы движений.",
-          "Идеально сочетается с классической рубашкой, водолазкой или топом — в зависимости от стиля и настроения.",
-          "Ткань: костюмная шерсть.",
-          "Детали:",
-          "• длина миди",
-          "• регулируемые бретели (вариативная фиксация)",
-          "• аккуратный разрез сзади"
         ],
         "colors": [
           "чёрный"
@@ -9321,177 +9187,6 @@
     }
   },
   {
-    "id": 236,
-    "price": 2000,
-    "isTop": false,
-    "isNew": false,
-    "isSpecialOffer": false,
-    "sku": "99377",
-    "size": "XS S M L XL",
-    "category": "Shirts",
-    "image": "/Shirts/Camel Blouse/1.avif",
-    "images": [
-      "/Shirts/Camel Blouse/2.avif",
-      "/Shirts/Camel Blouse/3.avif",
-      "/Shirts/Camel Blouse/4.avif"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "translations": {
-      "EN": {
-        "category": "Shirts",
-        "name": "Camel Blouse",
-        "description": [
-          "This blouse is created for those who appreciate comfort, femininity, and a refined silhouette in every movement. The light, airy fabric drapes softly, forming beautiful waves, while thoughtful details make this piece truly unique.",
-          "Fabric: 100% viscose.",
-          "Details:",
-          "• Elastic gathering at the neckline gently highlights the collarbones and allows you to adjust the fit. The back tie adds a romantic touch and ensures the blouse fits perfectly.",
-          "• Wide, airy sleeves with structured cuffs and button closure create an elegant look and make the silhouette lighter and more graceful."
-        ],
-        "colors": [
-          "camel"
-        ]
-      },
-      "FR": {
-        "category": "Chemises",
-        "name": "Blouse Camel",
-        "description": [
-          "Cette blouse est conçue pour celles qui aiment le confort, la féminité et une silhouette élégante dans chaque mouvement. Le tissu léger et aérien tombe délicatement, formant de belles vagues, tandis que les détails soignés rendent cette pièce vraiment unique.",
-          "Tissu : 100 % viscose.",
-          "Détails :",
-          "• Fronces élastiques à l’encolure soulignant délicatement la ligne des clavicules et permettant d’ajuster la coupe. Le lien au dos ajoute une touche romantique et assure un ajustement parfait.",
-          "• Manches larges et aérées avec poignets structurés et bouton pour un look raffiné et une silhouette gracieuse."
-        ],
-        "colors": [
-          "camel"
-        ]
-      },
-      "UA": {
-        "category": "Сорочки",
-        "name": "Блуза «Camel»",
-        "description": [
-          "Ця блуза створена для тих, хто любить комфорт, жіночність і виразний силует у кожному русі. Легка, повітряна тканина м’яко спадає, утворюючи красиві хвилі, а продумані деталі роблять модель по-справжньому унікальною.",
-          "Тканина: 100% віскоза.",
-          "Деталі:",
-          "• Еластична збірка по горловині ніжно підкреслює лінію ключиць і дозволяє регулювати посадку. Зав’язка ззаду додає романтичного акценту та дозволяє блузі сидіти ідеально.",
-          "• Широкий, повітряний рукав зі структурованою манжетою на ґудзику створює вишуканий образ і робить силует легшим та витонченішим."
-        ],
-        "colors": [
-          "кемел"
-        ]
-      },
-      "RU": {
-        "category": "Рубашки",
-        "name": "Блуза «Camel»",
-        "description": [
-          "Эта блуза создана для тех, кто любит комфорт, женственность и выразительный силуэт в каждом движении. Легкая воздушная ткань мягко ниспадает, образуя красивые волны, а продуманные детали делают модель по-настоящему уникальной.",
-          "Ткань: 100% вискоза.",
-          "Детали:",
-          "• Эластичная сборка по горловине мягко подчеркивает линию ключиц и позволяет регулировать посадку. Завязка сзади добавляет романтичный акцент и обеспечивает идеальную посадку.",
-          "• Широкий воздушный рукав со структурированной манжетой на пуговице создает утонченный образ и делает силуэт легче и изящнее."
-        ],
-        "colors": [
-          "кемел"
-        ]
-      }
-    }
-  },
-  {
-    "id": 234,
-    "price": 3100,
-    "isTop": false,
-    "isNew": false,
-    "isSpecialOffer": false,
-    "sku": "99375",
-    "size": "XS S M L XL",
-    "category": "Dresses",
-    "image": "/Dress/Cocoa Line Belt Dress/1.avif",
-    "images": [
-      "/Dress/Cocoa Line Belt Dress/2.avif",
-      "/Dress/Cocoa Line Belt Dress/3.avif",
-      "/Dress/Cocoa Line Belt Dress/4.avif",
-      "/Dress/Cocoa Line Belt Dress/5.avif"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "translations": {
-      "EN": {
-        "category": "Dresses",
-        "name": "Cocoa Line Dress with Belt",
-        "description": [
-          "This dress embodies comfort, warmth, and understated luxury, visible in every detail. The perfect option for the office, meetings, walks, or even travel — a truly versatile everyday look.",
-          "Fabric: Dense premium suit fabric that holds its shape while remaining soft and comfortable against the skin.",
-          "[ Composition: 75% viscose, 25% polyester ]",
-          "Details:",
-          "• Straight midi silhouette — elongates the figure and creates a refined body line.",
-          "• Functional chest flaps — add a light accent to the neckline and create a structured look.",
-          "• 3/4 sleeves with wide cuffs — reveal the wrists and add lightness to the silhouette."
-        ],
-        "colors": [
-          "cocoa"
-        ]
-      },
-      "FR": {
-        "category": "Robes",
-        "name": "Robe «Cocoa Line» avec Ceinture",
-        "description": [
-          "Cette robe incarne le confort, la chaleur et le luxe discret visible dans chaque détail. Parfaite pour le bureau, les réunions, les promenades ou les voyages — une tenue polyvalente pour tous les jours.",
-          "Tissu : tissu de costume dense de qualité supérieure qui garde sa forme tout en restant doux et agréable sur la peau.",
-          "[ Composition : 75% viscose, 25% polyester ]",
-          "Détails :",
-          "• Silhouette droite midi — allonge la silhouette et affine la ligne du corps.",
-          "• Poches à rabat sur la poitrine — ajoutent une touche d’accent et de structure au décolleté.",
-          "• Manches 3/4 avec larges poignets — dévoilent les poignets et apportent de la légèreté à la silhouette."
-        ],
-        "colors": [
-          "cacao"
-        ]
-      },
-      "UA": {
-        "category": "Сукні",
-        "name": "Сукня «Cocoa line» з поясом",
-        "description": [
-          "Ця сукня — про комфорт, тепло та стриману розкіш, яку видно в кожній деталі. Ідеальний варіант для офісу, зустрічей, прогулянок і навіть подорожей — універсальний образ на кожен день.",
-          "Тканина: Щільна костюмна тканина преміум-класу, що тримає форму, але при цьому приємна до тіла.",
-          "[ Склад: 75% віскоза, 25% поліестер ]",
-          "Деталі:",
-          "• Прямий силует міді — витягує фігуру та робить лінію тіла більш витонченою.",
-          "• Функціональні нагрудні клапани — створюють легкий акцент у зоні декольте та додають образу структури.",
-          "• Рукав 3/4 із широким манжетом — відкриває зап’ястя й додає легкості силуету."
-        ],
-        "colors": [
-          "какао"
-        ]
-      },
-      "RU": {
-        "category": "Платья",
-        "name": "Платье «Cocoa Line» с поясом",
-        "description": [
-          "Это платье — про комфорт, тепло и сдержанную роскошь, заметную в каждой детали. Идеальный вариант для офиса, встреч, прогулок и даже путешествий — универсальный образ на каждый день.",
-          "Ткань: плотная костюмная ткань премиум-класса, держащая форму, но мягкая и приятная к телу.",
-          "[ Состав: 75% вискоза, 25% полиэстер ]",
-          "Детали:",
-          "• Прямой силуэт миди — визуально вытягивает фигуру и делает линии тела более изящными.",
-          "• Функциональные нагрудные клапаны — добавляют акцент в зоне декольте и создают структурный вид.",
-          "• Рукав 3/4 с широким манжетом — открывает запястья и придаёт лёгкость силуэту."
-        ],
-        "colors": [
-          "какао"
-        ]
-      }
-    }
-  },
-  {
     "id": 233,
     "price": 3100,
     "isTop": false,
@@ -11023,96 +10718,6 @@
         "colors": [
           "джинс",
           "полынь"
-        ]
-      }
-    }
-  },
-  {
-    "id": 210,
-    "price": 1900,
-    "isTop": false,
-    "isNew": false,
-    "isSpecialOffer": false,
-    "sku": "99352",
-    "size": "XS S M L XL",
-    "category": "Shirts",
-    "image": "/Shirts/Leopard Shirt/1.avif",
-    "images": [
-      "/Shirts/Leopard Shirt/2.avif",
-      "/Shirts/Leopard Shirt/3.avif",
-      "/Shirts/Leopard Shirt/4.avif",
-      "/Shirts/Leopard Shirt/5.avif"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "translations": {
-      "EN": {
-        "category": "Shirts",
-        "name": "Leopard Shirt",
-        "description": [
-          "Light, airy, and full of character — this leopard-print batiste shirt is made for women who embrace both tenderness and boldness.",
-          "The semi-transparent natural fabric flows beautifully in motion, while the animal print in chocolate, beige, and caramel tones adds depth and allure.",
-          "Fabric: premium-quality natural batiste.",
-          "Details:",
-          "• Classic collar",
-          "• Full-length button closure",
-          "• Relaxed fit that can be easily tucked into pants or a skirt"
-        ],
-        "colors": [
-          "leopard"
-        ]
-      },
-      "FR": {
-        "category": "Chemises",
-        "name": "Chemise léopard",
-        "description": [
-          "Légère, aérienne et pleine de caractère — une chemise en batiste fine à imprimé léopard pour les femmes à la fois douces et audacieuses.",
-          "Le tissu semi-transparent capte la lumière, créant un effet fluide et délicat, tandis que l’imprimé aux tons chocolat, beige et caramel ajoute de la profondeur.",
-          "Tissu : batiste naturelle de qualité supérieure.",
-          "Détails :",
-          "• Col classique",
-          "• Fermeture boutonnée sur toute la longueur",
-          "• Coupe ample facilement rentrable dans un pantalon ou une jupe"
-        ],
-        "colors": [
-          "léopard"
-        ]
-      },
-      "UA": {
-        "category": "Сорочки",
-        "name": "Леопардова сорочка",
-        "description": [
-          "Легка, невагома й водночас харизматична — сорочка з тонкого батисту з анімалістичним принтом створена для жінок, які вміють бути ніжними й сміливими водночас.",
-          "Напівпрозора тканина грає на світлі, створюючи м’який ефект струмування, а принт у відтінках шоколаду, бежу та карамелі додає глибини образу.",
-          "Тканина: натуральний батист преміум якості.",
-          "Деталі:",
-          "• Класичний комір",
-          "• Застібка на гудзики по всій довжині",
-          "• Вільний крій, який легко заправити в брюки чи спідницю"
-        ],
-        "colors": [
-          "леопард"
-        ]
-      },
-      "RU": {
-        "category": "Рубашки",
-        "name": "Леопардовая рубашка",
-        "description": [
-          "Легкая, воздушная и харизматичная — рубашка из тонкого батиста с анималистичным принтом создана для женщин, умеющих сочетать нежность и смелость.",
-          "Полупрозрачная ткань красиво играет на свету, а принт в оттенках шоколада, бежа и карамели добавляет глубины образу.",
-          "Ткань: натуральный батист премиум качества.",
-          "Детали:",
-          "• Классический воротник",
-          "• Застёжка на пуговицы по всей длине",
-          "• Свободный крой, легко заправляется в брюки или юбку"
-        ],
-        "colors": [
-          "леопард"
         ]
       }
     }
@@ -14018,324 +13623,6 @@
     }
   },
   {
-    "id": 166,
-    "price": 2000,
-    "isTop": false,
-    "isNew": false,
-    "isSpecialOffer": false,
-    "sku": "98819",
-    "size": "XS S M L XL",
-    "category": "Shirts",
-    "image": "/Shirts/Cocoa line Blouse/1.avif",
-    "images": [
-      "/Shirts/Cocoa line Blouse/2.avif",
-      "/Shirts/Cocoa line Blouse/3.avif",
-      "/Shirts/Cocoa line Blouse/4.avif",
-      "/Shirts/Cocoa line Blouse/5.avif",
-      "/Shirts/Cocoa line Blouse/6.avif",
-      "/Shirts/Cocoa line Blouse/7.avif",
-      "/Shirts/Cocoa line Blouse/8.avif",
-      "/Shirts/Cocoa line Blouse/9.avif",
-      "/Shirts/Cocoa line Blouse/10.avif",
-      "/Shirts/Cocoa line Blouse/11.avif",
-      "/Shirts/Cocoa line Blouse/12.avif",
-      "/Shirts/Cocoa line Blouse/13.avif"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "translations": {
-      "EN": {
-        "category": "Shirts",
-        "name": "Cocoa line Blouse",
-        "description": [
-          "Delicate yet stylish blouse that adds lightness to your look.",
-          "Perfectly pairs with classic skirts, trousers, or jeans, creating both office and more relaxed outfits.",
-          "Fabric:",
-          "[Blouse: 100% viscose]",
-          "Details:",
-          "• Loose fit with soft draping for a feminine silhouette.",
-          "• Back tie at the neck adds elegance and accent."
-        ],
-        "colors": [
-          "sage",
-          "blue",
-          "marsala"
-        ]
-      },
-      "FR": {
-        "category": "Chemises",
-        "name": "Blouse «Cocoa line»",
-        "description": [
-          "Blouse délicate et élégante qui ajoute de la légèreté à votre look.",
-          "Parfaitement associée aux jupes classiques, pantalons ou jeans, créant des tenues à la fois pour le bureau et plus décontractées.",
-          "Tissu :",
-          "[Blouse : 100% viscose]",
-          "Détails :",
-          "• Coupe ample avec drapés doux pour une silhouette féminine.",
-          "• Lien à l’arrière du cou pour ajouter élégance et accent."
-        ],
-        "colors": [
-          "sauge",
-          "bleu",
-          "marsala"
-        ]
-      },
-      "UA": {
-        "category": "Сорочки",
-        "name": "Блуза «Cocoa line»",
-        "description": [
-          "Ніжна й водночас стильна блуза, що додає образу легкості.",
-          "Ідеально комбінується з класичними спідницями, брюками чи джинсами, створюючи як офісні, так і більш розслаблені образи.",
-          "Тканина:",
-          "[Склад блузи: 100% віскоза]",
-          "Деталі:",
-          "• Вільний крій і м’які драпіровки створюють жіночний силует.",
-          "• Зав’язка ззаду на шиї додає витонченості та акценту."
-        ],
-        "colors": [
-          "полинь",
-          "синій",
-          "марсала"
-        ]
-      },
-      "RU": {
-        "category": "Рубашки",
-        "name": "Блуза «Cocoa line»",
-        "description": [
-          "Нежная и одновременно стильная блуза, которая добавляет легкости образу.",
-          "Идеально сочетается с классическими юбками, брюками или джинсами, создавая как офисные, так и более расслабленные образы.",
-          "Ткань:",
-          "[Состав блузы: 100% вискоза]",
-          "Детали:",
-          "• Свободный крой с мягкими драпировками создаёт женственный силуэт.",
-          "• Завязка сзади на шее добавляет утончённости и акцент."
-        ],
-        "colors": [
-          "полынь",
-          "синий",
-          "марсала"
-        ]
-      }
-    }
-  },
-  {
-    "id": 165,
-    "price": 4000,
-    "isTop": false,
-    "isNew": false,
-    "isSpecialOffer": false,
-    "sku": "98818",
-    "size": "XS S M L XL",
-    "category": "Costumes",
-    "image": "/Costumes/Cocoa line Set/1.avif",
-    "images": [
-      "/Costumes/Cocoa line Set/2.avif",
-      "/Costumes/Cocoa line Set/3.avif",
-      "/Costumes/Cocoa line Set/4.avif",
-      "/Costumes/Cocoa line Set/5.avif",
-      "/Costumes/Cocoa line Set/6.avif",
-      "/Costumes/Cocoa line Set/7.avif",
-      "/Costumes/Cocoa line Set/8.avif",
-      "/Costumes/Cocoa line Set/9.avif"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "translations": {
-      "EN": {
-        "category": "Costumes",
-        "name": "Cocoa line Set",
-        "description": [
-          "Elegant duo for the modern woman who values femininity and comfort. Lightweight blouse made of airy fabric perfectly pairs with a pencil skirt, creating a harmonious and stylish look.",
-          "This set is suitable for both office meetings and evening outings where it is important to look restrained yet sophisticated.",
-          "Fabric:",
-          "[Blouse: 100% viscose. Skirt: 75% viscose, 25% polyester]",
-          "Details:",
-          "• Blouse: loose fit with soft draping for a feminine silhouette.",
-          "• Back tie at the neck adds elegance and accent.",
-          "• Skirt: pencil silhouette with high waist that visually elongates the figure and slims the body.",
-          "• Waistband accentuates the waist, creating a feminine touch."
-        ],
-        "colors": [
-          "sage",
-          "blue"
-        ]
-      },
-      "FR": {
-        "category": "Costumes",
-        "name": "Ensemble «Cocoa line»",
-        "description": [
-          "Duo élégant pour la femme moderne qui apprécie la féminité et le confort. Blouse légère en tissu aérien parfaitement associée à une jupe crayon, créant un look harmonieux et stylé.",
-          "Cet ensemble convient aussi bien aux réunions de bureau qu’aux sorties du soir où il est important d’avoir un style sobre mais raffiné.",
-          "Tissu :",
-          "[Blouse : 100% viscose. Jupe : 75% viscose, 25% polyester]",
-          "Détails :",
-          "• Blouse : coupe ample avec drapés doux pour une silhouette féminine.",
-          "• Lien à l’arrière du cou pour ajouter élégance et accent.",
-          "• Jupe : coupe crayon avec taille haute qui allonge visuellement la silhouette et affine le corps.",
-          "• La ceinture souligne la taille, créant une touche féminine."
-        ],
-        "colors": [
-          "sauge",
-          "bleu"
-        ]
-      },
-      "UA": {
-        "category": "Костюми",
-        "name": "Костюм «Cocoa line»",
-        "description": [
-          "Елегантний дует для сучасної жінки, яка цінує жіночність та комфорт. Легка блуза з повітряної тканини ідеально поєднується зі спідницею-олівцем, створюючи гармонійний та стильний образ.",
-          "Цей комплект підходить як для офісних зустрічей, так і для вечірніх виходів, де важливо виглядати стримано, але вишукано.",
-          "Тканина:",
-          "[Склад блузи: 100% віскоза. Склад спідниці: 75% віскоза, 25% поліестер]",
-          "Деталі:",
-          "• Блуза: вільний крій і м’які драпіровки створюють жіночний силует.",
-          "• Зав’язка ззаду на шиї додає витонченості та акценту.",
-          "• Спідниця: фасону олівець із високою посадкою, який візуально витягує силует і робить фігуру стрункішою.",
-          "• Пояс підкреслює талію, створюючи жіночний акцент."
-        ],
-        "colors": [
-          "полинь",
-          "синій"
-        ]
-      },
-      "RU": {
-        "category": "Костюмы",
-        "name": "Костюм «Cocoa line»",
-        "description": [
-          "Элегантный дуэт для современной женщины, которая ценит женственность и комфорт. Лёгкая блуза из воздушной ткани идеально сочетается с юбкой-карандаш, создавая гармоничный и стильный образ.",
-          "Этот комплект подходит как для офисных встреч, так и для вечерних выходов, где важно выглядеть сдержанно, но изысканно.",
-          "Ткань:",
-          "[Блуза: 100% вискоза. Юбка: 75% вискоза, 25% полиэстер]",
-          "Детали:",
-          "• Блуза: свободный крой с мягкими драпировками создаёт женственный силуэт.",
-          "• Завязка сзади на шее добавляет утончённости и акцент.",
-          "• Юбка: фасон карандаш с высокой посадкой, визуально вытягивает силуэт и делает фигуру стройнее.",
-          "• Пояс подчёркивает талию, создавая женственный акцент."
-        ],
-        "colors": [
-          "полынь",
-          "синий"
-        ]
-      }
-    }
-  },
-  {
-    "id": 164,
-    "price": 2000,
-    "isTop": false,
-    "isNew": false,
-    "isSpecialOffer": false,
-    "sku": "98817",
-    "size": "XS S M L XL",
-    "category": "Skirts",
-    "image": "/Skirts/Cocoa line Skirt/1.avif",
-    "images": [
-      "/Skirts/Cocoa line Skirt/2.avif",
-      "/Skirts/Cocoa line Skirt/3.avif",
-      "/Skirts/Cocoa line Skirt/4.avif",
-      "/Skirts/Cocoa line Skirt/5.avif",
-      "/Skirts/Cocoa line Skirt/6.avif",
-      "/Skirts/Cocoa line Skirt/7.avif",
-      "/Skirts/Cocoa line Skirt/8.avif",
-      "/Skirts/Cocoa line Skirt/9.avif"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "translations": {
-      "EN": {
-        "category": "Skirts",
-        "name": "Cocoa line Skirt",
-        "description": [
-          "Feminine classic in a modern interpretation. This skirt highlights the silhouette while maintaining comfort and elegance, becoming a versatile wardrobe essential.",
-          "Perfectly pairs with classic heels for an office look or with more relaxed items like an oversized shirt or sweater.",
-          "Fabric: Premium dense suiting fabric that holds its shape yet feels pleasant on the skin.",
-          "[Composition: 75% viscose, 25% polyester]",
-          "Details:",
-          "• Pencil silhouette with a high waist that visually elongates the figure and makes it slimmer.",
-          "• Midi length adds elegance to the look.",
-          "• Back slit provides ease of movement.",
-          "• Waistband accentuates the waist, creating a feminine touch."
-        ],
-        "colors": [
-          "sage",
-          "blue"
-        ]
-      },
-      "FR": {
-        "category": "Jupes",
-        "name": "Jupe «Cocoa line»",
-        "description": [
-          "Classique féminine dans une interprétation moderne. Cette jupe souligne la silhouette tout en conservant confort et élégance, devenant ainsi une pièce de base universelle de votre garde-robe.",
-          "Se combine parfaitement avec des talons classiques pour un look de bureau ou avec des pièces plus décontractées comme une chemise oversize ou un pull.",
-          "Tissu : tissu de costume dense de qualité premium, qui garde sa forme et reste agréable sur la peau.",
-          "[Composition : 75% viscose, 25% polyester]",
-          "Détails :",
-          "• Coupe crayon avec taille haute qui allonge visuellement la silhouette et affine la figure.",
-          "• Longueur midi qui ajoute de l’élégance.",
-          "• Fente discrète à l’arrière pour plus de confort en mouvement.",
-          "• Ceinture qui souligne la taille et crée une touche féminine."
-        ],
-        "colors": [
-          "sauge",
-          "bleu"
-        ]
-      },
-      "UA": {
-        "category": "Спідниці",
-        "name": "Спідниця «Cocoa line»",
-        "description": [
-          "Жіночна класика у сучасному виконанні. Ця спідниця підкреслює силует, зберігаючи комфорт і витонченість, і стане універсальною базою у вашому гардеробі.",
-          "Цю спідницю можна комбінувати як із класичними підборами для офісного образу, так і з більш розслабленими речами — наприклад, сорочкою oversize чи светром.",
-          "Тканина: щільна костюмна тканина преміум-класу, що тримає форму, але при цьому приємна до тіла.",
-          "[Склад: 75% віскоза, 25% поліестер]",
-          "Деталі:",
-          "• Фасон олівець із високою посадкою, який візуально витягує силует і робить фігуру стрункішою.",
-          "• Довжина міді додає образу елегантності.",
-          "• Позаду — акуратний розріз для зручності рухів.",
-          "• Пояс підкреслює талію, створюючи жіночний акцент."
-        ],
-        "colors": [
-          "полинь",
-          "синій"
-        ]
-      },
-      "RU": {
-        "category": "Юбки",
-        "name": "Юбка «Cocoa line»",
-        "description": [
-          "Женственная классика в современном исполнении. Эта юбка подчеркивает силуэт, сохраняя комфорт и изящество, и станет универсальной базой в вашем гардеробе.",
-          "Её можно сочетать как с классическими туфлями на каблуке для офисного образа, так и с более расслабленными вещами — например, с рубашкой oversize или свитером.",
-          "Ткань: плотная костюмная ткань премиум-класса, которая держит форму и приятна к телу.",
-          "[Состав: 75% вискоза, 25% полиэстер]",
-          "Детали:",
-          "• Фасон карандаш с высокой посадкой, визуально вытягивающий силуэт и стройнящий фигуру.",
-          "• Длина миди добавляет образу элегантности.",
-          "• Сзади аккуратный разрез для удобства движения.",
-          "• Пояс подчеркивает талию, создавая женственный акцент."
-        ],
-        "colors": [
-          "полынь",
-          "синий"
-        ]
-      }
-    }
-  },
-  {
     "id": 163,
     "price": 2100,
     "isTop": false,
@@ -15365,93 +14652,6 @@
         ],
         "colors": [
           "масло"
-        ]
-      }
-    }
-  },
-  {
-    "id": 149,
-    "price": 5900,
-    "isTop": false,
-    "isNew": false,
-    "isSpecialOffer": false,
-    "sku": "98802",
-    "size": "XS S M L XL",
-    "category": "Costumes",
-    "image": "/Costumes/Costume with Vest-Shirt/1.avif",
-    "images": [
-      "/Costumes/Costume with Vest-Shirt/2.avif",
-      "/Costumes/Costume with Vest-Shirt/3.avif",
-      "/Costumes/Costume with Vest-Shirt/4.avif",
-      "/Costumes/Costume with Vest-Shirt/5.avif",
-      "/Costumes/Costume with Vest-Shirt/6.avif"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "translations": {
-      "EN": {
-        "category": "Costumes",
-        "name": "Costume with Vest-Shirt",
-        "description": [
-          "White linen Costume: linen wrap vest with batiste shirt elements and high-waisted palazzo trousers.",
-          "Fabric: 100% natural linen. Doesn’t itch and is nearly opaque.",
-          "Details:",
-          "• wrap design",
-          "• batiste shirt-style inserts",
-          "• high waist"
-        ],
-        "colors": [
-          "white"
-        ]
-      },
-      "FR": {
-        "category": "Costumes",
-        "name": "Costume avec gilet-chemise",
-        "description": [
-          "Costume blanc : gilet portefeuille en lin avec éléments de chemise en batiste et pantalon palazzo taille haute.",
-          "Tissu : 100% lin naturel. Ne gratte pas et presque pas transparent.",
-          "Détails :",
-          "• coupe portefeuille",
-          "• inserts chemise en batiste",
-          "• taille haute"
-        ],
-        "colors": [
-          "blanc"
-        ]
-      },
-      "UA": {
-        "category": "Костюми",
-        "name": "Костюм із жилетом-сорочкою",
-        "description": [
-          "Білий костюм: лляний жилет з елементами батистової сорочки із принтом та брюки-палаццо на високій посадці.",
-          "Тканина: 100% натуральний льон. Не колеться та майже не просвічує.",
-          "Деталі:",
-          "• фасон на запах",
-          "• батистові вставки у вигляді сорочки",
-          "• висока посадка"
-        ],
-        "colors": [
-          "білий"
-        ]
-      },
-      "RU": {
-        "category": "Костюмы",
-        "name": "Костюм с жилетом-рубашкой",
-        "description": [
-          "Белый костюм: льняной жилет с элементами батистовой рубашки с принтом и брюки-палаццо с высокой посадкой.",
-          "Ткань: 100% натуральный лён. Не колется и почти не просвечивает.",
-          "Детали:",
-          "• фасон на запах",
-          "• батистовые вставки в виде рубашки",
-          "• высокая посадка"
-        ],
-        "colors": [
-          "белый"
         ]
       }
     }
@@ -17638,78 +16838,6 @@
     }
   },
   {
-    "id": 111,
-    "price": 4000,
-    "isTop": false,
-    "isNew": false,
-    "isSpecialOffer": false,
-    "sku": "67212",
-    "size": "XS S M L XL",
-    "category": "Dresses",
-    "image": "/Dress/Marianna Dress/1.avif",
-    "images": [
-      "/Dress/Marianna Dress/2.avif",
-      "/Dress/Marianna Dress/3.avif",
-      "/Dress/Marianna Dress/4.avif",
-      "/Dress/Marianna Dress/5.avif"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "translations": {
-      "EN": {
-        "category": "Dresses",
-        "name": "Marianna Dress",
-        "description": [
-          "A delicate and unique dress with a straight cut and comfortable midi length. Perfect for the summer season.",
-          "Fabric: long-staple muslin made from 100% cotton. Light and soft to the touch.",
-          "Details:",
-          "• Exquisite lace on the neckline area",
-          "• Loose fit",
-          "• Wide cropped sleeves"
-        ],
-        "colors": [
-          "milk"
-        ]
-      },
-      "FR": {
-        "category": "Robes",
-        "name": "Robe Marianna",
-        "description": "Une robe confectionnée en mousseline à longues fibres.\nTissu : mousseline 100 % coton, légère et douce au toucher.",
-        "colors": [
-          "lait"
-        ]
-      },
-      "UA": {
-        "category": "Сукні",
-        "name": "Сукня 'Marianna'",
-        "description": [
-          "Ніжна та неповторна сукня прямого фасону та комфортної міді довжини. Ідеальна для літнього сезону.",
-          "Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
-          "Деталі:",
-          "• Вишукане мереживо на зоні декольте",
-          "• Вільний крій",
-          "• Широкі вкорочені рукава"
-        ],
-        "colors": [
-          "молоко"
-        ]
-      },
-      "RU": {
-        "category": "Платья",
-        "name": "Платье 'Марианна'",
-        "description": "Платье из длинноволокнистого муслина.\nТкань: муслин из 100% хлопка, легкая и мягкая на ощупь.",
-        "colors": [
-          "молоко"
-        ]
-      }
-    }
-  },
-  {
     "id": 110,
     "price": 1900,
     "isTop": false,
@@ -17884,163 +17012,6 @@
     }
   },
   {
-    "id": 104,
-    "price": 3300,
-    "isTop": false,
-    "isNew": false,
-    "isSpecialOffer": false,
-    "sku": "67211",
-    "size": "XS S M L XL",
-    "category": "Dresses",
-    "image": "/Dress/Open Back Sundress/1.avif",
-    "images": [
-      "/Dress/Open Back Sundress/2.avif",
-      "/Dress/Open Back Sundress/3.avif",
-      "/Dress/Open Back Sundress/4.avif",
-      "/Dress/Open Back Sundress/5.avif",
-      "/Dress/Open Back Sundress/6.avif",
-      "/Dress/Open Back Sundress/7.avif",
-      "/Dress/Open Back Sundress/8.avif"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "translations": {
-      "EN": {
-        "category": "Dresses",
-        "name": "Open Back Sundress",
-        "description": [
-          "Muslin sundress with an open back — your perfect base for the summer season. You'll feel only lightness and comfort in it.",
-          "Fabric: long-staple muslin made of 100% cotton. Light and soft to the touch.",
-          "Details:",
-          "• Loose fit",
-          "• Open back with ties on the straps",
-          "• Midi length"
-        ],
-        "colors": [
-          "water",
-          "powder"
-        ]
-      },
-      "FR": {
-        "category": "Robes",
-        "name": "Robe d'été à dos ouvert",
-        "description": "Une robe d'été avec un design à dos ouvert.\nTissu : mousseline à longues fibres en 100 % coton. Légère et douce au toucher.",
-        "colors": [
-          "eau",
-          "poudre"
-        ]
-      },
-      "UA": {
-        "category": "Сукні",
-        "name": "Сарафан із відкритою спинкою",
-        "description": [
-          "Мусліновий сарафан із відкритою спинкою — твоя ідеальна база на літній сезон. У ньому ти будеш відчувати тільки легкість та комфорт.",
-          "Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
-          "Деталі:",
-          "• Вільний крій",
-          "• Відкрита спинка та завʼязки на бретелях",
-          "• Міді довжина"
-        ],
-        "colors": [
-          "колір води",
-          "пудра"
-        ]
-      },
-      "RU": {
-        "category": "Платья",
-        "name": "Сарафан с открытой спиной",
-        "description": "Сарафан с дизайном открытой спины.\nТкань: длинноволокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь.",
-        "colors": [
-          "цвет воды",
-          "пудра"
-        ]
-      }
-    }
-  },
-  {
-    "id": 103,
-    "price": 3300,
-    "isTop": false,
-    "isNew": false,
-    "isSpecialOffer": false,
-    "sku": "67210",
-    "size": "XS S M L XL",
-    "category": "Dresses",
-    "image": "/Dress/Lace Sundress/1.avif",
-    "images": [
-      "/Dress/Lace Sundress/2.avif",
-      "/Dress/Lace Sundress/3.avif",
-      "/Dress/Lace Sundress/4.avif",
-      "/Dress/Lace Sundress/5.avif",
-      "/Dress/Lace Sundress/6.avif",
-      "/Dress/Lace Sundress/7.avif"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "translations": {
-      "EN": {
-        "category": "Dresses",
-        "name": "Lace Sundress",
-        "description": [
-          "Muslin sundress adorned with delicate lace on the chest and skirt. A romantic mood is definitely guaranteed.",
-          "Fabric: long-staple muslin made of 100% cotton. Light and soft to the touch.",
-          "Details:",
-          "• Loose fit with wide straps that tie",
-          "• Delicate lace",
-          "• Midi length"
-        ],
-        "colors": [
-          "milk",
-          "powder"
-        ]
-      },
-      "FR": {
-        "category": "Robes",
-        "name": "Robe d'été en dentelle",
-        "description": "Une robe d'été ornée de détails en dentelle.\nTissu : mousseline à longues fibres en 100 % coton. Légère et douce au toucher.",
-        "colors": [
-          "lait",
-          "poudre"
-        ]
-      },
-      "UA": {
-        "category": "Сукні",
-        "name": "Сарафан із мереживом",
-        "description": [
-          "Мусліновий сарафан оздоблений ніжним мереживом на грудях та на спідниці. Романтичний настрій вам точно буде забезпечено.",
-          "Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
-          "Деталі:",
-          "• Вільний крій та широкі бретелі на завʼязках",
-          "• Ніжне мереживо",
-          "• Міді довжина"
-        ],
-        "colors": [
-          "молоко",
-          "пудра"
-        ]
-      },
-      "RU": {
-        "category": "Платья",
-        "name": "Сарафан с кружевом",
-        "description": "Сарафан с отделкой кружевом.\nТкань: длинноволокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь.",
-        "colors": [
-          "молоко",
-          "пудра"
-        ]
-      }
-    }
-  },
-  {
     "id": 97,
     "price": 2800,
     "isTop": false,
@@ -18108,213 +17079,6 @@
         "colors": [
           "голубой",
           "синий"
-        ]
-      }
-    }
-  },
-  {
-    "id": 96,
-    "price": 2100,
-    "isTop": false,
-    "isNew": false,
-    "isSpecialOffer": false,
-    "sku": "98816",
-    "size": "XS S M L XL",
-    "category": "Skirts",
-    "image": "/Skirts/Wrap Skirt/1.avif",
-    "images": [
-      "/Skirts/Wrap Skirt/2.avif",
-      "/Skirts/Wrap Skirt/3.avif",
-      "/Skirts/Wrap Skirt/4.avif",
-      "/Skirts/Wrap Skirt/5.avif",
-      "/Skirts/Wrap Skirt/6.avif",
-      "/Skirts/Wrap Skirt/7.avif",
-      "/Skirts/Wrap Skirt/8.avif",
-      "/Skirts/Wrap Skirt/9.avif",
-      "/Skirts/Wrap Skirt/10.avif",
-      "/Skirts/Wrap Skirt/11.avif",
-      "/Skirts/Wrap Skirt/12.avif"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "translations": {
-      "EN": {
-        "category": "Skirts",
-        "name": "Wrap Skirt",
-        "description": "Midi wrap skirt with a slit on the leg.\nFabric: suit fabric (75% viscose, 25% polyester).",
-        "colors": [
-          "caramel",
-          "olive",
-          "denim"
-        ]
-      },
-      "FR": {
-        "category": "Jupes",
-        "name": "Jupe Portefeuille",
-        "description": "Jupe portefeuille midi avec une fente sur la jambe.\nTissu : tissu de costume (75% viscose, 25% polyester).",
-        "colors": [
-          "caramel",
-          "olive",
-          "denim"
-        ]
-      },
-      "UA": {
-        "category": "Спідниці",
-        "name": "Спідниця на запах",
-        "description": "Спідниця міді на запах із розрізом на ніжці.\nТканина: костюмна тканина (75% віскоза, 25% поліестер).",
-        "colors": [
-          "карамель",
-          "оливка",
-          "джинс"
-        ]
-      },
-      "RU": {
-        "category": "Юбки",
-        "name": "Юбка на запах",
-        "description": "Юбка миди на запах с разрезом на ножке.\nТкань: костюмная ткань (75% вискоза, 25% полиэстер).",
-        "colors": [
-          "карамель",
-          "оливка",
-          "джинс"
-        ]
-      }
-    }
-  },
-  {
-    "id": 94,
-    "price": 2000,
-    "isTop": false,
-    "isNew": false,
-    "isSpecialOffer": false,
-    "sku": "98814",
-    "size": "XS S M L XL",
-    "category": "Skirts",
-    "image": "/Skirts/Marie Leather Skirt/1.avif",
-    "images": [
-      "/Skirts/Marie Leather Skirt/2.avif",
-      "/Skirts/Marie Leather Skirt/3.avif",
-      "/Skirts/Marie Leather Skirt/4.avif",
-      "/Skirts/Marie Leather Skirt/5.avif"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "translations": {
-      "EN": {
-        "category": "Skirts",
-        "name": "Marie Leather Skirt",
-        "description": "Wrap midi skirt with asymmetry, high waist, and buttons.\nFabric: high-quality eco-leather with suede base (stretchy, doesn’t crack).",
-        "colors": [
-          "black"
-        ]
-      },
-      "FR": {
-        "category": "Jupes",
-        "name": "Jupe en Cuir Marie",
-        "description": "Jupe portefeuille midi avec asymétrie, taille haute et boutons.\nTissu : simili cuir de haute qualité avec base en daim (extensible, ne se fissure pas).",
-        "colors": [
-          "noir"
-        ]
-      },
-      "UA": {
-        "category": "Спідниці",
-        "name": "Шкіряна спідниця Marie",
-        "description": "Спідниця на запах міді довжини з асиметрією на високій посадці з ґудзиками.\nТканина: якісна екошкіра на замшевій основі (стрейчева, не тріскається).",
-        "colors": [
-          "чорний"
-        ]
-      },
-      "RU": {
-        "category": "Юбки",
-        "name": "Кожаная юбка Marie",
-        "description": "Юбка на запах миди длины с асимметрией на высокой посадке с пуговицами.\nТкань: качественная экокожа на замшевой основе (стрейчевая, не трескающаяся).",
-        "colors": [
-          "чёрный"
-        ]
-      }
-    }
-  },
-  {
-    "id": 93,
-    "price": 2150,
-    "isTop": false,
-    "isNew": false,
-    "isSpecialOffer": false,
-    "sku": "98813",
-    "size": "XS S M L XL",
-    "category": "Shirts",
-    "image": "/Shirts/Silk Lace Blouse/1.avif",
-    "images": [
-      "/Shirts/Silk Lace Blouse/2.avif",
-      "/Shirts/Silk Lace Blouse/3.avif",
-      "/Shirts/Silk Lace Blouse/14.avif",
-      "/Shirts/Silk Lace Blouse/15.avif",
-      "/Shirts/Silk Lace Blouse/4.avif",
-      "/Shirts/Silk Lace Blouse/5.avif",
-      "/Shirts/Silk Lace Blouse/6.avif",
-      "/Shirts/Silk Lace Blouse/7.avif",
-      "/Shirts/Silk Lace Blouse/8.avif",
-      "/Shirts/Silk Lace Blouse/9.avif",
-      "/Shirts/Silk Lace Blouse/10.avif",
-      "/Shirts/Silk Lace Blouse/11.avif",
-      "/Shirts/Silk Lace Blouse/12.avif",
-      "/Shirts/Silk Lace Blouse/13.avif"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "translations": {
-      "EN": {
-        "category": "Shirts",
-        "name": "Silk Blouse with Lace",
-        "description": "Delicate blouse with ruffles, lace, and a decorative button.\nFabric: Armani silk.",
-        "colors": [
-          "white",
-          "black",
-          "beige"
-        ]
-      },
-      "FR": {
-        "category": "Chemises",
-        "name": "Blouse en Soie avec Dentelle",
-        "description": "Blouse délicate avec volants, dentelle et bouton décoratif.\nTissu : soie Armani.",
-        "colors": [
-          "blanc",
-          "noir",
-          "beige"
-        ]
-      },
-      "UA": {
-        "category": "Сорочки",
-        "name": "Шовкова блуза з мереживом",
-        "description": "Ніжна блуза із воланами, мереживом та декоративним ґудзиком.\nТканина: шовк «Армані».",
-        "colors": [
-          "білий",
-          "чорний",
-          "бежевий"
-        ]
-      },
-      "RU": {
-        "category": "Рубашки",
-        "name": "Шелковая блуза с кружевом",
-        "description": "Нежная блуза с воланами, кружевом и декоративной пуговицей.\nТкань: шёлк «Армани».",
-        "colors": [
-          "белый",
-          "чёрный",
-          "бежевый"
         ]
       }
     }
@@ -18522,73 +17286,6 @@
         "name": "Брюки палаццо",
         "description": "Брюки палаццо с высокой посадкой и двумя карманами.\nТкань: костюмная ткань (75% вискоза, 25% полиэстер).",
         "colors": [
-          "чёрный"
-        ]
-      }
-    }
-  },
-  {
-    "id": 89,
-    "price": 1375,
-    "isTop": false,
-    "isNew": false,
-    "isSpecialOffer": false,
-    "sku": "98809",
-    "size": "XS S M L XL",
-    "category": "Sweaters",
-    "image": "/Sweaters/Knit Vest/6.avif",
-    "images": [
-      "/Sweaters/Knit Vest/7.avif",
-      "/Sweaters/Knit Vest/8.avif",
-      "/Sweaters/Knit Vest/9.avif",
-      "/Sweaters/Knit Vest/10.avif",
-      "/Sweaters/Knit Vest/11.avif",
-      "/Sweaters/Knit Vest/12.avif",
-      "/Sweaters/Knit Vest/13.avif",
-      "/Sweaters/Knit Vest/14.avif",
-      "/Sweaters/Knit Vest/15.avif"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "translations": {
-      "EN": {
-        "category": "Sweaters",
-        "name": "Knit Vest",
-        "description": "Oversized wool vest with a V-neck.\nFabric: knitwear (60% wool, 20% acrylic, 10% viscose, 10% elastane).",
-        "colors": [
-          "white",
-          "black"
-        ]
-      },
-      "FR": {
-        "category": "Pulls",
-        "name": "Gilet Tricoté",
-        "description": "Gilet en laine oversize avec col en V.\nTissu : tricot (60% laine, 20% acrylique, 10% viscose, 10% élasthanne).",
-        "colors": [
-          "blanc",
-          "noir"
-        ]
-      },
-      "UA": {
-        "category": "Светри",
-        "name": "Трикотажний жилет",
-        "description": "Oversize вовняний жилет із V-вирізом.\nТканина: трикотаж (60% вовна, 20% акрил, 10% віскоза, 10% еластан).",
-        "colors": [
-          "білий",
-          "чорний"
-        ]
-      },
-      "RU": {
-        "category": "Свитера",
-        "name": "Трикотажный жилет",
-        "description": "Oversize шерстяной жилет с V-вырезом.\nТкань: трикотаж (60% шерсть, 20% акрил, 10% вискоза, 10% эластан).",
-        "colors": [
-          "белый",
           "чёрный"
         ]
       }
@@ -19247,69 +17944,6 @@
     }
   },
   {
-    "id": 73,
-    "price": 2300,
-    "isTop": false,
-    "isNew": false,
-    "isSpecialOffer": false,
-    "sku": "98793",
-    "size": "XS S M L XL",
-    "category": "Shirts",
-    "image": "/Shirts/Muslin Cardigan/1.avif",
-    "images": [
-      "/Shirts/Muslin Cardigan/2.avif",
-      "/Shirts/Muslin Cardigan/3.avif",
-      "/Shirts/Muslin Cardigan/4.avif",
-      "/Shirts/Muslin Cardigan/5.avif",
-      "/Shirts/Muslin Cardigan/6.avif"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "translations": {
-      "EN": {
-        "category": "Shirts",
-        "name": "Muslin Cardigan",
-        "description": "Long-fiber muslin made from 100% cotton. Light and soft to the touch.",
-        "colors": [
-          "black",
-          "milk"
-        ]
-      },
-      "FR": {
-        "category": "Chemises",
-        "name": "Cardigan en Mousseline",
-        "description": "Mousseline à longues fibres 100% coton. Léger et doux au toucher.",
-        "colors": [
-          "noir",
-          "lait"
-        ]
-      },
-      "UA": {
-        "category": "Сорочки",
-        "name": "Мусліновий кардиган",
-        "description": "Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
-        "colors": [
-          "чорний",
-          "молоко"
-        ]
-      },
-      "RU": {
-        "category": "Рубашки",
-        "name": "Муслиновый кардиган",
-        "description": "Ткань: длинноволокнистый муслин из 100% хлопка. Легкий и мягкий на ощупь.",
-        "colors": [
-          "черный",
-          "молоко"
-        ]
-      }
-    }
-  },
-  {
     "id": 72,
     "price": 1600,
     "isTop": false,
@@ -19368,81 +18002,6 @@
         "colors": [
           "молоко",
           "черный"
-        ]
-      }
-    }
-  },
-  {
-    "id": 71,
-    "price": 6100,
-    "isTop": false,
-    "isNew": false,
-    "isSpecialOffer": false,
-    "sku": "98791",
-    "size": "XS S M L XL",
-    "category": "Costumes",
-    "image": "/Costumes/Muslin 3-Piece/1.avif",
-    "images": [
-      "/Costumes/Muslin 3-Piece/2.avif",
-      "/Costumes/Muslin 3-Piece/3.avif",
-      "/Costumes/Muslin 3-Piece/4.avif",
-      "/Costumes/Muslin 3-Piece/5.avif",
-      "/Costumes/Muslin 3-Piece/6.avif",
-      "/Costumes/Muslin 3-Piece/7.avif",
-      "/Costumes/Muslin 3-Piece/8.avif",
-      "/Costumes/Muslin 3-Piece/9.avif",
-      "/Costumes/Muslin 3-Piece/10.avif",
-      "/Costumes/Muslin 3-Piece/11.avif",
-      "/Costumes/Muslin 3-Piece/12.avif",
-      "/Costumes/Muslin 3-Piece/13.avif",
-      "/Costumes/Muslin 3-Piece/14.avif"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "translations": {
-      "EN": {
-        "category": "Costumes",
-        "name": "Muslin 3-Piece Costume",
-        "description": "Long-fiber muslin made from 100% cotton. Light and soft to the touch.",
-        "colors": [
-          "milk",
-          "black",
-          "black-white"
-        ]
-      },
-      "FR": {
-        "category": "Costumes",
-        "name": "Costume 3 pièces en Mousseline",
-        "description": "Mousseline à longues fibres 100% coton. Léger et doux au toucher.",
-        "colors": [
-          "lait",
-          "noir",
-          "noir-blanc"
-        ]
-      },
-      "UA": {
-        "category": "Костюми",
-        "name": "Мусліновий костюм 3-ка",
-        "description": "Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
-        "colors": [
-          "молоко",
-          "чорний",
-          "чорно-білий"
-        ]
-      },
-      "RU": {
-        "category": "Костюмы",
-        "name": "Муслиновый костюм 3-ка",
-        "description": "Ткань: длинноволокнистый муслин из 100% хлопка. Легкий и мягкий на ощупь.",
-        "colors": [
-          "молоко",
-          "черный",
-          "черно-белый"
         ]
       }
     }
@@ -19564,173 +18123,6 @@
         "name": "Муслиновый костюм",
         "description": "Муслиновый костюм: рубашка с регулируемым шнурком на рукавах + брюки на резинке. Ткань: длинноволокнистый муслин, 100% хлопок. Легкий и мягкий на ощупь.",
         "color": "молоко",
-        "colors": [
-          "молоко"
-        ]
-      }
-    }
-  },
-  {
-    "id": 59,
-    "price": 3900,
-    "isTop": false,
-    "isNew": false,
-    "isSpecialOffer": false,
-    "sku": "98780",
-    "size": "XS S M L XL",
-    "category": "Dresses",
-    "image": "/Dress/Nature Dress/7.avif",
-    "images": [
-      "/Dress/Nature Dress/7.avif",
-      "/Dress/Nature Dress/8.avif",
-      {
-        "type": "video",
-        "src": "/Dress/Nature Dress/IMG_6723.mp4",
-        "poster": "/Dress/Nature Dress/7.avif"
-      },
-      "/Dress/Nature Dress/9.avif",
-      "/Dress/Nature Dress/10.avif",
-      "/Dress/Nature Dress/11.avif",
-      "/Dress/Nature Dress/12.avif"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "translations": {
-      "EN": {
-        "category": "Dresses",
-        "name": "Nature Dress",
-        "description": [
-          "So light, it feels like you're floating on a cloud. “Nature” — tenderness in every movement. Perfect for creating an eco-inspired or romantic look.",
-          "Fabric: long-fiber muslin made of 100% cotton. Light and soft to the touch.",
-          "Details:",
-          "• Decorative buttons at the neckline",
-          "• Comfortable loose fit",
-          "• 2 pockets"
-        ],
-        "color": "burgundy",
-        "colors": [
-          "milk"
-        ]
-      },
-      "FR": {
-        "category": "Robes",
-        "name": "Robe Nature",
-        "description": "Robe maxi oversize avec manches longues et encolure ronde. Boutons décoratifs et deux poches. Tissu : mousseline à longues fibres, 100% coton. Léger et doux au toucher.",
-        "color": "bordeaux",
-        "colors": [
-          "lait"
-        ]
-      },
-      "UA": {
-        "category": "Сукні",
-        "name": "Сукня \"Nature\"",
-        "description": [
-          "Така легка, що здається — ти в хмарі. “Nature” — ніжність у кожному русі. Чудово підходить для створення екологічного або романтичного образу.",
-          "Тканина: довговолокняний муслін зі 100% бавовни. Легка та м’яка тканина на дотик.",
-          "Деталі:",
-          "• Декоративні ґудзики на декольте",
-          "• Комфортний вільний крій",
-          "• 2 кишені"
-        ],
-        "color": "бордо",
-        "colors": [
-          "молоко"
-        ]
-      },
-      "RU": {
-        "category": "Платья",
-        "name": "Платье \"Nature\"",
-        "description": "Оверсайз макси-платье с длинными рукавами и круглым вырезом. Декоративные пуговицы и два кармана. Ткань: длинноволокнистый муслин, 100% хлопок. Легкое и мягкое на ощупь.",
-        "color": "бордо",
-        "colors": [
-          "молоко"
-        ]
-      }
-    }
-  },
-  {
-    "id": 58,
-    "price": 3900,
-    "isTop": false,
-    "isNew": false,
-    "isSpecialOffer": false,
-    "sku": "98779",
-    "size": "XS S M L XL",
-    "category": "Dresses",
-    "image": "/Dress/Freedom Dress/7.avif",
-    "images": [
-      "/Dress/Freedom Dress/8.avif",
-      {
-        "type": "video",
-        "src": "/Dress/Freedom Dress/IMG_6714.mp4",
-        "poster": "/Dress/Freedom Dress/7.avif"
-      },
-      "/Dress/Freedom Dress/9.avif",
-      "/Dress/Freedom Dress/10.avif",
-      "/Dress/Freedom Dress/11.avif",
-      "/Dress/Freedom Dress/12.avif"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "translations": {
-      "EN": {
-        "category": "Dresses",
-        "name": "Freedom Dress",
-        "description": [
-          "“Freedom” is not just a name — it’s a feeling. The loose silhouette of the dress brings comfort, while the deep neckline and romantic ruffles highlight femininity.",
-          "Choose between classic cream or rich wine and create your mood with “Freedom”.",
-          "Fabric: long-fiber muslin made of 100% cotton. Light and soft to the touch.",
-          "Details:",
-          "• Deep V-neckline",
-          "• Maxi length with a loose fit",
-          "• Long sleeves and ruffles along the entire length"
-        ],
-        "color": "burgundy",
-        "colors": [
-          "milk"
-        ]
-      },
-      "FR": {
-        "category": "Robes",
-        "name": "Robe Freedom",
-        "description": "Robe maxi ample à plusieurs couches avec des manches longues. Détails de volants le long de toute la robe. Tissu : mousseline à longues fibres, 100% coton. Léger et doux au toucher.",
-        "color": "bordeaux",
-        "colors": [
-          "lait"
-        ]
-      },
-      "UA": {
-        "category": "Сукні",
-        "name": "Сукня \"Freedom\"",
-        "description": [
-          "“Freedom” — це не просто назва, це відчуття. Силует сукні вільного крою дарує комфорт, а глибокий виріз і романтичні рюші підкреслюють жіночність.",
-          "Обирай класичну молочну або насичено-винну — і створюй настрій разом із “Freedom”.",
-          "Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
-          "Деталі:",
-          "• Глибокий V - виріз",
-          "• Максі довжина та вільний крій",
-          "• Довгий рукав та рюші по всій довжині"
-        ],
-        "color": "бордо",
-        "colors": [
-          "молоко"
-        ]
-      },
-      "RU": {
-        "category": "Платья",
-        "name": "Платье \"Freedom\"",
-        "description": "Многослойное свободное макси-платье с длинными рукавами. Детали в виде рюшек по всей длине платья. Ткань: длинноволокнистый муслин, 100% хлопок. Легкое и мягкое на ощупь.",
-        "color": "бордо",
         "colors": [
           "молоко"
         ]
@@ -20113,73 +18505,6 @@
         "colors": [
           "молоко",
           "цвет воды"
-        ]
-      }
-    }
-  },
-  {
-    "id": 51,
-    "price": 4300,
-    "isTop": false,
-    "isNew": false,
-    "isSpecialOffer": false,
-    "sku": "98772",
-    "size": "XS S M L XL",
-    "category": "Dresses",
-    "image": "/Dress/Flower Dress/1.avif",
-    "images": [
-      "/Dress/Flower Dress/2.avif",
-      {
-        "type": "video",
-        "src": "/Dress/Flower Dress/IMG_3889.mp4",
-        "poster": "/Dress/Flower Dress/1.avif"
-      },
-      "/Dress/Flower Dress/3.avif",
-      "/Dress/Flower Dress/4.avif",
-      "/Dress/Flower Dress/5.avif"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "translations": {
-      "EN": {
-        "category": "Dresses",
-        "name": "Flower Dress",
-        "description": "Maxi dress with lantern sleeves. Stunning details in the form of decorative flowers and ethnic ruffles throughout. Fabric: long-fiber muslin, 100% cotton. Light and soft to the touch.",
-        "color": "milk",
-        "colors": [
-          "milk"
-        ]
-      },
-      "FR": {
-        "category": "Robes",
-        "name": "Robe à fleurs",
-        "description": "Robe maxi avec manches lanternes. Détails époustouflants sous forme de fleurs décoratives et de volants ethniques sur toute la longueur. Tissu : mousseline à longues fibres, 100% coton. Tissu léger et doux au toucher.",
-        "color": "lait",
-        "colors": [
-          "lait"
-        ]
-      },
-      "UA": {
-        "category": "Сукні",
-        "name": "Сукня з квітами",
-        "description": "Сукня максі із рукавами ліхтариками. Неймовірні деталі у вигляді декоративних квітів та етнічних рюш по всій довжині. Тканина: довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
-        "color": "молоко",
-        "colors": [
-          "молоко"
-        ]
-      },
-      "RU": {
-        "category": "Платья",
-        "name": "Платье с цветами",
-        "description": "Макси-платье с рукавами-фонариками. Невероятные детали в виде декоративных цветов и этнических рюш по всей длине. Ткань: длинноволокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь.",
-        "color": "молоко",
-        "colors": [
-          "молоко"
         ]
       }
     }
@@ -20658,68 +18983,6 @@
     }
   },
   {
-    "id": 21,
-    "price": 3025,
-    "isNew": false,
-    "isSpecialOffer": false,
-    "isTop": false,
-    "sku": "67891",
-    "size": "XS S M L XL",
-    "category": "Dresses",
-    "image": "/Dress/Marie Dress/1.avif",
-    "images": [
-      "/Dress/Marie Dress/2.avif",
-      "/Dress/Marie Dress/3.avif",
-      "/Dress/Marie Dress/4.avif",
-      "/Dress/Marie Dress/5.avif"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "translations": {
-      "EN": {
-        "category": "Dresses",
-        "name": "Marie Dress",
-        "description": "Midi-length dress with a collar and pockets. Button closure.\nFabric: suit fabric (75% viscose, 25% polyester)",
-        "color": "beige",
-        "colors": [
-          "beige"
-        ]
-      },
-      "FR": {
-        "category": "Robes",
-        "name": "Robe « Marie »",
-        "description": "Robe midi avec col et poches. Fermeture à boutons.\nTissu: tissu de costume (75% viscose, 25% polyester)",
-        "color": "beige",
-        "colors": [
-          "beige"
-        ]
-      },
-      "UA": {
-        "category": "Сукні",
-        "name": "Сукня «Marie»",
-        "description": "Сукня міді довжини із коміром та кишенями. Застібається на ґудзики.\nТканина: костюмна тканина (75% віскоза, 25% поліестер)",
-        "color": "бежевий",
-        "colors": [
-          "бежевий"
-        ]
-      },
-      "RU": {
-        "category": "Платья",
-        "name": "Платье «Marie»",
-        "description": "Платье миди длиной с воротником и карманами. Застёгивается на пуговицы.\nТкань: костюмная ткань (75% вискоза, 25% полиэстер)",
-        "color": "бежевый",
-        "colors": [
-          "бежевый"
-        ]
-      }
-    }
-  },
-  {
     "id": 22,
     "price": 1650,
     "isNew": false,
@@ -21094,206 +19357,6 @@
         "description": "Oversize свитер с укороченным рукавом. Ткань: трикотаж (60% шерсть, 20% акрил, 10% вискоза, 10% эластан).",
         "colors": [
           "черный"
-        ]
-      }
-    }
-  },
-  {
-    "id": 40,
-    "price": 1250,
-    "isTop": false,
-    "isNew": false,
-    "isSpecialOffer": false,
-    "sku": "54321",
-    "color": "beige",
-    "size": "XS S M L XL",
-    "category": "Sweaters",
-    "image": "/Sweaters/Ribbed Golf/2.avif",
-    "images": [
-      "/Sweaters/Ribbed Golf/1.avif",
-      "/Sweaters/Ribbed Golf/3.avif",
-      "/Sweaters/Ribbed Golf/4.avif",
-      "/Sweaters/Ribbed Golf/5.avif",
-      "/Sweaters/Ribbed Golf/6.avif",
-      "/Sweaters/Ribbed Golf/7.avif",
-      "/Sweaters/Ribbed Golf/8.avif",
-      "/Sweaters/Ribbed Golf/9.avif",
-      "/Sweaters/Ribbed Golf/10.avif"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "translations": {
-      "EN": {
-        "category": "Sweaters",
-        "name": "Ribbed Golf",
-        "description": "Basic ribbed golf for everyday wear and any outfit. Fabric: ribbed knit.",
-        "colors": [
-          "beige",
-          "olive"
-        ]
-      },
-      "FR": {
-        "category": "Pulls",
-        "name": "Golf côtelé",
-        "description": "Golf côtelé basique pour un usage quotidien et pour n'importe quelle tenue. Tissu : tricot côtelé.",
-        "colors": [
-          "beige",
-          "olive"
-        ]
-      },
-      "UA": {
-        "category": "Светри",
-        "name": "Гольф у рубчик",
-        "description": "Базовий гольф у рубчик на кожен день і під будь-який аутфіт. Тканина: трикотаж у рубчик.",
-        "colors": [
-          "бежевий",
-          "оливка"
-        ]
-      },
-      "RU": {
-        "category": "Светри",
-        "name": "Гольф в рубчик",
-        "description": "Базовый гольф в рубчик на каждый день и под любой аутфит. Ткань: трикотаж в рубчик.",
-        "colors": [
-          "бежевый",
-          "оливка"
-        ]
-      }
-    }
-  },
-  {
-    "id": 41,
-    "price": 1500,
-    "isTop": false,
-    "isNew": false,
-    "isSpecialOffer": false,
-    "sku": "65432",
-    "color": "молоко",
-    "size": "XS S M L XL",
-    "category": "Sweaters",
-    "image": "/Sweaters/Draped Golf/9.avif",
-    "images": [
-      "/Sweaters/Draped Golf/2.avif",
-      "/Sweaters/Draped Golf/3.avif",
-      "/Sweaters/Draped Golf/4.avif",
-      "/Sweaters/Draped Golf/5.avif",
-      "/Sweaters/Draped Golf/6.avif",
-      "/Sweaters/Draped Golf/7.avif",
-      "/Sweaters/Draped Golf/8.avif",
-      "/Sweaters/Draped Golf/1.avif"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "translations": {
-      "EN": {
-        "category": "Sweaters",
-        "name": "Draped Golf",
-        "description": "Soft draped golf with sleeve slits. Fabric: 50% cashmere, 28% polyester, 28% nylon.",
-        "colors": [
-          "молоко",
-          "сірий"
-        ]
-      },
-      "FR": {
-        "category": "Pulls",
-        "name": "Golf drapé",
-        "description": "Golf drapé doux avec fentes sur les manches. Tissu : 50% cachemire, 28% polyester, 28% nylon.",
-        "colors": [
-          "laite",
-          "gris"
-        ]
-      },
-      "UA": {
-        "category": "Светри",
-        "name": "Гольф у драпіровку",
-        "description": "Мʼякий гольф у драпіровку із розрізами на рукавчиках. Тканина: 50% кашемір, 28% поліестер, 28% нейлон.",
-        "colors": [
-          "молоко",
-          "сірий"
-        ]
-      },
-      "RU": {
-        "category": "Светри",
-        "name": "Гольф в драпировку",
-        "description": "Мягкий гольф в драпировку с разрезами на рукавах. Ткань: 50% кашемир, 28% полиэстер, 28% нейлон.",
-        "colors": [
-          "молоко",
-          "сірий"
-        ]
-      }
-    }
-  },
-  {
-    "id": 42,
-    "price": 1500,
-    "isTop": false,
-    "isNew": false,
-    "isSpecialOffer": false,
-    "sku": "76543",
-    "color": "чорний",
-    "size": "XS S M L XL",
-    "category": "Sweaters",
-    "image": "/Sweaters/V-Neck Golf/4.avif",
-    "images": [
-      "/Sweaters/V-Neck Golf/2.avif",
-      "/Sweaters/V-Neck Golf/3.avif",
-      "/Sweaters/V-Neck Golf/1.avif",
-      "/Sweaters/V-Neck Golf/5.avif",
-      "/Sweaters/V-Neck Golf/6.avif",
-      "/Sweaters/V-Neck Golf/7.avif"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "translations": {
-      "EN": {
-        "category": "Sweaters",
-        "name": "V-Neck Golf",
-        "description": "Soft V-neck golf with sleeve slits. Fabric: 50% cashmere, 28% polyester, 28% nylon.",
-        "colors": [
-          "чорний",
-          "сірий"
-        ]
-      },
-      "FR": {
-        "category": "Pulls",
-        "name": "Golf à col en V",
-        "description": "Golf doux à col en V avec fentes sur les manches. Tissu : 50% cachemire, 28% polyester, 28% nylon.",
-        "colors": [
-          "noir",
-          "gris"
-        ]
-      },
-      "UA": {
-        "category": "Светри",
-        "name": "Гольф із V-горлом",
-        "description": "Мʼякий гольф із V-горлом і розрізами на рукавах. Тканина: 50% кашемір, 28% поліестер, 28% нейлон.",
-        "colors": [
-          "чорний",
-          "сірий"
-        ]
-      },
-      "RU": {
-        "category": "Светри",
-        "name": "Гольф с V-горлом",
-        "description": "Мягкий гольф с V-горлом и разрезами на рукавах. Ткань: 50% кашемир, 28% полиэстер, 28% нейлон.",
-        "colors": [
-          "чёрный",
-          "синий"
         ]
       }
     }
