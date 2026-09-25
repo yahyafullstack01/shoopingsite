@@ -1,5 +1,337 @@
 [
   {
+    "id": 371,
+    "price": 3300,
+    "isTop": false,
+    "isNew": false,
+    "isSpecialOffer": false,
+    "sku": "99502",
+    "size": "XS S M L XL",
+    "category": "Dresses",
+    "image": "/Dress/Navy Blue Dress/1.avif",
+    "images": [
+      "/Dress/Navy Blue Dress/2.avif",
+      "/Dress/Navy Blue Dress/3.avif",
+      "/Dress/Navy Blue Dress/4.avif",
+      "/Dress/Navy Blue Dress/5.avif"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "translations": {
+      "EN": {
+        "category": "Dresses",
+        "name": "Navy Blue Dress",
+        "description": [
+          "An elegant wrap maxi dress with distinctive contrasting trim and an accentuated waist. A deep navy blue shade combined with soft viscose creates a light, feminine silhouette.",
+          "The wrap bodice features a deep V-neckline that visually elongates the silhouette. Soft, voluminous sleeves with cuffs add an airy feel, while a statement belt emphasizes the waist and allows the fit to be adjusted.",
+          "Contrasting trim in a warm brown shade follows the wrap line and continues down the skirt. Decorative buttons complete the design and complement its clean geometry.",
+          "The maxi length and flowing skirt create a fluid silhouette in motion. The dress is easy to style with boots for everyday looks or for more elegant occasions.",
+          "Fabric: viscose.",
+          "Season: autumn, winter, spring."
+        ],
+        "colors": [
+          "navy blue"
+        ]
+      },
+      "FR": {
+        "category": "Robes",
+        "name": "Robe « Navy blue »",
+        "description": [
+          "Une élégante robe longue portefeuille aux finitions contrastantes expressives et à la taille soulignée. La nuance bleu marine profond associée à une viscose douce crée une silhouette légère et féminine.",
+          "Le haut croisé présente un profond décolleté en V qui allonge visuellement la silhouette. Les manches souples et volumineuses à poignets apportent de la légèreté, tandis qu’une ceinture marquée souligne la taille et permet d’ajuster la coupe.",
+          "Une finition contrastante dans une nuance de brun chaud suit la ligne croisée et se prolonge sur la jupe. Des boutons décoratifs complètent le modèle et en soulignent la géométrie épurée.",
+          "La longueur maxi et la jupe ample créent une silhouette fluide en mouvement. La robe se porte facilement avec des bottes au quotidien ou pour des occasions plus élégantes.",
+          "Tissu : viscose.",
+          "Saison : automne, hiver, printemps."
+        ],
+        "colors": [
+          "bleu marine"
+        ]
+      },
+      "UA": {
+        "category": "Сукні",
+        "name": "Сукня «Navy blue»",
+        "description": [
+          "Елегантна сукня максі на запах із виразним контрастним оздобленням та акцентом на талії. Глибокий темно-синій відтінок у поєднанні з м’якою віскозою створює легкий, жіночний силует.",
+          "Верх виконаний на запах із глибоким V-подібним вирізом, який візуально витягує силует. М’які об’ємні рукави з манжетами додають образу легкості, а акцентний пояс підкреслює талію та дозволяє регулювати посадку.",
+          "Контрастне оздоблення теплого коричневого відтінку проходить уздовж лінії запаху та продовжується по спідниці. Декоративні ґудзики доповнюють дизайн і підтримують лаконічну геометрію моделі.",
+          "Довжина максі та вільна спідниця створюють плавний силует у русі. Сукня легко стилізується як для повсякденних образів із чоботами, так і для більш елегантних виходів.",
+          "Тканина: віскоза.",
+          "Сезон: осінь, зима, весна."
+        ],
+        "colors": [
+          "темно-синій"
+        ]
+      },
+      "RU": {
+        "category": "Платья",
+        "name": "Платье «Navy blue»",
+        "description": [
+          "Элегантное платье макси на запах с выразительной контрастной отделкой и акцентом на талии. Глубокий тёмно-синий оттенок в сочетании с мягкой вискозой создаёт лёгкий, женственный силуэт.",
+          "Верх выполнен на запах с глубоким V-образным вырезом, который визуально вытягивает силуэт. Мягкие объёмные рукава с манжетами добавляют образу лёгкости, а акцентный пояс подчёркивает талию и позволяет регулировать посадку.",
+          "Контрастная отделка тёплого коричневого оттенка проходит вдоль линии запаха и продолжается по юбке. Декоративные пуговицы дополняют дизайн и поддерживают лаконичную геометрию модели.",
+          "Длина макси и свободная юбка создают плавный силуэт в движении. Платье легко стилизуется как для повседневных образов с сапогами, так и для более элегантных выходов.",
+          "Ткань: вискоза.",
+          "Сезон: осень, зима, весна."
+        ],
+        "colors": [
+          "тёмно-синий"
+        ]
+      }
+    }
+  },
+  {
+    "id": 370,
+    "price": 2150,
+    "isTop": false,
+    "isNew": false,
+    "isSpecialOffer": false,
+    "sku": "99501",
+    "size": "XS S M L XL",
+    "category": "Skirts",
+    "image": "/Skirts/Creamy Skirt/1.avif",
+    "images": [
+      "/Skirts/Creamy Skirt/2.avif",
+      "/Skirts/Creamy Skirt/3.avif"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "translations": {
+      "EN": {
+        "category": "Skirts",
+        "name": "Creamy Skirt",
+        "description": [
+          "A clean-cut wool midi skirt in a cream shade. The high waist and straight silhouette create a clean, elongated line and make this a versatile piece for classic and everyday looks.",
+          "The design features a high waist, a neat waistband, and a straight midi silhouette that gently follows the lines of the figure.",
+          "The minimalist design without excess decoration highlights the quality of the fabric, the fit, and the delicate cream shade. The skirt forms a coordinated set with the Creamy jacket, yet also works easily as a standalone wardrobe staple with sweaters, turtlenecks, shirts, and other jackets.",
+          "Fabric: 75% natural wool.",
+          "Season: autumn, winter."
+        ],
+        "colors": [
+          "cream"
+        ]
+      },
+      "FR": {
+        "category": "Jupes",
+        "name": "Jupe « Creamy »",
+        "description": [
+          "Une jupe midi épurée en laine dans une teinte crème. La taille haute et la coupe droite dessinent une ligne nette et élancée, faisant de ce modèle une pièce polyvalente pour les tenues classiques et quotidiennes.",
+          "Le modèle présente une taille haute, une ceinture soignée et une coupe droite de longueur midi qui suit délicatement les lignes de la silhouette.",
+          "Le design minimaliste, sans décoration superflue, met en valeur la qualité du tissu, la coupe et la délicate teinte crème. La jupe forme un ensemble harmonieux avec la veste « Creamy », mais se porte aussi facilement seule comme une base du vestiaire, avec des pulls, des cols roulés, des chemises et d’autres vestes.",
+          "Tissu : 75 % de laine naturelle.",
+          "Saison : automne, hiver."
+        ],
+        "colors": [
+          "crème"
+        ]
+      },
+      "UA": {
+        "category": "Спідниці",
+        "name": "Спідниця «Creamy»",
+        "description": [
+          "Лаконічна вовняна спідниця міді у вершковому відтінку. Висока посадка та прямий силует створюють чисту витягнуту лінію й роблять модель універсальною для класичних і повсякденних образів.",
+          "Модель має високу посадку, акуратний пояс і прямий силует довжини міді, який м’яко повторює лінії фігури.",
+          "Мінімалістичний дизайн без зайвого декору дозволяє зробити акцент на якості тканини, посадці та ніжному вершковому відтінку. Спідниця створює цілісний комплект із жакетом «Creamy», але легко працює і як самостійна база — зі светрами, гольфами, сорочками та іншими жакетами.",
+          "Тканина: 75% натуральна вовна.",
+          "Сезон: осінь, зима."
+        ],
+        "colors": [
+          "вершковий"
+        ]
+      },
+      "RU": {
+        "category": "Юбки",
+        "name": "Юбка «Creamy»",
+        "description": [
+          "Лаконичная шерстяная юбка миди в сливочном оттенке. Высокая посадка и прямой силуэт создают чистую вытянутую линию и делают модель универсальной для классических и повседневных образов.",
+          "Модель имеет высокую посадку, аккуратный пояс и прямой силуэт длины миди, который мягко повторяет линии фигуры.",
+          "Минималистичный дизайн без лишнего декора позволяет сделать акцент на качестве ткани, посадке и нежном сливочном оттенке. Юбка создаёт цельный комплект с жакетом «Creamy», но легко работает и как самостоятельная база — со свитерами, водолазками, рубашками и другими жакетами.",
+          "Ткань: 75% натуральная шерсть.",
+          "Сезон: осень, зима."
+        ],
+        "colors": [
+          "сливочный"
+        ]
+      }
+    }
+  },
+  {
+    "id": 369,
+    "price": 3300,
+    "isTop": false,
+    "isNew": false,
+    "isSpecialOffer": false,
+    "sku": "99500",
+    "size": "XS S M L XL",
+    "category": "Jackets",
+    "image": "/Jackets/Creamy Jacket/1.avif",
+    "images": [
+      "/Jackets/Creamy Jacket/2.avif",
+      "/Jackets/Creamy Jacket/3.avif"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "translations": {
+      "EN": {
+        "category": "Jackets",
+        "name": "Creamy Jacket",
+        "description": [
+          "A fitted wool jacket in a cream shade with an emphasis on the waist. Defined shoulders, a turn-down collar, and decorative details create a structured, feminine silhouette.",
+          "The carefully designed fitted cut emphasizes the waist while maintaining the clearly defined structure of the silhouette.",
+          "The design features a turn-down collar, three-quarter sleeves with wide cuffs, and fabric-covered button fastening. A wide horizontal detail at the waist and decorative flaps create distinctive geometry and make the jacket a statement piece in its own right.",
+          "Wear it with the Creamy skirt or separately with classic trousers, denim, or a contrasting skirt.",
+          "Fabric: 75% natural wool.",
+          "Season: autumn, winter."
+        ],
+        "colors": [
+          "cream"
+        ]
+      },
+      "FR": {
+        "category": "Vestes",
+        "name": "Veste « Creamy »",
+        "description": [
+          "Une veste cintrée en laine dans une teinte crème qui souligne la taille. Des épaules marquées, un col rabattu et des détails décoratifs dessinent une silhouette structurée et féminine.",
+          "La coupe cintrée soigneusement étudiée met la taille en valeur tout en préservant une silhouette nettement structurée.",
+          "Le modèle présente un col rabattu, des manches trois-quarts à larges poignets et une fermeture à boutons recouverts de tissu. Un large détail horizontal à la taille et des rabats décoratifs créent une géométrie expressive et font de la veste une pièce forte à elle seule.",
+          "Elle se porte avec la jupe « Creamy » ou séparément, avec un pantalon classique, du denim ou une jupe contrastante.",
+          "Tissu : 75 % de laine naturelle.",
+          "Saison : automne, hiver."
+        ],
+        "colors": [
+          "crème"
+        ]
+      },
+      "UA": {
+        "category": "Жакети",
+        "name": "Жакет «Creamy»",
+        "description": [
+          "Приталений вовняний жакет у вершковому відтінку з акцентом на лінії талії. Чіткі плечі, відкладний комір і декоративні деталі формують структурний, жіночний силует.",
+          "Продуманий приталений крій підкреслює талію, зберігаючи чітку архітектуру силуету.",
+          "Модель доповнена відкладним коміром, рукавами 3/4 із широкими манжетами та застібкою на обтягнуті тканиною ґудзики. Широка горизонтальна деталь на талії та декоративні клапани створюють виразну геометрію й роблять жакет самодостатнім елементом образу.",
+          "Можна носити як разом зі спідницею «Creamy», так і окремо — з класичними брюками, денімом або контрастною спідницею.",
+          "Тканина: 75% натуральна вовна.",
+          "Сезон: осінь, зима."
+        ],
+        "colors": [
+          "вершковий"
+        ]
+      },
+      "RU": {
+        "category": "Жакеты",
+        "name": "Жакет «Creamy»",
+        "description": [
+          "Приталенный шерстяной жакет в сливочном оттенке с акцентом на линии талии. Чёткие плечи, отложной воротник и декоративные детали формируют структурный, женственный силуэт.",
+          "Продуманный приталенный крой подчёркивает талию, сохраняя чёткую архитектуру силуэта.",
+          "Модель дополнена отложным воротником, рукавами 3/4 с широкими манжетами и застёжкой на обтянутые тканью пуговицы. Широкая горизонтальная деталь на талии и декоративные клапаны создают выразительную геометрию и делают жакет самодостаточным элементом образа.",
+          "Можно носить как вместе с юбкой «Creamy», так и отдельно — с классическими брюками, денимом или контрастной юбкой.",
+          "Ткань: 75% натуральная шерсть.",
+          "Сезон: осень, зима."
+        ],
+        "colors": [
+          "сливочный"
+        ]
+      }
+    }
+  },
+  {
+    "id": 368,
+    "price": 5450,
+    "isTop": false,
+    "isNew": false,
+    "isSpecialOffer": false,
+    "sku": "99499",
+    "size": "XS S M L XL",
+    "category": "Costumes",
+    "image": "/Costumes/Creamy Suit/1.avif",
+    "images": [
+      "/Costumes/Creamy Suit/2.avif",
+      "/Costumes/Creamy Suit/3.avif",
+      "/Costumes/Creamy Suit/4.avif",
+      "/Costumes/Creamy Suit/5.avif"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "translations": {
+      "EN": {
+        "category": "Costumes",
+        "name": "Creamy Suit",
+        "description": [
+          "An elegant suit containing natural wool in a delicate cream shade. A fitted jacket with a defined waist and a midi skirt create a refined feminine silhouette in a modern interpretation of classic tailoring.",
+          "The set consists of a fitted jacket and a clean-cut midi skirt. The jacket features a structured shoulder line, a turn-down collar, three-quarter sleeves with wide cuffs, and distinctive shaping at the waist. Fabric-covered buttons and decorative flaps emphasize the crisp lines of the cut.",
+          "The straight skirt balances the more intricate jacket and visually elongates the silhouette. The cream shade makes the suit a soft alternative to classic dark sets and pairs easily with milky white, beige, chocolate, and contrasting accessories.",
+          "Fabric: 75% natural wool.",
+          "Season: autumn, winter."
+        ],
+        "colors": [
+          "cream"
+        ]
+      },
+      "FR": {
+        "category": "Costumes",
+        "name": "Costume « Creamy »",
+        "description": [
+          "Un élégant costume contenant de la laine naturelle dans une délicate teinte crème. Une veste cintrée à la taille marquée et une jupe midi dessinent une silhouette féminine raffinée, dans une interprétation contemporaine du style classique.",
+          "L’ensemble se compose d’une veste cintrée et d’une jupe midi épurée. La veste présente une ligne d’épaules structurée, un col rabattu, des manches trois-quarts à larges poignets et une construction soulignant la taille. Les boutons recouverts de tissu et les rabats décoratifs accentuent les lignes graphiques de la coupe.",
+          "La jupe droite équilibre la coupe plus travaillée de la veste et allonge visuellement la silhouette. La teinte crème offre une alternative douce aux ensembles sombres classiques et s’associe facilement à des accessoires blanc laiteux, beiges, chocolat ou contrastants.",
+          "Tissu : 75 % de laine naturelle.",
+          "Saison : automne, hiver."
+        ],
+        "colors": [
+          "crème"
+        ]
+      },
+      "UA": {
+        "category": "Костюми",
+        "name": "Костюм «Creamy»",
+        "description": [
+          "Елегантний костюм із натуральною вовною у ніжному вершковому відтінку. Приталений жакет із виразною лінією талії та спідниця міді створюють витончений жіночний силует у сучасній інтерпретації класики.",
+          "Комплект складається з приталеного жакета та лаконічної спідниці довжини міді. Жакет має чітко сформовану лінію плечей, відкладний комір, рукав 3/4 з широкими манжетами та акцентну конструкцію в зоні талії. Застібка на обтягнуті тканиною ґудзики й декоративні клапани підкреслюють графічність крою.",
+          "Пряма спідниця врівноважує складніший крій жакета та візуально витягує силует. Вершковий відтінок робить костюм м’якою альтернативою класичним темним комплектам і легко поєднується з молочними, бежевими, шоколадними та контрастними аксесуарами.",
+          "Тканина: 75% натуральна вовна.",
+          "Сезон: осінь, зима."
+        ],
+        "colors": [
+          "вершковий"
+        ]
+      },
+      "RU": {
+        "category": "Костюмы",
+        "name": "Костюм «Creamy»",
+        "description": [
+          "Элегантный костюм с натуральной шерстью в нежном сливочном оттенке. Приталенный жакет с выразительной линией талии и юбка миди создают утончённый женственный силуэт в современной интерпретации классики.",
+          "Комплект состоит из приталенного жакета и лаконичной юбки длины миди. Жакет имеет чётко сформированную линию плеч, отложной воротник, рукав 3/4 с широкими манжетами и акцентную конструкцию в зоне талии. Застёжка на обтянутые тканью пуговицы и декоративные клапаны подчёркивают графичность кроя.",
+          "Прямая юбка уравновешивает более сложный крой жакета и визуально вытягивает силуэт. Сливочный оттенок делает костюм мягкой альтернативой классическим тёмным комплектам и легко сочетается с молочными, бежевыми, шоколадными и контрастными аксессуарами.",
+          "Ткань: 75% натуральная шерсть.",
+          "Сезон: осень, зима."
+        ],
+        "colors": [
+          "сливочный"
+        ]
+      }
+    }
+  },
+  {
     "id": 367,
     "price": 2300,
     "isTop": false,
@@ -17415,7 +17747,6 @@
       }
     }
   },
-
   {
     "id": 81,
     "price": 2400,
