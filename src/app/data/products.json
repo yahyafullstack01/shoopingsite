@@ -1,5 +1,416 @@
 [
   {
+    "id": 376,
+    "price": 3500,
+    "isTop": false,
+    "isNew": false,
+    "isSpecialOffer": false,
+    "sku": "99507",
+    "size": "XS S M L XL",
+    "category": "Jackets",
+    "image": "/Jackets/Butter Jacket/1.avif",
+    "images": [
+      "/Jackets/Butter Jacket/2.avif",
+      "/Jackets/Butter Jacket/3.avif",
+      "/Jackets/Butter Jacket/4.avif"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "translations": {
+      "EN": {
+        "category": "Jackets",
+        "name": "Butter Jacket",
+        "description": [
+          "A structured jacket made from wool suiting fabric in a delicate butter yellow shade. Its distinctive cut creates a neat silhouette and makes it a versatile foundation for autumn-winter looks.",
+          "The clean design and precise construction lines make this a versatile piece for different styling options. The light butter yellow shade softens the look and pairs easily with milky white, beige, chocolate, grey, and black.",
+          "The jacket can be worn with the Butter skirt or separately with classic trousers, denim, dresses, and other wardrobe basics.",
+          "Fabric: wool suiting fabric.",
+          "Season: autumn, winter."
+        ],
+        "colors": [
+          "butter yellow"
+        ]
+      },
+      "FR": {
+        "category": "Vestes",
+        "name": "Veste « Butter »",
+        "description": [
+          "Une veste structurée en tissu de laine pour costume, dans une délicate teinte jaune beurre. Sa coupe expressive dessine une silhouette soignée et en fait une pièce à part entière du vestiaire automne-hiver.",
+          "Le design épuré et les lignes de construction nettes rendent ce modèle polyvalent et facile à associer. La teinte jaune beurre clair apporte de la douceur à la tenue et s’accorde facilement avec le blanc laiteux, le beige, le chocolat, le gris et le noir.",
+          "La veste peut se porter avec la jupe « Butter » ou séparément, avec un pantalon classique, du denim, des robes et d’autres basiques du vestiaire.",
+          "Tissu : tissu de laine pour costume.",
+          "Saison : automne, hiver."
+        ],
+        "colors": [
+          "jaune beurre"
+        ]
+      },
+      "UA": {
+        "category": "Жакети",
+        "name": "Жакет «Butter»",
+        "description": [
+          "Структурний жакет із вовняної костюмної тканини у ніжному масляному відтінку. Виразний крій формує акуратний силует і робить модель самодостатньою основою осінньо-зимових образів.",
+          "Лаконічний дизайн і чисті конструктивні лінії роблять модель універсальною для різних стилізацій. Світлий масляний відтінок додає образу м’якості та легко поєднується з молочним, бежевим, шоколадним, сірим і чорним.",
+          "Жакет можна носити разом зі спідницею «Butter» або окремо — з класичними брюками, денімом, сукнями та іншими базовими речами.",
+          "Тканина: вовняна костюмна тканина.",
+          "Сезон: осінь, зима."
+        ],
+        "colors": [
+          "масляний"
+        ]
+      },
+      "RU": {
+        "category": "Жакеты",
+        "name": "Жакет «Butter»",
+        "description": [
+          "Структурный жакет из шерстяной костюмной ткани в нежном масляном оттенке. Выразительный крой формирует аккуратный силуэт и делает модель самодостаточной основой осенне-зимних образов.",
+          "Лаконичный дизайн и чистые конструктивные линии делают модель универсальной для разных стилизаций. Светлый масляный оттенок добавляет образу мягкости и легко сочетается с молочным, бежевым, шоколадным, серым и чёрным.",
+          "Жакет можно носить вместе с юбкой «Butter» или отдельно — с классическими брюками, денимом, платьями и другими базовыми вещами.",
+          "Ткань: шерстяная костюмная ткань.",
+          "Сезон: осень, зима."
+        ],
+        "colors": [
+          "масляный"
+        ]
+      }
+    }
+  },
+  {
+    "id": 375,
+    "price": 5800,
+    "isTop": false,
+    "isNew": false,
+    "isSpecialOffer": false,
+    "sku": "99506",
+    "size": "XS S M L XL",
+    "category": "Costumes",
+    "image": "/Costumes/Butter Suit/1.avif",
+    "images": [
+      "/Costumes/Butter Suit/2.avif",
+      "/Costumes/Butter Suit/3.avif",
+      "/Costumes/Butter Suit/4.avif",
+      "/Costumes/Butter Suit/5.avif"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "translations": {
+      "EN": {
+        "category": "Costumes",
+        "name": "Butter Suit",
+        "description": [
+          "A feminine suit made from wool suiting fabric in a soft butter yellow shade. The clean cut and light, warm palette create an elegant look for an autumn-winter wardrobe.",
+          "The set consists of a jacket and a skirt in the same butter yellow shade. The structured top creates a distinctive silhouette, while the clean-cut skirt balances the look and adds understated femininity.",
+          "The suit adapts easily to different styling options: worn together, the pieces create a cohesive monochrome look, while the jacket and skirt can be worn separately with basic knitwear, shirts, trousers, or denim.",
+          "Fabric: wool suiting fabric.",
+          "Season: autumn, winter."
+        ],
+        "colors": [
+          "butter yellow"
+        ]
+      },
+      "FR": {
+        "category": "Costumes",
+        "name": "Costume « Butter »",
+        "description": [
+          "Un costume féminin en tissu de laine pour costume, dans une douce teinte jaune beurre. La coupe épurée et la palette claire et chaleureuse créent une allure élégante pour le vestiaire automne-hiver.",
+          "L’ensemble se compose d’une veste et d’une jupe dans la même teinte jaune beurre. Le haut structuré dessine une silhouette expressive, tandis que la jupe épurée équilibre la tenue et lui apporte une féminité discrète.",
+          "Le costume se prête facilement à différentes associations : porté en ensemble, il crée une tenue monochrome harmonieuse, tandis que la veste et la jupe peuvent se porter séparément avec des mailles basiques, des chemises, des pantalons ou du denim.",
+          "Tissu : tissu de laine pour costume.",
+          "Saison : automne, hiver."
+        ],
+        "colors": [
+          "jaune beurre"
+        ]
+      },
+      "UA": {
+        "category": "Костюми",
+        "name": "Костюм «Butter»",
+        "description": [
+          "Жіночний костюм із вовняної костюмної тканини у м’якому масляному відтінку. Лаконічний крій та світла тепла палітра створюють елегантний образ для осінньо-зимового гардероба.",
+          "Комплект складається з жакета та спідниці, витриманих в одному масляному відтінку. Структурний верх формує виразний силует, а лаконічний низ урівноважує образ і додає йому стриманої жіночності.",
+          "Костюм легко адаптується під різні стилізації: у комплекті створює цілісний монохромний образ, а жакет і спідницю можна носити окремо з базовим трикотажем, сорочками, брюками або денімом.",
+          "Тканина: вовняна костюмна тканина.",
+          "Сезон: осінь, зима."
+        ],
+        "colors": [
+          "масляний"
+        ]
+      },
+      "RU": {
+        "category": "Костюмы",
+        "name": "Костюм «Butter»",
+        "description": [
+          "Женственный костюм из шерстяной костюмной ткани в мягком масляном оттенке. Лаконичный крой и светлая тёплая палитра создают элегантный образ для осенне-зимнего гардероба.",
+          "Комплект состоит из жакета и юбки, выдержанных в одном масляном оттенке. Структурный верх формирует выразительный силуэт, а лаконичный низ уравновешивает образ и добавляет ему сдержанной женственности.",
+          "Костюм легко адаптируется под разные стилизации: в комплекте создаёт цельный монохромный образ, а жакет и юбку можно носить отдельно с базовым трикотажем, рубашками, брюками или денимом.",
+          "Ткань: шерстяная костюмная ткань.",
+          "Сезон: осень, зима."
+        ],
+        "colors": [
+          "масляный"
+        ]
+      }
+    }
+  },
+  {
+    "id": 374,
+    "price": 3500,
+    "isTop": false,
+    "isNew": false,
+    "isSpecialOffer": false,
+    "sku": "99505",
+    "size": "XS S M L XL",
+    "category": "Jackets",
+    "image": "/Jackets/Nevada Jacket/1.avif",
+    "images": [
+      "/Jackets/Nevada Jacket/2.avif",
+      "/Jackets/Nevada Jacket/3.avif",
+      "/Jackets/Nevada Jacket/4.avif"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "translations": {
+      "EN": {
+        "category": "Jackets",
+        "name": "Nevada Jacket",
+        "description": [
+          "A fitted jacket with a defined shoulder line and a deep V-neckline. The clean design without lapels creates a modern silhouette, while the double-breasted fastening emphasizes the waist.",
+          "The lapel-free design features a deep V-neckline, defined shoulders, and a double-breasted fastening with two buttons. Vertical darts shape the fit to the figure, while flap pockets add a classic touch.",
+          "The longer length balances the fitted silhouette and allows the jacket to be worn with the Nevada trousers as a set or separately with denim, skirts, or classic trousers.",
+          "Fabric: suiting fabric.",
+          "Season: autumn, winter, spring."
+        ],
+        "colors": [
+          "cornflower blue"
+        ]
+      },
+      "FR": {
+        "category": "Vestes",
+        "name": "Veste « Nevada »",
+        "description": [
+          "Une veste cintrée à la ligne d’épaules marquée et au profond décolleté en V. Le design épuré sans revers crée une silhouette nette et moderne, tandis que la fermeture croisée souligne la taille.",
+          "Le modèle sans revers présente un profond décolleté en V, une ligne d’épaules marquée et une fermeture croisée à deux boutons. Les pinces verticales ajustent la coupe à la silhouette, tandis que les poches à rabat apportent une touche classique.",
+          "La longueur allongée équilibre la silhouette cintrée et permet de porter la veste en ensemble avec le pantalon « Nevada » ou séparément avec du denim, des jupes ou un pantalon classique.",
+          "Tissu : tissu pour costume.",
+          "Saison : automne, hiver, printemps."
+        ],
+        "colors": [
+          "bleu bleuet"
+        ]
+      },
+      "UA": {
+        "category": "Жакети",
+        "name": "Жакет «Nevada»",
+        "description": [
+          "Приталений жакет із виразною лінією плечей і глибоким V-подібним вирізом. Лаконічний дизайн без лацканів робить силует чистим і сучасним, а двобортна застібка підкреслює лінію талії.",
+          "Модель без лацканів доповнена глибоким V-подібним вирізом, акцентованою лінією плечей і двобортною застібкою на два ґудзики. Вертикальні виточки формують посадку по фігурі, а кишені з клапанами додають класичний штрих.",
+          "Подовжена довжина врівноважує приталений силует і дозволяє носити жакет як у комплекті з брюками «Nevada», так і окремо з денімом, спідницями або класичними брюками.",
+          "Тканина: костюмна тканина.",
+          "Сезон: осінь, зима, весна."
+        ],
+        "colors": [
+          "васильковий"
+        ]
+      },
+      "RU": {
+        "category": "Жакеты",
+        "name": "Жакет «Nevada»",
+        "description": [
+          "Приталенный жакет с выразительной линией плеч и глубоким V-образным вырезом. Лаконичный дизайн без лацканов делает силуэт чистым и современным, а двубортная застёжка подчёркивает линию талии.",
+          "Модель без лацканов дополнена глубоким V-образным вырезом, акцентированной линией плеч и двубортной застёжкой на две пуговицы. Вертикальные вытачки формируют посадку по фигуре, а карманы с клапанами добавляют классический штрих.",
+          "Удлинённая длина уравновешивает приталенный силуэт и позволяет носить жакет как в комплекте с брюками «Nevada», так и отдельно с денимом, юбками или классическими брюками.",
+          "Ткань: костюмная ткань.",
+          "Сезон: осень, зима, весна."
+        ],
+        "colors": [
+          "васильковый"
+        ]
+      }
+    }
+  },
+  {
+    "id": 373,
+    "price": 2300,
+    "isTop": false,
+    "isNew": false,
+    "isSpecialOffer": false,
+    "sku": "99504",
+    "size": "XS S M L XL",
+    "category": "Pants",
+    "image": "/Pants/Nevada Pants/1.avif",
+    "images": [
+      "/Pants/Nevada Pants/2.avif",
+      "/Pants/Nevada Pants/3.avif",
+      "/Pants/Nevada Pants/4.avif"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "translations": {
+      "EN": {
+        "category": "Pants",
+        "name": "Nevada Pants",
+        "description": [
+          "Wide-leg trousers with a high waist and statement cuffs at the hem. The relaxed silhouette creates beautiful volume, while the unusual button-fastened detail gives the design a distinctive look.",
+          "The high waist visually emphasizes the waistline, while the wide legs drape freely over the figure. The main accent is the wide cuffs at the hem, secured with buttons, which give classic trousers an unconventional shape.",
+          "The design looks striking with the Nevada jacket and also pairs easily with simple tops, shirts, knitwear, and basic jackets.",
+          "Fabric: suiting fabric.",
+          "Season: autumn, winter, spring."
+        ],
+        "colors": [
+          "cornflower blue"
+        ]
+      },
+      "FR": {
+        "category": "Pantalons",
+        "name": "Pantalon « Nevada »",
+        "description": [
+          "Un pantalon large à taille haute avec des revers marqués au bas des jambes. La silhouette ample crée un beau volume, tandis que le détail original fermé par un bouton rend le modèle reconnaissable.",
+          "La taille haute souligne visuellement la taille, tandis que les jambes larges tombent librement sur la silhouette. L’accent principal réside dans les larges revers en bas, maintenus par des boutons, qui donnent une forme inhabituelle à ce pantalon classique.",
+          "Le modèle se distingue avec la veste « Nevada » et s’associe aussi facilement à des hauts épurés, des chemises, des mailles et des vestes basiques.",
+          "Tissu : tissu pour costume.",
+          "Saison : automne, hiver, printemps."
+        ],
+        "colors": [
+          "bleu bleuet"
+        ]
+      },
+      "UA": {
+        "category": "Брюки",
+        "name": "Брюки «Nevada»",
+        "description": [
+          "Широкі брюки з високою посадкою та акцентними манжетами внизу. Вільний силует створює красивий об’єм, а незвична деталь із застібкою на ґудзик робить модель впізнаваною.",
+          "Висока посадка візуально підкреслює талію, а широкі штанини вільно спадають по фігурі. Головний акцент — широкі манжети по низу, зафіксовані ґудзиками, які додають класичним брюкам нестандартної форми.",
+          "Модель ефектно виглядає з жакетом «Nevada», а також легко поєднується з лаконічними топами, сорочками, трикотажем і базовими жакетами.",
+          "Тканина: костюмна тканина.",
+          "Сезон: осінь, зима, весна."
+        ],
+        "colors": [
+          "васильковий"
+        ]
+      },
+      "RU": {
+        "category": "Брюки",
+        "name": "Брюки «Nevada»",
+        "description": [
+          "Широкие брюки с высокой посадкой и акцентными манжетами внизу. Свободный силуэт создаёт красивый объём, а необычная деталь с застёжкой на пуговицу делает модель узнаваемой.",
+          "Высокая посадка визуально подчёркивает талию, а широкие штанины свободно спадают по фигуре. Главный акцент — широкие манжеты по низу, зафиксированные пуговицами, которые добавляют классическим брюкам нестандартной формы.",
+          "Модель эффектно выглядит с жакетом «Nevada», а также легко сочетается с лаконичными топами, рубашками, трикотажем и базовыми жакетами.",
+          "Ткань: костюмная ткань.",
+          "Сезон: осень, зима, весна."
+        ],
+        "colors": [
+          "васильковый"
+        ]
+      }
+    }
+  },
+  {
+    "id": 372,
+    "price": 5800,
+    "isTop": false,
+    "isNew": false,
+    "isSpecialOffer": false,
+    "sku": "99503",
+    "size": "XS S M L XL",
+    "category": "Costumes",
+    "image": "/Costumes/Nevada Suit/1.avif",
+    "images": [
+      "/Costumes/Nevada Suit/2.avif",
+      "/Costumes/Nevada Suit/3.avif",
+      "/Costumes/Nevada Suit/4.avif",
+      "/Costumes/Nevada Suit/5.avif"
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "translations": {
+      "EN": {
+        "category": "Costumes",
+        "name": "Nevada Suit",
+        "description": [
+          "An elegant suit in a cornflower blue shade with an emphasis on a defined silhouette and modern proportions. A fitted jacket with a deep V-neckline pairs with wide-leg trousers to create a striking look in a contemporary classic style.",
+          "The fitted jacket features a deep V-neckline without lapels, a double-breasted button fastening, and flap pockets. Defined shoulders and darts emphasize the silhouette and create a structured fit.",
+          "High-waisted wide-leg trousers create soft volume throughout their length. A distinctive detail is the wide cuffs at the hem with a button fastening, which give the classic cut extra character.",
+          "The suit can be worn as a complete look, or the jacket and trousers can be styled separately.",
+          "Fabric: suiting fabric.",
+          "Season: autumn, winter, spring."
+        ],
+        "colors": [
+          "cornflower blue"
+        ]
+      },
+      "FR": {
+        "category": "Costumes",
+        "name": "Costume « Nevada »",
+        "description": [
+          "Un élégant costume dans une teinte bleu bleuet qui met en valeur une silhouette nette et des proportions modernes. Une veste cintrée à profond décolleté en V s’associe à un pantalon large pour créer une allure expressive dans un style classique contemporain.",
+          "La veste cintrée présente un profond décolleté en V sans revers, une fermeture croisée à boutons et des poches à rabat. La ligne d’épaules marquée et les pinces soulignent la silhouette et dessinent une coupe structurée.",
+          "Le pantalon large à taille haute crée un volume souple sur toute la longueur. Les larges revers au bas des jambes, fermés par un bouton, constituent un détail distinctif qui donne davantage de caractère à cette coupe classique.",
+          "Le costume peut se porter en ensemble, ou la veste et le pantalon peuvent être associés séparément à d’autres pièces.",
+          "Tissu : tissu pour costume.",
+          "Saison : automne, hiver, printemps."
+        ],
+        "colors": [
+          "bleu bleuet"
+        ]
+      },
+      "UA": {
+        "category": "Костюми",
+        "name": "Костюм «Nevada»",
+        "description": [
+          "Елегантний костюм у васильковому відтінку з акцентом на чіткий силует і сучасні пропорції. Приталений жакет із глибоким V-вирізом поєднується з широкими брюками, створюючи виразний образ у стилі сучасної класики.",
+          "Жакет приталеного силуету має глибокий V-подібний виріз без лацканів, двобортну застібку на ґудзики та кишені з клапанами. Акцентована лінія плечей і виточки підкреслюють силует та формують чітку посадку.",
+          "Широкі брюки з високою посадкою створюють м’який об’єм по всій довжині. Особлива деталь моделі — широкі манжети внизу з застібкою на ґудзик, завдяки яким класичний крій отримує більш характерне звучання.",
+          "Костюм можна носити як цілісний образ або стилізувати жакет і брюки окремо.",
+          "Тканина: костюмна тканина.",
+          "Сезон: осінь, зима, весна."
+        ],
+        "colors": [
+          "васильковий"
+        ]
+      },
+      "RU": {
+        "category": "Костюмы",
+        "name": "Костюм «Nevada»",
+        "description": [
+          "Элегантный костюм в васильковом оттенке с акцентом на чёткий силуэт и современные пропорции. Приталенный жакет с глубоким V-вырезом сочетается с широкими брюками, создавая выразительный образ в стиле современной классики.",
+          "Жакет приталенного силуэта имеет глубокий V-образный вырез без лацканов, двубортную застёжку на пуговицы и карманы с клапанами. Акцентированная линия плеч и вытачки подчёркивают силуэт и формируют чёткую посадку.",
+          "Широкие брюки с высокой посадкой создают мягкий объём по всей длине. Особая деталь модели — широкие манжеты внизу с застёжкой на пуговицу, благодаря которым классический крой получает более характерное звучание.",
+          "Костюм можно носить как цельный образ или стилизовать жакет и брюки отдельно.",
+          "Ткань: костюмная ткань.",
+          "Сезон: осень, зима, весна."
+        ],
+        "colors": [
+          "васильковый"
+        ]
+      }
+    }
+  },
+  {
     "id": 371,
     "price": 3300,
     "isTop": false,
