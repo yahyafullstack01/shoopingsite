@@ -11573,16 +11573,17 @@ sku: "12345",
         }
       }
     },
-        {
+
+    {
       id: 10,
       price: 1350 ,
       isNew: false,
       // discountPrice: 1148,
       sku: "12345",
-size: "XS S M L XL",
+      size: "XS S M L XL",
       category: "Tops",
-      image: "/Top/Openshouldergolf/5.avif",
-      images: ["/Top/Openshouldergolf/2.avif", "/Top/Openshouldergolf/3.avif", "/Top/Openshouldergolf/4.avif", "/Top/Openshouldergolf/1.avif","/Top/Openshouldergolf/5.avif", "/Top/Openshouldergolf/6.avif"],
+      image: "/Top/Openshouldergolf/4.avif",
+      images: ["/Top/Openshouldergolf/2.avif", "/Top/Openshouldergolf/3.avif","/Top/Openshouldergolf/1.avif",],
        
       sizes: ["XS", "S", "M", "L", "XL"],
       translations: {
@@ -11591,19 +11592,19 @@ size: "XS S M L XL",
           name: "Open-shoulder golf",
           description: "off-shoulder turtleneck made of soft fabric: 50% cashmere, 28% polyester, 28% nylon",
           color: "blue",
-          colors: ["milky", "black"],
+          colors: ["milky",],
         },
         FR: {
           category: "Tops",
           name: "Golfer avec les épaules ouvertes",
           description: "col roulé à épaules dénudées en tissu doux : 50 % cachemire, 28 % polyester, 28 % nylon",
-          colors:["lait", "noir"],
+          colors:["lait",],
         },
         UA: {
           category: "Топи",
           name: "Гольф із відкритими плечима",
           description: "гольф із відкритими плечима із мʼякої тканини: 50% кашемір, 28% поліестер, 28% нейлон",
-          colors: ["молочний", "чорний"],
+          colors: ["молочний",],
         }
       }
     },
@@ -16617,10 +16618,6 @@ sku: "98808",
     images: [
       "/Sweaters/Off-Shoulder Top/2.avif",
       "/Sweaters/Off-Shoulder Top/3.avif",
-      "/Sweaters/Off-Shoulder Top/4.avif",
-      "/Sweaters/Off-Shoulder Top/5.avif",
-      "/Sweaters/Off-Shoulder Top/6.avif",
-      "/Sweaters/Off-Shoulder Top/7.avif",
       "/Sweaters/Off-Shoulder Top/8.avif",
       "/Sweaters/Off-Shoulder Top/9.avif",
       "/Sweaters/Off-Shoulder Top/10.avif",
@@ -16633,25 +16630,25 @@ sku: "98808",
         category: "Sweaters",
         name: "Off-Shoulder Top",
         description: "Off-shoulder top with sleeve slits.\nFabric: 50% cashmere, 28% polyester, 28% nylon.",
-        colors: ["black", "gray", "milk"]
+        colors: ["gray", "milk"]
       },
       FR: {
         category: "Pulls",
         name: "Top Épaules Dénudées",
         description: "Top à épaules dénudées avec fentes sur les manches.\nTissu : 50% cachemire, 28% polyester, 28% nylon.",
-        colors: ["noir", "gris", "lait"]
+        colors: ["gris", "lait"]
       },
       UA: {
         category: "Светри",
         name: "Топ із відкритими плечима",
         description: "Топ із відкритими плечима та розрізами на рукавах.\nТканина: 50% кашемір, 28% поліестер, 28% нейлон.",
-        colors: ["чорний", "сірий", "молоко"]
+        colors: ["сірий", "молоко"]
       },
       RU: {
         category: "Свитера",
         name: "Топ с открытыми плечами",
         description: "Топ с открытыми плечами и разрезами на рукавах.\nТкань: 50% кашемир, 28% полиэстер, 28% нейлон.",
-        colors: ["чёрный", "серый", "молоко"]
+        colors: ["серый", "молоко"]
       }
     }
   },  
@@ -16700,56 +16697,6 @@ sku: "98807",
       }
     }
   },  
-  {
-    id: 86,
-    price: 2100,
-    isTop: false,
-    isNew: false,
-    isSpecialOffer: false,
-    // discountPrice: 1700,
-sku: "98806",
-    size: "XS S M L XL",
-    category: "Tops",
-    image: "/Top/Piped Top/1.avif",
-    images: [
-      "/Top/Piped Top/2.avif",
-      "/Top/Piped Top/3.avif",
-       "/Tops/Piped Top/4.avif",
-       "/Tops/Piped Top/5.avif"
-    ],
-    sizes: ["XS", "S", "M", "L", "XL"],
-    translations: {
-      EN: {
-        category: "Tops",
-        name: "Piped Top",
-        description: "Long-staple 100% cotton muslin. A lightweight and soft-touch fabric.",
-        colors: ["milk"]
-      },
-      FR: {
-        category: "Tops",
-        name: "Top à Passepoil",
-        description: "Mousseline de coton 100% à longues fibres. Un tissu léger et doux au toucher.",
-        colors: ["lait"]
-      },
-      UA: {
-        category: "Топи",
-        name: "Топ з кантом",
-        description: "Довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
-        colors: ["молоко"]
-      },
-      RU: {
-        category: "Топы",
-        name: "Топ с кантом",
-        description: "Долговолокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь ткань.",
-        colors: ["молоко"]
-      }
-    }
-  },  
-
-
-  
-  
-
   
 
   {

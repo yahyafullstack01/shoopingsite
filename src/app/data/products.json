@@ -12001,14 +12001,11 @@
     "sku": "12345",
     "size": "XS S M L XL",
     "category": "Tops",
-    "image": "/Top/Openshouldergolf/5.avif",
+    "image": "/Top/Openshouldergolf/4.avif",
     "images": [
       "/Top/Openshouldergolf/2.avif",
       "/Top/Openshouldergolf/3.avif",
-      "/Top/Openshouldergolf/4.avif",
-      "/Top/Openshouldergolf/1.avif",
-      "/Top/Openshouldergolf/5.avif",
-      "/Top/Openshouldergolf/6.avif"
+      "/Top/Openshouldergolf/1.avif"
     ],
     "sizes": [
       "XS",
@@ -17304,10 +17301,6 @@
     "images": [
       "/Sweaters/Off-Shoulder Top/2.avif",
       "/Sweaters/Off-Shoulder Top/3.avif",
-      "/Sweaters/Off-Shoulder Top/4.avif",
-      "/Sweaters/Off-Shoulder Top/5.avif",
-      "/Sweaters/Off-Shoulder Top/6.avif",
-      "/Sweaters/Off-Shoulder Top/7.avif",
       "/Sweaters/Off-Shoulder Top/8.avif",
       "/Sweaters/Off-Shoulder Top/9.avif",
       "/Sweaters/Off-Shoulder Top/10.avif",
@@ -17422,64 +17415,7 @@
       }
     }
   },
-  {
-    "id": 86,
-    "price": 2100,
-    "isTop": false,
-    "isNew": false,
-    "isSpecialOffer": false,
-    "sku": "98806",
-    "size": "XS S M L XL",
-    "category": "Tops",
-    "image": "/Top/Piped Top/1.avif",
-    "images": [
-      "/Top/Piped Top/2.avif",
-      "/Top/Piped Top/3.avif",
-      "/Tops/Piped Top/4.avif",
-      "/Tops/Piped Top/5.avif"
-    ],
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "translations": {
-      "EN": {
-        "category": "Tops",
-        "name": "Piped Top",
-        "description": "Long-staple 100% cotton muslin. A lightweight and soft-touch fabric.",
-        "colors": [
-          "milk"
-        ]
-      },
-      "FR": {
-        "category": "Tops",
-        "name": "Top à Passepoil",
-        "description": "Mousseline de coton 100% à longues fibres. Un tissu léger et doux au toucher.",
-        "colors": [
-          "lait"
-        ]
-      },
-      "UA": {
-        "category": "Топи",
-        "name": "Топ з кантом",
-        "description": "Довговолокняний муслін зі 100% бавовни. Легка та мʼяка тканина на дотик.",
-        "colors": [
-          "молоко"
-        ]
-      },
-      "RU": {
-        "category": "Топы",
-        "name": "Топ с кантом",
-        "description": "Долговолокнистый муслин из 100% хлопка. Легкая и мягкая на ощупь ткань.",
-        "colors": [
-          "молоко"
-        ]
-      }
-    }
-  },
+
   {
     "id": 81,
     "price": 2400,
