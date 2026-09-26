@@ -1,5 +1,495 @@
 const products = [
   {
+  id: 388,
+  price: 3200,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+  sku: "99519",
+  size: "XS S M L XL",
+  category: "Jackets",
+  image: "/Jackets/Tie-Fastening Jacket/1.avif",
+  images: [
+    "/Jackets/Tie-Fastening Jacket/2.avif",
+    "/Jackets/Tie-Fastening Jacket/3.avif",
+    "/Jackets/Tie-Fastening Jacket/4.avif",
+    "/Jackets/Tie-Fastening Jacket/5.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Jackets",
+      name: "Tie-Fastening Jacket",
+      description: [
+        "A black jacket with an unconventional construction and long ties that allow the silhouette and styling to be changed. The clean design emphasizes the waist, combining classic tailoring with a contemporary asymmetric cut.",
+        "A defined shoulder line creates a structured silhouette, while the absence of a conventional fastening makes the cut more minimalist. The long ties create a striking vertical line and add movement to the design.",
+        "The jacket pairs easily with shirts, turtlenecks, trousers, skirts, and leggings. It suits both understated monochrome looks and more expressive layered outfits.",
+        "Fabric: suiting fabric.",
+        "Season: autumn, winter, spring."
+      ],
+      colors: ["black"]
+    },
+    FR: {
+      category: "Vestes",
+      name: "Veste à nouer",
+      description: [
+        "Une veste noire à la construction originale, dotée de longs liens qui permettent de varier la silhouette et les façons de la porter. Ce modèle épuré souligne la taille et associe l’esthétique classique du tailleur à une coupe asymétrique contemporaine.",
+        "Une ligne d’épaules nette dessine une silhouette structurée, tandis que l’absence de fermeture classique rend la coupe plus minimaliste. Les longs liens créent une ligne verticale expressive et apportent du mouvement au modèle.",
+        "La veste s’associe facilement à des chemises, des cols roulés, des pantalons, des jupes et des leggings. Elle convient aussi bien aux tenues monochromes sobres qu’aux associations superposées plus affirmées.",
+        "Tissu : tissu pour costume.",
+        "Saison : automne, hiver, printemps."
+      ],
+      colors: ["noir"]
+    },
+    UA: {
+      category: "Жакети",
+      name: "Жакет на завʼязці",
+      description: [
+        "Чорний жакет із нестандартною конструкцією та довгими завʼязками, які дозволяють змінювати силует і спосіб стилізації. Лаконічна модель з акцентом на талії, що поєднує класичну костюмну естетику із сучасним асиметричним кроєм.",
+        "Чітка лінія плечей формує структурований силует, а відсутність класичної застібки робить крій більш мінімалістичним. Довгі завʼязки створюють виразну вертикаль і додають моделі динаміки.",
+        "Жакет легко поєднується з сорочками, гольфами, брюками, спідницями та легінсами. Підійде як для стриманих монохромних образів, так і для більш акцентних багатошарових стилізацій.",
+        "Тканина: костюмна тканина.",
+        "Сезон: осінь, зима, весна."
+      ],
+      colors: ["чорний"]
+    },
+    RU: {
+      category: "Жакеты",
+      name: "Жакет на завязке",
+      description: [
+        "Чёрный жакет с нестандартной конструкцией и длинными завязками, которые позволяют менять силуэт и способ стилизации. Лаконичная модель с акцентом на талии, сочетающая классическую костюмную эстетику с современным асимметричным кроем.",
+        "Чёткая линия плеч формирует структурированный силуэт, а отсутствие классической застёжки делает крой более минималистичным. Длинные завязки создают выразительную вертикаль и добавляют модели динамики.",
+        "Жакет легко сочетается с рубашками, водолазками, брюками, юбками и легинсами. Подойдёт как для сдержанных монохромных образов, так и для более акцентных многослойных стилизаций.",
+        "Ткань: костюмная ткань.",
+        "Сезон: осень, зима, весна."
+      ],
+      colors: ["чёрный"]
+    }
+  }
+},
+  {
+  id: 387,
+  price: 1850,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+  sku: "99518",
+  size: "XS S M L XL",
+  category: "Sweaters",
+  image: "/Sweaters/Knitted Zip Top/1.avif",
+  images: [
+    "/Sweaters/Knitted Zip Top/2.avif",
+    "/Sweaters/Knitted Zip Top/3.avif",
+    "/Sweaters/Knitted Zip Top/4.avif",
+    "/Sweaters/Knitted Zip Top/5.avif",
+    "/Sweaters/Knitted Zip Top/6.avif",
+    "/Sweaters/Knitted Zip Top/7.avif",
+    "/Sweaters/Knitted Zip Top/8.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Sweaters",
+      name: "Knitted Zip Top",
+      description: [
+        "A loose-fitting knitted top with an asymmetric zip fastening and a voluminous collar. Soft knit containing 65% natural wool provides warmth and comfort, while the convertible design allows for different styling options.",
+        "The loose silhouette, dropped shoulders, and voluminous sleeves create a relaxed fit. The key detail is the asymmetric zipper, which allows you to change the shape of the front and drape the wide collar in different ways.",
+        "The top can be worn zipped up, partly open, or with the collar lowered over the shoulders. It pairs easily with trousers, jeans, skirts, and basic tops, making it suitable for layered autumn and winter looks.",
+        "Fabric: knit, 65% natural wool.",
+        "Color: milky white.",
+        "Season: autumn, winter."
+      ],
+      colors: ["milky white", "light blue"]
+    },
+    FR: {
+      category: "Pulls",
+      name: "Haut zippé en maille",
+      description: [
+        "Un haut en maille à la coupe ample, avec une fermeture zippée asymétrique et un col volumineux. La maille douce contenant 65 % de laine naturelle apporte chaleur et confort, tandis que la coupe transformable permet de varier les styles.",
+        "La silhouette ample, les épaules tombantes et les manches volumineuses créent une coupe décontractée. Le détail principal est la fermeture éclair asymétrique, qui permet de modifier la forme du devant et de draper le large col de différentes façons.",
+        "Le haut peut se porter fermé, partiellement ouvert ou avec le col abaissé sur les épaules. Il s’associe facilement à des pantalons, des jeans, des jupes et des hauts basiques, et convient aux tenues superposées d’automne et d’hiver.",
+        "Tissu : maille, 65 % de laine naturelle.",
+        "Couleur : blanc laiteux.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["blanc laiteux", "bleu clair"]
+    },
+    UA: {
+      category: "Светри",
+      name: "Трикотажна zip-кофта",
+      description: [
+        "Трикотажна кофта вільного крою з асиметричною zip-застібкою та об’ємним коміром. М’який трикотаж із 65% натуральної вовни дарує тепло та комфорт, а трансформований крій дозволяє стилізувати модель по-різному.",
+        "Вільний силует, спущена лінія плеча та об’ємні рукави створюють розслаблену посадку. Головна деталь моделі — асиметрична застібка-блискавка, завдяки якій можна змінювати форму передньої частини та по-різному драпірувати широкий комір.",
+        "Кофту можна носити застібнутою, частково відкритою або спустивши комір на плечі. Вона легко поєднується з брюками, джинсами, спідницями та базовими топами, підходить для багатошарових осінніх і зимових образів.",
+        "Тканина: трикотаж, 65% натуральної вовни.",
+        "Колір: молочний.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["молочний", "блакитний"]
+    },
+    RU: {
+      category: "Свитеры",
+      name: "Трикотажная zip-кофта",
+      description: [
+        "Трикотажная кофта свободного кроя с асимметричной zip-застёжкой и объёмным воротником. Мягкий трикотаж с 65% натуральной шерсти дарит тепло и комфорт, а трансформируемый крой позволяет стилизовать модель по-разному.",
+        "Свободный силуэт, спущенная линия плеча и объёмные рукава создают расслабленную посадку. Главная деталь модели — асимметричная застёжка-молния, благодаря которой можно менять форму передней части и по-разному драпировать широкий воротник.",
+        "Кофту можно носить застёгнутой, частично открытой или спустив воротник на плечи. Она легко сочетается с брюками, джинсами, юбками и базовыми топами, подходит для многослойных осенних и зимних образов.",
+        "Ткань: трикотаж, 65% натуральной шерсти.",
+        "Цвет: молочный.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["молочный", "голубой"]
+    }
+  }
+},
+  {
+  id: 386,
+  price: 2300,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+  sku: "99517",
+  size: "XS S M L XL",
+  category: "Shirts",
+  image: "/Shirts/Lace Shirt/1.avif",
+  images: [
+    "/Shirts/Lace Shirt/2.avif",
+    "/Shirts/Lace Shirt/3.avif",
+    "/Shirts/Lace Shirt/4.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Shirts",
+      name: "Lace Shirt",
+      description: [
+        "A white shirt with statement lace panels that emphasize the waist and create a corset-like silhouette. The fitted cut and lacing at the back allow the fit to be adjusted to the figure.",
+        "The fitted silhouette creates a defined waistline, while the lacing at the back allows further fit adjustment. A classic turn-down collar, button fastening, and long sleeves balance the statement design and maintain the shirt’s versatility.",
+        "The design is easy to style with leather skirts and trousers, denim, or classic bottoms, from everyday looks to more evening-oriented combinations.",
+        "Fabric: 100% cotton.",
+        "Season: autumn, winter, spring, summer."
+      ],
+      colors: ["white"]
+    },
+    FR: {
+      category: "Chemises",
+      name: "Chemise avec dentelle",
+      description: [
+        "Une chemise blanche aux empiècements de dentelle marqués qui soulignent la taille et créent un effet de silhouette corsetée. La coupe cintrée et le laçage au dos permettent d’ajuster le modèle à la silhouette.",
+        "La coupe cintrée dessine une taille marquée, tandis que le laçage au dos permet d’affiner l’ajustement. Un col rabattu classique, une fermeture boutonnée et des manches longues équilibrent le design expressif et préservent la polyvalence de la chemise.",
+        "Le modèle se porte facilement avec des jupes et des pantalons en cuir, du denim ou des bas classiques, pour des tenues du quotidien comme pour des associations plus habillées en soirée.",
+        "Tissu : 100 % coton.",
+        "Saison : automne, hiver, printemps, été."
+      ],
+      colors: ["blanc"]
+    },
+    UA: {
+      category: "Сорочки",
+      name: "Сорочка із мереживом",
+      description: [
+        "Біла сорочка з акцентними мереживними вставками, що підкреслюють талію та створюють ефект корсетного силуету. Приталений крій і шнурівка на спинці дозволяють регулювати посадку по фігурі.",
+        "Приталений силует формує виразну лінію талії, а шнурівка на спинці дозволяє додатково регулювати посадку. Класичний відкладний комір, застібка на ґудзики та довгі рукави врівноважують акцентний дизайн і зберігають універсальність сорочки.",
+        "Модель легко стилізувати зі шкіряними спідницями та брюками, денімом або класичним низом — від повсякденних образів до більш вечірніх поєднань.",
+        "Тканина: 100% бавовна.",
+        "Сезон: осінь, зима, весна, літо."
+      ],
+      colors: ["білий"]
+    },
+    RU: {
+      category: "Рубашки",
+      name: "Рубашка с кружевом",
+      description: [
+        "Белая рубашка с акцентными кружевными вставками, которые подчёркивают талию и создают эффект корсетного силуэта. Приталенный крой и шнуровка на спинке позволяют регулировать посадку по фигуре.",
+        "Приталенный силуэт формирует выразительную линию талии, а шнуровка на спинке позволяет дополнительно регулировать посадку. Классический отложной воротник, застёжка на пуговицы и длинные рукава уравновешивают акцентный дизайн и сохраняют универсальность рубашки.",
+        "Модель легко стилизовать с кожаными юбками и брюками, денимом или классическим низом — от повседневных образов до более вечерних сочетаний.",
+        "Ткань: 100% хлопок.",
+        "Сезон: осень, зима, весна, лето."
+      ],
+      colors: ["белый"]
+    }
+  }
+},
+  {
+  id: 385,
+  price: 2300,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+  sku: "99516",
+  size: "XS S M L XL",
+  category: "Skirts",
+  image: "/Skirts/Leather Lace Skirt/1.avif",
+  images: [
+    "/Skirts/Leather Lace Skirt/2.avif",
+    "/Skirts/Leather Lace Skirt/3.avif",
+    "/Skirts/Leather Lace Skirt/4.avif",
+    "/Skirts/Leather Lace Skirt/5.avif",
+    "/Skirts/Leather Lace Skirt/6.avif",
+    "/Skirts/Leather Lace Skirt/7.avif",
+    "/Skirts/Leather Lace Skirt/8.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Skirts",
+      name: "Faux Leather Skirt with Lace",
+      description: [
+        "An elegant faux leather midi skirt finished with a wide panel of delicate lace. The clean, straight silhouette combined with the semi-sheer texture creates a distinctive accent and adds femininity to the look.",
+        "The design features a high waist and a straight cut. The lower section is finished with a wide tonal lace panel that visually lightens the midi length and gives the design a more delicate feel.",
+        "The skirt pairs easily with jackets, shirts, turtlenecks, and voluminous knitwear. It suits both understated everyday looks and more expressive evening outfits.",
+        "Fabric: high-quality faux leather with a suede backing.",
+        "Color: olive.",
+        "Season: autumn, winter, spring."
+      ],
+      colors: ["olive", "black"]
+    },
+    FR: {
+      category: "Jupes",
+      name: "Jupe en similicuir avec dentelle",
+      description: [
+        "Une élégante jupe midi en similicuir, agrémentée d’un large empiècement de dentelle délicate. La silhouette droite et épurée, associée à la texture semi-transparente, crée un accent expressif et apporte de la féminité à la tenue.",
+        "Le modèle présente une taille haute et une coupe droite. Le bas est agrémenté d’un large empiècement de dentelle ton sur ton, qui allège visuellement la longueur midi et rend le design plus délicat.",
+        "La jupe s’associe facilement à des vestes, des chemises, des cols roulés et des mailles volumineuses. Elle convient aussi bien aux tenues sobres du quotidien qu’aux looks de soirée plus affirmés.",
+        "Tissu : similicuir de qualité sur une base en suédine.",
+        "Couleur : olive.",
+        "Saison : automne, hiver, printemps."
+      ],
+      colors: ["olive", "noir"]
+    },
+    UA: {
+      category: "Спідниці",
+      name: "Шкіряна спідниця з мереживом",
+      description: [
+        "Елегантна спідниця міді з екошкіри доповнена широкою вставкою з делікатного мережива. Лаконічний прямий силует у поєднанні з напівпрозорою фактурою створює виразний акцент і додає образу жіночності.",
+        "Модель має високу посадку та прямий крій. Нижня частина доповнена широкою мереживною вставкою в тон, яка візуально полегшує довжину міді та робить дизайн більш делікатним.",
+        "Спідниця легко поєднується з жакетами, сорочками, гольфами та об’ємним трикотажем. Підійде як для стриманих повсякденних образів, так і для більш акцентних вечірніх стилізацій.",
+        "Тканина: якісна екошкіра на замшевій основі.",
+        "Колір: оливка.",
+        "Сезон: осінь, зима, весна."
+      ],
+      colors: ["оливка", "чорний"]
+    },
+    RU: {
+      category: "Юбки",
+      name: "Кожаная юбка с кружевом",
+      description: [
+        "Элегантная юбка миди из экокожи дополнена широкой вставкой из деликатного кружева. Лаконичный прямой силуэт в сочетании с полупрозрачной фактурой создаёт выразительный акцент и добавляет образу женственности.",
+        "Модель имеет высокую посадку и прямой крой. Нижняя часть дополнена широкой кружевной вставкой в тон, которая визуально облегчает длину миди и делает дизайн более деликатным.",
+        "Юбка легко сочетается с жакетами, рубашками, водолазками и объёмным трикотажем. Подойдёт как для сдержанных повседневных образов, так и для более акцентных вечерних стилизаций.",
+        "Ткань: качественная экокожа на замшевой основе.",
+        "Цвет: оливковый.",
+        "Сезон: осень, зима, весна."
+      ],
+      colors: ["оливковый", "чёрный"]
+    }
+  }
+},
+  {
+  id: 384,
+  price: 5500,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+  sku: "99515",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Nevada Dress/1.avif",
+  images: [
+    "/Dress/Nevada Dress/2.avif",
+    "/Dress/Nevada Dress/3.avif",
+    "/Dress/Nevada Dress/4.avif",
+    "/Dress/Nevada Dress/5.avif",
+    "/Dress/Nevada Dress/6.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Nevada Dress",
+      description: [
+        "An elegant midi dress in a cornflower blue shade with a distinctive A-line silhouette and a clean collar line. The design combines understated classic styling with contemporary details and beautifully emphasizes the waist through its carefully considered cut.",
+        "The set includes a dress and a cape.",
+        "The sleeveless design features a turn-down collar and a full-length fastening with fabric-covered buttons. The bodice is fitted, while the dress gradually flares from the waist to the hem, creating a distinctive A-line silhouette and graceful movement as you walk.",
+        "The midi length makes the design versatile for different styling options: wear the dress on its own or pair it with the Nevada jacket for a coordinated tailored look.",
+        "Fabric: wool suiting fabric.",
+        "Season: autumn, winter."
+      ],
+      colors: ["cornflower blue"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe « Nevada »",
+      description: [
+        "Une élégante robe midi dans une teinte bleu bleuet, à la silhouette trapèze expressive et au col épuré. Le modèle associe un classicisme sobre à des détails contemporains et souligne joliment la taille grâce à une coupe soigneusement étudiée.",
+        "L’ensemble comprend une robe et une cape.",
+        "Le modèle sans manches présente un col rabattu et une fermeture sur toute la longueur à boutons recouverts de tissu. Le haut est ajusté, tandis que la robe s’évase progressivement à partir de la taille, dessinant une silhouette trapèze expressive et un beau mouvement du tissu à chaque pas.",
+        "La longueur midi permet de varier les associations : la robe peut se porter seule ou avec la veste « Nevada » pour créer une tenue habillée coordonnée.",
+        "Tissu : tissu de laine pour costume.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["bleu bleuet"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Сукня «Nevada»",
+      description: [
+        "Елегантна сукня міді у васильковому відтінку з виразним А-силуетом і лаконічною лінією коміра. Модель поєднує стриману класику з сучасними деталями та красиво підкреслює талію завдяки продуманому крою.",
+        "У комплекті: сукня + накидка.",
+        "Модель без рукавів має відкладний комір і застібку на обтягнуті тканиною ґудзики по всій довжині. Верх посаджений по фігурі, а від лінії талії сукня плавно розширюється донизу, формуючи виразний А-силует і красивий рух тканини під час ходьби.",
+        "Довжина міді робить модель універсальною для різних стилізацій: сукню можна носити самостійно або доповнювати жакетом «Nevada», створюючи цілісний костюмний образ.",
+        "Тканина: вовняна костюмна тканина.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["васильковий"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Платье «Nevada»",
+      description: [
+        "Элегантное платье миди в васильковом оттенке с выразительным А-силуэтом и лаконичной линией воротника. Модель сочетает сдержанную классику с современными деталями и красиво подчёркивает талию благодаря продуманному крою.",
+        "В комплекте: платье + накидка.",
+        "Модель без рукавов имеет отложной воротник и застёжку на обтянутые тканью пуговицы по всей длине. Верх посажен по фигуре, а от линии талии платье плавно расширяется книзу, формируя выразительный А-силуэт и красивое движение ткани при ходьбе.",
+        "Длина миди делает модель универсальной для разных стилизаций: платье можно носить самостоятельно или дополнять жакетом «Nevada», создавая цельный костюмный образ.",
+        "Ткань: шерстяная костюмная ткань.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["васильковый"]
+    }
+  }
+},
+  {
+  id: 383,
+  price: 2150,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+  sku: "99514",
+  size: "XS S M L XL",
+  category: "Skirts",
+  image: "/Skirts/Parisian Skirt/1.avif",
+  images: [
+    "/Skirts/Parisian Skirt/2.avif",
+    "/Skirts/Parisian Skirt/3.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Skirts",
+      name: "Parisian Skirt",
+      description: [
+        "A straight-cut wool midi skirt with a high waist. The minimalist cut and soft beige shade make it a versatile foundation for an autumn-winter wardrobe.",
+        "The elongated straight silhouette and midi length create an understated feminine fit that works easily with both classic and everyday looks.",
+        "The clean design without unnecessary decorative details emphasizes the texture of the wool fabric and the purity of the silhouette. A wide waistband highlights the waistline, while the neutral beige shade pairs easily with milky white, chocolate, black, grey, and other basic colors.",
+        "Fabric: 75% natural wool.",
+        "Season: autumn, winter."
+      ],
+      colors: ["beige"]
+    },
+    FR: {
+      category: "Jupes",
+      name: "Jupe « Parisian »",
+      description: [
+        "Une jupe midi en laine à la coupe droite et à la taille haute. Sa coupe minimaliste et sa douce teinte beige en font une base polyvalente du vestiaire automne-hiver.",
+        "La silhouette droite et élancée et la longueur midi dessinent une coupe sobre et féminine qui s’intègre facilement aux tenues classiques comme aux looks du quotidien.",
+        "Le design épuré, sans détails décoratifs superflus, met en valeur la texture du tissu de laine et la pureté de la silhouette. Une large ceinture souligne la taille, tandis que la teinte beige neutre s’associe facilement au blanc laiteux, au chocolat, au noir, au gris et aux autres couleurs basiques.",
+        "Tissu : 75 % de laine naturelle.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["beige"]
+    },
+    UA: {
+      category: "Спідниці",
+      name: "Спідниця «Parisian»",
+      description: [
+        "Вовняна спідниця міді прямого силуету з високою посадкою. Мінімалістичний крій та м’який бежевий відтінок роблять її універсальною основою осінньо-зимового гардероба.",
+        "Прямий витягнутий силует і довжина міді створюють стриману жіночну посадку та легко вписуються як у класичні, так і в повсякденні образи.",
+        "Лаконічний дизайн без зайвих декоративних деталей робить акцент на фактурі вовняної тканини та чистоті силуету. Широкий пояс підкреслює лінію талії, а нейтральний бежевий відтінок легко комбінується з молочним, шоколадним, чорним, сірим та іншими базовими кольорами.",
+        "Тканина: 75% натуральна вовна.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["бежевий"]
+    },
+    RU: {
+      category: "Юбки",
+      name: "Юбка «Parisian»",
+      description: [
+        "Шерстяная юбка миди прямого силуэта с высокой посадкой. Минималистичный крой и мягкий бежевый оттенок делают её универсальной основой осенне-зимнего гардероба.",
+        "Прямой вытянутый силуэт и длина миди создают сдержанную женственную посадку и легко вписываются как в классические, так и в повседневные образы.",
+        "Лаконичный дизайн без лишних декоративных деталей делает акцент на фактуре шерстяной ткани и чистоте силуэта. Широкий пояс подчёркивает линию талии, а нейтральный бежевый оттенок легко комбинируется с молочным, шоколадным, чёрным, серым и другими базовыми цветами.",
+        "Ткань: 75% натуральная шерсть.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["бежевый"]
+    }
+  }
+},
+  {
+  id: 382,
+  price: 3150,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+  sku: "99513",
+  size: "XS S M L XL",
+  category: "Jackets",
+  image: "/Jackets/Parisian Jacket/1.avif",
+  images: [
+    "/Jackets/Parisian Jacket/2.avif",
+    "/Jackets/Parisian Jacket/3.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Jackets",
+      name: "Parisian Jacket",
+      description: [
+        "A cropped wool jacket with a relaxed silhouette and a statement asymmetric fastening. Fabric-covered buttons, decorative ties, and wide sleeves give the design its distinctive silhouette.",
+        "The design features a straight, loose cut, dropped shoulders, and a collarless round neckline, making it easy to pair with turtlenecks, shirts, and fine knitwear.",
+        "The main accent is the asymmetric front detailing with decorative tabs, fabric-covered buttons, and long ties. Wide sleeves with turn-back cuffs reinforce the geometry of the silhouette and give the design a contemporary feel.",
+        "Fabric: 75% natural wool.",
+        "Season: autumn, winter."
+      ],
+      colors: ["beige"]
+    },
+    FR: {
+      category: "Vestes",
+      name: "Veste « Parisian »",
+      description: [
+        "Une veste courte en laine à la silhouette ample, avec une fermeture asymétrique marquée. Les boutons recouverts de tissu, les liens décoratifs et les manches larges dessinent la silhouette reconnaissable du modèle.",
+        "Le modèle présente une coupe droite et ample, des épaules tombantes et une encolure ronde sans col, ce qui permet de l’associer facilement à des cols roulés, des chemises et des mailles fines.",
+        "L’accent principal réside dans la construction asymétrique du devant, avec des pattes décoratives, des boutons recouverts de tissu et de longs liens. Les manches larges à revers soulignent la géométrie de la silhouette et apportent une touche contemporaine au modèle.",
+        "Tissu : 75 % de laine naturelle.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["beige"]
+    },
+    UA: {
+      category: "Жакети",
+      name: "Жакет «Parisian»",
+      description: [
+        "Укорочений вовняний жакет вільного силуету з акцентною асиметричною застібкою. Обтягнуті тканиною ґудзики, декоративні зав’язки та широкі рукави формують впізнаваний силует моделі.",
+        "Модель має прямий вільний крій, спущену лінію плеча та круглу горловину без коміра, завдяки чому легко поєднується з гольфами, сорочками й тонким трикотажем.",
+        "Головний акцент — асиметричне оформлення передньої частини з декоративними планками, обтягнутими тканиною ґудзиками та довгими зав’язками. Широкі рукави з відворотами підтримують геометрію силуету та додають моделі сучасного звучання.",
+        "Тканина: 75% натуральна вовна.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["бежевий"]
+    },
+    RU: {
+      category: "Жакеты",
+      name: "Жакет «Parisian»",
+      description: [
+        "Укороченный шерстяной жакет свободного силуэта с акцентной асимметричной застёжкой. Обтянутые тканью пуговицы, декоративные завязки и широкие рукава формируют узнаваемый силуэт модели.",
+        "Модель имеет прямой свободный крой, спущенную линию плеча и круглую горловину без воротника, благодаря чему легко сочетается с водолазками, рубашками и тонким трикотажем.",
+        "Главный акцент — асимметричное оформление передней части с декоративными планками, обтянутыми тканью пуговицами и длинными завязками. Широкие рукава с отворотами поддерживают геометрию силуэта и придают модели современное звучание.",
+        "Ткань: 75% натуральная шерсть.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["бежевый"]
+    }
+  }
+},
+  {
   id: 381,
   price: 5300,
   isTop: false,
@@ -1058,6 +1548,9 @@ sku: "99497",
     "/Top/Eco-Crinkle Sheer Turtleneck/2.avif",
     "/Top/Eco-Crinkle Sheer Turtleneck/3.avif",
     "/Top/Eco-Crinkle Sheer Turtleneck/4.avif",
+    "/Top/Eco-Crinkle Sheer Turtleneck/5.avif",
+    "/Top/Eco-Crinkle Sheer Turtleneck/6.avif",
+    "/Top/Eco-Crinkle Sheer Turtleneck/7.avif",
   ],
   sizes: ["XS", "S", "M", "L", "XL"],
   translations: {
@@ -1071,7 +1564,7 @@ sku: "99497",
         "Fabric: eco-crinkle.",
         "Season: autumn, winter."
       ],
-      colors: ["black"]
+      colors: ["black", "milky white"]
     },
     FR: {
       category: "Hauts",
@@ -1083,7 +1576,7 @@ sku: "99497",
         "Tissu : éco-crinkle.",
         "Saison : automne, hiver."
       ],
-      colors: ["noir"]
+      colors: ["noir", "blanc laiteux"]
     },
     UA: {
       category: "Топи",
@@ -1095,7 +1588,7 @@ sku: "99497",
         "Тканина: еко-креш.",
         "Сезон: осінь, зима."
       ],
-      colors: ["чорний"]
+      colors: ["чорний", "молочний"]
     },
     RU: {
       category: "Топы",
@@ -1107,7 +1600,7 @@ sku: "99497",
         "Ткань: эко-крэш.",
         "Сезон: осень, зима."
       ],
-      colors: ["черный"]
+      colors: ["черный", "молочный"]
     }
   }
 },
@@ -12213,11 +12706,12 @@ sku: "LS-OVR-21057",
 sku: "12345",
     size: "XS S M L XL",
     category: "Dresses",
-    image: "/Dress/Woolen trapeze dress/1.avif",
+    image: "/Dress/Woolen trapeze dress/6.avif",
     images: [
-      // "/Dress/Woolen trapeze dress/22.avif",
-      // "/Dress/Woolen trapeze dress/23.avif",
-      // "/Dress/Woolen trapeze dress/24.avif",
+     "/Dress/Woolen trapeze dress/7.avif",
+      "/Dress/Woolen trapeze dress/8.avif",
+      "/Dress/Woolen trapeze dress/9.avif",
+      "/Dress/Woolen trapeze dress/1.avif",
       "/Dress/Woolen trapeze dress/2.avif", 
       "/Dress/Woolen trapeze dress/3.avif",
       {
@@ -12227,24 +12721,6 @@ sku: "12345",
       },
       "/Dress/Woolen trapeze dress/4.avif",
       "/Dress/Woolen trapeze dress/5.avif",
-      // "/Dress/Woolen trapeze dress/6.avif",
-      // "/Dress/Woolen trapeze dress/9.avif",
-      // "/Dress/Woolen trapeze dress/8.avif",
-      // "/Dress/Woolen trapeze dress/11.avif",
-      // "/Dress/Woolen trapeze dress/12.avif",
-      // "/Dress/Woolen trapeze dress/13.avif",
-      // "/Dress/Woolen trapeze dress/14.avif",
-      // "/Dress/Woolen trapeze dress/15.avif",
-      // "/Dress/Woolen trapeze dress/16.avif",
-      // "/Dress/Woolen trapeze dress/17.avif",
-      // "/Dress/Woolen trapeze dress/18.avif",
-      // "/Dress/Woolen trapeze dress/19.avif",
-      // "/Dress/Woolen trapeze dress/20.avif",
-      // "/Dress/Woolen trapeze dress/25.avif",
-      // "/Dress/Woolen trapeze dress/26.avif",
-      // "/Dress/Woolen trapeze dress/27.avif",
-      // "/Dress/Woolen trapeze dress/28.avif",
-
     
     ],
     sizes: ["XS", "S", "M", "L", "XL"],
@@ -12253,22 +12729,22 @@ sku: "12345",
         category: "Dresses",
         name: "Woolen trapeze dress",
         description: "Trapeze dress with a pronounced belt\nComposition: 75% natural wool, soft, does not stick to the body.",
-        color: "red",
-        colors: ["jeans","gray",]
+        color: "cornflower blue",
+        colors: ["cornflower blue", "jeans","gray",]
       },
       FR: {
         category: "Robes",
         name: "Robe trapèze en laine",
         description: "Robe trapèze avec ceinture marquée\nComposition: 75% laine naturelle, douce, ne colle pas à la peau.",
-        color: "rouge",
-        colors: ["jeans","gris"]
+        color: "bleu bleuet",
+        colors: ["bleu bleuet", "jeans","gris"]
       },
       UA: {
         category: "Сукні",
         name: "Вовняна сукня трапеція",
         description: ["Трапецеїдна сукня з виразним поясом","Склад: 75% натуральної вовни", "м'яка, не прилипає до тіла."],
-        color: "червоний",
-        colors: ["джинсовий", "сірий"]
+        color: "васильковий",
+        colors: ["васильковий", "джинсовий", "сірий"]
       }
     }
   },
