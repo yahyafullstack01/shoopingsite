@@ -1,5 +1,362 @@
 const products = [
   {
+  id: 381,
+  price: 5300,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+  sku: "99512",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Parisian Suit/1.avif",
+  images: [
+    "/Costumes/Parisian Suit/2.avif",
+    "/Costumes/Parisian Suit/3.avif",
+    "/Costumes/Parisian Suit/4.avif",
+    "/Costumes/Parisian Suit/5.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Parisian Suit",
+      description: [
+        "An elegant wool suit consisting of a jacket and a midi skirt, inspired by understated Parisian aesthetics. The clean silhouette is complemented by distinctive jacket details, creating a feminine look in a modern classic style.",
+        "The set consists of a cropped, relaxed-fit jacket and a straight midi skirt. The jacket features a collarless round neckline, dropped shoulders, wide sleeves, and a decorative asymmetric fastening with fabric-covered buttons and long ties. The skirt has a high waist and a clean minimalist cut that balances the statement top.",
+        "Together, the pieces create a cohesive monochrome look, while the jacket and skirt are also easy to style separately with basic knitwear, shirts, trousers, or denim.",
+        "Fabric: 75% natural wool.",
+        "Season: autumn, winter."
+      ],
+      colors: ["beige"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Costume « Parisian »",
+      description: [
+        "Un élégant costume en laine composé d’une veste et d’une jupe midi, inspiré d’une esthétique parisienne sobre. La silhouette épurée est rehaussée par les détails expressifs de la veste et crée une allure féminine dans un style classique contemporain.",
+        "L’ensemble se compose d’une veste courte à la coupe ample et d’une jupe midi droite. La veste se distingue par une encolure ronde sans col, des épaules tombantes, des manches larges et une fermeture asymétrique décorative avec des boutons recouverts de tissu et de longs liens. La jupe présente une taille haute et une coupe minimaliste épurée qui équilibre le haut expressif.",
+        "Ensemble, les pièces créent une tenue monochrome harmonieuse ; la veste et la jupe se portent aussi facilement séparément avec des mailles basiques, des chemises, des pantalons ou du denim.",
+        "Tissu : 75 % de laine naturelle.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["beige"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм «Parisian»",
+      description: [
+        "Елегантний вовняний костюм із жакета та спідниці міді, натхнений стриманою паризькою естетикою. Лаконічний силует доповнений акцентними деталями жакета та створює жіночний образ у стилі modern classic.",
+        "Комплект складається з укороченого жакета вільного силуету та прямої спідниці довжини міді. Жакет вирізняється круглою горловиною без коміра, спущеною лінією плеча, широкими рукавами та декоративною асиметричною застібкою з обтягнутими тканиною ґудзиками й довгими зав’язками. Спідниця має високу посадку та чистий мінімалістичний крій, який урівноважує акцентний верх.",
+        "Разом речі створюють цілісний монохромний образ, водночас жакет і спідницю легко стилізувати окремо з базовим трикотажем, сорочками, брюками або денімом.",
+        "Тканина: 75% натуральна вовна.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["бежевий"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм «Parisian»",
+      description: [
+        "Элегантный шерстяной костюм из жакета и юбки миди, вдохновлённый сдержанной парижской эстетикой. Лаконичный силуэт дополнен акцентными деталями жакета и создаёт женственный образ в стиле modern classic.",
+        "Комплект состоит из укороченного жакета свободного силуэта и прямой юбки длины миди. Жакет отличается круглой горловиной без воротника, спущенной линией плеча, широкими рукавами и декоративной асимметричной застёжкой с обтянутыми тканью пуговицами и длинными завязками. Юбка имеет высокую посадку и чистый минималистичный крой, который уравновешивает акцентный верх.",
+        "Вместе вещи создают цельный монохромный образ, при этом жакет и юбку легко стилизовать отдельно с базовым трикотажем, рубашками, брюками или денимом.",
+        "Ткань: 75% натуральная шерсть.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["бежевый"]
+    }
+  }
+},
+  {
+  id: 380,
+  price: 1900,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+  sku: "99511",
+  size: "XS S M L XL",
+  category: "Pants",
+  image: "/Pants/Jersey Relaxed Pants/1.avif",
+  images: [
+    "/Pants/Jersey Relaxed Pants/2.avif",
+    "/Pants/Jersey Relaxed Pants/3.avif",
+    "/Pants/Jersey Relaxed Pants/4.avif",
+    "/Pants/Jersey Relaxed Pants/5.avif",
+    "/Pants/Jersey Relaxed Pants/6.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Pants",
+      name: "Jersey Relaxed Pants",
+      description: [
+        "Loose trousers made from soft jersey knit for comfortable everyday looks. A voluminous cut, elastic waistband, and soft shape create a contemporary relaxed silhouette.",
+        "The design features a loose fit, an elastic waistband, and functional side pockets. Gathered hems create soft volume and give the trousers their distinctive shape.",
+        "Paired with the Jersey top, the trousers create a cohesive monochrome look, while on their own they pair easily with sweaters, long-sleeved tops, jackets, and basic T-shirts.",
+        "Fabric: jersey knit.",
+        "Color: milky white.",
+        "Season: autumn, winter, spring."
+      ],
+      colors: ["milky white", "cappuccino", "black"]
+    },
+    FR: {
+      category: "Pantalons",
+      name: "Pantalon ample « Jersey »",
+      description: [
+        "Un pantalon ample en maille jersey douce pour des tenues confortables au quotidien. La coupe généreuse, la taille élastique et la forme souple créent une silhouette décontractée et actuelle.",
+        "Le modèle présente une coupe ample, une taille élastique et des poches latérales fonctionnelles. Le bas des jambes est resserré, créant un volume souple et la forme caractéristique du pantalon.",
+        "Associé au haut « Jersey », le pantalon forme une tenue monochrome harmonieuse ; porté seul, il s’accorde facilement avec des pulls, des hauts à manches longues, des vestes et des T-shirts basiques.",
+        "Tissu : maille jersey.",
+        "Couleur : blanc laiteux.",
+        "Saison : automne, hiver, printemps."
+      ],
+      colors: ["blanc laiteux", "cappuccino", "noir"]
+    },
+    UA: {
+      category: "Брюки",
+      name: "Брюки «Jersey»",
+      description: [
+        "Вільні брюки з м’якого трикотажу джерсі для комфортних повсякденних образів. Об’ємний крій, еластичний пояс і м’яка форма створюють актуальний relaxed-силует.",
+        "Модель має вільну посадку, еластичний пояс і функціональні бічні кишені. Низ брюк зібраний, завдяки чому створюється м’який об’єм і характерна форма моделі.",
+        "У комплекті з кофтою «Jersey» брюки формують цілісний монохромний образ, а окремо легко поєднуються зі светрами, лонгслівами, жакетами та базовими футболками.",
+        "Тканина: трикотаж джерсі.",
+        "Колір: молочний.",
+        "Сезон: осінь, зима, весна."
+      ],
+      colors: ["молочний", "капучіно", "чорний"]
+    },
+    RU: {
+      category: "Брюки",
+      name: "Брюки «Jersey»",
+      description: [
+        "Свободные брюки из мягкого трикотажа джерси для комфортных повседневных образов. Объёмный крой, эластичный пояс и мягкая форма создают актуальный расслабленный силуэт.",
+        "Модель имеет свободную посадку, эластичный пояс и функциональные боковые карманы. Низ брюк собран, благодаря чему создаётся мягкий объём и характерная форма модели.",
+        "В комплекте с кофтой «Jersey» брюки формируют цельный монохромный образ, а отдельно легко сочетаются со свитерами, лонгсливами, жакетами и базовыми футболками.",
+        "Ткань: трикотаж джерси.",
+        "Цвет: молочный.",
+        "Сезон: осень, зима, весна."
+      ],
+      colors: ["молочный", "капучино", "чёрный"]
+    }
+  }
+},
+  {
+  id: 379,
+  price: 1850,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+  sku: "99510",
+  size: "XS S M L XL",
+  category: "Tops",
+  image: "/Top/Jersey Top/1.avif",
+  images: [
+    "/Top/Jersey Top/2.avif",
+    "/Top/Jersey Top/3.avif",
+    "/Top/Jersey Top/4.avif",
+    "/Top/Jersey Top/5.avif",
+    "/Top/Jersey Top/6.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Tops",
+      name: "Jersey Top",
+      description: [
+        "A loose-fitting top made from soft jersey knit with a statement asymmetric zipper. Voluminous draping allows the piece to be styled in different ways and creates a distinctive relaxed silhouette.",
+        "The asymmetric zipper allows the fit to be transformed: wear the top more closed or expose the shoulders and create expressive draping at the front. Loose sleeves and dropped shoulders reinforce the relaxed aesthetic of the design.",
+        "Pairs with Jersey trousers, denim, skirts, and basic tops.",
+        "Fabric: jersey knit.",
+        "Color: milky white.",
+        "Season: autumn, winter, spring."
+      ],
+      colors: ["cappuccino", "black", "milky white"]
+    },
+    FR: {
+      category: "Hauts",
+      name: "Haut « Jersey »",
+      description: [
+        "Un haut ample en maille jersey douce avec une fermeture éclair asymétrique marquée. Le drapé généreux permet de varier les façons de porter le modèle et crée une silhouette décontractée caractéristique.",
+        "La fermeture éclair asymétrique permet de transformer la coupe : porter le haut davantage fermé ou dégager la ligne des épaules et créer un drapé expressif sur le devant. Les manches amples et les épaules tombantes soulignent l’esthétique décontractée du modèle.",
+        "S’associe au pantalon « Jersey », au denim, aux jupes et aux hauts basiques.",
+        "Tissu : maille jersey.",
+        "Couleur : blanc laiteux.",
+        "Saison : automne, hiver, printemps."
+      ],
+      colors: ["cappuccino", "noir", "blanc laiteux"]
+    },
+    UA: {
+      category: "Топи",
+      name: "Кофта «Jersey»",
+      description: [
+        "Кофта вільного крою з м’якого трикотажу джерсі з акцентною асиметричною блискавкою. Об’ємне драпірування дозволяє по-різному стилізувати модель та створює характерний relaxed-силует.",
+        "Асиметрична блискавка дозволяє трансформувати посадку: носити кофту більш закритою або відкривати лінію плечей і створювати виразне драпірування спереду. Вільні рукави та спущена лінія плеча підтримують розслаблену естетику моделі.",
+        "Поєднується з брюками «Jersey», денімом, спідницями та базовими топами.",
+        "Тканина: трикотаж джерсі.",
+        "Колір: молочний.",
+        "Сезон: осінь, зима, весна."
+      ],
+      colors: ["капучіно", "чорний", "молочний"]
+    },
+    RU: {
+      category: "Топы",
+      name: "Кофта «Jersey»",
+      description: [
+        "Кофта свободного кроя из мягкого трикотажа джерси с акцентной асимметричной молнией. Объёмная драпировка позволяет по-разному стилизовать модель и создаёт характерный расслабленный силуэт.",
+        "Асимметричная молния позволяет трансформировать посадку: носить кофту более закрытой или открывать линию плеч и создавать выразительную драпировку спереди. Свободные рукава и спущенная линия плеча поддерживают расслабленную эстетику модели.",
+        "Сочетается с брюками «Jersey», денимом, юбками и базовыми топами.",
+        "Ткань: трикотаж джерси.",
+        "Цвет: молочный.",
+        "Сезон: осень, зима, весна."
+      ],
+      colors: ["капучино", "чёрный", "молочный"]
+    }
+  }
+},
+  {
+  id: 378,
+  price: 3750,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+  sku: "99509",
+  size: "XS S M L XL",
+  category: "Costumes",
+  image: "/Costumes/Jersey Suit/1.avif",
+  images: [
+    "/Costumes/Jersey Suit/2.avif",
+    "/Costumes/Jersey Suit/3.avif",
+    "/Costumes/Jersey Suit/4.avif",
+    "/Costumes/Jersey Suit/5.avif",
+    "/Costumes/Jersey Suit/6.avif",
+    "/Costumes/Jersey Suit/7.avif",
+    "/Costumes/Jersey Suit/8.avif",
+    "/Costumes/Jersey Suit/9.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Costumes",
+      name: "Jersey Suit",
+      description: [
+        "A comfortable suit made from soft jersey knit in a milky white shade. An asymmetric zip-up top and loose trousers create a modern relaxed silhouette that combines comfort with distinctive design.",
+        "The top has a loose cut with soft draping and an asymmetric zipper fastening that allows you to change the shape and character of the look. The loose-fitting trousers feature an elastic waistband and pockets, creating a relaxed silhouette.",
+        "The set is designed for elevated casual city looks: wear the pieces together or combine each separately with wardrobe basics.",
+        "Fabric: jersey knit.",
+        "Color: black.",
+        "Season: autumn, winter, spring."
+      ],
+      colors: ["black", "cappuccino", "milky white"]
+    },
+    FR: {
+      category: "Costumes",
+      name: "Ensemble « Jersey »",
+      description: [
+        "Un ensemble confortable en maille jersey douce dans une teinte blanc laiteux. Un haut asymétrique zippé et un pantalon ample créent une silhouette décontractée et moderne, alliant confort et design expressif.",
+        "Le haut présente une coupe ample avec un drapé souple et une fermeture éclair asymétrique qui permet de modifier la forme et le caractère de la tenue. Le pantalon ample est doté d’une taille élastique et de poches, pour une silhouette décontractée.",
+        "L’ensemble est conçu pour des tenues urbaines décontractées et raffinées : les pièces se portent ensemble ou séparément avec les basiques du vestiaire.",
+        "Tissu : maille jersey.",
+        "Couleur : noir.",
+        "Saison : automne, hiver, printemps."
+      ],
+      colors: ["noir", "cappuccino", "blanc laiteux"]
+    },
+    UA: {
+      category: "Костюми",
+      name: "Костюм «Jersey»",
+      description: [
+        "Комфортний костюм із м’якого трикотажу джерсі у молочному відтінку. Асиметрична кофта на блискавці та вільні брюки створюють сучасний relaxed-силует, який поєднує комфорт і виразний дизайн.",
+        "Верх має вільний крій із м’яким драпіруванням і асиметричною застібкою-блискавкою, завдяки якій можна змінювати форму та характер образу. Брюки вільного крою доповнені еластичним поясом і кишенями, формуючи розслаблений силует.",
+        "Комплект створений для міських образів у стилі elevated casual: його можна носити разом або комбінувати кожну річ окремо з базовим гардеробом.",
+        "Тканина: трикотаж джерсі.",
+        "Колір: чорний.",
+        "Сезон: осінь, зима, весна."
+      ],
+      colors: ["чорний", "капучіно", "молочний"]
+    },
+    RU: {
+      category: "Костюмы",
+      name: "Костюм «Jersey»",
+      description: [
+        "Комфортный костюм из мягкого трикотажа джерси в молочном оттенке. Асимметричная кофта на молнии и свободные брюки создают современный расслабленный силуэт, который сочетает комфорт и выразительный дизайн.",
+        "Верх имеет свободный крой с мягкой драпировкой и асимметричной застёжкой-молнией, благодаря которой можно менять форму и характер образа. Брюки свободного кроя дополнены эластичным поясом и карманами, формируя расслабленный силуэт.",
+        "Комплект создан для городских образов в стиле elevated casual: его можно носить вместе или комбинировать каждую вещь отдельно с базовым гардеробом.",
+        "Ткань: трикотаж джерси.",
+        "Цвет: чёрный.",
+        "Сезон: осень, зима, весна."
+      ],
+      colors: ["чёрный", "капучино", "молочный"]
+    }
+  }
+},
+  {
+  id: 377,
+  price: 2300,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+  sku: "99508",
+  size: "XS S M L XL",
+  category: "Skirts",
+  image: "/Skirts/Butter Skirt/1.avif",
+  images: [
+    "/Skirts/Butter Skirt/2.avif",
+    "/Skirts/Butter Skirt/3.avif",
+    "/Skirts/Butter Skirt/4.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Skirts",
+      name: "Butter Skirt",
+      description: [
+        "A clean-cut skirt made from wool suiting fabric in a warm butter yellow shade. Its simple silhouette makes it a versatile staple for both tailored and more relaxed looks.",
+        "The minimalist cut makes it easy to combine the skirt with different textures and silhouettes. Paired with the Butter jacket, it creates a cohesive monochrome set, while on its own it pairs with sweaters, turtlenecks, shirts, and jackets.",
+        "The butter yellow shade adds a light, warm accent to an autumn-winter wardrobe while remaining neutral enough for everyday styling.",
+        "Fabric: wool suiting fabric.",
+        "Season: autumn, winter."
+      ],
+      colors: ["butter yellow"]
+    },
+    FR: {
+      category: "Jupes",
+      name: "Jupe « Butter »",
+      description: [
+        "Une jupe épurée en tissu de laine pour costume, dans une teinte jaune beurre chaleureuse. Sa silhouette nette en fait une base polyvalente pour des ensembles habillés comme pour des tenues plus décontractées.",
+        "La coupe minimaliste permet d’associer facilement le modèle à différentes textures et silhouettes. Portée avec la veste « Butter », la jupe forme un ensemble monochrome harmonieux ; seule, elle s’accorde avec des pulls, des cols roulés, des chemises et des vestes.",
+        "La teinte jaune beurre apporte une touche claire et chaleureuse au vestiaire automne-hiver, tout en restant suffisamment neutre pour les tenues du quotidien.",
+        "Tissu : tissu de laine pour costume.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["jaune beurre"]
+    },
+    UA: {
+      category: "Спідниці",
+      name: "Спідниця «Butter»",
+      description: [
+        "Лаконічна спідниця з вовняної костюмної тканини у теплому масляному відтінку. Чистий силует робить її універсальною базою як для костюмних, так і для більш розслаблених образів.",
+        "Мінімалістичний крій дозволяє легко комбінувати модель із різними фактурами та силуетами. У парі з жакетом «Butter» спідниця створює цілісний монохромний комплект, а окремо поєднується зі светрами, гольфами, сорочками та жакетами.",
+        "Масляний відтінок додає осінньо-зимовому гардеробу світлого теплого акценту та залишається достатньо нейтральним для повсякденних стилізацій.",
+        "Тканина: вовняна костюмна тканина.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["масляний"]
+    },
+    RU: {
+      category: "Юбки",
+      name: "Юбка «Butter»",
+      description: [
+        "Лаконичная юбка из шерстяной костюмной ткани в тёплом масляном оттенке. Чистый силуэт делает её универсальной базой как для костюмных, так и для более расслабленных образов.",
+        "Минималистичный крой позволяет легко комбинировать модель с разными фактурами и силуэтами. В паре с жакетом «Butter» юбка создаёт цельный монохромный комплект, а отдельно сочетается со свитерами, водолазками, рубашками и жакетами.",
+        "Масляный оттенок добавляет осенне-зимнему гардеробу светлый тёплый акцент и остаётся достаточно нейтральным для повседневных стилизаций.",
+        "Ткань: шерстяная костюмная ткань.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["масляный"]
+    }
+  }
+},
+  {
   id: 376,
   price: 3500,
   isTop: false,
