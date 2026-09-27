@@ -1,5 +1,74 @@
 const products = [
   {
+  id: 389,
+  price: 3100,
+  isTop: false,
+  isNew: false,
+  isSpecialOffer: false,
+  sku: "99520",
+  size: "XS S M L XL",
+  category: "Dresses",
+  image: "/Dress/Loden Dress/1.avif",
+  images: [
+    "/Dress/Loden Dress/2.avif",
+    "/Dress/Loden Dress/3.avif",
+    "/Dress/Loden Dress/4.avif",
+    "/Dress/Loden Dress/5.avif",
+    "/Dress/Loden Dress/6.avif",
+  ],
+  sizes: ["XS", "S", "M", "L", "XL"],
+  translations: {
+    EN: {
+      category: "Dresses",
+      name: "Loden Dress",
+      description: [
+        "A warm wool midi dress with a fitted silhouette and a softly flared skirt. A statement collar, shaped panel seams, and voluminous sleeves create a distinctive feminine silhouette.",
+        "The fitted cut emphasizes the figure, while vertical shaping seams sculpt the silhouette and flow smoothly into the flared skirt. The midi length makes the design versatile for everyday and more formal looks.",
+        "A distinctive accent is the asymmetric stand collar with a decorative button. The long sleeves have soft volume and wide cuffs, adding a contemporary character to the classic silhouette.",
+        "Fabric: 75% natural wool.",
+        "Season: autumn, winter."
+      ],
+      colors: ["cornflower blue"]
+    },
+    FR: {
+      category: "Robes",
+      name: "Robe « Loden »",
+      description: [
+        "Une robe midi chaude en laine, à la silhouette cintrée et à la jupe légèrement évasée. Un col expressif, des coutures de découpe et des manches volumineuses dessinent une silhouette féminine affirmée.",
+        "La coupe cintrée met la silhouette en valeur, tandis que les coutures verticales la structurent et se prolongent harmonieusement dans la jupe évasée. La longueur midi rend le modèle polyvalent, adapté aux tenues quotidiennes comme aux occasions plus formelles.",
+        "Le col montant asymétrique orné d’un bouton décoratif constitue un accent particulier. Les manches longues présentent un volume souple et de larges poignets, apportant une touche contemporaine à la silhouette classique.",
+        "Tissu : 75 % de laine naturelle.",
+        "Saison : automne, hiver."
+      ],
+      colors: ["bleu bleuet"]
+    },
+    UA: {
+      category: "Сукні",
+      name: "Сукня «Loden»",
+      description: [
+        "Тепла вовняна сукня міді з приталеним силуетом та м’яко розкльошеною спідницею. Акцентний комір, фігурні рельєфи та об’ємні рукави формують виразний жіночний силует.",
+        "Приталений крій підкреслює фігуру, а вертикальні рельєфні шви моделюють силует і плавно переходять у розкльошену спідницю. Довжина міді робить модель універсальною для повсякденних і більш формальних образів.",
+        "Особливий акцент — асиметричний комір-стійка із декоративним ґудзиком. Довгі рукави мають м’який об’єм і широкі манжети, додаючи класичному силуету сучасного характеру.",
+        "Тканина: 75% натуральної вовни.",
+        "Сезон: осінь, зима."
+      ],
+      colors: ["васильковий"]
+    },
+    RU: {
+      category: "Платья",
+      name: "Платье «Loden»",
+      description: [
+        "Тёплое шерстяное платье миди с приталенным силуэтом и мягко расклешённой юбкой. Акцентный воротник, фигурные рельефы и объёмные рукава формируют выразительный женственный силуэт.",
+        "Приталенный крой подчёркивает фигуру, а вертикальные рельефные швы моделируют силуэт и плавно переходят в расклешённую юбку. Длина миди делает модель универсальной для повседневных и более формальных образов.",
+        "Особый акцент — асимметричный воротник-стойка с декоративной пуговицей. Длинные рукава имеют мягкий объём и широкие манжеты, придавая классическому силуэту современный характер.",
+        "Ткань: 75% натуральной шерсти.",
+        "Сезон: осень, зима."
+      ],
+      colors: ["васильковый"]
+    }
+  }
+},
+  {
   id: 388,
   price: 3200,
   isTop: false,
