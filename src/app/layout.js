@@ -2,6 +2,7 @@
 
 import "./globals.css";
 import Script from "next/script";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import ErrorBoundary from "../app/components/ErrorBoundary/ErrorBoundary";
 import { siteJsonLd, organizationJsonLd } from "./seo/loyout-jsonld";
@@ -104,6 +105,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider>
           <ErrorBoundary>{children}</ErrorBoundary>
         </ThemeProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
