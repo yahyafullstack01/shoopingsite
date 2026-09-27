@@ -1,22 +1,41 @@
+"use client";
+
+import dynamic from "next/dynamic";
 import Hero from "./components/Hero/Hero.jsx";
-import TopProducts from "./components/TopProducts/TopProducts.jsx";
-import FollowUs from "./components/Follow/Follow.jsx";
-import About from "./components/About/About.jsx";
-import SpecialOffers from "./components/SpecialOffers/SpecialOffers.jsx";
-import CategoryCatalog from "./components/CategoryCatalog/CategoryCatalog.jsx"
-import NewArrivals from "./components/NewArrivals/NewArrivals.jsx"
+
+const CategoryCatalog = dynamic(
+  () => import("./components/CategoryCatalog/CategoryCatalog.jsx"),
+  { ssr: true }
+);
+const NewArrivals = dynamic(
+  () => import("./components/NewArrivals/NewArrivals.jsx"),
+  { ssr: true }
+);
+const TopProducts = dynamic(
+  () => import("./components/TopProducts/TopProducts.jsx"),
+  { ssr: true }
+);
+const SpecialOffers = dynamic(
+  () => import("./components/SpecialOffers/SpecialOffers.jsx"),
+  { ssr: true }
+);
+const About = dynamic(() => import("./components/About/About.jsx"), {
+  ssr: true,
+});
+const FollowUs = dynamic(() => import("./components/Follow/Follow.jsx"), {
+  ssr: true,
+});
+
 export default function Home() {
   return (
     <div className="transition-colors">
       <Hero />
-      <CategoryCatalog  />
-<NewArrivals  />
+      <CategoryCatalog />
+      <NewArrivals />
       <TopProducts />
       <SpecialOffers />
-     
       <About />
       <FollowUs />
-
-     </div>
+    </div>
   );
 }
