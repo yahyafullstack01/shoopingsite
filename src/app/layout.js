@@ -7,12 +7,23 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import ErrorBoundary from "../app/components/ErrorBoundary/ErrorBoundary";
 import { siteJsonLd, organizationJsonLd } from "./seo/loyout-jsonld";
 import { faqSchema, localBusinessSchema } from "./seo/faq-schema";
-import { Montserrat } from "next/font/google";
+import localFont from "next/font/local";
 
-// тільки потрібні ваги + кирилиця
-const montserrat = Montserrat({
-  subsets: ["latin", "cyrillic"],
-  weight: ["500", "600"],    // Medium, SemiBold
+// Local files — avoids flaky Google Fonts fetch during Vercel builds
+// (next/font/google: Cannot read properties of null (reading '1'))
+const montserrat = localFont({
+  src: [
+    {
+      path: "../../public/fonts/Montserrat-Medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/Montserrat-SemiBold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+  ],
   display: "swap",
   preload: true,
 });
