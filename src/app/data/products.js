@@ -20412,7 +20412,7 @@ sku: "12345",
     
     {
       id: 37,
-      price: 1375,
+      price: 1700,
       isTop: false,
       isNew: false,
       isSpecialOffer: false,
@@ -20464,7 +20464,7 @@ sku: "12351",
     
     {
       id: 38,
-      price: 1375,
+      price: 1500,
       isTop: false,
       isNew: false,
       isSpecialOffer: false,
