@@ -5,10 +5,12 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useLanguage } from "../../Functions/useLanguage";
 
 const AUTOPLAY_IMAGE_MS = 5000;
-const AUTOPLAY_START_DELAY_MS = 6000; // pause before autoplay so LCP can settle
+/** Wait for LCP image before rotating / loading desktop video */
+const AUTOPLAY_START_DELAY_MS = 7000;
 
 function useIsMobile(breakpoint = 1024) {
-  const [isMobile, setIsMobile] = useState(false);
+  // null until mounted — avoids loading desktop video on phones during hydration
+  const [isMobile, setIsMobile] = useState(/** @type {boolean | null} */ (null));
   useEffect(() => {
     const mq = window.matchMedia(`(max-width:${breakpoint - 1}px)`);
     const update = () => setIsMobile(mq.matches);
@@ -51,8 +53,8 @@ function LcpPicture({ desktopSrc, mobileSrc, alt, className }) {
         className={`absolute inset-0 h-full w-full ${className}`}
         fetchPriority="high"
         decoding="async"
-        width={1024}
-        height={309}
+        width={1200}
+        height={1600}
       />
     </picture>
   );
@@ -79,8 +81,9 @@ export default function Hero() {
       },
       {
         type: "video",
-        src: "/hoom/Bannervideodesk.mp4",
-        mobileSrc: "/hoom/Bannermobilevideo.mp4",
+        // Compressed for web (desktop ~2MB, mobile ~1.8MB; originals were ~9MB / ~18MB)
+        src: "/hoom/optimized/Bannervideodesk.web.mp4",
+        mobileSrc: "/hoom/optimized/Bannermobilevideo.web.mp4",
         poster: "/hoom/Bannerdesk.webp",
         mobilePoster: "/hoom/Bannermob.webp",
         alt: "Latore banner video",
@@ -111,36 +114,43 @@ export default function Hero() {
   const [paused, setPaused] = useState(false);
   const [hydrated, setHydrated] = useState(false);
   const [autoplayReady, setAutoplayReady] = useState(false);
+  /** Attach video src only after LCP delay (mobile + desktop) */
+  const [videoUnlocked, setVideoUnlocked] = useState(false);
 
   const timerRef = useRef(null);
   const videoRefs = useRef([]);
   const touchStartX = useRef(null);
 
-  const next = () => setIndex((i) => (i + 1) % slides.length);
-  const prev = () => setIndex((i) => (i - 1 + slides.length) % slides.length);
+  const next = () => setIndex((i) => (i + 1) % Math.max(slides.length, 1));
+  const prev = () =>
+    setIndex((i) => (i - 1 + Math.max(slides.length, 1)) % Math.max(slides.length, 1));
 
   useEffect(() => {
+    if (isMobile === null) return;
     setHydrated(true);
-    const t = setTimeout(() => setAutoplayReady(true), AUTOPLAY_START_DELAY_MS);
+    const t = setTimeout(() => {
+      setAutoplayReady(true);
+      setVideoUnlocked(true);
+    }, AUTOPLAY_START_DELAY_MS);
     return () => clearTimeout(t);
-  }, []);
+  }, [isMobile]);
 
   useEffect(() => {
-    if (!hydrated) return;
+    if (!hydrated || isMobile === null) return;
     if (timerRef.current) clearTimeout(timerRef.current);
     const current = slides[index];
     if (!current) return;
 
     videoRefs.current.forEach((v, i) => {
       if (!v) return;
-      if (i === index && slides[i].type === "video") {
+      const slide = slides[i];
+      if (i === index && slide?.type === "video" && videoUnlocked) {
         v.currentTime = 0;
-        // Defer play so it does not compete with LCP / INP
         const play = () => v.play().catch(() => {});
         if (typeof requestIdleCallback === "function") {
-          requestIdleCallback(play, { timeout: 800 });
+          requestIdleCallback(play, { timeout: 1200 });
         } else {
-          setTimeout(play, 100);
+          setTimeout(play, 300);
         }
       } else {
         v.pause();
@@ -152,7 +162,8 @@ export default function Hero() {
       timerRef.current = setTimeout(next, ms);
     }
     return () => timerRef.current && clearTimeout(timerRef.current);
-  }, [index, paused, slides, hydrated, autoplayReady]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- next is stable enough; depend on slide state
+  }, [index, paused, slides, hydrated, autoplayReady, videoUnlocked, isMobile]);
 
   const onVideoEnded = () => next();
 
@@ -164,7 +175,8 @@ export default function Hero() {
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [hydrated]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [hydrated, slides.length]);
 
   const onTouchStart = (e) => {
     touchStartX.current = e.touches[0].clientX;
@@ -178,41 +190,44 @@ export default function Hero() {
   };
 
   const first = slides[0];
+  const showSlider = hydrated && isMobile !== null;
+  const mobileLike = isMobile === true;
 
   return (
     <section
-      className="relative overflow-hidden min-h-[70svh] md:min-h-[420px] max-h-[1150px] w-[100vw] -mx-[calc(50%-50vw)]"
+      className="relative overflow-hidden w-[100vw] -mx-[calc(50%-50vw)] aspect-[3/4] max-h-[85svh] md:aspect-auto md:min-h-[420px] md:h-[min(70vh,720px)] md:max-h-[1150px]"
       aria-label="Hero slider"
       onTouchStart={onTouchStart}
       onTouchEnd={onTouchEnd}
     >
       <div className="absolute inset-0">
-        {hydrated ? (
+        {showSlider ? (
           slides.map((s, i) => {
             const isActive = i === index;
             const isNeighbor =
               Math.abs(i - index) === 1 || Math.abs(i - index) === slides.length - 1;
-            // Only mount active slide + next image neighbor (skip heavy video neighbors)
+            // Only mount active slide + next image neighbor (never preload video neighbors)
             if (!isActive && !(isNeighbor && s.type === "image")) return null;
 
             const raw =
-              s.type === "image" && isMobile && s.mobileSrc ? s.mobileSrc : s.src;
-            const videoSrc =
-              s.type === "video" && isActive
-                ? isMobile && s.mobileSrc
-                  ? s.mobileSrc
-                  : s.src
-                : undefined;
+              s.type === "image" && mobileLike && s.mobileSrc ? s.mobileSrc : s.src;
             const videoPoster =
               s.type === "video"
-                ? isMobile && s.mobilePoster
+                ? mobileLike && s.mobilePoster
                   ? s.mobilePoster
                   : s.poster
+                : undefined;
+            // Load compressed mp4 only after LCP delay (mobile + desktop)
+            const videoSrc =
+              s.type === "video" && isActive && videoUnlocked
+                ? mobileLike && s.mobileSrc
+                  ? s.mobileSrc
+                  : s.src
                 : undefined;
 
             return (
               <div
-                key={i}
+                key={`${s.type}-${s.src || s.poster}-${i}`}
                 className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${
                   isActive ? "opacity-100" : "opacity-0"
                 }`}
@@ -226,8 +241,19 @@ export default function Hero() {
                     sizes="100vw"
                     priority={i === 0}
                     fetchPriority={i === 0 ? "high" : "low"}
-                    quality={90}
-                    className={getImageClass(s, isMobile)}
+                    quality={i === 0 ? 85 : 75}
+                    className={getImageClass(s, mobileLike)}
+                  />
+                ) : !videoUnlocked ? (
+                  // Poster until video unlocks — keeps first paint fast
+                  <Image
+                    src={videoPoster || s.poster}
+                    alt={s.alt || "Banner"}
+                    fill
+                    sizes="100vw"
+                    fetchPriority="low"
+                    quality={75}
+                    className={getImageClass(s, mobileLike)}
                   />
                 ) : (
                   <video
@@ -257,7 +283,7 @@ export default function Hero() {
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-black/10 to-transparent" />
 
       {(() => {
-        const s = slides[index];
+        const s = slides[index] || first;
         return (
           <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-4 text-center text-white">
             {(s.title || s.subtitle) && (
@@ -286,7 +312,7 @@ export default function Hero() {
         );
       })()}
 
-      {hydrated && (
+      {showSlider && (
         <>
           <button
             aria-label="Попередній слайд"
