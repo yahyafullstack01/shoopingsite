@@ -229,8 +229,8 @@ export default function AllProducts({
       <div className="w-full mx-auto px-4 sm:px-6 md:px-8 py-4">
         <div className="flex flex-col space-y-6">
 
-          {/* Фільтри */}
-          <div className="w-full flex flex-wrap gap-4 items-center">
+          {/* Фільтри — min-height reduces CLS when filter UI hydrates */}
+          <div className="w-full flex flex-wrap gap-4 items-center min-h-[3.5rem]">
             <FilterSidebar
               priceLimit={priceLimit}              
               maxPrice={maxPrice}

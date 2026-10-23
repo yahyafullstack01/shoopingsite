@@ -59,7 +59,8 @@
         "addToCart": "ADD TO CART",
         "clickPhoto": "Click on the photo to view details",
         "newBadge": "NEW",
-        "topBadge": "TOP"
+        "topBadge": "TOP",
+        "sizesLabel": "Sizes"
       },
       "cart": {
         "heading": "🛒 Cart",
@@ -302,7 +303,8 @@
         "addToCart": "ДОДАТИ В КОШИК",
         "clickPhoto": "Натисніть на фото, щоб переглянути деталі",
         "newBadge": "НОВИНКА",
-        "topBadge": "ТОП"
+        "topBadge": "ТОП",
+        "sizesLabel": "Розміри"
       },
       "cart": {
         "heading": "🛒 Корзина",

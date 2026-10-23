@@ -62,7 +62,7 @@ export default function QuickAddModal({ product, onClose, onAddToCart }) {
 
   return (
     <div
-      className="fixed inset-0 z-[80] bg-black/50 flex justify-center items-center px-3 pt-16 sm:pt-20 pb-4"
+      className="fixed inset-0 z-[80] bg-black/35 flex justify-center items-center px-3 pt-16 sm:pt-20 pb-4"
       onClick={onClose}
     >
       <div

@@ -1,12 +1,13 @@
 "use client";
 
-import dynamic from "next/dynamic";
+import Layout from "../components/Layout";
+import AllProducts from "../components/AllProducts/AllProducts";
 
-const Layout = dynamic(() => import("../components/Layout"), { ssr: false });
-const AllProducts = dynamic(() => import("../components/AllProducts/AllProducts"), {
-  ssr: false,
-});
-
+/**
+ * SSR-enabled catalog shell.
+ * Previously used dynamic(..., { ssr: false }) which delayed all HTML until JS —
+ * that caused blank-first paint, poor LCP, and high CLS on /All-products.
+ */
 export default function CatalogPageClient({
   catalogPool,
   catalogTotalPages,

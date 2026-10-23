@@ -1,30 +1,80 @@
 'use client';
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo, useCallback } from "react";
 import Image from "next/image";
 import { useLanguage } from "../../Functions/useLanguage";
-import { FaHeart, FaRegHeart } from 'react-icons/fa';
+import { FaHeart, FaRegHeart, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { toggleFavorite, isFavorite } from "../../utils/favorites";
 import { getProductImageSrc } from "../../utils/productData";
 
-const ProductCard = ({ product, onClick, onAddToCart }) => {
+const MAX_CAROUSEL = 6;
+
+function collectGallery(product) {
+  const list = [];
+  const push = (media) => {
+    const src = getProductImageSrc(media);
+    if (src && !list.includes(src) && !src.endsWith(".mp4")) list.push(src);
+  };
+  if (Array.isArray(product.images) && product.images.length) {
+    product.images.forEach(push);
+  }
+  if (product.image) push(product.image);
+  return list.slice(0, MAX_CAROUSEL);
+}
+
+const ProductCard = ({ product, onClick, onAddToCart, priority = false }) => {
   const { language, translateList } = useLanguage();
   const translatedName =
     product.translations?.[language]?.name || product.name || "Product";
   const translatedCategory =
-    product.translations?.[language]?.category || product.category;
+    product.translations?.[language]?.category || product.category || "";
 
-  const infoLabels = translateList("Infoform", "header");
-  const priceLabel = infoLabels[8] || "Price";
   const cardTranslations = translateList("home", "productCard") || {};
-
+  const gallery = useMemo(() => collectGallery(product), [product]);
+  const [slide, setSlide] = useState(0);
+  const [touched, setTouched] = useState(false);
   const [favorite, setFavorite] = useState(false);
+  const touchStartX = React.useRef(null);
 
   useEffect(() => {
     setFavorite(isFavorite(product.id));
+    setSlide(0);
+    setTouched(false);
   }, [product.id]);
 
-  const handleToggle = () => {
+  const sizes = Array.isArray(product.sizes) ? product.sizes.filter(Boolean) : [];
+  // Prefer translated color names for current UI language (UA/EN)
+  const langKey = language === "EN" || language === "en" ? "EN" : "UA";
+  const translatedColors =
+    product.translations?.[langKey]?.colors ||
+    product.translations?.[language]?.colors ||
+    product.colors;
+  const colors = Array.isArray(translatedColors)
+    ? translatedColors.filter(Boolean)
+    : [];
+  const sizeLabel =
+    sizes.length > 0
+      ? sizes.slice(0, 5).join(" · ") + (sizes.length > 5 ? "…" : "")
+      : null;
+  const colorLabel =
+    colors.length > 0
+      ? colors.slice(0, 3).join(", ") + (colors.length > 3 ? "…" : "")
+      : null;
+
+  const go = useCallback(
+    (dir, e) => {
+      e?.stopPropagation?.();
+      setTouched(true);
+      setSlide((i) => {
+        const n = Math.max(gallery.length, 1);
+        return (i + dir + n) % n;
+      });
+    },
+    [gallery.length]
+  );
+
+  const handleToggle = (e) => {
+    e.stopPropagation();
     const updated = toggleFavorite(product.id);
     setFavorite(updated.includes(product.id));
   };
@@ -33,92 +83,215 @@ const ProductCard = ({ product, onClick, onAddToCart }) => {
     e.stopPropagation();
     const finalPrice = product.discountPrice ?? product.price;
     const oldPrice = product.discountPrice ? product.price : null;
-    
     onAddToCart({
-      product: { ...product, price: finalPrice, oldPrice, name: translatedName, image: getProductImageSrc(product.image) },
+      product: {
+        ...product,
+        price: finalPrice,
+        oldPrice,
+        name: translatedName,
+        image: gallery[0] || getProductImageSrc(product.image),
+      },
       selectedColor: "",
       selectedSize: "",
       quantity: 1,
     });
   };
 
-  const src = getProductImageSrc(product.image);
-  const isLocal = typeof src === "string" && src.startsWith("/");
+  const onTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+  const onTouchEnd = (e) => {
+    const start = touchStartX.current;
+    if (start == null) return;
+    const dx = e.changedTouches[0].clientX - start;
+    if (Math.abs(dx) > 40) go(dx < 0 ? 1 : -1, e);
+    touchStartX.current = null;
+  };
+
+  const hasCarousel = gallery.length > 1;
+  const safeGallery =
+    gallery.length > 0 ? gallery : [getProductImageSrc(product.image)];
+  // First photo always mounted; extra photos only after user swipes (faster first paint)
+  const visibleIndexes = new Set([slide]);
+  if (touched) {
+    visibleIndexes.add((slide + 1) % safeGallery.length);
+    visibleIndexes.add((slide - 1 + safeGallery.length) % safeGallery.length);
+  }
 
   return (
-    <article className="bg-gray-100 dark:bg-[#0f172a] p-3 sm:p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 relative">
+    <article className="flex h-full flex-col overflow-hidden rounded-2xl bg-white shadow-md ring-1 ring-black/5 transition-shadow duration-300 hover:shadow-lg dark:bg-[#0f172a] dark:ring-white/10">
+      {/* Media */}
       <div
+        className="relative cursor-pointer"
         onClick={onClick}
         onKeyDown={(e) => e.key === "Enter" && onClick()}
         role="button"
         tabIndex={0}
-        className="relative cursor-pointer group"
-        aria-label={`View details for ${translatedName}`}
+        aria-label={`${cardTranslations.viewDetails || "View details"}: ${translatedName}`}
+        onTouchStart={onTouchStart}
+        onTouchEnd={onTouchEnd}
       >
-        <figure className="w-full overflow-hidden rounded relative aspect-[3/4]">
+        <figure className="relative aspect-[3/4] w-full overflow-hidden bg-gray-200 dark:bg-gray-800">
+          {safeGallery.map((src, i) => {
+            if (!visibleIndexes.has(i)) return null;
+            const isActive = i === slide;
+            const isLocal = typeof src === "string" && src.startsWith("/");
+            return (
+              <div
+                key={src + i}
+                className={`absolute inset-0 transition-opacity duration-200 ${
+                  isActive ? "opacity-100" : "pointer-events-none opacity-0"
+                }`}
+              >
+                {/*
+                  Local /public paths often contain spaces (e.g. /Dress/Name/1.avif).
+                  Next image optimizer is slow/unreliable for those — serve files directly.
+                */}
+                <Image
+                  src={src}
+                  alt={`${translatedName} ${i + 1}`}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                  priority={priority && i === 0}
+                  loading={priority && i === 0 ? "eager" : "lazy"}
+                  fetchPriority={priority && i === 0 ? "high" : "auto"}
+                  quality={70}
+                  unoptimized={isLocal}
+                  className="object-cover"
+                />
+              </div>
+            );
+          })}
+
           <button
-            onClick={(e) => { e.stopPropagation(); handleToggle(); }}
-            className={`absolute top-2 right-2 text-xl z-10 transition duration-300 ${
-              favorite ? 'text-red-600' : 'text-gray-400'
+            type="button"
+            onClick={handleToggle}
+            className={`absolute right-2.5 top-2.5 z-20 grid h-9 w-9 place-items-center rounded-full bg-white/90 text-lg shadow-sm backdrop-blur-sm transition dark:bg-black/50 ${
+              favorite ? "text-red-600" : "text-gray-500"
             }`}
+            aria-label={favorite ? "Remove from favorites" : "Add to favorites"}
           >
             {favorite ? <FaHeart /> : <FaRegHeart />}
           </button>
 
-          <div className="absolute top-2 left-2 z-10 flex flex-col gap-1">
+          <div className="absolute left-2.5 top-2.5 z-20 flex flex-col gap-1">
             {product.isTop ? (
-              <span className="bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded">
+              <span className="rounded-full bg-red-600 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-white">
                 {cardTranslations.topBadge || "TOP"}
               </span>
             ) : null}
             {product.isNew ? (
-              <span className="rounded bg-emerald-100 px-2 py-0.5 text-xs font-semibold text-emerald-800 dark:bg-emerald-900/90 dark:text-emerald-200">
+              <span className="rounded-full bg-emerald-600 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-white">
                 {cardTranslations.newBadge || "NEW"}
               </span>
             ) : null}
           </div>
 
-          <Image
-            src={src}
-            alt={translatedName}
-            width={300}
-            height={400}
-            loading="lazy"
-            className="w-full h-full object-cover rounded transform transition-transform duration-300 ease-in-out group-hover:scale-110"
-            unoptimized={isLocal}                       // ← важливо для /public
-            loader={isLocal ? ({ src }) => src : undefined} // ← віддаємо напряму
-          />
-
-          <figcaption className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white text-sm sm:text-base font-normal rounded">
-            {cardTranslations.viewDetails || "View details"}
-          </figcaption>
+          {hasCarousel && (
+            <>
+              <button
+                type="button"
+                aria-label="Previous photo"
+                onClick={(e) => go(-1, e)}
+                className="absolute left-2 top-1/2 z-20 grid h-8 w-8 -translate-y-1/2 place-items-center rounded-full bg-black/40 text-sm text-white backdrop-blur-sm hover:bg-black/55"
+              >
+                <FaChevronLeft />
+              </button>
+              <button
+                type="button"
+                aria-label="Next photo"
+                onClick={(e) => go(1, e)}
+                className="absolute right-2 top-1/2 z-20 grid h-8 w-8 -translate-y-1/2 place-items-center rounded-full bg-black/40 text-sm text-white backdrop-blur-sm hover:bg-black/55"
+              >
+                <FaChevronRight />
+              </button>
+              <div className="absolute bottom-2.5 left-1/2 z-20 flex -translate-x-1/2 items-center gap-1.5 rounded-full bg-black/40 px-2.5 py-1.5 backdrop-blur-sm">
+                {safeGallery.map((_, i) => (
+                  <button
+                    key={i}
+                    type="button"
+                    aria-label={`Photo ${i + 1}`}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setTouched(true);
+                      setSlide(i);
+                    }}
+                    className={`rounded-full transition ${
+                      i === slide
+                        ? "h-2 w-2 bg-white"
+                        : "h-1.5 w-1.5 bg-white/50 hover:bg-white/80"
+                    }`}
+                  />
+                ))}
+              </div>
+            </>
+          )}
         </figure>
       </div>
 
-      <section className="mt-3 sm:mt-4">
-        <h3 className="text-sm sm:text-lg font-normal text-center sm:text-left">
-          {translatedName}
-        </h3>
-        <p className="text-xs sm:text-sm text-gray-700 dark:text-gray-400 mt-1 text-center sm:text-left">
-          <span className="font-normal">{priceLabel}:</span>{" "}
-          {product.discountPrice ? (
-            <>
-              <span className="text-red-600">{product.discountPrice} UAH</span>{" "}
-              <span className="line-through text-gray-400">{product.price} UAH</span>
-            </>
-          ) : (
-            <>{product.price} UAH</>
-          )}
-        </p>
-      </section>
+      {/* Info + CTA */}
+      <div className="flex flex-1 flex-col gap-3 p-3.5 sm:p-4">
+        <div className="min-h-[2.75rem]">
+          <h3
+            className="cursor-pointer text-base font-semibold leading-snug text-gray-900 line-clamp-2 dark:text-white"
+            onClick={onClick}
+          >
+            {translatedName}
+          </h3>
+          {translatedCategory ? (
+            <p className="mt-0.5 text-xs text-gray-500 dark:text-gray-400">
+              {translatedCategory}
+            </p>
+          ) : null}
+        </div>
 
-      <div className="mt-3 flex flex-col items-center sm:items-start gap-2">
-        <button onClick={handleAddToCart} className="px-4 py-2 text-sm bg-green-600 hover:bg-green-700 text-white rounded transition">
+        {/* Price + sizes on one row; colors always on the next line */}
+        <div className="border-t border-gray-100 pt-2.5 text-xs text-gray-600 dark:border-gray-700 dark:text-gray-300">
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+            <span className="font-semibold text-gray-900 dark:text-white">
+              {product.discountPrice ? (
+                <>
+                  <span className="text-red-600">{product.discountPrice} UAH</span>{" "}
+                  <span className="font-normal text-gray-400 line-through">
+                    {product.price} UAH
+                  </span>
+                </>
+              ) : (
+                <>{product.price} UAH</>
+              )}
+            </span>
+            {sizeLabel ? (
+              <>
+                <span className="h-3 w-px bg-gray-300 dark:bg-gray-600" aria-hidden />
+                <span>
+                  {(cardTranslations.sizesLabel || "Sizes") + ": "}
+                  {sizeLabel}
+                </span>
+              </>
+            ) : null}
+          </div>
+          {colorLabel ? (
+            <p className="mt-1 line-clamp-2 text-gray-600 dark:text-gray-300">
+              {colorLabel}
+            </p>
+          ) : null}
+        </div>
+
+        <button
+          type="button"
+          onClick={handleAddToCart}
+          className="mt-auto w-full rounded-xl bg-neutral-900 px-4 py-3 text-sm font-semibold tracking-wide text-white transition hover:bg-neutral-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-400 dark:bg-white dark:text-neutral-900 dark:hover:bg-gray-100"
+        >
           {cardTranslations.addToCart || "ADD TO CART"}
         </button>
-        <p className="text-[11px] text-gray-500 dark:text-gray-400">
-          {cardTranslations.clickPhoto || "Click on the photo to view details"}
-        </p>
+
+        <button
+          type="button"
+          onClick={onClick}
+          className="text-center text-[11px] text-gray-500 underline-offset-2 hover:underline dark:text-gray-400"
+        >
+          {cardTranslations.viewDetails || "View details"}
+        </button>
       </div>
     </article>
   );

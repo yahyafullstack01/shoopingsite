@@ -232,10 +232,17 @@ const ProductBanner = ({
 
   return (
     <>
-      <div className="fixed inset-0 z-[70] bg-white dark:bg-neutral-950 sm:inset-x-0 sm:bottom-0 sm:left-0 sm:right-0 sm:top-20 sm:flex sm:items-start sm:justify-center sm:bg-black/90 sm:pt-3 md:top-24 md:pt-4 lg:top-28 dark:sm:bg-black/90">
+      <div
+        className="fixed inset-0 z-[70] bg-white dark:bg-neutral-950 sm:inset-x-0 sm:bottom-0 sm:left-0 sm:right-0 sm:top-20 sm:flex sm:items-start sm:justify-center sm:bg-black/40 sm:pt-3 md:top-24 md:pt-4 lg:top-28 dark:sm:bg-black/50"
+        onClick={handleClose}
+        role="presentation"
+      >
         <div
           ref={modalBodyRef}
           className="relative flex h-full w-full max-w-5xl flex-col overflow-y-auto bg-white dark:bg-neutral-950 sm:h-auto sm:max-h-[calc(100vh-6.5rem)] sm:rounded-lg sm:shadow-xl md:max-h-[calc(100vh-7.5rem)] lg:max-h-[calc(100vh-8.75rem)]"
+          onClick={(e) => e.stopPropagation()}
+          role="dialog"
+          aria-modal="true"
         >
           <div className="sticky top-0 z-[201] flex items-center justify-between gap-1 border-b border-neutral-100 bg-white/95 px-2 py-2.5 backdrop-blur-sm dark:border-neutral-800 dark:bg-neutral-950/95 sm:hidden">
             <button

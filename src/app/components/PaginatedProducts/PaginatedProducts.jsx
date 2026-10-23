@@ -76,10 +76,11 @@ const PaginatedProducts = ({
     return (
       <div className="w-full">
         <div ref={productsRef} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
-          {currentProducts.map((product) => (
+          {currentProducts.map((product, index) => (
             <ProductCard
               key={product.id}
               product={product}
+              priority={index < 4}
               onClick={() => onProductClick(product)}
               onAddToCart={() => handleOpenQuickAdd(product)}
             />
@@ -99,10 +100,11 @@ const PaginatedProducts = ({
   return (
     <div className="w-full">
       <div ref={productsRef} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
-        {currentProducts.map((product) => (
+        {currentProducts.map((product, index) => (
           <ProductCard
             key={product.id}
             product={product}
+            priority={currentPage === 1 && index < 4}
             onClick={() => onProductClick(product)}
             onAddToCart={() => handleOpenQuickAdd(product)}
           />
