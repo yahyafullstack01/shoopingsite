@@ -1,14 +1,85 @@
 "use client";
-import React, { useState, useEffect } from "react";
+
+import React, { useState, useEffect, useMemo } from "react";
 import { useLanguage } from "./useLanguage";
-import { FiFilter } from "react-icons/fi";
+import { FiFilter, FiX } from "react-icons/fi";
+
+const ORIGINAL_CATEGORIES = [
+  "All",
+  "New",
+  "Top-products",
+  "Costumes",
+  "Dresses",
+  "Shirts",
+  "Skirts",
+  "Sweaters",
+  "Pants",
+  "Jackets",
+  "Tops",
+  "Outerwear",
+  "Shorts",
+];
+
+const ORIGINAL_SIZES = ["All", "S", "M", "L", "XL"];
+
+const selectClass =
+  "w-full rounded-xl border border-gray-200 bg-white px-3 py-2.5 text-sm text-gray-900 outline-none transition focus:border-neutral-400 focus:ring-1 focus:ring-neutral-300 dark:border-gray-600 dark:bg-neutral-900 dark:text-white";
+
+function SizeChips({ sizes, sizeMap, selectedSize, onSelect }) {
+  return (
+    <div className="flex flex-wrap gap-1.5">
+      {sizes.map((label) => {
+        const value = sizeMap[label] ?? label;
+        const isAll = value === "All";
+        const active = isAll
+          ? !selectedSize || selectedSize === "All" || selectedSize === ""
+          : selectedSize === value;
+        return (
+          <button
+            key={label}
+            type="button"
+            onClick={() => onSelect(isAll ? "" : value)}
+            className={`min-w-[2.5rem] rounded-full px-3 py-1.5 text-xs font-medium transition ${
+              active
+                ? "bg-neutral-900 text-white dark:bg-white dark:text-neutral-900"
+                : "bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-neutral-800 dark:text-gray-200 dark:hover:bg-neutral-700"
+            }`}
+          >
+            {label}
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
+function PriceSlider({ priceMin, priceMax, maxPrice, onChange, label }) {
+  const value = Math.min(Math.max(Number(maxPrice) || priceMin, priceMin), priceMax);
+  return (
+    <div className="w-full min-w-[9rem]">
+      <div className="mb-1 flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+        <span>{label}</span>
+        <span className="font-medium text-gray-800 dark:text-gray-200">
+          {priceMin} – {value} UAH
+        </span>
+      </div>
+      <input
+        type="range"
+        min={priceMin}
+        max={priceMax}
+        step="10"
+        value={value}
+        onChange={onChange}
+        className="h-1.5 w-full cursor-pointer appearance-none rounded-full bg-gray-200 accent-neutral-900 dark:bg-neutral-700 dark:accent-white"
+        aria-label={label}
+      />
+    </div>
+  );
+}
 
 export default function FilterSidebar({
-  /** поточне обране максимальне значення слайдера */
   maxPrice,
-  /** setter для maxPrice */
   setMaxPrice,
-  /** ДИНАМІЧНА СТЕЛЯ — максимальна ціна серед усіх товарів */
   priceLimit,
   selectedSize,
   handleSizeSelect,
@@ -16,16 +87,13 @@ export default function FilterSidebar({
   handleCategorySelect,
   children,
 }) {
-  const { translateList } = useLanguage();
-
+  const { translateList, language } = useLanguage();
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
-  // межі слайдера
   const PRICE_MIN = 100;
   const PRICE_MAX = Math.max(PRICE_MIN, Number(priceLimit) || 10000);
 
-  // 🔍 Перевірка ширини екрану
   useEffect(() => {
     const checkScreen = () => setIsMobile(window.innerWidth < 768);
     checkScreen();
@@ -33,120 +101,139 @@ export default function FilterSidebar({
     return () => window.removeEventListener("resize", checkScreen);
   }, []);
 
+  useEffect(() => {
+    if (!isFilterOpen) return;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isFilterOpen]);
+
   const menuItems = translateList("Filtersidebar", "header") || [];
-  const selectLabel = translateList("Infoform", "header")[2] || "Select";
+  const clearLabel = menuItems[10] || "Reset";
 
-  const originalCategories = [
-    "All", "New", "Top-products", "Costumes", "Dresses", "Shirts", "Skirts",
-    "Sweaters", "Pants", "Jackets", "Tops", "Outerwear", "Shorts"
-  ];
-  const translatedCategories = Array.isArray(translateList("Filtersidebar", "Categories"))
-    ? translateList("Filtersidebar", "Categories")
-    : originalCategories;
+  const translatedCategories = useMemo(() => {
+    const list = translateList("Filtersidebar", "Categories");
+    return Array.isArray(list) && list.length ? list : ORIGINAL_CATEGORIES;
+  }, [translateList, language]);
 
-  const categoryMap = Object.fromEntries(
-    translatedCategories.map((label, i) => [label, originalCategories[i]])
-  );
-  const categoryReverseMap = Object.fromEntries(
-    originalCategories.map((key, i) => [key.toLowerCase(), translatedCategories[i]])
-  );
+  const translatedSizes = useMemo(() => {
+    const list = translateList("Filtersidebar", "SizeCatalogue");
+    return Array.isArray(list) && list.length ? list : ORIGINAL_SIZES;
+  }, [translateList, language]);
 
-  const originalSizes = ["All", "XS", "S", "M", "L", "XL"]; // додав XS, щоб не ламався фільтр
-  const translatedSizes = Array.isArray(translateList("Filtersidebar", "SizeCatalogue"))
-    ? translateList("Filtersidebar", "SizeCatalogue")
-    : originalSizes;
-
-  const sizeMap = Object.fromEntries(
-    translatedSizes.map((label, i) => [label, originalSizes[i]])
+  const categoryMap = useMemo(
+    () =>
+      Object.fromEntries(
+        translatedCategories.map((label, i) => [
+          label,
+          ORIGINAL_CATEGORIES[i] || label,
+        ])
+      ),
+    [translatedCategories]
   );
 
-  const handlePriceChange = (e) => {
-    setMaxPrice(parseFloat(e.target.value));
-  };
+  const categoryReverseMap = useMemo(
+    () =>
+      Object.fromEntries(
+        ORIGINAL_CATEGORIES.map((key, i) => [
+          key.toLowerCase(),
+          translatedCategories[i] || key,
+        ])
+      ),
+    [translatedCategories]
+  );
+
+  const sizeMap = useMemo(
+    () =>
+      Object.fromEntries(
+        translatedSizes.map((label, i) => [label, ORIGINAL_SIZES[i] || label])
+      ),
+    [translatedSizes]
+  );
+
+  const handlePriceChange = (e) => setMaxPrice(parseFloat(e.target.value));
 
   const resetAll = () => {
-    handleCategorySelect("");   // не "All", а порожній рядок
+    handleCategorySelect("");
     handleSizeSelect("");
-    setMaxPrice(PRICE_MAX);     // скидаємо до реального максимуму
+    setMaxPrice(PRICE_MAX);
   };
 
-  // 🖥 Десктоп
+  const activeCount = [
+    selectedCategory && selectedCategory.toLowerCase() !== "all",
+    selectedSize && selectedSize !== "All",
+    Number(maxPrice) < PRICE_MAX,
+  ].filter(Boolean).length;
+
+  const categorySelect = (
+    <div className="flex min-w-[10rem] flex-1 flex-col gap-1.5">
+      <label className="text-xs font-medium uppercase tracking-wide text-gray-500 dark:text-gray-400">
+        {menuItems[7] || "Category"}
+      </label>
+      <select
+        value={categoryReverseMap[selectedCategory?.toLowerCase()] || translatedCategories[0]}
+        onChange={(e) =>
+          handleCategorySelect(
+            e.target.value === translatedCategories[0] || categoryMap[e.target.value] === "All"
+              ? ""
+              : categoryMap[e.target.value]
+          )
+        }
+        className={selectClass}
+      >
+        {translatedCategories.map((category) => (
+          <option key={category} value={category}>
+            {category}
+          </option>
+        ))}
+      </select>
+    </div>
+  );
+
+  const sizeBlock = (
+    <div className="flex flex-col gap-1.5">
+      <span className="text-xs font-medium uppercase tracking-wide text-gray-500 dark:text-gray-400">
+        {menuItems[4] || "Size"}
+      </span>
+      <SizeChips
+        sizes={translatedSizes}
+        sizeMap={sizeMap}
+        selectedSize={selectedSize}
+        onSelect={handleSizeSelect}
+      />
+    </div>
+  );
+
+  const priceBlock = (
+    <div className="flex min-w-[11rem] flex-1 flex-col justify-end">
+      <PriceSlider
+        priceMin={PRICE_MIN}
+        priceMax={PRICE_MAX}
+        maxPrice={maxPrice}
+        onChange={handlePriceChange}
+        label={menuItems[3] || "Price"}
+      />
+    </div>
+  );
+
+  // Desktop / tablet bar
   if (!isMobile) {
     return (
-      <div className="sticky top-16 z-30 bg-gray-100 dark:bg-black border-b border-gray-300 dark:border-gray-700 px-4 py-4 rounded-md shadow-md">
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-end">
-          {/* Категорія */}
-          <div className="flex flex-col">
-            <label className="text-sm font-medium mb-1 flex items-center gap-1">
-              📂 {menuItems[7] || "Category"}
-            </label>
-            <select
-              value={categoryReverseMap[selectedCategory?.toLowerCase()] || "All"}
-              onChange={(e) =>
-                handleCategorySelect(
-                  e.target.value === "All" ? "" : categoryMap[e.target.value]
-                )
-              }
-              className="border border-gray-300 dark:border-gray-600 rounded px-3 py-2 dark:bg-gray-800 dark:text-white"
-            >
-              {translatedCategories.map((category) => (
-                <option key={category} value={category}>
-                  {category}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          {/* Розмір */}
-          <div className="flex flex-col ml-8">
-            <label className="text-sm font-medium mb-1 flex items-center gap-1">
-              📏 {menuItems[4] || "Size"}
-            </label>
-            <select
-              value={selectedSize || "All"}
-              onChange={(e) =>
-                handleSizeSelect(e.target.value === "All" ? "" : e.target.value)
-              }
-              className="border border-gray-300 dark:border-gray-600 rounded px-3 py-2 dark:bg-gray-800 dark:text-white"
-            >
-              {translatedSizes.map((size) => (
-                <option key={size} value={sizeMap[size]}>
-                  {size}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          {/* Ціна */}
-          <div className="flex flex-col ml-8">
-            <label className="text-sm font-medium mb-1 flex items-center gap-1">
-              💰 {menuItems[3] || "Price"}
-            </label>
-            <div className="flex justify-between text-xs text-gray-600 dark:text-gray-300 mb-1">
-              <span>{PRICE_MIN}</span>
-              <span>{maxPrice}</span>
-            </div>
-            <input
-              type="range"
-              min={PRICE_MIN}
-              max={PRICE_MAX}
-              step="10"
-              value={Math.min(maxPrice, PRICE_MAX)}
-              onChange={handlePriceChange}
-              className="w-full h-2 bg-gray-300 dark:bg-gray-600 rounded-lg appearance-none"
-            />
-          </div>
-
-          {/* Сортування + Скидання */}
-          <div className="flex flex-col ml-8">
-            <label className="text-sm font-medium mb-1 invisible">Sort</label>
-            <div className="flex items-center justify-between gap-2">
+      <div className="sticky top-16 z-30 w-full">
+        <div className="rounded-2xl border border-gray-200/80 bg-white px-4 py-3 shadow-sm dark:border-gray-700 dark:bg-neutral-900">
+          <div className="flex flex-wrap items-end gap-4 lg:gap-6">
+            {categorySelect}
+            {sizeBlock}
+            {priceBlock}
+            <div className="ml-auto flex flex-wrap items-center gap-3 pb-0.5">
               {children}
               <button
-                className="text-sm text-blue-600 hover:underline whitespace-nowrap"
+                type="button"
                 onClick={resetAll}
+                className="text-sm text-gray-500 underline-offset-2 transition hover:text-neutral-900 hover:underline dark:text-gray-400 dark:hover:text-white"
               >
-                🔄 {menuItems[10] || "Reset"}
+                {clearLabel}
               </button>
             </div>
           </div>
@@ -155,380 +242,80 @@ export default function FilterSidebar({
     );
   }
 
-  // 📱 Мобільна версія
+  // Mobile: compact bar + bottom sheet
   return (
     <>
-      <button
-        className="md:hidden fixed bottom-6 right-6 bg-blue-500 text-white w-16 h-16 rounded-full shadow-lg flex flex-col items-center justify-center gap-1 z-50 animate-bounce"
-        onClick={() => setIsFilterOpen(true)}
-        aria-label="Open Filters"
-      >
-        <FiFilter size={24} />
-        <span className="text-xs font-medium">{menuItems[8]}</span>
-      </button>
-
-      {isFilterOpen && (
-        <div
-          className="fixed inset-0 z-40 bg-black bg-opacity-50 md:hidden backdrop-blur-sm transition-opacity duration-300"
-          onClick={() => setIsFilterOpen(false)}
-        />
-      )}
-
-      <aside
-        className={`w-full bg-white dark:bg-[#0f172a] p-4 sm:p-6 rounded-t-3xl shadow-2xl fixed bottom-0 left-0 right-0 z-50 transition-transform duration-300 ease-in-out ${
-          isFilterOpen ? "translate-y-0" : "translate-y-full"
-        }`}
-        onClick={(e) => e.stopPropagation()}
-      >
-        <h2 className="text-lg sm:text-xl font-semibold mb-4 border-b border-gray-950 dark:border-gray-700 pb-2">
-          {menuItems[2] || "Filters"}
-        </h2>
-
-        <div className="grid grid-cols-2 gap-4 md:block">
-          {/* Категорія */}
-          <div>
-            <label className="block text-sm font-medium mb-1 dark:text-white">
-              📂 {menuItems[7] || "Category"}
-            </label>
-            <select
-              value={categoryReverseMap[selectedCategory?.toLowerCase()] || "All"}
-              onChange={(e) =>
-                handleCategorySelect(
-                  e.target.value === "All" ? "" : categoryMap[e.target.value]
-                )
-              }
-              className="w-full p-2 border rounded bg-gray-100 dark:bg-gray-700 dark:text-white"
-            >
-              {translatedCategories.map((category) => (
-                <option key={category} value={category}>{category}</option>
-              ))}
-            </select>
-          </div>
-
-          {/* Розмір */}
-          <div>
-            <label className="block text-sm font-medium mb-1 dark:text-white">
-              📏 {menuItems[4] || "Size"}
-            </label>
-            <select
-              value={selectedSize || "All"}
-              onChange={(e) =>
-                handleSizeSelect(e.target.value === "All" ? "" : e.target.value)
-              }
-              className="w-full p-2 border rounded bg-gray-100 dark:bg-gray-700 dark:text-white"
-            >
-              {translatedSizes.map((size) => (
-                <option key={size} value={sizeMap[size]}>{size}</option>
-              ))}
-            </select>
-          </div>
-
-          {/* Ціна */}
-          <div className="col-span-2">
-            <label className="block text-sm font-medium mb-1 dark:text-white">
-              💰 {menuItems[3] || "Price"}
-            </label>
-            <div className="flex justify-between text-xs text-gray-600 dark:text-gray-300 mb-1">
-              <span>{PRICE_MIN}</span>
-              <span>{maxPrice}</span>
-            </div>
-            <input
-              type="range"
-              min={PRICE_MIN}
-              max={PRICE_MAX}
-              step="10"
-              value={Math.min(maxPrice, PRICE_MAX)}
-              onChange={handlePriceChange}
-              className="w-full h-2 bg-gray-300 dark:bg-gray-600 rounded-lg appearance-none"
-            />
-          </div>
-
-          {/* Сортування + Скидання */}
-          <div className="col-span-2 flex items-center justify-between gap-2 mt-2">
-            {children}
-            <button
-              className="text-sm text-blue-600 hover:underline whitespace-nowrap"
-              onClick={resetAll}
-            >
-              🔄 {menuItems[10] || "Reset"}
-            </button>
-          </div>
-        </div>
-
-        <div className="w-full mt-6 md:hidden">
+      <div className="sticky top-14 z-30 w-full">
+        <div className="flex items-center gap-2 rounded-2xl border border-gray-200/80 bg-white p-2 shadow-sm dark:border-gray-700 dark:bg-neutral-900">
           <button
-            className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg"
-            onClick={() => setIsFilterOpen(false)}
+            type="button"
+            onClick={() => setIsFilterOpen(true)}
+            className="inline-flex flex-1 items-center justify-center gap-2 rounded-xl border border-gray-200 bg-white px-3 py-2.5 text-sm font-medium text-gray-900 dark:border-gray-600 dark:bg-neutral-900 dark:text-white"
           >
-            {menuItems[9] || "Close filters"}
+            <FiFilter className="h-4 w-4" />
+            {menuItems[8] || "Filters"}
+            {activeCount > 0 ? (
+              <span className="rounded-full bg-neutral-900 px-1.5 py-0.5 text-[10px] font-semibold text-white dark:bg-white dark:text-neutral-900">
+                {activeCount}
+              </span>
+            ) : null}
           </button>
-        </div>
-      </aside>
-    </>
-  );
-}
-{/*"use client";
-import React, { useState, useEffect } from "react";
-import { useLanguage } from "./useLanguage";
-import { FiFilter } from "react-icons/fi";
-
-export default function FilterSidebar({
-  maxPrice,
-  setMaxPrice,
-  selectedSize,
-  handleSizeSelect,
-  selectedCategory,
-  handleCategorySelect,
-  children,
-}) {
-  const { translateList } = useLanguage();
-
-  const [isFilterOpen, setIsFilterOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-
-  // 🔍 Перевірка ширини екрану
-  useEffect(() => {
-    const checkScreen = () => setIsMobile(window.innerWidth < 768);
-    checkScreen();
-    window.addEventListener("resize", checkScreen);
-    return () => window.removeEventListener("resize", checkScreen);
-  }, []);
-
-  const menuItems = translateList("Filtersidebar", "header") || [];
-  const selectLabel = translateList("Infoform", "header")[2] || "Select";
-
-  const originalCategories = [
-    "All", "Costumes", "Dresses", "Shirts", "Skirts",
-    "Sweaters", "Pants", "Jackets", "Tops", "Outerwear", "Shorts"
-  ];
-  const translatedCategories = Array.isArray(translateList("Filtersidebar", "Categories"))
-    ? translateList("Filtersidebar", "Categories")
-    : originalCategories;
-  const categoryMap = Object.fromEntries(
-    translatedCategories.map((label, i) => [label, originalCategories[i]])
-  );
-  const categoryReverseMap = Object.fromEntries(
-    originalCategories.map((key, i) => [key.toLowerCase(), translatedCategories[i]])
-  );
-
-  const originalSizes = ["All", "S", "M", "L", "XL"];
-  const translatedSizes = Array.isArray(translateList("Filtersidebar", "SizeCatalogue"))
-    ? translateList("Filtersidebar", "SizeCatalogue")
-    : originalSizes;
-  const sizeMap = Object.fromEntries(
-    translatedSizes.map((label, i) => [label, originalSizes[i]])
-  );
-
-  const handlePriceChange = (e) => {
-    setMaxPrice(parseFloat(e.target.value));
-  };
-
-  // 🖥 Горизонтальний вигляд (десктоп)
-  if (!isMobile) {
-    return (
-      <div className="sticky top-16 z-30 bg-gray-100 dark:bg-black border-b border-gray-300 dark:border-gray-700 px-4 py-4 rounded-md shadow-md">
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-end">
-      
-          <div className="flex flex-col">
-            <label className="text-sm font-medium mb-1 flex items-center gap-1">
-              📂 {menuItems[7] || "Category"}
-            </label>
-            <select
-              value={categoryReverseMap[selectedCategory?.toLowerCase()] || "All"}
-              onChange={(e) =>
-                handleCategorySelect(
-                  e.target.value === "All" ? "" : categoryMap[e.target.value]
-                )
-              }
-              className="border border-gray-300 dark:border-gray-600 rounded px-3 py-2 dark:bg-gray-800 dark:text-white"
-            >
-              {translatedCategories.map((category) => (
-                <option key={category} value={category}>
-                  {category}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          
-          <div className="flex flex-col ml-8">
-            <label className="text-sm font-medium mb-1 flex items-center gap-1">
-              📏 {menuItems[4] || "Size"}
-            </label>
-            <select
-              value={selectedSize || "All"}
-              onChange={(e) =>
-                handleSizeSelect(e.target.value === "All" ? "" : e.target.value)
-              }
-              className="border border-gray-300 dark:border-gray-600 rounded px-3 py-2 dark:bg-gray-800 dark:text-white"
-            >
-              {translatedSizes.map((size) => (
-                <option key={size} value={sizeMap[size]}>
-                  {size}
-                </option>
-              ))}
-            </select>
-          </div>
-
-        
-          <div className="flex flex-col ml-8">
-            <label className="text-sm font-medium mb-1 flex items-center gap-1">
-              💰 {menuItems[3] || "Price"}
-            </label>
-            <div className="flex justify-between text-xs text-gray-600 dark:text-gray-300 mb-1">
-              <span>100</span>
-              <span>{maxPrice}</span>
-            </div>
-            <input
-              type="range"
-              min="100"
-              max="7500"
-              step="10"
-              value={maxPrice}
-              onChange={handlePriceChange}
-              className="w-full h-2 bg-gray-300 dark:bg-gray-600 rounded-lg appearance-none"
-            />
-          </div>
-
-          
-          <div className="flex flex-col ml-8">
-            <label className="text-sm font-medium mb-1 invisible">Sort</label>
-            <div className="flex items-center justify-between gap-2">
-              {children}
-              <button
-                className="text-sm text-blue-600 hover:underline whitespace-nowrap"
-                onClick={() => {
-                  handleCategorySelect("All");
-                  handleSizeSelect("");
-                  setMaxPrice(5500);
-                }}
-              >
-                🔄 {menuItems[10] || "Reset"}
-              </button>
-            </div>
-          </div>
+          <div className="min-w-0 flex-1">{children}</div>
         </div>
       </div>
-    );
-  }
 
-  // 📱 Мобільна версія з кнопкою
-  return (
-    <>
-      
-      <button
-        className="md:hidden fixed bottom-6 right-6 bg-blue-500 text-white w-16 h-16 rounded-full shadow-lg flex flex-col items-center justify-center gap-1 z-50 animate-bounce"
-        onClick={() => setIsFilterOpen(true)}
-        aria-label="Open Filters"
-      >
-        <FiFilter size={24} />
-        <span className="text-xs font-medium">{menuItems[8]}</span>
-      </button>
-
-    
-      {isFilterOpen && (
+      {isFilterOpen ? (
         <div
-          className="fixed inset-0 z-40 bg-black bg-opacity-50 md:hidden backdrop-blur-sm transition-opacity duration-300"
+          className="fixed inset-0 z-[60] bg-black/40 md:hidden"
           onClick={() => setIsFilterOpen(false)}
+          role="presentation"
         />
-      )}
+      ) : null}
 
-    
       <aside
-        className={`w-full bg-white dark:bg-[#0f172a] p-4 sm:p-6 rounded-t-3xl shadow-2xl fixed bottom-0 left-0 right-0 z-50 transition-transform duration-300 ease-in-out ${
-          isFilterOpen ? "translate-y-0" : "translate-y-full"
+        className={`fixed bottom-0 left-0 right-0 z-[70] max-h-[85vh] overflow-y-auto rounded-t-3xl bg-white p-5 shadow-2xl transition-transform duration-300 ease-out dark:bg-neutral-900 md:hidden ${
+          isFilterOpen ? "translate-y-0" : "translate-y-full pointer-events-none"
         }`}
         onClick={(e) => e.stopPropagation()}
+        aria-hidden={!isFilterOpen}
       >
-        <h2 className="text-lg sm:text-xl font-semibold mb-4 border-b border-gray-950 dark:border-gray-700 pb-2">
-          {menuItems[2] || "Filters"}
-        </h2>
-
-        <div className="grid grid-cols-2 gap-4 md:block">
-      
-          <div>
-            <label className="block text-sm font-medium mb-1 dark:text-white">
-              📂 {menuItems[7] || "Category"}
-            </label>
-            <select
-              value={categoryReverseMap[selectedCategory?.toLowerCase()] || "All"}
-              onChange={(e) =>
-                handleCategorySelect(
-                  e.target.value === "All" ? "" : categoryMap[e.target.value]
-                )
-              }
-              className="w-full p-2 border rounded bg-gray-100 dark:bg-gray-700 dark:text-white"
-            >
-              {translatedCategories.map((category) => (
-                <option key={category} value={category}>{category}</option>
-              ))}
-            </select>
-          </div>
-
-          
-          <div>
-            <label className="block text-sm font-medium mb-1 dark:text-white">
-              📏 {menuItems[4] || "Size"}
-            </label>
-            <select
-              value={selectedSize || "All"}
-              onChange={(e) =>
-                handleSizeSelect(e.target.value === "All" ? "" : e.target.value)
-              }
-              className="w-full p-2 border rounded bg-gray-100 dark:bg-gray-700 dark:text-white"
-            >
-              {translatedSizes.map((size) => (
-                <option key={size} value={sizeMap[size]}>{size}</option>
-              ))}
-            </select>
-          </div>
-
-      
-          <div className="col-span-2">
-            <label className="block text-sm font-medium mb-1 dark:text-white">
-              💰 {menuItems[3] || "Price"}
-            </label>
-            <div className="flex justify-between text-xs text-gray-600 dark:text-gray-300 mb-1">
-              <span>100</span>
-              <span>{maxPrice}</span>
-            </div>
-            <input
-              type="range"
-              min="100"
-              max="5500"
-              step="10"
-              value={maxPrice}
-              onChange={handlePriceChange}
-              className="w-full h-2 bg-gray-300 dark:bg-gray-600 rounded-lg appearance-none"
-            />
-          </div>
-
-          
-          <div className="col-span-2 flex items-center justify-between gap-2 mt-2">
-            {children}
-            <button
-              className="text-sm text-blue-600 hover:underline whitespace-nowrap"
-              onClick={() => {
-                handleCategorySelect("All");
-                handleSizeSelect("");
-                setMaxPrice(5500);
-              }}
-            >
-              🔄 {menuItems[10] || "Reset"}
-            </button>
-          </div>
+        <div className="mb-4 flex items-center justify-between border-b border-gray-100 pb-3 dark:border-gray-700">
+          <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
+            {menuItems[2] || "Filters"}
+          </h2>
+          <button
+            type="button"
+            onClick={() => setIsFilterOpen(false)}
+            className="rounded-full p-2 text-gray-500 hover:bg-gray-100 dark:hover:bg-neutral-800"
+            aria-label="Close"
+          >
+            <FiX className="h-5 w-5" />
+          </button>
         </div>
 
-        <div className="w-full mt-6 md:hidden">
+        <div className="flex flex-col gap-5">
+          {categorySelect}
+          {sizeBlock}
+          {priceBlock}
+        </div>
+
+        <div className="mt-6 flex gap-3">
           <button
-            className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg"
-            onClick={() => setIsFilterOpen(false)}
+            type="button"
+            onClick={resetAll}
+            className="flex-1 rounded-xl border border-gray-200 py-3 text-sm font-medium text-gray-700 dark:border-gray-600 dark:text-gray-200"
           >
-            {menuItems[9] || "Close filters"}
+            {clearLabel}
+          </button>
+          <button
+            type="button"
+            onClick={() => setIsFilterOpen(false)}
+            className="flex-[1.4] rounded-xl bg-neutral-900 py-3 text-sm font-semibold text-white dark:bg-white dark:text-neutral-900"
+          >
+            {menuItems[9] || "Apply"}
           </button>
         </div>
       </aside>
     </>
   );
 }
-*/}

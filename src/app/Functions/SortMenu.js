@@ -1,32 +1,52 @@
-import React from 'react';
+"use client";
+
+import React, { useEffect, useRef } from "react";
 import { useLanguage } from "./useLanguage";
-// Component to display a sorting menu
+
 export default function SortMenu({
-  sortOrder, // Current sorting order
-  setSortOrder, // Function to set the sorting order
-  isSortMenuOpen, // State for the open/close status of the sorting menu
-  toggleSortMenu, // Function to toggle the menu's state
+  sortOrder,
+  setSortOrder,
+  isSortMenuOpen,
+  toggleSortMenu,
 }) {
-  const { translateList, language } = useLanguage();
-  const menuItems = translateList("SortMenu", "header"); 
+  const { translateList } = useLanguage();
+  const menuItems = translateList("SortMenu", "header") || [];
+  const rootRef = useRef(null);
+
+  const currentLabel =
+    sortOrder === "priceAsc"
+      ? menuItems[2] || "Price: Low to High"
+      : sortOrder === "priceDesc"
+        ? menuItems[3] || "Price: High to Low"
+        : menuItems[1] || "Recommended";
+
+  useEffect(() => {
+    if (!isSortMenuOpen) return;
+    const onDoc = (e) => {
+      if (rootRef.current && !rootRef.current.contains(e.target)) {
+        toggleSortMenu();
+      }
+    };
+    document.addEventListener("mousedown", onDoc);
+    return () => document.removeEventListener("mousedown", onDoc);
+  }, [isSortMenuOpen, toggleSortMenu]);
+
   return (
-    <div className="relative inline-block text-left ml-auto">
-      {/* Button to toggle the sorting menu */}
+    <div className="relative inline-block min-w-0 text-left" ref={rootRef}>
       <button
         type="button"
-        className="inline-flex justify-center w-full rounded-md border dark:border-gray-700 shadow-sm px-4 py-2 bg-gray-700 dark:bg-gray-800 text-sm font-medium text-white hover:bg-gray-500 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:bg-gray-800 dark:focus:ring-offset-gray-900  dark:focus:ring-gray-600"
-        
+        className="inline-flex w-full items-center justify-between gap-2 rounded-xl border border-gray-200 bg-white px-3 py-2.5 text-sm font-medium text-gray-900 transition hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-neutral-300 dark:border-gray-600 dark:bg-neutral-900 dark:text-white dark:hover:bg-neutral-800"
         onClick={toggleSortMenu}
+        aria-expanded={isSortMenuOpen}
       >
-        {menuItems[0]}:{' '}
-        {/* Display the current sorting order */}
-        {sortOrder === menuItems[1]
-          ? menuItems[1]
-          : sortOrder === 'priceAsc'
-          ? menuItems[1]
-          : menuItems[1]}
+        <span className="truncate">
+          <span className="text-gray-500 dark:text-gray-400">
+            {(menuItems[0] || "Sort") + ": "}
+          </span>
+          {currentLabel}
+        </span>
         <svg
-          className="-mr-1 ml-2 h-5 w-5"
+          className="h-4 w-4 shrink-0 text-gray-500"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
           fill="currentColor"
@@ -40,56 +60,35 @@ export default function SortMenu({
         </svg>
       </button>
 
-      {/* Dropdown menu for sorting options */}
       {isSortMenuOpen && (
         <div
-       
-          className="position:fixed origin-top-right sm:absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-gray-700  dark:bg-gray-800 ring-1 ring-black ring-opacity-5 focus:outline-none"
+          className="absolute right-0 z-50 mt-2 w-56 origin-top-right rounded-xl border border-gray-200 bg-white py-1 shadow-lg dark:border-gray-600 dark:bg-neutral-900"
           role="menu"
-          aria-orientation="vertical"
-          tabIndex="-1"
         >
-          <div className="py-1" role="none">
-            {/* Button for "Recommended" sorting */}
+          {[
+            { key: "recommended", label: menuItems[1] || "Recommended" },
+            { key: "priceAsc", label: menuItems[2] || "Price: Low to High" },
+            { key: "priceDesc", label: menuItems[3] || "Price: High to Low" },
+          ].map((opt) => (
             <button
-              className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-600 dark:hover:bg-gray-700"
+              key={opt.key}
+              type="button"
               role="menuitem"
-              tabIndex="-1"
+              className={`block w-full px-4 py-2.5 text-left text-sm transition hover:bg-gray-50 dark:hover:bg-neutral-800 ${
+                sortOrder === opt.key ||
+                (opt.key === "recommended" &&
+                  (!sortOrder || sortOrder === "recommended"))
+                  ? "font-semibold text-neutral-900 dark:text-white"
+                  : "text-gray-700 dark:text-gray-200"
+              }`}
               onClick={() => {
-                setSortOrder('recommended');
-                toggleSortMenu(); 
-              }}
-              
-            >
-              {menuItems[1]}
-            </button>
-            {/* Button for "Price: Low to High" sorting */}
-            <button
-              className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-600 dark:hover:bg-gray-700"
-              role="menuitem"
-              tabIndex="-1"
-              onClick={() => {
-                setSortOrder('priceAsc');
-                toggleSortMenu(); 
-              }}
-              
-            >
-              {menuItems[2]}
-            </button>
-            {/* Button for "Price: High to Low" sorting */}
-            <button
-              className="block px-4 py-2 text-sm text-gray-200 hover:bg-gray-600 dark:hover:bg-gray-700"
-              role="menuitem"
-              tabIndex="-1"
-              onClick={() => {
-                setSortOrder('priceDesc');
+                setSortOrder(opt.key);
                 toggleSortMenu();
               }}
-             
             >
-              {menuItems[3]}
+              {opt.label}
             </button>
-          </div>
+          ))}
         </div>
       )}
     </div>

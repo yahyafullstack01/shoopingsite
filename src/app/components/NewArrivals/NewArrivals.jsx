@@ -10,7 +10,6 @@ import { useLanguage } from "../../Functions/useLanguage";
 
 const NewArrivals = () => {
   const router = useRouter();
-  const [isMobile, setIsMobile] = useState(false);
   const [visibleCount, setVisibleCount] = useState(10);
   const { language, translateList } = useLanguage();
   const newArrivalsData = translateList("home", "newArrivals") || {};
@@ -18,7 +17,6 @@ const NewArrivals = () => {
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
-      setIsMobile(width < 768);
       setVisibleCount(width < 768 ? 4 : width < 1024 ? 6 : 10);
     };
 
@@ -27,13 +25,11 @@ const NewArrivals = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // 1) Беремо лише новинки
   const onlyNew = useMemo(
     () => products.filter((p) => p.isNew === true),
     []
   );
 
-  // 2) Застосовуємо пріоритети для новинок
   const newProducts = useMemo(
     () => prioritizeByIds(onlyNew, PRIORITY_NEW),
     [onlyNew]
@@ -41,7 +37,6 @@ const NewArrivals = () => {
 
   const handleViewAll = () => router.push("/new-products");
 
-  // 🔹 перехід по айді на сторінку new-products
   const handleCardClick = (id) => {
     router.push(`/new-products?product=${id}`, { scroll: false });
   };
@@ -76,7 +71,10 @@ const NewArrivals = () => {
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
         {newProducts.slice(0, renderedCount).map((product, index) => {
           const name =
-            product.translations?.[language]?.name || product.name || newArrivalsData.productFallback || "New Arrival";
+            product.translations?.[language]?.name ||
+            product.name ||
+            newArrivalsData.productFallback ||
+            "New Arrival";
           const url = `/new-products?product=${product.id}`;
 
           return (
