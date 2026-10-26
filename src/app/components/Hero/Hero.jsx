@@ -61,8 +61,8 @@ function LcpPicture({ desktopSrc, mobileSrc, alt, className, style }) {
         style={style}
         fetchPriority="high"
         decoding="async"
-        width={3840}
-        height={1160}
+        width={1620}
+        height={2160}
       />
     </picture>
   );
@@ -77,17 +77,15 @@ export default function Hero() {
     () => [
       {
         type: "image",
-        // Same hi-res master on mobile (4500px) — old Bannermob was only 819px
         src: "/hoom/Bannerdesk.webp?v=4",
-        mobileSrc: "/hoom/Bannerdesk.webp?v=4",
+        mobileSrc: "/hoom/Bannermob.webp?v=6",
         alt: "Latore banner 1",
         ctaText: t[4],
         ctaHref: "/All-products",
         fit: "cover",
         focus: "center",
         fitMobile: "cover",
-        // Frame the model (left panel of wide banner), not the cafe edge
-        focusMobile: "28% 42%",
+        focusMobile: "center",
       },
       {
         type: "video",
@@ -107,15 +105,14 @@ export default function Hero() {
       {
         type: "image",
         src: "/hoom/Bannerdesk2.webp?v=4",
-        mobileSrc: "/hoom/Bannerdesk2.webp?v=4",
+        mobileSrc: "/hoom/Bannermob2.webp?v=7",
         alt: "Latore banner 2",
         ctaText: t[4],
         ctaHref: "/All-products",
         fit: "cover",
         focus: "center",
         fitMobile: "cover",
-        // Left panel of triptych — model full-body
-        focusMobile: "16% 40%",
+        focusMobile: "center",
       },
     ],
     [t]
@@ -206,7 +203,7 @@ export default function Hero() {
 
   return (
     <section
-      className="relative overflow-hidden w-[100vw] -mx-[calc(50%-50vw)] aspect-[3/4] max-h-[85svh] md:aspect-[1024/309] md:max-h-none md:min-h-0 md:h-auto"
+      className="relative w-full overflow-hidden aspect-[3/4] max-h-[85svh] md:aspect-[1024/309] md:max-h-none md:min-h-0 md:h-auto"
       aria-label="Hero slider"
       onTouchStart={onTouchStart}
       onTouchEnd={onTouchEnd}
