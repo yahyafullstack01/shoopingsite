@@ -12773,6 +12773,7 @@ sku: "12345",
     category: "Dresses",
     image: "/Dress/Woolen trapeze dress/6.avif",
     images: [
+      "/Dress/Woolen trapeze dress/6.avif",
      "/Dress/Woolen trapeze dress/7.avif",
       "/Dress/Woolen trapeze dress/8.avif",
       "/Dress/Woolen trapeze dress/9.avif",
