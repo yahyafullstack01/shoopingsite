@@ -19097,13 +19097,12 @@ description: [
     category: "Dresses",
     image: "/Dress/Breeze Dress/7.avif",
     images: [
-      "/Dress/Breeze Dress/2.avif",
+      "/Dress/Breeze Dress/8.avif",
       {
         type: "video",
         src: "/Dress/Breeze Dress/IMG_732.mp4",
         poster: "/Dress/Breeze Dress/7.avif"
       },
-      "/Dress/Breeze Dress/8.avif",
       "/Dress/Breeze Dress/9.avif",
       "/Dress/Breeze Dress/10.avif",
       "/Dress/Breeze Dress/11.avif",
