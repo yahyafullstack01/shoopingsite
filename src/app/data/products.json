@@ -11750,11 +11750,7 @@
       "/Costumes/Urban Suit/2.avif",
       "/Costumes/Urban Suit/3.avif",
       "/Costumes/Urban Suit/4.avif",
-      "/Costumes/Urban Suit/5.avif",
-      "/Costumes/Urban Suit/6.avif",
-      "/Costumes/Urban Suit/7.avif",
-      "/Costumes/Urban Suit/8.avif",
-      "/Costumes/Urban Suit/9.avif"
+      "/Costumes/Urban Suit/5.avif"
     ],
     "sizes": [
       "XS",
@@ -11779,8 +11775,7 @@
           "• Wide palazzo silhouette with smooth expansion from the hips."
         ],
         "colors": [
-          "dark chocolate",
-          "gray"
+          "dark chocolate"
         ]
       },
       "FR": {
@@ -11798,8 +11793,7 @@
           "• Silhouette large palazzo, légèrement évasée à partir des hanches."
         ],
         "colors": [
-          "chocolat foncé",
-          "gris"
+          "chocolat foncé"
         ]
       },
       "UA": {
@@ -11817,8 +11811,7 @@
           "• Широкі палаццо з плавним розширенням від стегон."
         ],
         "colors": [
-          "темний шоколад",
-          "сірий"
+          "темний шоколад"
         ]
       },
       "RU": {
@@ -11836,8 +11829,7 @@
           "• Широкие палаццо с плавным расширением от бёдер."
         ],
         "colors": [
-          "тёмный шоколад",
-          "серый"
+          "тёмный шоколад"
         ]
       }
     }
@@ -20131,13 +20123,12 @@
     "category": "Dresses",
     "image": "/Dress/Breeze Dress/7.avif",
     "images": [
-      "/Dress/Breeze Dress/2.avif",
+      "/Dress/Breeze Dress/8.avif",
       {
         "type": "video",
         "src": "/Dress/Breeze Dress/IMG_732.mp4",
         "poster": "/Dress/Breeze Dress/7.avif"
       },
-      "/Dress/Breeze Dress/8.avif",
       "/Dress/Breeze Dress/9.avif",
       "/Dress/Breeze Dress/10.avif",
       "/Dress/Breeze Dress/11.avif",
