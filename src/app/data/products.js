@@ -10763,7 +10763,7 @@ sku: "99367",
         "Pants: Classic mid-rise fit, comfortably fixed at the waist without constriction.",
         "• Wide palazzo silhouette with smooth expansion from the hips."
       ],
-      colors: ["dark chocolate", "gray"]
+      colors: ["dark chocolate"]
     },
     FR: {
       category: "Costumes",
@@ -10779,7 +10779,7 @@ sku: "99367",
         "Pantalon : taille moyenne classique, confortable à la taille.",
         "• Silhouette large palazzo, légèrement évasée à partir des hanches."
       ],
-      colors: ["chocolat foncé", "gris"]
+      colors: ["chocolat foncé"]
     },
     UA: {
       category: "Костюми",
@@ -10795,7 +10795,7 @@ sku: "99367",
         "Брюки: класична середня посадка, що комфортно фіксується на талії та не перетискає.",
         "• Широкі палаццо з плавним розширенням від стегон."
       ],
-      colors: ["темний шоколад", "сірий"]
+      colors: ["темний шоколад"]
     },
     RU: {
       category: "Костюмы",
@@ -10811,7 +10811,7 @@ sku: "99367",
         "Брюки: классическая средняя посадка, удобно фиксируется на талии.",
         "• Широкие палаццо с плавным расширением от бёдер."
       ],
-      colors: ["тёмный шоколад", "серый"]
+      colors: ["тёмный шоколад"]
     }
   }
 },  
