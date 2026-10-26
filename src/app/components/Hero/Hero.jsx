@@ -29,6 +29,7 @@ function getImageClass(s, isMobile) {
   const fit = isMobile && s.fitMobile ? s.fitMobile : s.fit || "cover";
   const focus = isMobile && s.focusMobile ? s.focusMobile : s.focus || "center";
   const fitClass = fit === "contain" ? "object-contain bg-white" : "object-cover";
+  // Named positions or CSS object-position (e.g. "28% 40%") to frame the model
   const focusClass =
     focus === "left"
       ? "object-left"
@@ -38,23 +39,30 @@ function getImageClass(s, isMobile) {
           ? "object-top"
           : focus === "bottom"
             ? "object-bottom"
-            : "object-center";
-  return `${fitClass} ${focusClass}`;
+            : focus === "center"
+              ? "object-center"
+              : "";
+  const focusStyle =
+    focus && !["left", "right", "top", "bottom", "center"].includes(focus)
+      ? { objectPosition: focus }
+      : undefined;
+  return { className: `${fitClass} ${focusClass}`.trim(), style: focusStyle };
 }
 
 /** Correct LCP image for mobile vs desktop without waiting for JS */
-function LcpPicture({ desktopSrc, mobileSrc, alt, className }) {
+function LcpPicture({ desktopSrc, mobileSrc, alt, className, style }) {
   return (
     <picture className="absolute inset-0 block h-full w-full">
       <source media="(max-width: 1023px)" srcSet={mobileSrc} type="image/webp" />
       <img
         src={desktopSrc}
         alt={alt || "Banner"}
-        className={`absolute inset-0 h-full w-full ${className}`}
+        className={`absolute inset-0 h-full w-full ${className || ""}`}
+        style={style}
         fetchPriority="high"
         decoding="async"
-        width={1200}
-        height={1600}
+        width={3840}
+        height={1160}
       />
     </picture>
   );
@@ -69,23 +77,25 @@ export default function Hero() {
     () => [
       {
         type: "image",
-        src: "/hoom/Bannerdesk.webp",
-        mobileSrc: "/hoom/Bannermob.webp",
+        // Same hi-res master on mobile (4500px) — old Bannermob was only 819px
+        src: "/hoom/Bannerdesk.webp?v=4",
+        mobileSrc: "/hoom/Bannerdesk.webp?v=4",
         alt: "Latore banner 1",
         ctaText: t[4],
         ctaHref: "/All-products",
         fit: "cover",
         focus: "center",
         fitMobile: "cover",
-        focusMobile: "center",
+        // Frame the model (left panel of wide banner), not the cafe edge
+        focusMobile: "28% 42%",
       },
       {
         type: "video",
-        // Compressed for web (desktop ~2MB, mobile ~1.8MB; originals were ~9MB / ~18MB)
+        // High-quality web encodes at native resolution (no upscale)
         src: "/hoom/optimized/Bannervideodesk.web.mp4",
         mobileSrc: "/hoom/optimized/Bannermobilevideo.web.mp4",
-        poster: "/hoom/Bannerdesk.webp",
-        mobilePoster: "/hoom/Bannermob.webp",
+        poster: "/hoom/optimized/BannerVideoPosterDesk.webp",
+        mobilePoster: "/hoom/optimized/BannerVideoPosterMob.webp",
         alt: "Latore banner video",
         ctaText: t[4],
         ctaHref: "/All-products",
@@ -96,15 +106,16 @@ export default function Hero() {
       },
       {
         type: "image",
-        src: "/hoom/Bannerdesk2.webp",
-        mobileSrc: "/hoom/Bannermob2.webp",
+        src: "/hoom/Bannerdesk2.webp?v=4",
+        mobileSrc: "/hoom/Bannerdesk2.webp?v=4",
         alt: "Latore banner 2",
         ctaText: t[4],
         ctaHref: "/All-products",
         fit: "cover",
         focus: "center",
         fitMobile: "cover",
-        focusMobile: "center",
+        // Left panel of triptych — model full-body
+        focusMobile: "16% 40%",
       },
     ],
     [t]
@@ -195,7 +206,7 @@ export default function Hero() {
 
   return (
     <section
-      className="relative overflow-hidden w-[100vw] -mx-[calc(50%-50vw)] aspect-[3/4] max-h-[85svh] md:aspect-auto md:min-h-[420px] md:h-[min(70vh,720px)] md:max-h-[1150px]"
+      className="relative overflow-hidden w-[100vw] -mx-[calc(50%-50vw)] aspect-[3/4] max-h-[85svh] md:aspect-[1024/309] md:max-h-none md:min-h-0 md:h-auto"
       aria-label="Hero slider"
       onTouchStart={onTouchStart}
       onTouchEnd={onTouchEnd}
@@ -224,6 +235,7 @@ export default function Hero() {
                   ? s.mobileSrc
                   : s.src
                 : undefined;
+            const imgFit = getImageClass(s, mobileLike);
 
             return (
               <div
@@ -241,8 +253,11 @@ export default function Hero() {
                     sizes="100vw"
                     priority={i === 0}
                     fetchPriority={i === 0 ? "high" : "low"}
-                    quality={i === 0 ? 85 : 75}
-                    className={getImageClass(s, mobileLike)}
+                    quality={95}
+                    // Serve prepared webp as-is — avoid Next recompressing hero art
+                    unoptimized
+                    className={imgFit.className}
+                    style={imgFit.style}
                   />
                 ) : !videoUnlocked ? (
                   // Poster until video unlocks — keeps first paint fast
@@ -252,8 +267,10 @@ export default function Hero() {
                     fill
                     sizes="100vw"
                     fetchPriority="low"
-                    quality={75}
-                    className={getImageClass(s, mobileLike)}
+                    quality={95}
+                    unoptimized
+                    className={imgFit.className}
+                    style={imgFit.style}
                   />
                 ) : (
                   <video
@@ -275,7 +292,7 @@ export default function Hero() {
             desktopSrc={first.src}
             mobileSrc={first.mobileSrc}
             alt={first.alt}
-            className={getImageClass(first, false)}
+            {...getImageClass(first, true)}
           />
         )}
       </div>
