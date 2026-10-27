@@ -84,9 +84,9 @@ export default function QuickAddModal({ product, onClose, onAddToCart }) {
         </div>
 
         {/* Image */}
-        {product.images?.[0] && (
+        {(product.image || product.images?.[0]) && (
           <Image
-            src={getProductImageSrc(product.images[0])}
+            src={getProductImageSrc(product.image || product.images[0])}
             alt={translatedName}
             width={800}
             height={600}

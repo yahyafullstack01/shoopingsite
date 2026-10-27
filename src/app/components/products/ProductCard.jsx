@@ -15,10 +15,11 @@ function collectGallery(product) {
     const src = getProductImageSrc(media);
     if (src && !list.includes(src) && !src.endsWith(".mp4")) list.push(src);
   };
+  // Cover (`image`) first, then gallery extras — matches product data model
+  if (product.image) push(product.image);
   if (Array.isArray(product.images) && product.images.length) {
     product.images.forEach(push);
   }
-  if (product.image) push(product.image);
   return list.slice(0, MAX_CAROUSEL);
 }
 

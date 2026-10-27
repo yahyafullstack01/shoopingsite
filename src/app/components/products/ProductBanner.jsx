@@ -57,11 +57,21 @@ const ProductBanner = ({
     selectedProduct?.translations?.[language]?.description || selectedProduct?.description;
 
   const galleryItems = useMemo(() => {
-    const imgs =
-      Array.isArray(selectedProduct?.images) && selectedProduct.images.length
-        ? selectedProduct.images
-        : [selectedProduct?.image].filter(Boolean);
-    return imgs.length ? imgs : ["/4.jpg"];
+    const list = [];
+    const push = (media) => {
+      if (!media) return;
+      const key = typeof media === "string" ? media : media?.src || media?.poster;
+      if (!key || list.some((item) => (typeof item === "string" ? item : item?.src || item?.poster) === key)) {
+        return;
+      }
+      list.push(media);
+    };
+    // Cover first, then extras
+    push(selectedProduct?.image);
+    if (Array.isArray(selectedProduct?.images)) {
+      selectedProduct.images.forEach(push);
+    }
+    return list.length ? list : ["/4.jpg"];
   }, [selectedProduct]);
 
   const galleryIndex = useMemo(() => {

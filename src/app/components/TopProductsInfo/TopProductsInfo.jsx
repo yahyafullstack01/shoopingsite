@@ -22,8 +22,8 @@ const normalizeMedia = (m) =>
   typeof m === "string" ? { type: "image", src: m } : m;
 
 const getDefaultMedia = (product) => {
-  // пріоритет: перший елемент у images -> fallback на product.image
-  const first = product?.images?.[0] ?? product?.image ?? null;
+  // Cover (`image`) first, then gallery extras
+  const first = product?.image ?? product?.images?.[0] ?? null;
   return first ? normalizeMedia(first) : null;
 };
 // ---------------------------------------------------------------------------
