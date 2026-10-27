@@ -1979,7 +1979,8 @@ sku: "99492",
         "The fitted bodice features a high stand collar and shaped seams that define the silhouette. Metal buttons fasten the full length of the design, while a removable long belt provides additional emphasis at the waist.",
         "The lower section is made from plaid suiting wool and has a voluminous flared cut. The maxi length adds elegance, while the combination of plaid and denim makes the dress a relevant choice for an autumn-winter wardrobe.",
         "Fabric: 75% suiting wool, denim cotton.",
-        "Season: autumn, winter."
+        "Season: autumn, winter.",
+        "[ The plaid color may vary depending on the fabric batch; please confirm with managers ]"
       ],
       colors: ["blue"]
     },
@@ -1991,7 +1992,8 @@ sku: "99492",
         "Le haut cintré présente un col montant et des coutures structurantes qui dessinent la silhouette. Une fermeture à boutons métalliques parcourt toute la longueur du modèle, tandis qu’une longue ceinture amovible permet de souligner davantage la taille.",
         "La partie inférieure est confectionnée en laine de costume à carreaux et présente une coupe évasée volumineuse. La longueur maxi apporte de l’élégance, tandis que l’association des carreaux et du denim rend la robe idéale pour le vestiaire automne-hiver.",
         "Tissu : 75 % laine de costume, denim de coton.",
-        "Saison : automne, hiver."
+        "Saison : automne, hiver.",
+        "[ La couleur du carreau peut varier selon le lot de tissu ; à confirmer auprès des managers ]"
       ],
       colors: ["bleu"]
     },
@@ -2003,7 +2005,8 @@ sku: "99492",
         "Верх сукні має приталений крій із високим коміром-стійкою та рельєфними швами, які формують силует. Застібка на металеві ґудзики проходить по всій довжині моделі, а знімний довгий пояс дозволяє додатково підкреслити талію.",
         "Нижня частина виконана з картатої костюмної вовни та має об’ємний розкльошений крій. Довжина максі додає образу елегантності, а поєднання клітинки з денімом робить сукню актуальною для осінньо-зимового гардероба.",
         "Тканина: 75% костюмна вовна, джинс-котон.",
-        "Сезон: осінь, зима."
+        "Сезон: осінь, зима.",
+        "[ Колір клітинки може змінюватись в залежності від партії тканини, уточнювати у менеджерів ]"
       ],
       colors: ["синій"]
     },
@@ -2015,7 +2018,8 @@ sku: "99492",
         "Верх платья имеет приталенный крой с высоким воротником-стойкой и рельефными швами, которые формируют силуэт. Застежка на металлические пуговицы проходит по всей длине модели, а съемный длинный пояс позволяет дополнительно подчеркнуть талию.",
         "Нижняя часть выполнена из клетчатой костюмной шерсти и имеет объемный расклешенный крой. Длина макси добавляет образу элегантности, а сочетание клетки с денимом делает платье актуальным для осенне-зимнего гардероба.",
         "Ткань: 75% костюмная шерсть, джинс-коттон.",
-        "Сезон: осень, зима."
+        "Сезон: осень, зима.",
+        "[ Цвет клетки может меняться в зависимости от партии ткани, уточнять у менеджеров ]"
       ],
       colors: ["синий"]
     }
