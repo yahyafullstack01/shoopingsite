@@ -35,7 +35,7 @@ export default function Home() {
       <TopProducts />
       <SpecialOffers />
       <About />
-      <FollowUs />
+      {/* <FollowUs /> */}
     </div>
   );
 }
