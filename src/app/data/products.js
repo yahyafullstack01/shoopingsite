@@ -17242,10 +17242,6 @@ const products = [
       "/Pants/Leather Flared Pants/4.avif",
       "/Pants/Leather Flared Pants/8.avif",
       "/Pants/Leather Flared Pants/9.avif",
-      "/Pants/Leather Flared Pants/10.avif",
-      "/Pants/Leather Flared Pants/11.avif",
-      "/Pants/Leather Flared Pants/12.avif",
-      "/Pants/Leather Flared Pants/13.avif",
       "/Pants/Leather Flared Pants/14.avif",
       "/Pants/Leather Flared Pants/15.avif",
       "/Pants/Leather Flared Pants/16.avif",
@@ -17265,7 +17261,6 @@ const products = [
         "description": "High-waisted flared pants with pleats running along the entire length.Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)",
         "colors": [
           "Black",
-          "powder",
           "milk"
         ]
       },
@@ -17283,7 +17278,6 @@ const products = [
         "description": "Брюки фасону кльош на високій посадці із стрілками по всій довжиніТканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається )",
         "colors": [
           "Чорний",
-          "пудра",
           "молоко"
         ]
       },
@@ -17292,7 +17286,8 @@ const products = [
         "name": "Брюки кльош",
         "description": "Брюки фасона клеш на высокой посадке со стрелками по всей длине Ткань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)",
         "colors": [
-          "Черный"
+          "Черный",
+          "молоко"
         ]
       }
     }
