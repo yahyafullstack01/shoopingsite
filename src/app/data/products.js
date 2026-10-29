@@ -347,11 +347,8 @@ const products = [
     "sku": "99516",
     "size": "XS S M L XL",
     "category": "Skirts",
-    "image": "/Skirts/Leather Lace Skirt/1.avif",
+    "image": "/Skirts/Leather Lace Skirt/5.avif",
     "images": [
-      "/Skirts/Leather Lace Skirt/2.avif",
-      "/Skirts/Leather Lace Skirt/3.avif",
-      "/Skirts/Leather Lace Skirt/4.avif",
       "/Skirts/Leather Lace Skirt/5.avif",
       "/Skirts/Leather Lace Skirt/6.avif",
       "/Skirts/Leather Lace Skirt/7.avif",
@@ -377,7 +374,6 @@ const products = [
           "Season: autumn, winter, spring."
         ],
         "colors": [
-          "olive",
           "black"
         ]
       },
@@ -393,7 +389,6 @@ const products = [
           "Saison : automne, hiver, printemps."
         ],
         "colors": [
-          "olive",
           "noir"
         ]
       },
@@ -409,7 +404,6 @@ const products = [
           "Сезон: осінь, зима, весна."
         ],
         "colors": [
-          "оливка",
           "чорний"
         ]
       },
@@ -425,7 +419,6 @@ const products = [
           "Сезон: осень, зима, весна."
         ],
         "colors": [
-          "оливковый",
           "чёрный"
         ]
       }
