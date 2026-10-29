@@ -17173,11 +17173,7 @@ const products = [
       "/Pants/Banana Pants/2.avif",
       "/Pants/Banana Pants/3.avif",
       "/Pants/Banana Pants/4.avif",
-      "/Pants/Banana Pants/5.avif",
-      "/Pants/Banana Pants/10.avif",
-      "/Pants/Banana Pants/11.avif",
-      "/Pants/Banana Pants/12.avif",
-      "/Pants/Banana Pants/13.avif"
+      "/Pants/Banana Pants/5.avif"
     ],
     "sizes": [
       "XS",
@@ -17192,8 +17188,7 @@ const products = [
         "name": "Banana Pants",
         "description": "High-waisted banana-style pants with two pockets.Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)",
         "colors": [
-          "Black",
-          "chocolat"
+          "Black"
         ]
       },
       "FR": {
@@ -17201,8 +17196,7 @@ const products = [
         "name": "Pantalons en Cuir Banane",
         "description": "Pantalons taille haute style banane avec deux poches.Tissu : Cuir éco-responsable de haute qualité avec une base en suède. (Extensible, ne se fissure pas.)",
         "colors": [
-          "Noir",
-          "chocolat"
+          "Noir"
         ]
       },
       "UA": {
@@ -17210,8 +17204,7 @@ const products = [
         "name": "Шкіряні брюки банани",
         "description": "Описание: Брюки фасону бананів на високій посадці із двома кишенями Тканина: якісна екошкіра на замшевій основі. ( стречева, не тріскається )",
         "colors": [
-          "Чорний",
-          "шоколад"
+          "Чорний"
         ]
       },
       "RU": {
@@ -17219,8 +17212,7 @@ const products = [
         "name": "Брюки бананы",
         "description": "( Брюки фасона бананов на высокой посадке с двумя карманамиТкань: качественная экокожа на замшевой основе. (стречевая, не трескающаяся)",
         "colors": [
-          "Черный",
-          "шоколад"
+          "Черный"
         ]
       }
     }
