@@ -12065,11 +12065,8 @@ const products = [
     "sku": "99331",
     "size": "XS S M L XL",
     "category": "Sweaters",
-    "image": "/Sweaters/V-neck sweater/6.avif",
+    "image": "/Sweaters/V-neck sweater/10.avif",
     "images": [
-      "/Sweaters/V-neck sweater/7.avif",
-      "/Sweaters/V-neck sweater/8.avif",
-      "/Sweaters/V-neck sweater/9.avif",
       "/Sweaters/V-neck sweater/10.avif",
       "/Sweaters/V-neck sweater/11.avif",
       "/Sweaters/V-neck sweater/12.avif",
@@ -12100,7 +12097,6 @@ const products = [
           "• Long dropped sleeves for a modern, laid-back look."
         ],
         "colors": [
-          "pistachio",
           "white",
           "black"
         ]
@@ -12117,7 +12113,6 @@ const products = [
           "• Manches longues tombantes pour un style moderne et détendu."
         ],
         "colors": [
-          "pistachio",
           "blanc",
           "noir"
         ]
@@ -12134,7 +12129,6 @@ const products = [
           "• Довгі спущені рукави для розслабленого, сучасного стилю."
         ],
         "colors": [
-          "фісташка",
           "білий",
           "чорний"
         ]
@@ -12151,7 +12145,6 @@ const products = [
           "• Длинные спущенные рукава для расслабленного, современного стиля."
         ],
         "colors": [
-          "фісташка",
           "білий",
           "чорний"
         ]
