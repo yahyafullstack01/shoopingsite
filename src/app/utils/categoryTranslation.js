@@ -12,5 +12,6 @@ export const categoryKeys = [
 export const translateCategory = (key, translateList) => {
   const categories = translateList("Filtersidebar", "Categories");
   const index = categoryKeys.indexOf(key?.toLowerCase());
-  return index !== -1 ? categories[index] : key;
+  if (index === -1 || !Array.isArray(categories)) return key;
+  return categories[index] ?? key;
 };

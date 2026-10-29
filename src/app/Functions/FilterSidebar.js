@@ -109,7 +109,9 @@ export default function FilterSidebar({
     };
   }, [isFilterOpen]);
 
-  const menuItems = translateList("Filtersidebar", "header") || [];
+  const menuItems = Array.isArray(translateList("Filtersidebar", "header"))
+    ? translateList("Filtersidebar", "header")
+    : [];
   const clearLabel = menuItems[10] || "Reset";
 
   const translatedCategories = useMemo(() => {

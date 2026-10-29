@@ -11,7 +11,7 @@ import { useRouter } from "next/navigation"
 import CartIcon from "../CartIcon/CartIcon"; 
 const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
   const { translateList, language, setLanguage } = useLanguage();
-  const menuItems = translateList("home", "header");
+  const menuItems = translateList("home", "header") || [];
  
 
  const toggleLanguage = () => {

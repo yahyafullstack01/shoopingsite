@@ -1,20 +1,16 @@
-'use client';
+"use client";
 
 import { useState, useEffect, useMemo } from "react";
 import Image from "next/image";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useLanguage } from "../../Functions/useLanguage";
-import useKeyboardNavigation from "../../hooks/useKeyboardNavigation";
-import useImageFollow from "../../hooks/useImageFollow";
 import Head from "next/head";
 import products from "../../data/products";
 import { PRIORITY_TOP, prioritizeByIds } from "../../utils/priorities";
+import { getProductImageSrc } from "../../utils/productData";
 
-// стабільний геттер id
 const getId = (p) => Number(p?.id ?? p?._id ?? p?.productId);
 
-// унікалізація за id
 const dedupeById = (list) => {
   const seen = new Set();
   return list.filter((p) => {
@@ -26,126 +22,113 @@ const dedupeById = (list) => {
 };
 
 export default function TopProducts() {
-  // 1) Сира вибірка топів + дедуплікація
+  const router = useRouter();
+  const [visibleCount, setVisibleCount] = useState(10);
+  const { language, translateList } = useLanguage();
+  const menuItems = translateList("home", "top_products") || [];
+
   const topRaw = useMemo(() => {
     const onlyTop = products.filter((p) => p.isTop);
     return dedupeById(onlyTop);
   }, []);
 
-  // 2) Пріоритетні ID -> на початок (решта — як було)
   const topProducts = useMemo(
     () => prioritizeByIds(topRaw, PRIORITY_TOP),
     [topRaw]
   );
 
-  const [visibleImagesCount, setVisibleImagesCount] = useState(10);
-
   useEffect(() => {
-    const updateVisibleImages = () => {
-      const base = window.innerWidth <= 460 ? 1 : 10;
-      // не більше наявних елементів
-      setVisibleImagesCount(Math.min(base, topProducts.length));
+    const handleResize = () => {
+      const width = window.innerWidth;
+      setVisibleCount(width < 768 ? 4 : width < 1024 ? 6 : 10);
     };
-    updateVisibleImages();
-    window.addEventListener("resize", updateVisibleImages);
-    return () => window.removeEventListener("resize", updateVisibleImages);
-  }, [topProducts.length]);
-
-  // 3) Слайдер працює з відсортованим масивом
-  const { displayedImages, handleNext, handlePrev } = useImageFollow(
-    topProducts.length,
-    Math.min(visibleImagesCount, topProducts.length)
-  );
-
-  const { translateList } = useLanguage();
-  const menuItems = translateList("home", "top_products");
-
-  useKeyboardNavigation(handlePrev, handleNext);
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   if (topProducts.length === 0) return null;
 
+  const renderedCount = Math.min(visibleCount, topProducts.length);
+  const firstImage = topProducts[0]?.image
+    ? encodeURI(topProducts[0].image)
+    : null;
+
   return (
     <>
-      <Head>
-        <link
-          rel="preload"
-          as="image"
-          href={
-            topProducts[0]?.image
-              ? encodeURI(topProducts[0].image) // кодує пробіли у %20
-              : "/Jackets/Leather-Jacket/4.avif"
-          }
-          type="image/avif"
-        />
-      </Head>
+      {firstImage ? (
+        <Head>
+          <link rel="preload" as="image" href={firstImage} type="image/avif" />
+        </Head>
+      ) : null}
 
       <section
         id="top-products"
-        className="bg-[#fcf8f3] dark:bg-gray-700 text-black dark:text-gray-100 section-container py-12"
+        className="bg-white dark:bg-zinc-900 py-14 px-5 transition-colors duration-300 font-sans"
+        itemScope
+        itemType="https://schema.org/ItemList"
       >
-        <div className="space-y-4">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal mb-6 text-center">
+        <meta itemProp="name" content={menuItems[0] || "Top Products"} />
+        <meta itemProp="numberOfItems" content={String(renderedCount)} />
+        <meta
+          itemProp="itemListOrder"
+          content="https://schema.org/ItemListOrderAscending"
+        />
+
+        <div className="flex justify-between items-center mb-8">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-black dark:text-white">
             {menuItems[0]}
           </h2>
-          <div className="border-t border-gray-300 dark:border-gray-700" />
+          <button
+            type="button"
+            onClick={() => router.push("/Top-products")}
+            className="text-sm sm:text-base font-medium text-black dark:text-white hover:underline"
+          >
+            {menuItems[1] || "View All →"}
+          </button>
         </div>
 
-        <div className="flex items-center justify-center space-x-4 mt-8">
-          <button
-            onClick={handlePrev}
-            aria-label="Previous"
-            className="text-black dark:text-gray-300 text-2xl sm:text-3xl cursor-pointer mx-2 sm:mx-4 hover:text-gray-500 dark:hover:text-gray-400 transition-all duration-300"
-          >
-            <FaChevronLeft />
-          </button>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          {topProducts.slice(0, renderedCount).map((product, index) => {
+            const name =
+              product.translations?.[language]?.name ||
+              product.name ||
+              product.title ||
+              "Product";
+            const url = `/Top-products?product=${getId(product)}`;
 
-          <div
-            className="flex overflow-hidden gap-4 px-4 justify-center"
-            style={{ height: "400px" }}
-          >
-            {displayedImages.map((imageIndex) => {
-              const product = topProducts[imageIndex];
-              if (!product) return null;
-
-              const pid = getId(product);
-              const src = product.image || "/Shirts/Corset Shirt/6.avif";
-              const isLocal =
-                typeof src === "string" &&
-                (src.startsWith("/") || src.startsWith("./") || src.startsWith("../"));
-
-              return (
-                <Link
-                  key={`top-${pid}-${imageIndex}`} // ✅ унікальний ключ
-                  href={`/Top-products?product=${pid}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-shrink-0 group"
+            return (
+              <div
+                key={getId(product)}
+                className="relative w-full aspect-[2/3] min-h-0 rounded-xl overflow-hidden shadow-md dark:shadow-lg cursor-pointer transition-transform duration-300 hover:scale-[1.03]"
+                onClick={() => router.push(url, { scroll: false })}
+                itemScope
+                itemProp="itemListElement"
+                itemType="https://schema.org/ListItem"
+              >
+                <meta itemProp="position" content={String(index + 1)} />
+                <div
+                  itemProp="item"
+                  itemScope
+                  itemType="https://schema.org/Product"
+                  className="relative w-full h-full"
                 >
-                  <Image
-                    src={src}
-                    alt={`Топ продукт ${pid}`}
-                    width={300}
-                    height={400}
-                    priority={imageIndex === 0}
-                    style={{ objectFit: "cover", width: "300px", height: "400px" }}
-                    sizes="(max-width: 425px) 100vw, (max-width: 768px) 45vw, (max-width: 1024px) 20vw, 300px"
-                    quality={85}
-                    className="rounded-lg object-cover shadow-lg transition-transform duration-500 ease-in-out group-hover:scale-110 group-hover:opacity-90"
-                    unoptimized={isLocal}
-                    loader={isLocal ? ({ src }) => src : undefined}
-                  />
-                </Link>
-              );
-            })}
-          </div>
-
-          <button
-            onClick={handleNext}
-            aria-label="Next"
-            className="text-2xl cursor-pointer mx-2 sm:mx-4 hover:text-gray-500 transition-all duration-300"
-          >
-            <FaChevronRight />
-          </button>
+                  <meta itemProp="name" content={name} />
+                  <link itemProp="url" href={url} />
+                  <div className="relative w-full h-full">
+                    <Image
+                      src={getProductImageSrc(product.image)}
+                      alt={name}
+                      fill
+                      className="object-cover"
+                      itemProp="image"
+                      priority={index === 0}
+                    />
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </section>
     </>

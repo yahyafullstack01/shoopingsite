@@ -10,7 +10,9 @@ export default function SortMenu({
   toggleSortMenu,
 }) {
   const { translateList } = useLanguage();
-  const menuItems = translateList("SortMenu", "header") || [];
+  const menuItems = Array.isArray(translateList("SortMenu", "header"))
+    ? translateList("SortMenu", "header")
+    : [];
   const rootRef = useRef(null);
 
   const currentLabel =

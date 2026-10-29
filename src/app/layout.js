@@ -4,6 +4,7 @@ import "./globals.css";
 import Script from "next/script";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import { LanguageProvider } from "./Functions/useLanguage";
 import ErrorBoundary from "../app/components/ErrorBoundary/ErrorBoundary";
 import { siteJsonLd, organizationJsonLd } from "./seo/loyout-jsonld";
 import { faqSchema, localBusinessSchema } from "./seo/faq-schema";
@@ -125,7 +126,9 @@ export default function RootLayout({ children }) {
 
       <body className="h-full transition-colors min-h-screen">
         <ThemeProvider>
-          <ErrorBoundary>{children}</ErrorBoundary>
+          <LanguageProvider>
+            <ErrorBoundary>{children}</ErrorBoundary>
+          </LanguageProvider>
         </ThemeProvider>
         <SpeedInsights />
       </body>
