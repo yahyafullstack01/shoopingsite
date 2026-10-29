@@ -2137,10 +2137,7 @@
     "images": [
       "/Dress/Cozy Asymmetric Wool Dress/2.avif",
       "/Dress/Cozy Asymmetric Wool Dress/3.avif",
-      "/Dress/Cozy Asymmetric Wool Dress/4.avif",
-      "/Dress/Cozy Asymmetric Wool Dress/5.avif",
-      "/Dress/Cozy Asymmetric Wool Dress/6.avif",
-      "/Dress/Cozy Asymmetric Wool Dress/7.avif"
+      "/Dress/Cozy Asymmetric Wool Dress/4.avif"
     ],
     "sizes": [
       "XS",
@@ -2161,8 +2158,7 @@
           "Season: autumn, winter."
         ],
         "colors": [
-          "gray",
-          "beige"
+          "gray"
         ]
       },
       "FR": {
@@ -2176,8 +2172,7 @@
           "Saison : automne, hiver."
         ],
         "colors": [
-          "gris",
-          "beige"
+          "gris"
         ]
       },
       "UA": {
@@ -2191,8 +2186,7 @@
           "Сезон: осінь, зима."
         ],
         "colors": [
-          "сірий",
-          "бежевий"
+          "сірий"
         ]
       },
       "RU": {
@@ -2206,8 +2200,7 @@
           "Сезон: осень, зима."
         ],
         "colors": [
-          "серый",
-          "бежевый"
+          "серый"
         ]
       }
     }
@@ -2651,9 +2644,7 @@
     "images": [
       "/Skirts/Japan Front-Slit Midi Skirt/2.avif",
       "/Skirts/Japan Front-Slit Midi Skirt/3.avif",
-      "/Skirts/Japan Front-Slit Midi Skirt/4.avif",
-      "/Skirts/Japan Front-Slit Midi Skirt/5.avif",
-      "/Skirts/Japan Front-Slit Midi Skirt/6.avif"
+      "/Skirts/Japan Front-Slit Midi Skirt/4.avif"
     ],
     "sizes": [
       "XS",
@@ -2674,8 +2665,7 @@
           "Season: autumn, winter."
         ],
         "colors": [
-          "gray",
-          "beige"
+          "gray"
         ]
       },
       "FR": {
@@ -2689,8 +2679,7 @@
           "Saison : automne, hiver."
         ],
         "colors": [
-          "gris",
-          "beige"
+          "gris"
         ]
       },
       "UA": {
@@ -2704,8 +2693,7 @@
           "Сезон: осінь, зима."
         ],
         "colors": [
-          "сірий",
-          "бежевий"
+          "сірий"
         ]
       },
       "RU": {
@@ -2719,8 +2707,7 @@
           "Сезон: осень, зима."
         ],
         "colors": [
-          "серый",
-          "бежевый"
+          "серый"
         ]
       }
     }
@@ -2737,10 +2724,7 @@
     "image": "/Jackets/Japan Wool Bomber/1.avif",
     "images": [
       "/Jackets/Japan Wool Bomber/2.avif",
-      "/Jackets/Japan Wool Bomber/3.avif",
-      "/Jackets/Japan Wool Bomber/4.avif",
-      "/Jackets/Japan Wool Bomber/5.avif",
-      "/Jackets/Japan Wool Bomber/6.avif"
+      "/Jackets/Japan Wool Bomber/3.avif"
     ],
     "sizes": [
       "XS",
@@ -2761,8 +2745,7 @@
           "Season: autumn, winter."
         ],
         "colors": [
-          "gray",
-          "beige"
+          "gray"
         ]
       },
       "FR": {
@@ -2776,8 +2759,7 @@
           "Saison : automne, hiver."
         ],
         "colors": [
-          "gris",
-          "beige"
+          "gris"
         ]
       },
       "UA": {
@@ -2791,8 +2773,7 @@
           "Сезон: осінь, зима."
         ],
         "colors": [
-          "сірий",
-          "бежевий"
+          "сірий"
         ]
       },
       "RU": {
@@ -2806,8 +2787,7 @@
           "Сезон: осень, зима."
         ],
         "colors": [
-          "серый",
-          "бежевый"
+          "серый"
         ]
       }
     }
@@ -2826,10 +2806,7 @@
       "/Costumes/Japan Suit/2.avif",
       "/Costumes/Japan Suit/3.avif",
       "/Costumes/Japan Suit/4.avif",
-      "/Costumes/Japan Suit/5.avif",
-      "/Costumes/Japan Suit/6.avif",
-      "/Costumes/Japan Suit/7.avif",
-      "/Costumes/Japan Suit/8.avif"
+      "/Costumes/Japan Suit/5.avif"
     ],
     "sizes": [
       "XS",
@@ -2850,8 +2827,7 @@
           "Season: autumn, winter."
         ],
         "colors": [
-          "gray",
-          "beige"
+          "gray"
         ]
       },
       "FR": {
@@ -2865,8 +2841,7 @@
           "Saison : automne, hiver."
         ],
         "colors": [
-          "gris",
-          "beige"
+          "gris"
         ]
       },
       "UA": {
@@ -2880,8 +2855,7 @@
           "Сезон: осінь, зима."
         ],
         "colors": [
-          "сірий",
-          "бежевий"
+          "сірий"
         ]
       },
       "RU": {
@@ -2895,8 +2869,7 @@
           "Сезон: осень, зима."
         ],
         "colors": [
-          "серый",
-          "бежевый"
+          "серый"
         ]
       }
     }
@@ -2912,9 +2885,7 @@
     "category": "Skirts",
     "image": "/Skirts/Lui Straight Midi Skirt/1.avif",
     "images": [
-      "/Skirts/Lui Straight Midi Skirt/2.avif",
-      "/Skirts/Lui Straight Midi Skirt/3.avif",
-      "/Skirts/Lui Straight Midi Skirt/4.avif"
+      "/Skirts/Lui Straight Midi Skirt/2.avif"
     ],
     "sizes": [
       "XS",
@@ -2935,8 +2906,7 @@
           "Season: autumn, winter."
         ],
         "colors": [
-          "gray",
-          "beige"
+          "gray"
         ]
       },
       "FR": {
@@ -2950,8 +2920,7 @@
           "Saison : automne, hiver."
         ],
         "colors": [
-          "gris",
-          "beige"
+          "gris"
         ]
       },
       "UA": {
@@ -2965,8 +2934,7 @@
           "Сезон: осінь, зима."
         ],
         "colors": [
-          "сірий",
-          "бежевий"
+          "сірий"
         ]
       },
       "RU": {
@@ -2980,8 +2948,7 @@
           "Сезон: осень, зима."
         ],
         "colors": [
-          "серый",
-          "бежевый"
+          "серый"
         ]
       }
     }
@@ -2998,9 +2965,7 @@
     "image": "/Top/Lui V-Neck Jumper/1.avif",
     "images": [
       "/Top/Lui V-Neck Jumper/2.avif",
-      "/Top/Lui V-Neck Jumper/3.avif",
-      "/Top/Lui V-Neck Jumper/4.avif",
-      "/Top/Lui V-Neck Jumper/5.avif"
+      "/Top/Lui V-Neck Jumper/3.avif"
     ],
     "sizes": [
       "XS",
@@ -3021,8 +2986,7 @@
           "Season: autumn, winter."
         ],
         "colors": [
-          "gray",
-          "beige"
+          "gray"
         ]
       },
       "FR": {
@@ -3036,8 +3000,7 @@
           "Saison : automne, hiver."
         ],
         "colors": [
-          "gris",
-          "beige"
+          "gris"
         ]
       },
       "UA": {
@@ -3051,8 +3014,7 @@
           "Сезон: осінь, зима."
         ],
         "colors": [
-          "сірий",
-          "бежевий"
+          "сірий"
         ]
       },
       "RU": {
@@ -3066,8 +3028,7 @@
           "Сезон: осень, зима."
         ],
         "colors": [
-          "серый",
-          "бежевый"
+          "серый"
         ]
       }
     }
@@ -3085,10 +3046,7 @@
     "images": [
       "/Costumes/Lui Skirt Suit/2.avif",
       "/Costumes/Lui Skirt Suit/3.avif",
-      "/Costumes/Lui Skirt Suit/4.avif",
-      "/Costumes/Lui Skirt Suit/5.avif",
-      "/Costumes/Lui Skirt Suit/6.avif",
-      "/Costumes/Lui Skirt Suit/7.avif"
+      "/Costumes/Lui Skirt Suit/4.avif"
     ],
     "sizes": [
       "XS",
@@ -3109,8 +3067,7 @@
           "Season: autumn, winter."
         ],
         "colors": [
-          "gray",
-          "beige"
+          "gray"
         ]
       },
       "FR": {
@@ -3124,8 +3081,7 @@
           "Saison : automne, hiver."
         ],
         "colors": [
-          "gris",
-          "beige"
+          "gris"
         ]
       },
       "UA": {
@@ -3139,8 +3095,7 @@
           "Сезон: осінь, зима."
         ],
         "colors": [
-          "сірий",
-          "бежевий"
+          "сірий"
         ]
       },
       "RU": {
@@ -3154,8 +3109,7 @@
           "Сезон: осень, зима."
         ],
         "colors": [
-          "серый",
-          "бежевый"
+          "серый"
         ]
       }
     }
@@ -3172,8 +3126,7 @@
     "image": "/Pants/Lui Trousers/1.avif",
     "images": [
       "/Pants/Lui Trousers/2.avif",
-      "/Pants/Lui Trousers/3.avif",
-      "/Pants/Lui Trousers/4.avif"
+      "/Pants/Lui Trousers/3.avif"
     ],
     "sizes": [
       "XS",
@@ -3194,8 +3147,7 @@
           "Season: autumn, winter."
         ],
         "colors": [
-          "gray",
-          "beige"
+          "gray"
         ]
       },
       "FR": {
@@ -3209,8 +3161,7 @@
           "Saison : automne, hiver."
         ],
         "colors": [
-          "gris",
-          "beige"
+          "gris"
         ]
       },
       "UA": {
@@ -3224,8 +3175,7 @@
           "Сезон: осінь, зима."
         ],
         "colors": [
-          "сірий",
-          "бежевий"
+          "сірий"
         ]
       },
       "RU": {
@@ -3239,8 +3189,7 @@
           "Сезон: осень, зима."
         ],
         "colors": [
-          "серый",
-          "бежевый"
+          "серый"
         ]
       }
     }
@@ -3257,9 +3206,7 @@
     "image": "/Costumes/Lui V-Neck Suit/1.avif",
     "images": [
       "/Costumes/Lui V-Neck Suit/2.avif",
-      "/Costumes/Lui V-Neck Suit/3.avif",
-      "/Costumes/Lui V-Neck Suit/4.avif",
-      "/Costumes/Lui V-Neck Suit/5.avif"
+      "/Costumes/Lui V-Neck Suit/3.avif"
     ],
     "sizes": [
       "XS",
@@ -3281,8 +3228,7 @@
           "Season: autumn, winter."
         ],
         "colors": [
-          "gray",
-          "beige"
+          "gray"
         ]
       },
       "FR": {
@@ -3297,8 +3243,7 @@
           "Saison : automne, hiver."
         ],
         "colors": [
-          "gris",
-          "beige"
+          "gris"
         ]
       },
       "UA": {
@@ -3313,8 +3258,7 @@
           "Сезон: осінь, зима."
         ],
         "colors": [
-          "сірий",
-          "бежевий"
+          "сірий"
         ]
       },
       "RU": {
@@ -3329,8 +3273,7 @@
           "Сезон: осень, зима."
         ],
         "colors": [
-          "серый",
-          "бежевый"
+          "серый"
         ]
       }
     }
@@ -3769,9 +3712,7 @@
     "image": "/Jackets/Lui Cardigan/1.avif",
     "images": [
       "/Jackets/Lui Cardigan/2.avif",
-      "/Jackets/Lui Cardigan/3.avif",
-      "/Jackets/Lui Cardigan/4.avif",
-      "/Jackets/Lui Cardigan/5.avif"
+      "/Jackets/Lui Cardigan/3.avif"
     ],
     "sizes": [
       "XS",
@@ -3792,8 +3733,7 @@
           "Season: autumn, winter."
         ],
         "colors": [
-          "gray",
-          "beige"
+          "gray"
         ]
       },
       "FR": {
@@ -3807,8 +3747,7 @@
           "Saison : automne, hiver."
         ],
         "colors": [
-          "gris",
-          "beige"
+          "gris"
         ]
       },
       "UA": {
@@ -3822,8 +3761,7 @@
           "Сезон: осінь, зима."
         ],
         "colors": [
-          "сірий",
-          "бежевий"
+          "сірий"
         ]
       },
       "RU": {
@@ -3837,8 +3775,7 @@
           "Сезон: осень, зима."
         ],
         "colors": [
-          "серый",
-          "бежевый"
+          "серый"
         ]
       }
     }
@@ -3856,10 +3793,7 @@
     "images": [
       "/Costumes/Lui Cardigan Suit/2.avif",
       "/Costumes/Lui Cardigan Suit/3.avif",
-      "/Costumes/Lui Cardigan Suit/4.avif",
-      "/Costumes/Lui Cardigan Suit/5.avif",
-      "/Costumes/Lui Cardigan Suit/6.avif",
-      "/Costumes/Lui Cardigan Suit/7.avif"
+      "/Costumes/Lui Cardigan Suit/4.avif"
     ],
     "sizes": [
       "XS",
@@ -3880,8 +3814,7 @@
           "Season: autumn, winter."
         ],
         "colors": [
-          "gray",
-          "beige"
+          "gray"
         ]
       },
       "FR": {
@@ -3895,8 +3828,7 @@
           "Saison : automne, hiver."
         ],
         "colors": [
-          "gris",
-          "beige"
+          "gris"
         ]
       },
       "UA": {
@@ -3910,8 +3842,7 @@
           "Сезон: осінь, зима."
         ],
         "colors": [
-          "сірий",
-          "бежевий"
+          "сірий"
         ]
       },
       "RU": {
@@ -3925,8 +3856,7 @@
           "Сезон: осень, зима."
         ],
         "colors": [
-          "серый",
-          "бежевый"
+          "серый"
         ]
       }
     }
@@ -12015,11 +11945,6 @@
       "/Costumes/Bomber Suit/3.avif",
       "/Costumes/Bomber Suit/4.avif",
       "/Costumes/Bomber Suit/5.avif",
-      "/Costumes/Bomber Suit/6.avif",
-      "/Costumes/Bomber Suit/7.avif",
-      "/Costumes/Bomber Suit/8.avif",
-      "/Costumes/Bomber Suit/9.avif",
-      "/Costumes/Bomber Suit/10.avif",
       "/Costumes/Bomber Suit/11.avif",
       "/Costumes/Bomber Suit/12.avif",
       "/Costumes/Bomber Suit/13.avif",
@@ -12048,7 +11973,6 @@
         ],
         "colors": [
           "graphite",
-          "grey",
           "chocolat"
         ]
       },
@@ -12066,8 +11990,7 @@
           "• Tissu texturé dense qui conserve la structure."
         ],
         "colors": [
-          "graphite",
-          "gris"
+          "graphite"
         ]
       },
       "UA": {
@@ -12085,7 +12008,6 @@
         ],
         "colors": [
           "графіт",
-          "сірий",
           "шоколад"
         ]
       },
@@ -12103,8 +12025,7 @@
           "• Плотная фактурная ткань держит форму."
         ],
         "colors": [
-          "графит",
-          "серый"
+          "графит"
         ]
       }
     }
@@ -12152,8 +12073,7 @@
           "• Cropped length emphasizes proportions and gives lightness to the look."
         ],
         "colors": [
-          "graphite",
-          "mocha"
+          "dark chocolate"
         ]
       },
       "FR": {
@@ -12170,8 +12090,7 @@
           "• Longueur courte qui souligne les proportions et apporte de la légèreté."
         ],
         "colors": [
-          "graphite",
-          "moka"
+          "chocolat foncé"
         ]
       },
       "UA": {
@@ -12188,8 +12107,7 @@
           "• Довжина до талії підкреслює пропорції та надає легкості образу."
         ],
         "colors": [
-          "графіт",
-          "мокко"
+          "темний шоколад"
         ]
       },
       "RU": {
@@ -12206,8 +12124,7 @@
           "• Длина до талии подчеркивает пропорции и добавляет лёгкости образу."
         ],
         "colors": [
-          "графит",
-          "мокко"
+          "тёмный шоколад"
         ]
       }
     }
