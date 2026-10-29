@@ -10517,15 +10517,9 @@
     "title": "Шкіряні брюки з поясом",
     "image": "/Pants/LeatherPants Belt/6.avif",
     "images": [
-      "/Pants/LeatherPants Belt/6.avif",
       "/Pants/LeatherPants Belt/7.avif",
       "/Pants/LeatherPants Belt/8.avif",
-      "/Pants/LeatherPants Belt/9.avif",
-      "/Pants/LeatherPants Belt/1.avif",
-      "/Pants/LeatherPants Belt/2.avif",
-      "/Pants/LeatherPants Belt/3.avif",
-      "/Pants/LeatherPants Belt/4.avif",
-      "/Pants/LeatherPants Belt/5.avif"
+      "/Pants/LeatherPants Belt/9.avif"
     ],
     "sizes": [
       "XS",
@@ -10552,7 +10546,6 @@
           "• Decorative vertical seams at the front create an elongated silhouette effect"
         ],
         "colors": [
-          "caramel",
           "mocha"
         ]
       },
@@ -10569,7 +10562,6 @@
           "• Coutures verticales décoratives à l'avant pour un effet de silhouette allongée"
         ],
         "colors": [
-          "caramel",
           "moka"
         ]
       },
@@ -10586,7 +10578,6 @@
           "• Декоративні вертикальні шви спереду — ефект витягнутого силуету"
         ],
         "colors": [
-          "карамель",
           "мокко"
         ]
       },
@@ -10603,7 +10594,6 @@
           "• Декоративные вертикальные швы спереди — эффект вытянутого силуэта"
         ],
         "colors": [
-          "карамель",
           "мокко"
         ]
       }
@@ -11451,11 +11441,7 @@
     "images": [
       "/Pants/Leather Pants1/11.avif",
       "/Pants/Leather Pants1/12.avif",
-      "/Pants/Leather Pants1/14.avif",
-      "/Pants/Leather Pants1/15.avif",
-      "/Pants/Leather Pants1/16.avif",
-      "/Pants/Leather Pants1/17.avif",
-      "/Pants/Leather Pants1/18.avif"
+      "/Pants/Leather Pants1/14.avif"
     ],
     "sizes": [
       "XS",
@@ -11471,8 +11457,7 @@
         "description": "Slim-fit pants with a high waist and zippers at the ankles. Fabric: High-quality eco-leather with a suede base. (Stretchy, does not crack.)",
         "color": "beige, caramel, black",
         "colors": [
-          "black",
-          "caramel"
+          "black"
         ]
       },
       "FR": {
@@ -11481,8 +11466,7 @@
         "description": "Pantalon ajusté à taille haute avec fermetures éclair aux chevilles. Tissu : cuir écologique de haute qualité sur une base en daim (stretch, ne se fissure pas).",
         "color": "beige, caramel, noir",
         "colors": [
-          "noir",
-          "caramel"
+          "noir"
         ]
       },
       "UA": {
@@ -11490,8 +11474,7 @@
         "name": "Шкіряні брюки труби",
         "description": "Брюки завуженого фасону на високій посадці та замочками на ніжці. Тканина: якісна екошкіра на замшевій основі. (стречева, не тріскається)",
         "colors": [
-          "Чорний",
-          "карамель"
+          "Чорний"
         ]
       },
       "RU": {
