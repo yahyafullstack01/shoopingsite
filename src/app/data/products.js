@@ -10136,12 +10136,12 @@ const products = [
     "isSpecialOffer": false,
     "sku": "99368",
     "size": "XS S M L XL",
-    "category": "Jackets",
-    "image": "/Jackets/Urban Mini Trench/1.avif",
+    "category": "Outerwear",
+    "image": "/Outerwear/Urban Mini Trench/1.avif",
     "images": [
-      "/Jackets/Urban Mini Trench/2.avif",
-      "/Jackets/Urban Mini Trench/3.avif",
-      "/Jackets/Urban Mini Trench/4.avif"
+      "/Outerwear/Urban Mini Trench/2.avif",
+      "/Outerwear/Urban Mini Trench/3.avif",
+      "/Outerwear/Urban Mini Trench/4.avif"
     ],
     "sizes": [
       "XS",
@@ -10152,7 +10152,7 @@ const products = [
     ],
     "translations": {
       "EN": {
-        "category": "Jackets",
+        "category": "Outerwear",
         "name": "Urban Mini Trench",
         "description": [
           "The cropped trench coat sculpts the silhouette, accentuates the waist, and creates long-leg proportions.",
@@ -10169,7 +10169,7 @@ const products = [
         ]
       },
       "FR": {
-        "category": "Vestes",
+        "category": "Vêtements d’extérieur",
         "name": "Mini Trench Urban",
         "description": [
           "Le trench court sculpte la silhouette, souligne la taille et crée des proportions allongeantes.",
@@ -10186,7 +10186,7 @@ const products = [
         ]
       },
       "UA": {
-        "category": "Жакети",
+        "category": "Верхній одяг",
         "name": "Міні тренч \"Urban\"",
         "description": [
           "Вкорочений тренч моделює силует, виділяє талію та створює пропорції «ноги від вух».",
@@ -10203,7 +10203,7 @@ const products = [
         ]
       },
       "RU": {
-        "category": "Жакеты",
+        "category": "Верхняя одежда",
         "name": "Мини-тренч \"Urban\"",
         "description": [
           "Укороченный тренч моделирует силуэт, подчёркивает талию и создаёт пропорции «ноги от ушей».",
