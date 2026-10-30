@@ -1,7 +1,7 @@
 import { readFile } from "fs/promises";
 import path from "path";
 import { redirect } from "next/navigation";
-import { filterAndSortProducts } from "../utils/products";
+import { filterAndSortProducts, productMatchesQuery } from "../utils/products";
 import CatalogPageClient from "./CatalogPageClient";
 
 const PRODUCTS_JSON = path.join(process.cwd(), "src/app/data/products.json");
@@ -66,7 +66,8 @@ export default async function Products({ searchParams }) {
   const mapped = raw.map(mapRowForCatalog);
 
   const categoryParam = (sp?.category ?? "").toString().toLowerCase();
-  const pool =
+  const searchQuery = (sp?.q ?? "").toString().trim();
+  let pool =
     !categoryParam || categoryParam === "all"
       ? mapped
       : categoryParam === "new"
@@ -74,6 +75,21 @@ export default async function Products({ searchParams }) {
         : categoryParam === "top-products"
           ? mapped.filter((p) => p.isTop === true)
           : mapped.filter((p) => p.category.toLowerCase() === categoryParam);
+
+  if (searchQuery) {
+    const byId = new Map(raw.map((p) => [String(p.id), p]));
+    pool = pool.filter((p) => {
+      const full = byId.get(String(p.id));
+      return productMatchesQuery(
+        {
+          ...p,
+          sku: full?.sku ?? p.sku,
+          translations: full?.translations ?? p.translations,
+        },
+        searchQuery
+      );
+    });
+  }
 
   const priceCeiling =
     pool.length > 0

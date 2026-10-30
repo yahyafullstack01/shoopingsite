@@ -8,7 +8,8 @@ import { FaMoon, FaSun, FaBars, FaTimes, FaChevronDown,FaHeart } from "react-ico
 import { useHeaderState } from "../../hooks/useHeader"; 
 import { useLanguage } from "../../Functions/useLanguage"; 
 import { useRouter } from "next/navigation"
-import CartIcon from "../CartIcon/CartIcon"; 
+import CartIcon from "../CartIcon/CartIcon";
+import HeaderSearch from "./HeaderSearch";
 const Header = React.memo(({ isDarkMode, toggleDarkMode }) => {
   const { translateList, language, setLanguage } = useLanguage();
   const menuItems = translateList("home", "header") || [];
@@ -116,7 +117,8 @@ useEffect(() => {
              />
            </Link>
          </div>
-         <div className="flex items-center space-x-4 lg:hidden">
+         <div className="flex items-center space-x-2 sm:space-x-4 lg:hidden">
+            <HeaderSearch isDarkMode={isDarkMode} />
             <Link href="/favorites" aria-label="Go to Favorites">
     <div className="relative p-2 rounded-full border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-600 transition duration-300">
       <FaHeart className="text-gray-900 dark:text-gray-300" />
@@ -202,8 +204,7 @@ useEffect(() => {
          </nav>
    
          <div className="hidden lg:flex items-center space-x-2">
-          
-         
+            <HeaderSearch isDarkMode={isDarkMode} />
             <Link href="/favorites" aria-label="Go to Favorites">
     <div className="relative p-2 rounded-full border border-gray-300 hover:bg-gray-200 dark:border-gray-700 dark:hover:bg-gray-600 transition duration-300">
       <FaHeart className="text-gray-900 dark:text-gray-300" />

@@ -5,6 +5,13 @@
         "Costumes", "Dresses", "Shirts", "Skirts", 
         "Sweaters",  "Pants", "Jackets", "Tops", "Outerwear", "Shorts"
       ],
+      "search": {
+        "placeholder": "Search by name...",
+        "aria": "Search products",
+        "resultsFor": "Search results for",
+        "noResults": "No products found",
+        "clear": "Clear search"
+      },
     
       "hero": ["Ukrainian women's clothing brand","Ukrainian women's","clothing brand","LATORE ATELIER", "View more", "The collection"],
       "about": [
@@ -250,6 +257,13 @@
       "Костюми", "Сукні", "Сорочки", "Спідниці", 
         "Светри", "Брюки", "Жакети", "Топи", "Верхній одяг", "Шорти"
       ],
+      "search": {
+        "placeholder": "Пошук за назвою...",
+        "aria": "Пошук товарів",
+        "resultsFor": "Результати пошуку для",
+        "noResults": "Товарів не знайдено",
+        "clear": "Очистити пошук"
+      },
       
       "hero": ["Український бренд жіночого одягу.","Український бренд", "жіночого одягу", "LATORE ATELIER", "Дивитися більше","Колекція"],
       "about": [

@@ -27,12 +27,22 @@ export default function AllProducts({
   prefetchedProduct = null,
 }) {
   const { translateList, language } = useLanguage();
-  const menuItems = translateList("Catalogues", "header");
+  const menuItems = translateList("Catalogues", "header") || [];
 
   const router = useRouter();
   const searchParams = useSearchParams();
   const productId = searchParams.get("product");
   const categoryFromURL = (searchParams.get("category") || "").toLowerCase();
+  const searchQuery = (searchParams.get("q") || "").trim();
+  const searchT = translateList("home", "search");
+  const searchLabels =
+    searchT && typeof searchT === "object"
+      ? searchT
+      : {
+          resultsFor: "Search results for",
+          noResults: "No products found",
+          clear: "Clear search",
+        };
 
   const pageParamRaw = parseInt(searchParams.get("page") || "1", 10);
   const pageFromUrl =
@@ -41,7 +51,7 @@ export default function AllProducts({
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [categoryFromURL]);
+  }, [categoryFromURL, searchQuery]);
 
   // --------------------------------------------
   // 1) Пул товарів для поточної категорії (з сервера)
@@ -239,9 +249,12 @@ export default function AllProducts({
               handleSizeSelect={(size) => applySizeSelect(size, setSelectedSize)}
               selectedCategory={categoryFromURL || ""}
               handleCategorySelect={(category) => {
-            
                 const slug = (category || "").toLowerCase();
-                router.push(`/All-products?category=${slug || "all"}&page=1`, { scroll: true });
+                const p = new URLSearchParams();
+                p.set("category", slug || "all");
+                p.set("page", "1");
+                if (searchQuery) p.set("q", searchQuery);
+                router.push(`/All-products?${p.toString()}`, { scroll: true });
               }}
               isHorizontal={true}
             >
@@ -278,9 +291,38 @@ export default function AllProducts({
                 </h2>
               )}
 
+              {searchQuery && (
+                <div className="mb-2 flex flex-wrap items-center gap-3">
+                  <h2 className="text-xl sm:text-2xl font-normal text-gray-800 dark:text-gray-200">
+                    {searchLabels.resultsFor}{" "}
+                    <span className="font-medium">“{searchQuery}”</span>
+                  </h2>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      const p = new URLSearchParams(searchParams.toString());
+                      p.delete("q");
+                      p.set("page", "1");
+                      router.push(`/All-products?${p.toString()}`, {
+                        scroll: true,
+                      });
+                    }}
+                    className="text-sm text-gray-600 underline hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+                  >
+                    {searchLabels.clear}
+                  </button>
+                </div>
+              )}
+
               <p className="text-gray-700 dark:text-gray-400 mt-4 pb-4">
                 {filteredProducts.length} {menuItems[2]}
               </p>
+
+              {searchQuery && filteredProducts.length === 0 && (
+                <p className="text-gray-600 dark:text-gray-400 pb-6">
+                  {searchLabels.noResults}
+                </p>
+              )}
             </section>
 
             <section aria-labelledby="product-list" aria-live="polite" className="w-full">

@@ -15,6 +15,21 @@ const PRIORITY_BY_CATEGORY = {
 const getId = (p) => Number(p?.id ?? p?._id ?? p?.productId);
 const norm = (s) => (s || '').toString().trim().toLowerCase();
 
+/** Case-insensitive partial match on product name (all locales) + SKU. */
+export const productMatchesQuery = (product, query) => {
+  const q = norm(query);
+  if (!q) return true;
+  const names = [
+    product?.name,
+    product?.translations?.EN?.name,
+    product?.translations?.UA?.name,
+    product?.translations?.FR?.name,
+    product?.translations?.RU?.name,
+  ];
+  if (names.some((n) => norm(n).includes(q))) return true;
+  return norm(product?.sku).includes(q);
+};
+
 // Size selection
 // This function updates the selected size, setting a value or clearing it if "All" is selected.
 
