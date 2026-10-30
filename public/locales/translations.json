@@ -10,7 +10,8 @@
         "aria": "Search products",
         "resultsFor": "Search results for",
         "noResults": "No products found",
-        "clear": "Clear search"
+        "clear": "Clear search",
+        "seeAll": "See all results"
       },
     
       "hero": ["Ukrainian women's clothing brand","Ukrainian women's","clothing brand","LATORE ATELIER", "View more", "The collection"],
@@ -262,7 +263,8 @@
         "aria": "Пошук товарів",
         "resultsFor": "Результати пошуку для",
         "noResults": "Товарів не знайдено",
-        "clear": "Очистити пошук"
+        "clear": "Очистити пошук",
+        "seeAll": "Дивитися всі результати"
       },
       
       "hero": ["Український бренд жіночого одягу.","Український бренд", "жіночого одягу", "LATORE ATELIER", "Дивитися більше","Колекція"],
