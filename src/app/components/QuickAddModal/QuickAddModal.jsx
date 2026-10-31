@@ -18,7 +18,11 @@ export default function QuickAddModal({ product, onClose, onAddToCart }) {
   const [quantityError, setQuantityError] = useState("");
 
   const { language, translateList } = useLanguage();
-  const menuItems = translateList("Infoform", "header");
+  const menuItems = translateList("Infoform", "header") || [];
+  const formT = translateList("home", "infoForm") || {};
+  const closeLabel = formT.close || (language === "UA" ? "Закрити" : "Close");
+  const addToCartLabel =
+    formT.addToCart || (language === "UA" ? "ДОДАТИ В КОШИК" : "ADD TO CART");
 
   const translatedName =
     product.translations?.[language]?.name || product.name;
@@ -29,9 +33,20 @@ export default function QuickAddModal({ product, onClose, onAddToCart }) {
   const handleAddToCartClick = () => {
     let hasError = false;
 
-    if (!selectedColor) { setColorError("Оберіть колір"); hasError = true; } else setColorError("");
-    if (!selectedSize) { setSizeError("Оберіть розмір"); hasError = true; } else setSizeError("");
-    if (quantity <= 0) { setQuantityError("Вкажіть кількість"); hasError = true; } else setQuantityError("");
+    if (!selectedColor) {
+      setColorError(formT.colorError || (language === "UA" ? "Оберіть колір" : "Select a color"));
+      hasError = true;
+    } else setColorError("");
+    if (!selectedSize) {
+      setSizeError(formT.sizeError || (language === "UA" ? "Оберіть розмір" : "Select a size"));
+      hasError = true;
+    } else setSizeError("");
+    if (quantity <= 0) {
+      setQuantityError(
+        formT.quantityError || (language === "UA" ? "Вкажіть кількість" : "Specify quantity")
+      );
+      hasError = true;
+    } else setQuantityError("");
 
     if (hasError) return;
 
@@ -77,7 +92,7 @@ export default function QuickAddModal({ product, onClose, onAddToCart }) {
           <button
             onClick={onClose}
             className="shrink-0 leading-none text-gray-400 hover:text-black dark:hover:text-white text-3xl"
-            aria-label="Закрити"
+            aria-label={closeLabel}
           >
             &times;
           </button>
@@ -146,10 +161,10 @@ export default function QuickAddModal({ product, onClose, onAddToCart }) {
         {/* Buttons */}
         <div className="flex justify-end space-x-3">
           <button onClick={onClose} className="px-3 py-2 bg-gray-400 text-white rounded hover:bg-gray-500 text-sm sm:text-base">
-            Закрити
+            {closeLabel}
           </button>
           <button onClick={handleAddToCartClick} className="px-3 py-2 bg-green-600 text-white rounded hover:bg-green-700 text-sm sm:text-base">
-            ДОДАТИ В КОШИК
+            {addToCartLabel}
           </button>
         </div>
       </div>

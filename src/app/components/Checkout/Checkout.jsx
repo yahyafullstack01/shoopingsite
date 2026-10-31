@@ -15,7 +15,15 @@ import OrderSummary from "../OrderSummary/OrderSummary"
 export default function Checkout() {
   const router = useRouter();
   const { translateList } = useLanguage();
-  const checkoutTranslations = translateList("home", "checkoutPage") || {};
+  const rawCheckout = translateList("home", "checkoutPage");
+  const t =
+    rawCheckout && typeof rawCheckout === "object" ? rawCheckout : {};
+  const checkoutTranslations = t;
+  const fill = (template, vars) =>
+    Object.entries(vars).reduce(
+      (s, [k, v]) => String(s).replace(`{${k}}`, String(v)),
+      template || ""
+    );
 
   const [deliveryMethod, setDeliveryMethod] = useState('');
   const [cityQuery, setCityQuery] = useState('');
@@ -477,7 +485,9 @@ const handleWayforpayClick = async () => {
   
 
 <div className="p-6 mt-8 sm:max-w-5xl xl:max-w-6xl mx-auto bg-[#fdfcf7]  dark:bg-zinc-900 rounded-xl shadow-md space-y-6">
-  <h1 className="text-3xl font-normal mb-6 text-gray-800 dark:text-white">Оформлення замовлення</h1>
+  <h1 className="text-3xl font-normal mb-6 text-gray-800 dark:text-white">
+    {t.title || "Checkout"}
+  </h1>
 
   {/* ПІДСУМОК */}
   <div className="md:flex gap-6">
@@ -486,9 +496,9 @@ const handleWayforpayClick = async () => {
       {/* ІМʼЯ / ПРІЗВИЩЕ / ПО БАТЬКОВІ */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         {[
-          { label: "Імʼя", value: firstName, setter: setFirstName, error: errors.firstName, icon: <FiUser /> },
-          { label: "Прізвище", value: lastName, setter: setLastName, error: errors.lastName, icon: <FiUser /> },
-          { label: "По батькові", value: patronymic, setter: setPatronymic, error: null, icon: <FiUser /> }
+          { label: t.firstName || "First name", value: firstName, setter: setFirstName, error: errors.firstName, icon: <FiUser /> },
+          { label: t.lastName || "Last name", value: lastName, setter: setLastName, error: errors.lastName, icon: <FiUser /> },
+          { label: t.patronymic || "Patronymic", value: patronymic, setter: setPatronymic, error: null, icon: <FiUser /> }
         ].map(({ label, value, setter, error, icon }, idx) => (
           <div key={idx} className="relative">
             <span className="absolute left-3 top-3 text-gray-400">{icon}</span>
@@ -517,7 +527,9 @@ const handleWayforpayClick = async () => {
       </div>
 
       {/* ТЕЛЕФОН */}
-      <label className="block font-normal text-gray-700 dark:text-white mt-4">Телефон</label>
+      <label className="block font-normal text-gray-700 dark:text-white mt-4">
+        {t.phone || "Phone"}
+      </label>
       <PhoneInput
         country={'ua'}
         value={phone}
@@ -534,13 +546,13 @@ const handleWayforpayClick = async () => {
       {/* СПОСІБ ДОСТАВКИ — КНОПКИ */}
       <div>
         <label className="block mb-1 font-normal text-gray-700 dark:text-white flex items-center gap-2">
-          <FiTruck /> Спосіб доставки
+          <FiTruck /> {t.deliveryMethod || "Delivery method"}
         </label>
         <div className="flex flex-wrap gap-2">
           {[
-            { value: 'nova-poshta', label: 'Нова Пошта' },
-            { value: 'ukr-poshta', label: 'Укрпошта' },
-            { value: 'courier', label: 'Курʼєром' }
+            { value: 'nova-poshta', label: t.novaPoshta || 'Nova Poshta' },
+            { value: 'ukr-poshta', label: t.ukrPoshta || 'Ukrposhta' },
+            { value: 'courier', label: t.courier || 'Courier' }
           ].map(({ value, label }) => (
             <button
               key={value}
@@ -562,12 +574,14 @@ const handleWayforpayClick = async () => {
       {deliveryMethod === 'nova-poshta' && (
         <>
           <div className="mt-4">
-            <label className="block mb-1 font-normal text-gray-700 dark:text-white">Населений пункт</label>
+            <label className="block mb-1 font-normal text-gray-700 dark:text-white">
+              {t.settlement || "City / settlement"}
+            </label>
             <input
               type="text"
               value={cityQuery}
               onChange={handleCityInput}
-              placeholder="Почніть вводити назву"
+              placeholder={t.settlementPlaceholder || "Start typing the name"}
               className="w-full p-3 border rounded-lg bg-white dark:bg-zinc-800 text-gray-800 dark:text-white border-gray-300 dark:border-zinc-600"
             />
             {filteredCities.length > 0 && (
@@ -587,7 +601,9 @@ const handleWayforpayClick = async () => {
 
           {warehouses.length > 0 && (
             <div className="mt-4">
-              <label className="block mb-1 font-normal text-gray-700 dark:text-white">Відділення</label>
+              <label className="block mb-1 font-normal text-gray-700 dark:text-white">
+                {t.warehouse || "Branch"}
+              </label>
               <select
                 className="w-full p-3 border rounded-lg bg-white dark:bg-zinc-800 text-gray-800 dark:text-white border-gray-300 dark:border-zinc-600"
                 value={selectedWarehouseRef}
@@ -597,7 +613,7 @@ const handleWayforpayClick = async () => {
                   setSelectedWarehouse(selectedWh?.Description || '');
                 }}
               >
-                <option value="">Оберіть відділення</option>
+                <option value="">{t.warehousePlaceholder || "Select a branch"}</option>
                 {warehouses.map((wh) => (
                   <option key={wh.Ref} value={wh.Ref}>{wh.Description}</option>
                 ))}
@@ -609,12 +625,14 @@ const handleWayforpayClick = async () => {
 
       {(deliveryMethod === 'ukr-poshta' || deliveryMethod === 'courier') && (
         <div className="mt-4">
-          <label className="block mb-1 font-normal text-gray-700 dark:text-white">Населений пункт</label>
+          <label className="block mb-1 font-normal text-gray-700 dark:text-white">
+            {t.settlement || "City / settlement"}
+          </label>
           <input
             type="text"
             value={cityQuery}
             onChange={(e) => setCityQuery(e.target.value)}
-            placeholder="Введіть населений пункт вручну"
+            placeholder={t.settlementManual || "Enter the settlement manually"}
             className="w-full p-3 border rounded-lg bg-white dark:bg-zinc-800 text-gray-800 dark:text-white border-gray-300 dark:border-zinc-600"
           />
         </div>
@@ -629,32 +647,42 @@ const handleWayforpayClick = async () => {
           rows={3}
           value={comment}
           onChange={(e) => setComment(e.target.value)}
-          placeholder="Коментар до замовлення"
+          placeholder={t.commentPlaceholder || "Order comment"}
           className="w-full p-3 border rounded-lg bg-white dark:bg-zinc-800 text-gray-800 dark:text-white border-gray-300 dark:border-zinc-600"
         />
       </div>
 
       {/* ОПЛАТА */}
       <div className="space-y-3">
-        <label className="block font-normal text-gray-700 dark:text-white">Тип оплати</label>
+        <label className="block font-normal text-gray-700 dark:text-white">
+          {t.paymentType || "Payment type"}
+        </label>
         <label className="flex items-center space-x-2">
           <input type="radio" name="payment" value="full" checked={paymentType === 'full'} onChange={() => { setPaymentType('full'); setOnlinePaymentMethod(''); }} />
-          <span className="text-gray-800 dark:text-white">Оплата онлайн (повна сума: {total} грн)</span>
+          <span className="text-gray-800 dark:text-white">
+            {fill(t.payFull || "Pay online (full amount: {total} UAH)", { total })}
+          </span>
         </label>
         <label className="flex items-center space-x-2">
           <input type="radio" name="payment" value="half" checked={paymentType === 'half'} onChange={() => { setPaymentType('half'); setOnlinePaymentMethod(''); }} />
-          <span className="text-gray-800 dark:text-white">Передоплата 50% ({Math.round(total / 2)} грн)</span>
+          <span className="text-gray-800 dark:text-white">
+            {fill(t.payHalf || "50% prepayment ({amount} UAH)", {
+              amount: Math.round(total / 2),
+            })}
+          </span>
         </label>
         <label className="flex items-center space-x-2">
           <input type="radio" name="payment" value="crypto" checked={paymentType === 'crypto'} onChange={() => { setPaymentType('crypto'); setOnlinePaymentMethod(''); }} />
-          <span className="text-gray-800 dark:text-white">💰 {checkoutTranslations.cryptoPayment || 'Оплата криптовалютою'} (BTC, ETH, USDT)</span>
+          <span className="text-gray-800 dark:text-white">💰 {checkoutTranslations.cryptoPayment || 'Pay with Cryptocurrency'} (BTC, ETH, USDT)</span>
         </label>
       </div>
 
       {/* ОНЛАЙН ОПЛАТА */}
       {(paymentType === 'full' || paymentType === 'half') && (
         <div className="bg-gray-50 dark:bg-zinc-800 p-4 rounded-lg border border-gray-200 dark:border-zinc-600 mt-4">
-          <label className="block font-semibold mb-2 text-gray-700 dark:text-white">Метод онлайн оплати</label>
+          <label className="block font-semibold mb-2 text-gray-700 dark:text-white">
+            {t.onlineMethod || "Online payment method"}
+          </label>
           <label className="flex items-center space-x-2">
             <input
               type="radio"
@@ -676,7 +704,7 @@ const handleWayforpayClick = async () => {
             onClick={handleCryptoPayment}
             className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-xl shadow flex items-center gap-2"
           >
-            💰 {checkoutTranslations.cryptoButton || 'Оплатити криптовалютою'}
+            💰 {checkoutTranslations.cryptoButton || 'Order with Crypto Payment'}
           </button>
         ) : (
           <button
@@ -685,7 +713,9 @@ const handleWayforpayClick = async () => {
             className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-xl shadow flex items-center gap-2"
           >
             <FiCreditCard />
-            Оплатити {paymentType === 'half' ? '50%' : 'повну суму'}
+            {paymentType === 'half'
+              ? t.payButtonHalf || 'Pay 50%'
+              : t.payButtonFull || 'Pay full amount'}
           </button>
         )}
 
@@ -694,7 +724,7 @@ const handleWayforpayClick = async () => {
           onClick={handleOrderWithoutPayment}
           className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-xl shadow flex items-center gap-2"
         >
-          📞 Звʼязатись з менеджером
+          📞 {t.contactManager || "Contact a manager"}
         </button>
       </div>
     </div>

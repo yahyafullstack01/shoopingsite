@@ -15,7 +15,7 @@ import {
 } from 'react-icons/fa';
 import { getSessionId } from '../../utils/session';
 import { useLanguage } from '../../Functions/useLanguage';
-import { getProductImageSrc } from '../../utils/productData';
+import { getCartItemDisplay, getProductImageSrc } from '../../utils/productData';
 import { getBackendBaseUrl } from '../../utils/backendUrl';
 import { isFavorite, toggleFavorite } from '../../utils/favorites';
 
@@ -26,7 +26,7 @@ export default function Cart() {
   const [sessionId, setSessionId] = useState('');
   const [favTick, setFavTick] = useState(0);
   const router = useRouter();
-  const { translateList } = useLanguage();
+  const { language, translateList } = useLanguage();
   const rawCart = translateList('home', 'cart');
   const cartTranslations =
     typeof rawCart === 'object' && rawCart !== null ? rawCart : {};
@@ -133,6 +133,8 @@ export default function Cart() {
                 {cartItems.map((item, index) => {
                   const productIdNum = Number(item.productId);
                   const lineFavorite = isFavorite(productIdNum);
+                  const { name: displayName, color: displayColor } =
+                    getCartItemDisplay(item, language);
                   return (
                     <div
                       key={item.id}
@@ -146,12 +148,12 @@ export default function Cart() {
                         <div className="flex min-w-0 flex-1 items-start gap-4">
                           <img
                             src={getProductImageSrc(item.image)}
-                            alt={item.name}
+                            alt={displayName}
                             className="h-24 w-20 shrink-0 rounded-xl object-cover sm:h-28 sm:w-24"
                           />
                           <div className="min-w-0 flex-1">
                             <p className="text-lg font-semibold leading-snug md:truncate">
-                              {item.name}
+                              {displayName}
                             </p>
                             <p className="mt-1 text-sm font-semibold text-neutral-900 dark:text-neutral-100">
                               {item.discountPrice &&
@@ -171,7 +173,7 @@ export default function Cart() {
                             <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400">
                               {cartTranslations.color || 'Color:'}{' '}
                               <span className="text-neutral-800 dark:text-neutral-200">
-                                {item.color}
+                                {displayColor}
                               </span>
                             </p>
                             <p className="text-sm text-neutral-500 dark:text-neutral-400">
