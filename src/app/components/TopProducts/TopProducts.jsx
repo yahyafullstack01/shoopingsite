@@ -1,13 +1,16 @@
 "use client";
 
-import { useState, useEffect, useMemo } from "react";
-import Image from "next/image";
+import { useState, useMemo } from "react";
 import { useRouter } from "next/navigation";
 import { useLanguage } from "../../Functions/useLanguage";
-import Head from "next/head";
 import products from "../../data/products";
 import { PRIORITY_TOP, prioritizeByIds } from "../../utils/priorities";
-import { getProductImageSrc } from "../../utils/productData";
+import ProductCard from "../products/ProductCard";
+import ProductBanner from "../products/ProductBanner";
+import QuickAddModal from "../QuickAddModal/QuickAddModal";
+import Toast from "../ToastCart/Toast";
+import { getSessionId } from "../../utils/session";
+import { getBackendBaseUrl } from "../../utils/backendUrl";
 
 const getId = (p) => Number(p?.id ?? p?._id ?? p?.productId);
 
@@ -23,9 +26,18 @@ const dedupeById = (list) => {
 
 export default function TopProducts() {
   const router = useRouter();
-  const [visibleCount, setVisibleCount] = useState(10);
   const { language, translateList } = useLanguage();
   const menuItems = translateList("home", "top_products") || [];
+  const pageTranslations = translateList("home", "topProductsPage") || {};
+
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [showModal, setShowModal] = useState(false);
+  const [showBanner, setShowBanner] = useState(false);
+  const [showToast, setShowToast] = useState(false);
+  const [lastProduct, setLastProduct] = useState(null);
+
+  // Homepage: one row only (5). Full list lives on /Top-products.
+  const HOME_TOP_LIMIT = 5;
 
   const topRaw = useMemo(() => {
     const onlyTop = products.filter((p) => p.isTop);
@@ -37,100 +49,158 @@ export default function TopProducts() {
     [topRaw]
   );
 
-  useEffect(() => {
-    const handleResize = () => {
-      const width = window.innerWidth;
-      setVisibleCount(width < 768 ? 4 : width < 1024 ? 6 : 10);
-    };
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  const openBanner = (product) => {
+    setSelectedProduct(product);
+    setShowBanner(true);
+  };
+
+  const openModal = (product) => {
+    setSelectedProduct(product);
+    setShowModal(true);
+  };
+
+  const handleAddToCart = async ({
+    product,
+    selectedColor,
+    selectedSize,
+    quantity,
+  }) => {
+    const sessionId = getSessionId();
+    if (!sessionId) {
+      alert(
+        pageTranslations.sessionError ||
+          "Could not create session. Try refreshing the page."
+      );
+      return;
+    }
+
+    const id = getId(product);
+    const name =
+      product.translations?.[language]?.name ||
+      product.name ||
+      product.title ||
+      "Product";
+
+    const basePriceNum =
+      Number(String(product.price).replace(/[^\d.]/g, "")) || 0;
+    const discountNum = product?.discountPrice
+      ? Number(String(product.discountPrice).replace(/[^\d.]/g, "")) ||
+        basePriceNum
+      : null;
+
+    const price = basePriceNum.toFixed(2);
+    const discountPrice =
+      discountNum !== null ? discountNum.toFixed(2) : null;
+
+    try {
+      const res = await fetch(`${getBackendBaseUrl()}/api/cart`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          sessionId,
+          productId: id,
+          name,
+          price,
+          discountPrice,
+          color: selectedColor,
+          size: selectedSize,
+          quantity,
+        }),
+      });
+
+      const data = await res.json();
+      if (data?.success || data?.message?.includes("додано") || res.ok) {
+        setLastProduct({
+          name,
+          image: product.image,
+          quantity,
+          price: discountPrice || price,
+        });
+        setShowToast(true);
+        setShowModal(false);
+      } else {
+        alert(
+          data?.message ||
+            pageTranslations.addToCartError ||
+            "Error adding to cart"
+        );
+      }
+    } catch (err) {
+      console.error(err);
+      alert(pageTranslations.addToCartError || "Error adding to cart");
+    }
+  };
 
   if (topProducts.length === 0) return null;
 
-  const renderedCount = Math.min(visibleCount, topProducts.length);
-  const firstImage = topProducts[0]?.image
-    ? encodeURI(topProducts[0].image)
-    : null;
+  const rendered = topProducts.slice(0, HOME_TOP_LIMIT);
 
   return (
-    <>
-      {firstImage ? (
-        <Head>
-          <link rel="preload" as="image" href={firstImage} type="image/avif" />
-        </Head>
+    <section
+      id="top-products"
+      className="bg-white dark:bg-zinc-900 py-14 px-5 transition-colors duration-300 font-sans"
+      itemScope
+      itemType="https://schema.org/ItemList"
+    >
+      <meta itemProp="name" content={menuItems[0] || "Top Products"} />
+      <meta itemProp="numberOfItems" content={String(rendered.length)} />
+      <meta
+        itemProp="itemListOrder"
+        content="https://schema.org/ItemListOrderAscending"
+      />
+
+      <div className="mb-8 flex items-center justify-between">
+        <h2 className="text-2xl font-normal text-black dark:text-white sm:text-3xl md:text-4xl lg:text-5xl">
+          {menuItems[0]}
+        </h2>
+        <button
+          type="button"
+          onClick={() => router.push("/Top-products")}
+          className="text-sm font-medium text-black hover:underline dark:text-white sm:text-base"
+        >
+          {menuItems[1] || "View All →"}
+        </button>
+      </div>
+
+      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-5 md:gap-6">
+        {rendered.map((product, index) => (
+          <ProductCard
+            key={getId(product)}
+            product={{ ...product, isTop: true }}
+            priority={index < 4}
+            onClick={() => openBanner(product)}
+            onAddToCart={() => openModal(product)}
+          />
+        ))}
+      </div>
+
+      {showBanner && selectedProduct ? (
+        <ProductBanner
+          selectedProduct={selectedProduct}
+          onClose={() => {
+            setShowBanner(false);
+            setSelectedProduct(null);
+          }}
+          handleAddToCart={handleAddToCart}
+          descriptionRef={null}
+          handleContactButtonClick={() => {}}
+        />
       ) : null}
 
-      <section
-        id="top-products"
-        className="bg-white dark:bg-zinc-900 py-14 px-5 transition-colors duration-300 font-sans"
-        itemScope
-        itemType="https://schema.org/ItemList"
-      >
-        <meta itemProp="name" content={menuItems[0] || "Top Products"} />
-        <meta itemProp="numberOfItems" content={String(renderedCount)} />
-        <meta
-          itemProp="itemListOrder"
-          content="https://schema.org/ItemListOrderAscending"
+      {showModal && selectedProduct ? (
+        <QuickAddModal
+          product={selectedProduct}
+          onClose={() => {
+            setShowModal(false);
+            setSelectedProduct(null);
+          }}
+          onAddToCart={handleAddToCart}
         />
+      ) : null}
 
-        <div className="flex justify-between items-center mb-8">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-black dark:text-white">
-            {menuItems[0]}
-          </h2>
-          <button
-            type="button"
-            onClick={() => router.push("/Top-products")}
-            className="text-sm sm:text-base font-medium text-black dark:text-white hover:underline"
-          >
-            {menuItems[1] || "View All →"}
-          </button>
-        </div>
-
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-          {topProducts.slice(0, renderedCount).map((product, index) => {
-            const name =
-              product.translations?.[language]?.name ||
-              product.name ||
-              product.title ||
-              "Product";
-            const url = `/Top-products?product=${getId(product)}`;
-
-            return (
-              <div
-                key={getId(product)}
-                className="relative w-full aspect-[2/3] min-h-0 rounded-xl overflow-hidden shadow-md dark:shadow-lg cursor-pointer transition-transform duration-300 hover:scale-[1.03]"
-                onClick={() => router.push(url, { scroll: false })}
-                itemScope
-                itemProp="itemListElement"
-                itemType="https://schema.org/ListItem"
-              >
-                <meta itemProp="position" content={String(index + 1)} />
-                <div
-                  itemProp="item"
-                  itemScope
-                  itemType="https://schema.org/Product"
-                  className="relative w-full h-full"
-                >
-                  <meta itemProp="name" content={name} />
-                  <link itemProp="url" href={url} />
-                  <div className="relative w-full h-full">
-                    <Image
-                      src={getProductImageSrc(product.image)}
-                      alt={name}
-                      fill
-                      className="object-cover"
-                      itemProp="image"
-                      priority={index === 0}
-                    />
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </section>
-    </>
+      {showToast && lastProduct ? (
+        <Toast product={lastProduct} onClose={() => setShowToast(false)} />
+      ) : null}
+    </section>
   );
 }

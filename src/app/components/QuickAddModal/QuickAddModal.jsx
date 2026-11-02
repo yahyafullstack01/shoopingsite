@@ -1,13 +1,27 @@
-'use client';
+"use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo, useCallback } from "react";
 import Image from "next/image";
+import { FaChevronLeft, FaChevronRight, FaTimes } from "react-icons/fa";
 import { useLanguage } from "../../Functions/useLanguage";
 import { getProductImageSrc } from "../../utils/productData";
 import {
   ProductColorSwatches,
   ProductSizeButtons,
 } from "../ProductOptionPickers/ProductOptionPickers";
+
+const MAX_GALLERY = 8;
+
+function collectGallery(product) {
+  const list = [];
+  const push = (media) => {
+    const src = getProductImageSrc(media);
+    if (src && !list.includes(src) && !src.endsWith(".mp4")) list.push(src);
+  };
+  if (product?.image) push(product.image);
+  if (Array.isArray(product?.images)) product.images.forEach(push);
+  return list.slice(0, MAX_GALLERY);
+}
 
 export default function QuickAddModal({ product, onClose, onAddToCart }) {
   const [selectedColor, setSelectedColor] = useState("");
@@ -16,6 +30,7 @@ export default function QuickAddModal({ product, onClose, onAddToCart }) {
   const [colorError, setColorError] = useState("");
   const [sizeError, setSizeError] = useState("");
   const [quantityError, setQuantityError] = useState("");
+  const [slide, setSlide] = useState(0);
 
   const { language, translateList } = useLanguage();
   const menuItems = translateList("Infoform", "header") || [];
@@ -29,21 +44,56 @@ export default function QuickAddModal({ product, onClose, onAddToCart }) {
   const translatedColors =
     product.translations?.[language]?.colors || product.colors;
   const translatedSizes = product.sizes || [];
+  const gallery = useMemo(() => collectGallery(product), [product]);
+  const price = product?.discountPrice ?? product?.price;
+  const oldPrice = product?.discountPrice ? product?.price : null;
+
+  useEffect(() => {
+    setSlide(0);
+    setSelectedColor("");
+    setSelectedSize("");
+    setQuantity(1);
+    setColorError("");
+    setSizeError("");
+    setQuantityError("");
+  }, [product?.id]);
+
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, []);
+
+  const go = useCallback(
+    (dir) => {
+      const n = Math.max(gallery.length, 1);
+      setSlide((i) => (i + dir + n) % n);
+    },
+    [gallery.length]
+  );
 
   const handleAddToCartClick = () => {
     let hasError = false;
 
     if (!selectedColor) {
-      setColorError(formT.colorError || (language === "UA" ? "Оберіть колір" : "Select a color"));
+      setColorError(
+        formT.colorError ||
+          (language === "UA" ? "Оберіть колір" : "Select a color")
+      );
       hasError = true;
     } else setColorError("");
     if (!selectedSize) {
-      setSizeError(formT.sizeError || (language === "UA" ? "Оберіть розмір" : "Select a size"));
+      setSizeError(
+        formT.sizeError ||
+          (language === "UA" ? "Оберіть розмір" : "Select a size")
+      );
       hasError = true;
     } else setSizeError("");
     if (quantity <= 0) {
       setQuantityError(
-        formT.quantityError || (language === "UA" ? "Вкажіть кількість" : "Specify quantity")
+        formT.quantityError ||
+          (language === "UA" ? "Вкажіть кількість" : "Specify quantity")
       );
       hasError = true;
     } else setQuantityError("");
@@ -65,55 +115,133 @@ export default function QuickAddModal({ product, onClose, onAddToCart }) {
   };
 
   const handleQuantityChange = (value) => {
-    const valid = Math.max(1, Number(value));
+    const valid = Math.max(1, Number(value) || 1);
     setQuantity(valid);
     if (valid > 0) setQuantityError("");
   };
 
-  useEffect(() => {
-    document.body.style.overflow = "hidden";
-    return () => (document.body.style.overflow = "auto");
-  }, []);
-
   return (
     <div
-      className="fixed inset-0 z-[80] bg-black/35 flex justify-center items-center px-3 pt-16 sm:pt-20 pb-4"
+      className="fixed inset-0 z-[80] flex items-end justify-center bg-black/45 px-0 pt-14 sm:items-center sm:px-4 sm:pt-16 sm:pb-6"
       onClick={onClose}
     >
       <div
-        className="w-full sm:max-w-md max-h-[calc(100vh-5.5rem)] sm:max-h-[85vh] overflow-y-auto bg-white dark:bg-gray-900 rounded-2xl sm:rounded-xl p-5 pt-4 shadow-xl animate-fade-in"
+        className="flex max-h-[calc(100vh-3.5rem)] w-full flex-col overflow-hidden rounded-t-3xl bg-white shadow-2xl dark:bg-neutral-950 sm:max-h-[90vh] sm:max-w-lg sm:rounded-2xl"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Header — sticky so title stays visible while scrolling */}
-        <div className="sticky top-0 z-10 -mx-5 -mt-4 mb-4 flex items-start justify-between gap-3 bg-white/95 dark:bg-gray-900/95 px-5 pt-4 pb-3 backdrop-blur-sm border-b border-gray-100 dark:border-gray-800">
-          <h2 className="text-lg sm:text-xl font-medium leading-snug text-gray-900 dark:text-white pr-2">
-            {translatedName}
-          </h2>
+        {/* Header */}
+        <div className="flex shrink-0 items-start justify-between gap-3 border-b border-neutral-100 px-4 py-3 dark:border-neutral-800 sm:px-5">
+          <div className="min-w-0">
+            <h2 className="truncate text-base font-medium leading-snug text-neutral-900 dark:text-white sm:text-lg">
+              {translatedName}
+            </h2>
+            {price != null ? (
+              <p className="mt-0.5 text-sm font-semibold text-neutral-900 dark:text-neutral-100">
+                {oldPrice != null ? (
+                  <>
+                    <span className="text-red-600">{price} UAH</span>{" "}
+                    <span className="font-normal text-neutral-400 line-through">
+                      {oldPrice} UAH
+                    </span>
+                  </>
+                ) : (
+                  <span>{price} UAH</span>
+                )}
+              </p>
+            ) : null}
+          </div>
           <button
+            type="button"
             onClick={onClose}
-            className="shrink-0 leading-none text-gray-400 hover:text-black dark:hover:text-white text-3xl"
+            className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-neutral-100 text-neutral-600 transition hover:bg-neutral-200 dark:bg-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-700"
             aria-label={closeLabel}
           >
-            &times;
+            <FaTimes className="text-sm" />
           </button>
         </div>
 
-        {/* Image */}
-        {(product.image || product.images?.[0]) && (
-          <Image
-            src={getProductImageSrc(product.image || product.images[0])}
-            alt={translatedName}
-            width={800}
-            height={600}
-            sizes="(max-width: 640px) 100vw, 600px"
-            className="w-full h-48 sm:h-56 object-cover rounded-lg mb-3"
-            unoptimized
-          />
-        )}
+        <div className="min-h-0 flex-1 overflow-y-auto px-4 py-4 sm:px-5">
+          {/* Gallery */}
+          {gallery.length > 0 ? (
+            <div className="mb-5">
+              <div className="relative h-64 w-full overflow-hidden rounded-2xl bg-neutral-100 sm:h-72 dark:bg-neutral-900">
+                <Image
+                  src={gallery[slide] || gallery[0]}
+                  alt={`${translatedName} ${slide + 1}`}
+                  fill
+                  sizes="(max-width: 640px) 100vw, 512px"
+                  className="object-contain"
+                  unoptimized
+                  priority
+                />
 
-        <div className="mb-1 text-left">
+                {gallery.length > 1 ? (
+                  <>
+                    <button
+                      type="button"
+                      aria-label={formT.galleryPrev || "Previous image"}
+                      onClick={() => go(-1)}
+                      className="absolute left-2 top-1/2 grid h-9 w-9 -translate-y-1/2 place-items-center rounded-full bg-black/40 text-white backdrop-blur-sm transition hover:bg-black/55"
+                    >
+                      <FaChevronLeft className="text-sm" />
+                    </button>
+                    <button
+                      type="button"
+                      aria-label={formT.galleryNext || "Next image"}
+                      onClick={() => go(1)}
+                      className="absolute right-2 top-1/2 grid h-9 w-9 -translate-y-1/2 place-items-center rounded-full bg-black/40 text-white backdrop-blur-sm transition hover:bg-black/55"
+                    >
+                      <FaChevronRight className="text-sm" />
+                    </button>
+                    <div className="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-1.5 rounded-full bg-black/35 px-2.5 py-1.5 backdrop-blur-sm">
+                      {gallery.map((_, i) => (
+                        <button
+                          key={i}
+                          type="button"
+                          aria-label={`Photo ${i + 1}`}
+                          onClick={() => setSlide(i)}
+                          className={`h-1.5 rounded-full transition ${
+                            i === slide
+                              ? "w-4 bg-white"
+                              : "w-1.5 bg-white/50 hover:bg-white/80"
+                          }`}
+                        />
+                      ))}
+                    </div>
+                  </>
+                ) : null}
+              </div>
+
+              {gallery.length > 1 ? (
+                <div className="mt-3 flex gap-2 overflow-x-auto pb-1">
+                  {gallery.map((src, i) => (
+                    <button
+                      key={src + i}
+                      type="button"
+                      onClick={() => setSlide(i)}
+                      className={`relative h-16 w-12 shrink-0 overflow-hidden rounded-lg transition ${
+                        i === slide
+                          ? "ring-2 ring-neutral-900 ring-offset-1 dark:ring-white"
+                          : "opacity-70 hover:opacity-100"
+                      }`}
+                    >
+                      <Image
+                        src={src}
+                        alt=""
+                        fill
+                        sizes="48px"
+                        className="object-cover"
+                        unoptimized
+                      />
+                    </button>
+                  ))}
+                </div>
+              ) : null}
+            </div>
+          ) : null}
+
           <ProductColorSwatches
-            label={menuItems[1]}
+            label={menuItems[1] || "Color"}
             colors={translatedColors || []}
             value={selectedColor}
             onChange={(c) => {
@@ -123,11 +251,9 @@ export default function QuickAddModal({ product, onClose, onAddToCart }) {
             error={colorError}
             align="text-left"
           />
-        </div>
 
-        <div className="mb-1 text-left">
           <ProductSizeButtons
-            label={menuItems[3]}
+            label={menuItems[3] || "Size"}
             sizes={translatedSizes}
             value={selectedSize}
             onChange={(s) => {
@@ -137,35 +263,61 @@ export default function QuickAddModal({ product, onClose, onAddToCart }) {
             error={sizeError}
             align="text-left"
           />
-        </div>
 
-        {/* Quantity */}
-        <div className="mb-4">
-          <label className="block text-sm font-medium mb-1 dark:text-white">
-            {menuItems[4]}
-          </label>
-          <div className="flex items-center rounded overflow-hidden bg-gray-100 dark:bg-gray-700">
-            <button onClick={() => handleQuantityChange(quantity - 1)} className="px-3 py-1 text-lg dark:text-white">–</button>
-            <input
-              type="number"
-              min="1"
-              value={quantity}
-              onChange={(e) => handleQuantityChange(e.target.value)}
-              className="w-full text-center p-2 bg-transparent dark:text-white"
-            />
-            <button onClick={() => handleQuantityChange(quantity + 1)} className="px-3 py-1 text-lg dark:text-white">+</button>
+          {/* Quantity */}
+          <div className="mb-2">
+            <label className="mb-2 block text-sm font-medium text-neutral-900 dark:text-white">
+              {menuItems[4] || "Quantity"}
+            </label>
+            <div className="inline-flex h-11 items-stretch overflow-hidden rounded-xl border border-neutral-200 bg-neutral-50 dark:border-neutral-700 dark:bg-neutral-900">
+              <button
+                type="button"
+                onClick={() => handleQuantityChange(quantity - 1)}
+                className="w-11 text-lg text-neutral-700 transition hover:bg-neutral-200 dark:text-white dark:hover:bg-neutral-800"
+                aria-label="Decrease quantity"
+              >
+                –
+              </button>
+              <input
+                type="number"
+                min="1"
+                value={quantity}
+                onChange={(e) => handleQuantityChange(e.target.value)}
+                className="w-14 appearance-none border-0 bg-transparent text-center text-sm font-medium outline-none dark:text-white"
+              />
+              <button
+                type="button"
+                onClick={() => handleQuantityChange(quantity + 1)}
+                className="w-11 text-lg text-neutral-700 transition hover:bg-neutral-200 dark:text-white dark:hover:bg-neutral-800"
+                aria-label="Increase quantity"
+              >
+                +
+              </button>
+            </div>
+            {quantityError ? (
+              <p className="mt-1 text-sm text-red-500">{quantityError}</p>
+            ) : null}
           </div>
-          {quantityError && <p className="text-red-500 text-sm mt-1">{quantityError}</p>}
         </div>
 
-        {/* Buttons */}
-        <div className="flex justify-end space-x-3">
-          <button onClick={onClose} className="px-3 py-2 bg-gray-400 text-white rounded hover:bg-gray-500 text-sm sm:text-base">
-            {closeLabel}
-          </button>
-          <button onClick={handleAddToCartClick} className="px-3 py-2 bg-green-600 text-white rounded hover:bg-green-700 text-sm sm:text-base">
-            {addToCartLabel}
-          </button>
+        {/* Footer actions */}
+        <div className="shrink-0 border-t border-neutral-100 bg-white px-4 py-3 dark:border-neutral-800 dark:bg-neutral-950 sm:px-5">
+          <div className="flex gap-2">
+            <button
+              type="button"
+              onClick={onClose}
+              className="flex-1 rounded-xl border border-neutral-200 px-4 py-3 text-sm font-medium text-neutral-800 transition hover:bg-neutral-50 dark:border-neutral-700 dark:text-neutral-100 dark:hover:bg-neutral-900"
+            >
+              {closeLabel}
+            </button>
+            <button
+              type="button"
+              onClick={handleAddToCartClick}
+              className="flex-[1.4] rounded-xl bg-neutral-900 px-4 py-3 text-sm font-semibold uppercase tracking-wide text-white transition hover:bg-neutral-800 dark:bg-white dark:text-neutral-900 dark:hover:bg-neutral-200"
+            >
+              {addToCartLabel}
+            </button>
+          </div>
         </div>
       </div>
     </div>

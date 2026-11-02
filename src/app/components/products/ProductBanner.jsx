@@ -338,8 +338,8 @@ const ProductBanner = ({
                       muted
                       playsInline
                       preload="metadata"
-                      className="w-full rounded-none sm:rounded-lg"
-                      style={{ maxHeight: "min(70vh, 600px)", objectFit: "cover" }}
+                      className="w-full rounded-none bg-neutral-100 sm:rounded-lg dark:bg-neutral-900"
+                      style={{ maxHeight: "min(60vh, 520px)", objectFit: "contain" }}
                       onPlay={(e) => e.currentTarget.play().catch(() => {})}
                     />
                   ) : (
@@ -348,8 +348,13 @@ const ProductBanner = ({
                       alt={translatedName}
                       width={800}
                       height={600}
-                      style={{ objectFit: "cover" }}
-                      className="w-full rounded-none sm:rounded-lg pointer-events-none sm:pointer-events-auto"
+                      style={{
+                        maxHeight: "min(60vh, 520px)",
+                        width: "100%",
+                        height: "auto",
+                        objectFit: "contain",
+                      }}
+                      className="rounded-none bg-neutral-100 pointer-events-none sm:rounded-lg sm:pointer-events-auto dark:bg-neutral-900"
                       draggable={false}
                       unoptimized={getSrc(currentImage).startsWith('/')}
                     />
@@ -408,7 +413,7 @@ const ProductBanner = ({
 
               <div className="hidden sm:block">
                 <ThumbnailCarousel
-                  images={selectedProduct.images || []}
+                  images={galleryItems}
                   onImageSelect={onSelectMedia}
                   visibleThumbnails={5}
                 />
