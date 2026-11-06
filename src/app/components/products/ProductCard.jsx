@@ -2,10 +2,12 @@
 
 import React, { useState, useEffect, useMemo, useCallback } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { useLanguage } from "../../Functions/useLanguage";
 import { FaHeart, FaRegHeart, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { toggleFavorite, isFavorite } from "../../utils/favorites";
 import { getProductImageSrc } from "../../utils/productData";
+import { getProductHref } from "../../utils/productSlug";
 
 const MAX_CAROUSEL = 6;
 
@@ -29,6 +31,7 @@ const ProductCard = ({ product, onClick, onAddToCart, priority = false }) => {
     product.translations?.[language]?.name || product.name || "Product";
   const translatedCategory =
     product.translations?.[language]?.category || product.category || "";
+  const href = getProductHref(product);
 
   const cardTranslations = translateList("home", "productCard") || {};
   const gallery = useMemo(() => collectGallery(product), [product]);
@@ -121,13 +124,11 @@ const ProductCard = ({ product, onClick, onAddToCart, priority = false }) => {
 
   return (
     <article className="flex h-full flex-col overflow-hidden rounded-2xl bg-white shadow-md ring-1 ring-black/5 transition-shadow duration-300 hover:shadow-lg dark:bg-[#0f172a] dark:ring-white/10">
-      {/* Media */}
-      <div
-        className="relative cursor-pointer"
-        onClick={onClick}
-        onKeyDown={(e) => e.key === "Enter" && onClick()}
-        role="button"
-        tabIndex={0}
+      {/* Media — real <Link> so crawlers can reach the product page (nested
+          buttons below stopPropagation() to keep swipe/favorite working) */}
+      <Link
+        href={href}
+        className="relative block cursor-pointer"
         aria-label={`${cardTranslations.viewDetails || "View details"}: ${translatedName}`}
         onTouchStart={onTouchStart}
         onTouchEnd={onTouchEnd}
@@ -228,16 +229,15 @@ const ProductCard = ({ product, onClick, onAddToCart, priority = false }) => {
             </>
           )}
         </figure>
-      </div>
+      </Link>
 
       {/* Info + CTA */}
       <div className="flex flex-1 flex-col gap-3 p-3.5 sm:p-4">
         <div className="min-h-[2.75rem]">
-          <h3
-            className="cursor-pointer text-base font-semibold leading-snug text-gray-900 line-clamp-2 dark:text-white"
-            onClick={onClick}
-          >
-            {translatedName}
+          <h3 className="text-base font-semibold leading-snug text-gray-900 line-clamp-2 dark:text-white">
+            <Link href={href} className="cursor-pointer hover:underline">
+              {translatedName}
+            </Link>
           </h3>
           {translatedCategory ? (
             <p className="mt-0.5 text-xs text-gray-500 dark:text-gray-400">
@@ -286,13 +286,12 @@ const ProductCard = ({ product, onClick, onAddToCart, priority = false }) => {
           {cardTranslations.addToCart || "ADD TO CART"}
         </button>
 
-        <button
-          type="button"
-          onClick={onClick}
+        <Link
+          href={href}
           className="text-center text-[11px] text-gray-500 underline-offset-2 hover:underline dark:text-gray-400"
         >
           {cardTranslations.viewDetails || "View details"}
-        </button>
+        </Link>
       </div>
     </article>
   );
