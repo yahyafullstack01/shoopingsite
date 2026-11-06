@@ -1,51 +1,22 @@
-"use client"; // Оголошуємо файл як клієнтський компонент
-
-import dynamic from "next/dynamic";
-import Head from "next/head";
-import Script from "next/script";
-import topProductsJsonLd from "../seo/top-products-jsonld";
-import products from "../data/products";
 import seoConfig from "../../../next-seo.config";
+import TopProductsPageClient from "./TopProductsPageClient";
 
-// Динамічний імпорт компонентів
-const Layout = dynamic(() => import("../components/Layout"), { ssr: false });
-const TopProductsInfo = dynamic(() => import("../components/TopProductsInfo/TopProductsInfo"), {
-  ssr: false,
-  loading: () => <div>Loading top products...</div>,
-});
+const seo = seoConfig.topProducts;
+
+export const metadata = {
+  title: seo.title,
+  description: seo.description,
+  alternates: { canonical: seo.canonical },
+  robots: seo.robots,
+  openGraph: {
+    title: seo.openGraph.title,
+    description: seo.openGraph.description,
+    url: seo.openGraph.url,
+    type: seo.openGraph.type || "website",
+    images: seo.openGraph.images,
+  },
+};
 
 export default function TopProductspage() {
-  const topProducts = products.filter((product) => product.isTop);
-
-  const jsonLd = topProductsJsonLd(topProducts);
-  const seo = seoConfig.topProducts;
-
-  return (
-    <div className="transition-colors">
-      {/* SEO-метатеги */}
-      <Head>
-        <title>{seo.title}</title>
-        <meta name="description" content={seo.description} />
-        <meta property="og:title" content={seo.openGraph.title} />
-        <meta property="og:description" content={seo.openGraph.description} />
-        <meta property="og:url" content={seo.openGraph.url} />
-        <meta property="og:type" content={seo.openGraph.type} />
-        <meta property="og:image" content={seo.openGraph.images[0].url} />
-        <link rel="canonical" href={seo.canonical} />
-        <meta name="robots" content={seo.robots} />
-      </Head>
-
-      {/* JSON-LD для SEO */}
-      <Script
-        id="top-products-jsonld"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-
-      {/* Динамічний рендеринг компонентів */}
-      <Layout>
-        <TopProductsInfo />
-      </Layout>
-    </div>
-  );
+  return <TopProductsPageClient />;
 }

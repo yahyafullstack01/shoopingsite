@@ -1,11 +1,6 @@
-"use client";
-
 import "./globals.css";
 import Script from "next/script";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import { ThemeProvider } from "./contexts/ThemeContext";
-import { LanguageProvider } from "./Functions/useLanguage";
-import ErrorBoundary from "../app/components/ErrorBoundary/ErrorBoundary";
+import RootProviders from "./components/RootProviders";
 import { siteJsonLd, organizationJsonLd } from "./seo/loyout-jsonld";
 import { faqSchema, localBusinessSchema } from "./seo/faq-schema";
 import localFont from "next/font/local";
@@ -29,44 +24,63 @@ const montserrat = localFont({
   preload: true,
 });
 
+// Ці title/description/OG тут — ЗА ЗАМОВЧУВАННЯМ для домашньої сторінки.
+// Будь-яка інша сторінка, що експортує власний `metadata`, автоматично
+// перекриває їх через вбудований механізм Next.js Metadata API —
+// на відміну від попереднього варіанту, де <title> був вручну
+// прописаний у <head> клієнтського компонента і дублювався з
+// метаданими сторінок (браузер/Google завжди бере ПЕРШИЙ <title>,
+// тому дочірні сторінки фактично ніколи не показувались).
+export const metadata = {
+  title: "Жіночий одяг від Latore Atelier | Створено для кожного сезону",
+  description:
+    "Latore Atelier - український бренд жіночого одягу з власним виробництвом. Костюми, сукні, брюки, верхній одяг. Індивідуальний пошив за вашими параметрами. Шоуруми в Харкові та Івано-Франківську. ☎ +38 (097) 367 82 57",
+  keywords:
+    "жіночий одяг україна, жіночий одяг київ, жіночий одяг харків, жіночі сукні купити, жіночі костюми, latore atelier, латоре ательє, український бренд одягу, індивідуальний пошиття одягу, власне виробництво одягу, якісний жіночий одяг, базовий гардероб, офісний одяг для жінок, елегантні сукні, вовняні костюми, класичні брюки, жакети жіночі, верхній одяг жіночий, дизайнерський одяг україна, модний жіночий одяг 2026, одяг на замовлення україна",
+  authors: [{ name: "Latore Atelier" }],
+  alternates: { canonical: "https://www.latore.store/" },
+  other: {
+    "geo.region": "UA-63",
+    "geo.placename": "Kharkiv, Ivano-Frankivsk",
+    "geo.position": "49.9935;36.2304",
+    "google-site-verification": "yVOmx2g7merY2ILnbUl2yDqMthbJ4UqIBXaddBO0wb8",
+  },
+  openGraph: {
+    title: "Жіночий одяг від Latore Atelier",
+    description:
+      "Latore Atelier пропонує стильний та ексклюзивний жіночий одяг, розроблений для того, щоб ви почувалися унікально у будь-якому сезоні. Відкрийте наші колекції сьогодні!",
+    url: "https://www.latore.store/",
+    type: "website",
+    images: [
+      {
+        url: "https://www.latore.store/logo-social.jpg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
+  icons: {
+    icon: [
+      { url: "/logo/favicon-32x32.png", type: "image/png", sizes: "32x32" },
+      { url: "/logo/favicon-16x16.png", type: "image/png", sizes: "16x16" },
+    ],
+    shortcut: "/logo/favicon.ico",
+    apple: "/logo/favicon-32x32.png",
+  },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="uk" className={`h-full ${montserrat.className}`}>
       <head>
-        <title>Жіночий одяг від Latore Atelier | Створено для кожного сезону</title>
-
-        <meta name="description" content="Latore Atelier - український бренд жіночого одягу з власним виробництвом. Костюми, сукні, брюки, верхній одяг. Індивідуальний пошив за вашими параметрами. Шоуруми в Харкові та Івано-Франківську. ☎ +38 (097) 367 82 57" />
-        <meta name="keywords" content="жіночий одяг україна, жіночий одяг київ, жіночий одяг харків, жіночі сукні купити, жіночі костюми, latore atelier, латоре ательє, український бренд одягу, індивідуальний пошиття одягу, власне виробництво одягу, якісний жіночий одяг, базовий гардероб, офісний одяг для жінок, елегантні сукні, вовняні костюми, класичні брюки, жакети жіночі, верхній одяг жіночий, дизайнерський одяг україна, модний жіночий одяг 2026, одяг на замовлення україна" />
-        <meta name="author" content="Latore Atelier" />
-        <meta name="geo.region" content="UA-63" />
-        <meta name="geo.placename" content="Kharkiv, Ivano-Frankivsk" />
-        <meta name="geo.position" content="49.9935;36.2304" />
-
-        {/* OG */}
-        <meta property="og:title" content="Жіночий одяг від Latore Atelier" />
-        <meta property="og:description" content="Latore Atelier пропонує стильний та ексклюзивний жіночий одяг, розроблений для того, щоб ви почувалися унікально у будь-якому сезоні. Відкрийте наші колекції сьогодні!" />
-        <meta property="og:image" content="https://www.latore.store/logo-social.jpg" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:url" content="https://www.latore.store/" />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-
-        {/* Favicon */}
-        <link rel="icon" href="/logo/favicon-32x32.png" type="image/png" sizes="32x32" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/logo/favicon-16x16.png" />
-        <link rel="shortcut icon" href="/logo/favicon.ico" type="image/x-icon" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/logo/favicon-32x32.png" />
-
-        <link rel="canonical" href="https://www.latore.store/" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        {/* видаляємо ручний preload шрифтів — next/font зробить це сам */}
-        {/* <link rel="preload" href="/fonts/Montserrat-*.woff2" ... /> */}
-
-        {/* Google verification */}
-        <meta name="google-site-verification" content="yVOmx2g7merY2ILnbUl2yDqMthbJ4UqIBXaddBO0wb8" />
-
         {/* Analytics — не блокують рендер */}
         {process.env.NODE_ENV === "production" && (
           <>
@@ -125,12 +139,7 @@ export default function RootLayout({ children }) {
       </head>
 
       <body className="h-full transition-colors min-h-screen">
-        <ThemeProvider>
-          <LanguageProvider>
-            <ErrorBoundary>{children}</ErrorBoundary>
-          </LanguageProvider>
-        </ThemeProvider>
-        <SpeedInsights />
+        <RootProviders>{children}</RootProviders>
       </body>
     </html>
   );

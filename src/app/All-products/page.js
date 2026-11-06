@@ -3,9 +3,26 @@ import path from "path";
 import { redirect } from "next/navigation";
 import { filterAndSortProducts, productMatchesQuery } from "../utils/products";
 import CatalogPageClient from "./CatalogPageClient";
+import seoConfig from "../../../next-seo.config";
 
 const PRODUCTS_JSON = path.join(process.cwd(), "src/app/data/products.json");
 const PAGE_SIZE = 12;
+
+const seo = seoConfig.allProducts;
+
+export const metadata = {
+  title: seo.title,
+  description: seo.description,
+  alternates: { canonical: seo.canonical },
+  robots: seo.robots,
+  openGraph: {
+    title: seo.openGraph.title,
+    description: seo.openGraph.description,
+    url: seo.openGraph.url,
+    type: seo.openGraph.type || "website",
+    images: seo.openGraph.images,
+  },
+};
 
 function slimTranslations(translations) {
   if (!translations || typeof translations !== "object") return undefined;

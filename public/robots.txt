@@ -1,6 +1,11 @@
 # *
 User-agent: *
 Allow: /
+Disallow: /Cart
+Disallow: /Checkout
+Disallow: /success
+Disallow: /payment-success
+Disallow: /favorites
 
 # Host
 Host: https://www.latore.store/

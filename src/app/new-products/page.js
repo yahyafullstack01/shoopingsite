@@ -81,7 +81,7 @@ export const metadata = {
     title: seo.openGraph.title,
     description: seo.openGraph.description,
     url: seo.openGraph.url,
-    type: seo.openGraph.type,
+    type: seo.openGraph.type || "website",
     images: seo.openGraph.images,
   },
 };
