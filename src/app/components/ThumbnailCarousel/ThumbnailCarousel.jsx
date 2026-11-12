@@ -28,13 +28,23 @@ const ThumbnailCarousel = ({ images = [], onImageSelect }) => {
 
   useKeyboardNavigation(handleScrollLeft, handleScrollRight);
 
-  // плавно доскролюємо активний елемент у видимість
+  // Scroll active thumb into view — avoid smooth scrollIntoView on iOS Safari
+  // (can crash WebKit inside overflow/modal containers).
   useEffect(() => {
-    itemRefs.current[thumbnailIndex]?.scrollIntoView({
-      behavior: "smooth",
-      inline: "center",
-      block: "nearest",
-    });
+    const el = itemRefs.current[thumbnailIndex];
+    if (!el || typeof el.scrollIntoView !== "function") return;
+    try {
+      const reduceMotion =
+        typeof window !== "undefined" &&
+        window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches;
+      el.scrollIntoView({
+        behavior: reduceMotion ? "auto" : "instant" in Element.prototype ? "instant" : "auto",
+        inline: "center",
+        block: "nearest",
+      });
+    } catch {
+      /* ignore */
+    }
   }, [thumbnailIndex]);
 
   return (
@@ -51,8 +61,6 @@ const ThumbnailCarousel = ({ images = [], onImageSelect }) => {
         {images.map((item, index) => {
           const src = getSrc(item);
           const poster = getPoster(item);
-          const isLocal = typeof src === "string" && src.startsWith("/");
-          const posterIsLocal = typeof poster === "string" && poster.startsWith("/");
 
           const selectThis = () => {
             setThumbnailIndex(index);
@@ -67,31 +75,31 @@ const ThumbnailCarousel = ({ images = [], onImageSelect }) => {
             >
               {isVideo(item) ? (
                 <Image
-                  src={poster}
+                  src={poster.includes(" ") ? encodeURI(poster) : poster}
                   alt={`Thumbnail ${index + 1}`}
-                  width={96}
-                  height={96}
+                  width={128}
+                  height={160}
+                  sizes="96px"
                   className={`border rounded cursor-pointer object-cover h-full w-full hover:brightness-150 hover:scale-105 transition-transform duration-300 ${
                     index === thumbnailIndex ? "border-black dark:border-white" : "border-gray-500"
                   }`}
                   style={{ objectFit: "cover" }}
                   onClick={selectThis}
-                  unoptimized={posterIsLocal}
-                  loader={posterIsLocal ? ({ src }) => src : undefined}
+                  quality={60}
                 />
               ) : (
                 <Image
-                  src={src}
+                  src={src.includes(" ") ? encodeURI(src) : src}
                   alt={`Thumbnail ${index + 1}`}
-                  width={96}
-                  height={96}
+                  width={128}
+                  height={160}
+                  sizes="96px"
                   className={`border rounded cursor-pointer hover:brightness-150 hover:scale-105 transition-transform duration-300 h-full w-full ${
                     index === thumbnailIndex ? "border-black dark:border-white" : "border-gray-500"
                   }`}
                   style={{ objectFit: "cover" }}
                   onClick={selectThis}
-                  unoptimized={isLocal}
-                  loader={isLocal ? ({ src }) => src : undefined}
+                  quality={60}
                 />
               )}
             </div>

@@ -344,10 +344,15 @@ const ProductBanner = ({
                     />
                   ) : (
                     <Image
-                      src={getSrc(currentImage)}
+                      src={
+                        getSrc(currentImage).includes(" ")
+                          ? encodeURI(getSrc(currentImage))
+                          : getSrc(currentImage)
+                      }
                       alt={translatedName}
                       width={800}
-                      height={600}
+                      height={1000}
+                      sizes="(max-width: 640px) 100vw, 50vw"
                       style={{
                         maxHeight: "min(60vh, 520px)",
                         width: "100%",
@@ -356,7 +361,8 @@ const ProductBanner = ({
                       }}
                       className="rounded-none bg-neutral-100 pointer-events-none sm:rounded-lg sm:pointer-events-auto dark:bg-neutral-900"
                       draggable={false}
-                      unoptimized={getSrc(currentImage).startsWith('/')}
+                      quality={75}
+                      priority
                     />
                   )}
                 </div>
@@ -369,7 +375,7 @@ const ProductBanner = ({
                         e.stopPropagation();
                         goGalleryPrev();
                       }}
-                      className="absolute left-2 top-1/2 z-20 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-neutral-200/80 bg-white/90 text-lg text-neutral-900 shadow-md backdrop-blur-sm transition-opacity duration-200 hover:bg-white focus-visible:opacity-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-400 dark:border-neutral-600 dark:bg-neutral-800/95 dark:text-white dark:hover:bg-neutral-800 sm:flex sm:opacity-0 sm:pointer-events-none sm:group-hover:opacity-100 sm:group-hover:pointer-events-auto sm:group-focus-within:opacity-100 sm:group-focus-within:pointer-events-auto"
+                      className="absolute left-2 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-neutral-200/80 bg-white text-lg text-neutral-900 shadow-md backdrop-blur-sm transition hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-400 dark:border-neutral-600 dark:bg-neutral-800/95 dark:text-white dark:hover:bg-neutral-800 sm:opacity-0 sm:pointer-events-none sm:group-hover:opacity-100 sm:group-hover:pointer-events-auto sm:group-focus-within:opacity-100 sm:group-focus-within:pointer-events-auto"
                       aria-label={
                         formTranslations.galleryPrev || "Previous image"
                       }
@@ -382,7 +388,7 @@ const ProductBanner = ({
                         e.stopPropagation();
                         goGalleryNext();
                       }}
-                      className="absolute right-2 top-1/2 z-20 hidden h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-neutral-200/80 bg-white/90 text-lg text-neutral-900 shadow-md backdrop-blur-sm transition-opacity duration-200 hover:bg-white focus-visible:opacity-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-400 dark:border-neutral-600 dark:bg-neutral-800/95 dark:text-white dark:hover:bg-neutral-800 sm:flex sm:opacity-0 sm:pointer-events-none sm:group-hover:opacity-100 sm:group-hover:pointer-events-auto sm:group-focus-within:opacity-100 sm:group-focus-within:pointer-events-auto"
+                      className="absolute right-2 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-neutral-200/80 bg-white text-lg text-neutral-900 shadow-md backdrop-blur-sm transition hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-400 dark:border-neutral-600 dark:bg-neutral-800/95 dark:text-white dark:hover:bg-neutral-800 sm:opacity-0 sm:pointer-events-none sm:group-hover:opacity-100 sm:group-hover:pointer-events-auto sm:group-focus-within:opacity-100 sm:group-focus-within:pointer-events-auto"
                       aria-label={
                         formTranslations.galleryNext || "Next image"
                       }

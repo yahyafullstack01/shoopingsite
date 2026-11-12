@@ -171,7 +171,7 @@ export default function QuickAddModal({ product, onClose, onAddToCart }) {
                   fill
                   sizes="(max-width: 640px) 100vw, 512px"
                   className="object-contain"
-                  unoptimized
+                  quality={75}
                   priority
                 />
 
@@ -231,7 +231,8 @@ export default function QuickAddModal({ product, onClose, onAddToCart }) {
                         fill
                         sizes="48px"
                         className="object-cover"
-                        unoptimized
+                        quality={60}
+                        loading="lazy"
                       />
                     </button>
                   ))}

@@ -181,9 +181,9 @@ export default function ProductPageClient({ product, relatedProducts = [] }) {
                 src={safeGallery[slide] || safeGallery[0]}
                 alt={`${translatedName} ${slide + 1}`}
                 fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
+                sizes="(max-width: 1024px) 100vw, 560px"
                 className="object-cover"
-                unoptimized
+                quality={75}
                 priority
               />
               {safeGallery.length > 1 ? (
@@ -220,7 +220,15 @@ export default function ProductPageClient({ product, relatedProducts = [] }) {
                         : "opacity-70 hover:opacity-100"
                     }`}
                   >
-                    <Image src={src} alt="" fill sizes="64px" className="object-cover" unoptimized />
+                    <Image
+                      src={src}
+                      alt=""
+                      fill
+                      sizes="64px"
+                      className="object-cover"
+                      quality={60}
+                      loading="lazy"
+                    />
                   </button>
                 ))}
               </div>
