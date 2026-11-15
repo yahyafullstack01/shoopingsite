@@ -51,8 +51,8 @@ export default function BlackFriday() {
   const subtitle =
     t.subtitle ||
     (isUA
-      ? "Вибрані вироби ательє — обмежений час."
-      : "Selected atelier pieces — for a limited time.");
+      ? "Знижки до -25% на обрані позиції із вовни, шкіри та трикотажу"
+      : "Discounts up to -25% on selected wool, leather, and knitwear pieces.");
   const cta = t.cta || (isUA ? "До колекції" : "Shop the edit");
   const endsLabel = t.endsIn || (isUA ? "До кінця акції" : "Ends in");
   const endedLabel = t.ended || (isUA ? "Акція завершена" : "Sale ended");

@@ -131,7 +131,7 @@ export default function BlackFridayInfo() {
         </h1>
         <p className="mx-auto mt-4 max-w-xl text-sm text-white/65 sm:text-base">
           {t.subtitle ||
-            "Selected atelier pieces with Black Friday offers."}
+            "Discounts up to -25% on selected wool, leather, and knitwear pieces."}
         </p>
       </div>
 

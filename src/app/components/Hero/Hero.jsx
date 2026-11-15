@@ -89,11 +89,11 @@ export default function Hero() {
       },
       {
         type: "video",
-        // High-quality web encodes at native resolution (no upscale)
         src: "/hoom/bannerblackvideo.mp4",
         mobileSrc: "/hoom/optimized/Bannermobilevideo.web.mp4",
         poster: "/hoom/optimized/BannerVideoPosterDesk.webp",
         mobilePoster: "/hoom/optimized/BannerVideoPosterMob.webp",
+        startAtSec: 2,
         alt: "Latore banner video",
         ctaText: t[4],
         ctaHref: "/All-products",
@@ -153,12 +153,27 @@ export default function Hero() {
       if (!v) return;
       const slide = slides[i];
       if (i === index && slide?.type === "video" && videoUnlocked) {
-        v.currentTime = 0;
-        const play = () => v.play().catch(() => {});
+        const startAt = Number(slide.startAtSec) || 0;
+        const playFromStart = () => {
+          try {
+            v.currentTime = startAt;
+          } catch {
+            /* ignore seek until metadata ready */
+          }
+          v.play().catch(() => {});
+        };
+        const seekAndPlay = () => {
+          if (v.readyState >= 1) {
+            playFromStart();
+          } else {
+            v.addEventListener("loadedmetadata", playFromStart, { once: true });
+            v.load();
+          }
+        };
         if (typeof requestIdleCallback === "function") {
-          requestIdleCallback(play, { timeout: 1200 });
+          requestIdleCallback(seekAndPlay, { timeout: 1200 });
         } else {
-          setTimeout(play, 300);
+          setTimeout(seekAndPlay, 300);
         }
       } else {
         v.pause();

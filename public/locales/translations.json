@@ -35,7 +35,7 @@
       "blackFriday": {
         "brand": "LATORE",
         "title": "BLACK FRIDAY",
-        "subtitle": "Selected atelier pieces — crafted for season, offered for a limited time.",
+        "subtitle": "Discounts up to -25% on selected wool, leather, and knitwear pieces.",
         "cta": "Shop the edit",
         "endsIn": "Ends in",
         "ended": "Sale ended",
@@ -51,7 +51,7 @@
       },
       "blackFridayPage": {
         "heading": "Black Friday %",
-        "subtitle": "Selected atelier pieces with Black Friday offers.",
+        "subtitle": "Discounts up to -25% on selected wool, leather, and knitwear pieces.",
         "empty": "Offers coming soon.",
         "sessionError": "Could not create session. Try refreshing the page.",
         "addToCartError": "Error adding to cart"
@@ -343,7 +343,7 @@
       "blackFriday": {
         "brand": "LATORE",
         "title": "BLACK FRIDAY",
-        "subtitle": "Вибрані вироби ательє — створені на сезон, доступні обмежений час.",
+        "subtitle": "Знижки до -25% на обрані позиції із вовни, шкіри та трикотажу",
         "cta": "До колекції",
         "endsIn": "До кінця акції",
         "ended": "Акція завершена",
@@ -359,7 +359,7 @@
       },
       "blackFridayPage": {
         "heading": "Black Friday %",
-        "subtitle": "Вибрані вироби ательє з пропозиціями Black Friday.",
+        "subtitle": "Знижки до -25% на обрані позиції із вовни, шкіри та трикотажу",
         "empty": "Пропозиції зʼявляться незабаром.",
         "sessionError": "Не вдалося створити сесію. Спробуйте оновити сторінку.",
         "addToCartError": "Помилка при додаванні до кошика"
