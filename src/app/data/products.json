@@ -4,7 +4,7 @@
     "price": 3100,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99520",
     "size": "XS S M L XL",
     "category": "Dresses",
@@ -80,7 +80,8 @@
           "васильковый"
         ]
       }
-    }
+    },
+    "discountPrice": 2790
   },
   {
     "id": 388,
@@ -169,7 +170,7 @@
     "price": 1850,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99518",
     "size": "XS S M L XL",
     "category": "Sweaters",
@@ -255,7 +256,8 @@
           "голубой"
         ]
       }
-    }
+    },
+    "discountPrice": 1380
   },
   {
     "id": 386,
@@ -343,7 +345,7 @@
     "price": 2300,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99516",
     "size": "XS S M L XL",
     "category": "Skirts",
@@ -422,7 +424,8 @@
           "чёрный"
         ]
       }
-    }
+    },
+    "discountPrice": 1950
   },
   {
     "id": 384,
@@ -516,7 +519,7 @@
     "price": 2150,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99514",
     "size": "XS S M L XL",
     "category": "Skirts",
@@ -589,14 +592,15 @@
           "бежевый"
         ]
       }
-    }
+    },
+    "discountPrice": 1935
   },
   {
     "id": 382,
     "price": 3150,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99513",
     "size": "XS S M L XL",
     "category": "Jackets",
@@ -669,14 +673,15 @@
           "бежевый"
         ]
       }
-    }
+    },
+    "discountPrice": 2835
   },
   {
     "id": 381,
     "price": 5300,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99512",
     "size": "XS S M L XL",
     "category": "Costumes",
@@ -751,7 +756,8 @@
           "бежевый"
         ]
       }
-    }
+    },
+    "discountPrice": 4770
   },
   {
     "id": 380,
@@ -853,7 +859,7 @@
     "price": 1850,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99510",
     "size": "XS S M L XL",
     "category": "Tops",
@@ -941,14 +947,15 @@
           "молочный"
         ]
       }
-    }
+    },
+    "discountPrice": 1480
   },
   {
     "id": 378,
     "price": 3750,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99509",
     "size": "XS S M L XL",
     "category": "Costumes",
@@ -1039,14 +1046,15 @@
           "молочный"
         ]
       }
-    }
+    },
+    "discountPrice": 3000
   },
   {
     "id": 377,
     "price": 2300,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99508",
     "size": "XS S M L XL",
     "category": "Skirts",
@@ -1120,14 +1128,15 @@
           "масляный"
         ]
       }
-    }
+    },
+    "discountPrice": 2070
   },
   {
     "id": 376,
     "price": 3500,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99507",
     "size": "XS S M L XL",
     "category": "Jackets",
@@ -1201,14 +1210,15 @@
           "масляный"
         ]
       }
-    }
+    },
+    "discountPrice": 3150
   },
   {
     "id": 375,
     "price": 5800,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99506",
     "size": "XS S M L XL",
     "category": "Costumes",
@@ -1283,7 +1293,8 @@
           "масляный"
         ]
       }
-    }
+    },
+    "discountPrice": 5220
   },
   {
     "id": 374,
@@ -1624,7 +1635,7 @@
     "price": 2150,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99501",
     "size": "XS S M L XL",
     "category": "Skirts",
@@ -1697,14 +1708,15 @@
           "сливочный"
         ]
       }
-    }
+    },
+    "discountPrice": 1935
   },
   {
     "id": 369,
     "price": 3300,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99500",
     "size": "XS S M L XL",
     "category": "Jackets",
@@ -1781,14 +1793,15 @@
           "сливочный"
         ]
       }
-    }
+    },
+    "discountPrice": 2970
   },
   {
     "id": 368,
     "price": 5450,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99499",
     "size": "XS S M L XL",
     "category": "Costumes",
@@ -1863,14 +1876,15 @@
           "сливочный"
         ]
       }
-    }
+    },
+    "discountPrice": 4900
   },
   {
     "id": 367,
     "price": 2300,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99498",
     "size": "XS S M L XL",
     "category": "Dresses",
@@ -1945,7 +1959,8 @@
           "голубой"
         ]
       }
-    }
+    },
+    "discountPrice": 1950
   },
   {
     "id": 366,
@@ -2040,7 +2055,7 @@
     "price": 6300,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99496",
     "size": "XS S M L XL",
     "category": "Outerwear",
@@ -2115,14 +2130,15 @@
           "мокко"
         ]
       }
-    }
+    },
+    "discountPrice": 5350
   },
   {
     "id": 364,
     "price": 3100,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99495",
     "size": "XS S M L XL",
     "category": "Dresses",
@@ -2196,14 +2212,15 @@
           "серый"
         ]
       }
-    }
+    },
+    "discountPrice": 2790
   },
   {
     "id": 363,
     "price": 3800,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99494",
     "size": "XS S M L XL",
     "category": "Jackets",
@@ -2278,14 +2295,15 @@
           "синий"
         ]
       }
-    }
+    },
+    "discountPrice": 3230
   },
   {
     "id": 362,
     "price": 6200,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99493",
     "size": "XS S M L XL",
     "category": "Costumes",
@@ -2361,14 +2379,15 @@
           "синий"
         ]
       }
-    }
+    },
+    "discountPrice": 5270
   },
   {
     "id": 361,
     "price": 3600,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99492",
     "size": "XS S M L XL",
     "category": "Dresses",
@@ -2447,14 +2466,15 @@
           "синий"
         ]
       }
-    }
+    },
+    "discountPrice": 3240
   },
   {
     "id": 360,
     "price": 3150,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99491",
     "size": "XS S M L XL",
     "category": "Jackets",
@@ -2527,14 +2547,15 @@
           "бежевый"
         ]
       }
-    }
+    },
+    "discountPrice": 2835
   },
   {
     "id": 359,
     "price": 5210,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99490",
     "size": "XS S M L XL",
     "category": "Costumes",
@@ -2609,14 +2630,15 @@
           "бежевый"
         ]
       }
-    }
+    },
+    "discountPrice": 4690
   },
   {
     "id": 358,
     "price": 2150,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99489",
     "size": "XS S M L XL",
     "category": "Skirts",
@@ -2690,14 +2712,15 @@
           "серый"
         ]
       }
-    }
+    },
+    "discountPrice": 1935
   },
   {
     "id": 357,
     "price": 3150,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99488",
     "size": "XS S M L XL",
     "category": "Jackets",
@@ -2770,14 +2793,15 @@
           "серый"
         ]
       }
-    }
+    },
+    "discountPrice": 2835
   },
   {
     "id": 356,
     "price": 5300,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99487",
     "size": "XS S M L XL",
     "category": "Costumes",
@@ -2852,14 +2876,15 @@
           "серый"
         ]
       }
-    }
+    },
+    "discountPrice": 4770
   },
   {
     "id": 355,
     "price": 2250,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99486",
     "size": "XS S M L XL",
     "category": "Skirts",
@@ -2931,14 +2956,15 @@
           "серый"
         ]
       }
-    }
+    },
+    "discountPrice": 2025
   },
   {
     "id": 354,
     "price": 2100,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99485",
     "size": "XS S M L XL",
     "category": "Tops",
@@ -3011,14 +3037,15 @@
           "серый"
         ]
       }
-    }
+    },
+    "discountPrice": 1890
   },
   {
     "id": 353,
     "price": 4350,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99484",
     "size": "XS S M L XL",
     "category": "Costumes",
@@ -3092,14 +3119,15 @@
           "серый"
         ]
       }
-    }
+    },
+    "discountPrice": 3915
   },
   {
     "id": 352,
     "price": 2060,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99483",
     "size": "XS S M L XL",
     "category": "Pants",
@@ -3172,14 +3200,15 @@
           "серый"
         ]
       }
-    }
+    },
+    "discountPrice": 1850
   },
   {
     "id": 351,
     "price": 4160,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99482",
     "size": "XS S M L XL",
     "category": "Costumes",
@@ -3256,14 +3285,15 @@
           "серый"
         ]
       }
-    }
+    },
+    "discountPrice": 3740
   },
   {
     "id": 349,
     "price": 3500,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99480",
     "size": "XS S M L XL",
     "category": "Outerwear",
@@ -3336,14 +3366,15 @@
           "серый"
         ]
       }
-    }
+    },
+    "discountPrice": 3150
   },
   {
     "id": 348,
     "price": 5560,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99479",
     "size": "XS S M L XL",
     "category": "Costumes",
@@ -3418,14 +3449,15 @@
           "серый"
         ]
       }
-    }
+    },
+    "discountPrice": 5000
   },
   {
     "id": 342,
     "price": 5200,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99473",
     "size": "XS S M L XL",
     "category": "Costumes",
@@ -3500,14 +3532,15 @@
           "серый"
         ]
       }
-    }
+    },
+    "discountPrice": 4680
   },
   {
     "id": 341,
     "price": 2100,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99472",
     "size": "XS S M L XL",
     "category": "Jackets",
@@ -3580,14 +3613,15 @@
           "бежевый"
         ]
       }
-    }
+    },
+    "discountPrice": 1890
   },
   {
     "id": 340,
     "price": 4160,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99471",
     "size": "XS S M L XL",
     "category": "Costumes",
@@ -3665,14 +3699,15 @@
           "бежевый"
         ]
       }
-    }
+    },
+    "discountPrice": 3740
   },
   {
     "id": 339,
     "price": 3150,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99470",
     "size": "XS S M L XL",
     "category": "Jackets",
@@ -3745,14 +3780,15 @@
           "серый"
         ]
       }
-    }
+    },
+    "discountPrice": 2835
   },
   {
     "id": 338,
     "price": 5400,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99469",
     "size": "XS S M L XL",
     "category": "Costumes",
@@ -3826,7 +3862,8 @@
           "серый"
         ]
       }
-    }
+    },
+    "discountPrice": 4860
   },
   {
     "id": 337,
@@ -7382,7 +7419,7 @@
     "price": 1700,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99429",
     "size": "XS S M L XL",
     "category": "Sweaters",
@@ -7457,7 +7494,8 @@
           "шоколад"
         ]
       }
-    }
+    },
+    "discountPrice": 1275
   },
   {
     "id": 294,
@@ -7794,7 +7832,7 @@
     "price": 1650,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99417",
     "size": "XS S M L XL",
     "category": "Skirts",
@@ -7880,14 +7918,15 @@
           "чёрный"
         ]
       }
-    }
+    },
+    "discountPrice": 1320
   },
   {
     "id": 284,
     "price": 3100,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99415",
     "size": "XS S M L XL",
     "category": "Jackets",
@@ -7974,14 +8013,15 @@
           "белый"
         ]
       }
-    }
+    },
+    "discountPrice": 2635
   },
   {
     "id": 1,
     "price": 3700,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99412",
     "size": "XS S M L XL",
     "category": "Outerwear",
@@ -8064,14 +8104,15 @@
           "мокко"
         ]
       }
-    }
+    },
+    "discountPrice": 3145
   },
   {
     "id": 282,
     "price": 3700,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99422",
     "size": "XS S M L XL",
     "category": "Outerwear",
@@ -8149,14 +8190,15 @@
           "молочный шоколад"
         ]
       }
-    }
+    },
+    "discountPrice": 3145
   },
   {
     "id": 281,
     "price": 5600,
     "isTop": false,
     "isNew": true,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99421",
     "size": "XS S M L XL",
     "category": "Costumes",
@@ -8235,14 +8277,15 @@
           "молочный шоколад"
         ]
       }
-    }
+    },
+    "discountPrice": 4760
   },
   {
     "id": 280,
     "price": 2060,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99420",
     "size": "XS S M L XL",
     "category": "Pants",
@@ -8316,14 +8359,15 @@
           "тёмный шоколад"
         ]
       }
-    }
+    },
+    "discountPrice": 1850
   },
   {
     "id": 279,
     "price": 5560,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99419",
     "size": "XS S M L XL",
     "category": "Costumes",
@@ -8398,14 +8442,15 @@
           "тёмный шоколад"
         ]
       }
-    }
+    },
+    "discountPrice": 5000
   },
   {
     "id": 278,
     "price": 1900,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99418",
     "size": "XS S M L XL",
     "category": "Skirts",
@@ -8483,14 +8528,15 @@
           "тёмный шоколад"
         ]
       }
-    }
+    },
+    "discountPrice": 1700
   },
   {
     "id": 277,
     "price": 3500,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99417",
     "size": "XS S M L XL",
     "category": "Jackets",
@@ -8564,14 +8610,15 @@
           "тёмный шоколад"
         ]
       }
-    }
+    },
+    "discountPrice": 3150
   },
   {
     "id": 276,
     "price": 5400,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99416",
     "size": "XS S M L XL",
     "category": "Costumes",
@@ -8650,7 +8697,8 @@
           "тёмный шоколад"
         ]
       }
-    }
+    },
+    "discountPrice": 4860
   },
   {
     "id": 273,
@@ -8829,7 +8877,7 @@
     "price": 2000,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99409",
     "size": "XS S M L XL",
     "category": "Dresses",
@@ -8908,14 +8956,15 @@
           "оливковый"
         ]
       }
-    }
+    },
+    "discountPrice": 1700
   },
   {
     "id": 268,
     "price": 3200,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99408",
     "size": "XS S M L XL",
     "category": "Dresses",
@@ -9022,14 +9071,15 @@
           "темно-синий"
         ]
       }
-    }
+    },
+    "discountPrice": 2720
   },
   {
     "id": 267,
     "price": 2400,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99407",
     "size": "XS S M L XL",
     "category": "Dresses",
@@ -9112,7 +9162,8 @@
           "гусиная лапка"
         ]
       }
-    }
+    },
+    "discountPrice": 2160
   },
   {
     "id": 266,
@@ -9205,7 +9256,7 @@
     "price": 2100,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99405",
     "size": "XS S M L XL",
     "category": "Skirts",
@@ -9288,14 +9339,15 @@
           "красный"
         ]
       }
-    }
+    },
+    "discountPrice": 1785
   },
   {
     "id": 264,
     "price": 2100,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99404",
     "size": "XS S M L XL",
     "category": "Skirts",
@@ -9377,14 +9429,15 @@
           "чёрный"
         ]
       }
-    }
+    },
+    "discountPrice": 1785
   },
   {
     "id": 263,
     "price": 1500,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99403",
     "size": "XS S M L XL",
     "category": "Sweaters",
@@ -9467,7 +9520,8 @@
           "белый"
         ]
       }
-    }
+    },
+    "discountPrice": 1125
   },
   {
     "id": 253,
@@ -9568,7 +9622,7 @@
     "price": 4000,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99380",
     "size": "XS S M L XL",
     "category": "Costumes",
@@ -9662,7 +9716,8 @@
           "тёмно-зелёный"
         ]
       }
-    }
+    },
+    "discountPrice": 3600
   },
   {
     "id": 237,
@@ -9852,7 +9907,7 @@
     "price": 3500,
     "isTop": false,
     "isNew": true,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99373",
     "size": "XS S M L XL",
     "category": "Jackets",
@@ -9947,14 +10002,15 @@
           "гусиная лапка"
         ]
       }
-    }
+    },
+    "discountPrice": 3150
   },
   {
     "id": 231,
     "price": 5560,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99372",
     "size": "XS S M L XL",
     "category": "Costumes",
@@ -10040,14 +10096,15 @@
           "тёмно-зелёный"
         ]
       }
-    }
+    },
+    "discountPrice": 5000
   },
   {
     "id": 229,
     "price": 1700,
     "isTop": true,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99370",
     "size": "XS S M L XL",
     "category": "Sweaters",
@@ -10126,14 +10183,15 @@
           "белый"
         ]
       }
-    }
+    },
+    "discountPrice": 1275
   },
   {
     "id": 227,
     "price": 3500,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99368",
     "size": "XS S M L XL",
     "category": "Outerwear",
@@ -10219,14 +10277,15 @@
           "тёмный шоколад"
         ]
       }
-    }
+    },
+    "discountPrice": 3150
   },
   {
     "id": 226,
     "price": 5560,
     "isTop": false,
     "isNew": true,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99367",
     "size": "XS S M L XL",
     "category": "Costumes",
@@ -10317,14 +10376,15 @@
           "тёмный шоколад"
         ]
       }
-    }
+    },
+    "discountPrice": 5000
   },
   {
     "id": 223,
     "price": 5400,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99364",
     "size": "XS S M L XL",
     "category": "Costumes",
@@ -10418,14 +10478,15 @@
           "тёмно-зелёный"
         ]
       }
-    }
+    },
+    "discountPrice": 4860
   },
   {
     "id": 222,
     "price": 2060,
     "isTop": true,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99363",
     "size": "XS S M L XL",
     "category": "Pants",
@@ -10496,14 +10557,15 @@
           "серый"
         ]
       }
-    }
+    },
+    "discountPrice": 1850
   },
   {
     "id": 205,
     "price": 2100,
     "isTop": false,
     "isNew": true,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99347",
     "size": "XS S M L XL",
     "category": "Pants",
@@ -10590,14 +10652,15 @@
           "мокко"
         ]
       }
-    }
+    },
+    "discountPrice": 1785
   },
   {
     "id": 171,
     "price": 2300,
     "isTop": true,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "98824",
     "size": "XS S M L XL",
     "category": "Dresses",
@@ -10682,14 +10745,15 @@
           "чёрная"
         ]
       }
-    }
+    },
+    "discountPrice": 1840
   },
   {
     "id": 158,
     "price": 3100,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "98811",
     "size": "XS S M L XL",
     "category": "Dresses",
@@ -10783,14 +10847,15 @@
           "полынь"
         ]
       }
-    }
+    },
+    "discountPrice": 2790
   },
   {
     "id": 209,
     "price": 1550,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99351",
     "size": "XS S M L XL",
     "category": "Skirts",
@@ -10881,14 +10946,15 @@
           "марсала"
         ]
       }
-    }
+    },
+    "discountPrice": 1310
   },
   {
     "id": 102,
     "price": 2100,
     "isTop": true,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "45530",
     "size": "XS S M L XL",
     "category": "Skirts",
@@ -10939,7 +11005,8 @@
           "черный"
         ]
       }
-    }
+    },
+    "discountPrice": 1785
   },
   {
     "id": 206,
@@ -11056,7 +11123,7 @@
     "price": 5800,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99343",
     "size": "XS S M L XL",
     "category": "Costumes",
@@ -11143,13 +11210,14 @@
           "марсала"
         ]
       }
-    }
+    },
+    "discountPrice": 4930
   },
   {
     "id": 13,
     "price": 3700,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "12345",
     "color": "beige",
     "size": "XS S M L XL",
@@ -11192,14 +11260,15 @@
           "графіт"
         ]
       }
-    }
+    },
+    "discountPrice": 3145
   },
   {
     "id": 36,
     "price": 1500,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "12350",
     "color": "beige",
     "size": "XS S M L XL",
@@ -11272,7 +11341,8 @@
           "белый"
         ]
       }
-    }
+    },
+    "discountPrice": 1125
   },
   {
     "id": 99,
@@ -11351,7 +11421,7 @@
     "price": 3100,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "12345",
     "size": "XS S M L XL",
     "category": "Dresses",
@@ -11419,13 +11489,14 @@
           "сірий"
         ]
       }
-    }
+    },
+    "discountPrice": 2790
   },
   {
     "id": 30,
     "price": 2100,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "isTop": false,
     "sku": "12346",
     "size": "XS S M L XL",
@@ -11478,14 +11549,15 @@
           "Черный"
         ]
       }
-    }
+    },
+    "discountPrice": 1785
   },
   {
     "id": 27,
     "price": 1760,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "67897",
     "size": "XS S M L XL",
     "category": "Pants",
@@ -11547,14 +11619,15 @@
           "кавовий"
         ]
       }
-    }
+    },
+    "discountPrice": 1400
   },
   {
     "id": 95,
     "price": 2400,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "98815",
     "size": "XS S M L XL",
     "category": "Skirts",
@@ -11604,7 +11677,8 @@
           "чёрный"
         ]
       }
-    }
+    },
+    "discountPrice": 2040
   },
   {
     "id": 125,
@@ -11777,7 +11851,7 @@
     "price": 1900,
     "isTop": true,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99334",
     "size": "XS S M L XL",
     "category": "Pants",
@@ -11855,14 +11929,15 @@
           "графит"
         ]
       }
-    }
+    },
+    "discountPrice": 1615
   },
   {
     "id": 191,
     "price": 5600,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99333",
     "size": "XS S M L XL",
     "category": "Costumes",
@@ -11955,14 +12030,15 @@
           "графит"
         ]
       }
-    }
+    },
+    "discountPrice": 4760
   },
   {
     "id": 190,
     "price": 6100,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99332",
     "size": "XS S M L XL",
     "category": "Costumes",
@@ -12054,14 +12130,15 @@
           "тёмный шоколад"
         ]
       }
-    }
+    },
+    "discountPrice": 5490
   },
   {
     "id": 189,
     "price": 1700,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99331",
     "size": "XS S M L XL",
     "category": "Sweaters",
@@ -12149,14 +12226,15 @@
           "чорний"
         ]
       }
-    }
+    },
+    "discountPrice": 1275
   },
   {
     "id": 26,
     "price": 2800,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "67896",
     "size": "XS S M L XL",
     "category": "Dresses",
@@ -12208,7 +12286,8 @@
           "черно-белый"
         ]
       }
-    }
+    },
+    "discountPrice": 2240
   },
   {
     "id": 182,
@@ -12461,7 +12540,7 @@
     "price": 2800,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "99320",
     "size": "XS S M L XL",
     "category": "Dresses",
@@ -12540,14 +12619,15 @@
           "шоколад"
         ]
       }
-    }
+    },
+    "discountPrice": 2240
   },
   {
     "id": 175,
     "price": 1850,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "98828",
     "size": "XS S M L XL",
     "category": "Skirts",
@@ -12627,7 +12707,8 @@
           "масло"
         ]
       }
-    }
+    },
+    "discountPrice": 1480
   },
   {
     "id": 161,
@@ -12736,7 +12817,7 @@
     "price": 3100,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "98813",
     "size": "XS S M L XL",
     "category": "Dresses",
@@ -12819,7 +12900,8 @@
           "мокко-мусс"
         ]
       }
-    }
+    },
+    "discountPrice": 2790
   },
   {
     "id": 159,
@@ -15377,7 +15459,7 @@
     "price": 2800,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "98817",
     "size": "XS S M L XL",
     "category": "Skirts",
@@ -15442,7 +15524,8 @@
           "синий"
         ]
       }
-    }
+    },
+    "discountPrice": 2380
   },
   {
     "id": 92,
@@ -17148,7 +17231,7 @@
     "id": 28,
     "price": 2100,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "isTop": false,
     "sku": "12345",
     "color": "red",
@@ -17201,13 +17284,14 @@
           "Черный"
         ]
       }
-    }
+    },
+    "discountPrice": 1785
   },
   {
     "id": 29,
     "price": 2100,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "isTop": false,
     "sku": "12345",
     "color": "red",
@@ -17268,14 +17352,15 @@
           "молоко"
         ]
       }
-    }
+    },
+    "discountPrice": 1785
   },
   {
     "id": 37,
     "price": 1700,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "12351",
     "color": "black",
     "size": "XS S M L XL",
@@ -17336,14 +17421,15 @@
           "белый"
         ]
       }
-    }
+    },
+    "discountPrice": 1275
   },
   {
     "id": 38,
     "price": 1500,
     "isTop": false,
     "isNew": false,
-    "isSpecialOffer": false,
+    "isSpecialOffer": true,
     "sku": "12352",
     "color": "black",
     "size": "XS S M L XL",
@@ -17394,6 +17480,7 @@
           "черный"
         ]
       }
-    }
+    },
+    "discountPrice": 1125
   }
 ]

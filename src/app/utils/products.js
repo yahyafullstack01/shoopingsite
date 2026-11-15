@@ -66,6 +66,10 @@ export const filterAndSortProducts = (products, filters, sortOrder) => {
       const cat = norm(selectedCategory);
       if (cat === "new") return product.isNew === true;
       if (cat === "top-products") return product.isTop === true;
+      if (cat === "black-friday") {
+        // Same pool as Special Offers
+        return product.isSpecialOffer === true;
+      }
       return norm(product.category) === cat;
     })();
 

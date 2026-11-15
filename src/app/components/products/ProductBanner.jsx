@@ -201,8 +201,24 @@ const ProductBanner = ({
       .replace(/\s+/g, ' ')
       .trim();
 
-    const rawPrice = product.discountPrice || product.price;
-    const price = Number(String(rawPrice).replace(/[^\d.]/g, '')).toFixed(2);
+    // Normalize sale vs list price (InfoForm may set price=sale and oldPrice=list)
+    const toNum = (v) => Number(String(v ?? "").replace(/[^\d.]/g, "")) || 0;
+    let listPrice = toNum(product.oldPrice ?? product.price);
+    let salePrice = null;
+    if (product.oldPrice != null && toNum(product.oldPrice) > toNum(product.price)) {
+      listPrice = toNum(product.oldPrice);
+      salePrice = toNum(product.price);
+    } else if (
+      product.discountPrice != null &&
+      toNum(product.discountPrice) > 0 &&
+      toNum(product.discountPrice) < toNum(product.price)
+    ) {
+      listPrice = toNum(product.price);
+      salePrice = toNum(product.discountPrice);
+    } else {
+      listPrice = toNum(product.price);
+      salePrice = null;
+    }
 
     if (!sessionId) {
       alert("Не вдалося створити сесію. Спробуйте оновити сторінку.");
@@ -217,8 +233,8 @@ const ProductBanner = ({
           sessionId,
           productId: product.id,
           name,
-          price: Number(product.price),
-          discountPrice: product.discountPrice ?? null,
+          price: listPrice.toFixed(2),
+          discountPrice: salePrice != null ? salePrice.toFixed(2) : null,
           color: selectedColor,
           size: selectedSize,
           quantity,

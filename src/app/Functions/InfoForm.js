@@ -209,14 +209,28 @@ export default function InfoForm({
     }
 
     if (hasError) return;
-    const finalPrice = product.discountPrice ?? product.price;
-    const oldPrice = product.discountPrice ? product.price : null;
+    // Keep list price + sale price explicit for cart (don't collapse both to sale)
+    const toNum = (v) => Number(String(v ?? "").replace(/[^\d.]/g, "")) || 0;
+    let listPrice = toNum(product.price);
+    let salePrice = null;
+    if (product.oldPrice != null && toNum(product.oldPrice) > toNum(product.price)) {
+      listPrice = toNum(product.oldPrice);
+      salePrice = toNum(product.price);
+    } else if (
+      product.discountPrice != null &&
+      toNum(product.discountPrice) > 0 &&
+      toNum(product.discountPrice) < toNum(product.price)
+    ) {
+      listPrice = toNum(product.price);
+      salePrice = toNum(product.discountPrice);
+    }
 
     onAddToCartClick({
       product: {
         ...product,
-        price: finalPrice,
-        oldPrice,
+        price: listPrice,
+        oldPrice: salePrice != null ? listPrice : null,
+        discountPrice: salePrice,
       },
       selectedColor,
       selectedSize,

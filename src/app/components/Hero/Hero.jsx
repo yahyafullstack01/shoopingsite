@@ -77,11 +77,11 @@ export default function Hero() {
     () => [
       {
         type: "image",
-        src: "/hoom/Bannerdesk.webp?v=4",
+        src: "/hoom/bannerblack1.webp?v=4",
         mobileSrc: "/hoom/Bannermob.webp?v=6",
-        alt: "Latore banner 1",
+        alt: "Latore Black Friday banner",
         ctaText: t[4],
-        ctaHref: "/All-products",
+        ctaHref: "/black-friday",
         fit: "cover",
         focus: "center",
         fitMobile: "cover",
@@ -90,7 +90,7 @@ export default function Hero() {
       {
         type: "video",
         // High-quality web encodes at native resolution (no upscale)
-        src: "/hoom/optimized/Bannervideodesk.web.mp4",
+        src: "/hoom/bannerblackvideo.mp4",
         mobileSrc: "/hoom/optimized/Bannermobilevideo.web.mp4",
         poster: "/hoom/optimized/BannerVideoPosterDesk.webp",
         mobilePoster: "/hoom/optimized/BannerVideoPosterMob.webp",

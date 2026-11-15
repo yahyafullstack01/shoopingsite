@@ -18,6 +18,38 @@ import { useLanguage } from '../../Functions/useLanguage';
 import { getCartItemDisplay, getProductImageSrc } from '../../utils/productData';
 import { getBackendBaseUrl } from '../../utils/backendUrl';
 import { isFavorite, toggleFavorite } from '../../utils/favorites';
+import products from '../../data/products';
+
+const toNum = (v) => Number(String(v ?? '').replace(/[^\d.]/g, '')) || 0;
+
+/** Prefer cart line prices; fall back to catalog discount for older cart rows */
+function resolveCartPrices(item) {
+  const catalog = products.find(
+    (p) => String(p.id) === String(item.productId ?? item.id)
+  );
+  let listPrice = toNum(item.price);
+  let salePrice =
+    item.discountPrice != null && toNum(item.discountPrice) > 0
+      ? toNum(item.discountPrice)
+      : null;
+
+  if (
+    (salePrice == null || !(salePrice < listPrice)) &&
+    catalog?.discountPrice != null &&
+    toNum(catalog.discountPrice) > 0 &&
+    toNum(catalog.discountPrice) < toNum(catalog.price)
+  ) {
+    listPrice = toNum(catalog.price);
+    salePrice = toNum(catalog.discountPrice);
+  }
+
+  const hasSale = salePrice != null && salePrice < listPrice;
+  return {
+    listPrice,
+    salePrice: hasSale ? salePrice : null,
+    unitPrice: hasSale ? salePrice : listPrice,
+  };
+}
 
 export default function Cart() {
   const [cartItems, setCartItems] = useState([]);
@@ -94,15 +126,10 @@ export default function Cart() {
     }
   };
 
-  const linePrice = (item) =>
-    item.discountPrice && item.discountPrice < item.price
-      ? item.discountPrice
-      : item.price;
-
-  const total = cartItems.reduce(
-    (sum, item) => sum + Number(linePrice(item)) * item.quantity,
-    0
-  );
+  const total = cartItems.reduce((sum, item) => {
+    const { unitPrice } = resolveCartPrices(item);
+    return sum + unitPrice * item.quantity;
+  }, 0);
 
   return (
     <div className="min-h-screen bg-neutral-100 pb-8 pt-4 text-black dark:bg-neutral-950 dark:text-white md:pb-12 md:pt-5">
@@ -156,19 +183,22 @@ export default function Cart() {
                               {displayName}
                             </p>
                             <p className="mt-1 text-sm font-semibold text-neutral-900 dark:text-neutral-100">
-                              {item.discountPrice &&
-                              item.discountPrice < item.price ? (
-                                <>
-                                  <span className="text-red-600">
-                                    {item.discountPrice} UAH
-                                  </span>{' '}
-                                  <span className="font-normal text-neutral-400 line-through">
-                                    {item.price} UAH
-                                  </span>
-                                </>
-                              ) : (
-                                <span>{item.price} UAH</span>
-                              )}
+                              {(() => {
+                                const { listPrice, salePrice } =
+                                  resolveCartPrices(item);
+                                return salePrice != null ? (
+                                  <>
+                                    <span className="text-red-600">
+                                      {salePrice} UAH
+                                    </span>{' '}
+                                    <span className="font-normal text-neutral-400 line-through">
+                                      {listPrice} UAH
+                                    </span>
+                                  </>
+                                ) : (
+                                  <span>{listPrice} UAH</span>
+                                );
+                              })()}
                             </p>
                             <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400">
                               {cartTranslations.color || 'Color:'}{' '}

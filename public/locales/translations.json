@@ -32,6 +32,30 @@
         "Don't miss out on our exclusive deals. Grab them while they last \nand enjoy discounts that won't be around forever!",
         "Shop Now"
       ],
+      "blackFriday": {
+        "brand": "LATORE",
+        "title": "BLACK FRIDAY",
+        "subtitle": "Selected atelier pieces — crafted for season, offered for a limited time.",
+        "cta": "Shop the edit",
+        "endsIn": "Ends in",
+        "ended": "Sale ended",
+        "bar": "Black Friday at Latore — limited edit",
+        "barCta": "Shop",
+        "menuLabel": "BLACK FRIDAY %",
+        "units": {
+          "days": "days",
+          "hours": "hrs",
+          "minutes": "min",
+          "seconds": "sec"
+        }
+      },
+      "blackFridayPage": {
+        "heading": "Black Friday %",
+        "subtitle": "Selected atelier pieces with Black Friday offers.",
+        "empty": "Offers coming soon.",
+        "sessionError": "Could not create session. Try refreshing the page.",
+        "addToCartError": "Error adding to cart"
+      },
       "follow_us": ["Follow Us"],
       "Footer": ["Poltavskyi Shliakh St, 144 А Kharkiv", "Torhovyy Tsentr", "Kyyivsʹkyy Ivano Frankivsk"],
       "categoryCatalog": {
@@ -267,7 +291,7 @@
       ],
       "SizeCatalogue": [ "All", "S", "M", "L", "XL" ],
       "Categories": [
-        "All", "New", "Top products", "Costumes", "Dresses", "Shirts", "Skirts", 
+        "All", "BLACK FRIDAY %", "New", "Top products", "Costumes", "Dresses", "Shirts", "Skirts", 
         "Sweaters",  "Pants", "Jackets", "Tops", "Outerwear", "Shorts "
       ],
       "PaginatedProducts": ["Prev", "Next"]
@@ -316,6 +340,30 @@
         "Лімітовані вироби в останніх кольорах та розмірах   \nв обмеженій кількості за собівартістю!",
         "Купуйте зараз"
       ],
+      "blackFriday": {
+        "brand": "LATORE",
+        "title": "BLACK FRIDAY",
+        "subtitle": "Вибрані вироби ательє — створені на сезон, доступні обмежений час.",
+        "cta": "До колекції",
+        "endsIn": "До кінця акції",
+        "ended": "Акція завершена",
+        "bar": "Black Friday у Latore — обмежена пропозиція",
+        "barCta": "Дивитися",
+        "menuLabel": "BLACK FRIDAY %",
+        "units": {
+          "days": "дні",
+          "hours": "год",
+          "minutes": "хв",
+          "seconds": "сек"
+        }
+      },
+      "blackFridayPage": {
+        "heading": "Black Friday %",
+        "subtitle": "Вибрані вироби ательє з пропозиціями Black Friday.",
+        "empty": "Пропозиції зʼявляться незабаром.",
+        "sessionError": "Не вдалося створити сесію. Спробуйте оновити сторінку.",
+        "addToCartError": "Помилка при додаванні до кошика"
+      },
       "follow_us": ["Слідкуйте за нами"],
       "Footer": ["Вул.Полтавський шлях 144А Харків", "Торговий центр", "Київський Івано-Франківськ"],
       "categoryCatalog": {
@@ -554,7 +602,7 @@
       ],
       "SizeCatalogue": [ "Усі", "S", "M", "L", "XL" ],
       "Categories": [
-        "Усі", "Новинки", "Топ продажів", "Костюми", "Сукні", "Сорочки", "Спідниці", 
+        "Усі", "BLACK FRIDAY %", "Новинки", "Топ продажів", "Костюми", "Сукні", "Сорочки", "Спідниці", 
         "Светри", "Брюки", "Жакети", "Топи", "Верхній одяг", "Шорти"
       ],
       "PaginatedProducts": ["Попередня", "Наступна"]

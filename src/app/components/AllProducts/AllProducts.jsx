@@ -94,10 +94,25 @@ export default function AllProducts({
     const chosenSize = arg?.selectedSize || "";
     const quantity = arg?.quantity || 1;
     const name = product?.name || product?.title || "Unnamed Product";
-    const price = Number(product?.price || 0).toFixed(2);
-    const discountPrice = product?.oldPrice
-      ? Number(product?.price).toFixed(2)
-      : null;
+    const toNum = (v) => Number(String(v ?? "").replace(/[^\d.]/g, "")) || 0;
+    // Support QuickAdd (price + discountPrice) and ProductCard (price=sale, oldPrice=list)
+    let listPrice;
+    let salePrice = null;
+    if (product?.oldPrice != null && toNum(product.oldPrice) > toNum(product.price)) {
+      listPrice = toNum(product.oldPrice);
+      salePrice = toNum(product.price);
+    } else if (
+      product?.discountPrice != null &&
+      toNum(product.discountPrice) > 0 &&
+      toNum(product.discountPrice) < toNum(product.price)
+    ) {
+      listPrice = toNum(product.price);
+      salePrice = toNum(product.discountPrice);
+    } else {
+      listPrice = toNum(product?.price);
+    }
+    const price = listPrice.toFixed(2);
+    const discountPrice = salePrice != null ? salePrice.toFixed(2) : null;
 
     try {
       const res = await fetch(`${getBackendBaseUrl()}/api/cart`, {
@@ -250,6 +265,10 @@ export default function AllProducts({
               selectedCategory={categoryFromURL || ""}
               handleCategorySelect={(category) => {
                 const slug = (category || "").toLowerCase();
+                if (slug === "black-friday") {
+                  router.push("/black-friday", { scroll: true });
+                  return;
+                }
                 const p = new URLSearchParams();
                 p.set("category", slug || "all");
                 p.set("page", "1");

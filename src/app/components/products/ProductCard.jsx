@@ -105,13 +105,13 @@ const ProductCard = ({ product, onClick, onAddToCart, priority = false }) => {
   const handleAddToCart = (e) => {
     e.stopPropagation();
     if (!onAddToCart) return;
-    const finalPrice = product.discountPrice ?? product.price;
-    const oldPrice = product.discountPrice ? product.price : null;
+    // Keep list price + discountPrice intact for cart (do not overwrite price with sale)
     onAddToCart({
       product: {
         ...product,
-        price: finalPrice,
-        oldPrice,
+        price: product.price,
+        discountPrice: product.discountPrice ?? null,
+        oldPrice: product.discountPrice ? product.price : null,
         name: translatedName,
         image: gallery[0] || getProductImageSrc(product.image),
       },

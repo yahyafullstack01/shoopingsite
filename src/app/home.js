@@ -15,6 +15,10 @@ const TopProducts = dynamic(
   () => import("./components/TopProducts/TopProducts.jsx"),
   { ssr: true }
 );
+const BlackFriday = dynamic(
+  () => import("./components/BlackFriday/BlackFriday.jsx"),
+  { ssr: true }
+);
 const SpecialOffers = dynamic(
   () => import("./components/SpecialOffers/SpecialOffers.jsx"),
   { ssr: true }
@@ -30,6 +34,7 @@ export default function Home() {
   return (
     <div className="transition-colors">
       <Hero />
+      <BlackFriday />
       <CategoryCatalog />
       <NewArrivals />
       <TopProducts />

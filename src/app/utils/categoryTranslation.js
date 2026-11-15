@@ -1,5 +1,5 @@
 export const categoryKeys = [
-  "all", "new", "top-products", "costumes", "dresses", "shirts", "skirts",
+  "all", "black-friday", "new", "top-products", "costumes", "dresses", "shirts", "skirts",
   "sweaters", "pants", "jackets", "tops", "outerwear", "shorts"
 ];
 

@@ -6,6 +6,7 @@ import { FiFilter, FiX } from "react-icons/fi";
 
 const ORIGINAL_CATEGORIES = [
   "All",
+  "Black-friday",
   "New",
   "Top-products",
   "Costumes",

@@ -60,6 +60,7 @@ function mapRowForCatalog(p) {
     translations: slimTranslations(p.translations),
     isNew: p.isNew === true,
     isTop: p.isTop === true,
+    isSpecialOffer: p.isSpecialOffer === true,
   };
 }
 
@@ -91,7 +92,9 @@ export default async function Products({ searchParams }) {
         ? mapped.filter((p) => p.isNew === true)
         : categoryParam === "top-products"
           ? mapped.filter((p) => p.isTop === true)
-          : mapped.filter((p) => p.category.toLowerCase() === categoryParam);
+          : categoryParam === "black-friday"
+            ? mapped.filter((p) => p.isSpecialOffer === true)
+            : mapped.filter((p) => p.category.toLowerCase() === categoryParam);
 
   if (searchQuery) {
     const byId = new Map(raw.map((p) => [String(p.id), p]));

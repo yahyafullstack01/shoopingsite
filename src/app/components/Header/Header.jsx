@@ -66,9 +66,22 @@ const [count, setCount] = useState(0);
   }, []);
   const handleCategoryClick = (categoryPath) => {
     router.push(`/All-products?category=${categoryPath}`, { scroll: true });
+    setIsDesktopCategoriesOpen(false);
+    setIsMobileCategoriesOpen(false);
     setIsCategoriesOpen(false);
     closeMenu();
   };
+
+  const handleBlackFridayClick = () => {
+    router.push("/black-friday", { scroll: true });
+    setIsDesktopCategoriesOpen(false);
+    setIsMobileCategoriesOpen(false);
+    setIsCategoriesOpen(false);
+    closeMenu();
+  };
+
+  const blackFridayLabel =
+    translateList("home", "blackFriday")?.menuLabel || "BLACK FRIDAY %";
  const catalogRef = useRef();
 const desktopCatalogRef = useRef();
 const mobileCatalogRef = useRef();
@@ -166,14 +179,25 @@ useEffect(() => {
 
   {isDesktopCategoriesOpen && (
     <ul
-      className="absolute left-0 top-full mt-2 bg-white dark:bg-gray-800 rounded-md shadow-md p-2 w-48 z-50"
+      className="absolute left-0 top-full mt-2 w-52 rounded-md bg-white p-2 shadow-md z-50 dark:bg-gray-800"
       role="menu"
     >
+      <li role="menuitem">
+        <button
+          type="button"
+          onClick={handleBlackFridayClick}
+          className="mb-1 block w-full rounded-md bg-[#0a0a0a] px-4 py-2.5 text-left text-sm font-semibold uppercase tracking-wide text-[#c4a574] hover:bg-neutral-900"
+        >
+          {blackFridayLabel}
+        </button>
+      </li>
+      <li className="mx-2 mb-1 border-t border-neutral-200 dark:border-neutral-700" aria-hidden />
       {categories.map((category) => (
-        <li key={category.path} role="menuitem">
+        <li key={category.path || "all"} role="menuitem">
           <button
+            type="button"
             onClick={() => handleCategoryClick(category.path)}
-            className="block w-full text-left px-4 py-2 text-sm hover:bg-gray-300 dark:hover:bg-gray-700 rounded-md"
+            className="block w-full rounded-md px-4 py-2 text-left text-sm hover:bg-gray-300 dark:hover:bg-gray-700"
           >
             {category.name}
           </button>
@@ -291,14 +315,25 @@ useEffect(() => {
 
   {isMobileCategoriesOpen && (
     <ul
-      className="absolute left-0 top-full mt-2 bg-white dark:bg-gray-800 rounded-md shadow-md p-2 w-48 z-50"
+      className="absolute left-0 top-full z-50 mt-2 w-52 rounded-md bg-white p-2 shadow-md dark:bg-gray-800"
       role="menu"
     >
+      <li role="menuitem">
+        <button
+          type="button"
+          onClick={handleBlackFridayClick}
+          className="mb-1 block w-full rounded-md bg-[#0a0a0a] px-4 py-2.5 text-left text-sm font-semibold uppercase tracking-wide text-[#c4a574] hover:bg-neutral-900"
+        >
+          {blackFridayLabel}
+        </button>
+      </li>
+      <li className="mx-2 mb-1 border-t border-neutral-200 dark:border-neutral-700" aria-hidden />
       {categories.map((category) => (
-        <li key={category.path} role="menuitem">
+        <li key={category.path || "all"} role="menuitem">
           <button
+            type="button"
             onClick={() => handleCategoryClick(category.path)}
-            className="block w-full text-left px-4 py-2 text-sm hover:bg-gray-300 dark:hover:bg-gray-700 rounded-md"
+            className="block w-full rounded-md px-4 py-2 text-left text-sm hover:bg-gray-300 dark:hover:bg-gray-700"
           >
             {category.name}
           </button>
