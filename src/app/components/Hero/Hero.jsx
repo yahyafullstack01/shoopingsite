@@ -77,11 +77,11 @@ export default function Hero() {
     () => [
       {
         type: "image",
-        src: "/hoom/bannerblack1.webp?v=10",
-        mobileSrc: "/hoom/bannerblack1-mobile.webp?v=8",
+        src: "/hoom/bannerblack1.webp?v=11",
+        mobileSrc: "/hoom/bannerblack1-mobile.webp?v=11",
         alt: "Latore Black Friday banner",
-        // Desktop: HTML type over text-free art (mobile art already has copy)
-        overlay: "bfDesktop",
+        // Same HTML type on mobile + desktop (text-free art)
+        overlay: "bf",
         title: "Black Friday",
         titleAccent: "%",
         subtitle: "[ ЗНИЖКИ ДО -25% ДО КІНЦЯ ЛИСТОПАДА ]",
@@ -110,7 +110,7 @@ export default function Hero() {
       {
         type: "image",
         src: "/hoom/Bannerdesk2.webp?v=4",
-        mobileSrc: "/hoom/bannerblack2-mobile.webp?v=8",
+        mobileSrc: "/hoom/Bannermob2.webp?v=12",
         alt: "Latore banner 2",
         ctaText: t[4],
         ctaHref: "/All-products",
@@ -314,18 +314,24 @@ export default function Hero() {
         )}
       </div>
 
-      {(slides[index] || first).overlay !== "bfDesktop" && (
+      {(slides[index] || first).overlay !== "bf" && (
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-black/10 to-transparent" />
       )}
 
       {(() => {
         const s = slides[index] || first;
-        if (s.overlay === "bfDesktop") {
+        if (s.overlay === "bf") {
           return (
             <div className="absolute inset-0 z-10 text-white">
-              {/* Desktop only: Black Friday script + Montserrat line on the right */}
-              <div className="pointer-events-none absolute inset-0 hidden items-center justify-start pl-[42%] pr-8 md:flex">
-                <div className="text-center">
+              {/*
+                Same fonts/format as design:
+                - Black Friday → Angelic Bonques Script 132 / lh 1.4 / ls 0
+                - % → Gistesy 146
+                - subtitle → Montserrat Regular 11.3 / lh 1.4 / ls 2.9px
+                Mobile: stacked under the paper. Desktop: right of the paper.
+              */}
+              <div className="pointer-events-none absolute inset-x-0 top-[52%] flex justify-center px-4 md:inset-0 md:top-0 md:items-center md:justify-start md:pl-[42%] md:pr-8">
+                <div className="text-center scale-[0.42] origin-top md:scale-100 md:origin-center">
                   {s.title && (
                     <h1
                       className="flex items-baseline justify-center gap-2 whitespace-nowrap text-white"
@@ -372,7 +378,7 @@ export default function Hero() {
               {s.ctaText && s.ctaHref && (
                 <a
                   href={s.ctaHref}
-                  className="absolute left-1/2 z-10 -translate-x-1/2 -translate-y-1/2 rounded border border-white/60 bg-black/25 px-5 py-2 text-sm font-medium text-white backdrop-blur-[6px] hover:bg-black/35 focus:outline-none focus:ring-2 focus:ring-white/50 sm:text-base top-[61%] md:top-auto md:bottom-10 md:translate-y-0"
+                  className="absolute left-1/2 z-10 -translate-x-1/2 -translate-y-1/2 rounded border border-white/60 bg-black/25 px-5 py-2 text-sm font-medium text-white backdrop-blur-[6px] hover:bg-black/35 focus:outline-none focus:ring-2 focus:ring-white/50 sm:text-base top-[78%] md:top-auto md:bottom-10 md:translate-y-0"
                 >
                   {s.ctaText}
                 </a>
