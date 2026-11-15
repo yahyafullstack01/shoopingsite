@@ -10,6 +10,11 @@ import localFont from "next/font/local";
 const montserrat = localFont({
   src: [
     {
+      path: "../../public/fonts/Montserrat-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
       path: "../../public/fonts/Montserrat-Medium.ttf",
       weight: "500",
       style: "normal",
@@ -24,12 +29,20 @@ const montserrat = localFont({
   preload: true,
 });
 
-/** Script face for Black Friday hero headline (matches banner lettering) */
-const greatVibes = localFont({
-  src: [{ path: "../../public/fonts/GreatVibes-Regular.ttf", weight: "400", style: "normal" }],
+/** Script face for Black Friday hero headline */
+const angelicBonques = localFont({
+  src: [{ path: "../../public/fonts/AngelicBonquesScript.ttf", weight: "400", style: "normal" }],
   display: "swap",
   preload: false,
-  variable: "--font-great-vibes",
+  variable: "--font-angelic-bonques",
+});
+
+/** Script face for Black Friday % accent */
+const gistesy = localFont({
+  src: [{ path: "../../public/fonts/Gistesy.ttf", weight: "400", style: "normal" }],
+  display: "swap",
+  preload: false,
+  variable: "--font-gistesy",
 });
 
 // Ці title/description/OG тут — ЗА ЗАМОВЧУВАННЯМ для домашньої сторінки.
@@ -87,7 +100,7 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="uk" className={`h-full ${montserrat.className} ${greatVibes.variable}`}>
+    <html lang="uk" className={`h-full ${montserrat.className} ${angelicBonques.variable} ${gistesy.variable}`}>
       <head>
         {/* Analytics — не блокують рендер */}
         {process.env.NODE_ENV === "production" && (

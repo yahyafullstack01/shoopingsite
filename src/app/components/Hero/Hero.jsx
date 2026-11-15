@@ -71,34 +71,33 @@ function LcpPicture({ desktopSrc, mobileSrc, alt, className, style }) {
 export default function Hero() {
   const { translateList } = useLanguage();
   const t = translateList("home", "hero");
-  const bf = translateList("home", "blackFriday") || {};
   const isMobile = useIsMobile();
 
   const slides = useMemo(
     () => [
       {
         type: "image",
-        // Text wiped from asset — headline rendered as HTML for sharp type
-        src: "/hoom/bannerblack1.webp?v=5",
-        mobileSrc: "/hoom/bannerblack1-mobile.webp?v=5",
+        src: "/hoom/bannerblack1.webp?v=10",
+        mobileSrc: "/hoom/bannerblack1-mobile.webp?v=8",
         alt: "Latore Black Friday banner",
-        overlay: "bf",
-        title: bf.bannerTitle || "Black Friday %",
-        subtitle:
-          bf.bannerSubtitle || "[ знижки до -25% до кінця листопада ]",
+        // Desktop: HTML type over text-free art (mobile art already has copy)
+        overlay: "bfDesktop",
+        title: "Black Friday",
+        titleAccent: "%",
+        subtitle: "[ ЗНИЖКИ ДО -25% ДО КІНЦЯ ЛИСТОПАДА ]",
         ctaText: t[4],
         ctaHref: "/black-friday",
         fit: "cover",
-        focus: "left",
+        focus: "center",
         fitMobile: "cover",
-        focusMobile: "top",
+        focusMobile: "center",
       },
       {
         type: "video",
-        src: "/hoom/bannerblackvideo.mp4",
-        mobileSrc: "/hoom/optimized/Bannermobilevideo.web.mp4",
-        poster: "/hoom/optimized/BannerVideoPosterDesk.webp",
-        mobilePoster: "/hoom/optimized/BannerVideoPosterMob.webp",
+        src: "/hoom/bannerblackvideo.mp4?v=9",
+        mobileSrc: "/hoom/bannerblackvideo-mobile.mp4?v=8",
+        poster: "/hoom/optimized/BannerVideoPosterDesk.webp?v=9",
+        mobilePoster: "/hoom/optimized/BannerBlackVideoPosterMob.jpg?v=8",
         startAtSec: 2,
         alt: "Latore banner video",
         ctaText: t[4],
@@ -111,7 +110,7 @@ export default function Hero() {
       {
         type: "image",
         src: "/hoom/Bannerdesk2.webp?v=4",
-        mobileSrc: "/hoom/Bannermob2.webp?v=7",
+        mobileSrc: "/hoom/bannerblack2-mobile.webp?v=8",
         alt: "Latore banner 2",
         ctaText: t[4],
         ctaHref: "/All-products",
@@ -121,7 +120,7 @@ export default function Hero() {
         focusMobile: "center",
       },
     ],
-    [t, bf.bannerTitle, bf.bannerSubtitle]
+    [t]
   );
 
   const [index, setIndex] = useState(0);
@@ -315,45 +314,74 @@ export default function Hero() {
         )}
       </div>
 
-      {/* Skip heavy vignette on BF slide so HTML type stays crisp/white */}
-      {(slides[index] || first).overlay !== "bf" && (
+      {(slides[index] || first).overlay !== "bfDesktop" && (
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-black/10 to-transparent" />
       )}
 
       {(() => {
         const s = slides[index] || first;
-        if (s.overlay === "bf") {
+        if (s.overlay === "bfDesktop") {
           return (
-            <div className="absolute inset-0 z-10 flex flex-col text-white">
-              {/* Desktop: text on the black right half; mobile: under the art */}
-              <div className="flex flex-1 flex-col items-center justify-end px-5 pb-[22%] text-center md:items-start md:justify-center md:pb-0 md:pl-[44%] md:pr-10 md:text-left lg:pl-[46%]">
-                {s.title && (
-                  <h1
-                    className="text-[clamp(2.4rem,7vw,4.75rem)] leading-[1.05] text-white"
-                    style={{ fontFamily: "var(--font-great-vibes), cursive" }}
-                  >
-                    {s.title}
-                  </h1>
-                )}
-                {s.subtitle && (
-                  <p className="mt-3 max-w-[34rem] text-[0.65rem] font-medium uppercase tracking-[0.22em] text-white/90 sm:text-xs md:tracking-[0.28em]">
-                    {s.subtitle}
-                  </p>
-                )}
-                {s.ctaText && s.ctaHref && (
-                  <a
-                    href={s.ctaHref}
-                    className="pointer-events-auto mt-6 inline-block rounded border border-white/60 bg-black/25 px-5 py-2 text-sm font-medium text-white backdrop-blur-[6px] hover:bg-black/35 focus:outline-none focus:ring-2 focus:ring-white/50 sm:text-base"
-                  >
-                    {s.ctaText}
-                  </a>
-                )}
+            <div className="absolute inset-0 z-10 text-white">
+              {/* Desktop only: Black Friday script + Montserrat line on the right */}
+              <div className="pointer-events-none absolute inset-0 hidden items-center justify-start pl-[42%] pr-8 md:flex">
+                <div className="text-center">
+                  {s.title && (
+                    <h1
+                      className="flex items-baseline justify-center gap-2 whitespace-nowrap text-white"
+                      style={{
+                        fontFamily: "var(--font-angelic-bonques), cursive",
+                        fontSize: "132px",
+                        lineHeight: 1.4,
+                        letterSpacing: 0,
+                        fontWeight: 400,
+                      }}
+                    >
+                      <span>{s.title}</span>
+                      {s.titleAccent && (
+                        <span
+                          aria-hidden="true"
+                          style={{
+                            fontFamily: "var(--font-gistesy), cursive",
+                            fontSize: "146px",
+                            lineHeight: 1,
+                            letterSpacing: 0,
+                            fontWeight: 400,
+                          }}
+                        >
+                          {s.titleAccent}
+                        </span>
+                      )}
+                    </h1>
+                  )}
+                  {s.subtitle && (
+                    <p
+                      className="mx-auto mt-1 max-w-[22rem] uppercase text-white"
+                      style={{
+                        fontWeight: 400,
+                        fontSize: "11.3px",
+                        lineHeight: 1.4,
+                        letterSpacing: "2.9px",
+                      }}
+                    >
+                      {s.subtitle}
+                    </p>
+                  )}
+                </div>
               </div>
+              {s.ctaText && s.ctaHref && (
+                <a
+                  href={s.ctaHref}
+                  className="absolute left-1/2 z-10 -translate-x-1/2 -translate-y-1/2 rounded border border-white/60 bg-black/25 px-5 py-2 text-sm font-medium text-white backdrop-blur-[6px] hover:bg-black/35 focus:outline-none focus:ring-2 focus:ring-white/50 sm:text-base top-[61%] md:top-auto md:bottom-10 md:translate-y-0"
+                >
+                  {s.ctaText}
+                </a>
+              )}
             </div>
           );
         }
         return (
-          <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-4 text-center text-white">
+          <div className="absolute inset-0 z-10 flex flex-col items-center px-4 text-center text-white md:justify-center">
             {(s.title || s.subtitle) && (
               <>
                 {s.title && (
@@ -371,7 +399,7 @@ export default function Hero() {
             {s.ctaText && s.ctaHref && (
               <a
                 href={s.ctaHref}
-                className="mt-6 inline-block rounded border border-white/60 bg-black/25 px-5 py-2 text-sm font-medium text-white backdrop-blur-[6px] hover:bg-black/35 focus:outline-none focus:ring-2 focus:ring-white/50 sm:text-base"
+                className="absolute left-1/2 top-[61%] z-10 -translate-x-1/2 -translate-y-1/2 inline-block rounded border border-white/60 bg-black/25 px-5 py-2 text-sm font-medium text-white backdrop-blur-[6px] hover:bg-black/35 focus:outline-none focus:ring-2 focus:ring-white/50 sm:text-base md:static md:left-auto md:top-auto md:mt-6 md:translate-x-0 md:translate-y-0"
               >
                 {s.ctaText}
               </a>
