@@ -71,21 +71,27 @@ function LcpPicture({ desktopSrc, mobileSrc, alt, className, style }) {
 export default function Hero() {
   const { translateList } = useLanguage();
   const t = translateList("home", "hero");
+  const bf = translateList("home", "blackFriday") || {};
   const isMobile = useIsMobile();
 
   const slides = useMemo(
     () => [
       {
         type: "image",
-        src: "/hoom/bannerblack1.webp?v=4",
-        mobileSrc: "/hoom/Bannermob.webp?v=6",
+        // Text wiped from asset — headline rendered as HTML for sharp type
+        src: "/hoom/bannerblack1.webp?v=5",
+        mobileSrc: "/hoom/bannerblack1-mobile.webp?v=5",
         alt: "Latore Black Friday banner",
+        overlay: "bf",
+        title: bf.bannerTitle || "Black Friday %",
+        subtitle:
+          bf.bannerSubtitle || "[ знижки до -25% до кінця листопада ]",
         ctaText: t[4],
         ctaHref: "/black-friday",
         fit: "cover",
-        focus: "center",
+        focus: "left",
         fitMobile: "cover",
-        focusMobile: "center",
+        focusMobile: "top",
       },
       {
         type: "video",
@@ -115,7 +121,7 @@ export default function Hero() {
         focusMobile: "center",
       },
     ],
-    [t]
+    [t, bf.bannerTitle, bf.bannerSubtitle]
   );
 
   const [index, setIndex] = useState(0);
@@ -309,10 +315,43 @@ export default function Hero() {
         )}
       </div>
 
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-black/10 to-transparent" />
+      {/* Skip heavy vignette on BF slide so HTML type stays crisp/white */}
+      {(slides[index] || first).overlay !== "bf" && (
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-black/10 to-transparent" />
+      )}
 
       {(() => {
         const s = slides[index] || first;
+        if (s.overlay === "bf") {
+          return (
+            <div className="absolute inset-0 z-10 flex flex-col text-white">
+              {/* Desktop: text on the black right half; mobile: under the art */}
+              <div className="flex flex-1 flex-col items-center justify-end px-5 pb-[22%] text-center md:items-start md:justify-center md:pb-0 md:pl-[44%] md:pr-10 md:text-left lg:pl-[46%]">
+                {s.title && (
+                  <h1
+                    className="text-[clamp(2.4rem,7vw,4.75rem)] leading-[1.05] text-white"
+                    style={{ fontFamily: "var(--font-great-vibes), cursive" }}
+                  >
+                    {s.title}
+                  </h1>
+                )}
+                {s.subtitle && (
+                  <p className="mt-3 max-w-[34rem] text-[0.65rem] font-medium uppercase tracking-[0.22em] text-white/90 sm:text-xs md:tracking-[0.28em]">
+                    {s.subtitle}
+                  </p>
+                )}
+                {s.ctaText && s.ctaHref && (
+                  <a
+                    href={s.ctaHref}
+                    className="pointer-events-auto mt-6 inline-block rounded border border-white/60 bg-black/25 px-5 py-2 text-sm font-medium text-white backdrop-blur-[6px] hover:bg-black/35 focus:outline-none focus:ring-2 focus:ring-white/50 sm:text-base"
+                  >
+                    {s.ctaText}
+                  </a>
+                )}
+              </div>
+            </div>
+          );
+        }
         return (
           <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-4 text-center text-white">
             {(s.title || s.subtitle) && (

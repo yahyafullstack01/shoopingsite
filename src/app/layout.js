@@ -24,6 +24,14 @@ const montserrat = localFont({
   preload: true,
 });
 
+/** Script face for Black Friday hero headline (matches banner lettering) */
+const greatVibes = localFont({
+  src: [{ path: "../../public/fonts/GreatVibes-Regular.ttf", weight: "400", style: "normal" }],
+  display: "swap",
+  preload: false,
+  variable: "--font-great-vibes",
+});
+
 // Ці title/description/OG тут — ЗА ЗАМОВЧУВАННЯМ для домашньої сторінки.
 // Будь-яка інша сторінка, що експортує власний `metadata`, автоматично
 // перекриває їх через вбудований механізм Next.js Metadata API —
@@ -79,7 +87,7 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="uk" className={`h-full ${montserrat.className}`}>
+    <html lang="uk" className={`h-full ${montserrat.className} ${greatVibes.variable}`}>
       <head>
         {/* Analytics — не блокують рендер */}
         {process.env.NODE_ENV === "production" && (
