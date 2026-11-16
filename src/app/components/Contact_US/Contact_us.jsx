@@ -29,7 +29,7 @@ const ContactUs = () => {
     phone: "",
     email: "",
     message: "",
-    productImage: null, 
+    productImage: null,
   });
   const [photoPreview, setPhotoPreview] = useState(null);
 

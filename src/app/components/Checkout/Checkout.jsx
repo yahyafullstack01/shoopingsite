@@ -10,6 +10,7 @@ import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
 import { FiUser, FiMail, FiPhone, FiTruck, FiCreditCard, FiMessageSquare } from "react-icons/fi";
 import { useLanguage } from '../../Functions/useLanguage';
+import { resolveCityQueryForNovaPoshta } from '../../utils/cityNameMap';
 
 import OrderSummary from "../OrderSummary/OrderSummary"
 export default function Checkout() {
@@ -30,6 +31,8 @@ export default function Checkout() {
   const [filteredCities, setFilteredCities] = useState([]);
   const [selectedCityRef, setSelectedCityRef] = useState('');
   const [warehouses, setWarehouses] = useState([]);
+  const [warehouseQuery, setWarehouseQuery] = useState('');
+  const [isWarehouseListOpen, setIsWarehouseListOpen] = useState(false);
 
   const [selectedWarehouse, setSelectedWarehouse] = useState('');
 const [selectedWarehouseRef, setSelectedWarehouseRef] = useState('');
@@ -52,7 +55,54 @@ const [selectedWarehouseRef, setSelectedWarehouseRef] = useState('');
     const id = getSessionId();
     setSessionId(id);
   }, []);
- 
+
+  // Відновлюємо чернетку форми, якщо користувач повернувся назад зі сторінки оплати
+  const [isDraftRestored, setIsDraftRestored] = useState(false);
+  useEffect(() => {
+    try {
+      const saved = JSON.parse(localStorage.getItem('checkoutDraft') || 'null');
+      if (saved) {
+        setFirstName(saved.firstName || '');
+        setLastName(saved.lastName || '');
+        setPatronymic(saved.patronymic || '');
+        setEmail(saved.email || '');
+        setPhone(saved.phone || '');
+        setComment(saved.comment || '');
+        setDeliveryMethod(saved.deliveryMethod || '');
+        setCityQuery(saved.cityQuery || '');
+        setSelectedCityRef(saved.selectedCityRef || '');
+        setSelectedWarehouse(saved.selectedWarehouse || '');
+        setSelectedWarehouseRef(saved.selectedWarehouseRef || '');
+        setWarehouseQuery(saved.selectedWarehouse || '');
+        setPaymentType(saved.paymentType || '');
+        setOnlinePaymentMethod(saved.onlinePaymentMethod || '');
+        if (saved.selectedCityRef && saved.deliveryMethod === 'nova-poshta') {
+          fetchWarehouses(saved.selectedCityRef);
+        }
+      }
+    } catch (e) {
+      console.warn('Не вдалося відновити чернетку форми:', e);
+    } finally {
+      setIsDraftRestored(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!isDraftRestored) return;
+    const draft = {
+      firstName, lastName, patronymic, email, phone, comment,
+      deliveryMethod, cityQuery, selectedCityRef,
+      selectedWarehouse, selectedWarehouseRef,
+      paymentType, onlinePaymentMethod,
+    };
+    localStorage.setItem('checkoutDraft', JSON.stringify(draft));
+  }, [
+    isDraftRestored, firstName, lastName, patronymic, email, phone, comment,
+    deliveryMethod, cityQuery, selectedCityRef,
+    selectedWarehouse, selectedWarehouseRef,
+    paymentType, onlinePaymentMethod,
+  ]);
+
   useEffect(() => {
     const amount = localStorage.getItem('totalAmount');
     if (amount) setTotal(Number(amount));
@@ -61,21 +111,32 @@ const [selectedWarehouseRef, setSelectedWarehouseRef] = useState('');
   const prepayAmount = (total * 0.1).toFixed(2);
   const BACKEND_URL = getBackendBaseUrl();
 
+  const searchSettlements = async (apiKey, query) => {
+    const response = await fetch('https://api.novaposhta.ua/v2.0/json/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        apiKey,
+        modelName: 'Address',
+        calledMethod: 'searchSettlements',
+        methodProperties: { CityName: query, Limit: 10 }
+      })
+    });
+    const data = await response.json();
+    return data.data?.[0]?.Addresses || [];
+  };
+
   const fetchNovaPoshtaCities = async (query) => {
     const apiKey = process.env.NEXT_PUBLIC_NP_API_KEY;
     try {
-      const response = await fetch('https://api.novaposhta.ua/v2.0/json/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          apiKey,
-          modelName: 'Address',
-          calledMethod: 'searchSettlements',
-          methodProperties: { CityName: query, Limit: 10 }
-        })
-      });
-      const data = await response.json();
-      return data.data?.[0]?.Addresses || [];
+      // Nova Poshta only matches Ukrainian/Russian spellings — try the
+      // translated name too so "Odessa"/"Kyiv" etc. still find results.
+      const translatedQuery = resolveCityQueryForNovaPoshta(query);
+      const results = await searchSettlements(apiKey, translatedQuery);
+      if (results.length || translatedQuery === query) {
+        return results;
+      }
+      return await searchSettlements(apiKey, query);
     } catch (error) {
       console.error('Помилка при запиті до Нової Пошти:', error);
       return [];
@@ -107,6 +168,9 @@ const [selectedWarehouseRef, setSelectedWarehouseRef] = useState('');
     setCityQuery(value);
     setSelectedCityRef('');
     setWarehouses([]);
+    setWarehouseQuery('');
+    setSelectedWarehouseRef('');
+    setSelectedWarehouse('');
 
     if (value.length < 2) {
       setFilteredCities([]);
@@ -351,6 +415,7 @@ const handleWayforpayClick = async () => {
     setPaymentType('');
     setOnlinePaymentMethod('');
     setErrors({});
+    localStorage.removeItem('checkoutDraft');
   };
   
   const handleOrderWithoutPayment = async () => {
@@ -600,24 +665,54 @@ const handleWayforpayClick = async () => {
           </div>
 
           {warehouses.length > 0 && (
-            <div className="mt-4">
+            <div className="mt-4 relative">
               <label className="block mb-1 font-normal text-gray-700 dark:text-white">
                 {t.warehouse || "Branch"}
               </label>
-              <select
-                className="w-full p-3 border rounded-lg bg-white dark:bg-zinc-800 text-gray-800 dark:text-white border-gray-300 dark:border-zinc-600"
-                value={selectedWarehouseRef}
+              <input
+                type="text"
+                value={warehouseQuery}
                 onChange={(e) => {
-                  const selectedWh = warehouses.find(wh => wh.Ref === e.target.value);
-                  setSelectedWarehouseRef(e.target.value);
-                  setSelectedWarehouse(selectedWh?.Description || '');
+                  setWarehouseQuery(e.target.value);
+                  setSelectedWarehouseRef('');
+                  setSelectedWarehouse('');
+                  setIsWarehouseListOpen(true);
                 }}
-              >
-                <option value="">{t.warehousePlaceholder || "Select a branch"}</option>
-                {warehouses.map((wh) => (
-                  <option key={wh.Ref} value={wh.Ref}>{wh.Description}</option>
-                ))}
-              </select>
+                onFocus={() => setIsWarehouseListOpen(true)}
+                onBlur={() => setTimeout(() => setIsWarehouseListOpen(false), 150)}
+                placeholder={t.warehousePlaceholder || "Select a branch"}
+                className="w-full p-3 border rounded-lg bg-white dark:bg-zinc-800 text-gray-800 dark:text-white border-gray-300 dark:border-zinc-600"
+              />
+              {isWarehouseListOpen && (
+                <ul className="mt-2 border rounded shadow bg-white dark:bg-zinc-800 max-h-60 overflow-auto z-10 relative">
+                  {warehouses
+                    .filter((wh) =>
+                      wh.Description.toLowerCase().includes(warehouseQuery.toLowerCase())
+                    )
+                    .slice(0, 50)
+                    .map((wh) => (
+                      <li
+                        key={wh.Ref}
+                        onMouseDown={() => {
+                          setSelectedWarehouseRef(wh.Ref);
+                          setSelectedWarehouse(wh.Description);
+                          setWarehouseQuery(wh.Description);
+                          setIsWarehouseListOpen(false);
+                        }}
+                        className="p-2 hover:bg-gray-100 dark:hover:bg-zinc-400 cursor-pointer"
+                      >
+                        {wh.Description}
+                      </li>
+                    ))}
+                  {warehouses.filter((wh) =>
+                    wh.Description.toLowerCase().includes(warehouseQuery.toLowerCase())
+                  ).length === 0 && (
+                    <li className="p-2 text-gray-500 dark:text-gray-300">
+                      {t.noBranchFound || "No branch found"}
+                    </li>
+                  )}
+                </ul>
+              )}
             </div>
           )}
         </>
@@ -658,13 +753,13 @@ const handleWayforpayClick = async () => {
           {t.paymentType || "Payment type"}
         </label>
         <label className="flex items-center space-x-2">
-          <input type="radio" name="payment" value="full" checked={paymentType === 'full'} onChange={() => { setPaymentType('full'); setOnlinePaymentMethod(''); }} />
+          <input type="radio" name="payment" value="full" checked={paymentType === 'full'} onChange={() => { setPaymentType('full'); setOnlinePaymentMethod('wayforpay'); }} />
           <span className="text-gray-800 dark:text-white">
             {fill(t.payFull || "Pay online (full amount: {total} UAH)", { total })}
           </span>
         </label>
         <label className="flex items-center space-x-2">
-          <input type="radio" name="payment" value="half" checked={paymentType === 'half'} onChange={() => { setPaymentType('half'); setOnlinePaymentMethod(''); }} />
+          <input type="radio" name="payment" value="half" checked={paymentType === 'half'} onChange={() => { setPaymentType('half'); setOnlinePaymentMethod('wayforpay'); }} />
           <span className="text-gray-800 dark:text-white">
             {fill(t.payHalf || "50% prepayment ({amount} UAH)", {
               amount: Math.round(total / 2),
@@ -679,20 +774,11 @@ const handleWayforpayClick = async () => {
 
       {/* ОНЛАЙН ОПЛАТА */}
       {(paymentType === 'full' || paymentType === 'half') && (
-        <div className="bg-gray-50 dark:bg-zinc-800 p-4 rounded-lg border border-gray-200 dark:border-zinc-600 mt-4">
-          <label className="block font-semibold mb-2 text-gray-700 dark:text-white">
-            {t.onlineMethod || "Online payment method"}
-          </label>
-          <label className="flex items-center space-x-2">
-            <input
-              type="radio"
-              name="online-method"
-              value="wayforpay"
-              checked={onlinePaymentMethod === 'wayforpay'}
-              onChange={() => setOnlinePaymentMethod('wayforpay')}
-            />
-            <span className="text-gray-800 dark:text-white">WayForPay</span>
-          </label>
+        <div className="bg-gray-50 dark:bg-zinc-800 p-4 rounded-lg border border-gray-200 dark:border-zinc-600 mt-4 flex items-center space-x-2">
+          <span className="text-gray-500 dark:text-gray-300 text-sm">
+            {t.onlineMethod || "Online payment method"}:
+          </span>
+          <span className="text-gray-800 dark:text-white font-semibold">WayForPay</span>
         </div>
       )}
 
@@ -713,9 +799,7 @@ const handleWayforpayClick = async () => {
             className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-xl shadow flex items-center gap-2"
           >
             <FiCreditCard />
-            {paymentType === 'half'
-              ? t.payButtonHalf || 'Pay 50%'
-              : t.payButtonFull || 'Pay full amount'}
+            {t.payButton || 'Pay'}
           </button>
         )}
 
