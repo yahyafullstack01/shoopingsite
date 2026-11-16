@@ -159,7 +159,7 @@ const NewArrivals = () => {
         </button>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-5">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-5">
         {rendered.map((product, index) => (
           <ProductCard
             key={getId(product)}
