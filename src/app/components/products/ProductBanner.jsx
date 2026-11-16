@@ -46,6 +46,7 @@ const ProductBanner = ({
   const [currentImage, setCurrentImage] = useState(
     selectedProduct?.image || "/4.jpg"
   );
+  const [selectedColor, setSelectedColor] = useState("");
 
   const [lastCartQuantity, setLastCartQuantity] = useState(1);
   const [showToast, setShowToast] = useState(false);
@@ -92,8 +93,20 @@ const ProductBanner = ({
     if (videoRef.current) {
       try { videoRef.current.pause(); } catch {}
     }
-    setCurrentImage(selectedProduct?.image || "/4.jpg");
+    const coverImage = selectedProduct?.image || "/4.jpg";
+    setCurrentImage(coverImage);
     setFav(isFavorite(selectedProduct?.id));
+    if (Array.isArray(selectedProduct?.colorImages)) {
+      const idx = colorIndexForMedia(coverImage);
+      const colors =
+        selectedProduct?.translations?.[language]?.colors ||
+        selectedProduct?.translations?.EN?.colors ||
+        selectedProduct?.colors ||
+        [];
+      setSelectedColor(idx >= 0 ? colors[idx] || "" : "");
+    } else {
+      setSelectedColor("");
+    }
 
     requestAnimationFrame(() => {
       const el = modalBodyRef.current;
@@ -119,11 +132,44 @@ const ProductBanner = ({
     return () => window.removeEventListener('unhandledrejection', swallowAbort);
   }, []);
 
+  const translatedColorsForBanner =
+    selectedProduct?.translations?.[language]?.colors ||
+    selectedProduct?.translations?.EN?.colors ||
+    selectedProduct?.colors ||
+    [];
+
+  // Keep the color swatch in sync with whichever photo is currently showing,
+  // and vice versa — browsing the gallery should update the selected color.
+  const colorIndexForMedia = (media) => {
+    if (!Array.isArray(selectedProduct?.colorImages)) return -1;
+    const key = mediaKey(media);
+    return selectedProduct.colorImages.findIndex(
+      (imgs) => Array.isArray(imgs) && imgs.some((img) => mediaKey(img) === key)
+    );
+  };
+
   const onSelectMedia = (media) => {
     if (isVideo(currentImage) && videoRef.current) {
       try { videoRef.current.pause(); } catch {}
     }
     setCurrentImage(media);
+    const colorIdx = colorIndexForMedia(media);
+    if (colorIdx >= 0 && translatedColorsForBanner[colorIdx]) {
+      setSelectedColor(translatedColorsForBanner[colorIdx]);
+    }
+  };
+
+  const handleColorChange = (color) => {
+    setSelectedColor(color);
+    if (!Array.isArray(selectedProduct?.colorImages)) return;
+    const colorIdx = translatedColorsForBanner.indexOf(color);
+    const firstImg = selectedProduct.colorImages[colorIdx]?.[0];
+    if (firstImg) {
+      if (isVideo(currentImage) && videoRef.current) {
+        try { videoRef.current.pause(); } catch {}
+      }
+      setCurrentImage(firstImg);
+    }
   };
 
   const SWIPE_MIN_PX = 48;
@@ -455,6 +501,8 @@ const ProductBanner = ({
                   oldPrice: selectedProduct.discountPrice ? selectedProduct.price : null,
                 }}
                 onAddToCartClick={handleAddToCart}
+                colorValue={selectedColor}
+                onColorChange={handleColorChange}
               />
           </div>
         </div>

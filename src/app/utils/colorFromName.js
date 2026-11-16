@@ -27,6 +27,16 @@ const RULES = [
   [/coral|корал/, "#f97316"],
   [/lemon|лимон|лайм|lime/, "#84cc16"],
   [/tan|коньяк|cognac|карамел|caramel/, "#a16207"],
+  [/cappuccino|капучіно|капучино|mocha|мокко/, "#a9784f"],
+  [/marsala/, "#955251"],
+  [/jeans/, "#3f5a7d"],
+  [/butter|мало/, "#f5e6a8"],
+  [/hemp|конопл/, "#c2b280"],
+  [/eucalyptus|евкаліпт|евкалипт/, "#8da399"],
+  [/emerald|смарагд|изумруд/, "#046307"],
+  [/water[\s-]?color|water\b|вода|акварел/, "#bcd8e3"],
+  [/wormwood|полин/, "#7c7c52"],
+  [/houndstooth|гусяча лапка|гусиная лапка/, "#4a4a4a"],
 ];
 
 export function approximateColorFromLabel(label) {

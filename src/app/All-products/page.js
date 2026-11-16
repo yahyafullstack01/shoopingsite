@@ -51,6 +51,7 @@ function mapRowForCatalog(p) {
     discountPrice: p.discountPrice,
     sizes: Array.isArray(p.sizes) ? p.sizes : [],
     colors: Array.isArray(p.colors) ? p.colors : colorsFromEn,
+    colorImages: Array.isArray(p.colorImages) ? p.colorImages : undefined,
     images:
       Array.isArray(p.images) && p.images.length > 0
         ? p.images

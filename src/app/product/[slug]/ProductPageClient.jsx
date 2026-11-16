@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
@@ -60,15 +60,80 @@ export default function ProductPageClient({ product, relatedProducts = [] }) {
 
   const gallery = useMemo(() => collectGallery(product), [product]);
   const safeGallery = gallery.length > 0 ? gallery : [getProductImageSrc(product.image)];
+  const displayGallery = safeGallery;
+
+  // Optional per-color image sets: product.colorImages is an array aligned by
+  // position to the colors array (same order in every language translation),
+  // e.g. colorImages[0] = images for the first color, colorImages[1] = second.
+  // Images stay all visible in the gallery — selecting a color just jumps the
+  // main slide to that color's first photo, and browsing the gallery updates
+  // the selected color to match whichever photo is showing.
+  const resolvedColorImages = useMemo(() => {
+    if (!Array.isArray(product.colorImages)) return null;
+    return product.colorImages.map((imgs) =>
+      Array.isArray(imgs) ? imgs.map(getProductImageSrc) : []
+    );
+  }, [product.colorImages]);
+
+  const slideToColorIndex = useCallback(
+    (slideIdx) => {
+      if (!resolvedColorImages) return -1;
+      const src = displayGallery[slideIdx];
+      return resolvedColorImages.findIndex((imgs) => imgs.includes(src));
+    },
+    [resolvedColorImages, displayGallery]
+  );
+
+  const firstSlideForColorIndex = useCallback(
+    (colorIdx) => {
+      if (!resolvedColorImages || !resolvedColorImages[colorIdx]?.length) return -1;
+      const firstSrc = resolvedColorImages[colorIdx][0];
+      const idx = displayGallery.indexOf(firstSrc);
+      return idx;
+    },
+    [resolvedColorImages, displayGallery]
+  );
+
+  // On first load, pre-select whichever color the opening photo (slide 0)
+  // belongs to, so the swatch matches what's actually showing.
+  useEffect(() => {
+    if (!resolvedColorImages) return;
+    const matchedColorIdx = slideToColorIndex(0);
+    if (matchedColorIdx >= 0) {
+      const matchedColor = translatedColors[matchedColorIdx];
+      if (matchedColor) setSelectedColor(matchedColor);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [product.id]);
 
   const price = product?.discountPrice ?? product?.price;
   const oldPrice = product?.discountPrice ? product?.price : null;
 
+  const goToSlide = useCallback(
+    (i) => {
+      setSlide(i);
+      const matchedColorIdx = slideToColorIndex(i);
+      if (matchedColorIdx >= 0) {
+        const matchedColor = translatedColors[matchedColorIdx];
+        if (matchedColor) setSelectedColor(matchedColor);
+      }
+    },
+    [slideToColorIndex, translatedColors]
+  );
+
   const go = useCallback(
     (dir) => {
-      setSlide((i) => (i + dir + safeGallery.length) % safeGallery.length);
+      setSlide((i) => {
+        const next = (i + dir + displayGallery.length) % displayGallery.length;
+        const matchedColorIdx = slideToColorIndex(next);
+        if (matchedColorIdx >= 0) {
+          const matchedColor = translatedColors[matchedColorIdx];
+          if (matchedColor) setSelectedColor(matchedColor);
+        }
+        return next;
+      });
     },
-    [safeGallery.length]
+    [displayGallery.length, slideToColorIndex, translatedColors]
   );
 
   // Same request shape AllProducts.jsx already sends to the backend —
@@ -178,7 +243,7 @@ export default function ProductPageClient({ product, relatedProducts = [] }) {
           <div>
             <div className="relative aspect-[3/4] w-full overflow-hidden rounded-2xl bg-neutral-200 dark:bg-neutral-900">
               <Image
-                src={safeGallery[slide] || safeGallery[0]}
+                src={displayGallery[slide] || displayGallery[0]}
                 alt={`${translatedName} ${slide + 1}`}
                 fill
                 sizes="(max-width: 1024px) 100vw, 560px"
@@ -186,7 +251,7 @@ export default function ProductPageClient({ product, relatedProducts = [] }) {
                 quality={75}
                 priority
               />
-              {safeGallery.length > 1 ? (
+              {displayGallery.length > 1 ? (
                 <>
                   <button
                     type="button"
@@ -207,13 +272,13 @@ export default function ProductPageClient({ product, relatedProducts = [] }) {
                 </>
               ) : null}
             </div>
-            {safeGallery.length > 1 ? (
+            {displayGallery.length > 1 ? (
               <div className="mt-3 flex gap-2 overflow-x-auto pb-1">
-                {safeGallery.map((src, i) => (
+                {displayGallery.map((src, i) => (
                   <button
                     key={src + i}
                     type="button"
-                    onClick={() => setSlide(i)}
+                    onClick={() => goToSlide(i)}
                     className={`relative h-20 w-16 shrink-0 overflow-hidden rounded-lg transition ${
                       i === slide
                         ? "ring-2 ring-neutral-900 ring-offset-1 dark:ring-white"
@@ -268,6 +333,9 @@ export default function ProductPageClient({ product, relatedProducts = [] }) {
                 value={selectedColor}
                 onChange={(c) => {
                   setSelectedColor(c);
+                  const colorIdx = translatedColors.indexOf(c);
+                  const targetSlide = firstSlideForColorIndex(colorIdx);
+                  if (targetSlide >= 0) setSlide(targetSlide);
                   if (c) setColorError("");
                 }}
                 error={colorError}

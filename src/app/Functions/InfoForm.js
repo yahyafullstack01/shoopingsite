@@ -34,9 +34,16 @@ export default function InfoForm({
   requireSelection = false,
   cardSections = false,
   gridEmbed = false,
+  colorValue,
+  onColorChange,
 }) {
   const router = useRouter();
-  const [selectedColor, setSelectedColor] = useState("");
+  const [internalSelectedColor, setInternalSelectedColor] = useState("");
+  const selectedColor = colorValue !== undefined ? colorValue : internalSelectedColor;
+  const setSelectedColor = (c) => {
+    setInternalSelectedColor(c);
+    if (onColorChange) onColorChange(c);
+  };
   const [selectedSize, setSelectedSize] = useState("");
   const [quantity, setQuantity] = useState(1);
   const [colorError, setColorError] = useState("");

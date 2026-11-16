@@ -48,14 +48,60 @@ export default function QuickAddModal({ product, onClose, onAddToCart }) {
   const price = product?.discountPrice ?? product?.price;
   const oldPrice = product?.discountPrice ? product?.price : null;
 
+  // Optional per-color image sets: product.colorImages is an array aligned by
+  // position to the colors array. Every photo stays visible in the gallery —
+  // picking a color just jumps to its first photo, and browsing the gallery
+  // updates the selected color to match whichever photo is showing.
+  const resolvedColorImages = useMemo(() => {
+    if (!Array.isArray(product?.colorImages)) return null;
+    return product.colorImages.map((imgs) =>
+      Array.isArray(imgs) ? imgs.map(getProductImageSrc) : []
+    );
+  }, [product?.colorImages]);
+
+  const slideToColorIndex = useCallback(
+    (slideIdx) => {
+      if (!resolvedColorImages) return -1;
+      const src = gallery[slideIdx];
+      return resolvedColorImages.findIndex((imgs) => imgs.includes(src));
+    },
+    [resolvedColorImages, gallery]
+  );
+
+  const firstSlideForColorIndex = useCallback(
+    (colorIdx) => {
+      if (!resolvedColorImages || !resolvedColorImages[colorIdx]?.length) return -1;
+      return gallery.indexOf(resolvedColorImages[colorIdx][0]);
+    },
+    [resolvedColorImages, gallery]
+  );
+
+  const goToSlide = useCallback(
+    (i) => {
+      setSlide(i);
+      const matchedColorIdx = slideToColorIndex(i);
+      if (matchedColorIdx >= 0) {
+        const matchedColor = (translatedColors || [])[matchedColorIdx];
+        if (matchedColor) setSelectedColor(matchedColor);
+      }
+    },
+    [slideToColorIndex, translatedColors]
+  );
+
   useEffect(() => {
     setSlide(0);
-    setSelectedColor("");
+    if (resolvedColorImages) {
+      const idx = slideToColorIndex(0);
+      setSelectedColor(idx >= 0 ? (translatedColors || [])[idx] || "" : "");
+    } else {
+      setSelectedColor("");
+    }
     setSelectedSize("");
     setQuantity(1);
     setColorError("");
     setSizeError("");
     setQuantityError("");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [product?.id]);
 
   useEffect(() => {
@@ -68,9 +114,17 @@ export default function QuickAddModal({ product, onClose, onAddToCart }) {
   const go = useCallback(
     (dir) => {
       const n = Math.max(gallery.length, 1);
-      setSlide((i) => (i + dir + n) % n);
+      setSlide((i) => {
+        const next = (i + dir + n) % n;
+        const matchedColorIdx = slideToColorIndex(next);
+        if (matchedColorIdx >= 0) {
+          const matchedColor = (translatedColors || [])[matchedColorIdx];
+          if (matchedColor) setSelectedColor(matchedColor);
+        }
+        return next;
+      });
     },
-    [gallery.length]
+    [gallery.length, slideToColorIndex, translatedColors]
   );
 
   const handleAddToCartClick = () => {
@@ -199,7 +253,7 @@ export default function QuickAddModal({ product, onClose, onAddToCart }) {
                           key={i}
                           type="button"
                           aria-label={`Photo ${i + 1}`}
-                          onClick={() => setSlide(i)}
+                          onClick={() => goToSlide(i)}
                           className={`h-1.5 rounded-full transition ${
                             i === slide
                               ? "w-4 bg-white"
@@ -218,7 +272,7 @@ export default function QuickAddModal({ product, onClose, onAddToCart }) {
                     <button
                       key={src + i}
                       type="button"
-                      onClick={() => setSlide(i)}
+                      onClick={() => goToSlide(i)}
                       className={`relative h-16 w-12 shrink-0 overflow-hidden rounded-lg transition ${
                         i === slide
                           ? "ring-2 ring-neutral-900 ring-offset-1 dark:ring-white"
@@ -247,6 +301,9 @@ export default function QuickAddModal({ product, onClose, onAddToCart }) {
             value={selectedColor}
             onChange={(c) => {
               setSelectedColor(c);
+              const colorIdx = (translatedColors || []).indexOf(c);
+              const targetSlide = firstSlideForColorIndex(colorIdx);
+              if (targetSlide >= 0) setSlide(targetSlide);
               if (c) setColorError("");
             }}
             error={colorError}
