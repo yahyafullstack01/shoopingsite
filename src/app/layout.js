@@ -126,6 +126,21 @@ export default function RootLayout({ children }) {
               `}
             </Script>
 
+            {/* Crisp chat widget */}
+            <Script id="crisp-chat" strategy="afterInteractive">
+              {`
+                window.$crisp=[];
+                window.CRISP_WEBSITE_ID="83d099b3-71c7-4e7a-8e40-612849a04a6d";
+                (function(){
+                  var d=document;
+                  var s=d.createElement("script");
+                  s.src="https://client.crisp.chat/l.js";
+                  s.async=1;
+                  d.getElementsByTagName("head")[0].appendChild(s);
+                })();
+              `}
+            </Script>
+
             {/* FB Pixel — краще lazyOnload на мобільному */}
             <Script id="fb-pixel" strategy="lazyOnload">
               {`

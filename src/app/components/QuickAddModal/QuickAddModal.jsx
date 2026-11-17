@@ -90,12 +90,10 @@ export default function QuickAddModal({ product, onClose, onAddToCart }) {
 
   useEffect(() => {
     setSlide(0);
-    if (resolvedColorImages) {
-      const idx = slideToColorIndex(0);
-      setSelectedColor(idx >= 0 ? (translatedColors || [])[idx] || "" : "");
-    } else {
-      setSelectedColor("");
-    }
+    // Only one color on offer? There's no real choice to make, so skip
+    // forcing the user to click it. Multiple colors stay unselected until
+    // the user actively picks one.
+    setSelectedColor((translatedColors || []).length === 1 ? translatedColors[0] : "");
     setSelectedSize("");
     setQuantity(1);
     setColorError("");

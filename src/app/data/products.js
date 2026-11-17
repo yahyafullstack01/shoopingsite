@@ -1,5 +1,103 @@
 const products = [
   {
+    "id": 390,
+    "price": 5210,
+    "isTop": false,
+    "isNew": false,
+    "isSpecialOffer": true,
+    "sku": "99521",
+    "size": "XS S M L XL",
+    "category": "Costumes",
+    "image": "/Costumes/Graphite Cardigan Suit/1.avif",
+    "images": [
+      "/Costumes/Graphite Cardigan Suit/2.avif",
+      "/Costumes/Graphite Cardigan Suit/3.avif",
+      "/Costumes/Graphite Cardigan Suit/4.avif",
+      "/Costumes/Graphite Cardigan Suit/5.avif"
+    ],
+    "colorImages": [
+      ["/Costumes/Graphite Cardigan Suit/1.avif", "/Costumes/Graphite Cardigan Suit/2.avif", "/Costumes/Graphite Cardigan Suit/3.avif", "/Costumes/Graphite Cardigan Suit/4.avif", "/Costumes/Graphite Cardigan Suit/5.avif"]
+    ],
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "translations": {
+      "EN": {
+        "category": "Costumes",
+        "name": "Cardigan Suit",
+        "description": [
+          "A minimalist, clean-cut suit for the modern woman. Made up of a straight wrap cardigan and wide, high-waisted trousers. Perfect for the office as well as relaxed city looks.",
+          "Fabric: premium-quality natural wool, offering warmth, comfort, and a pleasant feel.",
+          "[ Composition: 75% wool ]",
+          "Details:",
+          "• Cardigan: V-neckline",
+          "• Convenient pockets",
+          "• Trousers: high waist",
+          "• Elongated silhouette"
+        ],
+        "colors": [
+          "graphite"
+        ]
+      },
+      "FR": {
+        "category": "Costumes",
+        "name": "Costume cardigan",
+        "description": [
+          "Un costume épuré et minimaliste pour la femme moderne. Composé d’un cardigan droit cache-cœur et d’un pantalon large taille haute. Parfait aussi bien pour le bureau que pour des looks urbains décontractés.",
+          "Tissu : laine naturelle de qualité premium, offrant chaleur, confort et une sensation agréable au toucher.",
+          "[ Composition : 75 % laine ]",
+          "Détails :",
+          "• Cardigan : encolure en V",
+          "• Poches pratiques",
+          "• Pantalon : taille haute",
+          "• Silhouette allongée"
+        ],
+        "colors": [
+          "graphite"
+        ]
+      },
+      "UA": {
+        "category": "Костюми",
+        "name": "Костюм із кардиганом",
+        "description": [
+          "Лаконічний костюм у мінімалістичному стилі для сучасних дівчат. Складається з прямого кардигану на запах та широких брюк із високою посадкою. Ідеально підходить як для офісу, так і для розслаблених міських образів.",
+          "Тканина: Натуральна вовна преміум-якості, що забезпечує тепло, затишок і приємні тактильні відчуття.",
+          "[ Склад: 75% вовни ]",
+          "Деталі:",
+          "• Кардиган: V-подібний виріз",
+          "• Зручні кишені",
+          "• Брюки: Висока посадка",
+          "• Подовжений силует"
+        ],
+        "colors": [
+          "графіт"
+        ]
+      },
+      "RU": {
+        "category": "Костюмы",
+        "name": "Костюм с кардиганом",
+        "description": [
+          "Лаконичный костюм в минималистичном стиле для современных девушек. Состоит из прямого кардигана на запах и широких брюк с высокой посадкой. Идеально подходит как для офиса, так и для расслабленных городских образов.",
+          "Ткань: Натуральная шерсть премиум-качества, обеспечивающая тепло, уют и приятные тактильные ощущения.",
+          "[ Состав: 75% шерсти ]",
+          "Детали:",
+          "• Кардиган: V-образный вырез",
+          "• Удобные карманы",
+          "• Брюки: Высокая посадка",
+          "• Удлинённый силуэт"
+        ],
+        "colors": [
+          "графит"
+        ]
+      }
+    },
+    "discountPrice": 4690
+  },
+  {
     "id": 389,
     "price": 3100,
     "isTop": false,

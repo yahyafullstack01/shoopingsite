@@ -96,17 +96,15 @@ const ProductBanner = ({
     const coverImage = selectedProduct?.image || "/4.jpg";
     setCurrentImage(coverImage);
     setFav(isFavorite(selectedProduct?.id));
-    if (Array.isArray(selectedProduct?.colorImages)) {
-      const idx = colorIndexForMedia(coverImage);
-      const colors =
-        selectedProduct?.translations?.[language]?.colors ||
-        selectedProduct?.translations?.EN?.colors ||
-        selectedProduct?.colors ||
-        [];
-      setSelectedColor(idx >= 0 ? colors[idx] || "" : "");
-    } else {
-      setSelectedColor("");
-    }
+    // Only one color on offer? There's no real choice to make, so skip
+    // forcing the user to click it. Multiple colors stay unselected until
+    // the user actively picks one.
+    const initialColors =
+      selectedProduct?.translations?.[language]?.colors ||
+      selectedProduct?.translations?.EN?.colors ||
+      selectedProduct?.colors ||
+      [];
+    setSelectedColor(initialColors.length === 1 ? initialColors[0] : "");
 
     requestAnimationFrame(() => {
       const el = modalBodyRef.current;

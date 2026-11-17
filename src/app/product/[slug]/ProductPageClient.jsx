@@ -31,7 +31,10 @@ export default function ProductPageClient({ product, relatedProducts = [] }) {
   const { language, translateList } = useLanguage();
   const isUA = language === "UA";
 
-  const [selectedColor, setSelectedColor] = useState("");
+  const [selectedColor, setSelectedColor] = useState(() => {
+    const initialColors = product.translations?.[language]?.colors || product.colors || [];
+    return initialColors.length === 1 ? initialColors[0] : "";
+  });
   const [selectedSize, setSelectedSize] = useState("");
   const [quantity, setQuantity] = useState(1);
   const [colorError, setColorError] = useState("");
@@ -93,18 +96,6 @@ export default function ProductPageClient({ product, relatedProducts = [] }) {
     },
     [resolvedColorImages, displayGallery]
   );
-
-  // On first load, pre-select whichever color the opening photo (slide 0)
-  // belongs to, so the swatch matches what's actually showing.
-  useEffect(() => {
-    if (!resolvedColorImages) return;
-    const matchedColorIdx = slideToColorIndex(0);
-    if (matchedColorIdx >= 0) {
-      const matchedColor = translatedColors[matchedColorIdx];
-      if (matchedColor) setSelectedColor(matchedColor);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [product.id]);
 
   const price = product?.discountPrice ?? product?.price;
   const oldPrice = product?.discountPrice ? product?.price : null;
