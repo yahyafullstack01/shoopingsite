@@ -126,7 +126,7 @@ export default function RootLayout({ children }) {
               `}
             </Script>
 
-            {/* Crisp chat widget */}
+            {/* Crisp chat widget — disabled for now, not in use
             <Script id="crisp-chat" strategy="afterInteractive">
               {`
                 window.$crisp=[];
@@ -140,6 +140,7 @@ export default function RootLayout({ children }) {
                 })();
               `}
             </Script>
+            */}
 
             {/* FB Pixel — краще lazyOnload на мобільному */}
             <Script id="fb-pixel" strategy="lazyOnload">
