@@ -2953,7 +2953,7 @@
   },
   {
     "id": 355,
-    "price": 2250,
+    "price": 2150,
     "isTop": false,
     "isNew": false,
     "isSpecialOffer": true,
@@ -3029,7 +3029,7 @@
         ]
       }
     },
-    "discountPrice": 2025
+    "discountPrice": 1935
   },
   {
     "id": 354,
@@ -3114,7 +3114,7 @@
   },
   {
     "id": 353,
-    "price": 4350,
+    "price": 4250,
     "isTop": false,
     "isNew": false,
     "isSpecialOffer": true,
@@ -3192,7 +3192,7 @@
         ]
       }
     },
-    "discountPrice": 3915
+    "discountPrice": 3825
   },
   {
     "id": 352,

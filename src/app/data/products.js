@@ -791,9 +791,18 @@ const products = [
       "/Pants/Jersey Relaxed Pants/6.avif"
     ],
     "colorImages": [
-      ["/Pants/Jersey Relaxed Pants/1.avif", "/Pants/Jersey Relaxed Pants/2.avif"],
-      ["/Pants/Jersey Relaxed Pants/3.avif", "/Pants/Jersey Relaxed Pants/4.avif"],
-      ["/Pants/Jersey Relaxed Pants/5.avif", "/Pants/Jersey Relaxed Pants/6.avif"]
+      [
+        "/Pants/Jersey Relaxed Pants/1.avif",
+        "/Pants/Jersey Relaxed Pants/2.avif"
+      ],
+      [
+        "/Pants/Jersey Relaxed Pants/3.avif",
+        "/Pants/Jersey Relaxed Pants/4.avif"
+      ],
+      [
+        "/Pants/Jersey Relaxed Pants/5.avif",
+        "/Pants/Jersey Relaxed Pants/6.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -891,9 +900,18 @@ const products = [
       "/Top/Jersey Top/6.avif"
     ],
     "colorImages": [
-      ["/Top/Jersey Top/1.avif", "/Top/Jersey Top/2.avif"],
-      ["/Top/Jersey Top/3.avif", "/Top/Jersey Top/4.avif"],
-      ["/Top/Jersey Top/5.avif", "/Top/Jersey Top/6.avif"]
+      [
+        "/Top/Jersey Top/1.avif",
+        "/Top/Jersey Top/2.avif"
+      ],
+      [
+        "/Top/Jersey Top/3.avif",
+        "/Top/Jersey Top/4.avif"
+      ],
+      [
+        "/Top/Jersey Top/5.avif",
+        "/Top/Jersey Top/6.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -995,9 +1013,21 @@ const products = [
       "/Costumes/Jersey Suit/9.avif"
     ],
     "colorImages": [
-      ["/Costumes/Jersey Suit/1.avif", "/Costumes/Jersey Suit/2.avif", "/Costumes/Jersey Suit/3.avif"],
-      ["/Costumes/Jersey Suit/4.avif", "/Costumes/Jersey Suit/5.avif", "/Costumes/Jersey Suit/6.avif"],
-      ["/Costumes/Jersey Suit/7.avif", "/Costumes/Jersey Suit/8.avif", "/Costumes/Jersey Suit/9.avif"]
+      [
+        "/Costumes/Jersey Suit/1.avif",
+        "/Costumes/Jersey Suit/2.avif",
+        "/Costumes/Jersey Suit/3.avif"
+      ],
+      [
+        "/Costumes/Jersey Suit/4.avif",
+        "/Costumes/Jersey Suit/5.avif",
+        "/Costumes/Jersey Suit/6.avif"
+      ],
+      [
+        "/Costumes/Jersey Suit/7.avif",
+        "/Costumes/Jersey Suit/8.avif",
+        "/Costumes/Jersey Suit/9.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -2010,8 +2040,17 @@ const products = [
       "/Top/Eco-Crinkle Sheer Turtleneck/7.avif"
     ],
     "colorImages": [
-      ["/Top/Eco-Crinkle Sheer Turtleneck/1.avif", "/Top/Eco-Crinkle Sheer Turtleneck/2.avif", "/Top/Eco-Crinkle Sheer Turtleneck/3.avif", "/Top/Eco-Crinkle Sheer Turtleneck/4.avif"],
-      ["/Top/Eco-Crinkle Sheer Turtleneck/5.avif", "/Top/Eco-Crinkle Sheer Turtleneck/6.avif", "/Top/Eco-Crinkle Sheer Turtleneck/7.avif"]
+      [
+        "/Top/Eco-Crinkle Sheer Turtleneck/1.avif",
+        "/Top/Eco-Crinkle Sheer Turtleneck/2.avif",
+        "/Top/Eco-Crinkle Sheer Turtleneck/3.avif",
+        "/Top/Eco-Crinkle Sheer Turtleneck/4.avif"
+      ],
+      [
+        "/Top/Eco-Crinkle Sheer Turtleneck/5.avif",
+        "/Top/Eco-Crinkle Sheer Turtleneck/6.avif",
+        "/Top/Eco-Crinkle Sheer Turtleneck/7.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -2914,7 +2953,7 @@ const products = [
   },
   {
     "id": 355,
-    "price": 2250,
+    "price": 2150,
     "isTop": false,
     "isNew": false,
     "isSpecialOffer": true,
@@ -2990,7 +3029,7 @@ const products = [
         ]
       }
     },
-    "discountPrice": 2025
+    "discountPrice": 1935
   },
   {
     "id": 354,
@@ -3075,7 +3114,7 @@ const products = [
   },
   {
     "id": 353,
-    "price": 4350,
+    "price": 4250,
     "isTop": false,
     "isNew": false,
     "isSpecialOffer": true,
@@ -3153,7 +3192,7 @@ const products = [
         ]
       }
     },
-    "discountPrice": 3915
+    "discountPrice": 3825
   },
   {
     "id": 352,
@@ -3918,9 +3957,20 @@ const products = [
       "/Dress/Denim Mini Dress/8.avif"
     ],
     "colorImages": [
-      ["/Dress/Denim Mini Dress/1.avif", "/Dress/Denim Mini Dress/2.avif", "/Dress/Denim Mini Dress/3.avif"],
-      ["/Dress/Denim Mini Dress/4.avif", "/Dress/Denim Mini Dress/5.avif", "/Dress/Denim Mini Dress/6.avif"],
-      ["/Dress/Denim Mini Dress/7.avif", "/Dress/Denim Mini Dress/8.avif"]
+      [
+        "/Dress/Denim Mini Dress/1.avif",
+        "/Dress/Denim Mini Dress/2.avif",
+        "/Dress/Denim Mini Dress/3.avif"
+      ],
+      [
+        "/Dress/Denim Mini Dress/4.avif",
+        "/Dress/Denim Mini Dress/5.avif",
+        "/Dress/Denim Mini Dress/6.avif"
+      ],
+      [
+        "/Dress/Denim Mini Dress/7.avif",
+        "/Dress/Denim Mini Dress/8.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -4024,8 +4074,18 @@ const products = [
       "/Costumes/Linen Jumpsuit/8.avif"
     ],
     "colorImages": [
-      ["/Costumes/Linen Jumpsuit/1.avif", "/Costumes/Linen Jumpsuit/2.avif", "/Costumes/Linen Jumpsuit/3.avif", "/Costumes/Linen Jumpsuit/4.avif"],
-      ["/Costumes/Linen Jumpsuit/5.avif", "/Costumes/Linen Jumpsuit/6.avif", "/Costumes/Linen Jumpsuit/7.avif", "/Costumes/Linen Jumpsuit/8.avif"]
+      [
+        "/Costumes/Linen Jumpsuit/1.avif",
+        "/Costumes/Linen Jumpsuit/2.avif",
+        "/Costumes/Linen Jumpsuit/3.avif",
+        "/Costumes/Linen Jumpsuit/4.avif"
+      ],
+      [
+        "/Costumes/Linen Jumpsuit/5.avif",
+        "/Costumes/Linen Jumpsuit/6.avif",
+        "/Costumes/Linen Jumpsuit/7.avif",
+        "/Costumes/Linen Jumpsuit/8.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -4124,8 +4184,17 @@ const products = [
       "/Dress/Estelle Dress/7.avif"
     ],
     "colorImages": [
-      ["/Dress/Estelle Dress/1.avif", "/Dress/Estelle Dress/2.avif", "/Dress/Estelle Dress/3.avif", "/Dress/Estelle Dress/4.avif", "/Dress/Estelle Dress/5.avif"],
-      ["/Dress/Estelle Dress/6.avif", "/Dress/Estelle Dress/7.avif"]
+      [
+        "/Dress/Estelle Dress/1.avif",
+        "/Dress/Estelle Dress/2.avif",
+        "/Dress/Estelle Dress/3.avif",
+        "/Dress/Estelle Dress/4.avif",
+        "/Dress/Estelle Dress/5.avif"
+      ],
+      [
+        "/Dress/Estelle Dress/6.avif",
+        "/Dress/Estelle Dress/7.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -4401,8 +4470,18 @@ const products = [
       "/Dress/Milano Dress/8.avif"
     ],
     "colorImages": [
-      ["/Dress/Milano Dress/1.avif", "/Dress/Milano Dress/2.avif", "/Dress/Milano Dress/3.avif", "/Dress/Milano Dress/4.avif", "/Dress/Milano Dress/5.avif"],
-      ["/Dress/Milano Dress/6.avif", "/Dress/Milano Dress/7.avif", "/Dress/Milano Dress/8.avif"]
+      [
+        "/Dress/Milano Dress/1.avif",
+        "/Dress/Milano Dress/2.avif",
+        "/Dress/Milano Dress/3.avif",
+        "/Dress/Milano Dress/4.avif",
+        "/Dress/Milano Dress/5.avif"
+      ],
+      [
+        "/Dress/Milano Dress/6.avif",
+        "/Dress/Milano Dress/7.avif",
+        "/Dress/Milano Dress/8.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -4501,8 +4580,17 @@ const products = [
       "/Dress/Monaco Dress/7.avif"
     ],
     "colorImages": [
-      ["/Dress/Monaco Dress/1.avif", "/Dress/Monaco Dress/2.avif", "/Dress/Monaco Dress/3.avif", "/Dress/Monaco Dress/4.avif"],
-      ["/Dress/Monaco Dress/5.avif", "/Dress/Monaco Dress/6.avif", "/Dress/Monaco Dress/7.avif"]
+      [
+        "/Dress/Monaco Dress/1.avif",
+        "/Dress/Monaco Dress/2.avif",
+        "/Dress/Monaco Dress/3.avif",
+        "/Dress/Monaco Dress/4.avif"
+      ],
+      [
+        "/Dress/Monaco Dress/5.avif",
+        "/Dress/Monaco Dress/6.avif",
+        "/Dress/Monaco Dress/7.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -6868,8 +6956,17 @@ const products = [
       "/Dress/Coraline Dress/7.webp"
     ],
     "colorImages": [
-      ["/Dress/Coraline Dress/1.webp", "/Dress/Coraline Dress/2.webp", "/Dress/Coraline Dress/3.webp", "/Dress/Coraline Dress/4.webp"],
-      ["/Dress/Coraline Dress/5.webp", "/Dress/Coraline Dress/6.webp", "/Dress/Coraline Dress/7.webp"]
+      [
+        "/Dress/Coraline Dress/1.webp",
+        "/Dress/Coraline Dress/2.webp",
+        "/Dress/Coraline Dress/3.webp",
+        "/Dress/Coraline Dress/4.webp"
+      ],
+      [
+        "/Dress/Coraline Dress/5.webp",
+        "/Dress/Coraline Dress/6.webp",
+        "/Dress/Coraline Dress/7.webp"
+      ]
     ],
     "sizes": [
       "XS",
@@ -7311,9 +7408,22 @@ const products = [
       "/Dress/Lagune Dress/10.webp"
     ],
     "colorImages": [
-      ["/Dress/Lagune Dress/1.webp", "/Dress/Lagune Dress/2.webp", "/Dress/Lagune Dress/3.webp", "/Dress/Lagune Dress/4.webp"],
-      ["/Dress/Lagune Dress/5.webp", "/Dress/Lagune Dress/6.webp", "/Dress/Lagune Dress/7.webp"],
-      ["/Dress/Lagune Dress/8.webp", "/Dress/Lagune Dress/9.webp", "/Dress/Lagune Dress/10.webp"]
+      [
+        "/Dress/Lagune Dress/1.webp",
+        "/Dress/Lagune Dress/2.webp",
+        "/Dress/Lagune Dress/3.webp",
+        "/Dress/Lagune Dress/4.webp"
+      ],
+      [
+        "/Dress/Lagune Dress/5.webp",
+        "/Dress/Lagune Dress/6.webp",
+        "/Dress/Lagune Dress/7.webp"
+      ],
+      [
+        "/Dress/Lagune Dress/8.webp",
+        "/Dress/Lagune Dress/9.webp",
+        "/Dress/Lagune Dress/10.webp"
+      ]
     ],
     "sizes": [
       "XS",
@@ -7408,8 +7518,17 @@ const products = [
       "/Dress/Azura Dress/7.avif"
     ],
     "colorImages": [
-      ["/Dress/Azura Dress/1.webp", "/Dress/Azura Dress/2.webp", "/Dress/Azura Dress/3.webp", "/Dress/Azura Dress/4.webp"],
-      ["/Dress/Azura Dress/5.webp", "/Dress/Azura Dress/6.webp", "/Dress/Azura Dress/7.avif"]
+      [
+        "/Dress/Azura Dress/1.webp",
+        "/Dress/Azura Dress/2.webp",
+        "/Dress/Azura Dress/3.webp",
+        "/Dress/Azura Dress/4.webp"
+      ],
+      [
+        "/Dress/Azura Dress/5.webp",
+        "/Dress/Azura Dress/6.webp",
+        "/Dress/Azura Dress/7.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -7759,8 +7878,19 @@ const products = [
       "/Shirts/Batiste Shirt/9.avif"
     ],
     "colorImages": [
-      ["/Shirts/Batiste Shirt/1.avif", "/Shirts/Batiste Shirt/2.avif", "/Shirts/Batiste Shirt/3.avif", "/Shirts/Batiste Shirt/4.avif", "/Shirts/Batiste Shirt/5.avif"],
-      ["/Shirts/Batiste Shirt/6.JPG", "/Shirts/Batiste Shirt/7.avif", "/Shirts/Batiste Shirt/8.avif", "/Shirts/Batiste Shirt/9.avif"]
+      [
+        "/Shirts/Batiste Shirt/1.avif",
+        "/Shirts/Batiste Shirt/2.avif",
+        "/Shirts/Batiste Shirt/3.avif",
+        "/Shirts/Batiste Shirt/4.avif",
+        "/Shirts/Batiste Shirt/5.avif"
+      ],
+      [
+        "/Shirts/Batiste Shirt/6.JPG",
+        "/Shirts/Batiste Shirt/7.avif",
+        "/Shirts/Batiste Shirt/8.avif",
+        "/Shirts/Batiste Shirt/9.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -9059,10 +9189,31 @@ const products = [
       "/Dress/Denim Sundress/17.avif"
     ],
     "colorImages": [
-      ["/Dress/Denim Sundress/1.avif", "/Dress/Denim Sundress/2.avif", "/Dress/Denim Sundress/3.avif", "/Dress/Denim Sundress/4.avif", "/Dress/Denim Sundress/5.avif"],
-      ["/Dress/Denim Sundress/6.avif", "/Dress/Denim Sundress/7.avif", "/Dress/Denim Sundress/8.avif", "/Dress/Denim Sundress/9.avif"],
-      ["/Dress/Denim Sundress/10.avif", "/Dress/Denim Sundress/11.avif", "/Dress/Denim Sundress/12.avif", "/Dress/Denim Sundress/13.avif"],
-      ["/Dress/Denim Sundress/14.avif", "/Dress/Denim Sundress/15.avif", "/Dress/Denim Sundress/16.avif", "/Dress/Denim Sundress/17.avif"]
+      [
+        "/Dress/Denim Sundress/1.avif",
+        "/Dress/Denim Sundress/2.avif",
+        "/Dress/Denim Sundress/3.avif",
+        "/Dress/Denim Sundress/4.avif",
+        "/Dress/Denim Sundress/5.avif"
+      ],
+      [
+        "/Dress/Denim Sundress/6.avif",
+        "/Dress/Denim Sundress/7.avif",
+        "/Dress/Denim Sundress/8.avif",
+        "/Dress/Denim Sundress/9.avif"
+      ],
+      [
+        "/Dress/Denim Sundress/10.avif",
+        "/Dress/Denim Sundress/11.avif",
+        "/Dress/Denim Sundress/12.avif",
+        "/Dress/Denim Sundress/13.avif"
+      ],
+      [
+        "/Dress/Denim Sundress/14.avif",
+        "/Dress/Denim Sundress/15.avif",
+        "/Dress/Denim Sundress/16.avif",
+        "/Dress/Denim Sundress/17.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -9816,8 +9967,18 @@ const products = [
       "/Shirts/Ruffled Blouse/8.avif"
     ],
     "colorImages": [
-      ["/Shirts/Ruffled Blouse/1.avif", "/Shirts/Ruffled Blouse/2.avif", "/Shirts/Ruffled Blouse/3.avif", "/Shirts/Ruffled Blouse/4.avif"],
-      ["/Shirts/Ruffled Blouse/5.avif", "/Shirts/Ruffled Blouse/6.avif", "/Shirts/Ruffled Blouse/7.avif", "/Shirts/Ruffled Blouse/8.avif"]
+      [
+        "/Shirts/Ruffled Blouse/1.avif",
+        "/Shirts/Ruffled Blouse/2.avif",
+        "/Shirts/Ruffled Blouse/3.avif",
+        "/Shirts/Ruffled Blouse/4.avif"
+      ],
+      [
+        "/Shirts/Ruffled Blouse/5.avif",
+        "/Shirts/Ruffled Blouse/6.avif",
+        "/Shirts/Ruffled Blouse/7.avif",
+        "/Shirts/Ruffled Blouse/8.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -10757,8 +10918,19 @@ const products = [
       "/Dress/Satin Slip Dress/4.avif"
     ],
     "colorImages": [
-      ["/Dress/Satin Slip Dress/5.avif", "/Dress/Satin Slip Dress/6.avif", "/Dress/Satin Slip Dress/7.avif", "/Dress/Satin Slip Dress/8.avif", "/Dress/Satin Slip Dress/9.avif"],
-      ["/Dress/Satin Slip Dress/1.avif", "/Dress/Satin Slip Dress/2.avif", "/Dress/Satin Slip Dress/3.avif", "/Dress/Satin Slip Dress/4.avif"]
+      [
+        "/Dress/Satin Slip Dress/5.avif",
+        "/Dress/Satin Slip Dress/6.avif",
+        "/Dress/Satin Slip Dress/7.avif",
+        "/Dress/Satin Slip Dress/8.avif",
+        "/Dress/Satin Slip Dress/9.avif"
+      ],
+      [
+        "/Dress/Satin Slip Dress/1.avif",
+        "/Dress/Satin Slip Dress/2.avif",
+        "/Dress/Satin Slip Dress/3.avif",
+        "/Dress/Satin Slip Dress/4.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -11379,10 +11551,32 @@ const products = [
       "/Sweaters/Flare Sweater/23.avif"
     ],
     "colorImages": [
-      ["/Sweaters/Flare Sweater/11.avif", "/Sweaters/Flare Sweater/12.avif", "/Sweaters/Flare Sweater/13.avif", "/Sweaters/Flare Sweater/14.avif", "/Sweaters/Flare Sweater/15.avif"],
-      ["/Sweaters/Flare Sweater/6.avif", "/Sweaters/Flare Sweater/7.avif", "/Sweaters/Flare Sweater/8.avif", "/Sweaters/Flare Sweater/9.avif", "/Sweaters/Flare Sweater/10.avif"],
-      ["/Sweaters/Flare Sweater/16.avif", "/Sweaters/Flare Sweater/17.avif", "/Sweaters/Flare Sweater/18.avif", "/Sweaters/Flare Sweater/19.avif"],
-      ["/Sweaters/Flare Sweater/20.avif", "/Sweaters/Flare Sweater/21.avif", "/Sweaters/Flare Sweater/22.avif", "/Sweaters/Flare Sweater/23.avif"]
+      [
+        "/Sweaters/Flare Sweater/11.avif",
+        "/Sweaters/Flare Sweater/12.avif",
+        "/Sweaters/Flare Sweater/13.avif",
+        "/Sweaters/Flare Sweater/14.avif",
+        "/Sweaters/Flare Sweater/15.avif"
+      ],
+      [
+        "/Sweaters/Flare Sweater/6.avif",
+        "/Sweaters/Flare Sweater/7.avif",
+        "/Sweaters/Flare Sweater/8.avif",
+        "/Sweaters/Flare Sweater/9.avif",
+        "/Sweaters/Flare Sweater/10.avif"
+      ],
+      [
+        "/Sweaters/Flare Sweater/16.avif",
+        "/Sweaters/Flare Sweater/17.avif",
+        "/Sweaters/Flare Sweater/18.avif",
+        "/Sweaters/Flare Sweater/19.avif"
+      ],
+      [
+        "/Sweaters/Flare Sweater/20.avif",
+        "/Sweaters/Flare Sweater/21.avif",
+        "/Sweaters/Flare Sweater/22.avif",
+        "/Sweaters/Flare Sweater/23.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -11462,8 +11656,20 @@ const products = [
       "/Shirts/Batiste Shirt 2/10.avif"
     ],
     "colorImages": [
-      ["/Shirts/Batiste Shirt 2/1.avif", "/Shirts/Batiste Shirt 2/2.avif", "/Shirts/Batiste Shirt 2/3.avif", "/Shirts/Batiste Shirt 2/4.avif", "/Shirts/Batiste Shirt 2/5.avif"],
-      ["/Shirts/Batiste Shirt 2/6.avif", "/Shirts/Batiste Shirt 2/7.avif", "/Shirts/Batiste Shirt 2/8.avif", "/Shirts/Batiste Shirt 2/9.avif", "/Shirts/Batiste Shirt 2/10.avif"]
+      [
+        "/Shirts/Batiste Shirt 2/1.avif",
+        "/Shirts/Batiste Shirt 2/2.avif",
+        "/Shirts/Batiste Shirt 2/3.avif",
+        "/Shirts/Batiste Shirt 2/4.avif",
+        "/Shirts/Batiste Shirt 2/5.avif"
+      ],
+      [
+        "/Shirts/Batiste Shirt 2/6.avif",
+        "/Shirts/Batiste Shirt 2/7.avif",
+        "/Shirts/Batiste Shirt 2/8.avif",
+        "/Shirts/Batiste Shirt 2/9.avif",
+        "/Shirts/Batiste Shirt 2/10.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -11533,8 +11739,19 @@ const products = [
       "/Dress/Woolen trapeze dress/5.avif"
     ],
     "colorImages": [
-      ["/Dress/Woolen trapeze dress/6.avif", "/Dress/Woolen trapeze dress/7.avif", "/Dress/Woolen trapeze dress/8.avif", "/Dress/Woolen trapeze dress/9.avif"],
-      ["/Dress/Woolen trapeze dress/1.avif", "/Dress/Woolen trapeze dress/2.avif", "/Dress/Woolen trapeze dress/3.avif", "/Dress/Woolen trapeze dress/4.avif", "/Dress/Woolen trapeze dress/5.avif"]
+      [
+        "/Dress/Woolen trapeze dress/6.avif",
+        "/Dress/Woolen trapeze dress/7.avif",
+        "/Dress/Woolen trapeze dress/8.avif",
+        "/Dress/Woolen trapeze dress/9.avif"
+      ],
+      [
+        "/Dress/Woolen trapeze dress/1.avif",
+        "/Dress/Woolen trapeze dress/2.avif",
+        "/Dress/Woolen trapeze dress/3.avif",
+        "/Dress/Woolen trapeze dress/4.avif",
+        "/Dress/Woolen trapeze dress/5.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -11663,8 +11880,20 @@ const products = [
       "/Pants/Jersey Pants/10.avif"
     ],
     "colorImages": [
-      ["/Pants/Jersey Pants/1.avif", "/Pants/Jersey Pants/2.avif", "/Pants/Jersey Pants/3.avif", "/Pants/Jersey Pants/4.avif", "/Pants/Jersey Pants/5.avif"],
-      ["/Pants/Jersey Pants/6.avif", "/Pants/Jersey Pants/7.avif", "/Pants/Jersey Pants/8.avif", "/Pants/Jersey Pants/9.avif", "/Pants/Jersey Pants/10.avif"]
+      [
+        "/Pants/Jersey Pants/1.avif",
+        "/Pants/Jersey Pants/2.avif",
+        "/Pants/Jersey Pants/3.avif",
+        "/Pants/Jersey Pants/4.avif",
+        "/Pants/Jersey Pants/5.avif"
+      ],
+      [
+        "/Pants/Jersey Pants/6.avif",
+        "/Pants/Jersey Pants/7.avif",
+        "/Pants/Jersey Pants/8.avif",
+        "/Pants/Jersey Pants/9.avif",
+        "/Pants/Jersey Pants/10.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -12046,8 +12275,19 @@ const products = [
       "/Costumes/Bomber Suit/14.avif"
     ],
     "colorImages": [
-      ["/Costumes/Bomber Suit/1.avif", "/Costumes/Bomber Suit/2.avif", "/Costumes/Bomber Suit/3.avif", "/Costumes/Bomber Suit/4.avif", "/Costumes/Bomber Suit/5.avif"],
-      ["/Costumes/Bomber Suit/11.avif", "/Costumes/Bomber Suit/12.avif", "/Costumes/Bomber Suit/13.avif", "/Costumes/Bomber Suit/14.avif"]
+      [
+        "/Costumes/Bomber Suit/1.avif",
+        "/Costumes/Bomber Suit/2.avif",
+        "/Costumes/Bomber Suit/3.avif",
+        "/Costumes/Bomber Suit/4.avif",
+        "/Costumes/Bomber Suit/5.avif"
+      ],
+      [
+        "/Costumes/Bomber Suit/11.avif",
+        "/Costumes/Bomber Suit/12.avif",
+        "/Costumes/Bomber Suit/13.avif",
+        "/Costumes/Bomber Suit/14.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -12252,8 +12492,19 @@ const products = [
       "/Sweaters/V-neck sweater/5.avif"
     ],
     "colorImages": [
-      ["/Sweaters/V-neck sweater/10.avif", "/Sweaters/V-neck sweater/11.avif", "/Sweaters/V-neck sweater/12.avif", "/Sweaters/V-neck sweater/13.avif"],
-      ["/Sweaters/V-neck sweater/1.avif", "/Sweaters/V-neck sweater/2.avif", "/Sweaters/V-neck sweater/3.avif", "/Sweaters/V-neck sweater/4.avif", "/Sweaters/V-neck sweater/5.avif"]
+      [
+        "/Sweaters/V-neck sweater/10.avif",
+        "/Sweaters/V-neck sweater/11.avif",
+        "/Sweaters/V-neck sweater/12.avif",
+        "/Sweaters/V-neck sweater/13.avif"
+      ],
+      [
+        "/Sweaters/V-neck sweater/1.avif",
+        "/Sweaters/V-neck sweater/2.avif",
+        "/Sweaters/V-neck sweater/3.avif",
+        "/Sweaters/V-neck sweater/4.avif",
+        "/Sweaters/V-neck sweater/5.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -12832,8 +13083,19 @@ const products = [
       "/Costumes/Alice Costume/9.avif"
     ],
     "colorImages": [
-      ["/Costumes/Alice Costume/1.avif", "/Costumes/Alice Costume/2.avif", "/Costumes/Alice Costume/3.avif", "/Costumes/Alice Costume/4.avif", "/Costumes/Alice Costume/5.avif"],
-      ["/Costumes/Alice Costume/6.avif", "/Costumes/Alice Costume/7.avif", "/Costumes/Alice Costume/8.avif", "/Costumes/Alice Costume/9.avif"]
+      [
+        "/Costumes/Alice Costume/1.avif",
+        "/Costumes/Alice Costume/2.avif",
+        "/Costumes/Alice Costume/3.avif",
+        "/Costumes/Alice Costume/4.avif",
+        "/Costumes/Alice Costume/5.avif"
+      ],
+      [
+        "/Costumes/Alice Costume/6.avif",
+        "/Costumes/Alice Costume/7.avif",
+        "/Costumes/Alice Costume/8.avif",
+        "/Costumes/Alice Costume/9.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -13400,8 +13662,20 @@ const products = [
       "/Shirts/Corset Shirt/10.avif"
     ],
     "colorImages": [
-      ["/Shirts/Corset Shirt/1.avif", "/Shirts/Corset Shirt/2.avif", "/Shirts/Corset Shirt/3.avif", "/Shirts/Corset Shirt/4.avif", "/Shirts/Corset Shirt/5.avif"],
-      ["/Shirts/Corset Shirt/6.avif", "/Shirts/Corset Shirt/7.avif", "/Shirts/Corset Shirt/8.avif", "/Shirts/Corset Shirt/9.avif", "/Shirts/Corset Shirt/10.avif"]
+      [
+        "/Shirts/Corset Shirt/1.avif",
+        "/Shirts/Corset Shirt/2.avif",
+        "/Shirts/Corset Shirt/3.avif",
+        "/Shirts/Corset Shirt/4.avif",
+        "/Shirts/Corset Shirt/5.avif"
+      ],
+      [
+        "/Shirts/Corset Shirt/6.avif",
+        "/Shirts/Corset Shirt/7.avif",
+        "/Shirts/Corset Shirt/8.avif",
+        "/Shirts/Corset Shirt/9.avif",
+        "/Shirts/Corset Shirt/10.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -13636,8 +13910,20 @@ const products = [
       "/Dress/Patricia Dress/10.avif"
     ],
     "colorImages": [
-      ["/Dress/Patricia Dress/1.avif", "/Dress/Patricia Dress/2.avif", "/Dress/Patricia Dress/3.avif", "/Dress/Patricia Dress/4.avif", "/Dress/Patricia Dress/5.avif"],
-      ["/Dress/Patricia Dress/6.avif", "/Dress/Patricia Dress/7.avif", "/Dress/Patricia Dress/8.avif", "/Dress/Patricia Dress/9.avif", "/Dress/Patricia Dress/10.avif"]
+      [
+        "/Dress/Patricia Dress/1.avif",
+        "/Dress/Patricia Dress/2.avif",
+        "/Dress/Patricia Dress/3.avif",
+        "/Dress/Patricia Dress/4.avif",
+        "/Dress/Patricia Dress/5.avif"
+      ],
+      [
+        "/Dress/Patricia Dress/6.avif",
+        "/Dress/Patricia Dress/7.avif",
+        "/Dress/Patricia Dress/8.avif",
+        "/Dress/Patricia Dress/9.avif",
+        "/Dress/Patricia Dress/10.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -13728,10 +14014,31 @@ const products = [
       "/Dress/Becca Linen Dress/17.avif"
     ],
     "colorImages": [
-      ["/Dress/Becca Linen Dress/1.avif", "/Dress/Becca Linen Dress/2.avif", "/Dress/Becca Linen Dress/3.avif", "/Dress/Becca Linen Dress/4.avif", "/Dress/Becca Linen Dress/5.avif"],
-      ["/Dress/Becca Linen Dress/6.avif", "/Dress/Becca Linen Dress/7.avif", "/Dress/Becca Linen Dress/8.avif", "/Dress/Becca Linen Dress/9.avif"],
-      ["/Dress/Becca Linen Dress/10.avif", "/Dress/Becca Linen Dress/11.avif", "/Dress/Becca Linen Dress/12.avif", "/Dress/Becca Linen Dress/13.avif"],
-      ["/Dress/Becca Linen Dress/14.avif", "/Dress/Becca Linen Dress/15.avif", "/Dress/Becca Linen Dress/16.avif", "/Dress/Becca Linen Dress/17.avif"]
+      [
+        "/Dress/Becca Linen Dress/1.avif",
+        "/Dress/Becca Linen Dress/2.avif",
+        "/Dress/Becca Linen Dress/3.avif",
+        "/Dress/Becca Linen Dress/4.avif",
+        "/Dress/Becca Linen Dress/5.avif"
+      ],
+      [
+        "/Dress/Becca Linen Dress/6.avif",
+        "/Dress/Becca Linen Dress/7.avif",
+        "/Dress/Becca Linen Dress/8.avif",
+        "/Dress/Becca Linen Dress/9.avif"
+      ],
+      [
+        "/Dress/Becca Linen Dress/10.avif",
+        "/Dress/Becca Linen Dress/11.avif",
+        "/Dress/Becca Linen Dress/12.avif",
+        "/Dress/Becca Linen Dress/13.avif"
+      ],
+      [
+        "/Dress/Becca Linen Dress/14.avif",
+        "/Dress/Becca Linen Dress/15.avif",
+        "/Dress/Becca Linen Dress/16.avif",
+        "/Dress/Becca Linen Dress/17.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -13819,8 +14126,20 @@ const products = [
       "/Dress/Kylie Dress/10.avif"
     ],
     "colorImages": [
-      ["/Dress/Kylie Dress/1.avif", "/Dress/Kylie Dress/2.avif", "/Dress/Kylie Dress/3.avif", "/Dress/Kylie Dress/4.avif", "/Dress/Kylie Dress/5.avif"],
-      ["/Dress/Kylie Dress/6.avif", "/Dress/Kylie Dress/7.avif", "/Dress/Kylie Dress/8.avif", "/Dress/Kylie Dress/9.avif", "/Dress/Kylie Dress/10.avif"]
+      [
+        "/Dress/Kylie Dress/1.avif",
+        "/Dress/Kylie Dress/2.avif",
+        "/Dress/Kylie Dress/3.avif",
+        "/Dress/Kylie Dress/4.avif",
+        "/Dress/Kylie Dress/5.avif"
+      ],
+      [
+        "/Dress/Kylie Dress/6.avif",
+        "/Dress/Kylie Dress/7.avif",
+        "/Dress/Kylie Dress/8.avif",
+        "/Dress/Kylie Dress/9.avif",
+        "/Dress/Kylie Dress/10.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -13904,8 +14223,20 @@ const products = [
       "/Dress/Skyler Dress/10.avif"
     ],
     "colorImages": [
-      ["/Dress/Skyler Dress/1.avif", "/Dress/Skyler Dress/2.avif", "/Dress/Skyler Dress/3.avif", "/Dress/Skyler Dress/4.avif", "/Dress/Skyler Dress/5.avif"],
-      ["/Dress/Skyler Dress/6.avif", "/Dress/Skyler Dress/7.avif", "/Dress/Skyler Dress/8.avif", "/Dress/Skyler Dress/9.avif", "/Dress/Skyler Dress/10.avif"]
+      [
+        "/Dress/Skyler Dress/1.avif",
+        "/Dress/Skyler Dress/2.avif",
+        "/Dress/Skyler Dress/3.avif",
+        "/Dress/Skyler Dress/4.avif",
+        "/Dress/Skyler Dress/5.avif"
+      ],
+      [
+        "/Dress/Skyler Dress/6.avif",
+        "/Dress/Skyler Dress/7.avif",
+        "/Dress/Skyler Dress/8.avif",
+        "/Dress/Skyler Dress/9.avif",
+        "/Dress/Skyler Dress/10.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -13995,9 +14326,27 @@ const products = [
       "/Dress/Alison Dress/15.avif"
     ],
     "colorImages": [
-      ["/Dress/Alison Dress/7.avif", "/Dress/Alison Dress/8.avif", "/Dress/Alison Dress/9.avif", "/Dress/Alison Dress/10.avif"],
-      ["/Dress/Alison Dress/11.avif", "/Dress/Alison Dress/12.avif", "/Dress/Alison Dress/13.avif", "/Dress/Alison Dress/14.avif", "/Dress/Alison Dress/15.avif"],
-      ["/Dress/Alison Dress/1.avif", "/Dress/Alison Dress/2.avif", "/Dress/Alison Dress/3.avif", "/Dress/Alison Dress/4.avif", "/Dress/Alison Dress/5.avif", "/Dress/Alison Dress/6.avif"]
+      [
+        "/Dress/Alison Dress/7.avif",
+        "/Dress/Alison Dress/8.avif",
+        "/Dress/Alison Dress/9.avif",
+        "/Dress/Alison Dress/10.avif"
+      ],
+      [
+        "/Dress/Alison Dress/11.avif",
+        "/Dress/Alison Dress/12.avif",
+        "/Dress/Alison Dress/13.avif",
+        "/Dress/Alison Dress/14.avif",
+        "/Dress/Alison Dress/15.avif"
+      ],
+      [
+        "/Dress/Alison Dress/1.avif",
+        "/Dress/Alison Dress/2.avif",
+        "/Dress/Alison Dress/3.avif",
+        "/Dress/Alison Dress/4.avif",
+        "/Dress/Alison Dress/5.avif",
+        "/Dress/Alison Dress/6.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -14287,8 +14636,18 @@ const products = [
       "/Dress/Coton Dress/8.avif"
     ],
     "colorImages": [
-      ["/Dress/Coton Dress/2.avif", "/Dress/Coton Dress/3.avif", "/Dress/Coton Dress/4.avif"],
-      ["/Dress/Coton Dress/1.avif", "/Dress/Coton Dress/5.avif", "/Dress/Coton Dress/6.avif", "/Dress/Coton Dress/7.avif", "/Dress/Coton Dress/8.avif"]
+      [
+        "/Dress/Coton Dress/2.avif",
+        "/Dress/Coton Dress/3.avif",
+        "/Dress/Coton Dress/4.avif"
+      ],
+      [
+        "/Dress/Coton Dress/1.avif",
+        "/Dress/Coton Dress/5.avif",
+        "/Dress/Coton Dress/6.avif",
+        "/Dress/Coton Dress/7.avif",
+        "/Dress/Coton Dress/8.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -14377,9 +14736,27 @@ const products = [
       "/Dress/Bahroma Dress/15.avif"
     ],
     "colorImages": [
-      ["/Dress/Bahroma Dress/1.avif", "/Dress/Bahroma Dress/2.avif", "/Dress/Bahroma Dress/3.avif", "/Dress/Bahroma Dress/4.avif", "/Dress/Bahroma Dress/5.avif"],
-      ["/Dress/Bahroma Dress/6.avif", "/Dress/Bahroma Dress/7.avif", "/Dress/Bahroma Dress/8.avif", "/Dress/Bahroma Dress/9.avif", "/Dress/Bahroma Dress/10.avif"],
-      ["/Dress/Bahroma Dress/11.avif", "/Dress/Bahroma Dress/12.avif", "/Dress/Bahroma Dress/13.avif", "/Dress/Bahroma Dress/14.avif", "/Dress/Bahroma Dress/15.avif"]
+      [
+        "/Dress/Bahroma Dress/1.avif",
+        "/Dress/Bahroma Dress/2.avif",
+        "/Dress/Bahroma Dress/3.avif",
+        "/Dress/Bahroma Dress/4.avif",
+        "/Dress/Bahroma Dress/5.avif"
+      ],
+      [
+        "/Dress/Bahroma Dress/6.avif",
+        "/Dress/Bahroma Dress/7.avif",
+        "/Dress/Bahroma Dress/8.avif",
+        "/Dress/Bahroma Dress/9.avif",
+        "/Dress/Bahroma Dress/10.avif"
+      ],
+      [
+        "/Dress/Bahroma Dress/11.avif",
+        "/Dress/Bahroma Dress/12.avif",
+        "/Dress/Bahroma Dress/13.avif",
+        "/Dress/Bahroma Dress/14.avif",
+        "/Dress/Bahroma Dress/15.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -14916,9 +15293,25 @@ const products = [
       "/Dress/Cotton Dress/13.avif"
     ],
     "colorImages": [
-      ["/Dress/Cotton Dress/1.avif", "/Dress/Cotton Dress/2.avif", "/Dress/Cotton Dress/3.avif", "/Dress/Cotton Dress/4.avif"],
-      ["/Dress/Cotton Dress/5.avif", "/Dress/Cotton Dress/6.avif", "/Dress/Cotton Dress/7.avif", "/Dress/Cotton Dress/8.avif", "/Dress/Cotton Dress/9.avif"],
-      ["/Dress/Cotton Dress/10.avif", "/Dress/Cotton Dress/11.avif", "/Dress/Cotton Dress/12.avif", "/Dress/Cotton Dress/13.avif"]
+      [
+        "/Dress/Cotton Dress/1.avif",
+        "/Dress/Cotton Dress/2.avif",
+        "/Dress/Cotton Dress/3.avif",
+        "/Dress/Cotton Dress/4.avif"
+      ],
+      [
+        "/Dress/Cotton Dress/5.avif",
+        "/Dress/Cotton Dress/6.avif",
+        "/Dress/Cotton Dress/7.avif",
+        "/Dress/Cotton Dress/8.avif",
+        "/Dress/Cotton Dress/9.avif"
+      ],
+      [
+        "/Dress/Cotton Dress/10.avif",
+        "/Dress/Cotton Dress/11.avif",
+        "/Dress/Cotton Dress/12.avif",
+        "/Dress/Cotton Dress/13.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -15010,9 +15403,24 @@ const products = [
       "/Dress/Santorini Dress/13.avif"
     ],
     "colorImages": [
-      ["/Dress/Santorini Dress/1.avif", "/Dress/Santorini Dress/2.avif", "/Dress/Santorini Dress/4.avif", "/Dress/Santorini Dress/5.avif"],
-      ["/Dress/Santorini Dress/6.avif", "/Dress/Santorini Dress/7.avif", "/Dress/Santorini Dress/8.avif", "/Dress/Santorini Dress/9.avif"],
-      ["/Dress/Santorini Dress/10.avif", "/Dress/Santorini Dress/11.avif", "/Dress/Santorini Dress/12.avif", "/Dress/Santorini Dress/13.avif"]
+      [
+        "/Dress/Santorini Dress/1.avif",
+        "/Dress/Santorini Dress/2.avif",
+        "/Dress/Santorini Dress/4.avif",
+        "/Dress/Santorini Dress/5.avif"
+      ],
+      [
+        "/Dress/Santorini Dress/6.avif",
+        "/Dress/Santorini Dress/7.avif",
+        "/Dress/Santorini Dress/8.avif",
+        "/Dress/Santorini Dress/9.avif"
+      ],
+      [
+        "/Dress/Santorini Dress/10.avif",
+        "/Dress/Santorini Dress/11.avif",
+        "/Dress/Santorini Dress/12.avif",
+        "/Dress/Santorini Dress/13.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -15629,8 +16037,18 @@ const products = [
       "/Skirts/Denim Skirt/10.avif"
     ],
     "colorImages": [
-      ["/Skirts/Denim Skirt/1.avif", "/Skirts/Denim Skirt/2.avif", "/Skirts/Denim Skirt/3.avif", "/Skirts/Denim Skirt/4.avif"],
-      ["/Skirts/Denim Skirt/5.avif", "/Skirts/Denim Skirt/6.avif", "/Skirts/Denim Skirt/9.avif", "/Skirts/Denim Skirt/10.avif"]
+      [
+        "/Skirts/Denim Skirt/1.avif",
+        "/Skirts/Denim Skirt/2.avif",
+        "/Skirts/Denim Skirt/3.avif",
+        "/Skirts/Denim Skirt/4.avif"
+      ],
+      [
+        "/Skirts/Denim Skirt/5.avif",
+        "/Skirts/Denim Skirt/6.avif",
+        "/Skirts/Denim Skirt/9.avif",
+        "/Skirts/Denim Skirt/10.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -15706,9 +16124,27 @@ const products = [
       "/Pants/Classic Pants/15.avif"
     ],
     "colorImages": [
-      ["/Pants/Classic Pants/1.avif", "/Pants/Classic Pants/2.avif", "/Pants/Classic Pants/3.avif", "/Pants/Classic Pants/4.avif", "/Pants/Classic Pants/5.avif"],
-      ["/Pants/Classic Pants/6.avif", "/Pants/Classic Pants/7.avif", "/Pants/Classic Pants/8.avif", "/Pants/Classic Pants/9.avif", "/Pants/Classic Pants/10.avif"],
-      ["/Pants/Classic Pants/11.avif", "/Pants/Classic Pants/12.avif", "/Pants/Classic Pants/13.avif", "/Pants/Classic Pants/14.avif", "/Pants/Classic Pants/15.avif"]
+      [
+        "/Pants/Classic Pants/1.avif",
+        "/Pants/Classic Pants/2.avif",
+        "/Pants/Classic Pants/3.avif",
+        "/Pants/Classic Pants/4.avif",
+        "/Pants/Classic Pants/5.avif"
+      ],
+      [
+        "/Pants/Classic Pants/6.avif",
+        "/Pants/Classic Pants/7.avif",
+        "/Pants/Classic Pants/8.avif",
+        "/Pants/Classic Pants/9.avif",
+        "/Pants/Classic Pants/10.avif"
+      ],
+      [
+        "/Pants/Classic Pants/11.avif",
+        "/Pants/Classic Pants/12.avif",
+        "/Pants/Classic Pants/13.avif",
+        "/Pants/Classic Pants/14.avif",
+        "/Pants/Classic Pants/15.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -15785,9 +16221,25 @@ const products = [
       "/Pants/Wrap Palazzo Pants/13.avif"
     ],
     "colorImages": [
-      ["/Pants/Wrap Palazzo Pants/1.avif", "/Pants/Wrap Palazzo Pants/2.avif", "/Pants/Wrap Palazzo Pants/3.avif", "/Pants/Wrap Palazzo Pants/4.avif", "/Pants/Wrap Palazzo Pants/5.avif"],
-      ["/Pants/Wrap Palazzo Pants/6.avif", "/Pants/Wrap Palazzo Pants/7.avif", "/Pants/Wrap Palazzo Pants/8.avif", "/Pants/Wrap Palazzo Pants/9.avif", "/Pants/Wrap Palazzo Pants/10.avif"],
-      ["/Pants/Wrap Palazzo Pants/11.avif", "/Pants/Wrap Palazzo Pants/12.avif", "/Pants/Wrap Palazzo Pants/13.avif"]
+      [
+        "/Pants/Wrap Palazzo Pants/1.avif",
+        "/Pants/Wrap Palazzo Pants/2.avif",
+        "/Pants/Wrap Palazzo Pants/3.avif",
+        "/Pants/Wrap Palazzo Pants/4.avif",
+        "/Pants/Wrap Palazzo Pants/5.avif"
+      ],
+      [
+        "/Pants/Wrap Palazzo Pants/6.avif",
+        "/Pants/Wrap Palazzo Pants/7.avif",
+        "/Pants/Wrap Palazzo Pants/8.avif",
+        "/Pants/Wrap Palazzo Pants/9.avif",
+        "/Pants/Wrap Palazzo Pants/10.avif"
+      ],
+      [
+        "/Pants/Wrap Palazzo Pants/11.avif",
+        "/Pants/Wrap Palazzo Pants/12.avif",
+        "/Pants/Wrap Palazzo Pants/13.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -16315,8 +16767,16 @@ const products = [
       "/Pants/Muslin Palazzo Pants/6.avif"
     ],
     "colorImages": [
-      ["/Pants/Muslin Palazzo Pants/1.avif", "/Pants/Muslin Palazzo Pants/2.avif", "/Pants/Muslin Palazzo Pants/3.avif"],
-      ["/Pants/Muslin Palazzo Pants/4.avif", "/Pants/Muslin Palazzo Pants/5.avif", "/Pants/Muslin Palazzo Pants/6.avif"]
+      [
+        "/Pants/Muslin Palazzo Pants/1.avif",
+        "/Pants/Muslin Palazzo Pants/2.avif",
+        "/Pants/Muslin Palazzo Pants/3.avif"
+      ],
+      [
+        "/Pants/Muslin Palazzo Pants/4.avif",
+        "/Pants/Muslin Palazzo Pants/5.avif",
+        "/Pants/Muslin Palazzo Pants/6.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -16382,8 +16842,16 @@ const products = [
       "/Top/Muslin Top/6.avif"
     ],
     "colorImages": [
-      ["/Top/Muslin Top/1.avif", "/Top/Muslin Top/2.avif", "/Top/Muslin Top/3.avif"],
-      ["/Top/Muslin Top/4.avif", "/Top/Muslin Top/5.avif", "/Top/Muslin Top/6.avif"]
+      [
+        "/Top/Muslin Top/1.avif",
+        "/Top/Muslin Top/2.avif",
+        "/Top/Muslin Top/3.avif"
+      ],
+      [
+        "/Top/Muslin Top/4.avif",
+        "/Top/Muslin Top/5.avif",
+        "/Top/Muslin Top/6.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -16658,8 +17126,20 @@ const products = [
       "/Dress/Provence Dress/10.avif"
     ],
     "colorImages": [
-      ["/Dress/Provence Dress/1.avif", "/Dress/Provence Dress/2.avif", "/Dress/Provence Dress/3.avif", "/Dress/Provence Dress/4.avif", "/Dress/Provence Dress/5.avif", "/Dress/Provence Dress/6.avif"],
-      ["/Dress/Provence Dress/7.avif", "/Dress/Provence Dress/8.avif", "/Dress/Provence Dress/9.avif", "/Dress/Provence Dress/10.avif"]
+      [
+        "/Dress/Provence Dress/1.avif",
+        "/Dress/Provence Dress/2.avif",
+        "/Dress/Provence Dress/3.avif",
+        "/Dress/Provence Dress/4.avif",
+        "/Dress/Provence Dress/5.avif",
+        "/Dress/Provence Dress/6.avif"
+      ],
+      [
+        "/Dress/Provence Dress/7.avif",
+        "/Dress/Provence Dress/8.avif",
+        "/Dress/Provence Dress/9.avif",
+        "/Dress/Provence Dress/10.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -16888,8 +17368,20 @@ const products = [
       "/Dress/Maria Dress/10.avif"
     ],
     "colorImages": [
-      ["/Dress/Maria Dress/1.avif", "/Dress/Maria Dress/2.avif", "/Dress/Maria Dress/3.avif", "/Dress/Maria Dress/4.avif", "/Dress/Maria Dress/5.avif", "/Dress/Maria Dress/6.avif"],
-      ["/Dress/Maria Dress/7.avif", "/Dress/Maria Dress/8.avif", "/Dress/Maria Dress/9.avif", "/Dress/Maria Dress/10.avif"]
+      [
+        "/Dress/Maria Dress/1.avif",
+        "/Dress/Maria Dress/2.avif",
+        "/Dress/Maria Dress/3.avif",
+        "/Dress/Maria Dress/4.avif",
+        "/Dress/Maria Dress/5.avif",
+        "/Dress/Maria Dress/6.avif"
+      ],
+      [
+        "/Dress/Maria Dress/7.avif",
+        "/Dress/Maria Dress/8.avif",
+        "/Dress/Maria Dress/9.avif",
+        "/Dress/Maria Dress/10.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -16971,10 +17463,27 @@ const products = [
       "/Dress/Ruffle Dress/14.avif"
     ],
     "colorImages": [
-      ["/Dress/Ruffle Dress/1.avif", "/Dress/Ruffle Dress/2.avif", "/Dress/Ruffle Dress/3.avif", "/Dress/Ruffle Dress/5.avif"],
-      ["/Dress/Ruffle Dress/6.avif", "/Dress/Ruffle Dress/7.avif", "/Dress/Ruffle Dress/8.avif"],
-      ["/Dress/Ruffle Dress/9.avif", "/Dress/Ruffle Dress/10.avif", "/Dress/Ruffle Dress/11.avif"],
-      ["/Dress/Ruffle Dress/12.avif", "/Dress/Ruffle Dress/13.avif", "/Dress/Ruffle Dress/14.avif"]
+      [
+        "/Dress/Ruffle Dress/1.avif",
+        "/Dress/Ruffle Dress/2.avif",
+        "/Dress/Ruffle Dress/3.avif",
+        "/Dress/Ruffle Dress/5.avif"
+      ],
+      [
+        "/Dress/Ruffle Dress/6.avif",
+        "/Dress/Ruffle Dress/7.avif",
+        "/Dress/Ruffle Dress/8.avif"
+      ],
+      [
+        "/Dress/Ruffle Dress/9.avif",
+        "/Dress/Ruffle Dress/10.avif",
+        "/Dress/Ruffle Dress/11.avif"
+      ],
+      [
+        "/Dress/Ruffle Dress/12.avif",
+        "/Dress/Ruffle Dress/13.avif",
+        "/Dress/Ruffle Dress/14.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -17069,9 +17578,29 @@ const products = [
       "/Dress/Muslin/23.avif"
     ],
     "colorImages": [
-      ["/Dress/Muslin/7.avif", "/Dress/Muslin/8.avif", "/Dress/Muslin/9.avif", "/Dress/Muslin/10.avif", "/Dress/Muslin/11.avif", "/Dress/Muslin/12.avif"],
-      ["/Dress/Muslin/13.avif", "/Dress/Muslin/14.avif", "/Dress/Muslin/15.avif", "/Dress/Muslin/16.avif", "/Dress/Muslin/17.avif"],
-      ["/Dress/Muslin/18.avif", "/Dress/Muslin/19.avif", "/Dress/Muslin/20.avif", "/Dress/Muslin/21.avif", "/Dress/Muslin/22.avif", "/Dress/Muslin/23.avif"]
+      [
+        "/Dress/Muslin/7.avif",
+        "/Dress/Muslin/8.avif",
+        "/Dress/Muslin/9.avif",
+        "/Dress/Muslin/10.avif",
+        "/Dress/Muslin/11.avif",
+        "/Dress/Muslin/12.avif"
+      ],
+      [
+        "/Dress/Muslin/13.avif",
+        "/Dress/Muslin/14.avif",
+        "/Dress/Muslin/15.avif",
+        "/Dress/Muslin/16.avif",
+        "/Dress/Muslin/17.avif"
+      ],
+      [
+        "/Dress/Muslin/18.avif",
+        "/Dress/Muslin/19.avif",
+        "/Dress/Muslin/20.avif",
+        "/Dress/Muslin/21.avif",
+        "/Dress/Muslin/22.avif",
+        "/Dress/Muslin/23.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -17218,8 +17747,22 @@ const products = [
       "/Dress/Oversize/12.avif"
     ],
     "colorImages": [
-      ["/Dress/Oversize/1.avif", "/Dress/Oversize/2.avif", "/Dress/Oversize/3.avif", "/Dress/Oversize/4.avif", "/Dress/Oversize/5.avif", "/Dress/Oversize/6.avif"],
-      ["/Dress/Oversize/7.avif", "/Dress/Oversize/8.avif", "/Dress/Oversize/9.avif", "/Dress/Oversize/10.avif", "/Dress/Oversize/11.avif", "/Dress/Oversize/12.avif"]
+      [
+        "/Dress/Oversize/1.avif",
+        "/Dress/Oversize/2.avif",
+        "/Dress/Oversize/3.avif",
+        "/Dress/Oversize/4.avif",
+        "/Dress/Oversize/5.avif",
+        "/Dress/Oversize/6.avif"
+      ],
+      [
+        "/Dress/Oversize/7.avif",
+        "/Dress/Oversize/8.avif",
+        "/Dress/Oversize/9.avif",
+        "/Dress/Oversize/10.avif",
+        "/Dress/Oversize/11.avif",
+        "/Dress/Oversize/12.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -17318,8 +17861,22 @@ const products = [
       "/Dress/Ethnic/12.avif"
     ],
     "colorImages": [
-      ["/Dress/Ethnic/1.avif", "/Dress/Ethnic/2.avif", "/Dress/Ethnic/3.avif", "/Dress/Ethnic/4.avif", "/Dress/Ethnic/5.avif", "/Dress/Ethnic/6.avif"],
-      ["/Dress/Ethnic/7.avif", "/Dress/Ethnic/8.avif", "/Dress/Ethnic/9.avif", "/Dress/Ethnic/10.avif", "/Dress/Ethnic/11.avif", "/Dress/Ethnic/12.avif"]
+      [
+        "/Dress/Ethnic/1.avif",
+        "/Dress/Ethnic/2.avif",
+        "/Dress/Ethnic/3.avif",
+        "/Dress/Ethnic/4.avif",
+        "/Dress/Ethnic/5.avif",
+        "/Dress/Ethnic/6.avif"
+      ],
+      [
+        "/Dress/Ethnic/7.avif",
+        "/Dress/Ethnic/8.avif",
+        "/Dress/Ethnic/9.avif",
+        "/Dress/Ethnic/10.avif",
+        "/Dress/Ethnic/11.avif",
+        "/Dress/Ethnic/12.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -17507,8 +18064,20 @@ const products = [
       "/Pants/Leather Flared Pants/17.avif"
     ],
     "colorImages": [
-      ["/Pants/Leather Flared Pants/5.avif", "/Pants/Leather Flared Pants/6.avif", "/Pants/Leather Flared Pants/7.avif", "/Pants/Leather Flared Pants/4.avif", "/Pants/Leather Flared Pants/8.avif", "/Pants/Leather Flared Pants/9.avif"],
-      ["/Pants/Leather Flared Pants/14.avif", "/Pants/Leather Flared Pants/15.avif", "/Pants/Leather Flared Pants/16.avif", "/Pants/Leather Flared Pants/17.avif"]
+      [
+        "/Pants/Leather Flared Pants/5.avif",
+        "/Pants/Leather Flared Pants/6.avif",
+        "/Pants/Leather Flared Pants/7.avif",
+        "/Pants/Leather Flared Pants/4.avif",
+        "/Pants/Leather Flared Pants/8.avif",
+        "/Pants/Leather Flared Pants/9.avif"
+      ],
+      [
+        "/Pants/Leather Flared Pants/14.avif",
+        "/Pants/Leather Flared Pants/15.avif",
+        "/Pants/Leather Flared Pants/16.avif",
+        "/Pants/Leather Flared Pants/17.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -17579,8 +18148,20 @@ const products = [
       "/Sweaters/Drawstring Sweater/10.avif"
     ],
     "colorImages": [
-      ["/Sweaters/Drawstring Sweater/1.avif", "/Sweaters/Drawstring Sweater/2.avif", "/Sweaters/Drawstring Sweater/3.avif", "/Sweaters/Drawstring Sweater/4.avif", "/Sweaters/Drawstring Sweater/5.avif"],
-      ["/Sweaters/Drawstring Sweater/6.avif", "/Sweaters/Drawstring Sweater/7.avif", "/Sweaters/Drawstring Sweater/8.avif", "/Sweaters/Drawstring Sweater/9.avif", "/Sweaters/Drawstring Sweater/10.avif"]
+      [
+        "/Sweaters/Drawstring Sweater/1.avif",
+        "/Sweaters/Drawstring Sweater/2.avif",
+        "/Sweaters/Drawstring Sweater/3.avif",
+        "/Sweaters/Drawstring Sweater/4.avif",
+        "/Sweaters/Drawstring Sweater/5.avif"
+      ],
+      [
+        "/Sweaters/Drawstring Sweater/6.avif",
+        "/Sweaters/Drawstring Sweater/7.avif",
+        "/Sweaters/Drawstring Sweater/8.avif",
+        "/Sweaters/Drawstring Sweater/9.avif",
+        "/Sweaters/Drawstring Sweater/10.avif"
+      ]
     ],
     "sizes": [
       "XS",
