@@ -35,7 +35,7 @@
       "blackFriday": {
         "brand": "LATORE",
         "title": "BLACK FRIDAY",
-        "subtitle": "Discounts up to -25% on selected wool, leather, and knitwear pieces.",
+        "subtitle": "Discounts up to -25% on selected wool, leather, tweed, knitwear, denim-cotton, and satin pieces. Current production time is up to 5-7 business days.",
         "cta": "Shop the edit",
         "endsIn": "Ends in",
         "ended": "Sale ended",
@@ -51,7 +51,7 @@
       },
       "blackFridayPage": {
         "heading": "Black Friday %",
-        "subtitle": "Discounts up to -25% on selected wool, leather, and knitwear pieces.",
+        "subtitle": "Discounts up to -25% on selected wool, leather, tweed, knitwear, denim-cotton, and satin pieces. Current production time is up to 5-7 business days.",
         "empty": "Offers coming soon.",
         "sessionError": "Could not create session. Try refreshing the page.",
         "addToCartError": "Error adding to cart"
@@ -343,7 +343,7 @@
       "blackFriday": {
         "brand": "LATORE",
         "title": "BLACK FRIDAY",
-        "subtitle": "Знижки до -25% на обрані позиції із вовни, шкіри та трикотажу",
+        "subtitle": "Знижки до -25% на обрані позиції із вовни, шкіри, твіду, трикотажу, джинс-котону та сатину. Терміни виготовлення наразі до 5-7 роб. днів.",
         "cta": "До колекції",
         "endsIn": "До кінця акції",
         "ended": "Акція завершена",
@@ -359,7 +359,7 @@
       },
       "blackFridayPage": {
         "heading": "Black Friday %",
-        "subtitle": "Знижки до -25% на обрані позиції із вовни, шкіри та трикотажу",
+        "subtitle": "Знижки до -25% на обрані позиції із вовни, шкіри, твіду, трикотажу, джинс-котону та сатину. Терміни виготовлення наразі до 5-7 роб. днів.",
         "empty": "Пропозиції зʼявляться незабаром.",
         "sessionError": "Не вдалося створити сесію. Спробуйте оновити сторінку.",
         "addToCartError": "Помилка при додаванні до кошика"
