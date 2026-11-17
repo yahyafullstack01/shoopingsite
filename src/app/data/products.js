@@ -3219,11 +3219,27 @@ const products = [
     "sku": "99484",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Lui Skirt Suit/1.avif",
+    "image": "/Costumes/Lui Skirt Suit/5.avif",
     "images": [
+      "/Costumes/Lui Skirt Suit/6.avif",
+      "/Costumes/Lui Skirt Suit/7.avif",
+      "/Costumes/Lui Skirt Suit/1.avif",
       "/Costumes/Lui Skirt Suit/2.avif",
       "/Costumes/Lui Skirt Suit/3.avif",
       "/Costumes/Lui Skirt Suit/4.avif"
+    ],
+    "colorImages": [
+      [
+        "/Costumes/Lui Skirt Suit/5.avif",
+        "/Costumes/Lui Skirt Suit/6.avif",
+        "/Costumes/Lui Skirt Suit/7.avif"
+      ],
+      [
+        "/Costumes/Lui Skirt Suit/1.avif",
+        "/Costumes/Lui Skirt Suit/2.avif",
+        "/Costumes/Lui Skirt Suit/3.avif",
+        "/Costumes/Lui Skirt Suit/4.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -3244,6 +3260,7 @@ const products = [
           "Season: autumn, winter."
         ],
         "colors": [
+          "graphite",
           "gray"
         ]
       },
@@ -3258,6 +3275,7 @@ const products = [
           "Saison : automne, hiver."
         ],
         "colors": [
+          "graphite",
           "gris"
         ]
       },
@@ -3272,6 +3290,7 @@ const products = [
           "Сезон: осінь, зима."
         ],
         "colors": [
+          "графіт",
           "сірий"
         ]
       },
@@ -3286,6 +3305,7 @@ const products = [
           "Сезон: осень, зима."
         ],
         "colors": [
+          "графит",
           "серый"
         ]
       }
