@@ -3060,7 +3060,19 @@ const products = [
     "category": "Skirts",
     "image": "/Skirts/Lui Straight Midi Skirt/1.avif",
     "images": [
-      "/Skirts/Lui Straight Midi Skirt/2.avif"
+      "/Skirts/Lui Straight Midi Skirt/2.avif",
+      "/Skirts/Lui Straight Midi Skirt/3.avif",
+      "/Skirts/Lui Straight Midi Skirt/4.avif"
+    ],
+    "colorImages": [
+      [
+        "/Skirts/Lui Straight Midi Skirt/1.avif",
+        "/Skirts/Lui Straight Midi Skirt/2.avif"
+      ],
+      [
+        "/Skirts/Lui Straight Midi Skirt/3.avif",
+        "/Skirts/Lui Straight Midi Skirt/4.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -3081,7 +3093,8 @@ const products = [
           "Season: autumn, winter."
         ],
         "colors": [
-          "gray"
+          "gray",
+          "graphite"
         ]
       },
       "FR": {
@@ -3095,7 +3108,8 @@ const products = [
           "Saison : automne, hiver."
         ],
         "colors": [
-          "gris"
+          "gris",
+          "graphite"
         ]
       },
       "UA": {
@@ -3109,7 +3123,8 @@ const products = [
           "Сезон: осінь, зима."
         ],
         "colors": [
-          "сірий"
+          "сірий",
+          "графіт"
         ]
       },
       "RU": {
@@ -3123,7 +3138,8 @@ const products = [
           "Сезон: осень, зима."
         ],
         "colors": [
-          "серый"
+          "серый",
+          "графит"
         ]
       }
     },
