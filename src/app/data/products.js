@@ -9633,7 +9633,34 @@ const products = [
       "/Skirts/Leather Skirt Front Slit/2.avif",
       "/Skirts/Leather Skirt Front Slit/3.avif",
       "/Skirts/Leather Skirt Front Slit/4.avif",
-      "/Skirts/Leather Skirt Front Slit/5.avif"
+      "/Skirts/Leather Skirt Front Slit/5.avif",
+      "/Skirts/Leather Skirt Front Slit/6.avif",
+      "/Skirts/Leather Skirt Front Slit/7.avif",
+      "/Skirts/Leather Skirt Front Slit/8.avif",
+      "/Skirts/Leather Skirt Front Slit/9.avif",
+      "/Skirts/Leather Skirt Front Slit/10.avif",
+      "/Skirts/Leather Skirt Front Slit/11.avif"
+    ],
+    "colorImages": [
+      [
+        "/Skirts/Leather Skirt Front Slit/1.avif",
+        "/Skirts/Leather Skirt Front Slit/2.avif",
+        "/Skirts/Leather Skirt Front Slit/3.avif",
+        "/Skirts/Leather Skirt Front Slit/4.avif",
+        "/Skirts/Leather Skirt Front Slit/5.avif"
+      ],
+      [
+        "/Skirts/Leather Skirt Front Slit/10.avif",
+        "/Skirts/Leather Skirt Front Slit/11.avif"
+      ],
+      [
+        "/Skirts/Leather Skirt Front Slit/6.avif",
+        "/Skirts/Leather Skirt Front Slit/7.avif"
+      ],
+      [
+        "/Skirts/Leather Skirt Front Slit/8.avif",
+        "/Skirts/Leather Skirt Front Slit/9.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -9647,7 +9674,7 @@ const products = [
         "category": "Skirts",
         "name": "Leather Skirt with Front Slit",
         "description": [
-          "A statement midi skirt in rich red eco-leather — about boldness, elegance, and confidence. The high waist beautifully accentuates the waistline, while the straight silhouette elongates the figure, creating a refined and modern look.",
+          "A statement midi skirt in rich eco-leather — about boldness, elegance, and confidence. The high waist beautifully accentuates the waistline, while the straight silhouette elongates the figure, creating a refined and modern look.",
           "The neat front slit adds dynamism and subtle sensuality without disturbing the balance between restraint and impact.",
           "Fabric: High-quality eco-leather with a suede backing (stretchy, does not crack).",
           "Details:",
@@ -9656,14 +9683,17 @@ const products = [
           "• High waist"
         ],
         "colors": [
-          "red"
+          "red",
+          "black",
+          "mocha",
+          "olive"
         ]
       },
       "FR": {
         "category": "Jupes",
         "name": "Jupe en cuir avec fente devant",
         "description": [
-          "Une jupe midi audacieuse en cuir synthétique rouge vif — pour l'élégance, la confiance et l'assurance. La taille haute souligne magnifiquement la silhouette, tandis que la coupe droite allonge la figure pour un look raffiné et moderne.",
+          "Une jupe midi audacieuse en cuir synthétique — pour l'élégance, la confiance et l'assurance. La taille haute souligne magnifiquement la silhouette, tandis que la coupe droite allonge la figure pour un look raffiné et moderne.",
           "La fente devant ajoute du dynamisme et une touche de sensualité sans rompre l'équilibre entre retenue et impact.",
           "Tissu : cuir écologique de haute qualité sur base en suédine (extensible, ne se fissure pas).",
           "Détails :",
@@ -9672,14 +9702,17 @@ const products = [
           "• Taille haute"
         ],
         "colors": [
-          "rouge"
+          "rouge",
+          "noir",
+          "mocha",
+          "olive"
         ]
       },
       "UA": {
         "category": "Спідниці",
         "name": "Шкіряна спідниця розріз спереду",
         "description": [
-          "Акцентна міді-спідниця зі штучної шкіри насиченого червоного кольору — про сміливість, елегантність і впевненість у собі. Висока посадка красиво підкреслює талію, а прямий силует витягує фігуру, створюючи витончений і сучасний образ.",
+          "Акцентна міді-спідниця зі штучної шкіри — про сміливість, елегантність і впевненість у собі. Висока посадка красиво підкреслює талію, а прямий силует витягує фігуру, створюючи витончений і сучасний образ.",
           "Акуратний розріз спереду додає динаміки та легкої сексуальності, не порушуючи балансу між стриманістю й ефектністю.",
           "Тканина: якісна екошкіра на замшевій основі (стречева, не тріскається).",
           "Деталі:",
@@ -9688,14 +9721,17 @@ const products = [
           "• висока посадка"
         ],
         "colors": [
-          "червоний"
+          "червоний",
+          "чорний",
+          "мокко",
+          "оливка"
         ]
       },
       "RU": {
         "category": "Юбки",
         "name": "Кожаная юбка с разрезом спереди",
         "description": [
-          "Акцентная миди-юбка из искусственной кожи насыщенного красного цвета — о смелости, элегантности и уверенности в себе. Высокая посадка красиво подчёркивает талию, а прямой силуэт удлиняет фигуру, создавая изысканный и современный образ.",
+          "Акцентная миди-юбка из искусственной кожи — о смелости, элегантности и уверенности в себе. Высокая посадка красиво подчёркивает талию, а прямой силуэт удлиняет фигуру, создавая изысканный и современный образ.",
           "Аккуратный разрез спереди добавляет динамики и лёгкой сексуальности, не нарушая баланса между сдержанностью и эффектностью.",
           "Ткань: качественная экокожа на замшевой основе (стрейчевая, не трескается).",
           "Детали:",
@@ -9704,7 +9740,10 @@ const products = [
           "• высокая посадка"
         ],
         "colors": [
-          "красный"
+          "красный",
+          "черный",
+          "мокко",
+          "оливковый"
         ]
       }
     },
@@ -11360,7 +11399,22 @@ const products = [
       "/Skirts/Leather Midi Skirt/2.avif",
       "/Skirts/Leather Midi Skirt/3.avif",
       "/Skirts/Leather Midi Skirt/4.avif",
-      "/Skirts/Leather Midi Skirt/5.avif"
+      "/Skirts/Leather Midi Skirt/5.avif",
+      "/Skirts/Leather Midi Skirt/6.avif",
+      "/Skirts/Leather Midi Skirt/7.avif"
+    ],
+    "colorImages": [
+      [
+        "/Skirts/Leather Midi Skirt/1.avif",
+        "/Skirts/Leather Midi Skirt/2.avif",
+        "/Skirts/Leather Midi Skirt/3.avif",
+        "/Skirts/Leather Midi Skirt/4.avif",
+        "/Skirts/Leather Midi Skirt/5.avif"
+      ],
+      [
+        "/Skirts/Leather Midi Skirt/6.avif",
+        "/Skirts/Leather Midi Skirt/7.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -11375,7 +11429,8 @@ const products = [
         "name": "Leather Midi Skirt",
         "description": "A midi-length pencil skirt with a high waist and a side slit.\nFabric: high-quality stretch eco-leather on a suede base (durable, crack-resistant).",
         "colors": [
-          "black"
+          "black",
+          "marsala"
         ]
       },
       "FR": {
@@ -11383,7 +11438,8 @@ const products = [
         "name": "Jupe Midi en Cuir",
         "description": "Jupe crayon de longueur midi avec une taille haute et une fente latérale.\nTissu : éco-cuir extensible de haute qualité sur une base en daim (résistant, ne se fissure pas).",
         "colors": [
-          "noir"
+          "noir",
+          "marsala"
         ]
       },
       "UA": {
@@ -11391,7 +11447,8 @@ const products = [
         "name": "Шкіряна спідниця",
         "description": "Спідниця міді довжини фасону олівець на високій посадці із розрізом збоку.\nТканина: якісна екошкіра на замшевій основі (стречева, не тріскається).",
         "colors": [
-          "чорний"
+          "чорний",
+          "марсала"
         ]
       },
       "RU": {
@@ -11399,7 +11456,8 @@ const products = [
         "name": "Кожаная юбка",
         "description": "Юбка средней длины фасона карандаш с высокой посадкой и разрезом сбоку.\nТкань: качественная эко-кожа на замшевой основе (эластичная, не трескается).",
         "colors": [
-          "черный"
+          "черный",
+          "марсала"
         ]
       }
     },
@@ -11866,8 +11924,9 @@ const products = [
     "sku": "12345",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Woolen trapeze dress/6.avif",
+    "image": "/Dress/Woolen trapeze dress/10.avif",
     "images": [
+      "/Dress/Woolen trapeze dress/11.avif",
       "/Dress/Woolen trapeze dress/6.avif",
       "/Dress/Woolen trapeze dress/7.avif",
       "/Dress/Woolen trapeze dress/8.avif",
@@ -11879,6 +11938,10 @@ const products = [
       "/Dress/Woolen trapeze dress/5.avif"
     ],
     "colorImages": [
+      [
+        "/Dress/Woolen trapeze dress/10.avif",
+        "/Dress/Woolen trapeze dress/11.avif"
+      ],
       [
         "/Dress/Woolen trapeze dress/6.avif",
         "/Dress/Woolen trapeze dress/7.avif",
@@ -11905,8 +11968,9 @@ const products = [
         "category": "Dresses",
         "name": "Woolen trapeze dress",
         "description": "Trapeze dress with a pronounced belt\nComposition: 75% natural wool, soft, does not stick to the body.",
-        "color": "cornflower blue",
+        "color": "gray",
         "colors": [
+          "gray",
           "cornflower blue",
           "jeans"
         ]
@@ -11915,8 +11979,9 @@ const products = [
         "category": "Robes",
         "name": "Robe trapèze en laine",
         "description": "Robe trapèze avec ceinture marquée\nComposition: 75% laine naturelle, douce, ne colle pas à la peau.",
-        "color": "bleu bleuet",
+        "color": "gris",
         "colors": [
+          "gris",
           "bleu bleuet",
           "jeans"
         ]
@@ -11929,8 +11994,9 @@ const products = [
           "Склад: 75% натуральної вовни",
           "м'яка, не прилипає до тіла."
         ],
-        "color": "васильковий",
+        "color": "сірий",
         "colors": [
+          "сірий",
           "васильковий",
           "джинсовий"
         ]
