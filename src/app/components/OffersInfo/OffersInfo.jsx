@@ -117,8 +117,6 @@ export default function OffersInfo() {
                 product.translations?.[language]?.name || product.title;
 
               const src = getProductSrc(product);
-              const isLocal =
-                typeof src === "string" && src.startsWith("/");
 
               return (
                 <article
@@ -135,9 +133,6 @@ export default function OffersInfo() {
                       width={300}
                       height={350}
                       className="w-full h-full object-cover"
-                      priority
-                      unoptimized={isLocal}
-                      loader={isLocal ? ({ src }) => src : undefined}
                     />
                   </div>
 

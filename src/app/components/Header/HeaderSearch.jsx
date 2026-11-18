@@ -272,7 +272,6 @@ export default function HeaderSearch({ isDarkMode }) {
                                 fill
                                 sizes="40px"
                                 className="object-cover"
-                                unoptimized
                               />
                             </span>
                             <span className="min-w-0 flex-1">

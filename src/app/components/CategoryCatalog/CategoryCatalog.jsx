@@ -36,7 +36,7 @@ const CategoryCatalog = () => {
       <div className="h-[450px] md:h-[900px] lg:h-auto overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-gray-300 dark:scrollbar-thumb-zinc-700">
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-          {categories.map((cat) => (
+          {categories.map((cat, i) => (
             <article
               key={cat.path}
               className="group relative aspect-[3/4] rounded-xl overflow-hidden shadow-md dark:shadow-lg transition-transform duration-300 hover:scale-[1.03]"
@@ -47,8 +47,9 @@ const CategoryCatalog = () => {
                   alt={`${cat.name} – ${language === 'EN' ? 'exclusive women\'s clothing' : 'ексклюзивний жіночий одяг'}`}
                   fill
                   className="object-cover"
-                  priority
-                  unoptimized
+                  sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
+                  priority={i < 2}
+                  loading={i < 2 ? undefined : "lazy"}
                 />
                 <div className="absolute bottom-3 left-3 bg-white/90 dark:bg-black/70 text-sm font-normal px-3 py-1 rounded-md text-black dark:text-white">
                   {cat.name}
