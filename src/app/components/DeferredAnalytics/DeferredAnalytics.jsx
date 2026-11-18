@@ -65,9 +65,11 @@ export default function DeferredAnalytics() {
       loaded = true;
       INTERACTION_EVENTS.forEach((evt) => window.removeEventListener(evt, load));
       clearTimeout(fallbackTimer);
+      // Stagger injection across separate ticks so the three scripts don't
+      // bundle into one long main-thread task.
       injectGoogleAnalytics();
-      injectClarity();
-      injectFacebookPixel();
+      setTimeout(injectClarity, 150);
+      setTimeout(injectFacebookPixel, 300);
     };
 
     INTERACTION_EVENTS.forEach((evt) => window.addEventListener(evt, load, { once: true, passive: true }));
