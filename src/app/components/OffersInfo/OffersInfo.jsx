@@ -1,11 +1,12 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import dynamic from "next/dynamic";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useLanguage } from "../../Functions/useLanguage";
 import { handleContactButtonClick } from "../../utils/products";
 import Image from "next/image";
-import ProductBanner from "../../components/products/ProductBanner";
+const ProductBanner = dynamic(() => import("../../components/products/ProductBanner"));
 import products from "../../data/products";
 
 // допоміжна функція для вибору картинки

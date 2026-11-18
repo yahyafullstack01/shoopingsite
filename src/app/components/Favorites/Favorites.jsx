@@ -1,13 +1,14 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import dynamic from 'next/dynamic';
 import { getFavorites } from '../../utils/favorites';
 import { useLanguage } from '../../Functions/useLanguage';
 import ProductCard from '../products/ProductCard';
 import productsData from '../../data/products';
 
-import ProductBanner from '../products/ProductBanner';
-import QuickAddModal from '../QuickAddModal/QuickAddModal';
+const ProductBanner = dynamic(() => import('../products/ProductBanner'));
+const QuickAddModal = dynamic(() => import('../QuickAddModal/QuickAddModal'));
 import Toast from '../ToastCart/Toast';
 import { getBackendBaseUrl } from '../../utils/backendUrl';
 
