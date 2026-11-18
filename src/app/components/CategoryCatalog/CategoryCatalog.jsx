@@ -14,16 +14,16 @@ const CategoryCatalog = () => {
   };
 
   const categories = [
-    { name: catalogData.categories[0] || 'Dresses', image: '/HomeCatalog/5.avif', path: 'dresses' },
-    { name: catalogData.categories[1] || 'Costumes', image: '/HomeCatalog/6.avif', path: 'costumes' },
-    { name: catalogData.categories[2] || 'Shirts', image: '/HomeCatalog/7.avif', path: 'Shirts' },
-    { name: catalogData.categories[3] || 'Skirts', image: '/HomeCatalog/8.avif', path: 'skirts' },
-    { name: catalogData.categories[4] || 'Tops', image: '/HomeCatalog/9.avif', path: 'tops' },
-    { name: catalogData.categories[5] || 'Pants', image: '/HomeCatalog/10.avif', path: 'pants' },
-    { name: catalogData.categories[6] || 'Jackets', image: '/HomeCatalog/11.avif', path: 'jackets' },
-    { name: catalogData.categories[7] || 'Sweaters', image: '/HomeCatalog/12.avif', path: 'sweaters' },
-    { name: catalogData.categories[8] || 'Outerwear', image: '/HomeCatalog/13.avif', path: 'outerwear' },
-    { name: catalogData.categories[9] || 'Shorts', image: '/HomeCatalog/14.avif', path: 'shorts' },
+    { name: catalogData.categories[0] || 'Dresses', image: '/HomeCatalog/5.webp', path: 'dresses' },
+    { name: catalogData.categories[1] || 'Costumes', image: '/HomeCatalog/6.webp', path: 'costumes' },
+    { name: catalogData.categories[2] || 'Shirts', image: '/HomeCatalog/7.webp', path: 'Shirts' },
+    { name: catalogData.categories[3] || 'Skirts', image: '/HomeCatalog/8.webp', path: 'skirts' },
+    { name: catalogData.categories[4] || 'Tops', image: '/HomeCatalog/9.webp', path: 'tops' },
+    { name: catalogData.categories[5] || 'Pants', image: '/HomeCatalog/10.webp', path: 'pants' },
+    { name: catalogData.categories[6] || 'Jackets', image: '/HomeCatalog/11.webp', path: 'jackets' },
+    { name: catalogData.categories[7] || 'Sweaters', image: '/HomeCatalog/12.webp', path: 'sweaters' },
+    { name: catalogData.categories[8] || 'Outerwear', image: '/HomeCatalog/13.webp', path: 'outerwear' },
+    { name: catalogData.categories[9] || 'Shorts', image: '/HomeCatalog/14.webp', path: 'shorts' },
   ];
 
   return (

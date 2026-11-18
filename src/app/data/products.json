@@ -8,20 +8,20 @@
     "sku": "99521",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Graphite Cardigan Suit/1.avif",
+    "image": "/Costumes/Graphite Cardigan Suit/1.webp",
     "images": [
-      "/Costumes/Graphite Cardigan Suit/2.avif",
-      "/Costumes/Graphite Cardigan Suit/3.avif",
-      "/Costumes/Graphite Cardigan Suit/4.avif",
-      "/Costumes/Graphite Cardigan Suit/5.avif"
+      "/Costumes/Graphite Cardigan Suit/2.webp",
+      "/Costumes/Graphite Cardigan Suit/3.webp",
+      "/Costumes/Graphite Cardigan Suit/4.webp",
+      "/Costumes/Graphite Cardigan Suit/5.webp"
     ],
     "colorImages": [
       [
-        "/Costumes/Graphite Cardigan Suit/1.avif",
-        "/Costumes/Graphite Cardigan Suit/2.avif",
-        "/Costumes/Graphite Cardigan Suit/3.avif",
-        "/Costumes/Graphite Cardigan Suit/4.avif",
-        "/Costumes/Graphite Cardigan Suit/5.avif"
+        "/Costumes/Graphite Cardigan Suit/1.webp",
+        "/Costumes/Graphite Cardigan Suit/2.webp",
+        "/Costumes/Graphite Cardigan Suit/3.webp",
+        "/Costumes/Graphite Cardigan Suit/4.webp",
+        "/Costumes/Graphite Cardigan Suit/5.webp"
       ]
     ],
     "sizes": [
@@ -112,13 +112,13 @@
     "sku": "99520",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Loden Dress/1.avif",
+    "image": "/Dress/Loden Dress/1.webp",
     "images": [
-      "/Dress/Loden Dress/2.avif",
-      "/Dress/Loden Dress/3.avif",
-      "/Dress/Loden Dress/4.avif",
-      "/Dress/Loden Dress/5.avif",
-      "/Dress/Loden Dress/6.avif"
+      "/Dress/Loden Dress/2.webp",
+      "/Dress/Loden Dress/3.webp",
+      "/Dress/Loden Dress/4.webp",
+      "/Dress/Loden Dress/5.webp",
+      "/Dress/Loden Dress/6.webp"
     ],
     "sizes": [
       "XS",
@@ -196,12 +196,12 @@
     "sku": "99519",
     "size": "XS S M L XL",
     "category": "Jackets",
-    "image": "/Jackets/Tie-Fastening Jacket/1.avif",
+    "image": "/Jackets/Tie-Fastening Jacket/1.webp",
     "images": [
-      "/Jackets/Tie-Fastening Jacket/2.avif",
-      "/Jackets/Tie-Fastening Jacket/3.avif",
-      "/Jackets/Tie-Fastening Jacket/4.avif",
-      "/Jackets/Tie-Fastening Jacket/5.avif"
+      "/Jackets/Tie-Fastening Jacket/2.webp",
+      "/Jackets/Tie-Fastening Jacket/3.webp",
+      "/Jackets/Tie-Fastening Jacket/4.webp",
+      "/Jackets/Tie-Fastening Jacket/5.webp"
     ],
     "sizes": [
       "XS",
@@ -278,28 +278,28 @@
     "sku": "99518",
     "size": "XS S M L XL",
     "category": "Sweaters",
-    "image": "/Sweaters/Knitted Zip Top/1.avif",
+    "image": "/Sweaters/Knitted Zip Top/1.webp",
     "images": [
-      "/Sweaters/Knitted Zip Top/2.avif",
-      "/Sweaters/Knitted Zip Top/3.avif",
-      "/Sweaters/Knitted Zip Top/4.avif",
-      "/Sweaters/Knitted Zip Top/5.avif",
-      "/Sweaters/Knitted Zip Top/6.avif",
-      "/Sweaters/Knitted Zip Top/7.avif",
-      "/Sweaters/Knitted Zip Top/8.avif"
+      "/Sweaters/Knitted Zip Top/2.webp",
+      "/Sweaters/Knitted Zip Top/3.webp",
+      "/Sweaters/Knitted Zip Top/4.webp",
+      "/Sweaters/Knitted Zip Top/5.webp",
+      "/Sweaters/Knitted Zip Top/6.webp",
+      "/Sweaters/Knitted Zip Top/7.webp",
+      "/Sweaters/Knitted Zip Top/8.webp"
     ],
     "colorImages": [
       [
-        "/Sweaters/Knitted Zip Top/1.avif",
-        "/Sweaters/Knitted Zip Top/2.avif",
-        "/Sweaters/Knitted Zip Top/3.avif",
-        "/Sweaters/Knitted Zip Top/4.avif"
+        "/Sweaters/Knitted Zip Top/1.webp",
+        "/Sweaters/Knitted Zip Top/2.webp",
+        "/Sweaters/Knitted Zip Top/3.webp",
+        "/Sweaters/Knitted Zip Top/4.webp"
       ],
       [
-        "/Sweaters/Knitted Zip Top/5.avif",
-        "/Sweaters/Knitted Zip Top/6.avif",
-        "/Sweaters/Knitted Zip Top/7.avif",
-        "/Sweaters/Knitted Zip Top/8.avif"
+        "/Sweaters/Knitted Zip Top/5.webp",
+        "/Sweaters/Knitted Zip Top/6.webp",
+        "/Sweaters/Knitted Zip Top/7.webp",
+        "/Sweaters/Knitted Zip Top/8.webp"
       ]
     ],
     "sizes": [
@@ -386,11 +386,11 @@
     "sku": "99517",
     "size": "XS S M L XL",
     "category": "Shirts",
-    "image": "/Shirts/Lace Shirt/1.avif",
+    "image": "/Shirts/Lace Shirt/1.webp",
     "images": [
-      "/Shirts/Lace Shirt/2.avif",
-      "/Shirts/Lace Shirt/3.avif",
-      "/Shirts/Lace Shirt/4.avif"
+      "/Shirts/Lace Shirt/2.webp",
+      "/Shirts/Lace Shirt/3.webp",
+      "/Shirts/Lace Shirt/4.webp"
     ],
     "sizes": [
       "XS",
@@ -467,12 +467,12 @@
     "sku": "99516",
     "size": "XS S M L XL",
     "category": "Skirts",
-    "image": "/Skirts/Leather Lace Skirt/5.avif",
+    "image": "/Skirts/Leather Lace Skirt/5.webp",
     "images": [
-      "/Skirts/Leather Lace Skirt/5.avif",
-      "/Skirts/Leather Lace Skirt/6.avif",
-      "/Skirts/Leather Lace Skirt/7.avif",
-      "/Skirts/Leather Lace Skirt/8.avif"
+      "/Skirts/Leather Lace Skirt/5.webp",
+      "/Skirts/Leather Lace Skirt/6.webp",
+      "/Skirts/Leather Lace Skirt/7.webp",
+      "/Skirts/Leather Lace Skirt/8.webp"
     ],
     "sizes": [
       "XS",
@@ -554,13 +554,13 @@
     "sku": "99515",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Nevada Dress/1.avif",
+    "image": "/Dress/Nevada Dress/1.webp",
     "images": [
-      "/Dress/Nevada Dress/2.avif",
-      "/Dress/Nevada Dress/3.avif",
-      "/Dress/Nevada Dress/4.avif",
-      "/Dress/Nevada Dress/5.avif",
-      "/Dress/Nevada Dress/6.avif"
+      "/Dress/Nevada Dress/2.webp",
+      "/Dress/Nevada Dress/3.webp",
+      "/Dress/Nevada Dress/4.webp",
+      "/Dress/Nevada Dress/5.webp",
+      "/Dress/Nevada Dress/6.webp"
     ],
     "sizes": [
       "XS",
@@ -641,10 +641,10 @@
     "sku": "99514",
     "size": "XS S M L XL",
     "category": "Skirts",
-    "image": "/Skirts/Parisian Skirt/1.avif",
+    "image": "/Skirts/Parisian Skirt/1.webp",
     "images": [
-      "/Skirts/Parisian Skirt/2.avif",
-      "/Skirts/Parisian Skirt/3.avif"
+      "/Skirts/Parisian Skirt/2.webp",
+      "/Skirts/Parisian Skirt/3.webp"
     ],
     "sizes": [
       "XS",
@@ -722,10 +722,10 @@
     "sku": "99513",
     "size": "XS S M L XL",
     "category": "Jackets",
-    "image": "/Jackets/Parisian Jacket/1.avif",
+    "image": "/Jackets/Parisian Jacket/1.webp",
     "images": [
-      "/Jackets/Parisian Jacket/2.avif",
-      "/Jackets/Parisian Jacket/3.avif"
+      "/Jackets/Parisian Jacket/2.webp",
+      "/Jackets/Parisian Jacket/3.webp"
     ],
     "sizes": [
       "XS",
@@ -803,12 +803,12 @@
     "sku": "99512",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Parisian Suit/1.avif",
+    "image": "/Costumes/Parisian Suit/1.webp",
     "images": [
-      "/Costumes/Parisian Suit/2.avif",
-      "/Costumes/Parisian Suit/3.avif",
-      "/Costumes/Parisian Suit/4.avif",
-      "/Costumes/Parisian Suit/5.avif"
+      "/Costumes/Parisian Suit/2.webp",
+      "/Costumes/Parisian Suit/3.webp",
+      "/Costumes/Parisian Suit/4.webp",
+      "/Costumes/Parisian Suit/5.webp"
     ],
     "sizes": [
       "XS",
@@ -886,26 +886,26 @@
     "sku": "99511",
     "size": "XS S M L XL",
     "category": "Pants",
-    "image": "/Pants/Jersey Relaxed Pants/1.avif",
+    "image": "/Pants/Jersey Relaxed Pants/1.webp",
     "images": [
-      "/Pants/Jersey Relaxed Pants/2.avif",
-      "/Pants/Jersey Relaxed Pants/3.avif",
-      "/Pants/Jersey Relaxed Pants/4.avif",
-      "/Pants/Jersey Relaxed Pants/5.avif",
-      "/Pants/Jersey Relaxed Pants/6.avif"
+      "/Pants/Jersey Relaxed Pants/2.webp",
+      "/Pants/Jersey Relaxed Pants/3.webp",
+      "/Pants/Jersey Relaxed Pants/4.webp",
+      "/Pants/Jersey Relaxed Pants/5.webp",
+      "/Pants/Jersey Relaxed Pants/6.webp"
     ],
     "colorImages": [
       [
-        "/Pants/Jersey Relaxed Pants/1.avif",
-        "/Pants/Jersey Relaxed Pants/2.avif"
+        "/Pants/Jersey Relaxed Pants/1.webp",
+        "/Pants/Jersey Relaxed Pants/2.webp"
       ],
       [
-        "/Pants/Jersey Relaxed Pants/3.avif",
-        "/Pants/Jersey Relaxed Pants/4.avif"
+        "/Pants/Jersey Relaxed Pants/3.webp",
+        "/Pants/Jersey Relaxed Pants/4.webp"
       ],
       [
-        "/Pants/Jersey Relaxed Pants/5.avif",
-        "/Pants/Jersey Relaxed Pants/6.avif"
+        "/Pants/Jersey Relaxed Pants/5.webp",
+        "/Pants/Jersey Relaxed Pants/6.webp"
       ]
     ],
     "sizes": [
@@ -995,26 +995,26 @@
     "sku": "99510",
     "size": "XS S M L XL",
     "category": "Tops",
-    "image": "/Top/Jersey Top/1.avif",
+    "image": "/Top/Jersey Top/1.webp",
     "images": [
-      "/Top/Jersey Top/2.avif",
-      "/Top/Jersey Top/3.avif",
-      "/Top/Jersey Top/4.avif",
-      "/Top/Jersey Top/5.avif",
-      "/Top/Jersey Top/6.avif"
+      "/Top/Jersey Top/2.webp",
+      "/Top/Jersey Top/3.webp",
+      "/Top/Jersey Top/4.webp",
+      "/Top/Jersey Top/5.webp",
+      "/Top/Jersey Top/6.webp"
     ],
     "colorImages": [
       [
-        "/Top/Jersey Top/1.avif",
-        "/Top/Jersey Top/2.avif"
+        "/Top/Jersey Top/1.webp",
+        "/Top/Jersey Top/2.webp"
       ],
       [
-        "/Top/Jersey Top/3.avif",
-        "/Top/Jersey Top/4.avif"
+        "/Top/Jersey Top/3.webp",
+        "/Top/Jersey Top/4.webp"
       ],
       [
-        "/Top/Jersey Top/5.avif",
-        "/Top/Jersey Top/6.avif"
+        "/Top/Jersey Top/5.webp",
+        "/Top/Jersey Top/6.webp"
       ]
     ],
     "sizes": [
@@ -1105,32 +1105,32 @@
     "sku": "99509",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Jersey Suit/1.avif",
+    "image": "/Costumes/Jersey Suit/1.webp",
     "images": [
-      "/Costumes/Jersey Suit/2.avif",
-      "/Costumes/Jersey Suit/3.avif",
-      "/Costumes/Jersey Suit/4.avif",
-      "/Costumes/Jersey Suit/5.avif",
-      "/Costumes/Jersey Suit/6.avif",
-      "/Costumes/Jersey Suit/7.avif",
-      "/Costumes/Jersey Suit/8.avif",
-      "/Costumes/Jersey Suit/9.avif"
+      "/Costumes/Jersey Suit/2.webp",
+      "/Costumes/Jersey Suit/3.webp",
+      "/Costumes/Jersey Suit/4.webp",
+      "/Costumes/Jersey Suit/5.webp",
+      "/Costumes/Jersey Suit/6.webp",
+      "/Costumes/Jersey Suit/7.webp",
+      "/Costumes/Jersey Suit/8.webp",
+      "/Costumes/Jersey Suit/9.webp"
     ],
     "colorImages": [
       [
-        "/Costumes/Jersey Suit/1.avif",
-        "/Costumes/Jersey Suit/2.avif",
-        "/Costumes/Jersey Suit/3.avif"
+        "/Costumes/Jersey Suit/1.webp",
+        "/Costumes/Jersey Suit/2.webp",
+        "/Costumes/Jersey Suit/3.webp"
       ],
       [
-        "/Costumes/Jersey Suit/4.avif",
-        "/Costumes/Jersey Suit/5.avif",
-        "/Costumes/Jersey Suit/6.avif"
+        "/Costumes/Jersey Suit/4.webp",
+        "/Costumes/Jersey Suit/5.webp",
+        "/Costumes/Jersey Suit/6.webp"
       ],
       [
-        "/Costumes/Jersey Suit/7.avif",
-        "/Costumes/Jersey Suit/8.avif",
-        "/Costumes/Jersey Suit/9.avif"
+        "/Costumes/Jersey Suit/7.webp",
+        "/Costumes/Jersey Suit/8.webp",
+        "/Costumes/Jersey Suit/9.webp"
       ]
     ],
     "sizes": [
@@ -1221,11 +1221,11 @@
     "sku": "99508",
     "size": "XS S M L XL",
     "category": "Skirts",
-    "image": "/Skirts/Butter Skirt/1.avif",
+    "image": "/Skirts/Butter Skirt/1.webp",
     "images": [
-      "/Skirts/Butter Skirt/2.avif",
-      "/Skirts/Butter Skirt/3.avif",
-      "/Skirts/Butter Skirt/4.avif"
+      "/Skirts/Butter Skirt/2.webp",
+      "/Skirts/Butter Skirt/3.webp",
+      "/Skirts/Butter Skirt/4.webp"
     ],
     "sizes": [
       "XS",
@@ -1303,11 +1303,11 @@
     "sku": "99507",
     "size": "XS S M L XL",
     "category": "Jackets",
-    "image": "/Jackets/Butter Jacket/1.avif",
+    "image": "/Jackets/Butter Jacket/1.webp",
     "images": [
-      "/Jackets/Butter Jacket/2.avif",
-      "/Jackets/Butter Jacket/3.avif",
-      "/Jackets/Butter Jacket/4.avif"
+      "/Jackets/Butter Jacket/2.webp",
+      "/Jackets/Butter Jacket/3.webp",
+      "/Jackets/Butter Jacket/4.webp"
     ],
     "sizes": [
       "XS",
@@ -1385,12 +1385,12 @@
     "sku": "99506",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Butter Suit/1.avif",
+    "image": "/Costumes/Butter Suit/1.webp",
     "images": [
-      "/Costumes/Butter Suit/2.avif",
-      "/Costumes/Butter Suit/3.avif",
-      "/Costumes/Butter Suit/4.avif",
-      "/Costumes/Butter Suit/5.avif"
+      "/Costumes/Butter Suit/2.webp",
+      "/Costumes/Butter Suit/3.webp",
+      "/Costumes/Butter Suit/4.webp",
+      "/Costumes/Butter Suit/5.webp"
     ],
     "sizes": [
       "XS",
@@ -1468,11 +1468,11 @@
     "sku": "99505",
     "size": "XS S M L XL",
     "category": "Jackets",
-    "image": "/Jackets/Nevada Jacket/1.avif",
+    "image": "/Jackets/Nevada Jacket/1.webp",
     "images": [
-      "/Jackets/Nevada Jacket/2.avif",
-      "/Jackets/Nevada Jacket/3.avif",
-      "/Jackets/Nevada Jacket/4.avif"
+      "/Jackets/Nevada Jacket/2.webp",
+      "/Jackets/Nevada Jacket/3.webp",
+      "/Jackets/Nevada Jacket/4.webp"
     ],
     "sizes": [
       "XS",
@@ -1549,11 +1549,11 @@
     "sku": "99504",
     "size": "XS S M L XL",
     "category": "Pants",
-    "image": "/Pants/Nevada Pants/1.avif",
+    "image": "/Pants/Nevada Pants/1.webp",
     "images": [
-      "/Pants/Nevada Pants/2.avif",
-      "/Pants/Nevada Pants/3.avif",
-      "/Pants/Nevada Pants/4.avif"
+      "/Pants/Nevada Pants/2.webp",
+      "/Pants/Nevada Pants/3.webp",
+      "/Pants/Nevada Pants/4.webp"
     ],
     "sizes": [
       "XS",
@@ -1630,12 +1630,12 @@
     "sku": "99503",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Nevada Suit/1.avif",
+    "image": "/Costumes/Nevada Suit/1.webp",
     "images": [
-      "/Costumes/Nevada Suit/2.avif",
-      "/Costumes/Nevada Suit/3.avif",
-      "/Costumes/Nevada Suit/4.avif",
-      "/Costumes/Nevada Suit/5.avif"
+      "/Costumes/Nevada Suit/2.webp",
+      "/Costumes/Nevada Suit/3.webp",
+      "/Costumes/Nevada Suit/4.webp",
+      "/Costumes/Nevada Suit/5.webp"
     ],
     "sizes": [
       "XS",
@@ -1716,12 +1716,12 @@
     "sku": "99502",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Navy Blue Dress/1.avif",
+    "image": "/Dress/Navy Blue Dress/1.webp",
     "images": [
-      "/Dress/Navy Blue Dress/2.avif",
-      "/Dress/Navy Blue Dress/3.avif",
-      "/Dress/Navy Blue Dress/4.avif",
-      "/Dress/Navy Blue Dress/5.avif"
+      "/Dress/Navy Blue Dress/2.webp",
+      "/Dress/Navy Blue Dress/3.webp",
+      "/Dress/Navy Blue Dress/4.webp",
+      "/Dress/Navy Blue Dress/5.webp"
     ],
     "sizes": [
       "XS",
@@ -1802,10 +1802,10 @@
     "sku": "99501",
     "size": "XS S M L XL",
     "category": "Skirts",
-    "image": "/Skirts/Creamy Skirt/1.avif",
+    "image": "/Skirts/Creamy Skirt/1.webp",
     "images": [
-      "/Skirts/Creamy Skirt/2.avif",
-      "/Skirts/Creamy Skirt/3.avif"
+      "/Skirts/Creamy Skirt/2.webp",
+      "/Skirts/Creamy Skirt/3.webp"
     ],
     "sizes": [
       "XS",
@@ -1883,10 +1883,10 @@
     "sku": "99500",
     "size": "XS S M L XL",
     "category": "Jackets",
-    "image": "/Jackets/Creamy Jacket/1.avif",
+    "image": "/Jackets/Creamy Jacket/1.webp",
     "images": [
-      "/Jackets/Creamy Jacket/2.avif",
-      "/Jackets/Creamy Jacket/3.avif"
+      "/Jackets/Creamy Jacket/2.webp",
+      "/Jackets/Creamy Jacket/3.webp"
     ],
     "sizes": [
       "XS",
@@ -1968,12 +1968,12 @@
     "sku": "99499",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Creamy Suit/1.avif",
+    "image": "/Costumes/Creamy Suit/1.webp",
     "images": [
-      "/Costumes/Creamy Suit/2.avif",
-      "/Costumes/Creamy Suit/3.avif",
-      "/Costumes/Creamy Suit/4.avif",
-      "/Costumes/Creamy Suit/5.avif"
+      "/Costumes/Creamy Suit/2.webp",
+      "/Costumes/Creamy Suit/3.webp",
+      "/Costumes/Creamy Suit/4.webp",
+      "/Costumes/Creamy Suit/5.webp"
     ],
     "sizes": [
       "XS",
@@ -2051,12 +2051,12 @@
     "sku": "99498",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Light Blue Denim Pinafore Dress/1.avif",
+    "image": "/Dress/Light Blue Denim Pinafore Dress/1.webp",
     "images": [
-      "/Dress/Light Blue Denim Pinafore Dress/2.avif",
-      "/Dress/Light Blue Denim Pinafore Dress/3.avif",
-      "/Dress/Light Blue Denim Pinafore Dress/4.avif",
-      "/Dress/Light Blue Denim Pinafore Dress/5.avif"
+      "/Dress/Light Blue Denim Pinafore Dress/2.webp",
+      "/Dress/Light Blue Denim Pinafore Dress/3.webp",
+      "/Dress/Light Blue Denim Pinafore Dress/4.webp",
+      "/Dress/Light Blue Denim Pinafore Dress/5.webp"
     ],
     "sizes": [
       "XS",
@@ -2134,26 +2134,26 @@
     "sku": "99497",
     "size": "XS S M L XL",
     "category": "Tops",
-    "image": "/Top/Eco-Crinkle Sheer Turtleneck/1.avif",
+    "image": "/Top/Eco-Crinkle Sheer Turtleneck/1.webp",
     "images": [
-      "/Top/Eco-Crinkle Sheer Turtleneck/2.avif",
-      "/Top/Eco-Crinkle Sheer Turtleneck/3.avif",
-      "/Top/Eco-Crinkle Sheer Turtleneck/4.avif",
-      "/Top/Eco-Crinkle Sheer Turtleneck/5.avif",
-      "/Top/Eco-Crinkle Sheer Turtleneck/6.avif",
-      "/Top/Eco-Crinkle Sheer Turtleneck/7.avif"
+      "/Top/Eco-Crinkle Sheer Turtleneck/2.webp",
+      "/Top/Eco-Crinkle Sheer Turtleneck/3.webp",
+      "/Top/Eco-Crinkle Sheer Turtleneck/4.webp",
+      "/Top/Eco-Crinkle Sheer Turtleneck/5.webp",
+      "/Top/Eco-Crinkle Sheer Turtleneck/6.webp",
+      "/Top/Eco-Crinkle Sheer Turtleneck/7.webp"
     ],
     "colorImages": [
       [
-        "/Top/Eco-Crinkle Sheer Turtleneck/1.avif",
-        "/Top/Eco-Crinkle Sheer Turtleneck/2.avif",
-        "/Top/Eco-Crinkle Sheer Turtleneck/3.avif",
-        "/Top/Eco-Crinkle Sheer Turtleneck/4.avif"
+        "/Top/Eco-Crinkle Sheer Turtleneck/1.webp",
+        "/Top/Eco-Crinkle Sheer Turtleneck/2.webp",
+        "/Top/Eco-Crinkle Sheer Turtleneck/3.webp",
+        "/Top/Eco-Crinkle Sheer Turtleneck/4.webp"
       ],
       [
-        "/Top/Eco-Crinkle Sheer Turtleneck/5.avif",
-        "/Top/Eco-Crinkle Sheer Turtleneck/6.avif",
-        "/Top/Eco-Crinkle Sheer Turtleneck/7.avif"
+        "/Top/Eco-Crinkle Sheer Turtleneck/5.webp",
+        "/Top/Eco-Crinkle Sheer Turtleneck/6.webp",
+        "/Top/Eco-Crinkle Sheer Turtleneck/7.webp"
       ]
     ],
     "sizes": [
@@ -2235,12 +2235,12 @@
     "sku": "99496",
     "size": "XS S M L XL",
     "category": "Outerwear",
-    "image": "/Outerwear/Mocha Belted Leather Trench/1.avif",
+    "image": "/Outerwear/Mocha Belted Leather Trench/1.webp",
     "images": [
-      "/Outerwear/Mocha Belted Leather Trench/2.avif",
-      "/Outerwear/Mocha Belted Leather Trench/3.avif",
-      "/Outerwear/Mocha Belted Leather Trench/4.avif",
-      "/Outerwear/Mocha Belted Leather Trench/5.avif"
+      "/Outerwear/Mocha Belted Leather Trench/2.webp",
+      "/Outerwear/Mocha Belted Leather Trench/3.webp",
+      "/Outerwear/Mocha Belted Leather Trench/4.webp",
+      "/Outerwear/Mocha Belted Leather Trench/5.webp"
     ],
     "sizes": [
       "XS",
@@ -2318,11 +2318,11 @@
     "sku": "99495",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Cozy Asymmetric Wool Dress/1.avif",
+    "image": "/Dress/Cozy Asymmetric Wool Dress/1.webp",
     "images": [
-      "/Dress/Cozy Asymmetric Wool Dress/2.avif",
-      "/Dress/Cozy Asymmetric Wool Dress/3.avif",
-      "/Dress/Cozy Asymmetric Wool Dress/4.avif"
+      "/Dress/Cozy Asymmetric Wool Dress/2.webp",
+      "/Dress/Cozy Asymmetric Wool Dress/3.webp",
+      "/Dress/Cozy Asymmetric Wool Dress/4.webp"
     ],
     "sizes": [
       "XS",
@@ -2400,12 +2400,12 @@
     "sku": "99494",
     "size": "XS S M L XL",
     "category": "Jackets",
-    "image": "/Jackets/Jeans Belted Trench Jacket/1.avif",
+    "image": "/Jackets/Jeans Belted Trench Jacket/1.webp",
     "images": [
-      "/Jackets/Jeans Belted Trench Jacket/2.avif",
-      "/Jackets/Jeans Belted Trench Jacket/3.avif",
-      "/Jackets/Jeans Belted Trench Jacket/4.avif",
-      "/Jackets/Jeans Belted Trench Jacket/5.avif"
+      "/Jackets/Jeans Belted Trench Jacket/2.webp",
+      "/Jackets/Jeans Belted Trench Jacket/3.webp",
+      "/Jackets/Jeans Belted Trench Jacket/4.webp",
+      "/Jackets/Jeans Belted Trench Jacket/5.webp"
     ],
     "sizes": [
       "XS",
@@ -2483,13 +2483,13 @@
     "sku": "99493",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Jeans Trench Maxi Skirt Suit/1.avif",
+    "image": "/Costumes/Jeans Trench Maxi Skirt Suit/1.webp",
     "images": [
-      "/Costumes/Jeans Trench Maxi Skirt Suit/2.avif",
-      "/Costumes/Jeans Trench Maxi Skirt Suit/3.avif",
-      "/Costumes/Jeans Trench Maxi Skirt Suit/4.avif",
-      "/Costumes/Jeans Trench Maxi Skirt Suit/5.avif",
-      "/Costumes/Jeans Trench Maxi Skirt Suit/6.avif"
+      "/Costumes/Jeans Trench Maxi Skirt Suit/2.webp",
+      "/Costumes/Jeans Trench Maxi Skirt Suit/3.webp",
+      "/Costumes/Jeans Trench Maxi Skirt Suit/4.webp",
+      "/Costumes/Jeans Trench Maxi Skirt Suit/5.webp",
+      "/Costumes/Jeans Trench Maxi Skirt Suit/6.webp"
     ],
     "sizes": [
       "XS",
@@ -2567,12 +2567,12 @@
     "sku": "99492",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Plaid Denim Maxi Dress/1.avif",
+    "image": "/Dress/Plaid Denim Maxi Dress/1.webp",
     "images": [
-      "/Dress/Plaid Denim Maxi Dress/2.avif",
-      "/Dress/Plaid Denim Maxi Dress/3.avif",
-      "/Dress/Plaid Denim Maxi Dress/4.avif",
-      "/Dress/Plaid Denim Maxi Dress/5.avif"
+      "/Dress/Plaid Denim Maxi Dress/2.webp",
+      "/Dress/Plaid Denim Maxi Dress/3.webp",
+      "/Dress/Plaid Denim Maxi Dress/4.webp",
+      "/Dress/Plaid Denim Maxi Dress/5.webp"
     ],
     "sizes": [
       "XS",
@@ -2654,10 +2654,10 @@
     "sku": "99491",
     "size": "XS S M L XL",
     "category": "Jackets",
-    "image": "/Jackets/Cozy Wool Cardigan/1.avif",
+    "image": "/Jackets/Cozy Wool Cardigan/1.webp",
     "images": [
-      "/Jackets/Cozy Wool Cardigan/2.avif",
-      "/Jackets/Cozy Wool Cardigan/3.avif"
+      "/Jackets/Cozy Wool Cardigan/2.webp",
+      "/Jackets/Cozy Wool Cardigan/3.webp"
     ],
     "sizes": [
       "XS",
@@ -2735,12 +2735,12 @@
     "sku": "99490",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Cozy Wool Cardigan Suit/1.avif",
+    "image": "/Costumes/Cozy Wool Cardigan Suit/1.webp",
     "images": [
-      "/Costumes/Cozy Wool Cardigan Suit/2.avif",
-      "/Costumes/Cozy Wool Cardigan Suit/3.avif",
-      "/Costumes/Cozy Wool Cardigan Suit/4.avif",
-      "/Costumes/Cozy Wool Cardigan Suit/5.avif"
+      "/Costumes/Cozy Wool Cardigan Suit/2.webp",
+      "/Costumes/Cozy Wool Cardigan Suit/3.webp",
+      "/Costumes/Cozy Wool Cardigan Suit/4.webp",
+      "/Costumes/Cozy Wool Cardigan Suit/5.webp"
     ],
     "sizes": [
       "XS",
@@ -2818,11 +2818,11 @@
     "sku": "99489",
     "size": "XS S M L XL",
     "category": "Skirts",
-    "image": "/Skirts/Japan Front-Slit Midi Skirt/1.avif",
+    "image": "/Skirts/Japan Front-Slit Midi Skirt/1.webp",
     "images": [
-      "/Skirts/Japan Front-Slit Midi Skirt/2.avif",
-      "/Skirts/Japan Front-Slit Midi Skirt/3.avif",
-      "/Skirts/Japan Front-Slit Midi Skirt/4.avif"
+      "/Skirts/Japan Front-Slit Midi Skirt/2.webp",
+      "/Skirts/Japan Front-Slit Midi Skirt/3.webp",
+      "/Skirts/Japan Front-Slit Midi Skirt/4.webp"
     ],
     "sizes": [
       "XS",
@@ -2900,10 +2900,10 @@
     "sku": "99488",
     "size": "XS S M L XL",
     "category": "Jackets",
-    "image": "/Jackets/Japan Wool Bomber/1.avif",
+    "image": "/Jackets/Japan Wool Bomber/1.webp",
     "images": [
-      "/Jackets/Japan Wool Bomber/2.avif",
-      "/Jackets/Japan Wool Bomber/3.avif"
+      "/Jackets/Japan Wool Bomber/2.webp",
+      "/Jackets/Japan Wool Bomber/3.webp"
     ],
     "sizes": [
       "XS",
@@ -2981,12 +2981,12 @@
     "sku": "99487",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Japan Suit/1.avif",
+    "image": "/Costumes/Japan Suit/1.webp",
     "images": [
-      "/Costumes/Japan Suit/2.avif",
-      "/Costumes/Japan Suit/3.avif",
-      "/Costumes/Japan Suit/4.avif",
-      "/Costumes/Japan Suit/5.avif"
+      "/Costumes/Japan Suit/2.webp",
+      "/Costumes/Japan Suit/3.webp",
+      "/Costumes/Japan Suit/4.webp",
+      "/Costumes/Japan Suit/5.webp"
     ],
     "sizes": [
       "XS",
@@ -3064,20 +3064,20 @@
     "sku": "99486",
     "size": "XS S M L XL",
     "category": "Skirts",
-    "image": "/Skirts/Lui Straight Midi Skirt/1.avif",
+    "image": "/Skirts/Lui Straight Midi Skirt/1.webp",
     "images": [
-      "/Skirts/Lui Straight Midi Skirt/2.avif",
-      "/Skirts/Lui Straight Midi Skirt/3.avif",
-      "/Skirts/Lui Straight Midi Skirt/4.avif"
+      "/Skirts/Lui Straight Midi Skirt/2.webp",
+      "/Skirts/Lui Straight Midi Skirt/3.webp",
+      "/Skirts/Lui Straight Midi Skirt/4.webp"
     ],
     "colorImages": [
       [
-        "/Skirts/Lui Straight Midi Skirt/1.avif",
-        "/Skirts/Lui Straight Midi Skirt/2.avif"
+        "/Skirts/Lui Straight Midi Skirt/1.webp",
+        "/Skirts/Lui Straight Midi Skirt/2.webp"
       ],
       [
-        "/Skirts/Lui Straight Midi Skirt/3.avif",
-        "/Skirts/Lui Straight Midi Skirt/4.avif"
+        "/Skirts/Lui Straight Midi Skirt/3.webp",
+        "/Skirts/Lui Straight Midi Skirt/4.webp"
       ]
     ],
     "sizes": [
@@ -3160,22 +3160,22 @@
     "sku": "99485",
     "size": "XS S M L XL",
     "category": "Tops",
-    "image": "/Top/Lui V-Neck Jumper/1.avif",
+    "image": "/Top/Lui V-Neck Jumper/1.webp",
     "images": [
-      "/Top/Lui V-Neck Jumper/2.avif",
-      "/Top/Lui V-Neck Jumper/3.avif",
-      "/Top/Lui V-Neck Jumper/4.avif",
-      "/Top/Lui V-Neck Jumper/5.avif"
+      "/Top/Lui V-Neck Jumper/2.webp",
+      "/Top/Lui V-Neck Jumper/3.webp",
+      "/Top/Lui V-Neck Jumper/4.webp",
+      "/Top/Lui V-Neck Jumper/5.webp"
     ],
     "colorImages": [
       [
-        "/Top/Lui V-Neck Jumper/1.avif",
-        "/Top/Lui V-Neck Jumper/2.avif",
-        "/Top/Lui V-Neck Jumper/3.avif"
+        "/Top/Lui V-Neck Jumper/1.webp",
+        "/Top/Lui V-Neck Jumper/2.webp",
+        "/Top/Lui V-Neck Jumper/3.webp"
       ],
       [
-        "/Top/Lui V-Neck Jumper/4.avif",
-        "/Top/Lui V-Neck Jumper/5.avif"
+        "/Top/Lui V-Neck Jumper/4.webp",
+        "/Top/Lui V-Neck Jumper/5.webp"
       ]
     ],
     "sizes": [
@@ -3258,26 +3258,26 @@
     "sku": "99484",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Lui Skirt Suit/5.avif",
+    "image": "/Costumes/Lui Skirt Suit/5.webp",
     "images": [
-      "/Costumes/Lui Skirt Suit/6.avif",
-      "/Costumes/Lui Skirt Suit/7.avif",
-      "/Costumes/Lui Skirt Suit/1.avif",
-      "/Costumes/Lui Skirt Suit/2.avif",
-      "/Costumes/Lui Skirt Suit/3.avif",
-      "/Costumes/Lui Skirt Suit/4.avif"
+      "/Costumes/Lui Skirt Suit/6.webp",
+      "/Costumes/Lui Skirt Suit/7.webp",
+      "/Costumes/Lui Skirt Suit/1.webp",
+      "/Costumes/Lui Skirt Suit/2.webp",
+      "/Costumes/Lui Skirt Suit/3.webp",
+      "/Costumes/Lui Skirt Suit/4.webp"
     ],
     "colorImages": [
       [
-        "/Costumes/Lui Skirt Suit/5.avif",
-        "/Costumes/Lui Skirt Suit/6.avif",
-        "/Costumes/Lui Skirt Suit/7.avif"
+        "/Costumes/Lui Skirt Suit/5.webp",
+        "/Costumes/Lui Skirt Suit/6.webp",
+        "/Costumes/Lui Skirt Suit/7.webp"
       ],
       [
-        "/Costumes/Lui Skirt Suit/1.avif",
-        "/Costumes/Lui Skirt Suit/2.avif",
-        "/Costumes/Lui Skirt Suit/3.avif",
-        "/Costumes/Lui Skirt Suit/4.avif"
+        "/Costumes/Lui Skirt Suit/1.webp",
+        "/Costumes/Lui Skirt Suit/2.webp",
+        "/Costumes/Lui Skirt Suit/3.webp",
+        "/Costumes/Lui Skirt Suit/4.webp"
       ]
     ],
     "sizes": [
@@ -3360,22 +3360,22 @@
     "sku": "99483",
     "size": "XS S M L XL",
     "category": "Pants",
-    "image": "/Pants/Lui Trousers/1.avif",
+    "image": "/Pants/Lui Trousers/1.webp",
     "images": [
-      "/Pants/Lui Trousers/2.avif",
-      "/Pants/Lui Trousers/3.avif",
-      "/Pants/Lui Trousers/4.avif",
-      "/Pants/Lui Trousers/5.avif"
+      "/Pants/Lui Trousers/2.webp",
+      "/Pants/Lui Trousers/3.webp",
+      "/Pants/Lui Trousers/4.webp",
+      "/Pants/Lui Trousers/5.webp"
     ],
     "colorImages": [
       [
-        "/Pants/Lui Trousers/1.avif",
-        "/Pants/Lui Trousers/2.avif",
-        "/Pants/Lui Trousers/3.avif"
+        "/Pants/Lui Trousers/1.webp",
+        "/Pants/Lui Trousers/2.webp",
+        "/Pants/Lui Trousers/3.webp"
       ],
       [
-        "/Pants/Lui Trousers/4.avif",
-        "/Pants/Lui Trousers/5.avif"
+        "/Pants/Lui Trousers/4.webp",
+        "/Pants/Lui Trousers/5.webp"
       ]
     ],
     "sizes": [
@@ -3458,24 +3458,24 @@
     "sku": "99482",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Lui V-Neck Suit/1.avif",
+    "image": "/Costumes/Lui V-Neck Suit/1.webp",
     "images": [
-      "/Costumes/Lui V-Neck Suit/2.avif",
-      "/Costumes/Lui V-Neck Suit/3.avif",
-      "/Costumes/Lui V-Neck Suit/4.avif",
-      "/Costumes/Lui V-Neck Suit/5.avif",
-      "/Costumes/Lui V-Neck Suit/6.avif"
+      "/Costumes/Lui V-Neck Suit/2.webp",
+      "/Costumes/Lui V-Neck Suit/3.webp",
+      "/Costumes/Lui V-Neck Suit/4.webp",
+      "/Costumes/Lui V-Neck Suit/5.webp",
+      "/Costumes/Lui V-Neck Suit/6.webp"
     ],
     "colorImages": [
       [
-        "/Costumes/Lui V-Neck Suit/1.avif",
-        "/Costumes/Lui V-Neck Suit/2.avif",
-        "/Costumes/Lui V-Neck Suit/3.avif"
+        "/Costumes/Lui V-Neck Suit/1.webp",
+        "/Costumes/Lui V-Neck Suit/2.webp",
+        "/Costumes/Lui V-Neck Suit/3.webp"
       ],
       [
-        "/Costumes/Lui V-Neck Suit/4.avif",
-        "/Costumes/Lui V-Neck Suit/5.avif",
-        "/Costumes/Lui V-Neck Suit/6.avif"
+        "/Costumes/Lui V-Neck Suit/4.webp",
+        "/Costumes/Lui V-Neck Suit/5.webp",
+        "/Costumes/Lui V-Neck Suit/6.webp"
       ]
     ],
     "sizes": [
@@ -3562,10 +3562,10 @@
     "sku": "99480",
     "size": "XS S M L XL",
     "category": "Outerwear",
-    "image": "/Outerwear/Light Grey Trench/1.avif",
+    "image": "/Outerwear/Light Grey Trench/1.webp",
     "images": [
-      "/Outerwear/Light Grey Trench/2.avif",
-      "/Outerwear/Light Grey Trench/3.avif"
+      "/Outerwear/Light Grey Trench/2.webp",
+      "/Outerwear/Light Grey Trench/3.webp"
     ],
     "sizes": [
       "XS",
@@ -3643,12 +3643,12 @@
     "sku": "99479",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Light Grey Suit/1.avif",
+    "image": "/Costumes/Light Grey Suit/1.webp",
     "images": [
-      "/Costumes/Light Grey Suit/2.avif",
-      "/Costumes/Light Grey Suit/3.avif",
-      "/Costumes/Light Grey Suit/2.avif",
-      "/Costumes/Light Grey Suit/3.avif"
+      "/Costumes/Light Grey Suit/2.webp",
+      "/Costumes/Light Grey Suit/3.webp",
+      "/Costumes/Light Grey Suit/2.webp",
+      "/Costumes/Light Grey Suit/3.webp"
     ],
     "sizes": [
       "XS",
@@ -3726,12 +3726,12 @@
     "sku": "99473",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Wool Skirt Suit/1.avif",
+    "image": "/Costumes/Wool Skirt Suit/1.webp",
     "images": [
-      "/Costumes/Wool Skirt Suit/2.avif",
-      "/Costumes/Wool Skirt Suit/3.avif",
-      "/Costumes/Wool Skirt Suit/4.avif",
-      "/Costumes/Wool Skirt Suit/5.avif"
+      "/Costumes/Wool Skirt Suit/2.webp",
+      "/Costumes/Wool Skirt Suit/3.webp",
+      "/Costumes/Wool Skirt Suit/4.webp",
+      "/Costumes/Wool Skirt Suit/5.webp"
     ],
     "sizes": [
       "XS",
@@ -3809,10 +3809,10 @@
     "sku": "99472",
     "size": "XS S M L XL",
     "category": "Jackets",
-    "image": "/Jackets/Lui Pocket Jumper/1.avif",
+    "image": "/Jackets/Lui Pocket Jumper/1.webp",
     "images": [
-      "/Jackets/Lui Pocket Jumper/2.avif",
-      "/Jackets/Lui Pocket Jumper/3.avif"
+      "/Jackets/Lui Pocket Jumper/2.webp",
+      "/Jackets/Lui Pocket Jumper/3.webp"
     ],
     "sizes": [
       "XS",
@@ -3890,11 +3890,11 @@
     "sku": "99471",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Lui Jumper Suit/1.avif",
+    "image": "/Costumes/Lui Jumper Suit/1.webp",
     "images": [
-      "/Costumes/Lui Jumper Suit/2.avif",
-      "/Costumes/Lui Jumper Suit/3.avif",
-      "/Costumes/Lui Jumper Suit/4.avif"
+      "/Costumes/Lui Jumper Suit/2.webp",
+      "/Costumes/Lui Jumper Suit/3.webp",
+      "/Costumes/Lui Jumper Suit/4.webp"
     ],
     "sizes": [
       "XS",
@@ -3976,10 +3976,10 @@
     "sku": "99470",
     "size": "XS S M L XL",
     "category": "Jackets",
-    "image": "/Jackets/Lui Cardigan/1.avif",
+    "image": "/Jackets/Lui Cardigan/1.webp",
     "images": [
-      "/Jackets/Lui Cardigan/2.avif",
-      "/Jackets/Lui Cardigan/3.avif"
+      "/Jackets/Lui Cardigan/2.webp",
+      "/Jackets/Lui Cardigan/3.webp"
     ],
     "sizes": [
       "XS",
@@ -4057,11 +4057,11 @@
     "sku": "99469",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Lui Cardigan Suit/1.avif",
+    "image": "/Costumes/Lui Cardigan Suit/1.webp",
     "images": [
-      "/Costumes/Lui Cardigan Suit/2.avif",
-      "/Costumes/Lui Cardigan Suit/3.avif",
-      "/Costumes/Lui Cardigan Suit/4.avif"
+      "/Costumes/Lui Cardigan Suit/2.webp",
+      "/Costumes/Lui Cardigan Suit/3.webp",
+      "/Costumes/Lui Cardigan Suit/4.webp"
     ],
     "sizes": [
       "XS",
@@ -4139,30 +4139,30 @@
     "sku": "99468",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Denim Mini Dress/1.avif",
+    "image": "/Dress/Denim Mini Dress/1.webp",
     "images": [
-      "/Dress/Denim Mini Dress/2.avif",
-      "/Dress/Denim Mini Dress/3.avif",
-      "/Dress/Denim Mini Dress/4.avif",
-      "/Dress/Denim Mini Dress/5.avif",
-      "/Dress/Denim Mini Dress/6.avif",
-      "/Dress/Denim Mini Dress/7.avif",
-      "/Dress/Denim Mini Dress/8.avif"
+      "/Dress/Denim Mini Dress/2.webp",
+      "/Dress/Denim Mini Dress/3.webp",
+      "/Dress/Denim Mini Dress/4.webp",
+      "/Dress/Denim Mini Dress/5.webp",
+      "/Dress/Denim Mini Dress/6.webp",
+      "/Dress/Denim Mini Dress/7.webp",
+      "/Dress/Denim Mini Dress/8.webp"
     ],
     "colorImages": [
       [
-        "/Dress/Denim Mini Dress/1.avif",
-        "/Dress/Denim Mini Dress/2.avif",
-        "/Dress/Denim Mini Dress/3.avif"
+        "/Dress/Denim Mini Dress/1.webp",
+        "/Dress/Denim Mini Dress/2.webp",
+        "/Dress/Denim Mini Dress/3.webp"
       ],
       [
-        "/Dress/Denim Mini Dress/4.avif",
-        "/Dress/Denim Mini Dress/5.avif",
-        "/Dress/Denim Mini Dress/6.avif"
+        "/Dress/Denim Mini Dress/4.webp",
+        "/Dress/Denim Mini Dress/5.webp",
+        "/Dress/Denim Mini Dress/6.webp"
       ],
       [
-        "/Dress/Denim Mini Dress/7.avif",
-        "/Dress/Denim Mini Dress/8.avif"
+        "/Dress/Denim Mini Dress/7.webp",
+        "/Dress/Denim Mini Dress/8.webp"
       ]
     ],
     "sizes": [
@@ -4256,28 +4256,28 @@
     "sku": "99467",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Linen Jumpsuit/1.avif",
+    "image": "/Costumes/Linen Jumpsuit/1.webp",
     "images": [
-      "/Costumes/Linen Jumpsuit/2.avif",
-      "/Costumes/Linen Jumpsuit/3.avif",
-      "/Costumes/Linen Jumpsuit/4.avif",
-      "/Costumes/Linen Jumpsuit/5.avif",
-      "/Costumes/Linen Jumpsuit/6.avif",
-      "/Costumes/Linen Jumpsuit/7.avif",
-      "/Costumes/Linen Jumpsuit/8.avif"
+      "/Costumes/Linen Jumpsuit/2.webp",
+      "/Costumes/Linen Jumpsuit/3.webp",
+      "/Costumes/Linen Jumpsuit/4.webp",
+      "/Costumes/Linen Jumpsuit/5.webp",
+      "/Costumes/Linen Jumpsuit/6.webp",
+      "/Costumes/Linen Jumpsuit/7.webp",
+      "/Costumes/Linen Jumpsuit/8.webp"
     ],
     "colorImages": [
       [
-        "/Costumes/Linen Jumpsuit/1.avif",
-        "/Costumes/Linen Jumpsuit/2.avif",
-        "/Costumes/Linen Jumpsuit/3.avif",
-        "/Costumes/Linen Jumpsuit/4.avif"
+        "/Costumes/Linen Jumpsuit/1.webp",
+        "/Costumes/Linen Jumpsuit/2.webp",
+        "/Costumes/Linen Jumpsuit/3.webp",
+        "/Costumes/Linen Jumpsuit/4.webp"
       ],
       [
-        "/Costumes/Linen Jumpsuit/5.avif",
-        "/Costumes/Linen Jumpsuit/6.avif",
-        "/Costumes/Linen Jumpsuit/7.avif",
-        "/Costumes/Linen Jumpsuit/8.avif"
+        "/Costumes/Linen Jumpsuit/5.webp",
+        "/Costumes/Linen Jumpsuit/6.webp",
+        "/Costumes/Linen Jumpsuit/7.webp",
+        "/Costumes/Linen Jumpsuit/8.webp"
       ]
     ],
     "sizes": [
@@ -4367,26 +4367,26 @@
     "sku": "99466",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Estelle Dress/1.avif",
+    "image": "/Dress/Estelle Dress/1.webp",
     "images": [
-      "/Dress/Estelle Dress/2.avif",
-      "/Dress/Estelle Dress/3.avif",
-      "/Dress/Estelle Dress/4.avif",
-      "/Dress/Estelle Dress/5.avif",
-      "/Dress/Estelle Dress/6.avif",
-      "/Dress/Estelle Dress/7.avif"
+      "/Dress/Estelle Dress/2.webp",
+      "/Dress/Estelle Dress/3.webp",
+      "/Dress/Estelle Dress/4.webp",
+      "/Dress/Estelle Dress/5.webp",
+      "/Dress/Estelle Dress/6.webp",
+      "/Dress/Estelle Dress/7.webp"
     ],
     "colorImages": [
       [
-        "/Dress/Estelle Dress/1.avif",
-        "/Dress/Estelle Dress/2.avif",
-        "/Dress/Estelle Dress/3.avif",
-        "/Dress/Estelle Dress/4.avif",
-        "/Dress/Estelle Dress/5.avif"
+        "/Dress/Estelle Dress/1.webp",
+        "/Dress/Estelle Dress/2.webp",
+        "/Dress/Estelle Dress/3.webp",
+        "/Dress/Estelle Dress/4.webp",
+        "/Dress/Estelle Dress/5.webp"
       ],
       [
-        "/Dress/Estelle Dress/6.avif",
-        "/Dress/Estelle Dress/7.avif"
+        "/Dress/Estelle Dress/6.webp",
+        "/Dress/Estelle Dress/7.webp"
       ]
     ],
     "sizes": [
@@ -4476,12 +4476,12 @@
     "sku": "99465",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Elara Dress/1.avif",
+    "image": "/Dress/Elara Dress/1.webp",
     "images": [
-      "/Dress/Elara Dress/2.avif",
-      "/Dress/Elara Dress/3.avif",
-      "/Dress/Elara Dress/4.avif",
-      "/Dress/Elara Dress/5.avif"
+      "/Dress/Elara Dress/2.webp",
+      "/Dress/Elara Dress/3.webp",
+      "/Dress/Elara Dress/4.webp",
+      "/Dress/Elara Dress/5.webp"
     ],
     "sizes": [
       "XS",
@@ -4566,12 +4566,12 @@
     "sku": "99464",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Palma Suit/1.avif",
+    "image": "/Costumes/Palma Suit/1.webp",
     "images": [
-      "/Costumes/Palma Suit/2.avif",
-      "/Costumes/Palma Suit/3.avif",
-      "/Costumes/Palma Suit/4.avif",
-      "/Costumes/Palma Suit/5.avif"
+      "/Costumes/Palma Suit/2.webp",
+      "/Costumes/Palma Suit/3.webp",
+      "/Costumes/Palma Suit/4.webp",
+      "/Costumes/Palma Suit/5.webp"
     ],
     "sizes": [
       "XS",
@@ -4652,28 +4652,28 @@
     "sku": "99463",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Milano Dress/1.avif",
+    "image": "/Dress/Milano Dress/1.webp",
     "images": [
-      "/Dress/Milano Dress/2.avif",
-      "/Dress/Milano Dress/3.avif",
-      "/Dress/Milano Dress/4.avif",
-      "/Dress/Milano Dress/5.avif",
-      "/Dress/Milano Dress/6.avif",
-      "/Dress/Milano Dress/7.avif",
-      "/Dress/Milano Dress/8.avif"
+      "/Dress/Milano Dress/2.webp",
+      "/Dress/Milano Dress/3.webp",
+      "/Dress/Milano Dress/4.webp",
+      "/Dress/Milano Dress/5.webp",
+      "/Dress/Milano Dress/6.webp",
+      "/Dress/Milano Dress/7.webp",
+      "/Dress/Milano Dress/8.webp"
     ],
     "colorImages": [
       [
-        "/Dress/Milano Dress/1.avif",
-        "/Dress/Milano Dress/2.avif",
-        "/Dress/Milano Dress/3.avif",
-        "/Dress/Milano Dress/4.avif",
-        "/Dress/Milano Dress/5.avif"
+        "/Dress/Milano Dress/1.webp",
+        "/Dress/Milano Dress/2.webp",
+        "/Dress/Milano Dress/3.webp",
+        "/Dress/Milano Dress/4.webp",
+        "/Dress/Milano Dress/5.webp"
       ],
       [
-        "/Dress/Milano Dress/6.avif",
-        "/Dress/Milano Dress/7.avif",
-        "/Dress/Milano Dress/8.avif"
+        "/Dress/Milano Dress/6.webp",
+        "/Dress/Milano Dress/7.webp",
+        "/Dress/Milano Dress/8.webp"
       ]
     ],
     "sizes": [
@@ -4763,26 +4763,26 @@
     "sku": "99462",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Monaco Dress/1.avif",
+    "image": "/Dress/Monaco Dress/1.webp",
     "images": [
-      "/Dress/Monaco Dress/2.avif",
-      "/Dress/Monaco Dress/3.avif",
-      "/Dress/Monaco Dress/4.avif",
-      "/Dress/Monaco Dress/5.avif",
-      "/Dress/Monaco Dress/6.avif",
-      "/Dress/Monaco Dress/7.avif"
+      "/Dress/Monaco Dress/2.webp",
+      "/Dress/Monaco Dress/3.webp",
+      "/Dress/Monaco Dress/4.webp",
+      "/Dress/Monaco Dress/5.webp",
+      "/Dress/Monaco Dress/6.webp",
+      "/Dress/Monaco Dress/7.webp"
     ],
     "colorImages": [
       [
-        "/Dress/Monaco Dress/1.avif",
-        "/Dress/Monaco Dress/2.avif",
-        "/Dress/Monaco Dress/3.avif",
-        "/Dress/Monaco Dress/4.avif"
+        "/Dress/Monaco Dress/1.webp",
+        "/Dress/Monaco Dress/2.webp",
+        "/Dress/Monaco Dress/3.webp",
+        "/Dress/Monaco Dress/4.webp"
       ],
       [
-        "/Dress/Monaco Dress/5.avif",
-        "/Dress/Monaco Dress/6.avif",
-        "/Dress/Monaco Dress/7.avif"
+        "/Dress/Monaco Dress/5.webp",
+        "/Dress/Monaco Dress/6.webp",
+        "/Dress/Monaco Dress/7.webp"
       ]
     ],
     "sizes": [
@@ -4872,10 +4872,10 @@
     "sku": "99461",
     "size": "XS S M L XL",
     "category": "Tops",
-    "image": "/Top/Nerea Cover-up No Hood/1.avif",
+    "image": "/Top/Nerea Cover-up No Hood/1.webp",
     "images": [
-      "/Top/Nerea Cover-up No Hood/2.avif",
-      "/Top/Nerea Cover-up No Hood/3.avif"
+      "/Top/Nerea Cover-up No Hood/2.webp",
+      "/Top/Nerea Cover-up No Hood/3.webp"
     ],
     "sizes": [
       "XS",
@@ -4960,10 +4960,10 @@
     "sku": "99460",
     "size": "XS S M L XL",
     "category": "Tops",
-    "image": "/Top/Nerea Top/1.avif",
+    "image": "/Top/Nerea Top/1.webp",
     "images": [
-      "/Top/Nerea Top/2.avif",
-      "/Top/Nerea Top/3.avif"
+      "/Top/Nerea Top/2.webp",
+      "/Top/Nerea Top/3.webp"
     ],
     "sizes": [
       "XS",
@@ -5048,11 +5048,11 @@
     "sku": "99459",
     "size": "XS S M L XL",
     "category": "Pants",
-    "image": "/Pants/Nerea Pants/1.avif",
+    "image": "/Pants/Nerea Pants/1.webp",
     "images": [
-      "/Pants/Nerea Pants/2.avif",
-      "/Pants/Nerea Pants/3.avif",
-      "/Pants/Nerea Pants/4.avif"
+      "/Pants/Nerea Pants/2.webp",
+      "/Pants/Nerea Pants/3.webp",
+      "/Pants/Nerea Pants/4.webp"
     ],
     "sizes": [
       "XS",
@@ -5141,12 +5141,12 @@
     "sku": "99458",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Nerea Suit/1.avif",
+    "image": "/Costumes/Nerea Suit/1.webp",
     "images": [
-      "/Costumes/Nerea Suit/2.avif",
-      "/Costumes/Nerea Suit/3.avif",
-      "/Costumes/Nerea Suit/4.avif",
-      "/Costumes/Nerea Suit/5.avif"
+      "/Costumes/Nerea Suit/2.webp",
+      "/Costumes/Nerea Suit/3.webp",
+      "/Costumes/Nerea Suit/4.webp",
+      "/Costumes/Nerea Suit/5.webp"
     ],
     "sizes": [
       "XS",
@@ -5235,12 +5235,12 @@
     "sku": "99457",
     "size": "XS S M L XL",
     "category": "Skirts",
-    "image": "/Skirts/Linen Skirt/1.avif",
+    "image": "/Skirts/Linen Skirt/1.webp",
     "images": [
-      "/Skirts/Linen Skirt/2.avif",
-      "/Skirts/Linen Skirt/3.avif",
-      "/Skirts/Linen Skirt/4.avif",
-      "/Skirts/Linen Skirt/5.avif"
+      "/Skirts/Linen Skirt/2.webp",
+      "/Skirts/Linen Skirt/3.webp",
+      "/Skirts/Linen Skirt/4.webp",
+      "/Skirts/Linen Skirt/5.webp"
     ],
     "sizes": [
       "XS",
@@ -5325,12 +5325,12 @@
     "sku": "99456",
     "size": "XS S M L XL",
     "category": "Shirts",
-    "image": "/Shirts/Sierra Shirt/1.avif",
+    "image": "/Shirts/Sierra Shirt/1.webp",
     "images": [
-      "/Shirts/Sierra Shirt/2.avif",
-      "/Shirts/Sierra Shirt/3.avif",
-      "/Shirts/Sierra Shirt/4.avif",
-      "/Shirts/Sierra Shirt/5.avif"
+      "/Shirts/Sierra Shirt/2.webp",
+      "/Shirts/Sierra Shirt/3.webp",
+      "/Shirts/Sierra Shirt/4.webp",
+      "/Shirts/Sierra Shirt/5.webp"
     ],
     "sizes": [
       "XS",
@@ -5415,11 +5415,11 @@
     "sku": "99455",
     "size": "XS S M L XL",
     "category": "Pants",
-    "image": "/Pants/Palma Pants/1.avif",
+    "image": "/Pants/Palma Pants/1.webp",
     "images": [
-      "/Pants/Palma Pants/2.avif",
-      "/Pants/Palma Pants/3.avif",
-      "/Pants/Palma Pants/4.avif"
+      "/Pants/Palma Pants/2.webp",
+      "/Pants/Palma Pants/3.webp",
+      "/Pants/Palma Pants/4.webp"
     ],
     "sizes": [
       "XS",
@@ -5504,11 +5504,11 @@
     "sku": "99454",
     "size": "XS S M L XL",
     "category": "Tops",
-    "image": "/Top/Palma Vest/1.avif",
+    "image": "/Top/Palma Vest/1.webp",
     "images": [
-      "/Top/Palma Vest/2.avif",
-      "/Top/Palma Vest/3.avif",
-      "/Top/Palma Vest/4.avif"
+      "/Top/Palma Vest/2.webp",
+      "/Top/Palma Vest/3.webp",
+      "/Top/Palma Vest/4.webp"
     ],
     "sizes": [
       "XS",
@@ -5593,10 +5593,10 @@
     "sku": "99453",
     "size": "XS S M L XL",
     "category": "Pants",
-    "image": "/Pants/Bohemia Pants/1.avif",
+    "image": "/Pants/Bohemia Pants/1.webp",
     "images": [
-      "/Pants/Bohemia Pants/2.avif",
-      "/Pants/Bohemia Pants/3.avif"
+      "/Pants/Bohemia Pants/2.webp",
+      "/Pants/Bohemia Pants/3.webp"
     ],
     "sizes": [
       "XS",
@@ -5685,10 +5685,10 @@
     "sku": "99452",
     "size": "XS S M L XL",
     "category": "Tops",
-    "image": "/Top/Bohemia Top/1.avif",
+    "image": "/Top/Bohemia Top/1.webp",
     "images": [
-      "/Top/Bohemia Top/2.avif",
-      "/Top/Bohemia Top/3.avif"
+      "/Top/Bohemia Top/2.webp",
+      "/Top/Bohemia Top/3.webp"
     ],
     "sizes": [
       "XS",
@@ -5773,12 +5773,12 @@
     "sku": "99451",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Bohemia Suit/1.avif",
+    "image": "/Costumes/Bohemia Suit/1.webp",
     "images": [
-      "/Costumes/Bohemia Suit/2.avif",
-      "/Costumes/Bohemia Suit/3.avif",
-      "/Costumes/Bohemia Suit/4.avif",
-      "/Costumes/Bohemia Suit/5.avif"
+      "/Costumes/Bohemia Suit/2.webp",
+      "/Costumes/Bohemia Suit/3.webp",
+      "/Costumes/Bohemia Suit/4.webp",
+      "/Costumes/Bohemia Suit/5.webp"
     ],
     "sizes": [
       "XS",
@@ -5867,12 +5867,12 @@
     "sku": "99450",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Mirage Dress/1.avif",
+    "image": "/Dress/Mirage Dress/1.webp",
     "images": [
-      "/Dress/Mirage Dress/2.avif",
-      "/Dress/Mirage Dress/3.avif",
-      "/Dress/Mirage Dress/4.avif",
-      "/Dress/Mirage Dress/5.avif"
+      "/Dress/Mirage Dress/2.webp",
+      "/Dress/Mirage Dress/3.webp",
+      "/Dress/Mirage Dress/4.webp",
+      "/Dress/Mirage Dress/5.webp"
     ],
     "sizes": [
       "XS",
@@ -5957,11 +5957,11 @@
     "sku": "99449",
     "size": "XS S M L XL",
     "category": "Tops",
-    "image": "/Top/Nerea Cover-up/1.avif",
+    "image": "/Top/Nerea Cover-up/1.webp",
     "images": [
-      "/Top/Nerea Cover-up/2.avif",
-      "/Top/Nerea Cover-up/3.avif",
-      "/Top/Nerea Cover-up/4.avif"
+      "/Top/Nerea Cover-up/2.webp",
+      "/Top/Nerea Cover-up/3.webp",
+      "/Top/Nerea Cover-up/4.webp"
     ],
     "sizes": [
       "XS",
@@ -6046,12 +6046,12 @@
     "sku": "99448",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Nerea Dress/1.avif",
+    "image": "/Dress/Nerea Dress/1.webp",
     "images": [
-      "/Dress/Nerea Dress/2.avif",
-      "/Dress/Nerea Dress/3.avif",
-      "/Dress/Nerea Dress/4.avif",
-      "/Dress/Nerea Dress/5.avif"
+      "/Dress/Nerea Dress/2.webp",
+      "/Dress/Nerea Dress/3.webp",
+      "/Dress/Nerea Dress/4.webp",
+      "/Dress/Nerea Dress/5.webp"
     ],
     "sizes": [
       "XS",
@@ -6136,12 +6136,12 @@
     "sku": "99447",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Terra Suit/1.avif",
+    "image": "/Costumes/Terra Suit/1.webp",
     "images": [
-      "/Costumes/Terra Suit/2.avif",
-      "/Costumes/Terra Suit/3.avif",
-      "/Costumes/Terra Suit/4.avif",
-      "/Costumes/Terra Suit/5.avif"
+      "/Costumes/Terra Suit/2.webp",
+      "/Costumes/Terra Suit/3.webp",
+      "/Costumes/Terra Suit/4.webp",
+      "/Costumes/Terra Suit/5.webp"
     ],
     "sizes": [
       "XS",
@@ -6230,11 +6230,11 @@
     "sku": "99446",
     "size": "XS S M L XL",
     "category": "Tops",
-    "image": "/Top/Écru Top/1.avif",
+    "image": "/Top/Écru Top/1.webp",
     "images": [
-      "/Top/Écru Top/2.avif",
-      "/Top/Écru Top/3.avif",
-      "/Top/Écru Top/4.avif"
+      "/Top/Écru Top/2.webp",
+      "/Top/Écru Top/3.webp",
+      "/Top/Écru Top/4.webp"
     ],
     "sizes": [
       "XS",
@@ -6319,11 +6319,11 @@
     "sku": "99445",
     "size": "XS S M L XL",
     "category": "Skirts",
-    "image": "/Skirts/Écru Skirt/1.avif",
+    "image": "/Skirts/Écru Skirt/1.webp",
     "images": [
-      "/Skirts/Écru Skirt/2.avif",
-      "/Skirts/Écru Skirt/3.avif",
-      "/Skirts/Écru Skirt/4.avif"
+      "/Skirts/Écru Skirt/2.webp",
+      "/Skirts/Écru Skirt/3.webp",
+      "/Skirts/Écru Skirt/4.webp"
     ],
     "sizes": [
       "XS",
@@ -6412,12 +6412,12 @@
     "sku": "99444",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Écru Suit/1.avif",
+    "image": "/Costumes/Écru Suit/1.webp",
     "images": [
-      "/Costumes/Écru Suit/2.avif",
-      "/Costumes/Écru Suit/3.avif",
-      "/Costumes/Écru Suit/4.avif",
-      "/Costumes/Écru Suit/5.avif"
+      "/Costumes/Écru Suit/2.webp",
+      "/Costumes/Écru Suit/3.webp",
+      "/Costumes/Écru Suit/4.webp",
+      "/Costumes/Écru Suit/5.webp"
     ],
     "sizes": [
       "XS",
@@ -6506,11 +6506,11 @@
     "sku": "99443",
     "size": "XS S M L XL",
     "category": "Tops",
-    "image": "/Top/Willow Top/1.avif",
+    "image": "/Top/Willow Top/1.webp",
     "images": [
-      "/Top/Willow Top/2.avif",
-      "/Top/Willow Top/3.avif",
-      "/Top/Willow Top/4.avif"
+      "/Top/Willow Top/2.webp",
+      "/Top/Willow Top/3.webp",
+      "/Top/Willow Top/4.webp"
     ],
     "sizes": [
       "XS",
@@ -6595,12 +6595,12 @@
     "sku": "99442",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Willow Suit/1.avif",
+    "image": "/Costumes/Willow Suit/1.webp",
     "images": [
-      "/Costumes/Willow Suit/2.avif",
-      "/Costumes/Willow Suit/3.avif",
-      "/Costumes/Willow Suit/4.avif",
-      "/Costumes/Willow Suit/5.avif"
+      "/Costumes/Willow Suit/2.webp",
+      "/Costumes/Willow Suit/3.webp",
+      "/Costumes/Willow Suit/4.webp",
+      "/Costumes/Willow Suit/5.webp"
     ],
     "sizes": [
       "XS",
@@ -7708,7 +7708,7 @@
       "/Dress/Azura Dress/4.webp",
       "/Dress/Azura Dress/5.webp",
       "/Dress/Azura Dress/6.webp",
-      "/Dress/Azura Dress/7.avif"
+      "/Dress/Azura Dress/7.webp"
     ],
     "colorImages": [
       [
@@ -7720,7 +7720,7 @@
       [
         "/Dress/Azura Dress/5.webp",
         "/Dress/Azura Dress/6.webp",
-        "/Dress/Azura Dress/7.avif"
+        "/Dress/Azura Dress/7.webp"
       ]
     ],
     "sizes": [
@@ -7802,12 +7802,12 @@
     "sku": "99429",
     "size": "XS S M L XL",
     "category": "Sweaters",
-    "image": "/Sweaters/Spiderweb Sweater/1.avif",
+    "image": "/Sweaters/Spiderweb Sweater/1.webp",
     "images": [
-      "/Sweaters/Spiderweb Sweater/2.avif",
-      "/Sweaters/Spiderweb Sweater/3.avif",
-      "/Sweaters/Spiderweb Sweater/4.avif",
-      "/Sweaters/Spiderweb Sweater/5.avif"
+      "/Sweaters/Spiderweb Sweater/2.webp",
+      "/Sweaters/Spiderweb Sweater/3.webp",
+      "/Sweaters/Spiderweb Sweater/4.webp",
+      "/Sweaters/Spiderweb Sweater/5.webp"
     ],
     "sizes": [
       "XS",
@@ -7885,12 +7885,12 @@
     "sku": "99425",
     "size": "XS S M L XL",
     "category": "Jackets",
-    "image": "/Jackets/Hooded Linen Bomber/1.avif",
+    "image": "/Jackets/Hooded Linen Bomber/1.webp",
     "images": [
-      "/Jackets/Hooded Linen Bomber/2.avif",
-      "/Jackets/Hooded Linen Bomber/3.avif",
-      "/Jackets/Hooded Linen Bomber/4.avif",
-      "/Jackets/Hooded Linen Bomber/5.avif"
+      "/Jackets/Hooded Linen Bomber/2.webp",
+      "/Jackets/Hooded Linen Bomber/3.webp",
+      "/Jackets/Hooded Linen Bomber/4.webp",
+      "/Jackets/Hooded Linen Bomber/5.webp"
     ],
     "sizes": [
       "XS",
@@ -7969,12 +7969,12 @@
     "sku": "99424",
     "size": "XS S M L XL",
     "category": "Jackets",
-    "image": "/Jackets/Distressed Bombe/1.avif",
+    "image": "/Jackets/Distressed Bombe/1.webp",
     "images": [
-      "/Jackets/Distressed Bombe/2.avif",
-      "/Jackets/Distressed Bombe/3.avif",
-      "/Jackets/Distressed Bombe/4.avif",
-      "/Jackets/Distressed Bombe/5.avif"
+      "/Jackets/Distressed Bombe/2.webp",
+      "/Jackets/Distressed Bombe/3.webp",
+      "/Jackets/Distressed Bombe/4.webp",
+      "/Jackets/Distressed Bombe/5.webp"
     ],
     "sizes": [
       "XS",
@@ -8053,36 +8053,36 @@
     "sku": "98820",
     "size": "XS S M L XL",
     "category": "Shirts",
-    "image": "/Shirts/Batiste Shirt/1.avif",
+    "image": "/Shirts/Batiste Shirt/1.webp",
     "images": [
-      "/Shirts/Batiste Shirt/8.avif",
+      "/Shirts/Batiste Shirt/8.webp",
       {
         "type": "video",
         "src": "/Shirts/Batiste Shirt/IMG_7771.mp4",
-        "poster": "/Shirts/Batiste Shirt/7.avif"
+        "poster": "/Shirts/Batiste Shirt/7.webp"
       },
-      "/Shirts/Batiste Shirt/2.avif",
-      "/Shirts/Batiste Shirt/3.avif",
-      "/Shirts/Batiste Shirt/4.avif",
-      "/Shirts/Batiste Shirt/5.avif",
+      "/Shirts/Batiste Shirt/2.webp",
+      "/Shirts/Batiste Shirt/3.webp",
+      "/Shirts/Batiste Shirt/4.webp",
+      "/Shirts/Batiste Shirt/5.webp",
       "/Shirts/Batiste Shirt/6.JPG",
-      "/Shirts/Batiste Shirt/7.avif",
-      "/Shirts/Batiste Shirt/8.avif",
-      "/Shirts/Batiste Shirt/9.avif"
+      "/Shirts/Batiste Shirt/7.webp",
+      "/Shirts/Batiste Shirt/8.webp",
+      "/Shirts/Batiste Shirt/9.webp"
     ],
     "colorImages": [
       [
-        "/Shirts/Batiste Shirt/1.avif",
-        "/Shirts/Batiste Shirt/2.avif",
-        "/Shirts/Batiste Shirt/3.avif",
-        "/Shirts/Batiste Shirt/4.avif",
-        "/Shirts/Batiste Shirt/5.avif"
+        "/Shirts/Batiste Shirt/1.webp",
+        "/Shirts/Batiste Shirt/2.webp",
+        "/Shirts/Batiste Shirt/3.webp",
+        "/Shirts/Batiste Shirt/4.webp",
+        "/Shirts/Batiste Shirt/5.webp"
       ],
       [
         "/Shirts/Batiste Shirt/6.JPG",
-        "/Shirts/Batiste Shirt/7.avif",
-        "/Shirts/Batiste Shirt/8.avif",
-        "/Shirts/Batiste Shirt/9.avif"
+        "/Shirts/Batiste Shirt/7.webp",
+        "/Shirts/Batiste Shirt/8.webp",
+        "/Shirts/Batiste Shirt/9.webp"
       ]
     ],
     "sizes": [
@@ -8140,12 +8140,12 @@
     "sku": "99422",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Denim Vest Set/1.avif",
+    "image": "/Costumes/Denim Vest Set/1.webp",
     "images": [
-      "/Costumes/Denim Vest Set/2.avif",
-      "/Costumes/Denim Vest Set/3.avif",
-      "/Costumes/Denim Vest Set/4.avif",
-      "/Costumes/Denim Vest Set/5.avif"
+      "/Costumes/Denim Vest Set/2.webp",
+      "/Costumes/Denim Vest Set/3.webp",
+      "/Costumes/Denim Vest Set/4.webp",
+      "/Costumes/Denim Vest Set/5.webp"
     ],
     "sizes": [
       "XS",
@@ -8230,11 +8230,11 @@
     "sku": "99417",
     "size": "XS S M L XL",
     "category": "Skirts",
-    "image": "/Skirts/Silk Maxi Skirt/1.avif",
+    "image": "/Skirts/Silk Maxi Skirt/1.webp",
     "images": [
-      "/Skirts/Silk Maxi Skirt/2.avif",
-      "/Skirts/Silk Maxi Skirt/3.avif",
-      "/Skirts/Silk Maxi Skirt/4.avif"
+      "/Skirts/Silk Maxi Skirt/2.webp",
+      "/Skirts/Silk Maxi Skirt/3.webp",
+      "/Skirts/Silk Maxi Skirt/4.webp"
     ],
     "sizes": [
       "XS",
@@ -8324,12 +8324,12 @@
     "sku": "99415",
     "size": "XS S M L XL",
     "category": "Jackets",
-    "image": "/Jackets/Tweed Jacket White/1.avif",
+    "image": "/Jackets/Tweed Jacket White/1.webp",
     "images": [
-      "/Jackets/Tweed Jacket White/2.avif",
-      "/Jackets/Tweed Jacket White/3.avif",
-      "/Jackets/Tweed Jacket White/4.avif",
-      "/Jackets/Tweed Jacket White/5.avif"
+      "/Jackets/Tweed Jacket White/2.webp",
+      "/Jackets/Tweed Jacket White/3.webp",
+      "/Jackets/Tweed Jacket White/4.webp",
+      "/Jackets/Tweed Jacket White/5.webp"
     ],
     "sizes": [
       "XS",
@@ -8419,12 +8419,12 @@
     "sku": "99412",
     "size": "XS S M L XL",
     "category": "Outerwear",
-    "image": "/Outerwear/Leather Bomber Mocha/1.avif",
+    "image": "/Outerwear/Leather Bomber Mocha/1.webp",
     "images": [
-      "/Outerwear/Leather Bomber Mocha/2.avif",
-      "/Outerwear/Leather Bomber Mocha/3.avif",
-      "/Outerwear/Leather Bomber Mocha/4.avif",
-      "/Outerwear/Leather Bomber Mocha/5.avif"
+      "/Outerwear/Leather Bomber Mocha/2.webp",
+      "/Outerwear/Leather Bomber Mocha/3.webp",
+      "/Outerwear/Leather Bomber Mocha/4.webp",
+      "/Outerwear/Leather Bomber Mocha/5.webp"
     ],
     "sizes": [
       "XS",
@@ -8510,11 +8510,11 @@
     "sku": "99422",
     "size": "XS S M L XL",
     "category": "Outerwear",
-    "image": "/Outerwear/Elongated Bomber/1.avif",
+    "image": "/Outerwear/Elongated Bomber/1.webp",
     "images": [
-      "/Outerwear/Elongated Bomber/2.avif",
-      "/Outerwear/Elongated Bomber/3.avif",
-      "/Outerwear/Elongated Bomber/4.avif"
+      "/Outerwear/Elongated Bomber/2.webp",
+      "/Outerwear/Elongated Bomber/3.webp",
+      "/Outerwear/Elongated Bomber/4.webp"
     ],
     "sizes": [
       "XS",
@@ -8596,12 +8596,12 @@
     "sku": "99421",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Tweed Suit with Bomber/1.avif",
+    "image": "/Costumes/Tweed Suit with Bomber/1.webp",
     "images": [
-      "/Costumes/Tweed Suit with Bomber/2.avif",
-      "/Costumes/Tweed Suit with Bomber/3.avif",
-      "/Costumes/Tweed Suit with Bomber/4.avif",
-      "/Costumes/Tweed Suit with Bomber/5.avif"
+      "/Costumes/Tweed Suit with Bomber/2.webp",
+      "/Costumes/Tweed Suit with Bomber/3.webp",
+      "/Costumes/Tweed Suit with Bomber/4.webp",
+      "/Costumes/Tweed Suit with Bomber/5.webp"
     ],
     "sizes": [
       "XS",
@@ -8683,11 +8683,11 @@
     "sku": "99420",
     "size": "XS S M L XL",
     "category": "Pants",
-    "image": "/Pants/Checkered Pants/1.avif",
+    "image": "/Pants/Checkered Pants/1.webp",
     "images": [
-      "/Pants/Checkered Pants/2.avif",
-      "/Pants/Checkered Pants/3.avif",
-      "/Pants/Checkered Pants/4.avif"
+      "/Pants/Checkered Pants/2.webp",
+      "/Pants/Checkered Pants/3.webp",
+      "/Pants/Checkered Pants/4.webp"
     ],
     "sizes": [
       "XS",
@@ -8765,12 +8765,12 @@
     "sku": "99419",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Checkered Suit with Pants/1.avif",
+    "image": "/Costumes/Checkered Suit with Pants/1.webp",
     "images": [
-      "/Costumes/Checkered Suit with Pants/2.avif",
-      "/Costumes/Checkered Suit with Pants/3.avif",
-      "/Costumes/Checkered Suit with Pants/4.avif",
-      "/Costumes/Checkered Suit with Pants/5.avif"
+      "/Costumes/Checkered Suit with Pants/2.webp",
+      "/Costumes/Checkered Suit with Pants/3.webp",
+      "/Costumes/Checkered Suit with Pants/4.webp",
+      "/Costumes/Checkered Suit with Pants/5.webp"
     ],
     "sizes": [
       "XS",
@@ -8848,11 +8848,11 @@
     "sku": "99418",
     "size": "XS S M L XL",
     "category": "Skirts",
-    "image": "/Skirts/Checkered Skirt/1.avif",
+    "image": "/Skirts/Checkered Skirt/1.webp",
     "images": [
-      "/Skirts/Checkered Skirt/2.avif",
-      "/Skirts/Checkered Skirt/3.avif",
-      "/Skirts/Checkered Skirt/4.avif"
+      "/Skirts/Checkered Skirt/2.webp",
+      "/Skirts/Checkered Skirt/3.webp",
+      "/Skirts/Checkered Skirt/4.webp"
     ],
     "sizes": [
       "XS",
@@ -8934,11 +8934,11 @@
     "sku": "99417",
     "size": "XS S M L XL",
     "category": "Jackets",
-    "image": "/Jackets/Checkered Jacket/1.avif",
+    "image": "/Jackets/Checkered Jacket/1.webp",
     "images": [
-      "/Jackets/Checkered Jacket/2.avif",
-      "/Jackets/Checkered Jacket/3.avif",
-      "/Jackets/Checkered Jacket/4.avif"
+      "/Jackets/Checkered Jacket/2.webp",
+      "/Jackets/Checkered Jacket/3.webp",
+      "/Jackets/Checkered Jacket/4.webp"
     ],
     "sizes": [
       "XS",
@@ -9016,12 +9016,12 @@
     "sku": "99416",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Checkered Suit with Skirt/1.avif",
+    "image": "/Costumes/Checkered Suit with Skirt/1.webp",
     "images": [
-      "/Costumes/Checkered Suit with Skirt/2.avif",
-      "/Costumes/Checkered Suit with Skirt/3.avif",
-      "/Costumes/Checkered Suit with Skirt/4.avif",
-      "/Costumes/Checkered Suit with Skirt/5.avif"
+      "/Costumes/Checkered Suit with Skirt/2.webp",
+      "/Costumes/Checkered Suit with Skirt/3.webp",
+      "/Costumes/Checkered Suit with Skirt/4.webp",
+      "/Costumes/Checkered Suit with Skirt/5.webp"
     ],
     "sizes": [
       "XS",
@@ -9103,12 +9103,12 @@
     "sku": "99413",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Deep Green Suit/1.avif",
+    "image": "/Costumes/Deep Green Suit/1.webp",
     "images": [
-      "/Costumes/Deep Green Suit/2.avif",
-      "/Costumes/Deep Green Suit/3.avif",
-      "/Costumes/Deep Green Suit/4.avif",
-      "/Costumes/Deep Green Suit/5.avif"
+      "/Costumes/Deep Green Suit/2.webp",
+      "/Costumes/Deep Green Suit/3.webp",
+      "/Costumes/Deep Green Suit/4.webp",
+      "/Costumes/Deep Green Suit/5.webp"
     ],
     "sizes": [
       "XS",
@@ -9189,12 +9189,12 @@
     "sku": "99410",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Provence Suit/1.avif",
+    "image": "/Costumes/Provence Suit/1.webp",
     "images": [
-      "/Costumes/Provence Suit/2.avif",
-      "/Costumes/Provence Suit/3.avif",
-      "/Costumes/Provence Suit/4.avif",
-      "/Costumes/Provence Suit/5.avif"
+      "/Costumes/Provence Suit/2.webp",
+      "/Costumes/Provence Suit/3.webp",
+      "/Costumes/Provence Suit/4.webp",
+      "/Costumes/Provence Suit/5.webp"
     ],
     "sizes": [
       "XS",
@@ -9275,12 +9275,12 @@
     "sku": "99409",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Leather Sundress Olive/1.avif",
+    "image": "/Dress/Leather Sundress Olive/1.webp",
     "images": [
-      "/Dress/Leather Sundress Olive/2.avif",
-      "/Dress/Leather Sundress Olive/3.avif",
-      "/Dress/Leather Sundress Olive/4.avif",
-      "/Dress/Leather Sundress Olive/5.avif"
+      "/Dress/Leather Sundress Olive/2.webp",
+      "/Dress/Leather Sundress Olive/3.webp",
+      "/Dress/Leather Sundress Olive/4.webp",
+      "/Dress/Leather Sundress Olive/5.webp"
     ],
     "sizes": [
       "XS",
@@ -9362,50 +9362,50 @@
     "sku": "99408",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Denim Sundress/1.avif",
+    "image": "/Dress/Denim Sundress/1.webp",
     "images": [
-      "/Dress/Denim Sundress/2.avif",
-      "/Dress/Denim Sundress/3.avif",
-      "/Dress/Denim Sundress/4.avif",
-      "/Dress/Denim Sundress/5.avif",
-      "/Dress/Denim Sundress/6.avif",
-      "/Dress/Denim Sundress/7.avif",
-      "/Dress/Denim Sundress/8.avif",
-      "/Dress/Denim Sundress/9.avif",
-      "/Dress/Denim Sundress/10.avif",
-      "/Dress/Denim Sundress/11.avif",
-      "/Dress/Denim Sundress/12.avif",
-      "/Dress/Denim Sundress/13.avif",
-      "/Dress/Denim Sundress/14.avif",
-      "/Dress/Denim Sundress/15.avif",
-      "/Dress/Denim Sundress/16.avif",
-      "/Dress/Denim Sundress/17.avif"
+      "/Dress/Denim Sundress/2.webp",
+      "/Dress/Denim Sundress/3.webp",
+      "/Dress/Denim Sundress/4.webp",
+      "/Dress/Denim Sundress/5.webp",
+      "/Dress/Denim Sundress/6.webp",
+      "/Dress/Denim Sundress/7.webp",
+      "/Dress/Denim Sundress/8.webp",
+      "/Dress/Denim Sundress/9.webp",
+      "/Dress/Denim Sundress/10.webp",
+      "/Dress/Denim Sundress/11.webp",
+      "/Dress/Denim Sundress/12.webp",
+      "/Dress/Denim Sundress/13.webp",
+      "/Dress/Denim Sundress/14.webp",
+      "/Dress/Denim Sundress/15.webp",
+      "/Dress/Denim Sundress/16.webp",
+      "/Dress/Denim Sundress/17.webp"
     ],
     "colorImages": [
       [
-        "/Dress/Denim Sundress/1.avif",
-        "/Dress/Denim Sundress/2.avif",
-        "/Dress/Denim Sundress/3.avif",
-        "/Dress/Denim Sundress/4.avif",
-        "/Dress/Denim Sundress/5.avif"
+        "/Dress/Denim Sundress/1.webp",
+        "/Dress/Denim Sundress/2.webp",
+        "/Dress/Denim Sundress/3.webp",
+        "/Dress/Denim Sundress/4.webp",
+        "/Dress/Denim Sundress/5.webp"
       ],
       [
-        "/Dress/Denim Sundress/6.avif",
-        "/Dress/Denim Sundress/7.avif",
-        "/Dress/Denim Sundress/8.avif",
-        "/Dress/Denim Sundress/9.avif"
+        "/Dress/Denim Sundress/6.webp",
+        "/Dress/Denim Sundress/7.webp",
+        "/Dress/Denim Sundress/8.webp",
+        "/Dress/Denim Sundress/9.webp"
       ],
       [
-        "/Dress/Denim Sundress/10.avif",
-        "/Dress/Denim Sundress/11.avif",
-        "/Dress/Denim Sundress/12.avif",
-        "/Dress/Denim Sundress/13.avif"
+        "/Dress/Denim Sundress/10.webp",
+        "/Dress/Denim Sundress/11.webp",
+        "/Dress/Denim Sundress/12.webp",
+        "/Dress/Denim Sundress/13.webp"
       ],
       [
-        "/Dress/Denim Sundress/14.avif",
-        "/Dress/Denim Sundress/15.avif",
-        "/Dress/Denim Sundress/16.avif",
-        "/Dress/Denim Sundress/17.avif"
+        "/Dress/Denim Sundress/14.webp",
+        "/Dress/Denim Sundress/15.webp",
+        "/Dress/Denim Sundress/16.webp",
+        "/Dress/Denim Sundress/17.webp"
       ]
     ],
     "sizes": [
@@ -9504,12 +9504,12 @@
     "sku": "99407",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Wool Sundress Houndstooth/1.avif",
+    "image": "/Dress/Wool Sundress Houndstooth/1.webp",
     "images": [
-      "/Dress/Wool Sundress Houndstooth/2.avif",
-      "/Dress/Wool Sundress Houndstooth/3.avif",
-      "/Dress/Wool Sundress Houndstooth/4.avif",
-      "/Dress/Wool Sundress Houndstooth/5.avif"
+      "/Dress/Wool Sundress Houndstooth/2.webp",
+      "/Dress/Wool Sundress Houndstooth/3.webp",
+      "/Dress/Wool Sundress Houndstooth/4.webp",
+      "/Dress/Wool Sundress Houndstooth/5.webp"
     ],
     "sizes": [
       "XS",
@@ -9595,12 +9595,12 @@
     "sku": "99406",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Deep Blue Dress/1.avif",
+    "image": "/Dress/Deep Blue Dress/1.webp",
     "images": [
-      "/Dress/Deep Blue Dress/2.avif",
-      "/Dress/Deep Blue Dress/3.avif",
-      "/Dress/Deep Blue Dress/4.avif",
-      "/Dress/Deep Blue Dress/5.avif"
+      "/Dress/Deep Blue Dress/2.webp",
+      "/Dress/Deep Blue Dress/3.webp",
+      "/Dress/Deep Blue Dress/4.webp",
+      "/Dress/Deep Blue Dress/5.webp"
     ],
     "sizes": [
       "XS",
@@ -9681,38 +9681,38 @@
     "sku": "99405",
     "size": "XS S M L XL",
     "category": "Skirts",
-    "image": "/Skirts/Leather Skirt Front Slit/1.avif",
+    "image": "/Skirts/Leather Skirt Front Slit/1.webp",
     "images": [
-      "/Skirts/Leather Skirt Front Slit/2.avif",
-      "/Skirts/Leather Skirt Front Slit/3.avif",
-      "/Skirts/Leather Skirt Front Slit/4.avif",
-      "/Skirts/Leather Skirt Front Slit/5.avif",
-      "/Skirts/Leather Skirt Front Slit/6.avif",
-      "/Skirts/Leather Skirt Front Slit/7.avif",
-      "/Skirts/Leather Skirt Front Slit/8.avif",
-      "/Skirts/Leather Skirt Front Slit/9.avif",
-      "/Skirts/Leather Skirt Front Slit/10.avif",
-      "/Skirts/Leather Skirt Front Slit/11.avif"
+      "/Skirts/Leather Skirt Front Slit/2.webp",
+      "/Skirts/Leather Skirt Front Slit/3.webp",
+      "/Skirts/Leather Skirt Front Slit/4.webp",
+      "/Skirts/Leather Skirt Front Slit/5.webp",
+      "/Skirts/Leather Skirt Front Slit/6.webp",
+      "/Skirts/Leather Skirt Front Slit/7.webp",
+      "/Skirts/Leather Skirt Front Slit/8.webp",
+      "/Skirts/Leather Skirt Front Slit/9.webp",
+      "/Skirts/Leather Skirt Front Slit/10.webp",
+      "/Skirts/Leather Skirt Front Slit/11.webp"
     ],
     "colorImages": [
       [
-        "/Skirts/Leather Skirt Front Slit/1.avif",
-        "/Skirts/Leather Skirt Front Slit/2.avif",
-        "/Skirts/Leather Skirt Front Slit/3.avif",
-        "/Skirts/Leather Skirt Front Slit/4.avif",
-        "/Skirts/Leather Skirt Front Slit/5.avif"
+        "/Skirts/Leather Skirt Front Slit/1.webp",
+        "/Skirts/Leather Skirt Front Slit/2.webp",
+        "/Skirts/Leather Skirt Front Slit/3.webp",
+        "/Skirts/Leather Skirt Front Slit/4.webp",
+        "/Skirts/Leather Skirt Front Slit/5.webp"
       ],
       [
-        "/Skirts/Leather Skirt Front Slit/10.avif",
-        "/Skirts/Leather Skirt Front Slit/11.avif"
+        "/Skirts/Leather Skirt Front Slit/10.webp",
+        "/Skirts/Leather Skirt Front Slit/11.webp"
       ],
       [
-        "/Skirts/Leather Skirt Front Slit/6.avif",
-        "/Skirts/Leather Skirt Front Slit/7.avif"
+        "/Skirts/Leather Skirt Front Slit/6.webp",
+        "/Skirts/Leather Skirt Front Slit/7.webp"
       ],
       [
-        "/Skirts/Leather Skirt Front Slit/8.avif",
-        "/Skirts/Leather Skirt Front Slit/9.avif"
+        "/Skirts/Leather Skirt Front Slit/8.webp",
+        "/Skirts/Leather Skirt Front Slit/9.webp"
       ]
     ],
     "sizes": [
@@ -9811,11 +9811,11 @@
     "sku": "99404",
     "size": "XS S M L XL",
     "category": "Skirts",
-    "image": "/Skirts/Leather Skirt Alice/1.avif",
+    "image": "/Skirts/Leather Skirt Alice/1.webp",
     "images": [
-      "/Skirts/Leather Skirt Alice/2.avif",
-      "/Skirts/Leather Skirt Alice/3.avif",
-      "/Skirts/Leather Skirt Alice/4.avif"
+      "/Skirts/Leather Skirt Alice/2.webp",
+      "/Skirts/Leather Skirt Alice/3.webp",
+      "/Skirts/Leather Skirt Alice/4.webp"
     ],
     "sizes": [
       "XS",
@@ -9901,12 +9901,12 @@
     "sku": "99403",
     "size": "XS S M L XL",
     "category": "Sweaters",
-    "image": "/Sweaters/Sheer Longsleeve/1.avif",
+    "image": "/Sweaters/Sheer Longsleeve/1.webp",
     "images": [
-      "/Sweaters/Sheer Longsleeve/2.avif",
-      "/Sweaters/Sheer Longsleeve/3.avif",
-      "/Sweaters/Sheer Longsleeve/4.avif",
-      "/Sweaters/Sheer Longsleeve/5.avif"
+      "/Sweaters/Sheer Longsleeve/2.webp",
+      "/Sweaters/Sheer Longsleeve/3.webp",
+      "/Sweaters/Sheer Longsleeve/4.webp",
+      "/Sweaters/Sheer Longsleeve/5.webp"
     ],
     "sizes": [
       "XS",
@@ -9992,12 +9992,12 @@
     "sku": "99402",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Satin Midi Slip Dress/1.avif",
+    "image": "/Dress/Satin Midi Slip Dress/1.webp",
     "images": [
-      "/Dress/Satin Midi Slip Dress/2.avif",
-      "/Dress/Satin Midi Slip Dress/3.avif",
-      "/Dress/Satin Midi Slip Dress/4.avif",
-      "/Dress/Satin Midi Slip Dress/5.avif"
+      "/Dress/Satin Midi Slip Dress/2.webp",
+      "/Dress/Satin Midi Slip Dress/3.webp",
+      "/Dress/Satin Midi Slip Dress/4.webp",
+      "/Dress/Satin Midi Slip Dress/5.webp"
     ],
     "sizes": [
       "XS",
@@ -10086,11 +10086,11 @@
     "sku": "99380",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Deep Green/1.avif",
+    "image": "/Costumes/Deep Green/1.webp",
     "images": [
-      "/Costumes/Deep Green/2.avif",
-      "/Costumes/Deep Green/3.avif",
-      "/Costumes/Deep Green/4.avif"
+      "/Costumes/Deep Green/2.webp",
+      "/Costumes/Deep Green/3.webp",
+      "/Costumes/Deep Green/4.webp"
     ],
     "sizes": [
       "XS",
@@ -10188,28 +10188,28 @@
     "sku": "99378",
     "size": "XS S M L XL",
     "category": "Shirts",
-    "image": "/Shirts/Ruffled Blouse/1.avif",
+    "image": "/Shirts/Ruffled Blouse/1.webp",
     "images": [
-      "/Shirts/Ruffled Blouse/2.avif",
-      "/Shirts/Ruffled Blouse/3.avif",
-      "/Shirts/Ruffled Blouse/4.avif",
-      "/Shirts/Ruffled Blouse/5.avif",
-      "/Shirts/Ruffled Blouse/6.avif",
-      "/Shirts/Ruffled Blouse/7.avif",
-      "/Shirts/Ruffled Blouse/8.avif"
+      "/Shirts/Ruffled Blouse/2.webp",
+      "/Shirts/Ruffled Blouse/3.webp",
+      "/Shirts/Ruffled Blouse/4.webp",
+      "/Shirts/Ruffled Blouse/5.webp",
+      "/Shirts/Ruffled Blouse/6.webp",
+      "/Shirts/Ruffled Blouse/7.webp",
+      "/Shirts/Ruffled Blouse/8.webp"
     ],
     "colorImages": [
       [
-        "/Shirts/Ruffled Blouse/1.avif",
-        "/Shirts/Ruffled Blouse/2.avif",
-        "/Shirts/Ruffled Blouse/3.avif",
-        "/Shirts/Ruffled Blouse/4.avif"
+        "/Shirts/Ruffled Blouse/1.webp",
+        "/Shirts/Ruffled Blouse/2.webp",
+        "/Shirts/Ruffled Blouse/3.webp",
+        "/Shirts/Ruffled Blouse/4.webp"
       ],
       [
-        "/Shirts/Ruffled Blouse/5.avif",
-        "/Shirts/Ruffled Blouse/6.avif",
-        "/Shirts/Ruffled Blouse/7.avif",
-        "/Shirts/Ruffled Blouse/8.avif"
+        "/Shirts/Ruffled Blouse/5.webp",
+        "/Shirts/Ruffled Blouse/6.webp",
+        "/Shirts/Ruffled Blouse/7.webp",
+        "/Shirts/Ruffled Blouse/8.webp"
       ]
     ],
     "sizes": [
@@ -10291,12 +10291,12 @@
     "sku": "99374",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Cocoa Line Dress/1.avif",
+    "image": "/Dress/Cocoa Line Dress/1.webp",
     "images": [
-      "/Dress/Cocoa Line Dress/2.avif",
-      "/Dress/Cocoa Line Dress/3.avif",
-      "/Dress/Cocoa Line Dress/4.avif",
-      "/Dress/Cocoa Line Dress/5.avif"
+      "/Dress/Cocoa Line Dress/2.webp",
+      "/Dress/Cocoa Line Dress/3.webp",
+      "/Dress/Cocoa Line Dress/4.webp",
+      "/Dress/Cocoa Line Dress/5.webp"
     ],
     "sizes": [
       "XS",
@@ -10385,12 +10385,12 @@
     "sku": "99373",
     "size": "XS S M L XL",
     "category": "Jackets",
-    "image": "/Jackets/Houndstooth Jacket/1.avif",
+    "image": "/Jackets/Houndstooth Jacket/1.webp",
     "images": [
-      "/Jackets/Houndstooth Jacket/2.avif",
-      "/Jackets/Houndstooth Jacket/3.avif",
-      "/Jackets/Houndstooth Jacket/4.avif",
-      "/Jackets/Houndstooth Jacket/5.avif"
+      "/Jackets/Houndstooth Jacket/2.webp",
+      "/Jackets/Houndstooth Jacket/3.webp",
+      "/Jackets/Houndstooth Jacket/4.webp",
+      "/Jackets/Houndstooth Jacket/5.webp"
     ],
     "sizes": [
       "XS",
@@ -10488,11 +10488,11 @@
     "sku": "99372",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Clariss Suit with Pants/10.avif",
+    "image": "/Costumes/Clariss Suit with Pants/10.webp",
     "images": [
-      "/Costumes/Clariss Suit with Pants/11.avif",
-      "/Costumes/Clariss Suit with Pants/12.avif",
-      "/Costumes/Clariss Suit with Pants/13.avif"
+      "/Costumes/Clariss Suit with Pants/11.webp",
+      "/Costumes/Clariss Suit with Pants/12.webp",
+      "/Costumes/Clariss Suit with Pants/13.webp"
     ],
     "sizes": [
       "XS",
@@ -10582,12 +10582,12 @@
     "sku": "99370",
     "size": "XS S M L XL",
     "category": "Sweaters",
-    "image": "/Sweaters/Soft Sweater/1.avif",
+    "image": "/Sweaters/Soft Sweater/1.webp",
     "images": [
-      "/Sweaters/Soft Sweater/2.avif",
-      "/Sweaters/Soft Sweater/3.avif",
-      "/Sweaters/Soft Sweater/4.avif",
-      "/Sweaters/Soft Sweater/5.avif"
+      "/Sweaters/Soft Sweater/2.webp",
+      "/Sweaters/Soft Sweater/3.webp",
+      "/Sweaters/Soft Sweater/4.webp",
+      "/Sweaters/Soft Sweater/5.webp"
     ],
     "sizes": [
       "XS",
@@ -10669,11 +10669,11 @@
     "sku": "99368",
     "size": "XS S M L XL",
     "category": "Outerwear",
-    "image": "/Outerwear/Urban Mini Trench/1.avif",
+    "image": "/Outerwear/Urban Mini Trench/1.webp",
     "images": [
-      "/Outerwear/Urban Mini Trench/2.avif",
-      "/Outerwear/Urban Mini Trench/3.avif",
-      "/Outerwear/Urban Mini Trench/4.avif"
+      "/Outerwear/Urban Mini Trench/2.webp",
+      "/Outerwear/Urban Mini Trench/3.webp",
+      "/Outerwear/Urban Mini Trench/4.webp"
     ],
     "sizes": [
       "XS",
@@ -10763,12 +10763,12 @@
     "sku": "99367",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Urban Suit/1.avif",
+    "image": "/Costumes/Urban Suit/1.webp",
     "images": [
-      "/Costumes/Urban Suit/2.avif",
-      "/Costumes/Urban Suit/3.avif",
-      "/Costumes/Urban Suit/4.avif",
-      "/Costumes/Urban Suit/5.avif"
+      "/Costumes/Urban Suit/2.webp",
+      "/Costumes/Urban Suit/3.webp",
+      "/Costumes/Urban Suit/4.webp",
+      "/Costumes/Urban Suit/5.webp"
     ],
     "sizes": [
       "XS",
@@ -10862,11 +10862,11 @@
     "sku": "99364",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Clariss Suit/6.avif",
+    "image": "/Costumes/Clariss Suit/6.webp",
     "images": [
-      "/Costumes/Clariss Suit/7.avif",
-      "/Costumes/Clariss Suit/8.avif",
-      "/Costumes/Clariss Suit/9.avif"
+      "/Costumes/Clariss Suit/7.webp",
+      "/Costumes/Clariss Suit/8.webp",
+      "/Costumes/Clariss Suit/9.webp"
     ],
     "sizes": [
       "XS",
@@ -10964,12 +10964,12 @@
     "sku": "99363",
     "size": "XS S M L XL",
     "category": "Pants",
-    "image": "/Pants/Wool Pants/1.avif",
+    "image": "/Pants/Wool Pants/1.webp",
     "images": [
-      "/Pants/Wool Pants/2.avif",
-      "/Pants/Wool Pants/3.avif",
-      "/Pants/Wool Pants/4.avif",
-      "/Pants/Wool Pants/5.avif"
+      "/Pants/Wool Pants/2.webp",
+      "/Pants/Wool Pants/3.webp",
+      "/Pants/Wool Pants/4.webp",
+      "/Pants/Wool Pants/5.webp"
     ],
     "sizes": [
       "XS",
@@ -11044,11 +11044,11 @@
     "size": "XS S M L XL",
     "category": "Pants",
     "title": "Шкіряні брюки з поясом",
-    "image": "/Pants/LeatherPants Belt/6.avif",
+    "image": "/Pants/LeatherPants Belt/6.webp",
     "images": [
-      "/Pants/LeatherPants Belt/7.avif",
-      "/Pants/LeatherPants Belt/8.avif",
-      "/Pants/LeatherPants Belt/9.avif"
+      "/Pants/LeatherPants Belt/7.webp",
+      "/Pants/LeatherPants Belt/8.webp",
+      "/Pants/LeatherPants Belt/9.webp"
     ],
     "sizes": [
       "XS",
@@ -11138,30 +11138,30 @@
     "sku": "98824",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Satin Slip Dress/5.avif",
+    "image": "/Dress/Satin Slip Dress/5.webp",
     "images": [
-      "/Dress/Satin Slip Dress/6.avif",
-      "/Dress/Satin Slip Dress/7.avif",
-      "/Dress/Satin Slip Dress/8.avif",
-      "/Dress/Satin Slip Dress/9.avif",
-      "/Dress/Satin Slip Dress/1.avif",
-      "/Dress/Satin Slip Dress/2.avif",
-      "/Dress/Satin Slip Dress/3.avif",
-      "/Dress/Satin Slip Dress/4.avif"
+      "/Dress/Satin Slip Dress/6.webp",
+      "/Dress/Satin Slip Dress/7.webp",
+      "/Dress/Satin Slip Dress/8.webp",
+      "/Dress/Satin Slip Dress/9.webp",
+      "/Dress/Satin Slip Dress/1.webp",
+      "/Dress/Satin Slip Dress/2.webp",
+      "/Dress/Satin Slip Dress/3.webp",
+      "/Dress/Satin Slip Dress/4.webp"
     ],
     "colorImages": [
       [
-        "/Dress/Satin Slip Dress/5.avif",
-        "/Dress/Satin Slip Dress/6.avif",
-        "/Dress/Satin Slip Dress/7.avif",
-        "/Dress/Satin Slip Dress/8.avif",
-        "/Dress/Satin Slip Dress/9.avif"
+        "/Dress/Satin Slip Dress/5.webp",
+        "/Dress/Satin Slip Dress/6.webp",
+        "/Dress/Satin Slip Dress/7.webp",
+        "/Dress/Satin Slip Dress/8.webp",
+        "/Dress/Satin Slip Dress/9.webp"
       ],
       [
-        "/Dress/Satin Slip Dress/1.avif",
-        "/Dress/Satin Slip Dress/2.avif",
-        "/Dress/Satin Slip Dress/3.avif",
-        "/Dress/Satin Slip Dress/4.avif"
+        "/Dress/Satin Slip Dress/1.webp",
+        "/Dress/Satin Slip Dress/2.webp",
+        "/Dress/Satin Slip Dress/3.webp",
+        "/Dress/Satin Slip Dress/4.webp"
       ]
     ],
     "sizes": [
@@ -11246,18 +11246,18 @@
     "sku": "98811",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Loden Grace Dress/1.avif",
+    "image": "/Dress/Loden Grace Dress/1.webp",
     "images": [
-      "/Dress/Loden Grace Dress/1.avif",
-      "/Dress/Loden Grace Dress/2.avif",
+      "/Dress/Loden Grace Dress/1.webp",
+      "/Dress/Loden Grace Dress/2.webp",
       {
         "type": "video",
         "src": "/Dress/Loden Grace Dress/IMG_5263.mp4",
-        "poster": "/Dress/Loden Grace Dress/2.avif"
+        "poster": "/Dress/Loden Grace Dress/2.webp"
       },
-      "/Dress/Loden Grace Dress/3.avif",
-      "/Dress/Loden Grace Dress/4.avif",
-      "/Dress/Loden Grace Dress/5.avif"
+      "/Dress/Loden Grace Dress/3.webp",
+      "/Dress/Loden Grace Dress/4.webp",
+      "/Dress/Loden Grace Dress/5.webp"
     ],
     "sizes": [
       "XS",
@@ -11348,12 +11348,12 @@
     "sku": "99351",
     "size": "XS S M L XL",
     "category": "Skirts",
-    "image": "/Skirts/Leather Mini Skirt/1.avif",
+    "image": "/Skirts/Leather Mini Skirt/1.webp",
     "images": [
-      "/Skirts/Leather Mini Skirt/2.avif",
-      "/Skirts/Leather Mini Skirt/3.avif",
-      "/Skirts/Leather Mini Skirt/4.avif",
-      "/Skirts/Leather Mini Skirt/5.avif"
+      "/Skirts/Leather Mini Skirt/2.webp",
+      "/Skirts/Leather Mini Skirt/3.webp",
+      "/Skirts/Leather Mini Skirt/4.webp",
+      "/Skirts/Leather Mini Skirt/5.webp"
     ],
     "sizes": [
       "XS",
@@ -11447,26 +11447,26 @@
     "sku": "45530",
     "size": "XS S M L XL",
     "category": "Skirts",
-    "image": "/Skirts/Leather Midi Skirt/1.avif",
+    "image": "/Skirts/Leather Midi Skirt/1.webp",
     "images": [
-      "/Skirts/Leather Midi Skirt/2.avif",
-      "/Skirts/Leather Midi Skirt/3.avif",
-      "/Skirts/Leather Midi Skirt/4.avif",
-      "/Skirts/Leather Midi Skirt/5.avif",
-      "/Skirts/Leather Midi Skirt/6.avif",
-      "/Skirts/Leather Midi Skirt/7.avif"
+      "/Skirts/Leather Midi Skirt/2.webp",
+      "/Skirts/Leather Midi Skirt/3.webp",
+      "/Skirts/Leather Midi Skirt/4.webp",
+      "/Skirts/Leather Midi Skirt/5.webp",
+      "/Skirts/Leather Midi Skirt/6.webp",
+      "/Skirts/Leather Midi Skirt/7.webp"
     ],
     "colorImages": [
       [
-        "/Skirts/Leather Midi Skirt/1.avif",
-        "/Skirts/Leather Midi Skirt/2.avif",
-        "/Skirts/Leather Midi Skirt/3.avif",
-        "/Skirts/Leather Midi Skirt/4.avif",
-        "/Skirts/Leather Midi Skirt/5.avif"
+        "/Skirts/Leather Midi Skirt/1.webp",
+        "/Skirts/Leather Midi Skirt/2.webp",
+        "/Skirts/Leather Midi Skirt/3.webp",
+        "/Skirts/Leather Midi Skirt/4.webp",
+        "/Skirts/Leather Midi Skirt/5.webp"
       ],
       [
-        "/Skirts/Leather Midi Skirt/6.avif",
-        "/Skirts/Leather Midi Skirt/7.avif"
+        "/Skirts/Leather Midi Skirt/6.webp",
+        "/Skirts/Leather Midi Skirt/7.webp"
       ]
     ],
     "sizes": [
@@ -11525,12 +11525,12 @@
     "sku": "99348",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Khaki Suit/1.avif",
+    "image": "/Costumes/Khaki Suit/1.webp",
     "images": [
-      "/Costumes/Khaki Suit/2.avif",
-      "/Costumes/Khaki Suit/3.avif",
-      "/Costumes/Khaki Suit/4.avif",
-      "/Costumes/Khaki Suit/5.avif"
+      "/Costumes/Khaki Suit/2.webp",
+      "/Costumes/Khaki Suit/3.webp",
+      "/Costumes/Khaki Suit/4.webp",
+      "/Costumes/Khaki Suit/5.webp"
     ],
     "sizes": [
       "XS",
@@ -11635,12 +11635,12 @@
     "sku": "99343",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Leather Set/1.avif",
+    "image": "/Costumes/Leather Set/1.webp",
     "images": [
-      "/Costumes/Leather Set/2.avif",
-      "/Costumes/Leather Set/3.avif",
-      "/Costumes/Leather Set/4.avif",
-      "/Costumes/Leather Set/5.avif"
+      "/Costumes/Leather Set/2.webp",
+      "/Costumes/Leather Set/3.webp",
+      "/Costumes/Leather Set/4.webp",
+      "/Costumes/Leather Set/5.webp"
     ],
     "sizes": [
       "XS",
@@ -11730,11 +11730,11 @@
     "color": "beige",
     "size": "XS S M L XL",
     "category": "Outerwear",
-    "image": "/Outerwear/Твідовий бомбер/1.avif",
+    "image": "/Outerwear/Твідовий бомбер/1.webp",
     "images": [
-      "/Outerwear/Твідовий бомбер/2.avif",
-      "/Outerwear/Твідовий бомбер/3.avif",
-      "/Outerwear/Твідовий бомбер/4.avif"
+      "/Outerwear/Твідовий бомбер/2.webp",
+      "/Outerwear/Твідовий бомбер/3.webp",
+      "/Outerwear/Твідовий бомбер/4.webp"
     ],
     "sizes": [
       "XS",
@@ -11781,52 +11781,52 @@
     "color": "beige",
     "size": "XS S M L XL",
     "category": "Sweaters",
-    "image": "/Sweaters/Flare Sweater/6.avif",
+    "image": "/Sweaters/Flare Sweater/6.webp",
     "images": [
-      "/Sweaters/Flare Sweater/7.avif",
-      "/Sweaters/Flare Sweater/8.avif",
-      "/Sweaters/Flare Sweater/9.avif",
-      "/Sweaters/Flare Sweater/10.avif",
-      "/Sweaters/Flare Sweater/11.avif",
-      "/Sweaters/Flare Sweater/12.avif",
-      "/Sweaters/Flare Sweater/13.avif",
-      "/Sweaters/Flare Sweater/14.avif",
-      "/Sweaters/Flare Sweater/15.avif",
-      "/Sweaters/Flare Sweater/16.avif",
-      "/Sweaters/Flare Sweater/17.avif",
-      "/Sweaters/Flare Sweater/18.avif",
-      "/Sweaters/Flare Sweater/19.avif",
-      "/Sweaters/Flare Sweater/20.avif",
-      "/Sweaters/Flare Sweater/21.avif",
-      "/Sweaters/Flare Sweater/22.avif",
-      "/Sweaters/Flare Sweater/23.avif"
+      "/Sweaters/Flare Sweater/7.webp",
+      "/Sweaters/Flare Sweater/8.webp",
+      "/Sweaters/Flare Sweater/9.webp",
+      "/Sweaters/Flare Sweater/10.webp",
+      "/Sweaters/Flare Sweater/11.webp",
+      "/Sweaters/Flare Sweater/12.webp",
+      "/Sweaters/Flare Sweater/13.webp",
+      "/Sweaters/Flare Sweater/14.webp",
+      "/Sweaters/Flare Sweater/15.webp",
+      "/Sweaters/Flare Sweater/16.webp",
+      "/Sweaters/Flare Sweater/17.webp",
+      "/Sweaters/Flare Sweater/18.webp",
+      "/Sweaters/Flare Sweater/19.webp",
+      "/Sweaters/Flare Sweater/20.webp",
+      "/Sweaters/Flare Sweater/21.webp",
+      "/Sweaters/Flare Sweater/22.webp",
+      "/Sweaters/Flare Sweater/23.webp"
     ],
     "colorImages": [
       [
-        "/Sweaters/Flare Sweater/11.avif",
-        "/Sweaters/Flare Sweater/12.avif",
-        "/Sweaters/Flare Sweater/13.avif",
-        "/Sweaters/Flare Sweater/14.avif",
-        "/Sweaters/Flare Sweater/15.avif"
+        "/Sweaters/Flare Sweater/11.webp",
+        "/Sweaters/Flare Sweater/12.webp",
+        "/Sweaters/Flare Sweater/13.webp",
+        "/Sweaters/Flare Sweater/14.webp",
+        "/Sweaters/Flare Sweater/15.webp"
       ],
       [
-        "/Sweaters/Flare Sweater/6.avif",
-        "/Sweaters/Flare Sweater/7.avif",
-        "/Sweaters/Flare Sweater/8.avif",
-        "/Sweaters/Flare Sweater/9.avif",
-        "/Sweaters/Flare Sweater/10.avif"
+        "/Sweaters/Flare Sweater/6.webp",
+        "/Sweaters/Flare Sweater/7.webp",
+        "/Sweaters/Flare Sweater/8.webp",
+        "/Sweaters/Flare Sweater/9.webp",
+        "/Sweaters/Flare Sweater/10.webp"
       ],
       [
-        "/Sweaters/Flare Sweater/16.avif",
-        "/Sweaters/Flare Sweater/17.avif",
-        "/Sweaters/Flare Sweater/18.avif",
-        "/Sweaters/Flare Sweater/19.avif"
+        "/Sweaters/Flare Sweater/16.webp",
+        "/Sweaters/Flare Sweater/17.webp",
+        "/Sweaters/Flare Sweater/18.webp",
+        "/Sweaters/Flare Sweater/19.webp"
       ],
       [
-        "/Sweaters/Flare Sweater/20.avif",
-        "/Sweaters/Flare Sweater/21.avif",
-        "/Sweaters/Flare Sweater/22.avif",
-        "/Sweaters/Flare Sweater/23.avif"
+        "/Sweaters/Flare Sweater/20.webp",
+        "/Sweaters/Flare Sweater/21.webp",
+        "/Sweaters/Flare Sweater/22.webp",
+        "/Sweaters/Flare Sweater/23.webp"
       ]
     ],
     "sizes": [
@@ -11889,37 +11889,37 @@
     "sku": "98819",
     "size": "XS S M L XL",
     "category": "Shirts",
-    "image": "/Shirts/Batiste Shirt 2/1.avif",
+    "image": "/Shirts/Batiste Shirt 2/1.webp",
     "images": [
-      "/Shirts/Batiste Shirt 2/2.avif",
+      "/Shirts/Batiste Shirt 2/2.webp",
       {
         "type": "video",
         "src": "/Shirts/Batiste Shirt 2/IMG_9010.mp4",
-        "poster": "/Shirts/Batiste Shirt 2/1.avif"
+        "poster": "/Shirts/Batiste Shirt 2/1.webp"
       },
-      "/Shirts/Batiste Shirt 2/3.avif",
-      "/Shirts/Batiste Shirt 2/4.avif",
-      "/Shirts/Batiste Shirt 2/5.avif",
-      "/Shirts/Batiste Shirt 2/6.avif",
-      "/Shirts/Batiste Shirt 2/7.avif",
-      "/Shirts/Batiste Shirt 2/8.avif",
-      "/Shirts/Batiste Shirt 2/9.avif",
-      "/Shirts/Batiste Shirt 2/10.avif"
+      "/Shirts/Batiste Shirt 2/3.webp",
+      "/Shirts/Batiste Shirt 2/4.webp",
+      "/Shirts/Batiste Shirt 2/5.webp",
+      "/Shirts/Batiste Shirt 2/6.webp",
+      "/Shirts/Batiste Shirt 2/7.webp",
+      "/Shirts/Batiste Shirt 2/8.webp",
+      "/Shirts/Batiste Shirt 2/9.webp",
+      "/Shirts/Batiste Shirt 2/10.webp"
     ],
     "colorImages": [
       [
-        "/Shirts/Batiste Shirt 2/1.avif",
-        "/Shirts/Batiste Shirt 2/2.avif",
-        "/Shirts/Batiste Shirt 2/3.avif",
-        "/Shirts/Batiste Shirt 2/4.avif",
-        "/Shirts/Batiste Shirt 2/5.avif"
+        "/Shirts/Batiste Shirt 2/1.webp",
+        "/Shirts/Batiste Shirt 2/2.webp",
+        "/Shirts/Batiste Shirt 2/3.webp",
+        "/Shirts/Batiste Shirt 2/4.webp",
+        "/Shirts/Batiste Shirt 2/5.webp"
       ],
       [
-        "/Shirts/Batiste Shirt 2/6.avif",
-        "/Shirts/Batiste Shirt 2/7.avif",
-        "/Shirts/Batiste Shirt 2/8.avif",
-        "/Shirts/Batiste Shirt 2/9.avif",
-        "/Shirts/Batiste Shirt 2/10.avif"
+        "/Shirts/Batiste Shirt 2/6.webp",
+        "/Shirts/Batiste Shirt 2/7.webp",
+        "/Shirts/Batiste Shirt 2/8.webp",
+        "/Shirts/Batiste Shirt 2/9.webp",
+        "/Shirts/Batiste Shirt 2/10.webp"
       ]
     ],
     "sizes": [
@@ -11977,36 +11977,36 @@
     "sku": "12345",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Woolen trapeze dress/10.avif",
+    "image": "/Dress/Woolen trapeze dress/10.webp",
     "images": [
-      "/Dress/Woolen trapeze dress/11.avif",
-      "/Dress/Woolen trapeze dress/6.avif",
-      "/Dress/Woolen trapeze dress/7.avif",
-      "/Dress/Woolen trapeze dress/8.avif",
-      "/Dress/Woolen trapeze dress/9.avif",
-      "/Dress/Woolen trapeze dress/1.avif",
-      "/Dress/Woolen trapeze dress/2.avif",
-      "/Dress/Woolen trapeze dress/3.avif",
-      "/Dress/Woolen trapeze dress/4.avif",
-      "/Dress/Woolen trapeze dress/5.avif"
+      "/Dress/Woolen trapeze dress/11.webp",
+      "/Dress/Woolen trapeze dress/6.webp",
+      "/Dress/Woolen trapeze dress/7.webp",
+      "/Dress/Woolen trapeze dress/8.webp",
+      "/Dress/Woolen trapeze dress/9.webp",
+      "/Dress/Woolen trapeze dress/1.webp",
+      "/Dress/Woolen trapeze dress/2.webp",
+      "/Dress/Woolen trapeze dress/3.webp",
+      "/Dress/Woolen trapeze dress/4.webp",
+      "/Dress/Woolen trapeze dress/5.webp"
     ],
     "colorImages": [
       [
-        "/Dress/Woolen trapeze dress/10.avif",
-        "/Dress/Woolen trapeze dress/11.avif"
+        "/Dress/Woolen trapeze dress/10.webp",
+        "/Dress/Woolen trapeze dress/11.webp"
       ],
       [
-        "/Dress/Woolen trapeze dress/6.avif",
-        "/Dress/Woolen trapeze dress/7.avif",
-        "/Dress/Woolen trapeze dress/8.avif",
-        "/Dress/Woolen trapeze dress/9.avif"
+        "/Dress/Woolen trapeze dress/6.webp",
+        "/Dress/Woolen trapeze dress/7.webp",
+        "/Dress/Woolen trapeze dress/8.webp",
+        "/Dress/Woolen trapeze dress/9.webp"
       ],
       [
-        "/Dress/Woolen trapeze dress/1.avif",
-        "/Dress/Woolen trapeze dress/2.avif",
-        "/Dress/Woolen trapeze dress/3.avif",
-        "/Dress/Woolen trapeze dress/4.avif",
-        "/Dress/Woolen trapeze dress/5.avif"
+        "/Dress/Woolen trapeze dress/1.webp",
+        "/Dress/Woolen trapeze dress/2.webp",
+        "/Dress/Woolen trapeze dress/3.webp",
+        "/Dress/Woolen trapeze dress/4.webp",
+        "/Dress/Woolen trapeze dress/5.webp"
       ]
     ],
     "sizes": [
@@ -12066,11 +12066,11 @@
     "sku": "12346",
     "size": "XS S M L XL",
     "category": "Pants",
-    "image": "/Pants/Leather Pants1/13.avif",
+    "image": "/Pants/Leather Pants1/13.webp",
     "images": [
-      "/Pants/Leather Pants1/11.avif",
-      "/Pants/Leather Pants1/12.avif",
-      "/Pants/Leather Pants1/14.avif"
+      "/Pants/Leather Pants1/11.webp",
+      "/Pants/Leather Pants1/12.webp",
+      "/Pants/Leather Pants1/14.webp"
     ],
     "sizes": [
       "XS",
@@ -12126,32 +12126,32 @@
     "sku": "67897",
     "size": "XS S M L XL",
     "category": "Pants",
-    "image": "/Pants/Jersey Pants/1.avif",
+    "image": "/Pants/Jersey Pants/1.webp",
     "images": [
-      "/Pants/Jersey Pants/2.avif",
-      "/Pants/Jersey Pants/3.avif",
-      "/Pants/Jersey Pants/4.avif",
-      "/Pants/Jersey Pants/5.avif",
-      "/Pants/Jersey Pants/6.avif",
-      "/Pants/Jersey Pants/7.avif",
-      "/Pants/Jersey Pants/8.avif",
-      "/Pants/Jersey Pants/9.avif",
-      "/Pants/Jersey Pants/10.avif"
+      "/Pants/Jersey Pants/2.webp",
+      "/Pants/Jersey Pants/3.webp",
+      "/Pants/Jersey Pants/4.webp",
+      "/Pants/Jersey Pants/5.webp",
+      "/Pants/Jersey Pants/6.webp",
+      "/Pants/Jersey Pants/7.webp",
+      "/Pants/Jersey Pants/8.webp",
+      "/Pants/Jersey Pants/9.webp",
+      "/Pants/Jersey Pants/10.webp"
     ],
     "colorImages": [
       [
-        "/Pants/Jersey Pants/1.avif",
-        "/Pants/Jersey Pants/2.avif",
-        "/Pants/Jersey Pants/3.avif",
-        "/Pants/Jersey Pants/4.avif",
-        "/Pants/Jersey Pants/5.avif"
+        "/Pants/Jersey Pants/1.webp",
+        "/Pants/Jersey Pants/2.webp",
+        "/Pants/Jersey Pants/3.webp",
+        "/Pants/Jersey Pants/4.webp",
+        "/Pants/Jersey Pants/5.webp"
       ],
       [
-        "/Pants/Jersey Pants/6.avif",
-        "/Pants/Jersey Pants/7.avif",
-        "/Pants/Jersey Pants/8.avif",
-        "/Pants/Jersey Pants/9.avif",
-        "/Pants/Jersey Pants/10.avif"
+        "/Pants/Jersey Pants/6.webp",
+        "/Pants/Jersey Pants/7.webp",
+        "/Pants/Jersey Pants/8.webp",
+        "/Pants/Jersey Pants/9.webp",
+        "/Pants/Jersey Pants/10.webp"
       ]
     ],
     "sizes": [
@@ -12212,11 +12212,11 @@
     "sku": "98815",
     "size": "XS S M L XL",
     "category": "Skirts",
-    "image": "/Skirts/Pleated Leather Skirt/1.avif",
+    "image": "/Skirts/Pleated Leather Skirt/1.webp",
     "images": [
-      "/Skirts/Pleated Leather Skirt/2.avif",
-      "/Skirts/Pleated Leather Skirt/3.avif",
-      "/Skirts/Pleated Leather Skirt/5.avif"
+      "/Skirts/Pleated Leather Skirt/2.webp",
+      "/Skirts/Pleated Leather Skirt/3.webp",
+      "/Skirts/Pleated Leather Skirt/5.webp"
     ],
     "sizes": [
       "XS",
@@ -12270,12 +12270,12 @@
     "sku": "67224",
     "size": "XS S M L XL",
     "category": "Shirts",
-    "image": "/Shirts/Wrap Cotton Shirt/1.avif",
+    "image": "/Shirts/Wrap Cotton Shirt/1.webp",
     "images": [
-      "/Shirts/Wrap Cotton Shirt/2.avif",
-      "/Shirts/Wrap Cotton Shirt/3.avif",
-      "/Shirts/Wrap Cotton Shirt/4.avif",
-      "/Shirts/Wrap Cotton Shirt/5.avif"
+      "/Shirts/Wrap Cotton Shirt/2.webp",
+      "/Shirts/Wrap Cotton Shirt/3.webp",
+      "/Shirts/Wrap Cotton Shirt/4.webp",
+      "/Shirts/Wrap Cotton Shirt/5.webp"
     ],
     "sizes": [
       "XS",
@@ -12328,12 +12328,12 @@
     "sku": "33450",
     "size": "XS S M L XL",
     "category": "Shirts",
-    "image": "/Shirts/Fitted Batiste Shirt/1.avif",
+    "image": "/Shirts/Fitted Batiste Shirt/1.webp",
     "images": [
-      "/Shirts/Fitted Batiste Shirt/2.avif",
-      "/Shirts/Fitted Batiste Shirt/3.avif",
-      "/Shirts/Fitted Batiste Shirt/4.avif",
-      "/Shirts/Fitted Batiste Shirt/5.avif"
+      "/Shirts/Fitted Batiste Shirt/2.webp",
+      "/Shirts/Fitted Batiste Shirt/3.webp",
+      "/Shirts/Fitted Batiste Shirt/4.webp",
+      "/Shirts/Fitted Batiste Shirt/5.webp"
     ],
     "sizes": [
       "XS",
@@ -12385,13 +12385,13 @@
     "color": "blue",
     "size": "XS S M L XL",
     "category": "Shirts",
-    "image": "/Shirts/Classicshirt/2.avif",
+    "image": "/Shirts/Classicshirt/2.webp",
     "images": [
-      "/Shirts/Classicshirt/1.avif",
-      "/Shirts/Classicshirt/3.avif",
-      "/Shirts/Classicshirt/4.avif",
-      "/Shirts/Classicshirt/5.avif",
-      "/Shirts/Classicshirt/1.avif"
+      "/Shirts/Classicshirt/1.webp",
+      "/Shirts/Classicshirt/3.webp",
+      "/Shirts/Classicshirt/4.webp",
+      "/Shirts/Classicshirt/5.webp",
+      "/Shirts/Classicshirt/1.webp"
     ],
     "sizes": [
       "XS",
@@ -12436,11 +12436,11 @@
     "sku": "99334",
     "size": "XS S M L XL",
     "category": "Pants",
-    "image": "/Pants/Tweed Pants/1.avif",
+    "image": "/Pants/Tweed Pants/1.webp",
     "images": [
-      "/Pants/Tweed Pants/2.avif",
-      "/Pants/Tweed Pants/3.avif",
-      "/Pants/Tweed Pants/4.avif"
+      "/Pants/Tweed Pants/2.webp",
+      "/Pants/Tweed Pants/3.webp",
+      "/Pants/Tweed Pants/4.webp"
     ],
     "sizes": [
       "XS",
@@ -12522,30 +12522,30 @@
     "sku": "99333",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Bomber Suit/1.avif",
+    "image": "/Costumes/Bomber Suit/1.webp",
     "images": [
-      "/Costumes/Bomber Suit/2.avif",
-      "/Costumes/Bomber Suit/3.avif",
-      "/Costumes/Bomber Suit/4.avif",
-      "/Costumes/Bomber Suit/5.avif",
-      "/Costumes/Bomber Suit/11.avif",
-      "/Costumes/Bomber Suit/12.avif",
-      "/Costumes/Bomber Suit/13.avif",
-      "/Costumes/Bomber Suit/14.avif"
+      "/Costumes/Bomber Suit/2.webp",
+      "/Costumes/Bomber Suit/3.webp",
+      "/Costumes/Bomber Suit/4.webp",
+      "/Costumes/Bomber Suit/5.webp",
+      "/Costumes/Bomber Suit/11.webp",
+      "/Costumes/Bomber Suit/12.webp",
+      "/Costumes/Bomber Suit/13.webp",
+      "/Costumes/Bomber Suit/14.webp"
     ],
     "colorImages": [
       [
-        "/Costumes/Bomber Suit/1.avif",
-        "/Costumes/Bomber Suit/2.avif",
-        "/Costumes/Bomber Suit/3.avif",
-        "/Costumes/Bomber Suit/4.avif",
-        "/Costumes/Bomber Suit/5.avif"
+        "/Costumes/Bomber Suit/1.webp",
+        "/Costumes/Bomber Suit/2.webp",
+        "/Costumes/Bomber Suit/3.webp",
+        "/Costumes/Bomber Suit/4.webp",
+        "/Costumes/Bomber Suit/5.webp"
       ],
       [
-        "/Costumes/Bomber Suit/11.avif",
-        "/Costumes/Bomber Suit/12.avif",
-        "/Costumes/Bomber Suit/13.avif",
-        "/Costumes/Bomber Suit/14.avif"
+        "/Costumes/Bomber Suit/11.webp",
+        "/Costumes/Bomber Suit/12.webp",
+        "/Costumes/Bomber Suit/13.webp",
+        "/Costumes/Bomber Suit/14.webp"
       ]
     ],
     "sizes": [
@@ -12638,17 +12638,17 @@
     "sku": "99332",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Trench Suit/1.avif",
+    "image": "/Costumes/Trench Suit/1.webp",
     "images": [
-      "/Costumes/Trench Suit/2.avif",
+      "/Costumes/Trench Suit/2.webp",
       {
         "type": "video",
         "src": "/Costumes/Trench Suit/IMG_5568.mp4",
-        "poster": "/Costumes/Trench Suit/4.avif"
+        "poster": "/Costumes/Trench Suit/4.webp"
       },
-      "/Costumes/Trench Suit/3.avif",
-      "/Costumes/Trench Suit/4.avif",
-      "/Costumes/Trench Suit/5.avif"
+      "/Costumes/Trench Suit/3.webp",
+      "/Costumes/Trench Suit/4.webp",
+      "/Costumes/Trench Suit/5.webp"
     ],
     "sizes": [
       "XS",
@@ -12738,31 +12738,31 @@
     "sku": "99331",
     "size": "XS S M L XL",
     "category": "Sweaters",
-    "image": "/Sweaters/V-neck sweater/10.avif",
+    "image": "/Sweaters/V-neck sweater/10.webp",
     "images": [
-      "/Sweaters/V-neck sweater/10.avif",
-      "/Sweaters/V-neck sweater/11.avif",
-      "/Sweaters/V-neck sweater/12.avif",
-      "/Sweaters/V-neck sweater/13.avif",
-      "/Sweaters/V-neck sweater/1.avif",
-      "/Sweaters/V-neck sweater/2.avif",
-      "/Sweaters/V-neck sweater/3.avif",
-      "/Sweaters/V-neck sweater/4.avif",
-      "/Sweaters/V-neck sweater/5.avif"
+      "/Sweaters/V-neck sweater/10.webp",
+      "/Sweaters/V-neck sweater/11.webp",
+      "/Sweaters/V-neck sweater/12.webp",
+      "/Sweaters/V-neck sweater/13.webp",
+      "/Sweaters/V-neck sweater/1.webp",
+      "/Sweaters/V-neck sweater/2.webp",
+      "/Sweaters/V-neck sweater/3.webp",
+      "/Sweaters/V-neck sweater/4.webp",
+      "/Sweaters/V-neck sweater/5.webp"
     ],
     "colorImages": [
       [
-        "/Sweaters/V-neck sweater/10.avif",
-        "/Sweaters/V-neck sweater/11.avif",
-        "/Sweaters/V-neck sweater/12.avif",
-        "/Sweaters/V-neck sweater/13.avif"
+        "/Sweaters/V-neck sweater/10.webp",
+        "/Sweaters/V-neck sweater/11.webp",
+        "/Sweaters/V-neck sweater/12.webp",
+        "/Sweaters/V-neck sweater/13.webp"
       ],
       [
-        "/Sweaters/V-neck sweater/1.avif",
-        "/Sweaters/V-neck sweater/2.avif",
-        "/Sweaters/V-neck sweater/3.avif",
-        "/Sweaters/V-neck sweater/4.avif",
-        "/Sweaters/V-neck sweater/5.avif"
+        "/Sweaters/V-neck sweater/1.webp",
+        "/Sweaters/V-neck sweater/2.webp",
+        "/Sweaters/V-neck sweater/3.webp",
+        "/Sweaters/V-neck sweater/4.webp",
+        "/Sweaters/V-neck sweater/5.webp"
       ]
     ],
     "sizes": [
@@ -12849,11 +12849,11 @@
     "sku": "67896",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Jersey Two-Piece Dress/1.avif",
+    "image": "/Dress/Jersey Two-Piece Dress/1.webp",
     "images": [
-      "/Dress/Jersey Two-Piece Dress/2.avif",
-      "/Dress/Jersey Two-Piece Dress/3.avif",
-      "/Dress/Jersey Two-Piece Dress/4.avif"
+      "/Dress/Jersey Two-Piece Dress/2.webp",
+      "/Dress/Jersey Two-Piece Dress/3.webp",
+      "/Dress/Jersey Two-Piece Dress/4.webp"
     ],
     "sizes": [
       "XS",
@@ -12909,12 +12909,12 @@
     "sku": "99324",
     "size": "XS S M L XL",
     "category": "Jackets",
-    "image": "/Jackets/3D Effect Bomber/1.avif",
+    "image": "/Jackets/3D Effect Bomber/1.webp",
     "images": [
-      "/Jackets/3D Effect Bomber/2.avif",
-      "/Jackets/3D Effect Bomber/3.avif",
-      "/Jackets/3D Effect Bomber/4.avif",
-      "/Jackets/3D Effect Bomber/5.avif"
+      "/Jackets/3D Effect Bomber/2.webp",
+      "/Jackets/3D Effect Bomber/3.webp",
+      "/Jackets/3D Effect Bomber/4.webp",
+      "/Jackets/3D Effect Bomber/5.webp"
     ],
     "sizes": [
       "XS",
@@ -12991,12 +12991,12 @@
     "sku": "99323",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/3D Effect Suit/1.avif",
+    "image": "/Costumes/3D Effect Suit/1.webp",
     "images": [
-      "/Costumes/3D Effect Suit/2.avif",
-      "/Costumes/3D Effect Suit/3.avif",
-      "/Costumes/3D Effect Suit/4.avif",
-      "/Costumes/3D Effect Suit/5.avif"
+      "/Costumes/3D Effect Suit/2.webp",
+      "/Costumes/3D Effect Suit/3.webp",
+      "/Costumes/3D Effect Suit/4.webp",
+      "/Costumes/3D Effect Suit/5.webp"
     ],
     "sizes": [
       "XS",
@@ -13073,12 +13073,12 @@
     "sku": "99322",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Distressed Effect Suit/1.avif",
+    "image": "/Costumes/Distressed Effect Suit/1.webp",
     "images": [
-      "/Costumes/Distressed Effect Suit/2.avif",
-      "/Costumes/Distressed Effect Suit/3.avif",
-      "/Costumes/Distressed Effect Suit/4.avif",
-      "/Costumes/Distressed Effect Suit/5.avif"
+      "/Costumes/Distressed Effect Suit/2.webp",
+      "/Costumes/Distressed Effect Suit/3.webp",
+      "/Costumes/Distressed Effect Suit/4.webp",
+      "/Costumes/Distressed Effect Suit/5.webp"
     ],
     "sizes": [
       "XS",
@@ -13155,12 +13155,12 @@
     "sku": "99320",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Amelie Dress/1.avif",
+    "image": "/Dress/Amelie Dress/1.webp",
     "images": [
-      "/Dress/Amelie Dress/2.avif",
-      "/Dress/Amelie Dress/3.avif",
-      "/Dress/Amelie Dress/4.avif",
-      "/Dress/Amelie Dress/5.avif"
+      "/Dress/Amelie Dress/2.webp",
+      "/Dress/Amelie Dress/3.webp",
+      "/Dress/Amelie Dress/4.webp",
+      "/Dress/Amelie Dress/5.webp"
     ],
     "sizes": [
       "XS",
@@ -13242,13 +13242,13 @@
     "sku": "98828",
     "size": "XS S M L XL",
     "category": "Skirts",
-    "image": "/Skirts/Amelie/1.avif",
+    "image": "/Skirts/Amelie/1.webp",
     "images": [
-      "/Skirts/Amelie/1.avif",
-      "/Skirts/Amelie/2.avif",
-      "/Skirts/Amelie/3.avif",
-      "/Skirts/Amelie/4.avif",
-      "/Skirts/Amelie/5.avif"
+      "/Skirts/Amelie/1.webp",
+      "/Skirts/Amelie/2.webp",
+      "/Skirts/Amelie/3.webp",
+      "/Skirts/Amelie/4.webp",
+      "/Skirts/Amelie/5.webp"
     ],
     "sizes": [
       "XS",
@@ -13330,30 +13330,30 @@
     "sku": "98814",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Alice Costume/1.avif",
+    "image": "/Costumes/Alice Costume/1.webp",
     "images": [
-      "/Costumes/Alice Costume/2.avif",
-      "/Costumes/Alice Costume/3.avif",
-      "/Costumes/Alice Costume/4.avif",
-      "/Costumes/Alice Costume/5.avif",
-      "/Costumes/Alice Costume/6.avif",
-      "/Costumes/Alice Costume/7.avif",
-      "/Costumes/Alice Costume/8.avif",
-      "/Costumes/Alice Costume/9.avif"
+      "/Costumes/Alice Costume/2.webp",
+      "/Costumes/Alice Costume/3.webp",
+      "/Costumes/Alice Costume/4.webp",
+      "/Costumes/Alice Costume/5.webp",
+      "/Costumes/Alice Costume/6.webp",
+      "/Costumes/Alice Costume/7.webp",
+      "/Costumes/Alice Costume/8.webp",
+      "/Costumes/Alice Costume/9.webp"
     ],
     "colorImages": [
       [
-        "/Costumes/Alice Costume/1.avif",
-        "/Costumes/Alice Costume/2.avif",
-        "/Costumes/Alice Costume/3.avif",
-        "/Costumes/Alice Costume/4.avif",
-        "/Costumes/Alice Costume/5.avif"
+        "/Costumes/Alice Costume/1.webp",
+        "/Costumes/Alice Costume/2.webp",
+        "/Costumes/Alice Costume/3.webp",
+        "/Costumes/Alice Costume/4.webp",
+        "/Costumes/Alice Costume/5.webp"
       ],
       [
-        "/Costumes/Alice Costume/6.avif",
-        "/Costumes/Alice Costume/7.avif",
-        "/Costumes/Alice Costume/8.avif",
-        "/Costumes/Alice Costume/9.avif"
+        "/Costumes/Alice Costume/6.webp",
+        "/Costumes/Alice Costume/7.webp",
+        "/Costumes/Alice Costume/8.webp",
+        "/Costumes/Alice Costume/9.webp"
       ]
     ],
     "sizes": [
@@ -13447,12 +13447,12 @@
     "sku": "98813",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Kriston Dress/1.avif",
+    "image": "/Dress/Kriston Dress/1.webp",
     "images": [
-      "/Dress/Kriston Dress/2.avif",
-      "/Dress/Kriston Dress/3.avif",
-      "/Dress/Kriston Dress/4.avif",
-      "/Dress/Kriston Dress/5.avif"
+      "/Dress/Kriston Dress/2.webp",
+      "/Dress/Kriston Dress/3.webp",
+      "/Dress/Kriston Dress/4.webp",
+      "/Dress/Kriston Dress/5.webp"
     ],
     "sizes": [
       "XS",
@@ -13538,17 +13538,12 @@
     "sku": "98812",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Kriston cocoa Dress/1.avif",
+    "image": "/Dress/Kriston cocoa Dress/1.webp",
     "images": [
-      "/Dress/Kriston cocoa Dress/2.avif",
-      "/Dress/Kriston cocoa Dress/3.avif",
-      "/Dress/Kriston cocoa Dress/4.avif",
-      "/Dress/Kriston cocoa Dress/5.avif",
-      "/Dress/Kriston cocoa Dress/6.avif",
-      "/Dress/Kriston cocoa Dress/7.avif",
-      "/Dress/Kriston cocoa Dress/8.avif",
-      "/Dress/Kriston cocoa Dress/9.avif",
-      "/Dress/Kriston cocoa Dress/10.avif"
+      "/Dress/Kriston cocoa Dress/2.webp",
+      "/Dress/Kriston cocoa Dress/3.webp",
+      "/Dress/Kriston cocoa Dress/4.webp",
+      "/Dress/Kriston cocoa Dress/5.webp"
     ],
     "sizes": [
       "XS",
@@ -13633,12 +13628,12 @@
     "sku": "98806",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Natalie Classic Suit/1.avif",
+    "image": "/Costumes/Natalie Classic Suit/1.webp",
     "images": [
-      "/Costumes/Natalie Classic Suit/2.avif",
-      "/Costumes/Natalie Classic Suit/3.avif",
-      "/Costumes/Natalie Classic Suit/4.avif",
-      "/Costumes/Natalie Classic Suit/5.avif"
+      "/Costumes/Natalie Classic Suit/2.webp",
+      "/Costumes/Natalie Classic Suit/3.webp",
+      "/Costumes/Natalie Classic Suit/4.webp",
+      "/Costumes/Natalie Classic Suit/5.webp"
     ],
     "sizes": [
       "XS",
@@ -13731,12 +13726,12 @@
     "sku": "98805",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Natalie Suit/2.avif",
+    "image": "/Costumes/Natalie Suit/2.webp",
     "images": [
-      "/Costumes/Natalie Suit/2.avif",
-      "/Costumes/Natalie Suit/3.avif",
-      "/Costumes/Natalie Suit/4.avif",
-      "/Costumes/Natalie Suit/5.avif"
+      "/Costumes/Natalie Suit/2.webp",
+      "/Costumes/Natalie Suit/3.webp",
+      "/Costumes/Natalie Suit/4.webp",
+      "/Costumes/Natalie Suit/5.webp"
     ],
     "sizes": [
       "XS",
@@ -13821,12 +13816,12 @@
     "sku": "98804",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Raw Cut Suit/1.avif",
+    "image": "/Costumes/Raw Cut Suit/1.webp",
     "images": [
-      "/Costumes/Raw Cut Suit/2.avif",
-      "/Costumes/Raw Cut Suit/3.avif",
-      "/Costumes/Raw Cut Suit/4.avif",
-      "/Costumes/Raw Cut Suit/5.avif"
+      "/Costumes/Raw Cut Suit/2.webp",
+      "/Costumes/Raw Cut Suit/3.webp",
+      "/Costumes/Raw Cut Suit/4.webp",
+      "/Costumes/Raw Cut Suit/5.webp"
     ],
     "sizes": [
       "XS",
@@ -13907,33 +13902,33 @@
     "sku": "98800",
     "size": "XS S M L XL",
     "category": "Shirts",
-    "image": "/Shirts/Corset Shirt/1.avif",
+    "image": "/Shirts/Corset Shirt/1.webp",
     "images": [
-      "/Shirts/Corset Shirt/1.avif",
-      "/Shirts/Corset Shirt/2.avif",
-      "/Shirts/Corset Shirt/3.avif",
-      "/Shirts/Corset Shirt/4.avif",
-      "/Shirts/Corset Shirt/5.avif",
-      "/Shirts/Corset Shirt/6.avif",
-      "/Shirts/Corset Shirt/7.avif",
-      "/Shirts/Corset Shirt/8.avif",
-      "/Shirts/Corset Shirt/9.avif",
-      "/Shirts/Corset Shirt/10.avif"
+      "/Shirts/Corset Shirt/1.webp",
+      "/Shirts/Corset Shirt/2.webp",
+      "/Shirts/Corset Shirt/3.webp",
+      "/Shirts/Corset Shirt/4.webp",
+      "/Shirts/Corset Shirt/5.webp",
+      "/Shirts/Corset Shirt/6.webp",
+      "/Shirts/Corset Shirt/7.webp",
+      "/Shirts/Corset Shirt/8.webp",
+      "/Shirts/Corset Shirt/9.webp",
+      "/Shirts/Corset Shirt/10.webp"
     ],
     "colorImages": [
       [
-        "/Shirts/Corset Shirt/1.avif",
-        "/Shirts/Corset Shirt/2.avif",
-        "/Shirts/Corset Shirt/3.avif",
-        "/Shirts/Corset Shirt/4.avif",
-        "/Shirts/Corset Shirt/5.avif"
+        "/Shirts/Corset Shirt/1.webp",
+        "/Shirts/Corset Shirt/2.webp",
+        "/Shirts/Corset Shirt/3.webp",
+        "/Shirts/Corset Shirt/4.webp",
+        "/Shirts/Corset Shirt/5.webp"
       ],
       [
-        "/Shirts/Corset Shirt/6.avif",
-        "/Shirts/Corset Shirt/7.avif",
-        "/Shirts/Corset Shirt/8.avif",
-        "/Shirts/Corset Shirt/9.avif",
-        "/Shirts/Corset Shirt/10.avif"
+        "/Shirts/Corset Shirt/6.webp",
+        "/Shirts/Corset Shirt/7.webp",
+        "/Shirts/Corset Shirt/8.webp",
+        "/Shirts/Corset Shirt/9.webp",
+        "/Shirts/Corset Shirt/10.webp"
       ]
     ],
     "sizes": [
@@ -14005,13 +14000,13 @@
     "sku": "98799",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Flora Dress/1.avif",
+    "image": "/Dress/Flora Dress/1.webp",
     "images": [
-      "/Dress/Flora Dress/1.avif",
-      "/Dress/Flora Dress/2.avif",
-      "/Dress/Flora Dress/3.avif",
-      "/Dress/Flora Dress/4.avif",
-      "/Dress/Flora Dress/5.avif"
+      "/Dress/Flora Dress/1.webp",
+      "/Dress/Flora Dress/2.webp",
+      "/Dress/Flora Dress/3.webp",
+      "/Dress/Flora Dress/4.webp",
+      "/Dress/Flora Dress/5.webp"
     ],
     "sizes": [
       "XS",
@@ -14080,13 +14075,13 @@
     "sku": "98798",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Hemp Printed Dress/1.avif",
+    "image": "/Dress/Hemp Printed Dress/1.webp",
     "images": [
-      "/Dress/Hemp Printed Dress/1.avif",
-      "/Dress/Hemp Printed Dress/2.avif",
-      "/Dress/Hemp Printed Dress/3.avif",
-      "/Dress/Hemp Printed Dress/4.avif",
-      "/Dress/Hemp Printed Dress/5.avif"
+      "/Dress/Hemp Printed Dress/1.webp",
+      "/Dress/Hemp Printed Dress/2.webp",
+      "/Dress/Hemp Printed Dress/3.webp",
+      "/Dress/Hemp Printed Dress/4.webp",
+      "/Dress/Hemp Printed Dress/5.webp"
     ],
     "sizes": [
       "XS",
@@ -14155,33 +14150,33 @@
     "sku": "98797",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Patricia Dress/1.avif",
+    "image": "/Dress/Patricia Dress/1.webp",
     "images": [
-      "/Dress/Patricia Dress/1.avif",
-      "/Dress/Patricia Dress/2.avif",
-      "/Dress/Patricia Dress/3.avif",
-      "/Dress/Patricia Dress/4.avif",
-      "/Dress/Patricia Dress/5.avif",
-      "/Dress/Patricia Dress/6.avif",
-      "/Dress/Patricia Dress/7.avif",
-      "/Dress/Patricia Dress/8.avif",
-      "/Dress/Patricia Dress/9.avif",
-      "/Dress/Patricia Dress/10.avif"
+      "/Dress/Patricia Dress/1.webp",
+      "/Dress/Patricia Dress/2.webp",
+      "/Dress/Patricia Dress/3.webp",
+      "/Dress/Patricia Dress/4.webp",
+      "/Dress/Patricia Dress/5.webp",
+      "/Dress/Patricia Dress/6.webp",
+      "/Dress/Patricia Dress/7.webp",
+      "/Dress/Patricia Dress/8.webp",
+      "/Dress/Patricia Dress/9.webp",
+      "/Dress/Patricia Dress/10.webp"
     ],
     "colorImages": [
       [
-        "/Dress/Patricia Dress/1.avif",
-        "/Dress/Patricia Dress/2.avif",
-        "/Dress/Patricia Dress/3.avif",
-        "/Dress/Patricia Dress/4.avif",
-        "/Dress/Patricia Dress/5.avif"
+        "/Dress/Patricia Dress/1.webp",
+        "/Dress/Patricia Dress/2.webp",
+        "/Dress/Patricia Dress/3.webp",
+        "/Dress/Patricia Dress/4.webp",
+        "/Dress/Patricia Dress/5.webp"
       ],
       [
-        "/Dress/Patricia Dress/6.avif",
-        "/Dress/Patricia Dress/7.avif",
-        "/Dress/Patricia Dress/8.avif",
-        "/Dress/Patricia Dress/9.avif",
-        "/Dress/Patricia Dress/10.avif"
+        "/Dress/Patricia Dress/6.webp",
+        "/Dress/Patricia Dress/7.webp",
+        "/Dress/Patricia Dress/8.webp",
+        "/Dress/Patricia Dress/9.webp",
+        "/Dress/Patricia Dress/10.webp"
       ]
     ],
     "sizes": [
@@ -14253,50 +14248,50 @@
     "sku": "98796",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Becca Linen Dress/1.avif",
+    "image": "/Dress/Becca Linen Dress/1.webp",
     "images": [
-      "/Dress/Becca Linen Dress/2.avif",
-      "/Dress/Becca Linen Dress/3.avif",
-      "/Dress/Becca Linen Dress/4.avif",
-      "/Dress/Becca Linen Dress/5.avif",
-      "/Dress/Becca Linen Dress/6.avif",
-      "/Dress/Becca Linen Dress/7.avif",
-      "/Dress/Becca Linen Dress/8.avif",
-      "/Dress/Becca Linen Dress/9.avif",
-      "/Dress/Becca Linen Dress/10.avif",
-      "/Dress/Becca Linen Dress/11.avif",
-      "/Dress/Becca Linen Dress/12.avif",
-      "/Dress/Becca Linen Dress/13.avif",
-      "/Dress/Becca Linen Dress/14.avif",
-      "/Dress/Becca Linen Dress/15.avif",
-      "/Dress/Becca Linen Dress/16.avif",
-      "/Dress/Becca Linen Dress/17.avif"
+      "/Dress/Becca Linen Dress/2.webp",
+      "/Dress/Becca Linen Dress/3.webp",
+      "/Dress/Becca Linen Dress/4.webp",
+      "/Dress/Becca Linen Dress/5.webp",
+      "/Dress/Becca Linen Dress/6.webp",
+      "/Dress/Becca Linen Dress/7.webp",
+      "/Dress/Becca Linen Dress/8.webp",
+      "/Dress/Becca Linen Dress/9.webp",
+      "/Dress/Becca Linen Dress/10.webp",
+      "/Dress/Becca Linen Dress/11.webp",
+      "/Dress/Becca Linen Dress/12.webp",
+      "/Dress/Becca Linen Dress/13.webp",
+      "/Dress/Becca Linen Dress/14.webp",
+      "/Dress/Becca Linen Dress/15.webp",
+      "/Dress/Becca Linen Dress/16.webp",
+      "/Dress/Becca Linen Dress/17.webp"
     ],
     "colorImages": [
       [
-        "/Dress/Becca Linen Dress/1.avif",
-        "/Dress/Becca Linen Dress/2.avif",
-        "/Dress/Becca Linen Dress/3.avif",
-        "/Dress/Becca Linen Dress/4.avif",
-        "/Dress/Becca Linen Dress/5.avif"
+        "/Dress/Becca Linen Dress/1.webp",
+        "/Dress/Becca Linen Dress/2.webp",
+        "/Dress/Becca Linen Dress/3.webp",
+        "/Dress/Becca Linen Dress/4.webp",
+        "/Dress/Becca Linen Dress/5.webp"
       ],
       [
-        "/Dress/Becca Linen Dress/6.avif",
-        "/Dress/Becca Linen Dress/7.avif",
-        "/Dress/Becca Linen Dress/8.avif",
-        "/Dress/Becca Linen Dress/9.avif"
+        "/Dress/Becca Linen Dress/6.webp",
+        "/Dress/Becca Linen Dress/7.webp",
+        "/Dress/Becca Linen Dress/8.webp",
+        "/Dress/Becca Linen Dress/9.webp"
       ],
       [
-        "/Dress/Becca Linen Dress/10.avif",
-        "/Dress/Becca Linen Dress/11.avif",
-        "/Dress/Becca Linen Dress/12.avif",
-        "/Dress/Becca Linen Dress/13.avif"
+        "/Dress/Becca Linen Dress/10.webp",
+        "/Dress/Becca Linen Dress/11.webp",
+        "/Dress/Becca Linen Dress/12.webp",
+        "/Dress/Becca Linen Dress/13.webp"
       ],
       [
-        "/Dress/Becca Linen Dress/14.avif",
-        "/Dress/Becca Linen Dress/15.avif",
-        "/Dress/Becca Linen Dress/16.avif",
-        "/Dress/Becca Linen Dress/17.avif"
+        "/Dress/Becca Linen Dress/14.webp",
+        "/Dress/Becca Linen Dress/15.webp",
+        "/Dress/Becca Linen Dress/16.webp",
+        "/Dress/Becca Linen Dress/17.webp"
       ]
     ],
     "sizes": [
@@ -14372,32 +14367,32 @@
     "sku": "67241",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Kylie Dress/1.avif",
+    "image": "/Dress/Kylie Dress/1.webp",
     "images": [
-      "/Dress/Kylie Dress/2.avif",
-      "/Dress/Kylie Dress/3.avif",
-      "/Dress/Kylie Dress/4.avif",
-      "/Dress/Kylie Dress/5.avif",
-      "/Dress/Kylie Dress/6.avif",
-      "/Dress/Kylie Dress/7.avif",
-      "/Dress/Kylie Dress/8.avif",
-      "/Dress/Kylie Dress/9.avif",
-      "/Dress/Kylie Dress/10.avif"
+      "/Dress/Kylie Dress/2.webp",
+      "/Dress/Kylie Dress/3.webp",
+      "/Dress/Kylie Dress/4.webp",
+      "/Dress/Kylie Dress/5.webp",
+      "/Dress/Kylie Dress/6.webp",
+      "/Dress/Kylie Dress/7.webp",
+      "/Dress/Kylie Dress/8.webp",
+      "/Dress/Kylie Dress/9.webp",
+      "/Dress/Kylie Dress/10.webp"
     ],
     "colorImages": [
       [
-        "/Dress/Kylie Dress/1.avif",
-        "/Dress/Kylie Dress/2.avif",
-        "/Dress/Kylie Dress/3.avif",
-        "/Dress/Kylie Dress/4.avif",
-        "/Dress/Kylie Dress/5.avif"
+        "/Dress/Kylie Dress/1.webp",
+        "/Dress/Kylie Dress/2.webp",
+        "/Dress/Kylie Dress/3.webp",
+        "/Dress/Kylie Dress/4.webp",
+        "/Dress/Kylie Dress/5.webp"
       ],
       [
-        "/Dress/Kylie Dress/6.avif",
-        "/Dress/Kylie Dress/7.avif",
-        "/Dress/Kylie Dress/8.avif",
-        "/Dress/Kylie Dress/9.avif",
-        "/Dress/Kylie Dress/10.avif"
+        "/Dress/Kylie Dress/6.webp",
+        "/Dress/Kylie Dress/7.webp",
+        "/Dress/Kylie Dress/8.webp",
+        "/Dress/Kylie Dress/9.webp",
+        "/Dress/Kylie Dress/10.webp"
       ]
     ],
     "sizes": [
@@ -14469,32 +14464,32 @@
     "sku": "67240",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Skyler Dress/1.avif",
+    "image": "/Dress/Skyler Dress/1.webp",
     "images": [
-      "/Dress/Skyler Dress/2.avif",
-      "/Dress/Skyler Dress/3.avif",
-      "/Dress/Skyler Dress/4.avif",
-      "/Dress/Skyler Dress/5.avif",
-      "/Dress/Skyler Dress/6.avif",
-      "/Dress/Skyler Dress/7.avif",
-      "/Dress/Skyler Dress/8.avif",
-      "/Dress/Skyler Dress/9.avif",
-      "/Dress/Skyler Dress/10.avif"
+      "/Dress/Skyler Dress/2.webp",
+      "/Dress/Skyler Dress/3.webp",
+      "/Dress/Skyler Dress/4.webp",
+      "/Dress/Skyler Dress/5.webp",
+      "/Dress/Skyler Dress/6.webp",
+      "/Dress/Skyler Dress/7.webp",
+      "/Dress/Skyler Dress/8.webp",
+      "/Dress/Skyler Dress/9.webp",
+      "/Dress/Skyler Dress/10.webp"
     ],
     "colorImages": [
       [
-        "/Dress/Skyler Dress/1.avif",
-        "/Dress/Skyler Dress/2.avif",
-        "/Dress/Skyler Dress/3.avif",
-        "/Dress/Skyler Dress/4.avif",
-        "/Dress/Skyler Dress/5.avif"
+        "/Dress/Skyler Dress/1.webp",
+        "/Dress/Skyler Dress/2.webp",
+        "/Dress/Skyler Dress/3.webp",
+        "/Dress/Skyler Dress/4.webp",
+        "/Dress/Skyler Dress/5.webp"
       ],
       [
-        "/Dress/Skyler Dress/6.avif",
-        "/Dress/Skyler Dress/7.avif",
-        "/Dress/Skyler Dress/8.avif",
-        "/Dress/Skyler Dress/9.avif",
-        "/Dress/Skyler Dress/10.avif"
+        "/Dress/Skyler Dress/6.webp",
+        "/Dress/Skyler Dress/7.webp",
+        "/Dress/Skyler Dress/8.webp",
+        "/Dress/Skyler Dress/9.webp",
+        "/Dress/Skyler Dress/10.webp"
       ]
     ],
     "sizes": [
@@ -14566,45 +14561,45 @@
     "sku": "67239",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Alison Dress/1.avif",
+    "image": "/Dress/Alison Dress/1.webp",
     "images": [
-      "/Dress/Alison Dress/1.avif",
-      "/Dress/Alison Dress/2.avif",
-      "/Dress/Alison Dress/3.avif",
-      "/Dress/Alison Dress/4.avif",
-      "/Dress/Alison Dress/5.avif",
-      "/Dress/Alison Dress/6.avif",
-      "/Dress/Alison Dress/7.avif",
-      "/Dress/Alison Dress/8.avif",
-      "/Dress/Alison Dress/9.avif",
-      "/Dress/Alison Dress/10.avif",
-      "/Dress/Alison Dress/11.avif",
-      "/Dress/Alison Dress/12.avif",
-      "/Dress/Alison Dress/13.avif",
-      "/Dress/Alison Dress/14.avif",
-      "/Dress/Alison Dress/15.avif"
+      "/Dress/Alison Dress/1.webp",
+      "/Dress/Alison Dress/2.webp",
+      "/Dress/Alison Dress/3.webp",
+      "/Dress/Alison Dress/4.webp",
+      "/Dress/Alison Dress/5.webp",
+      "/Dress/Alison Dress/6.webp",
+      "/Dress/Alison Dress/7.webp",
+      "/Dress/Alison Dress/8.webp",
+      "/Dress/Alison Dress/9.webp",
+      "/Dress/Alison Dress/10.webp",
+      "/Dress/Alison Dress/11.webp",
+      "/Dress/Alison Dress/12.webp",
+      "/Dress/Alison Dress/13.webp",
+      "/Dress/Alison Dress/14.webp",
+      "/Dress/Alison Dress/15.webp"
     ],
     "colorImages": [
       [
-        "/Dress/Alison Dress/7.avif",
-        "/Dress/Alison Dress/8.avif",
-        "/Dress/Alison Dress/9.avif",
-        "/Dress/Alison Dress/10.avif"
+        "/Dress/Alison Dress/7.webp",
+        "/Dress/Alison Dress/8.webp",
+        "/Dress/Alison Dress/9.webp",
+        "/Dress/Alison Dress/10.webp"
       ],
       [
-        "/Dress/Alison Dress/11.avif",
-        "/Dress/Alison Dress/12.avif",
-        "/Dress/Alison Dress/13.avif",
-        "/Dress/Alison Dress/14.avif",
-        "/Dress/Alison Dress/15.avif"
+        "/Dress/Alison Dress/11.webp",
+        "/Dress/Alison Dress/12.webp",
+        "/Dress/Alison Dress/13.webp",
+        "/Dress/Alison Dress/14.webp",
+        "/Dress/Alison Dress/15.webp"
       ],
       [
-        "/Dress/Alison Dress/1.avif",
-        "/Dress/Alison Dress/2.avif",
-        "/Dress/Alison Dress/3.avif",
-        "/Dress/Alison Dress/4.avif",
-        "/Dress/Alison Dress/5.avif",
-        "/Dress/Alison Dress/6.avif"
+        "/Dress/Alison Dress/1.webp",
+        "/Dress/Alison Dress/2.webp",
+        "/Dress/Alison Dress/3.webp",
+        "/Dress/Alison Dress/4.webp",
+        "/Dress/Alison Dress/5.webp",
+        "/Dress/Alison Dress/6.webp"
       ]
     ],
     "sizes": [
@@ -14680,12 +14675,12 @@
     "sku": "67233",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Proshva Pants Costume/6.avif",
+    "image": "/Costumes/Proshva Pants Costume/6.webp",
     "images": [
-      "/Costumes/Proshva Pants Costume/7.avif",
-      "/Costumes/Proshva Pants Costume/8.avif",
-      "/Costumes/Proshva Pants Costume/9.avif",
-      "/Costumes/Proshva Pants Costume/10.avif"
+      "/Costumes/Proshva Pants Costume/7.webp",
+      "/Costumes/Proshva Pants Costume/8.webp",
+      "/Costumes/Proshva Pants Costume/9.webp",
+      "/Costumes/Proshva Pants Costume/10.webp"
     ],
     "sizes": [
       "XS",
@@ -14738,12 +14733,12 @@
     "sku": "67232",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Hemp Mini Dress/1.avif",
+    "image": "/Dress/Hemp Mini Dress/1.webp",
     "images": [
-      "/Dress/Hemp Mini Dress/2.avif",
-      "/Dress/Hemp Mini Dress/3.avif",
-      "/Dress/Hemp Mini Dress/4.avif",
-      "/Dress/Hemp Mini Dress/5.avif"
+      "/Dress/Hemp Mini Dress/2.webp",
+      "/Dress/Hemp Mini Dress/3.webp",
+      "/Dress/Hemp Mini Dress/4.webp",
+      "/Dress/Hemp Mini Dress/5.webp"
     ],
     "sizes": [
       "XS",
@@ -14810,12 +14805,12 @@
     "sku": "67231",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Elodie Maxi Dress/1.avif",
+    "image": "/Dress/Elodie Maxi Dress/1.webp",
     "images": [
-      "/Dress/Elodie Maxi Dress/2.avif",
-      "/Dress/Elodie Maxi Dress/3.avif",
-      "/Dress/Elodie Maxi Dress/4.avif",
-      "/Dress/Elodie Maxi Dress/5.avif"
+      "/Dress/Elodie Maxi Dress/2.webp",
+      "/Dress/Elodie Maxi Dress/3.webp",
+      "/Dress/Elodie Maxi Dress/4.webp",
+      "/Dress/Elodie Maxi Dress/5.webp"
     ],
     "sizes": [
       "XS",
@@ -14884,28 +14879,28 @@
     "sku": "67230",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Coton Dress/1.avif",
+    "image": "/Dress/Coton Dress/1.webp",
     "images": [
-      "/Dress/Coton Dress/2.avif",
-      "/Dress/Coton Dress/3.avif",
-      "/Dress/Coton Dress/4.avif",
-      "/Dress/Coton Dress/5.avif",
-      "/Dress/Coton Dress/6.avif",
-      "/Dress/Coton Dress/7.avif",
-      "/Dress/Coton Dress/8.avif"
+      "/Dress/Coton Dress/2.webp",
+      "/Dress/Coton Dress/3.webp",
+      "/Dress/Coton Dress/4.webp",
+      "/Dress/Coton Dress/5.webp",
+      "/Dress/Coton Dress/6.webp",
+      "/Dress/Coton Dress/7.webp",
+      "/Dress/Coton Dress/8.webp"
     ],
     "colorImages": [
       [
-        "/Dress/Coton Dress/2.avif",
-        "/Dress/Coton Dress/3.avif",
-        "/Dress/Coton Dress/4.avif"
+        "/Dress/Coton Dress/2.webp",
+        "/Dress/Coton Dress/3.webp",
+        "/Dress/Coton Dress/4.webp"
       ],
       [
-        "/Dress/Coton Dress/1.avif",
-        "/Dress/Coton Dress/5.avif",
-        "/Dress/Coton Dress/6.avif",
-        "/Dress/Coton Dress/7.avif",
-        "/Dress/Coton Dress/8.avif"
+        "/Dress/Coton Dress/1.webp",
+        "/Dress/Coton Dress/5.webp",
+        "/Dress/Coton Dress/6.webp",
+        "/Dress/Coton Dress/7.webp",
+        "/Dress/Coton Dress/8.webp"
       ]
     ],
     "sizes": [
@@ -14977,44 +14972,44 @@
     "sku": "67229",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Bahroma Dress/1.avif",
+    "image": "/Dress/Bahroma Dress/1.webp",
     "images": [
-      "/Dress/Bahroma Dress/2.avif",
-      "/Dress/Bahroma Dress/3.avif",
-      "/Dress/Bahroma Dress/4.avif",
-      "/Dress/Bahroma Dress/5.avif",
-      "/Dress/Bahroma Dress/6.avif",
-      "/Dress/Bahroma Dress/7.avif",
-      "/Dress/Bahroma Dress/8.avif",
-      "/Dress/Bahroma Dress/9.avif",
-      "/Dress/Bahroma Dress/10.avif",
-      "/Dress/Bahroma Dress/11.avif",
-      "/Dress/Bahroma Dress/12.avif",
-      "/Dress/Bahroma Dress/13.avif",
-      "/Dress/Bahroma Dress/14.avif",
-      "/Dress/Bahroma Dress/15.avif"
+      "/Dress/Bahroma Dress/2.webp",
+      "/Dress/Bahroma Dress/3.webp",
+      "/Dress/Bahroma Dress/4.webp",
+      "/Dress/Bahroma Dress/5.webp",
+      "/Dress/Bahroma Dress/6.webp",
+      "/Dress/Bahroma Dress/7.webp",
+      "/Dress/Bahroma Dress/8.webp",
+      "/Dress/Bahroma Dress/9.webp",
+      "/Dress/Bahroma Dress/10.webp",
+      "/Dress/Bahroma Dress/11.webp",
+      "/Dress/Bahroma Dress/12.webp",
+      "/Dress/Bahroma Dress/13.webp",
+      "/Dress/Bahroma Dress/14.webp",
+      "/Dress/Bahroma Dress/15.webp"
     ],
     "colorImages": [
       [
-        "/Dress/Bahroma Dress/1.avif",
-        "/Dress/Bahroma Dress/2.avif",
-        "/Dress/Bahroma Dress/3.avif",
-        "/Dress/Bahroma Dress/4.avif",
-        "/Dress/Bahroma Dress/5.avif"
+        "/Dress/Bahroma Dress/1.webp",
+        "/Dress/Bahroma Dress/2.webp",
+        "/Dress/Bahroma Dress/3.webp",
+        "/Dress/Bahroma Dress/4.webp",
+        "/Dress/Bahroma Dress/5.webp"
       ],
       [
-        "/Dress/Bahroma Dress/6.avif",
-        "/Dress/Bahroma Dress/7.avif",
-        "/Dress/Bahroma Dress/8.avif",
-        "/Dress/Bahroma Dress/9.avif",
-        "/Dress/Bahroma Dress/10.avif"
+        "/Dress/Bahroma Dress/6.webp",
+        "/Dress/Bahroma Dress/7.webp",
+        "/Dress/Bahroma Dress/8.webp",
+        "/Dress/Bahroma Dress/9.webp",
+        "/Dress/Bahroma Dress/10.webp"
       ],
       [
-        "/Dress/Bahroma Dress/11.avif",
-        "/Dress/Bahroma Dress/12.avif",
-        "/Dress/Bahroma Dress/13.avif",
-        "/Dress/Bahroma Dress/14.avif",
-        "/Dress/Bahroma Dress/15.avif"
+        "/Dress/Bahroma Dress/11.webp",
+        "/Dress/Bahroma Dress/12.webp",
+        "/Dress/Bahroma Dress/13.webp",
+        "/Dress/Bahroma Dress/14.webp",
+        "/Dress/Bahroma Dress/15.webp"
       ]
     ],
     "sizes": [
@@ -15092,12 +15087,12 @@
     "sku": "67228",
     "size": "XS S M L XL",
     "category": "Shirts",
-    "image": "/Shirts/Collared Cotton Shirt/1.avif",
+    "image": "/Shirts/Collared Cotton Shirt/1.webp",
     "images": [
-      "/Shirts/Collared Cotton Shirt/2.avif",
-      "/Shirts/Collared Cotton Shirt/3.avif",
-      "/Shirts/Collared Cotton Shirt/4.avif",
-      "/Shirts/Collared Cotton Shirt/5.avif"
+      "/Shirts/Collared Cotton Shirt/2.webp",
+      "/Shirts/Collared Cotton Shirt/3.webp",
+      "/Shirts/Collared Cotton Shirt/4.webp",
+      "/Shirts/Collared Cotton Shirt/5.webp"
     ],
     "sizes": [
       "XS",
@@ -15150,12 +15145,12 @@
     "sku": "67227",
     "size": "XS S M L XL",
     "category": "Shirts",
-    "image": "/Shirts/Off-Shoulder Cotton Shirt/1.avif",
+    "image": "/Shirts/Off-Shoulder Cotton Shirt/1.webp",
     "images": [
-      "/Shirts/Off-Shoulder Cotton Shirt/2.avif",
-      "/Shirts/Off-Shoulder Cotton Shirt/3.avif",
-      "/Shirts/Off-Shoulder Cotton Shirt/4.avif",
-      "/Shirts/Off-Shoulder Cotton Shirt/5.avif"
+      "/Shirts/Off-Shoulder Cotton Shirt/2.webp",
+      "/Shirts/Off-Shoulder Cotton Shirt/3.webp",
+      "/Shirts/Off-Shoulder Cotton Shirt/4.webp",
+      "/Shirts/Off-Shoulder Cotton Shirt/5.webp"
     ],
     "sizes": [
       "XS",
@@ -15208,12 +15203,11 @@
     "sku": "67226",
     "size": "XS S M L XL",
     "category": "Shirts",
-    "image": "/Shirts/Slit Cotton Shirt/1.avif",
+    "image": "/Shirts/Slit Cotton Shirt/1.webp",
     "images": [
-      "/Shirts/Slit Cotton Shirt/2.avif",
-      "/Shirts/Slit Cotton Shirt/3.avif",
-      "/Shirts/Slit Cotton Shirt/4.avif",
-      "/Shirts/Slit Cotton Shirt/5.avif"
+      "/Shirts/Slit Cotton Shirt/2.webp",
+      "/Shirts/Slit Cotton Shirt/3.webp",
+      "/Shirts/Slit Cotton Shirt/4.webp"
     ],
     "sizes": [
       "XS",
@@ -15266,12 +15260,12 @@
     "sku": "67225",
     "size": "XS S M L XL",
     "category": "Shirts",
-    "image": "/Shirts/Elastic Neck Cotton Shirt/1.avif",
+    "image": "/Shirts/Elastic Neck Cotton Shirt/1.webp",
     "images": [
-      "/Shirts/Elastic Neck Cotton Shirt/2.avif",
-      "/Shirts/Elastic Neck Cotton Shirt/3.avif",
-      "/Shirts/Elastic Neck Cotton Shirt/4.avif",
-      "/Shirts/Elastic Neck Cotton Shirt/5.avif"
+      "/Shirts/Elastic Neck Cotton Shirt/2.webp",
+      "/Shirts/Elastic Neck Cotton Shirt/3.webp",
+      "/Shirts/Elastic Neck Cotton Shirt/4.webp",
+      "/Shirts/Elastic Neck Cotton Shirt/5.webp"
     ],
     "sizes": [
       "XS",
@@ -15324,12 +15318,12 @@
     "sku": "67223",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Lemon Dress/1.avif",
+    "image": "/Dress/Lemon Dress/1.webp",
     "images": [
-      "/Dress/Lemon Dress/2.avif",
-      "/Dress/Lemon Dress/3.avif",
-      "/Dress/Lemon Dress/4.avif",
-      "/Dress/Lemon Dress/5.avif"
+      "/Dress/Lemon Dress/2.webp",
+      "/Dress/Lemon Dress/3.webp",
+      "/Dress/Lemon Dress/4.webp",
+      "/Dress/Lemon Dress/5.webp"
     ],
     "sizes": [
       "XS",
@@ -15400,12 +15394,12 @@
     "sku": "67222",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Hemp Maxi Dress/1.avif",
+    "image": "/Dress/Hemp Maxi Dress/1.webp",
     "images": [
-      "/Dress/Hemp Maxi Dress/2.avif",
-      "/Dress/Hemp Maxi Dress/3.avif",
-      "/Dress/Hemp Maxi Dress/4.avif",
-      "/Dress/Hemp Maxi Dress/5.avif"
+      "/Dress/Hemp Maxi Dress/2.webp",
+      "/Dress/Hemp Maxi Dress/3.webp",
+      "/Dress/Hemp Maxi Dress/4.webp",
+      "/Dress/Hemp Maxi Dress/5.webp"
     ],
     "sizes": [
       "XS",
@@ -15478,12 +15472,12 @@
     "sku": "67221",
     "size": "XS S M L XL",
     "category": "Shirts",
-    "image": "/Shirts/Batiste Pleated Shirt/1.avif",
+    "image": "/Shirts/Batiste Pleated Shirt/1.webp",
     "images": [
-      "/Shirts/Batiste Pleated Shirt/2.avif",
-      "/Shirts/Batiste Pleated Shirt/3.avif",
-      "/Shirts/Batiste Pleated Shirt/4.avif",
-      "/Shirts/Batiste Pleated Shirt/5.avif"
+      "/Shirts/Batiste Pleated Shirt/2.webp",
+      "/Shirts/Batiste Pleated Shirt/3.webp",
+      "/Shirts/Batiste Pleated Shirt/4.webp",
+      "/Shirts/Batiste Pleated Shirt/5.webp"
     ],
     "sizes": [
       "XS",
@@ -15536,40 +15530,40 @@
     "sku": "67219",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Cotton Dress/1.avif",
+    "image": "/Dress/Cotton Dress/1.webp",
     "images": [
-      "/Dress/Cotton Dress/2.avif",
-      "/Dress/Cotton Dress/3.avif",
-      "/Dress/Cotton Dress/4.avif",
-      "/Dress/Cotton Dress/5.avif",
-      "/Dress/Cotton Dress/6.avif",
-      "/Dress/Cotton Dress/7.avif",
-      "/Dress/Cotton Dress/8.avif",
-      "/Dress/Cotton Dress/9.avif",
-      "/Dress/Cotton Dress/10.avif",
-      "/Dress/Cotton Dress/11.avif",
-      "/Dress/Cotton Dress/12.avif",
-      "/Dress/Cotton Dress/13.avif"
+      "/Dress/Cotton Dress/2.webp",
+      "/Dress/Cotton Dress/3.webp",
+      "/Dress/Cotton Dress/4.webp",
+      "/Dress/Cotton Dress/5.webp",
+      "/Dress/Cotton Dress/6.webp",
+      "/Dress/Cotton Dress/7.webp",
+      "/Dress/Cotton Dress/8.webp",
+      "/Dress/Cotton Dress/9.webp",
+      "/Dress/Cotton Dress/10.webp",
+      "/Dress/Cotton Dress/11.webp",
+      "/Dress/Cotton Dress/12.webp",
+      "/Dress/Cotton Dress/13.webp"
     ],
     "colorImages": [
       [
-        "/Dress/Cotton Dress/1.avif",
-        "/Dress/Cotton Dress/2.avif",
-        "/Dress/Cotton Dress/3.avif",
-        "/Dress/Cotton Dress/4.avif"
+        "/Dress/Cotton Dress/1.webp",
+        "/Dress/Cotton Dress/2.webp",
+        "/Dress/Cotton Dress/3.webp",
+        "/Dress/Cotton Dress/4.webp"
       ],
       [
-        "/Dress/Cotton Dress/5.avif",
-        "/Dress/Cotton Dress/6.avif",
-        "/Dress/Cotton Dress/7.avif",
-        "/Dress/Cotton Dress/8.avif",
-        "/Dress/Cotton Dress/9.avif"
+        "/Dress/Cotton Dress/5.webp",
+        "/Dress/Cotton Dress/6.webp",
+        "/Dress/Cotton Dress/7.webp",
+        "/Dress/Cotton Dress/8.webp",
+        "/Dress/Cotton Dress/9.webp"
       ],
       [
-        "/Dress/Cotton Dress/10.avif",
-        "/Dress/Cotton Dress/11.avif",
-        "/Dress/Cotton Dress/12.avif",
-        "/Dress/Cotton Dress/13.avif"
+        "/Dress/Cotton Dress/10.webp",
+        "/Dress/Cotton Dress/11.webp",
+        "/Dress/Cotton Dress/12.webp",
+        "/Dress/Cotton Dress/13.webp"
       ]
     ],
     "sizes": [
@@ -15647,38 +15641,38 @@
     "sku": "67217",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Santorini Dress/1.avif",
+    "image": "/Dress/Santorini Dress/1.webp",
     "images": [
-      "/Dress/Santorini Dress/2.avif",
-      "/Dress/Santorini Dress/4.avif",
-      "/Dress/Santorini Dress/5.avif",
-      "/Dress/Santorini Dress/6.avif",
-      "/Dress/Santorini Dress/7.avif",
-      "/Dress/Santorini Dress/8.avif",
-      "/Dress/Santorini Dress/9.avif",
-      "/Dress/Santorini Dress/10.avif",
-      "/Dress/Santorini Dress/11.avif",
-      "/Dress/Santorini Dress/12.avif",
-      "/Dress/Santorini Dress/13.avif"
+      "/Dress/Santorini Dress/2.webp",
+      "/Dress/Santorini Dress/4.webp",
+      "/Dress/Santorini Dress/5.webp",
+      "/Dress/Santorini Dress/6.webp",
+      "/Dress/Santorini Dress/7.webp",
+      "/Dress/Santorini Dress/8.webp",
+      "/Dress/Santorini Dress/9.webp",
+      "/Dress/Santorini Dress/10.webp",
+      "/Dress/Santorini Dress/11.webp",
+      "/Dress/Santorini Dress/12.webp",
+      "/Dress/Santorini Dress/13.webp"
     ],
     "colorImages": [
       [
-        "/Dress/Santorini Dress/1.avif",
-        "/Dress/Santorini Dress/2.avif",
-        "/Dress/Santorini Dress/4.avif",
-        "/Dress/Santorini Dress/5.avif"
+        "/Dress/Santorini Dress/1.webp",
+        "/Dress/Santorini Dress/2.webp",
+        "/Dress/Santorini Dress/4.webp",
+        "/Dress/Santorini Dress/5.webp"
       ],
       [
-        "/Dress/Santorini Dress/6.avif",
-        "/Dress/Santorini Dress/7.avif",
-        "/Dress/Santorini Dress/8.avif",
-        "/Dress/Santorini Dress/9.avif"
+        "/Dress/Santorini Dress/6.webp",
+        "/Dress/Santorini Dress/7.webp",
+        "/Dress/Santorini Dress/8.webp",
+        "/Dress/Santorini Dress/9.webp"
       ],
       [
-        "/Dress/Santorini Dress/10.avif",
-        "/Dress/Santorini Dress/11.avif",
-        "/Dress/Santorini Dress/12.avif",
-        "/Dress/Santorini Dress/13.avif"
+        "/Dress/Santorini Dress/10.webp",
+        "/Dress/Santorini Dress/11.webp",
+        "/Dress/Santorini Dress/12.webp",
+        "/Dress/Santorini Dress/13.webp"
       ]
     ],
     "sizes": [
@@ -15756,12 +15750,12 @@
     "sku": "67216",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Elodie Dress/1.avif",
+    "image": "/Dress/Elodie Dress/1.webp",
     "images": [
-      "/Dress/Elodie Dress/2.avif",
-      "/Dress/Elodie Dress/3.avif",
-      "/Dress/Elodie Dress/4.avif",
-      "/Dress/Elodie Dress/5.avif"
+      "/Dress/Elodie Dress/2.webp",
+      "/Dress/Elodie Dress/3.webp",
+      "/Dress/Elodie Dress/4.webp",
+      "/Dress/Elodie Dress/5.webp"
     ],
     "sizes": [
       "XS",
@@ -15830,11 +15824,11 @@
     "sku": "67215",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Francesca Dress/1.avif",
+    "image": "/Dress/Francesca Dress/1.webp",
     "images": [
-      "/Dress/Francesca Dress/2.avif",
-      "/Dress/Francesca Dress/3.avif",
-      "/Dress/Francesca Dress/4.avif"
+      "/Dress/Francesca Dress/2.webp",
+      "/Dress/Francesca Dress/3.webp",
+      "/Dress/Francesca Dress/4.webp"
     ],
     "sizes": [
       "XS",
@@ -15901,12 +15895,12 @@
     "sku": "92110",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Embroidered Cotton Costume/1.avif",
+    "image": "/Costumes/Embroidered Cotton Costume/1.webp",
     "images": [
-      "/Costumes/Embroidered Cotton Costume/2.avif",
-      "/Costumes/Embroidered Cotton Costume/3.avif",
-      "/Costumes/Embroidered Cotton Costume/4.avif",
-      "/Costumes/Embroidered Cotton Costume/5.avif"
+      "/Costumes/Embroidered Cotton Costume/2.webp",
+      "/Costumes/Embroidered Cotton Costume/3.webp",
+      "/Costumes/Embroidered Cotton Costume/4.webp",
+      "/Costumes/Embroidered Cotton Costume/5.webp"
     ],
     "sizes": [
       "XS",
@@ -15959,13 +15953,13 @@
     "sku": "67214",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Oversize Linen Dress/1.avif",
+    "image": "/Dress/Oversize Linen Dress/1.webp",
     "images": [
-      "/Dress/Oversize Linen Dress/1.avif",
-      "/Dress/Oversize Linen Dress/2.avif",
-      "/Dress/Oversize Linen Dress/3.avif",
-      "/Dress/Oversize Linen Dress/4.avif",
-      "/Dress/Oversize Linen Dress/5.avif"
+      "/Dress/Oversize Linen Dress/1.webp",
+      "/Dress/Oversize Linen Dress/2.webp",
+      "/Dress/Oversize Linen Dress/3.webp",
+      "/Dress/Oversize Linen Dress/4.webp",
+      "/Dress/Oversize Linen Dress/5.webp"
     ],
     "sizes": [
       "XS",
@@ -16034,12 +16028,12 @@
     "sku": "67213",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Aria Dress/1.avif",
+    "image": "/Dress/Aria Dress/1.webp",
     "images": [
-      "/Dress/Aria Dress/2.avif",
-      "/Dress/Aria Dress/3.avif",
-      "/Dress/Aria Dress/4.avif",
-      "/Dress/Aria Dress/5.avif"
+      "/Dress/Aria Dress/2.webp",
+      "/Dress/Aria Dress/3.webp",
+      "/Dress/Aria Dress/4.webp",
+      "/Dress/Aria Dress/5.webp"
     ],
     "sizes": [
       "XS",
@@ -16106,12 +16100,12 @@
     "sku": "78843",
     "size": "XS S M L XL",
     "category": "Shorts",
-    "image": "/Shorts/Linen Shorts/1.avif",
+    "image": "/Shorts/Linen Shorts/1.webp",
     "images": [
-      "/Shorts/Linen Shorts/2.avif",
-      "/Shorts/Linen Shorts/3.avif",
-      "/Shorts/Linen Shorts/4.avif",
-      "/Shorts/Linen Shorts/5.avif"
+      "/Shorts/Linen Shorts/2.webp",
+      "/Shorts/Linen Shorts/3.webp",
+      "/Shorts/Linen Shorts/4.webp",
+      "/Shorts/Linen Shorts/5.webp"
     ],
     "sizes": [
       "XS",
@@ -16164,12 +16158,12 @@
     "sku": "78842",
     "size": "XS S M L XL",
     "category": "Shorts",
-    "image": "/Shorts/Denim Shorts/1.avif",
+    "image": "/Shorts/Denim Shorts/1.webp",
     "images": [
-      "/Shorts/Denim Shorts/2.avif",
-      "/Shorts/Denim Shorts/3.avif",
-      "/Shorts/Denim Shorts/4.avif",
-      "/Shorts/Denim Shorts/5.avif"
+      "/Shorts/Denim Shorts/2.webp",
+      "/Shorts/Denim Shorts/3.webp",
+      "/Shorts/Denim Shorts/4.webp",
+      "/Shorts/Denim Shorts/5.webp"
     ],
     "sizes": [
       "XS",
@@ -16222,12 +16216,12 @@
     "sku": "78841",
     "size": "XS S M L XL",
     "category": "Shorts",
-    "image": "/Shorts/Tailored Shorts/1.avif",
+    "image": "/Shorts/Tailored Shorts/1.webp",
     "images": [
-      "/Shorts/Tailored Shorts/2.avif",
-      "/Shorts/Tailored Shorts/3.avif",
-      "/Shorts/Tailored Shorts/4.avif",
-      "/Shorts/Tailored Shorts/5.avif"
+      "/Shorts/Tailored Shorts/2.webp",
+      "/Shorts/Tailored Shorts/3.webp",
+      "/Shorts/Tailored Shorts/4.webp",
+      "/Shorts/Tailored Shorts/5.webp"
     ],
     "sizes": [
       "XS",
@@ -16280,33 +16274,33 @@
     "sku": "98817",
     "size": "XS S M L XL",
     "category": "Skirts",
-    "image": "/Skirts/Denim Skirt/1.avif",
+    "image": "/Skirts/Denim Skirt/1.webp",
     "images": [
-      "/Skirts/Denim Skirt/2.avif",
+      "/Skirts/Denim Skirt/2.webp",
       {
         "type": "video",
         "src": "/Skirts/Denim Skirt/IMG_8135.mp4",
-        "poster": "/Skirts/Denim Skirt/1.avif"
+        "poster": "/Skirts/Denim Skirt/1.webp"
       },
-      "/Skirts/Denim Skirt/3.avif",
-      "/Skirts/Denim Skirt/4.avif",
-      "/Skirts/Denim Skirt/5.avif",
-      "/Skirts/Denim Skirt/6.avif",
-      "/Skirts/Denim Skirt/9.avif",
-      "/Skirts/Denim Skirt/10.avif"
+      "/Skirts/Denim Skirt/3.webp",
+      "/Skirts/Denim Skirt/4.webp",
+      "/Skirts/Denim Skirt/5.webp",
+      "/Skirts/Denim Skirt/6.webp",
+      "/Skirts/Denim Skirt/9.webp",
+      "/Skirts/Denim Skirt/10.webp"
     ],
     "colorImages": [
       [
-        "/Skirts/Denim Skirt/1.avif",
-        "/Skirts/Denim Skirt/2.avif",
-        "/Skirts/Denim Skirt/3.avif",
-        "/Skirts/Denim Skirt/4.avif"
+        "/Skirts/Denim Skirt/1.webp",
+        "/Skirts/Denim Skirt/2.webp",
+        "/Skirts/Denim Skirt/3.webp",
+        "/Skirts/Denim Skirt/4.webp"
       ],
       [
-        "/Skirts/Denim Skirt/5.avif",
-        "/Skirts/Denim Skirt/6.avif",
-        "/Skirts/Denim Skirt/9.avif",
-        "/Skirts/Denim Skirt/10.avif"
+        "/Skirts/Denim Skirt/5.webp",
+        "/Skirts/Denim Skirt/6.webp",
+        "/Skirts/Denim Skirt/9.webp",
+        "/Skirts/Denim Skirt/10.webp"
       ]
     ],
     "sizes": [
@@ -16365,44 +16359,44 @@
     "sku": "98812",
     "size": "XS S M L XL",
     "category": "Pants",
-    "image": "/Pants/Classic Pants/1.avif",
+    "image": "/Pants/Classic Pants/1.webp",
     "images": [
-      "/Pants/Classic Pants/2.avif",
-      "/Pants/Classic Pants/3.avif",
-      "/Pants/Classic Pants/4.avif",
-      "/Pants/Classic Pants/5.avif",
-      "/Pants/Classic Pants/6.avif",
-      "/Pants/Classic Pants/7.avif",
-      "/Pants/Classic Pants/8.avif",
-      "/Pants/Classic Pants/9.avif",
-      "/Pants/Classic Pants/10.avif",
-      "/Pants/Classic Pants/11.avif",
-      "/Pants/Classic Pants/12.avif",
-      "/Pants/Classic Pants/13.avif",
-      "/Pants/Classic Pants/14.avif",
-      "/Pants/Classic Pants/15.avif"
+      "/Pants/Classic Pants/2.webp",
+      "/Pants/Classic Pants/3.webp",
+      "/Pants/Classic Pants/4.webp",
+      "/Pants/Classic Pants/5.webp",
+      "/Pants/Classic Pants/6.webp",
+      "/Pants/Classic Pants/7.webp",
+      "/Pants/Classic Pants/8.webp",
+      "/Pants/Classic Pants/9.webp",
+      "/Pants/Classic Pants/10.webp",
+      "/Pants/Classic Pants/11.webp",
+      "/Pants/Classic Pants/12.webp",
+      "/Pants/Classic Pants/13.webp",
+      "/Pants/Classic Pants/14.webp",
+      "/Pants/Classic Pants/15.webp"
     ],
     "colorImages": [
       [
-        "/Pants/Classic Pants/1.avif",
-        "/Pants/Classic Pants/2.avif",
-        "/Pants/Classic Pants/3.avif",
-        "/Pants/Classic Pants/4.avif",
-        "/Pants/Classic Pants/5.avif"
+        "/Pants/Classic Pants/1.webp",
+        "/Pants/Classic Pants/2.webp",
+        "/Pants/Classic Pants/3.webp",
+        "/Pants/Classic Pants/4.webp",
+        "/Pants/Classic Pants/5.webp"
       ],
       [
-        "/Pants/Classic Pants/6.avif",
-        "/Pants/Classic Pants/7.avif",
-        "/Pants/Classic Pants/8.avif",
-        "/Pants/Classic Pants/9.avif",
-        "/Pants/Classic Pants/10.avif"
+        "/Pants/Classic Pants/6.webp",
+        "/Pants/Classic Pants/7.webp",
+        "/Pants/Classic Pants/8.webp",
+        "/Pants/Classic Pants/9.webp",
+        "/Pants/Classic Pants/10.webp"
       ],
       [
-        "/Pants/Classic Pants/11.avif",
-        "/Pants/Classic Pants/12.avif",
-        "/Pants/Classic Pants/13.avif",
-        "/Pants/Classic Pants/14.avif",
-        "/Pants/Classic Pants/15.avif"
+        "/Pants/Classic Pants/11.webp",
+        "/Pants/Classic Pants/12.webp",
+        "/Pants/Classic Pants/13.webp",
+        "/Pants/Classic Pants/14.webp",
+        "/Pants/Classic Pants/15.webp"
       ]
     ],
     "sizes": [
@@ -16464,40 +16458,40 @@
     "sku": "98811",
     "size": "XS S M L XL",
     "category": "Pants",
-    "image": "/Pants/Wrap Palazzo Pants/1.avif",
+    "image": "/Pants/Wrap Palazzo Pants/1.webp",
     "images": [
-      "/Pants/Wrap Palazzo Pants/2.avif",
-      "/Pants/Wrap Palazzo Pants/3.avif",
-      "/Pants/Wrap Palazzo Pants/4.avif",
-      "/Pants/Wrap Palazzo Pants/5.avif",
-      "/Pants/Wrap Palazzo Pants/6.avif",
-      "/Pants/Wrap Palazzo Pants/7.avif",
-      "/Pants/Wrap Palazzo Pants/8.avif",
-      "/Pants/Wrap Palazzo Pants/9.avif",
-      "/Pants/Wrap Palazzo Pants/10.avif",
-      "/Pants/Wrap Palazzo Pants/11.avif",
-      "/Pants/Wrap Palazzo Pants/12.avif",
-      "/Pants/Wrap Palazzo Pants/13.avif"
+      "/Pants/Wrap Palazzo Pants/2.webp",
+      "/Pants/Wrap Palazzo Pants/3.webp",
+      "/Pants/Wrap Palazzo Pants/4.webp",
+      "/Pants/Wrap Palazzo Pants/5.webp",
+      "/Pants/Wrap Palazzo Pants/6.webp",
+      "/Pants/Wrap Palazzo Pants/7.webp",
+      "/Pants/Wrap Palazzo Pants/8.webp",
+      "/Pants/Wrap Palazzo Pants/9.webp",
+      "/Pants/Wrap Palazzo Pants/10.webp",
+      "/Pants/Wrap Palazzo Pants/11.webp",
+      "/Pants/Wrap Palazzo Pants/12.webp",
+      "/Pants/Wrap Palazzo Pants/13.webp"
     ],
     "colorImages": [
       [
-        "/Pants/Wrap Palazzo Pants/1.avif",
-        "/Pants/Wrap Palazzo Pants/2.avif",
-        "/Pants/Wrap Palazzo Pants/3.avif",
-        "/Pants/Wrap Palazzo Pants/4.avif",
-        "/Pants/Wrap Palazzo Pants/5.avif"
+        "/Pants/Wrap Palazzo Pants/1.webp",
+        "/Pants/Wrap Palazzo Pants/2.webp",
+        "/Pants/Wrap Palazzo Pants/3.webp",
+        "/Pants/Wrap Palazzo Pants/4.webp",
+        "/Pants/Wrap Palazzo Pants/5.webp"
       ],
       [
-        "/Pants/Wrap Palazzo Pants/6.avif",
-        "/Pants/Wrap Palazzo Pants/7.avif",
-        "/Pants/Wrap Palazzo Pants/8.avif",
-        "/Pants/Wrap Palazzo Pants/9.avif",
-        "/Pants/Wrap Palazzo Pants/10.avif"
+        "/Pants/Wrap Palazzo Pants/6.webp",
+        "/Pants/Wrap Palazzo Pants/7.webp",
+        "/Pants/Wrap Palazzo Pants/8.webp",
+        "/Pants/Wrap Palazzo Pants/9.webp",
+        "/Pants/Wrap Palazzo Pants/10.webp"
       ],
       [
-        "/Pants/Wrap Palazzo Pants/11.avif",
-        "/Pants/Wrap Palazzo Pants/12.avif",
-        "/Pants/Wrap Palazzo Pants/13.avif"
+        "/Pants/Wrap Palazzo Pants/11.webp",
+        "/Pants/Wrap Palazzo Pants/12.webp",
+        "/Pants/Wrap Palazzo Pants/13.webp"
       ]
     ],
     "sizes": [
@@ -16559,12 +16553,12 @@
     "sku": "98810",
     "size": "XS S M L XL",
     "category": "Pants",
-    "image": "/Pants/Palazzo Pants/1.avif",
+    "image": "/Pants/Palazzo Pants/1.webp",
     "images": [
-      "/Pants/Palazzo Pants/2.avif",
-      "/Pants/Palazzo Pants/3.avif",
-      "/Pants/Palazzo Pants/4.avif",
-      "/Pants/Palazzo Pants/5.avif"
+      "/Pants/Palazzo Pants/2.webp",
+      "/Pants/Palazzo Pants/3.webp",
+      "/Pants/Palazzo Pants/4.webp",
+      "/Pants/Palazzo Pants/5.webp"
     ],
     "sizes": [
       "XS",
@@ -16617,10 +16611,10 @@
     "sku": "98801",
     "size": "XS S M L XL",
     "category": "Pants",
-    "image": "/Pants/Hemp Banana Pants/1.avif",
+    "image": "/Pants/Hemp Banana Pants/1.webp",
     "images": [
-      "/Pants/Hemp Banana Pants/2.avif",
-      "/Pants/Hemp Banana Pants/3.avif"
+      "/Pants/Hemp Banana Pants/2.webp",
+      "/Pants/Hemp Banana Pants/3.webp"
     ],
     "sizes": [
       "XS",
@@ -16673,10 +16667,10 @@
     "sku": "98800",
     "size": "XS S M L XL",
     "category": "Pants",
-    "image": "/Pants/Hemp Palazzo Pants/1.avif",
+    "image": "/Pants/Hemp Palazzo Pants/1.webp",
     "images": [
-      "/Pants/Hemp Palazzo Pants/2.avif",
-      "/Pants/Hemp Palazzo Pants/3.avif"
+      "/Pants/Hemp Palazzo Pants/2.webp",
+      "/Pants/Hemp Palazzo Pants/3.webp"
     ],
     "sizes": [
       "XS",
@@ -16729,10 +16723,10 @@
     "sku": "98799",
     "size": "XS S M L XL",
     "category": "Shirts",
-    "image": "/Shirts/Hemp Shirt/1.avif",
+    "image": "/Shirts/Hemp Shirt/1.webp",
     "images": [
-      "/Shirts/Hemp Shirt/2.avif",
-      "/Shirts/Hemp Shirt/3.avif"
+      "/Shirts/Hemp Shirt/2.webp",
+      "/Shirts/Hemp Shirt/3.webp"
     ],
     "sizes": [
       "XS",
@@ -16785,10 +16779,10 @@
     "sku": "98798",
     "size": "XS S M L XL",
     "category": "Tops",
-    "image": "/Top/Hemp Top/1.avif",
+    "image": "/Top/Hemp Top/1.webp",
     "images": [
-      "/Top/Hemp Top/2.avif",
-      "/Top/Hemp Top/3.avif"
+      "/Top/Hemp Top/2.webp",
+      "/Top/Hemp Top/3.webp"
     ],
     "sizes": [
       "XS",
@@ -16841,12 +16835,12 @@
     "sku": "98797",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Hemp Set/1.avif",
+    "image": "/Costumes/Hemp Set/1.webp",
     "images": [
-      "/Costumes/Hemp Set/2.avif",
-      "/Costumes/Hemp Set/3.avif",
-      "/Costumes/Hemp Set/4.avif",
-      "/Costumes/Hemp Set/5.avif"
+      "/Costumes/Hemp Set/2.webp",
+      "/Costumes/Hemp Set/3.webp",
+      "/Costumes/Hemp Set/4.webp",
+      "/Costumes/Hemp Set/5.webp"
     ],
     "sizes": [
       "XS",
@@ -16899,13 +16893,13 @@
     "sku": "98796",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Hemp Costume/1.avif",
+    "image": "/Costumes/Hemp Costume/1.webp",
     "images": [
-      "/Costumes/Hemp Costume/2.avif",
-      "/Costumes/Hemp Costume/3.avif",
-      "/Costumes/Hemp Costume/4.avif",
-      "/Costumes/Hemp Costume/5.avif",
-      "/Costumes/Hemp Costume/6.avif"
+      "/Costumes/Hemp Costume/2.webp",
+      "/Costumes/Hemp Costume/3.webp",
+      "/Costumes/Hemp Costume/4.webp",
+      "/Costumes/Hemp Costume/5.webp",
+      "/Costumes/Hemp Costume/6.webp"
     ],
     "sizes": [
       "XS",
@@ -16958,13 +16952,13 @@
     "sku": "98795",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Hemp Jumpsuit/1.avif",
+    "image": "/Costumes/Hemp Jumpsuit/1.webp",
     "images": [
-      "/Costumes/Hemp Jumpsuit/2.avif",
-      "/Costumes/Hemp Jumpsuit/3.avif",
-      "/Costumes/Hemp Jumpsuit/4.avif",
-      "/Costumes/Hemp Jumpsuit/5.avif",
-      "/Costumes/Hemp Jumpsuit/6.avif"
+      "/Costumes/Hemp Jumpsuit/2.webp",
+      "/Costumes/Hemp Jumpsuit/3.webp",
+      "/Costumes/Hemp Jumpsuit/4.webp",
+      "/Costumes/Hemp Jumpsuit/5.webp",
+      "/Costumes/Hemp Jumpsuit/6.webp"
     ],
     "sizes": [
       "XS",
@@ -17017,24 +17011,24 @@
     "sku": "98794",
     "size": "XS S M L XL",
     "category": "Pants",
-    "image": "/Pants/Muslin Palazzo Pants/1.avif",
+    "image": "/Pants/Muslin Palazzo Pants/1.webp",
     "images": [
-      "/Pants/Muslin Palazzo Pants/2.avif",
-      "/Pants/Muslin Palazzo Pants/3.avif",
-      "/Pants/Muslin Palazzo Pants/4.avif",
-      "/Pants/Muslin Palazzo Pants/5.avif",
-      "/Pants/Muslin Palazzo Pants/6.avif"
+      "/Pants/Muslin Palazzo Pants/2.webp",
+      "/Pants/Muslin Palazzo Pants/3.webp",
+      "/Pants/Muslin Palazzo Pants/4.webp",
+      "/Pants/Muslin Palazzo Pants/5.webp",
+      "/Pants/Muslin Palazzo Pants/6.webp"
     ],
     "colorImages": [
       [
-        "/Pants/Muslin Palazzo Pants/1.avif",
-        "/Pants/Muslin Palazzo Pants/2.avif",
-        "/Pants/Muslin Palazzo Pants/3.avif"
+        "/Pants/Muslin Palazzo Pants/1.webp",
+        "/Pants/Muslin Palazzo Pants/2.webp",
+        "/Pants/Muslin Palazzo Pants/3.webp"
       ],
       [
-        "/Pants/Muslin Palazzo Pants/4.avif",
-        "/Pants/Muslin Palazzo Pants/5.avif",
-        "/Pants/Muslin Palazzo Pants/6.avif"
+        "/Pants/Muslin Palazzo Pants/4.webp",
+        "/Pants/Muslin Palazzo Pants/5.webp",
+        "/Pants/Muslin Palazzo Pants/6.webp"
       ]
     ],
     "sizes": [
@@ -17092,24 +17086,24 @@
     "sku": "98792",
     "size": "XS S M L XL",
     "category": "Tops",
-    "image": "/Top/Muslin Top/1.avif",
+    "image": "/Top/Muslin Top/1.webp",
     "images": [
-      "/Top/Muslin Top/2.avif",
-      "/Top/Muslin Top/3.avif",
-      "/Top/Muslin Top/4.avif",
-      "/Top/Muslin Top/5.avif",
-      "/Top/Muslin Top/6.avif"
+      "/Top/Muslin Top/2.webp",
+      "/Top/Muslin Top/3.webp",
+      "/Top/Muslin Top/4.webp",
+      "/Top/Muslin Top/5.webp",
+      "/Top/Muslin Top/6.webp"
     ],
     "colorImages": [
       [
-        "/Top/Muslin Top/1.avif",
-        "/Top/Muslin Top/2.avif",
-        "/Top/Muslin Top/3.avif"
+        "/Top/Muslin Top/1.webp",
+        "/Top/Muslin Top/2.webp",
+        "/Top/Muslin Top/3.webp"
       ],
       [
-        "/Top/Muslin Top/4.avif",
-        "/Top/Muslin Top/5.avif",
-        "/Top/Muslin Top/6.avif"
+        "/Top/Muslin Top/4.webp",
+        "/Top/Muslin Top/5.webp",
+        "/Top/Muslin Top/6.webp"
       ]
     ],
     "sizes": [
@@ -17167,10 +17161,10 @@
     "sku": "98784",
     "size": "XS S M L XL",
     "category": "Shirts",
-    "image": "/Shirts/Muslin Shirt/1.avif",
+    "image": "/Shirts/Muslin Shirt/1.webp",
     "images": [
-      "/Shirts/Muslin Shirt/2.avif",
-      "/Shirts/Muslin Shirt/3.avif"
+      "/Shirts/Muslin Shirt/2.webp",
+      "/Shirts/Muslin Shirt/3.webp"
     ],
     "sizes": [
       "XS",
@@ -17227,13 +17221,13 @@
     "sku": "98783",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Muslin Costume/1.avif",
+    "image": "/Costumes/Muslin Costume/1.webp",
     "images": [
-      "/Costumes/Muslin Costume/2.avif",
-      "/Costumes/Muslin Costume/3.avif",
-      "/Costumes/Muslin Costume/4.avif",
-      "/Costumes/Muslin Costume/5.avif",
-      "/Costumes/Muslin Costume/6.avif"
+      "/Costumes/Muslin Costume/2.webp",
+      "/Costumes/Muslin Costume/3.webp",
+      "/Costumes/Muslin Costume/4.webp",
+      "/Costumes/Muslin Costume/5.webp",
+      "/Costumes/Muslin Costume/6.webp"
     ],
     "sizes": [
       "XS",
@@ -17290,13 +17284,13 @@
     "sku": "98778",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Valencia Dress/1.avif",
+    "image": "/Dress/Valencia Dress/1.webp",
     "images": [
-      "/Dress/Valencia Dress/2.avif",
-      "/Dress/Valencia Dress/3.avif",
-      "/Dress/Valencia Dress/4.avif",
-      "/Dress/Valencia Dress/5.avif",
-      "/Dress/Valencia Dress/6.avif"
+      "/Dress/Valencia Dress/2.webp",
+      "/Dress/Valencia Dress/3.webp",
+      "/Dress/Valencia Dress/4.webp",
+      "/Dress/Valencia Dress/5.webp",
+      "/Dress/Valencia Dress/6.webp"
     ],
     "sizes": [
       "XS",
@@ -17367,37 +17361,37 @@
     "sku": "98776",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Provence Dress/1.avif",
+    "image": "/Dress/Provence Dress/1.webp",
     "images": [
-      "/Dress/Provence Dress/2.avif",
+      "/Dress/Provence Dress/2.webp",
       {
         "type": "video",
         "src": "/Dress/Provence Dress/IMG_928.mp4",
-        "poster": "/Dress/Provence Dress/1.avif"
+        "poster": "/Dress/Provence Dress/1.webp"
       },
-      "/Dress/Provence Dress/3.avif",
-      "/Dress/Provence Dress/4.avif",
-      "/Dress/Provence Dress/5.avif",
-      "/Dress/Provence Dress/6.avif",
-      "/Dress/Provence Dress/7.avif",
-      "/Dress/Provence Dress/8.avif",
-      "/Dress/Provence Dress/9.avif",
-      "/Dress/Provence Dress/10.avif"
+      "/Dress/Provence Dress/3.webp",
+      "/Dress/Provence Dress/4.webp",
+      "/Dress/Provence Dress/5.webp",
+      "/Dress/Provence Dress/6.webp",
+      "/Dress/Provence Dress/7.webp",
+      "/Dress/Provence Dress/8.webp",
+      "/Dress/Provence Dress/9.webp",
+      "/Dress/Provence Dress/10.webp"
     ],
     "colorImages": [
       [
-        "/Dress/Provence Dress/1.avif",
-        "/Dress/Provence Dress/2.avif",
-        "/Dress/Provence Dress/3.avif",
-        "/Dress/Provence Dress/4.avif",
-        "/Dress/Provence Dress/5.avif",
-        "/Dress/Provence Dress/6.avif"
+        "/Dress/Provence Dress/1.webp",
+        "/Dress/Provence Dress/2.webp",
+        "/Dress/Provence Dress/3.webp",
+        "/Dress/Provence Dress/4.webp",
+        "/Dress/Provence Dress/5.webp",
+        "/Dress/Provence Dress/6.webp"
       ],
       [
-        "/Dress/Provence Dress/7.avif",
-        "/Dress/Provence Dress/8.avif",
-        "/Dress/Provence Dress/9.avif",
-        "/Dress/Provence Dress/10.avif"
+        "/Dress/Provence Dress/7.webp",
+        "/Dress/Provence Dress/8.webp",
+        "/Dress/Provence Dress/9.webp",
+        "/Dress/Provence Dress/10.webp"
       ]
     ],
     "sizes": [
@@ -17473,18 +17467,18 @@
     "sku": "98775",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Breeze Dress/7.avif",
+    "image": "/Dress/Breeze Dress/7.webp",
     "images": [
-      "/Dress/Breeze Dress/8.avif",
+      "/Dress/Breeze Dress/8.webp",
       {
         "type": "video",
         "src": "/Dress/Breeze Dress/IMG_732.mp4",
-        "poster": "/Dress/Breeze Dress/7.avif"
+        "poster": "/Dress/Breeze Dress/7.webp"
       },
-      "/Dress/Breeze Dress/9.avif",
-      "/Dress/Breeze Dress/10.avif",
-      "/Dress/Breeze Dress/11.avif",
-      "/Dress/Breeze Dress/12.avif"
+      "/Dress/Breeze Dress/9.webp",
+      "/Dress/Breeze Dress/10.webp",
+      "/Dress/Breeze Dress/11.webp",
+      "/Dress/Breeze Dress/12.webp"
     ],
     "sizes": [
       "XS",
@@ -17541,18 +17535,18 @@
     "sku": "98774",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Teresa Dress/1.avif",
+    "image": "/Dress/Teresa Dress/1.webp",
     "images": [
-      "/Dress/Teresa Dress/2.avif",
+      "/Dress/Teresa Dress/2.webp",
       {
         "type": "video",
         "src": "/Dress/Teresa Dress/IMG_6729.mp4",
-        "poster": "/Dress/Teresa Dress/1.avif"
+        "poster": "/Dress/Teresa Dress/1.webp"
       },
-      "/Dress/Teresa Dress/3.avif",
-      "/Dress/Teresa Dress/4.avif",
-      "/Dress/Teresa Dress/5.avif",
-      "/Dress/Teresa Dress/6.avif"
+      "/Dress/Teresa Dress/3.webp",
+      "/Dress/Teresa Dress/4.webp",
+      "/Dress/Teresa Dress/5.webp",
+      "/Dress/Teresa Dress/6.webp"
     ],
     "sizes": [
       "XS",
@@ -17609,37 +17603,37 @@
     "sku": "98773",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Maria Dress/1.avif",
+    "image": "/Dress/Maria Dress/1.webp",
     "images": [
-      "/Dress/Maria Dress/2.avif",
+      "/Dress/Maria Dress/2.webp",
       {
         "type": "video",
         "src": "/Dress/Maria Dress/IMG_2328.mp4",
-        "poster": "/Dress/Maria Dress/1.avif"
+        "poster": "/Dress/Maria Dress/1.webp"
       },
-      "/Dress/Maria Dress/3.avif",
-      "/Dress/Maria Dress/4.avif",
-      "/Dress/Maria Dress/5.avif",
-      "/Dress/Maria Dress/6.avif",
-      "/Dress/Maria Dress/7.avif",
-      "/Dress/Maria Dress/8.avif",
-      "/Dress/Maria Dress/9.avif",
-      "/Dress/Maria Dress/10.avif"
+      "/Dress/Maria Dress/3.webp",
+      "/Dress/Maria Dress/4.webp",
+      "/Dress/Maria Dress/5.webp",
+      "/Dress/Maria Dress/6.webp",
+      "/Dress/Maria Dress/7.webp",
+      "/Dress/Maria Dress/8.webp",
+      "/Dress/Maria Dress/9.webp",
+      "/Dress/Maria Dress/10.webp"
     ],
     "colorImages": [
       [
-        "/Dress/Maria Dress/1.avif",
-        "/Dress/Maria Dress/2.avif",
-        "/Dress/Maria Dress/3.avif",
-        "/Dress/Maria Dress/4.avif",
-        "/Dress/Maria Dress/5.avif",
-        "/Dress/Maria Dress/6.avif"
+        "/Dress/Maria Dress/1.webp",
+        "/Dress/Maria Dress/2.webp",
+        "/Dress/Maria Dress/3.webp",
+        "/Dress/Maria Dress/4.webp",
+        "/Dress/Maria Dress/5.webp",
+        "/Dress/Maria Dress/6.webp"
       ],
       [
-        "/Dress/Maria Dress/7.avif",
-        "/Dress/Maria Dress/8.avif",
-        "/Dress/Maria Dress/9.avif",
-        "/Dress/Maria Dress/10.avif"
+        "/Dress/Maria Dress/7.webp",
+        "/Dress/Maria Dress/8.webp",
+        "/Dress/Maria Dress/9.webp",
+        "/Dress/Maria Dress/10.webp"
       ]
     ],
     "sizes": [
@@ -17701,47 +17695,47 @@
     "sku": "98770",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Ruffle Dress/1.avif",
+    "image": "/Dress/Ruffle Dress/1.webp",
     "images": [
-      "/Dress/Ruffle Dress/2.avif",
+      "/Dress/Ruffle Dress/2.webp",
       {
         "type": "video",
         "src": "/Dress/Ruffle Dress/IMG_059.mp4",
-        "poster": "/Dress/Ruffle Dress/1.avif"
+        "poster": "/Dress/Ruffle Dress/1.webp"
       },
-      "/Dress/Ruffle Dress/3.avif",
-      "/Dress/Ruffle Dress/5.avif",
-      "/Dress/Ruffle Dress/6.avif",
-      "/Dress/Ruffle Dress/7.avif",
-      "/Dress/Ruffle Dress/8.avif",
-      "/Dress/Ruffle Dress/9.avif",
-      "/Dress/Ruffle Dress/10.avif",
-      "/Dress/Ruffle Dress/11.avif",
-      "/Dress/Ruffle Dress/12.avif",
-      "/Dress/Ruffle Dress/13.avif",
-      "/Dress/Ruffle Dress/14.avif"
+      "/Dress/Ruffle Dress/3.webp",
+      "/Dress/Ruffle Dress/5.webp",
+      "/Dress/Ruffle Dress/6.webp",
+      "/Dress/Ruffle Dress/7.webp",
+      "/Dress/Ruffle Dress/8.webp",
+      "/Dress/Ruffle Dress/9.webp",
+      "/Dress/Ruffle Dress/10.webp",
+      "/Dress/Ruffle Dress/11.webp",
+      "/Dress/Ruffle Dress/12.webp",
+      "/Dress/Ruffle Dress/13.webp",
+      "/Dress/Ruffle Dress/14.webp"
     ],
     "colorImages": [
       [
-        "/Dress/Ruffle Dress/1.avif",
-        "/Dress/Ruffle Dress/2.avif",
-        "/Dress/Ruffle Dress/3.avif",
-        "/Dress/Ruffle Dress/5.avif"
+        "/Dress/Ruffle Dress/1.webp",
+        "/Dress/Ruffle Dress/2.webp",
+        "/Dress/Ruffle Dress/3.webp",
+        "/Dress/Ruffle Dress/5.webp"
       ],
       [
-        "/Dress/Ruffle Dress/6.avif",
-        "/Dress/Ruffle Dress/7.avif",
-        "/Dress/Ruffle Dress/8.avif"
+        "/Dress/Ruffle Dress/6.webp",
+        "/Dress/Ruffle Dress/7.webp",
+        "/Dress/Ruffle Dress/8.webp"
       ],
       [
-        "/Dress/Ruffle Dress/9.avif",
-        "/Dress/Ruffle Dress/10.avif",
-        "/Dress/Ruffle Dress/11.avif"
+        "/Dress/Ruffle Dress/9.webp",
+        "/Dress/Ruffle Dress/10.webp",
+        "/Dress/Ruffle Dress/11.webp"
       ],
       [
-        "/Dress/Ruffle Dress/12.avif",
-        "/Dress/Ruffle Dress/13.avif",
-        "/Dress/Ruffle Dress/14.avif"
+        "/Dress/Ruffle Dress/12.webp",
+        "/Dress/Ruffle Dress/13.webp",
+        "/Dress/Ruffle Dress/14.webp"
       ]
     ],
     "sizes": [
@@ -17811,54 +17805,54 @@
     "sku": "98768",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Muslin/7.avif",
+    "image": "/Dress/Muslin/7.webp",
     "images": [
-      "/Dress/Muslin/7.avif",
+      "/Dress/Muslin/7.webp",
       {
         "type": "video",
         "src": "/Dress/Muslin/IMG_4392.mp4",
-        "poster": "/Dress/Muslin/7.avif"
+        "poster": "/Dress/Muslin/7.webp"
       },
-      "/Dress/Muslin/8.avif",
-      "/Dress/Muslin/9.avif",
-      "/Dress/Muslin/10.avif",
-      "/Dress/Muslin/11.avif",
-      "/Dress/Muslin/12.avif",
-      "/Dress/Muslin/13.avif",
-      "/Dress/Muslin/14.avif",
-      "/Dress/Muslin/15.avif",
-      "/Dress/Muslin/16.avif",
-      "/Dress/Muslin/17.avif",
-      "/Dress/Muslin/18.avif",
-      "/Dress/Muslin/19.avif",
-      "/Dress/Muslin/20.avif",
-      "/Dress/Muslin/21.avif",
-      "/Dress/Muslin/22.avif",
-      "/Dress/Muslin/23.avif"
+      "/Dress/Muslin/8.webp",
+      "/Dress/Muslin/9.webp",
+      "/Dress/Muslin/10.webp",
+      "/Dress/Muslin/11.webp",
+      "/Dress/Muslin/12.webp",
+      "/Dress/Muslin/13.webp",
+      "/Dress/Muslin/14.webp",
+      "/Dress/Muslin/15.webp",
+      "/Dress/Muslin/16.webp",
+      "/Dress/Muslin/17.webp",
+      "/Dress/Muslin/18.webp",
+      "/Dress/Muslin/19.webp",
+      "/Dress/Muslin/20.webp",
+      "/Dress/Muslin/21.webp",
+      "/Dress/Muslin/22.webp",
+      "/Dress/Muslin/23.webp"
     ],
     "colorImages": [
       [
-        "/Dress/Muslin/7.avif",
-        "/Dress/Muslin/8.avif",
-        "/Dress/Muslin/9.avif",
-        "/Dress/Muslin/10.avif",
-        "/Dress/Muslin/11.avif",
-        "/Dress/Muslin/12.avif"
+        "/Dress/Muslin/7.webp",
+        "/Dress/Muslin/8.webp",
+        "/Dress/Muslin/9.webp",
+        "/Dress/Muslin/10.webp",
+        "/Dress/Muslin/11.webp",
+        "/Dress/Muslin/12.webp"
       ],
       [
-        "/Dress/Muslin/13.avif",
-        "/Dress/Muslin/14.avif",
-        "/Dress/Muslin/15.avif",
-        "/Dress/Muslin/16.avif",
-        "/Dress/Muslin/17.avif"
+        "/Dress/Muslin/13.webp",
+        "/Dress/Muslin/14.webp",
+        "/Dress/Muslin/15.webp",
+        "/Dress/Muslin/16.webp",
+        "/Dress/Muslin/17.webp"
       ],
       [
-        "/Dress/Muslin/18.avif",
-        "/Dress/Muslin/19.avif",
-        "/Dress/Muslin/20.avif",
-        "/Dress/Muslin/21.avif",
-        "/Dress/Muslin/22.avif",
-        "/Dress/Muslin/23.avif"
+        "/Dress/Muslin/18.webp",
+        "/Dress/Muslin/19.webp",
+        "/Dress/Muslin/20.webp",
+        "/Dress/Muslin/21.webp",
+        "/Dress/Muslin/22.webp",
+        "/Dress/Muslin/23.webp"
       ]
     ],
     "sizes": [
@@ -17924,12 +17918,12 @@
     "sku": "98767",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Lantern/1.avif",
+    "image": "/Dress/Lantern/1.webp",
     "images": [
-      "/Dress/Lantern/2.avif",
-      "/Dress/Lantern/3.avif",
-      "/Dress/Lantern/4.avif",
-      "/Dress/Lantern/5.avif"
+      "/Dress/Lantern/2.webp",
+      "/Dress/Lantern/3.webp",
+      "/Dress/Lantern/4.webp",
+      "/Dress/Lantern/5.webp"
     ],
     "sizes": [
       "XS",
@@ -17986,41 +17980,41 @@
     "sku": "98766",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Oversize/1.avif",
+    "image": "/Dress/Oversize/1.webp",
     "images": [
-      "/Dress/Oversize/2.avif",
+      "/Dress/Oversize/2.webp",
       {
         "type": "video",
         "src": "/Dress/Oversize/IMG_060.mp4",
-        "poster": "/Dress/Oversize/1.avif"
+        "poster": "/Dress/Oversize/1.webp"
       },
-      "/Dress/Oversize/3.avif",
-      "/Dress/Oversize/4.avif",
-      "/Dress/Oversize/5.avif",
-      "/Dress/Oversize/6.avif",
-      "/Dress/Oversize/7.avif",
-      "/Dress/Oversize/8.avif",
-      "/Dress/Oversize/9.avif",
-      "/Dress/Oversize/10.avif",
-      "/Dress/Oversize/11.avif",
-      "/Dress/Oversize/12.avif"
+      "/Dress/Oversize/3.webp",
+      "/Dress/Oversize/4.webp",
+      "/Dress/Oversize/5.webp",
+      "/Dress/Oversize/6.webp",
+      "/Dress/Oversize/7.webp",
+      "/Dress/Oversize/8.webp",
+      "/Dress/Oversize/9.webp",
+      "/Dress/Oversize/10.webp",
+      "/Dress/Oversize/11.webp",
+      "/Dress/Oversize/12.webp"
     ],
     "colorImages": [
       [
-        "/Dress/Oversize/1.avif",
-        "/Dress/Oversize/2.avif",
-        "/Dress/Oversize/3.avif",
-        "/Dress/Oversize/4.avif",
-        "/Dress/Oversize/5.avif",
-        "/Dress/Oversize/6.avif"
+        "/Dress/Oversize/1.webp",
+        "/Dress/Oversize/2.webp",
+        "/Dress/Oversize/3.webp",
+        "/Dress/Oversize/4.webp",
+        "/Dress/Oversize/5.webp",
+        "/Dress/Oversize/6.webp"
       ],
       [
-        "/Dress/Oversize/7.avif",
-        "/Dress/Oversize/8.avif",
-        "/Dress/Oversize/9.avif",
-        "/Dress/Oversize/10.avif",
-        "/Dress/Oversize/11.avif",
-        "/Dress/Oversize/12.avif"
+        "/Dress/Oversize/7.webp",
+        "/Dress/Oversize/8.webp",
+        "/Dress/Oversize/9.webp",
+        "/Dress/Oversize/10.webp",
+        "/Dress/Oversize/11.webp",
+        "/Dress/Oversize/12.webp"
       ]
     ],
     "sizes": [
@@ -18100,41 +18094,41 @@
     "sku": "98765",
     "size": "XS S M L XL",
     "category": "Dresses",
-    "image": "/Dress/Ethnic/1.avif",
+    "image": "/Dress/Ethnic/1.webp",
     "images": [
-      "/Dress/Ethnic/2.avif",
+      "/Dress/Ethnic/2.webp",
       {
         "type": "video",
         "src": "/Dress/Ethnic/IMG_7595.mp4",
-        "poster": "/Dress/Ethnic/1.avif"
+        "poster": "/Dress/Ethnic/1.webp"
       },
-      "/Dress/Ethnic/3.avif",
-      "/Dress/Ethnic/4.avif",
-      "/Dress/Ethnic/5.avif",
-      "/Dress/Ethnic/6.avif",
-      "/Dress/Ethnic/7.avif",
-      "/Dress/Ethnic/8.avif",
-      "/Dress/Ethnic/9.avif",
-      "/Dress/Ethnic/10.avif",
-      "/Dress/Ethnic/11.avif",
-      "/Dress/Ethnic/12.avif"
+      "/Dress/Ethnic/3.webp",
+      "/Dress/Ethnic/4.webp",
+      "/Dress/Ethnic/5.webp",
+      "/Dress/Ethnic/6.webp",
+      "/Dress/Ethnic/7.webp",
+      "/Dress/Ethnic/8.webp",
+      "/Dress/Ethnic/9.webp",
+      "/Dress/Ethnic/10.webp",
+      "/Dress/Ethnic/11.webp",
+      "/Dress/Ethnic/12.webp"
     ],
     "colorImages": [
       [
-        "/Dress/Ethnic/1.avif",
-        "/Dress/Ethnic/2.avif",
-        "/Dress/Ethnic/3.avif",
-        "/Dress/Ethnic/4.avif",
-        "/Dress/Ethnic/5.avif",
-        "/Dress/Ethnic/6.avif"
+        "/Dress/Ethnic/1.webp",
+        "/Dress/Ethnic/2.webp",
+        "/Dress/Ethnic/3.webp",
+        "/Dress/Ethnic/4.webp",
+        "/Dress/Ethnic/5.webp",
+        "/Dress/Ethnic/6.webp"
       ],
       [
-        "/Dress/Ethnic/7.avif",
-        "/Dress/Ethnic/8.avif",
-        "/Dress/Ethnic/9.avif",
-        "/Dress/Ethnic/10.avif",
-        "/Dress/Ethnic/11.avif",
-        "/Dress/Ethnic/12.avif"
+        "/Dress/Ethnic/7.webp",
+        "/Dress/Ethnic/8.webp",
+        "/Dress/Ethnic/9.webp",
+        "/Dress/Ethnic/10.webp",
+        "/Dress/Ethnic/11.webp",
+        "/Dress/Ethnic/12.webp"
       ]
     ],
     "sizes": [
@@ -18196,12 +18190,12 @@
     "sku": "67893",
     "size": "XS S M L XL",
     "category": "Costumes",
-    "image": "/Costumes/Two-Piece Suit/1.avif",
+    "image": "/Costumes/Two-Piece Suit/1.webp",
     "images": [
-      "/Costumes/Two-Piece Suit/2.avif",
-      "/Costumes/Two-Piece Suit/3.avif",
-      "/Costumes/Two-Piece Suit/4.avif",
-      "/Costumes/Two-Piece Suit/5.avif"
+      "/Costumes/Two-Piece Suit/2.webp",
+      "/Costumes/Two-Piece Suit/3.webp",
+      "/Costumes/Two-Piece Suit/4.webp",
+      "/Costumes/Two-Piece Suit/5.webp"
     ],
     "sizes": [
       "XS",
@@ -18250,12 +18244,12 @@
     "color": "red",
     "size": "XS S M L XL",
     "category": "Pants",
-    "image": "/Pants/Banana Pants/1.avif",
+    "image": "/Pants/Banana Pants/1.webp",
     "images": [
-      "/Pants/Banana Pants/2.avif",
-      "/Pants/Banana Pants/3.avif",
-      "/Pants/Banana Pants/4.avif",
-      "/Pants/Banana Pants/5.avif"
+      "/Pants/Banana Pants/2.webp",
+      "/Pants/Banana Pants/3.webp",
+      "/Pants/Banana Pants/4.webp",
+      "/Pants/Banana Pants/5.webp"
     ],
     "sizes": [
       "XS",
@@ -18310,32 +18304,32 @@
     "color": "red",
     "size": "XS S M L XL",
     "category": "Pants",
-    "image": "/Pants/Leather Flared Pants/5.avif",
+    "image": "/Pants/Leather Flared Pants/5.webp",
     "images": [
-      "/Pants/Leather Flared Pants/6.avif",
-      "/Pants/Leather Flared Pants/7.avif",
-      "/Pants/Leather Flared Pants/4.avif",
-      "/Pants/Leather Flared Pants/8.avif",
-      "/Pants/Leather Flared Pants/9.avif",
-      "/Pants/Leather Flared Pants/14.avif",
-      "/Pants/Leather Flared Pants/15.avif",
-      "/Pants/Leather Flared Pants/16.avif",
-      "/Pants/Leather Flared Pants/17.avif"
+      "/Pants/Leather Flared Pants/6.webp",
+      "/Pants/Leather Flared Pants/7.webp",
+      "/Pants/Leather Flared Pants/4.webp",
+      "/Pants/Leather Flared Pants/8.webp",
+      "/Pants/Leather Flared Pants/9.webp",
+      "/Pants/Leather Flared Pants/14.webp",
+      "/Pants/Leather Flared Pants/15.webp",
+      "/Pants/Leather Flared Pants/16.webp",
+      "/Pants/Leather Flared Pants/17.webp"
     ],
     "colorImages": [
       [
-        "/Pants/Leather Flared Pants/5.avif",
-        "/Pants/Leather Flared Pants/6.avif",
-        "/Pants/Leather Flared Pants/7.avif",
-        "/Pants/Leather Flared Pants/4.avif",
-        "/Pants/Leather Flared Pants/8.avif",
-        "/Pants/Leather Flared Pants/9.avif"
+        "/Pants/Leather Flared Pants/5.webp",
+        "/Pants/Leather Flared Pants/6.webp",
+        "/Pants/Leather Flared Pants/7.webp",
+        "/Pants/Leather Flared Pants/4.webp",
+        "/Pants/Leather Flared Pants/8.webp",
+        "/Pants/Leather Flared Pants/9.webp"
       ],
       [
-        "/Pants/Leather Flared Pants/14.avif",
-        "/Pants/Leather Flared Pants/15.avif",
-        "/Pants/Leather Flared Pants/16.avif",
-        "/Pants/Leather Flared Pants/17.avif"
+        "/Pants/Leather Flared Pants/14.webp",
+        "/Pants/Leather Flared Pants/15.webp",
+        "/Pants/Leather Flared Pants/16.webp",
+        "/Pants/Leather Flared Pants/17.webp"
       ]
     ],
     "sizes": [
@@ -18394,32 +18388,32 @@
     "color": "black",
     "size": "XS S M L XL",
     "category": "Sweaters",
-    "image": "/Sweaters/Drawstring Sweater/1.avif",
+    "image": "/Sweaters/Drawstring Sweater/1.webp",
     "images": [
-      "/Sweaters/Drawstring Sweater/2.avif",
-      "/Sweaters/Drawstring Sweater/3.avif",
-      "/Sweaters/Drawstring Sweater/4.avif",
-      "/Sweaters/Drawstring Sweater/5.avif",
-      "/Sweaters/Drawstring Sweater/6.avif",
-      "/Sweaters/Drawstring Sweater/7.avif",
-      "/Sweaters/Drawstring Sweater/8.avif",
-      "/Sweaters/Drawstring Sweater/9.avif",
-      "/Sweaters/Drawstring Sweater/10.avif"
+      "/Sweaters/Drawstring Sweater/2.webp",
+      "/Sweaters/Drawstring Sweater/3.webp",
+      "/Sweaters/Drawstring Sweater/4.webp",
+      "/Sweaters/Drawstring Sweater/5.webp",
+      "/Sweaters/Drawstring Sweater/6.webp",
+      "/Sweaters/Drawstring Sweater/7.webp",
+      "/Sweaters/Drawstring Sweater/8.webp",
+      "/Sweaters/Drawstring Sweater/9.webp",
+      "/Sweaters/Drawstring Sweater/10.webp"
     ],
     "colorImages": [
       [
-        "/Sweaters/Drawstring Sweater/1.avif",
-        "/Sweaters/Drawstring Sweater/2.avif",
-        "/Sweaters/Drawstring Sweater/3.avif",
-        "/Sweaters/Drawstring Sweater/4.avif",
-        "/Sweaters/Drawstring Sweater/5.avif"
+        "/Sweaters/Drawstring Sweater/1.webp",
+        "/Sweaters/Drawstring Sweater/2.webp",
+        "/Sweaters/Drawstring Sweater/3.webp",
+        "/Sweaters/Drawstring Sweater/4.webp",
+        "/Sweaters/Drawstring Sweater/5.webp"
       ],
       [
-        "/Sweaters/Drawstring Sweater/6.avif",
-        "/Sweaters/Drawstring Sweater/7.avif",
-        "/Sweaters/Drawstring Sweater/8.avif",
-        "/Sweaters/Drawstring Sweater/9.avif",
-        "/Sweaters/Drawstring Sweater/10.avif"
+        "/Sweaters/Drawstring Sweater/6.webp",
+        "/Sweaters/Drawstring Sweater/7.webp",
+        "/Sweaters/Drawstring Sweater/8.webp",
+        "/Sweaters/Drawstring Sweater/9.webp",
+        "/Sweaters/Drawstring Sweater/10.webp"
       ]
     ],
     "sizes": [
@@ -18479,11 +18473,11 @@
     "color": "black",
     "size": "XS S M L XL",
     "category": "Sweaters",
-    "image": "/Sweaters/Sweater Vest/1.avif",
+    "image": "/Sweaters/Sweater Vest/1.webp",
     "images": [
-      "/Sweaters/Sweater Vest/2.avif",
-      "/Sweaters/Sweater Vest/3.avif",
-      "/Sweaters/Sweater Vest/4.avif"
+      "/Sweaters/Sweater Vest/2.webp",
+      "/Sweaters/Sweater Vest/3.webp",
+      "/Sweaters/Sweater Vest/4.webp"
     ],
     "sizes": [
       "XS",
