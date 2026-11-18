@@ -3163,7 +3163,20 @@ const products = [
     "image": "/Top/Lui V-Neck Jumper/1.avif",
     "images": [
       "/Top/Lui V-Neck Jumper/2.avif",
-      "/Top/Lui V-Neck Jumper/3.avif"
+      "/Top/Lui V-Neck Jumper/3.avif",
+      "/Top/Lui V-Neck Jumper/4.avif",
+      "/Top/Lui V-Neck Jumper/5.avif"
+    ],
+    "colorImages": [
+      [
+        "/Top/Lui V-Neck Jumper/1.avif",
+        "/Top/Lui V-Neck Jumper/2.avif",
+        "/Top/Lui V-Neck Jumper/3.avif"
+      ],
+      [
+        "/Top/Lui V-Neck Jumper/4.avif",
+        "/Top/Lui V-Neck Jumper/5.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -3184,7 +3197,8 @@ const products = [
           "Season: autumn, winter."
         ],
         "colors": [
-          "gray"
+          "gray",
+          "graphite"
         ]
       },
       "FR": {
@@ -3198,7 +3212,8 @@ const products = [
           "Saison : automne, hiver."
         ],
         "colors": [
-          "gris"
+          "gris",
+          "graphite"
         ]
       },
       "UA": {
@@ -3212,7 +3227,8 @@ const products = [
           "Сезон: осінь, зима."
         ],
         "colors": [
-          "сірий"
+          "сірий",
+          "графіт"
         ]
       },
       "RU": {
@@ -3226,7 +3242,8 @@ const products = [
           "Сезон: осень, зима."
         ],
         "colors": [
-          "серый"
+          "серый",
+          "графит"
         ]
       }
     },
@@ -3346,7 +3363,20 @@ const products = [
     "image": "/Pants/Lui Trousers/1.avif",
     "images": [
       "/Pants/Lui Trousers/2.avif",
-      "/Pants/Lui Trousers/3.avif"
+      "/Pants/Lui Trousers/3.avif",
+      "/Pants/Lui Trousers/4.avif",
+      "/Pants/Lui Trousers/5.avif"
+    ],
+    "colorImages": [
+      [
+        "/Pants/Lui Trousers/1.avif",
+        "/Pants/Lui Trousers/2.avif",
+        "/Pants/Lui Trousers/3.avif"
+      ],
+      [
+        "/Pants/Lui Trousers/4.avif",
+        "/Pants/Lui Trousers/5.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -3367,7 +3397,8 @@ const products = [
           "Season: autumn, winter."
         ],
         "colors": [
-          "gray"
+          "gray",
+          "graphite"
         ]
       },
       "FR": {
@@ -3381,7 +3412,8 @@ const products = [
           "Saison : automne, hiver."
         ],
         "colors": [
-          "gris"
+          "gris",
+          "graphite"
         ]
       },
       "UA": {
@@ -3395,7 +3427,8 @@ const products = [
           "Сезон: осінь, зима."
         ],
         "colors": [
-          "сірий"
+          "сірий",
+          "графіт"
         ]
       },
       "RU": {
@@ -3409,7 +3442,8 @@ const products = [
           "Сезон: осень, зима."
         ],
         "colors": [
-          "серый"
+          "серый",
+          "графит"
         ]
       }
     },
@@ -3427,7 +3461,22 @@ const products = [
     "image": "/Costumes/Lui V-Neck Suit/1.avif",
     "images": [
       "/Costumes/Lui V-Neck Suit/2.avif",
-      "/Costumes/Lui V-Neck Suit/3.avif"
+      "/Costumes/Lui V-Neck Suit/3.avif",
+      "/Costumes/Lui V-Neck Suit/4.avif",
+      "/Costumes/Lui V-Neck Suit/5.avif",
+      "/Costumes/Lui V-Neck Suit/6.avif"
+    ],
+    "colorImages": [
+      [
+        "/Costumes/Lui V-Neck Suit/1.avif",
+        "/Costumes/Lui V-Neck Suit/2.avif",
+        "/Costumes/Lui V-Neck Suit/3.avif"
+      ],
+      [
+        "/Costumes/Lui V-Neck Suit/4.avif",
+        "/Costumes/Lui V-Neck Suit/5.avif",
+        "/Costumes/Lui V-Neck Suit/6.avif"
+      ]
     ],
     "sizes": [
       "XS",
@@ -3449,7 +3498,8 @@ const products = [
           "Season: autumn, winter."
         ],
         "colors": [
-          "gray"
+          "gray",
+          "graphite"
         ]
       },
       "FR": {
@@ -3464,7 +3514,8 @@ const products = [
           "Saison : automne, hiver."
         ],
         "colors": [
-          "gris"
+          "gris",
+          "graphite"
         ]
       },
       "UA": {
@@ -3479,7 +3530,8 @@ const products = [
           "Сезон: осінь, зима."
         ],
         "colors": [
-          "сірий"
+          "сірий",
+          "графіт"
         ]
       },
       "RU": {
@@ -3494,7 +3546,8 @@ const products = [
           "Сезон: осень, зима."
         ],
         "colors": [
-          "серый"
+          "серый",
+          "графит"
         ]
       }
     },
