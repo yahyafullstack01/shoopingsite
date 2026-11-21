@@ -117,7 +117,7 @@ useEffect(() => {
              <link rel="preload" as="image" href="/light-logo.avif" type="image/avif" media="(max-width: 480px)" />
            </Head>
            <Link href="/" aria-label="Home">
-             <h1 className="sr-only">Latore Atelier</h1>
+             <span className="sr-only">Latore Atelier</span>
              <Image
                src="/light-logo.avif"
                alt="Latore Atelier Logo – High-Quality Clothing"

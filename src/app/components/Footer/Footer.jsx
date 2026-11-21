@@ -1,11 +1,13 @@
 
+import Link from "next/link";
 import { FaFacebook, FaInstagram,  FaTelegramPlane } from "react-icons/fa";
-import { useLanguage } from "../../Functions/useLanguage"; 
+import { useLanguage } from "../../Functions/useLanguage";
 
 export default function Footer() {
-  const {  translateList } = useLanguage(); 
-  
+  const { language, translateList } = useLanguage();
+
   const menuItems = translateList("home", "Footer");
+  const privacyLabel = language === "EN" ? "Privacy Policy" : "Конфіденційність";
   return (
     <footer className="bg-black text-white section-container">
       <div className="space-y-4">
@@ -18,7 +20,7 @@ export default function Footer() {
               </a>
             </p>
             <p className="text-sm">
-              <a href="latoreatelier01@gmail.com" className="hover:underline">
+              <a href="mailto:latoreatelier01@gmail.com" className="hover:underline">
               latoreatelier01@gmail.com
               </a>
             </p>
@@ -28,7 +30,11 @@ export default function Footer() {
   {menuItems[0]}<br />
   {menuItems[1]} &quot;{menuItems[2]}&quot;
 </p>
-
+          <p className="text-sm mt-3">
+            <Link href="/Conditions" className="hover:underline">
+              {privacyLabel}
+            </Link>
+          </p>
           </div>
           <div className="flex justify-start sm:justify-end md:justify-center items-center space-x-4 px-4 sm:px-6 py-6">
             <a href="https://www.facebook.com/share/18h6VtZV6k/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"  aria-label="Share on Facebook" >

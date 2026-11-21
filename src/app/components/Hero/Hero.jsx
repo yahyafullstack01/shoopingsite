@@ -330,7 +330,7 @@ export default function Hero() {
                 - subtitle → Montserrat Regular 11.3 / lh 1.4 / ls 2.9px
                 Mobile: stacked under the paper. Desktop: right of the paper.
               */}
-              <div className="pointer-events-none absolute inset-x-0 top-[52%] flex justify-center px-4 md:inset-0 md:top-0 md:items-center md:justify-start md:pl-[42%] md:pr-8">
+              <div className="pointer-events-none absolute inset-x-0 top-[52%] flex justify-center overflow-hidden px-4 md:inset-0 md:top-0 md:items-center md:justify-start md:overflow-visible md:pl-[42%] md:pr-8">
                 <div className="text-center scale-[0.42] origin-top md:scale-100 md:origin-center">
                   {s.title && (
                     <h1
